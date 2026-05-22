@@ -66,31 +66,37 @@ dimensions:
     description: >
       Measures how much of the K-12 market is already served by charters.
       Lower saturation = higher opportunity. Flag oversaturation explicitly.
+      Primary uses raw school count (available from PED roster). When
+      charter_seat_share_pct becomes available it blends in as secondary.
     scoring_rules:
-      primary_fact: "charter_seat_share_pct"
+      primary_fact: "num_charter_schools"
       direction: inverse
       thresholds:
-        - {max: 5, score: 10}
-        - {max: 10, score: 8}
-        - {max: 15, score: 7}
-        - {max: 20, score: 6}
-        - {max: 30, score: 4}
-        - {max: 40, score: 2}
-        - {score: 1}
+        - {max: 3,  score: 9}   # ≤3 schools — minimal saturation
+        - {max: 8,  score: 7}   # ≤8  — low (e.g. Las Cruces: 6)
+        - {max: 15, score: 5}   # ≤15 — moderate (e.g. Santa Fe: 9)
+        - {max: 30, score: 3}   # ≤30 — high
+        - {score: 1}             # >30 — very high (e.g. Albuquerque: 55)
     override_flag:
       condition: "charter_seat_share_pct >= 30 AND enrollment_trend_charter == DECLINING"
       flag: OVERSATURATED
       tier_cap: WATCHLIST
     secondary_facts:
-      - key: "num_charter_schools"
+      - key: "charter_seat_share_pct"
         direction: inverse
-        weight: 0.20
+        weight: 0.25
+        thresholds:
+          - {max: 10, score: 9}
+          - {max: 20, score: 7}
+          - {max: 30, score: 5}
+          - {max: 40, score: 3}
+          - {score: 1}
       - key: "charter_enrollment_trend_3yr"
         direction: direct
         weight: 0.20
-    fact_keys_required: ["charter_seat_share_pct"]
-    fact_keys_optional: ["num_charter_schools", "charter_enrollment_trend_3yr",
-                         "avg_charter_waitlist_depth"]
+    fact_keys_required: []
+    fact_keys_optional: ["num_charter_schools", "charter_seat_share_pct",
+                         "charter_enrollment_trend_3yr", "avg_charter_waitlist_depth"]
     missing_data_behavior: degrade_confidence
 
   # ── 3. POPULATION TRENDS ──────────────────────────

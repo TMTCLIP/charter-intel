@@ -1,0 +1,104 @@
+# {{ brief.community_name }}, {{ brief.state }} — Strategic Brief
+**Preset:** {{ brief.preset | title }}  **Score:** {{ brief.composite_score }}/10  **Confidence:** {{ brief.confidence_overall }}
+**Classification:** {{ brief.classification }}
+*Data through {{ brief.data_through }} · Generated {{ brief.generated_at[:10] }}*
+
+---
+
+## Executive Snapshot
+
+{{ brief.executive_snapshot }}
+
+---
+
+## Scorecard
+
+**Composite: {{ brief.scorecard_summary.composite_score }}/10 — {{ brief.scorecard_summary.tier_display_label }}**
+
+| Dimension | Score | Weight | Confidence | Driver |
+|---|---:|---:|---|---|
+{% for row in brief.scorecard_summary.dimension_table -%}
+| {{ row.display_name }} | {{ row.score }} | {{ (row.weight * 100) | int }}% | {{ row.confidence }} | {{ row.driver }} |
+{% endfor %}
+
+{% if brief.scorecard_summary.top_drivers %}
+**Top drivers:**
+{% for d in brief.scorecard_summary.top_drivers %}
+- **{{ d.dimension }}** ({{ d.score }}) — {{ d.driver }}
+{% endfor %}
+{% endif %}
+
+---
+
+## Override Flags
+
+{% if brief.scorecard_summary.override_flags %}
+{% for flag in brief.scorecard_summary.override_flags %}
+- {{ flag.visual }} **{{ flag.flag }}** — {{ flag.triggered_by }} *({{ flag.tier_effect }})*
+{% endfor %}
+{% else %}
+No override flags triggered.
+{% endif %}
+
+---
+
+## Recommendations
+
+{% for rec in brief.recommendations %}
+### {{ loop.index }}. {{ rec.action }}
+
+{{ rec.rationale }}
+
+*Evidence:* {{ rec.evidence_summary }}
+*Primary risk:* {{ rec.primary_risk }}
+*Confidence:* {{ rec.confidence }}
+
+{% endfor %}
+
+---
+
+## Quick Reads
+
+{% if brief.quick_reads %}
+**Facilities:** {{ brief.quick_reads.facilities }}
+
+**Political:** {{ brief.quick_reads.political }}
+
+**Authorizer:** {{ brief.quick_reads.authorizer }}
+{% endif %}
+
+---
+{% if brief.schools_to_watch %}
+
+## Schools to Watch
+
+{% for s in brief.schools_to_watch %}
+- **{{ s.school_name }}** `{{ s.flag_type }}` — {{ s.reason }}
+{% endfor %}
+
+{% endif %}
+## Needs Verification
+
+{% for item in brief.needs_verification %}
+- **{{ item.claim }}**
+  *Why:* {{ item.reason }}  *Impact if wrong:* {{ item.impact_if_wrong }}  *Resolution:* {{ item.resolution_path }}
+{% endfor %}
+
+---
+
+## Sources
+
+{% for s in brief.sources %}
+[{{ s.ref_num }}] {{ s.title }} · {{ s.source_class }}{% if s.url %} · {{ s.url }}{% endif %}{% if s.date %} · {{ s.date }}{% endif %}
+{% endfor %}
+
+---
+{% if brief.audit_passed == false %}
+
+> ⚠️ **Audit flag:** {{ brief.audit_flags | length }} claim(s) flagged by hallucination audit. Review before external use.
+{% for f in brief.audit_flags %}
+> - `{{ f.location }}`: {{ f.claim_text[:80] }}… *({{ f.recommended_action }})*
+{% endfor %}
+
+{% endif %}
+*{{ brief.disclosure }}*

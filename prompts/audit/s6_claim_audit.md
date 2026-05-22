@@ -44,6 +44,14 @@ A claim FAILS the audit if:
 - It appears to be an interpolation, inference, or fabrication
 - It names a specific entity or figure not in the facts array
 
+**NEVER flag these claim types — they are pre-verified:**
+1. Numerical proficiency figures (ELA %, math %, science %). These are injected as VERIFIED_PED_DATA from official state assessment files and are ground truth. Do not flag them as unverified under any circumstance.
+2. Claims supported by a source citation in the sources list. If a claim has a matching `[ref]` number anywhere in the brief, treat it as sourced and do not flag it.
+3. Claims that describe a score or index value produced by the scoring system (e.g. "political climate index of 7", "composite score of 6.0", "tier: MODERATE OPPORTUNITY"). These are outputs of the pipeline, not external claims requiring citation.
+
+**Reserve FLAG_FOR_HUMAN_REVIEW and REMOVE only for:**
+Claims that are simultaneously (a) specific, (b) unverified, and (c) have no source citation — such as unnamed statistics, unattributed characterizations, or fabricated specifics not derivable from the verified facts array.
+
 Respond ONLY with valid JSON. Do not explain failures in prose — only in the JSON output.
 
 ---

@@ -3,14 +3,17 @@ main.py
 Charter Community Intelligence Platform — Pipeline Entry Point
 
 USAGE:
-  python main.py --state NM --community nm-albuquerque
-  python main.py --state NM --all --preset growth --mode 2
-  python main.py --state NM --community nm-riverdale --preset turnaround --mode 3
-  python main.py --state NM --all --dry-run
+  python main.py "Santa Fe"
+  python main.py "Española" --preset turnaround
+  python main.py --community nm-albuquerque
+  python main.py --all --preset growth --mode 2
+  python main.py --all --dry-run
+  python main.py --interactive
 
 FLAGS:
-  --state         Two-letter state code (required)
-  --community     Specific community_id to run (omit for --all)
+  community       Positional city name or community_id (e.g. "Santa Fe" or nm-santa-fe)
+  --state         Two-letter state code (default: NM)
+  --community     Specific community_id or city name (alternative to positional)
   --all           Run all communities in the state
   --preset        growth | replication | turnaround (default: growth)
   --mode          1 | 2 | 3 (default: 2)
@@ -19,6 +22,7 @@ FLAGS:
   --dry-run       Validate config and inputs without making API calls
   --stages        Comma-separated list of stages to run (default: all)
                   e.g., --stages s5,s6,s7 to re-run only scoring and later
+  --interactive   Prompt for state and community interactively
 
 ENVIRONMENT:
   ANTHROPIC_API_KEY  — required for stages that call Claude
@@ -33,7 +37,8 @@ import time
 
 from pipeline import (
     OperatorPreset, OutputMode, PipelineConfig,
-    StageResult, StageStatus, STAGE_ORDER
+    StageResult, StageStatus, STAGE_ORDER,
+    build_community_id,
 )
 from pipeline import s1_discovery, s2_state_context, s3_fact_extraction
 from pipeline import s4_verification, s5_scoring, s6_synthesis, s7_render
@@ -59,8 +64,14 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Charter Community Intelligence Platform"
     )
-    parser.add_argument("--state", required=True, help="Two-letter state code")
-    parser.add_argument("--community", help="Specific community_id")
+    # Positional: accept a bare city name or community_id without a flag
+    parser.add_argument(
+        "community_pos", nargs="?", default=None,
+        metavar="COMMUNITY",
+        help="City name or community_id (e.g. 'Santa Fe' or nm-santa-fe)"
+    )
+    parser.add_argument("--state", default="NM", help="Two-letter state code (default: NM)")
+    parser.add_argument("--community", help="Specific community_id or city name")
     parser.add_argument("--all", action="store_true", dest="run_all",
                         help="Run all communities in state")
     parser.add_argument("--preset", default="growth",
@@ -70,23 +81,65 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--no-cache", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--stages", help="Comma-separated stages to run")
+    parser.add_argument(
+        "--depth", default="standard", choices=["fast", "standard", "deep"],
+        help=(
+            "Web search depth for S3 fact extraction. "
+            "fast=none (quick triage), standard=political_climate only (default), "
+            "deep=all 5 dimensions (high-priority markets)"
+        ),
+    )
+    parser.add_argument(
+        "--interactive", action="store_true",
+        help="Prompt for state and community interactively"
+    )
     return parser.parse_args()
 
 
+def _is_community_id(value: str) -> bool:
+    """Return True if value looks like a canonical community_id (e.g. nm-santa-fe)."""
+    # Community IDs are lowercase, start with a two-letter state code + hyphen,
+    # and contain no spaces.
+    return bool(value) and " " not in value and "-" in value and value == value.lower()
+
+
+def resolve_community(state: str, city_name: str) -> str:
+    """Convert a plain city name to a canonical community_id.
+
+    Accepts either a community_id (returned unchanged) or a plain city name
+    which is normalised through build_community_id.
+
+    Examples:
+        resolve_community("NM", "Santa Fe")    → "nm-santa-fe"
+        resolve_community("NM", "Española")    → "nm-espanola"
+        resolve_community("NM", "nm-santa-fe") → "nm-santa-fe"
+    """
+    if _is_community_id(city_name):
+        return city_name
+    return build_community_id(city_name, state)
+
+
 def build_config(args: argparse.Namespace) -> PipelineConfig:
+    state = args.state.upper()
+
+    # Resolve community: positional arg takes precedence over --community flag
+    raw_community = args.community_pos or args.community
     communities = None
-    if args.community:
-        communities = [args.community]
+    if raw_community:
+        resolved = resolve_community(state, raw_community)
+        logger.info("Resolved community: %r → %s", raw_community, resolved)
+        communities = [resolved]
 
     return PipelineConfig(
-        state=args.state.upper(),
+        state=state,
         preset=OperatorPreset(args.preset),
         mode=OutputMode(args.mode),
         output_format="markdown",
         cache_enabled=not args.no_cache,
         dry_run=args.dry_run,
         force_refresh=args.force_refresh,
-        communities=communities
+        communities=communities,
+        depth=args.depth,
     )
 
 
@@ -154,6 +207,19 @@ def run_community_pipeline(
 
 def main():
     args = parse_args()
+
+    # ── Interactive mode ────────────────────────────────────────────────────
+    if args.interactive:
+        try:
+            state_input = input("State code [NM]: ").strip() or "NM"
+            args.state = state_input.upper()
+            city_input = input(f"Community (city name or community_id): ").strip()
+            if city_input:
+                args.community_pos = city_input
+        except EOFError:
+            # Support piped input (e.g. echo "NM\nSanta Fe" | python main.py --interactive)
+            pass
+
     config = build_config(args)
 
     if not os.getenv("ANTHROPIC_API_KEY") and not config.dry_run:

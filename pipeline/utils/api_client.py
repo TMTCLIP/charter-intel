@@ -82,6 +82,7 @@ def call_claude(
     community_id: str = "",
     retry_attempts: int = 3,
     retry_delay_seconds: float = 5.0,
+    use_web_search: bool = False,
 ) -> APIResult:
     """
     Call Claude and return an APIResult.
@@ -97,6 +98,10 @@ def call_claude(
         community_id:    Community being processed (for logging)
         retry_attempts:  Number of retries on rate limit or server error
         retry_delay_seconds: Initial backoff; doubled on each retry
+        use_web_search:  If True, attach the Anthropic web search tool. Response
+                         content will be a mixed list of text/tool_use/tool_result
+                         blocks; all text blocks are joined as the final output.
+                         Existing callers with use_web_search=False are unaffected.
 
     Returns:
         APIResult. Check result.ok before using output.
@@ -104,19 +109,36 @@ def call_claude(
     client = anthropic.Anthropic()  # Reads ANTHROPIC_API_KEY from environment
 
     last_error = None
-    delay = retry_delay_seconds
+    delay = retry_delay_seconds          # 5xx backoff: 5s → 10s → 20s
+    rate_limit_delay = 30.0              # 429 backoff: 30s → 60s → 120s
 
     for attempt in range(retry_attempts):
         try:
-            response = client.messages.create(
+            call_kwargs: dict = dict(
                 model=model,
                 max_tokens=max_tokens,
                 temperature=temperature,
                 system=system,
-                messages=[{"role": "user", "content": user}]
+                messages=[{"role": "user", "content": user}],
             )
+            if use_web_search:
+                call_kwargs["tools"] = [
+                    {"type": "web_search_20250305", "name": "web_search", "max_uses": 5}
+                ]
 
-            text = response.content[0].text if response.content else ""
+            response = client.messages.create(**call_kwargs)
+
+            # With web search the response contains mixed block types
+            # (text, tool_use, tool_result). Extract and join all text blocks.
+            if use_web_search:
+                text = "\n".join(
+                    block.text
+                    for block in response.content
+                    if block.type == "text"
+                ).strip()
+            else:
+                text = response.content[0].text if response.content else ""
+
             tokens_in = response.usage.input_tokens
             tokens_out = response.usage.output_tokens
 
@@ -147,10 +169,10 @@ def call_claude(
             last_error = e
             logger.warning(
                 f"[{stage}] Rate limit on attempt {attempt + 1}/{retry_attempts}. "
-                f"Waiting {delay}s..."
+                f"Waiting {rate_limit_delay}s..."
             )
-            time.sleep(delay)
-            delay *= 2
+            time.sleep(rate_limit_delay)
+            rate_limit_delay *= 2
 
         except anthropic.APIStatusError as e:
             last_error = e

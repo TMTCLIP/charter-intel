@@ -13,6 +13,8 @@
 #   {{TODAY_DATE}}       — ISO date
 #   {{STATE_CONTEXT_JSON}} — Condensed state context from S2 (injected by pipeline)
 #   {{KNOWN_SCHOOLS}}    — JSON list of school names from S1 discovery
+#   {{VERIFIED_ROSTER}}  — Markdown table from S1 CSV: school name, authorizer, grades, cap
+#   {{VERIFIED_PED_DATA}} — Verified ELA/Math proficiency from NM PED achievement CSVs
 #
 # ANTI-HALLUCINATION DESIGN:
 #   - Every datapoint requires source_url OR explicit "NOT_FOUND" verification_status
@@ -45,6 +47,18 @@ Extract community-level facts for the scoring dimensions below.
 **Community:** {{COMMUNITY_NAME}}, {{STATE_NAME}} ({{STATE_CODE}})
 **Community ID:** {{COMMUNITY_ID}}
 **Date:** {{TODAY_DATE}}
+
+**VERIFIED PED PROFICIENCY DATA — official {{STATE_NAME}} state assessment results. Treat as ground truth.**
+
+{{VERIFIED_PED_DATA}}
+
+The following values are pulled directly from official NM PED state assessment data. These are verified facts — do not override with training knowledge estimates. Use the provided source URL for these datapoints. Emit these as `district_proficiency_ela_pct` and `district_proficiency_math_pct` with `verification_status: "VERIFIED"`, `confidence: "HIGH"`, and `in_main_analysis: true`.
+
+**VERIFIED CHARTER SCHOOL ROSTER — official {{STATE_NAME}} PED charter roster. Treat as ground truth.**
+
+{{VERIFIED_ROSTER}}
+
+The following schools are verified from the official state charter roster. Treat these as confirmed facts. Do not contradict, omit, or add schools to this list from your training knowledge. Use this as the ground truth for charter_saturation, competitive_opportunity, and authorizer_friendliness dimensions.
 
 **State context (for reference — do not repeat these as community-level facts):**
 {{STATE_CONTEXT_JSON}}

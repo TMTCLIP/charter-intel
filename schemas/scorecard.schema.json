@@ -44,11 +44,11 @@
     "tier": {
       "type": "string",
       "enum": [
-        "HIGH_PRIORITY_EXPANSION_MARKET",
-        "STRONG_OPPORTUNITY",
-        "MODERATE_OPPORTUNITY",
+        "HIGH_PRIORITY",
+        "STRONG",
+        "MODERATE",
         "WATCHLIST",
-        "AVOID_ENTRY"
+        "AVOID"
       ],
       "description": "Tier from scoring_weights.yaml thresholds, modified by override flags"
     },

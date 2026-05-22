@@ -26,6 +26,12 @@ MODE_TEMPLATES = {
     3: "deep_dive.md.j2",
 }
 
+MODE_HTML_TEMPLATES = {
+    1: "snapshot.html.j2",
+    2: "strategic_brief.html.j2",
+    3: "deep_dive.html.j2",
+}
+
 
 def run(
     community_id: str,
@@ -53,34 +59,46 @@ def run(
         with open(brief_path) as f:
             brief = json.load(f)
 
-    # Load template
+    # Shared Jinja environment
+    env = Environment(
+        loader=FileSystemLoader("templates"),
+        autoescape=select_autoescape([])
+    )
+
+    out_dir = f"outputs/by_community/{community_id}"
+    os.makedirs(out_dir, exist_ok=True)
+    warnings = []
+
+    # --- Markdown output ---
     template_name = MODE_TEMPLATES.get(config.mode.value, "strategic_brief.md.j2")
     template_path = os.path.join("templates", template_name)
 
     if not os.path.exists(template_path):
-        # Fallback: render directly from brief JSON without template
-        rendered = _render_fallback(brief)
-        warnings = [
+        rendered_md = _render_fallback(brief)
+        warnings.append(
             f"Template {template_path} not found. Used fallback renderer. "
             f"Create templates/{template_name} for formatted output."
-        ]
-    else:
-        env = Environment(
-            loader=FileSystemLoader("templates"),
-            autoescape=select_autoescape([])
         )
-        template = env.get_template(template_name)
-        rendered = template.render(brief=brief)
-        warnings = []
+    else:
+        rendered_md = env.get_template(template_name).render(brief=brief)
 
-    # Write output
-    out_dir = f"outputs/by_community/{community_id}"
-    os.makedirs(out_dir, exist_ok=True)
-    filename = f"{community_id}_{config.preset.value}_mode{config.mode.value}_{today_str()}.md"
-    out_path = os.path.join(out_dir, filename)
-
+    md_filename = f"{community_id}_{config.preset.value}_mode{config.mode.value}_{today_str()}.md"
+    out_path = os.path.join(out_dir, md_filename)
     with open(out_path, "w") as f:
-        f.write(rendered)
+        f.write(rendered_md)
+
+    # --- HTML output ---
+    html_template_name = MODE_HTML_TEMPLATES.get(config.mode.value, "strategic_brief.html.j2")
+    html_template_path = os.path.join("templates", html_template_name)
+
+    if os.path.exists(html_template_path):
+        rendered_html = env.get_template(html_template_name).render(brief=brief)
+        html_filename = f"{community_id}_{config.preset.value}_mode{config.mode.value}.html"
+        html_out_path = os.path.join(out_dir, html_filename)
+        with open(html_out_path, "w") as f:
+            f.write(rendered_html)
+    else:
+        warnings.append(f"HTML template {html_template_path} not found. Skipped HTML output.")
 
     return StageResult(
         stage_id=STAGE_ID, community_id=community_id, state=state,

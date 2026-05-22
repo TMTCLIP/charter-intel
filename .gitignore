@@ -1,10 +1,7 @@
+data/cache/
+data/raw/
+outputs/
 __pycache__/
 *.pyc
 .env
-
-# pipeline intermediate state (do not commit)
-data/cache/
-
-# generated outputs (optional)
-outputs/
-
+*.pdf

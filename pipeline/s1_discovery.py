@@ -81,12 +81,12 @@ class CommunityStub:
 
 ROSTER_FIELD_MAPS: dict[str, dict[str, str]] = {
     "NM": {
-        "school_name":    "School Name",      # TODO: verify exact NM PED column names
-        "city":           "City",
-        "county":         "County",
+        "school_name":    "Charter School",
         "authorizer":     "Authorizer",
-        "grades":         "Grade Levels",
-        "status":         "Status",
+        "grades":         "Grades Served 2025-26",
+        # city: absent — parsed from "Street Address" by _city_from_address()
+        # county: absent — defaults to ""
+        # status: absent — defaults to ACTIVE
     },
     # Add additional states here
 }
@@ -184,8 +184,13 @@ def parse_roster(roster_path: str, state: str) -> list[SchoolStub]:
     with open(roster_path, newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         for i, row in enumerate(reader, start=2):  # Row 1 = header
-            city = _clean_city(row.get(field_map.get("city", "City"), "").strip())
-            status = row.get(field_map.get("status", "Status"), "ACTIVE").strip().upper()
+            city_col = field_map.get("city")
+            if city_col:
+                city = _clean_city(row.get(city_col, "").strip())
+            else:
+                city = _city_from_address(row.get("Street Address", ""))
+            status_col = field_map.get("status")
+            status = row.get(status_col, "ACTIVE").strip().upper() if status_col else "ACTIVE"
 
             if status == "CLOSED":
                 continue  # Exclude closed schools from active analysis
@@ -214,7 +219,7 @@ def group_by_community(schools: list[SchoolStub], state: str) -> list[CommunityS
     grouped: dict[str, list[SchoolStub]] = {}
 
     for school in schools:
-        cid = build_community_id(state, school.city)
+        cid = build_community_id(school.city, state)
         if cid not in grouped:
             grouped[cid] = []
         grouped[cid].append(school)
@@ -260,6 +265,60 @@ def _clean_city(city: str) -> str:
     # Remove common suffixes that appear in PED data
     city = re.sub(r"\s*(,\s*NM|,\s*New Mexico)\s*$", "", city, flags=re.IGNORECASE)
     return city
+
+
+# Word-level set used by _city_from_address() — compared after stripping
+# all non-alpha characters so punctuated tokens like "Blvd," or "St." match.
+_STREET_SUFFIXES: frozenset = frozenset({
+    "ave", "avenue", "st", "street", "rd", "road",
+    "blvd", "boulevard", "dr", "drive", "ln", "lane",
+    "way", "ct", "court", "pl", "place", "hwy", "highway",
+    "trail", "trl", "circle", "cir", "loop", "pass",
+    "run", "pike", "pkwy", "parkway",
+    # Compass directionals
+    "ne", "nw", "se", "sw",
+    # Additional common tokens
+    "path", "row",
+})
+
+
+def _city_from_address(address: str) -> str:
+    """Extract city from NM PED address format.
+
+    Works backwards through the pre-state address words and stops at the
+    first street suffix or compass directional. Everything after that word
+    is the city name. Non-alpha characters (commas, periods) are stripped
+    from each word before the set lookup so that tokens like 'Blvd,' or
+    'St.' match correctly.
+
+    Examples:
+        '4300 Cutler Ave NE Albuquerque, NM 87110' → 'Albuquerque'
+        '74 A Van Nu Po Road Santa Fe, NM 87508'   → 'Santa Fe'
+        '123 Main St Las Cruces, NM 88001'          → 'Las Cruces'
+        '456 Rio Rancho Blvd Rio Rancho, NM 87124'  → 'Rio Rancho'
+        '850 N. Telshor Blvd, Las Cruces, NM 88011' → 'Las Cruces'
+        '7300 Old Santa Fe Trail, Santa Fe, NM 87505' → 'Santa Fe'
+    """
+    parts = re.split(r",\s*NM\b", address, maxsplit=1)
+    if len(parts) < 2:
+        return ""
+    pre_state = parts[0].strip()
+    words = pre_state.split()
+
+    # Scan right-to-left; stop at the rightmost suffix/directional word.
+    # Strip all non-alpha characters before the set lookup so punctuated
+    # tokens ("Blvd,", "St.", "Rd.") match the same as clean tokens.
+    for i in range(len(words) - 1, -1, -1):
+        token = re.sub(r"[^a-zA-Z]", "", words[i]).lower()
+        if token in _STREET_SUFFIXES:
+            city_words = words[i + 1:]
+            if city_words:
+                return _clean_city(" ".join(city_words))
+            break  # suffix at tail with nothing after — fall through
+
+    # Fallback: no recognizable suffix found.
+    # Last two words are the best heuristic for NM cities (most are 1–2 words).
+    return _clean_city(" ".join(words[-2:])) if len(words) >= 2 else _clean_city(pre_state)
 
 
 def _roster_path(state: str) -> str:

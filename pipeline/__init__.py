@@ -8,6 +8,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 from typing import Any, Literal, Optional
 import datetime
+import unicodedata
 
 
 # ─────────────────────────────────────────────
@@ -108,6 +109,7 @@ class PipelineConfig:
     dry_run: bool                # If True, run validation only; don't call APIs
     force_refresh: bool          # Ignore cache; regenerate everything
     communities: Optional[list[str]] = None  # None = all communities in state
+    depth: str = "standard"            # fast | standard | deep
 
     # Model strings (loaded from pipeline.yaml)
     model_opus: str   = "claude-opus-4-5"
@@ -174,9 +176,15 @@ STAGE_ORDER = [
 ]
 
 
-def build_community_id(state: str, city_slug: str) -> str:
-    """Construct a canonical community_id from state code and city name."""
-    slug = city_slug.lower().replace(" ", "-").replace(",", "")
+def build_community_id(city_slug: str, state: str) -> str:
+    """Construct a canonical community_id from city name and state code.
+
+    Handles accented characters (e.g. Española → nm-espanola) via NFKD
+    Unicode normalization before ASCII conversion.
+    """
+    normalized = unicodedata.normalize("NFKD", city_slug)
+    ascii_slug = normalized.encode("ascii", "ignore").decode("ascii")
+    slug = ascii_slug.lower().replace(" ", "-").replace(",", "")
     return f"{state.lower()}-{slug}"
 
 

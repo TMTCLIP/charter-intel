@@ -103,7 +103,7 @@ Generate a brief JSON object with this exact structure:
       {
         "dimension": "<dimension_name>",
         "score": <number>,
-        "driver": "<one line: what drove this score, using only verified facts>"
+        "driver": "<one-sentence strategic implication — what this score means for a charter operator making an entry decision. Do not echo the formula or raw number>"
       }
     ],
     "dimension_table": [
@@ -113,7 +113,7 @@ Generate a brief JSON object with this exact structure:
         "score": <number>,
         "weight": <number>,
         "confidence": "<HIGH|MODERATE|LOW>",
-        "driver": "<one line>"
+        "driver": "<one-sentence strategic implication — what this score means for a charter operator making an entry decision. Do not echo the formula or raw number>"
       }
     ]
   },
@@ -172,13 +172,14 @@ Generate a brief JSON object with this exact structure:
 ```
 
 FINAL RULES:
-- recommendations: generate exactly 2. Each must cite at least 1 supporting_fact_id.
+- recommendations: generate exactly 2. Each must cite at least 1 supporting_fact_id. Each recommendation must name a specific actor, pathway, condition, or timeline unique to this community. "Conduct more research" and "pursue authorization carefully" are failures. Be specific or explain with evidence why specificity is not yet possible.
 - recommendations[].rationale: ≤40 words each.
 - recommendations[].evidence_summary: ≤25 words each.
 - quick_reads: each paragraph ≤50 words. Omit if no verified facts exist for that topic.
 - schools_to_watch: leave empty unless a specific school name appears in the verified facts.
-- needs_verification: include items from the NEEDS VERIFICATION input only; omit items with null impact.
+- needs_verification: Populate with every claim in this brief that lacks a direct source citation. If all claims are sourced, write: "All key claims are source-cited." This field must never be empty.
 - needs_verification[].resolution_path: ≤10 words each.
 - sources: include only sources cited in the brief body; maximum 6 entries.
-- executive_snapshot: ≤60 words. Write last. Synthesize, do not introduce.
+- executive_snapshot: ≤60 words. Write last. Synthesize, do not introduce. Every specific claim must map to a source in the sources list. If a claim cannot be traced to a citation, remove it. Do not include unsourced ratings, grades, or characterizations. Do not include any district rating, grade, or score (e.g. "APS received a D rating") unless a source [ref] number from the sources list is directly attached to that claim. If no citation exists, remove the claim entirely.
+- override_flags: If any override flags triggered (OVERSATURATED, HOSTILE_AUTHORIZER, FACILITIES_BOTTLENECK, POLITICAL_RISK_HIGH), copy each from the scorecard into scorecard_summary.override_flags and explain it in one sentence in the executive_snapshot. If none triggered, set override_flags to [] and write: "No override flags triggered." Do not omit this field.
 - Do NOT pad. Short, dense, specific beats long, hedged, generic.
