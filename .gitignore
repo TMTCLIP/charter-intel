@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .env
 *.pdf
+data/processed/
+.DS_Store
+**/.DS_Store
