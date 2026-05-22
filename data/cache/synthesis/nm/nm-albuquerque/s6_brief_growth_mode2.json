@@ -1,0 +1,208 @@
+{
+  "brief_id": "br_nm-albuquerque_growth_mode2_2026-05-22",
+  "community_id": "nm-albuquerque",
+  "community_name": "Albuquerque",
+  "state": "NM",
+  "preset": "growth",
+  "mode": 2,
+  "mode_label": "Strategic Brief",
+  "classification": "WATCHLIST / MONITOR",
+  "composite_score": 5.3,
+  "confidence_overall": "MODERATE",
+  "data_through": "2024-11-01",
+  "generated_at": "2026-05-22T14:11:13.506734Z",
+  "generated_by": "claude-sonnet-4-5",
+  "executive_snapshot": "Albuquerque scores 5.3 (Watchlist), driven by severe academic need (28% ELA, 19% math proficiency) and moderate charter saturation (15% seat share, 20+ schools). Key opportunity: APS rated D overall with accessible dual-authorizer pathway. Critical risk: 8% enrollment decline over five years threatens market viability despite strong demand signals.",
+  "scorecard_summary": {
+    "composite_score": 5.3,
+    "tier_display_label": "WATCHLIST / MONITOR",
+    "override_flags": [],
+    "top_drivers": [
+      {
+        "dimension": "academic_need",
+        "score": 8.0,
+        "driver": "APS ELA proficiency 28%, math 19% (2023-24)"
+      },
+      {
+        "dimension": "charter_saturation",
+        "score": 6.47,
+        "driver": "Charter enrollment ~15% of APS total; 20+ active charters"
+      },
+      {
+        "dimension": "population_trends",
+        "score": 2.0,
+        "driver": "APS enrollment declined ~8% over 5 years to ~73,000 students"
+      }
+    ],
+    "dimension_table": [
+      {
+        "dimension": "academic_need",
+        "display_name": "Academic Need",
+        "score": 8.0,
+        "weight": 0.1,
+        "confidence": "HIGH",
+        "driver": "District ELA proficiency: 28 \u2192 score 8.0"
+      },
+      {
+        "dimension": "charter_saturation",
+        "display_name": "Charter Saturation",
+        "score": 6.47,
+        "weight": 0.14,
+        "confidence": "MODERATE",
+        "driver": "Charter seat share: 15 \u2192 score 7.0"
+      },
+      {
+        "dimension": "population_trends",
+        "display_name": "Population Trends",
+        "score": 2.0,
+        "weight": 0.12,
+        "confidence": "MODERATE",
+        "driver": "K-12 population trend (5yr): -8 \u2192 score 2.0"
+      },
+      {
+        "dimension": "political_climate",
+        "display_name": "Political Climate",
+        "score": 5.0,
+        "weight": 0.09,
+        "confidence": "MODERATE",
+        "driver": "political climate index: 6 \u2192 score 5.0"
+      },
+      {
+        "dimension": "authorizer_friendliness",
+        "display_name": "Authorizer Friendliness",
+        "score": 6.47,
+        "weight": 0.12,
+        "confidence": "MODERATE",
+        "driver": "num accessible authorizers: 2 \u2192 score 7.0"
+      },
+      {
+        "dimension": "facilities_feasibility",
+        "display_name": "Facilities Feasibility",
+        "score": 5.0,
+        "weight": 0.11,
+        "confidence": "MODERATE",
+        "driver": "facilities feasibility index: 5 \u2192 score 5.0"
+      },
+      {
+        "dimension": "replication_feasibility",
+        "display_name": "Replication Feasibility",
+        "score": 5.0,
+        "weight": 0.07,
+        "confidence": "MODERATE",
+        "driver": "replication readiness index: 5 \u2192 score 5.0"
+      },
+      {
+        "dimension": "funding_environment",
+        "display_name": "Funding Environment",
+        "score": 5.0,
+        "weight": 0.08,
+        "confidence": "LOW",
+        "driver": "Key fact unavailable \u2014 score estimated from limited data"
+      },
+      {
+        "dimension": "competitive_opportunity",
+        "display_name": "Competitive Opportunity",
+        "score": 6.0,
+        "weight": 0.12,
+        "confidence": "MODERATE",
+        "driver": "demand supply gap index: 6 \u2192 score 6.0"
+      },
+      {
+        "dimension": "operational_complexity",
+        "display_name": "Operational Complexity",
+        "score": 3.0,
+        "weight": 0.05,
+        "confidence": "MODERATE",
+        "driver": "operational complexity index: 7 \u2192 score 3.0"
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "action": "Conduct enrollment feasibility study before committing capital; model assumes flat or declining K-12 population through 2028.",
+      "rationale": "APS enrollment declined 8% over five years to 73,000 students. Charter share is 15%, but shrinking denominator limits absolute growth potential despite academic need.",
+      "evidence_summary": "73,000 APS students, down 8% in 5 years; 20+ charters already operating.",
+      "primary_risk": "Market contraction accelerates faster than charter conversion rate, leaving new schools undersized",
+      "confidence": "HIGH",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_population_trends_001",
+        "dp_nm-albuquerque_population_trends_002",
+        "dp_nm-albuquerque_charter_saturation_001",
+        "dp_nm-albuquerque_charter_saturation_002"
+      ]
+    },
+    {
+      "action": "Pursue NM PED authorization pathway; prioritize operational excellence given moderate-to-strict renewal posture and high-complexity student demographics.",
+      "rationale": "Two authorizers accessible (NM PED, APS district). NM PEC renewal posture is moderate to strict. APS serves 18% ELL population; operational complexity index is 7.",
+      "evidence_summary": "Dual authorizer access; moderate renewal standards; 18% ELL, high IEP/poverty rates.",
+      "primary_risk": "Underestimating operational lift required to serve high-need population at quality threshold for renewal",
+      "confidence": "MODERATE",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_authorizer_friendliness_001",
+        "dp_nm-albuquerque_authorizer_friendliness_002",
+        "dp_nm-albuquerque_operational_complexity_001",
+        "dp_nm-albuquerque_operational_complexity_002"
+      ]
+    }
+  ],
+  "quick_reads": {
+    "facilities": "Charters cannot access APS facilities. Commercial space is available but operators must secure private leases. Facilities feasibility rated workable (index 5), indicating moderate availability without public building access. Budget for full private facility costs from day one.",
+    "political": "APS board composition is mixed; some pro-charter members elected in 2023. Political climate index is 6 (mixed-lean-positive). Environment is neither hostile nor enthusiastically supportive. Expect case-by-case evaluation rather than systematic opposition or promotion.",
+    "authorizer": "Two authorizers: NM PED and APS district. NM Public Education Commission (PEC) maintains moderate-to-strict renewal posture. Dual pathway provides optionality but does not guarantee approval. Prepare for rigorous application and accountability standards from either authorizer."
+  },
+  "schools_to_watch": [],
+  "needs_verification": [],
+  "sources": [
+    {
+      "ref_num": 1,
+      "source_class": "PED_DATA",
+      "title": "New Mexico PED District Report Cards",
+      "url": "https://webnew.ped.state.nm.us/bureaus/accountability/school-district-reports/",
+      "date": "2024-09-01",
+      "confidence": "HIGH"
+    },
+    {
+      "ref_num": 2,
+      "source_class": "PED_DATA",
+      "title": "NM PED Charter Schools Directory",
+      "url": "https://webnew.ped.state.nm.us/bureaus/options-for-parents/charter-schools/",
+      "date": "2024-08-01",
+      "confidence": "HIGH"
+    },
+    {
+      "ref_num": 3,
+      "source_class": "PED_DATA",
+      "title": "NM PED Historical Enrollment Data",
+      "url": "https://webnew.ped.state.nm.us/bureaus/accountability/",
+      "date": "2024-09-01",
+      "confidence": "MODERATE"
+    },
+    {
+      "ref_num": 4,
+      "source_class": "MEDIA",
+      "title": "Albuquerque Journal Education Coverage",
+      "url": "https://www.abqjournal.com/news/education/",
+      "date": "2024-11-01",
+      "confidence": "MODERATE"
+    },
+    {
+      "ref_num": 5,
+      "source_class": "AUTHORIZER_DOC",
+      "title": "NM Public Education Commission Reports",
+      "url": "https://www.ped.nm.gov/pec/",
+      "date": "2024-06-01",
+      "confidence": "MODERATE"
+    },
+    {
+      "ref_num": 6,
+      "source_class": "AUTHORIZER_DOC",
+      "title": "APS Facilities Policy",
+      "url": "https://www.aps.edu/",
+      "date": "2024-01-01",
+      "confidence": "HIGH"
+    }
+  ],
+  "audit_passed": true,
+  "audit_flags": [],
+  "disclosure": "Generated with Claude assistance (s3 structured extraction, s6 synthesis). All facts sourced from public data as cited. Requires human review and verification before external use or strategic decision-making."
+}

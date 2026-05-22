@@ -179,16 +179,19 @@ def call_claude(
 
 def _parse_json_response(text: str) -> tuple[Optional[dict], Optional[str]]:
     """
-    Parse JSON from model output. Handles common wrapping patterns.
+    Parse JSON from model output. Handles markdown fencing and trailing artifacts.
     Returns (parsed_dict_or_None, error_message_or_None).
     """
-    # Strip Markdown code fences if present
     cleaned = text.strip()
+
+    # Strip leading ```json / ``` fence by skipping the opening fence line entirely,
+    # regardless of language tag or whether the closing fence is present (truncated responses).
     if cleaned.startswith("```"):
-        lines = cleaned.split("\n")
-        # Remove first and last fence lines
-        inner = "\n".join(lines[1:-1]) if lines[-1].strip() == "```" else "\n".join(lines[1:])
-        cleaned = inner.strip()
+        first_newline = cleaned.index("\n") if "\n" in cleaned else len(cleaned)
+        cleaned = cleaned[first_newline:].strip()
+        # Strip trailing ``` fence if the response was not truncated
+        if cleaned.endswith("```"):
+            cleaned = cleaned[:-3].rstrip()
 
     try:
         return json.loads(cleaned), None
@@ -199,7 +202,12 @@ def _parse_json_response(text: str) -> tuple[Optional[dict], Optional[str]]:
             end = cleaned.rindex("}") + 1
             return json.loads(cleaned[start:end]), None
         except (ValueError, json.JSONDecodeError):
-            return None, f"JSON parse failed: {str(e)[:100]}. Raw: {text[:200]}"
+            position = f"line {e.lineno} col {e.colno} (char {e.pos})"
+            preview = cleaned[:500]
+            return None, (
+                f"JSON parse failed at {position}: {e.msg}. "
+                f"Cleaned preview: {preview!r}"
+            )
 
 
 # ─────────────────────────────────────────────

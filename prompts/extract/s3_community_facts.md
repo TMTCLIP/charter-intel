@@ -81,13 +81,13 @@ Extract as many of the following facts as you can find. For each fact found, cre
 - `school_board_charter_orientation` — text description
 - `recent_anti_charter_legislation` — true|false if any recent hostile legislation
 
-**REQUIRED fact_keys for Authorizer Dynamics:**
+**REQUIRED fact_keys for authorizer_friendliness:**
 - `num_accessible_authorizers` — count of authorizers with jurisdiction here
 - `authorizer_approval_rate_pct` — most recent available approval rate
 - `authorizer_renewal_posture` — STRICT|MODERATE|PERMISSIVE (qualitative)
 - `authorizer_known_preferences` — text description of known preferences/criteria
 
-**REQUIRED fact_keys for Facilities:**
+**REQUIRED fact_keys for facilities_feasibility:**
 - `facilities_feasibility_index` — integer 1–9 per rubric:
   NO_VIABLE_PATH=1, SEVERELY_CONSTRAINED=2, CONSTRAINED=3, MODERATELY_CONSTRAINED=4,
   WORKABLE=5, REASONABLE=6, FAVORABLE=7, STRONG=8, EXCEPTIONAL=9
@@ -95,14 +95,14 @@ Extract as many of the following facts as you can find. For each fact found, cre
 - `public_facility_access` — true|false — can charters access public buildings
 - `no_public_facility_access` — true|false
 
-**REQUIRED fact_keys for Replication:**
+**REQUIRED fact_keys for replication_feasibility:**
 - `replication_readiness_index` — integer 1–9:
   NO_OPERATORS_INTERESTED=1, EARLY_EXPLORATION=3, OPERATOR_INTEREST=5,
   OPERATOR_COMMITTED=7, PROVEN_LOCAL_OPERATOR=9
 - `existing_operator_footprint` — description of operators present
 - `talent_pipeline_strength` — integer 1–9 if assessable
 
-**REQUIRED fact_keys for Funding:**
+**REQUIRED fact_keys for funding_environment:**
 - `per_pupil_revenue_vs_state_avg_pct` — community per-pupil vs. state average (% diff)
 - `csp_active_in_community` — true|false — any active CSP grants
 - `philanthropic_activity_level` — HIGH|MODERATE|LOW|NONE
@@ -122,6 +122,13 @@ Extract as many of the following facts as you can find. For each fact found, cre
 
 ---
 
+BREVITY RULES — FOLLOW EXACTLY:
+- claim: ≤60 characters. State the fact only. No narrative.
+- confidence_rationale: null unless confidence is LOW or NONE.
+- needs_verification_reason: null if in_main_analysis=true; otherwise ≤8 words.
+- not_found: include only fact_keys critical to scoring; omit trivial gaps.
+- Limit to 1–2 facts per dimension. You MUST attempt all 10 dimensions — include at least one fact or one not_found entry per dimension.
+
 Return ONLY this JSON structure:
 
 ```json
@@ -137,7 +144,7 @@ Return ONLY this JSON structure:
       "state": "{{STATE_CODE}}",
       "dimension": "<dimension_name>",
       "fact_key": "<fact_key>",
-      "claim": "<complete sentence stating the fact>",
+      "claim": "<fact in ≤60 chars>",
       "value": <number, string, boolean, or null>,
       "value_unit": "<unit or null>",
       "value_year": <integer or null>,
@@ -146,21 +153,21 @@ Return ONLY this JSON structure:
       "source_title": "<title or null>",
       "source_date": "<YYYY-MM-DD or null>",
       "confidence": "<HIGH|MODERATE|LOW|NONE>",
-      "confidence_rationale": "<null if HIGH, otherwise explain>",
+      "confidence_rationale": "<null unless LOW or NONE>",
       "verification_status": "<VERIFIED|PROVISIONAL|DISPUTED|UNVERIFIED|NOT_FOUND>",
       "bias_flag": null,
       "extracted_by": "claude-sonnet-4-5",
       "extracted_at": "{{TODAY_DATE}}",
       "stage": "s3_fact_extraction",
       "in_main_analysis": <true if VERIFIED or PROVISIONAL and confidence >= MODERATE, else false>,
-      "needs_verification_reason": "<null if in_main_analysis=true, else explain>"
+      "needs_verification_reason": "<null if in_main_analysis=true, else ≤8 words>"
     }
   ],
   "not_found": [
     {
-      "fact_key": "<fact_key that was searched but not found>",
+      "fact_key": "<critical fact_key not found>",
       "search_attempted": true,
-      "resolution_path": "<what source would contain this>"
+      "resolution_path": "<source in ≤8 words>"
     }
   ]
 }
@@ -169,5 +176,4 @@ Return ONLY this JSON structure:
 FINAL REMINDERS:
 - Include only facts you found. Do not include an entry for a fact_key if you have no evidence.
 - Do not set verification_status to VERIFIED unless you have a specific URL.
-- For qualitative index values: always explain the evidence in the claim field.
 - Do not return markdown or prose. JSON only.

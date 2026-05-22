@@ -172,8 +172,13 @@ Generate a brief JSON object with this exact structure:
 ```
 
 FINAL RULES:
-- recommendations: generate 2–3. Each must cite at least 1 supporting_fact_id.
-- schools_to_watch: include only schools you can name from the verified facts or known schools list. If no specific signal exists, leave the array empty.
-- needs_verification: include ALL items from the NEEDS VERIFICATION input, plus any additional gaps you identified in producing this brief.
-- executive_snapshot: write this last. It should synthesize, not introduce.
+- recommendations: generate exactly 2. Each must cite at least 1 supporting_fact_id.
+- recommendations[].rationale: ≤40 words each.
+- recommendations[].evidence_summary: ≤25 words each.
+- quick_reads: each paragraph ≤50 words. Omit if no verified facts exist for that topic.
+- schools_to_watch: leave empty unless a specific school name appears in the verified facts.
+- needs_verification: include items from the NEEDS VERIFICATION input only; omit items with null impact.
+- needs_verification[].resolution_path: ≤10 words each.
+- sources: include only sources cited in the brief body; maximum 6 entries.
+- executive_snapshot: ≤60 words. Write last. Synthesize, do not introduce.
 - Do NOT pad. Short, dense, specific beats long, hedged, generic.

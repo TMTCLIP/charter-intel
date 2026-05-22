@@ -52,7 +52,7 @@ MODE_MODELS = {
 
 MODE_MAX_TOKENS = {
     OutputMode.SNAPSHOT:       600,
-    OutputMode.STRATEGIC_BRIEF: 2000,
+    OutputMode.STRATEGIC_BRIEF: 6000,
     OutputMode.DEEP_DIVE:      6000,
 }
 

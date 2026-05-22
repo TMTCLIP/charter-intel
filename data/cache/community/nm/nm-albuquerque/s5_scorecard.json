@@ -1,0 +1,173 @@
+{
+  "scorecard_id": "sc_nm-albuquerque_growth_2026-05-22",
+  "community_id": "nm-albuquerque",
+  "state": "NM",
+  "preset": "growth",
+  "dimensions": {
+    "academic_need": {
+      "score": 8.0,
+      "weight": 0.1,
+      "weighted_contribution": 0.8,
+      "confidence": "HIGH",
+      "primary_driver": "District ELA proficiency: 28 \u2192 score 8.0",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_academic_need_001",
+        "dp_nm-albuquerque_academic_need_002"
+      ],
+      "used_default": false
+    },
+    "charter_saturation": {
+      "score": 6.47,
+      "weight": 0.14,
+      "weighted_contribution": 0.9058,
+      "confidence": "MODERATE",
+      "primary_driver": "Charter seat share: 15 \u2192 score 7.0",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_charter_saturation_001",
+        "dp_nm-albuquerque_charter_saturation_002"
+      ],
+      "used_default": false
+    },
+    "population_trends": {
+      "score": 2.0,
+      "weight": 0.12,
+      "weighted_contribution": 0.24,
+      "confidence": "MODERATE",
+      "primary_driver": "K-12 population trend (5yr): -8 \u2192 score 2.0",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_population_trends_001",
+        "dp_nm-albuquerque_population_trends_002"
+      ],
+      "used_default": false
+    },
+    "political_climate": {
+      "score": 5.0,
+      "weight": 0.09,
+      "weighted_contribution": 0.45,
+      "confidence": "MODERATE",
+      "primary_driver": "political climate index: 6 \u2192 score 5.0",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_political_climate_001",
+        "dp_nm-albuquerque_political_climate_002"
+      ],
+      "used_default": false
+    },
+    "authorizer_friendliness": {
+      "score": 6.47,
+      "weight": 0.12,
+      "weighted_contribution": 0.7764,
+      "confidence": "MODERATE",
+      "primary_driver": "num accessible authorizers: 2 \u2192 score 7.0",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_authorizer_friendliness_001",
+        "dp_nm-albuquerque_authorizer_friendliness_002"
+      ],
+      "used_default": false
+    },
+    "facilities_feasibility": {
+      "score": 5.0,
+      "weight": 0.11,
+      "weighted_contribution": 0.55,
+      "confidence": "MODERATE",
+      "primary_driver": "facilities feasibility index: 5 \u2192 score 5.0",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_facilities_feasibility_001",
+        "dp_nm-albuquerque_facilities_feasibility_002"
+      ],
+      "used_default": false
+    },
+    "replication_feasibility": {
+      "score": 5.0,
+      "weight": 0.07,
+      "weighted_contribution": 0.35,
+      "confidence": "MODERATE",
+      "primary_driver": "replication readiness index: 5 \u2192 score 5.0",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_replication_feasibility_001",
+        "dp_nm-albuquerque_replication_feasibility_002"
+      ],
+      "used_default": false
+    },
+    "funding_environment": {
+      "score": 5.0,
+      "weight": 0.08,
+      "weighted_contribution": 0.4,
+      "confidence": "LOW",
+      "primary_driver": "Key fact unavailable \u2014 score estimated from limited data",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_funding_environment_001",
+        "dp_nm-albuquerque_funding_environment_002"
+      ],
+      "used_default": true
+    },
+    "competitive_opportunity": {
+      "score": 6.0,
+      "weight": 0.12,
+      "weighted_contribution": 0.72,
+      "confidence": "MODERATE",
+      "primary_driver": "demand supply gap index: 6 \u2192 score 6.0",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_competitive_opportunity_001",
+        "dp_nm-albuquerque_competitive_opportunity_002"
+      ],
+      "used_default": false
+    },
+    "operational_complexity": {
+      "score": 3.0,
+      "weight": 0.05,
+      "weighted_contribution": 0.15,
+      "confidence": "MODERATE",
+      "primary_driver": "operational complexity index: 7 \u2192 score 3.0",
+      "supporting_fact_ids": [
+        "dp_nm-albuquerque_operational_complexity_001",
+        "dp_nm-albuquerque_operational_complexity_002"
+      ],
+      "used_default": false
+    }
+  },
+  "composite_score": 5.34,
+  "composite_score_rounded": 5.3,
+  "tier": "WATCHLIST",
+  "tier_display_label": "WATCHLIST / MONITOR",
+  "override_flags": [],
+  "confidence_overall": "MODERATE",
+  "confidence_by_dimension": {
+    "academic_need": "HIGH",
+    "charter_saturation": "MODERATE",
+    "population_trends": "MODERATE",
+    "political_climate": "MODERATE",
+    "authorizer_friendliness": "MODERATE",
+    "facilities_feasibility": "MODERATE",
+    "replication_feasibility": "MODERATE",
+    "funding_environment": "LOW",
+    "competitive_opportunity": "MODERATE",
+    "operational_complexity": "MODERATE"
+  },
+  "facts_used": [
+    "dp_nm-albuquerque_facilities_feasibility_002",
+    "dp_nm-albuquerque_replication_feasibility_002",
+    "dp_nm-albuquerque_facilities_feasibility_001",
+    "dp_nm-albuquerque_authorizer_friendliness_001",
+    "dp_nm-albuquerque_operational_complexity_001",
+    "dp_nm-albuquerque_political_climate_001",
+    "dp_nm-albuquerque_replication_feasibility_001",
+    "dp_nm-albuquerque_competitive_opportunity_001",
+    "dp_nm-albuquerque_academic_need_001",
+    "dp_nm-albuquerque_competitive_opportunity_002",
+    "dp_nm-albuquerque_population_trends_002",
+    "dp_nm-albuquerque_authorizer_friendliness_002",
+    "dp_nm-albuquerque_political_climate_002",
+    "dp_nm-albuquerque_operational_complexity_002",
+    "dp_nm-albuquerque_academic_need_002",
+    "dp_nm-albuquerque_population_trends_001",
+    "dp_nm-albuquerque_funding_environment_002",
+    "dp_nm-albuquerque_funding_environment_001",
+    "dp_nm-albuquerque_charter_saturation_001",
+    "dp_nm-albuquerque_charter_saturation_002"
+  ],
+  "dimensions_with_missing_data": [
+    "funding_environment"
+  ],
+  "scored_at": "2026-05-22T14:10:23.399535Z",
+  "scoring_version": "1.0"
+}

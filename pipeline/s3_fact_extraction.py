@@ -101,7 +101,7 @@ def run(
         model=config.model_sonnet,
         system="You are a structured data extraction agent. Respond ONLY with valid JSON.",
         user=prompt_text,
-        max_tokens=2000,
+        max_tokens=8192,
         temperature=0.0,
         expect_json=True,
         stage=STAGE_ID,
