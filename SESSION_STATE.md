@@ -1,5 +1,5 @@
 # SESSION STATE — charter-intel
-_Last updated: 2026-05-21_
+_Last updated: 2026-05-22_
 
 ---
 
@@ -69,6 +69,30 @@ tests/fixtures/
 3. Validate `scorecard_riverdale.json` fixture against `scorecard.schema.json`
 4. Run S1/S2 for a real community to populate `data/cache/`
 5. Test `s6_synthesis.py` and `s7_render.py`
+
+---
+
+## Current Transition State
+
+Moving from synthetic pipeline validation to first real NM pilot execution.
+
+Identified blockers for real S3 execution:
+- Python dependencies not installed yet
+- `ANTHROPIC_API_KEY` not configured
+- Missing:
+  - `data/cache/state/nm/s2_state_context.json`
+  - `pipeline/run_s3_pilot.py`
+
+Synthetic pipeline remains green:
+- S3 → S4 → S5 validated
+- 7/7 contract tests passing
+- deterministic scoring preserved
+
+Architectural invariants unchanged:
+- `fact_key` preserved across stages
+- S5 remains deterministic
+- `additionalProperties: false` still enforced
+- no architecture redesigns performed
 
 ---
 
