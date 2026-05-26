@@ -29,6 +29,7 @@ ENVIRONMENT:
 """
 
 import argparse
+import datetime
 import json
 import logging
 import os
@@ -45,6 +46,7 @@ from pipeline import (
 )
 from pipeline import s1_discovery, s2_state_context, s3_fact_extraction
 from pipeline import s4_verification, s5_scoring, s6_synthesis, s7_render
+from pipeline.utils.token_logger import token_logger
 
 logging.basicConfig(
     level=logging.INFO,
@@ -284,10 +286,17 @@ def main():
         logger.error("Specify --community or --all")
         sys.exit(1)
 
+    # ── Token logger initialisation ─────────────────────────────────────────
+    run_id = (
+        f"{config.state.lower()}_{config.preset.value}_"
+        f"{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    )
+    token_logger.set_run_id(run_id)
+
     logger.info(
         f"Running pipeline for {len(communities)} communities in {config.state} "
         f"| preset={config.preset.value} | mode={config.mode.value} "
-        f"| stages={stages_to_run}"
+        f"| stages={stages_to_run} | run_id={run_id}"
     )
 
     # Run pipeline per community
@@ -313,6 +322,10 @@ def main():
         f"  Communities: {len(all_results)} total | {successes} succeeded | {failures} failed\n"
         f"{'='*60}"
     )
+
+    # ── Token usage summary + CSV export ────────────────────────────────────
+    if not config.dry_run:
+        token_logger.finalize()
 
     if failures > 0:
         sys.exit(1)

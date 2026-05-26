@@ -37,6 +37,7 @@ from dataclasses import dataclass, field
 from typing import Any, Optional
 
 import anthropic
+from pipeline.utils.token_logger import token_logger
 
 logger = logging.getLogger(__name__)
 
@@ -145,6 +146,13 @@ def call_claude(
             logger.info(
                 f"[{stage}] [{community_id}] {model} "
                 f"in={tokens_in} out={tokens_out} total={tokens_in + tokens_out}"
+            )
+            token_logger.log_call(
+                stage=stage,
+                model=model,
+                tokens_input=tokens_in,
+                tokens_output=tokens_out,
+                community_id=community_id,
             )
 
             # JSON parsing

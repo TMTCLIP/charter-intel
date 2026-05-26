@@ -1,0 +1,6 @@
+timestamp,run_id,community_id,stage,model,tokens_input,tokens_output,tokens_total,estimated_cost_usd
+2026-05-26T20:13:48Z,nm_growth_20260526_161254,nm-santa-fe,s3_fact_extraction,claude-sonnet-4-5,4336,5062,9398,0.088938
+2026-05-26T20:14:11Z,nm_growth_20260526_161254,nm-santa-fe,s3_fact_extraction_charter_intel,claude-sonnet-4-5,6487,1419,7906,0.040746
+2026-05-26T20:14:19Z,nm_growth_20260526_161254,nm-santa-fe,s4_verification,claude-haiku-4-5-20251001,15218,1000,16218,0.016174
+2026-05-26T20:15:04Z,nm_growth_20260526_161254,nm-santa-fe,s6_synthesis,claude-sonnet-4-5,20325,3003,23328,0.106020
+2026-05-26T20:15:07Z,nm_growth_20260526_161254,nm-santa-fe,s6_synthesis_audit,claude-sonnet-4-5,17296,97,17393,0.053343
