@@ -138,11 +138,11 @@ def run(
     schools = parse_roster(roster_path, state)
     communities = group_by_community(schools, state)
 
-    # --- Apply community filter (if config specifies specific communities) ---
-    if config.communities:
-        communities = [c for c in communities if c.community_id in config.communities]
-
-    output = {
+    # --- Write and cache the FULL unfiltered community list ---
+    # The filter must NOT touch the disk file or cache.  If it did, a
+    # subsequent --all run would read a filtered (possibly empty) list.
+    # The in-memory filter below is applied only to the returned output_data.
+    full_output = {
         "state": state,
         "discovered_at": today_str(),
         "source_file": roster_path,
@@ -151,14 +151,22 @@ def run(
         "communities": [asdict(c) for c in communities]
     }
 
-    # --- Write output ---
     out_path = _output_path(state)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, "w") as f:
-        json.dump(output, f, indent=2)
+        json.dump(full_output, f, indent=2)
 
-    # --- Cache ---
-    cache.set(cache_key, output)
+    cache.set(cache_key, full_output)
+
+    # --- Apply community filter in-memory only (does not affect disk or cache) ---
+    if config.communities:
+        communities = [c for c in communities if c.community_id in config.communities]
+
+    output = {
+        **full_output,
+        "total_communities": len(communities),
+        "communities": [asdict(c) for c in communities],
+    }
 
     duration = _elapsed(start)
     return StageResult(
