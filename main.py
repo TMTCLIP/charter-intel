@@ -35,6 +35,9 @@ import os
 import sys
 import time
 
+from dotenv import load_dotenv
+load_dotenv()  # loads .env into os.environ before any pipeline code runs
+
 from pipeline import (
     OperatorPreset, OutputMode, PipelineConfig,
     StageResult, StageStatus, STAGE_ORDER,

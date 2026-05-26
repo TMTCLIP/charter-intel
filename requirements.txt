@@ -5,6 +5,9 @@
 # Anthropic SDK
 anthropic>=0.40.0
 
+# Environment variable loading from .env
+python-dotenv>=1.0.0
+
 # Config parsing
 pyyaml>=6.0.1
 
