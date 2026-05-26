@@ -36,7 +36,7 @@ import sys
 import time
 
 from dotenv import load_dotenv
-load_dotenv()  # loads .env into os.environ before any pipeline code runs
+load_dotenv(override=True)  # loads .env → always overrides any empty shell var
 
 from pipeline import (
     OperatorPreset, OutputMode, PipelineConfig,
