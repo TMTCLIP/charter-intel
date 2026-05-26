@@ -153,6 +153,9 @@ def run(
         brief_json, audit_warnings = _apply_audit(brief_json, audit_result)
         warnings.extend(audit_warnings)
 
+    # --- Inject charter intelligence from S3 (bypasses scoring / audit) ---
+    brief_json = _inject_charter_intel(brief_json, state, community_id)
+
     # --- Validate schema ---
     brief_json["generated_at"] = timestamp_now()
     validation = validate_against_schema(brief_json, "schemas/brief.schema.json")
@@ -376,3 +379,42 @@ def _output_path(state: str, community_id: str, preset: str, mode: int) -> str:
 def _today() -> str:
     import datetime
     return datetime.date.today().isoformat()
+
+
+# ─────────────────────────────────────────────
+# CHARTER INTELLIGENCE INJECTION
+# ─────────────────────────────────────────────
+
+def _inject_charter_intel(brief_json: dict, state: str, community_id: str) -> dict:
+    """
+    Load charter_schools and local_authorizers from the S3 raw cache and
+    append them to the brief JSON.
+
+    These sections are directory data fetched and enriched during S3; they
+    bypass S4 scoring rules entirely. S6 simply copies them into the output
+    so S7 can render them as dedicated sections.
+
+    Falls back to empty lists if the S3 cache file is missing or the keys
+    are absent (e.g. pipeline ran before this feature was added).
+    """
+    s3_path = (
+        f"data/cache/community/{state.lower()}/{community_id}/s3_facts_raw.json"
+    )
+    charter_schools: list[dict] = []
+    local_authorizers: list[dict] = []
+
+    if os.path.exists(s3_path):
+        try:
+            with open(s3_path) as f:
+                s3_raw = json.load(f)
+            charter_schools   = s3_raw.get("charter_schools",   []) or []
+            local_authorizers = s3_raw.get("local_authorizers", []) or []
+        except Exception as exc:
+            import logging
+            logging.getLogger(__name__).warning(
+                "[%s] Could not load charter intel from S3 cache: %s", community_id, exc
+            )
+
+    brief_json["top_charter_schools"] = charter_schools
+    brief_json["local_authorizers"]   = local_authorizers
+    return brief_json

@@ -167,6 +167,48 @@ def _render_fallback(brief: dict) -> str:
                 "",
             ]
 
+    # Top Charter Schools
+    schools = brief.get("top_charter_schools", [])
+    if schools:
+        lines += [
+            "## Top 5 Charter Schools in Market",
+            "",
+            "> ⚠️ Contact information requires human verification before external use.",
+            "",
+        ]
+        for i, s in enumerate(schools, 1):
+            ela  = f"{s['ela_proficiency_pct']}%" if s.get("ela_proficiency_pct") is not None else "—"
+            math = f"{s['math_proficiency_pct']}%" if s.get("math_proficiency_pct") is not None else "—"
+            lines += [
+                f"**{i}. {s.get('school_name', '—')}** "
+                f"| {s.get('grades_served', '—')} "
+                f"| {s.get('academic_model', '—')} "
+                f"| ELA {ela} / Math {math}",
+                s.get("notable_note", ""),
+                f"*{s.get('contact_phone', '')}  {s.get('contact_email', '')}*  "
+                f"*Confidence: {s.get('confidence', '—')}*",
+                "",
+            ]
+
+    # Local Authorizers
+    authorizers = brief.get("local_authorizers", [])
+    if authorizers:
+        lines += [
+            "## Local Authorizers",
+            "",
+            "> ⚠️ Contact information requires human verification before external use.",
+            "",
+        ]
+        for a in authorizers:
+            lines += [
+                f"**{a.get('authorizer_name', '—')}** ({a.get('type', '—')})"
+                f" — {a.get('num_schools_in_community', '?')} schools in community",
+                a.get("reputation_note", ""),
+                f"*{a.get('contact_phone', '')}  {a.get('contact_email', '')}*  "
+                f"*Confidence: {a.get('confidence', '—')}*",
+                "",
+            ]
+
     # Needs Verification
     nv = brief.get("needs_verification", [])
     if nv:

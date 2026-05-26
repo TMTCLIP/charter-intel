@@ -29,6 +29,8 @@ from pipeline.utils.schema_validator import validate_against_schema
 from pipeline.utils.ped_fetcher import get_district_data
 from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data
 from pipeline.utils.acs_fetcher  import get_district_data as get_acs_district_data
+from pipeline.utils.charter_schools_fetcher import get_community_charter_schools
+from pipeline.utils.authorizers_fetcher     import get_community_authorizers
 
 STAGE_ID = "s3_fact_extraction"
 
@@ -636,6 +638,23 @@ def run(
 
     # ── Inject ACS fact datapoints (ell_pct → operational_complexity) ────────
     _inject_acs_facts(facts_output, acs_data, community_id, state)
+
+    # ── Charter schools + authorizer intelligence ─────────────────────────────
+    # CSV-sourced base data → Claude enrichment (web search or knowledge fallback)
+    csv_schools     = get_community_charter_schools(known_schools, roster_source_file)
+    csv_authorizers = get_community_authorizers(known_schools, roster_source_file)
+
+    charter_intel = _fetch_charter_intel(
+        community_id=community_id,
+        community_name=community_name,
+        state=state,
+        state_name=state_context.get("state_name", state),
+        csv_schools=csv_schools,
+        csv_authorizers=csv_authorizers,
+        config=config,
+    )
+    facts_output["charter_schools"]  = charter_intel.get("top_charter_schools", csv_schools)
+    facts_output["local_authorizers"] = charter_intel.get("local_authorizers", csv_authorizers)
     # ─────────────────────────────────────────────────────────────────────────
 
     out_path = f"data/cache/community/{state.lower()}/{community_id}/s3_facts_raw.json"
@@ -809,6 +828,95 @@ def _inject_acs_facts(
             "[%s] Injected %d ACS fact datapoints (ell_pct → operational_complexity)",
             community_id, injected,
         )
+
+
+def _fetch_charter_intel(
+    community_id: str,
+    community_name: str,
+    state: str,
+    state_name: str,
+    csv_schools: list[dict],
+    csv_authorizers: list[dict],
+    config: "PipelineConfig",
+) -> dict:
+    """
+    Call Claude to enrich CSV-sourced charter school and authorizer data.
+
+    Depth routing:
+      fast     — no web search; Claude uses training knowledge; all items LOW confidence
+      standard — web search enabled; Claude looks up websites, profiles, contacts
+      deep     — same as standard (web search enabled)
+
+    Returns dict with keys:
+      top_charter_schools  — list of up to 5 enriched school dicts
+      local_authorizers    — list of enriched authorizer dicts
+
+    On any failure: returns empty dict (caller falls back to raw CSV data).
+    """
+    use_web = config.depth in ("standard", "deep")
+
+    if use_web:
+        depth_instruction = (
+            "You have web search available. Use it to look up school websites, "
+            "academic models, proficiency data, and authorizer contact information. "
+            "Set source_class='WEB_SEARCH' and confidence='HIGH' or 'MODERATE' for "
+            "items you verified online. Set source_class='CLAUDE_KNOWLEDGE' and "
+            "confidence='LOW' for items sourced only from training knowledge."
+        )
+    else:
+        depth_instruction = (
+            "You do NOT have web search. Use your training knowledge only. "
+            "Set source_class='CLAUDE_KNOWLEDGE' and confidence='LOW' on EVERY item. "
+            "Do not invent contact information — set contact fields to null if unknown."
+        )
+
+    try:
+        prompt_text = load_prompt("prompts/extract/s3_charter_intel.md", {
+            "COMMUNITY_NAME":      community_name,
+            "STATE_NAME":          state_name,
+            "STATE_CODE":          state,
+            "TODAY_DATE":          today_str(),
+            "CSV_SCHOOLS_JSON":    json.dumps(csv_schools,     indent=2),
+            "CSV_AUTHORIZERS_JSON": json.dumps(csv_authorizers, indent=2),
+            "DEPTH_INSTRUCTION":   depth_instruction,
+        })
+
+        system = (
+            "You are a charter school market researcher. "
+            "Respond ONLY with valid JSON. No markdown fences, no preamble."
+        )
+
+        result = call_claude(
+            model=config.model_sonnet,
+            system=system,
+            user=prompt_text,
+            max_tokens=4096,
+            temperature=0.3,
+            expect_json=True,
+            use_web_search=use_web,
+            stage=f"{STAGE_ID}_charter_intel",
+            community_id=community_id,
+        )
+
+        if result.parse_error:
+            logger.warning(
+                "[%s] Charter intel JSON parse failed: %s", community_id, result.parse_error
+            )
+            return {}
+
+        data = result.parsed_json or {}
+        logger.info(
+            "[%s] Charter intel: %d schools, %d authorizers (web_search=%s)",
+            community_id,
+            len(data.get("top_charter_schools", [])),
+            len(data.get("local_authorizers", [])),
+            use_web,
+        )
+        return data
+
+    except Exception as exc:
+        logger.warning("[%s] Charter intel fetch failed (non-fatal): %s", community_id, exc)
+        return {}
 
 
 def _upgrade_roster_derived_facts(facts: list[dict], has_roster: bool) -> list[dict]:

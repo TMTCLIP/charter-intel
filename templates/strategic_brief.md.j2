@@ -42,6 +42,65 @@ No override flags triggered.
 
 ---
 
+## Top 5 Charter Schools in Market
+
+{% if brief.top_charter_schools %}
+> ⚠️ **Contact information requires human verification before external use.**
+
+{% for school in brief.top_charter_schools %}
+### {{ loop.index }}. {{ school.school_name }}
+
+| Field | Value |
+|---|---|
+| Grades | {{ school.grades_served or "—" }} |
+| Academic Model | {{ school.academic_model or "—" }} |
+| Authorizer | {{ school.authorizer or "—" }} |
+| ELA Proficiency | {% if school.ela_proficiency_pct is not none %}{{ school.ela_proficiency_pct }}%{% if school.proficiency_year %} ({{ school.proficiency_year }}){% endif %}{% else %}—{% endif %} |
+| Math Proficiency | {% if school.math_proficiency_pct is not none %}{{ school.math_proficiency_pct }}%{% if school.proficiency_year %} ({{ school.proficiency_year }}){% endif %}{% else %}—{% endif %} |
+| Website | {% if school.website %}{{ school.website }}{% else %}—{% endif %} |
+| Phone | {{ school.contact_phone or "—" }} |
+| Email | {{ school.contact_email or "—" }} |
+
+{{ school.notable_note or "" }}
+
+*Confidence: {{ school.confidence }} · Source: {{ school.source_class }}*
+
+{% endfor %}
+{% else %}
+*No charter school data available for this community.*
+{% endif %}
+
+---
+
+## Local Authorizers
+
+{% if brief.local_authorizers %}
+> ⚠️ **Contact information requires human verification before external use.**
+
+{% for auth in brief.local_authorizers %}
+### {{ auth.authorizer_name }}
+
+| Field | Value |
+|---|---|
+| Type | {{ auth.type or "—" }} |
+| Active charters in NM | {% if auth.num_charters_authorized_nm is not none %}{{ auth.num_charters_authorized_nm }}{% else %}—{% endif %} |
+| Active charters in community | {{ auth.num_schools_in_community or "—" }} |
+| Primary contact | {{ auth.primary_contact_name or "—" }} |
+| Phone | {{ auth.contact_phone or "—" }} |
+| Email | {{ auth.contact_email or "—" }} |
+| Website | {% if auth.website %}{{ auth.website }}{% else %}—{% endif %} |
+
+{{ auth.reputation_note or "" }}
+
+*Confidence: {{ auth.confidence }} · Source: {{ auth.source_class }}*
+
+{% endfor %}
+{% else %}
+*No authorizer data available for this community.*
+{% endif %}
+
+---
+
 ## Recommendations
 
 {% for rec in brief.recommendations %}
