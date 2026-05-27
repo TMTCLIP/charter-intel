@@ -16,7 +16,8 @@ from typing import Optional
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from pipeline import PipelineConfig, StageResult, StageStatus, today_str
+from pipeline import PipelineConfig, StageResult, StageStatus, timestamp_now, today_str
+from pipeline.utils.token_logger import token_logger
 
 STAGE_ID = "s7_render"
 
@@ -38,6 +39,7 @@ def run(
     state: str,
     config: PipelineConfig,
     previous_result: Optional[StageResult] = None,
+    warn_lines: Optional[list[str]] = None,
     **kwargs
 ) -> StageResult:
     start = time.time()
@@ -92,7 +94,15 @@ def run(
     html_template_path = os.path.join("templates", html_template_name)
 
     if os.path.exists(html_template_path):
-        rendered_html = env.get_template(html_template_name).render(brief=brief)
+        token_rows = token_logger.get_community_summary(community_id)
+        debug = {
+            "run_id": token_logger.run_id,
+            "timestamp": timestamp_now(),
+            "depth": config.depth,
+            "token_rows": token_rows,
+            "warn_lines": warn_lines or [],
+        }
+        rendered_html = env.get_template(html_template_name).render(brief=brief, debug=debug)
         html_filename = f"{community_id}_{config.preset.value}_mode{config.mode.value}.html"
         html_out_path = os.path.join(out_dir, html_filename)
         with open(html_out_path, "w") as f:

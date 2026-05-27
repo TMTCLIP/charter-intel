@@ -218,6 +218,30 @@ class TokenLogger:
         print(f"  NOTE: Does not include S2 cache-hits (state context reused).")
         print(f"{'='*72}\n")
 
+    @property
+    def run_id(self) -> str:
+        return self._run_id
+
+    def get_community_summary(self, community_id: str) -> list[dict]:
+        """Return per-stage token summary for one community, sorted by cost desc."""
+        by_stage: dict[str, dict] = {}
+        for r in self._records:
+            if r.community_id != community_id:
+                continue
+            if r.stage not in by_stage:
+                by_stage[r.stage] = {
+                    "stage": r.stage,
+                    "model": r.model,
+                    "tokens_input": 0,
+                    "tokens_output": 0,
+                    "cost": 0.0,
+                }
+            agg = by_stage[r.stage]
+            agg["tokens_input"] += r.tokens_input
+            agg["tokens_output"] += r.tokens_output
+            agg["cost"] += r.estimated_cost_usd
+        return sorted(by_stage.values(), key=lambda x: x["cost"], reverse=True)
+
     def finalize(self, run_id: Optional[str] = None) -> None:
         """
         Write CSV and print summary. Call once from main.py at end of run.

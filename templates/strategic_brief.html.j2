@@ -19,6 +19,30 @@
     blockquote { border-left: 4px solid #e67e22; margin: 1em 0; padding: 0.5em 1em; background: #fdf6ec; }
     .meta { color: #555; font-size: 0.92em; }
     .disclosure { color: #666; font-size: 0.88em; font-style: italic; margin-top: 2em; }
+    @media screen {
+      .debug-section { margin-top: 3em; padding-top: 1em; border-top: 2px dashed #bbb; }
+      .debug-section details > summary {
+        cursor: pointer; color: #888; font-size: 0.82em;
+        font-family: monospace; user-select: none; list-style: none;
+      }
+      .debug-section details > summary::before { content: "▶ "; }
+      .debug-section details[open] > summary::before { content: "▼ "; }
+      .debug-section details[open] > summary { margin-bottom: 0.8em; }
+      .debug-meta { font-size: 0.8em; color: #999; font-family: monospace; margin: 0.4em 0; }
+      .debug-section table { font-size: 0.8em; color: #777; margin: 0.6em 0; }
+      .debug-section th { background: #f8f8f8; color: #666; font-weight: normal; }
+      .debug-section td { color: #777; }
+      .debug-section td:nth-child(3),
+      .debug-section td:nth-child(4),
+      .debug-section td:nth-child(5) { text-align: right; }
+      .debug-warn { font-size: 0.78em; color: #a05000; font-family: monospace;
+                    margin: 0.6em 0; padding: 0; list-style: none; }
+      .debug-warn li { margin-bottom: 0.25em; }
+      .debug-empty { font-size: 0.8em; color: #aaa; font-style: italic; }
+    }
+    @media print {
+      .debug-section { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -146,6 +170,54 @@
 {% endif %}
 
 <p class="disclosure">{{ brief.disclosure }}</p>
+
+{% if debug is defined %}
+<div class="debug-section">
+  <details>
+    <summary>Pipeline Debug Log</summary>
+    <p class="debug-meta">Run ID: {{ debug.run_id }}</p>
+    <p class="debug-meta">Timestamp: {{ debug.timestamp }}</p>
+    <p class="debug-meta">Depth: {{ debug.depth }}</p>
+
+    <p class="debug-meta"><strong>Token Usage</strong></p>
+    {% if debug.token_rows %}
+    <table>
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>Model</th>
+          <th>Tokens In</th>
+          <th>Tokens Out</th>
+          <th>Est. Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in debug.token_rows %}
+        <tr>
+          <td>{{ row.stage }}</td>
+          <td>{{ row.model }}</td>
+          <td>{{ "{:,}".format(row.tokens_input) }}</td>
+          <td>{{ "{:,}".format(row.tokens_output) }}</td>
+          <td>${{ "%.4f"|format(row.cost) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+    <p class="debug-empty">No API calls this run.</p>
+    {% endif %}
+
+    {% if debug.warn_lines %}
+    <p class="debug-meta"><strong>Warnings &amp; Errors</strong></p>
+    <ul class="debug-warn">
+      {% for line in debug.warn_lines %}
+      <li>{{ line | e }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </details>
+</div>
+{% endif %}
 
 </body>
 </html>
