@@ -242,6 +242,21 @@ class TokenLogger:
             agg["cost"] += r.estimated_cost_usd
         return sorted(by_stage.values(), key=lambda x: x["cost"], reverse=True)
 
+    def print_scan_summary(self, community_count: int) -> None:
+        """Print compact scan mode cost summary after a statewide scan run."""
+        total_cost   = sum(r.estimated_cost_usd for r in self._records)
+        total_tokens = sum(r.tokens_total        for r in self._records)
+        avg_cost     = total_cost / community_count if community_count > 0 else 0.0
+
+        print(f"\n{'='*50}")
+        print(f"  SCAN MODE COST SUMMARY")
+        print(f"{'='*50}")
+        print(f"  Cities:         {community_count}")
+        print(f"  Total tokens:   {total_tokens:,}")
+        print(f"  Total cost:     ${total_cost:.2f}")
+        print(f"  Avg cost/city:  ${avg_cost:.2f}")
+        print(f"{'='*50}\n")
+
     def finalize(self, run_id: Optional[str] = None) -> None:
         """
         Write CSV and print summary. Call once from main.py at end of run.

@@ -22,7 +22,7 @@ from typing import Optional
 
 logger = logging.getLogger(__name__)
 
-from pipeline import PipelineConfig, StageResult, StageStatus, today_str
+from pipeline import PipelineConfig, StageResult, StageStatus, OutputMode, today_str
 from pipeline.utils.api_client import call_claude, load_prompt
 from pipeline.utils.cache import CacheManager
 from pipeline.utils.schema_validator import validate_against_schema
@@ -682,21 +682,30 @@ def run(
     _inject_acs_population_facts(facts_output, acs_pop_data, community_id, state)
 
     # ── Charter schools + authorizer intelligence ─────────────────────────────
-    # CSV-sourced base data → Claude enrichment (web search or knowledge fallback)
-    csv_schools     = get_community_charter_schools(known_schools, roster_source_file)
-    csv_authorizers = get_community_authorizers(known_schools, roster_source_file)
+    # Scan mode skips both fetchers: charter_intel feeds brief narrative only and
+    # does not contribute to any scoring dimension.  Cost: ~$0.05/city saved.
+    if config.mode == OutputMode.SCAN:
+        logger.info(
+            "[%s] Scan mode — charter_intel and authorizer fetchers intentionally skipped",
+            community_id,
+        )
+        facts_output["charter_schools"]  = []
+        facts_output["local_authorizers"] = []
+    else:
+        csv_schools     = get_community_charter_schools(known_schools, roster_source_file)
+        csv_authorizers = get_community_authorizers(known_schools, roster_source_file)
 
-    charter_intel = _fetch_charter_intel(
-        community_id=community_id,
-        community_name=community_name,
-        state=state,
-        state_name=state_context.get("state_name", state),
-        csv_schools=csv_schools,
-        csv_authorizers=csv_authorizers,
-        config=config,
-    )
-    facts_output["charter_schools"]  = charter_intel.get("top_charter_schools", csv_schools)
-    facts_output["local_authorizers"] = charter_intel.get("local_authorizers", csv_authorizers)
+        charter_intel = _fetch_charter_intel(
+            community_id=community_id,
+            community_name=community_name,
+            state=state,
+            state_name=state_context.get("state_name", state),
+            csv_schools=csv_schools,
+            csv_authorizers=csv_authorizers,
+            config=config,
+        )
+        facts_output["charter_schools"]  = charter_intel.get("top_charter_schools", csv_schools)
+        facts_output["local_authorizers"] = charter_intel.get("local_authorizers", csv_authorizers)
     # ─────────────────────────────────────────────────────────────────────────
 
     out_path = f"data/cache/community/{state.lower()}/{community_id}/s3_facts_raw.json"

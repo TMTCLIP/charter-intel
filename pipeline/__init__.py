@@ -53,7 +53,7 @@ class SourceClass(str, Enum):
 
 
 class OutputMode(int, Enum):
-    SNAPSHOT       = 1
+    SCAN           = 1
     STRATEGIC_BRIEF = 2
     DEEP_DIVE      = 3
 

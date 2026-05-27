@@ -45,19 +45,16 @@ STAGE_ID = "s6_synthesis"
 # ─────────────────────────────────────────────
 
 MODE_MODELS = {
-    OutputMode.SNAPSHOT:       "sonnet",
     OutputMode.STRATEGIC_BRIEF: "sonnet",
     OutputMode.DEEP_DIVE:      "opus",
 }
 
 MODE_MAX_TOKENS = {
-    OutputMode.SNAPSHOT:       600,
     OutputMode.STRATEGIC_BRIEF: 6000,
     OutputMode.DEEP_DIVE:      6000,
 }
 
 MODE_PROMPTS = {
-    OutputMode.SNAPSHOT:       "prompts/synthesize/s6_mode1_snapshot.md",
     OutputMode.STRATEGIC_BRIEF: "prompts/synthesize/s6_mode2_strategic_brief.md",
     OutputMode.DEEP_DIVE:      "prompts/synthesize/s6_mode3_deep_dive.md",
 }
@@ -87,6 +84,10 @@ def run(
             stage_id=STAGE_ID, community_id=community_id, state=state,
             status=StageStatus.ERROR, errors=load_errors
         )
+
+    # --- Scan mode: single Haiku call, no audit ---
+    if config.mode == OutputMode.SCAN:
+        return _run_scan_synthesis(community_id, state, config, scorecard, start, warnings)
 
     # --- Check synthesis cache ---
     cache = CacheManager(config)
@@ -390,9 +391,108 @@ def _output_path(state: str, community_id: str, preset: str, mode: int) -> str:
             f"s6_brief_{preset}_mode{mode}.json")
 
 
+def _scan_output_path(state: str, community_id: str, preset: str) -> str:
+    return (f"data/cache/synthesis/{state.lower()}/{community_id}/"
+            f"s6_scan_{preset}.json")
+
+
 def _today() -> str:
     import datetime
     return datetime.date.today().isoformat()
+
+
+# ─────────────────────────────────────────────
+# SCAN MODE SYNTHESIS (mode 1)
+# ─────────────────────────────────────────────
+
+def _run_scan_synthesis(
+    community_id: str,
+    state: str,
+    config: PipelineConfig,
+    scorecard: dict,
+    start: float,
+    warnings: list[str],
+) -> StageResult:
+    """Lean Haiku synthesis for scan mode.
+
+    Replaces the full brief generation + audit with a single Haiku call that
+    produces only the fields needed for the comparison table.  Skips S6 synthesis
+    cache key used by brief mode so mode-1 and mode-2 caches never collide.
+    """
+    cache = CacheManager(config)
+    cache_key = (f"synthesis/{state.lower()}/{community_id}/"
+                 f"s6_scan_{config.preset.value}.json")
+
+    if config.cache_enabled and not config.force_refresh:
+        cached = cache.get(cache_key)
+        if cached:
+            return StageResult(
+                stage_id=STAGE_ID, community_id=community_id, state=state,
+                status=StageStatus.SUCCESS, output_data=cached,
+                cache_hit=True
+            )
+
+    community_name = community_id.split("-", 1)[1].replace("-", " ").title()
+
+    prompt_text = load_prompt("prompts/synthesize/s6_mode1_scan.md", {
+        "COMMUNITY_NAME": community_name,
+        "COMMUNITY_ID":   community_id,
+        "SCORECARD_JSON": json.dumps(scorecard, indent=2),
+    })
+
+    result = call_claude(
+        model=config.model_haiku,
+        system=(
+            "You are a charter school market analyst. "
+            "Respond ONLY with valid JSON. No markdown fences, no preamble."
+        ),
+        user=prompt_text,
+        max_tokens=300,
+        temperature=0.1,
+        expect_json=True,
+        stage=STAGE_ID,
+        community_id=community_id,
+    )
+
+    if result.parse_error:
+        return StageResult(
+            stage_id=STAGE_ID, community_id=community_id, state=state,
+            status=StageStatus.ERROR,
+            errors=[f"Scan synthesis JSON parse failed: {result.parse_error}"]
+        )
+
+    scan_json = result.parsed_json or {}
+
+    # Normalise: fall back to scorecard values if Haiku omitted any required field
+    scan_json.setdefault("city", community_name)
+    scan_json.setdefault("one_line_snapshot", "")
+    scan_json.setdefault("signal_tensions", [])
+    scan_json.setdefault("deep_review_level", "optional_review")
+    # Always take composite and tier from scorecard — Haiku may read tier_display_label
+    scan_json["composite"] = scorecard.get("composite_score_rounded", scorecard.get("composite_score"))
+    scan_json["tier"] = scorecard.get("tier")
+    scan_json["community_id"] = community_id
+    scan_json["state"] = state
+    scan_json["scan_generated_at"] = _today()
+
+    out_path = _scan_output_path(state, community_id, config.preset.value)
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w") as f:
+        json.dump(scan_json, f, indent=2)
+
+    cache.set(cache_key, scan_json)
+
+    return StageResult(
+        stage_id=STAGE_ID,
+        community_id=community_id,
+        state=state,
+        status=StageStatus.SUCCESS,
+        output_path=out_path,
+        output_data=scan_json,
+        warnings=warnings,
+        tokens_used=result.total_tokens,
+        duration_seconds=round(time.time() - start, 2),
+    )
 
 
 # ─────────────────────────────────────────────

@@ -9,15 +9,19 @@ INPUT:  data/cache/synthesis/{state}/{community_id}/s6_brief_{preset}_mode{mode}
 OUTPUT: outputs/by_community/{community_id}/{community_id}_{preset}_mode{mode}_{date}.md
 """
 from __future__ import annotations
+import datetime
 import json
+import logging
 import os
 import time
 from typing import Optional
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from pipeline import PipelineConfig, StageResult, StageStatus, timestamp_now, today_str
+from pipeline import OutputMode, PipelineConfig, StageResult, StageStatus, timestamp_now, today_str
 from pipeline.utils.token_logger import token_logger
+
+logger = logging.getLogger(__name__)
 
 STAGE_ID = "s7_render"
 
@@ -43,6 +47,11 @@ def run(
     **kwargs
 ) -> StageResult:
     start = time.time()
+
+    # Scan mode: skip individual brief rendering — pass S6 scan result through.
+    # The comparison table is rendered by render_scan_table() after all cities complete.
+    if config.mode == OutputMode.SCAN:
+        return _handle_scan_passthrough(community_id, state, config, previous_result)
 
     # Load brief from S6
     if previous_result and previous_result.output_data:
@@ -305,3 +314,95 @@ def _render_fallback(brief: dict) -> str:
         ]
 
     return "\n".join(lines)
+
+
+# ─────────────────────────────────────────────
+# SCAN MODE — per-city passthrough
+# ─────────────────────────────────────────────
+
+def _handle_scan_passthrough(
+    community_id: str,
+    state: str,
+    config: PipelineConfig,
+    previous_result: Optional[StageResult],
+) -> StageResult:
+    """Pass the S6 scan result through without rendering a per-city brief.
+
+    The comparison table is rendered by render_scan_table() in main.py after
+    all communities complete.  output_data is preserved so main.py can collect
+    scan results from stage results without a second disk read.
+    """
+    scan_data = None
+    if previous_result and previous_result.output_data:
+        scan_data = previous_result.output_data
+    else:
+        scan_path = (
+            f"data/cache/synthesis/{state.lower()}/{community_id}/"
+            f"s6_scan_{config.preset.value}.json"
+        )
+        if os.path.exists(scan_path):
+            with open(scan_path) as f:
+                scan_data = json.load(f)
+
+    return StageResult(
+        stage_id=STAGE_ID,
+        community_id=community_id,
+        state=state,
+        status=StageStatus.SUCCESS,
+        output_data=scan_data,
+    )
+
+
+# ─────────────────────────────────────────────
+# SCAN MODE — statewide comparison table
+# ─────────────────────────────────────────────
+
+def render_scan_table(
+    scan_results: list[dict],
+    config: PipelineConfig,
+) -> Optional[str]:
+    """Render the ranked comparison table HTML from all city scan results.
+
+    Called from main.py after the per-community loop completes.
+    Writes outputs/by_state/{state}/{state}_scan_{date}.html.
+    Returns the output path, or None if the template is missing.
+    """
+    sorted_results = sorted(
+        scan_results,
+        key=lambda r: (r.get("composite") or 0.0),
+        reverse=True,
+    )
+    for i, r in enumerate(sorted_results, 1):
+        r["rank"] = i
+
+    env = Environment(
+        loader=FileSystemLoader("templates"),
+        autoescape=select_autoescape([])
+    )
+
+    state_code = config.state.lower()
+    date_str = datetime.date.today().strftime("%Y%m%d")
+    out_dir = f"outputs/by_state/{state_code}"
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = f"{out_dir}/{state_code}_scan_{date_str}.html"
+
+    template_name = "scan_results.html.j2"
+    if not os.path.exists(os.path.join("templates", template_name)):
+        logger.warning("Scan table template not found: templates/%s", template_name)
+        return None
+
+    rendered = env.get_template(template_name).render(
+        results=sorted_results,
+        state=config.state,
+        preset=config.preset.value,
+        generated_at=timestamp_now(),
+        date_str=date_str,
+        city_count=len(sorted_results),
+    )
+
+    with open(out_path, "w") as f:
+        f.write(rendered)
+
+    logger.info("Scan table written to %s", out_path)
+    print(f"\n  Scan table: {out_path}\n")
+    return out_path

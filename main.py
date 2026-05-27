@@ -375,9 +375,23 @@ def main():
         f"{'='*60}"
     )
 
+    # ── Scan mode: render comparison table from all city results ────────────
+    if config.mode == OutputMode.SCAN:
+        scan_results = []
+        for comm_id, community_results in all_results.items():
+            s7 = community_results.get("s7_render")
+            if s7 and s7.ok and s7.output_data:
+                scan_results.append(s7.output_data)
+        if scan_results:
+            s7_render.render_scan_table(scan_results, config)
+        else:
+            logger.warning("Scan mode: no scan results collected — comparison table skipped")
+
     # ── Token usage summary + CSV export ────────────────────────────────────
     if not config.dry_run:
         token_logger.finalize()
+        if config.mode == OutputMode.SCAN:
+            token_logger.print_scan_summary(len(communities))
 
     if failures > 0:
         sys.exit(1)
