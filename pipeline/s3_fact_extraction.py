@@ -28,7 +28,8 @@ from pipeline.utils.cache import CacheManager
 from pipeline.utils.schema_validator import validate_against_schema
 from pipeline.utils.ped_fetcher import get_district_data
 from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data
-from pipeline.utils.acs_fetcher  import get_district_data as get_acs_district_data
+from pipeline.utils.acs_fetcher  import get_district_data as get_acs_district_data, get_total_population as get_acs_total_population
+from pipeline.utils.population_trends_fetcher import get_population_trends
 from pipeline.utils.charter_schools_fetcher import get_community_charter_schools
 from pipeline.utils.authorizers_fetcher     import get_community_authorizers
 
@@ -195,6 +196,17 @@ def run(
         )
     else:
         verified_acs_data = "(No verified Census ACS ELL data available — CENSUS_API_KEY not set or no district mapping)"
+
+    # Load NCES enrollment trend data (district-level, 2020–2024)
+    pop_data = get_population_trends(community_id, state)
+    if pop_data is None:
+        logger.warning(
+            "[%s] population_trends_fetcher returned None — no enrollment trend data for this community",
+            community_id,
+        )
+
+    # Load ACS total population (secondary signal — two vintages, not scored)
+    acs_pop_data = get_acs_total_population(community_id, state)
 
     community_name = community_id.split("-", 1)[1].replace("-", " ").title()
 
@@ -663,6 +675,12 @@ def run(
     # ── Inject ACS fact datapoints (ell_pct → operational_complexity) ────────
     _inject_acs_facts(facts_output, acs_data, community_id, state)
 
+    # ── Inject NCES enrollment trend facts (population_trends dimension) ──────
+    _inject_population_trends_facts(facts_output, pop_data, community_id, state)
+
+    # ── Inject ACS total population (secondary signal, not scored) ────────────
+    _inject_acs_population_facts(facts_output, acs_pop_data, community_id, state)
+
     # ── Charter schools + authorizer intelligence ─────────────────────────────
     # CSV-sourced base data → Claude enrichment (web search or knowledge fallback)
     csv_schools     = get_community_charter_schools(known_schools, roster_source_file)
@@ -853,6 +871,150 @@ def _inject_acs_facts(
             "[%s] Injected %d ACS fact datapoints (ell_pct → operational_complexity)",
             community_id, injected,
         )
+
+
+# Fact keys injected from population_trends_fetcher → (dimension, value_unit)
+# Only scalar keys that belong in the facts array; enrollment_by_year / years_available
+# are also injected for brief context but carry non-numeric values.
+_POP_FACT_KEY_MAP: dict[str, tuple[str, str]] = {
+    "pct_change_total":   ("population_trends", "percent"),
+    "trend_direction":    ("population_trends", "category"),
+    "enrollment_by_year": ("population_trends", "dict"),
+    "years_available":    ("population_trends", "list"),
+    "data_year":          ("population_trends", "text"),
+}
+_POP_META_KEYS: frozenset = frozenset({"source_title", "source_url", "confidence"})
+
+
+def _inject_population_trends_facts(
+    facts_output: dict,
+    pop_data: Optional[dict],
+    community_id: str,
+    state: str,
+) -> None:
+    """Append NCES enrollment trend fact datapoints to facts_output.
+
+    Injects pct_change_total (primary scoring key) plus context fields so S5
+    can score population_trends from real data rather than defaulting to 5.
+
+    Skips silently when pop_data is None (caller already logged the warning).
+    """
+    if not pop_data:
+        return
+
+    facts: list[dict] = facts_output.setdefault("facts", [])
+
+    # Avoid duplicating any population_trends FEDERAL_DATA fact already present
+    existing_keys: set[str] = {
+        f.get("fact_key", "")
+        for f in facts
+        if f.get("source_class") == "FEDERAL_DATA"
+        and f.get("dimension") == "population_trends"
+    }
+
+    injected = 0
+    for fact_key, (dimension, unit) in _POP_FACT_KEY_MAP.items():
+        value = pop_data.get(fact_key)
+        if value is None:
+            continue
+        if fact_key in existing_keys:
+            continue
+
+        facts.append({
+            "datapoint_id":         f"dp_{community_id}_pop_{fact_key}",
+            "community_id":         community_id,
+            "state":                state,
+            "dimension":            dimension,
+            "fact_key":             fact_key,
+            "claim":                f"{fact_key}: {value} (NCES LEA membership {pop_data.get('data_year', '2020–2024')})",
+            "value":                value,
+            "value_unit":           unit,
+            "value_year":           2024,
+            "source_class":         "FEDERAL_DATA",
+            "source_url":           pop_data.get("source_url"),
+            "source_title":         pop_data.get("source_title"),
+            "source_date":          None,
+            "confidence":           "HIGH",
+            "confidence_rationale": "Directly computed from NCES CCD LEA membership files",
+            "verification_status":  "VERIFIED",
+            "bias_flag":            None,
+            "extracted_by":         "population_trends_fetcher",
+            "extracted_at":         today_str(),
+            "stage":                STAGE_ID,
+            "in_main_analysis":     True,
+            "needs_verification_reason": None,
+        })
+        injected += 1
+
+    if injected:
+        logger.info(
+            "[%s] population_trends_fetcher — trend=%s pct_change=%+.1f%% years=%s",
+            community_id,
+            pop_data.get("trend_direction"),
+            pop_data.get("pct_change_total", 0.0),
+            pop_data.get("years_available"),
+        )
+
+
+def _inject_acs_population_facts(
+    facts_output: dict,
+    acs_pop_data: Optional[dict],
+    community_id: str,
+    state: str,
+) -> None:
+    """Inject Census ACS total population estimates as supplementary facts.
+
+    These are secondary demographic signals — not wired into scoring (S5 does not
+    look for these fact_keys). in_main_analysis=False keeps them out of the scoring
+    pipeline while still making them available to S6 synthesis as context.
+
+    Skips silently when acs_pop_data is None (no CENSUS_API_KEY, no mapping,
+    or API failure — all handled upstream).
+    """
+    if not acs_pop_data:
+        return
+
+    facts: list[dict] = facts_output.setdefault("facts", [])
+
+    for fact_key, value in [
+        ("acs_total_pop_2019", acs_pop_data.get("pop_2019")),
+        ("acs_total_pop_2023", acs_pop_data.get("pop_2023")),
+        ("acs_total_pop_pct_change", acs_pop_data.get("pct_change")),
+    ]:
+        if value is None:
+            continue
+        facts.append({
+            "datapoint_id":         f"dp_{community_id}_acs_pop_{fact_key}",
+            "community_id":         community_id,
+            "state":                state,
+            "dimension":            "population_trends",
+            "fact_key":             fact_key,
+            "claim":                f"{fact_key}: {value} (ACS B01003, unified school district)",
+            "value":                value,
+            "value_unit":           "population" if "pct" not in fact_key else "percent",
+            "value_year":           2023,
+            "source_class":         "FEDERAL_DATA",
+            "source_url":           acs_pop_data.get("source_url"),
+            "source_title":         acs_pop_data.get("source_title"),
+            "source_date":          None,
+            "confidence":           "MODERATE",
+            "confidence_rationale": "Census ACS 5-year estimate — subject to sampling error",
+            "verification_status":  "VERIFIED",
+            "bias_flag":            None,
+            "extracted_by":         "acs_fetcher",
+            "extracted_at":         today_str(),
+            "stage":                STAGE_ID,
+            "in_main_analysis":     False,   # secondary signal — not scored
+            "needs_verification_reason": None,
+        })
+
+    logger.info(
+        "[%s] ACS total population — 2019=%s  2023=%s  pct_change=%s",
+        community_id,
+        acs_pop_data.get("pop_2019"),
+        acs_pop_data.get("pop_2023"),
+        acs_pop_data.get("pct_change"),
+    )
 
 
 def _fetch_charter_intel(

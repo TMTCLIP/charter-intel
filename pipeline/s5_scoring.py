@@ -210,6 +210,13 @@ def score_dimension(
     # Check if primary fact is available
     primary_value = _get_fact_value(primary_fact_key, relevant_facts)
 
+    # Special case: score population_trends from NCES enrollment data when present.
+    # Falls back to the default-to-5 path below if pct_change_total is absent.
+    if dim_name == "population_trends":
+        enrollment_result = _score_population_trends(relevant_facts, weight)
+        if enrollment_result is not None:
+            return enrollment_result
+
     if primary_value is None and missing_behavior == "default_to_midpoint":
         return {
             "score": 5.0,
@@ -463,6 +470,54 @@ def _aggregate_fact_confidence(facts: list[dict]) -> str:
         return Confidence.LOW.value
     levels = [Confidence(f.get("confidence", "LOW")) for f in facts]
     return Confidence.minimum(levels).value
+
+
+def _score_population_trends(facts: list[dict], weight: float) -> Optional[dict]:
+    """Score population_trends from NCES enrollment pct_change_total.
+
+    Returns a complete dimension score dict when pct_change_total is present,
+    or None to signal the caller to fall through to the default-to-5 path.
+
+    Thresholds (enrollment pct change, earliest→latest year):
+        >= +10%        → 9.0   (strong growth)
+        +5% to +10%   → 7.5
+        +1% to +5%    → 6.5
+        -1% to +1%    → 5.5   (stable)
+        -5% to -1%    → 4.5
+        -10% to -5%   → 3.0
+        < -10%        → 1.5   (sharp decline)
+    """
+    pct_change = _get_fact_value("pct_change_total", facts)
+    if pct_change is None or not isinstance(pct_change, (int, float)):
+        return None
+
+    if pct_change >= 10:
+        score = 9.0
+    elif pct_change >= 5:
+        score = 7.5
+    elif pct_change >= 1:
+        score = 6.5
+    elif pct_change >= -1:
+        score = 5.5
+    elif pct_change >= -5:
+        score = 4.5
+    elif pct_change >= -10:
+        score = 3.0
+    else:
+        score = 1.5
+
+    supporting_ids = [f["datapoint_id"] for f in facts]
+    driver = f"NCES enrollment pct_change={pct_change:+.1f}% → score {score:.1f}"
+
+    return {
+        "score":                  round(score, 2),
+        "weight":                 weight,
+        "weighted_contribution":  round(score * weight, 4),
+        "confidence":             Confidence.HIGH.value,
+        "primary_driver":         driver,
+        "supporting_fact_ids":    supporting_ids,
+        "used_default":           False,
+    }
 
 
 def _build_driver(fact_key: str, value: Any, score: float, direction: str) -> str:

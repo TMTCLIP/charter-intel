@@ -81,6 +81,13 @@ _LTVW_VARS = [
 
 _GET_VARS = ",".join(["NAME", _DENOM_VAR] + _LTVW_VARS)
 
+# ── Total population query config ─────────────────────────────────────────────
+# B01003_001E: total population for the district geography.
+# Two ACS 5-year vintages give a ~4-year population trend.
+_TOTAL_POP_VAR     = "B01003_001E"
+_POP_VINTAGE_EARLY = "2019"   # ACS 5-year 2015–2019
+_POP_VINTAGE_LATE  = "2023"   # ACS 5-year 2019–2023
+
 
 # ── Internal helpers ──────────────────────────────────────────────────────────
 
@@ -147,6 +154,61 @@ def _fetch_district(district_code: str, api_key: str) -> Optional[dict]:
         log.warning(
             "acs_fetcher: unexpected response shape for district %s: %s",
             district_code, str(data)[:200]
+        )
+        return None
+
+    headers, row = data[0], data[1]
+    return dict(zip(headers, row))
+
+
+def _fetch_acs_vars(
+    district_code: str,
+    variables: str,
+    year: str,
+    api_key: str,
+) -> Optional[dict]:
+    """
+    Generic ACS API query for any variable set at unified school district level.
+
+    Identical transport logic to _fetch_district but accepts arbitrary variables
+    and vintage year — used by get_total_population to query B01003_001E across
+    two vintages without touching the ELL pipeline.
+    """
+    params = {
+        "get": variables,
+        "for": f"school district (unified):{district_code}",
+        "in":  f"state:{STATE_FIPS}",
+        "key": api_key,
+    }
+    url = (
+        f"{ACS_API_BASE}/{year}/{ACS_DATASET}?"
+        + urllib.parse.urlencode(params, quote_via=urllib.parse.quote)
+    )
+
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "CLIP/1.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            raw = resp.read().decode("utf-8")
+    except Exception as exc:
+        log.warning(
+            "acs_fetcher: API request failed for district %s vintage %s — %s",
+            district_code, year, exc,
+        )
+        return None
+
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        log.warning(
+            "acs_fetcher: could not parse response for district %s vintage %s — %s",
+            district_code, year, exc,
+        )
+        return None
+
+    if not isinstance(data, list) or len(data) < 2:
+        log.warning(
+            "acs_fetcher: unexpected response shape for district %s vintage %s: %s",
+            district_code, year, str(data)[:200],
         )
         return None
 
@@ -282,4 +344,114 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
         "source_url":   SOURCE_URL,
         "source_title": SOURCE_TITLE,
         "confidence":   "MODERATE",
+    }
+
+
+def get_total_population(community_id: str, state: str) -> Optional[dict]:
+    """
+    Return Census ACS total population estimates for two vintages.
+
+    Queries B01003_001E (total population) at the unified school district level
+    for ACS 5-year vintages 2019 (2015–2019) and 2023 (2019–2023). Computes
+    pct change between vintages as a secondary demographic signal.
+
+    Geography: same unified school district level used by get_district_data —
+    confirmed to work for all NM unified districts with a nces_district_map entry.
+
+    Currently NM-only (STATE_FIPS hardcoded to "35"). Other states return None.
+
+    Return shape:
+        {
+            "pop_2019":    8234,
+            "pop_2023":    7891,
+            "pct_change":  -4.2,
+            "data_year":   "2019–2023",
+            "source_title": "Census ACS 5-Year Estimates, B01003 Total Population",
+            "source_url":  "https://api.census.gov/data",
+            "confidence":  "MODERATE",
+        }
+
+    Returns None (does not raise) if: state is not NM, CENSUS_API_KEY not set,
+    no LEAID mapping, either vintage API call fails, or population values are invalid.
+    """
+    if state.upper() != "NM":
+        log.info(
+            "acs_fetcher: get_total_population is NM-only — skipping %s (%s)",
+            community_id, state,
+        )
+        return None
+
+    api_key = _api_key()
+    if not api_key:
+        return None  # warning already emitted by get_district_data caller
+
+    nces_map = _load_nces_map(state)
+    leaid = nces_map.get(community_id)
+
+    if leaid is None:
+        log.info(
+            "acs_fetcher: no NCES mapping for %s — skipping total population query",
+            community_id,
+        )
+        return None
+
+    leaid_str = str(leaid)
+    if len(leaid_str) != 7:
+        log.warning(
+            "acs_fetcher: unexpected LEAID length for %s (%s) — skipping",
+            community_id, leaid_str,
+        )
+        return None
+
+    district_code = leaid_str[2:]
+    variables = f"NAME,{_TOTAL_POP_VAR}"
+
+    pop_by_vintage: dict[str, int] = {}
+    for vintage in (_POP_VINTAGE_EARLY, _POP_VINTAGE_LATE):
+        row = _fetch_acs_vars(district_code, variables, vintage, api_key)
+        if row is None:
+            log.warning(
+                "acs_fetcher: total population query failed for %s vintage %s",
+                community_id, vintage,
+            )
+            return None
+
+        try:
+            pop = int(row[_TOTAL_POP_VAR])
+        except (KeyError, ValueError, TypeError) as exc:
+            log.warning(
+                "acs_fetcher: invalid population value for %s vintage %s — %s",
+                community_id, vintage, exc,
+            )
+            return None
+
+        if pop <= 0:
+            log.warning(
+                "acs_fetcher: zero/negative population for %s vintage %s — skipping",
+                community_id, vintage,
+            )
+            return None
+
+        pop_by_vintage[vintage] = pop
+
+    pop_early = pop_by_vintage[_POP_VINTAGE_EARLY]
+    pop_late  = pop_by_vintage[_POP_VINTAGE_LATE]
+    pct_change = round((pop_late - pop_early) / pop_early * 100, 1)
+
+    log.info(
+        "acs_fetcher: %s (district %s) — total pop: %s=%d  %s=%d  Δ=%.1f%%",
+        community_id, district_code,
+        _POP_VINTAGE_EARLY, pop_early,
+        _POP_VINTAGE_LATE,  pop_late,
+        pct_change,
+    )
+
+    return {
+        "pop_2019":    pop_early,
+        "pop_2023":    pop_late,
+        "pct_change":  pct_change,
+        "data_year":   f"{_POP_VINTAGE_EARLY}–{_POP_VINTAGE_LATE}",
+        "source_title": "Census ACS 5-Year Estimates, B01003 Total Population",
+        "source_url":  ACS_API_BASE,
+        "confidence":  "MODERATE",
     }
