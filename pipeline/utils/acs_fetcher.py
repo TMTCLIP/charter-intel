@@ -227,16 +227,47 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
 
     # Sum numerator — all LTVW cells for ages 5-17
     numerator = 0
+    suppressed_count = 0
     for var in _LTVW_VARS:
         try:
             val = int(row[var])
             if val > 0:
                 numerator += val
+            elif val < 0:
+                # Census suppression sentinel (e.g. -666666666 = "N/A",
+                # -555555555 = "suppressed"). Do not add to numerator.
+                suppressed_count += 1
         except (KeyError, ValueError, TypeError):
             log.warning(
                 "acs_fetcher: missing variable %s for %s — treating as 0",
                 var, community_id
             )
+    # If the majority of ELL variables were suppressed, the result is
+    # unreliable — return None rather than a misleading 0.0%.
+    # Threshold: 4 of 8 variables suppressed triggers the guard.
+    _SUPPRESSION_THRESHOLD = len(_LTVW_VARS) // 2
+    if suppressed_count > _SUPPRESSION_THRESHOLD:
+        log.warning(
+            "acs_fetcher: %d/%d ELL variables suppressed for %s "
+            "(likely small-district sample) — returning None instead of 0.0%%",
+            suppressed_count, len(_LTVW_VARS), community_id,
+        )
+        return None
+
+    # Guard 2: all LTVW vars returned 0 in a small district.
+    # ACS B16004 cell-level rounding can produce all-zero rows for small
+    # districts even when ELL population is nonzero. If numerator is 0
+    # AND total enrollment (denominator) is below a plausibility threshold,
+    # treat result as unreliable.
+    _SMALL_DISTRICT_THRESHOLD = 1500  # total ACS-reported enrollment
+    if numerator == 0 and denominator < _SMALL_DISTRICT_THRESHOLD:
+        log.warning(
+            "acs_fetcher: all LTVW vars returned 0 for %s "
+            "(denominator=%d, likely small-district cell rounding) "
+            "— returning None instead of 0.0%%",
+            community_id, denominator,
+        )
+        return None
 
     ell_pct = round(numerator / denominator * 100, 1)
 
