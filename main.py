@@ -66,6 +66,18 @@ STAGE_MODULES = {
 }
 
 
+class _CommunityLogCapture(logging.Handler):
+    """Accumulates WARNING+ log lines for one community run (fed to the HTML debug section)."""
+
+    def __init__(self) -> None:
+        super().__init__(level=logging.WARNING)
+        self.setFormatter(logging.Formatter("%(levelname)s %(message)s"))
+        self.lines: list[str] = []
+
+    def emit(self, record: logging.LogRecord) -> None:
+        self.lines.append(self.format(record))
+
+
 _SPINNER_CHARS = "⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏"
 
 
@@ -204,59 +216,70 @@ def run_community_pipeline(
     if total_stages == 0:
         return results
 
-    for i, stage_id in enumerate(stages_to_run, 1):
-        module = STAGE_MODULES.get(stage_id)
-        if not module:
-            logger.warning(f"Unknown stage '{stage_id}' — skipping")
-            continue
+    capture = _CommunityLogCapture()
+    logging.getLogger().addHandler(capture)
+    try:
+        for i, stage_id in enumerate(stages_to_run, 1):
+            module = STAGE_MODULES.get(stage_id)
+            if not module:
+                logger.warning(f"Unknown stage '{stage_id}' — skipping")
+                continue
 
-        spinner = _StageSpinner(community_id, i, total_stages, stage_id)
-        spinner.start()
-        logger.info(f"[{community_id}] Running {stage_id}...")
-        start = time.time()
+            spinner = _StageSpinner(community_id, i, total_stages, stage_id)
+            spinner.start()
+            logger.info(f"[{community_id}] Running {stage_id}...")
+            start = time.time()
 
-        try:
-            result = module.run(
-                community_id=community_id,
-                state=state,
-                config=config,
-                previous_result=previous
-            )
-        except Exception as e:
-            result = StageResult(
-                stage_id=stage_id,
-                community_id=community_id,
-                state=state,
-                status=StageStatus.ERROR,
-                errors=[f"Unhandled exception: {str(e)}"]
-            )
-            logger.exception(f"[{community_id}] {stage_id} raised exception")
+            extra: dict = {}
+            if stage_id == "s7_render":
+                extra["warn_lines"] = list(capture.lines)
 
-        elapsed = round(time.time() - start, 2)
-        spinner.stop(elapsed, error=result.status == StageStatus.ERROR)
-        sys.stderr.write("\n")
-        sys.stderr.flush()
-        results[stage_id] = result
+            try:
+                result = module.run(
+                    community_id=community_id,
+                    state=state,
+                    config=config,
+                    previous_result=previous,
+                    **extra
+                )
+            except Exception as e:
+                result = StageResult(
+                    stage_id=stage_id,
+                    community_id=community_id,
+                    state=state,
+                    status=StageStatus.ERROR,
+                    errors=[f"Unhandled exception: {str(e)}"]
+                )
+                logger.exception(f"[{community_id}] {stage_id} raised exception")
 
-        if result.warnings:
-            for w in result.warnings:
-                logger.warning(f"[{community_id}] [{stage_id}] {w}")
+            elapsed = round(time.time() - start, 2)
+            spinner.stop(elapsed, error=result.status == StageStatus.ERROR)
+            sys.stderr.write("\n")
+            sys.stderr.flush()
+            results[stage_id] = result
 
-        if result.status == StageStatus.ERROR:
-            logger.error(
-                f"[{community_id}] {stage_id} FAILED: {result.errors}. "
-                f"Halting pipeline for this community."
-            )
-            break
-        elif result.cache_hit:
-            logger.info(f"[{community_id}] {stage_id} — cache hit ({elapsed}s)")
-        else:
-            logger.info(
-                f"[{community_id}] {stage_id} — OK "
-                f"({elapsed}s, {result.tokens_used} tokens)"
-            )
+            if result.warnings:
+                for w in result.warnings:
+                    logger.warning(f"[{community_id}] [{stage_id}] {w}")
 
-        previous = result
+            if result.status == StageStatus.ERROR:
+                logger.error(
+                    f"[{community_id}] {stage_id} FAILED: {result.errors}. "
+                    f"Halting pipeline for this community."
+                )
+                break
+            elif result.cache_hit:
+                logger.info(f"[{community_id}] {stage_id} — cache hit ({elapsed}s)")
+            else:
+                logger.info(
+                    f"[{community_id}] {stage_id} — OK "
+                    f"({elapsed}s, {result.tokens_used} tokens)"
+                )
+
+            previous = result
+
+    finally:
+        logging.getLogger().removeHandler(capture)
 
     return results
 
