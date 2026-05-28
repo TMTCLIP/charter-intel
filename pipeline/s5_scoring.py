@@ -140,6 +140,21 @@ def run(
         effective_weights = {}
         composite = 5.0
 
+    # --- Compute data coverage ---
+    total_weight_sum = sum(d["weight"] for d in dimensions_out.values())
+    real_weight_sum = sum(d["weight"] for d in included.values())
+    if total_weight_sum > 0:
+        data_coverage_pct = round(real_weight_sum / total_weight_sum * 100, 1)
+    else:
+        data_coverage_pct = 0.0
+    cov_thresholds = weights_cfg.get("data_coverage_thresholds", {"reliable": 70, "provisional": 50})
+    if data_coverage_pct >= cov_thresholds["reliable"]:
+        data_coverage_tier = "reliable"
+    elif data_coverage_pct >= cov_thresholds["provisional"]:
+        data_coverage_tier = "provisional"
+    else:
+        data_coverage_tier = "unreliable"
+
     # --- Check override flags ---
     override_flags = check_override_flags(verified_bundle, dimensions_out)
 
@@ -175,6 +190,8 @@ def run(
         "dimensions_with_missing_data": missing_dimensions,
         "excluded_dimensions": excluded_dimensions,
         "effective_weights": effective_weights,
+        "data_coverage_pct": data_coverage_pct,
+        "data_coverage_tier": data_coverage_tier,
         "scored_at": timestamp_now(),
         "scoring_version": weights_cfg.get("version", "1.0")
     }

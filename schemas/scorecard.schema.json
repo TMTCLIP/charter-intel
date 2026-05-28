@@ -110,6 +110,17 @@
       "description": "Normalized weights for dimensions actually included in composite. Excluded dimensions are omitted. Values sum to 1.0.",
       "additionalProperties": {"type": "number"}
     },
+    "data_coverage_pct": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Fraction of total preset weight backed by real (non-defaulted) data, as a percentage."
+    },
+    "data_coverage_tier": {
+      "type": "string",
+      "enum": ["reliable", "provisional", "unreliable"],
+      "description": "reliable ≥70%, provisional ≥50%, unreliable <50%"
+    },
     "scoring_notes": {
       "type": ["string", "null"],
       "description": "Any analyst notes about unusual scoring conditions"

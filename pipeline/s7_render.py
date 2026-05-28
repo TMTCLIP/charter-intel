@@ -13,6 +13,7 @@ import datetime
 import json
 import logging
 import os
+import yaml
 import time
 from typing import Optional
 
@@ -375,12 +376,45 @@ def render_scan_table(
     for i, r in enumerate(sorted_results, 1):
         r["rank"] = i
 
+    # Enrich each result with data_coverage fields from the S5 scorecard.
+    # S5 is authoritative; this also backfills old S6 scan caches that predate
+    # the data_coverage feature.
+    state_code = config.state.lower()
+    for r in sorted_results:
+        cid = r.get("community_id")
+        if not cid:
+            continue
+        sc_path = f"data/cache/community/{state_code}/{cid}/s5_scorecard.json"
+        if not os.path.exists(sc_path):
+            continue
+        try:
+            with open(sc_path) as _f:
+                sc = json.load(_f)
+            r["data_coverage_pct"] = sc.get("data_coverage_pct")
+            r["data_coverage_tier"] = sc.get("data_coverage_tier")
+        except Exception:
+            pass
+
+    # Enrich with community_metadata (special_considerations etc.) from states.yaml.
+    try:
+        with open("config/states.yaml") as _f:
+            states_cfg = yaml.safe_load(_f)
+        community_meta = (
+            states_cfg.get(config.state, {})
+                      .get("community_metadata", {})
+        )
+        for r in sorted_results:
+            cid = r.get("community_id")
+            if cid and cid in community_meta:
+                r.update(community_meta[cid])
+    except Exception:
+        pass
+
     env = Environment(
         loader=FileSystemLoader("templates"),
         autoescape=select_autoescape([])
     )
 
-    state_code = config.state.lower()
     date_str = datetime.date.today().strftime("%Y%m%d")
     out_dir = f"outputs/by_state/{state_code}"
     os.makedirs(out_dir, exist_ok=True)

@@ -7,6 +7,9 @@ NM:
       times.
     statute_citation: NMSA 1978 § 22-8B
     statute_url: https://www.nmlegis.gov
+  community_metadata:
+    nm-jemez-pueblo:
+      special_considerations: "Pueblo jurisdiction — tribal governance and legal considerations not captured in scoring model. Requires human review before any strategic use."
   community_boundary_exceptions:
   - community_id: nm-albuquerque
     note: 'Use Albuquerque city limits + Bernalillo County overlap. ABQ spans multiple

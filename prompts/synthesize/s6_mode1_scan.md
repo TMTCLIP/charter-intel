@@ -16,7 +16,9 @@ Return this exact JSON structure — no other fields:
   "tier": "<copy tier from scorecard>",
   "one_line_snapshot": "<max 20 words describing opportunity and primary risk>",
   "signal_tensions": [<copy triggered_by strings from override_flags, or empty list>],
-  "deep_review_level": "<one of: strong_recommendation | recommended | optional_review | no_deep_needed>"
+  "deep_review_level": "<one of: strong_recommendation | recommended | optional_review | no_deep_needed>",
+  "data_coverage_pct": <copy data_coverage_pct from scorecard>,
+  "data_coverage_tier": "<copy data_coverage_tier from scorecard>"
 }
 
 deep_review_level rules (apply the FIRST match):

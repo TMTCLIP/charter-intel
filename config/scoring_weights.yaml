@@ -376,6 +376,18 @@ confidence_aggregation:
   n: 3
 
 # ─────────────────────────────────────────────
+# DATA COVERAGE THRESHOLDS
+# ─────────────────────────────────────────────
+# Fraction of total weight backed by real (non-defaulted) data.
+# reliable   >= 70%  — composite is trustworthy for strategic ranking
+# provisional >= 50%  — composite usable with caveats
+# unreliable  < 50%   — insufficient signals; exclude from strategic ranking
+
+data_coverage_thresholds:
+  reliable: 70
+  provisional: 50
+
+# ─────────────────────────────────────────────
 # OVERRIDE FLAGS
 # ─────────────────────────────────────────────
 # Defined here as canonical reference; condition logic also embedded per-dimension above.
