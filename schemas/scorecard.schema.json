@@ -15,7 +15,7 @@
     "state": {"type": "string", "pattern": "^[A-Z]{2}$"},
     "preset": {
       "type": "string",
-      "enum": ["growth", "replication", "turnaround"],
+      "enum": ["growth", "replication", "turnaround", "maturity_adjusted"],
       "description": "Operator preset used for weighting"
     },
     "dimensions": {

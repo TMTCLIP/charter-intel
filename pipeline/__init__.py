@@ -59,9 +59,10 @@ class OutputMode(int, Enum):
 
 
 class OperatorPreset(str, Enum):
-    GROWTH      = "growth"
-    REPLICATION = "replication"
-    TURNAROUND  = "turnaround"
+    GROWTH             = "growth"
+    REPLICATION        = "replication"
+    TURNAROUND         = "turnaround"
+    MATURITY_ADJUSTED  = "maturity_adjusted"
 
 
 class StageStatus(str, Enum):

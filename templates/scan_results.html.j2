@@ -152,7 +152,20 @@
       vertical-align: middle;
     }
 
-    /* Task 4 — provisional floor footnote */
+    /* SMALL_MARKET scale caveat note */
+    .scale-caveat-note {
+      font-size: 10px;
+      color: #92400e;
+      background: #fef3c7;
+      border: 1px solid #fcd34d;
+      border-radius: 3px;
+      padding: 3px 6px;
+      margin-top: 4px;
+      line-height: 1.4;
+      max-width: 200px;
+    }
+
+    /* Table footnote */
     .table-footnote {
       font-size: 11px;
       color: #9ca3af;
@@ -224,7 +237,20 @@
             {{ "%.1f"|format(r.composite) if r.composite is not none else "—" }}
           </td>
           <td>
-            <span class="tier-badge">{{ (r.tier or "—") | replace("_", " ") }}</span>
+            {% set sm_flags = (r.override_flags or []) | selectattr("flag", "equalto", "SMALL_MARKET") | list %}
+            {% if sm_flags | length > 0 %}
+              {% set sm_flag = sm_flags[0] %}
+              <span class="tier-badge">{{ (r.tier or "—") | replace("_", " ") }} ⚠ SCALE CAVEAT</span>
+              <div class="scale-caveat-note">
+                {{ sm_flag.triggered_by }}.
+                Below viable single-school catchment under most operator models.
+                Highest demand profile in the scan at this scale.
+                Surfaced as a demand signal, not an actionable single-site entry.
+                A regional, multi-site, or partnership model may be more appropriate than a standalone school at this location.
+              </div>
+            {% else %}
+              <span class="tier-badge">{{ (r.tier or "—") | replace("_", " ") }}</span>
+            {% endif %}
           </td>
           <td class="coverage">
             {% set cov_tier = r.data_coverage_tier or "" %}

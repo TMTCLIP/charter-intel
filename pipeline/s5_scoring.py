@@ -453,6 +453,42 @@ def check_override_flags(
             "visual": "🟢"
         })
 
+    # SMALL_MARKET threshold: 1500 is a placeholder.
+    # Derive the real value from: min_viable_enrollment / capture_rate.
+    # min_viable_enrollment ≈ 150–300 students (charter unit economics).
+    # capture_rate ≈ 10–20% in rural NM.
+    # Real floor ≈ 750–3000 depending on operator assumptions.
+    # This is the same underlying variable as the greenfield catchment
+    # problem — district enrollment is a proxy for viable catchment pop.
+    # Solve both when NCES-at-S1 is built. Do not pick a round number
+    # and treat it as validated.
+    enrollment = fact_index.get("k12_enrollment_total")
+    enrollment_source = None
+    if enrollment is not None:
+        enrollment_source = "k12_enrollment_total"
+    else:
+        # Fallback: NCES parquet enrollment_by_year dict {year: count}
+        by_year = fact_index.get("enrollment_by_year")
+        if by_year and isinstance(by_year, dict) and len(by_year) > 0:
+            latest_year = str(max(int(y) for y in by_year.keys()))
+            enrollment = by_year[latest_year]
+            enrollment_source = f"NCES {latest_year}"
+
+    if enrollment is not None and float(enrollment) < 1500:
+        flags.append({
+            "flag": "SMALL_MARKET",
+            "visual": "⚠️",
+            "triggered_by": f"District enrollment: {enrollment} students ({enrollment_source})",
+            "note": (
+                "Small district — composite scores are not normalized for catchment scale. "
+                "Competitive opportunity and charter saturation signals may overstate "
+                "addressable demand at this enrollment level. Threshold (1500) is a "
+                "placeholder — derive from (min_viable_school_enrollment / "
+                "realistic_capture_rate) before treating as policy."
+            ),
+            "tier_effect": "None — informational only",
+        })
+
     return flags
 
 

@@ -36,6 +36,7 @@ import os
 import sys
 import threading
 import time
+import yaml
 
 from dotenv import load_dotenv
 load_dotenv(override=True)  # loads .env → always overrides any empty shell var
@@ -134,7 +135,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--all", action="store_true", dest="run_all",
                         help="Run all communities in state")
     parser.add_argument("--preset", default="growth",
-                        choices=["growth", "replication", "turnaround"])
+                        choices=["growth", "replication", "turnaround", "maturity_adjusted"])
     parser.add_argument(
         "--mode", default="2",
         help="1 | 2 | 3 (output depth) or 'zip' for ZIP Drill mode"
@@ -359,6 +360,24 @@ def main():
             c["community_id"]
             for c in s1_result.output_data.get("communities", [])
         ]
+
+        # Filter communities excluded in states.yaml
+        try:
+            with open("config/states.yaml") as _f:
+                states_cfg = yaml.safe_load(_f)
+            excluded = set(
+                states_cfg.get(config.state, {}).get("excluded_communities", []) or []
+            )
+            filtered = []
+            for c in communities:
+                if c in excluded:
+                    logger.info("Skipping %s: excluded in states.yaml", c)
+                else:
+                    filtered.append(c)
+            communities = filtered
+        except Exception as exc_err:
+            logger.warning("Could not load states.yaml exclusions: %s", exc_err)
+
     elif config.communities:
         communities = config.communities
     else:

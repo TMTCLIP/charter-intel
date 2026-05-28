@@ -82,3 +82,32 @@ turnaround:
     funding_environment:   0.09
     competitive_opportunity: 0.05
     operational_complexity: 0.10
+
+# ─────────────────────────────────────────────
+# PRESET 4: MATURITY-ADJUSTED (Session 12 calibration)
+# ─────────────────────────────────────────────
+# maturity_adjusted: Session 12 calibration
+# charter_saturation and replication_feasibility halved (r=-0.75,
+# measuring same construct from opposite ends — charter ecosystem
+# maturity). All other active dimensions equal weight.
+# Full calibration pending operator profile definition.
+# authorizer gate: non-operative in NM (cross-state instrument).
+
+maturity_adjusted:
+  description: >
+    Session 12 calibration preset. Halves the combined weight of
+    charter_saturation and replication_feasibility (r=-0.75, both measure
+    charter ecosystem maturity). All other 7 active dimensions equal weight.
+    facilities_feasibility excluded (weight 0.0) pending CoStar data decision.
+    Full calibration pending operator profile definition with TMT.
+  dimensions:
+    academic_need:           0.125
+    charter_saturation:      0.0625
+    population_trends:       0.125
+    political_climate:       0.125
+    authorizer_friendliness: 0.125
+    facilities_feasibility:  0.0
+    replication_feasibility: 0.0625
+    funding_environment:     0.125
+    competitive_opportunity: 0.125
+    operational_complexity:  0.125

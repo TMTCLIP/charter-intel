@@ -474,6 +474,8 @@ def _run_scan_synthesis(
     scan_json["community_id"] = community_id
     scan_json["state"] = state
     scan_json["scan_generated_at"] = _today()
+    # Propagate override_flags so render layer can apply tier caveats (e.g. SMALL_MARKET)
+    scan_json["override_flags"] = scorecard.get("override_flags", [])
 
     out_path = _scan_output_path(state, community_id, config.preset.value)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)

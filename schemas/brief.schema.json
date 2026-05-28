@@ -17,7 +17,7 @@
     "community_id": {"type": "string"},
     "community_name": {"type": "string"},
     "state": {"type": "string"},
-    "preset": {"type": "string", "enum": ["growth", "replication", "turnaround"]},
+    "preset": {"type": "string", "enum": ["growth", "replication", "turnaround", "maturity_adjusted"]},
     "mode": {"type": "integer", "enum": [1, 2, 3]},
     "mode_label": {"type": "string", "example": "Strategic Brief"},
     "classification": {

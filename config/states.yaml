@@ -18,6 +18,13 @@ NM:
       '
   - community_id: nm-rio-rancho
     note: Separate municipality; distinct charter market from ABQ despite proximity.
+  excluded_communities:
+  - nm-cleveland  # excluded: district enrollment ~399 (NCES 2024), below
+                  # viable charter scale. Generalizable exclusion — any
+                  # community where district enrollment cannot support
+                  # minimum school unit economics. Re-evaluate when
+                  # NCES-at-S1 is built and minimum-size filter is
+                  # implemented structurally.
   community_unit: MUNICIPALITY
   data_sources:
     authorizer_registry:

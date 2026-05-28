@@ -392,6 +392,9 @@ def render_scan_table(
                 sc = json.load(_f)
             r["data_coverage_pct"] = sc.get("data_coverage_pct")
             r["data_coverage_tier"] = sc.get("data_coverage_tier")
+            # Backfill override_flags for scan JSONs that predate Task 4
+            if "override_flags" not in r:
+                r["override_flags"] = sc.get("override_flags", [])
         except Exception:
             pass
 
