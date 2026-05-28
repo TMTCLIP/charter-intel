@@ -418,3 +418,18 @@ override_flags:
     description: "Prior charter closures in community with demonstrable unmet demand"
     tier_cap: null
     visual: "🟡"
+
+# ─────────────────────────────────────────────
+# ZIP DRILL PRESET
+# ─────────────────────────────────────────────
+# Used exclusively by pipeline/zip_drill.py.
+# Not read by S5 or scoring_presets.yaml.
+# Weights are equal across all 5 dimensions.
+# Uncalibrated — proof of concept only.
+
+zip_preset:
+  academic_need:          0.20
+  charter_saturation:     0.20
+  school_age_population:  0.20
+  income_concentration:   0.20
+  ell_concentration:      0.20

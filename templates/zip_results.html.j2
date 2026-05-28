@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ city_name }} ZIP Drill — Charter Opportunity by Zip Code</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      color: #1a1a1a;
+      background: #f8f8f8;
+      padding: 24px;
+    }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .meta {
+      font-size: 11px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    }
+
+    thead th {
+      background: #1e293b;
+      color: #e2e8f0;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      padding: 10px 12px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    thead th.right  { text-align: right; }
+    thead th.center { text-align: center; }
+
+    tbody tr { border-bottom: 1px solid #e5e7eb; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #f0f9ff; }
+
+    td {
+      padding: 9px 12px;
+      vertical-align: middle;
+    }
+    td.right  { text-align: right; }
+    td.center { text-align: center; }
+    td.rank   { font-weight: 700; color: #64748b; width: 36px; }
+    td.zip    { font-weight: 700; font-size: 14px; font-variant-numeric: tabular-nums; }
+    td.score  { font-weight: 700; font-size: 15px; color: #1e293b; }
+
+    /* Score bar coloring */
+    tr.score-high    { background: #f0fdf4; }
+    tr.score-mid     { background: #eff6ff; }
+    tr.score-low     { background: #fefce8; }
+
+    /* Dimension score chips */
+    .dim-score {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: #334155;
+      min-width: 32px;
+      text-align: center;
+    }
+    .dim-high { background: #dcfce7; color: #166534; }
+    .dim-mid  { background: #dbeafe; color: #1e40af; }
+    .dim-low  { background: #fef9c3; color: #854d0e; }
+
+    /* Charter presence cell */
+    .charter-count {
+      font-weight: 600;
+    }
+    .charter-zero { color: #16a34a; }
+    .charter-some { color: #92400e; }
+    .charter-names {
+      font-size: 10px;
+      color: #6b7280;
+      margin-top: 2px;
+    }
+
+    /* N/A badge for missing Census data */
+    .na-badge {
+      font-size: 10px;
+      color: #9ca3af;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 11px;
+      color: #9ca3af;
+      border-top: 1px solid #e5e7eb;
+      padding-top: 12px;
+    }
+
+    @media print {
+      body { background: #fff; padding: 0; font-size: 11px; }
+      table { box-shadow: none; }
+      thead th { background: #1e293b !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>{{ city_name }} — ZIP Drill Charter Opportunity</h1>
+  <p class="meta">
+    {{ zip_count }} zip codes · ranked by composite opportunity score · generated {{ generated_at }}
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="center">Rank</th>
+        <th>Zip Code</th>
+        <th class="right">Score</th>
+        <th class="center">Academic Need</th>
+        <th>Charter Presence</th>
+        <th class="right">School-Age Pop</th>
+        <th class="right">Poverty Rate</th>
+        <th class="right">ELL%</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for s in scores %}
+      {% if s.composite >= 7.0 %}
+        {% set row_class = "score-high" %}
+      {% elif s.composite >= 5.0 %}
+        {% set row_class = "score-mid" %}
+      {% else %}
+        {% set row_class = "score-low" %}
+      {% endif %}
+      <tr class="{{ row_class }}">
+
+        <td class="rank center">{{ s.rank }}</td>
+
+        <td class="zip">{{ s.zip_code }}</td>
+
+        <td class="score right">{{ "%.1f"|format(s.composite) }}</td>
+
+        {# Academic Need dimension chip #}
+        <td class="center">
+          {% set an = s.academic_need %}
+          {% if an >= 7.0 %}
+            <span class="dim-score dim-high">{{ "%.1f"|format(an) }}</span>
+          {% elif an >= 4.0 %}
+            <span class="dim-score dim-mid">{{ "%.1f"|format(an) }}</span>
+          {% else %}
+            <span class="dim-score dim-low">{{ "%.1f"|format(an) }}</span>
+          {% endif %}
+          {% if s.ela_proficiency_pct is not none %}
+            <br><span style="font-size:10px;color:#6b7280;">{{ "%.0f"|format(s.ela_proficiency_pct) }}% ELA prof.</span>
+          {% endif %}
+        </td>
+
+        {# Charter Presence #}
+        <td>
+          {% if s.charter_count == 0 %}
+            <span class="charter-count charter-zero">0 charters</span>
+          {% else %}
+            <span class="charter-count charter-some">{{ s.charter_count }} charter{% if s.charter_count != 1 %}s{% endif %}</span>
+            {% if s.charter_names %}
+              <div class="charter-names">
+                {% for name in s.charter_names[:3] %}{{ name }}{% if not loop.last %}, {% endif %}{% endfor %}
+                {% if s.charter_names|length > 3 %} +{{ s.charter_names|length - 3 }} more{% endif %}
+              </div>
+            {% endif %}
+          {% endif %}
+          <div style="font-size:10px;color:#9ca3af;">{{ s.total_schools }} total schools</div>
+        </td>
+
+        {# School-Age Population #}
+        <td class="right">
+          {% if s.school_age_pop is not none %}
+            {{ "{:,}".format(s.school_age_pop) }}
+          {% else %}
+            <span class="na-badge">N/A</span>
+          {% endif %}
+        </td>
+
+        {# Poverty Rate #}
+        <td class="right">
+          {% if s.poverty_rate_pct is not none %}
+            {{ "%.1f"|format(s.poverty_rate_pct) }}%
+          {% else %}
+            <span class="na-badge">N/A</span>
+          {% endif %}
+        </td>
+
+        {# ELL% #}
+        <td class="right">
+          {% if s.ell_pct_display is not none %}
+            {{ "%.1f"|format(s.ell_pct_display) }}%
+          {% else %}
+            <span class="na-badge">N/A</span>
+          {% endif %}
+        </td>
+
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {# ── Excluded zips — insufficient Census data ── #}
+  {% if excluded %}
+  <div style="margin-top: 28px;">
+    <h2 style="font-size:14px;font-weight:700;color:#374151;margin-bottom:6px;">
+      Zip Codes — Insufficient Data
+    </h2>
+    <p style="font-size:11px;color:#92400e;background:#fef3c7;border:1px solid #fcd34d;border-radius:4px;padding:6px 10px;margin-bottom:10px;">
+      No Census population data returned. Likely non-residential (military, PO Box, industrial). Excluded from ranking.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Zip Code</th>
+          <th>Total Schools</th>
+          <th>Charter Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in excluded | sort(attribute="zip_code") %}
+        <tr style="background:#f9fafb;">
+          <td style="font-weight:600;">{{ s.zip_code }}</td>
+          <td>{{ s.total_schools }}</td>
+          <td>{{ s.charter_count }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% endif %}
+
+  <footer>
+    ZIP Drill v1 — 5 dimensions, equal weights, uncalibrated. Political, authorizer, and facilities signals not available at zip level. Proof of concept only.
+  </footer>
+
+</body>
+</html>

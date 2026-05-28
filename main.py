@@ -135,7 +135,10 @@ def parse_args() -> argparse.Namespace:
                         help="Run all communities in state")
     parser.add_argument("--preset", default="growth",
                         choices=["growth", "replication", "turnaround"])
-    parser.add_argument("--mode", type=int, default=2, choices=[1, 2, 3])
+    parser.add_argument(
+        "--mode", default="2",
+        help="1 | 2 | 3 (output depth) or 'zip' for ZIP Drill mode"
+    )
     parser.add_argument("--force-refresh", action="store_true")
     parser.add_argument("--no-cache", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
@@ -298,6 +301,30 @@ def main():
         except EOFError:
             # Support piped input (e.g. echo "NM\nSanta Fe" | python main.py --interactive)
             pass
+
+    # ── ZIP Drill mode ────────────────────────────────────────────────────────
+    if args.mode == "zip":
+        city = args.community_pos or args.community
+        if not city:
+            logger.error(
+                "--mode zip requires a city name. "
+                "Example: python main.py 'Albuquerque' --mode zip"
+            )
+            sys.exit(1)
+        from pipeline import zip_drill
+        out_path = zip_drill.run(city, state=args.state)
+        print(f"\n  ZIP Drill: {out_path}\n")
+        return
+
+    # Cast mode to int for existing pipeline
+    try:
+        args.mode = int(args.mode)
+    except ValueError:
+        logger.error(f"Invalid --mode: {args.mode!r}. Expected 1, 2, 3, or 'zip'.")
+        sys.exit(1)
+    if args.mode not in (1, 2, 3):
+        logger.error(f"--mode must be 1, 2, 3, or 'zip'.")
+        sys.exit(1)
 
     config = build_config(args)
 
