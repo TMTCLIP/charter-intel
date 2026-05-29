@@ -156,6 +156,26 @@ def parse_args() -> argparse.Namespace:
         "--interactive", action="store_true",
         help="Prompt for state and community interactively"
     )
+    # ── Testing / fixture flags ─────────────────────────────────────────────
+    parser.add_argument(
+        "--mock", action="store_true",
+        help=(
+            "Replay recorded fixtures instead of making API calls. "
+            "Requires fixtures recorded with --record. "
+            "Fails loudly if any fixture is missing."
+        ),
+    )
+    parser.add_argument(
+        "--record", action="store_true",
+        help=(
+            "Run the pipeline normally and persist every API request+response "
+            "to tests/fixtures/{community_id}/{stage}/call_N.json."
+        ),
+    )
+    parser.add_argument(
+        "--force-record", action="store_true",
+        help="Overwrite existing fixture files when recording (use with --record).",
+    )
     return parser.parse_args()
 
 
@@ -288,6 +308,59 @@ def run_community_pipeline(
     return results
 
 
+def _print_dry_run_cost_estimate(
+    stages_to_run: list,
+    communities: list,
+    config: "PipelineConfig",
+) -> None:
+    """Print a heuristic token/cost estimate for a planned pipeline run.
+
+    Derived from observed nm-questa standard-depth token counts.
+    Actual usage varies ±30–50% depending on fact density and response length.
+    """
+    n = len(communities)
+    depth = getattr(config, "depth", "standard")
+
+    # (stage_id, model_tier, est_input_tokens, est_output_tokens, skip_when_fast)
+    # S3 fires once for main extraction, then again for political_climate web search
+    # at standard/deep depth.  S6 fires twice: synthesis + audit pass.
+    STAGE_COSTS = [
+        ("s3_fact_extraction", "sonnet", 3_700, 3_600, False),
+        ("s3_fact_extraction", "sonnet", 4_500, 2_000, True),   # political_climate web search
+        ("s4_verification",    "haiku",  3_000,   800, False),
+        ("s6_synthesis",       "sonnet", 8_000, 5_000, False),  # synthesis
+        ("s6_synthesis",       "sonnet", 6_000, 3_000, False),  # audit pass
+    ]
+    # Pricing ($/1M tokens): input, output
+    PRICE = {
+        "sonnet": (3.00, 15.00),
+        "haiku":  (0.80,  4.00),
+    }
+
+    total_in = total_out = 0
+    total_usd = 0.0
+
+    for stage_id, model, est_in, est_out, skip_if_fast in STAGE_COSTS:
+        if stage_id not in stages_to_run:
+            continue
+        if skip_if_fast and depth == "fast":
+            continue
+        p_in, p_out = PRICE[model]
+        total_in  += est_in  * n
+        total_out += est_out * n
+        total_usd += ((est_in * p_in + est_out * p_out) / 1_000_000) * n
+
+    plural = "community" if n == 1 else "communities"
+    print(f"\n{'─' * 60}")
+    print(f"DRY-RUN COST ESTIMATE  ({n} {plural}, {depth} depth)")
+    print(f"{'─' * 60}")
+    print(f"  Est. input tokens : {total_in:>10,}")
+    print(f"  Est. output tokens: {total_out:>10,}")
+    print(f"  Est. total cost   :  ${total_usd:>8.2f}")
+    print(f"  Note: heuristic from nm-questa baseline; actual ±30–50%")
+    print(f"{'─' * 60}\n")
+
+
 def main():
     args = parse_args()
 
@@ -343,7 +416,31 @@ def main():
 
     config = build_config(args)
 
-    if not os.getenv("ANTHROPIC_API_KEY") and not config.dry_run:
+    # ── Mock / record injection ────────────────────────────────────────────────
+    if args.mock and args.record:
+        logger.error("--mock and --record are mutually exclusive")
+        sys.exit(1)
+
+    _mock_client = None
+    _recorder = None
+
+    if args.mock:
+        import pipeline.utils.api_client as _api_module
+        from tests.mock_anthropic import MockCallClaude, patch_call_claude
+        _mock_client = MockCallClaude()
+        patch_call_claude(_mock_client)
+        logger.info("[MOCK] Fixture mock active — zero API calls")
+    elif args.record:
+        import pipeline.utils.api_client as _api_module
+        from tests.mock_anthropic import RecordingCallClaude, patch_call_claude
+        _recorder = RecordingCallClaude(
+            original_fn=_api_module.call_claude,
+            force=args.force_record,
+        )
+        patch_call_claude(_recorder)
+        logger.info("[RECORD] Recording mode active — fixtures → tests/fixtures/")
+
+    if not os.getenv("ANTHROPIC_API_KEY") and not config.dry_run and not args.mock:
         logger.error(
             "ANTHROPIC_API_KEY not set. "
             "Export it or run with --dry-run."
@@ -414,12 +511,18 @@ def main():
     # Run pipeline per community
     all_results = {}
     for community_id in communities:
+        if _mock_client is not None:
+            _mock_client.reset()
+        if _recorder is not None:
+            _recorder.reset()
         all_results[community_id] = run_community_pipeline(
             community_id=community_id,
             state=config.state,
             config=config,
             stages_to_run=stages_to_run
         )
+        if _recorder is not None:
+            logger.info(_recorder.summary(community_id))
 
     # Summary
     successes = sum(
@@ -434,6 +537,10 @@ def main():
         f"  Communities: {len(all_results)} total | {successes} succeeded | {failures} failed\n"
         f"{'='*60}"
     )
+
+    # ── Dry-run cost estimate ─────────────────────────────────────────────────
+    if config.dry_run:
+        _print_dry_run_cost_estimate(stages_to_run, communities, config)
 
     # ── Scan mode: render comparison table from all city results ────────────
     if config.mode == OutputMode.SCAN:
