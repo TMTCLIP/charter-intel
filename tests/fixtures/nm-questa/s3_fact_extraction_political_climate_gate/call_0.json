@@ -1,0 +1,28 @@
+{
+  "request": {
+    "model": "claude-haiku-4-5-20251001",
+    "max_tokens": 100,
+    "temperature": 0,
+    "system": "You are a concise policy analyst. Answer YES or NO followed by one sentence. Do not exceed two sentences.",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Does Questa, NM likely have meaningfully distinct local charter school politics from the state baseline?\n\nContext:\n- K-12 enrollment (latest year): 315\n- Known charter schools (1): Roots and Wings Community School\n\nAnswer YES or NO with one sentence of reasoning."
+      }
+    ],
+    "tools": null
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "YES. Questa's very small enrollment (315 students) with one established charter school suggests a concentrated, localized charter politics where a single school's performance and community relationships likely dominate local education discourse in ways that differ from state-level patterns."
+      }
+    ],
+    "usage": {
+      "input_tokens": 91,
+      "output_tokens": 54
+    },
+    "stop_reason": "end_turn"
+  }
+}

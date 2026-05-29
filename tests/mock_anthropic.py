@@ -186,6 +186,7 @@ class MockCallClaude:
         retry_attempts: int = 3,
         retry_delay_seconds: float = 5.0,
         use_web_search: bool = False,
+        web_search_max_uses: int = 5,
     ):
         APIResult = _lazy_api_result()
 
@@ -283,6 +284,7 @@ class RecordingCallClaude:
         retry_attempts: int = 3,
         retry_delay_seconds: float = 5.0,
         use_web_search: bool = False,
+        web_search_max_uses: int = 5,
     ):
         # Run the real call_claude — any exception propagates naturally
         result = self._fn(
@@ -297,6 +299,7 @@ class RecordingCallClaude:
             retry_attempts=retry_attempts,
             retry_delay_seconds=retry_delay_seconds,
             use_web_search=use_web_search,
+            web_search_max_uses=web_search_max_uses,
         )
 
         key = (community_id, stage)
@@ -307,7 +310,7 @@ class RecordingCallClaude:
 
         # Build fixture in the spec format: request (API-level shape) + response
         tools_field = (
-            [{"type": "web_search_20250305", "name": "web_search", "max_uses": 5}]
+            [{"type": "web_search_20250305", "name": "web_search", "max_uses": web_search_max_uses}]
             if use_web_search
             else None
         )
