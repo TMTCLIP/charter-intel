@@ -190,10 +190,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--batch", action="store_true",
         help=(
-            "Use Anthropic Message Batches API for statewide scans (--all). "
-            "Communities run in parallel threads; all call_claude invocations "
-            "are collected and submitted as batches, reducing token cost ~50%%. "
-            "Incompatible with --mock and --record. No-op on single-city runs."
+            "Use Anthropic Message Batches API (~50%% cost reduction). "
+            "call_claude invocations are collected and submitted as batches; "
+            "single-city runs add ~3-5 min polling latency. "
+            "Incompatible with --mock and --record."
         ),
     )
     return parser.parse_args()
@@ -532,13 +532,12 @@ def main():
     token_logger.set_run_id(run_id)
 
     # ── Batch mode setup ─────────────────────────────────────────────────────
-    # Active only when: --batch flag, >1 community, not --mock, not --dry-run.
+    # Active only when: --batch flag, not --mock, not --dry-run.
     # --mock takes priority (mock already patched in; batch gateway not needed).
     # --dry-run never makes API calls, so no gateway needed (pricing reflected
     # in the cost estimate below via use_batch_pricing).
     use_batch = (
         args.batch
-        and len(communities) > 1
         and not args.mock
         and not config.dry_run
     )
