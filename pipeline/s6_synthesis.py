@@ -136,6 +136,11 @@ def run(
             errors=[gen_error or "Brief generation returned empty output"]
         )
 
+    # Re-inject override_flags from S5 scorecard — model may drop them
+    s5_flags = scorecard.get("override_flags") or []
+    if s5_flags:
+        brief_json.setdefault("scorecard_summary", {})["override_flags"] = s5_flags
+
     # --- PASS 2: Hallucination audit ---
     audit_result, audit_tokens, audit_error = _run_audit(
         community_id=community_id,
