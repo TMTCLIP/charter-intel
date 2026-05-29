@@ -68,15 +68,26 @@ STAGE_MODULES = {
 
 
 class _CommunityLogCapture(logging.Handler):
-    """Accumulates WARNING+ log lines for one community run (fed to the HTML debug section)."""
+    """Accumulates WARNING+ log lines for one community run (fed to the HTML debug section).
 
-    def __init__(self) -> None:
+    In parallel (batch) runs multiple capture handlers are attached to the root
+    logger simultaneously.  Pass community_id to filter each handler to only
+    records that contain ``[{community_id}]`` in the formatted message, preventing
+    cross-community contamination of S7 warn_lines.  When community_id is empty
+    (single-city, serial mode) no filtering is applied — existing behaviour.
+    """
+
+    def __init__(self, community_id: str = "") -> None:
         super().__init__(level=logging.WARNING)
         self.setFormatter(logging.Formatter("%(levelname)s %(message)s"))
         self.lines: list[str] = []
+        self._community_id = community_id
 
     def emit(self, record: logging.LogRecord) -> None:
-        self.lines.append(self.format(record))
+        msg = self.format(record)
+        if self._community_id and f"[{self._community_id}]" not in msg:
+            return
+        self.lines.append(msg)
 
 
 _SPINNER_CHARS = "⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏"
@@ -176,6 +187,15 @@ def parse_args() -> argparse.Namespace:
         "--force-record", action="store_true",
         help="Overwrite existing fixture files when recording (use with --record).",
     )
+    parser.add_argument(
+        "--batch", action="store_true",
+        help=(
+            "Use Anthropic Message Batches API for statewide scans (--all). "
+            "Communities run in parallel threads; all call_claude invocations "
+            "are collected and submitted as batches, reducing token cost ~50%%. "
+            "Incompatible with --mock and --record. No-op on single-city runs."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -240,7 +260,7 @@ def run_community_pipeline(
     if total_stages == 0:
         return results
 
-    capture = _CommunityLogCapture()
+    capture = _CommunityLogCapture(community_id=community_id)
     logging.getLogger().addHandler(capture)
     try:
         for i, stage_id in enumerate(stages_to_run, 1):
@@ -312,30 +332,36 @@ def _print_dry_run_cost_estimate(
     stages_to_run: list,
     communities: list,
     config: "PipelineConfig",
+    use_batch_pricing: bool = False,
 ) -> None:
     """Print a heuristic token/cost estimate for a planned pipeline run.
 
     Derived from observed nm-questa standard-depth token counts.
     Actual usage varies ±30–50% depending on fact density and response length.
+
+    When use_batch_pricing=True (--batch flag present), applies the Anthropic
+    Batch API 50% discount to all estimated costs.
     """
     n = len(communities)
     depth = getattr(config, "depth", "standard")
 
     # (stage_id, model_tier, est_input_tokens, est_output_tokens, skip_when_fast)
     # S3 fires once for main extraction, then again for political_climate web search
-    # at standard/deep depth.  S6 fires twice: synthesis + audit pass.
+    # at standard/deep depth.  S6 fires twice: synthesis (Haiku) + audit (Haiku).
     STAGE_COSTS = [
         ("s3_fact_extraction", "sonnet", 3_700, 3_600, False),
         ("s3_fact_extraction", "sonnet", 4_500, 2_000, True),   # political_climate web search
         ("s4_verification",    "haiku",  3_000,   800, False),
-        ("s6_synthesis",       "sonnet", 8_000, 5_000, False),  # synthesis
-        ("s6_synthesis",       "sonnet", 6_000, 3_000, False),  # audit pass
+        ("s6_synthesis",       "haiku",  8_000, 5_000, False),  # synthesis  (Haiku, Session 15)
+        ("s6_synthesis",       "haiku",  6_000, 3_000, False),  # audit pass (Haiku, Session 15)
     ]
     # Pricing ($/1M tokens): input, output
     PRICE = {
         "sonnet": (3.00, 15.00),
         "haiku":  (0.80,  4.00),
     }
+    # Batch API: 50% discount on both input and output tokens
+    batch_factor = 0.5 if use_batch_pricing else 1.0
 
     total_in = total_out = 0
     total_usd = 0.0
@@ -348,16 +374,19 @@ def _print_dry_run_cost_estimate(
         p_in, p_out = PRICE[model]
         total_in  += est_in  * n
         total_out += est_out * n
-        total_usd += ((est_in * p_in + est_out * p_out) / 1_000_000) * n
+        total_usd += ((est_in * p_in + est_out * p_out) / 1_000_000) * n * batch_factor
 
     plural = "community" if n == 1 else "communities"
+    batch_note = " — Batch API (50% discount)" if use_batch_pricing else ""
     print(f"\n{'─' * 60}")
-    print(f"DRY-RUN COST ESTIMATE  ({n} {plural}, {depth} depth)")
+    print(f"DRY-RUN COST ESTIMATE  ({n} {plural}, {depth} depth{batch_note})")
     print(f"{'─' * 60}")
     print(f"  Est. input tokens : {total_in:>10,}")
     print(f"  Est. output tokens: {total_out:>10,}")
     print(f"  Est. total cost   :  ${total_usd:>8.2f}")
     print(f"  Note: heuristic from nm-questa baseline; actual ±30–50%")
+    if use_batch_pricing:
+        print(f"  Batch API: 50% discount applied to all stage estimates")
     print(f"{'─' * 60}\n")
 
 
@@ -502,27 +531,77 @@ def main():
     )
     token_logger.set_run_id(run_id)
 
+    # ── Batch mode setup ─────────────────────────────────────────────────────
+    # Active only when: --batch flag, >1 community, not --mock, not --dry-run.
+    # --mock takes priority (mock already patched in; batch gateway not needed).
+    # --dry-run never makes API calls, so no gateway needed (pricing reflected
+    # in the cost estimate below via use_batch_pricing).
+    use_batch = (
+        args.batch
+        and len(communities) > 1
+        and not args.mock
+        and not config.dry_run
+    )
+    _gateway = None
+    if use_batch:
+        import concurrent.futures
+        import pipeline.utils.api_client as _api_module
+        from pipeline.utils.batch_runner import BatchGateway, MAX_WORKERS
+        from tests.mock_anthropic import patch_call_claude as _patch
+        _gateway = BatchGateway(original_call_claude=_api_module.call_claude)
+        _patch(_gateway)
+        _gateway.start()
+        logger.info(
+            "[BATCH] Batch mode active — %d communities will run in parallel threads",
+            len(communities),
+        )
+
     logger.info(
         f"Running pipeline for {len(communities)} communities in {config.state} "
         f"| preset={config.preset.value} | mode={config.mode.value} "
         f"| stages={stages_to_run} | run_id={run_id}"
     )
 
-    # Run pipeline per community
+    # ── Run pipeline per community ───────────────────────────────────────────
     all_results = {}
-    for community_id in communities:
-        if _mock_client is not None:
-            _mock_client.reset()
-        if _recorder is not None:
-            _recorder.reset()
-        all_results[community_id] = run_community_pipeline(
-            community_id=community_id,
-            state=config.state,
-            config=config,
-            stages_to_run=stages_to_run
-        )
-        if _recorder is not None:
-            logger.info(_recorder.summary(community_id))
+    if use_batch:
+        # Parallel execution — BatchGateway collects all call_claude calls
+        # across threads and submits them as Batch API requests.
+        max_workers = min(len(communities), MAX_WORKERS)
+        with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
+            future_map = {
+                executor.submit(
+                    run_community_pipeline,
+                    community_id=comm_id,
+                    state=config.state,
+                    config=config,
+                    stages_to_run=stages_to_run,
+                ): comm_id
+                for comm_id in communities
+            }
+            for future in concurrent.futures.as_completed(future_map):
+                comm_id = future_map[future]
+                try:
+                    all_results[comm_id] = future.result()
+                except Exception as exc:
+                    logger.error("[BATCH] Community %s raised exception: %s", comm_id, exc)
+                    all_results[comm_id] = {}
+        _gateway.stop()
+    else:
+        # Serial execution — original behaviour, unmodified
+        for community_id in communities:
+            if _mock_client is not None:
+                _mock_client.reset()
+            if _recorder is not None:
+                _recorder.reset()
+            all_results[community_id] = run_community_pipeline(
+                community_id=community_id,
+                state=config.state,
+                config=config,
+                stages_to_run=stages_to_run,
+            )
+            if _recorder is not None:
+                logger.info(_recorder.summary(community_id))
 
     # Summary
     successes = sum(
@@ -540,7 +619,10 @@ def main():
 
     # ── Dry-run cost estimate ─────────────────────────────────────────────────
     if config.dry_run:
-        _print_dry_run_cost_estimate(stages_to_run, communities, config)
+        _print_dry_run_cost_estimate(
+            stages_to_run, communities, config,
+            use_batch_pricing=args.batch,
+        )
 
     # ── Scan mode: render comparison table from all city results ────────────
     if config.mode == OutputMode.SCAN:
