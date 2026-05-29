@@ -24,6 +24,12 @@ PRICING NOTE:
   claude-opus-4-5:          $15.00 / $75.00  per MTok (in/out)
   claude-sonnet-4-5:         $3.00 / $15.00  per MTok (in/out)
   claude-haiku-4-5-*:        $0.80 /  $4.00  per MTok (in/out)
+
+BATCH DISCOUNT:
+  Calls routed through BatchGateway (``--batch`` flag) receive a 50% discount
+  per Anthropic Batch API pricing.  Web-search pass-throughs and sync-fallback
+  calls are NOT discounted (they execute synchronously at standard rates).
+  Set ``via_batch=True`` in log_call() to apply the discount.
 """
 
 from __future__ import annotations
@@ -46,6 +52,11 @@ _PRICE_TABLE: dict[str, tuple[float, float]] = {
 }
 
 _DEFAULT_PRICE: tuple[float, float] = (3.00, 15.00)   # Sonnet tier fallback
+
+# Anthropic Batch API discount factor (50% off list price).
+# Applied only to calls that actually went through BatchGateway (via_batch=True).
+# Web-search pass-throughs and sync-fallback calls stay at 1.0 (full price).
+_BATCH_DISCOUNT = 0.5
 
 
 def _price_for_model(model: str) -> tuple[float, float]:
@@ -78,6 +89,7 @@ class _CallRecord:
     tokens_output: int
     tokens_total: int
     estimated_cost_usd: float
+    via_batch: bool = False   # True → cost already reflects 50% batch discount
 
     def as_csv_row(self) -> list:
         return [
@@ -90,6 +102,7 @@ class _CallRecord:
             self.tokens_output,
             self.tokens_total,
             f"{self.estimated_cost_usd:.6f}",
+            "Y" if self.via_batch else "",
         ]
 
     @staticmethod
@@ -104,6 +117,7 @@ class _CallRecord:
             "tokens_output",
             "tokens_total",
             "estimated_cost_usd",
+            "via_batch",
         ]
 
 
@@ -130,8 +144,21 @@ class TokenLogger:
         tokens_input: int,
         tokens_output: int,
         community_id: str = "",
+        via_batch: bool = False,
     ) -> None:
-        """Record one API call. Called automatically from api_client.call_claude()."""
+        """Record one API call.
+
+        Called automatically from api_client.call_claude() (standard path) and
+        from batch_runner._submit_and_deliver() (batch path).
+
+        Args:
+            via_batch: Set True only for calls that succeeded through BatchGateway.
+                       Applies the 50% Batch API discount to estimated_cost_usd.
+                       Web-search pass-throughs and sync-fallbacks must pass False.
+        """
+        cost = _estimate_cost(model, tokens_input, tokens_output)
+        if via_batch:
+            cost *= _BATCH_DISCOUNT
         record = _CallRecord(
             timestamp=datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
             run_id=self._run_id,
@@ -141,7 +168,8 @@ class TokenLogger:
             tokens_input=tokens_input,
             tokens_output=tokens_output,
             tokens_total=tokens_input + tokens_output,
-            estimated_cost_usd=_estimate_cost(model, tokens_input, tokens_output),
+            estimated_cost_usd=cost,
+            via_batch=via_batch,
         )
         self._records.append(record)
 
@@ -213,8 +241,16 @@ class TokenLogger:
             f"{total_in:>8,} {total_out:>8,} "
             f"{total_in + total_out:>8,} ${total_cost:>9.4f}"
         )
+        has_batch = any(r.via_batch for r in self._records)
+        batch_count = sum(1 for r in self._records if r.via_batch)
         print(f"{'='*72}")
-        print(f"  Pricing: Anthropic list prices (see token_logger.py for rates).")
+        if has_batch:
+            print(
+                f"  Pricing: Batch API (50% discount applied to {batch_count} "
+                f"of {total_calls} calls). Web-search + fallback calls at list price."
+            )
+        else:
+            print(f"  Pricing: Anthropic list prices (see token_logger.py for rates).")
         print(f"  NOTE: Does not include S2 cache-hits (state context reused).")
         print(f"{'='*72}\n")
 
@@ -247,6 +283,7 @@ class TokenLogger:
         total_cost   = sum(r.estimated_cost_usd for r in self._records)
         total_tokens = sum(r.tokens_total        for r in self._records)
         avg_cost     = total_cost / community_count if community_count > 0 else 0.0
+        has_batch    = any(r.via_batch for r in self._records)
 
         print(f"\n{'='*50}")
         print(f"  SCAN MODE COST SUMMARY")
@@ -255,6 +292,8 @@ class TokenLogger:
         print(f"  Total tokens:   {total_tokens:,}")
         print(f"  Total cost:     ${total_cost:.2f}")
         print(f"  Avg cost/city:  ${avg_cost:.2f}")
+        if has_batch:
+            print(f"  Pricing:        Batch API (50% discount applied)")
         print(f"{'='*50}\n")
 
     def finalize(self, run_id: Optional[str] = None) -> None:

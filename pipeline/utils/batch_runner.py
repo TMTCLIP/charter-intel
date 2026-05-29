@@ -262,6 +262,7 @@ class BatchGateway:
                     stage=call.stage, model=call.model,
                     tokens_input=tokens_in, tokens_output=tokens_out,
                     community_id=call.community_id,
+                    via_batch=True,   # 50% Batch API discount applied
                 )
                 logger.info(
                     "[BATCH] Delivered %s/%s  in=%d out=%d",
