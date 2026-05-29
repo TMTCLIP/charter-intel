@@ -84,6 +84,7 @@ def call_claude(
     retry_attempts: int = 3,
     retry_delay_seconds: float = 5.0,
     use_web_search: bool = False,
+    web_search_max_uses: int = 5,
 ) -> APIResult:
     """
     Call Claude and return an APIResult.
@@ -103,6 +104,9 @@ def call_claude(
                          content will be a mixed list of text/tool_use/tool_result
                          blocks; all text blocks are joined as the final output.
                          Existing callers with use_web_search=False are unaffected.
+        web_search_max_uses: Maximum searches the model may issue per call.
+                         Only applies when use_web_search=True.
+                         Depth routing: standard=4/6, deep=8/10 (per-call caps).
 
     Returns:
         APIResult. Check result.ok before using output.
@@ -124,7 +128,8 @@ def call_claude(
             )
             if use_web_search:
                 call_kwargs["tools"] = [
-                    {"type": "web_search_20250305", "name": "web_search", "max_uses": 5}
+                    {"type": "web_search_20250305", "name": "web_search",
+                     "max_uses": web_search_max_uses}
                 ]
 
             response = client.messages.create(**call_kwargs)

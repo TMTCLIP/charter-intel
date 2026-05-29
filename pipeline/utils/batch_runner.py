@@ -145,6 +145,7 @@ class BatchGateway:
         retry_attempts:       int   = 3,
         retry_delay_seconds:  float = 5.0,
         use_web_search:       bool  = False,
+        web_search_max_uses:  int   = 5,
     ) -> APIResult:
         # Batch API does not support tool use — pass through synchronously
         if use_web_search:
@@ -155,6 +156,7 @@ class BatchGateway:
                 retry_attempts=retry_attempts,
                 retry_delay_seconds=retry_delay_seconds,
                 use_web_search=True,
+                web_search_max_uses=web_search_max_uses,
             )
 
         pending = _PendingCall(

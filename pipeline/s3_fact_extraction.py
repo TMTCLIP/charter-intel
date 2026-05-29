@@ -40,6 +40,16 @@ STAGE_ID = "s3_fact_extraction"
 # 58 Albuquerque schools inflates the base prompt to ~10k tokens.
 _MAX_CHARTER_INTEL_SCHOOLS = 10
 
+# Columns the charter_intel prompt actually uses. All other CSV columns are
+# stripped before JSON injection to reduce input token count. The model copies
+# these verbatim (school_name, authorizer, grades_served, phone, contact_email)
+# or uses them as ranking/proficiency ground truth.
+_SCHOOL_PROMPT_FIELDS = frozenset({
+    "school_name", "authorizer", "grades_served",
+    "phone", "contact_email",
+    "ela_proficiency_pct", "math_proficiency_pct",
+})
+
 # Web result truncation — caps content/snippet fields in any list-of-dicts
 # payload before it's serialized into a prompt string.
 _WEB_RESULT_MAX_CHARS = 600
@@ -278,7 +288,9 @@ def run(
 
     # ── Web search supplemental calls — gated by --depth ────────────────────
     # fast: none  |  standard: political_climate only  |  deep: all 5 + 8s sleeps
+    # max_uses caps: standard=4, deep=8 (political_climate); standard=6, deep=10 (charter_intel)
     _web_search_tokens = 0
+    _pc_max_uses = {"standard": 4, "deep": 8}.get(config.depth, 4)
     try:
         if config.depth not in ("standard", "deep"):
             raise _DepthSkip
@@ -300,6 +312,7 @@ def run(
             temperature=0.3,
             expect_json=True,
             use_web_search=True,
+            web_search_max_uses=_pc_max_uses,
             stage=f"{STAGE_ID}_political_climate",
             community_id=community_id,
         )
@@ -1074,6 +1087,8 @@ def _fetch_charter_intel(
     On any failure: returns empty dict (caller falls back to raw CSV data).
     """
     use_web = config.depth in ("standard", "deep")
+    # max_uses: standard=6, deep=10; fast uses no web search (use_web=False)
+    ci_max_uses = {"standard": 6, "deep": 10}.get(config.depth, 6)
 
     if use_web:
         depth_instruction = (
@@ -1091,16 +1106,21 @@ def _fetch_charter_intel(
         )
 
     try:
-        # Cap schools passed to the prompt. CSV is already sorted by ELA
-        # proficiency descending, so the first N are the best candidates.
-        prompt_schools = _truncate_web_results(csv_schools[:_MAX_CHARTER_INTEL_SCHOOLS])
+        # Project to prompt-relevant fields only before slicing and serialising.
+        # Strips enrollment_cap, address, proficiency_year, source_class,
+        # source_url, source_title, confidence, contact_verification_required —
+        # none of which the charter_intel prompt needs.
+        projected = [
+            {k: v for k, v in school.items() if k in _SCHOOL_PROMPT_FIELDS}
+            for school in csv_schools[:_MAX_CHARTER_INTEL_SCHOOLS]
+        ]
 
         prompt_text = load_prompt("prompts/extract/s3_charter_intel.md", {
             "COMMUNITY_NAME":      community_name,
             "STATE_NAME":          state_name,
             "STATE_CODE":          state,
             "TODAY_DATE":          today_str(),
-            "CSV_SCHOOLS_JSON":    json.dumps(prompt_schools,   indent=2),
+            "CSV_SCHOOLS_JSON":    json.dumps(projected,        indent=2),
             "CSV_AUTHORIZERS_JSON": json.dumps(csv_authorizers, indent=2),
             "DEPTH_INSTRUCTION":   depth_instruction,
         })
@@ -1118,6 +1138,7 @@ def _fetch_charter_intel(
             temperature=0.3,
             expect_json=True,
             use_web_search=use_web,
+            web_search_max_uses=ci_max_uses,
             stage=f"{STAGE_ID}_charter_intel",
             community_id=community_id,
         )
