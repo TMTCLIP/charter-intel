@@ -54,6 +54,167 @@ _SCHOOL_PROMPT_FIELDS = frozenset({
 # payload before it's serialized into a prompt string.
 _WEB_RESULT_MAX_CHARS = 600
 
+# Audit log for S3 web-search token regression tracking.
+_S3_AUDIT_PATH = "logs/s3_token_audit.csv"
+_S3_AUDIT_HEADER = [
+    "timestamp", "community", "depth", "call_name",
+    "input_tokens", "web_search_requests", "output_tokens",
+]
+
+
+def _write_s3_audit(
+    community_id: str,
+    depth: str,
+    call_name: str,
+    result: "APIResult",
+) -> None:
+    """Append one row to logs/s3_token_audit.csv after each S3 Claude call.
+
+    Captures input_tokens, output_tokens, and web_search_requests (from
+    usage.server_tool_use — 0 for non-web-search calls or batch responses
+    where raw_response is absent).  Creates the file with a header on first
+    write.  Never raises — failures are logged as warnings only.
+    """
+    try:
+        raw = getattr(result, "raw_response", None)
+        stu = getattr(getattr(raw, "usage", None), "server_tool_use", None)
+        web_searches = int(getattr(stu, "web_search_requests", 0) or 0)
+
+        os.makedirs("logs", exist_ok=True)
+        write_header = not os.path.exists(_S3_AUDIT_PATH)
+        with open(_S3_AUDIT_PATH, "a", newline="") as fh:
+            w = csv.writer(fh)
+            if write_header:
+                w.writerow(_S3_AUDIT_HEADER)
+            w.writerow([
+                time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                community_id,
+                depth,
+                call_name,
+                result.tokens_input,
+                web_searches,
+                result.tokens_output,
+            ])
+    except Exception as _exc:
+        logger.warning("[%s] s3_token_audit write failed: %s", community_id, _exc)
+
+
+def _should_run_political_climate_search(
+    community_id: str,
+    community_name: str,
+    state: str,
+    known_schools: list[str],
+    pop_data: Optional[dict],
+    state_context: dict,
+    config: PipelineConfig,
+) -> tuple[bool, str]:
+    """Gate: determines whether expensive Sonnet political climate web search is warranted.
+
+    Returns (should_run, skip_reason).  If should_run=False, skip_reason explains why
+    the state baseline is inherited. If should_run=True, skip_reason is empty.
+
+    Gate is fail-open: any ambiguous result (empty Haiku response, exception, parse
+    failure) passes through to the full Sonnet search. A missed skip is better than
+    a suppressed dimension.
+
+    Rule-based skip (zero cost, no model call) — fires if BOTH:
+      - Community latest-year K-12 enrollment < 2000 (from pop_data.enrollment_by_year)
+      - No charter schools exist in S1 roster (known_schools empty)
+
+    Haiku gate (if rule-based skip does NOT fire):
+      - One Haiku call, no web search, max_tokens=100, temperature=0
+      - Question: does this community have meaningfully distinct local charter politics?
+      - YES → run Sonnet web search as normal
+      - NO  → inherit state baseline (index=5, MODERATE, PROVISIONAL)
+      - Empty/error → fail-open, run Sonnet search
+
+    Never suppresses the political_climate dimension — a state-baseline datapoint
+    is always injected if the gate blocks.
+    """
+    # ── Derive enrollment from pop_data.enrollment_by_year (latest year) ─────
+    enrollment: Optional[int] = None
+    if pop_data:
+        by_year: dict = pop_data.get("enrollment_by_year") or {}
+        if by_year:
+            latest_year = max(by_year.keys())
+            enrollment = by_year[latest_year]
+
+    # ── Rule-based skip (zero cost) ──────────────────────────────────────────
+    # Requires BOTH conditions — either alone is insufficient to skip Sonnet.
+    enrollment_small = enrollment is not None and enrollment < 2000
+    no_charters = not known_schools  # empty list or None
+
+    if enrollment_small and no_charters:
+        reason = (
+            f"rule-based skip: enrollment {enrollment} < 2000, "
+            f"no known charter schools"
+        )
+        logger.info(
+            "[%s] Political climate: rule-based skip — inheriting state baseline (%s)",
+            community_id, reason,
+        )
+        return (False, reason)
+
+    # ── Haiku gate ───────────────────────────────────────────────────────────
+    school_list_str = ", ".join(known_schools) if known_schools else "none"
+    haiku_prompt = (
+        f"Does {community_name}, {state} likely have meaningfully distinct local "
+        f"charter school politics from the state baseline?\n\n"
+        f"Context:\n"
+        f"- K-12 enrollment (latest year): {enrollment if enrollment is not None else 'unknown'}\n"
+        f"- Known charter schools ({len(known_schools) if known_schools else 0}): "
+        f"{school_list_str}\n\n"
+        f"Answer YES or NO with one sentence of reasoning."
+    )
+
+    try:
+        haiku_result = call_claude(
+            model=config.model_haiku,
+            system=(
+                "You are a concise policy analyst. Answer YES or NO followed by "
+                "one sentence. Do not exceed two sentences."
+            ),
+            user=haiku_prompt,
+            max_tokens=100,
+            temperature=0,
+            expect_json=False,
+            use_web_search=False,
+            stage=f"{STAGE_ID}_political_climate_gate",
+            community_id=community_id,
+        )
+
+        # Audit the Haiku gate call — appears as s3_political_climate_gate in logs
+        _write_s3_audit(community_id, config.depth, "s3_political_climate_gate", haiku_result)
+
+        haiku_response = (haiku_result.text or "").strip()
+        resp_upper = haiku_response.upper()
+
+        # Fail-open: default YES unless response clearly starts with NO (not "NO, but...")
+        # Protects against "NO, YES would be..." edge-cases
+        starts_no = resp_upper.startswith("NO") and "YES" not in resp_upper
+        haiku_decision = "NO" if starts_no else "YES"
+
+        if haiku_decision == "NO":
+            reason = f"Haiku gate NO: {haiku_response[:120]}"
+            logger.info(
+                "[%s] Political climate: Haiku gate — NO (%s), inheriting state baseline",
+                community_id, haiku_response[:80],
+            )
+            return (False, reason)
+
+        logger.info(
+            "[%s] Political climate: Haiku gate — YES (%s), running Sonnet web search",
+            community_id, haiku_response[:80],
+        )
+        return (True, "")
+
+    except Exception as exc:
+        logger.warning(
+            "[%s] Political climate: Haiku gate failed — fail-open, running Sonnet search: %s",
+            community_id, exc,
+        )
+        return (True, "")
+
 
 def _truncate_web_results(results: list[dict]) -> list[dict]:
     """Truncate each web result's content field to reduce prompt bloat.
@@ -276,6 +437,7 @@ def run(
         stage=STAGE_ID,
         community_id=community_id
     )
+    _write_s3_audit(community_id, config.depth, "s3_main", result)
 
     if result.parse_error:
         return StageResult(
@@ -286,81 +448,127 @@ def run(
 
     facts_output = result.parsed_json
 
-    # ── Web search supplemental calls — gated by --depth ────────────────────
+    # ── Web search supplemental calls — gated by --depth + Haiku pre-filter ──
     # fast: none  |  standard: political_climate only  |  deep: all 5 + 8s sleeps
     # max_uses caps: standard=4, deep=8 (political_climate); standard=6, deep=10 (charter_intel)
+    # Political climate: Haiku gate skips expensive Sonnet search for small communities
+    # with no local charter activity — inherits state baseline (~$0.001 vs $0.143).
     _web_search_tokens = 0
     _pc_max_uses = {"standard": 4, "deep": 8}.get(config.depth, 4)
     try:
         if config.depth not in ("standard", "deep"):
             raise _DepthSkip
-        pc_prompt = load_prompt("prompts/extract/s3_political_climate.md", {
-            "COMMUNITY_NAME": community_name,
-            "STATE_NAME": state_context.get("state_name", state),
-            "TODAY_DATE": today_str(),
-        })
 
-        pc_result = call_claude(
-            model=config.model_sonnet,
-            system=(
-                "You are a political intelligence researcher. "
-                "Use web search to find current information. "
-                "Respond ONLY with valid JSON."
-            ),
-            user=pc_prompt,
-            max_tokens=2048,
-            temperature=0.3,
-            expect_json=True,
-            use_web_search=True,
-            web_search_max_uses=_pc_max_uses,
-            stage=f"{STAGE_ID}_political_climate",
+        # ── Haiku pre-filter gate ────────────────────────────────────────────
+        should_run_pc, gate_skip_reason = _should_run_political_climate_search(
             community_id=community_id,
+            community_name=community_name,
+            state=state,
+            known_schools=known_schools,
+            pop_data=pop_data,
+            state_context=state_context,
+            config=config,
         )
-        _web_search_tokens += pc_result.total_tokens
 
-        if pc_result.parse_error:
-            logger.warning(
-                "[%s] Political climate web search JSON parse failed: %s",
-                community_id, pc_result.parse_error,
-            )
-        elif pc_result.parsed_json:
-            pc = pc_result.parsed_json
-            sources = pc.get("sources") or []
-            first_source = sources[0] if sources else {}
-            index_val = pc.get("political_climate_index")
-            confidence = pc.get("confidence", "MODERATE")
-
-            pc_datapoint = {
-                "datapoint_id": f"dp_{community_id}_political_climate_websearch",
+        if not should_run_pc:
+            # Gate blocked — inject state baseline so S5 always has a dimension to score
+            facts_output.setdefault("facts", []).append({
+                "datapoint_id": f"dp_{community_id}_political_climate_baseline",
                 "community_id": community_id,
                 "state": state,
                 "dimension": "political_climate",
                 "fact_key": "political_climate_index",
-                "claim": f"Political climate index (web): {index_val}",
-                "value": index_val,
+                "claim": "Political climate index (state baseline): 5",
+                "value": 5,  # MIXED — neutral state default
                 "value_unit": None,
                 "value_year": int(today_str()[:4]),
-                "source_class": "MEDIA",
-                "source_url": first_source.get("url"),
-                "source_title": first_source.get("title"),
-                "source_date": first_source.get("date"),
-                "confidence": confidence,
-                "confidence_rationale": None,
-                "verification_status": "VERIFIED" if confidence == "HIGH" else "PROVISIONAL",
+                "source_class": "STATE_CONTEXT",
+                "source_url": None,
+                "source_title": None,
+                "source_date": None,
+                "confidence": "MODERATE",
+                "confidence_rationale": gate_skip_reason,
+                "verification_status": "PROVISIONAL",
                 "bias_flag": None,
-                "extracted_by": config.model_sonnet,
+                "extracted_by": "haiku_gate",
                 "extracted_at": today_str(),
                 "stage": STAGE_ID,
                 "in_main_analysis": True,
                 "needs_verification_reason": None,
-            }
-
-            facts_output.setdefault("facts", []).append(pc_datapoint)
-
+            })
             logger.info(
-                "[%s] Political climate web search — index=%s confidence=%s sources=%d",
-                community_id, index_val, confidence, len(sources),
+                "[%s] Political climate: gate skipped Sonnet search — state baseline injected",
+                community_id,
             )
+
+        else:
+            # ── Sonnet political climate web search (gate passed) ──────────────
+            pc_prompt = load_prompt("prompts/extract/s3_political_climate.md", {
+                "COMMUNITY_NAME": community_name,
+                "STATE_NAME": state_context.get("state_name", state),
+                "TODAY_DATE": today_str(),
+            })
+
+            pc_result = call_claude(
+                model=config.model_sonnet,
+                system=(
+                    "You are a political intelligence researcher. "
+                    "Use web search to find current information. "
+                    "Respond ONLY with valid JSON."
+                ),
+                user=pc_prompt,
+                max_tokens=2048,
+                temperature=0.3,
+                expect_json=True,
+                use_web_search=True,
+                web_search_max_uses=_pc_max_uses,
+                stage=f"{STAGE_ID}_political_climate",
+                community_id=community_id,
+            )
+            _web_search_tokens += pc_result.total_tokens
+            _write_s3_audit(community_id, config.depth, "s3_political_climate", pc_result)
+
+            if pc_result.parse_error:
+                logger.warning(
+                    "[%s] Political climate web search JSON parse failed: %s",
+                    community_id, pc_result.parse_error,
+                )
+            elif pc_result.parsed_json:
+                pc = pc_result.parsed_json
+                sources = pc.get("sources") or []
+                first_source = sources[0] if sources else {}
+                index_val = pc.get("political_climate_index")
+                confidence = pc.get("confidence", "MODERATE")
+
+                facts_output.setdefault("facts", []).append({
+                    "datapoint_id": f"dp_{community_id}_political_climate_websearch",
+                    "community_id": community_id,
+                    "state": state,
+                    "dimension": "political_climate",
+                    "fact_key": "political_climate_index",
+                    "claim": f"Political climate index (web): {index_val}",
+                    "value": index_val,
+                    "value_unit": None,
+                    "value_year": int(today_str()[:4]),
+                    "source_class": "MEDIA",
+                    "source_url": first_source.get("url"),
+                    "source_title": first_source.get("title"),
+                    "source_date": first_source.get("date"),
+                    "confidence": confidence,
+                    "confidence_rationale": None,
+                    "verification_status": "VERIFIED" if confidence == "HIGH" else "PROVISIONAL",
+                    "bias_flag": None,
+                    "extracted_by": config.model_sonnet,
+                    "extracted_at": today_str(),
+                    "stage": STAGE_ID,
+                    "in_main_analysis": True,
+                    "needs_verification_reason": None,
+                })
+
+                logger.info(
+                    "[%s] Political climate web search — index=%s confidence=%s sources=%d",
+                    community_id, index_val, confidence, len(sources),
+                )
 
     except _DepthSkip:
         pass
@@ -1087,8 +1295,8 @@ def _fetch_charter_intel(
     On any failure: returns empty dict (caller falls back to raw CSV data).
     """
     use_web = config.depth in ("standard", "deep")
-    # max_uses: standard=6, deep=10; fast uses no web search (use_web=False)
-    ci_max_uses = {"standard": 6, "deep": 10}.get(config.depth, 6)
+    # max_uses: standard=5 (reverted from 6 — raised search pressure), deep=10
+    ci_max_uses = {"standard": 5, "deep": 10}.get(config.depth, 5)
 
     if use_web:
         depth_instruction = (
@@ -1142,6 +1350,7 @@ def _fetch_charter_intel(
             stage=f"{STAGE_ID}_charter_intel",
             community_id=community_id,
         )
+        _write_s3_audit(community_id, config.depth, "s3_charter_intel", result)
 
         if result.parse_error:
             logger.warning(

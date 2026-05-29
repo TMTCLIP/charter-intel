@@ -29,10 +29,6 @@ RULES:
 4. contact_verification_required: must be true on every school and authorizer. Never false.
 5. Respond ONLY with valid JSON. No markdown fences, no preamble.
 
-SEARCH SCOPE (applies when web search is available):
-- Search FOR: school website, academic_model, notable_note; authorizer type, contact info, website, reputation_note
-- Do NOT search: school_name, authorizer, grades_served, phone, contact_email, proficiency — these are CSV ground truth, already verified
-
 ---
 
 ## USER
@@ -45,7 +41,7 @@ Charter school landscape for **{{COMMUNITY_NAME}}, {{STATE_NAME}} ({{STATE_CODE}
 ### AUTHORIZERS (PED roster — verified ground truth):
 {{CSV_AUTHORIZERS_JSON}}
 
-Select the top 5 schools. Enrich each with website, academic_model, and notable_note via web search (if available) or training knowledge. Enrich each authorizer with type, contact info, website, and reputation note.
+Select the top 5 schools. Enrich each with website, academic_model, and notable_note via web search (if available) or training knowledge. Enrich each authorizer with type, contact info, website, and reputation note. Leave any field null if not readily found — do not search exhaustively to fill every field.
 
 Return ONLY this JSON:
 
