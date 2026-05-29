@@ -471,7 +471,8 @@ def check_override_flags(
         by_year = fact_index.get("enrollment_by_year")
         if by_year and isinstance(by_year, dict) and len(by_year) > 0:
             latest_year = str(max(int(y) for y in by_year.keys()))
-            enrollment = by_year[latest_year]
+            # Keys may be int or str depending on fetcher — try both
+            enrollment = by_year.get(latest_year) or by_year.get(int(latest_year))
             enrollment_source = f"NCES {latest_year}"
 
     if enrollment is not None and float(enrollment) < 1500:
