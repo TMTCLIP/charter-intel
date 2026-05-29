@@ -45,7 +45,7 @@ STAGE_ID = "s6_synthesis"
 # ─────────────────────────────────────────────
 
 MODE_MODELS = {
-    OutputMode.STRATEGIC_BRIEF: "sonnet",
+    OutputMode.STRATEGIC_BRIEF: "haiku",   # Haiku quality gate passed 5/5 (Session 15)
     OutputMode.DEEP_DIVE:      "opus",
 }
 
@@ -289,7 +289,7 @@ def _run_audit(
     })
 
     result = call_claude(
-        model=config.model_sonnet,
+        model=config.model_haiku,
         system=("You are a fact-grounding auditor. "
                 "Respond ONLY with valid JSON. No markdown, no preamble."),
         user=prompt_text,
