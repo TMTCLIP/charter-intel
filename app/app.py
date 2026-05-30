@@ -14,6 +14,7 @@ from __future__ import annotations
 import os
 import re
 import sys
+import urllib.parse
 from pathlib import Path
 
 # Streamlit executes this file as a top-level script; ensure sibling modules
@@ -281,6 +282,14 @@ def view_history() -> None:
         with tabs[0]:
             if html:
                 st.caption(str(entry["html_path"]))
+                _encoded = urllib.parse.quote(html)
+                st.markdown(
+                    f'<a href="data:text/html;charset=utf-8,{_encoded}" target="_blank" '
+                    'style="display:inline-block; background:#82c341; color:#FFFFFF; '
+                    'padding:6px 16px; border-radius:6px; text-decoration:none; '
+                    'font-weight:600; margin-bottom:10px;">🖨 Open / Print</a>',
+                    unsafe_allow_html=True,
+                )
                 components.html(html, height=900, scrolling=True)
             else:
                 st.caption("No .html brief found.")
@@ -301,8 +310,22 @@ VIEWS = {
     "History + Briefs": view_history,
 }
 
+_ALLIGATOR = r"""
+      ___
+  .-'   '-.
+ /  0   0  \
+|    ___    |
+ \  '---'  /
+  '-._____.-'
+   CLIP 🐊
+"""
+
 with st.sidebar:
-    st.title("CLIP")
+    st.markdown(
+        "<div style='font-size:2.2rem; font-weight:800; color:#1B2A47; "
+        "line-height:1;'>CLIP</div>",
+        unsafe_allow_html=True,
+    )
     st.caption("Charter Intel Platform — pipeline wrapper")
     nav = st.radio("View", list(VIEWS.keys()),
                    index=list(VIEWS.keys()).index(st.session_state.get("nav", "New Scan")))
@@ -310,5 +333,22 @@ with st.sidebar:
     st.divider()
     st.caption(f"Interpreter: `{config.PYTHON_BIN}`")
     st.caption(f"Repo: `{config.REPO_ROOT}`")
+
+    # Hidden mascot — curious users find it, everyone else ignores it.
+    with st.expander("·", expanded=False):
+        st.code(_ALLIGATOR, language=None)
+        st.caption("CLIP watches the market so you don't have to.")
+
+# ── Brand header bar (top of main content area) ─────────────────────────────
+st.markdown(
+    "<div style='border-left:6px solid #82c341; padding:4px 0 4px 14px; "
+    "margin-bottom:18px;'>"
+    "<div style='font-size:1.6rem; font-weight:800; color:#1B2A47; "
+    "line-height:1.15;'>CLIP</div>"
+    "<div style='font-size:0.95rem; color:#1B2A47;'>"
+    "Charter Community Landscape Intelligence Platform</div>"
+    "</div>",
+    unsafe_allow_html=True,
+)
 
 VIEWS[nav]()
