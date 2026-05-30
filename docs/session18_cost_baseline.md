@@ -4,7 +4,43 @@ Post-gate statewide scan cost estimate — established 2026-05-29.
 
 ---
 
-## Executive Summary
+## Session 19 confirmed figures (full run, dry-run bug fixed — 2026-05-30)
+
+Re-ran the full statewide dry-run after the Session 19 Task 1 fix that adds a
+dry-run guard to S6 synthesis (`pipeline/s6_synthesis.py`, in both `run()` and
+`_run_scan_synthesis()`). Previously S6 could attempt Haiku calls during a
+dry-run; the guard now skips them, so the dry-run completes cleanly across all
+25 communities with **zero API calls**.
+
+Command: `python3 main.py --state NM --all --depth standard --preset maturity_adjusted --dry-run`
+
+| Metric | Value |
+|--------|-------|
+| Communities processed | 25 |
+| Depth / preset | standard / maturity_adjusted |
+| Total (all gate=YES) | **$3.9425** |
+| Total (all gate=NO, floor) | **$2.8550** |
+| Cost / city (gate=YES) | **$0.1577** |
+| Cost / city (gate=NO) | **$0.1142** |
+| Gate savings if all skip | $1.0875 (28%) |
+
+**These figures supersede the Session 18 partial estimates below.** They match
+the Session 18 per-city numbers because the dry-run cost figure is a *heuristic*
+(per-city constant × community count), not a per-city token measurement — so the
+value of this run is **confirmation across the full 25-community set with the
+dry-run bug fixed**, not a newly measured per-city number. A live run with
+`token_logger` is still required to replace the heuristic with measured cost.
+
+Run note: the dry-run reported "4 succeeded / 21 failed". The 21 "failures" are
+S7 render returning *"Brief not found — Run S6 first"* because the new guard
+skips S6 (so no brief JSON exists to render); the 4 "successes" are communities
+that had a cached S6 brief from prior real runs. This is expected dry-run
+behavior with the fix in place, **not** a pipeline error — the cost estimate
+(the purpose of the run) printed normally.
+
+---
+
+## Executive Summary — Session 18 estimate (partial run, unreliable; superseded by Session 19 above)
 
 | Metric | Value |
 |--------|-------|
