@@ -1,7 +1,6 @@
 data/cache/
 data/raw/
 data/raw/national/
-outputs/
 __pycache__/
 *.pyc
 .env
@@ -11,3 +10,12 @@ data/processed/
 **/.DS_Store
 data/logs/
 logs/
+
+# Ignore all generated outputs EXCEPT the committed POC demo brief (nm-questa).
+# A blanket `outputs/` dir-exclusion cannot be negated for a nested path, so we
+# exclude contents level-by-level and re-include the nm-questa path.
+outputs/*
+!outputs/by_community/
+outputs/by_community/*
+!outputs/by_community/nm-questa/
+!outputs/by_community/nm-questa/**
