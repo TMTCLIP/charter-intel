@@ -30,6 +30,7 @@ from pipeline.utils.ped_fetcher import get_district_data
 from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data
 from pipeline.utils.acs_fetcher  import get_district_data as get_acs_district_data, get_total_population as get_acs_total_population
 from pipeline.utils.population_trends_fetcher import get_population_trends
+from pipeline.utils.saipe_fetcher import get_poverty_data as get_saipe_poverty_data
 from pipeline.utils.charter_schools_fetcher import get_community_charter_schools
 from pipeline.utils.authorizers_fetcher     import get_community_authorizers
 
@@ -1023,6 +1024,19 @@ def run(
     # ── Inject ACS fact datapoints (ell_pct → operational_complexity) ────────
     _inject_acs_facts(facts_output, acs_data, community_id, state)
 
+    # ── Inject SAIPE poverty facts (operational_complexity + funding_environment)
+    nces_map = {}
+    try:
+        import yaml as _yaml
+        with open("config/states.yaml") as _f:
+            _states_cfg = _yaml.safe_load(_f)
+        nces_map = _states_cfg.get(state.upper(), {}).get("nces_district_map", {})
+    except Exception as _exc:
+        logger.warning("[%s] Could not load nces_district_map for SAIPE lookup: %s", community_id, _exc)
+    saipe_leaid = nces_map.get(community_id)
+    saipe_data = get_saipe_poverty_data(saipe_leaid) if saipe_leaid else None
+    _inject_saipe_facts(facts_output, saipe_data, community_id, state)
+
     # ── Inject NCES enrollment trend facts (population_trends dimension) ──────
     _inject_population_trends_facts(facts_output, pop_data, community_id, state)
 
@@ -1248,6 +1262,96 @@ _POP_FACT_KEY_MAP: dict[str, tuple[str, str]] = {
     "data_year":          ("population_trends", "text"),
 }
 _POP_META_KEYS: frozenset = frozenset({"source_title", "source_url", "confidence"})
+
+
+
+# Maps SAIPE result keys → list of (scoring_dimension, value_unit)
+# poverty_rate_pct flows into BOTH operational_complexity and funding_environment
+# poverty_count_5_17 flows into funding_environment only
+_SAIPE_FACT_KEY_MAP: dict[str, list[tuple[str, str]]] = {
+    "poverty_rate_pct":   [("operational_complexity", "percent"), ("funding_environment", "percent")],
+    "poverty_count_5_17": [("funding_environment", "count")],
+}
+_SAIPE_META_KEYS: frozenset = frozenset({
+    "leaid", "data_year", "source", "source_url", "source_title", "confidence", "total_population",
+})
+
+
+def _inject_saipe_facts(
+    facts_output: dict,
+    saipe_data: Optional[dict],
+    community_id: str,
+    state: str,
+) -> None:
+    """Append Census SAIPE poverty fact datapoints to facts_output.
+
+    Injects saipe_poverty_rate_pct into operational_complexity and
+    funding_environment dimensions, and saipe_poverty_count_5_17 into
+    funding_environment. Skips silently when saipe_data is None (no API key,
+    no LEAID mapping, no matching district, or API failure).
+    """
+    if not saipe_data:
+        return
+
+    facts: list[dict] = facts_output.setdefault("facts", [])
+
+    existing_federal_keys: set[str] = {
+        f.get("fact_key", "")
+        for f in facts
+        if f.get("source_class") == "FEDERAL_DATA"
+    }
+
+    injected = 0
+    for fact_key, dim_unit_list in _SAIPE_FACT_KEY_MAP.items():
+        value = saipe_data.get(fact_key)
+        if value is None:
+            continue
+
+        for dimension, unit in dim_unit_list:
+            # Build a unique fact_key for deduplication (dimension-qualified)
+            qualified_key = f"saipe_{fact_key}_{dimension}"
+            if qualified_key in existing_federal_keys:
+                continue
+
+            facts.append({
+                "datapoint_id":         f"dp_{community_id}_saipe_{fact_key}_{dimension[:4]}",
+                "community_id":         community_id,
+                "state":                state,
+                "dimension":            dimension,
+                "fact_key":             qualified_key,
+                "claim": (
+                    f"saipe_{fact_key}: {value} "
+                    f"(SAIPE {saipe_data.get('data_year', 'unknown')})"
+                ),
+                "value":                value,
+                "value_unit":           unit,
+                "value_year":           saipe_data.get("data_year"),
+                "source_class":         "FEDERAL_DATA",
+                "source_url":           saipe_data.get("source_url"),
+                "source_title":         saipe_data.get("source_title"),
+                "source_date":          None,
+                "confidence":           "MODERATE",
+                "confidence_rationale": (
+                    "Census SAIPE school district estimate — "
+                    "independent federal poverty signal"
+                ),
+                "verification_status":  "VERIFIED",
+                "bias_flag":            None,
+                "extracted_by":         "saipe_fetcher",
+                "extracted_at":         today_str(),
+                "stage":                STAGE_ID,
+                "in_main_analysis":     True,
+                "needs_verification_reason": None,
+            })
+            injected += 1
+
+    if injected:
+        logger.info(
+            "[%s] Injected %d SAIPE fact datapoints (poverty_rate=%.1f%% year=%s)",
+            community_id, injected,
+            saipe_data.get("poverty_rate_pct", float("nan")),
+            saipe_data.get("data_year"),
+        )
 
 
 def _inject_population_trends_facts(

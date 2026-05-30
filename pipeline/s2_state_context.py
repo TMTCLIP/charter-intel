@@ -18,7 +18,7 @@ import yaml
 
 from pipeline import PipelineConfig, StageResult, StageStatus, today_str
 from pipeline.utils.api_client import call_claude, load_prompt
-from pipeline.utils.cache import CacheManager
+from pipeline.utils.cache import CacheManager, CACHE_TTL_DAYS
 from pipeline.utils.schema_validator import validate_against_schema
 
 STAGE_ID = "s2_state_context"
@@ -36,7 +36,7 @@ def run(
     cache_key = f"state/{state.lower()}/s2_state_context.json"
 
     if config.cache_enabled and not config.force_refresh:
-        cached = cache.get(cache_key)
+        cached = cache.get(cache_key, ttl_days=CACHE_TTL_DAYS["s2_state_context"])
         if cached:
             return StageResult(
                 stage_id=STAGE_ID, community_id="ALL", state=state,

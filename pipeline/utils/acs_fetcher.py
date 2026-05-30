@@ -40,6 +40,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import time
 import urllib.parse
 import urllib.request
 from typing import Optional
@@ -47,6 +48,40 @@ from typing import Optional
 import yaml
 
 log = logging.getLogger(__name__)
+
+# ── File cache config ─────────────────────────────────────────────────────────
+# ACS 5-year data is updated annually each December; 180 days gives one refresh
+# per release cycle without hitting the API on every pipeline run.
+_CACHE_DIR_ACS     = "data/cache/fetcher/acs"
+ACS_CACHE_TTL_DAYS = 180   # see also CACHE_TTL_DAYS["acs_district"] in cache.py
+
+
+def _acs_cache_read(key: str) -> Optional[dict]:
+    """Read a JSON file from the ACS fetcher cache; return None if missing or expired."""
+    path = os.path.join(_CACHE_DIR_ACS, f"{key}.json")
+    if not os.path.exists(path):
+        return None
+    age_days = (time.time() - os.path.getmtime(path)) / 86400
+    if age_days > ACS_CACHE_TTL_DAYS:
+        log.info("acs_fetcher: cache expired for key %s (%.0f days old)", key, age_days)
+        return None
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except Exception as exc:
+        log.warning("acs_fetcher: cache read failed for key %s — %s", key, exc)
+        return None
+
+
+def _acs_cache_write(key: str, data: dict) -> None:
+    """Write data to the ACS fetcher cache."""
+    path = os.path.join(_CACHE_DIR_ACS, f"{key}.json")
+    try:
+        os.makedirs(_CACHE_DIR_ACS, exist_ok=True)
+        with open(path, "w") as f:
+            json.dump(data, f, indent=2)
+    except Exception as exc:
+        log.warning("acs_fetcher: cache write failed for key %s — %s", key, exc)
 
 # ── Census API config ─────────────────────────────────────────────────────────
 
@@ -264,6 +299,13 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
         )
         return None
 
+    # ── Cache read ────────────────────────────────────────────────────────────
+    _cache_key = f"ell_{leaid_str}"
+    cached = _acs_cache_read(_cache_key)
+    if cached is not None:
+        log.info("acs_fetcher: cache hit for ELL %s (LEAID %s)", community_id, leaid_str)
+        return cached
+
     # "3500060" → "00060"
     district_code = leaid_str[2:]
 
@@ -338,13 +380,15 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
         community_id, district_code, ell_pct, numerator, denominator
     )
 
-    return {
+    result = {
         "ell_pct":      ell_pct,
         "data_year":    DATA_YEAR,
         "source_url":   SOURCE_URL,
         "source_title": SOURCE_TITLE,
         "confidence":   "MODERATE",
     }
+    _acs_cache_write(_cache_key, result)
+    return result
 
 
 def get_total_population(community_id: str, state: str) -> Optional[dict]:
@@ -404,6 +448,14 @@ def get_total_population(community_id: str, state: str) -> Optional[dict]:
         return None
 
     district_code = leaid_str[2:]
+
+    # ── Cache read ────────────────────────────────────────────────────────────
+    _pop_cache_key = f"pop_{leaid_str}"
+    cached_pop = _acs_cache_read(_pop_cache_key)
+    if cached_pop is not None:
+        log.info("acs_fetcher: cache hit for total population %s (LEAID %s)", community_id, leaid_str)
+        return cached_pop
+
     variables = f"NAME,{_TOTAL_POP_VAR}"
 
     pop_by_vintage: dict[str, int] = {}
@@ -446,7 +498,7 @@ def get_total_population(community_id: str, state: str) -> Optional[dict]:
         pct_change,
     )
 
-    return {
+    pop_result = {
         "pop_2019":    pop_early,
         "pop_2023":    pop_late,
         "pct_change":  pct_change,
@@ -455,3 +507,5 @@ def get_total_population(community_id: str, state: str) -> Optional[dict]:
         "source_url":  ACS_API_BASE,
         "confidence":  "MODERATE",
     }
+    _acs_cache_write(_pop_cache_key, pop_result)
+    return pop_result

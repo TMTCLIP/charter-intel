@@ -336,6 +336,12 @@ def _print_dry_run_cost_estimate(
 ) -> None:
     """Print a heuristic token/cost estimate for a planned pipeline run.
 
+    Shows a per-community breakdown table plus a summary.  Gate column shows
+    estimated Haiku gate decision: gate=NO for rule-based skips (enrollment
+    <2000 AND no known charters), gate=YES(est) otherwise.  In dry-run mode
+    the actual Haiku call is not made — gate=YES is the conservative estimate
+    used for max-cost calculation.
+
     Derived from observed nm-questa standard-depth token counts.
     Actual usage varies ±30–50% depending on fact density and response length.
 
@@ -345,49 +351,93 @@ def _print_dry_run_cost_estimate(
     n = len(communities)
     depth = getattr(config, "depth", "standard")
 
-    # (stage_id, model_tier, est_input_tokens, est_output_tokens, skip_when_fast)
+    # (stage_id, model_tier, est_input_tokens, est_output_tokens, skip_when_fast, is_gate_dependent)
     # S3 fires once for main extraction, then again for political_climate web search
-    # at standard/deep depth.  S6 fires twice: synthesis (Haiku) + audit (Haiku).
+    # at standard/deep depth if Haiku gate says YES.
+    # S6 fires twice: synthesis (Haiku) + audit (Haiku).
     STAGE_COSTS = [
-        ("s3_fact_extraction", "sonnet", 3_700, 3_600, False),
-        ("s3_fact_extraction", "sonnet", 4_500, 2_000, True),   # political_climate web search
-        ("s4_verification",    "haiku",  3_000,   800, False),
-        ("s6_synthesis",       "haiku",  8_000, 5_000, False),  # synthesis  (Haiku, Session 15)
-        ("s6_synthesis",       "haiku",  6_000, 3_000, False),  # audit pass (Haiku, Session 15)
+        ("s3_fact_extraction", "sonnet", 3_700, 3_600, False, False),
+        ("s3_fact_extraction", "sonnet", 4_500, 2_000, True,  True),   # political_climate — gate-dependent
+        ("s4_verification",    "haiku",  3_000,   800, False, False),
+        ("s6_synthesis",       "haiku",  8_000, 5_000, False, False),  # synthesis
+        ("s6_synthesis",       "haiku",  6_000, 3_000, False, False),  # audit pass
     ]
+    # Haiku gate call — tiny but real cost at standard depth
+    HAIKU_GATE_COST_USD = 0.0003  # ~$0.0003/community (100 tokens Haiku in+out)
+
     # Pricing ($/1M tokens): input, output
     PRICE = {
         "sonnet": (3.00, 15.00),
         "haiku":  (0.80,  4.00),
     }
-    # Batch API: 50% discount on both input and output tokens
     batch_factor = 0.5 if use_batch_pricing else 1.0
 
-    total_in = total_out = 0
-    total_usd = 0.0
+    def _city_cost(include_gate_yes: bool) -> float:
+        """Estimate cost for one community, optionally including gate-dependent stages."""
+        usd = 0.0
+        for stage_id, model, est_in, est_out, skip_if_fast, gate_dep in STAGE_COSTS:
+            if stage_id not in stages_to_run:
+                continue
+            if skip_if_fast and depth == "fast":
+                continue
+            if gate_dep and not include_gate_yes:
+                continue
+            p_in, p_out = PRICE[model]
+            usd += ((est_in * p_in + est_out * p_out) / 1_000_000) * batch_factor
+        if depth in ("standard", "deep"):
+            usd += HAIKU_GATE_COST_USD * batch_factor
+        return usd
 
-    for stage_id, model, est_in, est_out, skip_if_fast in STAGE_COSTS:
-        if stage_id not in stages_to_run:
-            continue
-        if skip_if_fast and depth == "fast":
-            continue
-        p_in, p_out = PRICE[model]
-        total_in  += est_in  * n
-        total_out += est_out * n
-        total_usd += ((est_in * p_in + est_out * p_out) / 1_000_000) * n * batch_factor
+    cost_gate_no  = _city_cost(include_gate_yes=False)
+    cost_gate_yes = _city_cost(include_gate_yes=True)
 
+    # Per-community table
+    # After Session 18 Review Fix 2, rule-based skip is effectively retired
+    # (known_schools is always [], never None).  All communities go to Haiku gate.
+    # In dry-run we can't call the gate — show YES(est) as conservative assumption.
     plural = "community" if n == 1 else "communities"
     batch_note = " — Batch API (50% discount)" if use_batch_pricing else ""
-    print(f"\n{'─' * 60}")
+
+    print(f"\n{'─' * 72}")
     print(f"DRY-RUN COST ESTIMATE  ({n} {plural}, {depth} depth{batch_note})")
-    print(f"{'─' * 60}")
-    print(f"  Est. input tokens : {total_in:>10,}")
-    print(f"  Est. output tokens: {total_out:>10,}")
-    print(f"  Est. total cost   :  ${total_usd:>8.2f}")
-    print(f"  Note: heuristic from nm-questa baseline; actual ±30–50%")
+    print(f"{'─' * 72}")
+
+    if n > 1:
+        print(f"\n  {'Community':<32}  {'Depth':<10}  {'Gate':<12}  {'Est. cost':>10}")
+        print(f"  {'─'*32}  {'─'*10}  {'─'*12}  {'─'*10}")
+        total_gate_yes = total_gate_no = 0
+        for comm_id in communities:
+            # After Review Fix 2: rule-based skip never fires in normal runs.
+            # Show gate=YES(est) for all communities in dry-run.
+            gate_label = "YES (est)" if depth in ("standard", "deep") else "N/A (fast)"
+            city_usd = cost_gate_yes if depth in ("standard", "deep") else cost_gate_no
+            if depth in ("standard", "deep"):
+                total_gate_yes += 1
+            else:
+                total_gate_no += 1
+            print(f"  {comm_id:<32}  {depth:<10}  {gate_label:<12}  ${city_usd:>9.4f}")
+        print(f"  {'─'*32}  {'─'*10}  {'─'*12}  {'─'*10}")
+
+        total_usd = cost_gate_yes * n if depth in ("standard", "deep") else cost_gate_no * n
+        print(f"\n  SUMMARY")
+        print(f"    Communities       : {n}")
+        print(f"    Gate YES (est)    : {total_gate_yes}")
+        print(f"    Gate NO (est)     : {total_gate_no}")
+        print(f"    Cost if all YES   :  ${cost_gate_yes * n:>8.4f}  (conservative)")
+        print(f"    Cost if all NO    :  ${cost_gate_no  * n:>8.4f}  (gate-skip floor)")
+        print(f"    Cost / city (YES) :  ${cost_gate_yes:>8.4f}")
+        print(f"    Cost / city (NO)  :  ${cost_gate_no:>8.4f}")
+        print(f"    Gate savings (est):  ${(cost_gate_yes - cost_gate_no) * n:>8.4f}  if all skip")
+    else:
+        total_usd = cost_gate_yes
+        print(f"  Est. cost (gate YES): ${cost_gate_yes:.4f}")
+        print(f"  Est. cost (gate NO) : ${cost_gate_no:.4f}")
+
+    print(f"\n  Note: heuristic from nm-questa baseline; actual ±30–50%")
+    print(f"        Gate decision requires live Haiku call — not available in dry-run")
     if use_batch_pricing:
-        print(f"  Batch API: 50% discount applied to all stage estimates")
-    print(f"{'─' * 60}\n")
+        print(f"  Batch API: 50% discount applied")
+    print(f"{'─' * 72}\n")
 
 
 def main():
