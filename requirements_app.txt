@@ -1,0 +1,8 @@
+# Streamlit Community Cloud dependencies for the CLIP wrapper UI (POC).
+# Point Community Cloud at this file (or it auto-detects requirements.txt at root).
+#
+# The app (app/app.py, runner.py, runs.py, briefs.py, config.py) imports ONLY
+# streamlit plus the Python standard library — it never imports pipeline modules,
+# so the heavy pipeline deps (anthropic, geopandas, shapely, ...) are intentionally
+# excluded to stay within Community Cloud's memory limits.
+streamlit

@@ -1,0 +1,11 @@
+# Streamlit defaults for the CLIP wrapper.
+# Effective when Streamlit is launched with CWD=app/ (it reads ./.streamlit/).
+# The deployed entrypoint (app/run.sh) passes --server.address/--server.port
+# explicitly so PORT is honored regardless of CWD.
+[server]
+address = "0.0.0.0"
+port = 8501
+headless = true
+
+[browser]
+gatherUsageStats = false
