@@ -103,6 +103,21 @@ EXIT_CODE_NAME = "exit_code"  # written by the launch wrapper, see runner.py
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# Rate limiting (abuse guard for the Streamlit app — see app/rate_limit.py)
+# ─────────────────────────────────────────────────────────────────────────────
+RATE_LIMIT_SESSION_MAX = 3          # max scan jobs per session
+RATE_LIMIT_DAILY_MAX = 20           # max scan jobs per day
+RATE_LIMIT_DAILY_COST_CAP = 10.00   # max estimated API spend per day ($)
+RATE_LIMIT_WINDOW_HOURS = 24        # rolling window in hours
+RATE_LIMIT_STATEWIDE_WEIGHT = 3     # --all scans count as this many jobs
+RATE_LIMIT_FREE_FLAGS = ["dry_run", "mock"]  # these flags = exempt
+# Conservative cost estimate per job-weight unit. This is an abuse guard, NOT a
+# billing system — intentionally over-estimates (real maturity_adjusted standard
+# single-city ≈ $0.11–0.16; we charge $0.30 per weight unit).
+RATE_LIMIT_COST_PER_WEIGHT = 0.30
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # CLI flags exposed by the New Scan form (real flags, verified in main.py)
 # ─────────────────────────────────────────────────────────────────────────────
 PRESET_CHOICES = ["growth", "replication", "turnaround", "maturity_adjusted"]

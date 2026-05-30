@@ -27,6 +27,7 @@ import config
 import runner
 import runs as runs_mod
 import briefs as briefs_mod
+import rate_limit
 
 
 st.set_page_config(page_title="CLIP — Charter Intel Platform", layout="wide")
@@ -90,77 +91,106 @@ _PRESET_LABELS = {
 def view_new_scan() -> None:
     st.header("New Scan")
 
-    with st.form("new_scan"):
-        # ── Simple view (always visible) ────────────────────────────────────
-        col1, col2 = st.columns(2)
-        with col1:
-            target = st.text_input("City", placeholder="Santa Fe")
-        with col2:
-            state = st.text_input("State", value=config.STATE_DEFAULT)
+    # NOTE: deliberately NOT an st.form. Rate limiting needs the dry_run/mock
+    # toggle state reactively (so an exempt scan is never blocked and the Run
+    # Scan button enables the moment Dry run is switched on). st.form batches
+    # widget state until submit, which would deadlock a rate-limited user who
+    # wants a free dry-run. The submitted data passed to runner is identical.
 
-        preset_labels = list(_PRESET_LABELS.keys())
-        preset_values = list(_PRESET_LABELS.values())
-        default_preset_idx = (
-            preset_values.index(config.PRESET_DEFAULT)
-            if config.PRESET_DEFAULT in preset_values else 0
+    # ── Simple view (always visible) ────────────────────────────────────────
+    col1, col2 = st.columns(2)
+    with col1:
+        target = st.text_input("City", placeholder="Santa Fe")
+    with col2:
+        state = st.text_input("State", value=config.STATE_DEFAULT)
+
+    preset_labels = list(_PRESET_LABELS.keys())
+    preset_values = list(_PRESET_LABELS.values())
+    default_preset_idx = (
+        preset_values.index(config.PRESET_DEFAULT)
+        if config.PRESET_DEFAULT in preset_values else 0
+    )
+    strategy_label = st.selectbox("Strategy", preset_labels, index=default_preset_idx)
+    preset = _PRESET_LABELS[strategy_label]
+
+    # ── Advanced settings (collapsed by default) ────────────────────────────
+    with st.expander("Advanced settings", expanded=False):
+        depth = st.selectbox(
+            "Scan depth", config.DEPTH_CHOICES,
+            index=config.DEPTH_CHOICES.index(config.DEPTH_DEFAULT),
         )
-        strategy_label = st.selectbox("Strategy", preset_labels, index=default_preset_idx)
-        preset = _PRESET_LABELS[strategy_label]
-
-        # ── Advanced settings (collapsed by default) ────────────────────────
-        with st.expander("Advanced settings", expanded=False):
-            depth = st.selectbox(
-                "Scan depth", config.DEPTH_CHOICES,
-                index=config.DEPTH_CHOICES.index(config.DEPTH_DEFAULT),
-            )
-            mode = st.selectbox(
-                "Output mode", config.MODE_CHOICES,
-                index=config.MODE_CHOICES.index(config.MODE_DEFAULT),
-            )
-
-            run_all = st.toggle("All communities (--all)")
-            mock = st.toggle("Use mock fixtures (--mock)")
-            batch = st.toggle("Batch mode (--batch)")
-            no_cache = st.toggle("Skip cache (--no-cache)")
-            force_refresh = st.toggle("Force refresh (--force-refresh)")
-
-            extra_args = st.text_input(
-                "Extra args (appended verbatim)",
-                placeholder="--stages s5,s6,s7",
-                help="Anything not covered above, e.g. --stages, --record, --interactive.",
-            )
-
-        # ── Dry run (prominent, directly above the Run Scan button) ─────────
-        st.markdown(
-            """
-            <div style="border:2px solid #d93025; border-radius:8px;
-                        padding:10px 14px; margin:4px 0 2px 0;
-                        background-color:rgba(217,48,37,0.06);">
-              <span style="color:#d93025; font-weight:700;">
-                ⚠ Dry run (no API calls)
-              </span>
-            </div>
-            """,
-            unsafe_allow_html=True,
+        mode = st.selectbox(
+            "Output mode", config.MODE_CHOICES,
+            index=config.MODE_CHOICES.index(config.MODE_DEFAULT),
         )
-        dry_run = st.toggle("Dry run (no API calls)", value=False)
-        st.caption("Turn on to estimate cost without running a real scan")
 
-        submitted = st.form_submit_button("Run Scan", type="primary")
+        run_all = st.toggle("All communities (--all)")
+        mock = st.toggle("Use mock fixtures (--mock)")
+        batch = st.toggle("Batch mode (--batch)")
+        no_cache = st.toggle("Skip cache (--no-cache)")
+        force_refresh = st.toggle("Force refresh (--force-refresh)")
+
+        extra_args = st.text_input(
+            "Extra args (appended verbatim)",
+            placeholder="--stages s5,s6,s7",
+            help="Anything not covered above, e.g. --stages, --record, --interactive.",
+        )
+
+    # ── Dry run (prominent, directly above the Run Scan button) ─────────────
+    st.markdown(
+        """
+        <div style="border:2px solid #d93025; border-radius:8px;
+                    padding:10px 14px; margin:4px 0 2px 0;
+                    background-color:rgba(217,48,37,0.06);">
+          <span style="color:#d93025; font-weight:700;">
+            ⚠ Dry run (no API calls)
+          </span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    dry_run = st.toggle("Dry run (no API calls)", value=False)
+    st.caption("Turn on to estimate cost without running a real scan")
+
+    # ── Assemble flags + rate-limit gate ────────────────────────────────────
+    form = {
+        "target": target, "state": state, "depth": depth,
+        "preset": preset, "mode": mode,
+        "all": run_all, "dry_run": dry_run, "mock": mock, "batch": batch,
+        "no_cache": no_cache, "force_refresh": force_refresh,
+        "extra_args": extra_args,
+    }
+    exempt = rate_limit.is_exempt(form)
+    session_count = st.session_state.get("scan_job_count", 0)
+    status = rate_limit.get_rate_limit_status(config.RUNS_DIR, session_count)
+
+    st.caption(
+        f"This session: {status['session_used']}/{status['session_max']} jobs · "
+        f"Today: {status['daily_used']}/{status['daily_max']} jobs · "
+        f"Est. spend today: ${status['estimated_spend']:.2f} / ${status['cost_cap']:.2f}"
+    )
+    if exempt:
+        st.caption("✓ Dry run / mock — does not count toward limits")
+    elif status["is_blocked"]:
+        st.warning(status["block_reason"])
+
+    # Exempt scans are never blocked (principle: zero API cost).
+    disabled = status["is_blocked"] and not exempt
+    submitted = st.button("Run Scan", type="primary", disabled=disabled)
 
     if submitted:
         if not target and not run_all:
             st.error("Provide a target community or enable --all.")
             return
-        form = {
-            "target": target, "state": state, "depth": depth,
-            "preset": preset, "mode": mode,
-            "all": run_all, "dry_run": dry_run, "mock": mock, "batch": batch,
-            "no_cache": no_cache, "force_refresh": force_refresh,
-            "extra_args": extra_args,
-        }
+        # Defense in depth: enforce the limit at launch even if the button
+        # state lagged (only non-exempt scans are gated).
+        if status["is_blocked"] and not exempt:
+            st.warning(status["block_reason"])
+            return
         preview = runner.build_command(form)
         run_id = runner.launch_run(form)
+        if not exempt:
+            st.session_state["scan_job_count"] = session_count + 1
         st.session_state["active_run_id"] = run_id
         st.session_state["nav"] = "Live Run"
         st.success(f"Launched run `{run_id}`")
