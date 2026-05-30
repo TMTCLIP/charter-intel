@@ -57,6 +57,7 @@ class SchoolStub:
     school_type: str          # "CHARTER" always for this pipeline
     status: str               # "ACTIVE" | "PENDING" | "CLOSED"
     source_row: int           # row number in source CSV for debugging
+    nces_id: Optional[str] = None  # NCES school ID if available in roster
 
 
 @dataclass
@@ -84,6 +85,7 @@ ROSTER_FIELD_MAPS: dict[str, dict[str, str]] = {
         "school_name":    "Charter School",
         "authorizer":     "Authorizer",
         "grades":         "Grades Served 2025-26",
+        # nces_id: absent in NM roster — NCES data joined separately via nces_ccd_schools_nm.csv
         # city: absent — parsed from "Street Address" by _city_from_address()
         # county: absent — defaults to ""
         # status: absent — defaults to ACTIVE
@@ -207,6 +209,9 @@ def parse_roster(roster_path: str, state: str) -> list[SchoolStub]:
                 # TODO: log and route to manual review
                 continue
 
+            nces_id_col = field_map.get("nces_id")
+            nces_id = row.get(nces_id_col, "").strip() if nces_id_col else None
+
             schools.append(SchoolStub(
                 school_name=row.get(field_map.get("school_name", "School Name"), "").strip(),
                 state=state,
@@ -216,7 +221,8 @@ def parse_roster(roster_path: str, state: str) -> list[SchoolStub]:
                 grades=row.get(field_map.get("grades", "Grades"), "").strip() or None,
                 school_type="CHARTER",
                 status=status,
-                source_row=i
+                source_row=i,
+                nces_id=nces_id or None,
             ))
 
     return schools
@@ -234,6 +240,7 @@ def group_by_community(schools: list[SchoolStub], state: str) -> list[CommunityS
 
     communities = []
     for cid, school_list in sorted(grouped.items()):
+        school_list = _dedup_school_list(school_list)
         sample = school_list[0]
         communities.append(CommunityStub(
             community_id=cid,
@@ -248,6 +255,36 @@ def group_by_community(schools: list[SchoolStub], state: str) -> list[CommunityS
         ))
 
     return communities
+
+
+def _dedup_school_list(schools: list[SchoolStub]) -> list[SchoolStub]:
+    """Remove duplicate school rows within a per-city group.
+
+    Primary key: nces_id — two rows with the same non-empty NCES ID are the
+    same physical school (e.g. duplicate CSV rows from a PED export artifact).
+    Fallback: normalized (lowercase, stripped) name — catches re-listings of
+    the same school with minor formatting differences.
+
+    City is already identical for every row in the list (they share a community
+    group), so name alone is sufficient as the fallback key.
+
+    Keeps first occurrence; preserves order. Does NOT collapse schools in
+    different cities — that separation is enforced upstream by grouping.
+    """
+    seen_nces: set[str] = set()
+    seen_names: set[str] = set()
+    deduped = []
+    for school in schools:
+        if school.nces_id:
+            if school.nces_id in seen_nces:
+                continue
+            seen_nces.add(school.nces_id)
+        norm_name = school.school_name.lower().strip()
+        if norm_name in seen_names:
+            continue
+        seen_names.add(norm_name)
+        deduped.append(school)
+    return deduped
 
 
 def validate_prerequisites(state: str, roster_path: str) -> ValidationResult:

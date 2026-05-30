@@ -156,8 +156,13 @@ def _classify_by_url(fact: dict, url_patterns: list[dict]) -> dict:
 def _enforce_main_analysis_rules(fact: dict) -> dict:
     """Hard rule: certain source classes or low confidence always blocks in_main_analysis."""
     fact = dict(fact)
-    source_class = fact.get("source_class", "UNVERIFIED")
-    confidence = fact.get("confidence", "NONE")
+    # Use None as default (not "UNVERIFIED" / "NONE") so that facts whose
+    # source_class or confidence were never set by Pass A or Pass B are not
+    # silently blocked. The original defaults caused false positives: a fact
+    # whose URL didn't match any pattern AND whose LLM classification was
+    # absent would default to UNVERIFIED/NONE and be incorrectly excluded.
+    source_class = fact.get("source_class")
+    confidence = fact.get("confidence")
 
     if source_class in BLOCKED_SOURCE_CLASSES or confidence in ("LOW", "NONE"):
         fact["in_main_analysis"] = False

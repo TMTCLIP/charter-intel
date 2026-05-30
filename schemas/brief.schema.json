@@ -212,6 +212,18 @@
       "type": "string",
       "description": "AI usage disclosure for this document. Required on all external deliverables.",
       "example": "Generated with Claude assistance (s3 extraction, s6 synthesis). Facts sourced from public data as noted. Human review required before external use."
+    },
+
+    "top_charter_schools": {
+      "type": "array",
+      "description": "Charter schools in this community, injected from S3 raw data by s6_synthesis._inject_charter_intel. Directory data — bypasses S4 scoring and hallucination audit entirely. Not scored; included for operator reference only.",
+      "items": {"type": "object"}
+    },
+
+    "local_authorizers": {
+      "type": "array",
+      "description": "Local charter authorizers serving this community, injected from S3 raw data by s6_synthesis._inject_charter_intel. Directory data — bypasses S4 scoring and hallucination audit entirely. Not scored; included for operator reference only.",
+      "items": {"type": "object"}
     }
   },
 
