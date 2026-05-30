@@ -1,0 +1,35 @@
+# Railway deployment config — ACTIVE platform for CLIP.
+# Config-as-code: https://docs.railway.com/reference/config-as-code
+#
+# Build:  uses the repo Dockerfile (Python 3.11 + pipeline + app deps).
+# Deploy: always-on web service, single replica (a Railway volume can only attach
+#         to one replica), health-gated, auto-restart on crash.
+#
+# The persistent VOLUME is created once in the Railway dashboard (or via the CLI)
+# and mounted at /data — see DEPLOY.md. The Docker ENTRYPOINT
+# (tini -> docker-entrypoint.sh -> app/run.sh) reads RAILWAY_VOLUME_MOUNT_PATH
+# automatically, so app/runs/ and outputs/ are symlinked onto the volume and
+# survive every redeploy.
+
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+# Streamlit's built-in health endpoint; Railway holds traffic until it passes.
+healthcheckPath = "/_stcore/health"
+healthcheckTimeout = 300
+
+# Keep the container running; restart only if it actually crashes. Do NOT enable
+# Railway "App Sleeping" for this service — sleeping kills in-flight detached
+# main.py subprocesses.
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+# A volume binds to a single instance; never run more than one replica.
+numReplicas = 1
+
+# startCommand is intentionally omitted so the Docker ENTRYPOINT runs:
+#   tini -> docker-entrypoint.sh (wires persistence) -> app/run.sh (binds
+#   0.0.0.0, honors $PORT). Setting a startCommand here would bypass the
+#   persistence wiring.

@@ -1,0 +1,20 @@
+# Keep the build context small and never bake mutable/secret state into the image.
+.git
+.gitignore
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+**/.DS_Store
+
+# Secrets — provided at runtime via the platform's env vars, never the image.
+.env
+
+# Mutable state — lives on the persistent disk at runtime, not in the image.
+app/runs/
+outputs/
+data/cache/
+data/processed/
+data/logs/
+logs/
+*.pdf

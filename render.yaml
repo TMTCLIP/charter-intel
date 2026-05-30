@@ -1,0 +1,53 @@
+# ============================================================================
+# FALLBACK ONLY — NOT ACTIVE.
+# ----------------------------------------------------------------------------
+# The ACTIVE deployment platform is Railway (see railway.toml). This file is a
+# complete, ready-to-deploy Render Blueprint kept in the repo so switching
+# platforms is a click, not a rewrite — the SAME Dockerfile and
+# docker-entrypoint.sh power both (the entrypoint resolves the volume path from
+# DATA_DIR, which this Blueprint sets to /data).
+#
+# This file does NOTHING until you connect the repo to Render as a Blueprint.
+# Merely committing it has no effect. To ACTIVATE (see DEPLOY.md "Render fallback"):
+#   1. Render Dashboard → New → Blueprint → pick this repo (reads render.yaml).
+#   2. Set the three sync:false secrets below in the Render dashboard.
+#   3. (optional) Pause/delete the Railway service to stop double-billing.
+# From then on, git push → Render rebuilds + redeploys automatically.
+#
+# Docs: https://render.com/docs/blueprint-spec
+# ============================================================================
+services:
+  - type: web
+    name: clip
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter            # always-on (no scale-to-zero) → detached subprocess survives
+    autoDeploy: true         # git push → build → deploy, zero manual steps
+    healthCheckPath: /_stcore/health   # Streamlit's built-in health endpoint
+
+    # Persistent state survives deploys/restarts. docker-entrypoint.sh symlinks
+    # app/runs, outputs, data/cache, data/raw onto this disk (mounted at /data).
+    disk:
+      name: clip-data
+      mountPath: /data
+      sizeGB: 5
+
+    envVars:
+      # Render injects PORT automatically; app/run.sh already reads it.
+      - key: DATA_DIR
+        value: /data
+      - key: REPO_ROOT
+        value: /app
+      # Same interpreter that runs Streamlit; has all pipeline deps installed.
+      - key: CLIP_PYTHON
+        value: python3
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      # Secrets — set these in the Render dashboard (sync:false keeps them out
+      # of git). The app refuses to start without CLIP_PASSWORD.
+      - key: CLIP_PASSWORD
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CENSUS_API_KEY
+        sync: false
