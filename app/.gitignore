@@ -1,6 +1,7 @@
-# app/runs/ normally holds local, ephemeral run state and was previously ignored.
-# The blanket `runs/` ignore is removed so the committed demo record
-# (app/runs/demo-questa-001/) is tracked — it gives the History + Brief viewer
-# something to display in the POC demo without needing a live run.
-# Note: local run dirs created at runtime are no longer auto-ignored; do not
-# `git add` them. Only demo-questa-001/ is intended to be committed.
+# Ignore all runtime run artifacts
+runs/*
+runs/**/*
+
+# Keep the demo record for the POC viewer
+!runs/demo-questa-001/
+!runs/demo-questa-001/**
