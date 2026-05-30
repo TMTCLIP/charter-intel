@@ -14,7 +14,6 @@ from __future__ import annotations
 import os
 import re
 import sys
-import urllib.parse
 from pathlib import Path
 
 # Streamlit executes this file as a top-level script; ensure sibling modules
@@ -282,13 +281,12 @@ def view_history() -> None:
         with tabs[0]:
             if html:
                 st.caption(str(entry["html_path"]))
-                _encoded = urllib.parse.quote(html)
-                st.markdown(
-                    f'<a href="data:text/html;charset=utf-8,{_encoded}" target="_blank" '
-                    'style="display:inline-block; background:#82c341; color:#FFFFFF; '
-                    'padding:6px 16px; border-radius:6px; text-decoration:none; '
-                    'font-weight:600; margin-bottom:10px;">🖨 Open / Print</a>',
-                    unsafe_allow_html=True,
+                st.download_button(
+                    label="🖨 Download & Print",
+                    data=html,
+                    file_name=f"{entry['community_id']}_brief.html",
+                    mime="text/html",
+                    key=f"dl_{entry['community_id']}",
                 )
                 components.html(html, height=900, scrolling=True)
             else:
