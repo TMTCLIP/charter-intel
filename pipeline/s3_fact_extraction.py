@@ -166,7 +166,19 @@ def _should_run_political_climate_search(
     # ── Rule-based skip (zero cost) ──────────────────────────────────────────
     # Requires BOTH conditions — either alone is insufficient to skip Sonnet.
     enrollment_small = enrollment is not None and enrollment < 2000
-    no_charters = not known_schools  # empty list or None
+    # Area B (Session 18): tighten the rule-based skip to fire ONLY when the charter
+    # roster is genuinely unknown (None), not merely empty. A community with zero
+    # charters but real enrollment should still get the Haiku gate (which may run the
+    # search) rather than cheaply inheriting a state baseline that masks the data gap.
+    #
+    # NOTE (Review Fix 2 — cost implication): S1 always initialises known_schools as
+    # an empty list [], never None — so no_charters is always False in a normal pipeline
+    # run and the rule-based skip (zero cost) is effectively retired for all real
+    # communities. Every community at --depth standard now reaches the Haiku gate.
+    # Haiku call cost: ~$0.0003/community × 28 NM cities ≈ $0.008/statewide scan.
+    # This is intentional: a cheap honest "DATA GAP" baseline is better than silently
+    # inheriting a state index with no community-level investigation at all.
+    no_charters = known_schools is None
 
     if enrollment_small and no_charters:
         reason = (
@@ -256,6 +268,52 @@ def _truncate_web_results(results: list[dict]) -> list[dict]:
 
 class _DepthSkip(Exception):
     """Raised inside a web-search try block to skip it based on --depth."""
+
+
+def _resolve_websearch_status(parsed: dict) -> tuple[str, str, Optional[str]]:
+    """Honest confidence / verification_status for the 5 supplemental web-search
+    dimensions (Session 18, area A).
+
+    Distinguishes three cases the prompt can express so a "5" that means
+    "we found real evidence of a middling market" is never confused with a "5"
+    that means "we found nothing":
+
+      EVIDENCE     — sources present → confidence as reported; VERIFIED/PROVISIONAL
+      RURAL_THIN   — model set market_thin=true (area J): a genuinely thin rural
+                     market where the signal does not exist locally. Index stays 5
+                     but at MODERATE/PROVISIONAL, explicitly "availability unknown".
+      NOT_FOUND    — searched but nothing usable: confidence LOW, status NOT_FOUND.
+                     LOW confidence propagates through S4 → S5 used_default so the
+                     dimension is excluded from the composite rather than scored.
+
+    Returns (confidence, verification_status, confidence_rationale).
+    """
+    confidence = (parsed.get("confidence") or "MODERATE").upper()
+    status = (parsed.get("verification_status") or "").upper()
+    sources = parsed.get("sources") or []
+    market_thin = bool(parsed.get("market_thin"))
+
+    # Model explicitly reported no usable results (area A honesty).
+    if status == "NOT_FOUND":
+        return ("LOW", "NOT_FOUND",
+                "Web search returned no usable results (NOT_FOUND); index defaulted "
+                "to midpoint and is excluded from the scored composite.")
+
+    # Documented thin rural market (area J) — distinct from no-evidence.
+    if market_thin and not sources:
+        return ("MODERATE", "PROVISIONAL",
+                "Thin rural market: the relevant signal does not exist locally. "
+                "Index 5 reflects 'not binding', NOT favorability — availability unknown.")
+
+    # No sources and no thin-market claim → infer NOT_FOUND (honesty default).
+    if not sources:
+        return ("LOW", "NOT_FOUND",
+                "No sources returned by web search; index defaulted to midpoint "
+                "and is excluded from the scored composite.")
+
+    # Evidence present.
+    vs = "VERIFIED" if confidence == "HIGH" else "PROVISIONAL"
+    return (confidence, vs, None)
 
 
 # fact_keys whose values are grounded in the VERIFIED_ROSTER block injected into
@@ -495,34 +553,57 @@ def run(
         )
 
         if not should_run_pc:
-            # Gate blocked — inject state baseline so S5 always has a dimension to score
+            # Gate blocked — inject a state baseline so S5 always has a dimension to
+            # score. Area B (Session 18): this baseline is NOT community-specific
+            # evidence, so it is flagged LOW + carries an explicit data-gap tag. LOW
+            # confidence routes it out of the main analysis (S4) so political_climate
+            # is treated as used_default in S5 rather than a confident MIXED(5).
+            #
+            # Prefer an S2 state-level political climate score if one is available.
+            # TODO: requires verified source — s2_state_context does not currently
+            # emit a numeric state political climate index; this lookup is a scaffold
+            # so a future S2 score is honored automatically without a code change.
+            state_pc_index = (
+                state_context.get("political_climate_index")
+                if isinstance(state_context, dict) else None
+            )
+            baseline_value = state_pc_index if isinstance(state_pc_index, (int, float)) else 5
+            baseline_source = "S2 state-level index" if state_pc_index is not None else "neutral state default"
             facts_output.setdefault("facts", []).append({
                 "datapoint_id": f"dp_{community_id}_political_climate_baseline",
                 "community_id": community_id,
                 "state": state,
                 "dimension": "political_climate",
                 "fact_key": "political_climate_index",
-                "claim": "Political climate index (state baseline): 5",
-                "value": 5,  # MIXED — neutral state default
+                "claim": f"Political climate index ({baseline_source}): {baseline_value}",
+                "value": baseline_value,
                 "value_unit": None,
                 "value_year": int(today_str()[:4]),
                 "source_class": "STATE_CONTEXT",
                 "source_url": None,
                 "source_title": None,
                 "source_date": None,
-                "confidence": "MODERATE",
-                "confidence_rationale": gate_skip_reason,
+                "confidence": "LOW",
+                "confidence_rationale": (
+                    f"DATA GAP: no community-level political climate evidence — "
+                    f"{baseline_source} inherited because gate skipped the web search "
+                    f"({gate_skip_reason})."
+                ),
                 "verification_status": "PROVISIONAL",
                 "bias_flag": None,
                 "extracted_by": "haiku_gate",
                 "extracted_at": today_str(),
                 "stage": STAGE_ID,
                 "in_main_analysis": True,
-                "needs_verification_reason": None,
+                "needs_verification_reason": (
+                    "Political climate inherited a state baseline (no community-level "
+                    "evidence). Verify local board posture before strategic use."
+                ),
             })
             logger.info(
-                "[%s] Political climate: gate skipped Sonnet search — state baseline injected",
-                community_id,
+                "[%s] Political climate: gate skipped Sonnet search — LOW-confidence "
+                "state baseline injected (data gap, value=%s)",
+                community_id, baseline_value,
             )
 
         else:
@@ -562,7 +643,7 @@ def run(
                 sources = pc.get("sources") or []
                 first_source = sources[0] if sources else {}
                 index_val = pc.get("political_climate_index")
-                confidence = pc.get("confidence", "MODERATE")
+                confidence, _vs, _vs_rationale = _resolve_websearch_status(pc)
 
                 facts_output.setdefault("facts", []).append({
                     "datapoint_id": f"dp_{community_id}_political_climate_websearch",
@@ -579,8 +660,8 @@ def run(
                     "source_title": first_source.get("title"),
                     "source_date": first_source.get("date"),
                     "confidence": confidence,
-                    "confidence_rationale": None,
-                    "verification_status": "VERIFIED" if confidence == "HIGH" else "PROVISIONAL",
+                    "confidence_rationale": _vs_rationale,
+                    "verification_status": _vs,
                     "bias_flag": None,
                     "extracted_by": config.model_sonnet,
                     "extracted_at": today_str(),
@@ -640,7 +721,7 @@ def run(
             sources = pt.get("sources") or []
             first_source = sources[0] if sources else {}
             index_val = pt.get("population_trend_index")
-            confidence = pt.get("confidence", "MODERATE")
+            confidence, _vs, _vs_rationale = _resolve_websearch_status(pt)
 
             facts_output.setdefault("facts", []).append({
                 "datapoint_id": f"dp_{community_id}_population_trends_websearch",
@@ -657,8 +738,8 @@ def run(
                 "source_title": first_source.get("title"),
                 "source_date": first_source.get("date"),
                 "confidence": confidence,
-                "confidence_rationale": None,
-                "verification_status": "VERIFIED" if confidence == "HIGH" else "PROVISIONAL",
+                "confidence_rationale": _vs_rationale,
+                "verification_status": _vs,
                 "bias_flag": None,
                 "extracted_by": config.model_sonnet,
                 "extracted_at": today_str(),
@@ -718,7 +799,7 @@ def run(
             sources = oc.get("sources") or []
             first_source = sources[0] if sources else {}
             index_val = oc.get("operational_complexity_index")
-            confidence = oc.get("confidence", "MODERATE")
+            confidence, _vs, _vs_rationale = _resolve_websearch_status(oc)
 
             facts_output.setdefault("facts", []).append({
                 "datapoint_id": f"dp_{community_id}_operational_complexity_websearch",
@@ -735,8 +816,8 @@ def run(
                 "source_title": first_source.get("title"),
                 "source_date": first_source.get("date"),
                 "confidence": confidence,
-                "confidence_rationale": None,
-                "verification_status": "VERIFIED" if confidence == "HIGH" else "PROVISIONAL",
+                "confidence_rationale": _vs_rationale,
+                "verification_status": _vs,
                 "bias_flag": None,
                 "extracted_by": config.model_sonnet,
                 "extracted_at": today_str(),
@@ -796,7 +877,7 @@ def run(
             sources = ff.get("sources") or []
             first_source = sources[0] if sources else {}
             index_val = ff.get("facilities_feasibility_index")
-            confidence = ff.get("confidence", "MODERATE")
+            confidence, _vs, _vs_rationale = _resolve_websearch_status(ff)
 
             facts_output.setdefault("facts", []).append({
                 "datapoint_id": f"dp_{community_id}_facilities_feasibility_websearch",
@@ -813,8 +894,8 @@ def run(
                 "source_title": first_source.get("title"),
                 "source_date": first_source.get("date"),
                 "confidence": confidence,
-                "confidence_rationale": None,
-                "verification_status": "VERIFIED" if confidence == "HIGH" else "PROVISIONAL",
+                "confidence_rationale": _vs_rationale,
+                "verification_status": _vs,
                 "bias_flag": None,
                 "extracted_by": config.model_sonnet,
                 "extracted_at": today_str(),
@@ -874,7 +955,7 @@ def run(
             sources = fe.get("sources") or []
             first_source = sources[0] if sources else {}
             index_val = fe.get("funding_environment_index")
-            confidence = fe.get("confidence", "MODERATE")
+            confidence, _vs, _vs_rationale = _resolve_websearch_status(fe)
 
             facts_output.setdefault("facts", []).append({
                 "datapoint_id": f"dp_{community_id}_funding_environment_websearch",
@@ -891,8 +972,8 @@ def run(
                 "source_title": first_source.get("title"),
                 "source_date": first_source.get("date"),
                 "confidence": confidence,
-                "confidence_rationale": None,
-                "verification_status": "VERIFIED" if confidence == "HIGH" else "PROVISIONAL",
+                "confidence_rationale": _vs_rationale,
+                "verification_status": _vs,
                 "bias_flag": None,
                 "extracted_by": config.model_sonnet,
                 "extracted_at": today_str(),
@@ -1046,7 +1127,7 @@ def _inject_nces_facts(
             continue  # already present — defer to the existing entry
 
         dimension, unit = _NCES_FACT_KEY_MAP[fact_key]
-        facts.append({
+        datapoint = {
             "datapoint_id":         f"dp_{community_id}_nces_{fact_key}",
             "community_id":         community_id,
             "state":                state,
@@ -1069,7 +1150,12 @@ def _inject_nces_facts(
             "stage":                STAGE_ID,
             "in_main_analysis":     True,
             "needs_verification_reason": None,
-        })
+        }
+        # Carry the top-band compression flag onto the FRL datapoint so S5/S6
+        # can distinguish a saturated-but-present FRL signal from a default-5.
+        if fact_key == "frl_pct" and "frl_compressed" in nces_data:
+            datapoint["frl_compressed"] = bool(nces_data["frl_compressed"])
+        facts.append(datapoint)
         injected += 1
 
     if injected:

@@ -35,9 +35,10 @@ from pipeline.s5_scoring import (
     _score_population_trends,
     check_override_flags,
     compute_tier,
+    run as s5_run,
     score_dimension,
 )
-from pipeline import Confidence
+from pipeline import Confidence, StageStatus
 
 # ── Mark all tests in this file as unit ──────────────────────────────────────
 pytestmark = pytest.mark.unit
@@ -540,3 +541,110 @@ class TestConfidenceEnum:
 
     def test_single_element_returns_itself(self):
         assert Confidence.minimum([Confidence.MODERATE]) == Confidence.MODERATE
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 8. COMPETITIVE OPPORTUNITY DEMAND-EVIDENCE GATE (Session 18 Area D)
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestCompetitiveOpportunityGate:
+    """competitive_opportunity may not score above midpoint without a demand signal."""
+
+    def _dim_def(self):
+        return _load_weights()["dimensions"]["competitive_opportunity"]
+
+    def test_high_gap_no_demand_signal_is_clamped(self):
+        """High demand_supply_gap_index but no waitlist/grade-band signal → clamp to 5, excluded."""
+        bundle = _dim_bundle("competitive_opportunity", {"demand_supply_gap_index": 9})
+        result = score_dimension("competitive_opportunity", self._dim_def(), bundle, 0.10)
+        assert result["score"] == pytest.approx(5.0)
+        assert result["used_default"] is True
+        assert result["confidence"] == Confidence.LOW.value
+        assert "demand evidence" in result["primary_driver"].lower()
+
+    def test_geographic_whitespace_alone_does_not_satisfy_gate(self):
+        """geographic_whitespace is itself web-search-derived and was removed from
+        the qualifying signal set (Review Fix 1). It must NOT lift the gate."""
+        bundle = _dim_bundle(
+            "competitive_opportunity",
+            {"demand_supply_gap_index": 9, "geographic_whitespace": 8},
+        )
+        result = score_dimension("competitive_opportunity", self._dim_def(), bundle, 0.10)
+        assert result["score"] == pytest.approx(5.0)
+        assert result["used_default"] is True
+
+    def test_high_gap_with_demand_signal_is_not_clamped(self):
+        """A real demand signal (grade_band_gaps) present → high score allowed."""
+        bundle = _dim_bundle(
+            "competitive_opportunity",
+            {"demand_supply_gap_index": 9, "grade_band_gaps": 8},
+        )
+        result = score_dimension("competitive_opportunity", self._dim_def(), bundle, 0.10)
+        assert result["score"] > 5.0
+        assert result["used_default"] is False
+
+    def test_low_gap_no_demand_signal_is_not_clamped(self):
+        """Low (≤5) opportunity scores are real findings — the gate only clamps highs."""
+        bundle = _dim_bundle("competitive_opportunity", {"demand_supply_gap_index": 2})
+        result = score_dimension("competitive_opportunity", self._dim_def(), bundle, 0.10)
+        assert result["score"] <= 5.0
+        assert result["used_default"] is False
+
+    def test_other_dimension_high_score_is_not_gated(self):
+        """The demand-evidence gate is specific to competitive_opportunity."""
+        bundle = _dim_bundle("academic_need", {"district_proficiency_ela_pct": 10})
+        result = score_dimension(
+            "academic_need", _load_weights()["dimensions"]["academic_need"], bundle, 0.10
+        )
+        assert result["score"] >= 9.0
+        assert result["used_default"] is False
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 9. DATA COVERAGE — INSUFFICIENT OVERRIDE (Session 18 Area C)
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestDataCoverageInsufficient:
+    """When 4+ dimensions default, data_coverage_tier is forced to INSUFFICIENT."""
+
+    def _config(self):
+        from pipeline import OperatorPreset, OutputMode, PipelineConfig
+        return PipelineConfig(
+            state="NM",
+            preset=OperatorPreset.MATURITY_ADJUSTED,
+            mode=OutputMode.STRATEGIC_BRIEF,
+            output_format="markdown",
+            cache_enabled=False,
+            dry_run=False,
+            force_refresh=False,
+            communities=["nm-test-insufficient"],
+            depth="standard",
+        )
+
+    def test_empty_bundle_yields_insufficient_tier(self, monkeypatch, tmp_path):
+        """An empty fact bundle defaults all dimensions → INSUFFICIENT, not 'unreliable'."""
+        import types
+        monkeypatch.chdir(tmp_path)  # isolate the scorecard write to a temp dir
+        prev = types.SimpleNamespace(output_data={"facts": []})
+        # load_scoring_config + schema validation read from the project tree, so
+        # point those reads back at the real config/schemas via absolute symlink-free copy.
+        for sub in ("config", "schemas"):
+            (tmp_path / sub).symlink_to(os.path.join(_ROOT, sub))
+
+        result = s5_run(
+            community_id="nm-test-insufficient",
+            state="NM",
+            config=self._config(),
+            previous_result=prev,
+        )
+        assert result.status == StageStatus.SUCCESS, result.errors
+        assert result.output_data["data_coverage_tier"] == "INSUFFICIENT"
+        assert len(result.output_data["excluded_dimensions"]) >= 4
+
+    def test_schema_accepts_insufficient_tier(self):
+        """The scorecard schema enum must include INSUFFICIENT."""
+        import json
+        with open(os.path.join(_ROOT, "schemas", "scorecard.schema.json")) as f:
+            schema = json.load(f)
+        enum = schema["properties"]["data_coverage_tier"]["enum"]
+        assert "INSUFFICIENT" in enum

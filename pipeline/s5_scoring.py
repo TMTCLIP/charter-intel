@@ -25,6 +25,7 @@ DESIGN PRINCIPLES:
 
 from __future__ import annotations
 import json
+import logging
 import os
 from typing import Any, Optional
 
@@ -39,6 +40,21 @@ from pipeline.utils.schema_validator import validate_against_schema
 
 
 STAGE_ID = "s5_scoring"
+
+logger = logging.getLogger(__name__)
+
+# competitive_opportunity may only score ABOVE midpoint when at least one of
+# these demand-side signals is present in the fact bundle. Without a demand
+# signal, a high "opportunity" score is an artifact of default_to_midpoint
+# inflation, not evidence — see Session 18 Area D.
+#
+# NOTE (Review Fix 1): geographic_whitespace was removed from this set. It is
+# itself a web-search-derived field subject to the same no-evidence→5 fallback
+# the bias pass was correcting, so it cannot serve as a demand gate signal.
+# Only observed-demand signals (waitlist data, grade-band coverage gaps) qualify.
+_COMPETITIVE_DEMAND_SIGNAL_KEYS = frozenset({
+    "known_waitlist_data", "grade_band_gaps",
+})
 
 # ─────────────────────────────────────────────
 # CONFIG LOADING
@@ -154,6 +170,18 @@ def run(
         data_coverage_tier = "provisional"
     else:
         data_coverage_tier = "unreliable"
+
+    # Session 18 Area C: when 4+ dimensions defaulted (no real data), the
+    # composite is mostly redistributed midpoints. Coverage % alone can mask
+    # this, so an explicit INSUFFICIENT tier overrides the percentage-based
+    # label to make the data gap unmistakable downstream (brief banner).
+    if len(excluded_dimensions) >= 4:
+        data_coverage_tier = "INSUFFICIENT"
+        logger.warning(
+            "s5_scoring: %s/%s — %d dimensions defaulted; data_coverage_tier "
+            "forced to INSUFFICIENT (composite is largely redistributed midpoints)",
+            state, community_id, len(excluded_dimensions),
+        )
 
     # --- Check override flags ---
     override_flags = check_override_flags(verified_bundle, dimensions_out)
@@ -306,6 +334,40 @@ def score_dimension(
         score = apply_secondary_adjustments(score, relevant_facts, dim_def)
         confidence = _aggregate_fact_confidence(relevant_facts)
         used_default = False
+
+    # Session 18 Area D: competitive_opportunity may not score above midpoint
+    # unless an actual demand-side signal is present. The primary fact
+    # (demand_supply_gap_index) can itself be a default-to-midpoint artifact,
+    # so a high "opportunity" score with no waitlist / grade-band gap evidence
+    # is unsupported. Clamp to midpoint and mark used_default so it is excluded
+    # from the composite.
+    # NOTE FOR HUMAN REVIEW: this changes competitive_opportunity rankings.
+    if dim_name == "competitive_opportunity" and not used_default and round(score, 2) > 5.0:
+        signal_facts = [
+            f.get("fact_key") for f in relevant_facts
+            if f.get("fact_key") in _COMPETITIVE_DEMAND_SIGNAL_KEYS
+            and f.get("value") is not None
+        ]
+        has_demand_signal = bool(signal_facts)
+        if has_demand_signal:
+            logger.info(
+                "s5_scoring: competitive_opportunity scored %.2f — demand gate "
+                "passed, signal(s) present: %s",
+                round(score, 2), ", ".join(sorted(signal_facts)),
+            )
+        else:
+            logger.warning(
+                "s5_scoring: competitive_opportunity scored %.2f with no demand "
+                "signal (%s) — clamping to 5.0 and excluding from composite",
+                round(score, 2), ", ".join(sorted(_COMPETITIVE_DEMAND_SIGNAL_KEYS)),
+            )
+            score = 5.0
+            confidence = Confidence.LOW.value
+            driver = (
+                "Opportunity score gated to midpoint — no observed demand evidence "
+                "(waitlist data or grade-band gap) present"
+            )
+            used_default = True
 
     return {
         "score": round(score, 2),

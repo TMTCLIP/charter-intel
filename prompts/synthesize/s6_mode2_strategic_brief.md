@@ -169,12 +169,13 @@ Generate a brief JSON object with this exact structure:
 
   "audit_passed": null,
   "audit_flags": [],
-  "disclosure": "Generated with Claude assistance (s3 structured extraction, s6 synthesis). All facts sourced from public data as cited. Requires human review and verification before external use or strategic decision-making."
+  "disclosure": "Generated with Claude assistance (s3 structured extraction, s6 synthesis). All facts sourced from public data as cited. Requires human review and verification before external use or strategic decision-making. Where this brief shows INSUFFICIENT data coverage or a gated recommendation confidence, the composite rests on defaulted/low-confidence data and must not be used for ranking or decisions until the flagged data gaps are resolved. Tribal-jurisdiction flags require human determination of charter authority before any strategic use."
 }
 ```
 
 FINAL RULES:
-- recommendations: generate exactly 2. Each must cite at least 1 supporting_fact_id. Each recommendation must name a specific actor, pathway, condition, or timeline unique to this community. "Conduct more research" and "pursue authorization carefully" are failures. Be specific or explain with evidence why specificity is not yet possible.
+- recommendations: generate 1–2, each citing at least 1 supporting_fact_id. When verified data is sufficient, each recommendation must name a specific actor, pathway, condition, or timeline unique to this community; in that case generic filler like "pursue authorization carefully" is a failure — be specific.
+- DATA-COVERAGE HONESTY (overrides the specificity rule): inspect SCORECARD_JSON.data_coverage_tier and confidence_overall. If data_coverage_tier is "INSUFFICIENT" or "unreliable", OR confidence_overall is "LOW", then the evidence base is too thin for confident strategic calls. In that case it is CORRECT — not a failure — to recommend specific, targeted further research: name WHICH facts are missing (the highest-impact items from needs_verification), WHICH source would resolve each, and what decision each would unblock. Do NOT manufacture confident-sounding recommendations to fill a quota when the data does not support them. Set each such recommendation's confidence to "LOW". A single honest "insufficient data — verify X and Y before deciding" recommendation is preferable to two fabricated confident ones.
 - recommendations[].rationale: ≤40 words each.
 - recommendations[].evidence_summary: ≤25 words each.
 - quick_reads: each paragraph ≤50 words. Omit if no verified facts exist for that topic.

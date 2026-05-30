@@ -135,6 +135,7 @@
     .cov-reliable    { background: #dcfce7; color: #166534; }
     .cov-provisional { background: #fef9c3; color: #854d0e; }
     .cov-unreliable  { background: #fee2e2; color: #991b1b; }
+    .cov-INSUFFICIENT { background: #fecaca; color: #7f1d1d; border: 1px solid #991b1b; }
 
     /* ⚠ badge on score */
     .warn-badge {
@@ -202,11 +203,15 @@
     {{ city_count }} communities · ranked by composite score · generated {{ generated_at[:10] }}
   </p>
 
-  {# Split results into reliable/provisional vs unreliable #}
-  {% set ranked_results = results | selectattr("data_coverage_tier", "ne", "unreliable") | list %}
-  {% set insufficient_results = results | selectattr("data_coverage_tier", "equalto", "unreliable") | list %}
-  {# Fall back: if data_coverage_tier absent, treat as ranked #}
-  {% set ranked_results = ranked_results + (results | rejectattr("data_coverage_tier", "defined") | list) %}
+  {# Split results: reliable/provisional are ranked; unreliable + INSUFFICIENT
+     are pulled out of the ranking. INSUFFICIENT (Session 18 Area C) means 4+
+     dimensions defaulted, so the composite is mostly redistributed midpoints. #}
+  {% set ranked_results = results
+        | rejectattr("data_coverage_tier", "equalto", "unreliable")
+        | rejectattr("data_coverage_tier", "equalto", "INSUFFICIENT")
+        | list %}
+  {% set insufficient_results = (results | selectattr("data_coverage_tier", "equalto", "unreliable") | list)
+        + (results | selectattr("data_coverage_tier", "equalto", "INSUFFICIENT") | list) %}
 
   {# ── Main ranked table ── #}
   <div class="section">
@@ -298,7 +303,10 @@
   <div class="section">
     <h2>Communities — Insufficient Data</h2>
     <p class="insufficient-note">
-      Scores reflect limited signals only (&lt;50% verified data). Exclude from strategic ranking.
+      Scores reflect limited signals only — either &lt;50% verified data coverage,
+      or 4+ scoring dimensions defaulted to midpoint (INSUFFICIENT). In the latter
+      case the composite is largely a redistribution of default values, not evidence.
+      Exclude from strategic ranking.
     </p>
     <table class="insufficient-table">
       <thead>
@@ -324,9 +332,10 @@
           </td>
           <td class="coverage">
             {% set cov_pct = r.data_coverage_pct %}
-            <span class="cov-badge cov-unreliable">
+            {% set cov_tier = r.data_coverage_tier or "unreliable" %}
+            <span class="cov-badge cov-{{ cov_tier }}">
               {% if cov_pct is not none %}{{ "%.0f"|format(cov_pct) }}%{% endif %}
-              Unreliable
+              {{ "Insufficient" if cov_tier == "INSUFFICIENT" else "Unreliable" }}
             </span>
           </td>
           <td class="snap">{{ r.one_line_snapshot or "—" }}</td>

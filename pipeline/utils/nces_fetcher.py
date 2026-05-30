@@ -274,6 +274,10 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
     if frl_count is not None and membersch > 0:
         frl_pct = round(frl_count / membersch * 100, 1)
         result["frl_pct"] = frl_pct
+        # Top-band compression: at very high FRL% the metric saturates and can no
+        # longer discriminate need. Flag so downstream consumers treat a high-FRL
+        # "present" datapoint differently from a default-5 exclusion.
+        result["frl_compressed"] = frl_pct >= 80
         # Derive a FEDERAL_DATA-sourced operational_complexity_index from FRL%.
         # This ensures S4's hard rules (which block UNVERIFIED source_class) do
         # not prevent S5 from scoring operational_complexity when the

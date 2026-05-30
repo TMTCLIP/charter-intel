@@ -118,8 +118,8 @@
     },
     "data_coverage_tier": {
       "type": "string",
-      "enum": ["reliable", "provisional", "unreliable"],
-      "description": "reliable ≥70%, provisional ≥50%, unreliable <50%"
+      "enum": ["reliable", "provisional", "unreliable", "INSUFFICIENT"],
+      "description": "reliable ≥70%, provisional ≥50%, unreliable <50%; INSUFFICIENT overrides when 4+ dimensions defaulted (composite is largely redistributed midpoints)"
     },
     "scoring_notes": {
       "type": ["string", "null"],

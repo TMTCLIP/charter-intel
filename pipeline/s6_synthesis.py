@@ -165,6 +165,11 @@ def run(
     # --- Inject ELL data gap disclosure if ACS data was suppressed ---
     brief_json = _inject_ell_gap_disclosure(brief_json, state, community_id)
 
+    # --- Session 18 honesty injections (deterministic; bypass Haiku) ---
+    brief_json = _inject_recommendation_gate(brief_json, scorecard)
+    brief_json = _inject_tribal_jurisdiction_flag(brief_json, state, community_id)
+    brief_json = _inject_teacher_supply_warning(brief_json, state, community_id)
+
     # --- Validate schema ---
     brief_json["generated_at"] = timestamp_now()
     validation = validate_against_schema(brief_json, "schemas/brief.schema.json")
@@ -582,5 +587,148 @@ def _inject_ell_gap_disclosure(brief_json: dict, state: str, community_id: str) 
     import logging
     logging.getLogger(__name__).info(
         "[%s] Injected ELL data gap disclosure into needs_verification", community_id
+    )
+    return brief_json
+
+
+# Data-coverage tiers at or below which strategic recommendations are gated:
+# the composite rests on too little verified data to support confident action.
+_GATED_COVERAGE_TIERS = frozenset({"unreliable", "INSUFFICIENT"})
+
+
+def _inject_recommendation_gate(brief_json: dict, scorecard: dict) -> dict:
+    """
+    Copy the S5 data_coverage_tier onto the brief and compute a deterministic
+    recommendation confidence gate (Session 18 BLOCKER 4b).
+
+    When coverage is unreliable/INSUFFICIENT or overall confidence is LOW, the
+    brief should be allowed to say "conduct further targeted research" instead
+    of manufacturing confident recommendations to fill a quota. The gate is a
+    structured signal the S7 template and human reviewers can act on; it does
+    not itself delete recommendations.
+    """
+    tier = scorecard.get("data_coverage_tier")
+    confidence_overall = scorecard.get("confidence_overall")
+    brief_json["data_coverage_tier"] = tier
+
+    gated = tier in _GATED_COVERAGE_TIERS or confidence_overall == Confidence.LOW.value
+    if gated:
+        if tier == "INSUFFICIENT":
+            reason = (
+                "4+ scoring dimensions defaulted to midpoint — the composite is "
+                "largely a redistribution of default values, not evidence. Treat "
+                "recommendations as research directions, not confident calls."
+            )
+        elif tier == "unreliable":
+            reason = (
+                "Under 50% of preset weight is backed by verified data. "
+                "Recommendations rest on thin evidence; further research is warranted."
+            )
+        else:
+            reason = (
+                "Overall confidence is LOW (top dimensions rest on defaulted or "
+                "low-confidence facts). Recommendations should be treated cautiously."
+            )
+    else:
+        reason = "Data coverage is sufficient to support the recommendations as scored."
+
+    brief_json["recommendation_confidence_gate"] = {
+        "gated": bool(gated),
+        "data_coverage_tier": tier,
+        "confidence_overall": confidence_overall,
+        "reason": reason,
+    }
+    return brief_json
+
+
+def _load_state_config(state: str) -> dict:
+    """Load the per-state block from config/states.yaml. Returns {} on any failure."""
+    try:
+        import yaml
+        with open("config/states.yaml") as f:
+            states_cfg = yaml.safe_load(f) or {}
+    except Exception:
+        return {}
+    # states.yaml keys are upper-case state codes (e.g. "NM").
+    return states_cfg.get(state.upper()) or states_cfg.get(state) or {}
+
+
+def _inject_tribal_jurisdiction_flag(brief_json: dict, state: str, community_id: str) -> dict:
+    """
+    If config/states.yaml marks this community with a tribal_jurisdiction_flag
+    (Session 18 BLOCKER 5a), copy it onto the brief and add a needs_verification
+    entry. Charter authority on/adjacent to tribal land is not modeled by scoring
+    and requires human determination.
+
+    Three status values, with different severity:
+      FLAGGED              — strong signal of tribal jurisdiction; HIGH impact; red banner
+      REVIEW_NEEDED        — adjacent/probable; HIGH impact; red banner
+      PENDING_HUMAN_REVIEW — determination not yet made; MODERATE impact; yellow banner
+    """
+    state_cfg = _load_state_config(state)
+    community_meta = (state_cfg.get("community_metadata") or {}).get(community_id) or {}
+    flag = community_meta.get("tribal_jurisdiction_flag")
+    if not flag or not isinstance(flag, dict):
+        return brief_json
+
+    status = flag.get("status")
+    if status not in ("FLAGGED", "REVIEW_NEEDED", "PENDING_HUMAN_REVIEW"):
+        return brief_json
+
+    brief_json["tribal_jurisdiction_flag"] = {
+        "status": status,
+        "basis": flag.get("basis"),
+        "note": flag.get("note"),
+        "resolution_path": flag.get("resolution_path"),
+    }
+
+    note = flag.get("note") or "Tribal jurisdiction may affect charter authority here."
+    impact = "MODERATE" if status == "PENDING_HUMAN_REVIEW" else "HIGH"
+    entry = {
+        "claim": f"Charter authorization jurisdiction for {community_id} ({status})",
+        "reason": note,
+        "source_class_attempted": None,
+        "resolution_path": flag.get("resolution_path")
+            or "Human determination of tribal jurisdiction and applicable charter authority required.",
+        "impact_if_wrong": impact,
+    }
+    if not isinstance(brief_json.get("needs_verification"), list):
+        brief_json["needs_verification"] = []
+    brief_json["needs_verification"].append(entry)
+
+    import logging
+    logging.getLogger(__name__).info(
+        "[%s] Injected tribal_jurisdiction_flag (%s) into brief", community_id, status
+    )
+    return brief_json
+
+
+def _inject_teacher_supply_warning(brief_json: dict, state: str, community_id: str) -> dict:
+    """
+    Surface the statewide teacher_supply_warning scaffold (Session 18 BLOCKER 5b)
+    into the brief's needs_verification with impact_if_wrong=HIGH. The NM teacher
+    shortage is documented statewide, but per-community hard-to-staff status is
+    NOT verified here — this is an honest data gap, not an asserted fact.
+    """
+    state_cfg = _load_state_config(state)
+    warning = state_cfg.get("teacher_supply_warning")
+    if not warning or not isinstance(warning, dict):
+        return brief_json
+
+    entry = {
+        "claim": warning.get("claim", "Teacher supply may constrain charter staffing in this community."),
+        "reason": warning.get("reason", "Statewide teacher shortage documented; per-community status unverified."),
+        "source_class_attempted": None,
+        "resolution_path": warning.get("resolution_path",
+            "Cross-check against the current NMPED teacher shortage-area / hard-to-staff list."),
+        "impact_if_wrong": warning.get("impact_if_wrong", "HIGH"),
+    }
+    if not isinstance(brief_json.get("needs_verification"), list):
+        brief_json["needs_verification"] = []
+    brief_json["needs_verification"].append(entry)
+
+    import logging
+    logging.getLogger(__name__).info(
+        "[%s] Injected teacher_supply_warning into needs_verification", community_id
     )
     return brief_json

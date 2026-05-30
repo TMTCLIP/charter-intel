@@ -214,6 +214,38 @@
       "example": "Generated with Claude assistance (s3 extraction, s6 synthesis). Facts sourced from public data as noted. Human review required before external use."
     },
 
+    "data_coverage_tier": {
+      "type": ["string", "null"],
+      "enum": ["reliable", "provisional", "unreliable", "INSUFFICIENT", null],
+      "description": "Copied from the S5 scorecard by s6_synthesis._inject_recommendation_gate. INSUFFICIENT means 4+ scoring dimensions defaulted to midpoint — composite is largely redistributed defaults."
+    },
+
+    "recommendation_confidence_gate": {
+      "type": "object",
+      "description": "Deterministic honesty gate injected by s6_synthesis._inject_recommendation_gate (Session 18 BLOCKER 4b). When gated is true, the brief rests on insufficient verified data and 'conduct further targeted research' is a valid, non-failure recommendation — the model must NOT manufacture confident recommendations to fill a quota.",
+      "required": ["gated", "data_coverage_tier", "reason"],
+      "properties": {
+        "gated": {"type": "boolean"},
+        "data_coverage_tier": {"type": ["string", "null"]},
+        "confidence_overall": {"type": ["string", "null"]},
+        "reason": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+
+    "tribal_jurisdiction_flag": {
+      "type": "object",
+      "description": "Injected by s6_synthesis._inject_tribal_jurisdiction_flag from config/states.yaml community_metadata (Session 18 BLOCKER 5a). Charter authorization on or adjacent to tribal land may require tribal consent or fall outside state PEC jurisdiction — the scoring model does NOT account for this.",
+      "required": ["status"],
+      "properties": {
+        "status": {"type": "string", "enum": ["FLAGGED", "REVIEW_NEEDED", "PENDING_HUMAN_REVIEW", "CLEAR"]},
+        "basis": {"type": ["string", "null"]},
+        "note": {"type": ["string", "null"]},
+        "resolution_path": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+
     "top_charter_schools": {
       "type": "array",
       "description": "Charter schools in this community, injected from S3 raw data by s6_synthesis._inject_charter_intel. Directory data — bypasses S4 scoring and hallucination audit entirely. Not scored; included for operator reference only.",

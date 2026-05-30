@@ -92,9 +92,17 @@ def get_community_authorizers(
 
     result: list[dict] = []
     for auth_name, schools in authorizer_schools.items():
+        auth_type = _AUTHORIZER_TYPES.get(auth_name)
+        if auth_type is None:
+            log.warning(
+                "authorizers_fetcher: '%s' not in _AUTHORIZER_TYPES — defaulting "
+                "type to 'LEA' (unverified; may misclassify a state/tribal authorizer)",
+                auth_name,
+            )
+            auth_type = "LEA"
         result.append({
             "authorizer_name":               auth_name,
-            "type":                          _AUTHORIZER_TYPES.get(auth_name) or "LEA",
+            "type":                          auth_type,
             "num_schools_in_community":      len(schools),
             "source_class":                  "PED_DATA",
             "source_url":                    SOURCE_URL,

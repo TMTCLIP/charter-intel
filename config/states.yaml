@@ -10,6 +10,47 @@ NM:
   community_metadata:
     nm-jemez-pueblo:
       special_considerations: "Pueblo jurisdiction — tribal governance and legal considerations not captured in scoring model. Requires human review before any strategic use."
+      tribal_jurisdiction_flag:
+        status: FLAGGED
+        basis: "Pueblo of Jemez — tribal governance per special_considerations."
+        note: "Charter authorization on Pueblo land may involve tribal jurisdiction not modeled by scoring. Human review required before any strategic use."
+    nm-156-navajo:
+      tribal_jurisdiction_flag:
+        status: FLAGGED
+        basis: "Navajo Nation artifact — no NCES LEA match (null district mapping)."
+        note: "Likely within Navajo Nation jurisdiction. Charter authority and applicable law require human determination. Not for strategic use without review."
+    nm-4386-shiprock:
+      tribal_jurisdiction_flag:
+        status: FLAGGED
+        basis: "Shiprock / Navajo Nation — no NCES LEA match (null district mapping)."
+        note: "Likely within Navajo Nation jurisdiction. Charter authority and applicable law require human determination. Not for strategic use without review."
+    nm-gallup:
+      tribal_jurisdiction_flag:
+        status: PENDING_HUMAN_REVIEW
+        # Human determination required — Gallup borders the Navajo Nation; portions
+        # of the service area may fall under tribal jurisdiction. This flag is NOT an
+        # assertion of sovereignty. It marks that the determination has not been made.
+        note: "Gallup sits adjacent to the Navajo Nation service area. Whether any charter activity touches tribal jurisdiction must be determined by a human before strategic use."
+        resolution_path: "Human legal/policy review of Gallup service area vs. Navajo Nation jurisdictional boundary required before strategic use."
+    nm-espanola:
+      tribal_jurisdiction_flag:
+        status: PENDING_HUMAN_REVIEW
+        # Human determination required — Espanola is surrounded by multiple pueblos
+        # (Ohkay Owingeh, Santa Clara). This flag is NOT an assertion of sovereignty.
+        # It marks that the determination has not been made.
+        note: "Espanola is surrounded by multiple pueblos (Ohkay Owingeh, Santa Clara). Whether any charter activity touches tribal jurisdiction must be determined by a human before strategic use."
+        resolution_path: "Human legal/policy review of Espanola service area vs. adjacent pueblo jurisdictional boundaries required before strategic use."
+  # Statewide scaffold (Session 18, area G). Surfaced by S6 into every NM brief's
+  # needs_verification with impact_if_wrong=HIGH. The NM statewide teacher shortage
+  # is documented, but per-community hard-to-staff status is NOT verified here.
+  # TODO: requires verified source — populate per-community designations from the
+  # NMPED hard-to-staff / shortage-area list. Do NOT invent designations.
+  teacher_supply_warning:
+    status: UNVERIFIED
+    impact_if_wrong: HIGH
+    claim: "Teacher supply may constrain charter staffing in this community."
+    reason: "New Mexico has a documented statewide teacher shortage, but this community's specific hard-to-staff status has not been verified against the NMPED shortage-area list."
+    resolution_path: "Cross-check the community against the current NMPED teacher shortage-area / hard-to-staff designation list before relying on staffing feasibility."
   community_boundary_exceptions:
   - community_id: nm-albuquerque
     note: 'Use Albuquerque city limits + Bernalillo County overlap. ABQ spans multiple
@@ -25,6 +66,16 @@ NM:
                   # minimum school unit economics. Re-evaluate when
                   # NCES-at-S1 is built and minimum-size filter is
                   # implemented structurally.
+  # Sub-district / location-string artifacts (Session 18, area I). These are not
+  # distinct charter markets — they are PED roster location strings that resolve to
+  # an already-covered parent district, so leaving them in double-counts the parent.
+  # FLAG: operator should confirm these are duplicates before the next statewide scan.
+  - nm-los-ranchos-de-albuquerque  # village inside the Albuquerque metro; maps to
+                                    # ALBUQUERQUE (NCES 3500060) = nm-albuquerque.
+  - nm-east-taos                   # sub-area of Taos; maps to TAOS (NCES 3502520) = nm-taos.
+  - nm-w-taos                      # sub-area of Taos; maps to TAOS (NCES 3502520) = nm-taos.
+  - nm-arbolera-espanola           # Arbolera de Vida subdivision; maps to ESPANOLA
+                                    # (NCES 3500900) = nm-espanola.
   community_unit: MUNICIPALITY
   data_sources:
     authorizer_registry:

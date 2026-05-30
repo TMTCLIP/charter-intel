@@ -3,6 +3,19 @@
 **Classification:** {{ brief.classification }}
 *Data through {{ brief.data_through }} · Generated {{ brief.generated_at[:10] }}*
 
+{% if brief.data_coverage_tier == "INSUFFICIENT" %}
+> ⚠ **Insufficient data coverage.** Four or more scoring dimensions defaulted to midpoint. The composite score is largely a redistribution of default values rather than evidence. Treat the ranking and recommendations below as research directions, not confident calls.
+{% elif brief.recommendation_confidence_gate and brief.recommendation_confidence_gate.gated %}
+> ⚠ **Recommendation confidence: gated.** {{ brief.recommendation_confidence_gate.reason }}
+{% endif %}
+{% if brief.tribal_jurisdiction_flag %}
+{% if brief.tribal_jurisdiction_flag.status == "PENDING_HUMAN_REVIEW" %}
+> ⚠ **Tribal jurisdiction determination pending — human review required before strategic use.** {{ brief.tribal_jurisdiction_flag.note }}{% if brief.tribal_jurisdiction_flag.resolution_path %} *Resolution:* {{ brief.tribal_jurisdiction_flag.resolution_path }}{% endif %}
+{% else %}
+> ⚑ **Tribal jurisdiction: {{ brief.tribal_jurisdiction_flag.status | replace("_", " ") }}.** {{ brief.tribal_jurisdiction_flag.note }}{% if brief.tribal_jurisdiction_flag.resolution_path %} *Resolution:* {{ brief.tribal_jurisdiction_flag.resolution_path }}{% endif %}
+{% endif %}
+{% endif %}
+
 ---
 
 ## Executive Snapshot

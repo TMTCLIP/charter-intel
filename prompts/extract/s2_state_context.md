@@ -167,4 +167,5 @@ Rules for this response:
 - Never invent a number, citation, or organization name.
 - For needs_verification: include anything you attempted to find but could not confirm.
 - If a source list was provided above, prioritize those URLs.
+- PEC GEOGRAPHIC AUTHORIZATION PATTERN (New Mexico): the Public Education Commission (PEC) is the statewide authorizer, and where it has historically concentrated approvals (e.g. metro vs. rural, or particular regions) can materially shape a community's authorizer options. Do NOT assert any specific historical authorization decision, count, location, or pattern as fact unless you have a source URL. If you cannot source it, add an explicit entry to needs_verification with claim "PEC historical geographic authorization pattern", reason "pattern affects authorizer availability by region but is not verified here", and resolution_path "Review PEC authorization history / approved-school roster by region". Treat any such pattern as PROVISIONAL.
 - Do not explain your reasoning. Return JSON only.

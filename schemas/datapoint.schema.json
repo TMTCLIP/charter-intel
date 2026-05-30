@@ -167,6 +167,10 @@
     "needs_verification_reason": {
       "type": ["string", "null"],
       "description": "If in_main_analysis is false, explain why this was routed to needs_verification."
+    },
+    "frl_compressed": {
+      "type": "boolean",
+      "description": "Set on the frl_pct datapoint when FRL% >= 80. Marks the metric as top-band-compressed (present but saturated), distinct from a default-5 exclusion. Set by nces_fetcher."
     }
   },
   "additionalProperties": false

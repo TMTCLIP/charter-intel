@@ -19,6 +19,12 @@
     blockquote { border-left: 4px solid #e67e22; margin: 1em 0; padding: 0.5em 1em; background: #fdf6ec; }
     .meta { color: #555; font-size: 0.92em; }
     .disclosure { color: #666; font-size: 0.88em; font-style: italic; margin-top: 2em; }
+    .banner { border-left: 5px solid; padding: 0.7em 1em; margin: 1em 0; border-radius: 4px; font-size: 0.95em; }
+    .banner strong { display: block; margin-bottom: 0.2em; }
+    .banner-insufficient { background: #fef2f2; border-color: #991b1b; color: #7f1d1d; }
+    .banner-gate { background: #fffbeb; border-color: #b45309; color: #7c2d12; }
+    .banner-tribal { background: #eff6ff; border-color: #1d4ed8; color: #1e3a8a; }
+    .banner-tribal-pending { background: #fffbeb; border-color: #d97706; color: #78350f; }
     @media screen {
       .debug-section { margin-top: 3em; padding-top: 1em; border-top: 2px dashed #bbb; }
       .debug-section details > summary {
@@ -55,6 +61,38 @@
 </p>
 <p><strong>Classification:</strong> {{ brief.classification }}</p>
 <p class="meta"><em>Data through {{ brief.data_through }} · Generated {{ brief.generated_at[:10] }}</em></p>
+
+{% if brief.data_coverage_tier == "INSUFFICIENT" %}
+<div class="banner banner-insufficient">
+  <strong>⚠ Insufficient data coverage</strong>
+  Four or more scoring dimensions defaulted to midpoint. The composite score is
+  largely a redistribution of default values rather than evidence. Treat the
+  ranking and recommendations below as research directions, not confident calls.
+</div>
+{% endif %}
+
+{% if brief.recommendation_confidence_gate and brief.recommendation_confidence_gate.gated and brief.data_coverage_tier != "INSUFFICIENT" %}
+<div class="banner banner-gate">
+  <strong>Recommendation confidence: gated</strong>
+  {{ brief.recommendation_confidence_gate.reason }}
+</div>
+{% endif %}
+
+{% if brief.tribal_jurisdiction_flag %}
+{% if brief.tribal_jurisdiction_flag.status == "PENDING_HUMAN_REVIEW" %}
+<div class="banner banner-tribal-pending">
+  <strong>⚑ Tribal jurisdiction determination pending — human review required before strategic use</strong>
+  {{ brief.tribal_jurisdiction_flag.note }}
+  {% if brief.tribal_jurisdiction_flag.resolution_path %}<br><em>Resolution:</em> {{ brief.tribal_jurisdiction_flag.resolution_path }}{% endif %}
+</div>
+{% else %}
+<div class="banner banner-tribal">
+  <strong>⚑ Tribal jurisdiction: {{ brief.tribal_jurisdiction_flag.status | replace("_", " ") }}</strong>
+  {{ brief.tribal_jurisdiction_flag.note }}
+  {% if brief.tribal_jurisdiction_flag.resolution_path %}<br><em>Resolution:</em> {{ brief.tribal_jurisdiction_flag.resolution_path }}{% endif %}
+</div>
+{% endif %}
+{% endif %}
 <hr>
 
 <h2>Executive Snapshot</h2>
