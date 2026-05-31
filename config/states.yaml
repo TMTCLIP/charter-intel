@@ -76,6 +76,12 @@ NM:
   - nm-w-taos                      # sub-area of Taos; maps to TAOS (NCES 3502520) = nm-taos.
   - nm-arbolera-espanola           # Arbolera de Vida subdivision; maps to ESPANOLA
                                     # (NCES 3500900) = nm-espanola.
+  - nm-nm-602-gallup               # S1 address-parsing artifact — duplicate of nm-gallup;
+                                    # excluded to prevent double-counting. "NM-602" is NM
+                                    # State Road 602 captured from Six Directions Indigenous
+                                    # School's street address ("2055 NM-602 Gallup, NM 87301"),
+                                    # not a ZIP/sequence; maps to GALLUP (NCES 3501110) =
+                                    # nm-gallup. Stale 2026-05-26 cache left intact per task.
   community_unit: MUNICIPALITY
   data_sources:
     authorizer_registry:

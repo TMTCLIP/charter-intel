@@ -1,0 +1,28 @@
+{
+  "request": {
+    "model": "claude-haiku-4-5-20251001",
+    "max_tokens": 100,
+    "temperature": 0,
+    "system": "You are a concise policy analyst. Answer YES or NO followed by one sentence. Do not exceed two sentences.",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Does Albuquerque, NM likely have meaningfully distinct local charter school politics from the state baseline?\n\nContext:\n- K-12 enrollment (latest year): 74792\n- Known charter schools (55): 21st Century Public Academy, ACE Leadership High School, ACES Technical Charter School, Albuquerque Aviation Academy, Albuquerque Bilingual Academy, Albuquerque Charter Academy, Albuquerque Collegiate Charter School, Albuquerque Institute of Mathematics and Science at UNM, Albuquerque School of Excellence, , Albuquerque Sign Language Academy, Albuquerque Talent Development Academy, Alice King Community School, Altura Preparatory School, Amy Biehl High School, Archer Academy of Accelerated Learning, Cesar Chavez Community School, Christine Duncan Heritage Academy, Cien Aguas International School, Coral Community Charter School, Corrales International School, Cottonwood Classical Preparatory School, Digital Arts and Technology Academy, El Camino Real Academy, Equip Academy of New Mexico (Will open in SY 2026-27), Explore Academy Albuquerque, Gilbert L. Sena Charter High School, Gordon Bernell Charter School, (The) GREAT Academy, Health Leadership High School, Horizon Academy West, (The) International School at Mesa del Sol, Mark Armijo Academy, Mission Achievement and Success Charter School 1.0, Mission Achievement and Success Charter School 2.0, The Montessori Academy, Montessori of the Rio Grande Charter School, Mountain Mahogany Community School, Native American Community Academy, New America School, New Mexico Academy for the Media Arts, New Mexico International School, North Valley Academy Charter School, Northpoint Charter School, Public Academy for Performing Arts, Renaissance Academy Charter School, Rio Grande Academy of Fine Arts, Robert F. Kennedy Charter School, Siembra Leadership High School, Solare Collegiate Charter School, South Valley Academy, South Valley Preparatory School, Technology Leadership High School, Tierra Adentro of New Mexico: The School of Academics, Arts, and Artesan\u00eda, Voz Collegiate Preparatory Charter School\n\nAnswer YES or NO with one sentence of reasoning."
+      }
+    ],
+    "tools": null
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "YES. Albuquerque has 55 charter schools serving approximately 27% of the district's K-12 enrollment, which is substantially higher than New Mexico's state average charter penetration, indicating distinct local charter market dynamics and politics."
+      }
+    ],
+    "usage": {
+      "input_tokens": 527,
+      "output_tokens": 54
+    },
+    "stop_reason": "end_turn"
+  }
+}

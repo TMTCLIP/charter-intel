@@ -1,0 +1,28 @@
+{
+  "request": {
+    "model": "claude-haiku-4-5-20251001",
+    "max_tokens": 100,
+    "temperature": 0,
+    "system": "You are a concise policy analyst. Answer YES or NO followed by one sentence. Do not exceed two sentences.",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Does Carlsbad, NM likely have meaningfully distinct local charter school politics from the state baseline?\n\nContext:\n- K-12 enrollment (latest year): 7461\n- Known charter schools (1): Jefferson Montessori Academy\n\nAnswer YES or NO with one sentence of reasoning."
+      }
+    ],
+    "tools": null
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "NO. With only one known charter school serving a district of 7,461 students, Carlsbad's charter presence is minimal and unlikely to generate distinct local political dynamics compared to New Mexico's state-level charter policy debates."
+      }
+    ],
+    "usage": {
+      "input_tokens": 94,
+      "output_tokens": 51
+    },
+    "stop_reason": "end_turn"
+  }
+}

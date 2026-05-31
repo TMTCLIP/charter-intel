@@ -51,7 +51,7 @@ SOURCE_TITLE   = "Census SAIPE School District Poverty Estimates"
 SOURCE_URL     = SAIPE_API_BASE
 
 # Variables to request from the API
-_GET_VARS = "NAME,SAEPOVRAT5_17RV_PT,SAEPOV5_17RV_PT,SAEPOVALL_PT"
+_GET_VARS = "SAEPOVRAT5_17RV_PT,SAEPOV5_17RV_PT,SAEPOVALL_PT"
 
 # District geography types to attempt, in order
 _DISTRICT_TYPES = [

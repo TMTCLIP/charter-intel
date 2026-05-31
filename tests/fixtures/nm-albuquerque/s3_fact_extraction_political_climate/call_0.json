@@ -1,0 +1,34 @@
+{
+  "request": {
+    "model": "claude-sonnet-4-5",
+    "max_tokens": 2048,
+    "temperature": 0.3,
+    "system": "You are a political intelligence researcher. Use web search to find current information. Respond ONLY with valid JSON.",
+    "messages": [
+      {
+        "role": "user",
+        "content": "# prompts/extract/s3_political_climate.md\n# Stage 3 (supplemental): Political Climate Web Search\n#\n# CALLED BY: s3_fact_extraction.py \u2014 second Claude call, after main S3\n# MODEL: claude-sonnet-4-5 with web_search_20250305 tool\n# OUTPUT: Single JSON object (NOT a DataPoint list \u2014 converted by caller)\n#\n# SUBSTITUTIONS REQUIRED:\n#   Albuquerque \u2014 e.g., \"Las Cruces\"\n#   New Mexico     \u2014 e.g., \"New Mexico\"\n#   2026-05-31     \u2014 ISO date\n#\n# SCORING: 1\u20133 HOSTILE | 4\u20136 MIXED | 7\u20139 SUPPORTIVE\n# CONFIDENCE: HIGH = \u22652 sourced URLs. MODERATE = fewer than 2, or indirect.\n\n---\n\n## SYSTEM\n\nYou are a political intelligence researcher for a charter school strategy platform. Use web search to find current, specific information. You do NOT speculate. Be honest when you find nothing: a \"5\" backed by no evidence must be flagged as such, never dressed up as a confident finding.\n\nRULES:\n1. Search before scoring. Do not rely on training knowledge alone.\n2. Geographic relevance \u2014 only cite sources with a direct connection to Albuquerque, its school district, or immediate region. Statewide sources only if they explicitly name this community. Never cite sources about other cities or unrelated organizations.\n3. Do not fabricate board member names, vote counts, or dates.\n4. If search returns NO usable results, return index=5, confidence=\"LOW\", verification_status=\"NOT_FOUND\", sources=[]. Do NOT report MODERATE for a no-evidence result.\n5. RURAL THIN-MARKET BRANCH: if Albuquerque is a small rural community (population under ~10,000) with genuinely no local charter politics to find \u2014 no board votes, no local coverage, no advocacy presence \u2014 that absence is a real feature of a thin local political market, not a search failure. In that case return index=5, confidence=\"MODERATE\", verification_status=\"PROVISIONAL\", market_thin=true, and a summary stating local charter politics are essentially absent so this is NOT a binding factor either way; actual local posture is unknown. Do NOT imply the climate is supportive.\n6. Confidence: HIGH requires \u22652 sourced URLs (verification_status VERIFIED). MODERATE if fewer/indirect or the rural thin-market branch (PROVISIONAL).\n7. Respond ONLY with valid JSON. No preamble, no markdown fences.\n\n---\n\n## USER\n\nResearch charter school political climate in **Albuquerque, New Mexico** as of 2026-05-31.\n\nSearch these topics in priority order:\n1. **Board votes** \u2014 charter applications, renewals, revocations in last 3 years; outcomes and patterns\n2. **Board composition** \u2014 pro/anti/neutral members, recent elections that shifted the board\n3. **Local news** \u2014 recent coverage tone and headlines on charters in Albuquerque\n4. **Advocacy groups** \u2014 pro/anti-charter organizations active in Albuquerque or county\n\nScore: 1\u20133 HOSTILE | 4\u20136 MIXED | 7\u20139 SUPPORTIVE\n\nReturn ONLY this JSON:\n\n{\n  \"political_climate_index\": <integer 1\u20139>,\n  \"confidence\": \"HIGH\" | \"MODERATE\" | \"LOW\",\n  \"verification_status\": \"VERIFIED\" | \"PROVISIONAL\" | \"NOT_FOUND\",\n  \"market_thin\": <true only for the rural thin-market branch, else false>,\n  \"summary\": \"<2\u20133 sentences \u2014 cite specific findings: board votes, news outlets, advocacy groups. If nothing was found, say so plainly. No generic descriptions.>\",\n  \"sources\": [\n    {\"title\": \"<page title>\", \"url\": \"<real URL from search>\", \"date\": \"<YYYY-MM-DD or year>\"}\n  ]\n}\n"
+      }
+    ],
+    "tools": [
+      {
+        "type": "web_search_20250305",
+        "name": "web_search",
+        "max_uses": 4
+      }
+    ]
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "```json\n{\n  \"political_climate_index\": 4,\n  \"confidence\": \"MODERATE\",\n  \"verification_status\": \"PROVISIONAL\",\n  \"market_thin\": false,\n  \"summary\": \"Albuquerque's charter school political climate is mixed and contested. The November 2025 APS board elections shifted power toward teachers' union-backed candidates (Betzen, Bowman, Wood-Hegner won 3 of 4 seats), defeating business community-backed candidates who historically supported charter expansion. The board now appears evenly split between union and business factions. Public Charter Schools of New Mexico (PCSNM) actively advocates for charter growth statewide from its Albuquerque base, and local charter enrollment continues to expand with multiple schools accepting applications for 2026-2027.\",\n  \"sources\": [\n    {\n      \"title\": \"Four seats on the Albuquerque Public Schools board are up for election - Ballotpedia News\",\n      \"url\": \"https://news.ballotpedia.org/2025/10/16/four-seats-on-the-albuquerque-public-schools-board-are-up-for-election/\",\n      \"date\": \"2025-10-16\"\n    },\n    {\n      \"title\": \"Albuquerque Public Schools, New Mexico, elections - Ballotpedia\",\n      \"url\": \"https://ballotpedia.org/Albuquerque_Public_Schools,_New_Mexico,_elections\",\n      \"date\": \"2025\"\n    },\n    {\n      \"title\": \"Public Charter Schools of New Mexico\",\n      \"url\": \"https://publiccharterschoolsofnewmexico.org/\",\n      \"date\": \"2026\"\n    },\n    {\n      \"title\": \"Guide to Albuquerque Charter Schools\",\n      \"url\": \"https://abqmom.com/around_abq/guide_to_albuquerque/albuquerque-moms-blog-guide-to-charter-schools/\",\n      \"date\": \"2026-02-06\"\n    }\n  ]\n}\n```"
+      }
+    ],
+    "usage": {
+      "input_tokens": 41522,
+      "output_tokens": 759
+    },
+    "stop_reason": "end_turn"
+  }
+}

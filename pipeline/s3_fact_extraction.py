@@ -14,7 +14,6 @@ OUTPUT:
 from __future__ import annotations
 import json
 import logging
-import math
 import os
 import csv
 import time
@@ -998,24 +997,21 @@ def run(
             "[%s] Funding environment web search failed (non-fatal): %s",
             community_id, exc,
         )
-    # ── Rate limit cooldown after web search calls ───────────────────────────
-    # The rate limit window is 30,000 tokens/minute.  If web search consumed
-    # more than 20,000 tokens we sleep enough full windows to clear the bucket
-    # before S6's Sonnet call arrives.  Formula: ceil(tokens / 30000) * 62s
-    # (62s = 60s window + 2s margin).
-    if _web_search_tokens > 20_000:
-        cooldown = math.ceil(_web_search_tokens / 30_000) * 62
-        logger.info(
-            "[%s] Rate limit cooldown: sleeping %ds after %d web search tokens",
-            community_id, cooldown, _web_search_tokens,
-        )
-        time.sleep(cooldown)
 
     # ── Protect roster-derived facts from S4's UNVERIFIED block ─────────────
     # Must run after all supplemental calls, before the cache write.
     facts_output["facts"] = _upgrade_roster_derived_facts(
         facts_output.get("facts", []),
         has_roster=bool(verified_roster_rows),
+    )
+
+    # ── Align num_charter_schools with the S1 roster the gate uses ───────────
+    # The model emits num_charter_schools grounded in the injected VERIFIED_ROSTER,
+    # which can drift from the authoritative S1 roster (e.g. ABQ: model 53 vs
+    # roster 55). The political-climate gate already counts len(known_schools);
+    # this realigns S3 to the same source so the brief and the gate agree.
+    facts_output["facts"] = _align_num_charter_schools(
+        facts_output["facts"], known_schools,
     )
 
     # ── Inject NCES fact datapoints (funding_environment + frl_pct) ──────────
@@ -1904,3 +1900,31 @@ def _upgrade_roster_derived_facts(facts: list[dict], has_roster: bool) -> list[d
             f["needs_verification_reason"] = None
         out.append(f)
     return out
+
+
+def _align_num_charter_schools(facts: list[dict], known_schools: list[str]) -> list[dict]:
+    """Override num_charter_schools with the S1 roster count (len(known_schools)).
+
+    The S3 model emits num_charter_schools grounded in the injected VERIFIED_ROSTER
+    table, which can drift from the authoritative S1 roster (e.g. Albuquerque: model
+    reports 53 vs S1 roster 55). The political-climate gate already uses
+    len(known_schools) as the operating count, so this aligns S3 to the same source.
+
+    The numeric `value` is overridden, and the old value is also swapped for the
+    new count inside the human-readable `claim` string (so the brief narrative and
+    the scorecard agree). source_class, confidence, and every other field are left
+    untouched. State-agnostic: known_schools is the universal S1 abstraction (no
+    state-specific paths). No-op when the roster is empty, since there is nothing
+    authoritative to align to.
+    """
+    if not known_schools:
+        return facts
+    count = len(known_schools)
+    for f in facts:
+        if f.get("fact_key") == "num_charter_schools":
+            old_value = f.get("value")
+            f["value"] = count
+            claim = f.get("claim")
+            if isinstance(claim, str) and old_value is not None:
+                f["claim"] = claim.replace(str(old_value), str(count))
+    return facts
