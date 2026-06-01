@@ -29,7 +29,7 @@ from pipeline.utils.api_client import call_claude, load_prompt
 from pipeline.utils.cache import CacheManager
 from pipeline.utils.schema_validator import validate_against_schema
 from pipeline.utils.ped_fetcher import get_district_data
-from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data
+from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data, get_charter_enrollment_share
 from pipeline.utils.acs_fetcher  import get_district_data as get_acs_district_data, get_total_population as get_acs_total_population
 from pipeline.utils.population_trends_fetcher import get_population_trends
 from pipeline.utils.saipe_fetcher import get_poverty_data as get_saipe_poverty_data
@@ -38,6 +38,8 @@ from pipeline.utils.authorizers_fetcher     import get_community_authorizers
 from pipeline.utils.usaspending_csp_fetcher import get_csp_awards
 from pipeline.utils.ccd_closures_fetcher    import get_closed_schools
 from pipeline.utils.ipeds_completers_fetcher import get_completers
+from pipeline.edfacts_teacher_fetcher import get_teacher_supply
+from pipeline.propublica_fetcher import get_philanthropic_activity
 
 STAGE_ID = "s3_fact_extraction"
 
@@ -1183,6 +1185,27 @@ def run(
     # ── Inject ACS total population (secondary signal, not scored) ────────────
     _inject_acs_population_facts(facts_output, acs_pop_data, community_id, state)
 
+    # ── Session 27 federal signals: charter enrollment share, teacher supply, ──
+    # ── philanthropic activity. All free/keyless; each degrades to a no-op when ─
+    # ── its fetcher returns None. (saipe_leaid / _state_fips computed above.) ───
+    charter_share = get_charter_enrollment_share(saipe_leaid) if saipe_leaid else None
+    _inject_charter_enrollment_share_facts(
+        facts_output, charter_share, community_id, state, community_name
+    )
+
+    teacher_supply = (
+        get_teacher_supply(saipe_leaid, community_id, state, state_fips=_state_fips)
+        if saipe_leaid else None
+    )
+    _inject_teacher_supply_facts(
+        facts_output, teacher_supply, community_id, state, community_name
+    )
+
+    philanthropy = get_philanthropic_activity(community_name, state, community_id)
+    _inject_philanthropic_facts(
+        facts_output, philanthropy, community_id, state, community_name
+    )
+
     # ── Charter schools + authorizer intelligence ─────────────────────────────
     # Scan mode skips both fetchers: charter_intel feeds brief narrative only and
     # does not contribute to any scoring dimension.  Cost: ~$0.05/city saved.
@@ -1501,6 +1524,183 @@ def _inject_saipe_facts(
             saipe_data.get("poverty_rate_pct", float("nan")),
             saipe_data.get("data_year"),
         )
+
+
+def _inject_charter_enrollment_share_facts(
+    facts_output: dict,
+    charter_share: Optional[dict],
+    community_id: str,
+    state: str,
+    community_name: str,
+) -> None:
+    """Append charter enrollment share as a charter_saturation datapoint.
+
+    Secondary signal (S5 primary_fact for charter_saturation is
+    num_charter_schools); this resolves the brief's charter-share
+    needs-verification item. Skips silently when the fetcher returns None.
+    """
+    if not charter_share:
+        return
+    facts: list[dict] = facts_output.setdefault("facts", [])
+    if any(f.get("fact_key") == "charter_enrollment_share_pct" for f in facts):
+        return
+
+    pct = charter_share["charter_enrollment_share_pct"]
+    facts.append({
+        "datapoint_id":         f"dp_{community_id}_charter_saturation_003",
+        "community_id":         community_id,
+        "state":                state,
+        "dimension":            "charter_saturation",
+        "fact_key":             "charter_enrollment_share_pct",
+        "claim": (
+            f"Charter enrollment share in {community_name}: {pct}% of district "
+            f"students attend charter schools "
+            f"({charter_share['total_charter_enrollment']:,} of "
+            f"{charter_share['district_total_enrollment']:,}, NCES CCD "
+            f"{charter_share['year']})."
+        ),
+        "value":                pct,
+        "value_unit":           "percent",
+        "value_year":           charter_share["year"],
+        "source_class":         "FEDERAL_DATA",
+        "source_url":           charter_share.get("source_url"),
+        "source_title":         charter_share.get("source_title"),
+        "source_date":          None,
+        "confidence":           "HIGH",
+        "confidence_rationale": "Directly computed from NCES CCD school directory enrollment by charter status",
+        "verification_status":  "VERIFIED",
+        "bias_flag":            None,
+        "extracted_by":         "nces_fetcher",
+        "extracted_at":         today_str(),
+        "stage":                STAGE_ID,
+        "in_main_analysis":     True,
+        "needs_verification_reason": None,
+    })
+    logger.info(
+        "[%s] Injected charter enrollment share datapoint (%.1f%%, year %s)",
+        community_id, pct, charter_share["year"],
+    )
+
+
+def _inject_teacher_supply_facts(
+    facts_output: dict,
+    teacher_supply: Optional[dict],
+    community_id: str,
+    state: str,
+    community_name: str,
+) -> None:
+    """Append the teacher-supply signal as an operational_complexity datapoint.
+
+    PROVISIONAL/MODERATE: EDFacts/CCD staffing data lags 1-2 years. Skips
+    silently when the fetcher returns None.
+    """
+    if not teacher_supply:
+        return
+    facts: list[dict] = facts_output.setdefault("facts", [])
+    if any(f.get("fact_key") == "teacher_supply_signal" for f in facts):
+        return
+
+    signal = teacher_supply["teacher_signal"]
+    field_used = teacher_supply["field_used"]
+    raw_value = teacher_supply["raw_value"]
+    facts.append({
+        "datapoint_id":         f"dp_{community_id}_operational_complexity_teacher",
+        "community_id":         community_id,
+        "state":                state,
+        "dimension":            "operational_complexity",
+        "fact_key":             "teacher_supply_signal",
+        "claim": (
+            f"Teacher supply signal for {community_name}: {signal} based on "
+            f"{field_used} ({raw_value})."
+        ),
+        "value":                raw_value,
+        "value_unit":           "ratio" if field_used == "student_teacher_ratio" else "percent",
+        "value_year":           teacher_supply.get("year"),
+        "source_class":         "FEDERAL_DATA",
+        "source_url":           teacher_supply.get("source_url"),
+        "source_title":         teacher_supply.get("source_title"),
+        "source_date":          None,
+        "confidence":           "MODERATE",
+        "confidence_rationale": "Derived from federal CCD staffing/enrollment data (reporting lag)",
+        "verification_status":  "PROVISIONAL",
+        "bias_flag":            None,
+        "extracted_by":         "edfacts_teacher_fetcher",
+        "extracted_at":         today_str(),
+        "stage":                STAGE_ID,
+        "in_main_analysis":     True,
+        "needs_verification_reason": (
+            "EDFacts data is 1-2 years lagged; verify against current NMPED "
+            "hard-to-staff designation list at https://webnew.ped.state.nm.us "
+            "before external use."
+        ),
+    })
+    logger.info(
+        "[%s] Injected teacher supply datapoint (%s via %s=%s)",
+        community_id, signal, field_used, raw_value,
+    )
+
+
+def _inject_philanthropic_facts(
+    facts_output: dict,
+    philanthropy: Optional[dict],
+    community_id: str,
+    state: str,
+    community_name: str,
+) -> None:
+    """Append the philanthropic-activity tier as a replication_feasibility
+    datapoint.
+
+    PROVISIONAL/MODERATE: IRS 990 data lags 1-2 years. Skips silently when the
+    fetcher returns None.
+    """
+    if not philanthropy:
+        return
+    facts: list[dict] = facts_output.setdefault("facts", [])
+    if any(f.get("fact_key") == "philanthropic_activity_tier" for f in facts):
+        return
+
+    tier = philanthropy["activity_tier"]
+    count = philanthropy["foundation_count"]
+    assets_fmt = philanthropy["total_assets_formatted"]
+    facts.append({
+        "datapoint_id":         f"dp_{community_id}_replication_feasibility_phil",
+        "community_id":         community_id,
+        "state":                state,
+        "dimension":            "replication_feasibility",
+        "fact_key":             "philanthropic_activity_tier",
+        "claim": (
+            f"Philanthropic activity in {community_name}: {tier} "
+            f"({count} education foundations found, total assets ~${assets_fmt})."
+        ),
+        "value":                tier,
+        "value_unit":           "tier",
+        "value_year":           None,
+        "source_class":         "FEDERAL_DATA",
+        "source_url":           philanthropy.get("source_url"),
+        "source_title":         philanthropy.get("source_title"),
+        "source_date":          None,
+        "source_notes":         (
+            f"Largest: {philanthropy['largest_foundation']['name']} "
+            f"(${philanthropy['largest_foundation']['asset_amount']:,})"
+            if philanthropy.get("largest_foundation") else None
+        ),
+        "confidence":           "MODERATE",
+        "confidence_rationale": "Aggregated from IRS Form 990 data via ProPublica Nonprofit Explorer",
+        "verification_status":  "PROVISIONAL",
+        "bias_flag":            None,
+        "extracted_by":         "propublica_fetcher",
+        "extracted_at":         today_str(),
+        "stage":                STAGE_ID,
+        "in_main_analysis":     True,
+        "needs_verification_reason": (
+            "ProPublica 990 data may be 1-2 years lagged. Verify current "
+            "foundation activity and grant focus areas before external use."
+        ),
+    })
+    logger.info(
+        "[%s] Injected philanthropic activity datapoint (%s, %d foundations, ~$%s)",
+        community_id, tier, count, assets_fmt,
+    )
 
 
 def _inject_ccd_closures_facts(

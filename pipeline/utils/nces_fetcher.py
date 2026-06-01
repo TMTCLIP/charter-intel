@@ -20,8 +20,11 @@ NM STATE AVERAGE PER-PUPIL REVENUE:
 from __future__ import annotations
 
 import csv
+import json
 import logging
 import os
+import time
+import urllib.request
 from typing import Optional
 
 import yaml
@@ -44,6 +47,149 @@ NM_STATE_AVG_PPR = 24_356.0
 
 # Sentinel: NCES uses -2 for missing/not-applicable numeric fields
 _MISSING_SENTINEL = -2
+
+# ── Urban Institute CCD directory API (charter enrollment share) ──────────────
+# The school-level CCD directory endpoint returns, per school, a `charter` flag
+# (0/1), a total `enrollment` figure, and `teachers_fte`. Summing `enrollment`
+# across charter vs. all schools yields charter enrollment share — a secondary
+# charter_saturation signal that complements the primary num_charter_schools.
+#
+# NOTE (verified by live probe 2026): the `charter=1` query param is NOT honored
+# on the schools/ccd/enrollment endpoint and `charter` is not a field there, so
+# the directory endpoint is used instead (one call yields charter flag +
+# enrollment together). The enrollment endpoint URL is retained as the cited
+# source_url because it is the canonical public reference for the figure.
+_CCD_DIRECTORY_API = "https://educationdata.urban.org/api/v1/schools/ccd/directory"
+_CHARTER_SOURCE_URL_TMPL = (
+    "https://educationdata.urban.org/api/v1/schools/ccd/enrollment/{year}/?leaid={leaid}&charter=1"
+)
+_CHARTER_SOURCE_TITLE = "Urban Institute Education Data API — NCES CCD school directory (enrollment by charter status)"
+_CHARTER_ENROLLMENT_YEARS = (2023, 2022)   # try most recent first, then fall back
+_CHARTER_CACHE_DIR = "data/cache/fetcher/ccd_enrollment"
+_CHARTER_CACHE_TTL_DAYS = 90               # matches the existing CCD cache TTL
+_CCD_MAX_PAGES = 30
+
+
+def _ccd_cache_path(key: str) -> str:
+    return os.path.join(_CHARTER_CACHE_DIR, f"{key}.json")
+
+
+def _ccd_read_cache(key: str) -> Optional[dict]:
+    path = _ccd_cache_path(key)
+    if not os.path.exists(path):
+        return None
+    if (time.time() - os.path.getmtime(path)) / 86400 > _CHARTER_CACHE_TTL_DAYS:
+        return None
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+
+def _ccd_write_cache(key: str, data: dict) -> None:
+    try:
+        os.makedirs(_CHARTER_CACHE_DIR, exist_ok=True)
+        with open(_ccd_cache_path(key), "w") as f:
+            json.dump(data, f, indent=2)
+    except Exception as exc:
+        log.warning("nces_fetcher: charter cache write failed for %s — %s", key, exc)
+
+
+def _ccd_get(url: str) -> Optional[dict]:
+    req = urllib.request.Request(url, headers={"User-Agent": "CLIP/1.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            if resp.status != 200:
+                return None
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception as exc:
+        log.warning("nces_fetcher: CCD directory request failed for %s — %s", url, exc)
+        return None
+
+
+def _ccd_fetch_directory(leaid: str, year: int) -> Optional[list]:
+    """Return all school directory rows for a LEAID/year, following pagination.
+    None on first-request failure; [] when the year is not yet loaded."""
+    first = _ccd_get(f"{_CCD_DIRECTORY_API}/{year}/?leaid={leaid}")
+    if first is None:
+        return None
+    rows = list(first.get("results", []))
+    nxt = first.get("next")
+    pages = 1
+    while nxt and pages < _CCD_MAX_PAGES:
+        page = _ccd_get(nxt)
+        if page is None:
+            break
+        rows.extend(page.get("results", []))
+        nxt = page.get("next")
+        pages += 1
+    return rows
+
+
+def _as_pos_int(val) -> int:
+    try:
+        n = int(val)
+        return n if n > 0 else 0
+    except (TypeError, ValueError):
+        return 0
+
+
+def get_charter_enrollment_share(leaid: Optional[str]) -> Optional[dict]:
+    """Compute charter enrollment share for a district from the Urban CCD
+    directory API. Never raises; returns None on missing leaid / no data.
+
+    Return shape:
+        {
+            "district_total_enrollment":    79805,
+            "total_charter_enrollment":     9247,
+            "charter_enrollment_share_pct": 11.6,
+            "year":                         2022,
+            "source_url":                   "...",
+            "source_title":                 "...",
+            "confidence":                   "HIGH",
+        }
+    """
+    if not leaid:
+        return None
+
+    cache_key = f"charter_share_{leaid}"
+    cached = _ccd_read_cache(cache_key)
+    if cached is not None:
+        log.info("nces_fetcher: charter-share cache hit for %s", leaid)
+        return cached
+
+    for year in _CHARTER_ENROLLMENT_YEARS:
+        rows = _ccd_fetch_directory(leaid, year)
+        if not rows:
+            continue   # None (request failed) or [] (year not loaded) — try next
+
+        district_total = sum(_as_pos_int(r.get("enrollment")) for r in rows)
+        charter_total = sum(
+            _as_pos_int(r.get("enrollment")) for r in rows if r.get("charter") == 1
+        )
+        if district_total <= 0:
+            continue   # no usable enrollment for this year
+
+        result = {
+            "district_total_enrollment":    district_total,
+            "total_charter_enrollment":     charter_total,
+            "charter_enrollment_share_pct": round(charter_total / district_total * 100, 1),
+            "year":                         year,
+            "source_url":   _CHARTER_SOURCE_URL_TMPL.format(year=year, leaid=leaid),
+            "source_title": _CHARTER_SOURCE_TITLE,
+            "confidence":   "HIGH",
+        }
+        log.info(
+            "nces_fetcher: charter share for LEAID %s (%d) — %d/%d = %.1f%%",
+            leaid, year, charter_total, district_total,
+            result["charter_enrollment_share_pct"],
+        )
+        _ccd_write_cache(cache_key, result)
+        return result
+
+    log.warning("nces_fetcher: no CCD directory enrollment available for LEAID %s", leaid)
+    return None
 
 
 def _frl_to_complexity_index(frl_pct: float) -> int:
