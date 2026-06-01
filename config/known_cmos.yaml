@@ -1,0 +1,68 @@
+metadata:
+  description: >
+    Nationally-known charter management organizations. Any S3
+    claim asserting one of these organizations has active local
+    presence must be marked PROVISIONAL and flagged for roster
+    verification regardless of model confidence. This list is
+    not exhaustive — err toward skepticism for any CMO name
+    not locally confirmed.
+  last_updated: 2026-06-01
+  session: 24
+
+national_cmos:
+  # Format: canonical name + common aliases
+  - name: KIPP
+    aliases: ["KIPP Foundation", "Knowledge Is Power Program"]
+  - name: IDEA Public Schools
+    aliases: ["IDEA"]
+  - name: Success Academy
+    aliases: ["Success Academy Charter Schools"]
+  - name: Uncommon Schools
+    aliases: []
+  - name: Achievement First
+    aliases: []
+  - name: Democracy Prep
+    aliases: ["Democracy Prep Public Schools"]
+  - name: Rocketship Education
+    aliases: ["Rocketship Public Schools"]
+  - name: YES Prep
+    aliases: ["YES Prep Public Schools"]
+  - name: KIPP Texas
+    aliases: []
+  - name: Relay Graduate School of Education
+    aliases: ["Relay"]
+  - name: Green Dot Public Schools
+    aliases: ["Green Dot"]
+  - name: Aspire Public Schools
+    aliases: ["Aspire"]
+  - name: BASIS Ed
+    aliases: ["BASIS", "BASIS Charter Schools"]
+  - name: Harmony Public Schools
+    aliases: ["Harmony"]
+  - name: Uplift Education
+    aliases: ["Uplift"]
+  - name: Noble Network
+    aliases: ["Noble Schools"]
+  - name: Mastery Charter Schools
+    aliases: ["Mastery"]
+  - name: Great Hearts Academies
+    aliases: ["Great Hearts"]
+  - name: Acton Academy
+    aliases: []
+  - name: Institute for Better Learning
+    aliases: []
+
+skepticism_rule:
+  applies_to_dimensions:
+    - replication_feasibility
+    - competitive_opportunity
+    - charter_saturation
+  trigger: "name appears in claim text (case-insensitive, any alias match)"
+  required_output:
+    confidence: MODERATE        # never HIGH for unconfirmed local presence
+    verification_status: PROVISIONAL
+    needs_verification_reason: >
+      "{cmo_name}" is a nationally-known CMO. Local presence
+      in {city}, {state} has not been confirmed against the
+      NCES CCD charter roster. Do not treat as a proven local
+      operator without independent verification.

@@ -40,6 +40,44 @@ CRITICAL RULES — NEVER VIOLATE:
 
 ---
 
+## CMO LOCAL-PRESENCE SKEPTICISM RULE
+
+When extracting facts about charter operators, apply the
+following rule without exception:
+
+If a claim asserts that a nationally-known charter management
+organization (CMO) is actively operating, present, or
+established in the community being analyzed, you MUST:
+
+1. Set confidence to MODERATE — never HIGH — regardless of
+   how prominent the organization is nationally.
+2. Set verification_status to PROVISIONAL.
+3. Set needs_verification_reason to:
+   "[CMO name] is a nationally-known CMO. Local presence in
+   [city], [state] has not been confirmed against the NCES CCD
+   charter roster. Requires human verification before use in
+   operator analysis."
+
+This rule applies even when:
+- The CMO is nationally prominent (KIPP, IDEA, Success Academy,
+  Uncommon Schools, Achievement First, Democracy Prep, etc.)
+- Your training data suggests they operate in the region
+- The source text implies local presence
+
+Rationale: CMO brand recognition creates false confidence.
+A nationally-known name does not confirm a local campus.
+Only NCES CCD roster confirmation upgrades this to VERIFIED.
+
+This rule applies to these dimensions:
+  replication_feasibility, competitive_opportunity,
+  charter_saturation
+
+It does NOT apply to locally-confirmed operators (i.e.,
+organizations that appear in the NCES CCD roster for this
+specific community and have been verified by the pipeline).
+
+---
+
 ## USER
 
 Extract community-level facts for the scoring dimensions below.

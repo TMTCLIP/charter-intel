@@ -16,8 +16,11 @@ import json
 import logging
 import os
 import csv
+import re
 import time
 from typing import Optional
+
+import yaml
 
 logger = logging.getLogger(__name__)
 
@@ -37,6 +40,106 @@ from pipeline.utils.ccd_closures_fetcher    import get_closed_schools
 from pipeline.utils.ipeds_completers_fetcher import get_completers
 
 STAGE_ID = "s3_fact_extraction"
+
+# ── CMO local-presence skepticism (Session 24) ──────────────────────────────
+# Config-driven (config/known_cmos.yaml). No CMO names are hardcoded here.
+_KNOWN_CMOS_PATH = "config/known_cmos.yaml"
+
+
+def _load_known_cmos(path: str = _KNOWN_CMOS_PATH) -> dict:
+    """Load the national-CMO skepticism config.
+
+    Returns {"entries": [(canonical_name, [compiled_patterns]), ...],
+             "dimensions": set[str], "reason": str}. Degrades to an inert
+    config (no entries) if the file is missing or malformed so the gate is a
+    no-op rather than a crash.
+    """
+    try:
+        with open(path) as f:
+            cfg = yaml.safe_load(f) or {}
+    except Exception as exc:
+        logger.warning("Could not load %s (CMO gate disabled): %s", path, exc)
+        return {"entries": [], "dimensions": set(), "reason": ""}
+
+    entries = []
+    for c in cfg.get("national_cmos", []) or []:
+        name = c.get("name")
+        if not name:
+            continue
+        terms = [name] + list(c.get("aliases") or [])
+        patterns = [re.compile(r"\b" + re.escape(t) + r"\b", re.IGNORECASE) for t in terms]
+        entries.append((name, patterns))
+
+    rule = cfg.get("skepticism_rule", {}) or {}
+    dimensions = set(rule.get("applies_to_dimensions", []) or [])
+    reason = ((rule.get("required_output", {}) or {}).get("needs_verification_reason") or "").strip()
+    return {"entries": entries, "dimensions": dimensions, "reason": reason}
+
+
+_CMO_CONFIG = _load_known_cmos()
+
+
+def _enforce_cmo_skepticism(
+    facts: list[dict], city: str, state: str, cmo_config: Optional[dict] = None
+) -> tuple[list[dict], dict]:
+    """Deterministic post-LLM gate: a nationally-known CMO named in a targeted
+    dimension's claim cannot remain HIGH-confidence / VERIFIED for local presence.
+
+    Caps confidence at MODERATE (only downgrades HIGH) and verification_status at
+    PROVISIONAL (only downgrades VERIFIED), so facts already cautious are left
+    untouched. Reads from config/known_cmos.yaml — no hardcoded names.
+    """
+    cfg = cmo_config or _CMO_CONFIG
+    dimensions = cfg["dimensions"]
+    entries = cfg["entries"]
+    reason_tpl = cfg["reason"]
+
+    checked = 0
+    demoted = 0
+    detected: set[str] = set()
+    out: list[dict] = []
+
+    for fact in facts:
+        fact = dict(fact)
+        if fact.get("dimension") in dimensions:
+            checked += 1
+            claim = fact.get("claim") or ""
+            hit = None
+            for name, patterns in entries:
+                if any(p.search(claim) for p in patterns):
+                    hit = name
+                    break
+            if hit:
+                changed = False
+                if fact.get("confidence") == "HIGH":
+                    fact["confidence"] = "MODERATE"
+                    changed = True
+                if fact.get("verification_status") == "VERIFIED":
+                    fact["verification_status"] = "PROVISIONAL"
+                    changed = True
+                if changed:
+                    demoted += 1
+                    detected.add(hit)
+                    fact["needs_verification_reason"] = (
+                        reason_tpl.format(cmo_name=hit, city=city, state=state)
+                        if reason_tpl else
+                        f"{hit} is a nationally-known CMO; local presence in "
+                        f"{city}, {state} unconfirmed."
+                    )
+                    fact["cmo_skepticism_applied"] = True
+                    logger.info(
+                        "CMO skepticism gate: '%s' detected in %s (%s) — "
+                        "downgraded to MODERATE/PROVISIONAL",
+                        hit, fact.get("datapoint_id"), fact.get("dimension"),
+                    )
+        out.append(fact)
+
+    summary = {
+        "facts_checked": checked,
+        "facts_demoted": demoted,
+        "cmos_detected": sorted(detected),
+    }
+    return out, summary
 
 # Charter intel: only pass the top N schools to the prompt (CSV already sorted
 # by ELA proficiency descending). Claude selects 5 from this set. Passing all
@@ -1106,6 +1209,15 @@ def run(
         facts_output["charter_schools"]  = charter_intel.get("top_charter_schools", csv_schools)
         facts_output["local_authorizers"] = charter_intel.get("local_authorizers", csv_authorizers)
     # ─────────────────────────────────────────────────────────────────────────
+
+    # ── CMO local-presence skepticism gate (deterministic, config-driven) ──
+    # Caps confidence/verification_status for any national-CMO local-presence
+    # claim in a targeted dimension, before caching/output.
+    _facts_list, _cmo_summary = _enforce_cmo_skepticism(
+        facts_output.get("facts", []), community_name, state
+    )
+    facts_output["facts"] = _facts_list
+    facts_output["cmo_skepticism"] = _cmo_summary
 
     facts_output["source_mode"] = config.mode.value
 

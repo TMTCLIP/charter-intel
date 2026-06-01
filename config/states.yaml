@@ -233,6 +233,7 @@ NM:
     nm-us-70-alamogordo: '3500030'
     nm-w-taos: '3502520'
   pilot: true
+  state_fips: 35
   scoring_adjustments:
     facilities_feasibility:
       baseline_adjustment: -1

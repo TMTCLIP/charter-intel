@@ -116,7 +116,11 @@ def run(
             "token_rows": token_rows,
             "warn_lines": warn_lines or [],
         }
-        rendered_html = env.get_template(html_template_name).render(brief=brief, debug=debug)
+        rendered_html = env.get_template(html_template_name).render(
+            brief=brief,
+            debug=debug,
+            schools=brief.get("top_charter_schools", []),
+        )
         html_filename = f"{community_id}_{config.preset.value}_mode{config.mode.value}.html"
         html_out_path = os.path.join(out_dir, html_filename)
         with open(html_out_path, "w") as f:

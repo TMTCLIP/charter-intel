@@ -10,6 +10,7 @@ INPUT:  data/cache/community/{state}/{community_id}/s3_facts_raw.json
 OUTPUT: data/cache/community/{state}/{community_id}/s4_verified.json
 """
 from __future__ import annotations
+import difflib
 import json
 import logging
 import os
@@ -24,11 +25,26 @@ logger = logging.getLogger(__name__)
 from pipeline import PipelineConfig, StageResult, StageStatus, today_str
 from pipeline.utils.api_client import call_claude, load_prompt
 from pipeline.utils.cache import CacheManager
+from pipeline.ccd_entity_verifier import (
+    SOURCE_LABEL as CCD_SOURCE_LABEL,
+    extract_named_entities,
+    fetch_charter_roster,
+)
 
 STAGE_ID = "s4_verification"
 
 # Source classes that block in_main_analysis regardless of confidence
 BLOCKED_SOURCE_CLASSES = {"ADVOCACY", "SELF_REPORTED", "UNVERIFIED"}
+
+# Source classes exempt from null-URL demotion (Pass C): these data types
+# legitimately lack a web URL but are authoritative primary sources.
+TRUSTED_SOURCE_CLASSES = {"FEDERAL_DATA", "PED_DATA", "STATUTE"}
+
+# Pass D: fact dimensions/keys for which an unconfirmed named entity warrants
+# demotion (role-assignment claims, where naming a non-existent operator is the
+# KIPP-type hallucination). Numeric/stat claims are checked but never demoted.
+ENTITY_DEMOTE_CATEGORIES = ("operator", "replication", "cmo", "partner", "management")
+ENTITY_MATCH_CUTOFF = 0.82
 
 
 def run(
@@ -117,12 +133,19 @@ def run(
     # Enforce in_main_analysis rules deterministically (non-negotiable)
     facts = [_enforce_main_analysis_rules(f) for f in facts]
 
+    # Pass D: live NCES CCD charter-roster entity verification.
+    # Degrades gracefully — if the roster cannot be fetched, facts are untouched.
+    facts, entity_summary = _pass_d_entity_verification(facts, community_id, state, config)
+
+    summary = _build_summary(facts)
+    summary["entity_verification"] = entity_summary
+
     verified_bundle = {
         "community_id": community_id,
         "state": state,
         "verified_at": today_str(),
         "facts": facts,
-        "summary": _build_summary(facts)
+        "summary": summary,
     }
 
     out_path = f"data/cache/community/{state.lower()}/{community_id}/s4_verified.json"
@@ -170,6 +193,24 @@ def _enforce_main_analysis_rules(fact: dict) -> dict:
             fact["needs_verification_reason"] = (
                 f"Blocked: source_class={source_class}, confidence={confidence}"
             )
+
+    # Null-URL VERIFIED demotion: a fact cannot remain VERIFIED + in_main_analysis
+    # without a traceable source URL (closes the KIPP _002 pattern — VERIFIED with
+    # a null source_url). Exempt trusted source classes (FEDERAL_DATA, PED_DATA,
+    # STATUTE) that legitimately lack a web URL. Missing/unknown source_class is
+    # treated as untrusted and still triggers demotion.
+    if (
+        fact.get("verification_status") == "VERIFIED"
+        and not (fact.get("source_url") or "").strip()
+        and fact.get("in_main_analysis") is True
+        and fact.get("source_class") not in TRUSTED_SOURCE_CLASSES
+    ):
+        fact["in_main_analysis"] = False
+        fact["verification_status"] = "PROVISIONAL"
+        fact["needs_verification_reason"] = (
+            "Marked VERIFIED but no source URL present — cannot confirm claim "
+            "against primary source. Requires human verification."
+        )
     return fact
 
 
@@ -193,3 +234,123 @@ def _build_sources_summary(source_classes: dict) -> str:
             f"requires_url={cfg['requires_url']}"
         )
     return "\n".join(lines)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Pass D — NCES CCD entity roster verification
+# ─────────────────────────────────────────────────────────────────────────────
+def _resolve_district(community_id: str, state: str):
+    """Return (leaid, city_display, state_fips) for a community.
+
+    LEAID comes from config/states.yaml `nces_district_map` (state-agnostic; may
+    be None for communities with no NCES LEA, e.g. tribal-land entries). The
+    state FIPS code is read from the per-state config (not hardcoded) and used to
+    scope the statewide city charter pull. The city display string is derived
+    from the community_id and used for the statewide filter and verification notes.
+    """
+    leaid = None
+    state_fips = None
+    try:
+        with open("config/states.yaml") as f:
+            cfg = yaml.safe_load(f) or {}
+        state_cfg = cfg.get(state.upper(), {}) or {}
+        leaid = (state_cfg.get("nces_district_map", {}) or {}).get(community_id)
+        state_fips = state_cfg.get("state_fips")
+    except Exception as exc:
+        logger.warning("Could not load district config from states.yaml: %s", exc)
+
+    prefix = f"{state.lower()}-"
+    city = community_id[len(prefix):] if community_id.startswith(prefix) else community_id
+    city = city.replace("-", " ").strip().title()
+    return leaid, city, state_fips
+
+
+def _pass_d_entity_verification(
+    facts: list[dict], community_id: str, state: str, config: PipelineConfig
+) -> tuple[list[dict], dict]:
+    """Verify named-entity facts against the live NCES CCD charter roster.
+
+    Runs only on facts still in_main_analysis after Pass C. For each such fact
+    that names a school/operator, fuzzy-match the name(s) against the district's
+    CCD charter roster. Confirmed → tag entity_verified. Unconfirmed AND a
+    role-assignment dimension (operator/replication/etc.) → demote and route to
+    verification. The CCD module never raises; if the roster is unavailable the
+    whole pass is skipped and facts are returned unchanged.
+    """
+    summary = {
+        "roster_fetched": False,
+        "roster_size": 0,
+        "facts_checked": 0,
+        "entities_confirmed": 0,
+        "entities_flagged": 0,
+        "roster_source": CCD_SOURCE_LABEL,
+    }
+
+    leaid, city, state_fips = _resolve_district(community_id, state)
+    roster = fetch_charter_roster(
+        city=city, state_abbr=state, cid=community_id, leaid=leaid, state_fips=state_fips
+    )
+
+    if roster is None:
+        logger.warning("CCD entity verification unavailable — skipping Pass D.")
+        return facts, summary
+
+    summary["roster_fetched"] = True
+    roster_names = [s["name"] for s in roster.get("charter_schools", []) if s.get("name")]
+    roster_names_lc = [n.lower() for n in roster_names]
+    summary["roster_size"] = len(roster_names)
+
+    out: list[dict] = []
+    for fact in facts:
+        fact = dict(fact)
+
+        if not fact.get("in_main_analysis"):
+            out.append(fact)
+            continue
+
+        entities = extract_named_entities(fact.get("claim") or "")
+        if not entities:
+            out.append(fact)
+            continue
+
+        summary["facts_checked"] += 1
+
+        matched = False
+        unmatched: list[str] = []
+        for ent in entities:
+            if roster_names_lc and difflib.get_close_matches(
+                ent.lower(), roster_names_lc, n=1, cutoff=ENTITY_MATCH_CUTOFF
+            ):
+                matched = True
+            else:
+                unmatched.append(ent)
+
+        category = f"{fact.get('dimension') or ''} {fact.get('fact_key') or ''}".lower()
+        is_role_claim = any(c in category for c in ENTITY_DEMOTE_CATEGORIES)
+
+        if matched:
+            fact["entity_verified"] = True
+            fact["entity_verification_source"] = CCD_SOURCE_LABEL
+            summary["entities_confirmed"] += 1
+        elif is_role_claim:
+            # No roster match on a role-assignment claim → KIPP-type risk. Demote.
+            if fact.get("confidence") == "HIGH":
+                fact["confidence"] = "MODERATE"
+            fact["verification_status"] = "PROVISIONAL"
+            fact["in_main_analysis"] = False
+            fact["entity_verified"] = False
+            fact["entity_verification_source"] = CCD_SOURCE_LABEL
+            flagged = unmatched[0] if unmatched else (entities[0] if entities else "?")
+            fact["needs_verification_reason"] = (
+                f"Named entity '{flagged}' not found in NCES CCD charter roster for "
+                f"{city}, {state}. Requires human confirmation before use in analysis."
+            )
+            summary["entities_flagged"] += 1
+        else:
+            # Non-role claim with no roster match: record the check, do not demote.
+            fact["entity_verified"] = False
+            fact["entity_verification_source"] = CCD_SOURCE_LABEL
+
+        out.append(fact)
+
+    return out, summary

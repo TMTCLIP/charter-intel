@@ -2,278 +2,571 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{{ brief.community_name }}, {{ brief.state }} — Strategic Brief</title>
+  <title>{{ brief.community_name | e }}, {{ brief.state | e }} — Strategic Brief</title>
   <style>
-    body { font-family: Georgia, serif; max-width: 860px; margin: 2em auto; padding: 0 1.5em; line-height: 1.6; color: #222; }
-    h1 { font-size: 1.6em; margin-bottom: 0.2em; }
-    h2 { font-size: 1.2em; border-bottom: 1px solid #ccc; padding-bottom: 0.2em; margin-top: 1.8em; }
-    h3 { font-size: 1em; margin-bottom: 0.3em; }
-    table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-    th, td { border: 1px solid #ccc; padding: 0.45em 0.65em; text-align: left; }
-    th { background: #f2f2f2; font-weight: bold; }
-    td:nth-child(2), td:nth-child(3) { text-align: right; }
-    code { background: #f4f4f4; padding: 0.15em 0.35em; border-radius: 3px; font-size: 0.9em; }
-    hr { border: none; border-top: 1px solid #ddd; margin: 1.5em 0; }
-    ul { margin: 0.4em 0 0.8em 1.4em; padding: 0; }
-    li { margin-bottom: 0.3em; }
-    blockquote { border-left: 4px solid #e67e22; margin: 1em 0; padding: 0.5em 1em; background: #fdf6ec; }
-    .meta { color: #555; font-size: 0.92em; }
-    .disclosure { color: #666; font-size: 0.88em; font-style: italic; margin-top: 2em; }
-    .banner { border-left: 5px solid; padding: 0.7em 1em; margin: 1em 0; border-radius: 4px; font-size: 0.95em; }
-    .banner strong { display: block; margin-bottom: 0.2em; }
-    .banner-insufficient { background: #fef2f2; border-color: #991b1b; color: #7f1d1d; }
-    .banner-gate { background: #fffbeb; border-color: #b45309; color: #7c2d12; }
-    .banner-tribal { background: #eff6ff; border-color: #1d4ed8; color: #1e3a8a; }
-    .banner-tribal-pending { background: #fffbeb; border-color: #d97706; color: #78350f; }
-    @media screen {
-      .debug-section { margin-top: 3em; padding-top: 1em; border-top: 2px dashed #bbb; }
-      .debug-section details > summary {
-        cursor: pointer; color: #888; font-size: 0.82em;
-        font-family: monospace; user-select: none; list-style: none;
-      }
-      .debug-section details > summary::before { content: "▶ "; }
-      .debug-section details[open] > summary::before { content: "▼ "; }
-      .debug-section details[open] > summary { margin-bottom: 0.8em; }
-      .debug-meta { font-size: 0.8em; color: #999; font-family: monospace; margin: 0.4em 0; }
-      .debug-section table { font-size: 0.8em; color: #777; margin: 0.6em 0; }
-      .debug-section th { background: #f8f8f8; color: #666; font-weight: normal; }
-      .debug-section td { color: #777; }
-      .debug-section td:nth-child(3),
-      .debug-section td:nth-child(4),
-      .debug-section td:nth-child(5) { text-align: right; }
-      .debug-warn { font-size: 0.78em; color: #a05000; font-family: monospace;
-                    margin: 0.6em 0; padding: 0; list-style: none; }
-      .debug-warn li { margin-bottom: 0.25em; }
-      .debug-empty { font-size: 0.8em; color: #aaa; font-style: italic; }
+    :root {
+      --color-chrome-900: #1e2a38;
+      --color-chrome-700: #2e4057;
+      --color-chrome-500: #4a6080;
+      --color-chrome-200: #c8d4e0;
+      --color-chrome-100: #e8eff5;
+      --color-chrome-50:  #f4f7fa;
+      --color-score-green: #2d6a4f;
+      --color-score-green-bg: #d8f3dc;
+      --color-score-yellow: #7d5a00;
+      --color-score-yellow-bg: #fff3cd;
+      --color-score-red: #8b1a1a;
+      --color-score-red-bg: #fde8e8;
+      --color-text-primary: #1a1a2e;
+      --color-text-muted: #5a6a7a;
+      --color-border: #d0dce8;
+      --fill-green: var(--color-score-green);
+      --fill-yellow: #c8960c;
+      --fill-red: #c0392b;
     }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--color-text-primary);
+      margin: 0;
+      background: #fff;
+    }
+
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px 48px; }
+
+    h1, h2, h3 { color: var(--color-chrome-900); font-weight: 600; }
+
+    .section { margin-top: 28px; }
+    .section-label {
+      color: var(--color-chrome-500);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      margin: 0 0 10px;
+    }
+
+    /* ── 1. Verdict header ── */
+    .verdict-header {
+      background: var(--color-chrome-900);
+      color: #fff;
+      padding: 20px 24px 12px;
+    }
+    .verdict-inner {
+      max-width: 880px; margin: 0 auto;
+      display: flex; align-items: flex-start; justify-content: space-between; gap: 24px;
+    }
+    .vh-wordmark {
+      font-size: 11px; letter-spacing: 0.15em;
+      color: var(--color-chrome-200); opacity: 0.7; margin-bottom: 6px;
+    }
+    .vh-city { font-size: 28px; color: #fff; font-weight: 700; line-height: 1.1; }
+    .vh-state { font-size: 16px; color: var(--color-chrome-200); font-weight: 400; }
+    .vh-badges { margin-top: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .vh-call { color: #fff; font-size: 12px; font-style: italic; margin-top: 12px; opacity: 0.92; }
+    .vh-score-box { text-align: right; white-space: nowrap; }
+    .vh-score { font-size: 48px; color: #fff; font-weight: 800; line-height: 1; }
+    .vh-score-max { font-size: 18px; color: var(--color-chrome-200); font-weight: 400; }
+    .vh-through {
+      max-width: 880px; margin: 8px auto 0;
+      text-align: right; color: var(--color-chrome-200); font-size: 10px;
+    }
+
+    .pill {
+      display: inline-block; border-radius: 999px;
+      padding: 3px 12px; font-size: 11px; font-weight: 600;
+    }
+    .pill-green  { background: var(--fill-green);  color: #fff; }
+    .pill-yellow { background: var(--fill-yellow); color: #fff; }
+    .pill-red    { background: var(--fill-red);    color: #fff; }
+
+    /* ── Confidence badges (fill/weight only, no score hues) ── */
+    .conf {
+      display: inline-block; border-radius: 999px;
+      padding: 2px 10px; font-size: 11px;
+    }
+    .conf-high { background: var(--color-chrome-700); color: #fff; font-weight: 600; }
+    .conf-moderate {
+      background: transparent; border: 1px solid var(--color-chrome-500);
+      color: var(--color-chrome-500); font-weight: 600;
+    }
+    .conf-low {
+      background: var(--color-chrome-100); color: var(--color-text-muted);
+      border: 1px solid var(--color-border); font-style: italic;
+    }
+
+    /* ── 2. Banners ── */
+    .banner {
+      border-radius: 6px; padding: 12px 16px; margin-bottom: 16px;
+      border-left: 4px solid; font-size: 13px;
+    }
+    .banner strong { display: block; margin-bottom: 2px; }
+    .banner-insufficient { background: var(--color-score-yellow-bg); border-color: var(--fill-yellow); color: #6b4a00; }
+    .banner-gate { background: var(--color-score-red-bg); border-color: var(--fill-red); color: var(--color-score-red); }
+    .banner-tribal { background: #eef4fb; border-color: var(--color-chrome-500); color: #234; }
+
+    /* ── 3. Executive snapshot ── */
+    .exec-snapshot { line-height: 1.75; margin: 0; }
+
+    /* ── 4. Scorecard bars ── */
+    .composite-line { font-weight: 700; color: var(--color-chrome-900); margin: 0 0 14px; }
+    .bar-row { padding: 10px 0; border-bottom: 1px solid var(--color-border); }
+    .bar-head { display: flex; justify-content: space-between; align-items: baseline; }
+    .bar-name { font-size: 13px; font-weight: 700; color: var(--color-chrome-900); }
+    .bar-score { font-size: 15px; font-weight: 700; }
+    .bar-track {
+      background: var(--color-chrome-100); height: 10px; border-radius: 5px;
+      width: 100%; margin: 6px 0; overflow: hidden;
+    }
+    .bar-fill { height: 10px; border-radius: 5px; }
+    .fill-green  { background: var(--fill-green); }
+    .fill-yellow { background: var(--fill-yellow); }
+    .fill-red    { background: var(--fill-red); }
+    .fill-excluded { background: var(--color-chrome-200); }
+    .txt-green  { color: var(--fill-green); }
+    .txt-yellow { color: var(--fill-yellow); }
+    .txt-red    { color: var(--fill-red); }
+    .txt-muted  { color: var(--color-text-muted); }
+    .bar-weight { color: var(--color-text-muted); font-size: 11px; }
+    .bar-driver { color: var(--color-text-muted); font-size: 12px; margin-top: 4px; }
+    .excluded-sep {
+      text-align: center; color: var(--color-text-muted); font-size: 11px;
+      margin: 18px 0 4px; letter-spacing: 0.05em;
+    }
+    .nullweight-pill {
+      display: inline-block; background: var(--color-chrome-100);
+      color: var(--color-text-muted); border: 1px solid var(--color-border);
+      border-radius: 999px; padding: 1px 8px; font-size: 10px; margin-right: 8px;
+    }
+
+    /* ── 5. Top drivers ── */
+    .driver-item {
+      border-left: 3px solid var(--color-chrome-500);
+      padding-left: 12px; margin-bottom: 8px; font-size: 13px;
+    }
+
+    /* ── 6. Override flags ── */
+    .flag-card {
+      border-radius: 6px; border-left: 4px solid; padding: 12px 16px; margin-bottom: 10px;
+    }
+    .flag-card .flag-head { font-size: 13px; font-weight: 700; margin-bottom: 2px; }
+    .flag-card .flag-body { font-size: 12px; color: var(--color-text-muted); }
+    .flag-green   { background: var(--color-score-green-bg);  border-color: var(--color-score-green); }
+    .flag-amber   { background: var(--color-score-yellow-bg); border-color: var(--fill-yellow); }
+    .flag-red     { background: var(--color-score-red-bg);    border-color: var(--color-score-red); }
+    .flag-neutral { background: var(--color-chrome-100);      border-color: var(--color-chrome-500); }
+
+    /* ── 7. School cards ── */
+    .card {
+      background: #fff; border: 1px solid var(--color-border); border-radius: 8px;
+      padding: 16px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .card-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .card-name { font-size: 15px; font-weight: 700; color: var(--color-chrome-900); }
+    .model-pill {
+      display: inline-block; border: 1px solid var(--color-chrome-500);
+      color: var(--color-chrome-500); border-radius: 999px;
+      padding: 2px 10px; font-size: 11px; white-space: nowrap;
+    }
+    .card-sub { color: var(--color-chrome-500); font-size: 12px; margin-top: 2px; }
+    .prof-row { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .prof-chip {
+      background: var(--color-chrome-100); border: 1px solid var(--color-border);
+      border-radius: 4px; padding: 3px 10px; font-size: 12px; font-weight: 600;
+    }
+    .prof-none { color: var(--color-text-muted); font-size: 12px; font-style: italic; margin-top: 10px; }
+    .card-foot {
+      border-top: 1px solid var(--color-border); margin-top: 8px; padding-top: 8px;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    }
+    .card-source { font-size: 11px; color: var(--color-text-muted); font-style: italic; text-align: right; }
+    .card-warn { font-size: 11px; color: var(--color-score-yellow); font-style: italic; margin-top: 6px; }
+
+    /* ── 8/9/11/12 lists ── */
+    .auth-item { font-size: 13px; padding-left: 12px; margin-bottom: 6px; }
+    .auth-item .dash { color: var(--color-text-muted); }
+    .rec-item { font-size: 13px; margin-bottom: 6px; }
+    .nv-item {
+      border-left: 3px solid var(--color-score-yellow); padding-left: 10px;
+      font-size: 12px; margin-bottom: 6px;
+    }
+    .src-item { font-size: 11px; color: var(--color-text-muted); margin-bottom: 3px; }
+    .src-item .dash { color: var(--color-text-muted); }
+    .muted-note { color: var(--color-text-muted); font-style: italic; font-size: 13px; }
+
+    /* ── 10. Quick reads grid ── */
+    .qr-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .qr-label { color: var(--color-text-muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
+    .qr-body { font-size: 13px; }
+
+    /* ── 13. Footer ── */
+    .disclosure-footer {
+      background: var(--color-chrome-50); border-top: 1px solid var(--color-border);
+      padding: 16px 24px; font-size: 11px; color: var(--color-text-muted); margin-top: 40px;
+    }
+    .disclosure-footer .inner { max-width: 880px; margin: 0 auto; }
+
+    /* ── Debug (screen only) ── */
+    .debug-section { margin-top: 3em; }
+    .debug-section details > summary {
+      cursor: pointer; color: #888; font-size: 0.82em;
+      font-family: monospace; user-select: none; list-style: none;
+    }
+    .debug-section details > summary::before { content: "▶ "; }
+    .debug-section details[open] > summary::before { content: "▼ "; }
+    .debug-section details[open] > summary { margin-bottom: 0.8em; }
+    .debug-meta { font-size: 0.8em; color: #999; font-family: monospace; margin: 0.4em 0; }
+    .debug-section table { font-size: 0.8em; color: #777; margin: 0.6em 0; border-collapse: collapse; width: 100%; }
+    .debug-section th, .debug-section td { border: 1px solid #ddd; padding: 0.35em 0.55em; text-align: left; }
+    .debug-section th { background: #f8f8f8; color: #666; font-weight: normal; }
+    .debug-section td { color: #777; }
+    .debug-section td:nth-child(3),
+    .debug-section td:nth-child(4),
+    .debug-section td:nth-child(5) { text-align: right; }
+    .debug-warn { font-size: 0.78em; color: #a05000; font-family: monospace; margin: 0.6em 0; padding: 0; list-style: none; }
+    .debug-warn li { margin-bottom: 0.25em; }
+    .debug-empty { font-size: 0.8em; color: #aaa; font-style: italic; }
+
     @media print {
       .debug-section { display: none; }
+      .card, .section { page-break-inside: avoid; }
+      body { font-size: 12px; }
+      .verdict-header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .qr-grid { grid-template-columns: 1fr; }
+    }
+    @media screen and (max-width: 640px) {
+      .qr-grid { grid-template-columns: 1fr; }
+      .verdict-inner { flex-direction: column; }
+      .vh-score-box { text-align: left; }
     }
   </style>
 </head>
 <body>
 
-<h1>{{ brief.community_name }}, {{ brief.state }} — Strategic Brief</h1>
-<p>
-  <strong>Preset:</strong> {{ brief.preset | title }} &nbsp;&nbsp;
-  <strong>Score:</strong> {{ brief.composite_score }}/10 &nbsp;&nbsp;
-  <strong>Confidence:</strong> {{ brief.confidence_overall }}
-</p>
-<p><strong>Classification:</strong> {{ brief.classification }}</p>
-<p class="meta"><em>Data through {{ brief.data_through }} · Generated {{ brief.generated_at[:10] }}</em></p>
-
-{% if brief.data_coverage_tier == "INSUFFICIENT" %}
-<div class="banner banner-insufficient">
-  <strong>⚠ Insufficient data coverage</strong>
-  Four or more scoring dimensions defaulted to midpoint. The composite score is
-  largely a redistribution of default values rather than evidence. Treat the
-  ranking and recommendations below as research directions, not confident calls.
+{# ─── 1. VERDICT HEADER ─── #}
+{% set comp = brief.composite_score if brief.composite_score is not none else 0 %}
+{% set comp_tone = 'green' if comp >= 7.0 else ('yellow' if comp >= 4.0 else 'red') %}
+<div class="verdict-header">
+  <div class="verdict-inner">
+    <div>
+      <div class="vh-wordmark">CLIP</div>
+      <div class="vh-city">{{ brief.community_name | e }}<span class="vh-state">, {{ brief.state | e }}</span></div>
+      <div class="vh-badges">
+        {% if brief.classification %}<span class="pill pill-{{ comp_tone }}">{{ brief.classification | e }}</span>{% endif %}
+        {% set co = (brief.confidence_overall or '') | upper %}
+        {% if co == 'HIGH' %}<span class="conf conf-high">Confidence: High</span>
+        {% elif co == 'MODERATE' %}<span class="conf conf-moderate">Confidence: Moderate</span>
+        {% elif co == 'LOW' %}<span class="conf conf-low">Confidence: Low</span>{% endif %}
+      </div>
+      {% if brief.executive_snapshot %}
+      <div class="vh-call">{{ (brief.executive_snapshot.split('. ') | first) | truncate(120, True, '…') | e }}</div>
+      {% endif %}
+    </div>
+    <div class="vh-score-box">
+      <span class="vh-score">{{ comp }}</span><span class="vh-score-max">/10</span>
+    </div>
+  </div>
+  <div class="vh-through">Data through: {{ brief.data_through | e }}</div>
 </div>
-{% endif %}
 
-{% if brief.recommendation_confidence_gate and brief.recommendation_confidence_gate.gated and brief.data_coverage_tier != "INSUFFICIENT" %}
-<div class="banner banner-gate">
-  <strong>Recommendation confidence: gated</strong>
-  {{ brief.recommendation_confidence_gate.reason }}
-</div>
-{% endif %}
+<div class="wrap">
 
-{% if brief.tribal_jurisdiction_flag %}
-{% if brief.tribal_jurisdiction_flag.status == "PENDING_HUMAN_REVIEW" %}
-<div class="banner banner-tribal-pending">
-  <strong>⚑ Tribal jurisdiction determination pending — human review required before strategic use</strong>
-  {{ brief.tribal_jurisdiction_flag.note }}
-  {% if brief.tribal_jurisdiction_flag.resolution_path %}<br><em>Resolution:</em> {{ brief.tribal_jurisdiction_flag.resolution_path }}{% endif %}
-</div>
-{% else %}
-<div class="banner banner-tribal">
-  <strong>⚑ Tribal jurisdiction: {{ brief.tribal_jurisdiction_flag.status | replace("_", " ") }}</strong>
-  {{ brief.tribal_jurisdiction_flag.note }}
-  {% if brief.tribal_jurisdiction_flag.resolution_path %}<br><em>Resolution:</em> {{ brief.tribal_jurisdiction_flag.resolution_path }}{% endif %}
-</div>
-{% endif %}
-{% endif %}
-<hr>
+  {# ─── 2. BANNERS ─── #}
+  {% if brief.data_coverage_tier == "INSUFFICIENT" %}
+  <div class="banner banner-insufficient">
+    <strong>⚠ Insufficient data coverage</strong>
+    Four or more scoring dimensions defaulted to midpoint. Treat the ranking and
+    recommendations below as research directions, not confident calls.
+  </div>
+  {% endif %}
 
-<h2>Executive Snapshot</h2>
-<p>{{ brief.executive_snapshot }}</p>
-<hr>
+  {% if brief.recommendation_confidence_gate and brief.recommendation_confidence_gate.gated %}
+  <div class="banner banner-gate">
+    <strong>🚫 Recommendation confidence: gated</strong>
+    {{ brief.recommendation_confidence_gate.reason | e }}
+  </div>
+  {% endif %}
 
-<h2>Scorecard</h2>
-<p><strong>Composite: {{ brief.scorecard_summary.composite_score }}/10 — {{ brief.scorecard_summary.tier_display_label }}</strong></p>
-<table>
-  <thead>
-    <tr>
-      <th>Dimension</th>
-      <th>Score</th>
-      <th>Weight</th>
-      <th>Confidence</th>
-      <th>Driver</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for row in brief.scorecard_summary.dimension_table %}
-    {% if row.used_default %}
-    <tr style="color: #888;">
-      <td>{{ row.display_name }}</td>
-      <td>{{ row.score }}*</td>
-      <td>{{ (row.weight * 100) | int }}%</td>
-      <td><em>(excluded — no data)</em></td>
-      <td>{{ row.driver }}</td>
-    </tr>
-    {% else %}
-    <tr>
-      <td>{{ row.display_name }}</td>
-      <td>{{ row.score }}</td>
-      <td>{{ (row.weight * 100) | int }}%</td>
-      <td>{{ row.confidence }}</td>
-      <td>{{ row.driver }}</td>
-    </tr>
-    {% endif %}
+  {% if brief.tribal_jurisdiction_flag %}
+  <div class="banner banner-tribal">
+    <strong>ℹ Tribal jurisdiction: {{ (brief.tribal_jurisdiction_flag.status or '') | replace("_", " ") | e }}</strong>
+    {{ brief.tribal_jurisdiction_flag.note | e }}
+    {% if brief.tribal_jurisdiction_flag.resolution_path %}<br><em>Resolution:</em> {{ brief.tribal_jurisdiction_flag.resolution_path | e }}{% endif %}
+  </div>
+  {% endif %}
+
+  {# ─── 3. EXECUTIVE SNAPSHOT ─── #}
+  <div class="section">
+    <p class="section-label">Executive Snapshot</p>
+    <p class="exec-snapshot">{{ brief.executive_snapshot | e }}</p>
+  </div>
+
+  {# ─── 4. SCORECARD (bars) ─── #}
+  {% set sc = brief.scorecard_summary %}
+  <div class="section">
+    <p class="section-label">Scorecard</p>
+    <p class="composite-line">Composite: {{ sc.composite_score }}/10 — {{ sc.tier_display_label | e }}</p>
+
+    {% for row in sc.dimension_table if not row.used_default %}
+    {% set tone = 'green' if row.score >= 7.0 else ('yellow' if row.score >= 4.0 else 'red') %}
+    <div class="bar-row">
+      <div class="bar-head">
+        <span class="bar-name">{{ row.display_name | e }}</span>
+        <span class="bar-score txt-{{ tone }}">{{ row.score }}</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill fill-{{ tone }}" style="width: {{ '%.0f' | format(row.score / 10 * 100) }}%;"></div>
+      </div>
+      <div class="bar-weight">{{ (row.weight * 100) | int }}% weight</div>
+      {% if row.driver %}<div class="bar-driver">{{ row.driver | e }}</div>{% endif %}
+    </div>
     {% endfor %}
-  </tbody>
-</table>
-{% if brief.scorecard_summary.excluded_dimensions %}
-<p style="font-size: 0.85em; color: #888;">
-  * Score shown for reference only. Dimensions marked <em>(excluded — no data)</em>
-  default to 5.0 and are excluded from the composite; their weight is redistributed
-  proportionally across scored dimensions.
-  Excluded: {{ brief.scorecard_summary.excluded_dimensions | join(", ") }}.
-</p>
-{% endif %}
 
-{% if brief.scorecard_summary.top_drivers %}
-<p><strong>Top drivers:</strong></p>
-<ul>
-  {% for d in brief.scorecard_summary.top_drivers %}
-  <li><strong>{{ d.dimension }}</strong> ({{ d.score }}) — {{ d.driver }}</li>
-  {% endfor %}
-</ul>
-{% endif %}
-<hr>
-
-<h2>Override Flags</h2>
-{% if brief.scorecard_summary.override_flags %}
-<ul>
-  {% for flag in brief.scorecard_summary.override_flags %}
-  <li>{{ flag.visual }} <strong>{{ flag.flag }}</strong> — {{ flag.triggered_by }} <em>({{ flag.tier_effect }})</em></li>
-  {% endfor %}
-</ul>
-{% else %}
-<p>No override flags triggered.</p>
-{% endif %}
-<hr>
-
-<h2>Recommendations</h2>
-{% for rec in brief.recommendations %}
-<h3>{{ loop.index }}. {{ rec.action }}</h3>
-<p>{{ rec.rationale }}</p>
-<p>
-  <em>Evidence:</em> {{ rec.evidence_summary }}<br>
-  <em>Primary risk:</em> {{ rec.primary_risk }}<br>
-  <em>Confidence:</em> {{ rec.confidence }}
-</p>
-{% endfor %}
-<hr>
-
-<h2>Quick Reads</h2>
-{% if brief.quick_reads %}
-<p><strong>Facilities:</strong> {{ brief.quick_reads.facilities }}</p>
-<p><strong>Political:</strong> {{ brief.quick_reads.political }}</p>
-<p><strong>Authorizer:</strong> {{ brief.quick_reads.authorizer }}</p>
-{% endif %}
-<hr>
-
-{% if brief.schools_to_watch %}
-<h2>Schools to Watch</h2>
-<ul>
-  {% for s in brief.schools_to_watch %}
-  <li><strong>{{ s.school_name }}</strong> <code>{{ s.flag_type }}</code> — {{ s.reason }}</li>
-  {% endfor %}
-</ul>
-{% endif %}
-
-<h2>Needs Verification</h2>
-<ul>
-  {% for item in brief.needs_verification %}
-  <li>
-    <strong>{{ item.claim }}</strong><br>
-    <em>Why:</em> {{ item.reason }} &nbsp; <em>Impact if wrong:</em> {{ item.impact_if_wrong }} &nbsp; <em>Resolution:</em> {{ item.resolution_path }}
-  </li>
-  {% endfor %}
-</ul>
-<hr>
-
-<h2>Sources</h2>
-<ul>
-  {% for s in brief.sources %}
-  <li>
-    [{{ s.ref_num }}] {{ s.title }} · {{ s.source_class }}{% if s.url %} · <a href="{{ s.url }}">{{ s.url }}</a>{% endif %}{% if s.date %} · {{ s.date }}{% endif %}
-  </li>
-  {% endfor %}
-</ul>
-<hr>
-
-{% if brief.audit_passed == false %}
-<blockquote>
-  <p>⚠️ <strong>Audit flag:</strong> {{ brief.audit_flags | length }} claim(s) flagged by hallucination audit. Review before external use.</p>
-  <ul>
-    {% for f in brief.audit_flags %}
-    <li><code>{{ f.location }}</code>: {{ f.claim_text[:80] }}… <em>({{ f.recommended_action }})</em></li>
+    {% set excluded = sc.dimension_table | selectattr("used_default") | list %}
+    {% if excluded %}
+    <div class="excluded-sep">─── Excluded from composite ───</div>
+    {% for row in excluded %}
+    <div class="bar-row">
+      <div class="bar-head">
+        <span class="bar-name txt-muted">{{ row.display_name | e }}</span>
+        <span class="bar-score txt-muted">{{ row.score }}</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill fill-excluded" style="width: {{ '%.0f' | format(row.score / 10 * 100) }}%;"></div>
+      </div>
+      <div class="bar-driver">
+        <span class="nullweight-pill">0% weight — not scored</span>{% if row.driver %}{{ row.driver | e }}{% endif %}
+      </div>
+    </div>
     {% endfor %}
-  </ul>
-</blockquote>
-{% endif %}
-
-<p class="disclosure">{{ brief.disclosure }}</p>
-
-{% if debug is defined %}
-<div class="debug-section">
-  <details>
-    <summary>Pipeline Debug Log</summary>
-    <p class="debug-meta">Run ID: {{ debug.run_id }}</p>
-    <p class="debug-meta">Timestamp: {{ debug.timestamp }}</p>
-    <p class="debug-meta">Depth: {{ debug.depth }}</p>
-
-    <p class="debug-meta"><strong>Token Usage</strong></p>
-    {% if debug.token_rows %}
-    <table>
-      <thead>
-        <tr>
-          <th>Stage</th>
-          <th>Model</th>
-          <th>Tokens In</th>
-          <th>Tokens Out</th>
-          <th>Est. Cost</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for row in debug.token_rows %}
-        <tr>
-          <td>{{ row.stage }}</td>
-          <td>{{ row.model }}</td>
-          <td>{{ "{:,}".format(row.tokens_input) }}</td>
-          <td>{{ "{:,}".format(row.tokens_output) }}</td>
-          <td>${{ "%.4f"|format(row.cost) }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-    {% else %}
-    <p class="debug-empty">No API calls this run.</p>
     {% endif %}
 
-    {% if debug.warn_lines %}
-    <p class="debug-meta"><strong>Warnings &amp; Errors</strong></p>
-    <ul class="debug-warn">
-      {% for line in debug.warn_lines %}
-      <li>{{ line | e }}</li>
+    {% if sc.excluded_dimensions %}
+    <p class="bar-weight" style="margin-top: 10px;">
+      Excluded dimensions default to 5.0 and are removed from the composite; their
+      weight is redistributed proportionally across scored dimensions.
+      Excluded: {{ sc.excluded_dimensions | join(", ") | e }}.
+    </p>
+    {% endif %}
+  </div>
+
+  {# ─── 5. TOP DRIVERS ─── #}
+  {% if sc.top_drivers %}
+  <div class="section">
+    <p class="section-label">Top Drivers</p>
+    {% for d in sc.top_drivers %}
+    <div class="driver-item"><strong>{{ d.dimension | e }}</strong> ({{ d.score }}) — {{ d.driver | e }}</div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {# ─── 6. OVERRIDE FLAGS ─── #}
+  <div class="section">
+    <p class="section-label">Override Flags</p>
+    {% if sc.override_flags %}
+    {% for flag in sc.override_flags %}
+    {% set ftxt = ((flag.tier_effect or '') ~ ' ' ~ (flag.flag or '')) | lower %}
+    {% if 'positive' in ftxt or 'friendly' in ftxt or 'boost' in ftxt %}
+      {% set ftone = 'green' %}{% set ficon = '✅' %}
+    {% elif 'hard' in ftxt or 'negative' in ftxt or 'penalty' in ftxt %}
+      {% set ftone = 'red' %}{% set ficon = '⚠' %}
+    {% elif 'cap' in ftxt %}
+      {% set ftone = 'amber' %}{% set ficon = '⚠' %}
+    {% else %}
+      {% set ftone = 'neutral' %}{% set ficon = 'ℹ' %}
+    {% endif %}
+    <div class="flag-card flag-{{ ftone }}">
+      <div class="flag-head">{{ ficon }} {{ flag.flag | e }}</div>
+      <div class="flag-body">{{ flag.triggered_by | e }}{% if flag.tier_effect %} <em>({{ flag.tier_effect | e }})</em>{% endif %}</div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <p class="muted-note">No override flags triggered.</p>
+    {% endif %}
+  </div>
+
+  {# ─── 7. SCHOOL CARDS ─── #}
+  {% set school_list = schools if schools else brief.schools_to_watch %}
+  {% if school_list %}
+  <div class="section">
+    <p class="section-label">Schools to Watch</p>
+    {% for s in school_list %}
+    <div class="card">
+      <div class="card-head">
+        <span class="card-name">{{ (s.school_name or '—') | e }}</span>
+        {% if s.academic_model %}<span class="model-pill">{{ s.academic_model | e }}</span>{% endif %}
+      </div>
+      {% if s.grades_served %}<div class="card-sub">{{ s.grades_served | e }}</div>{% endif %}
+
+      {% if s.ela_proficiency_pct is not none or s.math_proficiency_pct is not none %}
+      <div class="prof-row">
+        {% if s.ela_proficiency_pct is not none %}<span class="prof-chip">ELA {{ s.ela_proficiency_pct }}%{% if s.proficiency_year %} ({{ s.proficiency_year }}){% endif %}</span>{% endif %}
+        {% if s.math_proficiency_pct is not none %}<span class="prof-chip">Math {{ s.math_proficiency_pct }}%{% if s.proficiency_year %} ({{ s.proficiency_year }}){% endif %}</span>{% endif %}
+      </div>
+      {% else %}
+      <div class="prof-none">Proficiency data not available</div>
+      {% endif %}
+
+      <div class="card-foot">
+        <span>
+          {% set scf = (s.confidence or '') | upper %}
+          {% if scf == 'HIGH' %}<span class="conf conf-high">High</span>
+          {% elif scf == 'MODERATE' %}<span class="conf conf-moderate">Moderate</span>
+          {% elif scf == 'LOW' %}<span class="conf conf-low">Low</span>{% endif %}
+        </span>
+        {% if s.source_class %}<span class="card-source">{{ s.source_class | e }}</span>{% endif %}
+      </div>
+      <div class="card-warn">⚠ Contact info requires human verification</div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {# ─── 8. LOCAL AUTHORIZERS ─── #}
+  <div class="section">
+    <p class="section-label">Local Authorizers</p>
+    {% if brief.local_authorizers %}
+    {% for a in brief.local_authorizers %}
+    <div class="auth-item">
+      <span class="dash">—</span> <strong>{{ a.authorizer_name | e }}</strong>{% if a.type %} ({{ a.type | e }}){% endif %}{% if a.reputation_note %} — {{ a.reputation_note | e }}{% endif %}
+    </div>
+    {% endfor %}
+    {% else %}
+    <p class="muted-note">No local authorizer data available.</p>
+    {% endif %}
+  </div>
+
+  {# ─── 9. RECOMMENDATIONS ─── #}
+  <div class="section">
+    <p class="section-label">Recommendations</p>
+    {% if brief.recommendation_confidence_gate and brief.recommendation_confidence_gate.gated %}
+    <div class="banner banner-gate">
+      <strong>🚫 Recommendations suppressed</strong>
+      Confidence gate active — {{ brief.recommendation_confidence_gate.reason | e }}
+    </div>
+    {% endif %}
+    {% if brief.recommendations %}
+    <ol>
+      {% for rec in brief.recommendations %}
+      <li class="rec-item">
+        <strong>{{ rec.action | e }}</strong> — {{ rec.rationale | e }}<br>
+        <span class="txt-muted" style="font-size:12px;"><em>Evidence:</em> {{ rec.evidence_summary | e }} · <em>Risk:</em> {{ rec.primary_risk | e }} · <em>Confidence:</em> {{ rec.confidence | e }}</span>
+      </li>
       {% endfor %}
-    </ul>
+    </ol>
     {% endif %}
-  </details>
+  </div>
+
+  {# ─── 10. QUICK READS ─── #}
+  {% if brief.quick_reads %}
+  <div class="section">
+    <p class="section-label">Quick Reads</p>
+    <div class="qr-grid">
+      <div>
+        <div class="qr-label">Facilities</div>
+        <div class="qr-body">{{ brief.quick_reads.facilities | e }}</div>
+      </div>
+      <div>
+        <div class="qr-label">Political</div>
+        <div class="qr-body">{{ brief.quick_reads.political | e }}</div>
+      </div>
+      <div>
+        <div class="qr-label">Authorizer</div>
+        <div class="qr-body">{{ brief.quick_reads.authorizer | e }}</div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {# ─── 11. NEEDS VERIFICATION ─── #}
+  {% if brief.needs_verification %}
+  <div class="section">
+    <p class="section-label">Needs Verification</p>
+    {% for item in brief.needs_verification %}
+    <div class="nv-item">
+      <strong>{{ item.claim | e }}</strong> — {{ item.reason | e }}
+      {% if item.impact_if_wrong %}<em>(Impact: {{ item.impact_if_wrong | e }})</em>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {# ─── 12. SOURCES ─── #}
+  {% if brief.sources %}
+  <div class="section">
+    <p class="section-label">Sources</p>
+    {% for s in brief.sources %}
+    <div class="src-item">
+      <span class="dash">—</span> [{{ s.ref_num }}] {{ s.title | e }} · {{ s.source_class | e }}{% if s.url %} · {{ s.url | e }}{% endif %}{% if s.date %} · {{ s.date | e }}{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {# ─── DEBUG (screen only) ─── #}
+  {% if debug is defined %}
+  <div class="debug-section">
+    <details>
+      <summary>Pipeline Debug Log</summary>
+      <p class="debug-meta">Run ID: {{ debug.run_id }}</p>
+      <p class="debug-meta">Timestamp: {{ debug.timestamp }}</p>
+      <p class="debug-meta">Depth: {{ debug.depth }}</p>
+
+      <p class="debug-meta"><strong>Token Usage</strong></p>
+      {% if debug.token_rows %}
+      <table>
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Model</th>
+            <th>Tokens In</th>
+            <th>Tokens Out</th>
+            <th>Est. Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in debug.token_rows %}
+          <tr>
+            <td>{{ row.stage }}</td>
+            <td>{{ row.model }}</td>
+            <td>{{ "{:,}".format(row.tokens_input) }}</td>
+            <td>{{ "{:,}".format(row.tokens_output) }}</td>
+            <td>${{ "%.4f"|format(row.cost) }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p class="debug-empty">No API calls this run.</p>
+      {% endif %}
+
+      {% if debug.warn_lines %}
+      <p class="debug-meta"><strong>Warnings &amp; Errors</strong></p>
+      <ul class="debug-warn">
+        {% for line in debug.warn_lines %}
+        <li>{{ line | e }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </details>
+  </div>
+  {% endif %}
+
 </div>
-{% endif %}
+
+{# ─── 13. FOOTER ─── #}
+<div class="disclosure-footer">
+  <div class="inner">
+    This brief is AI-generated and requires human review before any capital commitment
+    or site-selection decision. Data accuracy is not guaranteed.<br>
+    Generated by CLIP · {{ brief.generated_at | e if brief.generated_at else '' }}
+  </div>
+</div>
 
 </body>
 </html>
