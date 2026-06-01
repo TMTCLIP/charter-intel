@@ -7,7 +7,7 @@ charter activity — runs it through a scoring model, and produces a readable br
 (Markdown + HTML) summarizing the opportunity and risks for opening or supporting a
 charter school there.
 
-It exists to support The Mind Trust's New Mexico expansion strategy: instead of a
+ instead of a
 person manually researching 25+ communities, CLIP drafts a first-pass landscape
 read for each one in about a minute, at a few cents of API cost. The output is a
 **starting point for human judgment**, not a decision engine — the scoring weights
