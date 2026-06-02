@@ -54,7 +54,7 @@
             "properties": {
               "dimension": {"type": "string"},
               "score": {"type": "number"},
-              "driver": {"type": "string", "maxLength": 120}
+              "driver": {"type": "string", "maxLength": 200}
             }
           }
         },
@@ -77,7 +77,7 @@
           "action": {
             "type": "string",
             "description": "Concise action statement",
-            "maxLength": 150
+            "maxLength": 250
           },
           "rationale": {
             "type": "string",
@@ -87,12 +87,12 @@
           "evidence_summary": {
             "type": "string",
             "description": "1-2 sentences of supporting evidence",
-            "maxLength": 200
+            "maxLength": 250
           },
           "primary_risk": {
             "type": "string",
             "description": "Main risk to this recommendation",
-            "maxLength": 150
+            "maxLength": 200
           },
           "confidence": {"type": "string", "enum": ["HIGH", "MODERATE", "LOW"]},
           "supporting_fact_ids": {
@@ -269,7 +269,7 @@
         "score": {"type": "number"},
         "weight": {"type": "number"},
         "confidence": {"type": "string"},
-        "driver": {"type": "string", "maxLength": 100}
+        "driver": {"type": "string", "maxLength": 200}
       }
     }
   },
