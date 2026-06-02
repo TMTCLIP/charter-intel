@@ -399,8 +399,9 @@ button, input, select {
 .state-path:hover, .state-path:focus-visible {
   fill: var(--night-navy);
   stroke: var(--gold);
-  stroke-width: 2px;
+  stroke-width: 2.5px;
   stroke-opacity: 1;
+  paint-order: stroke fill;
   outline: none;
 }
 .state-path.active {

@@ -346,6 +346,9 @@ function renderMap(geojson) {
     path.setAttribute("tabindex", "0");
     path.setAttribute("aria-label", `${name} — click to set up a scan`);
 
+    // Bring hovered state to top of DOM so its stroke renders above neighbors.
+    path.addEventListener("mouseover", () => { path.parentNode.appendChild(path); });
+
     // Move to end of statesGroup on activation so the gold stroke renders
     // on top of all neighbor fills (SVG paints in DOM order).
     // Done only on click/keydown — not mouseenter — to avoid disrupting
