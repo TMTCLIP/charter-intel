@@ -16,5 +16,6 @@ outputs/
 data/cache/
 data/processed/
 data/logs/
+data/raw/
 logs/
 *.pdf
