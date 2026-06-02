@@ -153,6 +153,11 @@ BOOLEAN_FLAGS = {
 # environment; we never require .env to exist and never read or write it.
 PASSWORD_ENV = "CLIP_PASSWORD"
 
+# Set CLIP_VIEWER_ONLY=1 on deployments where the pipeline cannot run
+# (e.g. Streamlit Community Cloud, which lacks data/raw/ CSVs and pipeline deps).
+# When true, the New Scan tab shows an info message instead of the scan form.
+VIEWER_ONLY: bool = os.environ.get("CLIP_VIEWER_ONLY", "").strip() == "1"
+
 
 def get_password() -> str | None:
     """Return the configured gate password, or None if unset."""

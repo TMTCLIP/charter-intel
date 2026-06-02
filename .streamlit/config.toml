@@ -1,0 +1,14 @@
+# Root-level Streamlit config — picked up when Community Cloud runs from repo root.
+# Mirrors app/.streamlit/config.toml (which is only effective on local/Railway
+# when CWD=app/). Keep both files in sync when changing theme values.
+
+[browser]
+gatherUsageStats = false
+
+# The Mind Trust brand colors (themindtrust.org)
+[theme]
+primaryColor = "#82c341"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F5F5"
+textColor = "#1B2A47"
+font = "sans serif"

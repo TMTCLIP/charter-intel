@@ -91,6 +91,19 @@ _PRESET_LABELS = {
 def view_new_scan() -> None:
     st.header("New Scan")
 
+    if config.VIEWER_ONLY:
+        st.info(
+            "**Scan not available on this deployment.**\n\n"
+            "This instance is configured as a brief viewer only. "
+            "Running a new scan requires the full pipeline environment "
+            "(Python 3.11+, pipeline dependencies, and NM PED data files), "
+            "which are not available here.\n\n"
+            "To run scans, deploy the app on Railway with a full Docker image, "
+            "or run locally with `streamlit run app/app.py` from the repo root.",
+            icon="ℹ️",
+        )
+        return
+
     # NOTE: deliberately NOT an st.form. Rate limiting needs the dry_run/mock
     # toggle state reactively (so an exempt scan is never blocked and the Run
     # Scan button enables the moment Dry run is switched on). st.form batches
