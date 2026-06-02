@@ -341,6 +341,7 @@ function renderMap(geojson) {
     path.setAttribute("data-state", name);
     path.setAttribute("data-abbr", abbr);
     path.setAttribute("class", "state-path");
+    path.setAttribute("vector-effect", "non-scaling-stroke");
     path.setAttribute("role", "button");
     path.setAttribute("tabindex", "0");
     path.setAttribute("aria-label", `${name} — click to set up a scan`);

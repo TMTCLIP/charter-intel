@@ -392,7 +392,7 @@ button, input, select {
 .state-path {
   fill: var(--night-indigo);
   stroke: rgba(74, 144, 217, 0.3);
-  stroke-width: 0.5;
+  stroke-width: 1.5px;
   cursor: pointer;
   transition: fill 0.15s;
 }
@@ -407,7 +407,7 @@ button, input, select {
 .state-path.active {
   fill: var(--night-navy);
   stroke: var(--gold);
-  stroke-width: 2px;
+  stroke-width: 1.5px;
   paint-order: stroke fill;
   /* active state is moved to end of DOM on click so stroke renders on top */
 }
