@@ -33,6 +33,7 @@ import datetime
 import json
 import logging
 import os
+import re
 import sys
 import threading
 import time
@@ -218,8 +219,15 @@ def resolve_community(state: str, city_name: str) -> str:
         resolve_community("NM", "nm-santa-fe") → "nm-santa-fe"
     """
     if _is_community_id(city_name):
-        return city_name
-    return build_community_id(city_name, state)
+        community_id = city_name
+    else:
+        community_id = build_community_id(city_name, state)
+    if not re.match(r'^[a-z]{2}-[a-z0-9-]{1,64}$', community_id):
+        raise ValueError(
+            f"Invalid community_id: {community_id!r}. "
+            f"Must match ^[a-z]{{2}}-[a-z0-9-]{{1,64}}$"
+        )
+    return community_id
 
 
 def build_config(args: argparse.Namespace) -> PipelineConfig:

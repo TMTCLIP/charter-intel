@@ -26,7 +26,7 @@ Questa scores 6.5/10 (MODERATE) driven by severe academic need (ELA 28%, math 5.
 | Charter Saturation | 9.0 | 6% | MODERATE | Only one charter school (60-seat K–8 cap) leaves secondary grades and capacity unmet. |
 | Population Trends | 9.0 | 12% | HIGH | 11.7% enrollment growth (2020–2024) indicates expanding addressable population despite small absolute size. |
 | Political Climate | 5.0 | 12% | LOW | Mixed charter sentiment in rural northern NM; insufficient local political data to assess board receptivity. |
-| Authorizer Friendliness | 7.0 | 12% | HIGH | Dual authorization pathways (state PEC and district) reduce entry friction; existing charter precedent (Roots & Wings) demonstrates local acceptance. |
+| Authorizer Friendliness | 7.0 | 12% | HIGH | Dual authorization pathways (state PEC and district) reduce entry friction; existing charter precedent (Roots &amp; Wings) demonstrates local acceptance. |
 | Facilities Feasibility | 5.0 | 0% | MODERATE | One closed/temporarily-closed school in district+county signals potential real estate, but closure ≠ confirmed availability. |
 | Replication Feasibility | 6.0 | 6% | MODERATE | No CSP-funded operators in county; statewide teacher pipeline (2,351 CIP-13 completers) and active philanthropic sector (29 education foundations, $36.4M assets) partially offset local operator scarcity. |
 | Funding Environment | 7.0 | 12% | HIGH | Per-pupil revenue 6.2% above state average; 62.7% state funding provides stable baseline despite rural context. |
@@ -41,7 +41,7 @@ Questa scores 6.5/10 (MODERATE) driven by severe academic need (ELA 28%, math 5.
 
 - **population_trends** (9.0) — 11.7% enrollment growth (2020–2024) indicates expanding addressable population despite small absolute size.
 
-- **authorizer_friendliness** (7.0) — Dual authorization pathways (state PEC and district) reduce entry friction; existing charter precedent (Roots & Wings) demonstrates local acceptance.
+- **authorizer_friendliness** (7.0) — Dual authorization pathways (state PEC and district) reduce entry friction; existing charter precedent (Roots &amp; Wings) demonstrates local acceptance.
 
 
 
@@ -122,12 +122,12 @@ Ten-member elected body serving as authorizer for all state-chartered schools in
 
 Political climate confidence is LOW (mixed sentiment, no board records); facilities data is a signal only, not confirmed inventory. Both are critical entry-decision gates.
 
-*Evidence:* Rural northern NM shows mixed charter sentiment; one closed school in district+county may or may not be available. Board approval precedent exists (Roots & Wings authorized by PEC).
+*Evidence:* Rural northern NM shows mixed charter sentiment; one closed school in district+county may or may not be available. Board approval precedent exists (Roots &amp; Wings authorized by PEC).
 *Primary risk:* Proceeding without board alignment or confirmed facilities could result in authorization delay or inability to open on timeline.
 *Confidence:* LOW
 
 
-### 2. If pursuing entry, target secondary grades (9–12) or math-intensive elementary model; leverage state PEC authorization pathway (precedent: Roots & Wings) and statewide teacher pipeline.
+### 2. If pursuing entry, target secondary grades (9–12) or math-intensive elementary model; leverage state PEC authorization pathway (precedent: Roots &amp; Wings) and statewide teacher pipeline.
 
 No charter high school exists; math proficiency at 5.3% signals acute demand. PEC has authorized locally; 2,351 statewide CIP-13 completers support staffing. Dual authorizer option reduces risk.
 
@@ -144,9 +144,9 @@ No charter high school exists; math proficiency at 5.3% signals acute demand. PE
 
 **Facilities:** One closed/temporarily-closed school exists in district+county (last 6 CCD years), but closure does not confirm availability—may be demolished, sold, repurposed, or consolidated. No verified commercial real estate data. Operator must conduct county-level real estate survey and confirm board willingness to lease or convey before site selection.
 
-**Political:** Rural northern NM context with mixed charter sentiment. Roots & Wings (existing K–8 charter) was authorized by state PEC, indicating precedent for charter approval. Board recently approved charter school improvements, suggesting openness. Political climate index assigned neutral (5/10) due to lack of specific local board records.
+**Political:** Rural northern NM context with mixed charter sentiment. Roots &amp; Wings (existing K–8 charter) was authorized by state PEC, indicating precedent for charter approval. Board recently approved charter school improvements, suggesting openness. Political climate index assigned neutral (5/10) due to lack of specific local board records.
 
-**Authorizer:** Two pathways: state Public Education Commission (PEC) and local Questa Schools Board. PEC authorized Roots & Wings; district authorization also available. Dual-path structure reduces entry friction. No evidence of hostile authorizer stance.
+**Authorizer:** Two pathways: state Public Education Commission (PEC) and local Questa Schools Board. PEC authorized Roots &amp; Wings; district authorization also available. Dual-path structure reduces entry friction. No evidence of hostile authorizer stance.
 
 
 ---
@@ -155,7 +155,7 @@ No charter high school exists; math proficiency at 5.3% signals acute demand. PE
 ## Schools to Watch
 
 
-- **Roots & Wings Community School** `REPLICATION_CANDIDATE` — Existing K–8 charter (60-seat cap) authorized by PEC demonstrates local charter viability and operator competence. Secondary-grade gap (9–12) and math proficiency crisis (5.3%) suggest complementary expansion opportunity rather than direct competition.
+- **Roots &amp; Wings Community School** `REPLICATION_CANDIDATE` — Existing K–8 charter (60-seat cap) authorized by PEC demonstrates local charter viability and operator competence. Secondary-grade gap (9–12) and math proficiency crisis (5.3%) suggest complementary expansion opportunity rather than direct competition.
 
 
 
@@ -175,7 +175,7 @@ No charter high school exists; math proficiency at 5.3% signals acute demand. PE
   *Why:* ACS B16004 data suppressed for this district, likely due to small enrollment sample. Actual ELL rate may be nonzero and could affect operational_complexity scoring.  *Impact if wrong:* MODERATE  *Resolution:* NM PED district profile or state report card.
 
 - **Teacher supply may constrain charter staffing in this community.**
-  *Why:* New Mexico has a documented statewide teacher shortage, but this community's specific hard-to-staff status has not been verified against the NMPED shortage-area list.  *Impact if wrong:* HIGH  *Resolution:* Cross-check the community against the current NMPED teacher shortage-area / hard-to-staff designation list before relying on staffing feasibility.
+  *Why:* New Mexico has a documented statewide teacher shortage, but this community&#39;s specific hard-to-staff status has not been verified against the NMPED shortage-area list.  *Impact if wrong:* HIGH  *Resolution:* Cross-check the community against the current NMPED teacher shortage-area / hard-to-staff designation list before relying on staffing feasibility.
 
 
 ---

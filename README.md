@@ -75,6 +75,15 @@ working, and the app can't accidentally break the pipeline.
 
 ## 3. Session log
 
+**Session 32 (2026-06-02) — Flask UI Map Hover & Stroke Fixes (6b106b9)**
+- Added `vector-effect="non-scaling-stroke"` to all state `<path>` elements in `app/ui/static/js/app.js`; unified `stroke-width` to `1.5px` across default/hover/active CSS rules
+- Replaced drop-shadow hover glow on `.state-path:hover` with a clean solid gold stroke (`2px`, `#f5c842`)
+- Added `paint-order: stroke fill` + `mouseover` DOM-reorder handler to fix shared-edge stroke clipping; bumped hover stroke to `2.5px`
+- Refactored hover outline to a dedicated `#hover-overlay` SVG `<path>` (appended last in SVG, above all fills); `mouseover`/`mouseout` JS handlers drive it; stripped stroke from CSS hover rule
+- Fixed post-refactor regression where states could not be hovered or clicked
+- Added `import re` + regex validation to `resolve_community()` in `main.py` — raises `ValueError` on malformed `community_id`
+- Tests: 290 passing
+
 **Session 31 (2026-06-02) — S6 Prompt Hardening + Railway Scaffolding**
 - S6 synthesis prompt: added NUMERIC PRECISION (no rounding), FINANCIAL TERMINOLOGY (no expenditure/revenue conflation), and INFERENCE PROHIBITION (no claims beyond explicit fact bundle) guards
 - S6 force-refreshed for nm-los-lunas and nm-rio-rancho; all three error categories verified absent
