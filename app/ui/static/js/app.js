@@ -328,6 +328,17 @@ function renderMap(geojson) {
   drawInsetBox(insetGroup, project, "AK", "AK");
   drawInsetBox(insetGroup, project, "HI", "HI");
 
+  // Single overlay path above all state fills — hover gold stroke goes here so
+  // it is never clipped by a neighboring state's fill on shared edges.
+  const hoverOverlay = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  hoverOverlay.setAttribute("id", "hover-overlay");
+  hoverOverlay.setAttribute("fill", "none");
+  hoverOverlay.setAttribute("stroke", "#f5c842");
+  hoverOverlay.setAttribute("stroke-width", "2");
+  hoverOverlay.setAttribute("vector-effect", "non-scaling-stroke");
+  hoverOverlay.setAttribute("pointer-events", "none");
+  hoverOverlay.style.opacity = "0";
+
   // Draw each state
   for (const feature of geojson.features) {
     const name = feature.properties?.name || "";
@@ -346,8 +357,11 @@ function renderMap(geojson) {
     path.setAttribute("tabindex", "0");
     path.setAttribute("aria-label", `${name} — click to set up a scan`);
 
-    // Bring hovered state to top of DOM so its stroke renders above neighbors.
-    path.addEventListener("mouseover", () => { path.parentNode.appendChild(path); });
+    path.addEventListener("mouseover", () => {
+      hoverOverlay.setAttribute("d", path.getAttribute("d"));
+      hoverOverlay.style.opacity = "1";
+    });
+    path.addEventListener("mouseout", () => { hoverOverlay.style.opacity = "0"; });
 
     // Move to end of statesGroup on activation so the gold stroke renders
     // on top of all neighbor fills (SVG paints in DOM order).
@@ -416,6 +430,7 @@ function renderMap(geojson) {
       labelsGroup.appendChild(label);
     }
   }
+  svg.appendChild(hoverOverlay);
 }
 
 function drawInsetBox(group, project, abbr, label) {
