@@ -6,3 +6,7 @@
 # so the heavy pipeline deps (anthropic, geopandas, shapely, ...) are intentionally
 # excluded to stay within Community Cloud's memory limits.
 streamlit
+
+# CLIP Flask UI (app/ui/server.py)
+flask
+pyyaml

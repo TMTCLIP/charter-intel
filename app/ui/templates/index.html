@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CLIP — Charter Community Landscape Intelligence Platform" />
+  <title>CLIP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/main.css" />
+</head>
+<body>
+
+  <!-- Animated night background -->
+  <div class="bg-night" aria-hidden="true">
+    <div class="bg-swirl"></div>
+    <div class="bg-swirl"></div>
+    <div class="bg-swirl"></div>
+    <div class="bg-swirl"></div>
+    <div id="stars"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       VIEW 1: Login
+  ══════════════════════════════════════════════════════ -->
+  <main id="view-login" class="view" role="main" aria-label="Sign in">
+    <div class="login-card">
+      <h1 class="wordmark" aria-label="CLIP">CLIP</h1>
+      <p class="subtitle">Charter Community Landscape Intelligence Platform</p>
+      <form id="login-form" novalidate aria-label="Authentication">
+        <label for="password-input" class="sr-only">Access key</label>
+        <input
+          type="password" id="password-input" name="password"
+          placeholder="Access key" autocomplete="current-password"
+          aria-required="true" aria-describedby="login-hint"
+        />
+        <span id="login-hint" class="sr-only">Enter your CLIP access key and press Sign In</span>
+        <button type="submit" id="btn-signin">Sign In</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       VIEW 2: Map (Scan View)
+  ══════════════════════════════════════════════════════ -->
+  <div id="view-map" class="view hidden" role="main" aria-label="United States map">
+    <header class="app-header" role="banner">
+      <button class="wordmark-small" id="btn-home" aria-label="CLIP — home">CLIP</button>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <button class="nav-link" id="nav-to-brief">Brief View</button>
+        <button class="nav-link" id="nav-to-runs">Live Runs</button>
+      </nav>
+    </header>
+
+    <div class="map-container" id="map-container">
+      <svg
+        id="us-map" role="img"
+        aria-label="Interactive map of the United States. Click a state to set up a scan."
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 960 600"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <g id="states-group"></g>
+        <g id="labels-group" pointer-events="none" aria-hidden="true"></g>
+        <g id="inset-group" aria-label="Alaska and Hawaii insets"></g>
+        <text class="inset-label" id="map-loading-text" x="480" y="310" text-anchor="middle">Loading map…</text>
+      </svg>
+    </div>
+
+    <footer class="app-footer" role="contentinfo">
+      <span class="footer-brand">CLIP Intelligence Platform</span>
+      <div class="footer-view-toggle" role="group" aria-label="View selector">
+        <button class="footer-tab active" data-view="map" aria-pressed="true">Scan View</button>
+        <button class="footer-tab" data-view="brief" aria-pressed="false">Brief View</button>
+        <button class="footer-tab" data-view="runs" aria-pressed="false">Live Runs</button>
+      </div>
+      <div class="footer-auth" aria-label="Authentication status">
+        <span class="auth-dot" aria-hidden="true"></span>
+        <span>Authenticated</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       VIEW 3: Brief Viewer
+  ══════════════════════════════════════════════════════ -->
+  <div id="view-brief" class="view hidden" role="main" aria-label="Intelligence brief viewer">
+    <header class="app-header" role="banner">
+      <button class="wordmark-small" id="btn-home-brief" aria-label="CLIP — home">CLIP</button>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <button class="nav-link" id="nav-to-map">Scan View</button>
+        <button class="nav-link" id="nav-to-runs-from-brief">Live Runs</button>
+      </nav>
+    </header>
+
+    <div class="brief-layout">
+      <aside class="brief-sidebar" aria-label="City filter">
+        <div class="sidebar-state-select">
+          <label for="brief-state-select" class="sr-only">Filter by state</label>
+          <select id="brief-state-select" class="field-select" aria-label="Select state">
+            <option value="">All States</option>
+          </select>
+        </div>
+        <div class="sidebar-city-search">
+          <label for="city-search" class="sr-only">Search cities</label>
+          <input type="search" id="city-search" class="city-search-input"
+            placeholder="Search cities…" aria-label="Search cities" autocomplete="off" />
+        </div>
+        <ul id="city-run-list" class="city-list" role="listbox"
+          aria-label="Cities with scan history" aria-live="polite">
+          <li class="city-row" style="color:var(--mist);font-size:12px;padding:12px 14px;">
+            Select a state to see cities
+          </li>
+        </ul>
+      </aside>
+
+      <section class="brief-main" aria-label="Brief content">
+        <div id="brief-empty" class="brief-empty">
+          <span class="wordmark-dim" aria-hidden="true">CLIP</span>
+          <p>Select a city to view its intelligence brief</p>
+        </div>
+        <div id="brief-content-wrap" class="hidden" style="display:flex;flex-direction:column;flex:1;min-height:0;">
+          <div class="brief-toolbar" aria-label="Brief toolbar">
+            <div>
+              <div class="brief-city-name" id="brief-city-name" aria-live="polite"></div>
+              <div class="brief-scan-date" id="brief-scan-date"></div>
+            </div>
+            <button class="btn-new-scan" id="btn-brief-new-scan" aria-label="Run a new scan for this city">
+              Run New Scan
+            </button>
+          </div>
+          <div class="brief-frame-wrap" id="brief-frame-wrap">
+            <div id="brief-loading" class="brief-loading hidden">Loading brief…</div>
+            <iframe id="brief-frame" class="brief-frame" title="Intelligence brief"
+              sandbox="allow-same-origin allow-scripts" aria-label="Brief content"></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="app-footer" role="contentinfo">
+      <span class="footer-brand">CLIP Intelligence Platform</span>
+      <div class="footer-view-toggle" role="group" aria-label="View selector">
+        <button class="footer-tab" data-view="map" aria-pressed="false">Scan View</button>
+        <button class="footer-tab active" data-view="brief" aria-pressed="true">Brief View</button>
+        <button class="footer-tab" data-view="runs" aria-pressed="false">Live Runs</button>
+      </div>
+      <div class="footer-auth" aria-label="Authentication status">
+        <span class="auth-dot" aria-hidden="true"></span>
+        <span>Authenticated</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       VIEW 4: Live Runs
+  ══════════════════════════════════════════════════════ -->
+  <div id="view-runs" class="view hidden" role="main" aria-label="Live scan runs">
+    <header class="app-header" role="banner">
+      <button class="wordmark-small" id="btn-home-runs" aria-label="CLIP — home">CLIP</button>
+      <nav class="header-nav" aria-label="Primary navigation">
+        <button class="nav-link" id="nav-runs-to-map">Scan View</button>
+        <button class="nav-link" id="nav-runs-to-brief">Brief View</button>
+      </nav>
+    </header>
+
+    <div class="runs-layout">
+      <div class="runs-toolbar">
+        <div>
+          <h2 class="runs-heading">Live Runs</h2>
+          <p class="runs-subheading" id="runs-last-updated"></p>
+        </div>
+        <button class="btn-outline-sm" id="btn-refresh-runs" aria-label="Refresh run list">
+          Refresh
+        </button>
+      </div>
+      <div id="runs-grid" class="runs-grid" aria-live="polite" aria-label="Scan run history"></div>
+    </div>
+
+    <footer class="app-footer" role="contentinfo">
+      <span class="footer-brand">CLIP Intelligence Platform</span>
+      <div class="footer-view-toggle" role="group" aria-label="View selector">
+        <button class="footer-tab" data-view="map" aria-pressed="false">Scan View</button>
+        <button class="footer-tab" data-view="brief" aria-pressed="false">Brief View</button>
+        <button class="footer-tab active" data-view="runs" aria-pressed="true">Live Runs</button>
+      </div>
+      <div class="footer-auth" aria-label="Authentication status">
+        <span class="auth-dot" aria-hidden="true"></span>
+        <span>Authenticated</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       PANEL: Scan Setup (overlay, right side)
+  ══════════════════════════════════════════════════════ -->
+  <aside id="panel-scan" role="dialog" aria-modal="true" aria-labelledby="panel-state-label" hidden>
+    <div class="panel-header">
+      <div>
+        <h2 class="panel-state-name" id="panel-state-label">New Mexico</h2>
+        <p class="panel-subheading">New Scan</p>
+      </div>
+      <button class="btn-close-panel" id="btn-close-panel" aria-label="Close scan panel">&#x2715;</button>
+    </div>
+
+    <div class="panel-body">
+
+      <!-- Target: Single City vs. Entire State -->
+      <div class="field-group">
+        <span class="field-label" id="scope-label">Target</span>
+        <div class="toggle-group" role="group" aria-labelledby="scope-label">
+          <button class="toggle-btn selected" data-group="scope" data-value="city" aria-pressed="true">
+            Single City
+          </button>
+          <button class="toggle-btn" data-group="scope" data-value="state" aria-pressed="false">
+            Entire State
+          </button>
+        </div>
+        <p class="scope-note hidden" id="scope-note"></p>
+      </div>
+
+      <!-- City (hidden when Entire State selected) -->
+      <div class="field-group" id="city-field-group">
+        <label for="scan-city" class="field-label">City</label>
+        <select id="scan-city" class="field-select" aria-label="Select city">
+          <option value="">Loading…</option>
+        </select>
+      </div>
+
+      <!-- Scan Type (Community or ZIP — does not apply to statewide) -->
+      <div class="field-group">
+        <span class="field-label" id="mode-label">Scan Type</span>
+        <div class="toggle-group" role="group" aria-labelledby="mode-label">
+          <button class="toggle-btn selected" data-group="mode" data-value="community" aria-pressed="true">
+            Community
+          </button>
+          <button class="toggle-btn" data-group="mode" data-value="zip" aria-pressed="false">
+            ZIP Code
+          </button>
+        </div>
+      </div>
+
+      <!-- Depth -->
+      <div class="field-group">
+        <span class="field-label" id="depth-label">Depth</span>
+        <div class="toggle-group" role="group" aria-labelledby="depth-label">
+          <button class="toggle-btn" data-group="depth" data-value="fast" aria-pressed="false">Fast</button>
+          <button class="toggle-btn selected" data-group="depth" data-value="standard" aria-pressed="true">Standard</button>
+          <button class="toggle-btn" data-group="depth" data-value="deep" aria-pressed="false">Deep</button>
+        </div>
+      </div>
+
+      <!-- Advanced disclosure -->
+      <button class="disclosure-btn" id="disclosure-btn" aria-expanded="false" aria-controls="advanced-body">
+        <span>Advanced Settings</span>
+        <svg class="disclosure-chevron" viewBox="0 0 14 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M1 1l6 6 6-6"/>
+        </svg>
+      </button>
+
+      <div id="advanced-body" class="advanced-body" role="region" aria-label="Advanced scan settings">
+
+        <!-- Flags -->
+        <div class="toggle-row">
+          <div class="toggle-row-info">
+            <div class="toggle-row-label">Dry Run</div>
+            <div class="toggle-row-sub">Log commands without executing</div>
+          </div>
+          <label class="ios-toggle" aria-label="Dry run">
+            <input type="checkbox" id="flag-dry-run" />
+            <span class="ios-toggle-track"></span>
+          </label>
+        </div>
+
+        <div class="toggle-row">
+          <div class="toggle-row-info">
+            <div class="toggle-row-label">Mock Mode</div>
+            <div class="toggle-row-sub">Use cached stub responses</div>
+          </div>
+          <label class="ios-toggle" aria-label="Mock mode">
+            <input type="checkbox" id="flag-mock" />
+            <span class="ios-toggle-track"></span>
+          </label>
+        </div>
+
+        <div class="toggle-row">
+          <div class="toggle-row-info">
+            <div class="toggle-row-label">No Cache</div>
+            <div class="toggle-row-sub">Bypass response cache</div>
+          </div>
+          <label class="ios-toggle" aria-label="No cache">
+            <input type="checkbox" id="flag-no-cache" />
+            <span class="ios-toggle-track"></span>
+          </label>
+        </div>
+
+        <div class="toggle-row">
+          <div class="toggle-row-info">
+            <div class="toggle-row-label">Force Refresh</div>
+            <div class="toggle-row-sub">Re-fetch all data sources</div>
+          </div>
+          <label class="ios-toggle" aria-label="Force refresh">
+            <input type="checkbox" id="flag-force-refresh" />
+            <span class="ios-toggle-track"></span>
+          </label>
+        </div>
+
+        <div class="toggle-row">
+          <div class="toggle-row-info">
+            <div class="toggle-row-label">Batch</div>
+            <div class="toggle-row-sub">Run without interactive prompts</div>
+          </div>
+          <label class="ios-toggle" aria-label="Batch mode">
+            <input type="checkbox" id="flag-batch" />
+            <span class="ios-toggle-track"></span>
+          </label>
+        </div>
+
+        <!-- Preset -->
+        <div class="adv-select-row">
+          <div class="tip-anchor">
+            <label for="adv-preset" class="field-label">Preset</label>
+            <button class="tip-btn" type="button" aria-label="What is Preset?">?</button>
+            <span class="tip-popup" role="tooltip">
+              Scoring framework controlling how communities are evaluated.
+              <br><br>
+              <strong>Maturity Adjusted</strong> — recommended for most analyses. Weights factors to reflect whether a community is ready to sustain a charter school.<br><br>
+              <strong>Growth</strong> — emphasizes enrollment trends and market opportunity.
+            </span>
+          </div>
+          <select id="adv-preset" class="field-select" aria-label="Preset">
+            <option value="maturity_adjusted" selected>Maturity Adjusted</option>
+            <option value="growth">Growth</option>
+            <option value="replication">Replication</option>
+            <option value="turnaround">Turnaround</option>
+          </select>
+        </div>
+
+        <!-- Mode number -->
+        <div class="adv-select-row">
+          <div class="tip-anchor">
+            <label for="adv-mode-num" class="field-label">Mode Number</label>
+            <button class="tip-btn" type="button" aria-label="What is Mode Number?">?</button>
+            <span class="tip-popup" role="tooltip">
+              Analysis pipeline mode.<br><br>
+              <strong>Mode 2</strong> — recommended. Produces a full community intelligence brief with scoring, context, and strategic insights.<br><br>
+              <strong>Mode 1</strong> — produces a statewide scan table comparing all communities side by side.
+            </span>
+          </div>
+          <select id="adv-mode-num" class="field-select" aria-label="Mode number">
+            <option value="1">1 — Statewide Scan</option>
+            <option value="2" selected>2 — Community Brief</option>
+          </select>
+        </div>
+
+      </div><!-- /advanced-body -->
+
+      <button class="btn-run-scan" id="btn-run-scan" type="button">Run Scan</button>
+
+    </div><!-- /panel-body -->
+  </aside>
+
+  <div id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
