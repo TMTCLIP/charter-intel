@@ -75,6 +75,12 @@ working, and the app can't accidentally break the pipeline.
 
 ## 3. Session log
 
+**Session 31 (2026-06-02) — S6 Prompt Hardening + Railway Scaffolding**
+- S6 synthesis prompt: added NUMERIC PRECISION (no rounding), FINANCIAL TERMINOLOGY (no expenditure/revenue conflation), and INFERENCE PROHIBITION (no claims beyond explicit fact bundle) guards
+- S6 force-refreshed for nm-los-lunas and nm-rio-rancho; all three error categories verified absent
+- `.railwayignore` added — excludes `data/`, `data/raw/`, `outputs/`, `app/runs/`, `.env` from Railway source-sync
+- Tests: 290 passing
+
 **Session 28 (2026-06-01) — Lightweight Verification Flag Resolution**
 - Added `config/pec_renewal_stats.yaml` (placeholder: renewal_rate, denial_rate, median_approval_days, source, vintage — user fills to activate)
 - Added `config/nmped_shortage_areas.yaml` (NM PED teacher shortage districts list; Albuquerque Public Schools prepopulated)

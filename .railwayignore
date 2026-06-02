@@ -1,0 +1,17 @@
+# .railwayignore
+# Excludes mutable runtime state and secrets from Railway's source-sync.
+# Railway change-detection ignores these paths, preventing runtime artifacts
+# from triggering spurious redeploys. Image content is controlled by .dockerignore.
+
+# Secrets — never sync to Railway source context
+.env
+
+# Pipeline cache and raw source data — lives on the persistent volume at runtime
+data/
+data/raw/
+
+# Generated brief outputs — written by the pipeline at runtime
+outputs/
+
+# Streamlit app run history and logs — written by app/runner.py at runtime
+app/runs/
