@@ -1,0 +1,81 @@
+─────────────────────────────────────────────────────
+DIMENSION: authorizer_friendliness
+─────────────────────────────────────────────────────
+Min: 5.00   Max: 7.00   Range: 2.00
+Mean: 6.81   Median: 7.00   Std: 0.53
+
+Percentiles:
+  p10: 6.47   p15: 6.58   p25: 7.00   p50: 7.00   p75: 7.00   p90: 7.00
+
+Cities (sorted ascending):
+   1. nm-edgewood: 5.00
+   2. nm-jemez-pueblo: 5.00
+   3. nm-santa-fe: 6.47
+   4. nm-rio-rancho: 6.47
+   5. nm-las-cruces: 6.47
+   6. nm-alamogordo: 7.00
+   7. nm-socorro: 7.00
+   8. nm-silver-city: 7.00
+   9. nm-shiprock: 7.00
+  10. nm-sandia-park: 7.00
+  11. nm-roswell: 7.00
+  12. nm-red-river: 7.00
+  13. nm-questa: 7.00
+  14. nm-navajo: 7.00
+  15. nm-los-ranchos-de-albuquerque: 7.00
+  16. nm-las-vegas: 7.00
+  17. nm-taos: 7.00
+  18. nm-gallup: 7.00
+  19. nm-espanola: 7.00
+  20. nm-el-prado: 7.00
+  21. nm-east-taos: 7.00
+  22. nm-deming: 7.00
+  23. nm-cleveland: 7.00
+  24. nm-carlsbad: 7.00
+  25. nm-aztec: 7.00
+  26. nm-angel-fire: 7.00
+  27. nm-albuquerque: 7.00
+  28. nm-los-lunas: 7.00
+  29. nm-w-taos: 7.00
+─────────────────────────────────────────────────────
+
+─────────────────────────────────────────────────────
+DIMENSION: political_climate
+─────────────────────────────────────────────────────
+Min: 5.00   Max: 7.00   Range: 2.00
+Mean: 5.41   Median: 5.00   Std: 0.68
+
+Percentiles:
+  p10: 5.00   p15: 5.00   p25: 5.00   p50: 5.00   p75: 6.00   p90: 6.20
+
+Cities (sorted ascending):
+   1. nm-alamogordo: 5.00
+   2. nm-socorro: 5.00
+   3. nm-silver-city: 5.00
+   4. nm-shiprock: 5.00
+   5. nm-red-river: 5.00
+   6. nm-questa: 5.00
+   7. nm-navajo: 5.00
+   8. nm-los-ranchos-de-albuquerque: 5.00
+   9. nm-los-lunas: 5.00
+  10. nm-jemez-pueblo: 5.00
+  11. nm-gallup: 5.00
+  12. nm-las-vegas: 5.00
+  13. nm-el-prado: 5.00
+  14. nm-angel-fire: 5.00
+  15. nm-aztec: 5.00
+  16. nm-espanola: 5.00
+  17. nm-cleveland: 5.00
+  18. nm-w-taos: 5.00
+  19. nm-east-taos: 5.00
+  20. nm-edgewood: 5.00
+  21. nm-carlsbad: 6.00
+  22. nm-roswell: 6.00
+  23. nm-sandia-park: 6.00
+  24. nm-taos: 6.00
+  25. nm-albuquerque: 6.00
+  26. nm-deming: 6.00
+  27. nm-santa-fe: 7.00
+  28. nm-las-cruces: 7.00
+  29. nm-rio-rancho: 7.00
+─────────────────────────────────────────────────────

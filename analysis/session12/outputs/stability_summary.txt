@@ -1,0 +1,39 @@
+══════════════════════════════════════════════════════
+STABILITY SUMMARY
+══════════════════════════════════════════════════════
+
+TOP 5 STABLE — in top 5 across ALL 17 schemes/runs:
+  nm-carlsbad
+  nm-cleveland
+  nm-gallup
+  nm-questa
+
+TOP 5 STABLE (A + B only):
+  nm-carlsbad
+  nm-cleveland
+  nm-gallup
+  nm-questa
+
+TOP 5 STABLE (A + B + ≥ 10 of 15 Scheme C runs):
+  nm-carlsbad
+  nm-cleveland
+  nm-gallup
+  nm-questa
+
+FRAGILE SIGNALS — rank swings > 5 positions across any two runs:
+  nm-edgewood: rank range 16–22
+    Schemes: A to B
+  nm-los-lunas: rank range 10–18
+    Schemes: B to A
+  nm-los-ranchos-de-albuquerque: rank range 6–19
+    Schemes: B to A
+  nm-santa-fe: rank range 21–28
+    Schemes: C_gatep10_drag0.5 to B
+
+GATE-SENSITIVE — top 5 in A and B but excluded or drops out of top 5 in any Scheme C run:
+  none
+
+──────────────────────────────────────────────────────
+This summary is factual. It reports positions only.
+It makes no weight recommendations or strategic conclusions.
+══════════════════════════════════════════════════════

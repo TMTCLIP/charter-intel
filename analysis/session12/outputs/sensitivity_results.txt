@@ -1,0 +1,681 @@
+══════════════════════════════════════════════════════
+SCHEME A — Flat equal weights
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME B — Demand-heavy
+Weights: academic_need: 0.1667, competitive_opportunity: 0.1667, charter_saturation: 0.1667, political_climate: 0.0833, authorizer_friendliness: 0.0833, replication_feasibility: 0.0833, population_trends: 0.0833, operational_complexity: 0.0833, funding_environment: 0.0833
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.83
+2     | nm-cleveland                     | 6.71
+3     | nm-carlsbad                      | 6.29
+4     | nm-gallup                        | 6.18
+5     | nm-deming                        | 6.16
+6     | nm-los-ranchos-de-albuquerque    | 6.08
+7     | nm-jemez-pueblo                  | 6.04
+8     | nm-sandia-park                   | 6.04
+9     | nm-aztec                         | 6.00
+10    | nm-los-lunas                     | 5.87
+11    | nm-el-prado                      | 5.83
+12    | nm-navajo                        | 5.83
+13    | nm-red-river                     | 5.83
+14    | nm-shiprock                      | 5.83
+15    | nm-alamogordo                    | 5.79
+16    | nm-angel-fire                    | 5.79
+17    | nm-east-taos                     | 5.79
+18    | nm-rio-rancho                    | 5.77
+19    | nm-socorro                       | 5.75
+20    | nm-las-cruces                    | 5.73
+21    | nm-taos                          | 5.72
+22    | nm-edgewood                      | 5.67
+23    | nm-espanola                      | 5.62
+24    | nm-roswell                       | 5.62
+25    | nm-las-vegas                     | 5.58
+26    | nm-w-taos                        | 5.58
+27    | nm-silver-city                   | 5.37
+28    | nm-santa-fe                      | 5.29
+29    | nm-albuquerque                   | 4.50
+
+══════════════════════════════════════════════════════
+SCHEME C_gate2.0_drag0.5 — Gate: authorizer_friendliness < 2.00 (2.0) | Drag: political_climate < 3.0 × 0.5
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME C_gate2.0_drag0.7 — Gate: authorizer_friendliness < 2.00 (2.0) | Drag: political_climate < 3.0 × 0.7
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME C_gate2.0_drag0.85 — Gate: authorizer_friendliness < 2.00 (2.0) | Drag: political_climate < 3.0 × 0.85
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME C_gate3.0_drag0.5 — Gate: authorizer_friendliness < 3.00 (3.0) | Drag: political_climate < 3.0 × 0.5
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME C_gate3.0_drag0.7 — Gate: authorizer_friendliness < 3.00 (3.0) | Drag: political_climate < 3.0 × 0.7
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME C_gate3.0_drag0.85 — Gate: authorizer_friendliness < 3.00 (3.0) | Drag: political_climate < 3.0 × 0.85
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME C_gate4.0_drag0.5 — Gate: authorizer_friendliness < 4.00 (4.0) | Drag: political_climate < 3.0 × 0.5
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME C_gate4.0_drag0.7 — Gate: authorizer_friendliness < 4.00 (4.0) | Drag: political_climate < 3.0 × 0.7
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME C_gate4.0_drag0.85 — Gate: authorizer_friendliness < 4.00 (4.0) | Drag: political_climate < 3.0 × 0.85
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-jemez-pueblo                  | 5.61
+12    | nm-aztec                         | 5.58
+13    | nm-alamogordo                    | 5.53
+14    | nm-rio-rancho                    | 5.51
+15    | nm-angel-fire                    | 5.50
+16    | nm-edgewood                      | 5.44
+17    | nm-las-cruces                    | 5.42
+18    | nm-los-lunas                     | 5.39
+19    | nm-los-ranchos-de-albuquerque    | 5.37
+20    | nm-east-taos                     | 5.28
+21    | nm-socorro                       | 5.25
+22    | nm-taos                          | 5.21
+23    | nm-santa-fe                      | 5.12
+24    | nm-roswell                       | 5.08
+25    | nm-las-vegas                     | 5.03
+26    | nm-w-taos                        | 5.03
+27    | nm-espanola                      | 4.94
+28    | nm-silver-city                   | 4.86
+29    | nm-albuquerque                   | 4.67
+
+══════════════════════════════════════════════════════
+SCHEME C_gatep10_drag0.5 — Gate: authorizer_friendliness < 6.47 (p10) | Drag: political_climate < 3.0 × 0.5
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-aztec                         | 5.58
+12    | nm-alamogordo                    | 5.53
+13    | nm-rio-rancho                    | 5.51
+14    | nm-angel-fire                    | 5.50
+15    | nm-las-cruces                    | 5.42
+16    | nm-los-lunas                     | 5.39
+17    | nm-los-ranchos-de-albuquerque    | 5.37
+18    | nm-east-taos                     | 5.28
+19    | nm-socorro                       | 5.25
+20    | nm-taos                          | 5.21
+21    | nm-santa-fe                      | 5.12
+22    | nm-roswell                       | 5.08
+23    | nm-las-vegas                     | 5.03
+24    | nm-w-taos                        | 5.03
+25    | nm-espanola                      | 4.94
+26    | nm-silver-city                   | 4.86
+27    | nm-albuquerque                   | 4.67
+
+EXCLUDED (failed authorizer gate at 6.47 (p10)):
+  nm-edgewood: authorizer_friendliness = 5.00
+  nm-jemez-pueblo: authorizer_friendliness = 5.00
+
+══════════════════════════════════════════════════════
+SCHEME C_gatep10_drag0.7 — Gate: authorizer_friendliness < 6.47 (p10) | Drag: political_climate < 3.0 × 0.7
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-aztec                         | 5.58
+12    | nm-alamogordo                    | 5.53
+13    | nm-rio-rancho                    | 5.51
+14    | nm-angel-fire                    | 5.50
+15    | nm-las-cruces                    | 5.42
+16    | nm-los-lunas                     | 5.39
+17    | nm-los-ranchos-de-albuquerque    | 5.37
+18    | nm-east-taos                     | 5.28
+19    | nm-socorro                       | 5.25
+20    | nm-taos                          | 5.21
+21    | nm-santa-fe                      | 5.12
+22    | nm-roswell                       | 5.08
+23    | nm-las-vegas                     | 5.03
+24    | nm-w-taos                        | 5.03
+25    | nm-espanola                      | 4.94
+26    | nm-silver-city                   | 4.86
+27    | nm-albuquerque                   | 4.67
+
+EXCLUDED (failed authorizer gate at 6.47 (p10)):
+  nm-edgewood: authorizer_friendliness = 5.00
+  nm-jemez-pueblo: authorizer_friendliness = 5.00
+
+══════════════════════════════════════════════════════
+SCHEME C_gatep10_drag0.85 — Gate: authorizer_friendliness < 6.47 (p10) | Drag: political_climate < 3.0 × 0.85
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-aztec                         | 5.58
+12    | nm-alamogordo                    | 5.53
+13    | nm-rio-rancho                    | 5.51
+14    | nm-angel-fire                    | 5.50
+15    | nm-las-cruces                    | 5.42
+16    | nm-los-lunas                     | 5.39
+17    | nm-los-ranchos-de-albuquerque    | 5.37
+18    | nm-east-taos                     | 5.28
+19    | nm-socorro                       | 5.25
+20    | nm-taos                          | 5.21
+21    | nm-santa-fe                      | 5.12
+22    | nm-roswell                       | 5.08
+23    | nm-las-vegas                     | 5.03
+24    | nm-w-taos                        | 5.03
+25    | nm-espanola                      | 4.94
+26    | nm-silver-city                   | 4.86
+27    | nm-albuquerque                   | 4.67
+
+EXCLUDED (failed authorizer gate at 6.47 (p10)):
+  nm-edgewood: authorizer_friendliness = 5.00
+  nm-jemez-pueblo: authorizer_friendliness = 5.00
+
+══════════════════════════════════════════════════════
+SCHEME C_gatep15_drag0.5 — Gate: authorizer_friendliness < 6.58 (p15) | Drag: political_climate < 3.0 × 0.5
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-aztec                         | 5.58
+12    | nm-alamogordo                    | 5.53
+13    | nm-angel-fire                    | 5.50
+14    | nm-los-lunas                     | 5.39
+15    | nm-los-ranchos-de-albuquerque    | 5.37
+16    | nm-east-taos                     | 5.28
+17    | nm-socorro                       | 5.25
+18    | nm-taos                          | 5.21
+19    | nm-roswell                       | 5.08
+20    | nm-las-vegas                     | 5.03
+21    | nm-w-taos                        | 5.03
+22    | nm-espanola                      | 4.94
+23    | nm-silver-city                   | 4.86
+24    | nm-albuquerque                   | 4.67
+
+EXCLUDED (failed authorizer gate at 6.58 (p15)):
+  nm-edgewood: authorizer_friendliness = 5.00
+  nm-jemez-pueblo: authorizer_friendliness = 5.00
+  nm-las-cruces: authorizer_friendliness = 6.47
+  nm-rio-rancho: authorizer_friendliness = 6.47
+  nm-santa-fe: authorizer_friendliness = 6.47
+
+══════════════════════════════════════════════════════
+SCHEME C_gatep15_drag0.7 — Gate: authorizer_friendliness < 6.58 (p15) | Drag: political_climate < 3.0 × 0.7
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-aztec                         | 5.58
+12    | nm-alamogordo                    | 5.53
+13    | nm-angel-fire                    | 5.50
+14    | nm-los-lunas                     | 5.39
+15    | nm-los-ranchos-de-albuquerque    | 5.37
+16    | nm-east-taos                     | 5.28
+17    | nm-socorro                       | 5.25
+18    | nm-taos                          | 5.21
+19    | nm-roswell                       | 5.08
+20    | nm-las-vegas                     | 5.03
+21    | nm-w-taos                        | 5.03
+22    | nm-espanola                      | 4.94
+23    | nm-silver-city                   | 4.86
+24    | nm-albuquerque                   | 4.67
+
+EXCLUDED (failed authorizer gate at 6.58 (p15)):
+  nm-edgewood: authorizer_friendliness = 5.00
+  nm-jemez-pueblo: authorizer_friendliness = 5.00
+  nm-las-cruces: authorizer_friendliness = 6.47
+  nm-rio-rancho: authorizer_friendliness = 6.47
+  nm-santa-fe: authorizer_friendliness = 6.47
+
+══════════════════════════════════════════════════════
+SCHEME C_gatep15_drag0.85 — Gate: authorizer_friendliness < 6.58 (p15) | Drag: political_climate < 3.0 × 0.85
+Weights: academic_need: 0.1111, competitive_opportunity: 0.1111, charter_saturation: 0.1111, political_climate: 0.1111, authorizer_friendliness: 0.1111, replication_feasibility: 0.1111, population_trends: 0.1111, operational_complexity: 0.1111, funding_environment: 0.1111
+  facilities_feasibility: 0.0000 (excluded)
+══════════════════════════════════════════════════════
+Rank  | City                             | Score 
+─────|──────────────────────────────────|───────
+1     | nm-questa                        | 6.56
+2     | nm-cleveland                     | 6.17
+3     | nm-carlsbad                      | 6.06
+4     | nm-gallup                        | 5.90
+5     | nm-sandia-park                   | 5.83
+6     | nm-deming                        | 5.69
+7     | nm-el-prado                      | 5.67
+8     | nm-navajo                        | 5.67
+9     | nm-red-river                     | 5.67
+10    | nm-shiprock                      | 5.67
+11    | nm-aztec                         | 5.58
+12    | nm-alamogordo                    | 5.53
+13    | nm-angel-fire                    | 5.50
+14    | nm-los-lunas                     | 5.39
+15    | nm-los-ranchos-de-albuquerque    | 5.37
+16    | nm-east-taos                     | 5.28
+17    | nm-socorro                       | 5.25
+18    | nm-taos                          | 5.21
+19    | nm-roswell                       | 5.08
+20    | nm-las-vegas                     | 5.03
+21    | nm-w-taos                        | 5.03
+22    | nm-espanola                      | 4.94
+23    | nm-silver-city                   | 4.86
+24    | nm-albuquerque                   | 4.67
+
+EXCLUDED (failed authorizer gate at 6.58 (p15)):
+  nm-edgewood: authorizer_friendliness = 5.00
+  nm-jemez-pueblo: authorizer_friendliness = 5.00
+  nm-las-cruces: authorizer_friendliness = 6.47
+  nm-rio-rancho: authorizer_friendliness = 6.47
+  nm-santa-fe: authorizer_friendliness = 6.47
+
+
+══════════════════════════════════════════════════════
+STABILITY SUMMARY
+══════════════════════════════════════════════════════
+
+TOP 5 STABLE — in top 5 across ALL 17 schemes/runs:
+  nm-carlsbad
+  nm-cleveland
+  nm-gallup
+  nm-questa
+
+TOP 5 STABLE (A + B only):
+  nm-carlsbad
+  nm-cleveland
+  nm-gallup
+  nm-questa
+
+TOP 5 STABLE (A + B + ≥ 10 of 15 Scheme C runs):
+  nm-carlsbad
+  nm-cleveland
+  nm-gallup
+  nm-questa
+
+FRAGILE SIGNALS — rank swings > 5 positions across any two runs:
+  nm-edgewood: rank range 16–22
+    Schemes: A to B
+  nm-los-lunas: rank range 10–18
+    Schemes: B to A
+  nm-los-ranchos-de-albuquerque: rank range 6–19
+    Schemes: B to A
+  nm-santa-fe: rank range 21–28
+    Schemes: C_gatep10_drag0.5 to B
+
+GATE-SENSITIVE — top 5 in A and B but excluded or drops out of top 5 in any Scheme C run:
+  none
+
+──────────────────────────────────────────────────────
+This summary is factual. It reports positions only.
+It makes no weight recommendations or strategic conclusions.
+══════════════════════════════════════════════════════

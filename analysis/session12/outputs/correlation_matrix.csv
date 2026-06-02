@@ -1,0 +1,12 @@
+# Pearson correlation matrix — 29 NM cities included
+,academic_need,competitive_opportunity,charter_saturation,political_climate,authorizer_friendliness,replication_feasibility,population_trends,operational_complexity,funding_environment,facilities_feasibility
+academic_need,1.0,0.07,-0.06,0.05,0.08,-0.27,-0.02,-0.62,0.14,-0.03
+competitive_opportunity,0.07,1.0,0.16,0.02,0.08,-0.11,-0.31,-0.13,-0.25,0.12
+charter_saturation,-0.06,0.16,1.0,-0.52,0.04,-0.66,0.1,0.19,0.23,-0.41
+political_climate,0.05,0.02,-0.52,1.0,-0.09,0.39,-0.04,-0.01,-0.32,0.8
+authorizer_friendliness,0.08,0.08,0.04,-0.09,1.0,-0.22,0.09,-0.08,-0.23,-0.22
+replication_feasibility,-0.27,-0.11,-0.66,0.39,-0.22,1.0,-0.19,0.22,-0.15,0.2
+population_trends,-0.02,-0.31,0.1,-0.04,0.09,-0.19,1.0,0.4,-0.0,0.0
+operational_complexity,-0.62,-0.13,0.19,-0.01,-0.08,0.22,0.4,1.0,0.08,-0.01
+funding_environment,0.14,-0.25,0.23,-0.32,-0.23,-0.15,-0.0,0.08,1.0,-0.21
+facilities_feasibility,-0.03,0.12,-0.41,0.8,-0.22,0.2,0.0,-0.01,-0.21,1.0

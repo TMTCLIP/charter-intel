@@ -109,6 +109,7 @@
     .banner-insufficient { background: var(--color-score-yellow-bg); border-color: var(--fill-yellow); color: #6b4a00; }
     .banner-gate { background: var(--color-score-red-bg); border-color: var(--fill-red); color: var(--color-score-red); }
     .banner-tribal { background: #eef4fb; border-color: var(--color-chrome-500); color: #234; }
+    .banner-pci-legacy { background: #fff7ed; border-color: #fb923c; color: #7c2d12; }
 
     /* ── 3. Executive snapshot ── */
     .exec-snapshot { line-height: 1.75; margin: 0; }
@@ -259,18 +260,17 @@
       <div class="vh-badges">
         <span class="pill pill-yellow">MODERATE OPPORTUNITY</span>
         
-        <span class="conf conf-moderate">Confidence: Moderate</span>
-        
+        <span class="conf conf-low">Confidence: Low</span>
       </div>
       
-      <div class="vh-call">Questa scores 6.5/10 (MODERATE) driven by severe academic need (ELA 28%, math 5.3%) and growing K-12 enrollment (+11.7%…</div>
+      <div class="vh-call">Questa scores 6.5/10 (MODERATE) driven by severe academic need (ELA 28%, math 5.3%) and growing enrollment (+11.7%, 202…</div>
       
     </div>
     <div class="vh-score-box">
-      <span class="vh-score">6.49</span><span class="vh-score-max">/10</span>
+      <span class="vh-score">6.53</span><span class="vh-score-max">/10</span>
     </div>
   </div>
-  <div class="vh-through">Data through: 2026-01-26</div>
+  <div class="vh-through">Data through: 2025-01-01</div>
 </div>
 
 <div class="wrap">
@@ -279,20 +279,32 @@
   
 
   
+  <div class="banner banner-gate">
+    <strong>🚫 Recommendation confidence: gated</strong>
+    Overall confidence is LOW (top dimensions rest on defaulted or low-confidence facts). Recommendations should be treated cautiously.
+  </div>
+  
 
+  
+
+  
+  <div class="banner banner-pci-legacy">
+    <strong>⚠ Political climate score was recovered from a legacy cache entry.</strong>
+    Confidence is reduced — re-run S3 to generate a fresh signal.
+  </div>
   
 
   
   <div class="section">
     <p class="section-label">Executive Snapshot</p>
-    <p class="exec-snapshot">Questa scores 6.5/10 (MODERATE) driven by severe academic need (ELA 28%, math 5.3%) and growing K-12 enrollment (+11.7% since 2020). One small charter serves 20% of ~300 students; no high school charter option exists. High poverty (73% FRL) and rural scale create operational complexity. Market size is the binding constraint—viability depends on realistic enrollment capture from a 300-student district.</p>
+    <p class="exec-snapshot">Questa scores 6.5/10 (MODERATE) driven by severe academic need (ELA 28%, math 5.3%) and growing enrollment (+11.7%, 2020–2024). Low overall confidence reflects political climate uncertainty and small market size (315 students). Two authorizers accessible; one existing charter (60-seat K–8). High-poverty context (73% FRL) and no CMO interest locally present operational headwinds.</p>
   </div>
 
   
   
   <div class="section">
     <p class="section-label">Scorecard</p>
-    <p class="composite-line">Composite: 6.49/10 — MODERATE OPPORTUNITY</p>
+    <p class="composite-line">Composite: 6.53/10 — MODERATE OPPORTUNITY</p>
 
     
     
@@ -305,7 +317,20 @@
         <div class="bar-fill fill-green" style="width: 80%;"></div>
       </div>
       <div class="bar-weight">12% weight</div>
-      <div class="bar-driver">Severe proficiency gaps (ELA 28%, math 5.3%) create urgent demand for alternative models.</div>
+      <div class="bar-driver">Severe proficiency gaps (ELA 28%, math 5.3%) signal urgent demand for alternative instructional models.</div>
+    </div>
+    
+    
+    <div class="bar-row">
+      <div class="bar-head">
+        <span class="bar-name">Charter Saturation</span>
+        <span class="bar-score txt-green">9.0</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill fill-green" style="width: 90%;"></div>
+      </div>
+      <div class="bar-weight">6% weight</div>
+      <div class="bar-driver">Only one charter school (60-seat K–8 cap) leaves secondary grades and capacity unmet.</div>
     </div>
     
     
@@ -318,7 +343,59 @@
         <div class="bar-fill fill-green" style="width: 90%;"></div>
       </div>
       <div class="bar-weight">12% weight</div>
-      <div class="bar-driver">District enrollment grew 11.7% (2020–2024), signaling capacity for new school entry.</div>
+      <div class="bar-driver">11.7% enrollment growth (2020–2024) indicates expanding addressable population despite small absolute size.</div>
+    </div>
+    
+    
+    <div class="bar-row">
+      <div class="bar-head">
+        <span class="bar-name">Political Climate</span>
+        <span class="bar-score txt-yellow">5.0</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill fill-yellow" style="width: 50%;"></div>
+      </div>
+      <div class="bar-weight">12% weight</div>
+      <div class="bar-driver">Mixed charter sentiment in rural northern NM; insufficient local political data to assess board receptivity.</div>
+    </div>
+    
+    
+    <div class="bar-row">
+      <div class="bar-head">
+        <span class="bar-name">Authorizer Friendliness</span>
+        <span class="bar-score txt-green">7.0</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill fill-green" style="width: 70%;"></div>
+      </div>
+      <div class="bar-weight">12% weight</div>
+      <div class="bar-driver">Dual authorization pathways (state PEC and district) reduce entry friction; existing charter precedent (Roots &amp; Wings) demonstrates local acceptance.</div>
+    </div>
+    
+    
+    <div class="bar-row">
+      <div class="bar-head">
+        <span class="bar-name">Facilities Feasibility</span>
+        <span class="bar-score txt-yellow">5.0</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill fill-yellow" style="width: 50%;"></div>
+      </div>
+      <div class="bar-weight">0% weight</div>
+      <div class="bar-driver">One closed/temporarily-closed school in district+county signals potential real estate, but closure ≠ confirmed availability.</div>
+    </div>
+    
+    
+    <div class="bar-row">
+      <div class="bar-head">
+        <span class="bar-name">Replication Feasibility</span>
+        <span class="bar-score txt-yellow">6.0</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill fill-yellow" style="width: 60%;"></div>
+      </div>
+      <div class="bar-weight">6% weight</div>
+      <div class="bar-driver">No CSP-funded operators in county; statewide teacher pipeline (2,351 CIP-13 completers) and active philanthropic sector (29 education foundations, $36.4M assets) partially offset local operator scarcity.</div>
     </div>
     
     
@@ -331,33 +408,7 @@
         <div class="bar-fill fill-green" style="width: 70%;"></div>
       </div>
       <div class="bar-weight">12% weight</div>
-      <div class="bar-driver">Per-pupil revenue 6.2% above state average; state funds 62.7% of budget.</div>
-    </div>
-    
-    
-    <div class="bar-row">
-      <div class="bar-head">
-        <span class="bar-name">Political Climate</span>
-        <span class="bar-score txt-green">7.0</span>
-      </div>
-      <div class="bar-track">
-        <div class="bar-fill fill-green" style="width: 70%;"></div>
-      </div>
-      <div class="bar-weight">12% weight</div>
-      <div class="bar-driver">Neutral-to-supportive local environment; no documented opposition to charter expansion.</div>
-    </div>
-    
-    
-    <div class="bar-row">
-      <div class="bar-head">
-        <span class="bar-name">Authorizer Friendliness</span>
-        <span class="bar-score txt-yellow">6.47</span>
-      </div>
-      <div class="bar-track">
-        <div class="bar-fill fill-yellow" style="width: 65%;"></div>
-      </div>
-      <div class="bar-weight">12% weight</div>
-      <div class="bar-driver">Two accessible authorizers (PEC, local district); PEC has renewed existing charter.</div>
+      <div class="bar-driver">Per-pupil revenue 6.2% above state average; 62.7% state funding provides stable baseline despite rural context.</div>
     </div>
     
     
@@ -370,33 +421,7 @@
         <div class="bar-fill fill-yellow" style="width: 57%;"></div>
       </div>
       <div class="bar-weight">12% weight</div>
-      <div class="bar-driver">No charter high school (9–12) option; limited choice despite low proficiency.</div>
-    </div>
-    
-    
-    <div class="bar-row">
-      <div class="bar-head">
-        <span class="bar-name">Charter Saturation</span>
-        <span class="bar-score txt-green">8.38</span>
-      </div>
-      <div class="bar-track">
-        <div class="bar-fill fill-green" style="width: 84%;"></div>
-      </div>
-      <div class="bar-weight">6% weight</div>
-      <div class="bar-driver">Only one charter (Roots and Wings) at 20% enrollment cap; room for expansion.</div>
-    </div>
-    
-    
-    <div class="bar-row">
-      <div class="bar-head">
-        <span class="bar-name">Replication Feasibility</span>
-        <span class="bar-score txt-red">3.0</span>
-      </div>
-      <div class="bar-track">
-        <div class="bar-fill fill-red" style="width: 30%;"></div>
-      </div>
-      <div class="bar-weight">6% weight</div>
-      <div class="bar-driver">No CMO presence; local charter is small and independent; limited scaling infrastructure.</div>
+      <div class="bar-driver">Unmet demand in secondary grades (no charter high school) and math proficiency crisis create niche opportunity.</div>
     </div>
     
     
@@ -409,19 +434,13 @@
         <div class="bar-fill fill-red" style="width: 30%;"></div>
       </div>
       <div class="bar-weight">12% weight</div>
-      <div class="bar-driver">High FRL (73%) and rural scale demand experienced operators; cost structure is tight.</div>
+      <div class="bar-driver">High poverty (73% FRL) and favorable teacher supply (9.6:1 ratio) partially offset rural infrastructure constraints.</div>
     </div>
     
 
     
     
 
-    
-    <p class="bar-weight" style="margin-top: 10px;">
-      Excluded dimensions default to 5.0 and are removed from the composite; their
-      weight is redistributed proportionally across scored dimensions.
-      Excluded: facilities_feasibility.
-    </p>
     
   </div>
 
@@ -430,11 +449,11 @@
   <div class="section">
     <p class="section-label">Top Drivers</p>
     
-    <div class="driver-item"><strong>academic_need</strong> (8.0) — Severe proficiency gaps (ELA 28%, math 5.3%) create urgent demand for alternative models.</div>
+    <div class="driver-item"><strong>academic_need</strong> (8.0) — Severe proficiency gaps (ELA 28%, math 5.3%) signal urgent demand for alternative instructional models.</div>
     
-    <div class="driver-item"><strong>population_trends</strong> (9.0) — District enrollment grew 11.7% (2020–2024), signaling capacity for new school entry.</div>
+    <div class="driver-item"><strong>population_trends</strong> (9.0) — 11.7% enrollment growth (2020–2024) indicates expanding addressable population despite small absolute size.</div>
     
-    <div class="driver-item"><strong>operational_complexity</strong> (3.0) — High FRL (73%) and rural scale demand experienced operators; cost structure is tight.</div>
+    <div class="driver-item"><strong>authorizer_friendliness</strong> (7.0) — Dual authorization pathways (state PEC and district) reduce entry friction; existing charter precedent (Roots &amp; Wings) demonstrates local acceptance.</div>
     
   </div>
   
@@ -450,7 +469,7 @@
     
     <div class="flag-card flag-neutral">
       <div class="flag-head">ℹ SMALL_MARKET</div>
-      <div class="flag-body">District enrollment: 300 students (k12_enrollment_total) <em>(None — informational only)</em></div>
+      <div class="flag-body">District enrollment: 315 students (NCES 2024) <em>(None — informational only)</em></div>
     </div>
     
     
@@ -465,14 +484,14 @@
     <div class="card">
       <div class="card-head">
         <span class="card-name">Roots and Wings Community School</span>
-        <span class="model-pill">Expeditionary Learning with outdoor education, farm-based learning, and wilderness adventure</span>
+        <span class="model-pill">Expeditionary Learning</span>
       </div>
       <div class="card-sub">K-8</div>
 
       
       <div class="prof-row">
-        <span class="prof-chip">ELA 55%</span>
-        <span class="prof-chip">Math 10%</span>
+        <span class="prof-chip">ELA 55% (2024)</span>
+        
       </div>
       
 
@@ -496,7 +515,7 @@
     
     
     <div class="auth-item">
-      <span class="dash">—</span> <strong>Public Education Commission</strong> (SEA) — State authorizer for all state-chartered schools in New Mexico; evaluates schools annually using performance frameworks and has authority to approve new applications, renewals, and closures.
+      <span class="dash">—</span> <strong>Public Education Commission</strong> (SEA) — Ten-member elected body serving as authorizer for all state-chartered schools in New Mexico; maintains rigorous oversight with annual monitoring and performance frameworks aligned with nationally recognized quality standards.
     </div>
     
     
@@ -506,17 +525,22 @@
   <div class="section">
     <p class="section-label">Recommendations</p>
     
+    <div class="banner banner-gate">
+      <strong>🚫 Recommendations suppressed</strong>
+      Confidence gate active — Overall confidence is LOW (top dimensions rest on defaulted or low-confidence facts). Recommendations should be treated cautiously.
+    </div>
+    
     
     <ol>
       
       <li class="rec-item">
-        <strong>Target high school entry (grades 9–12) via PEC authorization, positioning as complement to Roots and Wings K–8.</strong> — Verified gap: no charter high school option exists. PEC has demonstrated willingness to authorize (Roots and Wings renewal). Growing district enrollment (+11.7%) suggests demand. High school avoids direct competition with existing K–8 charter.<br>
-        <span class="txt-muted" style="font-size:12px;"><em>Evidence:</em> No charter high school option (9–12) documented. PEC authorized existing charter. District enrollment growing. · <em>Risk:</em> Absolute market size (300 students total) limits realistic high school enrollment; viability depends on capturing 40%+ of grades 9–12 cohort. · <em>Confidence:</em> MODERATE</span>
+        <strong>Before committing capital, resolve political climate and facilities availability through direct engagement with Questa Schools Board and county real estate survey.</strong> — Political climate confidence is LOW (mixed sentiment, no board records); facilities data is a signal only, not confirmed inventory. Both are critical entry-decision gates.<br>
+        <span class="txt-muted" style="font-size:12px;"><em>Evidence:</em> Rural northern NM shows mixed charter sentiment; one closed school in district+county may or may not be available. Board approval precedent exists (Roots &amp; Wings authorized by PEC). · <em>Risk:</em> Proceeding without board alignment or confirmed facilities could result in authorization delay or inability to open on timeline. · <em>Confidence:</em> LOW</span>
       </li>
       
       <li class="rec-item">
-        <strong>Conduct pre-entry operational feasibility study focused on FRL-serving model sustainability and rural cost structure.</strong> — 73% FRL and small scale (300 students) create operational complexity (score 3.0). Per-pupil revenue is 6.2% above state average, but absolute dollars are tight. Operator must validate staffing, transportation, and special education delivery costs before commitment.<br>
-        <span class="txt-muted" style="font-size:12px;"><em>Evidence:</em> FRL rate 73%; district enrollment ~300 students. Per-pupil expenditure $23,577; state-relative revenue +6.2%. · <em>Risk:</em> Rural operational costs may exceed per-pupil revenue; model may not be sustainable without external subsidy or enrollment growth. · <em>Confidence:</em> MODERATE</span>
+        <strong>If pursuing entry, target secondary grades (9–12) or math-intensive elementary model; leverage state PEC authorization pathway (precedent: Roots &amp; Wings) and statewide teacher pipeline.</strong> — No charter high school exists; math proficiency at 5.3% signals acute demand. PEC has authorized locally; 2,351 statewide CIP-13 completers support staffing. Dual authorizer option reduces risk.<br>
+        <span class="txt-muted" style="font-size:12px;"><em>Evidence:</em> Existing charter serves K–8 only; district math proficiency 5.3% vs. ELA 28% indicates math-specific intervention opportunity. PEC authorization proven locally. · <em>Risk:</em> Small market (315 students) limits enrollment capture; secondary-only model may not achieve viability without multi-district draw. · <em>Confidence:</em> MODERATE</span>
       </li>
       
     </ol>
@@ -530,15 +554,15 @@
     <div class="qr-grid">
       <div>
         <div class="qr-label">Facilities</div>
-        <div class="qr-body">Facilities feasibility data unavailable; CoStar decision pending. Small rural market likely has limited commercial inventory. Operator should conduct local real estate survey before authorization application.</div>
+        <div class="qr-body">One closed/temporarily-closed school exists in district+county (last 6 CCD years), but closure does not confirm availability—may be demolished, sold, repurposed, or consolidated. No verified commercial real estate data. Operator must conduct county-level real estate survey and confirm board willingness to lease or convey before site selection.</div>
       </div>
       <div>
         <div class="qr-label">Political</div>
-        <div class="qr-body">Political climate index 7/10 (neutral-to-supportive). No documented local opposition to charters. Questa village population declining (–5% over 5 years), but district enrollment growing (+11.7%), suggesting in-migration or improved retention.</div>
+        <div class="qr-body">Rural northern NM context with mixed charter sentiment. Roots &amp; Wings (existing K–8 charter) was authorized by state PEC, indicating precedent for charter approval. Board recently approved charter school improvements, suggesting openness. Political climate index assigned neutral (5/10) due to lack of specific local board records.</div>
       </div>
       <div>
         <div class="qr-label">Authorizer</div>
-        <div class="qr-body">Two authorizers accessible: PEC (state) and local district. PEC has authorized and renewed Roots and Wings (existing K–8 charter). Local district authorization pathway unclear; PEC is proven option.</div>
+        <div class="qr-body">Two pathways: state Public Education Commission (PEC) and local Questa Schools Board. PEC authorized Roots &amp; Wings; district authorization also available. Dual-path structure reduces entry friction. No evidence of hostile authorizer stance.</div>
       </div>
     </div>
   </div>
@@ -550,28 +574,28 @@
     <p class="section-label">Needs Verification</p>
     
     <div class="nv-item">
-      <strong>Roots and Wings academic performance and enrollment trends</strong> — Verified facts confirm existence and PEC authorization but not performance data.
+      <strong>Political climate in Questa is neutral (index 5/10) with mixed charter sentiment.</strong> — No specific local board records, meeting minutes, or media coverage of charter policy stance available.
       <em>(Impact: HIGH)</em>
     </div>
     
     <div class="nv-item">
-      <strong>Local district&#39;s stance on new charter authorization</strong> — No verified facts on district board position; only PEC friendliness documented.
-      <em>(Impact: MODERATE)</em>
-    </div>
-    
-    <div class="nv-item">
-      <strong>Specific facility availability and lease/purchase costs</strong> — Facilities feasibility excluded from scoring; no CoStar data available.
+      <strong>One closed/temporarily-closed school in district+county is a facilities-availability signal.</strong> — Closure does not confirm real estate is available for lease or purchase; may be demolished, sold, or repurposed.
       <em>(Impact: HIGH)</em>
     </div>
     
     <div class="nv-item">
-      <strong>Philanthropic funding availability for startup or operations</strong> — Rural community; no verified local philanthropy data.
+      <strong>No known CMO interest in rural Questa.</strong> — Absence of evidence is not evidence of absence; CMO interest may exist but not be publicly documented.
       <em>(Impact: MODERATE)</em>
     </div>
     
     <div class="nv-item">
       <strong>ELL rate (English Language Learner %) — Census ACS data suppressed for this district</strong> — ACS B16004 data suppressed for this district, likely due to small enrollment sample. Actual ELL rate may be nonzero and could affect operational_complexity scoring.
       <em>(Impact: MODERATE)</em>
+    </div>
+    
+    <div class="nv-item">
+      <strong>Teacher supply may constrain charter staffing in this community.</strong> — New Mexico has a documented statewide teacher shortage, but this community&#39;s specific hard-to-staff status has not been verified against the NMPED shortage-area list.
+      <em>(Impact: HIGH)</em>
     </div>
     
   </div>
@@ -587,7 +611,7 @@
     </div>
     
     <div class="src-item">
-      <span class="dash">—</span> [2] NM PED Charter School Roster · PED_DATA · https://webnew.ped.state.nm.us/bureaus/options-for-parents/charter-schools/ · 2025-01-01
+      <span class="dash">—</span> [2] NM PED Charter School Roster · PED_DATA · 2025-01-01
     </div>
     
     <div class="src-item">
@@ -599,11 +623,11 @@
     </div>
     
     <div class="src-item">
-      <span class="dash">—</span> [5] US Census QuickFacts - Questa · FEDERAL_DATA · https://www.census.gov/quickfacts/questavillagenewmexico · 2023-07-01
+      <span class="dash">—</span> [5] Questa schools approves charter school improvements · MEDIA · https://www.taosnews.com/news/education/questa-schools-approves-charter-school-improvements/article_2fcd705f-8be4-4f27-a6ff-3226280b0656.html · 2025-05-29
     </div>
     
     <div class="src-item">
-      <span class="dash">—</span> [6] Questa Independent Schools - Wikipedia · MEDIA · https://en.wikipedia.org/wiki/Questa_Independent_Schools · 2026-01-26
+      <span class="dash">—</span> [6] ProPublica Nonprofit Explorer (IRS Form 990 data) · FEDERAL_DATA · https://projects.propublica.org/nonprofits/
     </div>
     
   </div>
@@ -614,15 +638,51 @@
   <div class="debug-section">
     <details>
       <summary>Pipeline Debug Log</summary>
-      <p class="debug-meta">Run ID: unset</p>
-      <p class="debug-meta">Timestamp: 2026-06-01T18:42:14.370813Z</p>
-      <p class="debug-meta">Depth: standard</p>
+      <p class="debug-meta">Run ID: nm_maturity_adjusted_20260602_110752</p>
+      <p class="debug-meta">Timestamp: 2026-06-02T15:08:27.448314Z</p>
+      <p class="debug-meta">Depth: fast</p>
 
       <p class="debug-meta"><strong>Token Usage</strong></p>
       
-      <p class="debug-empty">No API calls this run.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Model</th>
+            <th>Tokens In</th>
+            <th>Tokens Out</th>
+            <th>Est. Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>s6_synthesis</td>
+            <td>claude-haiku-4-5-20251001</td>
+            <td>31,928</td>
+            <td>3,651</td>
+            <td>$0.0401</td>
+          </tr>
+          
+          <tr>
+            <td>s6_synthesis_audit</td>
+            <td>claude-haiku-4-5-20251001</td>
+            <td>26,778</td>
+            <td>93</td>
+            <td>$0.0218</td>
+          </tr>
+          
+        </tbody>
+      </table>
       
 
+      
+      <p class="debug-meta"><strong>Warnings &amp; Errors</strong></p>
+      <ul class="debug-warn">
+        
+        <li>WARNING [nm-questa] [s6_synthesis] Schema warning: &#39;Rural northern NM context with mixed charter sentiment. Roots &amp; Wings (existing K–8 charter) was authorized by state PEC, indicating precedent for charter approval. Board recently approved charter school improvements, suggesting openness. Political climate index assigned neutral (5/10) due to lack of specific local board records.&#39; is too long</li>
+        
+      </ul>
       
     </details>
   </div>
@@ -635,7 +695,7 @@
   <div class="inner">
     This brief is AI-generated and requires human review before any capital commitment
     or site-selection decision. Data accuracy is not guaranteed.<br>
-    Generated by CLIP · 2026-05-29T14:00:14.792189Z
+    Generated by CLIP · 2026-06-02T15:08:27.401336Z
   </div>
 </div>
 

@@ -1,0 +1,256 @@
+<html><body style="font-family:sans-serif;max-width:800px;margin:40px auto;line-height:1.6"><h1>Session 12 Analysis Findings</h1>
+<p>Generated: 2026-05-28
+Cities analyzed: 28 (nm-cleveland excluded — data quality artifact)
+Schemes run: 17 (A flat, B demand-heavy, C×15 gate+drag sweep)</p>
+<hr />
+<h2>1. Correlation Matrix Findings</h2>
+<h3>High Correlation Pairs (r &gt; 0.70)</h3>
+<p><strong>political_climate × facilities_feasibility: r = 0.80</strong>
+If both dimensions carry weight in the composite simultaneously, a city's
+political environment would be counted twice — once directly through
+political_climate and once through facilities_feasibility — inflating
+scores for politically favorable markets and deflating them for resistant
+ones.</p>
+<h3>Moderate Correlation Pairs (0.50 &lt; r ≤ 0.70)</h3>
+<p><strong>charter_saturation × replication_feasibility: r = −0.66</strong>
+Negative relationship: markets with few existing charters (high saturation
+score) tend to score low on replication readiness. Both dimensions
+partially measure market maturity from opposite angles; if both carry
+positive weight, they may produce partially redundant signals about the
+same underlying condition.</p>
+<p><strong>academic_need × operational_complexity: r = −0.62</strong>
+Negative relationship: high-need districts (low proficiency → high
+academic_need score) tend to also be high-complexity districts (high FRL,
+high ELL → high operational_complexity → low ops score). These dimensions
+move in opposite scoring directions for the same cities, so they partially
+cancel rather than compound; however, the underlying data inputs (FRL,
+proficiency rates) may overlap across the two dimension scorers.</p>
+<p><strong>charter_saturation × political_climate: r = −0.52</strong>
+Negative relationship: markets with few existing charters tend toward more
+neutral or resistant political climates. The combination of high charter
+opportunity and favorable politics is rare within the NM dataset; cities
+that score well on both are exceptions, not the norm.</p>
+<h3>Note on facilities_feasibility</h3>
+<p>facilities_feasibility was included in the correlation matrix for
+informational purposes only and is excluded from all composite
+calculations; its r = 0.80 with political_climate is the only
+high-correlation pair in the matrix, meaning that wiring it back into
+the composite alongside political_climate would create a direct
+double-counting risk that is larger than any other pair observed.</p>
+<h3>Decision flags for human review</h3>
+<ul>
+<li>
+<p><strong>Collapse or re-weight charter_saturation and replication_feasibility?</strong>
+  r = −0.66 indicates they may be measuring market maturity from
+  complementary but overlapping angles. Human judgment needed on whether
+  to keep both as independent dimensions, reduce one's weight, or document
+  the rationale for retaining both at current weights.</p>
+</li>
+<li>
+<p><strong>Collapse or re-weight academic_need and operational_complexity?</strong>
+  r = −0.62. They run in opposite scoring directions for the same
+  underlying condition (high-poverty districts). Current structure means
+  they partially cancel rather than compound. Human judgment needed on
+  whether this cancellation is intentional or an unintended artifact of
+  the scoring design.</p>
+</li>
+<li>
+<p><strong>Verify whether political_climate × facilities_feasibility r = 0.80
+  is a real construct relationship or a default-value artifact.</strong>
+  Many NM cities have default 5.0 for both dimensions (scored as
+  used_default: true). The r = 0.80 may be driven largely by shared
+  default values rather than underlying correlation. This should be
+  checked on non-default cities only before the correlation is treated
+  as evidence of construct overlap.</p>
+</li>
+</ul>
+<hr />
+<h2>2. Gate Dimension Distributions</h2>
+<h3>authorizer_friendliness</h3>
+<p>Min: 5.00 | Max: 7.00 | Range: 2.00 | Mean: 6.81 | Median: 7.00 | Std: 0.53</p>
+<p>| p10  | p15  | p25  | p50  | p75  | p90  |
+|------|------|------|------|------|------|
+| 6.47 | 6.58 | 7.00 | 7.00 | 7.00 | 7.00 |</p>
+<p><strong>LOW VARIANCE — gate likely inert within NM:</strong> 26 of 29 cities (including
+nm-cleveland) score at the maximum value of 7.00; the gate only
+discriminates at the very bottom of the distribution.</p>
+<h3>political_climate</h3>
+<p>Min: 5.00 | Max: 7.00 | Range: 2.00 | Mean: 5.41 | Median: 5.00 | Std: 0.68</p>
+<p>| p10  | p15  | p25  | p50  | p75  | p90  |
+|------|------|------|------|------|------|
+| 5.00 | 5.00 | 5.00 | 5.00 | 6.00 | 6.20 |</p>
+<p><strong>LOW VARIANCE — gate likely inert within NM:</strong> 20 of 29 cities score at
+the minimum observed value of 5.00; three cities score at 7.00
+(nm-santa-fe, nm-las-cruces, nm-rio-rancho). No NM city scores below 5.0.</p>
+<h3>Implication for gated model design</h3>
+<p>The authorizer gate (5 absolute floors × 3 drag multipliers = 15 Scheme C
+runs) fires meaningfully on only two cities within NM: <strong>nm-edgewood</strong> and
+<strong>nm-jemez-pueblo</strong>, both of which have authorizer_friendliness = 5.00 and
+are excluded at every gate floor above 5.0, including the absolute floors
+(3.0, 4.0) and both percentile floors (p10 = 6.47, p15 = 6.58). Three
+additional cities — nm-santa-fe, nm-rio-rancho, nm-las-cruces
+(authorizer_friendliness = 6.47) — are excluded at the p15 floor (6.58)
+but not at the p10 floor (6.47). The political_climate drag (floor = 3.0,
+multipliers 0.5 / 0.7 / 0.85) fires on <strong>no city</strong> in the NM dataset
+because all 29 NM cities score at or above 5.0, which is above the fixed
+drag floor of 3.0; the drag multiplier sweep has no effect on any NM
+ranking.</p>
+<hr />
+<h2>3. Sensitivity Analysis — Stability Results</h2>
+<p>(nm-cleveland excluded, recomputed from 28 cities)</p>
+<h3>Stable Markets — top 5 across all 17 schemes</h3>
+<p>These four cities are in the top 5 in every one of the 17 schemes:</p>
+<p>| City         | Scheme A rank | Scheme B rank |
+|--------------|--------------|--------------|
+| nm-questa    | 1            | 1            |
+| nm-carlsbad  | 2            | 2            |
+| nm-gallup    | 3            | 3            |
+| nm-deming    | 5            | 4            |</p>
+<p>No fifth city holds top-5 position across all 17 schemes. nm-sandia-park
+is rank 4 in Scheme A but rank 7 in Scheme B. nm-los-ranchos-de-albuquerque
+is rank 5 in Scheme B but rank 18 in Scheme A.</p>
+<h3>Stable Markets — top 5 in A + B + ≥10 of 15 Scheme C runs</h3>
+<p>All four all-17 stable cities also appear in the top 5 for all 15 Scheme C
+runs (15/15), and are therefore the same set as above:</p>
+<p>| City         | C runs in top 5 |
+|--------------|----------------|
+| nm-questa    | 15/15          |
+| nm-carlsbad  | 15/15          |
+| nm-gallup    | 15/15          |
+| nm-deming    | 15/15          |</p>
+<h3>Fragile Signals — rank swings &gt; 5 positions</h3>
+<p><strong>nm-edgewood</strong> — rank range 15–21 (6 positions), low in Scheme A, high in
+Scheme B. Scheme A (flat weights) places it at 15 because charter_saturation
+(9.0) is its strongest dimension and receives equal weight alongside
+academic_need (5.0) and competitive_opportunity (5.0). Scheme B
+(demand-heavy, 2× weight on all three) penalizes edgewood because its two
+demand dimensions other than charter_saturation score mid (5.0), pulling
+the demand-weighted average down relative to cities with stronger profiles
+across all three. Separately, edgewood is excluded in 6 of 15 Scheme C
+runs (all gate floors above 5.0 — both absolute and percentile) due to
+authorizer_friendliness = 5.0.</p>
+<p><strong>nm-los-lunas</strong> — rank range 9–17 (8 positions), low in Scheme B, high in
+Scheme A. Scheme B pushes it up because it has strong demand-dimension
+scores (academic_need = 7.0, competitive_opportunity = 6.0, charter_saturation
+= 9.0); under flat weighting, its low funding_environment (2.0) and
+low replication_feasibility (3.0) drag its composite down relative to
+cities where those dimensions are stronger.</p>
+<p><strong>nm-los-ranchos-de-albuquerque</strong> — rank range 5–18 (13 positions), low in
+Scheme B, high in Scheme A. The largest rank swing observed. Scheme B
+pushes it to rank 5 because its competitive_opportunity score is the
+highest in the dataset (8.67), and charter_saturation = 9.0 and
+academic_need = 7.0 also perform well; under flat weighting, its
+population_trends (3.0) and funding_environment (2.0) reduce its composite
+enough to push it to rank 18. This city is the most weight-sensitive
+market in the dataset.</p>
+<p><strong>nm-santa-fe</strong> — rank range 20–27 (7 positions), low in Scheme B, high
+across gate-floor Scheme C runs at p10. Scheme B pushes it down because
+charter_saturation = 4.38 (the lowest among any city with a real computed
+score — Santa Fe has many existing charters), which is doubly penalized
+under demand-heavy weighting. It also falls in Scheme B because its
+primary strengths (political_climate = 7.0, authorizer_friendliness = 6.47)
+are not demand dimensions and receive lower effective weight under B.
+Santa Fe is excluded in 3 of 15 Scheme C runs (all gate_p15 runs) because
+its authorizer_friendliness (6.47) falls below the p15 floor (6.58).</p>
+<h3>Gate-Sensitive Markets</h3>
+<p>None. All four cities stable in A+B (questa, carlsbad, gallup, deming) have
+authorizer_friendliness = 7.00 and are not excluded under any gate floor
+tested. None drop out of the top 5 in any of the 15 Scheme C runs.</p>
+<hr />
+<h2>4. Data Quality Flags</h2>
+<h3>nm-cleveland — excluded</h3>
+<p>Reason: district enrollment ~399 students. One charter already authorized
+(Collins Lake Outdoor School, 35-seat cap, SY 2026-27). Composite scores
+accurate to data but not meaningful at this scale. No minimum-size filter
+existed at pipeline run time. Excluded from this analysis and added to
+states.yaml excluded_communities. Exclusion requires code reader in
+main.py before it fires on --all runs (known issue, not yet wired).</p>
+<h3>SMALL_MARKET flag</h3>
+<p>Fires when k12_enrollment_total is present and &lt; 1500. Informational only.
+Does not affect composite or tier. Threshold 1500 is a placeholder —
+derive from (min_viable_school_enrollment / realistic_capture_rate) before
+treating as policy. Smoke test passed on nm-las-vegas (enrollment 1200).</p>
+<h3>Coverage reliability distribution</h3>
+<p>| Tier        | Threshold | Cities | City list                                                                                   |
+|-------------|-----------|--------|---------------------------------------------------------------------------------------------|
+| reliable    | ≥70%      | 21     | nm-questa (80%), nm-carlsbad (70%), nm-gallup (89%), nm-deming (89%), nm-aztec (80%), nm-east-taos (80%), nm-espanola (80%), nm-las-cruces (100%), nm-las-vegas (80%), nm-los-lunas (80%), nm-los-ranchos-de-albuquerque (80%), nm-red-river (80%), nm-rio-rancho (100%), nm-roswell (89%), nm-sandia-park (70%), nm-santa-fe (100%), nm-silver-city (80%), nm-socorro (80%), nm-taos (89%), nm-w-taos (80%), nm-albuquerque (89%) |
+| provisional | 50–69%    | 2      | nm-angel-fire (61%), nm-jemez-pueblo (61%)                                                  |
+| unreliable  | &lt;50%      | 5      | nm-edgewood (26%), nm-el-prado (26%), nm-navajo (26%), nm-shiprock (26%), nm-alamogordo (45%) |</p>
+<p>All four all-17-stable cities (questa, carlsbad, gallup, deming) are in the
+reliable tier. Among fragile cities: <strong>nm-edgewood is unreliable (26%)</strong>
+— its fragility in the sensitivity analysis is compounded by low data
+coverage; its rank positions should be treated with elevated uncertainty.
+nm-los-lunas, nm-los-ranchos-de-albuquerque, and nm-santa-fe are all in
+the reliable tier.</p>
+<p>The five unreliable cities (edgewood, el-prado, navajo, shiprock,
+alamogordo) remain in the analysis because they clear the ≥8-of-10
+dimension threshold, but a substantial share of their scores are default
+values (5.0) rather than computed from real data.</p>
+<hr />
+<h2>5. Open Decision Points</h2>
+<ol>
+<li>
+<p><strong>Are charter_saturation and replication_feasibility measuring
+   independent constructs, or do they warrant re-weighting?</strong> Information
+   needed: human judgment on whether their r = −0.66 reflects genuine
+   independent signals or partially redundant market-maturity measures.
+   Unblocks: weight calibration with documented rationale for both
+   dimensions' contributions to the composite.</p>
+</li>
+<li>
+<p><strong>Should academic_need and operational_complexity be treated as
+   independent dimensions given their r = −0.62?</strong> Information needed:
+   human review of whether the partial cancellation effect for high-need
+   districts is an intended design feature or an artifact worth correcting
+   through re-weighting or data-input changes. Unblocks: weight
+   calibration for the two highest-weighted dimension categories.</p>
+</li>
+<li>
+<p><strong>Is the political_climate × facilities_feasibility correlation (r = 0.80)
+   a construct relationship or a default-value artifact?</strong> Information
+   needed: recompute correlation on the subset of cities where neither
+   dimension was defaulted. Unblocks: decision on whether facilities_feasibility
+   can be wired back into the composite without creating double-counting
+   with political_climate.</p>
+</li>
+<li>
+<p><strong>Should the political_climate drag floor (fixed at 3.0) be recalibrated
+   given that it fires on no NM city?</strong> Information needed: cross-state
+   distribution data for political_climate, or redefinition of the 1–9
+   scale anchors. Unblocks: the drag multiplier sweep in Scheme C is
+   currently producing no differentiation within NM — any Scheme C
+   conclusion drawn from NM data is equivalent to Scheme A with only the
+   gate active.</p>
+</li>
+<li>
+<p><strong>What operator profile should govern weight calibration?</strong> Information
+   needed: TMT conversation to define what the operator values most
+   (demand signal, operational feasibility, replication readiness) and
+   what minimum thresholds are non-negotiable. Unblocks: once defined, the
+   correlation structure from Section 1 and stability results from Section
+   3 can be used to calibrate weights against a stated operator position
+   rather than arbitrary test schemes.</p>
+</li>
+<li>
+<p><strong>Does the 4-city stable set (questa, carlsbad, gallup, deming) meet
+   the coverage quality threshold for strategic use?</strong> Information needed:
+   human decision on the minimum acceptable data_coverage_pct for
+   including a city in a TMT deliverable — carlsbad and sandia-park are
+   both at 70%, the lowest reliable tier. Unblocks: triage framing and
+   NM deliverable package.</p>
+</li>
+</ol>
+<hr />
+<h2>6. What Was Not Done This Session</h2>
+<ul>
+<li>Weight calibration (requires human judgment on operator profile and
+  correlation findings above)</li>
+<li>Gated model design (requires human decision on gate logic and
+  cross-state applicability — see Section 2)</li>
+<li>Triage framing (deliverable structure decision for TMT — deferred)</li>
+<li>Operator profile definition (TMT conversation required before
+  weights can be calibrated)</li>
+<li>NCES-at-S1 (deferred — dependency for structural minimum-size filter)</li>
+<li>excluded_communities reader in main.py (known issue, one-liner)</li>
+<li>NM deliverable package (blocked on calibration)</li>
+</ul></body></html>

@@ -1,0 +1,204 @@
+────────────────────────────────────────────────────────────
+CORRELATION DIFF REPORT
+28-city matrix vs reliable-only matrix (21 cities)
+────────────────────────────────────────────────────────────
+
+Cells where |reliable-only r − 28-city r| > 0.05:
+
+  [authorizer_friendliness] × [facilities_feasibility]
+    28-city r:       -0.2200
+    reliable-only r: -1.0000
+    change:          -0.7800
+    direction:       STRENGTHENED
+
+  [political_climate] × [authorizer_friendliness]
+    28-city r:       -0.0900
+    reliable-only r: -0.8006
+    change:          -0.7106
+    direction:       STRENGTHENED
+
+  [academic_need] × [political_climate]
+    28-city r:       +0.0500
+    reliable-only r: -0.3369
+    change:          -0.3869
+    direction:       SIGN FLIPPED
+
+  [authorizer_friendliness] × [funding_environment]
+    28-city r:       -0.2300
+    reliable-only r: +0.1414
+    change:          +0.3714
+    direction:       SIGN FLIPPED
+
+  [academic_need] × [operational_complexity]
+    28-city r:       -0.6200
+    reliable-only r: -0.2706
+    change:          +0.3494
+    direction:       WEAKENED
+
+  [charter_saturation] × [authorizer_friendliness]
+    28-city r:       +0.0400
+    reliable-only r: +0.3828
+    change:          +0.3428
+    direction:       STRENGTHENED
+
+  [academic_need] × [competitive_opportunity]
+    28-city r:       +0.0700
+    reliable-only r: -0.2515
+    change:          -0.3215
+    direction:       SIGN FLIPPED
+
+  [academic_need] × [population_trends]
+    28-city r:       -0.0200
+    reliable-only r: +0.2735
+    change:          +0.2935
+    direction:       SIGN FLIPPED
+
+  [academic_need] × [funding_environment]
+    28-city r:       +0.1400
+    reliable-only r: +0.4181
+    change:          +0.2781
+    direction:       STRENGTHENED
+
+  [academic_need] × [facilities_feasibility]
+    28-city r:       -0.0300
+    reliable-only r: -0.2869
+    change:          -0.2569
+    direction:       STRENGTHENED
+
+  [competitive_opportunity] × [authorizer_friendliness]
+    28-city r:       +0.0800
+    reliable-only r: -0.1296
+    change:          -0.2096
+    direction:       SIGN FLIPPED
+
+  [academic_need] × [authorizer_friendliness]
+    28-city r:       +0.0800
+    reliable-only r: +0.2869
+    change:          +0.2069
+    direction:       STRENGTHENED
+
+  [political_climate] × [operational_complexity]
+    28-city r:       -0.0100
+    reliable-only r: +0.1754
+    change:          +0.1854
+    direction:       SIGN FLIPPED
+
+  [competitive_opportunity] × [funding_environment]
+    28-city r:       -0.2500
+    reliable-only r: -0.4233
+    change:          -0.1733
+    direction:       STRENGTHENED
+
+  [academic_need] × [charter_saturation]
+    28-city r:       -0.0600
+    reliable-only r: +0.1034
+    change:          +0.1634
+    direction:       SIGN FLIPPED
+
+  [replication_feasibility] × [funding_environment]
+    28-city r:       -0.1500
+    reliable-only r: -0.2884
+    change:          -0.1384
+    direction:       STRENGTHENED
+
+  [political_climate] × [funding_environment]
+    28-city r:       -0.3200
+    reliable-only r: -0.1844
+    change:          +0.1356
+    direction:       WEAKENED
+
+  [population_trends] × [funding_environment]
+    28-city r:       -0.0000
+    reliable-only r: +0.1349
+    change:          +0.1349
+    direction:       STRENGTHENED
+
+  [competitive_opportunity] × [replication_feasibility]
+    28-city r:       -0.1100
+    reliable-only r: +0.0210
+    change:          +0.1310
+    direction:       SIGN FLIPPED
+
+  [political_climate] × [replication_feasibility]
+    28-city r:       +0.3900
+    reliable-only r: +0.5116
+    change:          +0.1216
+    direction:       STRENGTHENED
+
+  [competitive_opportunity] × [operational_complexity]
+    28-city r:       -0.1300
+    reliable-only r: -0.0205
+    change:          +0.1095
+    direction:       WEAKENED
+
+  [operational_complexity] × [facilities_feasibility]
+    28-city r:       -0.0100
+    reliable-only r: +0.0913
+    change:          +0.1013
+    direction:       SIGN FLIPPED
+
+  [authorizer_friendliness] × [population_trends]
+    28-city r:       +0.0900
+    reliable-only r: -0.0079
+    change:          -0.0979
+    direction:       SIGN FLIPPED
+
+  [competitive_opportunity] × [population_trends]
+    28-city r:       -0.3100
+    reliable-only r: -0.4040
+    change:          -0.0940
+    direction:       STRENGTHENED
+
+  [charter_saturation] × [replication_feasibility]
+    28-city r:       -0.6600
+    reliable-only r: -0.7466
+    change:          -0.0866
+    direction:       STRENGTHENED
+
+  [operational_complexity] × [funding_environment]
+    28-city r:       +0.0800
+    reliable-only r: +0.1657
+    change:          +0.0857
+    direction:       STRENGTHENED
+
+  [population_trends] × [operational_complexity]
+    28-city r:       +0.4000
+    reliable-only r: +0.3298
+    change:          -0.0702
+    direction:       WEAKENED
+
+  [funding_environment] × [facilities_feasibility]
+    28-city r:       -0.2100
+    reliable-only r: -0.1414
+    change:          +0.0686
+    direction:       WEAKENED
+
+  [replication_feasibility] × [facilities_feasibility]
+    28-city r:       +0.2000
+    reliable-only r: +0.2524
+    change:          +0.0524
+    direction:       STRENGTHENED
+
+  [charter_saturation] × [funding_environment]
+    28-city r:       +0.2300
+    reliable-only r: +0.1792
+    change:          -0.0508
+    direction:       WEAKENED
+
+────────────────────────────────────────────────────────────
+FOCUSED FINDINGS — THREE PAIRS OF INTEREST
+────────────────────────────────────────────────────────────
+
+  political_climate × facilities_feasibility
+    28-city r: +0.80 | reliable-only r: +0.80 | change: +0.00
+    → Holds as a high-correlation pair (+0.80) even on reliable-tier cities only; the r = 0.80 in the full matrix is not primarily a default-value artifact.
+
+  charter_saturation × replication_feasibility
+    28-city r: -0.66 | reliable-only r: -0.75 | change: -0.09
+    → Negative relationship survives on reliable-tier cities (r = -0.75); the inverse association between low charter saturation and low replication readiness is not driven by unreliable-tier cities.
+
+  academic_need × operational_complexity
+    28-city r: -0.62 | reliable-only r: -0.27 | change: +0.35
+    → Negative relationship weakens on reliable-tier cities (r = -0.27); some of the correlation may be driven by low-coverage cities.
+
+────────────────────────────────────────────────────────────

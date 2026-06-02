@@ -1,0 +1,56 @@
+══════════════════════════════════════════════════════
+SCHEME D — Maturity-adjusted
+charter_saturation + replication_feasibility halved to 0.0625 each
+All other active dimensions: 0.125
+Weights sum: 1.0000 (facilities_feasibility: 0.0)
+══════════════════════════════════════════════════════
+ Rank | City                             | Score D | Score A | Rank A | Δ rank
+─────|──────────────────────────────────|─────────|─────────|────────|────────
+    1 | nm-questa                        |    6.62 |    6.56 |      1 |      0
+    2 | nm-carlsbad                      |    5.94 |    6.06 |      2 |      0
+    3 | nm-gallup                        |    5.85 |    5.90 |      3 |      0
+    4 | nm-red-river                     |    5.75 |    5.67 |      8 |     +4
+    5 | nm-sandia-park                   |    5.69 |    5.83 |      4 |     -1
+    6 | nm-deming                        |    5.53 |    5.69 |      5 |     -1
+    7 | nm-el-prado                      |    5.50 |    5.67 |      6 |     -1
+    8 | nm-navajo                        |    5.50 |    5.67 |      7 |     -1
+    9 | nm-shiprock                      |    5.50 |    5.67 |      9 |      0
+   10 | nm-alamogordo                    |    5.47 |    5.53 |     12 |     +2
+   11 | nm-jemez-pueblo                  |    5.44 |    5.61 |     10 |     -1
+   12 | nm-aztec                         |    5.40 |    5.58 |     11 |     -1
+   13 | nm-rio-rancho                    |    5.40 |    5.51 |     13 |      0
+   14 | nm-las-cruces                    |    5.35 |    5.42 |     16 |     +2
+   15 | nm-angel-fire                    |    5.31 |    5.50 |     14 |     -1
+   16 | nm-los-lunas                     |    5.31 |    5.39 |     17 |     +1
+   17 | nm-edgewood                      |    5.25 |    5.44 |     15 |     -2
+   18 | nm-los-ranchos-de-albuquerque    |    5.25 |    5.37 |     18 |      0
+   19 | nm-santa-fe                      |    5.18 |    5.12 |     22 |     +3
+   20 | nm-socorro                       |    5.15 |    5.25 |     20 |      0
+   21 | nm-taos                          |    5.07 |    5.21 |     21 |      0
+   22 | nm-east-taos                     |    5.06 |    5.28 |     19 |     -3
+   23 | nm-roswell                       |    4.97 |    5.08 |     23 |      0
+   24 | nm-las-vegas                     |    4.90 |    5.03 |     24 |      0
+   25 | nm-w-taos                        |    4.90 |    5.03 |     25 |      0
+   26 | nm-espanola                      |    4.81 |    4.94 |     26 |      0
+   27 | nm-silver-city                   |    4.72 |    4.86 |     27 |      0
+   28 | nm-albuquerque                   |    4.62 |    4.67 |     28 |      0
+
+══════════════════════════════════════════════════════
+QUESTA RESULT
+══════════════════════════════════════════════════════
+Scheme A rank: 1  |  Scheme D rank: 1  |  Δ: +0
+Scheme A score: 6.56  |  Scheme D score: 6.62
+
+Interpretation (factual only):
+→ Questa holds rank 1 under Scheme D; halving the two maturity dimensions does not displace it from the top position.
+
+══════════════════════════════════════════════════════
+STABILITY CROSS-CHECK — original stable four under Scheme D
+══════════════════════════════════════════════════════
+  nm-questa                            Scheme A rank 1 → Scheme D rank 1  (+0)
+  nm-carlsbad                          Scheme A rank 2 → Scheme D rank 2  (+0)
+  nm-gallup                            Scheme A rank 3 → Scheme D rank 3  (+0)
+  nm-deming                            Scheme A rank 5 → Scheme D rank 6  (-1)
+
+Cities entering top 5 under D that were not in top 5 under A:
+  nm-red-river: A rank 8 → D rank 4
