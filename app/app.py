@@ -11,9 +11,12 @@ Deployed:      honors PORT and binds 0.0.0.0 (see app/run.sh / .streamlit).
 
 from __future__ import annotations
 
+import hmac
 import os
 import re
 import sys
+import time
+import uuid
 from pathlib import Path
 
 # Streamlit executes this file as a top-level script; ensure sibling modules
@@ -61,19 +64,34 @@ def _password_gate() -> bool:
     if st.session_state.get("authed"):
         return True
 
+    attempts = st.session_state.get("login_attempts", 0)
+    if attempts >= 10:
+        st.error("Too many failed attempts. Close and reopen the app.")
+        st.stop()
+
     st.title("CLIP")
     st.caption("Charter Intel Platform")
     pw = st.text_input("Password", type="password")
     if st.button("Enter"):
-        if pw == expected:
+        if hmac.compare_digest(pw.encode(), expected.encode()):
+            st.session_state["login_attempts"] = 0
             st.session_state["authed"] = True
             st.rerun()
         else:
+            attempts += 1
+            st.session_state["login_attempts"] = attempts
+            time.sleep(min(attempts, 5))
             st.error("Incorrect password.")
     st.stop()
 
 
 _password_gate()
+
+
+# ── Per-session rate-limit token (resets on refresh/new tab) + startup cleanup ─
+if "session_token" not in st.session_state:
+    st.session_state["session_token"] = uuid.uuid4().hex
+    rate_limit.cleanup_sessions(config.RUNS_DIR)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -143,12 +161,6 @@ def view_new_scan() -> None:
         no_cache = st.toggle("Skip cache (--no-cache)")
         force_refresh = st.toggle("Force refresh (--force-refresh)")
 
-        extra_args = st.text_input(
-            "Extra args (appended verbatim)",
-            placeholder="--stages s5,s6,s7",
-            help="Anything not covered above, e.g. --stages, --record, --interactive.",
-        )
-
     # ── Dry run (prominent, directly above the Run Scan button) ─────────────
     st.markdown(
         """
@@ -171,10 +183,10 @@ def view_new_scan() -> None:
         "preset": preset, "mode": mode,
         "all": run_all, "dry_run": dry_run, "mock": mock, "batch": batch,
         "no_cache": no_cache, "force_refresh": force_refresh,
-        "extra_args": extra_args,
     }
     exempt = rate_limit.is_exempt(form)
-    session_count = st.session_state.get("scan_job_count", 0)
+    token = st.session_state["session_token"]
+    session_count = rate_limit.get_session_count(config.RUNS_DIR, token)
     status = rate_limit.get_rate_limit_status(config.RUNS_DIR, session_count)
 
     st.caption(
@@ -203,7 +215,7 @@ def view_new_scan() -> None:
         preview = runner.build_command(form)
         run_id = runner.launch_run(form)
         if not exempt:
-            st.session_state["scan_job_count"] = session_count + 1
+            rate_limit.record_job(config.RUNS_DIR, token, rate_limit.get_job_weight(form))
         st.session_state["active_run_id"] = run_id
         st.session_state["nav"] = "Live Run"
         st.success(f"Launched run `{run_id}`")

@@ -212,10 +212,16 @@ def call_claude(
 # JSON PARSING
 # ─────────────────────────────────────────────
 
-def _parse_json_response(text: str) -> tuple[Optional[dict], Optional[str]]:
+def _parse_json_response(
+    text: str, schema: Optional[dict] = None
+) -> tuple[Optional[dict], Optional[str]]:
     """
     Parse JSON from model output. Handles markdown fencing and trailing artifacts.
     Returns (parsed_dict_or_None, error_message_or_None).
+
+    If `schema` is provided, the parsed dict is validated against it. Validation
+    failures are logged as warnings and do NOT block (parsed dict is still
+    returned) — this is infrastructure for future enforcement.
     """
     cleaned = text.strip()
 
@@ -229,13 +235,13 @@ def _parse_json_response(text: str) -> tuple[Optional[dict], Optional[str]]:
             cleaned = cleaned[:-3].rstrip()
 
     try:
-        return json.loads(cleaned), None
+        return _validate_parsed(json.loads(cleaned), schema), None
     except json.JSONDecodeError as e:
         # Attempt to extract JSON object if there's surrounding text
         try:
             start = cleaned.index("{")
             end = cleaned.rindex("}") + 1
-            return json.loads(cleaned[start:end]), None
+            return _validate_parsed(json.loads(cleaned[start:end]), schema), None
         except (ValueError, json.JSONDecodeError):
             position = f"line {e.lineno} col {e.colno} (char {e.pos})"
             preview = cleaned[:500]
@@ -243,6 +249,19 @@ def _parse_json_response(text: str) -> tuple[Optional[dict], Optional[str]]:
                 f"JSON parse failed at {position}: {e.msg}. "
                 f"Cleaned preview: {preview!r}"
             )
+
+
+def _validate_parsed(parsed: dict, schema: Optional[dict]) -> dict:
+    """Validate `parsed` against `schema` if given. Non-blocking: logs and returns."""
+    if schema is not None:
+        import jsonschema
+        try:
+            jsonschema.validate(parsed, schema)
+        except jsonschema.ValidationError as e:
+            logger.warning(f"LLM response failed schema validation: {e.message}")
+            # Do not raise — log and continue (non-blocking for now)
+            # TODO: make blocking after schema coverage is confirmed complete
+    return parsed
 
 
 # ─────────────────────────────────────────────

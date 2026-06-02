@@ -35,8 +35,8 @@ def build_command(form: dict) -> list[str]:
     """Build the python argv for main.py from submitted form inputs.
 
     `form` keys (all optional): target (str), state (str), depth (str),
-    preset (str), mode (str), booleans matching config.BOOLEAN_FLAGS keys,
-    and extra_args (str, appended verbatim).
+    preset (str), mode (str), and booleans matching config.BOOLEAN_FLAGS keys.
+    Only these allowlisted flags reach main.py — no free-text injection.
     """
     argv: list[str] = [str(config.PYTHON_BIN), str(config.MAIN_PY)]
 
@@ -60,13 +60,11 @@ def build_command(form: dict) -> list[str]:
     if mode:
         argv += ["--mode", mode]
 
+    # Allowlist enforced: only known safe flags reach main.py.
+    # Do not re-add free-text arg injection.
     for key, flag in config.BOOLEAN_FLAGS.items():
         if form.get(key):
             argv.append(flag)
-
-    extra = (form.get("extra_args") or "").strip()
-    if extra:
-        argv += shlex.split(extra)
 
     return argv
 
@@ -106,7 +104,6 @@ def launch_run(form: dict) -> str:
         "preset": form.get("preset", ""),
         "mode": form.get("mode", ""),
         **{k: bool(form.get(k)) for k in config.BOOLEAN_FLAGS},
-        "extra_args": form.get("extra_args", ""),
     }
 
     meta = {

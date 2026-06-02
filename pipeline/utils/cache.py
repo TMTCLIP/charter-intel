@@ -20,6 +20,7 @@ import json
 import os
 import glob
 import time
+from pathlib import Path
 from typing import Optional
 
 from pipeline import PipelineConfig
@@ -52,6 +53,19 @@ class CacheManager:
         self.force_refresh = config.force_refresh
         self.base = "data/cache"
 
+    def _safe_path(self, key: str) -> str:
+        """Validate a cache key and return its full path, or raise on traversal."""
+        # Keys are intentionally multi-segment relative paths (e.g.
+        # "state/nm/s2.json"), so '/' is allowed; '..' and absolute keys are not.
+        if '..' in key or key.startswith('/') or key.startswith(os.sep):
+            raise ValueError(f"Unsafe cache key: {key!r}")
+        full_path = os.path.join(self.base, key)
+        resolved = Path(full_path).resolve()
+        base = Path(self.base).resolve()
+        if not str(resolved).startswith(str(base)):
+            raise ValueError(f"Path traversal detected: {resolved}")
+        return full_path
+
     def get(self, key: str, ttl_days: Optional[int] = None) -> Optional[dict]:
         """Return cached value for key, or None if not found / disabled / expired.
 
@@ -64,7 +78,7 @@ class CacheManager:
         """
         if not self.enabled or self.force_refresh:
             return None
-        path = os.path.join(self.base, key)
+        path = self._safe_path(key)
         if not os.path.exists(path):
             return None
         if ttl_days is not None:
@@ -81,7 +95,7 @@ class CacheManager:
         """Write value to cache at key."""
         if not self.enabled:
             return
-        path = os.path.join(self.base, key)
+        path = self._safe_path(key)
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, "w") as f:
             json.dump(value, f, indent=2)

@@ -88,7 +88,7 @@ def run(
     # Shared Jinja environment
     env = Environment(
         loader=FileSystemLoader("templates"),
-        autoescape=select_autoescape([])
+        autoescape=select_autoescape(default=True, default_for_string=True)
     )
 
     out_dir = f"outputs/by_community/{community_id}"
@@ -430,7 +430,7 @@ def render_scan_table(
 
     env = Environment(
         loader=FileSystemLoader("templates"),
-        autoescape=select_autoescape([])
+        autoescape=select_autoescape(default=True, default_for_string=True)
     )
 
     date_str = datetime.date.today().strftime("%Y%m%d")

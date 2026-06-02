@@ -5,7 +5,8 @@ Protects API credits without blocking legitimate statewide scans. Three layers:
   1. Daily estimated cost cap (primary — directly protects spend)
   2. Daily weighted job limit
   3. Per-session job limit
-Dry-run / mock scans are exempt (zero API cost). Statewide (--all) scans weigh 3.
+Dry-run / mock scans are exempt (zero API cost). Statewide (--all) scans weigh
+the number of communities they cover (derived from states.yaml).
 
 No pipeline imports, no external deps. Reads only meta.json files written by
 runner.py. Malformed / missing meta.json is skipped silently (graceful).
@@ -15,10 +16,19 @@ from __future__ import annotations
 
 import datetime as _dt
 import json
+import logging
 import math
 from pathlib import Path
 
+import yaml
+
 import config
+
+logger = logging.getLogger(__name__)
+
+# Conservative weight used when the statewide community count cannot be
+# determined from states.yaml (state missing, file unreadable, empty list).
+_STATEWIDE_FALLBACK_WEIGHT = 20
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -31,9 +41,140 @@ def is_exempt(flags: dict) -> bool:
 
 
 def get_job_weight(flags: dict) -> int:
-    """3 for a statewide (--all) scan, 1 for a single city."""
+    """Weight of a job: 1 for a single city, the statewide community count for --all.
+
+    A statewide (--all) scan runs every community in the state, so its cost must
+    reflect that count rather than a flat constant (otherwise the daily cost cap
+    is undercounted). The count is derived from states.yaml; if it cannot be
+    determined, fall back to a conservative weight.
+    """
     flags = flags or {}
-    return config.RATE_LIMIT_STATEWIDE_WEIGHT if flags.get("all") else 1
+    if not flags.get("all"):
+        return 1
+    return _statewide_weight(flags.get("state", ""))
+
+
+def _statewide_weight(state: str) -> int:
+    """Number of communities a --all scan covers for `state`, per states.yaml.
+
+    states.yaml has no explicit community list; the authoritative per-community
+    mapping is `nces_district_map`. We count its entries minus any in
+    `excluded_communities`. Returns _STATEWIDE_FALLBACK_WEIGHT (with a warning)
+    if the state is missing or the file is unreadable.
+    """
+    try:
+        states_path = config.REPO_ROOT / "config" / "states.yaml"
+        cfg = yaml.safe_load(states_path.read_text())
+        state_cfg = (cfg or {}).get((state or "").upper())
+        if not isinstance(state_cfg, dict):
+            logger.warning(
+                "states.yaml has no entry for state %r; using fallback weight %d",
+                state, _STATEWIDE_FALLBACK_WEIGHT,
+            )
+            return _STATEWIDE_FALLBACK_WEIGHT
+        communities = set((state_cfg.get("nces_district_map") or {}).keys())
+        excluded = set(state_cfg.get("excluded_communities") or [])
+        count = len(communities - excluded)
+        return max(1, count) if count else _STATEWIDE_FALLBACK_WEIGHT
+    except (OSError, yaml.YAMLError) as e:
+        logger.warning(
+            "Could not read states.yaml (%s); using fallback weight %d",
+            e, _STATEWIDE_FALLBACK_WEIGHT,
+        )
+        return _STATEWIDE_FALLBACK_WEIGHT
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Filesystem-backed per-session counter
+#
+# Each browser session gets a uuid token (held in st.session_state) and a
+# {token}.json file under runs/.rate_limit/. A refresh/new tab mints a new token
+# → a fresh per-session counter (preserves prior UX), but the global daily cap
+# below sums every session file from today, so refresh cannot bypass the day cap.
+# ─────────────────────────────────────────────────────────────────────────────
+_RATE_LIMIT_SUBDIR = ".rate_limit"
+_SESSION_RETENTION_HOURS = 48
+
+
+def _rate_limit_dir(runs_dir: Path) -> Path:
+    return Path(runs_dir) / _RATE_LIMIT_SUBDIR
+
+
+def _session_file(runs_dir: Path, token: str) -> Path:
+    return _rate_limit_dir(runs_dir) / f"{token}.json"
+
+
+def cleanup_sessions(runs_dir: Path) -> None:
+    """Delete session counter files older than 48h. Best-effort, never raises."""
+    d = _rate_limit_dir(runs_dir)
+    if not d.exists():
+        return
+    cutoff = _dt.datetime.now().astimezone() - _dt.timedelta(hours=_SESSION_RETENTION_HOURS)
+    for f in d.glob("*.json"):
+        started = None
+        try:
+            started = _parse_dt(json.loads(f.read_text()).get("started"))
+        except (OSError, json.JSONDecodeError, ValueError, AttributeError):
+            pass
+        if started is None:
+            try:
+                started = _dt.datetime.fromtimestamp(f.stat().st_mtime).astimezone()
+            except OSError:
+                continue
+        if started < cutoff:
+            try:
+                f.unlink()
+            except OSError:
+                pass
+
+
+def get_session_count(runs_dir: Path, token: str) -> int:
+    """Jobs recorded for this session token (0 if missing / unreadable)."""
+    try:
+        data = json.loads(_session_file(runs_dir, token).read_text())
+        return int(data.get("jobs", 0))
+    except (OSError, json.JSONDecodeError, ValueError, TypeError, AttributeError):
+        return 0
+
+
+def record_job(runs_dir: Path, token: str, weight: int) -> None:
+    """Increment this session's job + cost_weight counters on disk."""
+    path = _session_file(runs_dir, token)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        data = json.loads(path.read_text())
+        if not isinstance(data, dict):
+            data = {}
+    except (OSError, json.JSONDecodeError, ValueError):
+        data = {}
+    data["jobs"] = int(data.get("jobs", 0)) + 1
+    data["cost_weight"] = int(data.get("cost_weight", 0)) + int(weight)
+    data.setdefault("started", _dt.datetime.now().astimezone().isoformat())
+    path.write_text(json.dumps(data))
+
+
+def check_global_daily_cap(runs_dir: Path) -> tuple[bool, str]:
+    """Block if total jobs across all session files started today exceed the cap.
+
+    Uses RATE_LIMIT_DAILY_MAX as the threshold (the patch named a
+    RATE_LIMIT_DAILY_JOBS constant that does not exist in config).
+    """
+    d = _rate_limit_dir(runs_dir)
+    if not d.exists():
+        return True, ""
+    today = _dt.date.today()
+    total = 0
+    for f in d.glob("*.json"):
+        try:
+            data = json.loads(f.read_text())
+            started = _parse_dt(data.get("started"))
+        except (OSError, json.JSONDecodeError, ValueError, AttributeError):
+            continue
+        if started is not None and started.date() == today:
+            total += int(data.get("jobs", 0))
+    if total > config.RATE_LIMIT_DAILY_MAX:
+        return False, "Daily scan limit reached across all sessions."
+    return True, ""
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -76,14 +217,17 @@ def check_cost_cap(runs_dir: Path) -> tuple[bool, str, float]:
 
 
 def get_rate_limit_status(runs_dir: Path, session_count: int) -> dict:
-    """Summary for display. Block reason priority: cost cap > daily jobs > session."""
+    """Summary for display. Block priority: cost cap > global daily > daily jobs > session."""
     s_ok, s_msg = check_session_limit(session_count)
     d_ok, d_msg, daily_used = check_daily_limit(runs_dir)
     c_ok, c_msg, spend = check_cost_cap(runs_dir)
+    g_ok, g_msg = check_global_daily_cap(runs_dir)
 
     block_reason = None
     if not c_ok:
         block_reason = c_msg
+    elif not g_ok:
+        block_reason = g_msg
     elif not d_ok:
         block_reason = d_msg
     elif not s_ok:
@@ -96,7 +240,7 @@ def get_rate_limit_status(runs_dir: Path, session_count: int) -> dict:
         "daily_max": config.RATE_LIMIT_DAILY_MAX,
         "estimated_spend": spend,
         "cost_cap": config.RATE_LIMIT_DAILY_COST_CAP,
-        "is_blocked": not (s_ok and d_ok and c_ok),
+        "is_blocked": not (s_ok and d_ok and c_ok and g_ok),
         "block_reason": block_reason,
     }
 

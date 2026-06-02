@@ -186,6 +186,7 @@ def build_community_id(city_slug: str, state: str) -> str:
     normalized = unicodedata.normalize("NFKD", city_slug)
     ascii_slug = normalized.encode("ascii", "ignore").decode("ascii")
     slug = ascii_slug.lower().replace(" ", "-").replace(",", "")
+    slug = slug.replace("/", "").replace(".", "")
     return f"{state.lower()}-{slug}"
 
 
