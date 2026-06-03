@@ -85,6 +85,7 @@ def call_claude(
     retry_delay_seconds: float = 5.0,
     use_web_search: bool = False,
     web_search_max_uses: int = 5,
+    timeout_seconds: float = 300.0,
 ) -> APIResult:
     """
     Call Claude and return an APIResult.
@@ -107,11 +108,14 @@ def call_claude(
         web_search_max_uses: Maximum searches the model may issue per call.
                          Only applies when use_web_search=True.
                          Depth routing: standard=4/6, deep=8/10 (per-call caps).
+        timeout_seconds: Hard wall-clock timeout per API call (default 300s / 5 min).
+                         The SDK default is 600s; without this a stuck web-search
+                         call hangs the entire pipeline for 10 minutes.
 
     Returns:
         APIResult. Check result.ok before using output.
     """
-    client = anthropic.Anthropic()  # Reads ANTHROPIC_API_KEY from environment
+    client = anthropic.Anthropic(timeout=timeout_seconds)  # hard per-call ceiling
 
     last_error = None
     delay = retry_delay_seconds          # 5xx backoff: 5s → 10s → 20s
@@ -177,6 +181,15 @@ def call_claude(
                 parse_error=parse_error,
                 raw_response=response
             )
+
+        except anthropic.APITimeoutError as e:
+            last_error = e
+            logger.warning(
+                f"[{stage}] Timeout after {timeout_seconds}s on attempt "
+                f"{attempt + 1}/{retry_attempts}. Retrying..."
+            )
+            time.sleep(delay)
+            delay *= 2
 
         except anthropic.RateLimitError as e:
             last_error = e
