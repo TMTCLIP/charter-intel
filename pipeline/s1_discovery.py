@@ -130,6 +130,13 @@ def run(
     if config.cache_enabled and not config.force_refresh:
         cached = cache.get(cache_key)
         if cached:
+            # Always re-write community_list.json from cache — data/processed/ is
+            # ephemeral (not on the Railway volume) and is lost on container restart.
+            # Without this, S3 finds no file → known_schools=[] → num_charter_schools=0.
+            out_path = _output_path(state)
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            with open(out_path, "w") as f:
+                json.dump(cached, f, indent=2)
             return StageResult(
                 stage_id=STAGE_ID, community_id="ALL", state=state,
                 status=StageStatus.SUCCESS, output_data=cached,
