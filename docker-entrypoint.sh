@@ -51,6 +51,7 @@ if [ -d "$SEEDED_SRC" ]; then
     state=$(basename "$state_dir")
     mkdir -p "${SEEDED_DST}/${state}"
     for f in "$state_dir"*; do
+      [ -f "$f" ] || continue           # skip subdirectories (e.g. processed/)
       fname=$(basename "$f")
       dst_file="${SEEDED_DST}/${state}/${fname}"
       if [ ! -f "$dst_file" ]; then
@@ -64,21 +65,12 @@ fi
 # Seed derived files (parquet cache etc.) to container-local paths.
 # data/processed/ is not on the volume, so this re-seeds on every container
 # start from the image copy — fast (462 KB) and idempotent.
-PROCESSED_SEED="${APP_DIR}/data/seeded/processed"
-if [ -d "$PROCESSED_SEED" ]; then
-  echo "[entrypoint] seeding processed data files..."
-  for state_dir in "$PROCESSED_SEED"/*/; do
-    state=$(basename "$state_dir")
-    mkdir -p "${APP_DIR}/data/processed/${state}"
-    for f in "$state_dir"*; do
-      fname=$(basename "$f")
-      dst="${APP_DIR}/data/processed/${state}/${fname}"
-      if [ ! -f "$dst" ]; then
-        cp "$f" "$dst"
-        echo "[entrypoint] seeded processed: ${state}/${fname}"
-      fi
-    done
-  done
+mkdir -p "${APP_DIR}/data/processed/nm"
+_pq_src="${APP_DIR}/data/seeded/processed/nm/nces_membership_nm.parquet"
+_pq_dst="${APP_DIR}/data/processed/nm/nces_membership_nm.parquet"
+if [ ! -f "$_pq_dst" ]; then
+  cp "$_pq_src" "$_pq_dst"
+  echo "[entrypoint] seeded processed: nm/nces_membership_nm.parquet"
 fi
 
 if [ "${CLIP_UI}" = "flask" ]; then
