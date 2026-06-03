@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
+import json
 import pytest
 
 # Make app/ui importable
@@ -203,6 +204,76 @@ def test_community_scan_depth_still_enforced(client):
         "target": "nm-albuquerque", "mode": "community", "depth": "turbo"
     })
     assert resp.status_code == 400
+
+
+# ── _write_zip_run + /api/brief + /api/runs for zip runs ───────────────────
+
+def test_write_zip_run_creates_meta(tmp_path):
+    import server as srv
+    orig = srv.RUNS_DIR
+    srv.RUNS_DIR = tmp_path
+    try:
+        srv._write_zip_run("nm-santa-fe", "Santa Fe", "NM", use_v2=False)
+        meta = json.loads((tmp_path / "zip-nm-santa-fe" / "meta.json").read_text())
+        assert meta["run_id"] == "zip-nm-santa-fe"
+        assert meta["flags"]["mode"] == "zip"
+        assert meta["flags"]["city_name"] == "Santa Fe"
+        assert meta["flags"]["zip_version"] == "v1"
+        status = json.loads((tmp_path / "zip-nm-santa-fe" / "status.json").read_text())
+        assert status["state"] == "done"
+    finally:
+        srv.RUNS_DIR = orig
+
+
+def test_api_brief_zip_run_uses_zip_path(client, tmp_path):
+    import server as srv
+    # Write a zip run entry
+    orig = srv.RUNS_DIR
+    srv.RUNS_DIR = tmp_path
+    try:
+        srv._write_zip_run("nm-santa-fe", "Santa Fe", "NM", use_v2=False)
+        # Fake a zip drill output file so _find_zip_drill_path finds it
+        zip_dir = tmp_path / "zip_out" / "santa-fe"
+        zip_dir.mkdir(parents=True)
+        drill_file = zip_dir / "santa-fe_zip_drill.html"
+        drill_file.write_text("<html><title>ZIP DRILL</title></html>")
+        orig_zip = srv.ZIP_OUTPUTS_DIR
+        srv.ZIP_OUTPUTS_DIR = tmp_path / "zip_out"
+        try:
+            resp = client.get("/api/brief?run_id=zip-nm-santa-fe")
+            assert resp.status_code == 200
+            assert b"ZIP DRILL" in resp.data
+        finally:
+            srv.ZIP_OUTPUTS_DIR = orig_zip
+    finally:
+        srv.RUNS_DIR = orig
+
+
+def test_api_brief_community_run_unaffected(client, tmp_path):
+    """mode=2 runs still use _find_brief_path."""
+    import server as srv
+    orig = srv.RUNS_DIR
+    srv.RUNS_DIR = tmp_path
+    try:
+        # Write a community run entry
+        run_dir = tmp_path / "scan-nm-questa-001"
+        run_dir.mkdir()
+        meta = {
+            "run_id": "scan-nm-questa-001",
+            "target": "nm-questa",
+            "flags": {"mode": "2", "preset": "growth"},
+        }
+        (run_dir / "meta.json").write_text(json.dumps(meta))
+        # No brief on disk → should 404
+        orig_comm = srv.BY_COMMUNITY_DIR
+        srv.BY_COMMUNITY_DIR = tmp_path / "by_community"
+        try:
+            resp = client.get("/api/brief?run_id=scan-nm-questa-001")
+            assert resp.status_code == 404
+        finally:
+            srv.BY_COMMUNITY_DIR = orig_comm
+    finally:
+        srv.RUNS_DIR = orig
 
 
 # ── Helper: _city_name_from_slug ────────────────────────────────────────────

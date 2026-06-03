@@ -186,6 +186,13 @@ def run_zip_drill_background(job_id: str, city_name: str, state: str, use_v2: bo
             out = _find_zip_drill_path(city_name)
             _update_job(job_id, status="complete", finished_at=_iso_now(),
                         brief_path=str(out) if out else None)
+            job_snapshot = _get_job(job_id)
+            _write_zip_run(
+                community_id=job_snapshot["community_id"],
+                city_name=city_name,
+                state=state,
+                use_v2=use_v2,
+            )
         else:
             _update_job(job_id, status="failed", finished_at=_iso_now(),
                         error="\n".join(tail[-10:]))
@@ -252,6 +259,26 @@ def _city_name_from_slug(community_id: str) -> str:
     """'nm-santa-fe' → 'Santa Fe'. Strips the two-letter state prefix."""
     parts = community_id.split("-")
     return " ".join(parts[1:]).title() if len(parts) >= 2 else community_id.title()
+
+
+def _write_zip_run(community_id: str, city_name: str, state: str, use_v2: bool) -> None:
+    """Persist a minimal run record so the brief sidebar can load zip drill results."""
+    run_id = f"zip-{community_id}"
+    run_dir = RUNS_DIR / run_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+    meta = {
+        "run_id": run_id,
+        "target": community_id,
+        "flags": {
+            "mode": "zip",
+            "city_name": city_name,
+            "state": state,
+            "zip_version": "v2" if use_v2 else "v1",
+        },
+        "start_time": _iso_now(),
+    }
+    (run_dir / "meta.json").write_text(json.dumps(meta, indent=2))
+    (run_dir / "status.json").write_text(json.dumps({"state": "done", "exit_code": 0}))
 
 
 def _find_zip_drill_path(city_name: str) -> Path | None:
@@ -394,7 +421,11 @@ def runs():
         mode = (flags.get("mode") or "2").strip()
         run_id = meta.get("run_id", run_dir.name)
 
-        has_brief = _find_brief_path(target, preset, mode) is not None
+        if mode == "zip":
+            city_name = flags.get("city_name") or _city_name_from_slug(target)
+            has_brief = _find_zip_drill_path(city_name) is not None
+        else:
+            has_brief = _find_brief_path(target, preset, mode) is not None
 
         status_file = run_dir / "status.json"
         try:
@@ -446,7 +477,12 @@ def brief():
     preset = (flags.get("preset") or "growth").strip()
     mode = (flags.get("mode") or "2").strip()
 
-    brief_path = _find_brief_path(target, preset, mode)
+    if mode == "zip":
+        city_name = flags.get("city_name") or _city_name_from_slug(target)
+        brief_path = _find_zip_drill_path(city_name)
+    else:
+        brief_path = _find_brief_path(target, preset, mode)
+
     if not brief_path:
         return "Brief not found", 404
 
