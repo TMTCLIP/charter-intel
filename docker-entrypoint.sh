@@ -40,6 +40,7 @@ link_persistent "${DATA_DIR}/runs"       "${APP_DIR}/app/runs"
 link_persistent "${DATA_DIR}/outputs"    "${APP_DIR}/outputs"
 link_persistent "${DATA_DIR}/data_cache" "${APP_DIR}/data/cache"
 link_persistent "${DATA_DIR}/data_raw"   "${APP_DIR}/data/raw"
+link_persistent "${DATA_DIR}/data_logs"  "${APP_DIR}/data/logs"
 
 # Seed static NM data files from the image to the volume on first deploy.
 # Idempotent: skips any file already present on the volume (never overwrites).

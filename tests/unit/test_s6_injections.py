@@ -25,6 +25,8 @@ from pipeline.s6_synthesis import (
     _inject_recommendation_gate,
     _inject_teacher_supply_warning,
     _inject_tribal_jurisdiction_flag,
+    _truncate_to_schema_limits,
+    _cap_str,
 )
 
 pytestmark = pytest.mark.unit
@@ -120,3 +122,104 @@ class TestTeacherSupplyWarning:
         out = _inject_teacher_supply_warning({}, "NM", "nm-questa")
         assert isinstance(out["needs_verification"], list)
         assert len(out["needs_verification"]) == 1
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Schema length cap — _cap_str and _truncate_to_schema_limits
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestSchemaLengthCap:
+    def test_cap_str_short_string_unchanged(self):
+        notices = []
+        result = _cap_str("hello", 10, "field", notices)
+        assert result == "hello"
+        assert notices == []
+
+    def test_cap_str_exact_limit_unchanged(self):
+        notices = []
+        s = "a" * 200
+        result = _cap_str(s, 200, "field", notices)
+        assert result == s
+        assert notices == []
+
+    def test_cap_str_over_limit_truncates_to_max_len(self):
+        notices = []
+        s = "word " * 60  # 300 chars, limit 200
+        result = _cap_str(s, 200, "field", notices)
+        assert len(result) <= 200
+        assert result.endswith("…")
+        assert len(notices) == 1
+
+    def test_cap_str_truncates_at_word_boundary(self):
+        notices = []
+        s = "alpha beta gamma " * 20  # well over limit
+        result = _cap_str(s, 50, "field", notices)
+        assert result.endswith("…")
+        assert len(result) <= 50
+        # The body before the ellipsis must be a prefix of the original
+        body = result[:-1]
+        assert s.startswith(body)
+
+    def test_cap_str_non_string_passthrough(self):
+        notices = []
+        result = _cap_str(None, 100, "field", notices)
+        assert result is None
+        assert notices == []
+
+    def test_truncate_executive_snapshot_over_limit(self):
+        long_snapshot = "Charter schools in this community " * 20  # >> 600
+        brief = {"executive_snapshot": long_snapshot}
+        out, notices = _truncate_to_schema_limits(brief)
+        assert len(out["executive_snapshot"]) <= 600
+        assert out["executive_snapshot"].endswith("…")
+        assert any("executive_snapshot" in n for n in notices)
+
+    def test_truncate_recommendation_rationale(self):
+        long_rationale = "Evidence suggests strong growth potential " * 12  # >> 400
+        brief = {
+            "recommendations": [
+                {"action": "Act now", "rationale": long_rationale, "confidence": "HIGH", "supporting_fact_ids": []}
+            ]
+        }
+        out, notices = _truncate_to_schema_limits(brief)
+        assert len(out["recommendations"][0]["rationale"]) <= 400
+        assert any("rationale" in n for n in notices)
+
+    def test_truncate_driver_in_top_drivers(self):
+        long_driver = "Strong demographic momentum driven by population growth " * 5  # >> 200
+        brief = {
+            "scorecard_summary": {
+                "top_drivers": [{"dimension": "growth", "score": 7.5, "driver": long_driver}]
+            }
+        }
+        out, notices = _truncate_to_schema_limits(brief)
+        assert len(out["scorecard_summary"]["top_drivers"][0]["driver"]) <= 200
+        assert any("top_drivers" in n for n in notices)
+
+    def test_truncate_quick_reads_section(self):
+        long_text = "Facilities landscape is complex with many competing interests " * 6  # >> 300
+        brief = {"quick_reads": {"facilities": long_text, "political": "short"}}
+        out, notices = _truncate_to_schema_limits(brief)
+        assert len(out["quick_reads"]["facilities"]) <= 300
+        assert out["quick_reads"]["political"] == "short"
+
+    def test_truncate_schools_to_watch_reason(self):
+        long_reason = "This school has demonstrated consistently high performance " * 5  # >> 200
+        brief = {
+            "schools_to_watch": [
+                {"school_name": "ABC Charter", "flag_type": "HIGH_PERFORMER", "reason": long_reason}
+            ]
+        }
+        out, notices = _truncate_to_schema_limits(brief)
+        assert len(out["schools_to_watch"][0]["reason"]) <= 200
+
+    def test_truncate_no_changes_when_all_within_limits(self):
+        brief = {
+            "executive_snapshot": "Short snapshot.",
+            "recommendations": [
+                {"action": "Do something", "rationale": "Because reasons.", "confidence": "LOW", "supporting_fact_ids": []}
+            ],
+        }
+        out, notices = _truncate_to_schema_limits(brief)
+        assert notices == []
+        assert out["executive_snapshot"] == "Short snapshot."

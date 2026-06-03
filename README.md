@@ -403,3 +403,28 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Extend `config/nmped_shortage_areas.yaml` with full NMPED hard-to-staff district list
 - [ ] Calibrate scoring weights (blocked until operator-profile conversation with The Mind Trust)
 - [ ] Re-run Questa scan to rebuild cleared cache (smoke-test of `--refresh-data` cleared it)
+
+---
+
+### Session 34 — 2026-06-03 (5b4ceaa)
+
+**Accomplished:**
+- Added `link_persistent "${DATA_DIR}/data_logs" "${APP_DIR}/data/logs"` to `docker-entrypoint.sh` — token logs now survive container restarts on the Railway volume (same pattern as `data/raw/` and `data/cache/`)
+- Added `tests/unit/test_token_logger.py` (2 tests) verifying `finalize()` writes to `data/logs/` and that stage/community appear in the CSV
+- Added `_truncate_to_schema_limits()` and `_cap_str()` to `s6_synthesis.py`; called before `validate_against_schema` — caps all 10 `maxLength` fields in `brief.schema.json` at word boundaries with ellipsis, eliminating recurring schema length warnings from the statewide sweep
+- Added 11 new length-cap tests to `tests/unit/test_s6_injections.py`
+- Wired ZIP drill end-to-end into Flask UI: `server.py` gains `run_zip_drill_background`, `_city_name_from_slug`, `_find_zip_drill_path`, and a `mode=="zip"` branch in `/api/scan`; result endpoint is zip-aware; `index.html` adds a ZIP Version select in advanced settings; `app.js` hides depth/mode-num for ZIP mode, forces Single City scope, sends `zip_version` in POST body
+- Added 10 new zip-drill route tests to `tests/unit/test_scan_api.py`; total test count 337 → 360
+
+**Decisions:**
+- Zip drill skips cost-cap rate limit (no Claude API calls) but uses the same job-polling and HTML-iframe result pattern as community scans — no JS protocol changes needed
+- `_truncate_to_schema_limits()` runs pre-validation so length violations become silent caps + `"Schema length cap: …"` warnings, never validation errors that halt the pipeline
+- ZIP v2 (geospatial) requires pre-downloaded ZCTA shapefile + `TRANSITLAND_API_KEY`; UI defaults to v1 with v2 selectable in advanced settings to avoid surprises on Railway
+- `_city_name_from_slug("nm-santa-fe")` → `"Santa Fe"` — strips two-letter state prefix, title-cases the rest
+
+**Next Steps:**
+- [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data to activate S4 Pass E resolution
+- [ ] Extend `config/nmped_shortage_areas.yaml` with full NMPED hard-to-staff district list
+- [ ] Calibrate scoring weights (blocked until operator-profile conversation with The Mind Trust)
+- [ ] Fix pre-existing `TODO: replace with server-side auth` in `app/ui/static/js/app.js:6`
+- [ ] Run a live zip drill (v1) against Albuquerque to smoke-test the full UI wiring in the Flask environment

@@ -538,6 +538,30 @@ function setupScanPanel() {
           scopeNote.classList.add("hidden");
         }
       }
+
+      // Mode toggle: show/hide depth + mode-num (community only); zip-version (zip only)
+      if (group === "mode") {
+        const isZip = btn.getAttribute("data-value") === "zip";
+        const depthGroup   = document.getElementById("depth-field-group");
+        const modeNumRow   = document.getElementById("mode-num-row");
+        const zipVersionRow = document.getElementById("zip-version-row");
+        if (depthGroup)    depthGroup.classList.toggle("hidden", isZip);
+        if (modeNumRow)    modeNumRow.style.display    = isZip ? "none" : "";
+        if (zipVersionRow) zipVersionRow.style.display = isZip ? ""     : "none";
+
+        // ZIP drill is city-only — force Single City and disable the Entire State button
+        const stateScopeBtn = document.querySelector('.toggle-btn[data-group="scope"][data-value="state"]');
+        const cityScopeBtn  = document.querySelector('.toggle-btn[data-group="scope"][data-value="city"]');
+        if (isZip) {
+          if (stateScopeBtn) stateScopeBtn.disabled = true;
+          // If Entire State was selected, switch back to Single City
+          if (stateScopeBtn?.classList.contains("selected")) {
+            cityScopeBtn?.click();
+          }
+        } else {
+          if (stateScopeBtn) stateScopeBtn.disabled = false;
+        }
+      }
     });
   });
 
@@ -580,8 +604,9 @@ async function submitScan() {
   const noCache = document.getElementById("flag-no-cache").checked;
   const forceRefresh = document.getElementById("flag-force-refresh").checked;
   const batch   = document.getElementById("flag-batch").checked;
-  const preset  = document.getElementById("adv-preset").value;
-  const modeNum = document.getElementById("adv-mode-num").value;
+  const preset      = document.getElementById("adv-preset").value;
+  const modeNum     = document.getElementById("adv-mode-num").value;
+  const zipVersion  = document.getElementById("adv-zip-version")?.value || "v1";
 
   if (!isStateWide && !city) {
     showToast("Please select a city.", "error");
@@ -596,6 +621,7 @@ async function submitScan() {
     dry_run: dryRun, mock, no_cache: noCache,
     force_refresh: forceRefresh, batch,
     preset, mode_num: modeNum,
+    zip_version: zipVersion,
   };
 
   const btn = document.getElementById("btn-run-scan");

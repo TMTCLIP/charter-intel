@@ -35,6 +35,7 @@ BASE_DIR = Path(__file__).parent.parent.parent
 RUNS_DIR = BASE_DIR / "app" / "runs"
 OUTPUTS_DIR = BASE_DIR / "outputs"
 BY_COMMUNITY_DIR = OUTPUTS_DIR / "by_community"
+ZIP_OUTPUTS_DIR = OUTPUTS_DIR / "zip"
 CONFIG_FILE = BASE_DIR / "config" / "states.yaml"
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
@@ -147,6 +148,52 @@ def run_scan_background(
         _update_job(job_id, status="failed", finished_at=_iso_now(), error=str(exc))
 
 
+# ── Background zip drill runner ─────────────────────────────────────────────
+
+def run_zip_drill_background(job_id: str, city_name: str, state: str, use_v2: bool) -> None:
+    _update_job(job_id, status="running", started_at=_iso_now())
+    mode_flag = "zip_v2" if use_v2 else "zip"
+    cmd = [str(app_config.PYTHON_BIN), str(app_config.MAIN_PY),
+           city_name, "--mode", mode_flag, "--state", state]
+
+    try:
+        proc = subprocess.Popen(
+            cmd,
+            cwd=str(app_config.REPO_ROOT),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            env=app_config.subprocess_env(),
+            text=True,
+            bufsize=1,
+        )
+
+        tail: list[str] = []
+        while True:
+            raw = proc.stdout.readline()
+            if not raw:
+                break
+            line = raw.rstrip()
+            if not line:
+                continue
+            _append_stage_log(job_id, line)
+            tail.append(line)
+            if len(tail) > 30:
+                tail.pop(0)
+
+        proc.wait()
+
+        if proc.returncode == 0:
+            out = _find_zip_drill_path(city_name)
+            _update_job(job_id, status="complete", finished_at=_iso_now(),
+                        brief_path=str(out) if out else None)
+        else:
+            _update_job(job_id, status="failed", finished_at=_iso_now(),
+                        error="\n".join(tail[-10:]))
+
+    except Exception as exc:
+        _update_job(job_id, status="failed", finished_at=_iso_now(), error=str(exc))
+
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -199,6 +246,22 @@ def _parse_slug(run_id: str) -> dict:
     except Exception:
         pass
     return {"state_code": "", "city_display": run_id}
+
+
+def _city_name_from_slug(community_id: str) -> str:
+    """'nm-santa-fe' → 'Santa Fe'. Strips the two-letter state prefix."""
+    parts = community_id.split("-")
+    return " ".join(parts[1:]).title() if len(parts) >= 2 else community_id.title()
+
+
+def _find_zip_drill_path(city_name: str) -> Path | None:
+    """Locate the zip drill HTML output for a city. Prefers v2 over v1."""
+    city_slug = re.sub(r"[^a-z0-9]+", "-", city_name.lower()).strip("-")
+    for fname in (f"{city_slug}_zip_drill_v2.html", f"{city_slug}_zip_drill.html"):
+        p = ZIP_OUTPUTS_DIR / city_slug / fname
+        if p.exists():
+            return p
+    return None
 
 
 def _find_brief_path(target: str, preset: str, mode: str) -> Path | None:
@@ -395,12 +458,44 @@ def scan():
     body = request.get_json(silent=True) or {}
 
     community_id = (body.get("target") or "").strip()
-    depth = (body.get("depth") or "standard").strip()
+    scan_type    = (body.get("mode")  or "community").strip()  # "community" | "zip"
+    depth        = (body.get("depth") or "standard").strip()
 
     if not community_id:
         return jsonify({"error": "community_id is required"}), 400
     if not _COMMUNITY_ID_RE.match(community_id):
         return jsonify({"error": f"Invalid community_id: {community_id!r}"}), 400
+
+    # ── ZIP Drill branch — no Claude API calls so no cost-cap check ──────────
+    if scan_type == "zip":
+        state     = (body.get("state") or "NM").strip().upper()
+        use_v2    = body.get("zip_version") == "v2"
+        city_name = _city_name_from_slug(community_id)
+        job_id    = secrets.token_hex(8)
+        with _jobs_lock:
+            _jobs[job_id] = {
+                "job_id": job_id,
+                "community_id": community_id,
+                "city_name": city_name,
+                "job_type": "zip",
+                "depth": "n/a",
+                "preset": "",
+                "mode": "",
+                "status": "queued",
+                "started_at": None,
+                "finished_at": None,
+                "stage_log": [],
+                "error": None,
+                "brief_path": None,
+            }
+        threading.Thread(
+            target=run_zip_drill_background,
+            args=(job_id, city_name, state, use_v2),
+            daemon=True,
+        ).start()
+        return jsonify({"job_id": job_id, "status": "queued"})
+
+    # ── Community scan branch ────────────────────────────────────────────────
     if depth not in _DEPTH_WHITELIST:
         return jsonify({"error": f"Invalid depth: {depth!r}. Must be fast, standard, or deep"}), 400
 
@@ -423,6 +518,7 @@ def scan():
         _jobs[job_id] = {
             "job_id": job_id,
             "community_id": community_id,
+            "job_type": "community",
             "depth": depth,
             "preset": preset,
             "mode": mode,
@@ -458,11 +554,13 @@ def scan_result(job_id):
         job = _jobs.get(job_id)
         if job is None:
             return jsonify({"error": "Job not found"}), 404
-        status     = job["status"]
-        brief_path = job["brief_path"]
+        status       = job["status"]
+        brief_path   = job["brief_path"]
         community_id = job["community_id"]
-        preset     = job["preset"]
-        mode       = job["mode"]
+        preset       = job["preset"]
+        mode         = job["mode"]
+        job_type     = job.get("job_type", "community")
+        city_name    = job.get("city_name", "")
 
     if status != "complete":
         return jsonify({"error": f"Scan not complete (status: {status})"}), 409
@@ -470,7 +568,10 @@ def scan_result(job_id):
     # brief_path may be None if the file wasn't written by the time the process
     # exited — try resolving it now before giving up.
     if not brief_path:
-        p = _find_brief_path(community_id, preset or "growth", mode or "2")
+        if job_type == "zip":
+            p = _find_zip_drill_path(city_name)
+        else:
+            p = _find_brief_path(community_id, preset or "growth", mode or "2")
         if p is None:
             return jsonify({"error": "Brief not yet available"}), 404
         brief_path = str(p)

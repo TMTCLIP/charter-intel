@@ -250,7 +250,7 @@
       </div>
 
       <!-- Depth -->
-      <div class="field-group">
+      <div class="field-group" id="depth-field-group">
         <span class="field-label" id="depth-label">Depth</span>
         <div class="toggle-group" role="group" aria-labelledby="depth-label">
           <button class="toggle-btn" data-group="depth" data-value="fast" aria-pressed="false">Fast</button>
@@ -346,7 +346,7 @@
         </div>
 
         <!-- Mode number -->
-        <div class="adv-select-row">
+        <div class="adv-select-row" id="mode-num-row">
           <div class="tip-anchor">
             <label for="adv-mode-num" class="field-label">Mode Number</label>
             <button class="tip-btn" type="button" aria-label="What is Mode Number?">?</button>
@@ -359,6 +359,22 @@
           <select id="adv-mode-num" class="field-select" aria-label="Mode number">
             <option value="1">1 — Statewide Scan</option>
             <option value="2" selected>2 — Community Brief</option>
+          </select>
+        </div>
+
+        <!-- ZIP Version (shown only when ZIP Code scan type is selected) -->
+        <div class="adv-select-row" id="zip-version-row" style="display:none">
+          <div class="tip-anchor">
+            <label for="adv-zip-version" class="field-label">ZIP Version</label>
+            <button class="tip-btn" type="button" aria-label="What is ZIP Version?">?</button>
+            <span class="tip-popup" role="tooltip">
+              <strong>v1</strong> — Basic ZIP drill. Requires only a Census API key.<br><br>
+              <strong>v2</strong> — Adds geospatial neighbor context and transit data. Requires a pre-downloaded ZCTA shapefile and Transitland API key.
+            </span>
+          </div>
+          <select id="adv-zip-version" class="field-select" aria-label="ZIP drill version">
+            <option value="v1" selected>v1 — Basic</option>
+            <option value="v2">v2 — Geospatial</option>
           </select>
         </div>
 

@@ -178,6 +178,11 @@ def run(
     brief_json = _inject_tribal_jurisdiction_flag(brief_json, state, community_id)
     brief_json = _inject_teacher_supply_warning(brief_json, state, community_id)
 
+    # --- Cap over-length strings before schema validation ---
+    brief_json, cap_notices = _truncate_to_schema_limits(brief_json)
+    if cap_notices:
+        warnings.extend([f"Schema length cap: {n}" for n in cap_notices])
+
     # --- Validate schema ---
     brief_json["generated_at"] = timestamp_now()
     validation = validate_against_schema(brief_json, "schemas/brief.schema.json")
@@ -412,6 +417,62 @@ def _output_path(state: str, community_id: str, preset: str, mode: int) -> str:
 def _scan_output_path(state: str, community_id: str, preset: str) -> str:
     return (f"data/cache/synthesis/{state.lower()}/{community_id}/"
             f"s6_scan_{preset}.json")
+
+
+def _cap_str(s: str, max_len: int, field: str, notices: list[str]) -> str:
+    """Truncate s to max_len chars at a word boundary, appending '…'. Mutates notices."""
+    if not isinstance(s, str) or len(s) <= max_len:
+        return s
+    # Reserve one char for the ellipsis; find last space in that window
+    window = s[: max_len - 1]
+    boundary = window.rfind(" ")
+    truncated = window[:boundary] if boundary > max_len // 2 else window
+    notices.append(f"{field}: {len(s)} → {len(truncated) + 1} chars")
+    return truncated + "…"
+
+
+def _truncate_to_schema_limits(brief_json: dict) -> tuple[dict, list[str]]:
+    """
+    Truncate all string fields to their brief.schema.json maxLength limits,
+    at a word boundary with a trailing ellipsis. Runs in-place before
+    validate_against_schema so length violations become length caps, not warnings.
+    """
+    notices: list[str] = []
+
+    if "executive_snapshot" in brief_json:
+        brief_json["executive_snapshot"] = _cap_str(
+            brief_json["executive_snapshot"], 600, "executive_snapshot", notices
+        )
+
+    for i, rec in enumerate(brief_json.get("recommendations") or []):
+        if not isinstance(rec, dict):
+            continue
+        for field, limit in [
+            ("action", 250), ("rationale", 400),
+            ("evidence_summary", 250), ("primary_risk", 200),
+        ]:
+            if field in rec:
+                rec[field] = _cap_str(rec[field], limit, f"recommendations[{i}].{field}", notices)
+
+    scorecard = brief_json.get("scorecard_summary") or {}
+    for i, row in enumerate(scorecard.get("top_drivers") or []):
+        if isinstance(row, dict) and "driver" in row:
+            row["driver"] = _cap_str(row["driver"], 200, f"top_drivers[{i}].driver", notices)
+    for i, row in enumerate(scorecard.get("dimension_table") or []):
+        if isinstance(row, dict) and "driver" in row:
+            row["driver"] = _cap_str(row["driver"], 200, f"dimension_table[{i}].driver", notices)
+
+    qr = brief_json.get("quick_reads")
+    if isinstance(qr, dict):
+        for section in ("facilities", "political", "authorizer"):
+            if section in qr:
+                qr[section] = _cap_str(qr[section], 300, f"quick_reads.{section}", notices)
+
+    for i, school in enumerate(brief_json.get("schools_to_watch") or []):
+        if isinstance(school, dict) and "reason" in school:
+            school["reason"] = _cap_str(school["reason"], 200, f"schools_to_watch[{i}].reason", notices)
+
+    return brief_json, notices
 
 
 def _today() -> str:

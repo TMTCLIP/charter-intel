@@ -144,3 +144,79 @@ def test_non_json_body_returns_400(client):
 def test_empty_body_returns_400(client):
     resp = client.post("/api/scan", json={})
     assert resp.status_code == 400
+
+
+# ── ZIP Drill route ─────────────────────────────────────────────────────────
+
+def test_zip_drill_scan_queues(client):
+    resp = client.post("/api/scan", json={"target": "nm-albuquerque", "mode": "zip"})
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert data["status"] == "queued"
+    assert "job_id" in data
+
+
+def test_zip_drill_job_has_zip_type(client):
+    import server as srv
+    resp = client.post("/api/scan", json={"target": "nm-santa-fe", "mode": "zip"})
+    job_id = resp.get_json()["job_id"]
+    with srv._jobs_lock:
+        job = srv._jobs[job_id]
+    assert job["job_type"] == "zip"
+    assert job["city_name"] == "Santa Fe"
+
+
+def test_zip_drill_city_name_from_slug(client):
+    import server as srv
+    resp = client.post("/api/scan", json={"target": "nm-rio-rancho", "mode": "zip"})
+    job_id = resp.get_json()["job_id"]
+    with srv._jobs_lock:
+        job = srv._jobs[job_id]
+    assert job["city_name"] == "Rio Rancho"
+
+
+def test_zip_drill_v2_flag_stored(client):
+    import server as srv
+    resp = client.post("/api/scan", json={
+        "target": "nm-albuquerque", "mode": "zip", "zip_version": "v2"
+    })
+    # v2 flag is consumed by the background runner; job still queues successfully
+    assert resp.status_code == 200
+
+
+def test_zip_drill_invalid_community_id_returns_400(client):
+    resp = client.post("/api/scan", json={"target": "INVALID", "mode": "zip"})
+    assert resp.status_code == 400
+
+
+def test_zip_drill_depth_not_enforced(client):
+    # ZIP drill ignores depth — invalid depth value must not block a zip job
+    resp = client.post("/api/scan", json={
+        "target": "nm-albuquerque", "mode": "zip", "depth": "turbo"
+    })
+    assert resp.status_code == 200
+
+
+def test_community_scan_depth_still_enforced(client):
+    # Community scan must still reject invalid depth
+    resp = client.post("/api/scan", json={
+        "target": "nm-albuquerque", "mode": "community", "depth": "turbo"
+    })
+    assert resp.status_code == 400
+
+
+# ── Helper: _city_name_from_slug ────────────────────────────────────────────
+
+def test_city_name_from_slug_single_word():
+    import server as srv
+    assert srv._city_name_from_slug("nm-albuquerque") == "Albuquerque"
+
+
+def test_city_name_from_slug_multi_word():
+    import server as srv
+    assert srv._city_name_from_slug("nm-santa-fe") == "Santa Fe"
+
+
+def test_city_name_from_slug_three_word():
+    import server as srv
+    assert srv._city_name_from_slug("nm-rio-rancho") == "Rio Rancho"
