@@ -10,12 +10,26 @@ Port: 5001 (avoids macOS AirPlay conflict on 5000).
 """
 from __future__ import annotations
 
+import datetime
 import json
+import os
 import re
+import secrets
+import subprocess
+import sys
+import threading
 from pathlib import Path
 
 import yaml
 from flask import Flask, jsonify, render_template, request
+
+# Make app/ importable so we can reuse config, rate_limit without duplicating.
+_APP_DIR = Path(__file__).resolve().parent.parent
+if str(_APP_DIR) not in sys.path:
+    sys.path.insert(0, str(_APP_DIR))
+
+import config as app_config  # noqa: E402 — must follow sys.path insert
+import rate_limit             # noqa: E402
 
 BASE_DIR = Path(__file__).parent.parent.parent
 RUNS_DIR = BASE_DIR / "app" / "runs"
@@ -24,6 +38,113 @@ BY_COMMUNITY_DIR = OUTPUTS_DIR / "by_community"
 CONFIG_FILE = BASE_DIR / "config" / "states.yaml"
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
+
+# ── Validation constants ────────────────────────────────────────────────────
+_COMMUNITY_ID_RE = re.compile(r'^[a-z]{2}-[a-z0-9-]{1,64}$')
+_DEPTH_WHITELIST = frozenset({"fast", "standard", "deep"})
+
+
+# ── In-memory job store ─────────────────────────────────────────────────────
+_jobs: dict[str, dict] = {}
+_jobs_lock = threading.Lock()
+
+
+def _iso_now() -> str:
+    return datetime.datetime.now().astimezone().isoformat(timespec="seconds")
+
+
+def _get_job(job_id: str) -> dict | None:
+    with _jobs_lock:
+        job = _jobs.get(job_id)
+        return dict(job) if job is not None else None
+
+
+def _update_job(job_id: str, **kwargs) -> None:
+    with _jobs_lock:
+        if job_id in _jobs:
+            _jobs[job_id].update(kwargs)
+
+
+def _append_stage_log(job_id: str, line: str) -> None:
+    with _jobs_lock:
+        if job_id in _jobs:
+            _jobs[job_id]["stage_log"].append(line)
+
+
+# ── Background scan runner ──────────────────────────────────────────────────
+
+def _build_scan_cmd(community_id: str, state: str, depth: str, preset: str, mode: str, flags: dict) -> list[str]:
+    argv = [str(app_config.PYTHON_BIN), str(app_config.MAIN_PY), community_id]
+    if state:
+        argv += ["--state", state]
+    if depth:
+        argv += ["--depth", depth]
+    if preset:
+        argv += ["--preset", preset]
+    if mode:
+        argv += ["--mode", mode]
+    for key, cli_flag in app_config.BOOLEAN_FLAGS.items():
+        if flags.get(key):
+            argv.append(cli_flag)
+    return argv
+
+
+def run_scan_background(
+    job_id: str,
+    community_id: str,
+    depth: str,
+    state: str,
+    preset: str,
+    mode: str,
+    extra_flags: dict,
+) -> None:
+    _update_job(job_id, status="running", started_at=_iso_now())
+    cmd = _build_scan_cmd(community_id, state, depth, preset, mode, extra_flags)
+
+    try:
+        proc = subprocess.Popen(
+            cmd,
+            cwd=str(app_config.REPO_ROOT),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            env=app_config.subprocess_env(),
+            text=True,
+            bufsize=1,
+        )
+
+        tail: list[str] = []
+        while True:
+            raw = proc.stdout.readline()
+            if not raw:
+                break
+            line = raw.rstrip()
+            if not line:
+                continue
+            _append_stage_log(job_id, line)
+            tail.append(line)
+            if len(tail) > 30:
+                tail.pop(0)
+
+        proc.wait()
+
+        if proc.returncode == 0:
+            brief = _find_brief_path(community_id, preset or "growth", mode or "2")
+            _update_job(
+                job_id,
+                status="complete",
+                finished_at=_iso_now(),
+                brief_path=str(brief) if brief else None,
+            )
+        else:
+            _update_job(
+                job_id,
+                status="failed",
+                finished_at=_iso_now(),
+                error="\n".join(tail[-10:]),
+            )
+
+    except Exception as exc:
+        _update_job(job_id, status="failed", finished_at=_iso_now(), error=str(exc))
 
 
 # ---------------------------------------------------------------------------
@@ -271,8 +392,96 @@ def brief():
 
 @app.route("/api/scan", methods=["POST"])
 def scan():
-    # TODO: implement real scan dispatch (wire to runner.py / main.py)
-    return jsonify({"status": "queued", "run_id": "stub-001"})
+    body = request.get_json(silent=True) or {}
+
+    community_id = (body.get("target") or "").strip()
+    depth = (body.get("depth") or "standard").strip()
+
+    if not community_id:
+        return jsonify({"error": "community_id is required"}), 400
+    if not _COMMUNITY_ID_RE.match(community_id):
+        return jsonify({"error": f"Invalid community_id: {community_id!r}"}), 400
+    if depth not in _DEPTH_WHITELIST:
+        return jsonify({"error": f"Invalid depth: {depth!r}. Must be fast, standard, or deep"}), 400
+
+    # Rate limit gate (read-only check; in-memory MVP jobs don't write to disk)
+    if not os.environ.get("CLIP_DEV_MODE"):
+        ok, msg, _ = rate_limit.check_daily_limit(app_config.RUNS_DIR)
+        if not ok:
+            return jsonify({"error": msg}), 429
+        ok, msg, _ = rate_limit.check_cost_cap(app_config.RUNS_DIR)
+        if not ok:
+            return jsonify({"error": msg}), 429
+
+    state  = (body.get("state") or "NM").strip().upper()
+    preset = (body.get("preset") or "growth").strip()
+    mode   = (body.get("mode_num") or "2").strip()
+    extra_flags = {k: bool(body.get(k)) for k in app_config.BOOLEAN_FLAGS}
+
+    job_id = secrets.token_hex(8)
+    with _jobs_lock:
+        _jobs[job_id] = {
+            "job_id": job_id,
+            "community_id": community_id,
+            "depth": depth,
+            "preset": preset,
+            "mode": mode,
+            "status": "queued",
+            "started_at": None,
+            "finished_at": None,
+            "stage_log": [],
+            "error": None,
+            "brief_path": None,
+        }
+
+    threading.Thread(
+        target=run_scan_background,
+        args=(job_id, community_id, depth, state, preset, mode, extra_flags),
+        daemon=True,
+    ).start()
+
+    return jsonify({"job_id": job_id, "status": "queued"})
+
+
+@app.route("/api/scan/status/<job_id>")
+def scan_status(job_id):
+    with _jobs_lock:
+        job = _jobs.get(job_id)
+        if job is None:
+            return jsonify({"error": "Job not found"}), 404
+        return jsonify(dict(job))
+
+
+@app.route("/api/scan/result/<job_id>")
+def scan_result(job_id):
+    with _jobs_lock:
+        job = _jobs.get(job_id)
+        if job is None:
+            return jsonify({"error": "Job not found"}), 404
+        status     = job["status"]
+        brief_path = job["brief_path"]
+        community_id = job["community_id"]
+        preset     = job["preset"]
+        mode       = job["mode"]
+
+    if status != "complete":
+        return jsonify({"error": f"Scan not complete (status: {status})"}), 409
+
+    # brief_path may be None if the file wasn't written by the time the process
+    # exited — try resolving it now before giving up.
+    if not brief_path:
+        p = _find_brief_path(community_id, preset or "growth", mode or "2")
+        if p is None:
+            return jsonify({"error": "Brief not yet available"}), 404
+        brief_path = str(p)
+        _update_job(job_id, brief_path=brief_path)
+
+    try:
+        content = Path(brief_path).read_text(errors="replace")
+    except FileNotFoundError:
+        return jsonify({"error": "Brief file missing from disk"}), 404
+
+    return content, 200, {"Content-Type": "text/html; charset=utf-8"}
 
 
 if __name__ == "__main__":

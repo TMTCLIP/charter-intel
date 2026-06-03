@@ -127,9 +127,16 @@
               <div class="brief-city-name" id="brief-city-name" aria-live="polite"></div>
               <div class="brief-scan-date" id="brief-scan-date"></div>
             </div>
-            <button class="btn-new-scan" id="btn-brief-new-scan" aria-label="Run a new scan for this city">
-              Run New Scan
-            </button>
+            <div class="brief-toolbar-actions">
+              <button class="btn-outline-sm" id="btn-view-log"
+                aria-label="View scan log" style="display:none">
+                View Log
+              </button>
+              <button class="btn-new-scan" id="btn-brief-new-scan"
+                aria-label="Run a new scan for this city">
+                Run New Scan
+              </button>
+            </div>
           </div>
           <div class="brief-frame-wrap" id="brief-frame-wrap">
             <div id="brief-loading" class="brief-loading hidden">Loading brief…</div>
@@ -360,7 +367,33 @@
       <button class="btn-run-scan" id="btn-run-scan" type="button">Run Scan</button>
 
     </div><!-- /panel-body -->
+
+    <!-- Scan progress (shown while job is running, replaces panel-body) -->
+    <div id="scan-job-panel" class="scan-job-panel hidden" aria-live="polite">
+      <div class="scan-job-header">
+        <span id="scan-job-community" class="scan-job-community"></span>
+        <span id="scan-job-badge" class="scan-job-badge">Queued</span>
+      </div>
+      <div id="scan-job-log" class="scan-job-log" aria-label="Scan stage log"></div>
+      <p id="scan-job-error" class="scan-job-error hidden"></p>
+      <button class="btn-outline-sm" id="btn-scan-new" type="button" style="margin-top:16px;width:100%">
+        New Scan
+      </button>
+    </div>
+
   </aside>
+
+  <!-- Log viewer modal -->
+  <div id="log-modal" class="log-modal hidden" role="dialog" aria-modal="true" aria-labelledby="log-modal-title">
+    <div id="log-modal-backdrop" class="log-modal-backdrop"></div>
+    <div class="log-modal-panel">
+      <div class="log-modal-header">
+        <span id="log-modal-title" class="log-modal-title">Scan Log</span>
+        <button class="btn-close-panel" id="btn-close-log-modal" aria-label="Close log">&#x2715;</button>
+      </div>
+      <div id="log-modal-body" class="log-modal-body"></div>
+    </div>
+  </div>
 
   <div id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
   <script src="/static/js/app.js"></script>

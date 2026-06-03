@@ -109,7 +109,7 @@ git push origin main
 ```
 
 That's it. Railway detects the push, rebuilds the Docker image, runs the health check
-on `/_stcore/health`, and rolls out. The volume persists `app/runs/` and `outputs/`, so
+on `/api/health`, and rolls out. The volume persists `app/runs/` and `outputs/`, so
 run history and briefs survive the deploy. No manual steps.
 
 ---
@@ -118,6 +118,7 @@ run history and briefs survive the deploy. No manual steps.
 
 | Variable | Where it's set | Purpose |
 |---|---|---|
+| `CLIP_UI` | **Railway (required)** | Must be `flask`. Without this the entrypoint launches Streamlit instead of Flask and the healthcheck 404s. |
 | `CLIP_PASSWORD` | **Railway (secret)** | Password gate. App refuses to start if unset. |
 | `ANTHROPIC_API_KEY` | **Railway (secret)** | Pipeline LLM calls. |
 | `CENSUS_API_KEY` | **Railway (secret)** | Census SAIPE/ACS fetches. |

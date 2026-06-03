@@ -371,6 +371,10 @@ def _read_school_enrollment_by_file(
     return schools
 
 
+# NOTE (2026-06-03): The raw CSV source files read by this function
+# (nces_lea_membership_2020/2022/2023.csv) were deleted from data/raw/nm/ to
+# reclaim ~7.2 GB. This function is currently dead code (never called from S1–S7).
+# To activate it, re-download those files from https://nces.ed.gov/ccd/files.asp.
 def get_school_enrollment_trends(community_id: str, state: str) -> Optional[dict]:
     """
     Return school-level enrollment trends for a community.

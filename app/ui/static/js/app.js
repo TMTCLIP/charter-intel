@@ -13,6 +13,8 @@ const APP = {
   briefRun: null,         // currently loaded run in brief view
   allRuns: [],            // cached run list for brief sidebar
   runsRefreshTimer: null, // auto-refresh handle for Live Runs view
+  activeJobId: null,      // job_id of the currently polling scan
+  pollTimer: null,        // handle for scan status polling interval
 };
 
 // ── Init ───────────────────────────────────────────────────
@@ -503,7 +505,10 @@ function closePanel() {
 }
 
 function setupScanPanel() {
-  document.getElementById("btn-close-panel").addEventListener("click", closePanel);
+  document.getElementById("btn-close-panel").addEventListener("click", () => {
+    _stopPoll();
+    closePanel();
+  });
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && APP.currentView === "map") closePanel();
@@ -546,6 +551,7 @@ function setupScanPanel() {
   });
 
   document.getElementById("btn-run-scan").addEventListener("click", submitScan);
+  document.getElementById("btn-scan-new").addEventListener("click", _resetScanPanel);
 }
 
 async function loadCitiesForPanel(stateAbbr) {
@@ -603,14 +609,200 @@ async function submitScan() {
       body: JSON.stringify(body),
     });
     const data = await resp.json();
-    showToast(`Scan queued — run ID: ${data.run_id}`, "success");
-    closePanel();
+
+    if (!resp.ok) {
+      showToast(data.error || "Scan rejected by server.", "error");
+      return;
+    }
+
+    APP.activeJobId = data.job_id;
+    _showScanProgress(body.target, isStateWide ? "Statewide" : city);
+    _startPoll(data.job_id);
+
   } catch {
     showToast("Failed to queue scan. Check the server.", "error");
   } finally {
     btn.disabled = false;
     btn.textContent = "Run Scan";
   }
+}
+
+// ── Scan job polling ────────────────────────────────────────
+
+function _showScanProgress(communityId, displayName) {
+  _renderedLogLines = 0;
+  document.getElementById("btn-view-log").style.display = "none";
+  document.querySelector(".panel-body").style.display = "none";
+  const jobPanel = document.getElementById("scan-job-panel");
+  jobPanel.classList.remove("hidden");
+  document.getElementById("scan-job-community").textContent = displayName || communityId;
+  document.getElementById("scan-job-log").textContent = "";
+  document.getElementById("scan-job-error").classList.add("hidden");
+  document.getElementById("scan-job-error").textContent = "";
+  _setBadge("queued");
+}
+
+// Called on explicit "New Scan" — wipes log, clears stored log, hides View Log button.
+function _resetScanPanel() {
+  _stopPoll();
+  APP.activeJobId = null;
+  _lastCompletedLog = null;
+  document.getElementById("scan-job-panel").classList.add("hidden");
+  document.getElementById("scan-job-log").textContent = "";
+  document.getElementById("scan-job-error").classList.add("hidden");
+  document.querySelector(".panel-body").style.display = "";
+  document.getElementById("btn-view-log").style.display = "none";
+}
+
+// Called after a successful scan — hides panel without wiping log or clearing stored log.
+function _closeScanPanelAfterScan() {
+  _stopPoll();
+  APP.activeJobId = null;
+  document.getElementById("scan-job-panel").classList.add("hidden");
+  document.getElementById("scan-job-error").classList.add("hidden");
+  document.querySelector(".panel-body").style.display = "";
+}
+
+function _setBadge(status) {
+  const badge = document.getElementById("scan-job-badge");
+  badge.textContent = status.charAt(0).toUpperCase() + status.slice(1);
+  badge.className = "scan-job-badge " + status;
+}
+
+function _startPoll(jobId) {
+  _stopPoll();
+  APP.pollTimer = setInterval(() => _pollOnce(jobId), 3000);
+}
+
+function _stopPoll() {
+  if (APP.pollTimer) {
+    clearInterval(APP.pollTimer);
+    APP.pollTimer = null;
+  }
+}
+
+let _renderedLogLines = 0;
+let _lastCompletedLog = null; // { jobId, communityId, lines }
+
+async function _pollOnce(jobId) {
+  try {
+    const resp = await fetch(`/api/scan/status/${encodeURIComponent(jobId)}`);
+    if (!resp.ok) { _stopPoll(); return; }
+    const job = await resp.json();
+
+    _setBadge(job.status);
+    _renderNewLogLines(job.stage_log || []);
+
+    if (job.status === "complete") {
+      _lastCompletedLog = { jobId, communityId: job.community_id, lines: job.stage_log || [] };
+      _stopPoll();
+      _onScanComplete(jobId);
+    } else if (job.status === "failed") {
+      _stopPoll();
+      const errEl = document.getElementById("scan-job-error");
+      errEl.textContent = job.error || "Scan failed — check server logs.";
+      errEl.classList.remove("hidden");
+    }
+  } catch {
+    // network hiccup — keep polling
+  }
+}
+
+function _renderNewLogLines(allLines) {
+  const logEl = document.getElementById("scan-job-log");
+  const newLines = allLines.slice(_renderedLogLines);
+  _renderedLogLines = allLines.length;
+
+  for (const raw of newLines) {
+    const span = document.createElement("span");
+    span.className = "scan-log-line";
+
+    if (/Running\s+s\d_[a-z_]+\.\.\./.test(raw)) {
+      span.classList.add("scan-log-stage");
+    } else if (/—\s+(OK|cache hit)/.test(raw)) {
+      span.classList.add("scan-log-ok");
+    } else if (/FAILED/.test(raw)) {
+      span.classList.add("scan-log-fail");
+    }
+
+    span.textContent = raw;
+    logEl.appendChild(span);
+  }
+
+  if (newLines.length) {
+    logEl.scrollTop = logEl.scrollHeight;
+  }
+}
+
+async function _onScanComplete(jobId) {
+  showToast("Scan complete — loading brief…", "success");
+  try {
+    const resp = await fetch(`/api/scan/result/${encodeURIComponent(jobId)}`);
+    if (resp.status === 404) {
+      showToast("Scan finished but no brief was produced.", "error");
+      return;
+    }
+    if (!resp.ok) {
+      const err = await resp.json().catch(() => ({}));
+      showToast(err.error || "Could not load brief.", "error");
+      return;
+    }
+    const html = await resp.text();
+
+    // Hide scan panel without wiping the log (log preserved in _lastCompletedLog).
+    _closeScanPanelAfterScan();
+    closePanel();
+    APP.briefRun = {
+      state_code: _lastCompletedLog.communityId.slice(0, 2).toUpperCase(),
+      community_id: _lastCompletedLog.communityId
+    };
+    showView("brief");
+
+    // Reveal View Log button now that we have a completed log.
+    document.getElementById("btn-view-log").style.display = "";
+
+    const frame   = document.getElementById("brief-frame");
+    const loading = document.getElementById("brief-loading");
+    const empty   = document.getElementById("brief-empty");
+    const content = document.getElementById("brief-content-wrap");
+
+    empty.classList.add("hidden");
+    content.classList.remove("hidden");
+    content.style.display = "flex";
+    loading.classList.add("hidden");
+    frame.srcdoc = html;
+    frame.style.display = "block";
+
+  } catch {
+    showToast("Scan complete — brief load failed. Check Brief View.", "error");
+  }
+}
+
+// ── Log modal ───────────────────────────────────────────────
+
+function _showLogModal() {
+  if (!_lastCompletedLog) return;
+  const title = document.getElementById("log-modal-title");
+  title.textContent = `Scan Log — ${_lastCompletedLog.communityId}`;
+
+  const body = document.getElementById("log-modal-body");
+  body.textContent = "";
+  for (const raw of _lastCompletedLog.lines) {
+    const span = document.createElement("span");
+    span.className = "scan-log-line";
+    if (/Running\s+s\d_[a-z_]+\.\.\./.test(raw))   span.classList.add("scan-log-stage");
+    else if (/—\s+(OK|cache hit)/.test(raw))        span.classList.add("scan-log-ok");
+    else if (/FAILED/.test(raw))                    span.classList.add("scan-log-fail");
+    span.textContent = raw;
+    body.appendChild(span);
+  }
+
+  document.getElementById("log-modal").classList.remove("hidden");
+  body.scrollTop = 0;
+}
+
+function _closeLogModal() {
+  document.getElementById("log-modal").classList.add("hidden");
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -627,6 +819,16 @@ function setupBriefView() {
   // City search filter
   document.getElementById("city-search").addEventListener("input", (e) => {
     filterCityList(e.target.value);
+  });
+
+  // View Log button
+  document.getElementById("btn-view-log").addEventListener("click", _showLogModal);
+
+  // Log modal close
+  document.getElementById("btn-close-log-modal").addEventListener("click", _closeLogModal);
+  document.getElementById("log-modal-backdrop").addEventListener("click", _closeLogModal);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") _closeLogModal();
   });
 
   // "Run New Scan" from brief toolbar

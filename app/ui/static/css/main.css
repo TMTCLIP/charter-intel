@@ -1148,3 +1148,146 @@ button, input, select {
   opacity: 0.65;
   padding: 48px 0;
 }
+
+/* ── Scan job progress panel ───────────────────────────────── */
+.scan-job-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0 20px 20px;
+  height: 100%;
+}
+.scan-job-panel.hidden { display: none !important; }
+.scan-job-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0 12px;
+  gap: 10px;
+}
+.scan-job-community {
+  font-size: 13px;
+  color: var(--star-white);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.scan-job-badge {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 20px;
+  background: rgba(168, 180, 212, 0.12);
+  color: var(--mist);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.scan-job-badge.running  { background: rgba(125, 211, 184, 0.15); color: #7dd3b8; }
+.scan-job-badge.complete { background: rgba(168, 212, 168, 0.15); color: #a8d4a8; }
+.scan-job-badge.failed   { background: rgba(212, 168, 168, 0.15); color: #d4a8a8; }
+.scan-job-log {
+  flex: 1;
+  overflow-y: auto;
+  font-family: "Fira Mono", "Menlo", "Consolas", monospace;
+  font-size: 11px;
+  line-height: 1.65;
+  color: var(--mist);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(168, 180, 212, 0.12);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  max-height: 340px;
+  min-height: 120px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.scan-log-line { display: block; }
+.scan-log-stage { color: #c8d8f8; }
+.scan-log-ok    { color: #a8d4a8; }
+.scan-log-fail  { color: #d4a8a8; }
+.scan-job-error {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #d4a8a8;
+  background: rgba(200, 100, 100, 0.08);
+  border: 1px solid rgba(200, 100, 100, 0.18);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.scan-job-error.hidden { display: none; }
+
+/* ── Brief toolbar actions ─────────────────────────────────── */
+.brief-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* ── Log viewer modal ──────────────────────────────────────── */
+.log-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.log-modal.hidden { display: none; }
+
+.log-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.78);
+  cursor: pointer;
+}
+
+.log-modal-panel {
+  position: relative;
+  width: min(660px, 92vw);
+  max-height: 72vh;
+  background: var(--night-navy);
+  border: 1px solid rgba(168, 180, 212, 0.18);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.log-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(168, 180, 212, 0.10);
+  flex-shrink: 0;
+}
+
+.log-modal-title {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--star-white);
+  letter-spacing: 0.01em;
+}
+
+.log-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 18px 18px;
+  font-family: "Fira Mono", "Menlo", "Consolas", monospace;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--mist);
+  white-space: pre-wrap;
+  word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
