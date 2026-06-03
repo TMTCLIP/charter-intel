@@ -41,6 +41,46 @@ link_persistent "${DATA_DIR}/outputs"    "${APP_DIR}/outputs"
 link_persistent "${DATA_DIR}/data_cache" "${APP_DIR}/data/cache"
 link_persistent "${DATA_DIR}/data_raw"   "${APP_DIR}/data/raw"
 
+# Seed static NM data files from the image to the volume on first deploy.
+# Idempotent: skips any file already present on the volume (never overwrites).
+SEEDED_SRC="${APP_DIR}/data/seeded"
+SEEDED_DST="${DATA_DIR}/data_raw"
+if [ -d "$SEEDED_SRC" ]; then
+  echo "[entrypoint] seeding static data files to volume..."
+  for state_dir in "$SEEDED_SRC"/*/; do
+    state=$(basename "$state_dir")
+    mkdir -p "${SEEDED_DST}/${state}"
+    for f in "$state_dir"*; do
+      fname=$(basename "$f")
+      dst_file="${SEEDED_DST}/${state}/${fname}"
+      if [ ! -f "$dst_file" ]; then
+        cp "$f" "$dst_file"
+        echo "[entrypoint] seeded: ${state}/${fname}"
+      fi
+    done
+  done
+fi
+
+# Seed derived files (parquet cache etc.) to container-local paths.
+# data/processed/ is not on the volume, so this re-seeds on every container
+# start from the image copy — fast (462 KB) and idempotent.
+PROCESSED_SEED="${APP_DIR}/data/seeded/processed"
+if [ -d "$PROCESSED_SEED" ]; then
+  echo "[entrypoint] seeding processed data files..."
+  for state_dir in "$PROCESSED_SEED"/*/; do
+    state=$(basename "$state_dir")
+    mkdir -p "${APP_DIR}/data/processed/${state}"
+    for f in "$state_dir"*; do
+      fname=$(basename "$f")
+      dst="${APP_DIR}/data/processed/${state}/${fname}"
+      if [ ! -f "$dst" ]; then
+        cp "$f" "$dst"
+        echo "[entrypoint] seeded processed: ${state}/${fname}"
+      fi
+    done
+  done
+fi
+
 if [ "${CLIP_UI}" = "flask" ]; then
     echo "[entrypoint] persistence wired under ${DATA_DIR}; launching Flask UI on port ${PORT:-8080}"
     exec bash "${APP_DIR}/app/ui/run.sh"
