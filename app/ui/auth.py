@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import functools
 import os
+import sys
+import urllib.parse
 
 from flask import Blueprint, redirect, render_template, request, session
 from google.auth.transport import requests as google_requests
@@ -52,27 +54,31 @@ def login():
 
 @auth_bp.route("/oauth2callback")
 def oauth2callback():
-    if request.args.get("state") != session.get("oauth_state"):
-        return redirect("/login?error=unauthorized")
-    flow = _make_flow(state=session.get("oauth_state"))
     try:
+        if request.args.get("state") != session.get("oauth_state"):
+            raise ValueError(
+                f"state mismatch: got {request.args.get('state')!r}, "
+                f"expected {session.get('oauth_state')!r}"
+            )
+        flow = _make_flow(state=session.get("oauth_state"))
         flow.fetch_token(authorization_response=request.url)
-    except Exception:
-        return redirect("/login?error=unauthorized")
-    credentials = flow.credentials
-    try:
+        credentials = flow.credentials
         id_info = id_token.verify_oauth2_token(
             credentials.id_token,
             google_requests.Request(),
             _CLIENT_ID,
         )
-    except Exception:
-        return redirect("/login?error=unauthorized")
-    if id_info.get("hd") != _ALLOWED_DOMAIN:
-        return redirect("/login?error=unauthorized")
-    session["user_email"] = id_info["email"]
-    session["user_name"] = id_info.get("name", "")
-    return redirect("/")
+        print("DEBUG id_info:", id_info, file=sys.stderr, flush=True)
+        if id_info.get("hd") != _ALLOWED_DOMAIN:
+            raise ValueError(
+                f"hd claim {id_info.get('hd')!r} != {_ALLOWED_DOMAIN!r}"
+            )
+        session["user_email"] = id_info["email"]
+        session["user_name"] = id_info.get("name", "")
+        return redirect("/")
+    except Exception as exc:
+        print("DEBUG oauth2callback error:", exc, file=sys.stderr, flush=True)
+        return redirect("/login?error=" + urllib.parse.quote(str(exc), safe=""))
 
 
 @auth_bp.route("/logout")
