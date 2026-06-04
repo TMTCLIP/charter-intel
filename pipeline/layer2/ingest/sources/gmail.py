@@ -1,22 +1,25 @@
 """
 pipeline/layer2/ingest/sources/gmail.py
 
-GmailIngester — searches "charter school" email threads via the Gmail MCP
-server, matches each thread to a known city, and hands it off to SignalExtractor.
+GmailIngester — searches "charter school" email threads via the Gmail REST API,
+matches each thread to a known city, and hands it off to SignalExtractor.
 """
 from __future__ import annotations
 
+import base64
 import json
 import logging
 import os
 import re
 import sys
-from datetime import date, datetime, timedelta, timezone
+import urllib.error
+import urllib.parse
+import urllib.request
+from datetime import date, datetime, timezone
 from typing import Optional
 
 import yaml
 
-from pipeline.layer2.ingest._mcp_client import MCPHTTPClient, MCPError, MCPUnexpectedSchema
 from pipeline.layer2.ingest.extractor import SignalExtractor
 from pipeline.layer2.storage_interface import SignalStore
 
@@ -28,11 +31,10 @@ _CONFIG_DIR = os.path.abspath(os.path.join(_SOURCES_DIR, "..", "..", "..", "..",
 _CACHE_PATH = os.path.join(_CONFIG_DIR, "ingest_cache.json")
 _STATES_PATH = os.path.join(_CONFIG_DIR, "states.yaml")
 
-_GMAIL_MCP_URL = "https://gmailmcp.googleapis.com/mcp/v1"
 _GMAIL_SEARCH_QUERY = "charter school newer_than:30d"
 
-_SEARCH_TOOL_PATTERNS = ("search_threads", "search_messages", "threads/search", "search")
-_GET_THREAD_TOOL_PATTERNS = ("get_thread", "get_thread_content", "threads/get")
+_GMAIL_API_BASE = "https://gmail.googleapis.com/gmail/v1/users/me"
+_TOKEN_URL = "https://oauth2.googleapis.com/token"
 
 # Regex to strip quoted reply chains (lines starting with > or On ... wrote:)
 _QUOTE_RE = re.compile(
@@ -93,14 +95,6 @@ def _save_cache(cache: dict, path: str = _CACHE_PATH) -> None:
         json.dump(cache, f, indent=2)
 
 
-def _find_tool(tools: list[dict], patterns: tuple) -> Optional[str]:
-    names = {t.get("name", "") for t in tools}
-    for pattern in patterns:
-        if pattern in names:
-            return pattern
-    return None
-
-
 def _parse_message_date(msg: dict) -> Optional[date]:
     for field in ("date", "timestamp", "internalDate", "received_at", "sent_at"):
         val = msg.get(field)
@@ -121,6 +115,37 @@ def _parse_message_date(msg: dict) -> Optional[date]:
     return None
 
 
+def _decode_body_data(data: str) -> str:
+    """Decode a base64url-encoded Gmail message body part."""
+    padded = data.replace("-", "+").replace("_", "/")
+    padded += "=" * (-len(padded) % 4)
+    try:
+        return base64.b64decode(padded).decode("utf-8", errors="replace")
+    except Exception:
+        return ""
+
+
+def _extract_text_from_payload(payload: dict) -> str:
+    """Recursively extract plain-text content from a Gmail message payload."""
+    mime = payload.get("mimeType", "")
+    parts = payload.get("parts")
+
+    if parts:
+        texts: list[str] = []
+        for part in parts:
+            text = _extract_text_from_payload(part)
+            if text:
+                texts.append(text)
+        return "\n".join(texts)
+
+    if mime in ("text/plain", "text/html") or not mime:
+        body_data = (payload.get("body") or {}).get("data", "")
+        if body_data:
+            return _decode_body_data(body_data)
+
+    return ""
+
+
 def _concat_thread_messages(thread: dict) -> tuple[str, Optional[date]]:
     """Concatenate message bodies in a thread; return (body, earliest_date)."""
     messages = thread.get("messages") or []
@@ -130,13 +155,81 @@ def _concat_thread_messages(thread: dict) -> tuple[str, Optional[date]]:
     parts: list[str] = []
     earliest: Optional[date] = None
     for msg in messages:
-        body = msg.get("body") or msg.get("snippet") or msg.get("text") or ""
+        # Prefer decoded payload; fall back to snippet
+        payload = msg.get("payload")
+        if payload:
+            body = _extract_text_from_payload(payload)
+        else:
+            body = msg.get("body") or msg.get("snippet") or msg.get("text") or ""
         if body:
             parts.append(_strip_quoted_replies(body))
         msg_date = _parse_message_date(msg)
         if msg_date and (earliest is None or msg_date < earliest):
             earliest = msg_date
     return "\n\n".join(parts), earliest
+
+
+def _get_subject_from_thread(thread: dict) -> str:
+    """Extract the subject from the first message's headers."""
+    messages = thread.get("messages") or []
+    if not messages:
+        return thread.get("snippet", "")
+    headers = (messages[0].get("payload") or {}).get("headers") or []
+    for h in headers:
+        if h.get("name", "").lower() == "subject":
+            return h.get("value", "")
+    return thread.get("snippet", "")
+
+
+def _http_get(url: str, params: dict, access_token: str) -> dict:
+    """Perform an authenticated GET, return parsed JSON."""
+    full_url = url + "?" + urllib.parse.urlencode(params) if params else url
+    req = urllib.request.Request(
+        full_url,
+        headers={"Authorization": f"Bearer {access_token}"},
+    )
+    with urllib.request.urlopen(req) as resp:
+        return json.loads(resp.read().decode())
+
+
+def _exchange_refresh_token(client_id: str, client_secret: str, refresh_token: str) -> str:
+    """Exchange a refresh token for a fresh access token; halt on failure."""
+    body = urllib.parse.urlencode({
+        "grant_type": "refresh_token",
+        "client_id": client_id,
+        "client_secret": client_secret,
+        "refresh_token": refresh_token,
+    }).encode()
+    req = urllib.request.Request(
+        _TOKEN_URL,
+        data=body,
+        method="POST",
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+    )
+    try:
+        with urllib.request.urlopen(req) as resp:
+            data = json.loads(resp.read().decode())
+    except urllib.error.HTTPError as exc:
+        error_body = exc.read().decode(errors="replace")
+        print(
+            f"[gmail] STOP — token exchange failed: HTTP {exc.code}\n{error_body}",
+            file=sys.stderr,
+        )
+        raise SystemExit(1)
+    except urllib.error.URLError as exc:
+        print(f"[gmail] STOP — token exchange network error: {exc.reason}", file=sys.stderr)
+        raise SystemExit(1)
+
+    access_token = data.get("access_token")
+    if not access_token:
+        print(
+            f"[gmail] STOP — token exchange returned no access_token.\n"
+            f"Response: {json.dumps(data, indent=2)}",
+            file=sys.stderr,
+        )
+        raise SystemExit(1)
+
+    return access_token
 
 
 class GmailIngester:
@@ -150,8 +243,6 @@ class GmailIngester:
         SignalExtractor instance.
     days:
         Look-back window in days (default 30; also embedded in the query).
-    mcp_url:
-        Gmail MCP URL (default: https://gmailmcp.googleapis.com/mcp/v1).
     cache_path:
         Path to the local JSON dedup cache file.
     search_query:
@@ -163,7 +254,6 @@ class GmailIngester:
         store: SignalStore,
         extractor: SignalExtractor,
         days: int = 30,
-        mcp_url: str = _GMAIL_MCP_URL,
         cache_path: str = _CACHE_PATH,
         states_path: str = _STATES_PATH,
         search_query: str = _GMAIL_SEARCH_QUERY,
@@ -171,102 +261,73 @@ class GmailIngester:
         self._store = store
         self._extractor = extractor
         self._days = days
-        self._mcp_url = mcp_url
         self._cache_path = cache_path
         self._search_query = search_query
         self._city_name_map = _load_city_name_map(states_path)
+
+        client_id = os.environ.get("GMAIL_CLIENT_ID", "")
+        client_secret = os.environ.get("GMAIL_CLIENT_SECRET", "")
+        refresh_token = os.environ.get("GMAIL_REFRESH_TOKEN", "")
+
+        if not (client_id and client_secret and refresh_token):
+            missing = [
+                name for name, val in [
+                    ("GMAIL_CLIENT_ID", client_id),
+                    ("GMAIL_CLIENT_SECRET", client_secret),
+                    ("GMAIL_REFRESH_TOKEN", refresh_token),
+                ] if not val
+            ]
+            print(
+                f"[gmail] STOP — missing environment variables: {missing}",
+                file=sys.stderr,
+            )
+            raise SystemExit(1)
+
+        self._access_token = _exchange_refresh_token(client_id, client_secret, refresh_token)
 
     def ingest(self) -> None:
         cache = _load_cache(self._cache_path)
         already_seen: set[str] = set(cache.get("gmail", []))
 
-        # Gmail MCP connector is pre-authenticated via the Claude workspace
-        # integration — no auth header required.
-        mcp = MCPHTTPClient(url=self._mcp_url, headers={})
-        mcp.initialize()
+        # Search for matching threads
+        search_resp = _http_get(
+            f"{_GMAIL_API_BASE}/threads",
+            {"q": self._search_query, "maxResults": 200},
+            self._access_token,
+        )
+        thread_stubs = search_resp.get("threads") or []
 
-        tools = mcp.list_tools()
-        search_tool = _find_tool(tools, _SEARCH_TOOL_PATTERNS)
-        if search_tool is None:
-            print(
-                f"[gmail] STOP — could not find a thread-search tool. "
-                f"Available tools: {[t.get('name') for t in tools]}\n"
-                f"Raw tools response: {json.dumps(tools, indent=2)}",
-                file=sys.stderr,
-            )
-            raise MCPUnexpectedSchema(
-                f"No thread-search tool found in Gmail MCP. Tools: "
-                f"{[t.get('name') for t in tools]}"
-            )
-
-        raw_result = mcp.call_tool(search_tool, {
-            "query": self._search_query,
-            "maxResults": 200,
-        })
-
-        # Validate schema
-        if isinstance(raw_result, list):
-            threads = raw_result
-        elif isinstance(raw_result, dict):
-            for key in ("threads", "messages", "items", "data", "results"):
-                if isinstance(raw_result.get(key), list):
-                    threads = raw_result[key]
-                    break
-            else:
-                print(
-                    f"[gmail] STOP — unexpected search response schema.\n"
-                    f"Raw result: {json.dumps(raw_result, indent=2)[:2000]}",
-                    file=sys.stderr,
-                )
-                raise MCPUnexpectedSchema(
-                    f"search returned unexpected schema: {list(raw_result.keys())}"
-                )
-        else:
-            print(
-                f"[gmail] STOP — search returned non-list/dict: {type(raw_result)}",
-                file=sys.stderr,
-            )
-            raise MCPUnexpectedSchema(f"search returned {type(raw_result)}")
-
-        # Optionally fetch full thread content if the search returned stubs
-        get_tool = _find_tool(tools, _GET_THREAD_TOOL_PATTERNS)
-
-        total_fetched = len(threads)
+        total_fetched = len(thread_stubs)
         city_matched = 0
         signals_written = 0
 
-        for thread_stub in threads:
-            if not isinstance(thread_stub, dict):
+        for stub in thread_stubs:
+            if not isinstance(stub, dict):
                 continue
 
-            thread_id = str(
-                thread_stub.get("id") or
-                thread_stub.get("thread_id") or
-                thread_stub.get("threadId") or
-                ""
-            )
+            thread_id = str(stub.get("id") or "")
             if not thread_id:
                 continue
             if thread_id in already_seen:
                 continue
 
-            # Fetch full thread if we have the tool and only received a stub
-            if get_tool and not thread_stub.get("messages"):
-                try:
-                    thread = mcp.call_tool(get_tool, {"id": thread_id})
-                    if not isinstance(thread, dict):
-                        thread = thread_stub
-                except MCPError as exc:
-                    logger.warning("[gmail] get_thread failed for %s: %s", thread_id, exc)
-                    thread = thread_stub
-            else:
-                thread = thread_stub
+            # Fetch full thread content
+            try:
+                thread = _http_get(
+                    f"{_GMAIL_API_BASE}/threads/{thread_id}",
+                    {"format": "full"},
+                    self._access_token,
+                )
+                if not isinstance(thread, dict):
+                    thread = stub
+            except urllib.error.HTTPError as exc:
+                logger.warning("[gmail] get_thread failed for %s: HTTP %s", thread_id, exc.code)
+                thread = stub
+            except urllib.error.URLError as exc:
+                logger.warning("[gmail] get_thread failed for %s: %s", thread_id, exc.reason)
+                thread = stub
 
-            subject = (
-                thread.get("subject") or
-                thread.get("snippet") or
-                ""
-            )
+            subject = _get_subject_from_thread(thread)
             body, thread_date = _concat_thread_messages(thread)
             search_text = f"{subject}\n{body}"
 

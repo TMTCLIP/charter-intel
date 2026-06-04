@@ -580,3 +580,30 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Populate `source_date` in S3 fetchers with fiscal year-end dates
 - [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
 - [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)
+
+---
+
+### Session — 2026-06-04 (2a9887f)
+
+**Accomplished:**
+- Rewrote `pipeline/layer2/ingest/sources/gmail.py` to use direct Gmail REST API — removed all `MCPHTTPClient`, `MCPError`, `MCPUnexpectedSchema` imports and the `_find_tool` helper entirely
+- Added `_exchange_refresh_token()`: POSTs to `https://oauth2.googleapis.com/token` using `GMAIL_CLIENT_ID`, `GMAIL_CLIENT_SECRET`, `GMAIL_REFRESH_TOKEN` env vars; called in `__init__` so credential errors surface before ingest begins
+- Added `_http_get()` for authenticated REST calls using stdlib `urllib` (no `requests` — not in requirements.txt)
+- Added `_decode_body_data()` for base64url → UTF-8 decoding of Gmail message body parts
+- Added `_extract_text_from_payload()` to recursively extract text from multipart MIME payloads; `_get_subject_from_thread()` to pull the Subject header from message payload headers
+- Removed `mcp_url` constructor parameter; all 502 unit tests pass
+
+**Decisions:**
+- Credential validation and token exchange placed in `__init__` (not `ingest()`) — fails fast with a clear `SystemExit(1)` + stderr message rather than silently getting a 401 mid-run
+- `urllib` (stdlib) used instead of `requests` since `requests` is absent from `requirements.txt`; avoids adding a new dependency for three simple HTTP calls
+- Every thread is always fetched with `format=full` — eliminates the old MCP conditional logic that only fetched full content when a separate get-thread tool existed
+
+**Next Steps:**
+- [ ] Set `GMAIL_CLIENT_ID`, `GMAIL_CLIENT_SECRET`, `GMAIL_REFRESH_TOKEN` in `.env` and run a live `--ingest gmail` to smoke-test the full REST path
+- [ ] Run `python main.py --ingest file --ingest-path <path>` against a real Granola export
+- [ ] Wire `NotionSignalStore` into the S3/S4 pipeline ingestion path
+- [ ] Generalize `NM_STATE_AVG_PPR` in `nces_fetcher.py`
+- [ ] Generalize `STATE_FIPS` in `saipe_fetcher.py`
+- [ ] Populate `source_date` in S3 fetchers with fiscal year-end dates
+- [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
+- [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)
