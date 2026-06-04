@@ -183,8 +183,12 @@ def run(
     if cap_notices:
         warnings.extend([f"Schema length cap: {n}" for n in cap_notices])
 
+    # --- Populate data vintage and generation timestamp ---
+    brief_json["data_through"] = _derive_data_through(brief_json)
+    # Preserve model-set generated_at if present; only fill in if missing.
+    brief_json.setdefault("generated_at", timestamp_now())
+
     # --- Validate schema ---
-    brief_json["generated_at"] = timestamp_now()
     validation = validate_against_schema(brief_json, "schemas/brief.schema.json")
     if not validation:
         warnings.extend([f"Schema warning: {e}" for e in validation.errors])
@@ -478,6 +482,53 @@ def _truncate_to_schema_limits(brief_json: dict) -> tuple[dict, list[str]]:
 def _today() -> str:
     import datetime
     return datetime.date.today().isoformat()
+
+
+# Source classes whose `date` field records when a page was scraped or
+# published, not when the underlying dataset was last revised.  Excluding
+# them prevents a news article publication date from masquerading as a
+# federal data vintage year.
+_EPHEMERAL_SOURCE_CLASSES = frozenset({
+    "MEDIA", "WEB_SEARCH", "PRESS_RELEASE", "BLOG", "SCRAPED",
+})
+
+
+def _derive_data_through(brief_json: dict) -> str:
+    """Return the oldest data vintage year found in brief_json as '{year}-12-31'.
+
+    Collects years from:
+      - sources[*].date  (skipping media/scrape sources and None dates)
+      - top_charter_schools[*].proficiency_year
+
+    Returns the minimum year as an ISO-format year-end date.  Falls back to
+    (today.year - 1)-12-31 when no vintage fields are present.  Fully generic:
+    works for any state, any combination of sources.
+    """
+    import datetime
+
+    years: list[int] = []
+
+    for src in brief_json.get("sources") or []:
+        sc = (src.get("source_class") or "").upper()
+        if sc in _EPHEMERAL_SOURCE_CLASSES:
+            continue
+        date_val = src.get("date")
+        if not date_val:
+            continue
+        try:
+            years.append(datetime.date.fromisoformat(str(date_val)).year)
+        except (ValueError, TypeError):
+            continue
+
+    for school in brief_json.get("top_charter_schools") or []:
+        yr = school.get("proficiency_year")
+        if isinstance(yr, (int, float)) and 1990 < yr < 2100:
+            years.append(int(yr))
+
+    if years:
+        return f"{min(years)}-12-31"
+
+    return f"{datetime.date.today().year - 1}-12-31"
 
 
 # ─────────────────────────────────────────────

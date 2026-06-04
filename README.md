@@ -428,3 +428,27 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Calibrate scoring weights (blocked until operator-profile conversation with The Mind Trust)
 - [ ] Fix pre-existing `TODO: replace with server-side auth` in `app/ui/static/js/app.js:6`
 - [ ] Run a live zip drill (v1) against Albuquerque to smoke-test the full UI wiring in the Flask environment
+
+---
+
+### Session 34 (continued) — 2026-06-03 (b2a813f)
+
+**Accomplished:**
+- Diagnosed Santa Fe charter count: 9 in PED roster vs. 8 in NCES CCD — `Sun Mountain Community School` present in PED roster but absent from NCES; gap is an NCES reporting lag, not a missing school; no PEC per-school active list exists in config to cross-reference
+- Fixed `app/rate_limit.py` midnight reset bug: replaced rolling 24h window in `_window_entries()` with UTC-midnight cutoff (`_utc_today_start()`); fixed `check_global_daily_cap()` to use `_utc_today_date()` not server-local `date.today()`; fixed `_parse_dt()` to treat naive timestamps as UTC; rewrote `_hours_until_reset()` as hours-to-UTC-midnight
+- Added `scripts/trim_nces_csv.py` — state-agnostic CLI that trims any NCES national CSV to a single state (auto-detects `ST`/`LSTATE`/`FIPST` column); trimmed both `data/raw/nm/nces_sch_lunch_2024.csv` and `data/seeded/nm/nces_sch_lunch_2024.csv` from 89.4 MB → 831 KB (88.6 MB saved each)
+- Fixed `pipeline/s6_synthesis.py` data_through bug: added `_derive_data_through(brief_json)` that collects oldest vintage year from non-ephemeral `sources[*].date` and `top_charter_schools[*].proficiency_year`, returning `{year}-12-31` (fallback: `(today.year-1)-12-31`); changed unconditional `generated_at = timestamp_now()` to `setdefault`
+- Added 27 new tests: 12 in `tests/unit/test_rate_limit.py`, 15 in `tests/unit/test_s6_data_through.py`; suite 375 → 390 passing
+
+**Decisions:**
+- Rate limit uses UTC midnight reset (not rolling 24h) — server-timezone-independent; all helpers (`_utc_today_start`, `_utc_today_date`, `_utc_now`) are thin mockable wrappers
+- `_derive_data_through` excludes MEDIA/WEB_SEARCH/PRESS_RELEASE/BLOG/SCRAPED source classes to avoid scrape dates masquerading as data vintage; fully generic, no state-specific names hardcoded
+- `generated_at` bug was in S6 (line 187), not S7 as originally reported — S7 never modifies the brief dict
+- NM-hardcoding in `s1_discovery._city_from_address` (splits on `, NM\b`) flagged but not fixed per scope; `LUNCH_CSV` hardcoding in `nces_fetcher.py` spawned as a separate chip task
+
+**Next Steps:**
+- [ ] Generalize `_city_from_address()` in `s1_discovery.py` — splits on `, NM\b`, will fail for non-NM states
+- [ ] Generalize `LUNCH_CSV = "data/raw/nm/nces_sch_lunch_2024.csv"` in `pipeline/utils/nces_fetcher.py:37`
+- [ ] Expand `STATE_NAME` substitution to full state name via `states.yaml` (`s6_synthesis.py:249`)
+- [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
+- [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)

@@ -154,15 +154,15 @@ def record_job(runs_dir: Path, token: str, weight: int) -> None:
 
 
 def check_global_daily_cap(runs_dir: Path) -> tuple[bool, str]:
-    """Block if total jobs across all session files started today exceed the cap.
+    """Block if total jobs across all session files started today (UTC) exceed the cap.
 
-    Uses RATE_LIMIT_DAILY_MAX as the threshold (the patch named a
-    RATE_LIMIT_DAILY_JOBS constant that does not exist in config).
+    Uses RATE_LIMIT_DAILY_MAX as the threshold.  All date comparisons are done
+    in UTC so the result is identical regardless of the server's local timezone.
     """
     d = _rate_limit_dir(runs_dir)
     if not d.exists():
         return True, ""
-    today = _dt.date.today()
+    today_utc = _utc_today_date()
     total = 0
     for f in d.glob("*.json"):
         try:
@@ -170,7 +170,7 @@ def check_global_daily_cap(runs_dir: Path) -> tuple[bool, str]:
             started = _parse_dt(data.get("started"))
         except (OSError, json.JSONDecodeError, ValueError, AttributeError):
             continue
-        if started is not None and started.date() == today:
+        if started is not None and started.astimezone(_dt.timezone.utc).date() == today_utc:
             total += int(data.get("jobs", 0))
     if total > config.RATE_LIMIT_DAILY_MAX:
         return False, "Daily scan limit reached across all sessions."
@@ -248,8 +248,19 @@ def get_rate_limit_status(runs_dir: Path, session_count: int) -> dict:
 # ─────────────────────────────────────────────────────────────────────────────
 # Internals
 # ─────────────────────────────────────────────────────────────────────────────
+def _utc_today_start() -> _dt.datetime:
+    """Return midnight UTC of the current calendar day (timezone-aware)."""
+    now_utc = _dt.datetime.now(_dt.timezone.utc)
+    return now_utc.replace(hour=0, minute=0, second=0, microsecond=0)
+
+
+def _utc_today_date() -> _dt.date:
+    """Return today's date in UTC — isolated for testability."""
+    return _dt.datetime.now(_dt.timezone.utc).date()
+
+
 def _window_entries(runs_dir: Path) -> list[tuple[_dt.datetime, int]]:
-    """(started_dt, weight) for non-exempt runs started within the rolling window.
+    """(started_dt, weight) for non-exempt runs started since UTC midnight today.
 
     Malformed / missing meta.json and unparseable timestamps are skipped silently.
     """
@@ -257,8 +268,7 @@ def _window_entries(runs_dir: Path) -> list[tuple[_dt.datetime, int]]:
     if not runs_dir.exists():
         return []
 
-    now = _dt.datetime.now().astimezone()
-    cutoff = now - _dt.timedelta(hours=config.RATE_LIMIT_WINDOW_HOURS)
+    cutoff = _utc_today_start()
 
     entries: list[tuple[_dt.datetime, int]] = []
     for run_dir in runs_dir.iterdir():
@@ -288,16 +298,20 @@ def _parse_dt(value) -> _dt.datetime | None:
     except (ValueError, TypeError):
         return None
     if dt.tzinfo is None:
-        dt = dt.astimezone()  # assume local tz for naive timestamps
+        dt = dt.replace(tzinfo=_dt.timezone.utc)  # treat naive timestamps as UTC
     return dt
 
 
-def _hours_until_reset(entries: list[tuple[_dt.datetime, int]]) -> int:
-    """Hours until the oldest in-window run ages out of the rolling window."""
-    if not entries:
-        return config.RATE_LIMIT_WINDOW_HOURS
-    oldest = min(started for started, _weight in entries)
-    now = _dt.datetime.now().astimezone()
-    reset_at = oldest + _dt.timedelta(hours=config.RATE_LIMIT_WINDOW_HOURS)
-    remaining = (reset_at - now).total_seconds() / 3600.0
+def _utc_now() -> _dt.datetime:
+    """Return current UTC datetime — isolated for testability."""
+    return _dt.datetime.now(_dt.timezone.utc)
+
+
+def _hours_until_reset(_entries=None) -> int:
+    """Hours until the next UTC midnight (when the daily window resets)."""
+    now_utc = _utc_now()
+    midnight_utc = (now_utc + _dt.timedelta(days=1)).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
+    remaining = (midnight_utc - now_utc).total_seconds() / 3600.0
     return max(1, math.ceil(remaining))
