@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLIP</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: #0d1117;
+      color: #e6e8ea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 40px 48px;
+      text-align: center;
+      width: 100%;
+      max-width: 360px;
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      margin: 0 0 6px;
+      color: #f0f6fc;
+    }
+    .subtitle {
+      font-size: 0.82rem;
+      color: #8b949e;
+      margin: 0 0 28px;
+    }
+    .error-banner {
+      background: rgba(248, 81, 73, 0.12);
+      border: 1px solid rgba(248, 81, 73, 0.35);
+      border-radius: 6px;
+      color: #f85149;
+      font-size: 0.84rem;
+      margin-bottom: 20px;
+      padding: 10px 14px;
+    }
+    .btn-google {
+      display: inline-block;
+      background: #1a73e8;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 0.93rem;
+      font-weight: 500;
+      transition: background 0.15s ease;
+    }
+    .btn-google:hover { background: #1558b0; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>CLIP</h1>
+    <p class="subtitle">Charter Intelligence Platform</p>
+    {% if error == "unauthorized" %}
+    <div class="error-banner">Access restricted to @themindtrust.org accounts.</div>
+    {% endif %}
+    <a href="/login" class="btn-google">Sign in with Google</a>
+  </div>
+</body>
+</html>

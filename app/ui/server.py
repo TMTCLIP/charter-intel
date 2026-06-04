@@ -30,6 +30,7 @@ if str(_APP_DIR) not in sys.path:
 
 import config as app_config  # noqa: E402 — must follow sys.path insert
 import rate_limit             # noqa: E402
+from auth import auth_bp, require_login  # noqa: E402
 
 BASE_DIR = Path(__file__).parent.parent.parent
 RUNS_DIR = BASE_DIR / "app" / "runs"
@@ -39,6 +40,8 @@ ZIP_OUTPUTS_DIR = OUTPUTS_DIR / "zip"
 CONFIG_FILE = BASE_DIR / "config" / "states.yaml"
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
+app.secret_key = os.environ.get("SECRET_KEY")
+app.register_blueprint(auth_bp)
 
 # ── Validation constants ────────────────────────────────────────────────────
 _COMMUNITY_ID_RE = re.compile(r'^[a-z]{2}-[a-z0-9-]{1,64}$')
@@ -311,16 +314,19 @@ def _find_brief_path(target: str, preset: str, mode: str) -> Path | None:
 # ---------------------------------------------------------------------------
 
 @app.route("/")
+@require_login
 def index():
     return render_template("index.html")
 
 
 @app.route("/api/health")
+@require_login
 def health():
     return jsonify({"status": "ok"})
 
 
 @app.route("/api/states")
+@require_login
 def states():
     """List states present in states.yaml with basic metadata."""
     data = _load_states()
@@ -340,6 +346,7 @@ def states():
 
 
 @app.route("/api/cities")
+@require_login
 def cities():
     """Return community list for a state, excluding junk/excluded slugs.
 
@@ -379,6 +386,7 @@ def cities():
 
 
 @app.route("/api/runs")
+@require_login
 def runs():
     """Return scan run history, optionally filtered by state.
 
@@ -452,6 +460,7 @@ def runs():
 
 
 @app.route("/api/brief")
+@require_login
 def brief():
     """Return the HTML content of a community brief.
 
@@ -490,6 +499,7 @@ def brief():
 
 
 @app.route("/api/scan", methods=["POST"])
+@require_login
 def scan():
     body = request.get_json(silent=True) or {}
 
@@ -576,6 +586,7 @@ def scan():
 
 
 @app.route("/api/scan/status/<job_id>")
+@require_login
 def scan_status(job_id):
     with _jobs_lock:
         job = _jobs.get(job_id)
@@ -585,6 +596,7 @@ def scan_status(job_id):
 
 
 @app.route("/api/scan/result/<job_id>")
+@require_login
 def scan_result(job_id):
     with _jobs_lock:
         job = _jobs.get(job_id)

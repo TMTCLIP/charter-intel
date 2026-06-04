@@ -28,7 +28,11 @@ def clear_jobs():
 @pytest.fixture()
 def client():
     srv.app.config["TESTING"] = True
+    srv.app.config["SECRET_KEY"] = "test-secret-key"
     with srv.app.test_client() as c:
+        with c.session_transaction() as sess:
+            sess["user_email"] = "test@themindtrust.org"
+            sess["user_name"] = "Test User"
         yield c
 
 

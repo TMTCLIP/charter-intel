@@ -23,7 +23,12 @@ def client():
     import server as srv
 
     srv.app.config["TESTING"] = True
+    srv.app.config["SECRET_KEY"] = "test-secret-key"
     with srv.app.test_client() as c:
+        # Inject a valid session so @require_login passes for all API tests.
+        with c.session_transaction() as sess:
+            sess["user_email"] = "test@themindtrust.org"
+            sess["user_name"] = "Test User"
         # Patch rate_limit checks to always pass so tests focus on validation
         with (
             patch.object(srv.rate_limit, "check_daily_limit", return_value=(True, "", 0)),
