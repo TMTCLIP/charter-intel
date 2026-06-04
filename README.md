@@ -75,6 +75,12 @@ working, and the app can't accidentally break the pipeline.
 
 ## 3. Session log
 
+**Session 33 (2026-06-04) — Fix @media print CSS in strategic_brief.html.j2 (e76b9c7)**
+- Replaced CSS-variable-override `@media print` block in `templates/strategic_brief.html.j2` with explicit `!important` property declarations — Chrome's print renderer resolves variables before applying media query overrides, causing broken dark colors in print/PDF
+- Corrected all selector names to match actual template classes: `.page-shell` (not `.layout-wrapper`), `.sb-score-num` (not `.score-display`), `.exec-snapshot` (not `.executive-snapshot`), `.disclosure-footer` (not `.brief-footer`), `.banner-insufficient/.banner-gate/.banner-tribal/.banner-pci-legacy` (not generic `.banner-warn/info`)
+- Re-rendered nm-questa maturity_adjusted demo brief via `scripts/render_s7.py`; HTML output committed to `outputs/by_community/nm-questa/`
+- Tests: 417 passing
+
 **Session 32 (2026-06-02) — Flask UI Map Hover & Stroke Fixes (6b106b9)**
 - Added `vector-effect="non-scaling-stroke"` to all state `<path>` elements in `app/ui/static/js/app.js`; unified `stroke-width` to `1.5px` across default/hover/active CSS rules
 - Replaced drop-shadow hover glow on `.state-path:hover` with a clean solid gold stroke (`2px`, `#f5c842`)
