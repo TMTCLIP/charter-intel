@@ -27,6 +27,10 @@ from typing import Optional
 
 log = logging.getLogger(__name__)
 
+# TODO(S35-sweep): ROSTER_CSV, ELA_CSV, MATH_CSV, SOURCE_URL, and SOURCE_TITLE
+# are all NM-specific. Derive paths from state param (data/raw/{state}/...)
+# and source metadata from config/states.yaml data_sources before expanding
+# beyond NM.
 ROSTER_CSV    = "data/raw/nm/charter_roster.csv"
 ELA_CSV       = "data/raw/nm/proficiency_ela_2024_25.csv"
 MATH_CSV      = "data/raw/nm/proficiency_math_2024_25.csv"

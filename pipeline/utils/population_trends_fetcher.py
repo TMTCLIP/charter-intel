@@ -46,6 +46,9 @@ STATES_YAML = "config/states.yaml"
 # Exported as NCES_SOURCE_FILES so build_nces_cache.py can import them without
 # duplicating paths. These are the national files — build_nces_cache.py filters
 # to a specific state and writes data/processed/{state}/nces_membership_{state}.parquet.
+# TODO(S35-sweep): NCES_SOURCE_FILES and _SCHOOL_MEMBERSHIP_FILES hardcode nm/
+# paths. Derive from state param (data/raw/{state}/nces_lea_membership_{year}.csv)
+# before expanding beyond NM.
 NCES_SOURCE_FILES: list[tuple[int, str]] = [
     (2020, "data/raw/nm/nces_lea_membership_2020.csv"),
     (2022, "data/raw/nm/nces_lea_membership_2022.csv"),

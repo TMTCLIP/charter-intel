@@ -433,6 +433,8 @@ _ROSTER_DERIVED_KEYS: frozenset = frozenset({
     "demand_supply_gap_index",
 })
 _PED_ROSTER_URL = "https://webnew.ped.state.nm.us/bureaus/options-for-parents/charter-schools/"
+# TODO(S35-sweep): _PED_ROSTER_TITLE and _PED_ROSTER_URL are NM-specific.
+# Derive from config/states.yaml data_sources.charter_roster per state.
 _PED_ROSTER_TITLE = "New Mexico PED Charter School Roster"
 
 
@@ -558,6 +560,7 @@ def run(
         frl_pct    = nces_data.get("frl_pct")
         verified_nces_data = (
             f"VERIFIED NCES DATA (FY {nces_data['fiscal_year']}) — treat as ground truth:\n"
+            # TODO(S35-sweep): "NM state avg" label is NM-specific; use state name from states.yaml.
             + (f"- Per-pupil revenue vs. NM state avg: {ppr_vs_avg:+.1f}%\n" if ppr_vs_avg is not None else "")
             + (f"- Per-pupil expenditure: ${ppe:,.0f}\n" if ppe is not None else "")
             + (f"- Revenue mix: {fed_pct}% federal / {state_pct}% state / {loc_pct}% local\n"
@@ -1331,6 +1334,12 @@ def _inject_nces_facts(
             "source_class":         "FEDERAL_DATA",
             "source_url":           nces_data.get("source_url"),
             "source_title":         nces_data.get("source_title"),
+            # TODO(S35): source_date is None for NCES facts — and for most other
+            # fetchers in this file.  This means _derive_data_through in S6 has
+            # no vintage dates to read and falls back to (today.year - 1)-12-31.
+            # Fix: set source_date to the fiscal-year-end date of the dataset
+            # (e.g. "2023-09-30" for NCES FY2023 CCD). Each fetcher must be
+            # updated individually since vintage dates vary by data source.
             "source_date":          None,
             "confidence":           "HIGH",
             "confidence_rationale": "Directly computed from NCES CCD federal finance/lunch files",

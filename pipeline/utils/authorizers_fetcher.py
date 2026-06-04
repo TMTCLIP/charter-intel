@@ -23,6 +23,9 @@ from typing import Optional
 
 log = logging.getLogger(__name__)
 
+# TODO(S35-sweep): ROSTER_CSV, SOURCE_URL, SOURCE_TITLE, and _AUTHORIZER_TYPES
+# are NM-specific. Derive from state param and config/states.yaml before
+# expanding beyond NM.
 ROSTER_CSV   = "data/raw/nm/charter_roster.csv"
 SOURCE_URL   = "https://webnew.ped.state.nm.us/bureaus/options-for-parents/charter-schools/"
 SOURCE_TITLE = "NM PED Charter School Roster SY 2025-26"

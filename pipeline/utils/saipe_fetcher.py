@@ -45,6 +45,8 @@ log = logging.getLogger(__name__)
 # ── Census API config ─────────────────────────────────────────────────────────
 
 SAIPE_API_BASE = "https://api.census.gov/data/timeseries/poverty/saipe/schdist"
+# TODO(S35-sweep): STATE_FIPS is hardcoded to NM (35). Derive from
+# config/states.yaml state_fips field per state before expanding beyond NM.
 STATE_FIPS     = "35"   # New Mexico
 
 SOURCE_TITLE   = "Census SAIPE School District Poverty Estimates"

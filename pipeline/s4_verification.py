@@ -324,6 +324,8 @@ def _pass_e_static_resolution(
                 fact["verification_status"] = "VERIFIED"
                 fact["in_main_analysis"] = True
                 fact["needs_verification_reason"] = None
+                # TODO(S35-sweep): verification note references NM-specific config file.
+                # Generalize to config/{state}_ped_shortage_areas.yaml or a states.yaml entry.
                 fact["verification_note"] = (
                     "Resolved via config/nmped_shortage_areas.yaml — "
                     "district confirmed on NM PED teacher shortage list"
