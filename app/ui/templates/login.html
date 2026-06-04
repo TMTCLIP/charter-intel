@@ -3,71 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CLIP</title>
+  <title>CLIP — Sign In</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    body {
-      font-family: 'DM Sans', system-ui, sans-serif;
-      background: #0d1117;
-      color: #e6e8ea;
+    .login-wrap {
+      position: fixed;
+      inset: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      margin: 0;
+      z-index: 1;
     }
-    .card {
-      background: #161b22;
-      border: 1px solid #30363d;
-      border-radius: 12px;
-      padding: 40px 48px;
+    .login-card {
+      background: rgba(15, 15, 46, 0.85);
+      border: 1px solid var(--night-indigo);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      box-shadow: var(--shadow);
       text-align: center;
-      width: 100%;
-      max-width: 360px;
+      position: relative;
+      z-index: 1;
+      min-width: 320px;
     }
-    h1 {
-      font-size: 2.4rem;
-      font-weight: 800;
-      letter-spacing: 0.1em;
-      margin: 0 0 6px;
-      color: #f0f6fc;
+    .login-wordmark {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.12em;
+      line-height: 1;
+      margin: 0 0 8px;
     }
-    .subtitle {
-      font-size: 0.82rem;
-      color: #8b949e;
-      margin: 0 0 28px;
+    .login-subtitle {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      color: var(--mist);
+      letter-spacing: 0.08em;
+      text-transform: small-caps;
+      margin: 0 0 24px;
     }
-    .error-banner {
-      background: rgba(248, 81, 73, 0.12);
-      border: 1px solid rgba(248, 81, 73, 0.35);
-      border-radius: 6px;
-      color: #f85149;
-      font-size: 0.84rem;
-      margin-bottom: 20px;
-      padding: 10px 14px;
+    .login-divider {
+      border: none;
+      border-top: 1px solid var(--night-indigo);
+      margin: 0 0 24px;
+    }
+    .login-error {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--gold);
+      margin: 0 0 18px;
     }
     .btn-google {
       display: inline-block;
-      background: #1a73e8;
-      color: #fff;
-      text-decoration: none;
-      padding: 12px 28px;
-      border-radius: 8px;
-      font-size: 0.93rem;
+      background: var(--cobalt);
+      color: var(--star-white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
       font-weight: 500;
-      transition: background 0.15s ease;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: opacity 0.15s ease;
     }
-    .btn-google:hover { background: #1558b0; }
+    .btn-google:hover { opacity: 0.85; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>CLIP</h1>
-    <p class="subtitle">Charter Intelligence Platform</p>
-    {% if error == "unauthorized" %}
-    <div class="error-banner">Access restricted to @themindtrust.org accounts.</div>
-    {% endif %}
-    <a href="/login" class="btn-google">Sign in with Google</a>
+
+  <div class="bg-night" aria-hidden="true">
+    <div class="bg-swirl"></div>
+    <div class="bg-swirl"></div>
+    <div class="bg-swirl"></div>
   </div>
+
+  <div class="login-wrap">
+    <div class="login-card">
+      <div class="login-wordmark">CLIP</div>
+      <p class="login-subtitle">Charter Community Landscape Intelligence Platform</p>
+      <hr class="login-divider" />
+      {% if error == "unauthorized" %}
+      <p class="login-error">Access restricted to @themindtrust.org accounts.</p>
+      {% elif error %}
+      <p class="login-error">Sign-in error — please try again.</p>
+      {% endif %}
+      <a href="/login" class="btn-google">Sign in with Google</a>
+    </div>
+  </div>
+
 </body>
 </html>

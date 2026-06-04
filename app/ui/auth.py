@@ -54,6 +54,9 @@ def login():
 
 @auth_bp.route("/oauth2callback")
 def oauth2callback():
+    # Railway proxy forwards HTTP internally; trust X-Forwarded-Proto header
+    if request.headers.get('X-Forwarded-Proto') == 'https':
+        os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
     try:
         if request.args.get("state") != session.get("oauth_state"):
             raise ValueError(
