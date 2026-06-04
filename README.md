@@ -387,6 +387,20 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ## Session Log
 
+### Session — 2026-06-04 (1dcfa76)
+
+**Accomplished:**
+- Removed 8-line shapefile bake block from `Dockerfile` (`ARG SHAPEFILE_BUST`, `COPY scripts/download_zcta_shapefile.sh`, two `RUN` commands) — shapefile is no longer fetched or written at image build time
+- Removed 8-line runtime ZCTA shapefile download fallback from `docker-entrypoint.sh` — the container no longer attempts to download the shapefile on startup
+- Both removals are intentional: the ZCTA shapefile now lives on the Railway persistent volume via manual upload and is expected to be present at the symlinked path
+
+**Decisions:**
+- Shapefile lifecycle moved entirely off the container and onto the volume — eliminates build-time download failures and cold-start crash loops; shapefile must be manually maintained on the volume
+
+**Next Steps:**
+- [ ] Verify shapefile is present on Railway volume at `data/raw/national/tl_2023_us_zcta520/tl_2023_us_zcta520.shp` before next deploy
+- [ ] Confirm zip drill works end-to-end on Railway after these removals
+
 ### Session — 2026-06-04 (43f1429)
 
 **Accomplished:**
