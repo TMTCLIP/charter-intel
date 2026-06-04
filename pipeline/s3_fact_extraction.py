@@ -45,7 +45,7 @@ STAGE_ID = "s3_fact_extraction"
 
 # ── CMO local-presence skepticism (Session 24) ──────────────────────────────
 # Config-driven (config/known_cmos.yaml). No CMO names are hardcoded here.
-_KNOWN_CMOS_PATH = "config/known_cmos.yaml"
+_KNOWN_CMOS_PATH = os.path.join(os.path.dirname(__file__), "..", "config", "known_cmos.yaml")
 
 
 def _load_known_cmos(path: str = _KNOWN_CMOS_PATH) -> dict:
