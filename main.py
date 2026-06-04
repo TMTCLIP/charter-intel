@@ -197,6 +197,29 @@ def parse_args() -> argparse.Namespace:
             "Incompatible with --mock and --record."
         ),
     )
+    parser.add_argument(
+        "--ingest",
+        choices=["granola", "gmail", "all", "file"],
+        default=None,
+        metavar="SOURCE",
+        help=(
+            "Run Layer 2 soft-signal ingestion independently of the scoring pipeline. "
+            "granola — fetch Granola meeting notes only; "
+            "gmail — fetch Gmail threads only; "
+            "all — run Granola first, then Gmail; "
+            "file — ingest a local .txt/.md file or directory (requires --ingest-path)."
+        ),
+    )
+    parser.add_argument(
+        "--ingest-path",
+        dest="ingest_path",
+        default=None,
+        metavar="PATH",
+        help=(
+            "Path to a .txt/.md file or directory of files to ingest. "
+            "Required when --ingest file is used."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -448,6 +471,42 @@ def _print_dry_run_cost_estimate(
     print(f"{'─' * 72}\n")
 
 
+def _run_ingest(source: str, ingest_path=None) -> None:
+    """Run Layer 2 soft-signal ingestion for the given source(s).
+
+    Strictly independent of the scoring pipeline — does not touch S1–S7.
+    """
+    # Guard: file mode requires a path before any expensive imports.
+    if source == "file" and not ingest_path:
+        print(
+            "ERROR: --ingest file requires --ingest-path /path/to/file/or/dir",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    from pipeline.layer2.notion_client import NotionSignalStore
+    from pipeline.layer2.ingest.extractor import SignalExtractor
+
+    store = NotionSignalStore()
+    extractor = SignalExtractor(store=store)
+
+    if source == "file":
+        from pipeline.layer2.ingest.sources.file_ingester import FileIngester
+        FileIngester(store=store, extractor=extractor).ingest(ingest_path)
+        return
+
+    run_granola = source in ("granola", "all")
+    run_gmail = source in ("gmail", "all")
+
+    if run_granola:
+        from pipeline.layer2.ingest.sources.granola import GranolaIngester
+        GranolaIngester(store=store, extractor=extractor).ingest()
+
+    if run_gmail:
+        from pipeline.layer2.ingest.sources.gmail import GmailIngester
+        GmailIngester(store=store, extractor=extractor).ingest()
+
+
 def main():
     args = parse_args()
 
@@ -462,6 +521,11 @@ def main():
         except EOFError:
             # Support piped input (e.g. echo "NM\nSanta Fe" | python main.py --interactive)
             pass
+
+    # ── Ingest mode (Layer 2 soft-signal ingestion, independent of S1–S7) ────────
+    if args.ingest:
+        _run_ingest(args.ingest, getattr(args, "ingest_path", None))
+        return
 
     # ── ZIP Drill mode ────────────────────────────────────────────────────────
     if args.mode == "zip":

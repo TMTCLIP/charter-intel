@@ -556,3 +556,27 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Populate `source_date` in S3 fetchers with fiscal year-end dates
 - [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
 - [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)
+
+---
+
+### Session — 2026-06-04 (c7c3a0e)
+
+**Accomplished:**
+- Added defensive markdown-fence stripping to `SignalExtractor.extract()` in `pipeline/layer2/ingest/extractor.py` — `import re` added, three-line strip block inserted before `json.loads()` to handle model wrapping responses in ` ```json ``` ` blocks despite system-prompt instructions
+- Updated `tests/unit/test_extractor.py`: renamed `test_markdown_fenced_json_not_parsed` → `test_markdown_fenced_json_is_parsed` and flipped assertion to confirm a fenced payload is parsed and written correctly
+- Wired Layer 2 ingestion into `main.py` CLI: added `--ingest {granola,gmail,all,file}` and `--ingest-path` arguments, and `_run_ingest()` dispatch function (strictly independent of S1–S7)
+- Added `pipeline/layer2/ingest/` source modules (Granola, Gmail, FileIngester) and `tests/unit/test_file_ingester.py`
+- All 489 unit tests pass; 502 total across full suite
+
+**Decisions:**
+- Fence stripping is done with two `re.sub` calls (prefix tag + trailing fence) rather than a single greedy regex — avoids clobbering embedded newlines inside the JSON array
+- `_run_ingest` defers all Layer 2 imports to call time so `main.py` stays fast for S1–S7 users who never touch `--ingest`
+
+**Next Steps:**
+- [ ] Run `python main.py --ingest file --ingest-path <path>` against a real Granola export to validate end-to-end write path
+- [ ] Wire `NotionSignalStore` into the S3/S4 pipeline ingestion path — signals extracted by S3 should be written to Layer 2 at pipeline end
+- [ ] Generalize `NM_STATE_AVG_PPR` in `nces_fetcher.py` — load per-state average from states.yaml
+- [ ] Generalize `STATE_FIPS` in `saipe_fetcher.py` via states.yaml `state_fips` field
+- [ ] Populate `source_date` in S3 fetchers with fiscal year-end dates
+- [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
+- [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)
