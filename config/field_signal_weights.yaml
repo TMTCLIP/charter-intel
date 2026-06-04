@@ -1,0 +1,29 @@
+# field_signal_weights.yaml
+# Layer 2 (soft-signal) blending + decay parameters.
+#
+# `blend.py` loads this file and resolves a config per dimension by overlaying
+# any `per_dimension` entry on top of `defaults`. Dimensions with no entry
+# (competitive_opportunity, operational_complexity) inherit `defaults` wholesale.
+#
+# Dimension keys MUST match config/scoring_weights.yaml exactly.
+
+defaults:
+  wf_base: 0.6
+  saturation_k: 2.0
+  half_life_days: 180
+  anchor_slope: 13.33
+  anchor_midpoint: 50.0
+  field_score_floor: 0.25      # Σw below this → F is null (public-only)
+  decay_floor: 0.1             # decay below this → signal auto-expired
+  verified_half_life_multiplier: 1.5
+  auto_accept_confidence: 0.75
+
+per_dimension:
+  political_climate:        { wf_base: 0.5, half_life_days: 120 }
+  authorizer_friendliness:  { wf_base: 0.6, half_life_days: 180 }
+  facilities_feasibility:   { wf_base: 0.7, half_life_days: 270 }
+  replication_feasibility:  { wf_base: 0.6, half_life_days: 365 }
+  academic_need:            { wf_base: 0.5, half_life_days: 180 }
+  population_trends:        { wf_base: 0.5, half_life_days: 180 }
+  charter_saturation:       { wf_base: 0.6, half_life_days: 180 }
+  funding_environment:      { wf_base: 0.6, half_life_days: 180 }

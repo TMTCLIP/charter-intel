@@ -1,0 +1,11 @@
+# notion_ids.yaml
+# Notion database IDs for the Layer 2 soft-signal backend.
+# Populated after the one-time Notion workspace creation (deferred — no Notion
+# MCP connected at build time). DB IDs are NOT secrets; this file is committed.
+# The NOTION_API_KEY lives only in the environment, never here.
+#
+# PLACEHOLDER — fill these in once the four databases exist.
+signal_db_id: null
+source_db_id: null
+city_db_id: null
+dimension_db_id: null

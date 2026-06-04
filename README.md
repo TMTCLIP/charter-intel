@@ -387,6 +387,27 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ## Session Log
 
+### Session — 2026-06-04 (43f1429)
+
+**Accomplished:**
+- Built CLIP Layer 2 (soft-signal intelligence) Phase 1 code path under new `pipeline/layer2/` package
+- Added `decay.py` (pure half-life decay math) and `blend.py` (s5_blend: anchor/reliability/field-score fusion of public score with field signals) — standalone, not wired into S5
+- Added `storage_interface.py` (`SignalStore` ABC), `notion_client.py` (live `NotionSignalStore`, lazy SDK import + 3 req/s throttle + 429 backoff), `supabase_client.py` (interface-compliance stub)
+- Added `config/field_signal_weights.yaml` (10 dimensions; 3 spec keys remapped to real `scoring_weights.yaml` keys) and placeholder `config/notion_ids.yaml`
+- Added 36 unit tests (`test_decay.py` 9, `test_blend.py` 24, `test_storage_interface.py` 3) + `tests/fixtures/synthetic_signals.py`; full suite 453 passing
+- Added `notion-client>=2.2.1` to `requirements.txt` (not installed)
+
+**Decisions:**
+- Dimension keys follow the repo's `scoring_weights.yaml`, not the spec: `facilities_availability`→`facilities_feasibility`, `financial_sustainability`→`funding_environment`, `operator_talent_pool`→`replication_feasibility`
+- blend/decay kept network-free and pure; all I/O lives behind the `SignalStore` interface so Notion can later swap to Supabase without touching blend or ingestion
+- Notion SDK imported lazily inside `NotionSignalStore.__init__` so the package stays importable without `notion-client` installed
+
+**Next Steps:**
+- [ ] Connect a Notion MCP session, then create the 4-table workspace (City→Dimension→Source→Signal, ~19 API calls) and write real IDs to `config/notion_ids.yaml`
+- [ ] `pip install notion-client` and run the manual smoke test: `python -m pipeline.layer2.notion_client`
+- [ ] Create Signal saved views manually (Notion API can't: "Needs Review", "Active by City", "Expired/Archive")
+- [ ] Phase 2: wire Layer 2 into S5 + build Gmail/Granola ingestion (out of Phase 1 scope)
+
 ### Session — 2026-06-03 (81af345)
 
 **Accomplished:**
