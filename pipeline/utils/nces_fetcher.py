@@ -33,16 +33,20 @@ log = logging.getLogger(__name__)
 
 # ── File paths ────────────────────────────────────────────────────────────────
 
-FINANCE_CSV    = "data/raw/nm/nces_lea_finance_2024.csv"
-LUNCH_CSV      = "data/raw/nm/nces_sch_lunch_2024.csv"
 STATES_YAML    = "config/states.yaml"
+# Finance and lunch CSV paths are derived at runtime from the state code:
+#   data/raw/{state}/nces_lea_finance_2024.csv
+#   data/raw/{state}/nces_sch_lunch_2024.csv
 
 # Source metadata for fact injection
 SOURCE_URL     = "https://nces.ed.gov/ccd/files.asp"
 SOURCE_TITLE   = "NCES CCD Local Education Agency Finance / Lunch Data FY2023"
 FISCAL_YEAR    = "2022-2023"
 
-# NM state average per-pupil revenue (pre-computed from 143 valid NM LEA rows)
+# NM state average per-pupil revenue (pre-computed from 143 valid NM LEA rows).
+# TODO(S35-sweep): NM_STATE_AVG_PPR is NM-specific. Per-state averages must be
+# loaded from states.yaml (or computed on-the-fly from the finance CSV) before
+# per_pupil_revenue_vs_state_avg_pct can be produced for non-NM states.
 NM_STATE_AVG_PPR = 24_356.0
 
 # Sentinel: NCES uses -2 for missing/not-applicable numeric fields
@@ -236,19 +240,20 @@ def _load_nces_map(state: str) -> dict:
 
 # ── Finance reader ────────────────────────────────────────────────────────────
 
-def _read_finance(leaid: str) -> Optional[dict]:
+def _read_finance(leaid: str, state: str) -> Optional[dict]:
     """
     Return raw finance fields for a single LEAID, or None if not found / invalid.
 
     Filters out rows where key columns carry the -2 missing sentinel before
     any arithmetic. Returns a dict of raw numeric values.
     """
-    if not os.path.exists(FINANCE_CSV):
-        log.warning("nces_fetcher: finance file not found — %s", FINANCE_CSV)
+    finance_csv = f"data/raw/{state.lower()}/nces_lea_finance_2024.csv"
+    if not os.path.exists(finance_csv):
+        log.warning("nces_fetcher: finance file not found — %s", finance_csv)
         return None
 
     try:
-        with open(FINANCE_CSV, newline="", encoding="utf-8-sig") as f:
+        with open(finance_csv, newline="", encoding="utf-8-sig") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 if row.get("LEAID", "").strip() != leaid:
@@ -281,7 +286,7 @@ def _read_finance(leaid: str) -> Optional[dict]:
 
 # ── Lunch aggregator ──────────────────────────────────────────────────────────
 
-def _aggregate_frl(leaid: str) -> Optional[int]:
+def _aggregate_frl(leaid: str, state: str) -> Optional[int]:
     """
     Sum free + reduced-price lunch counts across all schools in the district.
 
@@ -295,15 +300,16 @@ def _aggregate_frl(leaid: str) -> Optional[int]:
     Returns total FRL-eligible student count, or None if the file is missing.
     Note: denominator (total enrollment) comes from finance MEMBERSCH, not here.
     """
-    if not os.path.exists(LUNCH_CSV):
-        log.warning("nces_fetcher: lunch file not found — %s", LUNCH_CSV)
+    lunch_csv = f"data/raw/{state.lower()}/nces_sch_lunch_2024.csv"
+    if not os.path.exists(lunch_csv):
+        log.warning("nces_fetcher: lunch file not found — %s", lunch_csv)
         return None
 
     frl_total = 0
     found_any = False
 
     try:
-        with open(LUNCH_CSV, newline="", encoding="utf-8-sig") as f:
+        with open(lunch_csv, newline="", encoding="utf-8-sig") as f:
             reader = csv.DictReader(f)
             for row in reader:
                 if row.get("LEAID", "").strip() != leaid:
@@ -369,7 +375,7 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
         return None
 
     # ── Finance fields ────────────────────────────────────────────────────────
-    finance = _read_finance(leaid)
+    finance = _read_finance(leaid, state)
     if finance is None:
         log.warning("nces_fetcher: no finance row found for LEAID %s (%s)", leaid, community_id)
         return None
@@ -416,7 +422,7 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
             result["revenue_local_pct"]   = round(tlocrev / totalrev * 100, 1)
 
     # ── FRL from lunch file ───────────────────────────────────────────────────
-    frl_count = _aggregate_frl(leaid)
+    frl_count = _aggregate_frl(leaid, state)
     if frl_count is not None and membersch > 0:
         frl_pct = round(frl_count / membersch * 100, 1)
         result["frl_pct"] = frl_pct
