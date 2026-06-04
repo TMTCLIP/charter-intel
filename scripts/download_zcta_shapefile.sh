@@ -28,7 +28,10 @@ echo "Creating destination directory: $DEST_DIR"
 mkdir -p "$DEST_DIR"
 
 echo "Downloading TIGER/Line 2023 ZCTA shapefile (~68 MB)..."
-curl -L --progress-bar -o "$TMP_ZIP" "$ZIP_URL"
+curl -L --fail --retry 3 --retry-delay 5 --progress-bar -o "$TMP_ZIP" "$ZIP_URL"
+
+echo "Verifying zip integrity..."
+unzip -t "$TMP_ZIP" || { echo "ERROR: zip file is corrupt or incomplete"; exit 1; }
 
 echo "Unzipping to $DEST_DIR ..."
 unzip -o "$TMP_ZIP" -d "$DEST_DIR"
