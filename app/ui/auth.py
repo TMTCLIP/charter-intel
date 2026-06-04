@@ -24,8 +24,8 @@ _SCOPES = [
 ]
 
 
-def _make_flow(state: str | None = None) -> Flow:
-    return Flow.from_client_config(
+def _make_flow(state: str | None = None, code_verifier: str | None = None) -> Flow:
+    flow = Flow.from_client_config(
         {
             "web": {
                 "client_id": _CLIENT_ID,
@@ -39,6 +39,9 @@ def _make_flow(state: str | None = None) -> Flow:
         redirect_uri=_REDIRECT_URI,
         state=state,
     )
+    if code_verifier:
+        flow.code_verifier = code_verifier
+    return flow
 
 
 @auth_bp.route("/login")
@@ -49,6 +52,7 @@ def login():
     flow = _make_flow()
     auth_url, state = flow.authorization_url(prompt="select_account")
     session["oauth_state"] = state
+    session["code_verifier"] = flow.code_verifier
     return redirect(auth_url)
 
 
@@ -63,7 +67,10 @@ def oauth2callback():
                 f"state mismatch: got {request.args.get('state')!r}, "
                 f"expected {session.get('oauth_state')!r}"
             )
-        flow = _make_flow(state=session.get("oauth_state"))
+        flow = _make_flow(
+            state=session.get("oauth_state"),
+            code_verifier=session.get("code_verifier"),
+        )
         flow.fetch_token(authorization_response=request.url)
         credentials = flow.credentials
         id_info = id_token.verify_oauth2_token(
