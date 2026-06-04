@@ -203,9 +203,9 @@ def parse_roster(roster_path: str, state: str) -> list[SchoolStub]:
         for i, row in enumerate(reader, start=2):  # Row 1 = header
             city_col = field_map.get("city")
             if city_col:
-                city = _clean_city(row.get(city_col, "").strip())
+                city = _clean_city(row.get(city_col, "").strip(), state)
             else:
-                city = _city_from_address(row.get("Street Address", ""))
+                city = _city_from_address(row.get("Street Address", ""), state)
             status_col = field_map.get("status")
             status = row.get(status_col, "ACTIVE").strip().upper() if status_col else "ACTIVE"
 
@@ -311,11 +311,11 @@ def validate_prerequisites(state: str, roster_path: str) -> ValidationResult:
     return ValidationResult(valid=len(errors) == 0, errors=errors)
 
 
-def _clean_city(city: str) -> str:
-    """Normalize city strings — strip whitespace, title-case, remove suffixes."""
+def _clean_city(city: str, state: str = "") -> str:
+    """Normalize city strings — strip whitespace, title-case, remove state suffixes."""
     city = city.strip().title()
-    # Remove common suffixes that appear in PED data
-    city = re.sub(r"\s*(,\s*NM|,\s*New Mexico)\s*$", "", city, flags=re.IGNORECASE)
+    if state:
+        city = re.sub(rf"\s*,\s*{re.escape(state)}\s*$", "", city, flags=re.IGNORECASE)
     return city
 
 
@@ -382,25 +382,26 @@ _STREET_SUFFIXES: frozenset = frozenset({
     "ne", "nw", "se", "sw",
     # Additional common tokens
     "path", "row",
-    # NM Spanish address tokens — street-name words that appear immediately
-    # before the city name in NM PED roster addresses. "Arbolera" is the
-    # street name in "515 Calle Arbolera Española" (McCurdy Charter School);
-    # without this entry the fallback heuristic produces "Arbolera Española"
-    # instead of "Española".
+    # NM-specific: Spanish street-name word that appears immediately before the
+    # city name in "515 Calle Arbolera Española" (McCurdy Charter School).
+    # Without this entry the fallback heuristic produces "Arbolera Española".
+    # TODO(S35-sweep): extend this set per-state as new states are onboarded.
     "arbolera",
 })
 
 
-def _city_from_address(address: str) -> str:
-    """Extract city from NM PED address format.
+def _city_from_address(address: str, state: str) -> str:
+    """Extract city from a state PED roster address string.
 
-    Works backwards through the pre-state address words and stops at the
-    first street suffix or compass directional. Everything after that word
-    is the city name. Non-alpha characters (commas, periods) are stripped
-    from each word before the set lookup so that tokens like 'Blvd,' or
-    'St.' match correctly.
+    Splits on the state abbreviation separator (e.g. ", NM") to isolate the
+    pre-state portion, then walks backwards through the words to find the
+    rightmost street-suffix or compass-directional token. Everything after
+    that token is the city name.
 
-    Examples:
+    Non-alpha characters (commas, periods) are stripped from each word before
+    the suffix-set lookup so tokens like "Blvd," or "St." match correctly.
+
+    Examples (NM):
         '4300 Cutler Ave NE Albuquerque, NM 87110'    → 'Albuquerque'
         '74 A Van Nu Po Road Santa Fe, NM 87508'      → 'Santa Fe'
         '123 Main St Las Cruces, NM 88001'             → 'Las Cruces'
@@ -409,7 +410,7 @@ def _city_from_address(address: str) -> str:
         '7300 Old Santa Fe Trail, Santa Fe, NM 87505' → 'Santa Fe'
         '515 Calle Arbolera Española, NM 87532'       → 'Española'
     """
-    parts = re.split(r",\s*NM\b", address, maxsplit=1)
+    parts = re.split(rf",\s*{re.escape(state)}\b", address, maxsplit=1)
     if len(parts) < 2:
         return ""
     pre_state = parts[0].strip()
@@ -423,13 +424,13 @@ def _city_from_address(address: str) -> str:
         if token in _STREET_SUFFIXES:
             city_words = words[i + 1:]
             if city_words:
-                return _clean_city(_strip_address_artifacts(" ".join(city_words)))
+                return _clean_city(_strip_address_artifacts(" ".join(city_words)), state)
             break  # suffix at tail with nothing after — fall through
 
     # Fallback: no recognizable suffix found.
-    # Last two words are the best heuristic for NM cities (most are 1–2 words).
+    # Last two words are the best heuristic for most cities (most are 1–2 words).
     raw = " ".join(words[-2:]) if len(words) >= 2 else pre_state
-    return _clean_city(_strip_address_artifacts(raw))
+    return _clean_city(_strip_address_artifacts(raw), state)
 
 
 def _roster_path(state: str) -> str:
