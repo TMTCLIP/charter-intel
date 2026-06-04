@@ -243,10 +243,13 @@ def _generate_brief(
         presets = yaml.safe_load(f)
     preset_description = presets[config.preset.value]["description"]
 
+    state_cfg = _load_state_config(state)
+    state_name = state_cfg.get("name") or state  # fallback to code if not in states.yaml
+
     # Load prompt with substitutions
     prompt_text = load_prompt(prompt_path, {
         "COMMUNITY_NAME": community_name,
-        "STATE_NAME": state,  # TODO: expand to full name via states.yaml
+        "STATE_NAME": state_name,
         "STATE_CODE": state,
         "COMMUNITY_ID": community_id,
         "PRESET": config.preset.value,
