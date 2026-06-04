@@ -32,6 +32,13 @@ COPY app/requirements.txt /app/app/requirements.txt
 RUN pip install --upgrade pip \
  && pip install -r /app/requirements.txt -r /app/app/requirements.txt
 
+# Bake the static ZCTA shapefile into the image at build time so it is never
+# downloaded at container startup (avoids volume space issues and crash loops).
+# Selective COPY keeps this layer cached independently of code changes.
+COPY scripts/download_zcta_shapefile.sh /app/scripts/download_zcta_shapefile.sh
+RUN bash /app/scripts/download_zcta_shapefile.sh
+RUN mkdir -p /app/data/raw/national
+
 # Application + pipeline code.
 COPY . /app
 
