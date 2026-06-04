@@ -38,6 +38,7 @@ link_persistent() {
 
 link_persistent "${DATA_DIR}/runs"       "${APP_DIR}/app/runs"
 link_persistent "${DATA_DIR}/outputs"    "${APP_DIR}/outputs"
+mkdir -p "${DATA_DIR}/outputs/zip"
 link_persistent "${DATA_DIR}/data_cache" "${APP_DIR}/data/cache"
 link_persistent "${DATA_DIR}/data_raw"   "${APP_DIR}/data/raw"
 link_persistent "${DATA_DIR}/data_logs"  "${APP_DIR}/data/logs"
