@@ -35,3 +35,5 @@ shapely>=2.0.0
 pytest>=8.0.0
 pytest-cov>=5.0.0
 flask
+google-auth>=2.0.0
+google-auth-oauthlib>=1.0.0

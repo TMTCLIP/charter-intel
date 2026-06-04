@@ -10,3 +10,5 @@ streamlit
 # CLIP Flask UI (app/ui/server.py)
 flask
 pyyaml
+google-auth>=2.0.0
+google-auth-oauthlib>=1.0.0
