@@ -452,3 +452,28 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Expand `STATE_NAME` substitution to full state name via `states.yaml` (`s6_synthesis.py:249`)
 - [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
 - [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)
+
+---
+
+### Session 35 — 2026-06-03 (b9959cf)
+
+**Accomplished:**
+- Fixed `_city_from_address()` and `_clean_city()` in `s1_discovery.py` — both hardcoded `, NM\b` split/strip patterns; introduced `state` param threaded from `parse_roster` so any state works; added 18 unit tests in `tests/unit/test_s1_discovery.py`
+- Fixed `nces_fetcher.py` — `FINANCE_CSV = "data/raw/nm/..."` used in `_read_finance()`; changed to accept `state` param and derive path dynamically; removed dead `LUNCH_CSV` constant; tagged `NM_STATE_AVG_PPR` as `TODO(S35-sweep)`; added 5 unit tests in `tests/unit/test_nces_fetcher.py`
+- Resolved `STATE_NAME` TODO in `s6_synthesis._generate_brief` — now calls `_load_state_config(state).get("name")` to expand code to full name (e.g. "New Mexico"); falls back to code for states not yet in `states.yaml`; added 4 unit tests in `tests/unit/test_s6_state_name.py`
+- Traced `sources[*].date is None` structural gap — every S3 fetcher sets `source_date: None`; added `TODO(S35)` at NCES injection site explaining required fix (per-fetcher fiscal year-end date); no speculative fix added
+- Completed NM hardcode sweep — added `TODO(S35-sweep)` to 7 more files: `saipe_fetcher.py` (STATE_FIPS), `population_trends_fetcher.py` (NCES source paths), `charter_schools_fetcher.py` (paths), `authorizers_fetcher.py` (roster + authorizer registry), `s3_fact_extraction.py` (_PED_ROSTER_TITLE + "NM state avg" label), `s4_verification.py` (NM PED shortage reference)
+
+**Decisions:**
+- `_city_from_address` uses `re.escape(state)` in a raw f-string pattern — correct for all 2-letter ASCII state codes; `\b` boundary prevents partial matches
+- `FINANCE_CSV` constant removed entirely; `LUNCH_CSV` removed as dead code (`_aggregate_frl` already derived path from `state`)
+- `STATE_NAME` falls back to raw code so states not yet in `states.yaml` still produce valid output
+- No speculative fix for `source_date`; the structural gap requires per-fetcher changes and was scoped out of S35
+
+**Next Steps:**
+- [ ] Generalize `NM_STATE_AVG_PPR` in `nces_fetcher.py` — load per-state average from states.yaml
+- [ ] Generalize `STATE_FIPS` in `saipe_fetcher.py` via states.yaml `state_fips` field
+- [ ] Generalize NCES source file paths in `population_trends_fetcher.py` (see `TODO(S35-sweep)`)
+- [ ] Populate `source_date` in S3 fetchers with fiscal year-end dates to enable accurate `data_through` vintage dating
+- [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
+- [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)
