@@ -401,6 +401,27 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Verify shapefile is present on Railway volume at `data/raw/national/tl_2023_us_zcta520/tl_2023_us_zcta520.shp` before next deploy
 - [ ] Confirm zip drill works end-to-end on Railway after these removals
 
+### Session — 2026-06-04 (3f1214c)
+
+**Accomplished:**
+- Built `pipeline/layer2/ingestors/gmail_ingestor.py` — external-only Gmail ingestor (Phase 2); no LLM extraction, snippet-only evidence, always `confidence=None`/`confidence_tier="review"`
+- Added `_PERSONAL_ADDRESS_EXCLUDE` constant (`bauslander8@gmail.com`, `b.auslander@ufl.edu`) to drop threads where the only external participants are the operator's own personal addresses
+- Implemented `--dry-run` + `--fixture-file` modes; dry-run validated against real Gmail MCP data (19 threads → 3 signals after filtering)
+- Wrote 3 external signals live to Notion (`status="active"`, `confidence_tier="review"`, `operator_verified=False`); Notion row IDs: `375850c1-d2b5-816b-b9bc-d03635ce1fca`, `375850c1-d2b5-81d4-8147-d7f1cbb07091`, `375850c1-d2b5-811b-a62b-d7ea3ef9d5e9`
+- Added `gmail_ext` key to `config/ingest_cache.json` dedup cache; added `config/ingest_cache.json` to `.gitignore` (runtime state)
+- Verified full test suite at **502 passing** after all Layer 2 Phase 2 additions
+
+**Decisions:**
+- `ingestors/` (no LLM) lives parallel to `ingest/sources/` (LLM extractor path) — keeps external stub signals structurally separate from Claude-extracted signals
+- `city=None` coerced to `city=""` before Notion write to avoid null-query crash in `_city_page_id`; all 3 live signals linked to a blank-slug placeholder city row — operator must correct city relations at review time
+- F-signal/P-score independence maintained: `gmail_ingestor.py` never imports S1–S7 stages; P-score pipeline unmodified
+
+**Next Steps:**
+- [ ] Fix blank-slug city placeholder issue: clear city relation on the 3 live signals (`375850c1-d2b5-816b`, `375850c1-d2b5-81d4`, `375850c1-d2b5-811b`) and implement proper None-safe city handling in live write path
+- [ ] Operator review: assign `city`, `dimension`, and `direction` on all 3 signals in the Notion "Needs Review" view before any blend
+- [ ] Wire Gmail ingestor to scheduled run (cron or `clip_ops/run_daily.py`) for ongoing ingestion
+- [ ] Phase 3: wire Layer 2 blend into S5 scoring
+
 ### Session — 2026-06-04 (43f1429)
 
 **Accomplished:**
