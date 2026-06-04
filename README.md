@@ -477,3 +477,28 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Populate `source_date` in S3 fetchers with fiscal year-end dates to enable accurate `data_through` vintage dating
 - [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
 - [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)
+
+---
+
+### Session 35 (continued) — 2026-06-03 (9f2c7bc)
+
+**Accomplished:**
+- Rewrote `templates/strategic_brief.html.j2` in-place — full dark-theme "precision intelligence" redesign; replaced light-blue chrome palette with `#0d1117` dark background and semantic CSS variables
+- Introduced two-column sticky sidebar layout (260px sidebar + flex main, 1140px max-width); sidebar shows community name, DM Serif Display score dial, classification pill, confidence badge, data-through, and smooth-scroll section nav
+- Replaced `-apple-system` font stack with Google Fonts: DM Serif Display (score/headings), IBM Plex Mono (labels/debug/sources), IBM Plex Sans (body)
+- Added CSS animations (`fadeIn` on sections, `scaleIn` on score block), card hover transitions, scroll-position nav highlighting via IntersectionObserver
+- Added responsive breakpoint at 900px (sidebar collapses to horizontal strip, nav hidden) and `@media print` palette inversion to white/black
+- Preserved all 60+ Jinja2 expressions exactly as in original; Jinja2 parse verified clean; 417 tests still pass
+
+**Decisions:**
+- `brief.scorecard_summary.tier_display_label` referenced directly in the sidebar rather than via `sc` shorthand — keeps `{% set sc = brief.scorecard_summary %}` untouched in section 4
+- `@media print` uses CSS variable overrides to invert the dark palette rather than class-swapping, keeping the HTML clean
+- Quick reads section uses `.qr-card` wrapper cards for visual parity with school cards
+
+**Next Steps:**
+- [ ] Generalize `NM_STATE_AVG_PPR` in `nces_fetcher.py` — load per-state average from states.yaml
+- [ ] Generalize `STATE_FIPS` in `saipe_fetcher.py` via states.yaml `state_fips` field
+- [ ] Generalize NCES source file paths in `population_trends_fetcher.py` (see `TODO(S35-sweep)`)
+- [ ] Populate `source_date` in S3 fetchers with fiscal year-end dates to enable accurate `data_through` vintage dating
+- [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
+- [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)
