@@ -120,6 +120,7 @@ def _match_proficiency(school_name: str, pmap: dict[str, float]) -> Optional[flo
 
 def get_community_charter_schools(
     known_schools: list[str],
+    state: str = "NM",
     roster_file: Optional[str] = None,
     ela_csv: Optional[str] = None,
     math_csv: Optional[str] = None,
@@ -130,9 +131,10 @@ def get_community_charter_schools(
     Parameters
     ----------
     known_schools : list of school names from S1 discovery (the community's schools)
-    roster_file   : path to charter_roster.csv; falls back to module constant
-    ela_csv       : path to ELA proficiency CSV; falls back to module constant
-    math_csv      : path to Math proficiency CSV; falls back to module constant
+    state         : two-letter state code; used to derive default CSV paths
+    roster_file   : path to charter_roster.csv; overrides state-derived default
+    ela_csv       : path to ELA proficiency CSV; overrides state-derived default
+    math_csv      : path to Math proficiency CSV; overrides state-derived default
 
     Return shape (one dict per school):
     {
@@ -153,9 +155,10 @@ def get_community_charter_schools(
         "contact_verification_required": True,
     }
     """
-    roster_path = roster_file or ROSTER_CSV
-    ela_path    = ela_csv  or ELA_CSV
-    math_path   = math_csv or MATH_CSV
+    state_lower = state.lower()
+    roster_path = roster_file or f"data/raw/{state_lower}/charter_roster.csv"
+    ela_path    = ela_csv  or f"data/raw/{state_lower}/proficiency_ela_2024_25.csv"
+    math_path   = math_csv or f"data/raw/{state_lower}/proficiency_math_2024_25.csv"
 
     if not known_schools:
         return []
@@ -200,6 +203,11 @@ def get_community_charter_schools(
                     "contact_verification_required": True,
                 })
 
+    except FileNotFoundError:
+        log.debug(
+            "charter_schools_fetcher: roster not found at %s — returning empty for %s",
+            roster_path, state,
+        )
     except Exception as exc:
         log.warning("charter_schools_fetcher: roster read error — %s", exc)
 

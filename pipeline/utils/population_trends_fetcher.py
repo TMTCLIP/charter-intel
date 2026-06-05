@@ -418,7 +418,14 @@ def get_school_enrollment_trends(community_id: str, state: str) -> Optional[dict
     school_years: dict[str, dict[int, int]] = {}
     school_names: dict[str, str] = {}
 
-    for year_key, file_path in _SCHOOL_MEMBERSHIP_FILES:
+    sl = state.lower()
+    state_school_files = [
+        (2020, f"data/raw/{sl}/nces_lea_membership_2020.csv"),
+        (2022, f"data/raw/{sl}/nces_lea_membership_2022.csv"),
+        (2023, f"data/raw/{sl}/nces_lea_membership_2023.csv"),
+    ]
+
+    for year_key, file_path in state_school_files:
         per_file = _read_school_enrollment_by_file(leaid, file_path)
         for ncessch, entry in per_file.items():
             if ncessch not in school_years:

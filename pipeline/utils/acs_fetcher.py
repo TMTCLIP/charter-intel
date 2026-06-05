@@ -47,6 +47,8 @@ from typing import Optional
 
 import yaml
 
+from pipeline.utils.fips_utils import get_state_fips
+
 log = logging.getLogger(__name__)
 
 # ── File cache config ─────────────────────────────────────────────────────────
@@ -88,7 +90,6 @@ def _acs_cache_write(key: str, data: dict) -> None:
 ACS_API_BASE = "https://api.census.gov/data"
 ACS_YEAR     = "2023"       # Most recent released ACS 5-year as of 2026
 ACS_DATASET  = "acs/acs5"
-STATE_FIPS   = "35"         # New Mexico
 
 STATES_YAML  = "config/states.yaml"
 
@@ -142,7 +143,7 @@ def _api_key() -> Optional[str]:
     return os.environ.get("CENSUS_API_KEY") or None
 
 
-def _fetch_district(district_code: str, api_key: str) -> Optional[dict]:
+def _fetch_district(district_code: str, api_key: str, state_fips: str) -> Optional[dict]:
     """
     Call the Census ACS API for one unified school district.
 
@@ -155,7 +156,7 @@ def _fetch_district(district_code: str, api_key: str) -> Optional[dict]:
     params = {
         "get": _GET_VARS,
         "for": f"school district (unified):{district_code}",
-        "in":  f"state:{STATE_FIPS}",
+        "in":  f"state:{state_fips}",
         "key": api_key,
     }
     # quote_via=urllib.parse.quote encodes spaces as %20 (not +)
@@ -201,6 +202,7 @@ def _fetch_acs_vars(
     variables: str,
     year: str,
     api_key: str,
+    state_fips: str,
 ) -> Optional[dict]:
     """
     Generic ACS API query for any variable set at unified school district level.
@@ -212,7 +214,7 @@ def _fetch_acs_vars(
     params = {
         "get": variables,
         "for": f"school district (unified):{district_code}",
-        "in":  f"state:{STATE_FIPS}",
+        "in":  f"state:{state_fips}",
         "key": api_key,
     }
     url = (
@@ -299,6 +301,11 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
         )
         return None
 
+    state_fips = get_state_fips(state)
+    if state_fips is None:
+        log.warning("acs_fetcher: unknown state '%s' — cannot derive FIPS", state)
+        return None
+
     # ── Cache read ────────────────────────────────────────────────────────────
     _cache_key = f"ell_{leaid_str}"
     cached = _acs_cache_read(_cache_key)
@@ -309,7 +316,7 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
     # "3500060" → "00060"
     district_code = leaid_str[2:]
 
-    row = _fetch_district(district_code, api_key)
+    row = _fetch_district(district_code, api_key, state_fips)
     if row is None:
         return None
 
@@ -415,19 +422,20 @@ def get_total_population(community_id: str, state: str) -> Optional[dict]:
             "confidence":  "MODERATE",
         }
 
-    Returns None (does not raise) if: state is not NM, CENSUS_API_KEY not set,
+    Returns None (does not raise) if: CENSUS_API_KEY not set, unknown state,
     no LEAID mapping, either vintage API call fails, or population values are invalid.
     """
-    if state.upper() != "NM":
-        log.info(
-            "acs_fetcher: get_total_population is NM-only — skipping %s (%s)",
-            community_id, state,
-        )
-        return None
-
     api_key = _api_key()
     if not api_key:
         return None  # warning already emitted by get_district_data caller
+
+    state_fips = get_state_fips(state)
+    if state_fips is None:
+        log.warning(
+            "acs_fetcher: unknown state '%s' — cannot derive FIPS for total population",
+            state,
+        )
+        return None
 
     nces_map = _load_nces_map(state)
     leaid = nces_map.get(community_id)
@@ -460,7 +468,7 @@ def get_total_population(community_id: str, state: str) -> Optional[dict]:
 
     pop_by_vintage: dict[str, int] = {}
     for vintage in (_POP_VINTAGE_EARLY, _POP_VINTAGE_LATE):
-        row = _fetch_acs_vars(district_code, variables, vintage, api_key)
+        row = _fetch_acs_vars(district_code, variables, vintage, api_key, state_fips)
         if row is None:
             log.warning(
                 "acs_fetcher: total population query failed for %s vintage %s",

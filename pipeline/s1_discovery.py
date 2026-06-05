@@ -349,9 +349,9 @@ def _strip_address_artifacts(city: str) -> str:
     )
 
     # 2. Strip leading highway / route identifiers.
-    #    Covers: "US-70", "NM Hwy 564", "NM 602", "State Hwy 9", "Hwy 344"
+    #    Covers: "US-70", "MS 82", "TN-64", "WI 35", "NM 602", "State Hwy 9", "Hwy 344"
     city = re.sub(
-        r"(?i)^\s*(?:US|NM|State)\s*-?\s*(?:Hwy\.?|Highway|Route|Rte\.?)?\s*\d+\s*",
+        r"(?i)^\s*(?:US|[A-Z]{2}|State)\s*-?\s*(?:Hwy\.?|Highway|Route|Rte\.?)?\s*\d+\s*",
         "", city,
     )
     city = re.sub(

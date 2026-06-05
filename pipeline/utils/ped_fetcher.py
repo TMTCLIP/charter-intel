@@ -101,8 +101,12 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
         log.info("ped_fetcher: no district mapping for %s in %s", community_id, state)
         return None
 
-    ela  = _read_proficiency(ELA_CSV,  district_name)
-    math = _read_proficiency(MATH_CSV, district_name)
+    state_lower = state.lower()
+    ela_csv  = f"data/raw/{state_lower}/proficiency_ela_2024_25.csv"
+    math_csv = f"data/raw/{state_lower}/proficiency_math_2024_25.csv"
+
+    ela  = _read_proficiency(ela_csv,  district_name)
+    math = _read_proficiency(math_csv, district_name)
 
     if ela is None and math is None:
         log.warning(

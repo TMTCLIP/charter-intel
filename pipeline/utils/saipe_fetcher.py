@@ -40,14 +40,13 @@ import urllib.parse
 import urllib.request
 from typing import Optional
 
+from pipeline.utils.fips_utils import get_state_fips
+
 log = logging.getLogger(__name__)
 
 # ── Census API config ─────────────────────────────────────────────────────────
 
 SAIPE_API_BASE = "https://api.census.gov/data/timeseries/poverty/saipe/schdist"
-# TODO(S35-sweep): STATE_FIPS is hardcoded to NM (35). Derive from
-# config/states.yaml state_fips field per state before expanding beyond NM.
-STATE_FIPS     = "35"   # New Mexico
 
 SOURCE_TITLE   = "Census SAIPE School District Poverty Estimates"
 SOURCE_URL     = SAIPE_API_BASE
@@ -110,6 +109,7 @@ def _fetch_district_type(
     district_type: str,
     year: int,
     api_key: str,
+    state_fips: str,
 ) -> Optional[dict]:
     """
     Query SAIPE for one district type and year.
@@ -119,7 +119,7 @@ def _fetch_district_type(
     params = {
         "get":    _GET_VARS,
         "for":    f"{district_type}:{district_code}",
-        "in":     f"state:{STATE_FIPS}",
+        "in":     f"state:{state_fips}",
         "YEAR":   str(year),
         "key":    api_key,
     }
@@ -155,7 +155,7 @@ def _fetch_district_type(
 
 # ── Public interface ──────────────────────────────────────────────────────────
 
-def get_poverty_data(leaid: str, year: Optional[int] = None) -> Optional[dict]:
+def get_poverty_data(leaid: str, year: Optional[int] = None, state: str = "NM") -> Optional[dict]:
     """
     Return SAIPE poverty data for a school district, or None if unavailable.
 
@@ -190,6 +190,11 @@ def get_poverty_data(leaid: str, year: Optional[int] = None) -> Optional[dict]:
         log.info("saipe_fetcher: no LEAID provided — skipping")
         return None
 
+    state_fips = get_state_fips(state)
+    if state_fips is None:
+        log.warning("saipe_fetcher: unknown state '%s' — cannot derive FIPS", state)
+        return None
+
     api_key = _api_key()
     if not api_key:
         log.warning(
@@ -219,7 +224,7 @@ def get_poverty_data(leaid: str, year: Optional[int] = None) -> Optional[dict]:
     matched_year = None
     for try_year in years:
         for district_type in _DISTRICT_TYPES:
-            row = _fetch_district_type(district_code, district_type, try_year, api_key)
+            row = _fetch_district_type(district_code, district_type, try_year, api_key, state_fips)
             if row is not None:
                 matched_year = try_year
                 log.info(

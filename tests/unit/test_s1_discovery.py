@@ -13,7 +13,7 @@ import pytest
 _ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.insert(0, _ROOT)
 
-from pipeline.s1_discovery import _city_from_address, _clean_city
+from pipeline.s1_discovery import _city_from_address, _clean_city, _strip_address_artifacts
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -82,3 +82,30 @@ def test_city_from_address_multiword_city_tx():
 
 def test_city_from_address_no_state_separator_returns_empty():
     assert _city_from_address("No state separator here", "NM") == ""
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# _strip_address_artifacts — highway prefix regex (multi-state)
+# ─────────────────────────────────────────────────────────────────────────────
+# Task 2: The highway-prefix regex now matches any 2-letter state abbreviation
+# (changed from hardcoded NM to [A-Z]{2}).  These tests guard against regression
+# to the NM-only pattern.
+
+@pytest.mark.parametrize("inp,expected", [
+    ("MS-82 Canton",    "Canton"),
+    ("TN-64 Nashville", "Nashville"),
+    ("WI-35 Madison",   "Madison"),
+    ("NM-14 Taos",      "Taos"),
+])
+def test_strip_highway_prefix_multistate(inp, expected):
+    assert _strip_address_artifacts(inp) == expected
+
+
+@pytest.mark.parametrize("address,state,expected", [
+    ("MS-82 Jackson, MS 39201", "MS", "Jackson"),
+    ("TN-64 Nashville, TN 37201", "TN", "Nashville"),
+    ("WI-35 Madison, WI 53701", "WI", "Madison"),
+    ("NM-14 Taos, NM 87571", "NM", "Taos"),
+])
+def test_city_from_address_highway_prefix_multistate(address, state, expected):
+    assert _city_from_address(address, state) == expected

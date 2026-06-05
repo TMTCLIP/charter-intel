@@ -86,10 +86,12 @@ FIELDS = [
     "CFDA Number",
 ]
 
-# Replication scope = the state plus its adjacent states. Provisional list;
-# extend per state as the platform expands beyond NM.
+# Replication scope = the state plus its adjacent states.
 ADJACENT_STATES: dict[str, list[str]] = {
     "NM": ["NM", "TX", "AZ", "CO", "OK", "UT"],
+    "MS": ["MS", "AL", "AR", "LA", "TN"],
+    "TN": ["TN", "AL", "AR", "GA", "KY", "MO", "MS", "NC", "VA"],
+    "WI": ["WI", "IL", "IA", "MI", "MN"],
 }
 
 _PAGE_LIMIT = 100
@@ -136,7 +138,14 @@ def _write_cache(key: str, data: dict) -> None:
 def _states_for_scope(scope: str, state: str) -> list[str]:
     """Return the list of state codes queried for a given scope."""
     if scope == "recipient":
-        return ADJACENT_STATES.get(state.upper(), [state.upper()])
+        states = ADJACENT_STATES.get(state.upper())
+        if states is None:
+            log.warning(
+                "ADJACENT_STATES not defined for %s, using state-only fallback",
+                state.upper(),
+            )
+            return [state.upper()]
+        return states
     return [state.upper()]
 
 

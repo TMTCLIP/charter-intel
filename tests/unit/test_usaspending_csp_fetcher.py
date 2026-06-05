@@ -204,6 +204,40 @@ class TestGetCspAwards:
         assert r == canned
 
 
+# ── ADJACENT_STATES expansion (MS, TN, WI) ───────────────────────────────────
+
+class TestAdjacentStatesExpansion:
+    def test_ms_in_adjacent_states(self):
+        assert "MS" in usp.ADJACENT_STATES
+
+    def test_tn_in_adjacent_states(self):
+        assert "TN" in usp.ADJACENT_STATES
+
+    def test_wi_in_adjacent_states(self):
+        assert "WI" in usp.ADJACENT_STATES
+
+    def test_ms_adjacent_states_content(self):
+        assert usp.ADJACENT_STATES["MS"] == ["MS", "AL", "AR", "LA", "TN"]
+
+    def test_tn_adjacent_states_content(self):
+        assert usp.ADJACENT_STATES["TN"] == ["TN", "AL", "AR", "GA", "KY", "MO", "MS", "NC", "VA"]
+
+    def test_wi_adjacent_states_content(self):
+        assert usp.ADJACENT_STATES["WI"] == ["WI", "IL", "IA", "MI", "MN"]
+
+    def test_unknown_state_does_not_raise_keyerror(self):
+        """get_csp_awards with an unknown state must not raise KeyError."""
+        with mock.patch.object(usp, "_fetch_all_awards", return_value=[]):
+            result = usp.get_csp_awards("ZZ", scope="recipient")
+        # A zero result (valid ZERO) — no KeyError, no crash
+        assert result is not None
+        assert result["award_count"] == 0
+
+    def test_unknown_state_fallback_is_state_only(self):
+        """_states_for_scope with an unknown state returns [state] only."""
+        assert usp._states_for_scope("recipient", "ZZ") == ["ZZ"]
+
+
 class TestCountyScope:
     def test_populated_county_signal(self):
         rows = [_row("NACA INSPIRED SCHOOLS NETWORK", 100.0, state="NM")]

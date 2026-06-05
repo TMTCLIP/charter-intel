@@ -173,3 +173,24 @@ class TestCacheHit:
 
         assert result is not None
         assert result["poverty_rate_pct"] == 20.0
+
+
+# ── Unknown state returns None, not crash ─────────────────────────────────────
+
+class TestUnknownState:
+    def test_unknown_state_code_returns_none(self):
+        """get_poverty_data must return None (not crash) for an unknown state 'XX'."""
+        result = saipe_fetcher.get_poverty_data("XX00000", state="XX")
+        assert result is None
+
+    def test_known_state_nm_still_works(self):
+        """State='NM' default still resolves FIPS 35 and proceeds normally."""
+        resp = _make_api_response(poverty_rate="18.5")
+        with (
+            mock.patch("urllib.request.urlopen", return_value=_mock_urlopen(resp)),
+            mock.patch.object(saipe_fetcher, "_read_cache", return_value=None),
+            mock.patch.object(saipe_fetcher, "_write_cache"),
+        ):
+            result = saipe_fetcher.get_poverty_data("3500060", year=2023, state="NM")
+        assert result is not None
+        assert result["poverty_rate_pct"] == 18.5

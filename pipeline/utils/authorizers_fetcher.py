@@ -50,6 +50,7 @@ _AUTHORIZER_TYPES: dict[str, str] = {
 
 def get_community_authorizers(
     known_schools: list[str],
+    state: str = "NM",
     roster_file: Optional[str] = None,
 ) -> list[dict]:
     """
@@ -58,7 +59,8 @@ def get_community_authorizers(
     Parameters
     ----------
     known_schools : list of school names from S1 discovery
-    roster_file   : path to charter_roster.csv; falls back to module constant
+    state         : two-letter state code; used to derive default CSV path
+    roster_file   : path to charter_roster.csv; overrides state-derived default
 
     Return shape (one dict per authorizer):
     {
@@ -72,7 +74,7 @@ def get_community_authorizers(
         "contact_verification_required":  True,
     }
     """
-    roster_path = roster_file or ROSTER_CSV
+    roster_path = roster_file or f"data/raw/{state.lower()}/charter_roster.csv"
 
     if not known_schools:
         return []
@@ -89,6 +91,12 @@ def get_community_authorizers(
                 if name in known_set and auth:
                     authorizer_schools[auth].append(name)
 
+    except FileNotFoundError:
+        log.debug(
+            "authorizers_fetcher: roster not found at %s — returning empty for %s",
+            roster_path, state,
+        )
+        return []
     except Exception as exc:
         log.warning("authorizers_fetcher: roster read error — %s", exc)
         return []
@@ -98,11 +106,10 @@ def get_community_authorizers(
         auth_type = _AUTHORIZER_TYPES.get(auth_name)
         if auth_type is None:
             log.warning(
-                "authorizers_fetcher: '%s' not in _AUTHORIZER_TYPES — defaulting "
-                "type to 'LEA' (unverified; may misclassify a state/tribal authorizer)",
+                "authorizers_fetcher: '%s' not in _AUTHORIZER_TYPES — type unknown",
                 auth_name,
             )
-            auth_type = "LEA"
+            auth_type = "Unknown"
         result.append({
             "authorizer_name":               auth_name,
             "type":                          auth_type,
