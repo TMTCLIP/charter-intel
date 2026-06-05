@@ -109,3 +109,122 @@ def test_strip_highway_prefix_multistate(inp, expected):
 ])
 def test_city_from_address_highway_prefix_multistate(address, state, expected):
     assert _city_from_address(address, state) == expected
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Registry discovery path
+# ─────────────────────────────────────────────────────────────────────────────
+
+import logging
+import yaml as _yaml
+
+from pipeline.s1_discovery import (
+    CommunityStub,
+    _registry_path,
+    _select_source,
+    load_from_registry,
+)
+
+_SAMPLE_REGISTRY = {
+    "ms-jackson": {
+        "display_name": "Jackson",
+        "state": "MS",
+        "district_nces_id": "2801230",
+        "district_name": "Jackson Public Schools",
+        "has_charters": True,
+        "enrollment": 24000,
+        "source": "ccd_auto",
+    },
+    "ms-hattiesburg": {
+        "display_name": "Hattiesburg",
+        "state": "MS",
+        "district_nces_id": "2802100",
+        "district_name": "Hattiesburg Municipal SD",
+        "has_charters": False,
+        "enrollment": 6500,
+        "source": "ccd_auto",
+    },
+}
+
+
+def test_registry_path_format():
+    assert _registry_path("MS") == "config/community_registry/ms.yaml"
+    assert _registry_path("TN") == "config/community_registry/tn.yaml"
+    assert _registry_path("WI") == "config/community_registry/wi.yaml"
+
+
+def test_load_from_registry_returns_sorted_stubs(tmp_path):
+    f = tmp_path / "ms.yaml"
+    f.write_text(_yaml.dump(_SAMPLE_REGISTRY))
+    stubs = load_from_registry(str(f), "MS")
+    assert len(stubs) == 2
+    assert all(isinstance(s, CommunityStub) for s in stubs)
+    # Sorted alphabetically by community_id
+    assert stubs[0].community_id == "ms-hattiesburg"
+    assert stubs[1].community_id == "ms-jackson"
+    assert stubs[0].name == "Hattiesburg"
+    assert stubs[1].name == "Jackson"
+    assert stubs[0].state == "MS"
+
+
+def test_load_from_registry_stub_fields(tmp_path):
+    f = tmp_path / "ms.yaml"
+    f.write_text(_yaml.dump(_SAMPLE_REGISTRY))
+    stubs = load_from_registry(str(f), "MS")
+    stub = next(s for s in stubs if s.community_id == "ms-jackson")
+    assert stub.school_count == 0
+    assert stub.school_names == []
+    assert stub.county is None
+    assert stub.boundary_type == "DISTRICT"
+    assert stub.source_file == str(f)
+
+
+def test_select_source_uses_registry_when_present(tmp_path, monkeypatch):
+    """_select_source returns 'registry' when the registry file exists."""
+    import pipeline.s1_discovery as s1
+    f = tmp_path / "ms.yaml"
+    f.write_text(_yaml.dump(_SAMPLE_REGISTRY))
+    monkeypatch.setattr(s1, "_registry_path", lambda state: str(f))
+
+    source_type, path = s1._select_source("MS")
+    assert source_type == "registry"
+    assert path == str(f)
+
+
+def test_select_source_logs_registry_message(tmp_path, monkeypatch, caplog):
+    """Registry discovery logs the expected message."""
+    import pipeline.s1_discovery as s1
+    f = tmp_path / "ms.yaml"
+    f.write_text(_yaml.dump(_SAMPLE_REGISTRY))
+    monkeypatch.setattr(s1, "_registry_path", lambda state: str(f))
+
+    with caplog.at_level(logging.INFO, logger="pipeline.s1_discovery"):
+        s1._select_source("MS")
+
+    assert "using community registry for MS" in caplog.text
+
+
+def test_select_source_falls_back_to_roster_when_no_registry(monkeypatch):
+    """_select_source returns 'roster' when no registry file exists."""
+    import pipeline.s1_discovery as s1
+    monkeypatch.setattr(s1, "_registry_path", lambda state: "/nonexistent/ms.yaml")
+
+    source_type, path = s1._select_source("MS")
+    assert source_type == "roster"
+    assert "charter_roster.csv" in path
+
+
+def test_select_source_logs_fallback_message(monkeypatch, caplog):
+    """Roster fallback logs the expected message."""
+    import pipeline.s1_discovery as s1
+    monkeypatch.setattr(s1, "_registry_path", lambda state: "/nonexistent/ms.yaml")
+
+    with caplog.at_level(logging.INFO, logger="pipeline.s1_discovery"):
+        s1._select_source("MS")
+
+    assert "falling back to roster CSV" in caplog.text
+
+
+def test_nm_has_no_registry_file():
+    """NM does not have a registry file — it uses roster discovery."""
+    assert not os.path.exists(_registry_path("NM"))

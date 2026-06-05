@@ -25,10 +25,13 @@ NOTES:
 from __future__ import annotations
 import csv
 import json
+import logging
 import os
 import re
 from dataclasses import dataclass, asdict
 from typing import Optional
+
+import yaml
 
 from pipeline import (
     PipelineConfig, StageResult, StageStatus, ValidationResult,
@@ -39,6 +42,7 @@ from pipeline.utils.schema_validator import validate_against_schema
 
 
 STAGE_ID = "s1_discovery"
+_log = logging.getLogger(__name__)
 
 
 # ─────────────────────────────────────────────
@@ -111,18 +115,21 @@ def run(
     Also writes community_list.json to data/processed/{state}/.
     """
     start = _now()
-    roster_path = _roster_path(state)
 
-    # --- Validate prerequisites ---
-    validation = validate_prerequisites(state, roster_path)
-    if not validation:
-        return StageResult(
-            stage_id=STAGE_ID,
-            community_id="ALL",
-            state=state,
-            status=StageStatus.ERROR,
-            errors=validation.errors
-        )
+    # --- Select discovery path: registry (new states) or roster CSV (NM) ---
+    source_type, source_path = _select_source(state)
+
+    # --- Validate prerequisites (roster-only; skip when registry present) ---
+    if source_type == "roster":
+        validation = validate_prerequisites(state, source_path)
+        if not validation:
+            return StageResult(
+                stage_id=STAGE_ID,
+                community_id="ALL",
+                state=state,
+                status=StageStatus.ERROR,
+                errors=validation.errors
+            )
 
     # --- Check cache ---
     cache = CacheManager(config)
@@ -143,9 +150,14 @@ def run(
                 cache_hit=True
             )
 
-    # --- Parse roster ---
-    schools = parse_roster(roster_path, state)
-    communities = group_by_community(schools, state)
+    # --- Build community list ---
+    if source_type == "registry":
+        communities = load_from_registry(source_path, state)
+        total_schools = 0
+    else:
+        schools = parse_roster(source_path, state)
+        communities = group_by_community(schools, state)
+        total_schools = len(schools)
 
     # --- Write and cache the FULL unfiltered community list ---
     # The filter must NOT touch the disk file or cache.  If it did, a
@@ -154,8 +166,8 @@ def run(
     full_output = {
         "state": state,
         "discovered_at": today_str(),
-        "source_file": roster_path,
-        "total_schools": len(schools),
+        "source_file": source_path,
+        "total_schools": total_schools,
         "total_communities": len(communities),
         "communities": [asdict(c) for c in communities]
     }
@@ -431,6 +443,46 @@ def _city_from_address(address: str, state: str) -> str:
     # Last two words are the best heuristic for most cities (most are 1–2 words).
     raw = " ".join(words[-2:]) if len(words) >= 2 else pre_state
     return _clean_city(_strip_address_artifacts(raw), state)
+
+
+def _registry_path(state: str) -> str:
+    return f"config/community_registry/{state.lower()}.yaml"
+
+
+def _select_source(state: str) -> tuple[str, str]:
+    """Return (source_type, path) for the state and log which discovery path is used.
+
+    source_type is "registry" when a community registry file exists for the
+    state, otherwise "roster".  The log message is the canonical indicator
+    of which path was chosen.
+    """
+    registry = _registry_path(state)
+    if os.path.exists(registry):
+        _log.info("S1: using community registry for %s", state)
+        return "registry", registry
+    _log.info("S1: no registry found for %s, falling back to roster CSV", state)
+    return "roster", _roster_path(state)
+
+
+def load_from_registry(registry_path: str, state: str) -> list[CommunityStub]:
+    """Load CommunityStub list from a community registry YAML file."""
+    with open(registry_path) as f:
+        data = yaml.safe_load(f) or {}
+
+    communities = []
+    for cid, entry in sorted(data.items()):
+        communities.append(CommunityStub(
+            community_id=cid,
+            name=entry.get("display_name", cid),
+            state=entry.get("state", state),
+            school_count=0,
+            school_names=[],
+            county=None,
+            boundary_type="DISTRICT",
+            discovered_at=today_str(),
+            source_file=registry_path,
+        ))
+    return communities
 
 
 def _roster_path(state: str) -> str:
