@@ -1168,15 +1168,26 @@ function _cbInit() {
 
   // Open on focus if cities are loaded
   input.addEventListener("focus", () => {
-    if (_cbCities.length > 0 && !_cbOpen) _cbOpenPanel();
+    console.log(`[CLIP] input focus event: _cbCities.length=${_cbCities.length}, _cbOpen=${_cbOpen}`);
+    if (_cbCities.length > 0 && !_cbOpen) {
+      console.log("[CLIP] opening panel from focus event");
+      _cbOpenPanel();
+    }
   });
 
   // Filter with 50ms debounce; open if not already open
   input.addEventListener("input", () => {
     clearTimeout(_cbDebounce);
     _cbDebounce = setTimeout(() => {
+      console.log(`[CLIP] input event debounce fired, filtering query="${input.value}"`);
       _cbFilter(input.value);
-      if (!_cbOpen && _cbCities.length > 0) _cbOpenPanel();
+      console.log(`[CLIP] after filter: _cbOpen=${_cbOpen}, _cbCities.length=${_cbCities.length}`);
+      if (!_cbOpen && _cbCities.length > 0) {
+        console.log("[CLIP] opening panel from input event");
+        _cbOpenPanel();
+      } else {
+        console.log(`[CLIP] NOT opening panel: _cbOpen=${_cbOpen}, _cbCities.length=${_cbCities.length}`);
+      }
     }, 50);
   });
 
@@ -1343,13 +1354,18 @@ function _cbOpenPanel() {
   const panel  = document.getElementById("city-listbox");
   if (!panel || !input || !_cbCities.length) return;
 
+  console.log("[CLIP] panel open called — positioning and showing");
+
   // Position under the input using fixed coords so the scan panel's
   // overflow:auto doesn't clip the dropdown.
   const r = input.getBoundingClientRect();
+  console.log(`[CLIP] input rect: top=${r.top}, bottom=${r.bottom}, left=${r.left}, width=${r.width}`);
   panel.style.top   = (r.bottom + 3) + "px";
   panel.style.left  = r.left + "px";
   panel.style.width = r.width + "px";
+  console.log(`[CLIP] panel positioned: top=${panel.style.top}, left=${panel.style.left}, width=${panel.style.width}`);
   panel.removeAttribute("hidden");
+  console.log(`[CLIP] hidden attribute removed, panel should be visible`);
   input.setAttribute("aria-expanded", "true");
   _cbOpen = true;
 }
