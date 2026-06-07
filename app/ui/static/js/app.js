@@ -1242,10 +1242,21 @@ function _cbKeydown(e) {
 
   } else if (e.key === "Enter") {
     e.preventDefault();
+    // Flush any pending debounce so Enter always sees the current filter state
+    if (_cbDebounce) {
+      clearTimeout(_cbDebounce);
+      _cbDebounce = null;
+      _cbFilter(e.target.value);
+      if (!_cbOpen && _cbCities.length > 0) _cbOpenPanel();
+    }
     if (!_cbOpen) return;
     const visible = _cbVisibleOptions(panel);
     if (_cbActiveIdx >= 0 && _cbActiveIdx < visible.length) {
       const opt = visible[_cbActiveIdx];
+      _cbSelect({ slug: opt.dataset.slug, name: opt.dataset.name });
+    } else if (visible.length === 1) {
+      // Auto-select when exactly one option is visible (e.g., "type Oxford, press Enter")
+      const opt = visible[0];
       _cbSelect({ slug: opt.dataset.slug, name: opt.dataset.name });
     }
 
