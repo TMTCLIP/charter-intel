@@ -1,6 +1,8 @@
 data/cache/
-data/raw/
-data/raw/national/
+data/raw/nm/
+data/raw/abq/
+data/raw/national/*.csv
+data/raw/national/tl_2023_us_zcta520/
 __pycache__/
 *.pyc
 .env
