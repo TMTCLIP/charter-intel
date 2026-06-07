@@ -346,6 +346,20 @@ def score_dimension(
     # Check if primary fact is available
     primary_value = _get_fact_value(primary_fact_key, relevant_facts)
 
+    # academic_need: when no verified proficiency data exists (TN, WI, etc.),
+    # force used_default=True so it's excluded from the composite rather than
+    # anchoring at 5.0 on a hallucinated or absent ELA fact.
+    if dim_name == "academic_need" and not verified_bundle.get("has_proficiency_data", True):
+        return {
+            "score": 5.0,
+            "weight": weight,
+            "weighted_contribution": round(5.0 * weight, 4),
+            "confidence": Confidence.LOW.value,
+            "primary_driver": "State proficiency data not yet available — excluded from composite",
+            "supporting_fact_ids": supporting_ids,
+            "used_default": True,
+        }
+
     # Special case: score population_trends from NCES enrollment data when present.
     # Falls back to the default-to-5 path below if pct_change_total is absent.
     if dim_name == "population_trends":

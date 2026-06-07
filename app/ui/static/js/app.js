@@ -494,6 +494,7 @@ function openPanel() {
 }
 
 function closePanel() {
+  _cbClosePanel();
   const panel = document.getElementById("panel-scan");
   panel.classList.remove("open");
   document.getElementById("map-container").classList.remove("map-dimmed");
@@ -576,19 +577,29 @@ function setupScanPanel() {
 
   document.getElementById("btn-run-scan").addEventListener("click", submitScan);
   document.getElementById("btn-scan-new").addEventListener("click", _resetScanPanel);
+  _cbInit();
 }
 
 async function loadCitiesForPanel(stateAbbr) {
-  const select = document.getElementById("scan-city");
-  select.innerHTML = '<option value="">Loading…</option>';
+  const searchInput = document.getElementById("scan-city-search");
+  const hiddenInput = document.getElementById("scan-city");
+  searchInput.value = "";
+  searchInput.placeholder = "Loading…";
+  searchInput.disabled = true;
+  hiddenInput.value = "";
+  _cbSelected = null;
+  _cbClosePanel();
+
   try {
     const resp = await fetch(`/api/cities?state=${encodeURIComponent(stateAbbr)}`);
     const cities = await resp.json();
-    select.innerHTML = cities.length
-      ? cities.map((c) => `<option value="${esc(c.slug)}">${esc(c.name)}</option>`).join("")
-      : '<option value="">No cities available</option>';
+    _cbBuild(cities, APP.scanState?.name || stateAbbr);
+    searchInput.placeholder = cities.length ? "Search cities…" : "No cities available";
+    searchInput.disabled = !cities.length;
   } catch {
-    select.innerHTML = '<option value="">Error loading cities</option>';
+    _cbBuild([], stateAbbr);
+    searchInput.placeholder = "Error loading cities";
+    searchInput.disabled = true;
   }
 }
 
@@ -1101,4 +1112,211 @@ function esc(str) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+// ═══════════════════════════════════════════════════════════
+// COMBOBOX — searchable city selector (scan panel)
+// ═══════════════════════════════════════════════════════════
+
+let _cbCities    = [];          // [{slug, name}] for the currently-loaded state
+let _cbSelected  = null;        // {slug, name} of the confirmed selection
+let _cbActiveIdx = -1;          // index within currently-visible options
+let _cbOpen      = false;
+let _cbDebounce  = null;
+
+function _cbInit() {
+  const input = document.getElementById("scan-city-search");
+  const panel = document.getElementById("city-listbox");
+  if (!input || !panel) return;
+
+  // Open on focus if cities are loaded
+  input.addEventListener("focus", () => {
+    if (_cbCities.length > 0 && !_cbOpen) _cbOpenPanel();
+  });
+
+  // Filter with 50ms debounce; open if not already open
+  input.addEventListener("input", () => {
+    clearTimeout(_cbDebounce);
+    _cbDebounce = setTimeout(() => {
+      _cbFilter(input.value);
+      if (!_cbOpen && _cbCities.length > 0) _cbOpenPanel();
+    }, 50);
+  });
+
+  input.addEventListener("keydown", _cbKeydown);
+
+  // Close on outside click (capture phase so it fires before focus events)
+  document.addEventListener("click", (e) => {
+    const wrapper = input.closest(".combobox-wrapper");
+    if (!wrapper?.contains(e.target) && !panel.contains(e.target)) _cbClosePanel();
+  }, true);
+
+  // Close if the scan panel scrolls (panel is position:fixed, would drift)
+  document.getElementById("panel-scan")?.addEventListener("scroll", () => {
+    if (_cbOpen) _cbClosePanel();
+  });
+}
+
+function _cbBuild(cities, stateName) {
+  _cbCities    = cities;
+  _cbActiveIdx = -1;
+  const panel  = document.getElementById("city-listbox");
+  panel.innerHTML = "";
+  if (!cities.length) return;
+
+  // State group header
+  const header = document.createElement("div");
+  header.className = "combobox-group-header";
+  header.setAttribute("role", "presentation");
+  header.setAttribute("aria-hidden", "true");
+  header.dataset.role = "group-header";
+  header.textContent = stateName || "";
+  panel.appendChild(header);
+
+  cities.forEach((city) => {
+    const opt = document.createElement("div");
+    opt.className = "combobox-option";
+    opt.setAttribute("role", "option");
+    opt.setAttribute("aria-selected", city.slug === _cbSelected?.slug ? "true" : "false");
+    opt.dataset.slug = city.slug;
+    opt.dataset.name = city.name;
+    // Display city name without the ", STATE" suffix — the group header carries state context
+    opt.textContent = city.name.split(",")[0];
+    // mousedown instead of click so the blur on the input fires after we record selection
+    opt.addEventListener("mousedown", (e) => { e.preventDefault(); _cbSelect(city); });
+    panel.appendChild(opt);
+  });
+}
+
+function _cbFilter(query) {
+  const q     = query.toLowerCase().trim();
+  const panel = document.getElementById("city-listbox");
+  let anyVisible = false;
+
+  panel.querySelectorAll(".combobox-option").forEach((opt) => {
+    const matches = !q || opt.dataset.name.toLowerCase().includes(q);
+    opt.toggleAttribute("hidden", !matches);
+    if (matches) anyVisible = true;
+  });
+
+  // Show/hide the group header with the options
+  const header = panel.querySelector("[data-role='group-header']");
+  if (header) header.toggleAttribute("hidden", !anyVisible);
+
+  // Empty-state notice
+  let emptyEl = panel.querySelector(".combobox-empty");
+  if (!anyVisible) {
+    if (!emptyEl) {
+      emptyEl = document.createElement("div");
+      emptyEl.className = "combobox-empty";
+      emptyEl.textContent = "No cities found";
+      panel.appendChild(emptyEl);
+    }
+    emptyEl.removeAttribute("hidden");
+  } else if (emptyEl) {
+    emptyEl.setAttribute("hidden", "");
+  }
+
+  // Reset active index on each filter pass
+  _cbActiveIdx = -1;
+  _cbClearActive(panel);
+}
+
+function _cbKeydown(e) {
+  const panel = document.getElementById("city-listbox");
+
+  if (e.key === "ArrowDown") {
+    e.preventDefault();
+    if (!_cbOpen) _cbOpenPanel();
+    const visible = _cbVisibleOptions(panel);
+    if (!visible.length) return;
+    _cbActiveIdx = Math.min(_cbActiveIdx + 1, visible.length - 1);
+    _cbSetActive(visible);
+
+  } else if (e.key === "ArrowUp") {
+    e.preventDefault();
+    const visible = _cbVisibleOptions(panel);
+    if (!visible.length) return;
+    _cbActiveIdx = Math.max(_cbActiveIdx - 1, 0);
+    _cbSetActive(visible);
+
+  } else if (e.key === "Enter") {
+    e.preventDefault();
+    if (!_cbOpen) return;
+    const visible = _cbVisibleOptions(panel);
+    if (_cbActiveIdx >= 0 && _cbActiveIdx < visible.length) {
+      const opt = visible[_cbActiveIdx];
+      _cbSelect({ slug: opt.dataset.slug, name: opt.dataset.name });
+    }
+
+  } else if (e.key === "Escape") {
+    _cbClosePanel();
+    if (!_cbSelected) document.getElementById("scan-city-search").value = "";
+
+  } else if (e.key === "Tab") {
+    _cbClosePanel();
+  }
+}
+
+function _cbVisibleOptions(panel) {
+  return Array.from(panel.querySelectorAll(".combobox-option:not([hidden])"));
+}
+
+function _cbSetActive(visibleOpts) {
+  _cbClearActive(document.getElementById("city-listbox"));
+  const opt = visibleOpts[_cbActiveIdx];
+  if (!opt) return;
+  opt.classList.add("combobox-option--active");
+  opt.id = "_cb_active";
+  document.getElementById("scan-city-search").setAttribute("aria-activedescendant", "_cb_active");
+  opt.scrollIntoView({ block: "nearest" });
+}
+
+function _cbClearActive(panel) {
+  panel.querySelectorAll(".combobox-option--active").forEach((o) => {
+    o.classList.remove("combobox-option--active");
+    if (o.id === "_cb_active") o.removeAttribute("id");
+  });
+  document.getElementById("scan-city-search")?.removeAttribute("aria-activedescendant");
+}
+
+function _cbOpenPanel() {
+  const input  = document.getElementById("scan-city-search");
+  const panel  = document.getElementById("city-listbox");
+  if (!panel || !input || !_cbCities.length) return;
+
+  // Position under the input using fixed coords so the scan panel's
+  // overflow:auto doesn't clip the dropdown.
+  const r = input.getBoundingClientRect();
+  panel.style.top   = (r.bottom + 3) + "px";
+  panel.style.left  = r.left + "px";
+  panel.style.width = r.width + "px";
+  panel.removeAttribute("hidden");
+  input.setAttribute("aria-expanded", "true");
+  _cbOpen = true;
+}
+
+function _cbClosePanel() {
+  const panel = document.getElementById("city-listbox");
+  const input = document.getElementById("scan-city-search");
+  if (panel) panel.setAttribute("hidden", "");
+  if (input) input.setAttribute("aria-expanded", "false");
+  _cbOpen      = false;
+  _cbActiveIdx = -1;
+}
+
+function _cbSelect(city) {
+  _cbSelected = city;
+  const searchInput = document.getElementById("scan-city-search");
+  const hiddenInput = document.getElementById("scan-city");
+  searchInput.value = city.name.split(",")[0];
+  hiddenInput.value = city.slug;
+
+  // Reflect aria-selected on all options
+  const panel = document.getElementById("city-listbox");
+  panel.querySelectorAll(".combobox-option").forEach((opt) => {
+    opt.setAttribute("aria-selected", opt.dataset.slug === city.slug ? "true" : "false");
+  });
+
+  _cbClosePanel();
 }

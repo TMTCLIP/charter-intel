@@ -237,7 +237,16 @@ def _communities_from_registry(state_code: str) -> list[dict] | None:
         result.append({"slug": slug, "name": f"{display}, {state_code.upper()}"})
 
     result.sort(key=lambda c: c["name"])
-    return result
+    # Deduplicate by display name: when multiple registry entries share the same
+    # city name within a state, expose only the first — the pipeline's slug
+    # resolver picks the correct LEAID at scan time regardless.
+    seen: set[str] = set()
+    deduped: list[dict] = []
+    for entry in result:
+        if entry["name"] not in seen:
+            seen.add(entry["name"])
+            deduped.append(entry)
+    return deduped
 
 
 def _communities_from_district_map(state_code: str, state_data: dict) -> list[dict]:
@@ -262,7 +271,13 @@ def _communities_from_district_map(state_code: str, state_data: dict) -> list[di
         result.append({"slug": slug, "name": f"{city_name}, {state_code.upper()}"})
 
     result.sort(key=lambda c: c["name"])
-    return result
+    seen: set[str] = set()
+    deduped: list[dict] = []
+    for entry in result:
+        if entry["name"] not in seen:
+            seen.add(entry["name"])
+            deduped.append(entry)
+    return deduped
 
 
 def _is_junk_slug(target: str) -> bool:

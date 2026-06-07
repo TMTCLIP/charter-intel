@@ -322,6 +322,14 @@
       letter-spacing: 0.06em;
     }
 
+    /* Awaiting Data state for academic_need when proficiency data unavailable */
+    .fill-awaiting  { background: var(--text-muted); opacity: 0.15; }
+    .awaiting-label { font-size: 11px; font-style: italic; color: var(--text-muted) !important;
+                      font-weight: 400 !important; font-family: var(--font-sans); }
+    .awaiting-pill  { background: transparent !important; border-color: var(--border-subtle) !important;
+                      color: var(--text-muted) !important; font-style: italic; }
+    .awaiting-note  { font-size: 11px; color: var(--text-muted); font-style: italic; margin-left: 4px; }
+
     .nullweight-pill {
       display: inline-block;
       background: transparent;
@@ -848,6 +856,7 @@
       
       <div class="excluded-sep">─── Excluded from composite ───</div>
       
+      
       <div class="bar-row">
         <div class="bar-head">
           <span class="bar-name txt-muted">Facilities Feasibility</span>
@@ -860,6 +869,7 @@
           <span class="nullweight-pill">0% weight — not scored</span>Excluded from composite due to missing data; rural market likely presents facility sourcing challenges.
         </div>
       </div>
+      
       
       
 
@@ -1072,7 +1082,7 @@
       <details>
         <summary>Pipeline Debug Log</summary>
         <p class="debug-meta">Run ID: unset</p>
-        <p class="debug-meta">Timestamp: 2026-06-07T16:07:58.558578Z</p>
+        <p class="debug-meta">Timestamp: 2026-06-07T16:57:18.029436Z</p>
         <p class="debug-meta">Depth: standard</p>
 
         <p class="debug-meta"><strong>Token Usage</strong></p>

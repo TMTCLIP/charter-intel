@@ -29,6 +29,7 @@ from pipeline.utils.api_client import call_claude, load_prompt
 from pipeline.utils.cache import CacheManager
 from pipeline.utils.schema_validator import validate_against_schema
 from pipeline.utils.ped_fetcher import get_district_data
+from pipeline.fetchers.ms_proficiency_fetcher import get_ms_district_data
 from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data, get_charter_enrollment_share
 from pipeline.utils.acs_fetcher  import get_district_data as get_acs_district_data, get_total_population as get_acs_total_population
 from pipeline.utils.population_trends_fetcher import get_population_trends
@@ -537,8 +538,11 @@ def run(
         else "(No verified roster — S1 not yet run for this community)"
     )
 
-    # Load verified PED proficiency data for prompt injection
-    ped_data = get_district_data(community_id, state)
+    # Load verified proficiency data for prompt injection (NM: PED; MS: MSRC)
+    if state.upper() == "MS":
+        ped_data = get_ms_district_data(community_id)
+    else:
+        ped_data = get_district_data(community_id, state)
     if ped_data:
         verified_ped_data = (
             f"VERIFIED PED DATA (SY {ped_data['school_year']}) — treat as ground truth:\n"

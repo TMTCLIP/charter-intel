@@ -154,6 +154,16 @@ def run(
     summary = _build_summary(facts)
     summary["entity_verification"] = entity_summary
 
+    # True when real proficiency data was injected into S3 prompt (NM, MS).
+    # False for states without proficiency adapters (TN, WI, etc.) — S5 uses
+    # this to exclude academic_need from the composite rather than defaulting to 5.0.
+    has_proficiency_data = any(
+        f.get("fact_key") == "district_proficiency_ela_pct"
+        and f.get("source_class") == "PED_DATA"
+        and f.get("confidence") in ("HIGH", "MODERATE")
+        for f in facts
+    )
+
     verified_bundle = {
         "community_id": community_id,
         "state": state,
@@ -161,6 +171,7 @@ def run(
         "facts": facts,
         "summary": summary,
         "pci_promoted_from_cache": pci_promoted,
+        "has_proficiency_data": has_proficiency_data,
     }
 
     out_path = f"data/cache/community/{state.lower()}/{community_id}/s4_verified.json"

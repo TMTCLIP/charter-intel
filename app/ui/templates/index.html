@@ -236,10 +236,23 @@
 
       <!-- City (hidden when Entire State selected) -->
       <div class="field-group" id="city-field-group">
-        <label for="scan-city" class="field-label">City</label>
-        <select id="scan-city" class="field-select" aria-label="Select city">
-          <option value="">Loading…</option>
-        </select>
+        <label for="scan-city-search" class="field-label">City</label>
+        <div class="combobox-wrapper">
+          <input
+            type="text"
+            id="scan-city-search"
+            class="combobox-input"
+            placeholder="Loading…"
+            autocomplete="off"
+            role="combobox"
+            aria-expanded="false"
+            aria-autocomplete="list"
+            aria-controls="city-listbox"
+            aria-haspopup="listbox"
+          />
+          <div id="city-listbox" class="combobox-panel" role="listbox" hidden></div>
+          <input type="hidden" id="scan-city" name="city" value="" />
+        </div>
       </div>
 
       <!-- Scan Type (Community or ZIP — does not apply to statewide) -->

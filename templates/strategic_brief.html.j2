@@ -322,6 +322,14 @@
       letter-spacing: 0.06em;
     }
 
+    /* Awaiting Data state for academic_need when proficiency data unavailable */
+    .fill-awaiting  { background: var(--text-muted); opacity: 0.15; }
+    .awaiting-label { font-size: 11px; font-style: italic; color: var(--text-muted) !important;
+                      font-weight: 400 !important; font-family: var(--font-sans); }
+    .awaiting-pill  { background: transparent !important; border-color: var(--border-subtle) !important;
+                      color: var(--text-muted) !important; font-style: italic; }
+    .awaiting-note  { font-size: 11px; color: var(--text-muted); font-style: italic; margin-left: 4px; }
+
     .nullweight-pill {
       display: inline-block;
       background: transparent;
@@ -757,6 +765,20 @@
       {% if excluded %}
       <div class="excluded-sep">─── Excluded from composite ───</div>
       {% for row in excluded %}
+      {% if row.dimension == 'academic_need' %}
+      <div class="bar-row">
+        <div class="bar-head">
+          <span class="bar-name txt-muted">{{ row.display_name | e }}</span>
+          <span class="bar-score awaiting-label">Awaiting Data</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill fill-awaiting" style="width: 50%;"></div>
+        </div>
+        <div class="bar-driver">
+          <span class="nullweight-pill awaiting-pill">no data</span><span class="awaiting-note">No proficiency data available for this state</span>
+        </div>
+      </div>
+      {% else %}
       <div class="bar-row">
         <div class="bar-head">
           <span class="bar-name txt-muted">{{ row.display_name | e }}</span>
@@ -769,6 +791,7 @@
           <span class="nullweight-pill">0% weight — not scored</span>{% if row.driver %}{{ row.driver | e }}{% endif %}
         </div>
       </div>
+      {% endif %}
       {% endfor %}
       {% endif %}
 
