@@ -1252,6 +1252,14 @@ def run(
         for _auth in facts_output["local_authorizers"]:
             if not _auth.get("num_schools_in_community"):
                 _auth["num_schools_in_community"] = _csv_count.get(_auth.get("authorizer_name"))
+        # Charter-adjacent schools (operating + pending; see s3_charter_intel.md RULE 5).
+        # Captured as NON-SCORING context — surfaced in the brief and used by the S5
+        # saturation reliability gate, but never folded into the authoritative
+        # num_charter_schools count (which stays PED-roster only by design).
+        _inject_charter_adjacent_facts(
+            facts_output, charter_intel.get("charter_adjacent_schools", []),
+            community_id, state, community_name,
+        )
     # ─────────────────────────────────────────────────────────────────────────
 
     # ── CMO local-presence skepticism gate (deterministic, config-driven) ──
@@ -1606,6 +1614,87 @@ def _inject_charter_enrollment_share_facts(
     logger.info(
         "[%s] Injected charter enrollment share datapoint (%.1f%%, year %s)",
         community_id, pct, charter_share["year"],
+    )
+
+
+def _inject_charter_adjacent_facts(
+    facts_output: dict,
+    adjacent_schools: list,
+    community_id: str,
+    state: str,
+    community_name: str,
+) -> None:
+    """Store the charter-adjacent school list and emit a NON-SCORING count fact.
+
+    "Charter-adjacent" = schools that compete for the same students as a charter
+    but are NOT on the PED charter roster: autonomous public schools of choice
+    (innovation/magnet/option schools run with charter-like autonomy), university-
+    model/hybrid schools, established private micro-schools, and schools that have
+    formally applied or publicly announced intent to open (status="pending"). The
+    full definition (incl. exclusions) lives in prompts/extract/s3_charter_intel.md
+    RULE 5 — keep the two in sync.
+
+    Why non-scoring: the scored charter_saturation primary fact (num_charter_schools)
+    is forced to the authoritative PED roster (see _align_num_charter_schools) so the
+    composite never rests on drift-prone web counts. Charter-adjacent schools are web/
+    knowledge-sourced and lower-confidence, so folding them into the scored count would
+    reduce reliability. Instead the count is emitted with in_main_analysis=False and
+    consumed by the S5 saturation reliability gate, which flags (does not silently
+    inflate) a market that looks empty on the formal roster but is not. Promoting this
+    count into the scored value requires operator sign-off (changes rankings).
+    """
+    if not isinstance(adjacent_schools, list):
+        adjacent_schools = []
+    # Keep only well-formed entries with a name; never fabricate.
+    cleaned = [s for s in adjacent_schools if isinstance(s, dict) and (s.get("school_name") or "").strip()]
+    facts_output["charter_adjacent_schools"] = cleaned
+
+    facts: list[dict] = facts_output.setdefault("facts", [])
+    if any(f.get("fact_key") == "num_charter_adjacent_schools" for f in facts):
+        return
+
+    count = len(cleaned)
+    operating = sum(1 for s in cleaned if (s.get("status") or "").lower() == "operating")
+    pending = count - operating
+    # Confidence of the count = lowest confidence among contributing entries (conservative).
+    _rank = {"HIGH": 3, "MODERATE": 2, "LOW": 1}
+    confidences = [(_rank.get((s.get("confidence") or "LOW").upper(), 1)) for s in cleaned]
+    conf = "LOW"
+    if confidences:
+        inv = {3: "HIGH", 2: "MODERATE", 1: "LOW"}
+        conf = inv[min(confidences)]
+
+    facts.append({
+        "datapoint_id":         f"dp_{community_id}_charter_saturation_004",
+        "community_id":         community_id,
+        "state":                state,
+        "dimension":            "charter_saturation",
+        "fact_key":             "num_charter_adjacent_schools",
+        "claim": (
+            f"{count} charter-adjacent school(s) identified near {community_name} "
+            f"({operating} operating, {pending} pending/announced) that are not on the "
+            f"PED charter roster. Non-scoring context; requires verification."
+        ),
+        "value":                count,
+        "value_unit":           "count",
+        "value_year":           None,
+        "source_class":         "WEB_SEARCH",
+        "source_url":           None,
+        "source_title":         "Charter-adjacent school scan (s3_charter_intel)",
+        "source_date":          None,
+        "confidence":           conf,
+        "confidence_rationale": "Web/knowledge-sourced charter-adjacent scan; lower confidence than PED roster — non-scoring",
+        "verification_status":  "PROVISIONAL",
+        "bias_flag":            None,
+        "extracted_by":         "charter_intel",
+        "extracted_at":         today_str(),
+        "stage":                STAGE_ID,
+        "in_main_analysis":     False,
+        "needs_verification_reason": "Charter-adjacent schools are unofficial/unverified; confirm before use",
+    })
+    logger.info(
+        "[%s] Injected num_charter_adjacent_schools=%d (non-scoring; %d operating, %d pending)",
+        community_id, count, operating, pending,
     )
 
 

@@ -340,6 +340,70 @@ class TestScoreRange:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# 3b. CHARTER SATURATION RELIABILITY GATE (charter-adjacent schools)
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestCharterSaturationAdjacentGate:
+    """The Jackson, MS case: formal roster empty → optimistic 'wide-open' score,
+    but charter-adjacent schools present → the reading is unverified, so it must
+    be clamped to neutral and excluded from the composite. Genuinely-empty markets
+    (no charter-adjacent schools) are unaffected. No weight changes anywhere.
+    """
+
+    def _dim_def(self):
+        return _load_weights()["dimensions"]["charter_saturation"]
+
+    def _bundle(self, formal_count, adjacent_count=None):
+        facts = [{
+            "fact_key": "num_charter_schools", "value": formal_count,
+            "datapoint_id": "dp_formal", "dimension": "charter_saturation",
+            "in_main_analysis": True, "confidence": "HIGH", "source_class": "PED_DATA",
+        }]
+        if adjacent_count is not None:
+            facts.append({
+                "fact_key": "num_charter_adjacent_schools", "value": adjacent_count,
+                "datapoint_id": "dp_adj", "dimension": "charter_saturation",
+                "in_main_analysis": False,  # non-scoring by design
+                "confidence": "LOW", "source_class": "WEB_SEARCH",
+            })
+        return {"facts": facts, "state": "MS", "community_id": "ms-jackson"}
+
+    def test_clamps_when_empty_roster_but_adjacent_present(self):
+        r = score_dimension("charter_saturation", self._dim_def(), self._bundle(0, 4), 0.0625)
+        assert r["used_default"] is True
+        assert r["score"] == pytest.approx(5.0)
+        assert "unverified" in r["primary_driver"].lower()
+
+    def test_no_clamp_when_no_adjacent_fact(self):
+        """Genuinely empty market (no charter-adjacent fact) keeps its high score."""
+        r = score_dimension("charter_saturation", self._dim_def(), self._bundle(0, None), 0.0625)
+        assert r["used_default"] is False
+        assert r["score"] > 5.0
+
+    def test_no_clamp_when_adjacent_count_zero(self):
+        r = score_dimension("charter_saturation", self._dim_def(), self._bundle(0, 0), 0.0625)
+        assert r["used_default"] is False
+        assert r["score"] > 5.0
+
+    def test_no_clamp_when_already_saturated(self):
+        """High formal count → low (saturated) score → not optimistic → no clamp,
+        even with adjacent schools present."""
+        r = score_dimension("charter_saturation", self._dim_def(), self._bundle(40, 4), 0.0625)
+        assert r["used_default"] is False
+        assert r["score"] <= 5.0
+
+    def test_adjacent_count_invisible_to_main_analysis_filter(self):
+        """The adjacent fact is non-scoring (in_main_analysis=False) but the gate
+        still reads it via the raw-bundle helper."""
+        from pipeline.s5_scoring import _get_charter_adjacent_count, extract_facts_for_dimension
+        bundle = self._bundle(0, 3)
+        assert _get_charter_adjacent_count(bundle) == 3
+        # not surfaced through the scoring filter
+        scored = extract_facts_for_dimension("charter_saturation", bundle)
+        assert all(f["fact_key"] != "num_charter_adjacent_schools" for f in scored)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 # 4. POPULATION TRENDS — _score_population_trends threshold table
 # ─────────────────────────────────────────────────────────────────────────────
 

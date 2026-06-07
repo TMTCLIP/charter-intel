@@ -68,6 +68,11 @@ dimensions:
       Lower saturation = higher opportunity. Flag oversaturation explicitly.
       Primary uses raw school count (available from PED roster). When
       charter_seat_share_pct becomes available it blends in as secondary.
+      num_charter_adjacent_schools is a NON-SCORING context fact (web/knowledge-
+      sourced, in_main_analysis=False): it never enters the scored count, but the
+      S5 reliability gate uses it to withdraw a falsely-optimistic "wide-open"
+      reading when the formal roster is empty yet charter-adjacent schools exist.
+      Promoting it into the scored count requires operator sign-off.
     scoring_rules:
       primary_fact: "num_charter_schools"
       direction: inverse
@@ -96,7 +101,8 @@ dimensions:
         weight: 0.20
     fact_keys_required: []
     fact_keys_optional: ["num_charter_schools", "charter_seat_share_pct",
-                         "charter_enrollment_trend_3yr", "avg_charter_waitlist_depth"]
+                         "charter_enrollment_trend_3yr", "avg_charter_waitlist_depth",
+                         "num_charter_adjacent_schools"]
     missing_data_behavior: degrade_confidence
 
   # ── 3. POPULATION TRENDS ──────────────────────────

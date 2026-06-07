@@ -461,6 +461,37 @@ def score_dimension(
             )
             used_default = True
 
+    # charter_saturation reliability gate (mirrors the competitive_opportunity gate
+    # above). The scored primary fact (num_charter_schools) counts ONLY PED-roster
+    # charters by design, so a market with charter-adjacent / unofficial schools
+    # (e.g. Jackson, MS) can read as "near-empty → wide-open opportunity" when it is
+    # not. When the formal count yields an optimistic low-saturation score (>5.0) but
+    # S3 found charter-adjacent schools (num_charter_adjacent_schools > 0, a non-
+    # scoring fact), we cannot confidently call the market wide-open. Clamp to neutral
+    # and exclude from the composite rather than fabricate a saturation number from
+    # unverified web data. This withdraws an unsupported optimistic reading; it does
+    # NOT assert high saturation.
+    # NOTE FOR HUMAN REVIEW: this changes charter_saturation rankings. It does not
+    # change any weight. Promoting num_charter_adjacent_schools into the scored count
+    # requires separate operator sign-off.
+    if dim_name == "charter_saturation" and not used_default and round(score, 2) > 5.0:
+        adjacent_count = _get_charter_adjacent_count(verified_bundle)
+        if adjacent_count and adjacent_count > 0:
+            logger.warning(
+                "s5_scoring: charter_saturation scored %.2f (low formal saturation) but "
+                "%d charter-adjacent school(s) present — clamping to 5.0 and excluding "
+                "from composite (low-saturation reading unverified)",
+                round(score, 2), adjacent_count,
+            )
+            score = 5.0
+            confidence = Confidence.LOW.value
+            driver = (
+                f"Saturation gated to midpoint — formal roster shows low saturation but "
+                f"{adjacent_count} charter-adjacent school(s) were found; the wide-open "
+                f"reading is unverified pending review"
+            )
+            used_default = True
+
     return {
         "score": round(score, 2),
         "weight": weight,
@@ -470,6 +501,21 @@ def score_dimension(
         "supporting_fact_ids": supporting_ids,
         "used_default": used_default
     }
+
+
+def _get_charter_adjacent_count(verified_bundle: dict) -> Optional[int]:
+    """Read the non-scoring num_charter_adjacent_schools count from the full bundle.
+
+    extract_facts_for_dimension() filters to in_main_analysis=True, so this fact
+    (deliberately non-scoring) is invisible there; scan the raw fact list instead.
+    """
+    for f in verified_bundle.get("facts", []):
+        if f.get("fact_key") == "num_charter_adjacent_schools":
+            try:
+                return int(f.get("value"))
+            except (TypeError, ValueError):
+                return None
+    return None
 
 
 def apply_scoring_rules(
