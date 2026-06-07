@@ -699,3 +699,28 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Populate `source_date` in S3 fetchers with fiscal year-end dates
 - [ ] Fill `config/pec_renewal_stats.yaml` with verified PEC renewal/denial rate data
 - [ ] Calibrate scoring weights (blocked on operator-profile conversation with The Mind Trust)
+
+---
+
+### Session 4 — 2026-06-07 (pre-commit)
+
+**Accomplished:**
+- Added MS, TN, WI state entries to `config/states.yaml` — each with full `charter_law`, `nces_district_map` (142/139/312 entries), `data_sources`, and `per_pupil_revenue_avg`; all charter_law fields set `null # NEEDS_VERIFICATION`
+- Added `per_pupil_revenue_avg: 24356.0` to NM entry in `config/states.yaml`
+- Rewrote `pipeline/s2_state_context.py` to replace 90-day TTL cache logic with event-driven `_should_regenerate()` — regenerates only on missing cache, `--force`, or active `s2_cache_bust` Notion signal; clears signal after successful regen
+- Added `get_s2_cache_bust_signals(state)` to `pipeline/layer2/notion_client.py` (`NotionSignalStore`) — queries active signals, filters Python-side by `source_metadata` JSON for `signal_type=s2_cache_bust` and matching state
+- Removed `NM_STATE_AVG_PPR = 24_356.0` hardcode from `pipeline/utils/nces_fetcher.py`; replaced with `_get_state_avg_ppr(state)` — loads from `states.yaml`, falls back to national parquet, then `None`
+- Created `tests/unit/test_s2_cache_signal.py` — 31 new tests (575 total, all pass); covers states.yaml structure for MS/TN/WI, `_should_regenerate` (5 cases), nces_fetcher PPR loading (4 cases)
+- Oxford smoke test (`--state MS --community ms-oxford --depth fast`) exit 0; S2 regenerated via cache-absent path; brief rendered 4.2/10 WATCHLIST with real USAspending + ProPublica data
+
+**Decisions:**
+- Notion signal schema has no native `signal_type`/`state`/`cleared` fields — stored in `source_metadata` JSON; `status=active/expired` used as cleared flag; no schema migration needed
+- `_should_regenerate` priority: cache absent → force → Notion signal; Notion never queried if cache is absent
+- All MS/TN/WI `charter_law` fields intentionally null — no web source treated as verified for legal/policy data
+
+**Next Steps:**
+- [ ] Verify and populate MS/TN/WI `charter_law` fields from authoritative state statutes
+- [ ] Verify `per_pupil_revenue_avg` for MS (12500.0), TN (11800.0), WI (13200.0) against NCES FY2022 actuals
+- [ ] Wire Phase 2 ingestion to write `s2_cache_bust` signals with correct `source_metadata` JSON
+- [ ] Populate MS/TN/WI `data_sources` URLs (authorizer_registry, charter_roster, enrollment_data, performance_data)
+- [ ] Run full MS community batch (`--state MS --depth fast`) once charter_law is verified

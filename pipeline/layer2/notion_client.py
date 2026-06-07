@@ -349,6 +349,44 @@ class NotionSignalStore(SignalStore):
         if props:
             self._call(self._client.pages.update, page_id=signal_id, properties=props)
 
+    def get_s2_cache_bust_signals(self, state: str) -> List[dict]:
+        """Return uncleared s2_cache_bust signals for a state.
+
+        Phase 2 ingestion writes these with source_metadata containing
+        {"signal_type": "s2_cache_bust", "state": "<STATE_CODE>"}.
+        status="active" means uncleared; "expired" means cleared.
+
+        Fetches all active signals and filters in Python (table is small).
+        Never raises — let the caller handle exceptions.
+        """
+        import json as _json
+
+        results: List[dict] = []
+        cursor = None
+        while True:
+            resp = self._call(
+                self._client.data_sources.query,
+                data_source_id=self.signal_ds_id,
+                filter={"property": "status", "select": {"equals": "active"}},
+                start_cursor=cursor,
+            )
+            for page in resp.get("results", []):
+                props = page["properties"]
+                meta_text = _r_text(props.get("source_metadata", {}))
+                try:
+                    meta = _json.loads(meta_text) if meta_text else {}
+                except (ValueError, TypeError):
+                    meta = {}
+                if (
+                    meta.get("signal_type") == "s2_cache_bust"
+                    and meta.get("state", "").upper() == state.upper()
+                ):
+                    results.append({"signal_id": page["id"], "state": state})
+            if not resp.get("has_more"):
+                break
+            cursor = resp.get("next_cursor")
+        return results
+
     def expire_stale_signals(self, decay_floor: float = 0.1) -> int:
         self._load_dimension_maps()
         as_of = datetime.now(timezone.utc)

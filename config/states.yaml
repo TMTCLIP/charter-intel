@@ -220,6 +220,7 @@ NM:
     nm-taos: '3502520'
     nm-truth-or-consequences: '3502610'
     nm-w-taos: '3502520'
+  per_pupil_revenue_avg: 24356.0
   pilot: true
   state_fips: 35
   scoring_adjustments:
@@ -276,3 +277,1425 @@ _TEMPLATE:
   scoring_adjustments: {}
   status: DRAFT
 version: '1.0'
+MS:
+  charter_law:
+    cap_on_charters: null  # NEEDS_VERIFICATION
+    facilities_provisions: null  # NEEDS_VERIFICATION
+    funding_parity_provisions: null  # NEEDS_VERIFICATION
+    notes: null  # NEEDS_VERIFICATION
+    statute_citation: null  # NEEDS_VERIFICATION -- approx Miss. Code Ann. § 37-28
+    statute_url: null  # NEEDS_VERIFICATION
+  community_metadata: {}
+  teacher_supply_warning:
+    status: UNVERIFIED
+    impact_if_wrong: HIGH
+    claim: "Teacher supply may constrain charter staffing in this community."
+    reason: null  # NEEDS_VERIFICATION
+    resolution_path: null  # NEEDS_VERIFICATION
+  community_boundary_exceptions: []
+  excluded_communities: []
+  community_unit: MUNICIPALITY
+  data_sources:
+    authorizer_registry:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      known_authorizers: []
+      refresh_cadence: AS_NEEDED
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+    census:
+      description: ACS 5-year estimates for community demographics
+      format: API
+      refresh_cadence: ANNUAL
+      source_class: FEDERAL_DATA
+      table_ids:
+      - B01003
+      - B19013
+      - B15003
+      - S1401
+      url: https://data.census.gov
+    charter_roster:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      notes: null  # NEEDS_VERIFICATION
+      refresh_cadence: ANNUAL
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+    csp_awards:
+      description: CSP grant awards to Mississippi charter schools
+      format: SEARCHABLE_DB
+      refresh_cadence: ANNUAL
+      source_class: FEDERAL_DATA
+      url: https://oese.ed.gov/offices/office-of-discretionary-grants-support-services/charter-schools-program/
+    enrollment_data:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      notes: null  # NEEDS_VERIFICATION
+      refresh_cadence: ANNUAL
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+    performance_data:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      notes: null  # NEEDS_VERIFICATION
+      refresh_cadence: ANNUAL
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+  discovery:
+    deduplicate_by: null  # NEEDS_VERIFICATION
+    group_by: MUNICIPALITY
+    method: PARSE_STATE_ROSTER
+    minimum_schools_to_qualify: 1
+    notes: null  # NEEDS_VERIFICATION
+  name: Mississippi
+  ms_district_map:
+    ms-aberdeen: ABERDEEN SCHOOL DIST
+    ms-ackerman: CHOCTAW CO SCHOOL DIST
+    ms-amory-2800450: AMORY SCHOOL DIST
+    ms-amory-2802940: MONROE CO SCHOOL DIST
+    ms-ashland: BENTON CO SCHOOL DIST
+    ms-avon: WESTERN LINE SCHOOL DISTRICT
+    ms-baldwyn: BALDWYN SCHOOL DISTRICT
+    ms-batesville: SOUTH PANOLA SCHOOL DISTRICT
+    ms-bay-springs: WEST JASPER CONSOLIDATED SCHOOLS
+    ms-bay-st-louis: BAY ST LOUIS WAVELAND SCHOOL DIST
+    ms-belzoni: HUMPHREYS CO SCHOOL DIST
+    ms-biloxi: BILOXI PUBLIC SCHOOL DIST
+    ms-booneville-2800820: BOONEVILLE SCHOOL DIST
+    ms-booneville-2803750: PRENTISS CO SCHOOL DIST
+    ms-brandon: RANKIN CO SCHOOL DIST
+    ms-brookhaven-2800840: BROOKHAVEN SCHOOL DIST
+    ms-brookhaven-2802640: LINCOLN COUNTY SCHOOL DISTRICT
+    ms-brooklyn: FORREST COUNTY AG HIGH SCHOOL
+    ms-canton: CANTON PUBLIC SCHOOL DIST
+    ms-carriere: PEARL RIVER CO SCHOOL DIST
+    ms-carrollton: CARROLL COUNTY SCHOOL DIST
+    ms-carthage: LEAKE CO SCHOOL DIST
+    ms-charleston: EAST TALLAHATCHIE CONSOL SCH DIST
+    ms-choctaw: CHOCTAW CENTRAL HIGH SCHOOL
+    ms-clarksdale-2800194: CLARKSDALE COLLEGIATE DISTRICT
+    ms-clarksdale-2801050: CLARKSDALE MUNICIPAL SCHOOL DIST
+    ms-clarksdale-2801110: COAHOMA COUNTY SCHOOL DISTRICT
+    ms-cleveland: CLEVELAND SCHOOL DIST
+    ms-clinton: CLINTON PUBLIC SCHOOL DIST
+    ms-coldwater: TATE CO SCHOOL DIST
+    ms-collins: COVINGTON COUNTY SCHOOL DISTRICT
+    ms-columbia-2801170: COLUMBIA SCHOOL DISTRICT
+    ms-columbia-2802820: MARION CO SCHOOL DIST
+    ms-columbus-2801200: COLUMBUS MUNICIPAL SCHOOL DIST
+    ms-columbus-2802730: LOWNDES CO SCHOOL DIST
+    ms-corinth-2800390: ALCORN SCHOOL DIST
+    ms-corinth-2801260: CORINTH SCHOOL DIST
+    ms-decatur: NEWTON COUNTY SCHOOL DISTRICT
+    ms-dekalb: KEMPER CO SCHOOL DIST
+    ms-ellisville: JONES CO SCHOOL DIST
+    ms-enterprise: ENTERPRISE SCHOOL DIST
+    ms-eupora: WEBSTER CO SCHOOL DIST
+    ms-falkner: NORTH TIPPAH SCHOOL DIST
+    ms-fayette: JEFFERSON CO SCHOOL DIST
+    ms-forest-2801470: FOREST MUNICIPAL SCHOOL DIST
+    ms-forest-2803900: SCOTT CO SCHOOL DIST
+    ms-fulton: ITAWAMBA COUNTY SCHOOL DIST
+    ms-greenville: GREENVILLE PUBLIC SCHOOLS
+    ms-greenwood: GREENWOOD-LEFLORE CONS SCH DISTRICT
+    ms-grenada: GRENADA SCHOOL DIST
+    ms-gulfport-2801710: GULFPORT SCHOOL DIST
+    ms-gulfport-2801770: HARRISON CO SCHOOL DIST
+    ms-hattiesburg-2801490: FORREST COUNTY SCHOOL DISTRICT
+    ms-hattiesburg-2801800: HATTIESBURG PUBLIC SCHOOL DIST
+    ms-hazlehurst-2801220: COPIAH CO SCHOOL DIST
+    ms-hazlehurst-2801830: HAZLEHURST CITY SCHOOL DISTRICT
+    ms-heidelberg: EAST JASPER CONSOLIDATED SCH DIST
+    ms-hernando: DESOTO CO SCHOOL DIST
+    ms-hollandale: HOLLANDALE SCHOOL DIST
+    ms-holly-springs-2801950: HOLLY SPRINGS SCHOOL DIST
+    ms-holly-springs-2802850: MARSHALL CO SCHOOL DIST
+    ms-houston: CHICKASAW CO SCHOOL DIST
+    ms-indianola: SUNFLOWER CTY CONS SCHOOL DISTRICT
+    ms-iuka: TISHOMINGO CO SP MUN SCH DIST
+    ms-jackson-2800188: REIMAGINE PREP
+    ms-jackson-2800192: JOEL E. SMILLOW PREP
+    ms-jackson-2800193: JOEL E SMILOW COLLEGIATE
+    ms-jackson-2802190: JACKSON PUBLIC SCHOOL DISTRICT
+    ms-kiln: HANCOCK CO SCHOOL DIST
+    ms-kosciusko-2800510: ATTALA CO SCHOOL DIST
+    ms-kosciusko-2802340: KOSCIUSKO SCHOOL DISTRICT
+    ms-laurel: LAUREL SCHOOL DISTRICT
+    ms-leakesville: GREENE COUNTY SCHOOL DISTRICT
+    ms-leland: LELAND SCHOOL DIST
+    ms-lexington: HOLMES COUNTY CONSOLIDATED SD
+    ms-liberty: AMITE COUNTY SCHOOL DISTRICT
+    ms-long-beach: LONG BEACH SCHOOL DIST
+    ms-louisville: LOUISVILLE MUNICIPAL SCHOOL DIST
+    ms-lucedale: GEORGE CO SCHOOL DIST
+    ms-macon: NOXUBEE COUNTY SCHOOL DISTRICT
+    ms-magnolia: SOUTH PIKE SCHOOL DIST
+    ms-marks: QUITMAN CO SCHOOL DIST
+    ms-mccomb: MCCOMB SCHOOL DISTRICT
+    ms-meadville: FRANKLIN CO SCHOOL DIST
+    ms-mendenhall: SIMPSON CO SCHOOL DIST
+    ms-meridian-2802430: LAUDERDALE CO SCHOOL DIST
+    ms-meridian-2802910: MERIDIAN PUBLIC SCHOOLS
+    ms-monticello: LAWRENCE CO SCHOOL DIST
+    ms-moss-point: MOSS POINT SEPARATE SCHOOL DIST
+    ms-mound-bayou: NORTH BOLIVAR CONS SCHOOL DIST
+    ms-natchez: NATCHEZ-ADAMS SCHOOL DISTRICT
+    ms-nettleton: NETTLETON SCHOOL DIST
+    ms-new-albany-2803120: NEW ALBANY PUBLIC SCHOOLS
+    ms-new-albany-2804350: UNION CO SCHOOL DIST
+    ms-new-augusta: PERRY CO SCHOOL DIST
+    ms-newton: NEWTON MUNICIPAL SCHOOL DISTRICT
+    ms-ocean-springs: OCEAN SPRINGS SCHOOL DIST
+    ms-okolona: OKOLONA SEPARATE SCHOOL DIST
+    ms-oxford-2802370: LAFAYETTE CO SCHOOL DIST
+    ms-oxford-2803450: OXFORD SCHOOL DISTRICT
+    ms-pascagoula: PASCAGOULA-GAUTIER SCHOOL DISTRICT
+    ms-pass-christian: PASS CHRISTIAN PUBLIC SCHOOL DIST
+    ms-pearl: PEARL PUBLIC SCHOOL DISTRICT
+    ms-petal: PETAL SCHOOL DIST
+    ms-philadelphia-2803060: NESHOBA COUNTY SCHOOL DISTRICT
+    ms-philadelphia-2803600: PHILADELPHIA PUBLIC SCHOOL DIST
+    ms-picayune: PICAYUNE SCHOOL DISTRICT
+    ms-pittsboro: CALHOUN CO SCHOOL DIST
+    ms-pontotoc-2803660: PONTOTOC CO SCHOOL DIST
+    ms-pontotoc-2803690: PONTOTOC CITY SCHOOLS
+    ms-poplarville: POPLARVILLE SEPARATE SCHOOL DIST
+    ms-port-gibson: CLAIBORNE CO SCHOOL DIST
+    ms-prentiss: JEFFERSON DAVIS CO SCHOOL DIST
+    ms-purvis: LAMAR COUNTY SCHOOL DISTRICT
+    ms-quitman: QUITMAN SCHOOL DIST
+    ms-raleigh: SMITH CO SCHOOL DIST
+    ms-raymond: HINDS CO SCHOOL DIST
+    ms-richton: RICHTON SCHOOL DIST
+    ms-ridgeland: MADISON CO SCHOOL DIST
+    ms-ripley: SOUTH TIPPAH SCHOOL DIST
+    ms-rolling-fork: SOUTH DELTA SCHOOL DISTRICT
+    ms-rosedale: WEST BOLIVAR CONS SCHOOL DIST
+    ms-sardis: NORTH PANOLA SCHOOL DISTRICT
+    ms-senatobia: SENATOBIA MUNICIPAL SCHOOL DIST
+    ms-starkville: STARKVILLE- OKTIBBEHA CONS DIST
+    ms-summit: NORTH PIKE SCHOOL DIST
+    ms-sumner: WEST TALLAHATCHIE SCHOOL DISTRICT
+    ms-tunica: TUNICA COUNTY SCHOOL DISTRICT
+    ms-tupelo-2802550: LEE COUNTY SCHOOL DISTRICT
+    ms-tupelo-2804320: TUPELO PUBLIC SCHOOL DIST
+    ms-tylertown: WALTHALL CO SCHOOL DIST
+    ms-union: UNION PUBLIC SCHOOL DIST
+    ms-vancleave: JACKSON CO SCHOOL DIST
+    ms-vicksburg: VICKSBURG WARREN SCHOOL DIST
+    ms-water-valley: WATER VALLEY SCHOOL DISTRICT
+    ms-waynesboro: WAYNE CO SCHOOL DIST
+    ms-west-point: WEST POINT CONSOLIDATED SCHOOL DIST
+    ms-wiggins: STONE CO SCHOOL DIST
+    ms-winona: WINONA-MONTGOMERY CONSOLIDATED
+    ms-woodville: WILKINSON CO SCHOOL DIST
+    ms-yazoo-city-2804770: YAZOO CITY MUNICIPAL SCHOOL DIST
+    ms-yazoo-city-2804800: YAZOO CO SCHOOL DIST
+  nces_district_map:
+    ms-aberdeen: '2800360'
+    ms-ackerman: '2800990'
+    ms-amory-2800450: '2800450'
+    ms-amory-2802940: '2802940'
+    ms-ashland: '2800600'
+    ms-avon: '2804680'
+    ms-baldwyn: '2800540'
+    ms-batesville: '2804050'
+    ms-bay-springs: '2804590'
+    ms-bay-st-louis: '2800570'
+    ms-belzoni: '2802040'
+    ms-biloxi: '2800630'
+    ms-booneville-2800820: '2800820'
+    ms-booneville-2803750: '2803750'
+    ms-brandon: '2803830'
+    ms-brookhaven-2800840: '2800840'
+    ms-brookhaven-2802640: '2802640'
+    ms-brooklyn: '2801510'
+    ms-canton: '2800900'
+    ms-carriere: '2803540'
+    ms-carrollton: '2800930'
+    ms-carthage: '2802520'
+    ms-charleston: '2801410'
+    ms-choctaw: '5900031'
+    ms-clarksdale-2800194: '2800194'
+    ms-clarksdale-2801050: '2801050'
+    ms-clarksdale-2801110: '2801110'
+    ms-cleveland: '2800750'
+    ms-clinton: '2801090'
+    ms-coldwater: '2804230'
+    ms-collins: '2801290'
+    ms-columbia-2801170: '2801170'
+    ms-columbia-2802820: '2802820'
+    ms-columbus-2801200: '2801200'
+    ms-columbus-2802730: '2802730'
+    ms-corinth-2800390: '2800390'
+    ms-corinth-2801260: '2801260'
+    ms-decatur: '2803150'
+    ms-dekalb: '2802310'
+    ms-ellisville: '2802280'
+    ms-enterprise: '2801440'
+    ms-eupora: '2804560'
+    ms-falkner: '2803270'
+    ms-fayette: '2802220'
+    ms-forest-2801470: '2801470'
+    ms-forest-2803900: '2803900'
+    ms-fulton: '2802100'
+    ms-greenville: '2801620'
+    ms-greenwood: '2800198'
+    ms-grenada: '2801680'
+    ms-gulfport-2801710: '2801710'
+    ms-gulfport-2801770: '2801770'
+    ms-hattiesburg-2801490: '2801490'
+    ms-hattiesburg-2801800: '2801800'
+    ms-hazlehurst-2801220: '2801220'
+    ms-hazlehurst-2801830: '2801830'
+    ms-heidelberg: '2801380'
+    ms-hernando: '2801320'
+    ms-hollandale: '2801890'
+    ms-holly-springs-2801950: '2801950'
+    ms-holly-springs-2802850: '2802850'
+    ms-houston: '2800200'
+    ms-indianola: '2800187'
+    ms-iuka: '2804260'
+    ms-jackson-2800188: '2800188'
+    ms-jackson-2800192: '2800192'
+    ms-jackson-2800193: '2800193'
+    ms-jackson-2802190: '2802190'
+    ms-kiln: '2801740'
+    ms-kosciusko-2800510: '2800510'
+    ms-kosciusko-2802340: '2802340'
+    ms-laurel: '2802460'
+    ms-leakesville: '2801590'
+    ms-leland: '2802610'
+    ms-lexington: '2800195'
+    ms-liberty: '2800420'
+    ms-long-beach: '2802670'
+    ms-louisville: '2802700'
+    ms-lucedale: '2801560'
+    ms-macon: '2803300'
+    ms-magnolia: '2804080'
+    ms-marks: '2803810'
+    ms-mccomb: '2802880'
+    ms-meadville: '2801530'
+    ms-mendenhall: '2803990'
+    ms-meridian-2802430: '2802430'
+    ms-meridian-2802910: '2802910'
+    ms-monticello: '2802490'
+    ms-moss-point: '2803000'
+    ms-mound-bayou: '2800186'
+    ms-natchez: '2803030'
+    ms-nettleton: '2803090'
+    ms-new-albany-2803120: '2803120'
+    ms-new-albany-2804350: '2804350'
+    ms-new-augusta: '2803570'
+    ms-newton: '2803180'
+    ms-ocean-springs: '2803360'
+    ms-okolona: '2803390'
+    ms-oxford-2802370: '2802370'
+    ms-oxford-2803450: '2803450'
+    ms-pascagoula: '2803480'
+    ms-pass-christian: '2803510'
+    ms-pearl: '2803520'
+    ms-petal: '2803530'
+    ms-philadelphia-2803060: '2803060'
+    ms-philadelphia-2803600: '2803600'
+    ms-picayune: '2803630'
+    ms-pittsboro: '2800870'
+    ms-pontotoc-2803660: '2803660'
+    ms-pontotoc-2803690: '2803690'
+    ms-poplarville: '2803720'
+    ms-port-gibson: '2801020'
+    ms-prentiss: '2802250'
+    ms-purvis: '2802400'
+    ms-quitman: '2803780'
+    ms-raleigh: '2804020'
+    ms-raymond: '2801860'
+    ms-richton: '2803870'
+    ms-ridgeland: '2802790'
+    ms-ripley: '2804110'
+    ms-rolling-fork: '2803960'
+    ms-rosedale: '2800185'
+    ms-sardis: '2803210'
+    ms-senatobia: '2803930'
+    ms-starkville: '2800189'
+    ms-summit: '2803240'
+    ms-sumner: '2804650'
+    ms-tunica: '2804290'
+    ms-tupelo-2802550: '2802550'
+    ms-tupelo-2804320: '2804320'
+    ms-tylertown: '2804440'
+    ms-union: '2804380'
+    ms-vancleave: '2802160'
+    ms-vicksburg: '2804470'
+    ms-water-valley: '2804500'
+    ms-waynesboro: '2804530'
+    ms-west-point: '2800191'
+    ms-wiggins: '2804170'
+    ms-winona: '2800196'
+    ms-woodville: '2804710'
+    ms-yazoo-city-2804770: '2804770'
+    ms-yazoo-city-2804800: '2804800'
+  per_pupil_revenue_avg: 12500.0  # NEEDS_VERIFICATION -- approx NCES FY2022 state average
+  pilot: false
+  state_fips: 28
+  scoring_adjustments: {}
+  status: ACTIVE
+
+TN:
+  charter_law:
+    cap_on_charters: null  # NEEDS_VERIFICATION
+    facilities_provisions: null  # NEEDS_VERIFICATION
+    funding_parity_provisions: null  # NEEDS_VERIFICATION
+    notes: null  # NEEDS_VERIFICATION
+    statute_citation: null  # NEEDS_VERIFICATION -- approx T.C.A. § 49-13
+    statute_url: null  # NEEDS_VERIFICATION
+  community_metadata: {}
+  teacher_supply_warning:
+    status: UNVERIFIED
+    impact_if_wrong: HIGH
+    claim: "Teacher supply may constrain charter staffing in this community."
+    reason: null  # NEEDS_VERIFICATION
+    resolution_path: null  # NEEDS_VERIFICATION
+  community_boundary_exceptions: []
+  excluded_communities: []
+  community_unit: MUNICIPALITY
+  data_sources:
+    authorizer_registry:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      known_authorizers: []
+      refresh_cadence: AS_NEEDED
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+    census:
+      description: ACS 5-year estimates for community demographics
+      format: API
+      refresh_cadence: ANNUAL
+      source_class: FEDERAL_DATA
+      table_ids:
+      - B01003
+      - B19013
+      - B15003
+      - S1401
+      url: https://data.census.gov
+    charter_roster:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      notes: null  # NEEDS_VERIFICATION
+      refresh_cadence: ANNUAL
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+    csp_awards:
+      description: CSP grant awards to Tennessee charter schools
+      format: SEARCHABLE_DB
+      refresh_cadence: ANNUAL
+      source_class: FEDERAL_DATA
+      url: https://oese.ed.gov/offices/office-of-discretionary-grants-support-services/charter-schools-program/
+    enrollment_data:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      notes: null  # NEEDS_VERIFICATION
+      refresh_cadence: ANNUAL
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+    performance_data:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      notes: null  # NEEDS_VERIFICATION
+      refresh_cadence: ANNUAL
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+  discovery:
+    deduplicate_by: null  # NEEDS_VERIFICATION
+    group_by: MUNICIPALITY
+    method: PARSE_STATE_ROSTER
+    minimum_schools_to_qualify: 1
+    notes: null  # NEEDS_VERIFICATION
+  name: Tennessee
+  tn_district_map:
+    tn-alamo-4700030: Alamo
+    tn-alamo-4700850: Crockett County
+    tn-alcoa: Alcoa
+    tn-altamont: Grundy County
+    tn-arlington: Arlington
+    tn-ashland-city: Cheatham County
+    tn-athens-4700120: Athens
+    tn-athens-4702820: McMinn County
+    tn-atwood: West Carroll Sp Dist
+    tn-bartlett: Bartlett
+    tn-benton: Polk County
+    tn-blountville: Sullivan County
+    tn-bolivar: Hardeman County Schools
+    tn-bradford: Bradford
+    tn-bristol: Bristol
+    tn-brownsville: Haywood County
+    tn-bruceton: Hollow Rock - Bruceton
+    tn-byrdstown: Pickett County
+    tn-camden: Benton County
+    tn-carthage: Smith County
+    tn-celina: Clay County
+    tn-centerville: Hickman County
+    tn-chattanooga: Hamilton County
+    tn-clarksville: Montgomery County
+    tn-cleveland-4700330: Bradley County
+    tn-cleveland-4700690: Cleveland
+    tn-clinton-4700090: Anderson County
+    tn-clinton-4700720: Clinton
+    tn-collierville: Collierville
+    tn-columbia: Maury County
+    tn-cookeville: Putnam County
+    tn-covington: Tipton County
+    tn-crossville: Cumberland County
+    tn-dandridge: Jefferson County
+    tn-dayton-4700930: Dayton
+    tn-dayton-4703510: Rhea County
+    tn-decatur: Meigs County
+    tn-decaturville: Decatur County
+    tn-dickson: Dickson County
+    tn-dover: Stewart County
+    tn-dresden: Weakley County
+    tn-dunlap: Sequatchie County
+    tn-dyer: Gibson Co Sp Dist
+    tn-dyersburg-4701050: Dyer County
+    tn-dyersburg-4701080: Dyersburg
+    tn-elizabethton-4700510: Carter County
+    tn-elizabethton-4701110: Elizabethton
+    tn-erin: Houston County
+    tn-erwin: Unicoi County
+    tn-fayetteville-4701200: Fayetteville
+    tn-fayetteville-4702490: Lincoln County
+    tn-franklin-4701260: Franklin SSD
+    tn-franklin-4704530: Williamson County
+    tn-gainesboro: Jackson County
+    tn-gallatin: Sumner County
+    tn-germantown: Germantown
+    tn-greeneville-4701470: Greene County
+    tn-greeneville-4701500: Greeneville
+    tn-hartsville: Trousdale County
+    tn-henderson: Chester County
+    tn-hohenwald: Lewis County
+    tn-humboldt: Humboldt City Schools
+    tn-huntingdon: Huntingdon Special School District
+    tn-huntsville: Scott County
+    tn-jacksboro: Campbell County
+    tn-jackson: Madison County
+    tn-jamestown: Fentress County
+    tn-jasper: Marion County
+    tn-johnson-city: Johnson City
+    tn-jonesborough: Washington County
+    tn-kingsport: Kingsport
+    tn-kingston: Roane County
+    tn-knoxville: Knox County
+    tn-lafayette: Macon County
+    tn-lakeland: Lakeland
+    tn-lawrenceburg: Lawrence County
+    tn-lebanon-4702370: Lebanon
+    tn-lebanon-4704550: Wilson County
+    tn-lenoir-city: Lenoir City
+    tn-lewisburg: Marshall County
+    tn-lexington-4701800: Henderson County
+    tn-lexington-4702460: Lexington
+    tn-linden: Perry County
+    tn-livingston: Overton County
+    tn-loudon: Loudon County
+    tn-lynchburg: Moore County
+    tn-madisonville: Monroe County
+    tn-manchester-4700780: Coffee County
+    tn-manchester-4702610: Manchester
+    tn-maryville-4700300: Blount County
+    tn-maryville-4702700: Maryville
+    tn-maynardville: Union County
+    tn-mckenzie: McKenzie
+    tn-mcminnville: Warren County
+    tn-memphis: Memphis-Shelby County Schools
+    tn-milan: Milan
+    tn-millington: Millington Municipal Schools
+    tn-morristown: Hamblen County
+    tn-mountain-city: Johnson County
+    tn-murfreesboro-4703150: Murfreesboro
+    tn-murfreesboro-4703690: Rutherford County
+    tn-nashville-4700147: Achievement School District
+    tn-nashville-4700156: "Department Of Children's Services Education Division"
+    tn-nashville-4700157: Tennessee Public Charter School Commission
+    tn-nashville-4703180: Davidson County
+    tn-newport-4700750: Cocke County
+    tn-newport-4703210: Newport
+    tn-oak-ridge: Oak Ridge
+    tn-oneida: Oneida
+    tn-paris-4701830: Henry County
+    tn-paris-4703360: Paris
+    tn-pikeville: Bledsoe County
+    tn-pulaski: Giles County
+    tn-ripley: Lauderdale County
+    tn-rogersville-4701740: Hawkins County
+    tn-rogersville-4703660: Rogersville
+    tn-rutledge: Grainger County
+    tn-savannah: Hardin County
+    tn-selmer: McNairy County
+    tn-sevierville: Sevier County
+    tn-shelbyville: Bedford County
+    tn-smithville: DeKalb County
+    tn-sneedville: Hancock County
+    tn-somerville: Fayette County Public Schools
+    tn-sparta: White County
+    tn-spencer: Van Buren County
+    tn-springfield: Robertson County
+    tn-sweetwater: Sweetwater
+    tn-tazewell: Claiborne County
+    tn-tiptonville: Lake County
+    tn-trenton: Trenton
+    tn-tullahoma: Tullahoma
+    tn-union-city-4703270: Obion County
+    tn-union-city-4704260: Union City
+    tn-wartburg: Morgan County
+    tn-waverly: Humphreys County
+    tn-waynesboro: Wayne County
+    tn-winchester: Franklin County
+    tn-woodbury: Cannon County
+  nces_district_map:
+    tn-alamo-4700030: '4700030'
+    tn-alamo-4700850: '4700850'
+    tn-alcoa: '4700060'
+    tn-altamont: '4701530'
+    tn-arlington: '4700152'
+    tn-ashland-city: '4700570'
+    tn-athens-4700120: '4700120'
+    tn-athens-4702820: '4702820'
+    tn-atwood: '4704490'
+    tn-bartlett: '4700153'
+    tn-benton: '4703450'
+    tn-blountville: '4703990'
+    tn-bolivar: '4701650'
+    tn-bradford: '4701390'
+    tn-bristol: '4700360'
+    tn-brownsville: '4701770'
+    tn-bruceton: '4701890'
+    tn-byrdstown: '4703420'
+    tn-camden: '4700240'
+    tn-carthage: '4703870'
+    tn-celina: '4700660'
+    tn-centerville: '4701860'
+    tn-chattanooga: '4701590'
+    tn-clarksville: '4703030'
+    tn-cleveland-4700330: '4700330'
+    tn-cleveland-4700690: '4700690'
+    tn-clinton-4700090: '4700090'
+    tn-clinton-4700720: '4700720'
+    tn-collierville: '4700149'
+    tn-columbia: '4702760'
+    tn-cookeville: '4703480'
+    tn-covington: '4704080'
+    tn-crossville: '4700900'
+    tn-dandridge: '4702100'
+    tn-dayton-4700930: '4700930'
+    tn-dayton-4703510: '4703510'
+    tn-decatur: '4702910'
+    tn-decaturville: '4700960'
+    tn-dickson: '4701020'
+    tn-dover: '4703960'
+    tn-dresden: '4704470'
+    tn-dunlap: '4703750'
+    tn-dyer: '4701400'
+    tn-dyersburg-4701050: '4701050'
+    tn-dyersburg-4701080: '4701080'
+    tn-elizabethton-4700510: '4700510'
+    tn-elizabethton-4701110: '4701110'
+    tn-erin: '4701920'
+    tn-erwin: '4704230'
+    tn-fayetteville-4701200: '4701200'
+    tn-fayetteville-4702490: '4702490'
+    tn-franklin-4701260: '4701260'
+    tn-franklin-4704530: '4704530'
+    tn-gainesboro: '4702070'
+    tn-gallatin: '4704020'
+    tn-germantown: '4700151'
+    tn-greeneville-4701470: '4701470'
+    tn-greeneville-4701500: '4701500'
+    tn-hartsville: '4704170'
+    tn-henderson: '4700600'
+    tn-hohenwald: '4702430'
+    tn-humboldt: '4701950'
+    tn-huntingdon: '4702010'
+    tn-huntsville: '4703720'
+    tn-jacksboro: '4700420'
+    tn-jackson: '4702580'
+    tn-jamestown: '4701230'
+    tn-jasper: '4702640'
+    tn-johnson-city: '4702130'
+    tn-jonesborough: '4704380'
+    tn-kingsport: '4702190'
+    tn-kingston: '4703590'
+    tn-knoxville: '4702220'
+    tn-lafayette: '4702550'
+    tn-lakeland: '4700154'
+    tn-lawrenceburg: '4702340'
+    tn-lebanon-4702370: '4702370'
+    tn-lebanon-4704550: '4704550'
+    tn-lenoir-city: '4702400'
+    tn-lewisburg: '4702670'
+    tn-lexington-4701800: '4701800'
+    tn-lexington-4702460: '4702460'
+    tn-linden: '4703390'
+    tn-livingston: '4703330'
+    tn-loudon: '4702520'
+    tn-lynchburg: '4703060'
+    tn-madisonville: '4703000'
+    tn-manchester-4700780: '4700780'
+    tn-manchester-4702610: '4702610'
+    tn-maryville-4700300: '4700300'
+    tn-maryville-4702700: '4702700'
+    tn-maynardville: '4704290'
+    tn-mckenzie: '4702790'
+    tn-mcminnville: '4704350'
+    tn-memphis: '4700148'
+    tn-milan: '4702970'
+    tn-millington: '4700150'
+    tn-morristown: '4700001'
+    tn-mountain-city: '4702160'
+    tn-murfreesboro-4703150: '4703150'
+    tn-murfreesboro-4703690: '4703690'
+    tn-nashville-4700147: '4700147'
+    tn-nashville-4700156: '4700156'
+    tn-nashville-4700157: '4700157'
+    tn-nashville-4703180: '4703180'
+    tn-newport-4700750: '4700750'
+    tn-newport-4703210: '4703210'
+    tn-oak-ridge: '4703240'
+    tn-oneida: '4703300'
+    tn-paris-4701830: '4701830'
+    tn-paris-4703360: '4703360'
+    tn-pikeville: '4700270'
+    tn-pulaski: '4701410'
+    tn-ripley: '4702310'
+    tn-rogersville-4701740: '4701740'
+    tn-rogersville-4703660: '4703660'
+    tn-rutledge: '4701440'
+    tn-savannah: '4701680'
+    tn-selmer: '4702880'
+    tn-sevierville: '4703780'
+    tn-shelbyville: '4700180'
+    tn-smithville: '4700990'
+    tn-sneedville: '4701620'
+    tn-somerville: '4701170'
+    tn-sparta: '4704500'
+    tn-spencer: '4704320'
+    tn-springfield: '4703600'
+    tn-sweetwater: '4704050'
+    tn-tazewell: '4700630'
+    tn-tiptonville: '4702280'
+    tn-trenton: '4704100'
+    tn-tullahoma: '4704200'
+    tn-union-city-4703270: '4703270'
+    tn-union-city-4704260: '4704260'
+    tn-wartburg: '4703090'
+    tn-waverly: '4701980'
+    tn-waynesboro: '4704440'
+    tn-winchester: '4701290'
+    tn-woodbury: '4700450'
+  per_pupil_revenue_avg: 11800.0  # NEEDS_VERIFICATION -- approx NCES FY2022 state average
+  pilot: false
+  state_fips: 47
+  scoring_adjustments: {}
+  status: ACTIVE
+
+WI:
+  charter_law:
+    cap_on_charters: null  # NEEDS_VERIFICATION
+    facilities_provisions: null  # NEEDS_VERIFICATION
+    funding_parity_provisions: null  # NEEDS_VERIFICATION
+    notes: null  # NEEDS_VERIFICATION
+    statute_citation: null  # NEEDS_VERIFICATION -- approx Wis. Stat. § 118.40
+    statute_url: null  # NEEDS_VERIFICATION
+  community_metadata: {}
+  teacher_supply_warning:
+    status: UNVERIFIED
+    impact_if_wrong: HIGH
+    claim: "Teacher supply may constrain charter staffing in this community."
+    reason: null  # NEEDS_VERIFICATION
+    resolution_path: null  # NEEDS_VERIFICATION
+  community_boundary_exceptions: []
+  excluded_communities: []
+  community_unit: MUNICIPALITY
+  data_sources:
+    authorizer_registry:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      known_authorizers: []
+      refresh_cadence: AS_NEEDED
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+    census:
+      description: ACS 5-year estimates for community demographics
+      format: API
+      refresh_cadence: ANNUAL
+      source_class: FEDERAL_DATA
+      table_ids:
+      - B01003
+      - B19013
+      - B15003
+      - S1401
+      url: https://data.census.gov
+    charter_roster:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      notes: null  # NEEDS_VERIFICATION
+      refresh_cadence: ANNUAL
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+    csp_awards:
+      description: CSP grant awards to Wisconsin charter schools
+      format: SEARCHABLE_DB
+      refresh_cadence: ANNUAL
+      source_class: FEDERAL_DATA
+      url: https://oese.ed.gov/offices/office-of-discretionary-grants-support-services/charter-schools-program/
+    enrollment_data:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      notes: null  # NEEDS_VERIFICATION
+      refresh_cadence: ANNUAL
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+    performance_data:
+      description: null  # NEEDS_VERIFICATION
+      format: null  # NEEDS_VERIFICATION
+      notes: null  # NEEDS_VERIFICATION
+      refresh_cadence: ANNUAL
+      source_class: PED_DATA
+      url: null  # NEEDS_VERIFICATION
+  discovery:
+    deduplicate_by: null  # NEEDS_VERIFICATION
+    group_by: MUNICIPALITY
+    method: PARSE_STATE_ROSTER
+    minimum_schools_to_qualify: 1
+    notes: null  # NEEDS_VERIFICATION
+  name: Wisconsin
+  wi_district_map:
+    wi-abbotsford: Abbotsford School District
+    wi-algoma: Algoma School District
+    wi-alma-center: Alma Center School District
+    wi-altoona: Altoona School District
+    wi-amery: Amery School District
+    wi-amherst: Tomorrow River School District
+    wi-antigo: Antigo Unified School District
+    wi-appleton: Appleton Area School District
+    wi-arbor-vitae: Woodruff J1 School District
+    wi-arcadia: Arcadia School District
+    wi-ashland: Ashland School District
+    wi-auburndale: Auburndale School District
+    wi-augusta: Augusta School District
+    wi-baldwin: Baldwin-Woodville Area School District
+    wi-balsam-lake: Unity School District
+    wi-bangor: Bangor School District
+    wi-baraboo: Baraboo School District
+    wi-barron: Barron Area School District
+    wi-beaver-dam: Beaver Dam Unified School District
+    wi-belleville: Belleville School District
+    wi-beloit-5500092: The Lincoln Academy Inc.
+    wi-beloit-5501050: Beloit School District
+    wi-beloit-5501080: Beloit Turner School District
+    wi-berlin: Berlin Area School District
+    wi-black-river-falls: Black River Falls School District
+    wi-blair: Blair-Taylor School District
+    wi-bloomer: Bloomer School District
+    wi-bonduel: Bonduel School District
+    wi-boscobel: Boscobel Area School District
+    wi-boyceville: Boyceville Community School District
+    wi-brillion: Brillion School District
+    wi-bristol: "Bristol #1 School District"
+    wi-brodhead: Brodhead School District
+    wi-brookfield: Elmbrook School District
+    wi-brown-deer: Brown Deer School District
+    wi-brussels: Southern Door County School District
+    wi-burlington-5501890: Burlington Area School District
+    wi-burlington-5512390: Randall J1 School District
+    wi-burlington-5516560: Wheatland J1 School District
+    wi-cadott: Cadott Community School District
+    wi-cambridge: Cambridge School District
+    wi-cameron: Cameron School District
+    wi-campbellsport: Campbellsport School District
+    wi-cashton: Cashton School District
+    wi-cedar-grove: Cedar Grove-Belgium Area School District
+    wi-cedarburg: Cedarburg School District
+    wi-chetek: Chetek-Weyerhaeuser Area School District
+    wi-chilton: Chilton School District
+    wi-chippewa-falls: Chippewa Falls Area Unified School District
+    wi-clear-lake: Clear Lake School District
+    wi-clinton: Clinton Community School District
+    wi-clintonville: Clintonville School District
+    wi-colby: Colby School District
+    wi-coleman: Coleman School District
+    wi-colfax: Colfax School District
+    wi-columbus: Columbus School District
+    wi-combined-locks: Kimberly Area School District
+    wi-crandon: Crandon School District
+    wi-crivitz: Crivitz School District
+    wi-cuba-city: Cuba City School District
+    wi-cudahy: Cudahy School District
+    wi-cumberland: Cumberland School District
+    wi-darlington: Darlington Community School District
+    wi-de-pere-5503210: De Pere School District
+    wi-de-pere-5516320: West De Pere School District
+    wi-deerfield: Deerfield Community School District
+    wi-deforest: De Forest Area School District
+    wi-delavan: Delavan-Darien School District
+    wi-denmark: Denmark School District
+    wi-dodgeville: Dodgeville School District
+    wi-durand: Durand-Arkansaw School District
+    wi-eagle-river: Northland Pines School District
+    wi-east-troy: East Troy Community School District
+    wi-eau-claire: Eau Claire Area School District
+    wi-edgar: Edgar School District
+    wi-edgerton: Edgerton School District
+    wi-elk-mound: Elk Mound Area School District
+    wi-elkhorn: Elkhorn Area School District
+    wi-ellsworth: Ellsworth Community School District
+    wi-evansville: Evansville Community School District
+    wi-fall-creek: Fall Creek School District
+    wi-fennimore: Fennimore Community School District
+    wi-fish-creek: Gibraltar Area School District
+    wi-fond-du-lac: Fond du Lac School District
+    wi-fort-atkinson: Fort Atkinson School District
+    wi-fountain-city: Cochrane-Fountain City School District
+    wi-franklin: Franklin Public School District
+    wi-fredonia: Northern Ozaukee School District
+    wi-freedom: Freedom Area School District
+    wi-friendship: Adams-Friendship Area School District
+    wi-galesville: Galesville-Ettrick-Trempealeau School District
+    wi-germantown: Germantown School District
+    wi-gillett: Gillett School District
+    wi-glendale-5505460: Glendale-River Hills School District
+    wi-glendale-5505490: Nicolet Union High School School District
+    wi-glenwood-city: Glenwood City School District
+    wi-grafton: Grafton School District
+    wi-grantsburg: Grantsburg School District
+    wi-green-bay-5500540: Ashwaubenon School District
+    wi-green-bay-5505820: Green Bay Area Public School District
+    wi-green-bay-5506630: Howard-Suamico School District
+    wi-greendale: Greendale School District
+    wi-greenfield-5505940: Greenfield School District
+    wi-greenfield-5506000: Whitnall School District
+    wi-hammond: Saint Croix Central School District
+    wi-hartford-5506090: Hartford J1 School District
+    wi-hartford-5506120: Hartford UHS School District
+    wi-hartland-5506140: Hartland-Lakeside J3 School District
+    wi-hartland-5506180: Arrowhead UHS School District
+    wi-hartland-5509360: Merton Community School District
+    wi-hayward: Hayward Community School District
+    wi-hazel-green: Southwestern Wisconsin School District
+    wi-hillsboro: Hillsboro School District
+    wi-holmen: Holmen School District
+    wi-horicon: Horicon School District
+    wi-hortonville: Hortonville Area School District
+    wi-howards-grove: Howards Grove School District
+    wi-hudson: Hudson School District
+    wi-hurley: Hurley School District
+    wi-iola: Iola-Scandinavia School District
+    wi-janesville: Janesville School District
+    wi-jefferson: Jefferson School District
+    wi-johnson-creek: Johnson Creek School District
+    wi-juneau: Dodgeland School District
+    wi-kaukauna: Kaukauna Area School District
+    wi-kenosha: Kenosha School District
+    wi-keshena: Menominee Indian School District
+    wi-kewaskum: Kewaskum School District
+    wi-kewaunee: Kewaunee School District
+    wi-kiel: Kiel Area School District
+    wi-kohler: Kohler School District
+    wi-la-crosse: La Crosse School District
+    wi-lac-du-flambeau: "Lac du Flambeau #1 School District"
+    wi-ladysmith: Ladysmith School District
+    wi-lake-geneva-5507620: Lake Geneva J1 School District
+    wi-lake-geneva-5507650: Lake Geneva-Genoa City UHS School District
+    wi-lake-mills: Lake Mills Area School District
+    wi-lancaster: Lancaster Community School District
+    wi-little-chute: Little Chute Area School District
+    wi-livingston: Iowa-Grant School District
+    wi-lodi: Lodi School District
+    wi-lomira: Lomira School District
+    wi-luxemburg: Luxemburg-Casco School District
+    wi-madison: Madison Metropolitan School District
+    wi-manawa: Manawa School District
+    wi-manitowoc: Manitowoc School District
+    wi-maple: Maple School District
+    wi-marathon: Marathon City School District
+    wi-marinette: Marinette School District
+    wi-markesan: Markesan School District
+    wi-marshall: Marshall School District
+    wi-marshfield: Marshfield Unified School District
+    wi-mauston: Mauston School District
+    wi-mayville: Mayville School District
+    wi-mazomanie: Wisconsin Heights School District
+    wi-mcfarland: McFarland School District
+    wi-medford: Medford Area Public School District
+    wi-melrose: Melrose-Mindoro School District
+    wi-menasha: Menasha Joint School District
+    wi-menomonee-falls: Menomonee Falls School District
+    wi-menomonie: Menomonie Area School District
+    wi-mequon: Mequon-Thiensville School District
+    wi-merrill: Merrill Area School District
+    wi-middleton: Middleton-Cross Plains Area School District
+    wi-milton: Milton School District
+    wi-milwaukee-5500042: Milwaukee Science Education Consortium Inc.
+    wi-milwaukee-5500065: Milwaukee Scholars Charter School Inc.
+    wi-milwaukee-5500074: Seeds of Health Inc
+    wi-milwaukee-5500077: United Community Center Inc.
+    wi-milwaukee-5500113: Woodlands School Inc.
+    wi-milwaukee-5504800: Fox Point J2 School District
+    wi-milwaukee-5509600: Milwaukee School District
+    wi-mineral-point: Mineral Point Unified School District
+    wi-minocqua-5509630: Lakeland UHS School District
+    wi-minocqua-5509690: Minocqua J1 School District
+    wi-mishicot: Mishicot School District
+    wi-mondovi: Mondovi School District
+    wi-monona: Monona Grove School District
+    wi-monroe: Monroe School District
+    wi-montello: Montello School District
+    wi-mosinee: Mosinee School District
+    wi-mount-horeb: Mount Horeb Area School District
+    wi-mukwonago: Mukwonago School District
+    wi-muscoda: Riverdale School District
+    wi-muskego: Muskego-Norway School District
+    wi-necedah: Necedah Area School District
+    wi-neenah: Neenah Joint School District
+    wi-neillsville: Neillsville School District
+    wi-nekoosa: Nekoosa School District
+    wi-new-berlin: New Berlin School District
+    wi-new-glarus: New Glarus School District
+    wi-new-holstein: New Holstein School District
+    wi-new-lisbon: New Lisbon School District
+    wi-new-london: New London School District
+    wi-new-richmond: New Richmond School District
+    wi-north-fond-du-lac: North Fond du Lac School District
+    wi-oak-creek: Oak Creek-Franklin Joint School District
+    wi-oakfield: Oakfield School District
+    wi-oconomowoc-5500087: Lake Country Classical Academy Inc.
+    wi-oconomowoc-5510890: Oconomowoc Area School District
+    wi-oconto: Oconto Unified School District
+    wi-oconto-falls: Oconto Falls Public School District
+    wi-omro: Omro School District
+    wi-onalaska: Onalaska School District
+    wi-ontario: Norwalk-Ontario-Wilton School District
+    wi-oostburg: Oostburg School District
+    wi-oregon: Oregon School District
+    wi-orfordville: Parkview School District
+    wi-osceola: Osceola School District
+    wi-oshkosh: Oshkosh Area School District
+    wi-osseo: Osseo-Fairchild School District
+    wi-palmyra: Palmyra-Eagle Area School District
+    wi-pardeeville: Pardeeville Area School District
+    wi-park-falls: Chequamegon School District
+    wi-patch-grove: River Ridge School District
+    wi-peshtigo: Peshtigo School District
+    wi-pewaukee: Pewaukee School District
+    wi-phillips: Phillips School District
+    wi-pittsville: Pittsville School District
+    wi-plainfield: Tri-County Area School District
+    wi-platteville: Platteville School District
+    wi-plymouth: Plymouth Joint School District
+    wi-port-washington: Port Washington-Saukville School District
+    wi-portage: Portage Community School District
+    wi-poynette: Poynette School District
+    wi-prairie-du-chien: Prairie du Chien Area School District
+    wi-prairie-du-sac: Sauk Prairie School District
+    wi-prescott: Prescott School District
+    wi-pulaski: Pulaski Community School District
+    wi-racine-5500045: Racine Charter One Inc.
+    wi-racine-5512360: Racine Unified School District
+    wi-randolph: Randolph School District
+    wi-random-lake: Random Lake School District
+    wi-reedsburg: Reedsburg School District
+    wi-reedsville: Reedsville School District
+    wi-rhinelander: Rhinelander School District
+    wi-rice-lake: Rice Lake Area School District
+    wi-richland-center: Richland School District
+    wi-ripon: Ripon Area School District
+    wi-river-falls: River Falls School District
+    wi-rosendale: Rosendale-Brandon School District
+    wi-saint-croix-falls: Saint Croix Falls School District
+    wi-saint-francis: Saint Francis School District
+    wi-salem-5513290: Central/Westosha UHS School District
+    wi-salem-5513350: Salem School District
+    wi-schofield: D C Everest Area School District
+    wi-seymour: Seymour Community School District
+    wi-shawano: Shawano School District
+    wi-sheboygan: Sheboygan Area School District
+    wi-sheboygan-falls: Sheboygan Falls School District
+    wi-shell-lake: Shell Lake School District
+    wi-shiocton: Shiocton School District
+    wi-shorewood: Shorewood School District
+    wi-slinger: Slinger School District
+    wi-somerset: Somerset School District
+    wi-south-milwaukee: South Milwaukee School District
+    wi-sparta: Sparta Area School District
+    wi-spencer: Spencer School District
+    wi-spooner: Spooner Area School District
+    wi-spring-green: River Valley School District
+    wi-spring-valley: Spring Valley School District
+    wi-stanley: Stanley-Boyd Area School District
+    wi-stevens-point: Stevens Point Area Public School District
+    wi-stoughton: Stoughton Area School District
+    wi-stratford: Stratford School District
+    wi-strum: Eleva-Strum School District
+    wi-sturgeon-bay-5513500: Sevastopol School District
+    wi-sturgeon-bay-5514610: Sturgeon Bay School District
+    wi-sun-prairie: Sun Prairie Area School District
+    wi-superior: Superior School District
+    wi-sussex: Hamilton School District
+    wi-thorp: Thorp School District
+    wi-three-lakes: Three Lakes School District
+    wi-tomah: Tomah Area School District
+    wi-tomahawk: Tomahawk School District
+    wi-two-rivers: Two Rivers Public School District
+    wi-union-grove-5515150: Union Grove UHS School District
+    wi-union-grove-5515180: Union Grove J1 School District
+    wi-valders: Valders Area School District
+    wi-verona: Verona Area School District
+    wi-viroqua: Viroqua Area School District
+    wi-wales: Kettle Moraine School District
+    wi-washburn: Washburn School District
+    wi-waterford-5515600: Waterford UHS School District
+    wi-waterford-5515660: Waterford Graded J1 School District
+    wi-waterloo: Waterloo School District
+    wi-watertown: Watertown Unified School District
+    wi-waukesha: Waukesha School District
+    wi-waunakee: Waunakee Community School District
+    wi-waupaca: Waupaca School District
+    wi-waupun: Waupun School District
+    wi-wausau: Wausau School District
+    wi-wautoma: Wautoma Area School District
+    wi-wauwatosa: Wauwatosa School District
+    wi-webster: Webster School District
+    wi-west-allis: West Allis-West Milwaukee School District
+    wi-west-bend: West Bend School District
+    wi-west-salem: West Salem School District
+    wi-westby: Westby Area School District
+    wi-westfield: Westfield School District
+    wi-weyauwega: Weyauwega-Fremont School District
+    wi-whitefish-bay: Whitefish Bay School District
+    wi-whitehall: Whitehall School District
+    wi-whitewater: Whitewater Unified School District
+    wi-wild-rose: Wild Rose School District
+    wi-williams-bay: Williams Bay School District
+    wi-wilmot: Wilmot UHS School District
+    wi-winneconne: Winneconne Community School District
+    wi-wisconsin-dells: Wisconsin Dells School District
+    wi-wisconsin-rapids: Wisconsin Rapids School District
+    wi-wittenberg: Wittenberg-Birnamwood School District
+    wi-wrightstown: Wrightstown Community School District
+  nces_district_map:
+    wi-abbotsford: '5500030'
+    wi-algoma: '5500150'
+    wi-alma-center: '5500210'
+    wi-altoona: '5500270'
+    wi-amery: '5500300'
+    wi-amherst: '5500330'
+    wi-antigo: '5500360'
+    wi-appleton: '5500390'
+    wi-arbor-vitae: '5517160'
+    wi-arcadia: '5500420'
+    wi-ashland: '5500510'
+    wi-auburndale: '5500600'
+    wi-augusta: '5500630'
+    wi-baldwin: '5500720'
+    wi-balsam-lake: '5500750'
+    wi-bangor: '5500780'
+    wi-baraboo: '5500810'
+    wi-barron: '5500870'
+    wi-beaver-dam: '5500960'
+    wi-belleville: '5500990'
+    wi-beloit-5500092: '5500092'
+    wi-beloit-5501050: '5501050'
+    wi-beloit-5501080: '5501080'
+    wi-berlin: '5501140'
+    wi-black-river-falls: '5501260'
+    wi-blair: '5500016'
+    wi-bloomer: '5501350'
+    wi-bonduel: '5501470'
+    wi-boscobel: '5501500'
+    wi-boyceville: '5501590'
+    wi-brillion: '5501680'
+    wi-bristol: '5501710'
+    wi-brodhead: '5501740'
+    wi-brookfield: '5501770'
+    wi-brown-deer: '5501800'
+    wi-brussels: '5514130'
+    wi-burlington-5501890: '5501890'
+    wi-burlington-5512390: '5512390'
+    wi-burlington-5516560: '5516560'
+    wi-cadott: '5502040'
+    wi-cambridge: '5502100'
+    wi-cameron: '5502130'
+    wi-campbellsport: '5502160'
+    wi-cashton: '5502340'
+    wi-cedar-grove: '5502430'
+    wi-cedarburg: '5502460'
+    wi-chetek: '5500061'
+    wi-chilton: '5502520'
+    wi-chippewa-falls: '5502550'
+    wi-clear-lake: '5502610'
+    wi-clinton: '5502640'
+    wi-clintonville: '5502670'
+    wi-colby: '5502730'
+    wi-coleman: '5502760'
+    wi-colfax: '5502790'
+    wi-columbus: '5502820'
+    wi-combined-locks: '5507470'
+    wi-crandon: '5502910'
+    wi-crivitz: '5502970'
+    wi-cuba-city: '5503030'
+    wi-cudahy: '5503060'
+    wi-cumberland: '5503090'
+    wi-darlington: '5503150'
+    wi-de-pere-5503210: '5503210'
+    wi-de-pere-5516320: '5516320'
+    wi-deerfield: '5503270'
+    wi-deforest: '5503180'
+    wi-delavan: '5503640'
+    wi-denmark: '5503660'
+    wi-dodgeville: '5503690'
+    wi-durand: '5503840'
+    wi-eagle-river: '5503860'
+    wi-east-troy: '5504020'
+    wi-eau-claire: '5504050'
+    wi-edgar: '5504080'
+    wi-edgerton: '5504110'
+    wi-elk-mound: '5504230'
+    wi-elkhorn: '5504290'
+    wi-ellsworth: '5504320'
+    wi-evansville: '5504440'
+    wi-fall-creek: '5504500'
+    wi-fennimore: '5504590'
+    wi-fish-creek: '5505220'
+    wi-fond-du-lac: '5504680'
+    wi-fort-atkinson: '5504740'
+    wi-fountain-city: '5502700'
+    wi-franklin: '5504830'
+    wi-fredonia: '5504890'
+    wi-freedom: '5504920'
+    wi-friendship: '5500060'
+    wi-galesville: '5504960'
+    wi-germantown: '5505160'
+    wi-gillett: '5505250'
+    wi-glendale-5505460: '5505460'
+    wi-glendale-5505490: '5505490'
+    wi-glenwood-city: '5505520'
+    wi-grafton: '5505610'
+    wi-grantsburg: '5505670'
+    wi-green-bay-5500540: '5500540'
+    wi-green-bay-5505820: '5505820'
+    wi-green-bay-5506630: '5506630'
+    wi-greendale: '5505910'
+    wi-greenfield-5505940: '5505940'
+    wi-greenfield-5506000: '5506000'
+    wi-hammond: '5506060'
+    wi-hartford-5506090: '5506090'
+    wi-hartford-5506120: '5506120'
+    wi-hartland-5506140: '5506140'
+    wi-hartland-5506180: '5506180'
+    wi-hartland-5509360: '5509360'
+    wi-hayward: '5506270'
+    wi-hazel-green: '5506300'
+    wi-hillsboro: '5506480'
+    wi-holmen: '5506540'
+    wi-horicon: '5506570'
+    wi-hortonville: '5506600'
+    wi-howards-grove: '5506660'
+    wi-hudson: '5506690'
+    wi-hurley: '5506750'
+    wi-iola: '5506840'
+    wi-janesville: '5507020'
+    wi-jefferson: '5507050'
+    wi-johnson-creek: '5507170'
+    wi-juneau: '5507260'
+    wi-kaukauna: '5507290'
+    wi-kenosha: '5507320'
+    wi-keshena: '5509070'
+    wi-kewaskum: '5507380'
+    wi-kewaunee: '5507410'
+    wi-kiel: '5507440'
+    wi-kohler: '5507500'
+    wi-la-crosse: '5507530'
+    wi-lac-du-flambeau: '5504620'
+    wi-ladysmith: '5507590'
+    wi-lake-geneva-5507620: '5507620'
+    wi-lake-geneva-5507650: '5507650'
+    wi-lake-mills: '5507710'
+    wi-lancaster: '5507770'
+    wi-little-chute: '5508160'
+    wi-livingston: '5506870'
+    wi-lodi: '5508190'
+    wi-lomira: '5508220'
+    wi-luxemburg: '5508340'
+    wi-madison: '5508520'
+    wi-manawa: '5508550'
+    wi-manitowoc: '5508610'
+    wi-maple: '5508640'
+    wi-marathon: '5508670'
+    wi-marinette: '5508700'
+    wi-markesan: '5508760'
+    wi-marshall: '5508790'
+    wi-marshfield: '5508820'
+    wi-mauston: '5508850'
+    wi-mayville: '5508880'
+    wi-mazomanie: '5501230'
+    wi-mcfarland: '5508910'
+    wi-medford: '5508940'
+    wi-melrose: '5509000'
+    wi-menasha: '5509030'
+    wi-menomonee-falls: '5509060'
+    wi-menomonie: '5509090'
+    wi-mequon: '5509130'
+    wi-merrill: '5509210'
+    wi-middleton: '5509510'
+    wi-milton: '5509570'
+    wi-milwaukee-5500042: '5500042'
+    wi-milwaukee-5500065: '5500065'
+    wi-milwaukee-5500074: '5500074'
+    wi-milwaukee-5500077: '5500077'
+    wi-milwaukee-5500113: '5500113'
+    wi-milwaukee-5504800: '5504800'
+    wi-milwaukee-5509600: '5509600'
+    wi-mineral-point: '5509660'
+    wi-minocqua-5509630: '5509630'
+    wi-minocqua-5509690: '5509690'
+    wi-mishicot: '5509750'
+    wi-mondovi: '5509780'
+    wi-monona: '5509810'
+    wi-monroe: '5509840'
+    wi-montello: '5509870'
+    wi-mosinee: '5509960'
+    wi-mount-horeb: '5509990'
+    wi-mukwonago: '5510060'
+    wi-muscoda: '5510140'
+    wi-muskego: '5510170'
+    wi-necedah: '5510230'
+    wi-neenah: '5510320'
+    wi-neillsville: '5510350'
+    wi-nekoosa: '5510380'
+    wi-new-berlin: '5510470'
+    wi-new-glarus: '5510500'
+    wi-new-holstein: '5510530'
+    wi-new-lisbon: '5510560'
+    wi-new-london: '5510590'
+    wi-new-richmond: '5510620'
+    wi-north-fond-du-lac: '5510740'
+    wi-oak-creek: '5510830'
+    wi-oakfield: '5510860'
+    wi-oconomowoc-5500087: '5500087'
+    wi-oconomowoc-5510890: '5510890'
+    wi-oconto: '5510920'
+    wi-oconto-falls: '5510950'
+    wi-omro: '5510980'
+    wi-onalaska: '5511010'
+    wi-ontario: '5510770'
+    wi-oostburg: '5511070'
+    wi-oregon: '5511100'
+    wi-orfordville: '5511130'
+    wi-osceola: '5511160'
+    wi-oshkosh: '5511190'
+    wi-osseo: '5511220'
+    wi-palmyra: '5511350'
+    wi-pardeeville: '5511370'
+    wi-park-falls: '5500058'
+    wi-patch-grove: '5500017'
+    wi-peshtigo: '5511610'
+    wi-pewaukee: '5511640'
+    wi-phillips: '5511730'
+    wi-pittsville: '5511790'
+    wi-plainfield: '5511820'
+    wi-platteville: '5511850'
+    wi-plymouth: '5511940'
+    wi-port-washington: '5512000'
+    wi-portage: '5512060'
+    wi-poynette: '5512120'
+    wi-prairie-du-chien: '5512150'
+    wi-prairie-du-sac: '5513410'
+    wi-prescott: '5512240'
+    wi-pulaski: '5512330'
+    wi-racine-5500045: '5500045'
+    wi-racine-5512360: '5512360'
+    wi-randolph: '5512420'
+    wi-random-lake: '5512450'
+    wi-reedsburg: '5512660'
+    wi-reedsville: '5512690'
+    wi-rhinelander: '5512720'
+    wi-rice-lake: '5512810'
+    wi-richland-center: '5512960'
+    wi-ripon: '5513020'
+    wi-river-falls: '5513050'
+    wi-rosendale: '5513100'
+    wi-saint-croix-falls: '5513230'
+    wi-saint-francis: '5513260'
+    wi-salem-5513290: '5513290'
+    wi-salem-5513350: '5513350'
+    wi-schofield: '5513170'
+    wi-seymour: '5513530'
+    wi-shawano: '5513620'
+    wi-sheboygan: '5513650'
+    wi-sheboygan-falls: '5513680'
+    wi-shell-lake: '5513710'
+    wi-shiocton: '5513770'
+    wi-shorewood: '5513800'
+    wi-slinger: '5513950'
+    wi-somerset: '5514010'
+    wi-south-milwaukee: '5514040'
+    wi-sparta: '5514160'
+    wi-spencer: '5514190'
+    wi-spooner: '5514220'
+    wi-spring-green: '5514250'
+    wi-spring-valley: '5514340'
+    wi-stanley: '5514430'
+    wi-stevens-point: '5514490'
+    wi-stoughton: '5514550'
+    wi-stratford: '5514580'
+    wi-strum: '5504200'
+    wi-sturgeon-bay-5513500: '5513500'
+    wi-sturgeon-bay-5514610: '5514610'
+    wi-sun-prairie: '5514640'
+    wi-superior: '5514670'
+    wi-sussex: '5506030'
+    wi-thorp: '5514820'
+    wi-three-lakes: '5514850'
+    wi-tomah: '5514910'
+    wi-tomahawk: '5514940'
+    wi-two-rivers: '5515120'
+    wi-union-grove-5515150: '5515150'
+    wi-union-grove-5515180: '5515180'
+    wi-valders: '5515210'
+    wi-verona: '5515330'
+    wi-viroqua: '5515360'
+    wi-wales: '5503510'
+    wi-washburn: '5515540'
+    wi-waterford-5515600: '5515600'
+    wi-waterford-5515660: '5515660'
+    wi-waterloo: '5515720'
+    wi-watertown: '5515750'
+    wi-waukesha: '5515780'
+    wi-waunakee: '5515810'
+    wi-waupaca: '5515840'
+    wi-waupun: '5515870'
+    wi-wausau: '5515900'
+    wi-wautoma: '5515960'
+    wi-wauwatosa: '5515990'
+    wi-webster: '5516230'
+    wi-west-allis: '5516260'
+    wi-west-bend: '5516290'
+    wi-west-salem: '5516350'
+    wi-westby: '5516410'
+    wi-westfield: '5516440'
+    wi-weyauwega: '5516500'
+    wi-whitefish-bay: '5516620'
+    wi-whitehall: '5516650'
+    wi-whitewater: '5516680'
+    wi-wild-rose: '5516710'
+    wi-williams-bay: '5516740'
+    wi-wilmot: '5516770'
+    wi-winneconne: '5516830'
+    wi-wisconsin-dells: '5517040'
+    wi-wisconsin-rapids: '5517070'
+    wi-wittenberg: '5517100'
+    wi-wrightstown: '5517190'
+  per_pupil_revenue_avg: 13200.0  # NEEDS_VERIFICATION -- approx NCES FY2022 state average
+  pilot: false
+  state_fips: 55
+  scoring_adjustments: {}
+  status: ACTIVE

@@ -14,8 +14,11 @@ COLUMNS NOT PRESENT in these files (confirmed Task 1b — do not add):
   ell_pct                         — not in any of the 5 NCES files
   enrollment_5yr_trend_pct        — single year only; trend not computable
 
-NM STATE AVERAGE PER-PUPIL REVENUE:
-  $24,356 (computed from 143 valid NM LEA rows in the finance file)
+PER-STATE AVERAGE PER-PUPIL REVENUE:
+  Loaded at runtime from config/states.yaml per_pupil_revenue_avg.
+  Falls back to dynamic computation from the national finance parquet when
+  the value is absent or null in states.yaml.
+  NM verified value: $24,356 (computed from 143 valid NM LEA rows).
 """
 from __future__ import annotations
 
@@ -43,12 +46,6 @@ STATES_YAML    = "config/states.yaml"
 SOURCE_URL     = "https://nces.ed.gov/ccd/files.asp"
 SOURCE_TITLE   = "NCES CCD Local Education Agency Finance / Lunch Data FY2023"
 FISCAL_YEAR    = "2022-2023"
-
-# NM state average per-pupil revenue (pre-computed from 143 valid NM LEA rows).
-# TODO(S35-sweep): NM_STATE_AVG_PPR is NM-specific. Per-state averages must be
-# loaded from states.yaml (or computed on-the-fly from the finance CSV) before
-# per_pupil_revenue_vs_state_avg_pct can be produced for non-NM states.
-NM_STATE_AVG_PPR = 24_356.0
 
 # Sentinel: NCES uses -2 for missing/not-applicable numeric fields
 _MISSING_SENTINEL = -2
@@ -239,6 +236,71 @@ def _load_nces_map(state: str) -> dict:
         return {}
 
 
+def _get_state_avg_ppr(state: str) -> Optional[float]:
+    """Return the per-pupil revenue average for a state.
+
+    Load order:
+      1. config/states.yaml per_pupil_revenue_avg (trusted static value)
+      2. Compute from national finance parquet (mean TOTALREV/MEMBERSCH for
+         the state's NCES districts — requires the parquet to be present)
+      3. None with a warning if both sources are unavailable
+    """
+    # 1. states.yaml static value
+    try:
+        with open(STATES_YAML) as f:
+            states_cfg = yaml.safe_load(f)
+        val = states_cfg.get(state.upper(), {}).get("per_pupil_revenue_avg")
+        if val is not None:
+            return float(val)
+    except Exception as exc:
+        log.warning("nces_fetcher: could not read per_pupil_revenue_avg from states.yaml — %s", exc)
+
+    # 2. Dynamic computation from national finance parquet
+    finance_pq = "data/raw/national/nces_lea_finance.parquet"
+    if not os.path.exists(finance_pq):
+        log.warning(
+            "nces_fetcher: per_pupil_revenue_avg not in states.yaml for %s "
+            "and national parquet not found — returning None",
+            state,
+        )
+        return None
+
+    try:
+        nces_map = _load_nces_map(state)
+        leaids = set(v for v in nces_map.values() if v)
+        if not leaids:
+            log.warning(
+                "nces_fetcher: no NCES district IDs for %s — cannot compute state avg PPR",
+                state,
+            )
+            return None
+        df = pd.read_parquet(finance_pq)
+        state_rows = df[df.index.isin(leaids)]
+        valid = state_rows[
+            (state_rows["MEMBERSCH"].notna()) & (state_rows["MEMBERSCH"] > 0)
+            & (state_rows["TOTALREV"].notna()) & (state_rows["TOTALREV"] > 0)
+            & (state_rows["MEMBERSCH"] != _MISSING_SENTINEL)
+            & (state_rows["TOTALREV"] != _MISSING_SENTINEL)
+        ]
+        if valid.empty:
+            log.warning(
+                "nces_fetcher: no valid finance rows for %s — cannot compute avg PPR",
+                state,
+            )
+            return None
+        avg = (valid["TOTALREV"] / valid["MEMBERSCH"]).mean()
+        log.info(
+            "nces_fetcher: computed state avg PPR for %s = $%.0f (%d districts)",
+            state, avg, len(valid),
+        )
+        return float(avg)
+    except Exception as exc:
+        log.warning(
+            "nces_fetcher: error computing state avg PPR for %s — %s", state, exc
+        )
+        return None
+
+
 # ── Finance reader ────────────────────────────────────────────────────────────
 
 def _read_finance(leaid: str, state: str) -> Optional[dict]:
@@ -400,12 +462,19 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
     if totalexp is not None and totalexp > 0:
         result["per_pupil_expenditure"] = round(totalexp / membersch, 2)
 
-    # Per-pupil revenue vs. NM state average
+    # Per-pupil revenue vs. state average
     if totalrev is not None and totalrev > 0:
         ppr = totalrev / membersch
-        result["per_pupil_revenue_vs_state_avg_pct"] = round(
-            (ppr - NM_STATE_AVG_PPR) / NM_STATE_AVG_PPR * 100, 1
-        )
+        state_avg_ppr = _get_state_avg_ppr(state)
+        if state_avg_ppr is not None and state_avg_ppr > 0:
+            result["per_pupil_revenue_vs_state_avg_pct"] = round(
+                (ppr - state_avg_ppr) / state_avg_ppr * 100, 1
+            )
+        else:
+            log.warning(
+                "nces_fetcher: no state avg PPR for %s — skipping per_pupil_revenue_vs_state_avg_pct",
+                state,
+            )
 
         # Revenue breakdown percentages
         if tfedrev is not None:
