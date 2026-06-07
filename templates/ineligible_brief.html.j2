@@ -632,6 +632,21 @@
   {# ── MAIN CONTENT ── #}
   <main class="main-content">
 
+    {# ─── STATUTORY BARRIER BANNER (above the verdict header) ─── #}
+    {% set _sb = brief.statutory_barrier %}
+    {% set _prohib = (_sb and _sb.severity == 'prohibition' and _sb.applies == true) %}
+    {% if _sb %}
+    <div style="border:2px solid {{ '#b00020' if _prohib else '#b76e00' }}; background:{{ '#fdecec' if _prohib else '#fff6e5' }}; border-radius:8px; padding:16px 18px; margin:0 0 20px 0;">
+      <div style="font-weight:800; font-size:15px; letter-spacing:.03em; color:{{ '#b00020' if _prohib else '#7a4b00' }}; margin-bottom:8px;">
+        {% if _prohib %}&#x26A0; STATUTORY PROHIBITION — CHARTER SCHOOLS CANNOT BE BUILT HERE{% else %}&#x26A0; STATUTORY BARRIER — LOCAL BOARD APPROVAL REQUIRED{% endif %}
+      </div>
+      <div style="font-size:13.5px; line-height:1.5; color:#222;">{{ _sb.banner_text | e }}</div>
+      {% if _sb.statute %}<div style="font-size:12.5px; margin-top:8px; color:#333;"><strong>Statute:</strong> {{ _sb.statute | e }}</div>{% endif %}
+      {% if not _sb.evaluable %}<div style="font-size:12.5px; margin-top:6px; color:#7a4b00;"><em>District accountability rating not verified in-pipeline — this barrier may or may not apply to this community. Confirm the district's current rating.</em></div>{% endif %}
+      <div style="font-size:12px; margin-top:8px; color:#555;"><em>This finding is based on verified statute text. Verify current law before strategic use.</em></div>
+    </div>
+    {% endif %}
+
     {# ─── VERDICT BANNER (ineligible-specific, always shown) ─── #}
     <div class="verdict-banner">
       <div class="verdict-banner-title">&#x26A0;&ensp;VERDICT: INELIGIBLE</div>
@@ -671,7 +686,8 @@
     {% endif %}
 
     {# ─── 2. SCORECARD BARS ─── #}
-    {% if sc %}
+    {# Suppressed under a statutory prohibition — a prohibited market needs no score breakdown. #}
+    {% if sc and not _prohib %}
     <div class="section" id="scorecard">
       <p class="section-label">Scorecard — Ineligibility Drivers</p>
       <p class="composite-line">Composite: {{ comp }}/10 — {{ sc.tier_display_label | e }}</p>

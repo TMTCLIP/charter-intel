@@ -133,9 +133,26 @@
       "type": "string",
       "description": "Version of scoring_weights.yaml used",
       "example": "1.0"
+    },
+    "statutory_barrier": {
+      "$ref": "#/definitions/statutory_barrier"
     }
   },
   "definitions": {
+    "statutory_barrier": {
+      "type": ["object", "null"],
+      "description": "Matched statutory charter-law barrier (config/charter_law/{state}.yaml), evaluated by s5_scoring.statutory_barrier_check. null when none applies. severity=prohibition forces composite_score=0; severity=consent_required is advisory only.",
+      "properties": {
+        "id": {"type": "string"},
+        "label": {"type": ["string", "null"]},
+        "statute": {"type": ["string", "null"]},
+        "severity": {"type": "string", "enum": ["prohibition", "consent_required"]},
+        "banner_text": {"type": ["string", "null"]},
+        "evaluable": {"type": "boolean"},
+        "applies": {"type": ["boolean", "string"]},
+        "observed_rating": {"type": ["string", "null"]}
+      }
+    },
     "dimension_score": {
       "type": "object",
       "required": ["score", "weight", "confidence", "supporting_fact_ids"],

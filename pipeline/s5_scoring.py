@@ -27,6 +27,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import time
 from typing import Any, Optional
 
 import yaml
@@ -36,6 +37,7 @@ from pipeline import (
     StageResult, StageStatus, ValidationResult, timestamp_now
 )
 from pipeline.utils.cache import CacheManager
+from pipeline.utils.charter_law import load_charter_law_barriers
 from pipeline.utils.schema_validator import validate_against_schema
 
 
@@ -152,7 +154,6 @@ def run(
     Compute the community scorecard from verified facts.
     Reads S4 output; writes scorecard JSON.
     """
-    import time
     start = time.time()
 
     # --- Load verified facts ---
@@ -171,6 +172,17 @@ def run(
 
     weights_cfg, presets_cfg = load_scoring_config()
     preset = config.preset.value
+
+    # --- Statutory barrier gate (evaluated before composite) ---
+    # A statutory prohibition is a legal firewall: the composite is hard-floored to
+    # 0 below, regardless of dimension data. A consent_required barrier is advisory
+    # only — it rides along on the scorecard and never alters scoring.
+    statutory_barrier = statutory_barrier_check(state, community_id, verified_bundle)
+    statutory_prohibition = (
+        statutory_barrier is not None
+        and statutory_barrier.get("severity") == "prohibition"
+        and statutory_barrier.get("applies") is True
+    )
 
     # --- Score each dimension ---
     dimensions_out = {}
@@ -257,6 +269,19 @@ def run(
     # --- Compute tier ---
     tier, tier_label = compute_tier(composite, override_flags, weights_cfg)
 
+    # --- Statutory prohibition firewall ---
+    # Hard-floor the composite to 0 and pin the tier to AVOID (the scorecard schema
+    # has no PROHIBITED tier; S6 sets brief.verdict=PROHIBITED). Dimensions are kept
+    # populated so the scorecard stays schema-valid, but they carry no weight here —
+    # this is a legal override, not a scoring outcome.
+    if statutory_prohibition:
+        logger.warning(
+            "s5_scoring: %s/%s — STATUTORY PROHIBITION (%s); composite forced to 0",
+            state, community_id, statutory_barrier.get("id"),
+        )
+        composite = 0
+        tier, tier_label = "AVOID", "Statutorily prohibited"
+
     # --- Compute overall confidence ---
     top_3_dims = sorted(
         dimensions_out.items(),
@@ -289,7 +314,10 @@ def run(
         "data_coverage_pct": data_coverage_pct,
         "data_coverage_tier": data_coverage_tier,
         "scored_at": timestamp_now(),
-        "scoring_version": weights_cfg.get("version", "1.0")
+        "scoring_version": weights_cfg.get("version", "1.0"),
+        # Advisory statutory barrier (e.g. consent_required) or None. A prohibition
+        # would have returned early above via _prohibited_scorecard.
+        "statutory_barrier": statutory_barrier,
     }
 
     # --- Validate schema ---
@@ -317,6 +345,122 @@ def run(
         warnings=warnings,
         duration_seconds=round(time.time() - start, 2)
     )
+
+
+# ─────────────────────────────────────────────
+# STATUTORY BARRIER GATE
+# ─────────────────────────────────────────────
+#
+# Evaluates human-verified statutory charter-law barriers (config/charter_law/
+# {state}.yaml) per community, BEFORE composite scoring. Two severities:
+#   - "prohibition"      → a charter cannot be authorized at all. The caller
+#                          zeroes the composite, sets tier=AVOID, and S6 sets
+#                          verdict=PROHIBITED / market_type=statutory_ineligible.
+#                          This is a legal firewall, not a weight change.
+#   - "consent_required" → authorization is permitted but needs an extra approval
+#                          step (e.g. MS § 37-28-7 local-board endorsement in
+#                          A/B/C districts). Advisory only — scoring is unchanged.
+# Distinct from the existing market_type=ineligible path, which handles general
+# market unattractiveness (AVOID tier), not statutory conditions.
+
+
+def _read_district_rating(verified_bundle: dict) -> Optional[str]:
+    """Return the district accountability letter rating from S3 facts, or None.
+
+    The A–F rating is not yet fetched anywhere in the pipeline; this returns None
+    in that case so a rating gate degrades to an unverified advisory rather than a
+    false positive. Never fabricates a rating.
+    """
+    for f in verified_bundle.get("facts", []):
+        if f.get("fact_key") == "district_accountability_rating":
+            val = f.get("value")
+            if val is None:
+                return None
+            return str(val).strip().upper() or None
+    return None
+
+
+def _barrier_payload(barrier: dict, evaluable: bool, applies, observed_rating) -> dict:
+    """Shape the matched-barrier dict carried onto the scorecard/brief."""
+    return {
+        "id": barrier.get("id"),
+        "label": barrier.get("label"),
+        "statute": barrier.get("statute"),
+        "severity": barrier.get("severity"),
+        "banner_text": (barrier.get("banner_text") or "").strip(),
+        "evaluable": evaluable,        # was the rule fully evaluable (rating known)?
+        "applies": applies,            # True / False / "unknown"
+        "observed_rating": observed_rating,
+    }
+
+
+def _eval_district_rating_consent_gate(barrier: dict, rating: Optional[str]):
+    """consent_required gate (e.g. MS § 37-28-7). Returns a payload or None."""
+    rule = barrier.get("rule", {})
+    consent = [str(r).upper() for r in rule.get("consent_required_ratings", [])]
+    no_consent = [str(r).upper() for r in rule.get("no_consent_ratings", [])]
+    if rating is None:
+        # Rating unknown → the consent requirement MIGHT apply; surface as an
+        # unverified advisory, never a score change.
+        return _barrier_payload(barrier, evaluable=False, applies="unknown", observed_rating=None)
+    if rating in consent:
+        return _barrier_payload(barrier, evaluable=True, applies=True, observed_rating=rating)
+    if rating in no_consent:
+        return None  # D/F → no local-board consent needed → no barrier
+    return _barrier_payload(barrier, evaluable=False, applies="unknown", observed_rating=rating)
+
+
+def _eval_district_rating_prohibition_gate(barrier: dict, rating: Optional[str]):
+    """prohibition gate: ratings_required = ratings in which a charter MAY be
+    authorized; a district whose rating is NOT in that set is prohibited. Returns
+    a payload or None. (No state currently uses this; framework only.)"""
+    rule = barrier.get("rule", {})
+    allowed = [str(r).upper() for r in rule.get("ratings_required", [])]
+    if rating is None:
+        return _barrier_payload(barrier, evaluable=False, applies="unknown", observed_rating=None)
+    return _barrier_payload(barrier, evaluable=True, applies=(rating not in allowed), observed_rating=rating)
+
+
+_BARRIER_EVALUATORS = {
+    "district_rating_consent_gate": _eval_district_rating_consent_gate,
+    "district_rating_gate": _eval_district_rating_prohibition_gate,
+}
+
+
+def statutory_barrier_check(state: str, community_id: str, verified_bundle: dict) -> Optional[dict]:
+    """Evaluate config-driven statutory barriers for this community.
+
+    Returns the primary (most severe) matched barrier payload, or None when no
+    barrier applies. Never raises; unrecognized barrier types are logged and
+    skipped. The caller decides consequences based on `severity`/`applies`.
+    """
+    barriers = load_charter_law_barriers(state)
+    if not barriers:
+        return None
+    rating = _read_district_rating(verified_bundle)
+    matched = []
+    for b in barriers:
+        evaluator = _BARRIER_EVALUATORS.get(b.get("type"))
+        if evaluator is None:
+            logger.warning(
+                "statutory_barrier_check: unrecognized barrier type %r (id=%s) — skipping",
+                b.get("type"), b.get("id"),
+            )
+            continue
+        payload = evaluator(b, rating)
+        if payload is not None:
+            matched.append(payload)
+    if not matched:
+        return None
+    severity_rank = {"prohibition": 2, "consent_required": 1}
+    matched.sort(key=lambda m: severity_rank.get(m.get("severity"), 0), reverse=True)
+    primary = matched[0]
+    logger.info(
+        "statutory_barrier_check: %s/%s — barrier=%s severity=%s applies=%s evaluable=%s",
+        state, community_id, primary.get("id"), primary.get("severity"),
+        primary.get("applies"), primary.get("evaluable"),
+    )
+    return primary
 
 
 # ─────────────────────────────────────────────

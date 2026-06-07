@@ -26,11 +26,24 @@ import yaml
 from pipeline import PipelineConfig, StageResult, StageStatus, today_str
 from pipeline.utils.api_client import call_claude, load_prompt
 from pipeline.utils.cache import CacheManager
+from pipeline.utils.charter_law import load_charter_law_barriers
 from pipeline.utils.schema_validator import validate_against_schema
 
 log = logging.getLogger(__name__)
 
 STAGE_ID = "s2_state_context"
+
+
+def _attach_charter_law(context: Optional[dict], state: str) -> Optional[dict]:
+    """Augment the state-context bundle with config-driven charter_law_barriers.
+
+    Config-read only (no LLM/web). Refreshed on every run so a barrier edit is
+    picked up without busting the S2 LLM cache. Safe no-op when context is falsy.
+    """
+    if not isinstance(context, dict):
+        return context
+    context["charter_law_barriers"] = load_charter_law_barriers(state)
+    return context
 
 
 def _should_regenerate(
@@ -104,6 +117,7 @@ def run(
             try:
                 with open(cache_path) as f:
                     cached = json.load(f)
+                cached = _attach_charter_law(cached, state)
                 return StageResult(
                     stage_id=STAGE_ID, community_id="ALL", state=state,
                     status=StageStatus.SUCCESS, output_data=cached,
@@ -176,6 +190,7 @@ def run(
     return StageResult(
         stage_id=STAGE_ID, community_id="ALL", state=state,
         status=StageStatus.SUCCESS, output_path=out_path,
-        output_data=result.parsed_json, tokens_used=result.total_tokens,
+        output_data=_attach_charter_law(result.parsed_json, state),
+        tokens_used=result.total_tokens,
         duration_seconds=round(time.time() - start, 2)
     )

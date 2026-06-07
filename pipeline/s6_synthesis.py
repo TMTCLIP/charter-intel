@@ -930,6 +930,21 @@ def _inject_market_routing(
     import logging
     log = logging.getLogger(__name__)
 
+    # Carry the statutory barrier (advisory or prohibition) from the scorecard onto
+    # the brief so S7 can render the banner. A prohibition overrides verdict and
+    # market_type entirely; a consent_required barrier is advisory and leaves the
+    # normal verdict/market_type routing intact.
+    barrier = scorecard.get("statutory_barrier")
+    brief_json["statutory_barrier"] = barrier
+    if barrier and barrier.get("severity") == "prohibition" and barrier.get("applies") is True:
+        brief_json["verdict"] = "PROHIBITED"
+        brief_json["market_type"] = "statutory_ineligible"
+        log.warning(
+            "[%s] market_routing: STATUTORY PROHIBITION (%s) — verdict=PROHIBITED",
+            community_id, barrier.get("id"),
+        )
+        return brief_json
+
     tier = scorecard.get("tier", "")
     brief_json["verdict"] = "INELIGIBLE" if tier == "AVOID" else "ELIGIBLE"
 

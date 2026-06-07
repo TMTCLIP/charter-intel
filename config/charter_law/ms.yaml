@@ -1,0 +1,46 @@
+# config/charter_law/ms.yaml
+# Mississippi statutory charter-law barriers.
+#
+# Verified against primary statutory text (Sessions 7 & 8, 2026-06-07):
+#   Miss. Code Ann. § 37-28-7 — verbatim: "In any school district designated as
+#   an 'A,' 'B' or 'C' school district by the State Board of Education under the
+#   accreditation rating system at the time of application, the Mississippi
+#   Charter School Authorizer Board may authorize charter schools only if a
+#   majority of the members of the local school board votes at a public meeting
+#   to endorse the application or to initiate the application on its own
+#   initiative."
+#
+# IMPORTANT: This is a LOCAL-BOARD-CONSENT REQUIREMENT, not a prohibition. A
+# charter CAN be authorized in an A/B/C district with local-board endorsement.
+# Districts rated D or F require no local-board consent. Do NOT model this as a
+# prohibition (composite=0 / verdict=PROHIBITED) — see severity: consent_required.
+state: ms
+barriers:
+  - id: ms_district_rating_consent
+    label: "Mississippi local-board-consent requirement (A/B/C districts)"
+    statute: "Miss. Code Ann. § 37-28-7"
+    severity: consent_required        # advisory; NOT a prohibition
+    type: district_rating_consent_gate
+    applies_to: district              # evaluated per community, not statewide
+    verified_on: "2026-06-07"
+    description: >
+      In a school district rated A, B, or C, the Mississippi Charter School
+      Authorizer Board may authorize a charter only if the local school board
+      endorses or initiates the application (§ 37-28-7). Districts rated D or F
+      require no local-board consent. This is an added authorization requirement,
+      not a prohibition — a charter can still be authorized in an A/B/C district
+      with local board support.
+    rule:
+      # Districts in consent_required_ratings need local-board endorsement.
+      consent_required_ratings: [A, B, C]
+      no_consent_ratings: [D, F]
+      # Field read from S3 facts (fact_key). Not yet fetched in-pipeline — the S5
+      # gate degrades to an unverified advisory when this is absent (no fabrication).
+      rating_field: district_accountability_rating
+    banner_text: >
+      Charter authorization in this district requires local school board approval.
+      Mississippi law (§ 37-28-7) allows the Charter School Authorizer Board to
+      approve a charter in an A-, B-, or C-rated district only if the local school
+      board endorses or initiates the application. This is an added approval
+      requirement, not a prohibition — a charter can still be authorized here with
+      local board support.

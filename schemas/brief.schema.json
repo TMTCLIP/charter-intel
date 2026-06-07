@@ -260,14 +260,29 @@
 
     "verdict": {
       "type": "string",
-      "enum": ["ELIGIBLE", "INELIGIBLE"],
-      "description": "Scoring verdict set by s6_synthesis._inject_market_routing. INELIGIBLE when scorecard tier is AVOID, ELIGIBLE otherwise."
+      "enum": ["ELIGIBLE", "INELIGIBLE", "PROHIBITED"],
+      "description": "Scoring verdict set by s6_synthesis._inject_market_routing. PROHIBITED when a statutory prohibition barrier applies; INELIGIBLE when scorecard tier is AVOID; ELIGIBLE otherwise."
     },
 
     "market_type": {
       "type": "string",
-      "enum": ["greenfield", "established"],
-      "description": "Market type set by s6_synthesis._inject_market_routing. greenfield = no existing charter landscape (has_charters=False in community registry)."
+      "enum": ["greenfield", "established", "statutory_ineligible"],
+      "description": "Market type set by s6_synthesis._inject_market_routing. greenfield = no existing charter landscape (has_charters=False); statutory_ineligible = a statutory prohibition barrier applies."
+    },
+
+    "statutory_barrier": {
+      "type": ["object", "null"],
+      "description": "Matched statutory charter-law barrier carried from the scorecard. null when none applies. severity=prohibition drives verdict=PROHIBITED / market_type=statutory_ineligible; severity=consent_required is an advisory banner only.",
+      "properties": {
+        "id": {"type": "string"},
+        "label": {"type": ["string", "null"]},
+        "statute": {"type": ["string", "null"]},
+        "severity": {"type": "string", "enum": ["prohibition", "consent_required"]},
+        "banner_text": {"type": ["string", "null"]},
+        "evaluable": {"type": "boolean"},
+        "applies": {"type": ["boolean", "string"]},
+        "observed_rating": {"type": ["string", "null"]}
+      }
     }
   },
 
