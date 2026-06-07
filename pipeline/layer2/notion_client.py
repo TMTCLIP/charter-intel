@@ -243,6 +243,12 @@ class NotionSignalStore(SignalStore):
         return self._dim_id_by_key.get(dimension)
 
     def _city_page_id(self, city_slug: str) -> Optional[str]:
+        # An unknown city (None or "") must yield a genuinely empty relation, not a
+        # lookup. Querying {"equals": ""} matches a blank-slug placeholder city row,
+        # which silently links every city-less signal to that junk row. Return None
+        # so _p_relation() emits an empty relation and the operator assigns on review.
+        if not city_slug:
+            return None
         if city_slug in self._city_id_by_slug:
             return self._city_id_by_slug[city_slug]
         resp = self._call(
@@ -265,9 +271,9 @@ class NotionSignalStore(SignalStore):
         city_id = self._city_page_id(signal["city"])
         dim_id = self._dimension_page_id(signal["dimension"])
         title = "%s · %s · %s" % (
-            signal.get("city", ""),
-            signal.get("dimension", ""),
-            signal.get("direction", ""),
+            signal.get("city") or "",
+            signal.get("dimension") or "",
+            signal.get("direction") or "",
         )
         meta = signal.get("source_metadata")
         props = {

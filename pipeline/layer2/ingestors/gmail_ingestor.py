@@ -491,11 +491,8 @@ def main(argv: Optional[list[str]] = None) -> None:
             logger.info("[gmail-ext] skipping already-ingested thread %s", thread_id)
             continue
 
-        # city=None: coerce to "" so _city_page_id gets {"equals": ""} not null.
-        # The signal is written with an empty city relation — operator assigns on review.
-        if sig["city"] is None:
-            sig["city"] = ""
-
+        # city=None (no NM city matched): leave it as None. NotionSignalStore maps a
+        # falsy city to an empty relation; the operator assigns the city on review.
         source_id = store.write_source({
             "source_type":  "gmail",
             "external_id":  thread_id,
