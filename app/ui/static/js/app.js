@@ -1166,6 +1166,11 @@ function _cbInit() {
   const panel = document.getElementById("city-listbox");
   if (!input || !panel) return;
 
+  // backdrop-filter on #panel-scan creates a containing block for position:fixed
+  // descendants, making their coordinates panel-relative instead of viewport-relative.
+  // Moving the listbox to body restores correct fixed positioning.
+  document.body.appendChild(panel);
+
   // Open on focus if cities are loaded
   input.addEventListener("focus", () => {
     console.log(`[CLIP] input focus event: _cbCities.length=${_cbCities.length}, _cbOpen=${_cbOpen}`);
