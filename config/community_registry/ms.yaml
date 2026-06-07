@@ -782,19 +782,19 @@ ms-okolona:
   has_charters: false
   source: ccd_auto
   state: MS
-ms-oxford-2802370:
-  display_name: Oxford
-  district_name: LAFAYETTE CO SCHOOL DIST
-  district_nces_id: '2802370'
-  enrollment: 2872
-  has_charters: false
-  source: ccd_auto
-  state: MS
 ms-oxford-2803450:
   display_name: Oxford
   district_name: OXFORD SCHOOL DISTRICT
   district_nces_id: '2803450'
   enrollment: 4766
+  has_charters: false
+  source: ccd_auto
+  state: MS
+ms-oxford-2802370:
+  display_name: Oxford
+  district_name: LAFAYETTE CO SCHOOL DIST
+  district_nces_id: '2802370'
+  enrollment: 2872
   has_charters: false
   source: ccd_auto
   state: MS
