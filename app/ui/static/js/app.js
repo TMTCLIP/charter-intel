@@ -577,7 +577,29 @@ function setupScanPanel() {
 
   document.getElementById("btn-run-scan").addEventListener("click", submitScan);
   document.getElementById("btn-scan-new").addEventListener("click", _resetScanPanel);
-  _cbInit();
+  try {
+    _cbInit();
+  } catch (err) {
+    console.error("[CLIP] Combobox init failed:", err);
+  }
+}
+
+// Fetch cities with up to `retries` attempts and `delayMs` between each.
+// Returns the parsed JSON array on success; throws on permanent failure.
+async function fetchCitiesWithRetry(stateAbbr, retries = 3, delayMs = 500) {
+  const url = `/api/cities?state=${encodeURIComponent(stateAbbr)}`;
+  let lastErr;
+  for (let i = 0; i < retries; i++) {
+    try {
+      const r = await fetch(url);
+      if (r.ok) return await r.json();
+      lastErr = new Error(`HTTP ${r.status}`);
+    } catch (e) {
+      lastErr = e;
+    }
+    if (i < retries - 1) await new Promise((res) => setTimeout(res, delayMs));
+  }
+  throw lastErr || new Error("cities fetch failed");
 }
 
 async function loadCitiesForPanel(stateAbbr) {
@@ -591,15 +613,30 @@ async function loadCitiesForPanel(stateAbbr) {
   _cbClosePanel();
 
   try {
-    const resp = await fetch(`/api/cities?state=${encodeURIComponent(stateAbbr)}`);
-    const cities = await resp.json();
+    const cities = await fetchCitiesWithRetry(stateAbbr);
+    if (!Array.isArray(cities)) throw new Error("unexpected response shape");
+    console.log(`[CLIP] Cities loaded: ${stateAbbr}=${cities.length}`);
     _cbBuild(cities, APP.scanState?.name || stateAbbr);
     searchInput.placeholder = cities.length ? "Search cities…" : "No cities available";
     searchInput.disabled = !cities.length;
-  } catch {
+  } catch (err) {
+    console.error(`[CLIP] cities fetch failed for ${stateAbbr}:`, err);
     _cbBuild([], stateAbbr);
-    searchInput.placeholder = "Error loading cities";
-    searchInput.disabled = true;
+    // Show a visible error inside the panel (bypass _cbOpenPanel's empty-cities guard)
+    const panel = document.getElementById("city-listbox");
+    const errEl = document.createElement("div");
+    errEl.className = "combobox-empty";
+    errEl.textContent = "Could not load cities — please refresh";
+    panel.appendChild(errEl);
+    const r = searchInput.getBoundingClientRect();
+    panel.style.top   = (r.bottom + 3) + "px";
+    panel.style.left  = r.left + "px";
+    panel.style.width = r.width + "px";
+    panel.removeAttribute("hidden");
+    searchInput.setAttribute("aria-expanded", "true");
+    _cbOpen = true;
+    searchInput.placeholder = "Could not load cities";
+    searchInput.disabled = false;
   }
 }
 
@@ -1317,6 +1354,7 @@ function _cbClosePanel() {
 }
 
 function _cbSelect(city) {
+  console.log("[CLIP] Selected city:", city);
   _cbSelected = city;
   const searchInput = document.getElementById("scan-city-search");
   const hiddenInput = document.getElementById("scan-city");
