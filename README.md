@@ -416,6 +416,31 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ## Session Log
 
+### Session — 2026-06-07 (275043b)
+
+**Accomplished:**
+- Fixed combobox Enter key handler: flushed pending debounce and added auto-select when exactly one option is visible (e.g., "type Oxford, press Enter" without arrow navigation)
+- Added `fetchCitiesWithRetry(stateAbbr, retries=3, delayMs=500)` function for Railway cold-start resilience; wrapped `loadCitiesForPanel` fetch in retry logic with explicit `resp.ok` check
+- Added visible error panel to combobox: when `/api/cities` fails, displays "Could not load cities — please refresh" inside the dropdown + console.error with status code
+- Added console diagnostics: `[CLIP] Cities loaded: STATE=N` on success, error logging on fetch failure, `[CLIP] Selected city` object logging in `_cbSelect`
+- Wrapped `_cbInit()` in try/catch to catch and log JS errors during combobox initialization (prevents silent failures on missing DOM elements)
+- Fixed combobox filter show/hide: replaced `toggleAttribute("hidden", boolean)` with explicit `removeAttribute("hidden")` (matches) and `setAttribute("hidden", "")` (non-matches) for clarity and browser compatibility
+- Added `.combobox-panel[hidden] { display: none; }` CSS rule so the panel actually hides when JS sets the `hidden` attribute
+- Reordered Oxford entries in `config/community_registry/ms.yaml`: `ms-oxford-2803450` (LEAID 2803450, OXFORD SCHOOL DISTRICT) now comes first, so dedup keeps the correct entry (not 2802370)
+
+**Decisions:**
+- Used explicit `removeAttribute`/`setAttribute` in filter instead of `toggleAttribute` for clearer intent and safer browser compatibility
+- Retry logic uses 500 ms delay between attempts, 3 total attempts — balances cold-start coverage vs. UX latency on real errors
+- Error panel positioned manually via `getBoundingClientRect()` instead of creating a new `_cbOpenPanel` variant — avoids API surface expansion
+
+**Next Steps:**
+- [ ] Investigate potential race condition where `_cbSelect` may fire on keystroke instead of just Enter/click (symptom: console.log appears 3× while typing "Oxf")
+- [ ] Add defensive LEAID validation to prevent accidental slug swaps in future registry updates
+
+**Test Status:** 650 passed
+
+---
+
 ### Session 5 — 2026-06-07 (5760915)
 
 **Accomplished:**
