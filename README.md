@@ -416,6 +416,33 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ## Session Log
 
+### Session 5 — 2026-06-07 (5760915)
+
+**Accomplished:**
+- Created `scripts/trim_national_parquets.py`; trimmed `nces_lea_finance.parquet` from 352→7 columns (6.8 MB→680 KB); restructured `.gitignore` to allow `*.parquet` in `data/raw/national/`; committed 4 national parquets (~2 MB total)
+- Fixed `app/ui/server.py` `/api/cities` route — replaced NM-hardcoded `nces_district_map` lookup with `_communities_from_registry()` reading `config/community_registry/{state}.yaml`; NM falls back to district_map via `_communities_from_district_map()`
+- Added `_registry_prefix_lookup()` to `main.py` and wired into `resolve_community()` — `"Oxford"` → `ms-oxford` → `ms-oxford-2803450` via highest-enrollment prefix match (2 candidates in MS registry)
+- Added `_inject_market_routing()` to `pipeline/s6_synthesis.py` injecting `market_type` (`greenfield` when `has_charters=False` in registry) and `verdict` (`INELIGIBLE` when tier=`AVOID`); wired template dispatch in `pipeline/s7_render.py` before mode default
+- Created `templates/greenfield_brief.html.j2` (initial skeletal) and `templates/ineligible_brief.html.j2`; ran Oxford, MS smoke test — community resolution clean, S1–S3 data fetchers all succeeded, mock stopped at fixture-less LLM call (expected)
+- Rebuilt `templates/greenfield_brief.html.j2` to full NM parity (13 sections): added banners, scorecard bars with color-coded fills, top drivers, override flags, local authorizers, recommendations, quick reads, sources, debug panel, sidebar score block + nav, responsive + print stylesheets, smooth-scroll scripts; offline-safe system font stack (no CDN)
+- DIFFERENCE 1 — school cards replaced with "No established charter landscape" notice card; DIFFERENCE 2 — `academic_need` dimension renders "Awaiting Data" with ghost bar + note "No proficiency data available for this state" when `used_default=True`
+- Oxford re-render via `--stages s7_render` (zero API cost): 36.8 KB, all 13 sections confirmed; 575/575 tests pass
+- Ineligible template gap-checked: same 7 missing sections; flagged as next-session task (spawn chip created)
+
+**Decisions:**
+- Greenfield uses system font stack only (`var(--font-sans/mono/serif)`) — NM template retains Google Fonts CDN; offline rendering constraint applies only to the new templates
+- `_registry_prefix_lookup` picks highest-enrollment match when multiple slugs share a city prefix — safe default for the majority case; logs candidate count
+- `Awaiting Data` conditional is `row.dimension == 'academic_need'` — intentionally narrow until MS/TN/WI proficiency adapters are built
+
+**Next Steps:**
+- [ ] Bring `templates/ineligible_brief.html.j2` to full NM parity (same 13-section rebuild, red ineligible styling, "expansion suppressed" notice instead of school cards)
+- [ ] Verify and populate MS/TN/WI `charter_law` fields from authoritative state statutes
+- [ ] Verify `per_pupil_revenue_avg` for MS (12500.0), TN (11800.0), WI (13200.0) against NCES FY2022 actuals
+- [ ] Populate MS/TN/WI `data_sources` URLs (authorizer_registry, charter_roster, enrollment_data, performance_data)
+- [ ] Run full MS community batch (`--state MS --depth fast`) once charter_law is verified
+
+---
+
 ### Session — 2026-06-04 (1dcfa76)
 
 **Accomplished:**
