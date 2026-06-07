@@ -702,7 +702,7 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ---
 
-### Session 4 — 2026-06-07 (pre-commit)
+### Session 4 — 2026-06-07 (9180502)
 
 **Accomplished:**
 - Added MS, TN, WI state entries to `config/states.yaml` — each with full `charter_law`, `nces_district_map` (142/139/312 entries), `data_sources`, and `per_pupil_revenue_avg`; all charter_law fields set `null # NEEDS_VERIFICATION`
