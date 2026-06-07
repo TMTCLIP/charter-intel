@@ -175,16 +175,16 @@ class TestCacheHit:
         assert result["poverty_rate_pct"] == 20.0
 
 
-# ── Unknown state returns None, not crash ─────────────────────────────────────
+# ── Unknown / malformed LEAID returns None, not crash ─────────────────────────
 
 class TestUnknownState:
     def test_unknown_state_code_returns_none(self):
-        """get_poverty_data must return None (not crash) for an unknown state 'XX'."""
+        """get_poverty_data must return None (not crash) for a non-numeric LEAID prefix."""
         result = saipe_fetcher.get_poverty_data("XX00000", state="XX")
         assert result is None
 
     def test_known_state_nm_still_works(self):
-        """State='NM' default still resolves FIPS 35 and proceeds normally."""
+        """NM LEAID 3500060 still resolves (state_fips='35' derived from LEAID)."""
         resp = _make_api_response(poverty_rate="18.5")
         with (
             mock.patch("urllib.request.urlopen", return_value=_mock_urlopen(resp)),
@@ -194,3 +194,78 @@ class TestUnknownState:
             result = saipe_fetcher.get_poverty_data("3500060", year=2023, state="NM")
         assert result is not None
         assert result["poverty_rate_pct"] == 18.5
+
+
+# ── MS LEAID (Oxford) resolves correctly ──────────────────────────────────────
+
+class TestMSLeaid:
+    def test_oxford_ms_leaid_returns_result(self):
+        """LEAID 2803450 (Oxford, MS) resolves with state_fips='28' derived from LEAID."""
+        resp = _make_api_response(
+            poverty_rate="22.3",
+            poverty_count="890",
+            total_pop="4100",
+            district_code="03450",
+        )
+        with (
+            mock.patch("urllib.request.urlopen", return_value=_mock_urlopen(resp)),
+            mock.patch.object(saipe_fetcher, "_read_cache", return_value=None),
+            mock.patch.object(saipe_fetcher, "_write_cache"),
+        ):
+            result = saipe_fetcher.get_poverty_data("2803450", year=2023)
+
+        assert result is not None
+        assert result["poverty_rate_pct"] == 22.3
+        assert result["leaid"] == "2803450"
+        assert result["data_year"] == 2023
+
+    def test_ms_leaid_without_state_arg_still_resolves(self):
+        """Caller omitting state= (as S3 does) must not default to NM FIPS."""
+        resp = _make_api_response(poverty_rate="19.0", district_code="03450")
+        with (
+            mock.patch("urllib.request.urlopen", return_value=_mock_urlopen(resp)),
+            mock.patch.object(saipe_fetcher, "_read_cache", return_value=None),
+            mock.patch.object(saipe_fetcher, "_write_cache"),
+        ):
+            result = saipe_fetcher.get_poverty_data("2803450", year=2023)
+
+        assert result is not None, (
+            "Oxford LEAID 2803450 returned None — state_fips likely wrong (used 35 instead of 28)"
+        )
+
+
+# ── LEAID state_fips splitting ─────────────────────────────────────────────────
+
+class TestLeaidSplitting:
+    """Verify that state FIPS and district code are correctly split from LEAIDs."""
+
+    @pytest.mark.parametrize("leaid,expected_fips,expected_district", [
+        ("3500060", "35", "00060"),   # NM Albuquerque
+        ("3500300", "35", "00300"),   # NM Carlsbad
+        ("2803450", "28", "03450"),   # MS Oxford
+        ("4700120", "47", "00120"),   # TN Athens
+        ("5501080", "55", "01080"),   # WI sample
+    ])
+    def test_correct_fips_and_district_sent_to_api(self, leaid, expected_fips, expected_district):
+        """The URL sent to Census must contain the right state FIPS and district code."""
+        captured_urls = []
+
+        def _fake_fetch(district_code, district_type, year, api_key, state_fips):
+            captured_urls.append((state_fips, district_code))
+            return None  # no match — just inspecting the call
+
+        with (
+            mock.patch.object(saipe_fetcher, "_fetch_district_type", side_effect=_fake_fetch),
+            mock.patch.object(saipe_fetcher, "_read_cache", return_value=None),
+        ):
+            saipe_fetcher.get_poverty_data(leaid, year=2023)
+
+        # _fetch_district_type is called 3 types × up to 2 years; first call is enough
+        assert len(captured_urls) > 0, f"No API calls made for LEAID {leaid}"
+        first_fips, first_district = captured_urls[0]
+        assert first_fips == expected_fips, (
+            f"LEAID {leaid}: expected state_fips={expected_fips}, got {first_fips}"
+        )
+        assert first_district == expected_district, (
+            f"LEAID {leaid}: expected district_code={expected_district}, got {first_district}"
+        )

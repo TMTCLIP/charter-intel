@@ -1,0 +1,240 @@
+nm-alamogordo:
+  display_name: Alamogordo
+  district_name: ALAMOGORDO PUBLIC SCHOOLS
+  district_nces_id: '3500030'
+  enrollment: 5575
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-albuquerque:
+  display_name: Albuquerque
+  district_name: ALBUQUERQUE PUBLIC SCHOOLS
+  district_nces_id: '3500060'
+  enrollment: 79805
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-angel-fire:
+  display_name: Angel Fire
+  district_name: CIMARRON MUNICIPAL SCHOOLS
+  district_nces_id: '3500480'
+  enrollment: 401
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-arbolera-espanola:
+  display_name: Arbolera (Espanola area)
+  district_name: ESPANOLA PUBLIC SCHOOLS
+  district_nces_id: '3500900'
+  enrollment: 2954
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-aztec:
+  display_name: Aztec
+  district_name: AZTEC MUNICIPAL SCHOOLS
+  district_nces_id: '3500150'
+  enrollment: 2562
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-carlsbad:
+  display_name: Carlsbad
+  district_name: CARLSBAD MUNICIPAL SCHOOLS
+  district_nces_id: '3500300'
+  enrollment: 7102
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-cleveland:
+  display_name: Cleveland
+  district_name: MORA INDEPENDENT SCHOOLS
+  district_nces_id: '3501860'
+  enrollment: 433
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-deming:
+  display_name: Deming
+  district_name: DEMING PUBLIC SCHOOLS
+  district_nces_id: '3500690'
+  enrollment: 5366
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-east-taos:
+  display_name: East Taos
+  district_name: TAOS MUNICIPAL SCHOOLS
+  district_nces_id: '3502520'
+  enrollment: 2267
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-edgewood:
+  display_name: Edgewood
+  district_name: MORIARTY-EDGEWOOD SCHOOL DISTRICT
+  district_nces_id: '3501890'
+  enrollment: 2331
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-el-prado:
+  display_name: El Prado
+  district_name: TAOS MUNICIPAL SCHOOLS
+  district_nces_id: '3502520'
+  enrollment: 2267
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-espanola:
+  display_name: Espanola
+  district_name: ESPANOLA PUBLIC SCHOOLS
+  district_nces_id: '3500900'
+  enrollment: 2954
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-gallup:
+  display_name: Gallup
+  district_name: GALLUP-MCKINLEY CTY SCHOOLS
+  district_nces_id: '3501110'
+  enrollment: 12224
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-jemez-pueblo:
+  display_name: Jemez Pueblo
+  district_name: JEMEZ VALLEY PUBLIC SCHOOLS
+  district_nces_id: '3501410'
+  enrollment: 359
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-las-cruces:
+  display_name: Las Cruces
+  district_name: LAS CRUCES PUBLIC SCHOOLS
+  district_nces_id: '3501500'
+  enrollment: 23631
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-las-vegas:
+  display_name: Las Vegas
+  district_name: LAS VEGAS CITY PUBLIC SCHOOLS
+  district_nces_id: '3501530'
+  enrollment: 1202
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-los-lunas:
+  display_name: Los Lunas
+  district_name: LOS LUNAS PUBLIC SCHOOLS
+  district_nces_id: '3501680'
+  enrollment: 8234
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-los-ranchos-de-albuquerque:
+  display_name: Los Ranchos de Albuquerque
+  district_name: ALBUQUERQUE PUBLIC SCHOOLS
+  district_nces_id: '3500060'
+  enrollment: 79805
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-nm-602-gallup:
+  display_name: Gallup (NM-602 area)
+  district_name: GALLUP-MCKINLEY CTY SCHOOLS
+  district_nces_id: '3501110'
+  enrollment: 12224
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-questa:
+  display_name: Questa
+  district_name: QUESTA INDEPENDENT SCHOOLS
+  district_nces_id: '3502160'
+  enrollment: 326
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-red-river:
+  display_name: Red River
+  district_name: QUESTA INDEPENDENT SCHOOLS
+  district_nces_id: '3502160'
+  enrollment: 326
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-rio-rancho:
+  display_name: Rio Rancho
+  district_name: RIO RANCHO PUBLIC SCHOOLS
+  district_nces_id: '3500010'
+  enrollment: 17272
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-roswell:
+  display_name: Roswell
+  district_name: ROSWELL INDEPENDENT SCHOOLS
+  district_nces_id: '3502250'
+  enrollment: 9701
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-sandia-park:
+  display_name: Sandia Park
+  district_name: MORIARTY-EDGEWOOD SCHOOL DISTRICT
+  district_nces_id: '3501890'
+  enrollment: 2331
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-santa-fe:
+  display_name: Santa Fe
+  district_name: SANTA FE PUBLIC SCHOOLS
+  district_nces_id: '3502370'
+  enrollment: 11769
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-silver-city:
+  display_name: Silver City
+  district_name: SILVER CONSOLIDATED SCHOOLS
+  district_nces_id: '3502430'
+  enrollment: 2273
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-socorro:
+  display_name: Socorro
+  district_name: SOCORRO CONSOLIDATED SCHOOLS
+  district_nces_id: '3502460'
+  enrollment: 1438
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-taos:
+  display_name: Taos
+  district_name: TAOS MUNICIPAL SCHOOLS
+  district_nces_id: '3502520'
+  enrollment: 2267
+  has_charters: true
+  source: ccd_auto
+  state: NM
+nm-truth-or-consequences:
+  display_name: Truth or Consequences
+  district_name: T OR C MUNICIPAL SCHOOLS
+  district_nces_id: '3502610'
+  enrollment: 1287
+  has_charters: false
+  source: ccd_auto
+  state: NM
+nm-w-taos:
+  display_name: West Taos
+  district_name: TAOS MUNICIPAL SCHOOLS
+  district_nces_id: '3502520'
+  enrollment: 2267
+  has_charters: true
+  source: ccd_auto
+  state: NM

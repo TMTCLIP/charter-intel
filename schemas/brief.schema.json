@@ -256,6 +256,18 @@
       "type": "array",
       "description": "Local charter authorizers serving this community, injected from S3 raw data by s6_synthesis._inject_charter_intel. Directory data — bypasses S4 scoring and hallucination audit entirely. Not scored; included for operator reference only.",
       "items": {"type": "object"}
+    },
+
+    "verdict": {
+      "type": "string",
+      "enum": ["ELIGIBLE", "INELIGIBLE"],
+      "description": "Scoring verdict set by s6_synthesis._inject_market_routing. INELIGIBLE when scorecard tier is AVOID, ELIGIBLE otherwise."
+    },
+
+    "market_type": {
+      "type": "string",
+      "enum": ["greenfield", "established"],
+      "description": "Market type set by s6_synthesis._inject_market_routing. greenfield = no existing charter landscape (has_charters=False in community registry)."
     }
   },
 

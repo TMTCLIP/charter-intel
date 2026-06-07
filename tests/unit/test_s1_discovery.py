@@ -225,6 +225,8 @@ def test_select_source_logs_fallback_message(monkeypatch, caplog):
     assert "falling back to roster CSV" in caplog.text
 
 
-def test_nm_has_no_registry_file():
-    """NM does not have a registry file — it uses roster discovery."""
-    assert not os.path.exists(_registry_path("NM"))
+def test_nm_uses_registry_file():
+    """NM now has a registry file — it uses registry-first discovery."""
+    assert os.path.exists(_registry_path("NM")), (
+        "config/community_registry/nm.yaml is missing — NM should use registry discovery"
+    )

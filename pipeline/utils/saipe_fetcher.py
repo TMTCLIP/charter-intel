@@ -40,8 +40,6 @@ import urllib.parse
 import urllib.request
 from typing import Optional
 
-from pipeline.utils.fips_utils import get_state_fips
-
 log = logging.getLogger(__name__)
 
 # ── Census API config ─────────────────────────────────────────────────────────
@@ -166,6 +164,9 @@ def get_poverty_data(leaid: str, year: Optional[int] = None, state: str = "NM") 
     ----------
     leaid : 7-digit NCES LEAID string (e.g. "3500060")
     year  : override year; if None, uses most recent available
+    state : kept for backward compatibility; ignored — state FIPS is derived
+            from the first 2 digits of the LEAID itself, which is more reliable
+            than a separate state parameter that callers may omit.
 
     Return shape:
         {
@@ -190,11 +191,6 @@ def get_poverty_data(leaid: str, year: Optional[int] = None, state: str = "NM") 
         log.info("saipe_fetcher: no LEAID provided — skipping")
         return None
 
-    state_fips = get_state_fips(state)
-    if state_fips is None:
-        log.warning("saipe_fetcher: unknown state '%s' — cannot derive FIPS", state)
-        return None
-
     api_key = _api_key()
     if not api_key:
         log.warning(
@@ -208,10 +204,16 @@ def get_poverty_data(leaid: str, year: Optional[int] = None, state: str = "NM") 
         log.info("saipe_fetcher: cache hit for LEAID %s (year=%s)", leaid, cached.get("data_year"))
         return cached
 
-    # ── Derive district code ──────────────────────────────────────────────────
+    # ── Derive state FIPS and district code from LEAID ────────────────────────
+    # LEAID structure: state_fips(2) + district_code(5) — e.g. "2803450" → "28" + "03450"
+    # Deriving from the LEAID itself avoids wrong-state misses when callers omit state.
     leaid_str = str(leaid)
     if len(leaid_str) != 7:
         log.warning("saipe_fetcher: unexpected LEAID length for %s — skipping", leaid_str)
+        return None
+    state_fips = leaid_str[:2]
+    if not state_fips.isdigit():
+        log.warning("saipe_fetcher: non-numeric state FIPS in LEAID %s — skipping", leaid_str)
         return None
     district_code = leaid_str[2:]   # "3500060" → "00060"
 
