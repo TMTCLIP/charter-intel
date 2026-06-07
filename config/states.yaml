@@ -283,7 +283,16 @@ MS:
     facilities_provisions: null  # NEEDS_VERIFICATION
     funding_parity_provisions: null  # NEEDS_VERIFICATION
     notes: null  # NEEDS_VERIFICATION
-    statute_citation: null  # NEEDS_VERIFICATION -- approx Miss. Code Ann. § 37-28
+    statute_citation: null  # NEEDS_VERIFICATION -- operator must select & populate
+    # Statute note (verified against primary text 2026-06-07):
+    #   Miss. Code Ann. § 37-28-5 is the DEFINITIONS section of the Mississippi
+    #   Charter Schools Act of 2013 ("As used in this chapter..."). It does NOT
+    #   contain any accountability-rating (A/B/C/D/F) location restriction.
+    #   The rating-based authorization rule is § 37-28-7: a charter may be approved
+    #   WITHOUT local school-board consent only in districts rated D or F; A/B/C
+    #   districts require local board approval (see also enrollment cross-ref
+    #   § 37-28-23). NOTE: a C/D/F rating broadens charter eligibility — it does not
+    #   make a community ineligible. Do NOT cite § 37-28-5 for a C/D/F restriction.
     statute_url: null  # NEEDS_VERIFICATION
   community_metadata: {}
   teacher_supply_warning:
