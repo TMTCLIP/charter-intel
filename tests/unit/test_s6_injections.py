@@ -25,6 +25,7 @@ from pipeline.s6_synthesis import (
     _inject_recommendation_gate,
     _inject_teacher_supply_warning,
     _inject_tribal_jurisdiction_flag,
+    _sanitize_needs_verification,
     _truncate_to_schema_limits,
     _cap_str,
 )
@@ -122,6 +123,61 @@ class TestTeacherSupplyWarning:
         out = _inject_teacher_supply_warning({}, "NM", "nm-questa")
         assert isinstance(out["needs_verification"], list)
         assert len(out["needs_verification"]) == 1
+
+    def test_ms_warning_reason_is_never_none(self):
+        # MS config scaffolds reason/resolution_path as explicit null; the injection
+        # must fall back to defaults rather than leak None (would render "None").
+        out = _inject_teacher_supply_warning({"needs_verification": []}, "MS", "ms-oxford")
+        entry = out["needs_verification"][0]
+        assert entry["reason"], "reason must be a non-empty string"
+        assert entry["reason"] is not None
+        assert entry["resolution_path"]
+        assert entry["impact_if_wrong"] == "HIGH"
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# needs_verification sanitizer guard
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestSanitizeNeedsVerification:
+    def test_none_reason_replaced_with_placeholder(self):
+        brief = {"needs_verification": [
+            {"claim": "Teacher supply may constrain charter staffing", "reason": None},
+        ]}
+        out = _sanitize_needs_verification(brief, "ms-oxford")
+        item = out["needs_verification"][0]
+        assert item["reason"]  # non-empty
+        assert item["reason"] != "None"
+
+    def test_blank_reason_replaced(self):
+        brief = {"needs_verification": [{"claim": "X", "reason": "   "}]}
+        out = _sanitize_needs_verification(brief, "c")
+        assert out["needs_verification"][0]["reason"].strip()
+
+    def test_item_with_no_claim_is_dropped(self):
+        brief = {"needs_verification": [
+            {"claim": "", "reason": "orphan"},
+            {"claim": None, "reason": "orphan2"},
+            {"reason": "orphan3"},
+            {"claim": "Real claim", "reason": "ok"},
+        ]}
+        out = _sanitize_needs_verification(brief, "c")
+        assert len(out["needs_verification"]) == 1
+        assert out["needs_verification"][0]["claim"] == "Real claim"
+
+    def test_good_reason_preserved(self):
+        brief = {"needs_verification": [{"claim": "X", "reason": "solid reason"}]}
+        out = _sanitize_needs_verification(brief, "c")
+        assert out["needs_verification"][0]["reason"] == "solid reason"
+
+    def test_non_dict_items_dropped(self):
+        brief = {"needs_verification": ["a string", 42, {"claim": "keep", "reason": "r"}]}
+        out = _sanitize_needs_verification(brief, "c")
+        assert out["needs_verification"] == [{"claim": "keep", "reason": "r"}]
+
+    def test_missing_or_empty_list_is_noop(self):
+        assert _sanitize_needs_verification({}, "c") == {}
+        assert _sanitize_needs_verification({"needs_verification": []}, "c")["needs_verification"] == []
 
 
 # ─────────────────────────────────────────────────────────────────────────────

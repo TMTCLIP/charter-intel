@@ -178,6 +178,9 @@ def run(
     brief_json = _inject_tribal_jurisdiction_flag(brief_json, state, community_id)
     brief_json = _inject_teacher_supply_warning(brief_json, state, community_id)
 
+    # --- Guard: no needs_verification item may render an empty reason ("None") ---
+    brief_json = _sanitize_needs_verification(brief_json, community_id)
+
     # --- Market routing fields for S7 template selection ---
     brief_json = _inject_market_routing(brief_json, scorecard, state, community_id)
 
@@ -837,6 +840,44 @@ def _inject_tribal_jurisdiction_flag(brief_json: dict, state: str, community_id:
     return brief_json
 
 
+def _sanitize_needs_verification(brief_json: dict, community_id: str) -> dict:
+    """
+    Defense-in-depth guard against empty evidence fields in the Needs Verification
+    section. Multiple paths append items (ELL gap, tribal/authorization flags,
+    teacher-supply warning, audit-moved claims) and the model can emit its own, so
+    a single null `reason` slips through and renders as the literal "None".
+
+    Drops items with no usable `claim`, and replaces a missing/blank `reason` with
+    a neutral placeholder so no brief ever shows a dangling "— None".
+    """
+    items = brief_json.get("needs_verification")
+    if not isinstance(items, list) or not items:
+        return brief_json
+
+    cleaned = []
+    dropped = 0
+    for item in items:
+        if not isinstance(item, dict):
+            dropped += 1
+            continue
+        claim = (item.get("claim") or "").strip()
+        if not claim:
+            dropped += 1
+            continue
+        item["claim"] = claim
+        if not (item.get("reason") or "").strip():
+            item["reason"] = "Reason not recorded — verify before relying on this item."
+        cleaned.append(item)
+
+    brief_json["needs_verification"] = cleaned
+    if dropped:
+        import logging
+        logging.getLogger(__name__).info(
+            "[%s] Dropped %d needs_verification item(s) with no claim", community_id, dropped
+        )
+    return brief_json
+
+
 def _inject_teacher_supply_warning(brief_json: dict, state: str, community_id: str) -> dict:
     """
     Surface the statewide teacher_supply_warning scaffold (Session 18 BLOCKER 5b)
@@ -849,13 +890,17 @@ def _inject_teacher_supply_warning(brief_json: dict, state: str, community_id: s
     if not warning or not isinstance(warning, dict):
         return brief_json
 
+    # Use `or default`, not `.get(key, default)`: the per-state config scaffolds
+    # carry these keys with explicit null values (filled only for NM so far), and
+    # .get() returns the default solely when a key is *absent*. Without this, a
+    # null `reason` leaks through and the template renders a literal "None".
     entry = {
-        "claim": warning.get("claim", "Teacher supply may constrain charter staffing in this community."),
-        "reason": warning.get("reason", "Statewide teacher shortage documented; per-community status unverified."),
+        "claim": warning.get("claim") or "Teacher supply may constrain charter staffing in this community.",
+        "reason": warning.get("reason") or "Statewide teacher shortage documented; per-community status unverified.",
         "source_class_attempted": None,
-        "resolution_path": warning.get("resolution_path",
-            "Cross-check against the current NMPED teacher shortage-area / hard-to-staff list."),
-        "impact_if_wrong": warning.get("impact_if_wrong", "HIGH"),
+        "resolution_path": warning.get("resolution_path")
+            or "Cross-check against the current state teacher shortage-area / hard-to-staff list.",
+        "impact_if_wrong": warning.get("impact_if_wrong") or "HIGH",
     }
     if not isinstance(brief_json.get("needs_verification"), list):
         brief_json["needs_verification"] = []

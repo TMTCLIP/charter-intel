@@ -838,7 +838,7 @@
       <p class="section-label">Needs Verification</p>
       {% for item in brief.needs_verification %}
       <div class="nv-item">
-        <strong>{{ item.claim | e }}</strong> — {{ item.reason | e }}
+        <strong>{{ item.claim | e }}</strong>{% if item.reason %} — {{ item.reason | e }}{% endif %}
         {% if item.impact_if_wrong %}<em>(Impact: {{ item.impact_if_wrong | e }})</em>{% endif %}
       </div>
       {% endfor %}

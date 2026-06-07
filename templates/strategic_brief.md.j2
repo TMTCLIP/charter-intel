@@ -158,7 +158,7 @@ No override flags triggered.
 
 {% for item in brief.needs_verification %}
 - **{{ item.claim }}**
-  *Why:* {{ item.reason }}  *Impact if wrong:* {{ item.impact_if_wrong }}  *Resolution:* {{ item.resolution_path }}
+  {% if item.reason %}*Why:* {{ item.reason }}  {% endif %}{% if item.impact_if_wrong %}*Impact if wrong:* {{ item.impact_if_wrong }}  {% endif %}{% if item.resolution_path %}*Resolution:* {{ item.resolution_path }}{% endif %}
 {% endfor %}
 
 ---
