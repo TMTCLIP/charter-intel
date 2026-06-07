@@ -230,21 +230,61 @@ def _is_community_id(value: str) -> bool:
     return bool(value) and " " not in value and "-" in value and value == value.lower()
 
 
+def _registry_prefix_lookup(community_id: str, state: str) -> str:
+    """If community_id is an exact registry key, return it unchanged.
+
+    When the registry has disambiguated entries (e.g. ms-oxford-2803450 /
+    ms-oxford-2802370) but the caller passed a plain slug (ms-oxford), find
+    all registry entries whose key starts with '{community_id}-' and return
+    the one with the highest enrollment.  Falls back to the original slug when
+    no registry exists for the state or no prefix match is found.
+    """
+    registry_path = f"config/community_registry/{state.lower()}.yaml"
+    if not os.path.exists(registry_path):
+        return community_id
+    try:
+        with open(registry_path) as f:
+            registry = yaml.safe_load(f) or {}
+    except Exception:
+        return community_id
+
+    if community_id in registry:
+        return community_id
+
+    prefix = community_id + "-"
+    matches = {k: v for k, v in registry.items() if k.startswith(prefix)}
+    if not matches:
+        return community_id
+
+    best = max(matches.items(), key=lambda kv: kv[1].get("enrollment", 0))
+    logger.info(
+        "resolve_community: %r → %r (registry prefix match, %d candidates)",
+        community_id, best[0], len(matches),
+    )
+    return best[0]
+
+
 def resolve_community(state: str, city_name: str) -> str:
     """Convert a plain city name to a canonical community_id.
 
     Accepts either a community_id (returned unchanged) or a plain city name
-    which is normalised through build_community_id.
+    which is normalised through build_community_id.  For states that use
+    disambiguated registry slugs (e.g. ms-oxford-2803450), performs a prefix
+    lookup against the community registry when the exact slug is not found.
 
     Examples:
         resolve_community("NM", "Santa Fe")    → "nm-santa-fe"
         resolve_community("NM", "Española")    → "nm-espanola"
         resolve_community("NM", "nm-santa-fe") → "nm-santa-fe"
+        resolve_community("MS", "Oxford")      → "ms-oxford-2803450"
     """
     if _is_community_id(city_name):
         community_id = city_name
     else:
         community_id = build_community_id(city_name, state)
+
+    community_id = _registry_prefix_lookup(community_id, state)
+
     if not re.match(r'^[a-z]{2}-[a-z0-9-]{1,64}$', community_id):
         raise ValueError(
             f"Invalid community_id: {community_id!r}. "
