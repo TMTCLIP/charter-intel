@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ brief.community_name | e }}, {{ brief.state | e }} — Emerging Market</title>
+  <style>
+    :root {
+      --bg-primary:    #0d1117;
+      --bg-secondary:  #161b22;
+      --bg-card:       #1c2128;
+      --bg-elevated:   #22272e;
+      --border-subtle: rgba(255,255,255,0.08);
+      --border-muted:  rgba(255,255,255,0.15);
+      --text-primary:  #e6edf3;
+      --text-secondary:#8b949e;
+      --text-muted:    #6e7681;
+      --accent-blue:   #58a6ff;
+      --accent-yellow: #d29922;
+      --accent-green:  #3fb950;
+      --sidebar-width: 260px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: var(--bg-primary);
+    }
+    .page-shell {
+      display: flex;
+      max-width: 1100px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    /* ── Sidebar ── */
+    .sidebar {
+      width: var(--sidebar-width);
+      flex-shrink: 0;
+      background: var(--bg-secondary);
+      border-right: 1px solid var(--border-subtle);
+      padding: 28px 20px 40px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .sb-wordmark {
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .sb-community {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+    .sb-state {
+      display: block;
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+    .emerging-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: rgba(88,166,255,0.12);
+      border: 1px solid rgba(88,166,255,0.3);
+      color: var(--accent-blue);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .sb-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .sb-meta span { display: block; }
+    /* ── Main content ── */
+    .main-content {
+      flex: 1;
+      padding: 36px 40px 60px;
+      min-width: 0;
+    }
+    .page-header {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .page-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .page-subtitle {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .notice-banner {
+      background: rgba(88,166,255,0.08);
+      border: 1px solid rgba(88,166,255,0.2);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 28px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .notice-banner strong { color: var(--accent-blue); }
+    /* ── Cards ── */
+    .section-heading {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      margin-top: 28px;
+    }
+    .data-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+    .data-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .data-card-label {
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .data-card-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .data-card-sub {
+      font-size: 11px;
+      color: var(--text-secondary);
+      margin-top: 3px;
+    }
+    /* ── Scorecard ── */
+    .scorecard-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .scorecard-table th {
+      text-align: left;
+      padding: 8px 12px;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .scorecard-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+    }
+    .scorecard-table tr:last-child td { border-bottom: none; }
+    .dim-name { color: var(--text-primary); font-weight: 500; }
+    .no-data-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: var(--bg-elevated);
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+    /* ── Executive snapshot ── */
+    .snapshot-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    /* ── Policy block ── */
+    .policy-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .policy-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .policy-item strong { color: var(--text-primary); }
+    .footer-note {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    @media print {
+      body { background: #fff; color: #111; }
+      .sidebar { display: none; }
+      .page-shell { display: block; }
+      .main-content { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-shell">
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar">
+    <div class="sb-wordmark">CLIP</div>
+    <div>
+      <div class="sb-community">{{ brief.community_name | e }}</div>
+      <span class="sb-state">{{ brief.state | e }}</span>
+    </div>
+    <div class="emerging-badge">Emerging Market</div>
+    <div class="sb-meta">
+      {% if brief.data_through %}<span>Data through {{ brief.data_through | e }}</span>{% endif %}
+      {% if brief.generated_at %}<span>Generated {{ brief.generated_at[:10] | e }}</span>{% endif %}
+      {% if brief.district_name %}<span>{{ brief.district_name | e }}</span>{% endif %}
+    </div>
+  </aside>
+
+  <!-- ── Main ── -->
+  <main class="main-content">
+    <div class="page-header">
+      <div class="page-title">{{ brief.community_name | e }}, {{ brief.state | e }}</div>
+      <div class="page-subtitle">Emerging Market — Charter Landscape Intelligence</div>
+    </div>
+
+    <div class="notice-banner">
+      <strong>Emerging Market:</strong> No established charter school landscape has been identified
+      for this community. The brief below reflects available demographic, enrollment, and policy
+      data. School-level charter metrics are not yet applicable. Use this report to assess
+      greenfield potential before committing to discovery-phase investment.
+    </div>
+
+    <!-- Executive snapshot (if present) -->
+    {% if brief.executive_snapshot %}
+    <div class="section-heading">Overview</div>
+    <div class="snapshot-block">{{ brief.executive_snapshot | e }}</div>
+    {% endif %}
+
+    <!-- Enrollment data -->
+    {% set nces = brief.nces_data or {} %}
+    {% if nces or brief.enrollment_trend %}
+    <div class="section-heading">District Enrollment</div>
+    <div class="data-grid">
+      {% if nces.get('per_pupil_expenditure') %}
+      <div class="data-card">
+        <div class="data-card-label">Per-Pupil Expenditure</div>
+        <div class="data-card-value">${{ "{:,.0f}".format(nces['per_pupil_expenditure']) }}</div>
+        <div class="data-card-sub">{{ nces.get('fiscal_year', '') | e }}</div>
+      </div>
+      {% endif %}
+      {% if nces.get('frl_pct') is not none %}
+      <div class="data-card">
+        <div class="data-card-label">FRL Rate</div>
+        <div class="data-card-value">{{ nces['frl_pct'] }}%</div>
+        <div class="data-card-sub">Free/Reduced-Price Lunch</div>
+      </div>
+      {% endif %}
+      {% if nces.get('revenue_state_pct') is not none %}
+      <div class="data-card">
+        <div class="data-card-label">State Revenue Share</div>
+        <div class="data-card-value">{{ nces['revenue_state_pct'] }}%</div>
+        <div class="data-card-sub">of total district revenue</div>
+      </div>
+      {% endif %}
+      {% set trend = brief.get('enrollment_trend') or {} %}
+      {% if trend.get('trend_direction') %}
+      <div class="data-card">
+        <div class="data-card-label">Enrollment Trend</div>
+        <div class="data-card-value" style="font-size:16px;text-transform:capitalize;">{{ trend['trend_direction'] | e }}</div>
+        {% if trend.get('pct_change_total') is not none %}
+        <div class="data-card-sub">{{ "{:+.1f}".format(trend['pct_change_total']) }}% over trend period</div>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <!-- Demographics (if available) -->
+    {% set demos = brief.get('demographics') or {} %}
+    {% if demos %}
+    <div class="section-heading">Demographics</div>
+    <div class="data-grid">
+      {% if demos.get('total_population') %}
+      <div class="data-card">
+        <div class="data-card-label">Total Population</div>
+        <div class="data-card-value">{{ "{:,.0f}".format(demos['total_population']) }}</div>
+      </div>
+      {% endif %}
+      {% if demos.get('school_age_pct') is not none %}
+      <div class="data-card">
+        <div class="data-card-label">School-Age (5–17)</div>
+        <div class="data-card-value">{{ demos['school_age_pct'] }}%</div>
+      </div>
+      {% endif %}
+      {% if demos.get('poverty_rate') is not none %}
+      <div class="data-card">
+        <div class="data-card-label">Poverty Rate</div>
+        <div class="data-card-value">{{ demos['poverty_rate'] }}%</div>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <!-- Scorecard — show only dimensions with real data -->
+    {% set sc = brief.get('scorecard_summary') or {} %}
+    {% set dim_table = sc.get('dimension_table') or [] %}
+    {% set real_dims = dim_table | selectattr('used_default', 'equalto', false) | list %}
+    {% if real_dims %}
+    <div class="section-heading">Available Scoring Dimensions</div>
+    <table class="scorecard-table">
+      <thead>
+        <tr>
+          <th>Dimension</th>
+          <th>Score</th>
+          <th>Confidence</th>
+          <th>Driver</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in real_dims %}
+        <tr>
+          <td class="dim-name">{{ row.get('display_name', row.get('dimension', '')) | e }}</td>
+          <td>{{ row.get('score', '—') }} / 10</td>
+          <td>{{ row.get('confidence', '—') | e }}</td>
+          <td>{{ row.get('driver', '—') | e }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+
+    <!-- Dimensions without data -->
+    {% set no_data_dims = dim_table | selectattr('used_default', 'equalto', true) | list %}
+    {% if no_data_dims %}
+    <div class="section-heading">Dimensions Awaiting Charter Landscape Data</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px;">
+      {% for row in no_data_dims %}
+      <span class="no-data-badge">{{ row.get('display_name', row.get('dimension', '')) | e }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Policy environment (from state context) -->
+    {% set policy = brief.get('policy_environment') or {} %}
+    {% if policy %}
+    <div class="section-heading">Policy Environment</div>
+    <ul class="policy-list">
+      {% if policy.get('authorizer_quality') %}
+      <li class="policy-item"><strong>Authorizer:</strong> {{ policy['authorizer_quality'] | e }}</li>
+      {% endif %}
+      {% if policy.get('funding_parity') is not none %}
+      <li class="policy-item"><strong>Funding Parity:</strong> {{ 'Yes' if policy['funding_parity'] else 'No' }}</li>
+      {% endif %}
+      {% if policy.get('facilities_provisions') %}
+      <li class="policy-item"><strong>Facilities:</strong> {{ policy['facilities_provisions'] | e }}</li>
+      {% endif %}
+    </ul>
+    {% endif %}
+
+    <!-- Needs verification -->
+    {% set nv = brief.get('needs_verification') or [] %}
+    {% if nv %}
+    <div class="section-heading">Items Requiring Verification</div>
+    <ul class="policy-list">
+      {% for item in nv %}
+      <li class="policy-item">
+        <strong>{{ item.get('claim', '') | e }}</strong>
+        {% if item.get('reason') %} — {{ item['reason'] | e }}{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div class="footer-note">
+      Emerging Market brief — CLIP Charter Community Landscape Intelligence Platform.
+      School-level charter metrics suppressed (no established charter landscape).
+      Data sources: NCES CCD, ACS, {{ brief.get('data_through', '') | e }}.
+      {% if brief.get('disclosure') %}{{ brief['disclosure'] | e }}{% endif %}
+    </div>
+  </main>
+</div>
+</body>
+</html>

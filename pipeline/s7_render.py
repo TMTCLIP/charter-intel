@@ -114,7 +114,15 @@ def run(
         f.write(rendered_md)
 
     # --- HTML output ---
-    html_template_name = MODE_HTML_TEMPLATES.get(config.mode.value, "strategic_brief.html.j2")
+    # Route to specialised templates before falling back to the mode default.
+    _market_type = brief.get("market_type", "established")
+    _verdict     = brief.get("verdict", "ELIGIBLE")
+    if _market_type == "greenfield":
+        html_template_name = "greenfield_brief.html.j2"
+    elif _verdict == "INELIGIBLE":
+        html_template_name = "ineligible_brief.html.j2"
+    else:
+        html_template_name = MODE_HTML_TEMPLATES.get(config.mode.value, "strategic_brief.html.j2")
     html_template_path = os.path.join("templates", html_template_name)
 
     if os.path.exists(html_template_path):

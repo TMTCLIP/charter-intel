@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ brief.community_name | e }}, {{ brief.state | e }} — Ineligible Market</title>
+  <style>
+    :root {
+      --bg-primary:    #0d1117;
+      --bg-secondary:  #161b22;
+      --bg-card:       #1c2128;
+      --bg-elevated:   #22272e;
+      --border-subtle: rgba(255,255,255,0.08);
+      --border-muted:  rgba(255,255,255,0.15);
+      --text-primary:  #e6edf3;
+      --text-secondary:#8b949e;
+      --text-muted:    #6e7681;
+      --accent-red:    #f85149;
+      --accent-yellow: #d29922;
+      --accent-blue:   #58a6ff;
+      --sidebar-width: 260px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: var(--bg-primary);
+    }
+    .page-shell {
+      display: flex;
+      max-width: 1100px;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    /* ── Sidebar ── */
+    .sidebar {
+      width: var(--sidebar-width);
+      flex-shrink: 0;
+      background: var(--bg-secondary);
+      border-right: 1px solid var(--border-subtle);
+      padding: 28px 20px 40px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .sb-wordmark {
+      font-size: 10px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .sb-community {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.2;
+    }
+    .sb-state {
+      display: block;
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-top: 4px;
+    }
+    .verdict-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: rgba(248,81,73,0.12);
+      border: 1px solid rgba(248,81,73,0.3);
+      color: var(--accent-red);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .sb-score-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .sb-score-label {
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .sb-score-value {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--accent-red);
+    }
+    .sb-tier {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .sb-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+    .sb-meta span { display: block; }
+    /* ── Main ── */
+    .main-content {
+      flex: 1;
+      padding: 36px 40px 60px;
+      min-width: 0;
+    }
+    .page-header {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .page-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .page-subtitle {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .verdict-banner {
+      background: rgba(248,81,73,0.08);
+      border: 1px solid rgba(248,81,73,0.25);
+      border-left: 4px solid var(--accent-red);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 30px;
+    }
+    .verdict-banner-title {
+      font-weight: 700;
+      color: var(--accent-red);
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    .verdict-banner-body {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    /* ── Section headings ── */
+    .section-heading {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      margin-top: 28px;
+    }
+    /* ── Scorecard ── */
+    .scorecard-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+    .scorecard-table th {
+      text-align: left;
+      padding: 8px 12px;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .scorecard-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+    }
+    .scorecard-table tr:last-child td { border-bottom: none; }
+    .dim-name { color: var(--text-primary); font-weight: 500; }
+    .score-low  { color: var(--accent-red); font-weight: 600; }
+    .score-mid  { color: var(--accent-yellow); }
+    .score-high { color: #3fb950; }
+    .fail-marker {
+      display: inline-block;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent-red);
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+    /* ── Analysis block ── */
+    .snapshot-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    /* ── Policy block ── */
+    .policy-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .policy-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 10px 14px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .policy-item strong { color: var(--text-primary); }
+    /* ── Conditions for re-evaluation ── */
+    .conditions-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .condition-item {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      font-size: 13px;
+      color: var(--text-secondary);
+      padding: 10px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+    }
+    .condition-bullet {
+      color: var(--accent-yellow);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .footer-note {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    @media print {
+      body { background: #fff; color: #111; }
+      .sidebar { display: none; }
+      .page-shell { display: block; }
+      .main-content { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page-shell">
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar">
+    <div class="sb-wordmark">CLIP</div>
+    <div>
+      <div class="sb-community">{{ brief.community_name | e }}</div>
+      <span class="sb-state">{{ brief.state | e }}</span>
+    </div>
+    <div class="verdict-badge">&#x26A0; Ineligible</div>
+
+    {% set sc = brief.get('scorecard_summary') or {} %}
+    {% if sc.get('composite_score') is not none %}
+    <div class="sb-score-block">
+      <div class="sb-score-label">Composite Score</div>
+      <div class="sb-score-value">{{ "%.1f"|format(sc['composite_score']) }}</div>
+      <div class="sb-tier">{{ sc.get('tier_display_label', 'AVOID ENTRY') | e }}</div>
+    </div>
+    {% endif %}
+
+    <div class="sb-meta">
+      {% if brief.data_through %}<span>Data through {{ brief.data_through | e }}</span>{% endif %}
+      {% if brief.generated_at %}<span>Generated {{ brief.generated_at[:10] | e }}</span>{% endif %}
+    </div>
+  </aside>
+
+  <!-- ── Main ── -->
+  <main class="main-content">
+    <div class="page-header">
+      <div class="page-title">{{ brief.community_name | e }}, {{ brief.state | e }}</div>
+      <div class="page-subtitle">Market Assessment — Ineligible for Charter Expansion</div>
+    </div>
+
+    <!-- Verdict banner -->
+    <div class="verdict-banner">
+      <div class="verdict-banner-title">&#x26A0;&ensp;VERDICT: INELIGIBLE</div>
+      <div class="verdict-banner-body">
+        This community scored below the minimum threshold for charter school expansion.
+        {% set sc = brief.get('scorecard_summary') or {} %}
+        {% if sc.get('composite_score') is not none %}
+        Composite score: <strong>{{ "%.1f"|format(sc['composite_score']) }} / 10</strong>
+        ({{ sc.get('tier_display_label', 'AVOID ENTRY') | e }}).
+        {% endif %}
+        The analysis below identifies which dimensions drove the low score
+        and the conditions under which re-evaluation would be warranted.
+      </div>
+    </div>
+
+    <!-- Dimension breakdown: show all, highlight low-scorers -->
+    {% set sc = brief.get('scorecard_summary') or {} %}
+    {% set dim_table = sc.get('dimension_table') or [] %}
+    {% if dim_table %}
+    <div class="section-heading">Dimension Breakdown — Drivers of Ineligibility</div>
+    <table class="scorecard-table">
+      <thead>
+        <tr>
+          <th>Dimension</th>
+          <th>Score</th>
+          <th>Weight</th>
+          <th>Confidence</th>
+          <th>Driver</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in dim_table %}
+        {% set score = row.get('score') %}
+        {% set is_low = score is not none and score < 4.0 and not row.get('used_default') %}
+        <tr>
+          <td class="dim-name">
+            {% if is_low %}<span class="fail-marker"></span>{% endif %}
+            {{ row.get('display_name', row.get('dimension', '')) | e }}
+          </td>
+          <td class="{% if is_low %}score-low{% elif score is not none and score >= 7.0 %}score-high{% else %}score-mid{% endif %}">
+            {% if row.get('used_default') %}5.0* <span style="color:var(--text-muted);font-size:11px;">(no data)</span>
+            {% else %}{{ score }} / 10{% endif %}
+          </td>
+          <td>{{ (row.get('weight', 0) * 100) | int }}%</td>
+          <td>{{ row.get('confidence', '—') | e }}</td>
+          <td>{{ row.get('driver', '—') | e }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p style="font-size:11px;color:var(--text-muted);margin-bottom:24px;">
+      &#9679; Red indicator = dimension scored below 4.0 / 10 and contributed to ineligibility.
+      Asterisk (*) = dimension defaulted to midpoint due to insufficient data.
+    </p>
+    {% endif %}
+
+    <!-- Executive context (trimmed — no expansion recommendations) -->
+    {% if brief.executive_snapshot %}
+    <div class="section-heading">Market Context</div>
+    <div class="snapshot-block">{{ brief.executive_snapshot | e }}</div>
+    {% endif %}
+
+    <!-- Needs verification items -->
+    {% set nv = brief.get('needs_verification') or [] %}
+    {% if nv %}
+    <div class="section-heading">Data Gaps &amp; Open Questions</div>
+    <ul class="policy-list">
+      {% for item in nv %}
+      <li class="policy-item">
+        <strong>{{ item.get('claim', '') | e }}</strong>
+        {% if item.get('reason') %} — {{ item['reason'] | e }}{% endif %}
+        {% if item.get('impact_if_wrong') %}
+        <span style="font-size:11px;color:var(--text-muted);"> (Impact: {{ item['impact_if_wrong'] | e }})</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <!-- Re-evaluation conditions -->
+    {% set low_dims = [] %}
+    {% for row in dim_table %}
+      {% if row.get('score') is not none and row['score'] < 4.0 and not row.get('used_default') %}
+        {% set _ = low_dims.append(row) %}
+      {% endif %}
+    {% endfor %}
+    {% if low_dims %}
+    <div class="section-heading">Conditions for Re-evaluation</div>
+    <ul class="conditions-list">
+      {% for row in low_dims %}
+      <li class="condition-item">
+        <span class="condition-bullet">&#8594;</span>
+        <span>
+          <strong>{{ row.get('display_name', row.get('dimension', '')) | e }}</strong>
+          scored {{ row['score'] }} / 10.
+          Improvement in this dimension would most directly lift the composite toward eligibility.
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div class="footer-note">
+      Ineligible market assessment — CLIP Charter Community Landscape Intelligence Platform.
+      Expansion opportunity cards suppressed (market did not pass scoring gate).
+      Data sources: NCES CCD, ACS, {{ brief.get('data_through', '') | e }}.
+      {% if brief.get('disclosure') %}{{ brief['disclosure'] | e }}{% endif %}
+    </div>
+  </main>
+</div>
+</body>
+</html>

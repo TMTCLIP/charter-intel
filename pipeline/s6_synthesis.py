@@ -178,6 +178,9 @@ def run(
     brief_json = _inject_tribal_jurisdiction_flag(brief_json, state, community_id)
     brief_json = _inject_teacher_supply_warning(brief_json, state, community_id)
 
+    # --- Market routing fields for S7 template selection ---
+    brief_json = _inject_market_routing(brief_json, scorecard, state, community_id)
+
     # --- Cap over-length strings before schema validation ---
     brief_json, cap_notices = _truncate_to_schema_limits(brief_json)
     if cap_notices:
@@ -861,5 +864,47 @@ def _inject_teacher_supply_warning(brief_json: dict, state: str, community_id: s
     import logging
     logging.getLogger(__name__).info(
         "[%s] Injected teacher_supply_warning into needs_verification", community_id
+    )
+    return brief_json
+
+
+def _inject_market_routing(
+    brief_json: dict,
+    scorecard: dict,
+    state: str,
+    community_id: str,
+) -> dict:
+    """Set market_type and verdict fields so S7 can route to the correct template.
+
+    verdict:     "INELIGIBLE" when the scorecard tier is AVOID, else "ELIGIBLE".
+    market_type: "greenfield" when the community registry marks has_charters=False
+                 (no existing charter landscape), else "established".
+
+    Both fields are deterministic from existing pipeline data; no new API calls.
+    """
+    import logging
+    log = logging.getLogger(__name__)
+
+    tier = scorecard.get("tier", "")
+    brief_json["verdict"] = "INELIGIBLE" if tier == "AVOID" else "ELIGIBLE"
+
+    # Read has_charters from community registry YAML (greenfield signal)
+    registry_path = f"config/community_registry/{state.lower()}.yaml"
+    market_type = "established"
+    if os.path.exists(registry_path):
+        try:
+            import yaml as _yaml
+            with open(registry_path) as f:
+                registry = _yaml.safe_load(f) or {}
+            entry = registry.get(community_id, {})
+            if isinstance(entry, dict) and entry.get("has_charters") is False:
+                market_type = "greenfield"
+        except Exception as exc:
+            log.warning("[%s] _inject_market_routing: registry read failed — %s", community_id, exc)
+
+    brief_json["market_type"] = market_type
+    log.info(
+        "[%s] market_routing: verdict=%s market_type=%s",
+        community_id, brief_json["verdict"], market_type,
     )
     return brief_json
