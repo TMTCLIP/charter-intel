@@ -566,7 +566,7 @@
       * { animation: none !important; transition: none !important; }
 
       /* Hide screen-only interactive elements */
-      .sb-nav,
+      .sidebar nav,
       .debug-section { display: none !important; }
 
       /* Suppress href URLs from printing after anchor text */
@@ -608,6 +608,14 @@
         page-break-inside: avoid !important;
       }
 
+      /* Keep data-sources table on one page; start fresh if it won't fit after snapshot */
+      #datasources, #datasources table {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        break-before: page;
+        page-break-before: always;
+      }
+
       /* Verdict banner stays with scorecard on page 1 */
       .verdict-banner {
         break-inside: avoid !important;
@@ -624,6 +632,14 @@
 
       /* Allow natural page breaks between major sections */
       .section { break-before: auto; page-break-before: auto; }
+
+      /* Major sections always start at the top of a new page */
+      #scorecard,
+      #recommendations,
+      #verification {
+        break-before: page !important;
+        page-break-before: always !important;
+      }
     }
   </style>
 </head>
