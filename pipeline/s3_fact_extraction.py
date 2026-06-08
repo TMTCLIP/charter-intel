@@ -32,6 +32,8 @@ from pipeline.utils.ped_fetcher import get_district_data
 from pipeline.fetchers.ms_proficiency_fetcher import get_ms_district_data
 from pipeline.fetchers.tn_proficiency_fetcher import get_tn_district_data
 from pipeline.fetchers.wi_proficiency_fetcher import get_wi_district_data
+from pipeline.fetchers.crdc_fetcher import get_crdc_district_data
+from pipeline.fetchers.bls_teacher_wages_fetcher import get_teacher_wages
 from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data, get_charter_enrollment_share
 from pipeline.utils.acs_fetcher  import get_district_data as get_acs_district_data, get_total_population as get_acs_total_population
 from pipeline.utils.population_trends_fetcher import get_population_trends
@@ -1222,6 +1224,18 @@ def run(
         facts_output, philanthropy, community_id, state, community_name
     )
 
+    # ── Session 9 federal signals: CRDC IEP%/chronic-absenteeism + BLS teacher ──
+    # ── wages. Both free/keyless; each degrades to a no-op when its fetcher    ──
+    # ── returns None. NOTE: these are brief-narrative facts only — no S5 scored ──
+    # ── dimension consumes them today (see _inject_crdc_facts / _inject_bls_*). ──
+    crdc_data = get_crdc_district_data(saipe_leaid) if saipe_leaid else None
+    _inject_crdc_facts(facts_output, crdc_data, community_id, state, community_name)
+
+    teacher_wages = get_teacher_wages(_state_fips) if _state_fips else None
+    _inject_teacher_wages_facts(
+        facts_output, teacher_wages, community_id, state, community_name
+    )
+
     # ── Charter schools + authorizer intelligence ─────────────────────────────
     # Scan mode skips both fetchers: charter_intel feeds brief narrative only and
     # does not contribute to any scoring dimension.  Cost: ~$0.05/city saved.
@@ -1753,6 +1767,154 @@ def _inject_teacher_supply_facts(
     logger.info(
         "[%s] Injected teacher supply datapoint (%s via %s=%s)",
         community_id, signal, field_used, raw_value,
+    )
+
+
+def _inject_crdc_facts(
+    facts_output: dict,
+    crdc: Optional[dict],
+    community_id: str,
+    state: str,
+    community_name: str,
+) -> None:
+    """Append CRDC-derived IEP% and chronic-absenteeism% as operational_complexity
+    datapoints (brief-narrative context).
+
+    SCORING NOTE: operational_complexity scores only from operational_complexity_index
+    (it has no secondary_facts), so neither iep_pct nor chronic_absenteeism_pct is
+    consumed by S5 today — these inform the brief, not the composite. CRDC lags
+    (collected biennially); both carry PROVISIONAL status with the vintage note.
+    Skips silently when the fetcher returns None.
+    """
+    if not crdc:
+        return
+    facts: list[dict] = facts_output.setdefault("facts", [])
+    note = crdc.get("data_note")
+
+    iep_pct = crdc.get("iep_pct")
+    if iep_pct is not None and not any(f.get("fact_key") == "iep_pct" for f in facts):
+        facts.append({
+            "datapoint_id":         f"dp_{community_id}_operational_complexity_iep",
+            "community_id":         community_id,
+            "state":                state,
+            "dimension":            "operational_complexity",
+            "fact_key":             "iep_pct",
+            "claim": (
+                f"Students with IEPs (IDEA) in {community_name}: {iep_pct}% "
+                f"({crdc.get('iep_count')} of {crdc.get('iep_denominator')}, "
+                f"CRDC {crdc.get('iep_year')})."
+            ),
+            "value":                iep_pct,
+            "value_unit":           "percent",
+            "value_year":           crdc.get("iep_year"),
+            "source_class":         "FEDERAL_DATA",
+            "source_url":           crdc.get("source_url"),
+            "source_title":         crdc.get("source_title"),
+            "source_date":          None,
+            "confidence":           "MODERATE",
+            "confidence_rationale": "CRDC IDEA enrollment / CCD district enrollment",
+            "verification_status":  "PROVISIONAL",
+            "bias_flag":            None,
+            "extracted_by":         "crdc_fetcher",
+            "extracted_at":         today_str(),
+            "stage":                STAGE_ID,
+            "in_main_analysis":     True,
+            "needs_verification_reason": note,
+        })
+
+    ca_pct = crdc.get("chronic_absenteeism_pct")
+    if ca_pct is not None and not any(f.get("fact_key") == "chronic_absenteeism_pct" for f in facts):
+        facts.append({
+            "datapoint_id":         f"dp_{community_id}_operational_complexity_absenteeism",
+            "community_id":         community_id,
+            "state":                state,
+            "dimension":            "operational_complexity",
+            "fact_key":             "chronic_absenteeism_pct",
+            "claim": (
+                f"Chronic absenteeism in {community_name}: {ca_pct}% "
+                f"({crdc.get('chronic_absent_count')} of "
+                f"{crdc.get('chronic_absent_denominator')}, CRDC "
+                f"{crdc.get('chronic_absenteeism_year')})."
+            ),
+            "value":                ca_pct,
+            "value_unit":           "percent",
+            "value_year":           crdc.get("chronic_absenteeism_year"),
+            "source_class":         "FEDERAL_DATA",
+            "source_url":           crdc.get("source_url"),
+            "source_title":         crdc.get("source_title"),
+            "source_date":          None,
+            "confidence":           "MODERATE",
+            "confidence_rationale": "CRDC chronically-absent count / CCD district enrollment",
+            "verification_status":  "PROVISIONAL",
+            "bias_flag":            None,
+            "extracted_by":         "crdc_fetcher",
+            "extracted_at":         today_str(),
+            "stage":                STAGE_ID,
+            "in_main_analysis":     True,
+            "needs_verification_reason": note,
+        })
+
+    logger.info(
+        "[%s] Injected CRDC datapoints (IEP%%=%s, chronic_absent%%=%s)",
+        community_id, iep_pct, ca_pct,
+    )
+
+
+def _inject_teacher_wages_facts(
+    facts_output: dict,
+    wages: Optional[dict],
+    community_id: str,
+    state: str,
+    community_name: str,
+) -> None:
+    """Append BLS OEWS teacher median wages as an operational_complexity datapoint
+    (brief-narrative context; not consumed by S5 scoring today). Skips silently
+    when the fetcher returns None.
+    """
+    if not wages:
+        return
+    facts: list[dict] = facts_output.setdefault("facts", [])
+    if any(f.get("fact_key") == "teacher_median_wage" for f in facts):
+        return
+
+    elem = wages.get("elementary_teacher_median_wage")
+    sec = wages.get("secondary_teacher_median_wage")
+    geo = wages.get("geography_level", "state")
+    facts.append({
+        "datapoint_id":         f"dp_{community_id}_operational_complexity_teacher_wage",
+        "community_id":         community_id,
+        "state":                state,
+        "dimension":            "operational_complexity",
+        "fact_key":             "teacher_median_wage",
+        "claim": (
+            f"Teacher labor market ({geo}-level, BLS OEWS {wages.get('wage_year')}): "
+            f"elementary median ${elem:,}/yr"
+            + (f", secondary median ${sec:,}/yr" if sec is not None else "")
+            + ". Lower prevailing wages can ease charter staffing-cost pressure."
+        ) if elem is not None else (
+            f"Teacher labor market ({geo}-level, BLS OEWS {wages.get('wage_year')}): "
+            f"secondary median ${sec:,}/yr."
+        ),
+        "value":                elem if elem is not None else sec,
+        "value_unit":           "usd_per_year",
+        "value_year":           wages.get("wage_year"),
+        "source_class":         "FEDERAL_DATA",
+        "source_url":           wages.get("source_url"),
+        "source_title":         wages.get("source_title"),
+        "source_date":          None,
+        "confidence":           "HIGH",
+        "confidence_rationale": "BLS OEWS published annual median wage",
+        "verification_status":  "VERIFIED",
+        "bias_flag":            None,
+        "extracted_by":         "bls_teacher_wages_fetcher",
+        "extracted_at":         today_str(),
+        "stage":                STAGE_ID,
+        "in_main_analysis":     True,
+        "needs_verification_reason": None,
+    })
+    logger.info(
+        "[%s] Injected BLS teacher wage datapoint (%s elem=%s sec=%s)",
+        community_id, geo, elem, sec,
     )
 
 
