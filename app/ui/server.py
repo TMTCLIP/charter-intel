@@ -790,7 +790,9 @@ def scan_status(job_id):
         job = _jobs.get(job_id)
         if job is None:
             return jsonify({"error": "Job not found"}), 404
-        return jsonify(dict(job))
+        payload = dict(job)
+        payload["has_brief"] = payload.get("brief_path") is not None
+        return jsonify(payload)
 
 
 @app.route("/api/scan/result/<job_id>")
