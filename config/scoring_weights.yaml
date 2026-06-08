@@ -352,9 +352,39 @@ dimensions:
       HIGH:            7
       VERY_HIGH:       8
       EXTREME:         9
+    # Session 10 (2026-06-07, operator sign-off): promote CRDC IEP% and chronic
+    # absenteeism from brief-only context into scored secondary signals. Both
+    # raise operational complexity (a cost), so higher values map to LOWER
+    # sub-scores. Thresholds anchor national averages at the midpoint: chronic
+    # absenteeism ~26% -> 5; IDEA/IEP ~15% -> ~5. The composite weight of
+    # operational_complexity itself is UNCHANGED (lives in scoring_presets.yaml);
+    # only these internal sub-weights are new. Teacher wages were intentionally
+    # left out of scoring (ambiguous direction) and remain brief-only context.
+    # None secondaries are skipped + weights renormalized by the scoring engine,
+    # so an absent CRDC signal degrades gracefully to the primary index alone.
+    primary_weight: 0.55
+    secondary_facts:
+      - key: "iep_pct"
+        direction: inverse   # higher IEP% = more service complexity = lower score
+        weight: 0.20
+        thresholds:
+          - {max: 10, score: 8}
+          - {max: 14, score: 6}
+          - {max: 17, score: 5}
+          - {max: 21, score: 4}
+          - {score: 3}
+      - key: "chronic_absenteeism_pct"
+        direction: inverse   # higher absenteeism = more operational challenge = lower score
+        weight: 0.25
+        thresholds:
+          - {max: 10, score: 9}
+          - {max: 18, score: 7}
+          - {max: 26, score: 5}
+          - {max: 35, score: 3}
+          - {score: 2}
     fact_keys_required: []
     fact_keys_optional: ["operational_complexity_index", "ell_pct",
-                         "iep_pct", "reporting_burden_level",
+                         "iep_pct", "chronic_absenteeism_pct", "reporting_burden_level",
                          "transportation_logistics", "labor_environment"]
     missing_data_behavior: default_to_midpoint
 

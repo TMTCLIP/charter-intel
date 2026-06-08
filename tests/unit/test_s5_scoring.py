@@ -325,6 +325,72 @@ class TestScoreRange:
         assert result["used_default"] is True
         assert 0.0 <= result["score"] <= 10.0
 
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 3c. OPERATIONAL_COMPLEXITY — CRDC secondary signals (Session 10 promotion)
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestOperationalComplexitySecondaries:
+    """iep_pct + chronic_absenteeism_pct are scored secondary_facts; teacher wages
+    are intentionally NOT scored. None secondaries degrade gracefully to the
+    primary index alone. The dimension's composite weight is unchanged."""
+
+    def _dim(self):
+        return _load_weights()["dimensions"]["operational_complexity"]
+
+    def _bundle(self, idx=5, iep=None, ca=None, wage=None):
+        facts = [{"fact_key": "operational_complexity_index", "value": idx,
+                  "dimension": "operational_complexity", "datapoint_id": "p",
+                  "in_main_analysis": True, "confidence": "HIGH"}]
+        for key, val, dp in (("iep_pct", iep, "i"),
+                             ("chronic_absenteeism_pct", ca, "c"),
+                             ("teacher_median_wage", wage, "w")):
+            if val is not None:
+                facts.append({"fact_key": key, "value": val, "dimension": "operational_complexity",
+                              "datapoint_id": dp, "in_main_analysis": True, "confidence": "MODERATE"})
+        return {"facts": facts}
+
+    def test_config_has_two_scored_secondaries(self):
+        secs = self._dim().get("secondary_facts", [])
+        keys = {s["key"] for s in secs}
+        assert keys == {"iep_pct", "chronic_absenteeism_pct"}
+        assert "teacher_median_wage" not in keys  # wages stay brief-only
+
+    def test_all_signals_present_blends(self):
+        # idx5→5, iep13.9→6, ca23.3→5 : 0.55*5 + 0.20*6 + 0.25*5 = 5.2
+        r = score_dimension("operational_complexity", self._dim(), self._bundle(5, 13.9, 23.3), 0.125)
+        assert r["score"] == pytest.approx(5.2, abs=0.01)
+        assert r["used_default"] is False
+
+    def test_one_signal_none_still_computes(self):
+        r = score_dimension("operational_complexity", self._dim(), self._bundle(5, 13.9, None), 0.125)
+        # 0.55*5 + 0.20*6 = 3.95 over weight 0.75 → 5.27
+        assert r["score"] == pytest.approx(5.27, abs=0.02)
+        assert r["used_default"] is False
+
+    def test_all_secondaries_none_falls_back_to_primary(self):
+        r = score_dimension("operational_complexity", self._dim(), self._bundle(5, None, None), 0.125)
+        assert r["score"] == pytest.approx(5.0, abs=0.01)  # primary index alone
+        assert r["used_default"] is False
+
+    def test_teacher_wage_does_not_move_score(self):
+        without = score_dimension("operational_complexity", self._dim(), self._bundle(5, 13.9, 23.3), 0.125)["score"]
+        with_wage = score_dimension("operational_complexity", self._dim(), self._bundle(5, 13.9, 23.3, wage=46020), 0.125)["score"]
+        assert without == with_wage  # wages are not a scored secondary
+
+    def test_high_complexity_signals_lower_score(self):
+        # idx2→9 (simple), but iep25→3 + ca40→2 (very complex) pull the blend down
+        r = score_dimension("operational_complexity", self._dim(), self._bundle(2, 25, 40), 0.125)
+        assert 0.0 <= r["score"] <= 10.0
+        assert r["score"] < 9.0  # secondaries dragged it below the primary's 9
+
+    def test_score_in_range_for_all_inputs(self):
+        for idx in (1, 5, 9):
+            for iep in (None, 5, 30):
+                for ca in (None, 5, 50):
+                    r = score_dimension("operational_complexity", self._dim(), self._bundle(idx, iep, ca), 0.125)
+                    assert 0.0 <= r["score"] <= 10.0
+
     def test_weighted_contribution_equals_score_times_weight(self):
         """weighted_contribution = round(score * weight, 4) for every dimension."""
         weights_cfg = _load_weights()
