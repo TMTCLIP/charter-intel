@@ -318,3 +318,108 @@ class TestDeterministicLockIn:
         d = get_district_data(_OXFORD, "MS")
         assert d is not None
         assert (d.get("per_pupil_expenditure") or 0) > 0
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Session 11 — widened RC3: prohibition-class framing + driver scope
+# ─────────────────────────────────────────────────────────────────────────────
+
+def _consent_brief_with_prohibition_framing():
+    """Mirrors the stale ms-oxford/growth artifact's false prohibition framing —
+    the phrasing class the original RC3 patterns did NOT catch."""
+    return {
+        "statutory_barrier": dict(_CONSENT_BARRIER),
+        "executive_snapshot": (
+            "Oxford is WATCHLIST-tier due to statutory prohibition on charter entry. "
+            "Mississippi law restricts charters to C, D, F districts only; Oxford's B "
+            "rating makes it ineligible. No charter operator can legally enter under current law."
+        ),
+        "recommendations": [
+            {"action": "Do not pursue charter entry in Oxford under current Mississippi law.",
+             "rationale": "Mississippi law restricts charters to C, D, F districts only.",
+             "evidence_summary": "MCSAB cannot authorize in B-rated districts; automatic rejection "
+                                 "regardless of application quality or local board support.",
+             "primary_risk": "x", "confidence": "HIGH", "supporting_fact_ids": []},
+        ],
+        "quick_reads": {"authorizer": "charter authorization is statutorily prohibited for B-rated districts.",
+                        "political": "y", "facilities": "z"},
+        "scorecard_summary": {
+            "dimension_table": [
+                {"dimension": "political_climate",
+                 "driver": "Statutory restriction on charter eligibility creates hostile environment."},
+                {"dimension": "authorizer_friendliness",
+                 "driver": "district ineligibility under state law eliminates authorization pathway entirely."},
+            ],
+            "top_drivers": [
+                {"dimension": "competitive_opportunity",
+                 "driver": "Entire K-12 spectrum is closed to charter entry by law."},
+            ],
+        },
+    }
+
+
+_PROHIBITION_FALSE_CLAIMS = [
+    "restricts charter", "c, d, f districts", "statutory prohibition", "cannot authorize",
+    "automatic rejection", "legally enter", "statutorily prohibited",
+    "closed to charter entry by law", "restriction on charter eligibility",
+    "eliminates", "regardless of",
+]
+
+
+def _prose_fields(brief):
+    """All LLM-narrative prose fields the patch touches — NOT the audit log."""
+    out = [brief.get("executive_snapshot", "")]
+    for r in brief.get("recommendations", []):
+        out += [r.get(k, "") for k in ("action", "rationale", "evidence_summary", "primary_risk")]
+    out += list((brief.get("quick_reads") or {}).values())
+    sc = brief.get("scorecard_summary") or {}
+    out += [d.get("driver", "") for d in sc.get("dimension_table", [])]
+    out += [t.get("driver", "") for t in sc.get("top_drivers", [])]
+    return " ".join(out).lower()
+
+
+class TestStatutoryNarrativeProhibition:
+    def test_all_prohibition_claims_removed_from_prose(self):
+        out = _patch_statutory_narrative(_consent_brief_with_prohibition_framing(), "MS")
+        blob = _prose_fields(out)
+        residual = [c for c in _PROHIBITION_FALSE_CLAIMS if c in blob]
+        assert residual == [], f"residual false claims: {residual}"
+
+    def test_prohibition_framing_logged(self):
+        out = _patch_statutory_narrative(_consent_brief_with_prohibition_framing(), "MS")
+        patterns = {c["pattern_matched"] for c in out["narrative_corrections"]}
+        assert "prohibition_framing" in patterns
+        assert all({"field", "original_phrase", "corrected_phrase"} <= set(c)
+                   for c in out["narrative_corrections"])
+
+    def test_driver_narratives_are_in_scope(self):
+        out = _patch_statutory_narrative(_consent_brief_with_prohibition_framing(), "MS")
+        # the political_climate / authorizer drivers must no longer assert prohibition
+        drivers = " ".join(d["driver"] for d in out["scorecard_summary"]["dimension_table"]).lower()
+        assert "restriction on charter eligibility" not in drivers
+        assert "eliminates authorization pathway" not in drivers
+        assert "local school board endorsement" in drivers
+
+    def test_idempotent(self):
+        out = _patch_statutory_narrative(_consent_brief_with_prohibition_framing(), "MS")
+        out2 = _patch_statutory_narrative(out, "MS")
+        assert out2["narrative_corrections"] == []
+
+    def test_no_false_positive_on_clean_consent_prose(self):
+        clean = {
+            "statutory_barrier": dict(_CONSENT_BARRIER),
+            "executive_snapshot": "Key risk: local board consent required under Miss. Code Ann. § 37-28-7.",
+            "recommendations": [], "quick_reads": {},
+            "scorecard_summary": {"dimension_table": [
+                {"dimension": "funding_environment", "driver": "Strong local revenue base."}], "top_drivers": []},
+        }
+        out = _patch_statutory_narrative(clean, "MS")
+        assert out["narrative_corrections"] == []
+
+    def test_prohibition_strings_untouched_in_non_consent_market(self):
+        brief = _consent_brief_with_prohibition_framing()
+        brief["statutory_barrier"] = {"severity": "prohibition", "applies": True}
+        snap = brief["executive_snapshot"]
+        out = _patch_statutory_narrative(brief, "MS")
+        assert out["executive_snapshot"] == snap
+        assert "narrative_corrections" not in out

@@ -941,3 +941,26 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] If the original fresh-run artifact exists, capture it — the described output didn't reproduce here (likely stale/pre-fix repo or missing data files)
 
 **Tests:** 784 passed (`python3 -m pytest -q -p no:cacheprovider`).
+
+---
+
+### Session — 2026-06-08 (116515f)
+
+**Accomplished:**
+- Traced a 9-defect red-team report (B rating, prohibition framing, HOSTILE_AUTHORIZER cap, /9 denominator) entirely to a **superseded artifact** — `data/cache/synthesis/ms/ms-oxford/s6_brief_growth_mode2.json` (pre-LEAID-migration `ms-oxford` slug, `growth` preset, 2026-06-05, `statutory_barrier: NONE`); the target `ms-oxford-2803450`/`maturity_adjusted` is clean on all nine
+- Confirmed no routing bug: `resolve_community` maps every spelling of Oxford → `ms-oxford-2803450` via registry prefix-lookup, so the bare slug can't be regenerated
+- Widened `_patch_statutory_narrative` to catch prohibition-class false framing (restricts-to-C/D/F, statutorily prohibited, cannot authorize, automatic rejection, "no operator can legally enter", closed-by-law, "regardless of board support") and extended scope to dimension/top-driver narratives; idempotent, logs `prohibition_framing` to `narrative_corrections`, zero false-positives on the clean target
+- Added 6 regression tests (prohibition removal, driver scope, logging, idempotency, no-false-positive, non-consent no-op); suite 784 → **790 passing**
+- Deleted the orphaned bare-slug artifacts (cache + outputs for `ms-oxford`); appended a Session-11 addendum to `docs/lennon_oxford_scoring_flags.md`
+
+**Decisions:**
+- Verify-first held a third time: refused to "fix" the target for defects that live only in a dead pre-migration artifact; the only code change is preventive (widening the existing RC3 guard)
+- No cache patch — the target was already clean, so the widened guard produces 0 corrections on it; re-render is byte-stable
+- Lennon items A (consent gate → Political/Authorizer floor) and B (gated authorizer counted as 0 accessible → HOSTILE_AUTHORIZER) are already resolved by the Session-8 barrier layer in the target; flagged as confirm-intent only, no scoring touched
+
+**Next Steps:**
+- [ ] Live `--force` MS batch to exercise the widened prohibition patterns end-to-end on fresh LLM output
+- [ ] Lennon sign-off on the four methodology questions (A–D) in the memo
+- [ ] Consider a guard so deprecated community_id artifacts can't accumulate and mislead future red-teams
+
+**Tests:** 790 passed (`python3 -m pytest -q -p no:cacheprovider`).

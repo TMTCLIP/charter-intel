@@ -1174,16 +1174,22 @@ def _patch_statutory_narrative(brief_json: dict, state: str) -> dict:
 
     The S6 model receives the correct consent-gate banner_text, but can still
     drift into false eligibility framing. This is a TARGETED find-and-correct
-    over a small set of demonstrably-false patterns in LLM-generated narrative
-    fields — NOT a prose rewriter. It performs exactly three operations:
+    over a curated set of demonstrably-false legal claims in LLM-generated
+    narrative — NOT a general prose rewriter. Operations:
       1. wrong statute section (e.g. § 37-28-5) → the section named in
          statutory_barrier.statute (pure factual substitution);
       2. an "ineligible"/"not currently eligible" verdict → a fixed
          eligible-but-gated phrase;
-      3. a false "unless the rating changes to D/F" escape clause → removed.
-    It does not touch dimension drivers and makes no other edits. Every
-    correction is logged to brief_json["narrative_corrections"] for red-team
-    traceability (and to surface when the prompt context needs strengthening).
+      3. a false "unless the rating changes to D/F" escape clause → removed;
+      4. prohibition-class claims that a consent gate is NOT (e.g. "restricts
+         charters to C/D/F districts", "statutorily prohibited", "cannot
+         authorize", "automatic rejection", "no operator can legally enter",
+         "regardless of local board support") → factual consent-gate phrasing.
+    Each pattern is a specific false claim with a factual substitution; the
+    function never reshapes surrounding prose. Scope covers the exec snapshot,
+    recommendations, quick reads, AND dimension/top-driver narratives (the
+    prohibition framing in F3 appeared in driver text). Every correction is
+    logged to brief_json["narrative_corrections"] for red-team traceability.
 
     Fires only when statutory_barrier.severity == "consent_required" and applies
     is not False. Idempotent. Data-driven; general to any consent-gated market.
@@ -1214,6 +1220,41 @@ def _patch_statutory_narrative(brief_json: dict, state: str) -> dict:
         re.IGNORECASE,
     )
 
+    # Prohibition-class false claims a consent gate is NOT. Each is a specific
+    # false legal statement paired with a factual substitution (or removal).
+    # Replacements never re-match these patterns, so the pass is idempotent.
+    _sec = correct_section
+    prohibition_subs = [
+        (re.compile(r"restricts?(?:\s+charter\s+authorization|\s+charters?)?\s+to\s+"
+                    r"(?:only\s+)?C[-,]?\s*,?\s*D[-,]?\s*,?\s*(?:and\s+)?F(?:[-\s]?rated)?\s+"
+                    r"districts(?:\s+only)?", re.IGNORECASE),
+         f"permits charters in A/B/C-rated districts with local school board endorsement (§ {_sec})"),
+        (re.compile(r"statutory prohibition on charter entry", re.IGNORECASE),
+         f"a local-school-board-consent requirement for charter entry (§ {_sec})"),
+        (re.compile(r"(?:is\s+)?statutorily prohibited(?:\s+for\s+[ABC][-\s]?rated districts)?", re.IGNORECASE),
+         f"permitted with local school board endorsement (§ {_sec})"),
+        (re.compile(r"cannot authorize(?:\s+charters?)?(?:\s+in\s+[ABC][-\s]?rated districts)?", re.IGNORECASE),
+         f"may authorize charters with local school board endorsement (§ {_sec})"),
+        (re.compile(r"automatic rejection", re.IGNORECASE),
+         "a local-school-board-consent requirement"),
+        (re.compile(r"[Nn]o charter operator can legally enter(?:\s+under current law)?", re.IGNORECASE),
+         f"Charter operators may enter with local school board endorsement (§ {_sec})"),
+        (re.compile(r"closed to charter entry by law", re.IGNORECASE),
+         f"open to charter entry with local school board endorsement (§ {_sec})"),
+        (re.compile(r"district ineligibility under state law eliminates(?:\s+the)?\s+"
+                    r"authorization pathway(?:\s+entirely)?", re.IGNORECASE),
+         f"charter authorization requires local school board endorsement (§ {_sec})"),
+        (re.compile(r"(?:statutory\s+)?(?:eligibility\s+)?restrictions?\s+on\s+charter\s+eligibility", re.IGNORECASE),
+         f"a local-school-board-consent requirement (§ {_sec})"),
+        (re.compile(r"statutory eligibility restrictions?", re.IGNORECASE),
+         "the local-school-board-consent requirement"),
+        (re.compile(r",?\s*regardless of (?:application quality(?:,?\s*or)?\s*)?"
+                    r"(?:local\s+)?(?:school\s+)?(?:board\s+)?(?:support|endorsement)", re.IGNORECASE),
+         ""),
+        (re.compile(r",?\s*regardless of local support", re.IGNORECASE),
+         ""),
+    ]
+
     corrections: list[dict] = []
 
     def _fix(field: str, text):
@@ -1225,6 +1266,13 @@ def _patch_statutory_narrative(brief_json: dict, state: str) -> dict:
                 out = out.replace(ws, correct_section)
                 corrections.append({"field": field, "pattern_matched": "wrong_statute_section",
                                     "original_phrase": ws, "corrected_phrase": correct_section})
+
+        for _pre, _repl in prohibition_subs:
+            def _pro_sub(mo, _r=_repl):
+                corrections.append({"field": field, "pattern_matched": "prohibition_framing",
+                                    "original_phrase": mo.group(0).strip(), "corrected_phrase": _r})
+                return _r
+            out = _pre.sub(_pro_sub, out)
 
         def _elig_sub(mo):
             corrections.append({"field": field, "pattern_matched": "ineligible_verdict",
@@ -1257,6 +1305,14 @@ def _patch_statutory_narrative(brief_json: dict, state: str) -> dict:
         for key in ("facilities", "political", "authorizer"):
             if key in qr:
                 qr[key] = _fix(f"quick_reads.{key}", qr[key])
+
+    sc = brief_json.get("scorecard_summary") or {}
+    for i, row in enumerate(sc.get("dimension_table") or []):
+        if isinstance(row, dict) and isinstance(row.get("driver"), str):
+            row["driver"] = _fix(f"dimension_table[{i}].driver", row["driver"])
+    for i, td in enumerate(sc.get("top_drivers") or []):
+        if isinstance(td, dict) and isinstance(td.get("driver"), str):
+            td["driver"] = _fix(f"top_drivers[{i}].driver", td["driver"])
 
     brief_json["narrative_corrections"] = corrections
     if corrections:

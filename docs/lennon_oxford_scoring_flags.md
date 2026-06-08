@@ -127,3 +127,49 @@ Unchanged from the original flag above: the Academic Need 5.0 driver ("moderate
 academic performance gaps" / "charter can differentiate on instruction") still
 contradicts an above-proficiency, A-rated district. Score and narrative remain
 untouched pending your decision. No code change made.
+
+---
+
+## Addendum — 2026-06-08 (Session 11: stale-artifact red-team + RC3 widening)
+
+A red-team report flagged nine defects (B rating asserted, prohibition framing,
+HOSTILE_AUTHORIZER cap, /9 denominator, etc.). **All nine were traced to a
+superseded artifact** — `data/cache/synthesis/ms/ms-oxford/s6_brief_growth_mode2.json`
+(community_id `ms-oxford` pre-LEAID-migration slug, `growth` preset, generated
+2026-06-05, `statutory_barrier: NONE`). It predates the entire Session-8 barrier
+layer. The current target (`ms-oxford-2803450`, `maturity_adjusted`) is clean on
+all nine; the resolver maps every spelling of "Oxford" to `ms-oxford-2803450`, so
+the bare slug can no longer be produced. The stale artifacts were deleted.
+
+No scoring changed this session. One code change: `_patch_statutory_narrative`
+was widened to also catch **prohibition-class** false framing (it previously
+caught only "ineligible"/§37-28-5/D-F) and to scan dimension/top-driver text.
+Four methodology questions for your awareness:
+
+### A — Does a consent gate drive Political Climate / Authorizer Friendliness to 1.0?
+
+In the **stale** artifact the consent gate collapsed Political Climate and
+Authorizer Friendliness to floor scores with "legally ineligible" drivers. In the
+**current** target this does NOT happen — Political Climate scores 5.0 (neutral
+default) and Authorizer Friendliness 5.0; the Session-8 consent-gate modeling
+already prevents the collapse. **No open defect.** The question for you is only
+whether the *current* neutral treatment is the intended posture for a consent-gated
+market, or whether the gate should nudge these dims at all. Either way → your call;
+no code changed.
+
+### B — Should a consent-gated authorizer count as "0 accessible authorizers"?
+
+In the stale artifact, MCSAB (gated, not absent) triggered a HOSTILE_AUTHORIZER
+override on "0 accessible authorizers," capping the tier at WATCHLIST. The current
+target shows **no override flags** (MCSAB is correctly modeled as accessible-but-
+gated). **No open defect in the target.** Flagging only so you can confirm the
+override logic treats a consent-gated authorizer as accessible (count ≥ 1) by
+intent — it is scoring-adjacent (tier cap), so no code was touched.
+
+### C — Academic Need 5.0 framing (carried forward, unchanged)
+
+Same as Concern 2 / the prior addendum. Still open; no code change.
+
+### D — Demand-excluded consent-gated greenfield headlining an opportunity tier
+
+Same as the prior addendum's item. Still open; no code change.
