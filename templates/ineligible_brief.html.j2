@@ -608,12 +608,14 @@
         page-break-inside: avoid !important;
       }
 
-      /* Keep data-sources table on one page; start fresh if it won't fit after snapshot */
-      #datasources, #datasources table {
+      /* Keep data-sources table on one page */
+      #datasources {
         break-inside: avoid;
         page-break-inside: avoid;
-        break-before: page;
-        page-break-before: always;
+      }
+
+      #datasources table {
+        font-size: 0.85em;
       }
 
       /* Verdict banner stays with scorecard on page 1 */
