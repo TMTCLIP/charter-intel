@@ -34,6 +34,7 @@ from pipeline.fetchers.tn_proficiency_fetcher import get_tn_district_data
 from pipeline.fetchers.wi_proficiency_fetcher import get_wi_district_data
 from pipeline.fetchers.crdc_fetcher import get_crdc_district_data
 from pipeline.fetchers.bls_teacher_wages_fetcher import get_teacher_wages
+from pipeline.fetchers.mde_ratings_fetcher import get_mde_district_rating
 from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data, get_charter_enrollment_share
 from pipeline.utils.acs_fetcher  import get_district_data as get_acs_district_data, get_total_population as get_acs_total_population
 from pipeline.utils.population_trends_fetcher import get_population_trends
@@ -1236,6 +1237,14 @@ def run(
         facts_output, teacher_wages, community_id, state, community_name
     )
 
+    # ── MS district A–F accountability rating → feeds the charter_law § 37-28-7 ──
+    # ── consent gate (S5). MS-only; degrades to None elsewhere / when unmapped. ──
+    mde_rating = (
+        get_mde_district_rating(saipe_leaid)
+        if (saipe_leaid and state.upper() == "MS") else None
+    )
+    _inject_mde_rating_facts(facts_output, mde_rating, community_id, state, community_name)
+
     # ── Charter schools + authorizer intelligence ─────────────────────────────
     # Scan mode skips both fetchers: charter_intel feeds brief narrative only and
     # does not contribute to any scoring dimension.  Cost: ~$0.05/city saved.
@@ -1915,6 +1924,61 @@ def _inject_teacher_wages_facts(
     logger.info(
         "[%s] Injected BLS teacher wage datapoint (%s elem=%s sec=%s)",
         community_id, geo, elem, sec,
+    )
+
+
+def _inject_mde_rating_facts(
+    facts_output: dict,
+    mde_rating: Optional[dict],
+    community_id: str,
+    state: str,
+    community_name: str,
+) -> None:
+    """Append the MS district A–F accountability rating as a fact.
+
+    Emits fact_key 'district_accountability_rating' (value e.g. 'A') which the S5
+    statutory_barrier_check reads for the § 37-28-7 consent gate. Skips silently
+    when None (non-MS, unmapped district, or source unavailable). The gate then
+    degrades to its unverified advisory.
+    """
+    if not mde_rating:
+        return
+    facts: list[dict] = facts_output.setdefault("facts", [])
+    if any(f.get("fact_key") == "district_accountability_rating" for f in facts):
+        return
+
+    grade = mde_rating["district_accountability_rating"]
+    year = mde_rating.get("district_rating_year")
+    facts.append({
+        "datapoint_id":         f"dp_{community_id}_district_accountability_rating",
+        "community_id":         community_id,
+        "state":                state,
+        "dimension":            "charter_saturation",  # carrier dimension; not scored — read by the charter_law gate
+        "fact_key":             "district_accountability_rating",
+        "claim": (
+            f"{community_name} district accountability rating: {grade} "
+            f"(MDE, {year}). Drives the § 37-28-7 local-board-consent gate."
+        ),
+        "value":                grade,
+        "value_unit":           "letter_grade",
+        "value_year":           year,
+        "source_class":         "PED_DATA",
+        "source_url":           mde_rating.get("source_url"),
+        "source_title":         mde_rating.get("source_title"),
+        "source_date":          None,
+        "confidence":           "HIGH",
+        "confidence_rationale": "Published MDE statewide accountability letter grade",
+        "verification_status":  "VERIFIED",
+        "bias_flag":            None,
+        "extracted_by":         "mde_ratings_fetcher",
+        "extracted_at":         today_str(),
+        "stage":                STAGE_ID,
+        "in_main_analysis":     False,  # not a scored signal; consumed by the statutory gate
+        "needs_verification_reason": None,
+    })
+    logger.info(
+        "[%s] Injected MDE district rating datapoint (%s, %s)",
+        community_id, grade, year,
     )
 
 
