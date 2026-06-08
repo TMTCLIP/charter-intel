@@ -298,6 +298,19 @@
           "status_icon": {"type": "string"}
         }
       }
+    },
+    "narrative_corrections": {
+      "type": "array",
+      "description": "Audit trail of deterministic corrections applied by s6_synthesis._patch_statutory_narrative to LLM-generated narrative in consent-gated markets. Empty when the model's first-pass framing was already correct.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field": {"type": "string"},
+          "pattern_matched": {"type": "string"},
+          "original_phrase": {"type": "string"},
+          "corrected_phrase": {"type": "string"}
+        }
+      }
     }
   },
 

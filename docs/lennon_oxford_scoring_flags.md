@@ -86,3 +86,44 @@ honestly:
 
 These reinforce — but do not substitute for — a methodology decision on Concerns 1
 and 2.
+
+---
+
+## Addendum — 2026-06-08 (fresh-run regression review)
+
+A red-team report described a fresh `--force` Oxford run failing on four counts
+(market type flipped to strategic; MDE rating shown as B / "Not Available";
+Funding Environment unscored; 43.8% data coverage). **None of these reproduce
+against the current code + committed data.** Verified directly:
+
+- `market_type` = **greenfield** (registry `has_charters: False`, static — `--force` cannot change it).
+- `get_mde_district_rating("2803450")` = **A** (xlsx row "Oxford School District → A"; CCD crosswalk + rating map both clean).
+- `get_district_data("ms-oxford-2803450","MS")` returns per-pupil **$16,954.05**; the fresh S5 scorecard scores Funding Environment **9.0** (`used_default=False`).
+- Fresh S5 data coverage = **81.2%**; only the two demand dimensions are excluded, not five.
+
+No scoring or data code was changed. Lock-in regression tests were added to pin
+this verified-correct behavior. Two items for your awareness / sign-off:
+
+### A — Dimension-exclusion behavior in consent-gated greenfield markets
+
+The exclusion of **Charter Saturation** and **Competitive Opportunity** from
+Oxford's composite is **data-driven**, not market-type-driven: both dimensions
+`used_default=True` (no demand data), so the Session-18 demand-evidence gate
+excludes them and redistributes their weight across the scored dimensions. This
+is working as designed — but for a consent-gated *greenfield* market it means the
+composite (6.3, "MODERATE OPPORTUNITY") rests entirely on **operational
+viability** while both **demand** signals are absent. The prior session added a
+deterministic disclosure + a parent-demand recommendation to surface this, but
+the underlying question is a methodology call: **is it correct operator intent
+for the maturity_adjusted composite to headline "opportunity" when no demand
+dimension is scored?** If not, options: (1) floor data-coverage confidence harder
+when both demand dims are excluded; (2) suppress the opportunity tier label (not
+just disclose) until at least one demand signal exists. Either is a scoring/tiering
+change → your sign-off.
+
+### B — Academic Need 5.0 (carried forward, still unfixed)
+
+Unchanged from the original flag above: the Academic Need 5.0 driver ("moderate
+academic performance gaps" / "charter can differentiate on instruction") still
+contradicts an above-proficiency, A-rated district. Score and narrative remain
+untouched pending your decision. No code change made.

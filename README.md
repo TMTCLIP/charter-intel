@@ -916,3 +916,28 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Confirm the amended 2025 § 37-28-7 (HB1432) text and whether 2024-25 MDE ratings change Oxford's A
 
 **Tests:** 775 passed (`python3 -m pytest -q -p no:cacheprovider`).
+
+---
+
+### Session — 2026-06-08 (a4cebf0)
+
+**Accomplished:**
+- Diagnosed a red-team "fresh `--force` run" report claiming four Oxford failures (market type greenfield→strategic, MDE rating B/"Not Available", Funding Environment unscored, 43.8% coverage) — verified against ground truth that **three do not reproduce** (greenfield is static config, MDE fetcher returns A, per-pupil $16,954.05 present, fresh S5 coverage 81.2%)
+- Built RC3 hardening for the one real (latent) risk: added `_patch_statutory_narrative()` in `s6_synthesis.py` — a targeted 3-operation find-and-correct for consent-gated markets (wrong statute §37-28-5→§37-28-7, "ineligible" verdict→eligible-but-gated, strip false "unless rating changes to D/F" clause); not a prose rewriter; idempotent; logs every edit to a new `narrative_corrections` field
+- Strengthened the S6 mode-2 prompt with an explicit "STATUTORY FRAMING" rule so future live runs frame the consent gate correctly first-pass
+- Registered optional `narrative_corrections` in `brief.schema.json`; fixed a logging bug where `df_re.sub` discarded its callback (caught by a new test)
+- Added 9 tests to `test_oxford_brief_hardening.py` (RC3 guard + lock-in tests pinning greenfield/rating-A/per-pupil); suite 775 → **784 passing**
+- Appended a fresh-run-regression addendum to `docs/lennon_oxford_scoring_flags.md`
+
+**Decisions:**
+- No-fabrication / verify-first outranks the task prompt: refused to "fix" the three non-reproducing branches (would have edited correct code); added lock-in tests instead
+- RC3 patch scoped to factual corrections only ("make it not false, not good") — no rating-letter reconciliation, no driver-narrative edits; prompt context is the lever for prose quality, the patch is the safety net
+- No cache patch needed — Oxford's current brief is already clean, so the guard produces zero corrections; re-render is byte-stable on the deterministic checks
+- `_patch_statutory_narrative` validated by unit tests; end-to-end on dirty LLM output pends a live `--force` run (no 3.11/API here)
+
+**Next Steps:**
+- [ ] Run a live `--force` MS batch to exercise `_patch_statutory_narrative` end-to-end and confirm prompt guidance reduces first-pass drift
+- [ ] Lennon sign-off: (A) should a consent-gated greenfield composite headline "opportunity" when both demand dims are excluded; (B) Academic Need 5.0 boilerplate vs A-rated
+- [ ] If the original fresh-run artifact exists, capture it — the described output didn't reproduce here (likely stale/pre-fix repo or missing data files)
+
+**Tests:** 784 passed (`python3 -m pytest -q -p no:cacheprovider`).

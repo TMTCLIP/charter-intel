@@ -23,7 +23,9 @@ from jinja2 import Environment, FileSystemLoader
 from pipeline.s6_synthesis import (
     _build_data_sources,
     _inject_market_entry_flags,
+    _inject_market_routing,
     _patch_authorizer_descriptions,
+    _patch_statutory_narrative,
 )
 
 pytestmark = pytest.mark.unit
@@ -199,3 +201,120 @@ class TestMarketEntryFlags:
         n = len(brief["recommendations"])
         out = _inject_market_entry_flags(brief, "MS")
         assert len(out["recommendations"]) == n
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Fresh-run hardening (this session): RC3 LLM-narrative guard + lock-in tests
+# ─────────────────────────────────────────────────────────────────────────────
+
+from pipeline.fetchers.mde_ratings_fetcher import get_mde_district_rating, _LOCAL_XLSX, _CCD_PARQUET
+from pipeline.utils.nces_fetcher import get_district_data
+
+_OXFORD = "ms-oxford-2803450"
+_OXFORD_LEAID = "2803450"
+
+
+# ── RC3 — _patch_statutory_narrative: targeted find-and-correct, not a rewriter ──
+
+def _consent_brief_with_false_framing():
+    return {
+        "statutory_barrier": dict(_CONSENT_BARRIER),
+        "executive_snapshot": (
+            "Oxford holds a B rating, making it ineligible for charter authorization "
+            "under Miss. Code Ann. § 37-28-5 unless the district rating changes to D/F."
+        ),
+        "recommendations": [
+            {"action": "Engage board.",
+             "rationale": "The district is not currently eligible under § 37-28-5; consent needed.",
+             "evidence_summary": "A-rated.", "primary_risk": "Board opposition.",
+             "confidence": "HIGH", "supporting_fact_ids": []},
+        ],
+        "quick_reads": {"authorizer": "District is ineligible until the district rating declines.",
+                        "political": "x", "facilities": "y"},
+    }
+
+
+class TestStatutoryNarrativePatch:
+    def test_corrects_three_false_patterns_and_logs(self):
+        out = _patch_statutory_narrative(_consent_brief_with_false_framing(), "MS")
+        blob = " ".join([
+            out["executive_snapshot"],
+            out["recommendations"][0]["rationale"],
+            out["quick_reads"]["authorizer"],
+        ])
+        # (1) wrong statute section gone, correct section present
+        assert "37-28-5" not in blob and "37-28-7" in blob
+        # (2) ineligible verdict replaced
+        assert "ineligible" not in blob.lower()
+        assert "eligible for charter authorization with local board endorsement" in blob
+        # (3) D/F escape clause removed
+        assert "D/F" not in blob and "rating declines" not in blob
+        # audit trail logged with all three pattern types
+        patterns = {c["pattern_matched"] for c in out["narrative_corrections"]}
+        assert patterns == {"wrong_statute_section", "ineligible_verdict", "df_escape_clause"}
+        assert all({"field", "original_phrase", "corrected_phrase"} <= set(c) for c in out["narrative_corrections"])
+
+    def test_does_not_truncate_sentence_mid_citation(self):
+        out = _patch_statutory_narrative(_consent_brief_with_false_framing(), "MS")
+        # the old fragment bug left an orphan "(§ 37-28-7). Code Ann. …" after the
+        # verdict substitution swallowed "under Miss". Guard that exact signature.
+        assert "(§ 37-28-7). Code" not in out["executive_snapshot"]
+        assert "  " not in out["executive_snapshot"]
+        assert out["executive_snapshot"].endswith(".")
+
+    def test_idempotent(self):
+        out = _patch_statutory_narrative(_consent_brief_with_false_framing(), "MS")
+        out2 = _patch_statutory_narrative(out, "MS")
+        assert out2["narrative_corrections"] == []
+
+    def test_clean_consent_brief_is_unchanged(self):
+        brief = {
+            "statutory_barrier": dict(_CONSENT_BARRIER),
+            "executive_snapshot": "Key risk: local board consent required under Miss. Code Ann. § 37-28-7.",
+            "recommendations": [], "quick_reads": {},
+        }
+        snap = brief["executive_snapshot"]
+        out = _patch_statutory_narrative(brief, "MS")
+        assert out["executive_snapshot"] == snap
+        assert out["narrative_corrections"] == []
+
+    def test_does_not_fire_in_non_consent_context(self):
+        # A prohibition (not a consent gate) must not be touched by this guard.
+        brief = {"statutory_barrier": {"severity": "prohibition", "applies": True},
+                 "executive_snapshot": "ineligible under § 37-28-5"}
+        out = _patch_statutory_narrative(brief, "MS")
+        assert out["executive_snapshot"] == "ineligible under § 37-28-5"
+        assert "narrative_corrections" not in out
+
+    def test_no_barrier_is_noop(self):
+        brief = {"statutory_barrier": None, "executive_snapshot": "ineligible under § 37-28-5"}
+        out = _patch_statutory_narrative(brief, "MS")
+        assert "narrative_corrections" not in out
+
+
+# ── Lock-in tests — pin the verified-correct deterministic behavior ──────────────
+# These guard against a real regression of the (currently correct) fresh-run data
+# paths the red-team report claimed were broken. They are not behavior changes.
+
+class TestDeterministicLockIn:
+    def test_oxford_market_type_is_greenfield(self):
+        out = _inject_market_routing(
+            {}, {"tier": "MODERATE", "statutory_barrier": dict(_CONSENT_BARRIER)}, "MS", _OXFORD,
+        )
+        assert out["market_type"] == "greenfield"
+        assert out["verdict"] == "ELIGIBLE"
+
+    @pytest.mark.skipif(not (os.path.exists(_LOCAL_XLSX) and os.path.exists(_CCD_PARQUET)),
+                        reason="MDE xlsx / CCD parquet not present")
+    def test_oxford_mde_rating_is_A(self):
+        r = get_mde_district_rating(_OXFORD_LEAID)
+        assert r is not None
+        assert r["district_accountability_rating"] == "A"
+
+    @pytest.mark.skipif(not os.path.exists("data/raw/national/nces_lea_finance_2024.csv")
+                        and not os.path.exists("data/raw/national/nces_lea_finance.parquet"),
+                        reason="NCES finance data not present")
+    def test_oxford_per_pupil_present(self):
+        d = get_district_data(_OXFORD, "MS")
+        assert d is not None
+        assert (d.get("per_pupil_expenditure") or 0) > 0

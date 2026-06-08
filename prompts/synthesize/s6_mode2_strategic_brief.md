@@ -41,6 +41,8 @@ FINANCIAL TERMINOLOGY — NO CONFLATION: Per-pupil expenditure is what a distric
 
 INFERENCE PROHIBITION: Do not extend facts beyond what they explicitly state. A high scorecard score or favorable metric does not license adding characterizations not present in the verified facts. If you cannot point to a specific fact_id that supports a claim verbatim, remove the claim. A scorecard score, tier label, or dimension flag is not a fact — it is a derived signal. Do not describe what it "means" unless a verified fact explicitly supports that characterization.
 
+STATUTORY FRAMING — CONSENT GATE IS NOT INELIGIBILITY: If SCORECARD_JSON contains a `statutory_barrier` with `severity` = "consent_required", the district is ELIGIBLE for charter authorization — gated by local school board endorsement or initiation under the statute named in `statutory_barrier.statute`. Frame it that way everywhere (executive snapshot, recommendations, quick reads). Do NOT describe the district as "ineligible" or "prohibited." Cite ONLY the section in `statutory_barrier.statute` (e.g. § 37-28-7); never cite a different section such as § 37-28-5. Do NOT claim the gate is lifted "unless the rating changes to D/F." State the district's accountability rating only as the value given in the rating fact — never infer a different letter grade.
+
 TONE AND FORMAT RULES:
 - Write like a Bellwether or McKinsey analyst, not like an academic or a marketing copy writer
 - Be concise. Avoid hedging language that fills space without adding meaning

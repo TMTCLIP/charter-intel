@@ -188,6 +188,7 @@ def run(
     brief_json = _inject_market_routing(brief_json, scorecard, state, community_id)
     brief_json = _patch_authorizer_descriptions(brief_json, state)
     brief_json = _inject_market_entry_flags(brief_json, state)
+    brief_json = _patch_statutory_narrative(brief_json, state)
 
     # --- Data Sources & Confidence summary (Session 10 Item 3) ---
     brief_json["data_sources"] = _build_data_sources(brief_json, verified_bundle, state)
@@ -1161,6 +1162,109 @@ def _inject_market_entry_flags(brief_json: dict, state: str) -> dict:
             "supporting_fact_ids": [],
         })
 
+    return brief_json
+
+
+# Fixed eligible-but-gated replacement for a false "ineligible" verdict phrase.
+_ELIG_FIX = "eligible for charter authorization with local board endorsement (§ {section})"
+
+
+def _patch_statutory_narrative(brief_json: dict, state: str) -> dict:
+    """Safety net for LLM-generated statutory framing in consent-gated markets.
+
+    The S6 model receives the correct consent-gate banner_text, but can still
+    drift into false eligibility framing. This is a TARGETED find-and-correct
+    over a small set of demonstrably-false patterns in LLM-generated narrative
+    fields — NOT a prose rewriter. It performs exactly three operations:
+      1. wrong statute section (e.g. § 37-28-5) → the section named in
+         statutory_barrier.statute (pure factual substitution);
+      2. an "ineligible"/"not currently eligible" verdict → a fixed
+         eligible-but-gated phrase;
+      3. a false "unless the rating changes to D/F" escape clause → removed.
+    It does not touch dimension drivers and makes no other edits. Every
+    correction is logged to brief_json["narrative_corrections"] for red-team
+    traceability (and to surface when the prompt context needs strengthening).
+
+    Fires only when statutory_barrier.severity == "consent_required" and applies
+    is not False. Idempotent. Data-driven; general to any consent-gated market.
+    Runs after _inject_market_routing has set statutory_barrier.
+    """
+    import re
+
+    barrier = brief_json.get("statutory_barrier") or {}
+    if not (barrier.get("severity") == "consent_required" and barrier.get("applies") is not False):
+        return brief_json
+
+    statute = barrier.get("statute") or "Miss. Code Ann. § 37-28-7"
+    m = re.search(r"(\d+-\d+-\d+)", statute)
+    correct_section = m.group(1) if m else "37-28-7"
+    wrong_sections = {"37-28-5"} - {correct_section}
+    elig_fix = _ELIG_FIX.format(section=correct_section)
+
+    # Match only the false verdict phrase itself — never the trailing "under
+    # <statute>" clause, so we don't truncate a sentence mid-citation.
+    elig_re = re.compile(
+        r"\b(?:not currently eligible|ineligible(?: for charter authorization)?)\b",
+        re.IGNORECASE,
+    )
+    df_re = re.compile(
+        r"\s*,?\s*(?:unless|until) (?:the |its )?district(?:'s)? rating "
+        r"(?:changes to|declines to|drops to|falls to|declines|changes)"
+        r"(?: [DdFf](?:\s*/\s*[Ff])?)?\b",
+        re.IGNORECASE,
+    )
+
+    corrections: list[dict] = []
+
+    def _fix(field: str, text):
+        if not isinstance(text, str) or not text:
+            return text
+        out = text
+        for ws in wrong_sections:
+            if ws in out:
+                out = out.replace(ws, correct_section)
+                corrections.append({"field": field, "pattern_matched": "wrong_statute_section",
+                                    "original_phrase": ws, "corrected_phrase": correct_section})
+
+        def _elig_sub(mo):
+            corrections.append({"field": field, "pattern_matched": "ineligible_verdict",
+                                "original_phrase": mo.group(0), "corrected_phrase": elig_fix})
+            return elig_fix
+        out = elig_re.sub(_elig_sub, out)
+
+        def _df_sub(mo):
+            corrections.append({"field": field, "pattern_matched": "df_escape_clause",
+                                "original_phrase": mo.group(0).strip(), "corrected_phrase": ""})
+            return ""
+        out = df_re.sub(_df_sub, out)
+
+        # Tidy whitespace/punctuation left by clause removal — no prose reshaping.
+        out = re.sub(r"\s{2,}", " ", out).replace(" ,", ",").replace(" .", ".").strip()
+        return out
+
+    if isinstance(brief_json.get("executive_snapshot"), str):
+        brief_json["executive_snapshot"] = _fix("executive_snapshot", brief_json["executive_snapshot"])
+
+    for i, rec in enumerate(brief_json.get("recommendations") or []):
+        if not isinstance(rec, dict):
+            continue
+        for key in ("action", "rationale", "evidence_summary", "primary_risk"):
+            if key in rec:
+                rec[key] = _fix(f"recommendations[{i}].{key}", rec[key])
+
+    qr = brief_json.get("quick_reads")
+    if isinstance(qr, dict):
+        for key in ("facilities", "political", "authorizer"):
+            if key in qr:
+                qr[key] = _fix(f"quick_reads.{key}", qr[key])
+
+    brief_json["narrative_corrections"] = corrections
+    if corrections:
+        import logging
+        logging.getLogger(__name__).info(
+            "_patch_statutory_narrative: applied %d correction(s) [%s]",
+            len(corrections), ", ".join(sorted({c["pattern_matched"] for c in corrections})),
+        )
     return brief_json
 
 
