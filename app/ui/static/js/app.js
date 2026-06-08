@@ -1026,6 +1026,18 @@ async function loadBrief(runId) {
   frame.style.display = "none";
   loading.classList.remove("hidden");
 
+  // If has_brief looks stale, do one fresh status check before wiring UI.
+  // Handles the case where APP.allRuns was loaded before the scan completed.
+  if (!run.has_brief) {
+    try {
+      const sr = await fetch(`/api/scan/status/${encodeURIComponent(runId)}`);
+      if (sr.ok) {
+        const fresh = await sr.json();
+        if (fresh.has_brief) run.has_brief = true;
+      }
+    } catch { /* ignore — keep stale value */ }
+  }
+
   // Wire up Download PDF button — only for community runs (not zip drill)
   const pdfBtn = document.getElementById("btn-download-pdf");
   if (pdfBtn) {
