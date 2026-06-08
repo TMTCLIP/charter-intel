@@ -681,8 +681,16 @@ def brief_pdf():
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page()
-            page.set_content(html_string, wait_until="networkidle")
-            pdf_bytes = page.pdf(format="Letter", print_background=True)
+            page.set_content(
+                html_string,
+                base_url=f"file://{BASE_DIR}/",
+                wait_until="networkidle",
+            )
+            pdf_bytes = page.pdf(
+                format="Letter",
+                print_background=True,
+                margin={"top": "0.6in", "bottom": "0.6in", "left": "0.7in", "right": "0.7in"},
+            )
             browser.close()
     except Exception as exc:
         app.logger.error("Playwright PDF generation failed for %s: %s", run_id, exc)

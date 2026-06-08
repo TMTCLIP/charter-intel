@@ -824,3 +824,26 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Remove debug `console.log` statements in `_cbInit`, `_cbOpenPanel`, and related `_cb*` functions (added in commit `b9e0b42`, still present)
 
 **Tests:** 650 passed.
+
+---
+
+### Session — 2026-06-08 (c80e330)
+
+**Accomplished:**
+- Diagnosed PDF render bug: white margins and unstyled output caused by Google Fonts CDN blocking `wait_until="networkidle"` in Railway sandbox and missing explicit Playwright margin param
+- Removed Google Fonts CDN `<link>` tags from `templates/pdf_brief.html.j2` — eliminates CDN hang; `networkidle` now settles immediately
+- Updated `--font-sans`, `--font-mono`, `--font-serif` CSS variables to pure system stacks (dropped `IBM Plex Sans`, `IBM Plex Mono`, `DM Serif Display` named fonts that required the CDN)
+- Added explicit `margin` dict to `page.pdf()` in `app/ui/server.py` — Playwright and CSS `@page` now agree on `0.6in`/`0.7in` margins instead of relying on version-specific Playwright defaults
+- Added `base_url=f"file://{BASE_DIR}/"` to `set_content()` in `server.py` for correct relative-path resolution
+
+**Decisions:**
+- Removed CDN links entirely rather than self-hosting fonts — no new asset management needed; system stacks (Georgia, -apple-system, ui-monospace) were already in the fallback chain and are sufficient
+- Explicit Playwright `margin` parameter preferred over relying on CSS `@page` alone — avoids version-specific Playwright behavior differences
+
+**Next Steps:**
+- [ ] Smoke-test PDF output against `demo-questa-001` run to confirm dark background and correct margins
+- [ ] Remove debug `console.log` statements in `_cbInit`, `_cbOpenPanel`, and related `_cb*` functions (added in commit `b9e0b42`, still present)
+- [ ] Verify and populate MS/TN/WI `charter_law` fields from authoritative state statutes
+- [ ] Run full MS community batch (`--state MS --depth fast`) once `charter_law` is verified
+
+**Tests:** Test runner not detected — run manually before next session.
