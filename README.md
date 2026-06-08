@@ -889,3 +889,30 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Verify `cep_detected: True` appears in S5 scorecard output for Oxford on next forced re-score
 
 **Tests:** Test runner not detected — run manually before next session.
+
+---
+
+### Session — 2026-06-08 (b33b13a)
+
+**Accomplished:**
+- Hardened the Oxford MS brief against red-team defects D2–D8 (D1 + CEP already shipped in `ff38ac3`) — eligibility-consistency + presentation fixes, no scoring changes
+- D2: relabeled "Recommendations suppressed" → "Recommendations provisional — pending verification" in greenfield/strategic/pdf templates (recs still render)
+- D3: `_build_data_sources` now renders proficiency vintage as a school-year span ("2022-23" not bare "2023"); precision fix — rejected the red team's false "2023-24" since the source CSV is SY2022-23
+- D4: labeled the per-pupil figure as total/capital-inclusive (NCES TOTALEXP/enrollment) in the S3 prompt + Oxford brief
+- D5/D6: added a data-driven demand-exclusion disclosure ("composite measures operational viability, not charter demand") and a weight-rounding residual note to the three eligible-market templates
+- D7/D8: new `_inject_market_entry_flags()` in `s6_synthesis.py` — for MS consent-gated markets appends a rating-cycle verification flag + recs to test parent demand/differentiation and to confirm the amended 2025 § 37-28-7 (HB1432)
+- Added `tests/unit/test_oxford_brief_hardening.py` (12 tests incl. the load-bearing D1 no-false-string render regression); full suite 763 → **775 passing**
+- Wrote `docs/lennon_oxford_scoring_flags.md` (Funding 9.0 backwards charter-funding inference; Academic Need 5.0 boilerplate vs A-rated)
+
+**Decisions:**
+- No-fabrication rule overrides the task spec: D3 vintage relabeled to "2022-23" to match the source CSV, NOT the spec's "2023-24" (which the source does not support)
+- S6 cache short-circuits all patches/injections, so S6-side fixes were both code-fixed (root cause, all gated-eligible markets) AND the cached Oxford JSON was hand-patched so the cache-hit re-render reflects them — mirrors how CEP/D1 shipped
+- One permitted narrative neutralization: removed the false "reduced charter funding pressure" clause from the funding top-driver; flagged in the Lennon memo. No scores/weights/formulas changed
+- D5/D6 done template-side (data-driven off `excluded_dimensions`/weights) so they render on every pass without a cache patch
+
+**Next Steps:**
+- [ ] Lennon to sign off on Funding 9.0 + Academic Need 5.0 methodology (see `docs/lennon_oxford_scoring_flags.md`)
+- [ ] Run full MS batch with `--force` so `_inject_market_entry_flags` + D3/D4 fire freshly across ackerman/jackson (cached communities still hold old text until re-synthesized)
+- [ ] Confirm the amended 2025 § 37-28-7 (HB1432) text and whether 2024-25 MDE ratings change Oxford's A
+
+**Tests:** 775 passed (`python3 -m pytest -q -p no:cacheprovider`).

@@ -558,89 +558,110 @@
 
     /* ── Print ── */
     @media print {
-      /* Reset layout */
-      body { background: #ffffff !important; color: #000000 !important; font-size: 12px !important; }
-      .page-shell { flex-direction: column !important; max-width: 100% !important; background: #ffffff !important; }
-      .sidebar {
-        position: static !important;
+      @page {
+        size: Letter;
+        margin: 1.8cm 1.5cm;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        animation: none !important;
+        transition: none !important;
+      }
+
+      html, body {
+        background: #0d1117 !important;
+        color: #e6edf3 !important;
+        font-size: 11px !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+        padding: 0 !important;
         width: 100% !important;
-        height: auto !important;
-        overflow: visible !important;
-        border-right: none !important;
-        border-bottom: 2px solid #000 !important;
-        padding: 16px 0 !important;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        gap: 24px !important;
-        align-items: baseline !important;
-        background: #ffffff !important;
-        page-break-after: avoid !important;
-      }
-      .main-content { padding: 16px 0 !important; background: #ffffff !important; }
-
-      /* Typography to black */
-      h1, h2, h3, h4, h5, h6 { color: #000000 !important; }
-      p, li, td, th, span, div { color: #111111 !important; }
-      .sb-state, .sb-through, .sb-score-label, .bar-weight, .bar-driver,
-      .txt-muted, .card-source, .card-warn, .muted-note,
-      .qr-label, .src-item { color: #444444 !important; }
-
-      /* Score: keep large but go dark */
-      .sb-score-num { color: #000000 !important; font-size: 3rem !important; }
-      .sb-score-max { color: #444444 !important; }
-      .sb-tier { color: #000000 !important; }
-      .pill { color: #000000 !important; border-color: #000 !important; background: transparent !important; }
-
-      /* Cards and surfaces: white with black border */
-      .card, .qr-card, .flag-card, .banner, .sb-score-block {
-        background: #ffffff !important;
-        border: 1px solid #cccccc !important;
-        box-shadow: none !important;
+        max-width: 100% !important;
       }
 
-      /* Scorecard rows */
-      .bar-row { background: #ffffff !important; border-bottom: 1px solid #e0e0e0 !important; }
-      .bar-score { color: #000000 !important; }
-      .nullweight-pill { background: #eeeeee !important; color: #444444 !important; }
-      .bar-track { background: rgba(0,0,0,0.1) !important; }
-      .bar-fill { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-
-      /* Links */
-      a { color: #000000 !important; text-decoration: underline !important; }
-
-      /* Banners */
-      .banner-insufficient, .banner-gate, .banner-tribal, .banner-pci-legacy {
-        background: #f5f5f5 !important;
-        border-left-color: #000 !important;
-        color: #111111 !important;
+      .main-content, .container, [class*="wrapper"],
+      [class*="content"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0.3cm 0 !important;
+        float: none !important;
       }
 
-      /* Executive snapshot */
-      .exec-snapshot { color: #000000 !important; }
+      .sidebar, .sidebar nav, .sb-nav, .sb-nav-label,
+      .debug-section, button, .btn, [class*="tooltip"],
+      [class*="dropdown"], nav {
+        display: none !important;
+      }
 
-      /* Section labels */
-      .section-label { color: #000000 !important; border-bottom-color: #cccccc !important; }
+      a[href]::after {
+        content: "" !important;
+      }
 
-      /* Hide non-print elements */
-      .debug-section, .sb-nav { display: none !important; }
+      h1, h2, h3 {
+        font-size: 1.1em !important;
+      }
 
-      /* Force expand all details elements */
-      details { display: block !important; }
-      details > summary { display: block !important; }
+      .section-header, [class*="section-title"] {
+        font-size: 0.8em !important;
+        letter-spacing: 0.12em !important;
+      }
 
-      /* Page break rules */
-      .card, .flag-card, .driver-item {
-        page-break-inside: avoid !important;
+      [class*="muted"], [class*="secondary"],
+      [style*="color: #6e7681"], [style*="color: #8b949e"] {
+        color: #b0bac4 !important;
+      }
+
+      .bar-track, .bar-fill, [class*="bar"] {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .bar-row, .flag-card, .nv-item, .qr-card,
+      .banner, .rec-item, .card, .condition-item,
+      #datasources, #datasources table,
+      .recommendation, [class*="rec-item"] {
         break-inside: avoid !important;
+        page-break-inside: avoid !important;
       }
-      .section { page-break-inside: avoid !important; page-break-before: auto !important; }
+
+      #recommendations, #verification {
+        break-before: page !important;
+        page-break-before: always !important;
+      }
+
+      #scorecard, #datasources, #drivers, #flags,
+      #schools, #landscape, #authorizers, #sources {
+        break-before: auto !important;
+        page-break-before: auto !important;
+      }
+
+      .composite-score, [class*="score-display"],
+      [class*="score-widget"] {
+        font-size: 0.9em !important;
+      }
+
+      .section, [class*="section"] {
+        padding: 0.4cm 0 !important;
+        margin: 0.2cm 0 !important;
+      }
+
+      #datasources table {
+        font-size: 0.82em !important;
+        width: 100% !important;
+      }
+
+      #datasources td, #datasources th {
+        padding: 3px 6px !important;
+      }
+
       .qr-grid { grid-template-columns: 1fr !important; }
 
-      /* Footer */
-      .disclosure-footer {
-        color: #444444 !important;
-        border-top-color: #cccccc !important;
-        background: #ffffff !important;
+      .card {
+        break-inside: avoid !important;
+        font-size: 0.9em !important;
       }
     }
   </style>
@@ -704,6 +725,11 @@
 
     
     
+    
+    
+
+    
+    
 
     
     <div class="banner banner-gate">
@@ -727,6 +753,11 @@
       <p class="exec-snapshot">Questa scores 6.5 (MODERATE OPPORTUNITY), driven by severe academic underperformance (ELA 28%, math 5.3%) and growing K-12 enrollment (+11.7% since 2020). The district serves only 300 students with 73% FRL, triggering a SMALL_MARKET flag: composite scores may overstate addressable demand at this scale. One small charter (Roots and Wings, K-8, 60-seat cap) leaves grades 9-12 unserved. Key risk: rural isolation and operational complexity (high poverty, small scale) challenge viability. Key opportunity: no charter high school exists despite clear need.</p>
     </div>
 
+    
+    
+
+    
+    
     
     
     <div class="section" id="scorecard">
@@ -878,9 +909,13 @@
         Excluded dimensions default to 5.0 and are removed from the composite; their
         weight is redistributed proportionally across scored dimensions.
         Excluded: facilities_feasibility.
+        Displayed weights are rounded to whole percentages; exact scored weights sum to 100%.
       </p>
       
+      
+      
     </div>
+    
 
     
     
@@ -960,11 +995,12 @@
     </div>
 
     
+    
     <div class="section" id="recommendations">
       <p class="section-label">Recommendations</p>
       
       <div class="banner banner-gate">
-        <strong>🚫 Recommendations suppressed</strong>
+        <strong>⚠ Recommendations provisional — pending verification</strong>
         Confidence gate active — Overall confidence is LOW (top dimensions rest on defaulted or low-confidence facts). Recommendations should be treated cautiously.
       </div>
       
@@ -984,6 +1020,7 @@
       </ol>
       
     </div>
+    
 
     
     
@@ -1082,7 +1119,7 @@
       <details>
         <summary>Pipeline Debug Log</summary>
         <p class="debug-meta">Run ID: unset</p>
-        <p class="debug-meta">Timestamp: 2026-06-07T21:31:22.828285Z</p>
+        <p class="debug-meta">Timestamp: 2026-06-08T18:17:02.706463Z</p>
         <p class="debug-meta">Depth: standard</p>
 
         <p class="debug-meta"><strong>Token Usage</strong></p>

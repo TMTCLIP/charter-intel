@@ -187,6 +187,7 @@ def run(
     # --- Market routing fields for S7 template selection ---
     brief_json = _inject_market_routing(brief_json, scorecard, state, community_id)
     brief_json = _patch_authorizer_descriptions(brief_json, state)
+    brief_json = _inject_market_entry_flags(brief_json, state)
 
     # --- Data Sources & Confidence summary (Session 10 Item 3) ---
     brief_json["data_sources"] = _build_data_sources(brief_json, verified_bundle, state)
@@ -574,9 +575,16 @@ def _build_data_sources(brief_json: dict, verified_bundle: dict, state: str) -> 
     add("Census SAIPE", "Child poverty", saipe_year)
 
     # State proficiency — academic need (state-aware).
+    # Proficiency value_year is the spring/end year of a school year, so render it
+    # as a school-year span (2023 → "2022-23") rather than a bare calendar year.
+    def _school_year_label(y):
+        return f"{y - 1}-{str(y)[2:]}" if isinstance(y, int) and y > 1990 else "—"
+
     prof_label = _PROF_LABEL.get(st, f"{st} Proficiency")
     if has_prof:
-        add(prof_label, "Academic need", first_year("district_proficiency_ela_pct"))
+        prof_year = first_year("district_proficiency_ela_pct")
+        add(prof_label, "Academic need", prof_year,
+            vintage_override=_school_year_label(prof_year))
     else:
         add(prof_label, "Academic need", None,
             vintage_override="—", status_override=("Not yet available", "✗"))
@@ -1085,6 +1093,73 @@ def _patch_authorizer_descriptions(brief_json: dict, state: str) -> dict:
 
     for a in authorizers:
         a["reputation_note"] = note
+
+    return brief_json
+
+
+def _inject_market_entry_flags(brief_json: dict, state: str) -> dict:
+    """For MS markets gated by the local-board-consent requirement, append the
+    deterministic verification flags and market-entry recommendations the LLM
+    does not reliably produce:
+      - confirm the current rating cycle (CLIP may not hold the freshest A–F);
+      - confirm the amended 2025 statute text before relying on the gate framing;
+      - test parent demand / the differentiation thesis (the gating entry
+        question for a well-regarded, above-proficiency district).
+    Data-driven off statutory_barrier; general to all MS consent-gated markets.
+    Idempotent — guarded so re-runs do not duplicate entries.
+    Runs after _inject_market_routing / _patch_authorizer_descriptions.
+    """
+    if (state or "").upper() != "MS":
+        return brief_json
+
+    barrier = brief_json.get("statutory_barrier") or {}
+    if not (barrier.get("severity") == "consent_required" and barrier.get("applies") is not False):
+        return brief_json
+
+    statute = barrier.get("statute") or "Miss. Code Ann. § 37-28-7"
+
+    nv = brief_json.setdefault("needs_verification", [])
+    if not any("rating cycle" in (i.get("claim", "") or "").lower() for i in nv):
+        nv.append({
+            "claim": "District accountability rating may have changed in a newer rating cycle.",
+            "reason": (
+                "The consent gate reads from the A–F rating CLIP holds (MDE 2024 / SY2023-24); "
+                "a newer cycle may revise the rating and the gate analysis."
+            ),
+            "source_class_attempted": "MDE A-F RATINGS",
+            "resolution_path": "Check the latest MDE accountability ratings release and re-confirm the district's current rating.",
+            "impact_if_wrong": "HIGH",
+        })
+
+    recs = brief_json.setdefault("recommendations", [])
+    if not any("differentiation" in (r.get("action", "") or "").lower() for r in recs):
+        recs.append({
+            "action": "Test parent demand and the differentiation thesis before committing.",
+            "rationale": (
+                "Entry into a well-regarded, above-proficiency district hinges on whether families "
+                "would leave for a charter. This is the gating market-entry question — operational "
+                "viability does not establish demand."
+            ),
+            "evidence_summary": (
+                "Both demand dimensions (charter saturation, competitive opportunity) are unscored; "
+                "the composite reflects operational viability, not charter demand."
+            ),
+            "primary_risk": "Building where no unmet demand exists yields chronic under-enrollment.",
+            "confidence": "MODERATE",
+            "supporting_fact_ids": [],
+        })
+    if not any("amended" in (r.get("action", "") or "").lower() for r in recs):
+        recs.append({
+            "action": f"Confirm the current amended text of {statute} before relying on the consent-gate framing.",
+            "rationale": (
+                "A 2025 amendment (reported as HB1432) may have changed the charter authorization "
+                "statute; confirm the current enacted text rather than relying on the prior version."
+            ),
+            "evidence_summary": "The statute citation in this brief is not pinned to the amended 2025 enrolled text.",
+            "primary_risk": "Acting on superseded statutory language mis-states the authorization pathway.",
+            "confidence": "MODERATE",
+            "supporting_fact_ids": [],
+        })
 
     return brief_json
 

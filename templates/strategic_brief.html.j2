@@ -864,7 +864,15 @@
         Excluded dimensions default to 5.0 and are removed from the composite; their
         weight is redistributed proportionally across scored dimensions.
         Excluded: {{ sc.excluded_dimensions | join(", ") | e }}.
+        Displayed weights are rounded to whole percentages; exact scored weights sum to 100%.
       </p>
+      {% set _both_demand_excluded = ('charter_saturation' in sc.excluded_dimensions) and ('competitive_opportunity' in sc.excluded_dimensions) %}
+      {% if _both_demand_excluded %}
+      <p class="bar-weight" style="margin-top: 8px;">
+        Both demand dimensions (Charter Saturation, Competitive Opportunity) are excluded,
+        so the composite measures operational viability — not charter demand.
+      </p>
+      {% endif %}
       {% endif %}
     </div>
     {% endif %}{# /not _prohib — scorecard #}
@@ -961,7 +969,7 @@
       <p class="section-label">Recommendations</p>
       {% if brief.recommendation_confidence_gate and brief.recommendation_confidence_gate.gated %}
       <div class="banner banner-gate">
-        <strong>🚫 Recommendations suppressed</strong>
+        <strong>⚠ Recommendations provisional — pending verification</strong>
         Confidence gate active — {{ brief.recommendation_confidence_gate.reason | e }}
       </div>
       {% endif %}
