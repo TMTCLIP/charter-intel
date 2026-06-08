@@ -558,109 +558,110 @@
 
     /* ── Print ── */
     @media print {
-      @page { margin: 1.5cm; }
-
-      /* Preserve dark Van Gogh theme in PDF — force color rendering */
-      html {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+      @page {
+        size: Letter;
+        margin: 1.8cm 1.5cm;
       }
 
-      /* Remove sticky sidebar; reflow to full-width column for PDF */
-      .page-shell {
-        flex-direction: column !important;
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        animation: none !important;
+        transition: none !important;
+      }
+
+      html, body {
+        background: #0d1117 !important;
+        color: #e6edf3 !important;
+        font-size: 11px !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
         max-width: 100% !important;
-        width: 100% !important;
       }
 
-      .sidebar {
-        position: static !important;
+      .main-content, .container, [class*="wrapper"],
+      [class*="content"] {
         width: 100% !important;
-        height: auto !important;
-        overflow: visible !important;
-        border-right: none !important;
-        border-bottom: 1px solid var(--border-muted) !important;
-        padding-bottom: 20px !important;
-        break-after: avoid;
-        page-break-after: avoid;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0.3cm 0 !important;
+        float: none !important;
       }
 
-      .main-content { padding: 16px 0 !important; }
+      .sidebar, .sidebar nav, .sb-nav, .sb-nav-label,
+      .debug-section, button, .btn, [class*="tooltip"],
+      [class*="dropdown"], nav {
+        display: none !important;
+      }
 
-      /* Kill animations/transitions for clean PDF rendering */
-      * { animation: none !important; transition: none !important; }
+      a[href]::after {
+        content: "" !important;
+      }
 
-      /* Hide screen-only interactive elements */
-      .sidebar nav,
-      .debug-section { display: none !important; }
+      h1, h2, h3 {
+        font-size: 1.1em !important;
+      }
 
-      /* Suppress href URLs from printing after anchor text */
-      a[href]::after { content: "" !important; }
+      .section-header, [class*="section-title"] {
+        font-size: 0.8em !important;
+        letter-spacing: 0.12em !important;
+      }
 
-      /* Bump --text-secondary (#8b949e) toward white for dark-bg readability */
-      .sb-state, .sb-tagline, .sb-tier, .composite-line,
-      .bar-driver, .driver-item, .flag-body,
-      .auth-item, .rec-item, .nv-item, .qr-body,
-      .card-sub { color: #b0bec9 !important; }
+      [class*="muted"], [class*="secondary"],
+      [style*="color: #6e7681"], [style*="color: #8b949e"] {
+        color: #b0bac4 !important;
+      }
 
-      /* Bump --text-muted (#6e7681) — too dark on dark background in print */
-      .sb-wordmark, .sb-through, .sb-score-label,
-      .bar-weight, .src-item, .qr-label,
-      .excluded-sep, .txt-muted, .awaiting-label, .awaiting-note,
-      .section-label, .muted-note, .nullweight-pill,
-      .card-source { color: #8b949e !important; }
+      .bar-track, .bar-fill, [class*="bar"] {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
 
-      /* Card warning stays in score-yellow for legibility */
-      .card-warn { color: var(--score-yellow) !important; }
-
-      /* Quick reads: single column for print layout */
-      .qr-grid { grid-template-columns: 1fr !important; }
-
-      /* Never split these blocks across a page boundary */
-      .bar-row,
-      .flag-card,
-      .driver-item,
-      .nv-item,
-      .rec-item,
-      .qr-card,
-      .banner,
-      .sb-score-block,
-      .card {
+      .bar-row, .flag-card, .nv-item, .qr-card,
+      .banner, .rec-item, .card, .condition-item,
+      #datasources, #datasources table,
+      .recommendation, [class*="rec-item"] {
         break-inside: avoid !important;
         page-break-inside: avoid !important;
       }
 
-      /* Keep each data-sources table row intact */
-      #datasources tr {
-        break-inside: avoid !important;
-        page-break-inside: avoid !important;
+      #recommendations, #verification {
+        break-before: page !important;
+        page-break-before: always !important;
       }
 
-      /* Keep data-sources table on one page */
-      #datasources {
-        break-inside: avoid;
-        page-break-inside: avoid;
+      #scorecard, #datasources, #drivers, #flags,
+      #schools, #landscape, #authorizers, #sources {
+        break-before: auto !important;
+        page-break-before: auto !important;
+      }
+
+      .composite-score, [class*="score-display"],
+      [class*="score-widget"] {
+        font-size: 0.9em !important;
+      }
+
+      .section, [class*="section"] {
+        padding: 0.4cm 0 !important;
+        margin: 0.2cm 0 !important;
       }
 
       #datasources table {
-        font-size: 0.85em;
+        font-size: 0.82em !important;
+        width: 100% !important;
       }
 
-      /* Sidebar and snapshot stay together on page 1 */
-      #snapshot {
-        break-after: avoid;
-        page-break-after: avoid;
+      #datasources td, #datasources th {
+        padding: 3px 6px !important;
       }
 
-      /* Allow natural page breaks between major sections */
-      .section { break-before: auto; page-break-before: auto; }
+      .qr-grid { grid-template-columns: 1fr !important; }
 
-      /* Major sections always start at the top of a new page */
-      #scorecard,
-      #recommendations,
-      #verification {
-        break-before: page !important;
-        page-break-before: always !important;
+      .card {
+        break-inside: avoid !important;
+        font-size: 0.9em !important;
       }
     }
   </style>
