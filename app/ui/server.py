@@ -141,6 +141,7 @@ def run_scan_background(
                 finished_at=_iso_now(),
                 brief_path=str(brief) if brief else None,
             )
+            _write_community_run(job_id, community_id, state, preset, mode, depth)
         else:
             _update_job(
                 job_id,
@@ -345,6 +346,28 @@ def _write_zip_run(community_id: str, city_name: str, state: str, use_v2: bool) 
             "city_name": city_name,
             "state": state,
             "zip_version": "v2" if use_v2 else "v1",
+        },
+        "start_time": _iso_now(),
+    }
+    (run_dir / "meta.json").write_text(json.dumps(meta, indent=2))
+    (run_dir / "status.json").write_text(json.dumps({"state": "done", "exit_code": 0}))
+
+
+def _write_community_run(
+    job_id: str, community_id: str, state: str, preset: str, mode: str, depth: str
+) -> None:
+    """Persist a run record to app/runs/ so completed community scans appear in /api/runs."""
+    run_dir = RUNS_DIR / job_id
+    run_dir.mkdir(parents=True, exist_ok=True)
+    meta = {
+        "run_id": job_id,
+        "target": community_id,
+        "flags": {
+            "target": community_id,
+            "state": state.upper(),
+            "depth": depth,
+            "preset": preset,
+            "mode": mode,
         },
         "start_time": _iso_now(),
     }
