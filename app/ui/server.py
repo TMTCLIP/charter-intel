@@ -590,7 +590,7 @@ def brief():
 
 
 @app.route("/api/brief/pdf")
-# @require_login  # disabled for local test only — restore before push
+@require_login
 def brief_pdf():
     """Render a community brief as a PDF and return it as a download.
 
