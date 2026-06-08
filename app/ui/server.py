@@ -21,7 +21,8 @@ import threading
 from pathlib import Path
 
 import yaml
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, Response, jsonify, render_template, request
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 # Make app/ importable so we can reuse config, rate_limit without duplicating.
 _APP_DIR = Path(__file__).resolve().parent.parent
@@ -376,6 +377,29 @@ def _find_brief_path(target: str, preset: str, mode: str) -> Path | None:
     return candidates[-1] if candidates else None
 
 
+def _pdf_patch_excluded_weights(brief: dict, state: str, community_id: str) -> None:
+    """Mirror of s7_render._patch_excluded_weights for the PDF route.
+
+    The LLM sometimes zeroes weights for excluded dimensions. Restore the original
+    design weight from s5_scorecard.json so the PDF table is accurate.
+    """
+    dim_table = (brief.get("scorecard_summary") or {}).get("dimension_table")
+    if not dim_table:
+        return
+    sc_path = BASE_DIR / "data" / "cache" / "community" / state / community_id / "s5_scorecard.json"
+    if not sc_path.exists():
+        return
+    try:
+        sc_dims = json.loads(sc_path.read_text()).get("dimensions", {})
+    except Exception:
+        return
+    for row in dim_table:
+        if row.get("used_default") and row.get("weight") == 0:
+            original = sc_dims.get(row.get("dimension"), {}).get("weight")
+            if original is not None:
+                row["weight"] = original
+
+
 # ---------------------------------------------------------------------------
 # Routes
 # ---------------------------------------------------------------------------
@@ -563,6 +587,90 @@ def brief():
         return "Brief not found", 404
 
     return brief_path.read_text(errors="replace"), 200, {"Content-Type": "text/html; charset=utf-8"}
+
+
+@app.route("/api/brief/pdf")
+# @require_login  # disabled for local test only — restore before push
+def brief_pdf():
+    """Render a community brief as a PDF and return it as a download.
+
+    Query param: run_id=<run_id>
+    Response: application/pdf
+    """
+    run_id = request.args.get("run_id", "").strip()
+    if not run_id:
+        return "Missing run_id", 400
+
+    run_dir = RUNS_DIR / run_id
+    meta_file = run_dir / "meta.json"
+    if not meta_file.exists():
+        return "Run not found", 404
+
+    try:
+        meta = json.loads(meta_file.read_text())
+    except Exception:
+        return "Invalid run metadata", 500
+
+    target = meta.get("target", "")
+    flags = meta.get("flags", {})
+    preset = (flags.get("preset") or "growth").strip()
+    mode = (flags.get("mode") or "2").strip()
+
+    if mode == "zip":
+        return "PDF export is not available for ZIP drill briefs", 400
+
+    state = (flags.get("state") or target.split("-")[0]).lower().strip()
+
+    brief_json_path = (
+        BASE_DIR / "data" / "cache" / "synthesis" / state / target
+        / f"s6_brief_{preset}_mode{mode}.json"
+    )
+    if not brief_json_path.exists():
+        return "Brief data not found — run S6 first or use the HTML brief instead", 404
+
+    try:
+        brief = json.loads(brief_json_path.read_text())
+    except Exception:
+        return "Failed to load brief data", 500
+
+    _pdf_patch_excluded_weights(brief, state, target)
+
+    pci_promoted = False
+    s4_path = BASE_DIR / "data" / "cache" / "community" / state / target / "s4_verified.json"
+    if s4_path.exists():
+        try:
+            pci_promoted = json.loads(s4_path.read_text()).get("pci_promoted_from_cache", False)
+        except Exception:
+            pass
+
+    pdf_env = Environment(
+        loader=FileSystemLoader(str(BASE_DIR / "templates")),
+        autoescape=select_autoescape(default=True, default_for_string=True),
+    )
+    html_string = pdf_env.get_template("pdf_brief.html.j2").render(
+        brief=brief,
+        schools=brief.get("top_charter_schools", []),
+        pci_promoted=pci_promoted,
+    )
+
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page()
+            page.set_content(html_string, wait_until="networkidle")
+            pdf_bytes = page.pdf(format="Letter", print_background=True)
+            browser.close()
+    except Exception as exc:
+        app.logger.error("Playwright PDF generation failed for %s: %s", run_id, exc)
+        return f"PDF generation failed: {exc}", 500
+
+    filename = f"{target}_{preset}_brief.pdf"
+    return Response(
+        pdf_bytes,
+        mimetype="application/pdf",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
 
 
 @app.route("/api/scan", methods=["POST"])

@@ -798,4 +798,29 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Wire Phase 2 ingestion to write `s2_cache_bust` signals with correct `source_metadata` JSON
 - [ ] Run full MS community batch (`--state MS --depth fast`) once charter_law is verified
 
+---
+
+### Session — 2026-06-08 (c746d88)
+
+**Accomplished:**
+- Created `templates/pdf_brief.html.j2` — single-column PDF-optimized Jinja2 template; IBM Plex fonts (Google Fonts + system fallbacks), identical dark-theme palette, `@page Letter` sizing, all brief sections (scorecard bars, drivers, flags, school cards or greenfield notice, authorizers, recommendations, quick reads, needs verification, data sources), no animations or sidebar
+- Added `GET /api/brief/pdf?run_id=<run_id>` route to `app/ui/server.py` — loads S6 brief JSON from `data/cache/synthesis/`, applies weight patch, renders `pdf_brief.html.j2`, pipes through Playwright Chromium (`wait_until="networkidle"`), returns `application/pdf` download
+- Added `_pdf_patch_excluded_weights()` to `server.py` — inlined mirror of `s7_render._patch_excluded_weights`, restores original dimension weights from `s5_scorecard.json` before PDF render
+- Added `#btn-download-pdf` anchor to `app/ui/templates/index.html` brief toolbar; wired in `loadBrief()` in `app.js` — hidden by default, shown with correct `href` for non-zip runs only
+- Added inline PDF link to run cards in `renderRunCards()` in `app.js` alongside "View Brief" button; zip drill runs excluded from both buttons
+- Added `playwright>=1.40.0` to `requirements.txt`; updated `Dockerfile` with `ENV PLAYWRIGHT_BROWSERS_PATH` and `playwright install chromium --with-deps` layer
+
+**Decisions:**
+- PDF route uses `run_id` query param (not path slugs) to match the existing `/api/brief` pattern — consistent with how all brief data is already accessed server-side
+- Route reads S6 brief JSON directly (not the pre-rendered HTML) so the PDF template gets structured data, enabling clean single-column layout independent of the screen template
+- `_pdf_patch_excluded_weights` inlined in `server.py` rather than imported from `pipeline/` — preserves the app's CLI-only contract with the pipeline layer
+- IBM Plex fonts loaded via Google Fonts CDN; `wait_until="networkidle"` in Playwright gives fonts time to resolve before PDF capture
+
+**Next Steps:**
+- [ ] **SECURITY: restore `@require_login` on `/api/brief/pdf`** — commented out for local testing (`app/ui/server.py:593`), must be re-enabled before any Railway deploy
+- [ ] Run `playwright install chromium` locally once before testing PDF route
+- [ ] Test Google Fonts loading inside Railway container — if CDN is blocked, self-host fonts in `app/ui/static/fonts/` and update `pdf_brief.html.j2` fallback `src:` URLs
+- [ ] Smoke-test PDF output against `demo-questa-001` run (ms-oxford is the primary test case)
+- [ ] Remove debug `console.log` statements in `_cbInit`, `_cbOpenPanel`, and related `_cb*` functions (added in commit `b9e0b42`, still present)
+
 **Tests:** 650 passed.

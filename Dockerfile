@@ -32,6 +32,13 @@ COPY app/requirements.txt /app/app/requirements.txt
 RUN pip install --upgrade pip \
  && pip install -r /app/requirements.txt -r /app/app/requirements.txt
 
+# Install Playwright's Chromium browser + its system dependencies.
+# Runs after pip install so it's cached in the same layer as the browser binary.
+# --with-deps installs the OS packages Chromium needs (libnss, libglib, etc.).
+# PLAYWRIGHT_BROWSERS_PATH keeps the binary inside /app for the volume mount.
+ENV PLAYWRIGHT_BROWSERS_PATH=/app/.playwright-browsers
+RUN playwright install chromium --with-deps
+
 # Application + pipeline code.
 COPY . /app
 

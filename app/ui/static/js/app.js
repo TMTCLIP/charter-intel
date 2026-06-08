@@ -1026,6 +1026,18 @@ async function loadBrief(runId) {
   frame.style.display = "none";
   loading.classList.remove("hidden");
 
+  // Wire up Download PDF button — only for community runs (not zip drill)
+  const pdfBtn = document.getElementById("btn-download-pdf");
+  if (pdfBtn) {
+    const isZip = (run.mode || "") === "zip";
+    if (!isZip && run.has_brief) {
+      pdfBtn.href = `/api/brief/pdf?run_id=${encodeURIComponent(runId)}`;
+      pdfBtn.style.display = "";
+    } else {
+      pdfBtn.style.display = "none";
+    }
+  }
+
   if (!run.has_brief) {
     loading.textContent = "No brief available for this scan.";
     return;
@@ -1106,7 +1118,8 @@ function renderRunCards(runs) {
         <div class="run-card-footer">
           <span class="status-badge ${st}">${statusLabel[st] || st}</span>
           ${run.has_brief
-            ? `<button class="btn-view-brief-sm" data-run-id="${esc(run.run_id)}">View Brief</button>`
+            ? `<button class="btn-view-brief-sm" data-run-id="${esc(run.run_id)}">View Brief</button>
+               ${run.mode !== "zip" ? `<a class="btn-outline-sm" href="/api/brief/pdf?run_id=${esc(run.run_id)}" style="text-decoration:none;">PDF</a>` : ""}`
             : `<span style="font-size:11px;color:var(--mist);opacity:0.55;">No brief yet</span>`}
         </div>
       </div>`;
