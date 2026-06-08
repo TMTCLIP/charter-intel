@@ -681,15 +681,15 @@ def brief_pdf():
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page()
+            page.set_viewport_size({"width": 816, "height": 1056})
             page.set_content(
                 html_string,
-                base_url=f"file://{BASE_DIR}/",
                 wait_until="networkidle",
             )
             pdf_bytes = page.pdf(
                 format="Letter",
                 print_background=True,
-                margin={"top": "0.6in", "bottom": "0.6in", "left": "0.7in", "right": "0.7in"},
+                margin={"top": "0", "bottom": "0", "left": "0", "right": "0"},
             )
             browser.close()
     except Exception as exc:

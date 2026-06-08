@@ -6,7 +6,7 @@
   <style>
     @page {
       size: Letter;
-      margin: 0.6in 0.7in;
+      margin: 0;
     }
 
     :root {
@@ -42,12 +42,19 @@
       print-color-adjust: exact !important;
     }
 
+    html, body {
+      width: 100%;
+      min-height: 100%;
+      background: #0d1117;
+    }
+
     body {
       font-family: var(--font-sans);
       font-size: 11px;
       line-height: 1.55;
       color: var(--text-primary);
       background: var(--bg-primary);
+      padding: 0.6in 0.7in;
     }
 
     /* ── PDF header ── */
@@ -223,7 +230,7 @@
       margin-bottom: 6px;
     }
     .bar-name  { font-size: 11px; font-weight: 600; color: var(--text-primary); }
-    .bar-score { font-family: var(--font-mono); font-size: 12px; font-weight: 700; }
+    .bar-score { font-family: var(--font-mono); font-size: 12px; font-weight: 700; flex-shrink: 0; }
 
     .bar-track {
       background: rgba(255,255,255,0.06);

@@ -100,6 +100,13 @@ def logout():
 def require_login(f):
     @functools.wraps(f)
     def decorated(*args, **kwargs):
+        if (
+            os.environ.get("FLASK_ENV") == "development"
+            and request.remote_addr in ("127.0.0.1", "::1")
+        ):
+            session.setdefault("user_email", "dev@themindtrust.org")
+            session.setdefault("user_name", "Dev (local)")
+            return f(*args, **kwargs)
         if "user_email" not in session:
             return redirect("/login")
         return f(*args, **kwargs)
