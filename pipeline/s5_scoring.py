@@ -490,6 +490,15 @@ def score_dimension(
     # Check if primary fact is available
     primary_value = _get_fact_value(primary_fact_key, relevant_facts)
 
+    # ── Consistency-check override: demoted or corrected facts → neutral 5.0,
+    # weight stays in composite denominator (not excluded like genuinely missing data).
+    # Must run before all special-case scoring paths so it always takes priority.
+    _cc_override = _check_consistency_check_override(
+        dim_name, relevant_facts, verified_bundle, weight, supporting_ids
+    )
+    if _cc_override is not None:
+        return _cc_override
+
     # academic_need: when no verified proficiency data exists (TN, WI, etc.),
     # force used_default=True so it's excluded from the composite rather than
     # anchoring at 5.0 on a hallucinated or absent ELA fact.
@@ -914,6 +923,63 @@ def extract_facts_for_dimension(
         f for f in all_facts
         if f.get("dimension") == dim_name and f.get("in_main_analysis", False)
     ]
+
+
+def _check_consistency_check_override(
+    dim_name: str,
+    relevant_facts: list[dict],
+    verified_bundle: dict,
+    weight: float,
+    supporting_ids: list[str],
+) -> Optional[dict]:
+    """Return a neutral (5.0) dimension result if any fact for this dimension was
+    demoted or corrected by an S4 consistency check.
+
+    Demoted facts (in_main_analysis=False, demoted_by_consistency_check=True) are
+    absent from relevant_facts — scan the full bundle to detect them.
+    Corrected facts (corrected_by_consistency_check=True) are in relevant_facts.
+    Both cases: score=5.0, used_default=False (weight stays in composite denominator).
+    Returns None to continue normal scoring when no consistency check fired.
+    """
+    # Corrected: fact is in relevant_facts (in_main_analysis stayed True)
+    for f in relevant_facts:
+        if f.get("corrected_by_consistency_check"):
+            return {
+                "score": 5.0,
+                "weight": weight,
+                "weighted_contribution": round(5.0 * weight, 4),
+                "confidence": Confidence.LOW.value,
+                "primary_driver": (
+                    f"[{f.get('consistency_check_id', 'S4 check')}] "
+                    f"{f.get('consistency_check_reason', '')}"
+                ),
+                "supporting_fact_ids": supporting_ids,
+                "used_default": False,
+                "consistency_check_triggered": True,
+                "consistency_check_id": f.get("consistency_check_id"),
+                "consistency_check_reason": f.get("consistency_check_reason"),
+                "fallback_score": 5.0,
+            }
+    # Demoted: fact has in_main_analysis=False, not in relevant_facts; scan full bundle
+    for f in verified_bundle.get("facts", []):
+        if f.get("dimension") == dim_name and f.get("demoted_by_consistency_check"):
+            return {
+                "score": 5.0,
+                "weight": weight,
+                "weighted_contribution": round(5.0 * weight, 4),
+                "confidence": Confidence.LOW.value,
+                "primary_driver": (
+                    f"[{f.get('consistency_check_id', 'S4 check')}] "
+                    f"{f.get('consistency_check_reason', '')}"
+                ),
+                "supporting_fact_ids": supporting_ids,
+                "used_default": False,
+                "consistency_check_triggered": True,
+                "consistency_check_id": f.get("consistency_check_id"),
+                "consistency_check_reason": f.get("consistency_check_reason"),
+                "fallback_score": 5.0,
+            }
+    return None
 
 
 def _get_fact_value(fact_key: Optional[str], facts: list[dict]) -> Any:

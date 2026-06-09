@@ -550,6 +550,12 @@ def _run_consistency_checks(facts: list[dict], pipeline_context: dict) -> list[d
                     numeric_val = -1
                 if numeric_val == 0:
                     facts[i]["value"] = 1
+                    facts[i]["corrected_by_consistency_check"] = True
+                    facts[i]["consistency_check_id"] = "CHECK-001"
+                    facts[i]["consistency_check_reason"] = (
+                        "CSAB is accessible; local board consent is procedural, not a "
+                        "prohibition. num_accessible_authorizers corrected from 0 to 1."
+                    )
                     logger.warning(
                         "[%s] [S4-CONSISTENCY] CHECK-001 authorizer_accessibility_vs_statutory:"
                         " %s → 1\nReason: %s has a consent_required statutory barrier"
@@ -590,6 +596,13 @@ def _run_consistency_checks(facts: list[dict], pipeline_context: dict) -> list[d
             if primary_trigger or secondary_trigger:
                 old_val = fact.get("value")
                 facts[i]["in_main_analysis"] = False
+                facts[i]["demoted_by_consistency_check"] = True
+                facts[i]["consistency_check_id"] = "CHECK-002"
+                facts[i]["consistency_check_reason"] = (
+                    "Score derived from an ineligibility premise; district statutory "
+                    "classification is consent_required, not prohibited. Reverted to "
+                    "neutral default."
+                )
                 facts[i]["needs_verification_reason"] = (
                     "CHECK-002: political climate index derived from an ineligibility "
                     "premise — district statutory classification is consent_required, "
@@ -616,6 +629,12 @@ def _run_consistency_checks(facts: list[dict], pipeline_context: dict) -> list[d
             if any(phrase in val_str for phrase in _ORIENTATION_RESTRICTION_PHRASES) and not is_prohibited:
                 old_val = fact.get("value")
                 facts[i]["in_main_analysis"] = False
+                facts[i]["demoted_by_consistency_check"] = True
+                facts[i]["consistency_check_id"] = "CHECK-003"
+                facts[i]["consistency_check_reason"] = (
+                    "Orientation claims restriction/ineligibility but district statutory "
+                    "classification is not prohibited."
+                )
                 if not facts[i].get("needs_verification_reason"):
                     facts[i]["needs_verification_reason"] = (
                         "CHECK-003: orientation claims restriction/ineligibility but "

@@ -22,6 +22,7 @@ if _ROOT not in sys.path:
     sys.path.insert(0, _ROOT)
 
 from pipeline.s6_synthesis import (
+    _inject_consistency_check_banner,
     _inject_recommendation_gate,
     _inject_teacher_supply_warning,
     _inject_tribal_jurisdiction_flag,
@@ -279,3 +280,85 @@ class TestSchemaLengthCap:
         out, notices = _truncate_to_schema_limits(brief)
         assert notices == []
         assert out["executive_snapshot"] == "Short snapshot."
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Consistency-check banner injection
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestConsistencyCheckBannerInjection:
+    """_inject_consistency_check_banner collects consistency_check_triggered
+    dimensions from the scorecard and injects them onto the brief for template rendering."""
+
+    def _scorecard(self, dims: dict) -> dict:
+        return {"dimensions": dims}
+
+    def test_injects_corrections_when_check_triggered(self):
+        sc = self._scorecard({
+            "political_climate": {
+                "score": 5.0, "weight": 0.10, "used_default": False,
+                "consistency_check_triggered": True,
+                "consistency_check_id": "CHECK-002",
+                "consistency_check_reason": "Score derived from ineligibility premise.",
+            },
+            "authorizer_friendliness": {
+                "score": 6.0, "weight": 0.15, "used_default": False,
+            },
+        })
+        out = _inject_consistency_check_banner({}, sc)
+        assert "consistency_check_corrections" in out
+        corrections = out["consistency_check_corrections"]
+        assert len(corrections) == 1
+        assert corrections[0]["dimension"] == "political_climate"
+        assert corrections[0]["consistency_check_id"] == "CHECK-002"
+        assert corrections[0]["consistency_check_reason"] is not None
+
+    def test_no_key_when_no_checks_triggered(self):
+        """When no dimensions have consistency_check_triggered, the key must be absent
+        so the template banner does not render."""
+        sc = self._scorecard({
+            "political_climate": {"score": 7.0, "weight": 0.10, "used_default": False},
+            "authorizer_friendliness": {"score": 6.0, "weight": 0.15, "used_default": False},
+        })
+        out = _inject_consistency_check_banner({}, sc)
+        assert "consistency_check_corrections" not in out
+
+    def test_multiple_triggered_dimensions_all_collected(self):
+        sc = self._scorecard({
+            "political_climate": {
+                "score": 5.0, "weight": 0.10, "used_default": False,
+                "consistency_check_triggered": True,
+                "consistency_check_id": "CHECK-002",
+                "consistency_check_reason": "Ineligibility premise.",
+            },
+            "authorizer_friendliness": {
+                "score": 5.0, "weight": 0.15, "used_default": False,
+                "consistency_check_triggered": True,
+                "consistency_check_id": "CHECK-001",
+                "consistency_check_reason": "CSAB is accessible.",
+            },
+        })
+        out = _inject_consistency_check_banner({}, sc)
+        corrections = out["consistency_check_corrections"]
+        assert len(corrections) == 2
+        check_ids = {c["consistency_check_id"] for c in corrections}
+        assert "CHECK-001" in check_ids
+        assert "CHECK-002" in check_ids
+
+    def test_empty_dimensions_no_key_injected(self):
+        out = _inject_consistency_check_banner({}, {"dimensions": {}})
+        assert "consistency_check_corrections" not in out
+
+    def test_existing_brief_fields_preserved(self):
+        brief = {"community_id": "ms-oxford-2803450", "composite_score": 6.28}
+        sc = self._scorecard({
+            "political_climate": {
+                "score": 5.0, "weight": 0.10, "used_default": False,
+                "consistency_check_triggered": True,
+                "consistency_check_id": "CHECK-002",
+                "consistency_check_reason": "Reason.",
+            }
+        })
+        out = _inject_consistency_check_banner(brief, sc)
+        assert out["community_id"] == "ms-oxford-2803450"
+        assert out["composite_score"] == pytest.approx(6.28)

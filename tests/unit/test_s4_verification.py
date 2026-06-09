@@ -373,3 +373,85 @@ def test_trust_hierarchy_raises_when_enabled():
     facts = [{"fact_key": "some_fact", "value": "x"}]
     with pytest.raises(NotImplementedError):
         s4._run_trust_hierarchy_check(facts, {}, {"s4_trust_hierarchy_enabled": True})
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Consistency-check flag tagging (Steps 2 + 3 feature)
+# ─────────────────────────────────────────────────────────────────────────────
+
+def test_check_001_sets_corrected_flag():
+    """CHECK-001 must tag corrected_by_consistency_check=True and the check ID/reason
+    on the fact it fixes (num_accessible_authorizers 0 → 1)."""
+    facts = [{"fact_key": "num_accessible_authorizers", "value": 0, "in_main_analysis": True}]
+    out = s4._run_consistency_checks(facts, _ctx(_consent_barrier()))
+    f = out[0]
+    assert f["value"] == 1
+    assert f.get("corrected_by_consistency_check") is True
+    assert f.get("consistency_check_id") == "CHECK-001"
+    assert f.get("consistency_check_reason") is not None
+
+
+def test_check_001_does_not_tag_when_value_already_nonzero():
+    """No tagging when num_accessible_authorizers is already ≥1."""
+    facts = [{"fact_key": "num_accessible_authorizers", "value": 2, "in_main_analysis": True}]
+    out = s4._run_consistency_checks(facts, _ctx(_consent_barrier()))
+    assert out[0].get("corrected_by_consistency_check") is not True
+
+
+def test_check_002_sets_demoted_flag():
+    """CHECK-002 must tag demoted_by_consistency_check=True and CHECK-002 id on the
+    political_climate_index fact it demotes to in_main_analysis=False."""
+    facts = [{
+        "fact_key": "political_climate_index",
+        "value": 3.0,
+        "in_main_analysis": True,
+        "claim": "District only eligible for D/F students; climate hostile.",
+        "verification_status": "UNVERIFIED",
+    }]
+    out = s4._run_consistency_checks(facts, _ctx(_consent_barrier()))
+    f = out[0]
+    assert f["in_main_analysis"] is False
+    assert f.get("demoted_by_consistency_check") is True
+    assert f.get("consistency_check_id") == "CHECK-002"
+    assert f.get("consistency_check_reason") is not None
+
+
+def test_check_002_does_not_set_demoted_flag_on_clean_fact():
+    """A PCI fact with no ineligibility language must NOT have the demotion flag."""
+    facts = [{
+        "fact_key": "political_climate_index",
+        "value": 7.0,
+        "in_main_analysis": True,
+        "claim": "School board broadly supportive of charter growth.",
+        "verification_status": "VERIFIED",
+    }]
+    out = s4._run_consistency_checks(facts, _ctx(_consent_barrier()))
+    assert out[0].get("demoted_by_consistency_check") is not True
+
+
+def test_check_003_sets_demoted_flag():
+    """CHECK-003 must tag demoted_by_consistency_check=True on school_board_charter_orientation
+    when it claims restriction/ineligibility but no prohibition barrier exists."""
+    facts = [{
+        "fact_key": "school_board_charter_orientation",
+        "value": "ineligible",
+        "in_main_analysis": True,
+    }]
+    out = s4._run_consistency_checks(facts, _ctx(_consent_barrier()))
+    f = out[0]
+    assert f["in_main_analysis"] is False
+    assert f.get("demoted_by_consistency_check") is True
+    assert f.get("consistency_check_id") == "CHECK-003"
+    assert f.get("consistency_check_reason") is not None
+
+
+def test_non_check_facts_do_not_have_demotion_flag():
+    """Facts untouched by consistency checks must not have demoted_by_consistency_check."""
+    facts = [
+        {"fact_key": "k12_enrollment_total", "value": 5000, "in_main_analysis": True},
+        {"fact_key": "district_proficiency_ela_pct", "value": 42.0, "in_main_analysis": True},
+    ]
+    out = s4._run_consistency_checks(facts, _ctx(_consent_barrier()))
+    for f in out:
+        assert not f.get("demoted_by_consistency_check")
+        assert not f.get("corrected_by_consistency_check")

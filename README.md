@@ -990,6 +990,32 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ---
 
+### Session — 2026-06-09 (bc1676c)
+
+**Accomplished:**
+- Added `demoted_by_consistency_check`, `consistency_check_id`, and `consistency_check_reason` fields to `_run_consistency_checks()` in `pipeline/s4_verification.py` so CHECK-001/002/003 are fully traceable — CHECK-001 sets `corrected_by_consistency_check=True`, CHECK-002/003 set `demoted_by_consistency_check=True`
+- Added `_check_consistency_check_override()` helper in `pipeline/s5_scoring.py` called at the top of `score_dimension()` before all special-case paths; demoted/corrected dimensions return score=5.0 with `used_default=False`, keeping weight in the composite denominator (eliminates ~0.2 composite inflation from denominator shrinkage)
+- Added `_inject_consistency_check_banner()` in `pipeline/s6_synthesis.py` that reads `consistency_check_triggered` flags from scorecard dimensions and injects `brief["consistency_check_corrections"]` for template rendering
+- Added amber `banner-pci-legacy` banner to all three HTML templates (`strategic_brief.html.j2`, `greenfield_brief.html.j2`, `pdf_brief.html.j2`) that renders per-dimension check details when `brief.consistency_check_corrections` is non-empty
+- Updated `schemas/brief.schema.json` to add `consistency_check_corrections` array property (required due to top-level `additionalProperties: false`)
+- Oxford MS cold render confirmed: composite 6.28 (target 6.28 ± 0.10), banner present listing `political_climate/CHECK-002` and `authorizer_friendliness/CHECK-001`, genuine exclusions (`charter_saturation`, `competitive_opportunity`) unchanged
+- Suite 825 → **843 passing** (18 new tests: 9 in test_s5_scoring, 7 in test_s4_verification, 5 in test_s6_injections)
+
+**Decisions:**
+- `used_default=False` for both corrected and demoted facts so the composite denominator stays stable; genuinely missing dimensions (`used_default=True`) are still excluded as before
+- S5 checks corrected facts (in `relevant_facts`) before demoted facts (full-bundle scan) — CHECK-001 takes precedence over CHECK-003 for `authorizer_friendliness` when both fire on the same dimension
+- Brief schema required an explicit property addition; scorecard schema did not (dimension_score allows additional properties)
+
+**Next Steps:**
+- [ ] Live `--force` MS batch to exercise consistency-check flags across ackerman/jackson (other MS communities may also trigger CHECK-002/003)
+- [ ] Lennon sign-off on methodology questions A–D in `docs/lennon_oxford_scoring_flags.md`
+- [ ] TODO(S35-sweep): `_pass_e_static_resolution` verification note references NM-specific config file — generalize to `config/{state}_ped_shortage_areas.yaml`
+- [ ] Option B trust hierarchy (Lennon sign-off required before implementing)
+
+**Tests:** 843 passed (`python3 -m pytest -q`).
+
+---
+
 ### Session — 2026-06-09 (9a9e515)
 
 **Accomplished:**

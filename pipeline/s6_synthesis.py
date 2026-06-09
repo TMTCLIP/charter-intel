@@ -203,6 +203,7 @@ def run(
 
     # --- Session 18 honesty injections (deterministic; bypass Haiku) ---
     brief_json = _inject_recommendation_gate(brief_json, scorecard)
+    brief_json = _inject_consistency_check_banner(brief_json, scorecard)
     brief_json = _inject_tribal_jurisdiction_flag(brief_json, state, community_id)
     brief_json = _inject_teacher_supply_warning(brief_json, state, community_id)
 
@@ -906,6 +907,30 @@ def _inject_recommendation_gate(brief_json: dict, scorecard: dict) -> dict:
         "confidence_overall": confidence_overall,
         "reason": reason,
     }
+    return brief_json
+
+
+def _inject_consistency_check_banner(brief_json: dict, scorecard: dict) -> dict:
+    """Collect S4 consistency-check-triggered dimensions and inject banner data onto brief.
+
+    When S4 consistency checks demote or correct a fact, S5 marks the dimension with
+    consistency_check_triggered=True. This function reads those dimension-level flags
+    from the scorecard and injects brief["consistency_check_corrections"] — a list of
+    {dimension, consistency_check_id, consistency_check_reason} dicts — which the
+    S7 template uses to render the ⚠ amber banner (same style as pci_promoted banner).
+    When no checks fired, the key is absent from the brief and no banner renders.
+    """
+    dims = scorecard.get("dimensions") or {}
+    corrections = []
+    for dim_name, dim_data in dims.items():
+        if dim_data.get("consistency_check_triggered"):
+            corrections.append({
+                "dimension": dim_name,
+                "consistency_check_id": dim_data.get("consistency_check_id"),
+                "consistency_check_reason": dim_data.get("consistency_check_reason"),
+            })
+    if corrections:
+        brief_json["consistency_check_corrections"] = corrections
     return brief_json
 
 

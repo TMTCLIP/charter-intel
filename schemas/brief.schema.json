@@ -311,6 +311,20 @@
           "corrected_phrase": {"type": "string"}
         }
       }
+    },
+
+    "consistency_check_corrections": {
+      "type": "array",
+      "description": "Injected by s6_synthesis._inject_consistency_check_banner when S4 consistency checks (CHECK-001/002/003) demoted or corrected facts. Each entry names the affected dimension and the check that fired. The S7 template renders an amber ⚠ banner listing these corrections; affected dimensions are scored at neutral (5.0) with weights preserved.",
+      "items": {
+        "type": "object",
+        "required": ["dimension", "consistency_check_id", "consistency_check_reason"],
+        "properties": {
+          "dimension": {"type": "string"},
+          "consistency_check_id": {"type": ["string", "null"]},
+          "consistency_check_reason": {"type": ["string", "null"]}
+        }
+      }
     }
   },
 

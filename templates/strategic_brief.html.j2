@@ -770,6 +770,16 @@
     </div>
     {% endif %}
 
+    {% if brief.consistency_check_corrections %}
+    <div class="banner banner-pci-legacy">
+      <strong>⚠ One or more dimensions were corrected by S4 consistency checks.</strong><br>
+      {% for c in brief.consistency_check_corrections %}
+      · {{ c.dimension | replace("_", " ") | e }} — {{ c.consistency_check_id | e }}: {{ c.consistency_check_reason | e }}<br>
+      {% endfor %}
+      Affected dimensions scored at neutral (5.0); weights preserved.
+    </div>
+    {% endif %}
+
     {# ─── 3. EXECUTIVE SNAPSHOT ─── #}
     <div class="section" id="snapshot">
       <p class="section-label">Executive Snapshot</p>

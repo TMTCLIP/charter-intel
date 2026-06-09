@@ -32,6 +32,7 @@ if _ROOT not in sys.path:
 
 from pipeline.s5_scoring import (
     _build_fact_index,
+    _check_consistency_check_override,
     _score_population_trends,
     check_override_flags,
     compute_tier,
@@ -778,3 +779,149 @@ class TestDataCoverageInsufficient:
             schema = json.load(f)
         enum = schema["properties"]["data_coverage_tier"]["enum"]
         assert "INSUFFICIENT" in enum
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 9. CONSISTENCY-CHECK NEUTRAL FALLBACK
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestConsistencyCheckNeutralFallback:
+    """S4 consistency checks tag demoted/corrected facts; S5 must route them to a
+    neutral 5.0 fallback with used_default=False (weight stays in composite).
+    Genuinely missing dimensions (no fact at all) must still be excluded as before.
+    """
+
+    def _dim_def(self, dim_name: str = "political_climate") -> dict:
+        return _load_weights()["dimensions"][dim_name]
+
+    # ── demoted_by_consistency_check=True → neutral fallback, stays in composite ──
+
+    def test_demoted_fact_returns_5_used_default_false(self):
+        """A dimension whose primary fact was demoted by CHECK-002 gets score=5.0,
+        used_default=False, so the weight stays in the composite denominator."""
+        bundle = {
+            "facts": [{
+                "fact_key": "political_climate_index",
+                "value": 2.5,
+                "datapoint_id": "dp_pci_001",
+                "dimension": "political_climate",
+                "in_main_analysis": False,
+                "demoted_by_consistency_check": True,
+                "consistency_check_id": "CHECK-002",
+                "consistency_check_reason": "Score derived from an ineligibility premise.",
+                "confidence": "LOW",
+            }]
+        }
+        dim_def = self._dim_def("political_climate")
+        result = score_dimension("political_climate", dim_def, bundle, weight=0.10)
+        assert result["score"] == pytest.approx(5.0)
+        assert result["used_default"] is False
+        assert result["consistency_check_triggered"] is True
+        assert result["consistency_check_id"] == "CHECK-002"
+        assert result["fallback_score"] == pytest.approx(5.0)
+
+    def test_demoted_fact_weighted_contribution_uses_full_weight(self):
+        """weighted_contribution must be score * weight (5.0 * w), not zero."""
+        bundle = {
+            "facts": [{
+                "fact_key": "school_board_charter_orientation",
+                "value": "restricted",
+                "datapoint_id": "dp_sbo_001",
+                "dimension": "authorizer_friendliness",
+                "in_main_analysis": False,
+                "demoted_by_consistency_check": True,
+                "consistency_check_id": "CHECK-003",
+                "consistency_check_reason": "Orientation claims restriction but not prohibited.",
+                "confidence": "LOW",
+            }]
+        }
+        dim_def = self._dim_def("authorizer_friendliness")
+        weight = 0.15
+        result = score_dimension("authorizer_friendliness", dim_def, bundle, weight=weight)
+        assert result["score"] == pytest.approx(5.0)
+        assert result["used_default"] is False
+        assert result["weighted_contribution"] == pytest.approx(5.0 * weight, abs=1e-6)
+
+    # ── corrected_by_consistency_check=True → same neutral fallback ──
+
+    def test_corrected_fact_returns_5_used_default_false(self):
+        """A dimension whose primary fact was corrected by CHECK-001 gets score=5.0,
+        used_default=False (value was corrected, not absent)."""
+        bundle = {
+            "facts": [{
+                "fact_key": "num_accessible_authorizers",
+                "value": 1,
+                "datapoint_id": "dp_auth_001",
+                "dimension": "authorizer_friendliness",
+                "in_main_analysis": True,
+                "corrected_by_consistency_check": True,
+                "consistency_check_id": "CHECK-001",
+                "consistency_check_reason": "CSAB is accessible; corrected from 0 to 1.",
+                "confidence": "MODERATE",
+            }]
+        }
+        dim_def = self._dim_def("authorizer_friendliness")
+        result = score_dimension("authorizer_friendliness", dim_def, bundle, weight=0.15)
+        assert result["score"] == pytest.approx(5.0)
+        assert result["used_default"] is False
+        assert result["consistency_check_triggered"] is True
+        assert result["consistency_check_id"] == "CHECK-001"
+
+    # ── no consistency check → exclude as before (used_default=True) ──
+
+    def test_genuinely_missing_dimension_still_excluded(self):
+        """When no consistency check fired and the primary fact is absent,
+        the dimension uses used_default=True and is excluded from the composite."""
+        bundle = {"facts": []}
+        dim_def = self._dim_def("political_climate")
+        result = score_dimension("political_climate", dim_def, bundle, weight=0.10)
+        assert result["used_default"] is True
+
+    def test_normal_fact_no_check_scores_normally(self):
+        """A fact with no consistency-check flags must follow the normal scoring path
+        and not be intercepted by the consistency-check override."""
+        bundle = {
+            "facts": [{
+                "fact_key": "political_climate_index",
+                "value": 7.0,
+                "datapoint_id": "dp_pci_002",
+                "dimension": "political_climate",
+                "in_main_analysis": True,
+                "confidence": "HIGH",
+            }]
+        }
+        dim_def = self._dim_def("political_climate")
+        result = score_dimension("political_climate", dim_def, bundle, weight=0.10)
+        assert result["used_default"] is False
+        assert result.get("consistency_check_triggered") is not True
+        assert result["score"] == pytest.approx(7.0)
+
+    # ── _check_consistency_check_override helper directly ──
+
+    def test_override_helper_returns_none_when_no_check(self):
+        facts = [{"fact_key": "x", "value": 5, "datapoint_id": "dp_0",
+                  "dimension": "political_climate", "in_main_analysis": True}]
+        bundle = {"facts": facts}
+        result = _check_consistency_check_override("political_climate", facts, bundle, 0.10, [])
+        assert result is None
+
+    def test_override_helper_detects_demoted_in_full_bundle(self):
+        """Demoted facts (in_main_analysis=False) are not in relevant_facts but the
+        helper must still detect them by scanning the full bundle."""
+        demoted = {
+            "fact_key": "political_climate_index", "value": 2.0,
+            "datapoint_id": "dp_pci_003",
+            "dimension": "political_climate", "in_main_analysis": False,
+            "demoted_by_consistency_check": True,
+            "consistency_check_id": "CHECK-002",
+            "consistency_check_reason": "Ineligibility premise.",
+        }
+        # relevant_facts is empty (in_main_analysis=False was filtered out)
+        result = _check_consistency_check_override(
+            "political_climate", [], {"facts": [demoted]}, 0.10, []
+        )
+        assert result is not None
+        assert result["consistency_check_triggered"] is True
+        assert result["consistency_check_id"] == "CHECK-002"
+        assert result["used_default"] is False
+        assert result["score"] == pytest.approx(5.0)
