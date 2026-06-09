@@ -117,6 +117,13 @@ _LTVW_VARS = [
 
 _GET_VARS = ",".join(["NAME", _DENOM_VAR] + _LTVW_VARS)
 
+# District geography types to try in order — mirrors SAIPE's _DISTRICT_TYPES fallback
+_ACS_DISTRICT_TYPES = [
+    "school district (unified)",
+    "school district (elementary)",
+    "school district (secondary)",
+]
+
 # ── Total population query config ─────────────────────────────────────────────
 # B01003_001E: total population for the district geography.
 # Two ACS 5-year vintages give a ~4-year population trend.
@@ -145,56 +152,61 @@ def _api_key() -> Optional[str]:
 
 def _fetch_district(district_code: str, api_key: str, state_fips: str) -> Optional[dict]:
     """
-    Call the Census ACS API for one unified school district.
+    Call the Census ACS API for a school district, trying unified → elementary → secondary.
 
     district_code — 5-digit code derived from leaid[2:]
                     e.g. "00060" for Albuquerque (LEAID 3500060)
 
-    Returns a {column_name: value} dict for the single data row,
-    or None on any network/parse failure.
+    Returns a {column_name: value} dict for the first matching district type,
+    or None if all three types return no data or fail.
     """
-    params = {
-        "get": _GET_VARS,
-        "for": f"school district (unified):{district_code}",
-        "in":  f"state:{state_fips}",
-        "key": api_key,
-    }
-    # quote_via=urllib.parse.quote encodes spaces as %20 (not +)
-    url = (
-        f"{ACS_API_BASE}/{ACS_YEAR}/{ACS_DATASET}?"
-        + urllib.parse.urlencode(params, quote_via=urllib.parse.quote)
-    )
-
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "CLIP/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            raw = resp.read().decode("utf-8")
-    except Exception as exc:
-        log.warning(
-            "acs_fetcher: API request failed for district %s — %s",
-            district_code, exc
+    for district_type in _ACS_DISTRICT_TYPES:
+        params = {
+            "get": _GET_VARS,
+            "for": f"{district_type}:{district_code}",
+            "in":  f"state:{state_fips}",
+            "key": api_key,
+        }
+        # quote_via=urllib.parse.quote encodes spaces as %20 (not +)
+        url = (
+            f"{ACS_API_BASE}/{ACS_YEAR}/{ACS_DATASET}?"
+            + urllib.parse.urlencode(params, quote_via=urllib.parse.quote)
         )
-        return None
 
-    try:
-        data = json.loads(raw)
-    except json.JSONDecodeError as exc:
-        log.warning(
-            "acs_fetcher: could not parse API response for district %s — %s",
-            district_code, exc
-        )
-        return None
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "CLIP/1.0"})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                raw = resp.read().decode("utf-8")
+        except Exception as exc:
+            log.warning(
+                "acs_fetcher: API request failed for district %s type=%s — %s",
+                district_code, district_type, exc
+            )
+            continue
 
-    # Expected: [[header, ...], [value, ...]]
-    if not isinstance(data, list) or len(data) < 2:
-        log.warning(
-            "acs_fetcher: unexpected response shape for district %s: %s",
-            district_code, str(data)[:200]
-        )
-        return None
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError as exc:
+            log.warning(
+                "acs_fetcher: could not parse API response for district %s type=%s — %s",
+                district_code, district_type, exc
+            )
+            continue
 
-    headers, row = data[0], data[1]
-    return dict(zip(headers, row))
+        # Expected: [[header, ...], [value, ...]] — fewer than 2 rows means no match
+        if not isinstance(data, list) or len(data) < 2:
+            continue
+
+        if district_type != "school district (unified)":
+            log.debug(
+                "acs_fetcher: district %s ELL resolved via '%s' (not unified)",
+                district_code, district_type,
+            )
+
+        headers, row = data[0], data[1]
+        return dict(zip(headers, row))
+
+    return None
 
 
 def _fetch_acs_vars(
@@ -203,17 +215,18 @@ def _fetch_acs_vars(
     year: str,
     api_key: str,
     state_fips: str,
+    district_type: str = "school district (unified)",
 ) -> Optional[dict]:
     """
-    Generic ACS API query for any variable set at unified school district level.
+    Generic ACS API query for any variable set at the given school district level.
 
-    Identical transport logic to _fetch_district but accepts arbitrary variables
-    and vintage year — used by get_total_population to query B01003_001E across
-    two vintages without touching the ELL pipeline.
+    Identical transport logic to _fetch_district but accepts arbitrary variables,
+    vintage year, and district type — used by get_total_population to query
+    B01003_001E across two vintages without touching the ELL pipeline.
     """
     params = {
         "get": variables,
-        "for": f"school district (unified):{district_code}",
+        "for": f"{district_type}:{district_code}",
         "in":  f"state:{state_fips}",
         "key": api_key,
     }
@@ -402,14 +415,13 @@ def get_total_population(community_id: str, state: str) -> Optional[dict]:
     """
     Return Census ACS total population estimates for two vintages.
 
-    Queries B01003_001E (total population) at the unified school district level
-    for ACS 5-year vintages 2019 (2015–2019) and 2023 (2019–2023). Computes
-    pct change between vintages as a secondary demographic signal.
+    Queries B01003_001E (total population) at the school district level for ACS
+    5-year vintages 2019 (2015–2019) and 2023 (2019–2023). Computes pct change
+    between vintages as a secondary demographic signal.
 
-    Geography: same unified school district level used by get_district_data —
-    confirmed to work for all NM unified districts with a nces_district_map entry.
-
-    Currently NM-only (STATE_FIPS hardcoded to "35"). Other states return None.
+    Tries unified → elementary → secondary district types in order, mirroring the
+    fallback behavior of get_district_data and SAIPE.  State FIPS is derived via
+    get_state_fips() — works for any state in fips_utils.py.
 
     Return shape:
         {
@@ -468,10 +480,20 @@ def get_total_population(community_id: str, state: str) -> Optional[dict]:
 
     pop_by_vintage: dict[str, int] = {}
     for vintage in (_POP_VINTAGE_EARLY, _POP_VINTAGE_LATE):
-        row = _fetch_acs_vars(district_code, variables, vintage, api_key, state_fips)
+        row = None
+        for dt in _ACS_DISTRICT_TYPES:
+            row = _fetch_acs_vars(district_code, variables, vintage, api_key, state_fips, district_type=dt)
+            if row is not None:
+                if dt != "school district (unified)":
+                    log.debug(
+                        "acs_fetcher: total population for %s vintage %s resolved via '%s'",
+                        community_id, vintage, dt,
+                    )
+                break
+
         if row is None:
             log.warning(
-                "acs_fetcher: total population query failed for %s vintage %s",
+                "acs_fetcher: total population query failed for %s vintage %s across all district types",
                 community_id, vintage,
             )
             return None

@@ -269,3 +269,44 @@ class TestLeaidSplitting:
         assert first_district == expected_district, (
             f"LEAID {leaid}: expected district_code={expected_district}, got {first_district}"
         )
+
+
+# ── F-001: state param is ignored — FIPS always derived from LEAID ────────────
+
+class TestStateParamIgnored:
+    """
+    get_poverty_data(leaid, state=...) must always derive FIPS from leaid[:2].
+    The 'state' parameter is retained for backward compat only and is never used.
+    This test documents and locks that intentional behaviour.
+    """
+
+    def test_wrong_state_arg_does_not_change_fips(self):
+        """Passing state='TX' for a known NM LEAID must still send FIPS '35'."""
+        captured = []
+
+        def _fake_fetch(district_code, district_type, year, api_key, state_fips):
+            captured.append(state_fips)
+            return None
+
+        with (
+            mock.patch.object(saipe_fetcher, "_fetch_district_type", side_effect=_fake_fetch),
+            mock.patch.object(saipe_fetcher, "_read_cache", return_value=None),
+        ):
+            saipe_fetcher.get_poverty_data("3500060", year=2023, state="TX")
+
+        assert len(captured) > 0, "No API calls made"
+        for fips in captured:
+            assert fips == "35", (
+                f"FIPS should be '35' (from LEAID prefix), got '{fips}' "
+                "— state='TX' arg incorrectly overrode the LEAID-derived FIPS."
+            )
+
+    def test_default_state_is_empty_string(self):
+        """Default value for state param must be '' (not 'NM') to avoid misleading callers."""
+        import inspect
+        sig = inspect.signature(saipe_fetcher.get_poverty_data)
+        default = sig.parameters["state"].default
+        assert default == "", (
+            f"get_poverty_data state default must be '' not {default!r} — "
+            "a non-empty default implies the param is used, which is misleading."
+        )

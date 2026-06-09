@@ -524,7 +524,10 @@ MS:
     ms-carrollton: '2800930'
     ms-carthage: '2802520'
     ms-charleston: '2801410'
-    ms-choctaw: '5900031'
+    ms-choctaw: '5900031'  # BIA LEAID — prefix 59 is not a Census state FIPS;
+                            # Census/ACS/SAIPE will return None for this community.
+                            # Tribal district — data structurally unavailable from
+                            # federal survey products. Do not treat None as data gap.
     ms-clarksdale-2800194: '2800194'
     ms-clarksdale-2801050: '2801050'
     ms-clarksdale-2801110: '2801110'

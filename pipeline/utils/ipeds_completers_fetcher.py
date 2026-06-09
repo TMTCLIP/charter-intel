@@ -168,7 +168,7 @@ def get_completers(state_fips: str, cipcode: str = CIP_EDUCATION) -> Optional[di
             "cipcode": "130000",
             "cip_label": "Education (CIP 13)",
             "data_year": 2022,
-            "state_fips": "35",
+            "state_fips": "<caller-supplied>",   # e.g. "35" NM, "28" MS, "47" TN, "55" WI
             "source": "IPEDS",
             "source_url": ..., "source_title": ...,
             "confidence": "MODERATE",

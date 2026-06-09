@@ -964,3 +964,29 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Consider a guard so deprecated community_id artifacts can't accumulate and mislead future red-teams
 
 **Tests:** 790 passed (`python3 -m pytest -q -p no:cacheprovider`).
+
+---
+
+### Session — 2026-06-08 (af70651)
+
+**Accomplished:**
+- Fixed `templates/pdf_brief.html.j2` — added Jinja2 `or` fallback on all three `.bar-name` spans so a missing `display_name` never blanks a scorecard heading; falls back to `dimension | replace('_', ' ') | title`
+- Regenerated Oxford MS PDF with all dimension headings visible; used current post-hardening s6 JSON (6.3 / MODERATE OPPORTUNITY)
+- `pipeline/utils/acs_fetcher.py`: added `_ACS_DISTRICT_TYPES` constant + unified→elementary→secondary fallback loop in `_fetch_district` and `get_total_population`, mirroring SAIPE behavior; extends ELL/population coverage to non-unified and secondary districts
+- `pipeline/s3_fact_extraction.py`: removed hardcoded `"NM state avg"` label (S35 TODO resolved); now uses `state_context.get('state_name', state)` for all states
+- `pipeline/utils/saipe_fetcher.py`: changed default `state=""` (was `"NM"`) to avoid misleading callers — FIPS is always derived from LEAID prefix regardless
+- `config/states.yaml`: annotated `ms-choctaw` BIA LEAID 5900031 with a comment explaining that Census/ACS/SAIPE will structurally return None (BIA prefix 59 is not a Census state FIPS)
+- Added 221 lines of ACS fallback tests to `tests/unit/test_acs_fetcher.py` (F-002: `_fetch_district` loop, end-to-end fallback, BIA LEAID graceful None, unified regression guard)
+- Added 44 lines of SAIPE state-param tests to `tests/unit/test_saipe_fetcher.py` (F-001: state arg ignored, default is `''`)
+
+**Decisions:**
+- Template fix uses Jinja2 `or` so explicit `display_name` is always preferred; fallback fires only when the field is absent or empty (defensive, not overriding)
+- PDF regenerated from current authoritative s6 JSON rather than reconstructed old data — the 3.5/AVOID ENTRY brief was an LLM artifact corrected by the hardening pipeline; 6.3 is the intentional post-fix state
+- ACS fallback mirrors SAIPE's existing `_DISTRICT_TYPES` pattern exactly — same order, same semantics, one source of truth for district-type resolution strategy
+
+**Next Steps:**
+- [ ] Run live `--force` MS batch to exercise ACS district-type fallback + widened statutory narrative guard on fresh LLM output
+- [ ] Lennon sign-off on methodology questions A–D in `docs/lennon_oxford_scoring_flags.md`
+- [ ] Add guard against deprecated community_id slug artifacts accumulating in cache/outputs
+
+**Tests:** Test runner not detected — run `python3 -m pytest -q -p no:cacheprovider` before next session.

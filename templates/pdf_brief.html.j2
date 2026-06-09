@@ -500,7 +500,7 @@
   {% set tone = 'green' if row.score >= 7.0 else ('yellow' if row.score >= 4.0 else 'red') %}
   <div class="bar-row">
     <div class="bar-head">
-      <span class="bar-name">{{ row.display_name | e }}</span>
+      <span class="bar-name">{{ (row.display_name or row.dimension | replace('_', ' ') | title) | e }}</span>
       <span class="bar-score txt-{{ tone }}">{{ row.score }}</span>
     </div>
     <div class="bar-track">
@@ -518,7 +518,7 @@
   {% if row.dimension == 'academic_need' %}
   <div class="bar-row">
     <div class="bar-head">
-      <span class="bar-name txt-muted">{{ row.display_name | e }}</span>
+      <span class="bar-name txt-muted">{{ (row.display_name or row.dimension | replace('_', ' ') | title) | e }}</span>
       <span class="awaiting-label">Awaiting Data</span>
     </div>
     <div class="bar-track"><div class="bar-fill fill-awaiting" style="width:50%;"></div></div>
@@ -529,7 +529,7 @@
   {% else %}
   <div class="bar-row">
     <div class="bar-head">
-      <span class="bar-name txt-muted">{{ row.display_name | e }}</span>
+      <span class="bar-name txt-muted">{{ (row.display_name or row.dimension | replace('_', ' ') | title) | e }}</span>
       <span class="bar-score txt-muted">{{ row.score }}</span>
     </div>
     <div class="bar-track"><div class="bar-fill fill-excluded" style="width: {{ '%.0f' | format(row.score / 10 * 100) }}%;"></div></div>

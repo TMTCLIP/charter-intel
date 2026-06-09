@@ -153,7 +153,7 @@ def _fetch_district_type(
 
 # ── Public interface ──────────────────────────────────────────────────────────
 
-def get_poverty_data(leaid: str, year: Optional[int] = None, state: str = "NM") -> Optional[dict]:
+def get_poverty_data(leaid: str, year: Optional[int] = None, state: str = "") -> Optional[dict]:
     """
     Return SAIPE poverty data for a school district, or None if unavailable.
 

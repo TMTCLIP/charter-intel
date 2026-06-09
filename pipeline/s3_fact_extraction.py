@@ -576,8 +576,7 @@ def run(
         frl_pct    = nces_data.get("frl_pct")
         verified_nces_data = (
             f"VERIFIED NCES DATA (FY {nces_data['fiscal_year']}) — treat as ground truth:\n"
-            # TODO(S35-sweep): "NM state avg" label is NM-specific; use state name from states.yaml.
-            + (f"- Per-pupil revenue vs. NM state avg: {ppr_vs_avg:+.1f}%\n" if ppr_vs_avg is not None else "")
+            + (f"- Per-pupil revenue vs. {state_context.get('state_name', state)} state avg: {ppr_vs_avg:+.1f}%\n" if ppr_vs_avg is not None else "")
             + (f"- Total per-pupil expenditure (capital-inclusive, NCES TOTALEXP/enrollment): ${ppe:,.0f}\n" if ppe is not None else "")
             + (f"- Revenue mix: {fed_pct}% federal / {state_pct}% state / {loc_pct}% local\n"
                if all(v is not None for v in (fed_pct, state_pct, loc_pct)) else "")
