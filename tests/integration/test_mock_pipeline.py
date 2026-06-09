@@ -99,6 +99,11 @@ class TestMockPipelineNmQuesta:
         from pipeline import s6_synthesis, s7_render
         from pipeline import StageStatus
 
+        # The fixture uses the pre-LEAID-migration bare slug "nm-questa". Bypass
+        # the synthesis community_id guard so this regression test can still run
+        # against the recorded fixtures without requiring a full fixture re-record.
+        monkeypatch.setattr(s6_synthesis, "_validate_community_id", lambda _: None)
+
         config = _build_mock_config()
         community_id = "nm-questa"
         state = "NM"

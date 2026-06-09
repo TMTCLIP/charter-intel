@@ -416,6 +416,29 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ## Session Log
 
+### Session — 2026-06-09 (ff943ce)
+
+**Accomplished:**
+- Fixed `used_default=True` false-positives in `pipeline/s5_scoring.py` for three dimensions (`charter_saturation`, `funding_environment`, `operational_complexity`): added `_score_partial_coverage()` dispatcher and `_degrade_confidence()` helper so partial data reduces confidence (×0.7) without triggering a default exclusion
+- Added `_validate_community_id()` guard in `pipeline/s6_synthesis.py` (called at both synthesis and scan write paths) that rejects bare slugs (e.g. `ms-oxford`) using `^[a-z]{2}-[a-z0-9]+-\d{7}$`; all four active states (NM, MS, TN, WI) confirmed 7-digit LEAIDs
+- Staged and permanently deleted 44 stale bare-slug synthesis cache artifacts from `data/cache/synthesis/` (pre-LEAID-migration runs); `nm-questa` stale synthesis brief also deleted (pre-fix, unreliable output)
+- Monkeypatched `_validate_community_id` to a no-op in `tests/integration/test_mock_pipeline.py` for the pre-migration `nm-questa` fixture (bare slug; documented intent in comment)
+- Confirmed Oxford MS composite stable at 6.28 and excluded_dimensions unchanged (`charter_saturation`, `competitive_opportunity`) after fix
+
+**Decisions:**
+- Partial-coverage path uses `confidence * 0.7` rather than a fixed LOW label — preserves relative signal strength while honestly representing incomplete data
+- `_VALID_COMMUNITY_ID` regex uses `\d{7}` (not `\d+`) because all four active states are confirmed 7-digit; tighten if new states with different LEAID lengths are added
+- `nm-questa` stale synthesis brief deleted rather than renamed: pre-fix output with incorrect defaulting is worse than forcing a clean regeneration on next run
+
+**Next Steps:**
+- [ ] Run full MS batch (`python3 main.py --state MS --all --preset maturity_adjusted --depth fast`) now that S5 threshold fix is in place
+- [ ] Review ELL flip report after MS batch (None→non-None flips require Lennon awareness before re-rendering)
+- [ ] `competitive_opportunity/grade_band_gaps` — string fact with no scoring path; needs operator decision on numeric score for "zero grade-band charter coverage" (flagged as Lennon item)
+
+**Test Status:** 813 passed
+
+---
+
 ### Session — 2026-06-07 (275043b)
 
 **Accomplished:**

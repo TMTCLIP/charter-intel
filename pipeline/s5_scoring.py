@@ -557,6 +557,21 @@ def score_dimension(
         except (TypeError, ValueError):
             pass  # non-numeric value — fall through to threshold path
 
+    # ── Partial-coverage salvage: when the YAML primary fact is absent but
+    # dimension-specific alt-primary data is present, compute a score from
+    # available data rather than defaulting the dimension entirely.
+    # Principle: primary present → used_default=False (normal path);
+    #            primary absent + alt-primary present → used_default=False,
+    #              confidence * 0.7 to reflect partial coverage;
+    #            all primaries absent → used_default=True (original behavior).
+    # SCORING FORMULA IS UNCHANGED — only the default-trigger is affected.
+    if primary_value is None:
+        partial_result = _score_partial_coverage(
+            dim_name, relevant_facts, dim_def, weight, supporting_ids
+        )
+        if partial_result is not None:
+            return partial_result
+
     if primary_value is None and missing_behavior == "default_to_midpoint":
         return {
             "score": 5.0,
@@ -569,7 +584,7 @@ def score_dimension(
         }
 
     if primary_value is None and missing_behavior == "degrade_confidence":
-        # Try to compute from optional facts; mark LOW confidence
+        # All primary + alt-primary fields absent; fall back to neutral default
         score = 5.0  # neutral default
         confidence = Confidence.LOW.value
         driver = "Key fact unavailable — score estimated from limited data"
@@ -1074,6 +1089,193 @@ def _score_replication_feasibility(facts: list[dict], weight: float) -> dict:
         "supporting_fact_ids": supporting_ids,
         "used_default": False,
     }
+
+
+def _score_partial_coverage(
+    dim_name: str,
+    relevant_facts: list[dict],
+    dim_def: dict,
+    weight: float,
+    supporting_ids: list[str],
+) -> Optional[dict]:
+    """Score a dimension from alt-primary data when the YAML primary fact is absent.
+
+    Called only when primary_value is None. Returns a complete score dict when
+    dimension-specific alt-primary data is present, or None to fall through to
+    the original default-trigger logic.
+
+    Alt-primary definitions (either non-None is sufficient unless noted):
+      charter_saturation:     charter_seat_share_pct  (secondary becomes effective primary)
+      funding_environment:    saipe_poverty_rate_pct_funding_environment
+                              OR saipe_poverty_count_5_17_funding_environment
+      operational_complexity: ≥2 of [iep_pct, chronic_absenteeism_pct,
+                              ell_pct, student_teacher_ratio]
+
+    When scored from partial data, confidence is reduced to 70% of the normal
+    aggregated value to signal partial coverage to downstream consumers.
+    The scoring formula is not changed — apply_scoring_rules + apply_secondary_adjustments
+    run on whatever data is available (None primaries yield 5.0 as before;
+    present secondaries blend in via the normal secondary-adjustment path).
+    """
+    scoring_rules = dim_def.get("scoring_rules", {})
+    primary_fact_key = scoring_rules.get("primary_fact")
+
+    # ── charter_saturation ────────────────────────────────────────────────────
+    # Alt-primary: charter_seat_share_pct. When num_charter_schools is absent but
+    # seat share is present, score from the secondary fact (apply_scoring_rules on
+    # the seat-share value using charter_seat_share_pct's own thresholds from the
+    # secondary_facts list). This keeps the formula unchanged while avoiding a
+    # spurious default.
+    if dim_name == "charter_saturation":
+        seat_share = _get_fact_value("charter_seat_share_pct", relevant_facts)
+        if seat_share is None:
+            return None
+        # Use the seat-share secondary threshold definition from dim_def
+        sec_thresholds = next(
+            (s for s in dim_def.get("secondary_facts", [])
+             if s["key"] == "charter_seat_share_pct"),
+            None,
+        )
+        if sec_thresholds is None:
+            return None
+        sec_rules = {
+            "direction": sec_thresholds.get("direction", "inverse"),
+            "thresholds": sec_thresholds.get("thresholds", []),
+        }
+        score, _ = apply_scoring_rules(seat_share, "charter_seat_share_pct", sec_rules, dim_def)
+        score = apply_secondary_adjustments(score, relevant_facts, dim_def)
+        score = round(score, 2)
+        base_conf = _aggregate_fact_confidence(relevant_facts)
+        confidence = _degrade_confidence(base_conf, 0.7)
+        driver = (
+            f"charter seat share (alt-primary): {seat_share}% → score {score:.1f} "
+            f"(num_charter_schools absent; confidence reduced)"
+        )
+        logger.info(
+            "s5_scoring: charter_saturation scored %.2f from alt-primary "
+            "charter_seat_share_pct=%.1f (num_charter_schools absent)",
+            score, seat_share,
+        )
+        return {
+            "score": score,
+            "weight": weight,
+            "weighted_contribution": round(score * weight, 4),
+            "confidence": confidence,
+            "primary_driver": driver,
+            "supporting_fact_ids": supporting_ids,
+            "used_default": False,
+        }
+
+    # ── funding_environment ───────────────────────────────────────────────────
+    # Alt-primary: saipe_poverty_rate_pct_funding_environment or
+    #              saipe_poverty_count_5_17_funding_environment.
+    # When per_pupil_revenue_vs_state_avg_pct is absent, we cannot apply the
+    # per-pupil scoring thresholds. Instead, use apply_scoring_rules with None
+    # primary (yields midpoint 5.0) then let apply_secondary_adjustments blend
+    # in any present secondary facts. The SAIPE facts themselves are not secondaries
+    # in the YAML, but their presence indicates the data layer is partially populated,
+    # so the dimension should not be treated as fully absent.
+    if dim_name == "funding_environment":
+        saipe_rate = _get_fact_value(
+            "saipe_poverty_rate_pct_funding_environment", relevant_facts
+        )
+        saipe_count = _get_fact_value(
+            "saipe_poverty_count_5_17_funding_environment", relevant_facts
+        )
+        if saipe_rate is None and saipe_count is None:
+            return None
+        # Score: per_pupil primary absent → apply_scoring_rules(None) → 5.0
+        # Secondary adjustments (csp_active_in_community, philanthropic_activity_level)
+        # blend in if present. Result reflects partial federal-data coverage.
+        score, _ = apply_scoring_rules(None, primary_fact_key or "", scoring_rules, dim_def)
+        score = apply_secondary_adjustments(score, relevant_facts, dim_def)
+        score = round(score, 2)
+        base_conf = _aggregate_fact_confidence(relevant_facts)
+        confidence = _degrade_confidence(base_conf, 0.7)
+        present = []
+        if saipe_rate is not None:
+            present.append(f"SAIPE poverty {saipe_rate}%")
+        if saipe_count is not None:
+            present.append(f"SAIPE poverty count {saipe_count}")
+        driver = (
+            f"funding (alt-primary: {', '.join(present)}): "
+            f"per-pupil revenue absent; score {score:.1f} from available data "
+            f"(confidence reduced)"
+        )
+        logger.info(
+            "s5_scoring: funding_environment scored %.2f from alt-primary SAIPE "
+            "data (per_pupil_revenue_vs_state_avg_pct absent)",
+            score,
+        )
+        return {
+            "score": score,
+            "weight": weight,
+            "weighted_contribution": round(score * weight, 4),
+            "confidence": confidence,
+            "primary_driver": driver,
+            "supporting_fact_ids": supporting_ids,
+            "used_default": False,
+        }
+
+    # ── operational_complexity ────────────────────────────────────────────────
+    # Alt-primary: ≥2 of [iep_pct, chronic_absenteeism_pct, ell_pct,
+    #              student_teacher_ratio] non-None.
+    # When operational_complexity_index (LLM-extracted composite) is absent but
+    # enough federal-data signals are present, proceed with scoring so the
+    # CRDC/ACS signals are not silently discarded. apply_scoring_rules(None) →
+    # 5.0 primary; apply_secondary_adjustments then blends the present secondaries.
+    if dim_name == "operational_complexity":
+        alt_keys = ["iep_pct", "chronic_absenteeism_pct", "ell_pct", "student_teacher_ratio"]
+        present_alts = [
+            k for k in alt_keys
+            if _get_fact_value(k, relevant_facts) is not None
+        ]
+        if len(present_alts) < 2:
+            return None
+        score, _ = apply_scoring_rules(None, primary_fact_key or "", scoring_rules, dim_def)
+        score = apply_secondary_adjustments(score, relevant_facts, dim_def)
+        score = round(score, 2)
+        base_conf = _aggregate_fact_confidence(relevant_facts)
+        confidence = _degrade_confidence(base_conf, 0.7)
+        driver = (
+            f"operational complexity (alt-primary: {', '.join(present_alts)}): "
+            f"complexity index absent; score {score:.1f} from available signals "
+            f"(confidence reduced)"
+        )
+        logger.info(
+            "s5_scoring: operational_complexity scored %.2f from %d alt-primary "
+            "signal(s) %s (operational_complexity_index absent)",
+            score, len(present_alts), present_alts,
+        )
+        return {
+            "score": score,
+            "weight": weight,
+            "weighted_contribution": round(score * weight, 4),
+            "confidence": confidence,
+            "primary_driver": driver,
+            "supporting_fact_ids": supporting_ids,
+            "used_default": False,
+        }
+
+    return None
+
+
+def _degrade_confidence(base_confidence: str, factor: float) -> str:
+    """Reduce a confidence level proportionally to reflect partial data coverage.
+
+    Maps the string enum → numeric rank → multiply by factor → back to enum.
+    NONE → NONE (cannot degrade further).
+    """
+    _rank = {
+        Confidence.NONE.value:     0,
+        Confidence.LOW.value:      1,
+        Confidence.MODERATE.value: 2,
+        Confidence.HIGH.value:     3,
+    }
+    _from_rank = {v: k for k, v in _rank.items()}
+    current_rank = _rank.get(base_confidence, 1)
+    degraded_rank = max(0, round(current_rank * factor))
+    return _from_rank.get(degraded_rank, Confidence.LOW.value)
 
 
 def _saipe_to_complexity_index(saipe_pct: float) -> int:

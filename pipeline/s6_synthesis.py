@@ -25,7 +25,9 @@ OUTPUT:
 
 from __future__ import annotations
 import json
+import logging
 import os
+import re
 import time
 from typing import Optional
 
@@ -39,6 +41,29 @@ from pipeline.utils.schema_validator import validate_against_schema
 
 
 STAGE_ID = "s6_synthesis"
+
+logger = logging.getLogger(__name__)
+
+# ─────────────────────────────────────────────
+# COMMUNITY ID VALIDATION GUARD
+# ─────────────────────────────────────────────
+# Reject bare slugs from pre-LEAID-migration runs before they
+# pollute the synthesis cache and mislead future red-teams.
+# All four active states (NM, MS, TN, WI) use 7-digit LEAIDs.
+
+_VALID_COMMUNITY_ID = re.compile(r'^[a-z]{2}-[a-z0-9]+-\d{7}$')
+
+
+def _validate_community_id(community_id: str) -> None:
+    """Reject bare slugs from pre-LEAID-migration runs before they
+    pollute the synthesis cache and mislead future red-teams."""
+    if not _VALID_COMMUNITY_ID.match(community_id):
+        raise ValueError(
+            f"Invalid community_id '{community_id}' — expected format: "
+            f"[state]-[city-slug]-[leaid] (e.g. ms-oxford-2803450). "
+            f"Bare slugs are not permitted. Check states.yaml LEAID entry."
+        )
+
 
 # ─────────────────────────────────────────────
 # MODEL ROUTING BY MODE
@@ -208,6 +233,9 @@ def run(
     if not validation:
         warnings.extend([f"Schema warning: {e}" for e in validation.errors])
         # Don't halt on schema warnings — proceed and flag
+
+    # --- Validate community_id before writing (rejects pre-LEAID bare slugs) ---
+    _validate_community_id(community_id)
 
     # --- Write output ---
     out_path = _output_path(state, community_id, config.preset.value, config.mode.value)
@@ -723,6 +751,9 @@ def _run_scan_synthesis(
     scan_json["scan_generated_at"] = _today()
     # Propagate override_flags so render layer can apply tier caveats (e.g. SMALL_MARKET)
     scan_json["override_flags"] = scorecard.get("override_flags", [])
+
+    # --- Validate community_id before writing (rejects pre-LEAID bare slugs) ---
+    _validate_community_id(community_id)
 
     out_path = _scan_output_path(state, community_id, config.preset.value)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
