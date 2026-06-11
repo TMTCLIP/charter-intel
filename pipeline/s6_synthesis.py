@@ -602,9 +602,9 @@ def _build_data_sources(brief_json: dict, verified_bundle: dict, state: str) -> 
         rows.append({"source": source, "powers": powers, "vintage": vintage,
                      "status": label, "status_icon": icon})
 
-    # NCES CCD — enrollment + charter landscape (national parquet, FY2023 vintage).
+    # NCES CCD — enrollment + charter landscape (national parquet, SY2023-24 vintage).
     add("NCES CCD", "Enrollment, charter share",
-        first_year("charter_enrollment_share_pct") or 2023)
+        first_year("charter_enrollment_share_pct") or 2024)
     # Census ACS — ELL / demographics (5-year estimates).
     add("Census ACS", "ELL %, demographics", first_year("ell_pct"))
     # Census SAIPE — child poverty.
@@ -626,8 +626,12 @@ def _build_data_sources(brief_json: dict, verified_bundle: dict, state: str) -> 
         add(prof_label, "Academic need", None,
             vintage_override="—", status_override=("Not yet available", "✗"))
 
-    # CRDC — IEP% + chronic absenteeism.
-    add("CRDC", "IEP %, chronic absenteeism", first_year("iep_pct", "chronic_absenteeism_pct"))
+    # CRDC — IEP% at structural ceiling (2020-21; 2023-24 CRDC not yet released).
+    # Chronic absenteeism superseded by ED Data Express when available (see S3).
+    crdc_year = first_year("iep_pct", "chronic_absenteeism_pct")
+    crdc_status = ("Structural ceiling", "⚠") if crdc_year and current_year - crdc_year > 2 else None
+    add("CRDC", "IEP % (structural ceiling), chronic absenteeism", crdc_year,
+        status_override=crdc_status)
     # BLS OEWS — teacher wages.
     add("BLS OEWS", "Teacher wages (context)", first_year("teacher_median_wage"))
 

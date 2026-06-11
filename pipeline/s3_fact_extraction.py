@@ -34,6 +34,8 @@ from pipeline.fetchers.ms_proficiency_fetcher import get_ms_district_data
 from pipeline.fetchers.tn_proficiency_fetcher import get_tn_district_data
 from pipeline.fetchers.wi_proficiency_fetcher import get_wi_district_data
 from pipeline.fetchers.crdc_fetcher import get_crdc_district_data
+from pipeline.fetchers.ed_data_express_fetcher import get_ed_data_express_absenteeism
+from pipeline.utils.urban_enrollment_fetcher import get_urban_enrollment_trend
 from pipeline.fetchers.bls_teacher_wages_fetcher import get_teacher_wages
 from pipeline.fetchers.mde_ratings_fetcher import get_mde_district_rating
 from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data, get_charter_enrollment_share
@@ -1298,8 +1300,27 @@ def run(
     # ── wages. Both free/keyless; each degrades to a no-op when its fetcher    ──
     # ── returns None. NOTE: these are brief-narrative facts only — no S5 scored ──
     # ── dimension consumes them today (see _inject_crdc_facts / _inject_bls_*). ──
+    #
+    # Chronic absenteeism: prefer ED Data Express SY2022-23 (LEA-level, annual
+    # ESSA reporting) over CRDC (school-level, biennial, older vintage). CRDC is
+    # still fetched for IEP%; skip_absenteeism=True suppresses its chronic
+    # absenteeism injection when ED Data Express has data for this district.
+    ede_absenteeism = (
+        get_ed_data_express_absenteeism(saipe_leaid) if saipe_leaid else None
+    )
+    _inject_ede_absenteeism_facts(facts_output, ede_absenteeism, community_id, state, community_name)
+
     crdc_data = get_crdc_district_data(saipe_leaid) if saipe_leaid else None
-    _inject_crdc_facts(facts_output, crdc_data, community_id, state, community_name)
+    _inject_crdc_facts(
+        facts_output, crdc_data, community_id, state, community_name,
+        skip_absenteeism=ede_absenteeism is not None,
+    )
+
+    # ── Urban Institute multi-year enrollment trend (FIX 4) ────────────────────
+    urban_enrollment = (
+        get_urban_enrollment_trend(saipe_leaid) if saipe_leaid else None
+    )
+    _inject_urban_enrollment_facts(facts_output, urban_enrollment, community_id, state)
 
     teacher_wages = get_teacher_wages(_state_fips) if _state_fips else None
     _inject_teacher_wages_facts(
@@ -1854,9 +1875,13 @@ def _inject_crdc_facts(
     community_id: str,
     state: str,
     community_name: str,
+    skip_absenteeism: bool = False,
 ) -> None:
     """Append CRDC-derived IEP% and chronic-absenteeism% as operational_complexity
     datapoints (brief-narrative context).
+
+    skip_absenteeism: when True, suppress the chronic_absenteeism_pct injection
+    because ED Data Express already provided a more recent figure.
 
     SCORING NOTE: operational_complexity scores only from operational_complexity_index
     (it has no secondary_facts), so neither iep_pct nor chronic_absenteeism_pct is
@@ -1901,7 +1926,7 @@ def _inject_crdc_facts(
         })
 
     ca_pct = crdc.get("chronic_absenteeism_pct")
-    if ca_pct is not None and not any(f.get("fact_key") == "chronic_absenteeism_pct" for f in facts):
+    if ca_pct is not None and not skip_absenteeism and not any(f.get("fact_key") == "chronic_absenteeism_pct" for f in facts):
         facts.append({
             "datapoint_id":         f"dp_{community_id}_operational_complexity_absenteeism",
             "community_id":         community_id,
@@ -1935,6 +1960,116 @@ def _inject_crdc_facts(
     logger.info(
         "[%s] Injected CRDC datapoints (IEP%%=%s, chronic_absent%%=%s)",
         community_id, iep_pct, ca_pct,
+    )
+
+
+def _inject_ede_absenteeism_facts(
+    facts_output: dict,
+    ede: Optional[dict],
+    community_id: str,
+    state: str,
+    community_name: str,
+) -> None:
+    """Append ED Data Express chronic absenteeism as an operational_complexity
+    datapoint. Preferred over CRDC chronic absenteeism (newer vintage, LEA-level).
+    Skips silently when the fetcher returns None.
+    """
+    if not ede:
+        return
+    facts: list[dict] = facts_output.setdefault("facts", [])
+    if any(f.get("fact_key") == "chronic_absenteeism_pct" for f in facts):
+        return
+
+    ca_pct = ede.get("chronic_absenteeism_pct")
+    if ca_pct is None:
+        return
+
+    facts.append({
+        "datapoint_id":         f"dp_{community_id}_operational_complexity_absenteeism_ede",
+        "community_id":         community_id,
+        "state":                state,
+        "dimension":            "operational_complexity",
+        "fact_key":             "chronic_absenteeism_pct",
+        "claim": (
+            f"Chronic absenteeism in {community_name}: {ca_pct}% "
+            f"({ede.get('chronic_absent_count')} of "
+            f"{ede.get('chronic_absent_denominator')}, "
+            f"ED Data Express SY{ede.get('chronic_absenteeism_year') - 1}"
+            f"-{str(ede.get('chronic_absenteeism_year'))[2:]})."
+        ),
+        "value":                ca_pct,
+        "value_unit":           "percent",
+        "value_year":           ede.get("chronic_absenteeism_year"),
+        "source_class":         "FEDERAL_DATA",
+        "source_url":           ede.get("source_url"),
+        "source_title":         ede.get("source_title"),
+        "source_date":          None,
+        "confidence":           "HIGH",
+        "confidence_rationale": "ED Data Express ESSA/ESEA district-level reporting",
+        "verification_status":  "VERIFIED",
+        "bias_flag":            None,
+        "extracted_by":         "ed_data_express_fetcher",
+        "extracted_at":         today_str(),
+        "stage":                STAGE_ID,
+        "in_main_analysis":     True,
+        "needs_verification_reason": ede.get("data_note"),
+    })
+    logger.info(
+        "[%s] Injected ED Data Express chronic absenteeism: %s%%",
+        community_id, ca_pct,
+    )
+
+
+def _inject_urban_enrollment_facts(
+    facts_output: dict,
+    urban: Optional[dict],
+    community_id: str,
+    state: str,
+) -> None:
+    """Append Urban Institute multi-year enrollment trend as a population_trends
+    datapoint. Provides a richer time series than the NCES membership parquet
+    (includes 2021 and covers 2019–2024). Skips silently when fetcher returns None.
+    """
+    if not urban:
+        return
+    facts: list[dict] = facts_output.setdefault("facts", [])
+    if any(f.get("fact_key") == "enrollment_trend" for f in facts):
+        return
+
+    trend = urban.get("enrollment_trend")
+    if not trend:
+        return
+
+    facts.append({
+        "datapoint_id":         f"dp_{community_id}_population_trends_enrollment_trend",
+        "community_id":         community_id,
+        "state":                state,
+        "dimension":            "population_trends",
+        "fact_key":             "enrollment_trend",
+        "claim":                f"Multi-year enrollment trend ({urban['years_fetched'][0]}–{urban['years_fetched'][-1]}): {trend}",
+        "value":                trend,
+        "value_unit":           "dict",
+        "value_year":           urban["years_fetched"][-1],
+        "source_class":         "FEDERAL_DATA",
+        "source_url":           urban.get("source_url"),
+        "source_title":         urban.get("source_title"),
+        "source_date":          None,
+        "confidence":           "HIGH",
+        "confidence_rationale": "Urban Institute API — NCES CCD grade-99 district enrollment",
+        "verification_status":  "VERIFIED",
+        "bias_flag":            None,
+        "extracted_by":         "urban_enrollment_fetcher",
+        "extracted_at":         today_str(),
+        "stage":                STAGE_ID,
+        "in_main_analysis":     True,
+        "needs_verification_reason": None,
+    })
+    logger.info(
+        "[%s] Injected urban enrollment trend: %d years (%s–%s)",
+        community_id,
+        len(trend),
+        urban["years_fetched"][0],
+        urban["years_fetched"][-1],
     )
 
 

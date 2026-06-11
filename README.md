@@ -1232,4 +1232,28 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Build NCES PSS (Private School Universe Survey) fetcher to add private-school competition as the competitive_opportunity proxy's 3rd term (backlog TODO in `s5_scoring.py`)
 - [ ] Re-render Oxford brief from the updated scorer to verify HTML reflects new scores
 
+---
+
+### Session — 2026-06-11 (8fabac4)
+
+**Accomplished:**
+- Centralized all data-vintage years into a new `data_vintages` block in `config/pipeline.yaml`; `pipeline/utils/data_config.py` exposes typed constants consumed by all fetchers and download scripts
+- Upgraded NCES CCD year from 2022 to 2024 in `nces_fetcher.py`, `build_national_parquet.py`, and `download_nces_national.py` via `NCES_CCD_YEAR` constant; hardcoded year strings eliminated
+- Upgraded ACS vintage from 2023 to 2024 in `acs_fetcher.py`; pop-trend anchors (`_POP_VINTAGE_EARLY`/`_LATE`) now config-driven
+- Added `_inject_ede_absenteeism_facts` in `s3_fact_extraction.py`: ED Data Express SY2022-23 chronic absenteeism now preferred over CRDC when available; CRDC `skip_absenteeism=True` guard added
+- Added `_inject_urban_enrollment_facts` in `s3_fact_extraction.py`: Urban Institute multi-year enrollment trend (2019–2024, including 2021 gap-fill) injected as `population_trends` datapoint
+- Added `STRUCTURAL_CEILING` constant in `crdc_fetcher.py` documenting IEP% data ceiling at CRDC 2020-21; S6 data-sources table updated to surface `⚠ Structural ceiling` status
+- Ran states.yaml coverage audit: all 51 community registry files already have a `states.yaml` entry; 0 states needed adding; 934/934 tests passing
+
+**Decisions:**
+- ED Data Express preferred over CRDC for chronic absenteeism (LEA-level annual ESSA reporting vs. biennial school-level CRDC); CRDC retained for IEP% only
+- Vintage upgrades are config-only — no cache busting required unless `--force` is passed; existing cached fetcher output remains valid
+- CRDC IEP% ceiling is a federal data-availability constraint (2023-24 CRDC unreleased), not a pipeline gap; documented as `STRUCTURAL_CEILING` to prevent future misdiagnosis
+
+**Next Steps:**
+- [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
+- [ ] Build NCES PSS fetcher for private-school competition term in `competitive_opportunity` proxy
+- [ ] Run `download_nces_national.py` to pull SY2023-24 CSV files now that `NCES_CCD_YEAR=2024`
+- [ ] Rebuild national parquets with `--force` after downloading 2024 CSVs
+
 **Tests:** 884 passed (`python3 -m pytest -q -p no:cacheprovider`).

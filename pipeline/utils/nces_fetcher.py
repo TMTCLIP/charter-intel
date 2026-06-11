@@ -33,6 +33,8 @@ from typing import Optional
 import pandas as pd
 import yaml
 
+from pipeline.utils.data_config import NCES_CCD_YEAR  # noqa: E402
+
 log = logging.getLogger(__name__)
 
 # ── File paths ────────────────────────────────────────────────────────────────
@@ -66,7 +68,7 @@ _CHARTER_SOURCE_URL_TMPL = (
     "https://educationdata.urban.org/api/v1/schools/ccd/enrollment/{year}/?leaid={leaid}&charter=1"
 )
 _CHARTER_SOURCE_TITLE = "Urban Institute Education Data API — NCES CCD school directory (enrollment by charter status)"
-_CHARTER_ENROLLMENT_YEARS = (2023, 2022)   # try most recent first, then fall back
+_CHARTER_ENROLLMENT_YEARS = (NCES_CCD_YEAR, NCES_CCD_YEAR - 1)   # try most recent first, then fall back
 _CHARTER_CACHE_DIR = "data/cache/fetcher/ccd_enrollment"
 _CHARTER_CACHE_TTL_DAYS = 90               # matches the existing CCD cache TTL
 _CCD_MAX_PAGES = 30

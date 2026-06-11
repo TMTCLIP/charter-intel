@@ -31,8 +31,10 @@ except ImportError:
     print("ERROR: pandas not installed. Run: pip install pandas pyarrow", file=sys.stderr)
     sys.exit(1)
 
+from pipeline.utils.data_config import NCES_CCD_YEAR, NCES_MEMBERSHIP_YEARS  # noqa: E402
+
 _FINANCE_SRC = "data/raw/national/nces_lea_finance_2024.csv"
-_MEMBERSHIP_YEARS = [2020, 2022, 2023, 2024]
+_MEMBERSHIP_YEARS = NCES_MEMBERSHIP_YEARS
 
 
 # ── Builders ──────────────────────────────────────────────────────────────────
@@ -44,8 +46,8 @@ def _build_lea_directory(input_dir: str, output_dir: str, force: bool) -> None:
         print(f"[skip] nces_lea_directory.parquet exists — use --force to rebuild")
         return
 
-    lea_csv = os.path.join(input_dir, "nces_lea_directory_2022.csv")
-    sch_csv = os.path.join(input_dir, "nces_sch_directory_2022.csv")
+    lea_csv = os.path.join(input_dir, f"nces_lea_directory_{NCES_CCD_YEAR}.csv")
+    sch_csv = os.path.join(input_dir, f"nces_sch_directory_{NCES_CCD_YEAR}.csv")
 
     if not os.path.exists(lea_csv):
         print(f"ERROR: {lea_csv} not found. Run download_nces_national.py first.", file=sys.stderr)
@@ -120,7 +122,7 @@ def _build_sch_lunch(input_dir: str, output_dir: str, force: bool) -> None:
         print(f"[skip] nces_sch_lunch.parquet exists — use --force to rebuild")
         return
 
-    sch_csv = os.path.join(input_dir, "nces_sch_directory_2022.csv")
+    sch_csv = os.path.join(input_dir, f"nces_sch_directory_{NCES_CCD_YEAR}.csv")
     if not os.path.exists(sch_csv):
         print(f"ERROR: {sch_csv} not found. Run download_nces_national.py first.", file=sys.stderr)
         return

@@ -57,9 +57,20 @@ _CACHE_DIR = "data/cache/fetcher/crdc"
 CACHE_TTL_DAYS = 90
 _MAX_PAGES = 50
 
+# IEP/IDEA rate is at a structural ceiling: the 2023-24 CRDC has not been
+# publicly released (as of 2026). This is a federal data availability constraint,
+# not a pipeline gap. Do not attempt to upgrade until the CRDC is released.
+STRUCTURAL_CEILING = True
+STRUCTURAL_CEILING_NOTE = (
+    "IEP rate reflects CRDC 2020-21 — the most recent publicly available collection. "
+    "The 2023-24 CRDC has not been released; this is a federal data availability "
+    "constraint, not a pipeline gap."
+)
+
 VINTAGE_CAVEAT = (
-    "CRDC is collected biennially and lags; this reflects the most recent available "
-    "collection year (typically 2017–2020), not the current school year."
+    "CRDC is collected biennially and lags; chronic absenteeism reflects the most "
+    "recent available collection year (typically 2017–2021), not the current school year. "
+    "IEP rate is at structural ceiling: CRDC 2020-21 (2023-24 CRDC not yet released)."
 )
 
 

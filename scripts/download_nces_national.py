@@ -33,6 +33,10 @@ import urllib.request
 from typing import Iterator
 
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _ROOT not in sys.path:
+    sys.path.insert(0, _ROOT)
+
+from pipeline.utils.data_config import NCES_CCD_YEAR  # noqa: E402
 
 _BASE = "https://educationdata.urban.org/api/v1"
 _PER_PAGE = 1000
@@ -61,18 +65,18 @@ FIPS_TO_STABBR: dict[str, str] = {
 # "strategy": "national" (one national batch) or "by_state" (loop per FIPS)
 MANIFEST: dict[str, dict] = {
     "lea_directory": {
-        "url": f"{_BASE}/school-districts/ccd/directory/2022/",
-        "filename": "nces_lea_directory_2022.csv",
-        "description": "LEA directory 2022-23 (district name, city, state, enrollment)",
+        "url": f"{_BASE}/school-districts/ccd/directory/{NCES_CCD_YEAR}/",
+        "filename": f"nces_lea_directory_{NCES_CCD_YEAR}.csv",
+        "description": f"LEA directory SY{NCES_CCD_YEAR}-{NCES_CCD_YEAR % 100 + 1:02d} (district name, city, state, enrollment)",
         "strategy": "national",
-        "year": 2022,
+        "year": NCES_CCD_YEAR,
     },
     "school_directory": {
-        "url": f"{_BASE}/schools/ccd/directory/2022/",
-        "filename": "nces_sch_directory_2022.csv",
-        "description": "School directory 2022-23 (charter indicator, FRL counts)",
+        "url": f"{_BASE}/schools/ccd/directory/{NCES_CCD_YEAR}/",
+        "filename": f"nces_sch_directory_{NCES_CCD_YEAR}.csv",
+        "description": f"School directory SY{NCES_CCD_YEAR}-{NCES_CCD_YEAR % 100 + 1:02d} (charter indicator, FRL counts)",
         "strategy": "by_state",
-        "year": 2022,
+        "year": NCES_CCD_YEAR,
     },
     "lea_membership_2020": {
         "url": f"{_BASE}/school-districts/ccd/directory/2020/",

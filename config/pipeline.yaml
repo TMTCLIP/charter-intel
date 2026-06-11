@@ -189,6 +189,47 @@ s4_consistency_checks:
   s4_trust_hierarchy_enabled: false   # Option B — OFF. Do NOT enable without Lennon sign-off.
 
 # ─────────────────────────────────────────────
+# DATA VINTAGES (FIX 6)
+# ─────────────────────────────────────────────
+# All source vintage years live here. Upgrading a vintage is a one-line change.
+# Read by pipeline/utils/data_config.py, which exposes typed constants used by
+# every fetcher. The download scripts also read from here so that --force
+# rebuilds pick up the new year automatically.
+#
+# IEP rates (CRDC): structural ceiling at 2020-21. The 2023-24 CRDC has not
+# been publicly released. This is a federal data availability constraint, not
+# a pipeline gap. Do not attempt to upgrade until the CRDC is released.
+
+data_vintages:
+  # NCES CCD universe files via Urban Institute API (year = SY start year - 1)
+  # year=2024 → SY2023-24.  year=2025 is not yet available in Urban API.
+  nces_ccd_year: 2024
+
+  # Years included in the national membership parquet (enrollment trend).
+  # Year 2021 is absent from NCES CCD releases (COVID disruption — not a gap).
+  nces_ccd_membership_years: [2020, 2022, 2023, 2024]
+
+  # NCES F-33 finance survey — FY2023-24 not yet available via Urban API.
+  # Structural lag; do not change without verifying the F-33 release calendar.
+  nces_finance_fiscal_year: "2022-2023"
+
+  # Census ACS 5-year estimates: upgrade to 2020-2024 vintage (released Dec 2024)
+  acs_year: "2024"
+  acs_pop_vintage_early: "2019"   # ACS 5-yr 2015-2019 (early anchor for pop trend)
+  acs_pop_vintage_late: "2024"    # ACS 5-yr 2020-2024 (current)
+
+  # ED Data Express — chronic absenteeism SY2022-23 (ESEA/ESSA reporting)
+  # Year is the school-year ending year (SY2022-23 → 2023)
+  ed_data_express_ca_year: 2023
+  ed_data_express_ca_zip_url: "https://eddataexpress.ed.gov/sites/default/files/2024-11/SY2223%20Chronic%20Absenteeism%20EDE%20110724.zip"
+  ed_data_express_ca_csv: "SY2223_DG814PCT_LEA_082724.csv"
+
+  # Urban Institute LEA enrollment (grade-99 endpoint) for multi-year trend.
+  # Year 2021 is included here even though it's absent from the NCES membership
+  # CSVs — the Urban API has it and fills the gap.
+  urban_enrollment_years: [2019, 2020, 2021, 2022, 2023, 2024]
+
+# ─────────────────────────────────────────────
 # LOGGING
 # ─────────────────────────────────────────────
 

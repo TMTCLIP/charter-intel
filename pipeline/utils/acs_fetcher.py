@@ -48,6 +48,7 @@ from typing import Optional
 import yaml
 
 from pipeline.utils.fips_utils import get_state_fips
+from pipeline.utils.data_config import ACS_YEAR as _ACS_YEAR_CFG, ACS_POP_VINTAGE_EARLY as _ACS_EARLY_CFG, ACS_POP_VINTAGE_LATE as _ACS_LATE_CFG
 
 log = logging.getLogger(__name__)
 
@@ -88,14 +89,14 @@ def _acs_cache_write(key: str, data: dict) -> None:
 # ── Census API config ─────────────────────────────────────────────────────────
 
 ACS_API_BASE = "https://api.census.gov/data"
-ACS_YEAR     = "2023"       # Most recent released ACS 5-year as of 2026
+ACS_YEAR     = _ACS_YEAR_CFG      # ACS 5-year vintage; update via config/pipeline.yaml
 ACS_DATASET  = "acs/acs5"
 
 STATES_YAML  = "config/states.yaml"
 
 SOURCE_URL   = f"{ACS_API_BASE}/{ACS_YEAR}/{ACS_DATASET}"
-SOURCE_TITLE = "Census ACS 5-Year Estimates, Table B16004 (2019–2023)"
-DATA_YEAR    = "2019-2023"
+SOURCE_TITLE = f"Census ACS 5-Year Estimates, Table B16004 ({int(ACS_YEAR) - 4}–{ACS_YEAR})"
+DATA_YEAR    = f"{int(ACS_YEAR) - 4}-{ACS_YEAR}"
 
 # ── B16004 variable lists ─────────────────────────────────────────────────────
 
@@ -128,8 +129,8 @@ _ACS_DISTRICT_TYPES = [
 # B01003_001E: total population for the district geography.
 # Two ACS 5-year vintages give a ~4-year population trend.
 _TOTAL_POP_VAR     = "B01003_001E"
-_POP_VINTAGE_EARLY = "2019"   # ACS 5-year 2015–2019
-_POP_VINTAGE_LATE  = "2023"   # ACS 5-year 2019–2023
+_POP_VINTAGE_EARLY = _ACS_EARLY_CFG   # ACS 5-year early anchor (e.g. 2019 = 2015-2019)
+_POP_VINTAGE_LATE  = _ACS_LATE_CFG    # ACS 5-year current vintage; update via config/pipeline.yaml
 
 
 # ── Internal helpers ──────────────────────────────────────────────────────────
