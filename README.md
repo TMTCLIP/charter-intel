@@ -416,6 +416,26 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ## Session Log
 
+### Session — 2026-06-11 (ac80d37)
+
+**Accomplished:**
+- Added a "Regen Data" toggle to the Flask UI Advanced Settings panel (`app/ui/templates/index.html`), positioned between "Force Refresh" and "Batch", using the identical `ios-toggle` / `toggle-row` markup; label "Regen Data", subtitle "Re-run analysis from S3 without re-fetching source data" (`id=flag-regen-data`)
+- Wired the toggle through `app/ui/static/js/app.js` (`submitScan` reads `flag-regen-data` into `regen_data` in the `/api/scan` POST body) and added `"regen_data": "--regen-data"` to `app/config.BOOLEAN_FLAGS`, which auto-wires BOTH the Streamlit runner (`app/runner.build_command`) and the Flask server (`server._build_scan_cmd`)
+- Added the `--regen-data` flag to `main.py` argparse (no prior equivalent existed); it invalidates the per-community `community/`, `synthesis/`, and `llm/` cache tiers (S3 facts_raw + S3 LLM sub-calls, S4, S5, S6) after the community list is finalized, leaving the S2 `state/` cache and source-data fetcher caches intact
+- Verified end-to-end that both backends emit `--regen-data` when toggled and omit it when off; full suite **867 passing**
+
+**Decisions:**
+- Implemented as a real pipeline flag (distinct from the existing brief-view "Regen Data" button which app-side busts cache + relaunches) — the two are separate operations
+- Invalidation reuses the hardened `CacheManager.invalidate(prefix)` (no cache-module changes) and runs in `main.py` before the run loop, so no stage logic or `PipelineConfig` was touched
+- Did NOT alter `--force-refresh` behavior (force-refresh still regenerates everything incl. S2); the two toggles are independent. No scoring logic or weights changed
+- Excluded the regenerated demo-brief HTML (timestamp-only churn) from the commit
+
+**Next Steps:**
+- [ ] Optional: surface a brief confirmation in the UI when regen-data clears N cache files
+- [ ] Consider a unit test asserting `--regen-data` clears community/synthesis/llm tiers but preserves state/ + fetcher caches
+
+**Tests:** 867 passed (`python3 -m pytest -q`).
+
 ### Session — 2026-06-11 (ebee04c)
 
 **Accomplished:**

@@ -142,6 +142,7 @@ BOOLEAN_FLAGS = {
     "batch": "--batch",
     "no_cache": "--no-cache",
     "force_refresh": "--force-refresh",
+    "regen_data": "--regen-data",
 }
 
 

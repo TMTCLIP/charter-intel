@@ -192,6 +192,15 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--force-refresh", action="store_true")
     parser.add_argument("--no-cache", action="store_true")
+    parser.add_argument(
+        "--regen-data", action="store_true", dest="regen_data",
+        help=(
+            "Re-run analysis from S3 without re-fetching source data: invalidate "
+            "the S3-S6 caches (community/, synthesis/, llm/ tiers) for the target "
+            "community while leaving the S2 state-context cache and the source-data "
+            "fetcher caches intact. Distinct from --force-refresh."
+        ),
+    )
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--stages", help="Comma-separated stages to run")
     parser.add_argument(
@@ -742,6 +751,26 @@ def main():
     else:
         logger.error("Specify --community or --all")
         sys.exit(1)
+
+    # ── Regen Data: invalidate S3–S6 caches, keep S2 + source data ───────────
+    # Deletes the per-community analysis caches so S3-S6 re-run, while leaving
+    # the S2 state-context cache (state/ tier) and the source-data fetcher
+    # caches untouched. Independent of --force-refresh (which regenerates
+    # everything, including S2).
+    if args.regen_data:
+        from pipeline.utils.cache import CacheManager
+        _regen_cache = CacheManager(config)
+        for _cid in communities:
+            _removed = 0
+            for _tier in ("community", "synthesis", "llm"):
+                _removed += _regen_cache.invalidate(
+                    f"{_tier}/{config.state.lower()}/{_cid}"
+                )
+            logger.info(
+                "[regen-data] %s: cleared %d S3–S6 cache file(s); "
+                "S2 + source-data caches kept.",
+                _cid, _removed,
+            )
 
     # ── Token logger initialisation ─────────────────────────────────────────
     run_id = (

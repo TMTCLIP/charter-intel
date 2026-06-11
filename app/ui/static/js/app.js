@@ -652,6 +652,7 @@ async function submitScan() {
   const mock    = document.getElementById("flag-mock").checked;
   const noCache = document.getElementById("flag-no-cache").checked;
   const forceRefresh = document.getElementById("flag-force-refresh").checked;
+  const regenData = document.getElementById("flag-regen-data").checked;
   const batch   = document.getElementById("flag-batch").checked;
   const preset      = document.getElementById("adv-preset").value;
   const modeNum     = document.getElementById("adv-mode-num").value;
@@ -668,7 +669,7 @@ async function submitScan() {
     all: isStateWide,
     mode, depth,
     dry_run: dryRun, mock, no_cache: noCache,
-    force_refresh: forceRefresh, batch,
+    force_refresh: forceRefresh, regen_data: regenData, batch,
     preset, mode_num: modeNum,
     zip_version: zipVersion,
   };
