@@ -36,6 +36,22 @@ dimensions:
         - {max: 85, score: 3}
         - {score: 2}  # fallback: above 85%
     secondary_facts:
+      # Math proficiency mirrors the ELA primary thresholds (inverse: lower
+      # proficiency = higher need). Extracted alongside ELA from the state
+      # report card; previously listed only in fact_keys_optional and dropped.
+      - key: "district_proficiency_math_pct"
+        direction: inverse
+        weight: 0.25
+        thresholds:
+          - {max: 15, score: 10}
+          - {max: 25, score: 9}
+          - {max: 35, score: 8}
+          - {max: 45, score: 7}
+          - {max: 55, score: 6}
+          - {max: 65, score: 5}
+          - {max: 75, score: 4}
+          - {max: 85, score: 3}
+          - {score: 2}
       - key: "chronic_absenteeism_rate_pct"
         direction: inverse
         weight: 0.25

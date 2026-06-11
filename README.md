@@ -1207,3 +1207,29 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Run live `--force` MS batch to exercise ACS district-type fallback + widened statutory narrative guard
 
 **Tests:** 867 passed (`python3 -m pytest -q -p no:cacheprovider`).
+
+---
+
+### Session — 2026-06-11 (ad2fd9b)
+
+**Accomplished:**
+- Diagnosed an uploaded "red-team" scorecard brief against the cached Oxford ground truth; 3 of 6 claimed bugs did not reproduce (academic_need 5.0 was a real computed score, political_climate 5.0 was a CHECK-002 revert, population_trends already scored 7.5) — operator confirmed cache is authoritative
+- FIX A: added `district_proficiency_math_pct` as a scored `academic_need` secondary in `scoring_weights.yaml` (w 0.25, inverse, mirrors ELA thresholds); Oxford academic_need 5.0 → 4.69
+- FIX B: added political_climate consent-gate penalty in `s5_scoring.py` (`_apply_political_consent_gate` via new `score_dimension` wrapper) — consent_required + applies + undocumented board position → 4.0 + `consent_gate_unresolved`
+- FIX C: `_annotate_authorizer_disposition` adds `disposition_unverified` flag when no disposition signal (label-only; value stays ~5.0)
+- FIX F: `_score_competitive_opportunity_proxy` structural proxy `clamp(8.0 * rating_penalty, 1, 9)` from charter share + district rating; re-included in composite (Oxford 4.8); PSS ingest left as a backlog TODO
+- FIX 1: centralized three-way 5.0 classification in `_tag_no_signal_default` — `used_default` → `no_signal_default` + WARNING; consistency-reverts and computed 5.0s stay unflagged
+
+**Decisions:**
+- Cache (`s4_verified.json` / `s5_scorecard.json`) is the source of truth over the uploaded brief; verified every claim before coding
+- FIX D (charter_saturation Session-7 adjacent-school gate reversal) HELD pending operator-profile conversation with The Mind Trust leadership — its sign-off requirement stands
+- FIX F rating penalties {A:0.6, B:0.75, C:0.9, D:1.0, F:1.0} are a calibration starting point, to be revisited after the operator-profile conversation
+- No composite weights changed (`scoring_presets.yaml` untouched); S2 ingest, CLI contract, and `app/` layer untouched
+- Oxford composite recompute (in-memory, cache not overwritten): 6.3 → 5.9
+
+**Next Steps:**
+- [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
+- [ ] Build NCES PSS (Private School Universe Survey) fetcher to add private-school competition as the competitive_opportunity proxy's 3rd term (backlog TODO in `s5_scoring.py`)
+- [ ] Re-render Oxford brief from the updated scorer to verify HTML reflects new scores
+
+**Tests:** 884 passed (`python3 -m pytest -q -p no:cacheprovider`).

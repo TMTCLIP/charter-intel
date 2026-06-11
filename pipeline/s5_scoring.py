@@ -214,7 +214,8 @@ def run(
             dim_name=dim_name,
             dim_def=dim_def,
             verified_bundle=verified_bundle,
-            weight=weight
+            weight=weight,
+            statutory_barrier=statutory_barrier,
         )
         dimensions_out[dim_name] = result
         facts_used.extend(result.get("supporting_fact_ids", []))
@@ -250,6 +251,11 @@ def run(
         # All dimensions defaulted — no real data at all; fall back to midpoint
         effective_weights = {}
         composite = 5.0
+        logger.warning(
+            "s5_scoring: %s/%s — every dimension is a no-signal default; "
+            "composite fell back to 5.0 with zero real data coverage",
+            state, community_id,
+        )
 
     # --- Compute data coverage ---
     total_weight_sum = sum(d["weight"] for d in dimensions_out.values())
@@ -489,6 +495,59 @@ def score_dimension(
     dim_name: str,
     dim_def: dict,
     verified_bundle: dict,
+    weight: float,
+    statutory_barrier: Optional[dict] = None,
+) -> dict:
+    """Score a single dimension, then apply dimension-specific post-adjustments.
+
+    The heavy lifting lives in _score_dimension_core. This wrapper layers on
+    adjustments that depend on cross-dimension context (e.g. the political_climate
+    consent-gate penalty, which needs the statutory barrier) so the core's many
+    return points stay untouched.
+    """
+    result = _score_dimension_core(dim_name, dim_def, verified_bundle, weight)
+    if dim_name == "political_climate":
+        result = _apply_political_consent_gate(
+            result, verified_bundle, statutory_barrier
+        )
+    if dim_name == "authorizer_friendliness":
+        result = _annotate_authorizer_disposition(result, verified_bundle)
+    result = _tag_no_signal_default(dim_name, result)
+    return result
+
+
+# FIX 1 — three-way classification of a 5.0 score so a genuine "no signal"
+# default is never indistinguishable from a real score:
+#   • no_signal_default  — used_default=True: no usable signal, excluded from the
+#                          composite. MUST carry the flag and emit a WARNING.
+#   • consistency_revert — a CHECK-00x S4 consistency check reverted to neutral
+#                          (used_default=False). Already marked via
+#                          consistency_check_triggered; must NOT carry the flag.
+#   • computed           — a real threshold score that happens to equal 5.0
+#                          (e.g. academic_need ELA 62.1). No flag.
+def _tag_no_signal_default(dim_name: str, result: dict) -> dict:
+    """Flag + log any dimension that fell back to a no-signal default.
+
+    Centralized here so every used_default path (core defaults, the academic
+    no-proficiency exclusion, the reliability/demand gates, and
+    _default_dimension_with_tag) is covered uniformly and can never fire silently.
+    """
+    if not result.get("used_default"):
+        return result
+    out = dict(result)
+    out["no_signal_default"] = True
+    reason = out.get("unscored_reason") or out.get("primary_driver") or "no usable signal"
+    logger.warning(
+        "s5_scoring: dimension %r returned a no-signal default (score=%s) — %s",
+        dim_name, out.get("score"), reason,
+    )
+    return out
+
+
+def _score_dimension_core(
+    dim_name: str,
+    dim_def: dict,
+    verified_bundle: dict,
     weight: float
 ) -> dict:
     """
@@ -557,6 +616,18 @@ def score_dimension(
         cep_result = _score_operational_complexity_cep(relevant_facts, dim_def, weight)
         if cep_result is not None:
             return cep_result
+
+    # Special case (FIX 7): competitive_opportunity structural proxy. When the
+    # LLM demand_supply_gap_index is absent, score the supply-side entry space
+    # from verified structural data (charter whitespace + district quality)
+    # rather than excluding the dimension. Only fires when the primary is absent,
+    # so a real demand_supply_gap_index keeps the existing demand-gate behavior.
+    if dim_name == "competitive_opportunity" and primary_value is None:
+        proxy_result = _score_competitive_opportunity_proxy(
+            verified_bundle, weight, supporting_ids
+        )
+        if proxy_result is not None:
+            return proxy_result
 
     # Special case: web-search-derived index dimensions (score_is_index: true in YAML).
     # The index value is already calibrated to the 1–9 reporting scale; passing it
@@ -697,6 +768,120 @@ def score_dimension(
         "supporting_fact_ids": supporting_ids,
         "used_default": used_default
     }
+
+
+def _has_documented_board_position(verified_bundle: dict) -> bool:
+    """True when a local-board charter position is documented and trusted.
+
+    "Documented" = a school_board_charter_orientation fact that survived S4
+    (in_main_analysis=True). A fact demoted by a consistency check (e.g. Oxford's
+    CHECK-003, which dropped a false "ineligible" orientation) is NOT documented —
+    the board's actual posture remains unknown.
+    """
+    for f in verified_bundle.get("facts", []):
+        if (
+            f.get("fact_key") == "school_board_charter_orientation"
+            and f.get("in_main_analysis")
+        ):
+            return True
+    return False
+
+
+# political_climate consent-gate penalty (FIX 3). In a consent_required district
+# (e.g. MS § 37-28-7, A/B/C ratings) a charter needs local-board endorsement. When
+# the board's position is undocumented, the absence of opposition is NOT neutrality
+# — the gate is unresolved, so the dimension must sit BELOW neutral rather than at
+# the 5.0 neutral default. 4.0 keeps it clearly below midpoint while staying clear
+# of the POLITICAL_RISK_HIGH cap, which keys on the political_climate_index FACT
+# value (<=3), not this dimension score. When the board position IS documented
+# (positive or negative), behavior is unchanged — the computed score stands.
+_CONSENT_GATE_PENALTY_SCORE = 4.0
+
+
+def _apply_political_consent_gate(
+    result: dict,
+    verified_bundle: dict,
+    statutory_barrier: Optional[dict],
+) -> dict:
+    """Push political_climate below neutral when a consent gate is unresolved.
+
+    Conditions (all required):
+      - statutory_barrier.severity == "consent_required"
+      - statutory_barrier.applies is True
+      - no documented local-board charter position
+    Otherwise the result is returned unchanged.
+    """
+    if not statutory_barrier:
+        return result
+    if statutory_barrier.get("severity") != "consent_required":
+        return result
+    if statutory_barrier.get("applies") is not True:
+        return result
+    if _has_documented_board_position(verified_bundle):
+        return result
+
+    weight = result.get("weight", 0.0)
+    out = dict(result)
+    prior_driver = result.get("primary_driver", "")
+    out["score"] = _CONSENT_GATE_PENALTY_SCORE
+    out["weighted_contribution"] = round(_CONSENT_GATE_PENALTY_SCORE * weight, 4)
+    out["confidence"] = Confidence.LOW.value
+    out["used_default"] = False
+    out["consent_gate_unresolved"] = True
+    out["primary_driver"] = (
+        f"Consent gate unresolved ({statutory_barrier.get('statute', 'consent required')}): "
+        f"local-board endorsement required and no board position documented — "
+        f"absence of opposition is not neutrality. Scored below neutral "
+        f"({_CONSENT_GATE_PENALTY_SCORE:.1f})."
+        + (f" [prior: {prior_driver}]" if prior_driver else "")
+    )
+    logger.warning(
+        "s5_scoring: political_climate consent-gate unresolved (%s) — "
+        "scored %.1f (below neutral); no documented board position",
+        statutory_barrier.get("id"), _CONSENT_GATE_PENALTY_SCORE,
+    )
+    return out
+
+
+# authorizer_friendliness disposition keys (FIX 4, label-only). The dimension
+# currently scores from pathway AVAILABILITY (num_accessible_authorizers) alone.
+# Authorizer DISPOSITION (approval/denial track record, portfolio quality, renewal
+# posture, stated preferences) is a different construct and is not yet ingested.
+# When no disposition signal is present, annotate the score so it is read as
+# pathway clarity, not a confident statement about authorizer posture. This does
+# NOT change the score — a clear single pathway with no disposition data still
+# reads ~5.0.
+_AUTHORIZER_DISPOSITION_KEYS = frozenset({
+    "authorizer_approval_rate_pct",
+    "authorizer_portfolio_quality_score",
+    "authorizer_renewal_posture",
+    "authorizer_known_preferences",
+})
+
+
+def _annotate_authorizer_disposition(result: dict, verified_bundle: dict) -> dict:
+    """Flag authorizer_friendliness when it reflects availability only.
+
+    Adds disposition_unverified=True and a driver note when no authorizer
+    disposition signal is present in the verified bundle. Score is unchanged.
+    """
+    has_disposition = any(
+        f.get("fact_key") in _AUTHORIZER_DISPOSITION_KEYS
+        and f.get("value") is not None
+        and f.get("in_main_analysis")
+        for f in verified_bundle.get("facts", [])
+    )
+    if has_disposition:
+        return result
+    out = dict(result)
+    out["disposition_unverified"] = True
+    prior_driver = result.get("primary_driver", "")
+    note = (
+        "disposition_unverified — score reflects pathway clarity, not authorizer "
+        "posture (no approval-rate/track-record/posture data)"
+    )
+    out["primary_driver"] = f"{prior_driver} [{note}]" if prior_driver else note
+    return out
 
 
 def _get_charter_adjacent_count(verified_bundle: dict) -> Optional[int]:
@@ -1182,6 +1367,87 @@ def _score_replication_feasibility(facts: list[dict], weight: float) -> dict:
         "primary_driver": driver,
         "supporting_fact_ids": supporting_ids,
         "used_default": False,
+    }
+
+
+# competitive_opportunity structural proxy (FIX 7).
+#
+# Penalty values are a calibration starting point (operator-supplied), to be
+# revisited after the operator profile conversation with The Mind Trust. They are
+# NOT final weights.
+_COMPETITIVE_PROXY_BASE = 8.0  # zero charter share → high whitespace
+_COMPETITIVE_RATING_PENALTY = {"A": 0.6, "B": 0.75, "C": 0.9, "D": 1.0, "F": 1.0}
+_COMPETITIVE_PROXY_ANNOTATION = (
+    "Structural proxy — charter whitespace and district quality only. "
+    "Private-school competition not measured (PSS data not ingested). "
+    "Score reflects supply-side entry space, not revealed parent demand."
+)
+
+# TODO [BACKLOG]: Ingest NCES PSS (Private School Universe Survey)
+# Source: https://nces.ed.gov/surveys/pss/
+# Purpose: Complete the competitive_opportunity proxy by adding
+#           private-school competition as a third input term.
+# Current state: proxy uses charter share + district rating only.
+#                Private-school presence term is omitted, not zero.
+# Priority: Pre-deliverable if operator profile confirms demand-side
+#           competition is a strategic factor for The Mind Trust.
+# (Do not implement the fetcher here — this is a named backlog marker only.
+#  PSS would feed S2/S3 ingest; this scorer consumes the resulting fact.)
+
+
+def _read_charter_enrollment_share(verified_bundle: dict) -> Optional[float]:
+    """Read the verified charter enrollment share % from the full bundle, or None."""
+    for f in verified_bundle.get("facts", []):
+        if f.get("fact_key") == "charter_enrollment_share_pct":
+            v = f.get("value")
+            if isinstance(v, (int, float)):
+                return float(v)
+    return None
+
+
+def _score_competitive_opportunity_proxy(
+    verified_bundle: dict,
+    weight: float,
+    supporting_ids: list[str],
+) -> Optional[dict]:
+    """Score competitive_opportunity from verified structural data.
+
+    Requires both verified inputs to be present:
+      - charter_enrollment_share_pct (NCES CCD)
+      - district_accountability_rating (state A–F letter grade)
+    Returns None to fall through to the default path when either is absent.
+
+    proxy = clamp(base * rating_penalty, 1.0, 9.0)
+    Private-school competition is intentionally omitted (PSS not ingested).
+    """
+    charter_share = _read_charter_enrollment_share(verified_bundle)
+    rating = _read_district_rating(verified_bundle)
+    if charter_share is None or rating is None:
+        return None
+    penalty = _COMPETITIVE_RATING_PENALTY.get(rating)
+    if penalty is None:
+        return None
+
+    score = round(max(1.0, min(9.0, _COMPETITIVE_PROXY_BASE * penalty)), 2)
+    driver = (
+        f"Structural proxy: charter share {charter_share:.1f}%, district rating "
+        f"{rating} (penalty {penalty}) → {score:.1f}. {_COMPETITIVE_PROXY_ANNOTATION}"
+    )
+    logger.info(
+        "s5_scoring: competitive_opportunity structural proxy — share=%.1f%% "
+        "rating=%s → %.2f (demand_supply_gap_index absent)",
+        charter_share, rating, score,
+    )
+    return {
+        "score": score,
+        "weight": weight,
+        "weighted_contribution": round(score * weight, 4),
+        "confidence": Confidence.MODERATE.value,
+        "primary_driver": driver,
+        "supporting_fact_ids": supporting_ids,
+        "used_default": False,
+        "structural_proxy": True,
+        "proxy_annotation": _COMPETITIVE_PROXY_ANNOTATION,
     }
 
 

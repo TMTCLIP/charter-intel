@@ -314,6 +314,34 @@ class TestScoreRange:
         assert 0.0 <= result["score"] <= 10.0
         assert result["used_default"] is False
 
+    def test_academic_need_math_secondary_moves_score(self):
+        """Math proficiency is a scored secondary: adding it changes the score.
+
+        Oxford ground truth: ELA 62.1 (→5.0 primary), math 69.4. With math
+        blended in (inverse, lower=higher need), the score must move off the
+        ELA-only 5.0 and stay a real score (used_default False)."""
+        weights_cfg = _load_weights()
+        dim_def = weights_cfg["dimensions"]["academic_need"]
+        ela_only = score_dimension(
+            "academic_need",
+            dim_def,
+            _dim_bundle("academic_need", {"district_proficiency_ela_pct": 62.1}),
+            0.125,
+        )
+        ela_math = score_dimension(
+            "academic_need",
+            dim_def,
+            _dim_bundle("academic_need", {
+                "district_proficiency_ela_pct": 62.1,
+                "district_proficiency_math_pct": 69.4,
+            }),
+            0.125,
+        )
+        assert ela_only["score"] == pytest.approx(5.0)
+        assert ela_math["score"] != ela_only["score"]
+        assert ela_math["used_default"] is False
+        assert 0.0 <= ela_math["score"] <= 10.0
+
     def test_charter_saturation_no_data_is_defaulted(self):
         """charter_saturation missing_data_behavior=degrade_confidence → used_default=True."""
         weights_cfg = _load_weights()
@@ -325,6 +353,219 @@ class TestScoreRange:
         )
         assert result["used_default"] is True
         assert 0.0 <= result["score"] <= 10.0
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FIX 1 — no-signal default flag (three-way: no_signal_default / revert / computed)
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestNoSignalDefault:
+    """Contract: a dimension that fell back to a no-signal default (used_default
+    True) MUST carry no_signal_default=True. A computed 5.0 or a consistency-check
+    revert (used_default False) MUST NOT carry it."""
+
+    def test_every_defaulted_dimension_carries_flag(self):
+        """Score every dimension against an empty bundle; any used_default result
+        must carry no_signal_default. (No silent 5.0 anywhere.)"""
+        weights_cfg = _load_weights()
+        for dim_name, dim_def in weights_cfg["dimensions"].items():
+            result = score_dimension(dim_name, dim_def, {"facts": []}, 0.10)
+            if result.get("used_default"):
+                assert result.get("no_signal_default") is True, dim_name
+                assert result["score"] == pytest.approx(5.0), dim_name
+
+    def test_computed_five_is_not_flagged(self):
+        """academic_need ELA 62.1 → a real threshold 5.0, NOT a no-signal default."""
+        weights_cfg = _load_weights()
+        result = score_dimension(
+            "academic_need", weights_cfg["dimensions"]["academic_need"],
+            _dim_bundle("academic_need", {"district_proficiency_ela_pct": 62.1}),
+            0.125,
+        )
+        assert result["score"] == pytest.approx(5.0)
+        assert result["used_default"] is False
+        assert result.get("no_signal_default") is None
+
+    def test_consistency_revert_is_not_flagged(self):
+        """A CHECK-00x revert to neutral (used_default False) is not a no-signal default."""
+        weights_cfg = _load_weights()
+        bundle = {
+            "facts": [{
+                "fact_key": "num_accessible_authorizers", "value": 1,
+                "dimension": "authorizer_friendliness", "in_main_analysis": True,
+                "confidence": "HIGH", "datapoint_id": "dp_a",
+                "corrected_by_consistency_check": True,
+                "consistency_check_id": "CHECK-001",
+                "consistency_check_reason": "corrected 0 to 1",
+            }],
+        }
+        result = score_dimension(
+            "authorizer_friendliness",
+            weights_cfg["dimensions"]["authorizer_friendliness"], bundle, 0.125,
+        )
+        assert result["score"] == pytest.approx(5.0)
+        assert result["used_default"] is False
+        assert result.get("consistency_check_triggered") is True
+        assert result.get("no_signal_default") is None
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FIX F — competitive_opportunity structural proxy
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestCompetitiveOpportunityProxy:
+    """When demand_supply_gap_index is absent, score from verified structural
+    data (charter share + district rating) instead of excluding the dimension."""
+
+    def _dim_def(self) -> dict:
+        return _load_weights()["dimensions"]["competitive_opportunity"]
+
+    def _bundle(self, *, share=None, rating=None, gap_index=None) -> dict:
+        facts = []
+        if share is not None:
+            facts.append({"fact_key": "charter_enrollment_share_pct", "value": share,
+                          "dimension": "charter_saturation", "in_main_analysis": True,
+                          "confidence": "HIGH", "datapoint_id": "dp_share"})
+        if rating is not None:
+            facts.append({"fact_key": "district_accountability_rating", "value": rating,
+                          "dimension": "charter_saturation", "in_main_analysis": False,
+                          "confidence": "HIGH", "datapoint_id": "dp_rating"})
+        if gap_index is not None:
+            facts.append({"fact_key": "demand_supply_gap_index", "value": gap_index,
+                          "dimension": "competitive_opportunity", "in_main_analysis": True,
+                          "confidence": "MODERATE", "datapoint_id": "dp_gap"})
+        return {"facts": facts}
+
+    def test_proxy_scores_from_share_and_rating(self):
+        """Oxford ground truth: share 0%, rating A → 8.0 * 0.6 = 4.8, included."""
+        result = score_dimension(
+            "competitive_opportunity", self._dim_def(),
+            self._bundle(share=0.0, rating="A"), 0.125,
+        )
+        assert result["score"] == pytest.approx(4.8)
+        assert result["used_default"] is False
+        assert result["structural_proxy"] is True
+        assert "PSS data not ingested" in result["proxy_annotation"]
+
+    def test_proxy_rating_penalties(self):
+        """Penalty map applied per rating; clamped to [1, 9]."""
+        for rating, expected in [("A", 4.8), ("B", 6.0), ("C", 7.2), ("D", 8.0), ("F", 8.0)]:
+            result = score_dimension(
+                "competitive_opportunity", self._dim_def(),
+                self._bundle(share=0.0, rating=rating), 0.125,
+            )
+            assert result["score"] == pytest.approx(expected), rating
+
+    def test_missing_rating_falls_through_to_default(self):
+        """No rating → proxy does not fire → default exclusion path."""
+        result = score_dimension(
+            "competitive_opportunity", self._dim_def(),
+            self._bundle(share=0.0), 0.125,
+        )
+        assert result.get("structural_proxy") is None
+        assert result["used_default"] is True
+
+    def test_present_gap_index_keeps_normal_path(self):
+        """A real demand_supply_gap_index must NOT be overridden by the proxy."""
+        result = score_dimension(
+            "competitive_opportunity", self._dim_def(),
+            self._bundle(share=0.0, rating="A", gap_index=8), 0.125,
+        )
+        assert result.get("structural_proxy") is None
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FIX C — authorizer_friendliness disposition annotation
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestAuthorizerDisposition:
+    """authorizer_friendliness scores from pathway availability only; when no
+    disposition signal is present it must be flagged, without changing the score."""
+
+    def _dim_def(self) -> dict:
+        return _load_weights()["dimensions"]["authorizer_friendliness"]
+
+    def test_disposition_unverified_when_no_disposition_data(self):
+        bundle = _dim_bundle("authorizer_friendliness", {"num_accessible_authorizers": 1})
+        result = score_dimension(
+            "authorizer_friendliness", self._dim_def(), bundle, 0.125,
+        )
+        assert result["disposition_unverified"] is True
+        # availability-only single pathway reads ~5.0
+        assert result["score"] == pytest.approx(5.0)
+
+    def test_no_flag_when_disposition_present(self):
+        bundle = _dim_bundle("authorizer_friendliness", {
+            "num_accessible_authorizers": 1,
+            "authorizer_approval_rate_pct": 62,
+        })
+        result = score_dimension(
+            "authorizer_friendliness", self._dim_def(), bundle, 0.125,
+        )
+        assert result.get("disposition_unverified") is None
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FIX B — political_climate consent-gate penalty
+# ─────────────────────────────────────────────────────────────────────────────
+
+class TestPoliticalConsentGate:
+    """A consent_required statutory barrier with no documented board position
+    must push political_climate below neutral (not leave it at 5.0)."""
+
+    _CONSENT_BARRIER = {
+        "id": "ms_district_rating_consent",
+        "statute": "Miss. Code Ann. § 37-28-7",
+        "severity": "consent_required",
+        "applies": True,
+    }
+
+    def _dim_def(self) -> dict:
+        return _load_weights()["dimensions"]["political_climate"]
+
+    def test_consent_gate_unresolved_scores_below_neutral(self):
+        """Consent gate + no board position → below neutral + flag."""
+        bundle = _dim_bundle("political_climate", {})  # no PCI, no board orientation
+        result = score_dimension(
+            "political_climate", self._dim_def(), bundle, 0.125,
+            statutory_barrier=self._CONSENT_BARRIER,
+        )
+        assert result["score"] < 5.0
+        assert result["consent_gate_unresolved"] is True
+        assert result["used_default"] is False
+
+    def test_documented_board_position_not_penalized(self):
+        """A surviving board-orientation fact means the gate is resolved-enough;
+        the consent penalty must NOT fire."""
+        bundle = _dim_bundle("political_climate", {
+            "school_board_charter_orientation": "SUPPORTIVE",
+        })
+        result = score_dimension(
+            "political_climate", self._dim_def(), bundle, 0.125,
+            statutory_barrier=self._CONSENT_BARRIER,
+        )
+        assert result.get("consent_gate_unresolved") is None
+
+    def test_no_barrier_no_penalty(self):
+        """No statutory barrier → penalty never applies."""
+        bundle = _dim_bundle("political_climate", {})
+        result = score_dimension(
+            "political_climate", self._dim_def(), bundle, 0.125,
+            statutory_barrier=None,
+        )
+        assert result.get("consent_gate_unresolved") is None
+
+    def test_below_political_risk_high_cap_unaffected(self):
+        """The penalty score (4.0) is independent of the POLITICAL_RISK_HIGH flag,
+        which keys on the political_climate_index FACT value (<=3), not the score."""
+        bundle = _dim_bundle("political_climate", {})
+        result = score_dimension(
+            "political_climate", self._dim_def(), bundle, 0.125,
+            statutory_barrier=self._CONSENT_BARRIER,
+        )
+        # index fact absent → POLITICAL_RISK_HIGH cannot fire regardless of score
+        flags = check_override_flags(bundle, {"political_climate": result})
+        assert not any(f["flag"] == "POLITICAL_RISK_HIGH" for f in flags)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
