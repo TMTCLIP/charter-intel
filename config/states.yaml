@@ -1721,3 +1721,427 @@ WI:
   state_fips: 55
   scoring_adjustments: {}
   status: ACTIVE
+
+
+AK:
+  display_name: Alaska
+  state_fips: "02"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ak.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+AL:
+  display_name: Alabama
+  state_fips: "01"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/al.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+AR:
+  display_name: Arkansas
+  state_fips: "05"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ar.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+AZ:
+  display_name: Arizona
+  state_fips: "04"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/az.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+CA:
+  display_name: California
+  state_fips: "06"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ca.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+CO:
+  display_name: Colorado
+  state_fips: "08"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/co.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+CT:
+  display_name: Connecticut
+  state_fips: "09"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ct.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+DC:
+  display_name: District of Columbia
+  state_fips: "11"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/dc.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+DE:
+  display_name: Delaware
+  state_fips: "10"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/de.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+FL:
+  display_name: Florida
+  state_fips: "12"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/fl.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+GA:
+  display_name: Georgia
+  state_fips: "13"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ga.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+HI:
+  display_name: Hawaii
+  state_fips: "15"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/hi.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+IA:
+  display_name: Iowa
+  state_fips: "19"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ia.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+ID:
+  display_name: Idaho
+  state_fips: "16"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/id.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+IL:
+  display_name: Illinois
+  state_fips: "17"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/il.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+IN:
+  display_name: Indiana
+  state_fips: "18"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/in.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+KS:
+  display_name: Kansas
+  state_fips: "20"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ks.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+KY:
+  display_name: Kentucky
+  state_fips: "21"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ky.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+LA:
+  display_name: Louisiana
+  state_fips: "22"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/la.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+MA:
+  display_name: Massachusetts
+  state_fips: "25"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ma.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+MD:
+  display_name: Maryland
+  state_fips: "24"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/md.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+ME:
+  display_name: Maine
+  state_fips: "23"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/me.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+MI:
+  display_name: Michigan
+  state_fips: "26"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/mi.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+MN:
+  display_name: Minnesota
+  state_fips: "27"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/mn.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+MO:
+  display_name: Missouri
+  state_fips: "29"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/mo.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+MT:
+  display_name: Montana
+  state_fips: "30"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/mt.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+NC:
+  display_name: North Carolina
+  state_fips: "37"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/nc.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+ND:
+  display_name: North Dakota
+  state_fips: "38"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/nd.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+NE:
+  display_name: Nebraska
+  state_fips: "31"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ne.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+NH:
+  display_name: New Hampshire
+  state_fips: "33"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/nh.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+NJ:
+  display_name: New Jersey
+  state_fips: "34"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/nj.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+NV:
+  display_name: Nevada
+  state_fips: "32"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/nv.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+NY:
+  display_name: New York
+  state_fips: "36"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ny.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+OH:
+  display_name: Ohio
+  state_fips: "39"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/oh.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+OK:
+  display_name: Oklahoma
+  state_fips: "40"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ok.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+OR:
+  display_name: Oregon
+  state_fips: "41"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/or.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+PA:
+  display_name: Pennsylvania
+  state_fips: "42"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/pa.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+RI:
+  display_name: Rhode Island
+  state_fips: "44"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ri.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+SC:
+  display_name: South Carolina
+  state_fips: "45"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/sc.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+SD:
+  display_name: South Dakota
+  state_fips: "46"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/sd.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+TX:
+  display_name: Texas
+  state_fips: "48"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/tx.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+UT:
+  display_name: Utah
+  state_fips: "49"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/ut.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+VA:
+  display_name: Virginia
+  state_fips: "51"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/va.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+VT:
+  display_name: Vermont
+  state_fips: "50"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/vt.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+WA:
+  display_name: Washington
+  state_fips: "53"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/wa.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+WV:
+  display_name: West Virginia
+  state_fips: "54"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/wv.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
+
+WY:
+  display_name: Wyoming
+  state_fips: "56"
+  authorizer_type: placeholder  # to be verified per state
+  proficiency_adapter: none     # placeholder until adapter built
+  charter_law_config: config/charter_law/wy.yaml
+  enrollment_floor: 500         # default, operator can override
+  adjacent_states: []           # to be populated
