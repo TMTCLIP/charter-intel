@@ -258,6 +258,18 @@ class TokenLogger:
     def run_id(self) -> str:
         return self._run_id
 
+    @property
+    def total_cost_usd(self) -> float:
+        """Cumulative estimated USD cost across all calls recorded this run.
+        Read-only accessor for budget enforcement; this module stays
+        instrumentation-only and never aborts anything itself."""
+        return sum(r.estimated_cost_usd for r in self._records)
+
+    @property
+    def total_tokens(self) -> int:
+        """Cumulative input+output tokens across all calls recorded this run."""
+        return sum(r.tokens_total for r in self._records)
+
     def get_community_summary(self, community_id: str) -> list[dict]:
         """Return per-stage token summary for one community, sorted by cost desc."""
         by_stage: dict[str, dict] = {}

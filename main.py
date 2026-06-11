@@ -50,12 +50,50 @@ from pipeline import (
 from pipeline import s1_discovery, s2_state_context, s3_fact_extraction
 from pipeline import s4_verification, s5_scoring, s6_synthesis, s7_render
 from pipeline.utils.token_logger import token_logger
+from pipeline.utils.api_client import BudgetExceededError
+from typing import Optional
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
 logger = logging.getLogger(__name__)
+
+
+def _env_float(name: str) -> Optional[float]:
+    """Parse an optional float env var. Returns None if unset/blank/invalid."""
+    raw = os.environ.get(name, "").strip()
+    if not raw:
+        return None
+    try:
+        return float(raw)
+    except ValueError:
+        logger.warning("Ignoring %s=%r — not a valid number.", name, raw)
+        return None
+
+
+def _env_int(name: str) -> Optional[int]:
+    """Parse an optional int env var. Returns None if unset/blank/invalid."""
+    raw = os.environ.get(name, "").strip()
+    if not raw:
+        return None
+    try:
+        return int(raw)
+    except ValueError:
+        logger.warning("Ignoring %s=%r — not a valid integer.", name, raw)
+        return None
+
+
+def _abort_over_budget(err: BudgetExceededError) -> None:
+    """Stop the whole run cleanly when the spend ceiling is hit.
+
+    Writes the token CSV/summary so far, prints a one-line reason (no stack
+    trace), and exits non-zero.
+    """
+    logger.error("RUN ABORTED — %s", err)
+    token_logger.finalize()
+    sys.exit(1)
+
 
 STAGE_MODULES = {
     "s1_discovery":     s1_discovery,
@@ -357,6 +395,10 @@ def run_community_pipeline(
                     previous_result=previous,
                     **extra
                 )
+            except BudgetExceededError:
+                # Hard run-level abort — must not be swallowed into a per-stage
+                # ERROR. Propagate so main() can stop the whole run cleanly.
+                raise
             except Exception as e:
                 result = StageResult(
                     stage_id=stage_id,
@@ -708,6 +750,13 @@ def main():
     )
     token_logger.set_run_id(run_id)
 
+    # ── Per-run spend ceiling (C-1) ──────────────────────────────────────────
+    # Optional hard budget. Unset env vars → no limit (unchanged behaviour).
+    _api_module.set_run_budget(
+        max_cost_usd=_env_float("CLIP_MAX_RUN_COST_USD"),
+        max_tokens=_env_int("CLIP_MAX_RUN_TOKENS"),
+    )
+
     # ── Batch mode setup ─────────────────────────────────────────────────────
     # Active only when: --batch flag, not --mock, not --dry-run.
     # --mock takes priority (mock already patched in; batch gateway not needed).
@@ -759,6 +808,9 @@ def main():
                 comm_id = future_map[future]
                 try:
                     all_results[comm_id] = future.result()
+                except BudgetExceededError as be:
+                    _gateway.stop()
+                    _abort_over_budget(be)
                 except Exception as exc:
                     logger.error("[BATCH] Community %s raised exception: %s", comm_id, exc)
                     all_results[comm_id] = {}
@@ -770,12 +822,15 @@ def main():
                 _mock_client.reset()
             if _recorder is not None:
                 _recorder.reset()
-            all_results[community_id] = run_community_pipeline(
-                community_id=community_id,
-                state=config.state,
-                config=config,
-                stages_to_run=stages_to_run,
-            )
+            try:
+                all_results[community_id] = run_community_pipeline(
+                    community_id=community_id,
+                    state=config.state,
+                    config=config,
+                    stages_to_run=stages_to_run,
+                )
+            except BudgetExceededError as be:
+                _abort_over_budget(be)
             if _recorder is not None:
                 logger.info(_recorder.summary(community_id))
 

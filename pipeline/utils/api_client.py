@@ -56,6 +56,82 @@ def set_dry_run(enabled: bool) -> None:
 
 
 # ─────────────────────────────────────────────
+# PER-RUN SPEND CEILING (C-1)
+# ─────────────────────────────────────────────
+# A hard, configurable budget for one pipeline run. Enforced inside call_claude
+# against the cumulative totals already tracked by token_logger, so it adds no
+# new bookkeeping. Both limits default to None (unlimited) — runs that don't set
+# a ceiling behave exactly as before. main.py wires these from env vars
+# (CLIP_MAX_RUN_COST_USD / CLIP_MAX_RUN_TOKENS) at startup.
+
+_MAX_RUN_COST_USD: Optional[float] = None
+_MAX_RUN_TOKENS: Optional[int] = None
+_BUDGET_WARN_FRACTION = 0.8   # warn once when cumulative spend crosses 80%
+_budget_warned = False
+
+
+class BudgetExceededError(RuntimeError):
+    """Raised when a run exceeds its configured token/$ ceiling.
+
+    Carries a human-readable message; main.py catches it to print a clean
+    abort line (no stack trace) and exit non-zero.
+    """
+
+
+def set_run_budget(
+    max_cost_usd: Optional[float] = None,
+    max_tokens: Optional[int] = None,
+) -> None:
+    """Set the per-run spend ceiling. None disables that limit (the default)."""
+    global _MAX_RUN_COST_USD, _MAX_RUN_TOKENS, _budget_warned
+    _MAX_RUN_COST_USD = max_cost_usd
+    _MAX_RUN_TOKENS = max_tokens
+    _budget_warned = False
+
+
+def _enforce_budget(stage: str) -> None:
+    """Abort the run if cumulative spend has passed the configured ceiling.
+
+    Checked at the start of every call_claude, so once a prior call pushes the
+    run over budget the next call is refused before spending more. Warns once at
+    80% of either limit. No-op when no ceiling is configured.
+    """
+    if _MAX_RUN_COST_USD is None and _MAX_RUN_TOKENS is None:
+        return
+
+    cost = token_logger.total_cost_usd
+    tokens = token_logger.total_tokens
+
+    global _budget_warned
+    if not _budget_warned and (
+        (_MAX_RUN_COST_USD is not None and cost >= _BUDGET_WARN_FRACTION * _MAX_RUN_COST_USD)
+        or (_MAX_RUN_TOKENS is not None and tokens >= _BUDGET_WARN_FRACTION * _MAX_RUN_TOKENS)
+    ):
+        logger.warning(
+            "[%s] approaching run budget: $%.4f"
+            "%s spent, %s%s tokens used.",
+            stage, cost,
+            f" / ${_MAX_RUN_COST_USD:.2f}" if _MAX_RUN_COST_USD is not None else "",
+            f"{tokens:,}",
+            f" / {_MAX_RUN_TOKENS:,}" if _MAX_RUN_TOKENS is not None else "",
+        )
+        _budget_warned = True
+
+    if _MAX_RUN_COST_USD is not None and cost > _MAX_RUN_COST_USD:
+        raise BudgetExceededError(
+            f"Run budget exceeded at stage '{stage}': estimated ${cost:.4f} spent "
+            f"> ceiling ${_MAX_RUN_COST_USD:.2f} (CLIP_MAX_RUN_COST_USD). "
+            f"Aborting before further API calls."
+        )
+    if _MAX_RUN_TOKENS is not None and tokens > _MAX_RUN_TOKENS:
+        raise BudgetExceededError(
+            f"Run budget exceeded at stage '{stage}': {tokens:,} tokens used "
+            f"> ceiling {_MAX_RUN_TOKENS:,} (CLIP_MAX_RUN_TOKENS). "
+            f"Aborting before further API calls."
+        )
+
+
+# ─────────────────────────────────────────────
 # RESULT OBJECT
 # ─────────────────────────────────────────────
 
@@ -85,13 +161,10 @@ class APIResult:
 # MAIN API CALL FUNCTION
 # ─────────────────────────────────────────────
 
-# TODO(C-1, deferred — needs architectural sign-off): call_claude has no cache
-# integration and there is no per-run token/$ spend ceiling. Caching is currently
-# the caller's responsibility, so a caller that skips the cache (or a runaway
-# loop) can incur unbounded cost. Adding a cache-aware wrapper and/or a hard
-# per-run budget that aborts on exceedance touches the API-client architecture;
-# per the project's standing "do not redesign architecture" rule this is left as
-# a flagged decision rather than an unilateral change.
+# C-1: call_claude enforces a per-run spend ceiling (see set_run_budget /
+# _enforce_budget above). For response-level caching, callers may use the
+# opt-in call_claude_cached() wrapper below; existing per-stage caches are
+# unaffected.
 
 def call_claude(
     model: str,
@@ -150,6 +223,9 @@ def call_claude(
             community_id=community_id,
             parse_error="dry-run: no API call made" if expect_json else None,
         )
+
+    # Refuse to spend more once the run is already over its configured ceiling.
+    _enforce_budget(stage)
 
     client = anthropic.Anthropic(timeout=timeout_seconds)  # hard per-call ceiling
 
@@ -261,6 +337,60 @@ def call_claude(
         f"[{stage}] Claude API call failed after {retry_attempts} attempts. "
         f"Last error: {last_error}"
     )
+
+
+# ─────────────────────────────────────────────
+# CACHE-AWARE WRAPPER (C-1)
+# ─────────────────────────────────────────────
+
+# Fields persisted on a cache hit. raw_response (the live SDK object) is
+# intentionally omitted — it is not JSON-serialisable and not needed downstream.
+_CACHED_RESULT_FIELDS = (
+    "text", "parsed_json", "tokens_input", "tokens_output",
+    "model", "stage", "community_id", "parse_error",
+)
+
+
+def call_claude_cached(
+    cache: Any,
+    cache_key: str,
+    *,
+    ttl_days: Optional[int] = None,
+    **call_kwargs: Any,
+) -> APIResult:
+    """Cache-aware wrapper around call_claude.
+
+    On a cache hit, returns a reconstructed APIResult and makes NO API call (so
+    it never counts against the spend ceiling). On a miss, calls call_claude and
+    stores the serialisable result under cache_key.
+
+    This is opt-in: it uses the existing CacheManager.get/set unchanged and does
+    not alter any stage's own cache checks. Pass cache=None to bypass caching
+    entirely (equivalent to calling call_claude directly).
+
+    Args:
+        cache:        a CacheManager (or None to skip caching).
+        cache_key:    relative cache key, e.g. "llm/nm/<community>/<stage>.json".
+        ttl_days:     optional freshness window passed through to CacheManager.get.
+        **call_kwargs: forwarded verbatim to call_claude (model, system, user, ...).
+    """
+    if cache is not None:
+        cached = cache.get(cache_key, ttl_days=ttl_days)
+        if cached is not None:
+            logger.info(
+                "[%s] LLM cache hit (%s) — no API call",
+                call_kwargs.get("stage", ""), cache_key,
+            )
+            return APIResult(**{f: cached.get(f) for f in _CACHED_RESULT_FIELDS})
+
+    result = call_claude(**call_kwargs)
+
+    # Only persist real, successful responses. Dry-run returns empty text (ok is
+    # False), so this naturally skips caching empty backstop results.
+    if cache is not None and result.ok:
+        cache.set(cache_key, {f: getattr(result, f) for f in _CACHED_RESULT_FIELDS})
+
+    return result
 
 
 # ─────────────────────────────────────────────

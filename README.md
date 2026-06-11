@@ -416,6 +416,30 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ## Session Log
 
+### Session — 2026-06-11 (ebee04c)
+
+**Accomplished:**
+- Implemented C-1 (previously deferred): a configurable per-run spend ceiling in `pipeline/utils/api_client.py` — `BudgetExceededError`, `set_run_budget()`, and `_enforce_budget()` called at the start of every `call_claude`, checking cumulative spend against `CLIP_MAX_RUN_COST_USD` / `CLIP_MAX_RUN_TOKENS` (both unset → unlimited, unchanged behavior)
+- Added cumulative `total_cost_usd` / `total_tokens` read-only properties to `TokenLogger` (instrumentation-only; budget reads these, logger still aborts nothing itself)
+- Added opt-in `call_claude_cached(cache, cache_key, ttl_days=…, **call_kwargs)` wrapper using the existing `CacheManager.get/set` unchanged — cache hit returns a reconstructed `APIResult` and makes no API call (never counts against the ceiling); existing per-stage caches untouched
+- Wired the budget in `main.py`: `_env_float`/`_env_int` helpers read the env vars; `set_run_budget` called after `set_run_id`; `BudgetExceededError` now propagates past the per-stage exception handler and is caught at the run loop (serial + batch) via `_abort_over_budget()` → finalizes token CSV/summary, logs one clean line, exits non-zero (no stack trace)
+- Verified P-2: the dry-run backstop inside `call_claude` (`if _DRY_RUN`) and `set_dry_run` wiring in `main.py` are present, and all per-stage `config.dry_run` guards (s2/s3/s4/s6) remain intact — already implemented last session, no change needed
+- Added `tests/unit/test_budget_and_cache.py` (8 tests: budget no-op/cost/token ceilings, cache hit/miss/bypass/empty-not-cached); suite **859 → 867 passing**
+
+**Decisions:**
+- Enforcement lives in `api_client`, not `token_logger` — keeps the logger instrumentation-only (it just exposes cumulative totals)
+- Budget configured via env vars (not a `PipelineConfig` field) to avoid touching the config dataclass; matches the existing `set_dry_run` module-state pattern
+- `_enforce_budget` checks at call start so the run aborts before spending further once a prior call crossed the ceiling; warns once at 80%
+- Cache wrapper is opt-in and omits the non-serialisable `raw_response`; no stage was rewired to use it (would alter existing cache behavior)
+- Excluded the regenerated demo-brief HTML (timestamp-only churn) from the commit again
+
+**Next Steps:**
+- [ ] Decide whether any stage should adopt `call_claude_cached` for response-level caching (currently opt-in, unused)
+- [ ] Consider surfacing `CLIP_MAX_RUN_COST_USD` / `CLIP_MAX_RUN_TOKENS` in the app UI / deploy configs
+- [ ] Budget enforcement in `--batch` mode aborts on the first over-ceiling future; revisit if finer-grained parallel accounting is needed
+
+**Tests:** 867 passed (`python3 -m pytest -q`).
+
 ### Session — 2026-06-11 (3cc9824)
 
 **Accomplished:**
