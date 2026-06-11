@@ -692,6 +692,7 @@ async function submitScan() {
     }
 
     APP.activeJobId = data.job_id;
+    _updateRegenFeedback(regenData, data.regen_cleared);
     _showScanProgress(body.target, isStateWide ? "Statewide" : city);
     _startPoll(data.job_id);
 
@@ -700,6 +701,20 @@ async function submitScan() {
   } finally {
     btn.disabled = false;
     btn.textContent = "Run Scan";
+  }
+}
+
+// Inline one-line confirmation shown near the Regen Data toggle after a regen
+// scan is initiated. Reuses the existing .toggle-row-sub / .hidden styles.
+function _updateRegenFeedback(regenOn, clearedCount) {
+  const el = document.getElementById("regen-data-feedback");
+  if (!el) return;
+  if (regenOn && typeof clearedCount === "number") {
+    el.textContent = `Cleared ${clearedCount} cached files — re-running from S3`;
+    el.classList.remove("hidden");
+  } else {
+    el.textContent = "";
+    el.classList.add("hidden");
   }
 }
 

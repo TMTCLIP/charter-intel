@@ -416,6 +416,27 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 
 ## Session Log
 
+### Session — 2026-06-11 (cbec8a0)
+
+**Accomplished:**
+- Added inline UI feedback for Regen Data: after a regen scan launches, a one-line confirmation "Cleared N cached files — re-running from S3" appears near the Regen Data toggle in the Flask UI, reusing the existing `.toggle-row-sub` + `.hidden` classes (no new CSS)
+- Added read-only `count_regen_data_cache_files(community_id, state)` to `app/cache_utils.py` — counts *.json in the community/synthesis/llm tiers without deleting; the `/api/scan` endpoint (`app/ui/server.py`) now returns `regen_cleared` in its JSON response when the regen_data flag is set (pipeline still performs the actual deletion)
+- Wired the feedback through `app/ui/static/js/app.js` (`_updateRegenFeedback` populates/shows the line on scan launch when Regen Data is on, hides it otherwise) and the new `#regen-data-feedback` element in `index.html`
+- Refactored the `--regen-data` invalidation in `main.py` into a testable, behavior-preserving helper `_invalidate_regen_data_caches(cache, state, communities)` + `REGEN_DATA_TIERS = ("community","synthesis","llm")` constant
+- Added `tests/unit/test_regen_data_cache_invalidation.py` (3 tests): seeds community/synthesis/llm/state/fetcher cache files, runs the invalidation logic directly (no pipeline/API), asserts S3–S6 tiers cleared while S2 state/ + fetcher source caches and other communities survive; also asserts the count helper matches the cleared set. Suite **867 → 870 passing**
+
+**Decisions:**
+- The cleared count is computed app-side (read-only filesystem glob in `cache_utils`) and returned by `/api/scan`; the pipeline (`main.py`) remains the single authority that actually deletes — honors the app/ "no pipeline imports" contract and avoids double-deletion
+- Feedback line placed inside `#advanced-body` (within `.panel-body`) near the toggle as specified; `.panel-body` is hidden during the progress view by the existing flow and restored on "New Scan", so the confirmation persists on the form — did not redesign the panel-swap behavior
+- The `main.py` helper extraction is behavior-preserving (no scoring/stage logic touched); the test exercises the real logic to guard against tier-list drift
+- Excluded the regenerated demo-brief HTML (timestamp-only churn) from the commit
+
+**Next Steps:**
+- [ ] Optional: surface the cleared count in the live scan-progress view too (currently visible on the form region)
+- [ ] Consider a server-route test asserting `/api/scan` returns `regen_cleared` when regen_data is set
+
+**Tests:** 870 passed (`python3 -m pytest -q`).
+
 ### Session — 2026-06-11 (ac80d37)
 
 **Accomplished:**

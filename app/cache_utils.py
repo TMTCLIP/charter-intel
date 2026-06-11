@@ -70,6 +70,23 @@ def bust_community_cache(community_id: str, state: str, leaid: str) -> dict:
     return {"deleted": deleted, "skipped": skipped, "protected": protected, "error": error}
 
 
+def count_regen_data_cache_files(community_id: str, state: str) -> int:
+    """Read-only count of the S3–S6 analysis cache files for a community.
+
+    Counts *.json under the community/, synthesis/, and llm/ tiers — exactly the
+    files that `--regen-data` clears. Touches nothing on disk and deliberately
+    excludes the S2 state/ tier and the source-data fetcher caches. Used by the
+    scan endpoint to tell the UI how many files the regen run will clear.
+    """
+    state_lower = state.lower().strip()
+    total = 0
+    for tier in ("community", "synthesis", "llm"):
+        tier_dir = _CACHE_ROOT / tier / state_lower / community_id
+        if tier_dir.exists():
+            total += sum(1 for p in tier_dir.rglob("*.json") if p.is_file())
+    return total
+
+
 # ── helpers ────────────────────────────────────────────────────────────────────
 
 def _delete_dir_json(dir_path: Path, deleted: list[str], skipped: list[str]) -> None:

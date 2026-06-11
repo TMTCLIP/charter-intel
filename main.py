@@ -95,6 +95,35 @@ def _abort_over_budget(err: BudgetExceededError) -> None:
     sys.exit(1)
 
 
+# Cache tiers cleared by --regen-data (the S3–S6 analysis outputs). The S2
+# state-context tier ("state") and the source-data fetcher caches ("fetcher",
+# plus the per-fetcher dirs) are intentionally NOT listed — regen re-runs the
+# analysis without re-fetching source data.
+REGEN_DATA_TIERS = ("community", "synthesis", "llm")
+
+
+def _invalidate_regen_data_caches(cache, state: str, communities: list[str]) -> int:
+    """Clear the S3–S6 analysis caches for each community; return files removed.
+
+    Deletes the community/, synthesis/, and llm/ tiers for each community while
+    leaving the S2 state/ cache and source-data fetcher caches intact. Pure
+    cache I/O — no API calls, no pipeline stages.
+    """
+    state_lower = state.lower()
+    total = 0
+    for cid in communities:
+        removed = 0
+        for tier in REGEN_DATA_TIERS:
+            removed += cache.invalidate(f"{tier}/{state_lower}/{cid}")
+        total += removed
+        logger.info(
+            "[regen-data] %s: cleared %d S3–S6 cache file(s); "
+            "S2 + source-data caches kept.",
+            cid, removed,
+        )
+    return total
+
+
 STAGE_MODULES = {
     "s1_discovery":     s1_discovery,
     "s2_state_context": s2_state_context,
@@ -759,18 +788,9 @@ def main():
     # everything, including S2).
     if args.regen_data:
         from pipeline.utils.cache import CacheManager
-        _regen_cache = CacheManager(config)
-        for _cid in communities:
-            _removed = 0
-            for _tier in ("community", "synthesis", "llm"):
-                _removed += _regen_cache.invalidate(
-                    f"{_tier}/{config.state.lower()}/{_cid}"
-                )
-            logger.info(
-                "[regen-data] %s: cleared %d S3–S6 cache file(s); "
-                "S2 + source-data caches kept.",
-                _cid, _removed,
-            )
+        _invalidate_regen_data_caches(
+            CacheManager(config), config.state, communities
+        )
 
     # ── Token logger initialisation ─────────────────────────────────────────
     run_id = (

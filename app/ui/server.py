@@ -769,6 +769,13 @@ def scan():
     mode   = (body.get("mode_num") or "2").strip()
     extra_flags = {k: bool(body.get(k)) for k in app_config.BOOLEAN_FLAGS}
 
+    # Regen Data: count the S3–S6 cache files the run will clear (read-only), so
+    # the UI can show a one-line confirmation. The pipeline does the deletion.
+    regen_cleared = (
+        cache_utils.count_regen_data_cache_files(community_id, state)
+        if extra_flags.get("regen_data") else 0
+    )
+
     job_id = secrets.token_hex(8)
     with _jobs_lock:
         _jobs[job_id] = {
@@ -792,7 +799,7 @@ def scan():
         daemon=True,
     ).start()
 
-    return jsonify({"job_id": job_id, "status": "queued"})
+    return jsonify({"job_id": job_id, "status": "queued", "regen_cleared": regen_cleared})
 
 
 @app.route("/api/scan/status/<job_id>")
