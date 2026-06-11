@@ -12,7 +12,7 @@ USAGE:
 
 FLAGS:
   community       Positional city name or community_id (e.g. "Santa Fe" or nm-santa-fe)
-  --state         Two-letter state code (default: NM)
+  --state         Two-letter state code (inferred from community_id prefix if omitted)
   --community     Specific community_id or city name (alternative to positional)
   --all           Run all communities in the state
   --preset        growth | replication | turnaround (default: growth)
@@ -209,7 +209,7 @@ def parse_args() -> argparse.Namespace:
         metavar="COMMUNITY",
         help="City name or community_id (e.g. 'Santa Fe' or nm-santa-fe)"
     )
-    parser.add_argument("--state", default="NM", help="Two-letter state code (default: NM)")
+    parser.add_argument("--state", default=None, help="Two-letter state code (inferred from community_id prefix if omitted)")
     parser.add_argument("--community", help="Specific community_id or city name")
     parser.add_argument("--all", action="store_true", dest="run_all",
                         help="Run all communities in state")
@@ -314,8 +314,15 @@ def _registry_prefix_lookup(community_id: str, state: str) -> str:
     all registry entries whose key starts with '{community_id}-' and return
     the one with the highest enrollment.  Falls back to the original slug when
     no registry exists for the state or no prefix match is found.
+
+    The state to use for the registry path is extracted from the community_id
+    prefix (e.g. "ms-oxford" → "ms") when present, ignoring the caller-supplied
+    state.  The caller-supplied state is only used when the community_id has no
+    recognisable two-letter prefix.
     """
-    registry_path = f"config/community_registry/{state.lower()}.yaml"
+    m = re.match(r'^([a-z]{2})-', community_id)
+    effective_state = m.group(1) if m else state.lower()
+    registry_path = f"config/community_registry/{effective_state}.yaml"
     if not os.path.exists(registry_path):
         return community_id
     try:
@@ -370,10 +377,26 @@ def resolve_community(state: str, city_name: str) -> str:
 
 
 def build_config(args: argparse.Namespace) -> PipelineConfig:
-    state = args.state.upper()
-
     # Resolve community: positional arg takes precedence over --community flag
     raw_community = args.community_pos or args.community
+
+    # Determine state: explicit --state wins; otherwise infer from community_id prefix.
+    if args.state:
+        state = args.state.upper()
+    elif raw_community and _is_community_id(raw_community):
+        m = re.match(r'^([a-z]{2})-', raw_community)
+        if m:
+            state = m.group(1).upper()
+        else:
+            raise SystemExit(
+                "error: --state is required when the community has no recognisable "
+                "state prefix (e.g. --state MS)"
+            )
+    else:
+        raise SystemExit(
+            "error: --state is required (e.g. --state NM). "
+            "Omitting it is only safe when the community_id encodes the state prefix."
+        )
     communities = None
     if raw_community:
         resolved = resolve_community(state, raw_community)
