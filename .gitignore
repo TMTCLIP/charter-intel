@@ -29,3 +29,5 @@ clip_ops/email.log
 clip_ops/run_daily.log
 config/ingest_cache.json
 .venv/
+data/seeded/
+data/raw/
