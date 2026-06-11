@@ -1,0 +1,17 @@
+# Charter law config for OR
+# STATUS: STUB — requires human verification before strategic use
+# Source: pending — do not rely on this config for decisions
+
+state: OR
+verified: false
+verification_date: null
+
+authorizer_structure:
+  type: unknown
+  notes: "Pending verification — see NACSA state profile"
+
+statutory_barriers: []
+
+district_eligibility:
+  type: unknown
+  notes: "Pending verification"
