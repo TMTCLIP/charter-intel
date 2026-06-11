@@ -570,8 +570,22 @@ def run(
     # Load verified proficiency data for prompt injection. Each state has its own
     # authoritative source adapter (NM: PED; MS: MSRC; TN: TCAP; WI: Forward Exam).
     # Adapters return None gracefully when their data file is not yet populated.
+    # States with proficiency_adapter: none in states.yaml skip all adapter calls.
     state_uc = state.upper()
-    if state_uc == "MS":
+    _prof_adapter = None
+    try:
+        with open("config/states.yaml") as _f_prof:
+            _prof_adapter = (yaml.safe_load(_f_prof) or {}).get(state_uc, {}).get("proficiency_adapter")
+    except Exception as _exc_prof:
+        logger.warning("[%s] Could not read proficiency_adapter from states.yaml: %s", community_id, _exc_prof)
+
+    if _prof_adapter == "none":
+        logger.warning(
+            "[%s] No proficiency adapter for %s — academic_need will score from SAIPE/NCES proxies only",
+            community_id, state_uc,
+        )
+        ped_data = None
+    elif state_uc == "MS":
         ped_data = get_ms_district_data(community_id)
     elif state_uc == "TN":
         ped_data = get_tn_district_data(community_id)
