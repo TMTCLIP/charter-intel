@@ -1,0 +1,304 @@
+nd-belcourt-3802530:
+  display_name: Belcourt
+  district_name: BELCOURT 7
+  district_nces_id: '3802530'
+  enrollment: 1588
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-belcourt-5900106:
+  display_name: Belcourt
+  district_name: Turtle Mountain Elementary School
+  district_nces_id: '5900106'
+  enrollment: 555
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-belcourt-5900158:
+  display_name: Belcourt
+  district_name: Turtle Mountain High School
+  district_nces_id: '5900158'
+  enrollment: 554
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-beulah:
+  display_name: Beulah
+  district_name: BEULAH 27
+  district_nces_id: '3800032'
+  enrollment: 761
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-bismarck:
+  display_name: Bismarck
+  district_name: BISMARCK 1
+  district_nces_id: '3800014'
+  enrollment: 13976
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-bottineau:
+  display_name: Bottineau
+  district_name: BOTTINEAU 1
+  district_nces_id: '3803060'
+  enrollment: 660
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-carrington:
+  display_name: Carrington
+  district_name: CARRINGTON 49
+  district_nces_id: '3800053'
+  enrollment: 613
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-casselton:
+  display_name: Casselton
+  district_name: CENTRAL CASS 17
+  district_nces_id: '3804090'
+  enrollment: 1036
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-des-lacs:
+  display_name: Des Lacs
+  district_name: UNITED 7
+  district_nces_id: '3818730'
+  enrollment: 704
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-devils-lake:
+  display_name: Devils Lake
+  district_name: DEVILS LAKE 1
+  district_nces_id: '3805040'
+  enrollment: 1737
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-dickinson:
+  display_name: Dickinson
+  district_name: DICKINSON 1
+  district_nces_id: '3800038'
+  enrollment: 3954
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-dunseith:
+  display_name: Dunseith
+  district_name: DUNSEITH 1
+  district_nces_id: '3805460'
+  enrollment: 548
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-fargo:
+  display_name: Fargo
+  district_name: FARGO 1
+  district_nces_id: '3806780'
+  enrollment: 11431
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-fort-yates:
+  display_name: Fort Yates
+  district_name: Standing Rock Community School
+  district_nces_id: '5900067'
+  enrollment: 571
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-grafton:
+  display_name: Grafton
+  district_name: GRAFTON 18
+  district_nces_id: '3800406'
+  enrollment: 949
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-grand-forks:
+  display_name: Grand Forks
+  district_name: GRAND FORKS 1
+  district_nces_id: '3808130'
+  enrollment: 7604
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-hazen:
+  display_name: Hazen
+  district_name: HAZEN 3
+  district_nces_id: '3800031'
+  enrollment: 570
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-hillsboro:
+  display_name: Hillsboro
+  district_name: HILLSBORO 9
+  district_nces_id: '3809570'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-hunter:
+  display_name: Hunter
+  district_name: NORTHERN CASS 97
+  district_nces_id: '3800044'
+  enrollment: 690
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-jamestown:
+  display_name: Jamestown
+  district_name: JAMESTOWN 1
+  district_nces_id: '3800021'
+  enrollment: 2167
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-killdeer:
+  display_name: Killdeer
+  district_name: KILLDEER 16
+  district_nces_id: '3810270'
+  enrollment: 646
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-kindred:
+  display_name: Kindred
+  district_name: KINDRED 2
+  district_nces_id: '3800025'
+  enrollment: 916
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-lisbon:
+  display_name: Lisbon
+  district_name: LISBON 19
+  district_nces_id: '3811430'
+  enrollment: 628
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-mandan:
+  display_name: Mandan
+  district_name: MANDAN 1
+  district_nces_id: '3811820'
+  enrollment: 4344
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-mayville:
+  display_name: Mayville
+  district_name: MAY-PORT CG 14
+  district_nces_id: '3800041'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-minot-3813030:
+  display_name: Minot
+  district_name: MINOT 1
+  district_nces_id: '3813030'
+  enrollment: 7715
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-minot-3813660:
+  display_name: Minot
+  district_name: NEDROSE 4
+  district_nces_id: '3813660'
+  enrollment: 601
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-minot-3817170:
+  display_name: Minot
+  district_name: SOUTH PRAIRIE 70
+  district_nces_id: '3817170'
+  enrollment: 533
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-new-town:
+  display_name: New Town
+  district_name: NEW TOWN 1
+  district_nces_id: '3813920'
+  enrollment: 994
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-rugby:
+  display_name: Rugby
+  district_name: RUGBY 5
+  district_nces_id: '3816130'
+  enrollment: 607
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-stanley:
+  display_name: Stanley
+  district_name: STANLEY 2
+  district_nces_id: '3817570'
+  enrollment: 755
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-thompson:
+  display_name: Thompson
+  district_name: THOMPSON 61
+  district_nces_id: '3818280'
+  enrollment: 656
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-tioga:
+  display_name: Tioga
+  district_name: TIOGA 15
+  district_nces_id: '3800039'
+  enrollment: 523
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-valley-city:
+  display_name: Valley City
+  district_name: VALLEY CITY 2
+  district_nces_id: '3818850'
+  enrollment: 1036
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-wahpeton:
+  display_name: Wahpeton
+  district_name: WAHPETON 37
+  district_nces_id: '3819020'
+  enrollment: 1201
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-watford-city:
+  display_name: Watford City
+  district_name: MCKENZIE CO 1
+  district_nces_id: '3812540'
+  enrollment: 2004
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-west-fargo:
+  display_name: West Fargo
+  district_name: WEST FARGO 6
+  district_nces_id: '3819410'
+  enrollment: 12680
+  has_charters: false
+  source: ccd_auto
+  state: ND
+nd-williston:
+  display_name: Williston
+  district_name: WILLISTON BASIN 7
+  district_nces_id: '3800405'
+  enrollment: 5294
+  has_charters: false
+  source: ccd_auto
+  state: ND

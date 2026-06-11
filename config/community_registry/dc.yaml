@@ -1,0 +1,232 @@
+dc-washington-1100004:
+  display_name: Washington
+  district_name: Carlos Rosario International PCS
+  district_nces_id: '1100004'
+  enrollment: 1984
+  has_charters: false
+  source: ccd_auto
+  state: DC
+dc-washington-1100008:
+  display_name: Washington
+  district_name: Friendship PCS
+  district_nces_id: '1100008'
+  enrollment: 4609
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100009:
+  display_name: Washington
+  district_name: Elsie Whitlow Stokes Community Freedom PCS
+  district_nces_id: '1100009'
+  enrollment: 673
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100014:
+  display_name: Washington
+  district_name: Maya Angelou PCS
+  district_nces_id: '1100014'
+  enrollment: 539
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100015:
+  display_name: Washington
+  district_name: Meridian PCS
+  district_nces_id: '1100015'
+  enrollment: 627
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100016:
+  display_name: Washington
+  district_name: Briya PCS
+  district_nces_id: '1100016'
+  enrollment: 760
+  has_charters: false
+  source: ccd_auto
+  state: DC
+dc-washington-1100019:
+  display_name: Washington
+  district_name: Washington Latin PCS
+  district_nces_id: '1100019'
+  enrollment: 917
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100030:
+  display_name: Washington
+  district_name: District of Columbia Public Schools
+  district_nces_id: '1100030'
+  enrollment: 50131
+  has_charters: false
+  source: ccd_auto
+  state: DC
+dc-washington-1100031:
+  display_name: Washington
+  district_name: KIPP DC PCS
+  district_nces_id: '1100031'
+  enrollment: 7361
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100032:
+  display_name: Washington
+  district_name: Latin American Montessori Bilingual PCS
+  district_nces_id: '1100032'
+  enrollment: 553
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100035:
+  display_name: Washington
+  district_name: Capital City PCS
+  district_nces_id: '1100035'
+  enrollment: 1004
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100039:
+  display_name: Washington
+  district_name: Paul PCS
+  district_nces_id: '1100039'
+  enrollment: 694
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100042:
+  display_name: Washington
+  district_name: DC Bilingual PCS
+  district_nces_id: '1100042'
+  enrollment: 530
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100043:
+  display_name: Washington
+  district_name: E.L. Haynes PCS
+  district_nces_id: '1100043'
+  enrollment: 1164
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100045:
+  display_name: Washington
+  district_name: Two Rivers PCS
+  district_nces_id: '1100045'
+  enrollment: 1052
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100048:
+  display_name: Washington
+  district_name: DC Prep PCS
+  district_nces_id: '1100048'
+  enrollment: 2128
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100073:
+  display_name: Washington
+  district_name: Center City PCS
+  district_nces_id: '1100073'
+  enrollment: 1408
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100077:
+  display_name: Washington
+  district_name: Washington Yu Ying PCS
+  district_nces_id: '1100077'
+  enrollment: 602
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100080:
+  display_name: Washington
+  district_name: Inspired Teaching Demonstration PCS
+  district_nces_id: '1100080'
+  enrollment: 518
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100083:
+  display_name: Washington
+  district_name: BASIS DC PCS
+  district_nces_id: '1100083'
+  enrollment: 663
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100084:
+  display_name: Washington
+  district_name: Creative Minds International PCS
+  district_nces_id: '1100084'
+  enrollment: 587
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100085:
+  display_name: Washington
+  district_name: DC Scholars PCS
+  district_nces_id: '1100085'
+  enrollment: 532
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100086:
+  display_name: Washington
+  district_name: Mundo Verde Bilingual PCS
+  district_nces_id: '1100086'
+  enrollment: 1007
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100090:
+  display_name: Washington
+  district_name: Ingenuity Prep PCS
+  district_nces_id: '1100090'
+  enrollment: 788
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100092:
+  display_name: Washington
+  district_name: Community College Preparatory Academy PCS
+  district_nces_id: '1100092'
+  enrollment: 615
+  has_charters: false
+  source: ccd_auto
+  state: DC
+dc-washington-1100094:
+  display_name: Washington
+  district_name: Academy of Hope Adult PCS
+  district_nces_id: '1100094'
+  enrollment: 652
+  has_charters: false
+  source: ccd_auto
+  state: DC
+dc-washington-1100097:
+  display_name: Washington
+  district_name: District of Columbia International School
+  district_nces_id: '1100097'
+  enrollment: 1590
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100106:
+  display_name: Washington
+  district_name: Rocketship Education DC PCS
+  district_nces_id: '1100106'
+  enrollment: 1493
+  has_charters: true
+  source: ccd_auto
+  state: DC
+dc-washington-1100109:
+  display_name: Washington
+  district_name: Digital Pioneers Academy PCS
+  district_nces_id: '1100109'
+  enrollment: 511
+  has_charters: true
+  source: ccd_auto
+  state: DC

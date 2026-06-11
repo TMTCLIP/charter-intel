@@ -1,0 +1,1224 @@
+ks-abilene:
+  display_name: Abilene
+  district_name: Abilene
+  district_nces_id: '2003180'
+  enrollment: 1515
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-altamont:
+  display_name: Altamont
+  district_name: Labette County
+  district_nces_id: '2003300'
+  enrollment: 1563
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-andale:
+  display_name: Andale
+  district_name: Renwick
+  district_nces_id: '2011080'
+  enrollment: 1946
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-andover:
+  display_name: Andover
+  district_name: Andover
+  district_nces_id: '2003360'
+  enrollment: 8987
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-anthony:
+  display_name: Anthony
+  district_name: Chaparral Schools
+  district_nces_id: '2003390'
+  enrollment: 822
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-arkansas-city:
+  display_name: Arkansas City
+  district_name: Arkansas City
+  district_nces_id: '2003450'
+  enrollment: 2887
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-atchison:
+  display_name: Atchison
+  district_name: Atchison Public Schools
+  district_nces_id: '2003540'
+  enrollment: 1502
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-augusta:
+  display_name: Augusta
+  district_name: Augusta
+  district_nces_id: '2003630'
+  enrollment: 2063
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-baldwin-city:
+  display_name: Baldwin City
+  district_name: Baldwin City
+  district_nces_id: '2003720'
+  enrollment: 1400
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-basehor:
+  display_name: Basehor
+  district_name: Basehor-Linwood
+  district_nces_id: '2003780'
+  enrollment: 3043
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-baxter-springs:
+  display_name: Baxter Springs
+  district_name: Baxter Springs
+  district_nces_id: '2003810'
+  enrollment: 893
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-belle-plaine:
+  display_name: Belle Plaine
+  district_name: Belle Plaine
+  district_nces_id: '2003900'
+  enrollment: 582
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-belleville:
+  display_name: Belleville
+  district_name: Republic County
+  district_nces_id: '2000030'
+  enrollment: 526
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-beloit:
+  display_name: Beloit
+  district_name: Beloit
+  district_nces_id: '2003870'
+  enrollment: 840
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-bennington:
+  display_name: Bennington
+  district_name: Twin Valley
+  district_nces_id: '2003960'
+  enrollment: 606
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-bonner-springs:
+  display_name: Bonner Springs
+  district_name: Bonner Springs
+  district_nces_id: '2004050'
+  enrollment: 2520
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-buhler:
+  display_name: Buhler
+  district_name: Buhler
+  district_nces_id: '2004200'
+  enrollment: 2564
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-burlington:
+  display_name: Burlington
+  district_name: Burlington
+  district_nces_id: '2004290'
+  enrollment: 840
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-caney:
+  display_name: Caney
+  district_name: Caney Valley
+  district_nces_id: '2004410'
+  enrollment: 784
+  has_charters: true
+  source: ccd_auto
+  state: KS
+ks-chanute:
+  display_name: Chanute
+  district_name: Chanute Public Schools
+  district_nces_id: '2004590'
+  enrollment: 1818
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-chapman:
+  display_name: Chapman
+  district_name: Chapman
+  district_nces_id: '2004620'
+  enrollment: 1154
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-cheney:
+  display_name: Cheney
+  district_name: Cheney
+  district_nces_id: '2004670'
+  enrollment: 840
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-cherryvale:
+  display_name: Cherryvale
+  district_name: Cherryvale
+  district_nces_id: '2004740'
+  enrollment: 692
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-cimarron:
+  display_name: Cimarron
+  district_name: Cimarron-Ensign
+  district_nces_id: '2004800'
+  enrollment: 613
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-claflin:
+  display_name: Claflin
+  district_name: Central Plains
+  district_nces_id: '2000349'
+  enrollment: 1719
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-clay-center:
+  display_name: Clay Center
+  district_name: Clay County
+  district_nces_id: '2004890'
+  enrollment: 1344
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-clearwater:
+  display_name: Clearwater
+  district_name: Clearwater
+  district_nces_id: '2004920'
+  enrollment: 1107
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-coffeyville:
+  display_name: Coffeyville
+  district_name: Coffeyville
+  district_nces_id: '2004980'
+  enrollment: 1764
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-colby:
+  display_name: Colby
+  district_name: Colby Public Schools
+  district_nces_id: '2005010'
+  enrollment: 964
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-columbus:
+  display_name: Columbus
+  district_name: Columbus
+  district_nces_id: '2005070'
+  enrollment: 942
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-concordia:
+  display_name: Concordia
+  district_name: Concordia
+  district_nces_id: '2005100'
+  enrollment: 1131
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-council-grove:
+  display_name: Council Grove
+  district_name: Morris County
+  district_nces_id: '2005280'
+  enrollment: 788
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-de-soto:
+  display_name: De Soto
+  district_name: De Soto
+  district_nces_id: '2005490'
+  enrollment: 7441
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-derby:
+  display_name: Derby
+  district_name: Derby
+  district_nces_id: '2005460'
+  enrollment: 7285
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-dodge-city:
+  display_name: Dodge City
+  district_name: Dodge City
+  district_nces_id: '2005580'
+  enrollment: 7233
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-douglass:
+  display_name: Douglass
+  district_name: Douglass Public Schools
+  district_nces_id: '2005610'
+  enrollment: 653
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-easton:
+  display_name: Easton
+  district_name: Easton
+  district_nces_id: '2005640'
+  enrollment: 645
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-effingham:
+  display_name: Effingham
+  district_name: Atchison Co Comm Schools
+  district_nces_id: '2005700'
+  enrollment: 515
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-el-dorado:
+  display_name: El Dorado
+  district_name: El Dorado
+  district_nces_id: '2005730'
+  enrollment: 2133
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-elkhart:
+  display_name: Elkhart
+  district_name: Elkhart
+  district_nces_id: '2005790'
+  enrollment: 1668
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-ellsworth:
+  display_name: Ellsworth
+  district_name: Ellsworth
+  district_nces_id: '2005870'
+  enrollment: 644
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-elwood:
+  display_name: Elwood
+  district_name: Riverside
+  district_nces_id: '2000351'
+  enrollment: 666
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-emporia:
+  display_name: Emporia
+  district_name: Emporia
+  district_nces_id: '2005940'
+  enrollment: 4357
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-eudora:
+  display_name: Eudora
+  district_name: Eudora
+  district_nces_id: '2006090'
+  enrollment: 1714
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-eureka:
+  display_name: Eureka
+  district_name: Eureka
+  district_nces_id: '2006120'
+  enrollment: 559
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-fort-leavenworth:
+  display_name: Fort Leavenworth
+  district_name: Fort Leavenworth
+  district_nces_id: '2006330'
+  enrollment: 1729
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-fort-scott:
+  display_name: Fort Scott
+  district_name: Fort Scott
+  district_nces_id: '2006180'
+  enrollment: 1839
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-fredonia:
+  display_name: Fredonia
+  district_name: Fredonia
+  district_nces_id: '2006270'
+  enrollment: 658
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-frontenac:
+  display_name: Frontenac
+  district_name: Frontenac Public Schools
+  district_nces_id: '2006300'
+  enrollment: 953
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-galena:
+  display_name: Galena
+  district_name: Galena
+  district_nces_id: '2006360'
+  enrollment: 824
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-garden-city:
+  display_name: Garden City
+  district_name: Garden City
+  district_nces_id: '2006390'
+  enrollment: 7304
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-gardner:
+  display_name: Gardner
+  district_name: Gardner Edgerton
+  district_nces_id: '2006420'
+  enrollment: 5994
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-garnett:
+  display_name: Garnett
+  district_name: Garnett
+  district_nces_id: '2006450'
+  enrollment: 961
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-girard:
+  display_name: Girard
+  district_name: Girard
+  district_nces_id: '2006480'
+  enrollment: 1037
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-goddard:
+  display_name: Goddard
+  district_name: Goddard
+  district_nces_id: '2006540'
+  enrollment: 6310
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-goodland:
+  display_name: Goodland
+  district_name: Goodland
+  district_nces_id: '2006580'
+  enrollment: 964
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-great-bend:
+  display_name: Great Bend
+  district_name: Great Bend
+  district_nces_id: '2006660'
+  enrollment: 2942
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-gypsum:
+  display_name: Gypsum
+  district_name: Southeast Of Saline
+  district_nces_id: '2000001'
+  enrollment: 691
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-halstead:
+  display_name: Halstead
+  district_name: Halstead
+  district_nces_id: '2006840'
+  enrollment: 833
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-hartford:
+  display_name: Hartford
+  district_name: Southern Lyon County
+  district_nces_id: '2006930'
+  enrollment: 570
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-haven:
+  display_name: Haven
+  district_name: Haven Public Schools
+  district_nces_id: '2006960'
+  enrollment: 796
+  has_charters: true
+  source: ccd_auto
+  state: KS
+ks-hays:
+  display_name: Hays
+  district_name: Hays
+  district_nces_id: '2007020'
+  enrollment: 3425
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-haysville:
+  display_name: Haysville
+  district_name: Haysville
+  district_nces_id: '2007050'
+  enrollment: 5788
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-hesston:
+  display_name: Hesston
+  district_name: Hesston
+  district_nces_id: '2007170'
+  enrollment: 870
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-hiawatha:
+  display_name: Hiawatha
+  district_name: Hiawatha
+  district_nces_id: '2000006'
+  enrollment: 911
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-hillsboro:
+  display_name: Hillsboro
+  district_name: Durham-Hillsboro-Lehigh
+  district_nces_id: '2007290'
+  enrollment: 640
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-hoisington:
+  display_name: Hoisington
+  district_name: Hoisington
+  district_nces_id: '2007320'
+  enrollment: 790
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-holcomb:
+  display_name: Holcomb
+  district_name: Holcomb
+  district_nces_id: '2007350'
+  enrollment: 982
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-holton:
+  display_name: Holton
+  district_name: Holton
+  district_nces_id: '2007380'
+  enrollment: 1151
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-horton:
+  display_name: Horton
+  district_name: South Brown County
+  district_nces_id: '2007470'
+  enrollment: 548
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-howard:
+  display_name: Howard
+  district_name: West Elk
+  district_nces_id: '2007500'
+  enrollment: 551
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-hugoton:
+  display_name: Hugoton
+  district_name: Hugoton Public Schools
+  district_nces_id: '2007560'
+  enrollment: 1029
+  has_charters: true
+  source: ccd_auto
+  state: KS
+ks-humboldt:
+  display_name: Humboldt
+  district_name: Humboldt
+  district_nces_id: '2007590'
+  enrollment: 974
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-hutchinson-2007620:
+  display_name: Hutchinson
+  district_name: Hutchinson Public Schools
+  district_nces_id: '2007620'
+  enrollment: 4296
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-hutchinson-2009990:
+  display_name: Hutchinson
+  district_name: Nickerson
+  district_nces_id: '2009990'
+  enrollment: 1089
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-independence:
+  display_name: Independence
+  district_name: Independence
+  district_nces_id: '2007650'
+  enrollment: 2059
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-iola:
+  display_name: Iola
+  district_name: Iola
+  district_nces_id: '2007740'
+  enrollment: 1207
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-junction-city:
+  display_name: Junction City
+  district_name: Geary County Schools
+  district_nces_id: '2007890'
+  enrollment: 7351
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-kansas-city-2007950:
+  display_name: Kansas City
+  district_name: Kansas City
+  district_nces_id: '2007950'
+  enrollment: 22015
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-kansas-city-2010680:
+  display_name: Kansas City
+  district_name: Piper-Kansas City
+  district_nces_id: '2010680'
+  enrollment: 2780
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-kansas-city-2012360:
+  display_name: Kansas City
+  district_name: Turner-Kansas City
+  district_nces_id: '2012360'
+  enrollment: 3891
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-kingman:
+  display_name: Kingman
+  district_name: Kingman - Norwich
+  district_nces_id: '2008070'
+  enrollment: 954
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-kismet:
+  display_name: Kismet
+  district_name: Kismet-Plains
+  district_nces_id: '2008190'
+  enrollment: 596
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-lacygne:
+  display_name: Lacygne
+  district_name: Prairie View
+  district_nces_id: '2008250'
+  enrollment: 871
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-lakin:
+  display_name: Lakin
+  district_name: Lakin
+  district_nces_id: '2008280'
+  enrollment: 654
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-lansing:
+  display_name: Lansing
+  district_name: Lansing
+  district_nces_id: '2008340'
+  enrollment: 2654
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-larned:
+  display_name: Larned
+  district_name: Ft Larned
+  district_nces_id: '2008370'
+  enrollment: 864
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-lawrence:
+  display_name: Lawrence
+  district_name: Lawrence
+  district_nces_id: '2008400'
+  enrollment: 10909
+  has_charters: true
+  source: ccd_auto
+  state: KS
+ks-leavenworth:
+  display_name: Leavenworth
+  district_name: Leavenworth
+  district_nces_id: '2008430'
+  enrollment: 3604
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-leon:
+  display_name: Leon
+  district_name: Bluestem
+  district_nces_id: '2008550'
+  enrollment: 534
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-liberal:
+  display_name: Liberal
+  district_name: Liberal
+  district_nces_id: '2008730'
+  enrollment: 4659
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-lindsborg:
+  display_name: Lindsborg
+  district_name: Smoky Valley
+  district_nces_id: '2000002'
+  enrollment: 1110
+  has_charters: true
+  source: ccd_auto
+  state: KS
+ks-lost-springs:
+  display_name: Lost Springs
+  district_name: Centre
+  district_nces_id: '2008940'
+  enrollment: 536
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-louisburg:
+  display_name: Louisburg
+  district_name: Louisburg
+  district_nces_id: '2008970'
+  enrollment: 1802
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-lyons:
+  display_name: Lyons
+  district_name: Lyons
+  district_nces_id: '2009030'
+  enrollment: 737
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-maize:
+  display_name: Maize
+  district_name: Maize
+  district_nces_id: '2009140'
+  enrollment: 7999
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-manhattan:
+  display_name: Manhattan
+  district_name: Manhattan-Ogden
+  district_nces_id: '2009180'
+  enrollment: 7066
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-marion:
+  display_name: Marion
+  district_name: Marion-Florence
+  district_nces_id: '2009240'
+  enrollment: 513
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-marysville:
+  display_name: Marysville
+  district_name: Marysville
+  district_nces_id: '2000016'
+  enrollment: 816
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-mayetta:
+  display_name: Mayetta
+  district_name: Royal Valley
+  district_nces_id: '2009320'
+  enrollment: 854
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-mcpherson:
+  display_name: Mcpherson
+  district_name: McPherson
+  district_nces_id: '2009390'
+  enrollment: 2311
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-meriden:
+  display_name: Meriden
+  district_name: Jefferson West
+  district_nces_id: '2009510'
+  enrollment: 828
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-minneapolis:
+  display_name: Minneapolis
+  district_name: North Ottawa County
+  district_nces_id: '2009570'
+  enrollment: 636
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-mound-city:
+  display_name: Mound City
+  district_name: Jayhawk
+  district_nces_id: '2007750'
+  enrollment: 575
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-mulvane:
+  display_name: Mulvane
+  district_name: Mulvane
+  district_nces_id: '2009840'
+  enrollment: 1844
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-neodesha:
+  display_name: Neodesha
+  district_name: Neodesha
+  district_nces_id: '2009900'
+  enrollment: 777
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-newton:
+  display_name: Newton
+  district_name: Newton
+  district_nces_id: '2009960'
+  enrollment: 3215
+  has_charters: true
+  source: ccd_auto
+  state: KS
+ks-norton:
+  display_name: Norton
+  district_name: Norton Community Schools
+  district_nces_id: '2010020'
+  enrollment: 698
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-olathe:
+  display_name: Olathe
+  district_name: Olathe
+  district_nces_id: '2010140'
+  enrollment: 29034
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-osage-city:
+  display_name: Osage City
+  district_name: Osage City
+  district_nces_id: '2010230'
+  enrollment: 724
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-osawatomie:
+  display_name: Osawatomie
+  district_name: Osawatomie
+  district_nces_id: '2010260'
+  enrollment: 1063
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-oskaloosa:
+  display_name: Oskaloosa
+  district_name: Oskaloosa Public Schools
+  district_nces_id: '2010320'
+  enrollment: 555
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-oswego:
+  display_name: Oswego
+  district_name: Oswego
+  district_nces_id: '2010350'
+  enrollment: 500
+  has_charters: true
+  source: ccd_auto
+  state: KS
+ks-ottawa:
+  display_name: Ottawa
+  district_name: Ottawa
+  district_nces_id: '2000015'
+  enrollment: 2350
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-overland-park:
+  display_name: Overland Park
+  district_name: Blue Valley
+  district_nces_id: '2012000'
+  enrollment: 22384
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-paola:
+  display_name: Paola
+  district_name: Paola
+  district_nces_id: '2010500'
+  enrollment: 1815
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-parsons:
+  display_name: Parsons
+  district_name: Parsons
+  district_nces_id: '2010560'
+  enrollment: 1352
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-perry:
+  display_name: Perry
+  district_name: Perry Public Schools
+  district_nces_id: '2010620'
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-phillipsburg:
+  display_name: Phillipsburg
+  district_name: Phillipsburg
+  district_nces_id: '2010650'
+  enrollment: 576
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-pittsburg:
+  display_name: Pittsburg
+  district_name: Pittsburg
+  district_nces_id: '2010710'
+  enrollment: 3390
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-pomona:
+  display_name: Pomona
+  district_name: West Franklin
+  district_nces_id: '2010800'
+  enrollment: 618
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-pratt:
+  display_name: Pratt
+  district_name: Pratt
+  district_nces_id: '2010890'
+  enrollment: 1214
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-richmond:
+  display_name: Richmond
+  district_name: Central Heights
+  district_nces_id: '2000014'
+  enrollment: 541
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-riley:
+  display_name: Riley
+  district_name: Riley County
+  district_nces_id: '2011100'
+  enrollment: 708
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-riverton:
+  display_name: Riverton
+  district_name: Riverton
+  district_nces_id: '2011130'
+  enrollment: 705
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-rose-hill:
+  display_name: Rose Hill
+  district_name: Rose Hill Public Schools
+  district_nces_id: '2011250'
+  enrollment: 1708
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-russell:
+  display_name: Russell
+  district_name: Russell County
+  district_nces_id: '2011310'
+  enrollment: 778
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-sabetha:
+  display_name: Sabetha
+  district_name: Prairie Hills
+  district_nces_id: '2000350'
+  enrollment: 1068
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-salina:
+  display_name: Salina
+  district_name: Salina
+  district_nces_id: '2011370'
+  enrollment: 6952
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-scott-city:
+  display_name: Scott City
+  district_name: Scott County
+  district_nces_id: '2000017'
+  enrollment: 960
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-scranton:
+  display_name: Scranton
+  district_name: Santa Fe Trail
+  district_nces_id: '2010410'
+  enrollment: 1096
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-sedgwick:
+  display_name: Sedgwick
+  district_name: Sedgwick Public Schools
+  district_nces_id: '2011550'
+  enrollment: 507
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-seneca:
+  display_name: Seneca
+  district_name: Nemaha Central
+  district_nces_id: '2000353'
+  enrollment: 774
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-shawnee-mission:
+  display_name: Shawnee Mission
+  district_name: Shawnee Mission Pub Sch
+  district_nces_id: '2011640'
+  enrollment: 26618
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-silver-lake:
+  display_name: Silver Lake
+  district_name: Silver Lake
+  district_nces_id: '2011700'
+  enrollment: 692
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-spring-hill:
+  display_name: Spring Hill
+  district_name: Spring Hill
+  district_nces_id: '2011850'
+  enrollment: 5371
+  has_charters: true
+  source: ccd_auto
+  state: KS
+ks-st-george:
+  display_name: St. George
+  district_name: Rock Creek
+  district_nces_id: '2000004'
+  enrollment: 1358
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-st-marys:
+  display_name: St. Marys
+  district_name: Kaw Valley
+  district_nces_id: '2007970'
+  enrollment: 1108
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-syracuse:
+  display_name: Syracuse
+  district_name: Syracuse
+  district_nces_id: '2012150'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-tecumseh:
+  display_name: Tecumseh
+  district_name: Shawnee Heights
+  district_nces_id: '2012180'
+  enrollment: 3752
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-tonganoxie:
+  display_name: Tonganoxie
+  district_name: Tonganoxie
+  district_nces_id: '2012210'
+  enrollment: 1944
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-topeka-2003200:
+  display_name: Topeka
+  district_name: Auburn Washburn
+  district_nces_id: '2003200'
+  enrollment: 6069
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-topeka-2011490:
+  display_name: Topeka
+  district_name: Seaman
+  district_nces_id: '2011490'
+  enrollment: 3895
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-topeka-2012260:
+  display_name: Topeka
+  district_name: Topeka Public Schools
+  district_nces_id: '2012260'
+  enrollment: 12858
+  has_charters: true
+  source: ccd_auto
+  state: KS
+ks-towanda:
+  display_name: Towanda
+  district_name: Circle
+  district_nces_id: '2012300'
+  enrollment: 2062
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-ulysses:
+  display_name: Ulysses
+  district_name: Ulysses
+  district_nces_id: '2012420'
+  enrollment: 1549
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-valley-center:
+  display_name: Valley Center
+  district_name: Valley Center Pub Sch
+  district_nces_id: '2012510'
+  enrollment: 3195
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-vermillion:
+  display_name: Vermillion
+  district_name: Vermillion
+  district_nces_id: '2004560'
+  enrollment: 652
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-wamego:
+  display_name: Wamego
+  district_name: Wamego
+  district_nces_id: '2000003'
+  enrollment: 1641
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-wellington:
+  display_name: Wellington
+  district_name: Wellington
+  district_nces_id: '2012840'
+  enrollment: 1497
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-wellsville:
+  display_name: Wellsville
+  district_name: Wellsville
+  district_nces_id: '2012870'
+  enrollment: 843
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-wichita:
+  display_name: Wichita
+  district_name: Wichita
+  district_nces_id: '2012990'
+  enrollment: 46796
+  has_charters: false
+  source: ccd_auto
+  state: KS
+ks-winfield:
+  display_name: Winfield
+  district_name: Winfield
+  district_nces_id: '2013050'
+  enrollment: 2215
+  has_charters: false
+  source: ccd_auto
+  state: KS

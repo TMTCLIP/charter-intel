@@ -1,0 +1,120 @@
+nv-battle-mountain:
+  display_name: Battle Mountain
+  district_name: LANDER COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200240'
+  enrollment: 1059
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-carson-city-3200001:
+  display_name: Carson City
+  district_name: STATE-SPONSORED CHARTER SCHOOLS
+  district_nces_id: '3200001'
+  enrollment: 59670
+  has_charters: true
+  source: ccd_auto
+  state: NV
+nv-carson-city-3200390:
+  display_name: Carson City
+  district_name: CARSON CITY SCHOOL DISTRICT
+  district_nces_id: '3200390'
+  enrollment: 7722
+  has_charters: true
+  source: ccd_auto
+  state: NV
+nv-elko:
+  display_name: Elko
+  district_name: ELKO COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200120'
+  enrollment: 10171
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-ely:
+  display_name: Ely
+  district_name: WHITE PINE COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200510'
+  enrollment: 1322
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-fallon:
+  display_name: Fallon
+  district_name: CHURCHILL COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200030'
+  enrollment: 3394
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-hawthorne:
+  display_name: Hawthorne
+  district_name: MINERAL COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200330'
+  enrollment: 613
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-las-vegas:
+  display_name: Las Vegas
+  district_name: CLARK COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200060'
+  enrollment: 314346
+  has_charters: true
+  source: ccd_auto
+  state: NV
+nv-lovelock:
+  display_name: Lovelock
+  district_name: PERSHING COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200420'
+  enrollment: 663
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-minden:
+  display_name: Minden
+  district_name: DOUGLAS COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200090'
+  enrollment: 5331
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-panaca:
+  display_name: Panaca
+  district_name: LINCOLN COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200270'
+  enrollment: 958
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-reno:
+  display_name: Reno
+  district_name: WASHOE COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200480'
+  enrollment: 64990
+  has_charters: true
+  source: ccd_auto
+  state: NV
+nv-ton0pah:
+  display_name: Ton0Pah
+  district_name: NYE COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200360'
+  enrollment: 5873
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-winnemucca:
+  display_name: Winnemucca
+  district_name: HUMBOLDT COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200210'
+  enrollment: 3329
+  has_charters: false
+  source: ccd_auto
+  state: NV
+nv-yerington:
+  display_name: Yerington
+  district_name: LYON COUNTY SCHOOL DISTRICT
+  district_nces_id: '3200300'
+  enrollment: 9085
+  has_charters: false
+  source: ccd_auto
+  state: NV

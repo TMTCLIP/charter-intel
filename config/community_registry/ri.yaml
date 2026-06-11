@@ -1,0 +1,312 @@
+ri-barrington:
+  display_name: Barrington
+  district_name: Barrington
+  district_nces_id: '4400030'
+  enrollment: 3405
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-bristol:
+  display_name: Bristol
+  district_name: Bristol Warren
+  district_nces_id: '4400065'
+  enrollment: 2888
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-central-falls-4400006:
+  display_name: Central Falls
+  district_name: Learning Community
+  district_nces_id: '4400006'
+  enrollment: 579
+  has_charters: true
+  source: ccd_auto
+  state: RI
+ri-central-falls-4400120:
+  display_name: Central Falls
+  district_name: Central Falls
+  district_nces_id: '4400120'
+  enrollment: 2596
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-chepachet:
+  display_name: Chepachet
+  district_name: Glocester
+  district_nces_id: '4400450'
+  enrollment: 577
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-clayville:
+  display_name: Clayville
+  district_name: Scituate
+  district_nces_id: '4400960'
+  enrollment: 1194
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-coventry:
+  display_name: Coventry
+  district_name: Coventry
+  district_nces_id: '4400210'
+  enrollment: 4267
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-cranston:
+  display_name: Cranston
+  district_name: Cranston
+  district_nces_id: '4400240'
+  enrollment: 10225
+  has_charters: true
+  source: ccd_auto
+  state: RI
+ri-cumberland-4400015:
+  display_name: Cumberland
+  district_name: Blackstone Valley Prep  A RI Mayoral Academy
+  district_nces_id: '4400015'
+  enrollment: 2197
+  has_charters: true
+  source: ccd_auto
+  state: RI
+ri-cumberland-4400270:
+  display_name: Cumberland
+  district_name: Cumberland
+  district_nces_id: '4400270'
+  enrollment: 4784
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-east-greenwich:
+  display_name: East Greenwich
+  district_name: East Greenwich
+  district_nces_id: '4400300'
+  enrollment: 2543
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-east-providence:
+  display_name: East Providence
+  district_name: East Providence
+  district_nces_id: '4400330'
+  enrollment: 5272
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-harrisville:
+  display_name: Harrisville
+  district_name: Burrillville
+  district_nces_id: '4400090'
+  enrollment: 2070
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-johnston:
+  display_name: Johnston
+  district_name: Johnston
+  district_nces_id: '4400540'
+  enrollment: 3144
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-lincoln-4400004:
+  display_name: Lincoln
+  district_name: Davies Career and Tech
+  district_nces_id: '4400004'
+  enrollment: 912
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-lincoln-4400570:
+  display_name: Lincoln
+  district_name: Lincoln
+  district_nces_id: '4400570'
+  enrollment: 3278
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-middletown:
+  display_name: Middletown
+  district_name: Middletown
+  district_nces_id: '4400630'
+  enrollment: 1971
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-narragansett:
+  display_name: Narragansett
+  district_name: Narragansett
+  district_nces_id: '4400660'
+  enrollment: 1128
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-newport:
+  display_name: Newport
+  district_name: Newport
+  district_nces_id: '4400720'
+  enrollment: 1906
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-north-kingstown:
+  display_name: North Kingstown
+  district_name: North Kingstown
+  district_nces_id: '4400750'
+  enrollment: 3842
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-north-providence:
+  display_name: North Providence
+  district_name: North Providence
+  district_nces_id: '4400780'
+  enrollment: 3516
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-north-scituate:
+  display_name: North Scituate
+  district_name: Foster-Glocester
+  district_nces_id: '4400420'
+  enrollment: 1359
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-north-smithfield:
+  display_name: North Smithfield
+  district_name: North Smithfield
+  district_nces_id: '4400810'
+  enrollment: 1618
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-pawtucket:
+  display_name: Pawtucket
+  district_name: Pawtucket
+  district_nces_id: '4400840'
+  enrollment: 8056
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-portsmouth:
+  display_name: Portsmouth
+  district_name: Portsmouth
+  district_nces_id: '4400870'
+  enrollment: 2183
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-providence-4400003:
+  display_name: Providence
+  district_name: MET Career and Tech
+  district_nces_id: '4400003'
+  enrollment: 776
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-providence-4400021:
+  display_name: Providence
+  district_name: Achievement First Rhode Island
+  district_nces_id: '4400021'
+  enrollment: 2527
+  has_charters: true
+  source: ccd_auto
+  state: RI
+ri-providence-4400031:
+  display_name: Providence
+  district_name: Highlander
+  district_nces_id: '4400031'
+  enrollment: 617
+  has_charters: true
+  source: ccd_auto
+  state: RI
+ri-providence-4400032:
+  display_name: Providence
+  district_name: Paul Cuffee Charter Sch
+  district_nces_id: '4400032'
+  enrollment: 817
+  has_charters: true
+  source: ccd_auto
+  state: RI
+ri-providence-4400900:
+  display_name: Providence
+  district_name: Providence
+  district_nces_id: '4400900'
+  enrollment: 20725
+  has_charters: true
+  source: ccd_auto
+  state: RI
+ri-smithfield:
+  display_name: Smithfield
+  district_name: Smithfield
+  district_nces_id: '4400990'
+  enrollment: 2415
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-tiverton:
+  display_name: Tiverton
+  district_name: Tiverton
+  district_nces_id: '4401050'
+  enrollment: 1634
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-wakefield:
+  display_name: Wakefield
+  district_name: South Kingstown
+  district_nces_id: '4401020'
+  enrollment: 2509
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-warwick:
+  display_name: Warwick
+  district_name: Warwick
+  district_nces_id: '4401110'
+  enrollment: 8005
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-west-greenwich:
+  display_name: West Greenwich
+  district_name: Exeter-West Greenwich
+  district_nces_id: '4400360'
+  enrollment: 1550
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-west-warwick:
+  display_name: West Warwick
+  district_name: West Warwick
+  district_nces_id: '4401140'
+  enrollment: 3511
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-westerly:
+  display_name: Westerly
+  district_name: Westerly
+  district_nces_id: '4401170'
+  enrollment: 2296
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-wood-river-junction:
+  display_name: Wood River Junction
+  district_name: Chariho
+  district_nces_id: '4400150'
+  enrollment: 3102
+  has_charters: false
+  source: ccd_auto
+  state: RI
+ri-woonsocket:
+  display_name: Woonsocket
+  district_name: Woonsocket
+  district_nces_id: '4401200'
+  enrollment: 5690
+  has_charters: false
+  source: ccd_auto
+  state: RI

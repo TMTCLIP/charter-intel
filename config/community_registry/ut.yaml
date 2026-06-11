@@ -1,0 +1,776 @@
+ut-alpine:
+  display_name: Alpine
+  district_name: Mountainville Academy
+  district_nces_id: '4900051'
+  enrollment: 801
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-american-fork-4900030:
+  display_name: American Fork
+  district_name: Alpine District
+  district_nces_id: '4900030'
+  enrollment: 87136
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-american-fork-4900181:
+  display_name: American Fork
+  district_name: Athenian eAcademy
+  district_nces_id: '4900181'
+  enrollment: 500
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-beaver:
+  display_name: Beaver
+  district_name: Beaver District
+  district_nces_id: '4900060'
+  enrollment: 1561
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-blanding:
+  display_name: Blanding
+  district_name: San Juan District
+  district_nces_id: '4900900'
+  enrollment: 3017
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-bluffdale-4900025:
+  display_name: Bluffdale
+  district_name: North Star Academy
+  district_nces_id: '4900025'
+  enrollment: 526
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-bluffdale-4900148:
+  display_name: Bluffdale
+  district_name: Summit Academy High School
+  district_nces_id: '4900148'
+  enrollment: 511
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-brigham-city:
+  display_name: Brigham City
+  district_name: Box Elder District
+  district_nces_id: '4900090'
+  enrollment: 12649
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-cedar-city:
+  display_name: Cedar City
+  district_name: Iron District
+  district_nces_id: '4900390'
+  enrollment: 12739
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-clinton:
+  display_name: Clinton
+  district_name: Voyage Academy
+  district_nces_id: '4900160'
+  enrollment: 522
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-coalville:
+  display_name: Coalville
+  district_name: North Summit District
+  district_nces_id: '4900690'
+  enrollment: 1053
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-delta:
+  display_name: Delta
+  district_name: Millard District
+  district_nces_id: '4900540'
+  enrollment: 3264
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-draper-4900005:
+  display_name: Draper
+  district_name: American Preparatory Academy
+  district_nces_id: '4900005'
+  enrollment: 5195
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-draper-4900040:
+  display_name: Draper
+  district_name: Channing Hall
+  district_nces_id: '4900040'
+  enrollment: 568
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-draper-4900066:
+  display_name: Draper
+  district_name: Summit Academy
+  district_nces_id: '4900066'
+  enrollment: 2013
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-enoch:
+  display_name: Enoch
+  district_name: Gateway Preparatory Academy
+  district_nces_id: '4900122'
+  enrollment: 687
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-erda:
+  display_name: Erda
+  district_name: Excelsior Academy
+  district_nces_id: '4900136'
+  enrollment: 1397
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-farmington:
+  display_name: Farmington
+  district_name: Davis District
+  district_nces_id: '4900210'
+  enrollment: 73459
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-heber-city:
+  display_name: Heber City
+  district_name: Wasatch District
+  district_nces_id: '4901110'
+  enrollment: 9082
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-herriman:
+  display_name: Herriman
+  district_name: Providence Hall
+  district_nces_id: '4900124'
+  enrollment: 2163
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-holladay:
+  display_name: Holladay
+  district_name: Wasatch Waldorf Charter School
+  district_nces_id: '4900185'
+  enrollment: 632
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-huntington:
+  display_name: Huntington
+  district_name: Emery District
+  district_nces_id: '4900270'
+  enrollment: 2230
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-hurricane:
+  display_name: Hurricane
+  district_name: Valley Academy
+  district_nces_id: '4900158'
+  enrollment: 529
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-ivins:
+  display_name: Ivins
+  district_name: Vista School
+  district_nces_id: '4900141'
+  enrollment: 1112
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-kamas:
+  display_name: Kamas
+  district_name: South Summit District
+  district_nces_id: '4900990'
+  enrollment: 1717
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-kanab:
+  display_name: Kanab
+  district_name: Kane District
+  district_nces_id: '4900480'
+  enrollment: 1519
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-kaysville:
+  display_name: Kaysville
+  district_name: Jefferson Academy
+  district_nces_id: '4900139'
+  enrollment: 591
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-kearns:
+  display_name: Kearns
+  district_name: Entheos Academy
+  district_nces_id: '4900041'
+  enrollment: 1054
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-layton-4900063:
+  display_name: Layton
+  district_name: No. UT. Acad. for Math Engineering & Science
+  district_nces_id: '4900063'
+  enrollment: 1120
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-layton-4900068:
+  display_name: Layton
+  district_name: North Davis Preparatory Academy
+  district_nces_id: '4900068'
+  enrollment: 956
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-layton-4900162:
+  display_name: Layton
+  district_name: Leadership Learning Academy
+  district_nces_id: '4900162'
+  enrollment: 865
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-lehi-4900038:
+  display_name: Lehi
+  district_name: Renaissance Academy
+  district_nces_id: '4900038'
+  enrollment: 768
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-lehi-4900194:
+  display_name: Lehi
+  district_name: Ignite Entrepreneurship Academy
+  district_nces_id: '4900194'
+  enrollment: 524
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-lindon-4900016:
+  display_name: Lindon
+  district_name: Timpanogos Academy
+  district_nces_id: '4900016'
+  enrollment: 520
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-lindon-4900056:
+  display_name: Lindon
+  district_name: Karl G. Maeser Preparatory Academy
+  district_nces_id: '4900056'
+  enrollment: 625
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-logan-4900120:
+  display_name: Logan
+  district_name: Cache District
+  district_nces_id: '4900120'
+  enrollment: 20227
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-logan-4900510:
+  display_name: Logan
+  district_name: Logan City District
+  district_nces_id: '4900510'
+  enrollment: 5420
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-manti:
+  display_name: Manti
+  district_name: South Sanpete District
+  district_nces_id: '4900960'
+  enrollment: 3310
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-marriott-slaterville-city:
+  display_name: Marriott-Slaterville City
+  district_name: Venture Academy
+  district_nces_id: '4900133'
+  enrollment: 779
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-moab:
+  display_name: Moab
+  district_name: Grand District
+  district_nces_id: '4900330'
+  enrollment: 1473
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-morgan:
+  display_name: Morgan
+  district_name: Morgan District
+  district_nces_id: '4900570'
+  enrollment: 3339
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-mt-pleasant:
+  display_name: Mt. Pleasant
+  district_name: North Sanpete District
+  district_nces_id: '4900660'
+  enrollment: 2752
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-murray-4900130:
+  display_name: Murray
+  district_name: Utah Virtual Academy
+  district_nces_id: '4900130'
+  enrollment: 1772
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-murray-4900600:
+  display_name: Murray
+  district_name: Murray District
+  district_nces_id: '4900600'
+  enrollment: 5871
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-naples:
+  display_name: Naples
+  district_name: Uintah District
+  district_nces_id: '4901080'
+  enrollment: 7004
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-nephi:
+  display_name: Nephi
+  district_name: Juab District
+  district_nces_id: '4900450'
+  enrollment: 2731
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-north-logan:
+  display_name: North Logan
+  district_name: Thomas Edison
+  district_nces_id: '4900015'
+  enrollment: 1216
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-north-salt-lake:
+  display_name: North Salt Lake
+  district_name: Spectrum Academy
+  district_nces_id: '4900042'
+  enrollment: 1561
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-ogden-4900058:
+  display_name: Ogden
+  district_name: Ogden Preparatory Academy
+  district_nces_id: '4900058'
+  enrollment: 1022
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-ogden-4900065:
+  display_name: Ogden
+  district_name: Davinci Academy
+  district_nces_id: '4900065'
+  enrollment: 1199
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-ogden-4900720:
+  display_name: Ogden
+  district_name: Ogden City District
+  district_nces_id: '4900720'
+  enrollment: 10521
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-ogden-4901200:
+  display_name: Ogden
+  district_name: Weber District
+  district_nces_id: '4901200'
+  enrollment: 32888
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-orem-4900020:
+  display_name: Orem
+  district_name: Utah County Academy of Science
+  district_nces_id: '4900020'
+  enrollment: 556
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-orem-4900048:
+  display_name: Orem
+  district_name: Noah Webster Academy
+  district_nces_id: '4900048'
+  enrollment: 536
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-panguitch:
+  display_name: Panguitch
+  district_name: Garfield District
+  district_nces_id: '4900300'
+  enrollment: 1312
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-park-city-4900145:
+  display_name: Park City
+  district_name: Weilenmann School of Discovery
+  district_nces_id: '4900145'
+  enrollment: 535
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-park-city-4900750:
+  display_name: Park City
+  district_name: Park City District
+  district_nces_id: '4900750'
+  enrollment: 4504
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-pleasant-grove-4900022:
+  display_name: Pleasant Grove
+  district_name: Lincoln Academy
+  district_nces_id: '4900022'
+  enrollment: 915
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-pleasant-grove-4900143:
+  display_name: Pleasant Grove
+  district_name: Canyon Grove Academy
+  district_nces_id: '4900143'
+  enrollment: 650
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-price:
+  display_name: Price
+  district_name: Carbon District
+  district_nces_id: '4900150'
+  enrollment: 3468
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-provo-4900062:
+  display_name: Provo
+  district_name: Freedom Preparatory Academy
+  district_nces_id: '4900062'
+  enrollment: 2074
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-provo-4900810:
+  display_name: Provo
+  district_name: Provo District
+  district_nces_id: '4900810'
+  enrollment: 14007
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-randolph:
+  display_name: Randolph
+  district_name: Rich District
+  district_nces_id: '4900840'
+  enrollment: 513
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-richfield:
+  display_name: Richfield
+  district_name: Sevier District
+  district_nces_id: '4900930'
+  enrollment: 4807
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-riverdale:
+  display_name: Riverdale
+  district_name: Utah Military Academy
+  district_nces_id: '4900176'
+  enrollment: 908
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-roosevelt:
+  display_name: Roosevelt
+  district_name: Duchesne District
+  district_nces_id: '4900240'
+  enrollment: 5435
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-roy:
+  display_name: Roy
+  district_name: Bridge Elementary School
+  district_nces_id: '4900202'
+  enrollment: 533
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-salt-lake-city-4900071:
+  display_name: Salt Lake City
+  district_name: Canyon Rim Academy
+  district_nces_id: '4900071'
+  enrollment: 518
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-salt-lake-city-4900151:
+  display_name: Salt Lake City
+  district_name: Utah Connections Academy
+  district_nces_id: '4900151'
+  enrollment: 1020
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-salt-lake-city-4900174:
+  display_name: Salt Lake City
+  district_name: Ascent Academies of Utah
+  district_nces_id: '4900174'
+  enrollment: 2635
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-salt-lake-city-4900184:
+  display_name: Salt Lake City
+  district_name: Wallace Stegner Academy
+  district_nces_id: '4900184'
+  enrollment: 1346
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-salt-lake-city-4900360:
+  display_name: Salt Lake City
+  district_name: Granite District
+  district_nces_id: '4900360'
+  enrollment: 61197
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-salt-lake-city-4900870:
+  display_name: Salt Lake City
+  district_name: Salt Lake District
+  district_nces_id: '4900870'
+  enrollment: 19896
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-sandy-4900023:
+  display_name: Sandy
+  district_name: Beehive Science & Technology Academy
+  district_nces_id: '4900023'
+  enrollment: 635
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-sandy-4900142:
+  display_name: Sandy
+  district_name: Canyons District
+  district_nces_id: '4900142'
+  enrollment: 33386
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-saratoga-springs-4900043:
+  display_name: Saratoga Springs
+  district_name: Lakeview Academy
+  district_nces_id: '4900043'
+  enrollment: 1010
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-saratoga-springs-4900203:
+  display_name: Saratoga Springs
+  district_name: Mountain Sunrise Academy
+  district_nces_id: '4900203'
+  enrollment: 507
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-south-jordan:
+  display_name: South Jordan
+  district_name: Early Light Academy at Daybreak
+  district_nces_id: '4900140'
+  enrollment: 972
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-south-weber:
+  display_name: South Weber
+  district_name: Highmark Charter School
+  district_nces_id: '4900156'
+  enrollment: 677
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-spanish-fork-4900033:
+  display_name: Spanish Fork
+  district_name: American Leadership Academy
+  district_nces_id: '4900033'
+  enrollment: 1629
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-spanish-fork-4900630:
+  display_name: Spanish Fork
+  district_name: Nebo District
+  district_nces_id: '4900630'
+  enrollment: 37044
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-springville:
+  display_name: Springville
+  district_name: Reagan Academy
+  district_nces_id: '4900032'
+  enrollment: 686
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-st-george-4900046:
+  display_name: St George
+  district_name: George Washington Academy
+  district_nces_id: '4900046'
+  enrollment: 1003
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-st-george-4901140:
+  display_name: St. George
+  district_name: Washington District
+  district_nces_id: '4901140'
+  enrollment: 37572
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-syracuse:
+  display_name: Syracuse
+  district_name: Syracuse Arts Academy
+  district_nces_id: '4900044'
+  enrollment: 1739
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-tooele-4900170:
+  display_name: Tooele
+  district_name: Scholar Academy
+  district_nces_id: '4900170'
+  enrollment: 666
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-tooele-4901050:
+  display_name: Tooele
+  district_name: Tooele District
+  district_nces_id: '4901050'
+  enrollment: 24055
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-vernal:
+  display_name: Vernal
+  district_name: Terra Academy
+  district_nces_id: '4900179'
+  enrollment: 646
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-vineyard:
+  display_name: Vineyard
+  district_name: Franklin Discovery Academy
+  district_nces_id: '4900187'
+  enrollment: 651
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-west-haven:
+  display_name: West Haven
+  district_name: Quest Academy
+  district_nces_id: '4900132'
+  enrollment: 1019
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-west-jordan-4900137:
+  display_name: West Jordan
+  district_name: Hawthorn Academy
+  district_nces_id: '4900137'
+  enrollment: 1346
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-west-jordan-4900138:
+  display_name: West Jordan
+  district_name: Mountain Heights Academy
+  district_nces_id: '4900138'
+  enrollment: 928
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-west-jordan-4900420:
+  display_name: West Jordan
+  district_name: Jordan District
+  district_nces_id: '4900420'
+  enrollment: 59421
+  has_charters: false
+  source: ccd_auto
+  state: UT
+ut-west-valley-city-4900049:
+  display_name: West Valley City
+  district_name: Monticello Academy
+  district_nces_id: '4900049'
+  enrollment: 1080
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-west-valley-city-4900161:
+  display_name: West Valley City
+  district_name: Esperanza School
+  district_nces_id: '4900161'
+  enrollment: 529
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-west-valley-city-4900183:
+  display_name: West Valley City
+  district_name: Vanguard Academy
+  district_nces_id: '4900183'
+  enrollment: 538
+  has_charters: true
+  source: ccd_auto
+  state: UT
+ut-woods-cross:
+  display_name: Woods Cross
+  district_name: Legacy Preparatory Academy
+  district_nces_id: '4900045'
+  enrollment: 939
+  has_charters: true
+  source: ccd_auto
+  state: UT

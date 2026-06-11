@@ -1,0 +1,1120 @@
+la-abbeville:
+  display_name: Abbeville
+  district_name: Vermilion Parish
+  district_nces_id: '2201800'
+  enrollment: 9708
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-alexandria:
+  display_name: Alexandria
+  district_name: Rapides Parish
+  district_nces_id: '2201290'
+  enrollment: 22991
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-amite:
+  display_name: Amite
+  district_name: Tangipahoa Parish
+  district_nces_id: '2201680'
+  enrollment: 20700
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-arcadia:
+  display_name: Arcadia
+  district_name: Bienville Parish
+  district_nces_id: '2200210'
+  enrollment: 1971
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-baker:
+  display_name: Baker
+  district_name: City of Baker School District
+  district_nces_id: '2200040'
+  enrollment: 1109
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-bastrop:
+  display_name: Bastrop
+  district_name: Morehouse Parish
+  district_nces_id: '2201110'
+  enrollment: 3381
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200022:
+  display_name: Baton Rouge
+  district_name: LSU Laboratory School
+  district_nces_id: '2200022'
+  enrollment: 1497
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200023:
+  display_name: Baton Rouge
+  district_name: Southern University Lab School
+  district_nces_id: '2200023'
+  enrollment: 836
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200054:
+  display_name: Baton Rouge
+  district_name: Recovery School District-LDE
+  district_nces_id: '2200054'
+  enrollment: 1007
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200148:
+  display_name: Baton Rouge
+  district_name: Community School for Apprenticeship Learning Inc.
+  district_nces_id: '2200148'
+  enrollment: 581
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200157:
+  display_name: Baton Rouge
+  district_name: University View Academy Inc. (FRM LA Connections)
+  district_nces_id: '2200157'
+  enrollment: 3928
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200230:
+  display_name: Baton Rouge
+  district_name: GEO Prep Academy of Greater Baton Rouge
+  district_nces_id: '2200230'
+  enrollment: 771
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200233:
+  display_name: Baton Rouge
+  district_name: Louisiana Virtual Charter Academy
+  district_nces_id: '2200233'
+  enrollment: 2235
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200254:
+  display_name: Baton Rouge
+  district_name: Democracy Prep Baton Rouge
+  district_nces_id: '2200254'
+  enrollment: 528
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200298:
+  display_name: Baton Rouge
+  district_name: GEO Prep Mid-City of Greater Baton Rouge
+  district_nces_id: '2200298'
+  enrollment: 666
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-baton-rouge-2200540:
+  display_name: Baton Rouge
+  district_name: East Baton Rouge Parish
+  district_nces_id: '2200540'
+  enrollment: 43253
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-belle-chasse-2200041:
+  display_name: Belle Chasse
+  district_name: Belle Chasse Academy
+  district_nces_id: '2200041'
+  enrollment: 893
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-belle-chasse-2201230:
+  display_name: Belle Chasse
+  district_name: Plaquemines Parish
+  district_nces_id: '2201230'
+  enrollment: 3858
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-benton:
+  display_name: Benton
+  district_name: Bossier Parish
+  district_nces_id: '2200270'
+  enrollment: 23918
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-bogalusa:
+  display_name: Bogalusa
+  district_name: City of Bogalusa School District
+  district_nces_id: '2200240'
+  enrollment: 1786
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-breaux-bridge:
+  display_name: Breaux Bridge
+  district_name: St. Martin Parish
+  district_nces_id: '2201590'
+  enrollment: 7537
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-cameron:
+  display_name: Cameron
+  district_name: Cameron Parish
+  district_nces_id: '2200390'
+  enrollment: 1152
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-centerville:
+  display_name: Centerville
+  district_name: St. Mary Parish
+  district_nces_id: '2201620'
+  enrollment: 8054
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-central:
+  display_name: Central
+  district_name: Central Community School District
+  district_nces_id: '2200125'
+  enrollment: 4967
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-chalmette:
+  display_name: Chalmette
+  district_name: St. Bernard Parish
+  district_nces_id: '2201410'
+  enrollment: 8277
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-clinton:
+  display_name: Clinton
+  district_name: East Feliciana Parish
+  district_nces_id: '2200600'
+  enrollment: 1766
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-colfax:
+  display_name: Colfax
+  district_name: Grant Parish
+  district_nces_id: '2200690'
+  enrollment: 2971
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-columbia:
+  display_name: Columbia
+  district_name: Caldwell Parish
+  district_nces_id: '2200360'
+  enrollment: 1502
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-coushatta:
+  display_name: Coushatta
+  district_name: Red River Parish
+  district_nces_id: '2201320'
+  enrollment: 1412
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-covington:
+  display_name: Covington
+  district_name: St. Tammany Parish
+  district_nces_id: '2201650'
+  enrollment: 39559
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-crowley:
+  display_name: Crowley
+  district_name: Acadia Parish
+  district_nces_id: '2200030'
+  enrollment: 9601
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-delhi:
+  display_name: Delhi
+  district_name: Delhi Charter School
+  district_nces_id: '2200038'
+  enrollment: 673
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-deridder:
+  display_name: Deridder
+  district_name: Beauregard Parish
+  district_nces_id: '2200180'
+  enrollment: 6020
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-farmerville-2200146:
+  display_name: Farmerville
+  district_name: D'Arbonne Woods Charter School
+  district_nces_id: '2200146'
+  enrollment: 1003
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-farmerville-2201770:
+  display_name: Farmerville
+  district_name: Union Parish
+  district_nces_id: '2201770'
+  enrollment: 1911
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-franklinton:
+  display_name: Franklinton
+  district_name: Washington Parish
+  district_nces_id: '2201860'
+  enrollment: 5019
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-grambling:
+  display_name: Grambling
+  district_name: Lincoln Preparatory School
+  district_nces_id: '2200275'
+  enrollment: 691
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-greensburg:
+  display_name: Greensburg
+  district_name: St. Helena Parish
+  district_nces_id: '2201470'
+  enrollment: 1119
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-harrisonburg:
+  display_name: Harrisonburg
+  district_name: Catahoula Parish
+  district_nces_id: '2200420'
+  enrollment: 1050
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-harvey:
+  display_name: Harvey
+  district_name: Jefferson Parish
+  district_nces_id: '2200840'
+  enrollment: 50628
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-homer:
+  display_name: Homer
+  district_name: Claiborne Parish
+  district_nces_id: '2200450'
+  enrollment: 1731
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-houma:
+  display_name: Houma
+  district_name: Terrebonne Parish
+  district_nces_id: '2201740'
+  enrollment: 15772
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-jena:
+  display_name: Jena
+  district_name: LaSalle Parish
+  district_nces_id: '2200960'
+  enrollment: 2637
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-jennings:
+  display_name: Jennings
+  district_name: Jefferson Davis Parish
+  district_nces_id: '2200810'
+  enrollment: 5595
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-jonesboro:
+  display_name: Jonesboro
+  district_name: Jackson Parish
+  district_nces_id: '2200780'
+  enrollment: 2161
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-lafayette-2200235:
+  display_name: Lafayette
+  district_name: Lafayette Charter Foundation
+  district_nces_id: '2200235'
+  enrollment: 1350
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-lafayette-2200263:
+  display_name: Lafayette
+  district_name: Willow Charter Academy
+  district_nces_id: '2200263'
+  enrollment: 654
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-lafayette-2200268:
+  display_name: Lafayette
+  district_name: Advantage Charter Academy
+  district_nces_id: '2200268'
+  enrollment: 509
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-lafayette-2200870:
+  display_name: Lafayette
+  district_name: Lafayette Parish
+  district_nces_id: '2200870'
+  enrollment: 32377
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-lake-charles-2200158:
+  display_name: Lake Charles
+  district_name: Lake Charles Charter Academy Foundation Inc.
+  district_nces_id: '2200158'
+  enrollment: 989
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-lake-charles-2200189:
+  display_name: Lake Charles
+  district_name: Southwest Louisiana Charter Academy
+  district_nces_id: '2200189'
+  enrollment: 741
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-lake-charles-2200198:
+  display_name: Lake Charles
+  district_name: Lake Charles College Prep
+  district_nces_id: '2200198'
+  enrollment: 574
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-lake-charles-2200330:
+  display_name: Lake Charles
+  district_name: Calcasieu Parish
+  district_nces_id: '2200330'
+  enrollment: 29523
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-lake-providence:
+  display_name: Lake Providence
+  district_name: East Carroll Parish
+  district_nces_id: '2200570'
+  enrollment: 812
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-leesville:
+  display_name: Leesville
+  district_name: Vernon Parish
+  district_nces_id: '2201830'
+  enrollment: 9037
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-livingston:
+  display_name: Livingston
+  district_name: Livingston Parish
+  district_nces_id: '2201020'
+  enrollment: 27731
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-luling:
+  display_name: Luling
+  district_name: St. Charles Parish
+  district_nces_id: '2201440'
+  enrollment: 9496
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-lutcher:
+  display_name: Lutcher
+  district_name: St. James Parish
+  district_nces_id: '2201500'
+  enrollment: 3537
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-mansfield:
+  display_name: Mansfield
+  district_name: DeSoto Parish
+  district_nces_id: '2200510'
+  enrollment: 5126
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-mansura:
+  display_name: Mansura
+  district_name: Avoyelles Public Charter School
+  district_nces_id: '2200035'
+  enrollment: 709
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-many:
+  display_name: Many
+  district_name: Sabine Parish
+  district_nces_id: '2201380'
+  enrollment: 4141
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-marksville:
+  display_name: Marksville
+  district_name: Avoyelles Parish
+  district_nces_id: '2200150'
+  enrollment: 5080
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-minden:
+  display_name: Minden
+  district_name: Webster Parish
+  district_nces_id: '2201890'
+  enrollment: 5549
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-monroe-2201080:
+  display_name: Monroe
+  district_name: City of Monroe School District
+  district_nces_id: '2201080'
+  enrollment: 8646
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-monroe-2201200:
+  display_name: Monroe
+  district_name: Ouachita Parish
+  district_nces_id: '2201200'
+  enrollment: 19136
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-napoleonville:
+  display_name: Napoleonville
+  district_name: Assumption Parish
+  district_nces_id: '2200120'
+  enrollment: 3031
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-natchitoches:
+  display_name: Natchitoches
+  district_name: Natchitoches Parish
+  district_nces_id: '2201140'
+  enrollment: 5527
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-new-iberia:
+  display_name: New Iberia
+  district_name: Iberia Parish
+  district_nces_id: '2200720'
+  enrollment: 11768
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200033:
+  display_name: New Orleans
+  district_name: International School of Louisiana
+  district_nces_id: '2200033'
+  enrollment: 1190
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200159:
+  display_name: New Orleans
+  district_name: Lycee Francais de la Nouvelle-Orleans
+  district_nces_id: '2200159'
+  enrollment: 1038
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200160:
+  display_name: New Orleans
+  district_name: New Orleans Military & Maritime Academy
+  district_nces_id: '2200160'
+  enrollment: 907
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200192:
+  display_name: New Orleans
+  district_name: Arthur Ashe Charter School
+  district_nces_id: '2200192'
+  enrollment: 831
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200195:
+  display_name: New Orleans
+  district_name: ReNew Dolores T Aaron Elementary
+  district_nces_id: '2200195'
+  enrollment: 721
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200197:
+  display_name: New Orleans
+  district_name: Frederick A. Douglass High School
+  district_nces_id: '2200197'
+  enrollment: 694
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200203:
+  display_name: New Orleans
+  district_name: Morris Jeff Community School
+  district_nces_id: '2200203'
+  enrollment: 1575
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200206:
+  display_name: New Orleans
+  district_name: Langston Hughes Charter Academy
+  district_nces_id: '2200206'
+  enrollment: 796
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200207:
+  display_name: New Orleans
+  district_name: Lord Beaconsfield Landry-Oliver Perry Walker High
+  district_nces_id: '2200207'
+  enrollment: 675
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200208:
+  display_name: New Orleans
+  district_name: Akili Academy of New Orleans
+  district_nces_id: '2200208'
+  enrollment: 589
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200211:
+  display_name: New Orleans
+  district_name: KIPP Leadership
+  district_nces_id: '2200211'
+  enrollment: 894
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200216:
+  display_name: New Orleans
+  district_name: KIPP Believe
+  district_nces_id: '2200216'
+  enrollment: 767
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200217:
+  display_name: New Orleans
+  district_name: Dr Martin Luther King Charter School for Sci Tech
+  district_nces_id: '2200217'
+  enrollment: 853
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200220:
+  display_name: New Orleans
+  district_name: Harriet Tubman Charter School
+  district_nces_id: '2200220'
+  enrollment: 932
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200236:
+  display_name: New Orleans
+  district_name: Martin Behrman Elementary School
+  district_nces_id: '2200236'
+  enrollment: 918
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200237:
+  display_name: New Orleans
+  district_name: Sci Academy
+  district_nces_id: '2200237'
+  enrollment: 638
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200242:
+  display_name: New Orleans
+  district_name: ReNEW SciTech Academy at Laurel
+  district_nces_id: '2200242'
+  enrollment: 581
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200243:
+  display_name: New Orleans
+  district_name: Paul Habans Charter School
+  district_nces_id: '2200243'
+  enrollment: 877
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200246:
+  display_name: New Orleans
+  district_name: KIPP Central City
+  district_nces_id: '2200246'
+  enrollment: 869
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200248:
+  display_name: New Orleans
+  district_name: KIPP East Community Primary
+  district_nces_id: '2200248'
+  enrollment: 1064
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200249:
+  display_name: New Orleans
+  district_name: Mildred Osborne Charter School
+  district_nces_id: '2200249'
+  enrollment: 569
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200253:
+  display_name: New Orleans
+  district_name: Phillis Wheatley Community School
+  district_nces_id: '2200253'
+  enrollment: 812
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200255:
+  display_name: New Orleans
+  district_name: ReNEW Schaumburg Elementary
+  district_nces_id: '2200255'
+  enrollment: 651
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200259:
+  display_name: New Orleans
+  district_name: Samuel J Green Charter School
+  district_nces_id: '2200259'
+  enrollment: 530
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200262:
+  display_name: New Orleans
+  district_name: KIPP Ernest N. Dutch Morial
+  district_nces_id: '2200262'
+  enrollment: 1068
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200265:
+  display_name: New Orleans
+  district_name: G W Carver Collegiate Academy
+  district_nces_id: '2200265'
+  enrollment: 768
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200276:
+  display_name: New Orleans
+  district_name: Livingston Collegiate Academy
+  district_nces_id: '2200276'
+  enrollment: 607
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200277:
+  display_name: New Orleans
+  district_name: KIPP Booker T. Washington
+  district_nces_id: '2200277'
+  enrollment: 765
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200279:
+  display_name: New Orleans
+  district_name: Alice M Harte Elementary Charter School
+  district_nces_id: '2200279'
+  enrollment: 792
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200281:
+  display_name: New Orleans
+  district_name: New Orleans Charter Science and Mathematics HS
+  district_nces_id: '2200281'
+  enrollment: 579
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200282:
+  display_name: New Orleans
+  district_name: Lake Forest Elementary Charter School
+  district_nces_id: '2200282'
+  enrollment: 596
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200283:
+  display_name: New Orleans
+  district_name: Einstein Charter School at Village De L'Est
+  district_nces_id: '2200283'
+  enrollment: 508
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200285:
+  display_name: New Orleans
+  district_name: Audubon Charter School
+  district_nces_id: '2200285'
+  enrollment: 862
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200289:
+  display_name: New Orleans
+  district_name: Bricolage Academy
+  district_nces_id: '2200289'
+  enrollment: 848
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200291:
+  display_name: New Orleans
+  district_name: Eleanor McMain Secondary School
+  district_nces_id: '2200291'
+  enrollment: 864
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200292:
+  display_name: New Orleans
+  district_name: Einstein Charter at Sherwood Forest
+  district_nces_id: '2200292'
+  enrollment: 501
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200294:
+  display_name: New Orleans
+  district_name: Edna Karr High School
+  district_nces_id: '2200294'
+  enrollment: 1134
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200296:
+  display_name: New Orleans
+  district_name: Wilson Charter School
+  district_nces_id: '2200296'
+  enrollment: 712
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200297:
+  display_name: New Orleans
+  district_name: The Willow School
+  district_nces_id: '2200297'
+  enrollment: 1954
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200299:
+  display_name: New Orleans
+  district_name: Benjamin Franklin High School
+  district_nces_id: '2200299'
+  enrollment: 1034
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200306:
+  display_name: New Orleans
+  district_name: Dwight D. Eisenhower Charter School
+  district_nces_id: '2200306'
+  enrollment: 705
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200312:
+  display_name: New Orleans
+  district_name: McDonogh 35 Senior High School
+  district_nces_id: '2200312'
+  enrollment: 859
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200316:
+  display_name: New Orleans
+  district_name: Warren Easton Charter Foundation Inc.
+  district_nces_id: '2200316'
+  enrollment: 1112
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200317:
+  display_name: New Orleans
+  district_name: Edward Hynes Charter School - Lakeview
+  district_nces_id: '2200317'
+  enrollment: 722
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200319:
+  display_name: New Orleans
+  district_name: John F. Kennedy High School
+  district_nces_id: '2200319'
+  enrollment: 584
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200320:
+  display_name: New Orleans
+  district_name: Pierre A. Capdau Charter School
+  district_nces_id: '2200320'
+  enrollment: 507
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200322:
+  display_name: New Orleans
+  district_name: Lafayette Academy Charter School
+  district_nces_id: '2200322'
+  enrollment: 577
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200323:
+  display_name: New Orleans
+  district_name: Esperanza Charter School
+  district_nces_id: '2200323'
+  enrollment: 562
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2200328:
+  display_name: New Orleans
+  district_name: Homer Plessy Community School
+  district_nces_id: '2200328'
+  enrollment: 779
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-orleans-2201170:
+  display_name: New Orleans
+  district_name: Orleans Parish
+  district_nces_id: '2201170'
+  enrollment: 2040
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-new-roads:
+  display_name: New Roads
+  district_name: Pointe Coupee Parish
+  district_nces_id: '2201260'
+  enrollment: 2710
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-oak-grove:
+  display_name: Oak Grove
+  district_name: West Carroll Parish
+  district_nces_id: '2201950'
+  enrollment: 1863
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-oberlin:
+  display_name: Oberlin
+  district_name: Allen Parish
+  district_nces_id: '2200060'
+  enrollment: 4136
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-opelousas:
+  display_name: Opelousas
+  district_name: St. Landry Parish
+  district_nces_id: '2201560'
+  enrollment: 12554
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-plaquemine-2200219:
+  display_name: Plaquemine
+  district_name: Iberville Charter Academy
+  district_nces_id: '2200219'
+  enrollment: 654
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-plaquemine-2200750:
+  display_name: Plaquemine
+  district_name: Iberville Parish
+  district_nces_id: '2200750'
+  enrollment: 4498
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-port-allen:
+  display_name: Port Allen
+  district_name: West Baton Rouge Parish
+  district_nces_id: '2201920'
+  enrollment: 4332
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-rayville:
+  display_name: Rayville
+  district_name: Richland Parish
+  district_nces_id: '2201350'
+  enrollment: 2885
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-reserve:
+  display_name: Reserve
+  district_name: St. John the Baptist Parish
+  district_nces_id: '2201530'
+  enrollment: 5382
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-ruston:
+  display_name: Ruston
+  district_name: Lincoln Parish
+  district_nces_id: '2200990'
+  enrollment: 5839
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-shreveport:
+  display_name: Shreveport
+  district_name: Caddo Parish
+  district_nces_id: '2200300'
+  enrollment: 36147
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-sorrento:
+  display_name: Sorrento
+  district_name: Ascension Parish
+  district_nces_id: '2200090'
+  enrollment: 24769
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-st-francisville:
+  display_name: St. Francisville
+  district_name: West Feliciana Parish
+  district_nces_id: '2201980'
+  enrollment: 2245
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-tallulah:
+  display_name: Tallulah
+  district_name: Madison Parish
+  district_nces_id: '2201050'
+  enrollment: 1379
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-terrytown:
+  display_name: Terrytown
+  district_name: Athlos Academy of Jefferson Parish
+  district_nces_id: '2200305'
+  enrollment: 1194
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-thibodaux:
+  display_name: Thibodaux
+  district_name: Lafourche Parish
+  district_nces_id: '2200900'
+  enrollment: 14208
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-vidalia:
+  display_name: Vidalia
+  district_name: Concordia Parish
+  district_nces_id: '2200480'
+  enrollment: 3192
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-ville-platte:
+  display_name: Ville Platte
+  district_name: Evangeline Parish
+  district_nces_id: '2200630'
+  enrollment: 5705
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-winnfield:
+  display_name: Winnfield
+  district_name: Winn Parish
+  district_nces_id: '2202010'
+  enrollment: 2012
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-winnsboro:
+  display_name: Winnsboro
+  district_name: Franklin Parish
+  district_nces_id: '2200660'
+  enrollment: 2850
+  has_charters: false
+  source: ccd_auto
+  state: LA
+la-youngsville:
+  display_name: Youngsville
+  district_name: Acadiana Renaissance Charter Academy
+  district_nces_id: '2200231'
+  enrollment: 1878
+  has_charters: true
+  source: ccd_auto
+  state: LA
+la-zachary:
+  display_name: Zachary
+  district_name: Zachary Community School District
+  district_nces_id: '2200039'
+  enrollment: 5853
+  has_charters: false
+  source: ccd_auto
+  state: LA

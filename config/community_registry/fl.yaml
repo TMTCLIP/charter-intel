@@ -1,0 +1,624 @@
+fl-arcadia:
+  display_name: Arcadia
+  district_name: DESOTO
+  district_nces_id: '1200420'
+  enrollment: 4582
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-bartow:
+  display_name: Bartow
+  district_name: POLK
+  district_nces_id: '1201590'
+  enrollment: 109558
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-blountstown:
+  display_name: Blountstown
+  district_name: CALHOUN
+  district_nces_id: '1200210'
+  enrollment: 2129
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-boca-raton:
+  display_name: Boca Raton
+  district_name: FAU LAB SCH
+  district_nces_id: '1202012'
+  enrollment: 2785
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-bonifay:
+  display_name: Bonifay
+  district_name: HOLMES
+  district_nces_id: '1200900'
+  enrollment: 3233
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-boynton-beach:
+  display_name: Boynton Beach
+  district_name: SOUTH TECH ACADEMY
+  district_nces_id: '1200081'
+  enrollment: 1724
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-bradenton:
+  display_name: Bradenton
+  district_name: MANATEE
+  district_nces_id: '1201230'
+  enrollment: 51234
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-bristol:
+  display_name: Bristol
+  district_name: LIBERTY
+  district_nces_id: '1201170'
+  enrollment: 1295
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-bronson:
+  display_name: Bronson
+  district_name: LEVY
+  district_nces_id: '1201140'
+  enrollment: 5689
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-brooksville:
+  display_name: Brooksville
+  district_name: HERNANDO
+  district_nces_id: '1200810'
+  enrollment: 24058
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-bunnell:
+  display_name: Bunnell
+  district_name: FLAGLER
+  district_nces_id: '1200540'
+  enrollment: 13331
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-bushnell:
+  display_name: Bushnell
+  district_name: SUMTER
+  district_nces_id: '1201800'
+  enrollment: 9404
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-chipley:
+  display_name: Chipley
+  district_name: WASHINGTON
+  district_nces_id: '1202010'
+  enrollment: 3313
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-crawfordville:
+  display_name: Crawfordville
+  district_name: WAKULLA
+  district_nces_id: '1201950'
+  enrollment: 5156
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-cross-city:
+  display_name: Cross City
+  district_name: DIXIE
+  district_nces_id: '1200450'
+  enrollment: 2090
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-defuniak-springs:
+  display_name: Defuniak Springs
+  district_name: WALTON
+  district_nces_id: '1201980'
+  enrollment: 11575
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-deland:
+  display_name: Deland
+  district_name: VOLUSIA
+  district_nces_id: '1201920'
+  enrollment: 63365
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-eastpoint:
+  display_name: Eastpoint
+  district_name: FRANKLIN
+  district_nces_id: '1200570'
+  enrollment: 1208
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-fernandina-beach:
+  display_name: Fernandina Beach
+  district_name: NASSAU
+  district_nces_id: '1201350'
+  enrollment: 12668
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-fort-lauderdale:
+  display_name: Fort Lauderdale
+  district_name: BROWARD
+  district_nces_id: '1200180'
+  enrollment: 254732
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-fort-myers:
+  display_name: Fort Myers
+  district_name: LEE
+  district_nces_id: '1201080'
+  enrollment: 99354
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-fort-walton-beach:
+  display_name: Fort Walton Beach
+  district_name: OKALOOSA
+  district_nces_id: '1201380'
+  enrollment: 32733
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-gainesville-1200030:
+  display_name: Gainesville
+  district_name: ALACHUA
+  district_nces_id: '1200030'
+  enrollment: 28964
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-gainesville-1202015:
+  display_name: Gainesville
+  district_name: UF LAB SCH
+  district_nces_id: '1202015'
+  enrollment: 1287
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-green-cove-springs:
+  display_name: Green Cove Springs
+  district_name: CLAY
+  district_nces_id: '1200300'
+  enrollment: 39215
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-hialeah-gardens:
+  display_name: Hialeah Gardens
+  district_name: MATER ACADEMY
+  district_nces_id: '1202018'
+  enrollment: 791
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-inverness:
+  display_name: Inverness
+  district_name: CITRUS
+  district_nces_id: '1200270'
+  enrollment: 15951
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-jacksonville-1200480:
+  display_name: Jacksonville
+  district_name: DUVAL
+  district_nces_id: '1200480'
+  enrollment: 128657
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-jacksonville-1202017:
+  display_name: Jacksonville
+  district_name: SAN JOSE SCHOOLS
+  district_nces_id: '1202017'
+  enrollment: 1144
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-jasper:
+  display_name: Jasper
+  district_name: HAMILTON
+  district_nces_id: '1200720'
+  enrollment: 1657
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-key-west:
+  display_name: Key West
+  district_name: MONROE
+  district_nces_id: '1201320'
+  enrollment: 8929
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-kissimmee:
+  display_name: Kissimmee
+  district_name: OSCEOLA
+  district_nces_id: '1201470'
+  enrollment: 73558
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-labelle:
+  display_name: Labelle
+  district_name: HENDRY
+  district_nces_id: '1200780'
+  enrollment: 13859
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-lake-butler:
+  display_name: Lake Butler
+  district_name: UNION
+  district_nces_id: '1201890'
+  enrollment: 2385
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-lake-city:
+  display_name: Lake City
+  district_name: COLUMBIA
+  district_nces_id: '1200360'
+  enrollment: 9887
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-lake-wales:
+  display_name: Lake Wales
+  district_name: LAKE WALES CHARTER SCHOOLS
+  district_nces_id: '1200080'
+  enrollment: 4925
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-land-o-lakes:
+  display_name: Land O Lakes
+  district_name: PASCO
+  district_nces_id: '1201530'
+  enrollment: 84049
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-largo:
+  display_name: Largo
+  district_name: PINELLAS
+  district_nces_id: '1201560'
+  enrollment: 93702
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-live-oak:
+  display_name: Live Oak
+  district_name: SUWANNEE
+  district_nces_id: '1201830'
+  enrollment: 5935
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-macclenny:
+  display_name: Macclenny
+  district_name: BAKER
+  district_nces_id: '1200060'
+  enrollment: 5003
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-madison:
+  display_name: Madison
+  district_name: MADISON
+  district_nces_id: '1201200'
+  enrollment: 2418
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-marianna:
+  display_name: Marianna
+  district_name: JACKSON
+  district_nces_id: '1200960'
+  enrollment: 6076
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-mayo:
+  display_name: Mayo
+  district_name: LAFAYETTE
+  district_nces_id: '1201020'
+  enrollment: 1144
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-miami-1200083:
+  display_name: Miami
+  district_name: KIPP CHARTER
+  district_nces_id: '1200083'
+  enrollment: 1048
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-miami-1200390:
+  display_name: Miami
+  district_name: MIAMI-DADE
+  district_nces_id: '1200390'
+  enrollment: 334090
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-milton:
+  display_name: Milton
+  district_name: SANTA ROSA
+  district_nces_id: '1201650'
+  enrollment: 30764
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-monticello:
+  display_name: Monticello
+  district_name: JEFFERSON
+  district_nces_id: '1200990'
+  enrollment: 730
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-moore-haven:
+  display_name: Moore Haven
+  district_name: GLADES
+  district_nces_id: '1200660'
+  enrollment: 1819
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-naples:
+  display_name: Naples
+  district_name: COLLIER
+  district_nces_id: '1200330'
+  enrollment: 48082
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-ocala:
+  display_name: Ocala
+  district_name: MARION
+  district_nces_id: '1201260'
+  enrollment: 44493
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-okeechobee:
+  display_name: Okeechobee
+  district_name: OKEECHOBEE
+  district_nces_id: '1201410'
+  enrollment: 6398
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-orlando-1200002:
+  display_name: Orlando
+  district_name: FL VIRTUAL
+  district_nces_id: '1200002'
+  enrollment: 8559
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-orlando-1200082:
+  display_name: Orlando
+  district_name: UCP
+  district_nces_id: '1200082'
+  enrollment: 884
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-orlando-1201440:
+  display_name: Orlando
+  district_name: ORANGE
+  district_nces_id: '1201440'
+  enrollment: 207561
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-palatka:
+  display_name: Palatka
+  district_name: PUTNAM
+  district_nces_id: '1201620'
+  enrollment: 10293
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-panama-city:
+  display_name: Panama City
+  district_name: BAY
+  district_nces_id: '1200090'
+  enrollment: 27324
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-pensacola:
+  display_name: Pensacola
+  district_name: ESCAMBIA
+  district_nces_id: '1200510'
+  enrollment: 37851
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-perry:
+  display_name: Perry
+  district_name: TAYLOR
+  district_nces_id: '1201860'
+  enrollment: 2783
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-port-charlotte:
+  display_name: Port Charlotte
+  district_name: CHARLOTTE
+  district_nces_id: '1200240'
+  enrollment: 16834
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-port-st-joe:
+  display_name: Port St Joe
+  district_name: GULF
+  district_nces_id: '1200690'
+  enrollment: 1928
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-port-st-lucie:
+  display_name: Port St Lucie
+  district_name: ST. LUCIE
+  district_nces_id: '1201770'
+  enrollment: 45661
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-quincy:
+  display_name: Quincy
+  district_name: GADSDEN
+  district_nces_id: '1200600'
+  enrollment: 4616
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-sanford:
+  display_name: Sanford
+  district_name: SEMINOLE
+  district_nces_id: '1201710'
+  enrollment: 66680
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-sarasota:
+  display_name: Sarasota
+  district_name: SARASOTA
+  district_nces_id: '1201680'
+  enrollment: 45077
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-sebring:
+  display_name: Sebring
+  district_name: HIGHLANDS
+  district_nces_id: '1200840'
+  enrollment: 12362
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-st-augustine:
+  display_name: St Augustine
+  district_name: ST. JOHNS
+  district_nces_id: '1201740'
+  enrollment: 50155
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-starke:
+  display_name: Starke
+  district_name: BRADFORD
+  district_nces_id: '1200120'
+  enrollment: 2998
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-stuart:
+  display_name: Stuart
+  district_name: MARTIN
+  district_nces_id: '1201290'
+  enrollment: 18650
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-tallahassee-1201110:
+  display_name: Tallahassee
+  district_name: LEON
+  district_nces_id: '1201110'
+  enrollment: 32212
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-tallahassee-1202013:
+  display_name: Tallahassee
+  district_name: FSU LAB SCH
+  district_nces_id: '1202013'
+  enrollment: 2574
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-tallahassee-1202014:
+  display_name: Tallahassee
+  district_name: FAMU LAB SCH
+  district_nces_id: '1202014'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-tampa:
+  display_name: Tampa
+  district_name: HILLSBOROUGH
+  district_nces_id: '1200870'
+  enrollment: 224538
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-tavares:
+  display_name: Tavares
+  district_name: LAKE
+  district_nces_id: '1201050'
+  enrollment: 47452
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-trenton:
+  display_name: Trenton
+  district_name: GILCHRIST
+  district_nces_id: '1200630'
+  enrollment: 2839
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-vero-beach:
+  display_name: Vero Beach
+  district_name: INDIAN RIVER
+  district_nces_id: '1200930'
+  enrollment: 17199
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-viera:
+  display_name: Viera
+  district_name: BREVARD
+  district_nces_id: '1200150'
+  enrollment: 74125
+  has_charters: true
+  source: ccd_auto
+  state: FL
+fl-wauchula:
+  display_name: Wauchula
+  district_name: HARDEE
+  district_nces_id: '1200750'
+  enrollment: 4901
+  has_charters: false
+  source: ccd_auto
+  state: FL
+fl-west-palm-beach:
+  display_name: West Palm Beach
+  district_name: PALM BEACH
+  district_nces_id: '1201500'
+  enrollment: 188843
+  has_charters: true
+  source: ccd_auto
+  state: FL

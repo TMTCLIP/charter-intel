@@ -1,0 +1,264 @@
+de-bridgeville:
+  display_name: Bridgeville
+  district_name: Woodbridge School District
+  district_nces_id: '1001850'
+  enrollment: 2494
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-clayton:
+  display_name: Clayton
+  district_name: Providence Creek Academy Charter School
+  district_nces_id: '1000018'
+  enrollment: 730
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-delmar:
+  display_name: Delmar
+  district_name: Delmar School District
+  district_nces_id: '1000270'
+  enrollment: 1427
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-dover-1000055:
+  display_name: Dover
+  district_name: Early College High School at Del State
+  district_nces_id: '1000055'
+  enrollment: 519
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-dover-1000190:
+  display_name: Dover
+  district_name: Capital School District
+  district_nces_id: '1000190'
+  enrollment: 6396
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-felton:
+  display_name: Felton
+  district_name: Lake Forest School District
+  district_nces_id: '1000790'
+  enrollment: 3611
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-georgetown-1000011:
+  display_name: Georgetown
+  district_name: Sussex Academy
+  district_nces_id: '1000011'
+  enrollment: 1118
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-georgetown-1001680:
+  display_name: Georgetown
+  district_name: Sussex Technical School District
+  district_nces_id: '1001680'
+  enrollment: 1292
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-laurel:
+  display_name: Laurel
+  district_name: Laurel School District
+  district_nces_id: '1000810'
+  enrollment: 2598
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-lewes:
+  display_name: Lewes
+  district_name: Cape Henlopen School District
+  district_nces_id: '1000170'
+  enrollment: 6336
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-middletown:
+  display_name: Middletown
+  district_name: MOT Charter School
+  district_nces_id: '1000019'
+  enrollment: 1383
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-milford:
+  display_name: Milford
+  district_name: Milford School District
+  district_nces_id: '1001080'
+  enrollment: 4470
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-new-castle-1000024:
+  display_name: New Castle
+  district_name: Charter School of New Castle
+  district_nces_id: '1000024'
+  enrollment: 752
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-new-castle-1000230:
+  display_name: New Castle
+  district_name: Colonial School District
+  district_nces_id: '1000230'
+  enrollment: 9132
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-newark-1000015:
+  display_name: Newark
+  district_name: Newark Charter School
+  district_nces_id: '1000015'
+  enrollment: 2987
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-newark-1000050:
+  display_name: Newark
+  district_name: Las Americas Aspira Academy
+  district_nces_id: '1000050'
+  enrollment: 1341
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-newark-1000053:
+  display_name: Newark
+  district_name: Academia Antonia Alonso
+  district_nces_id: '1000053'
+  enrollment: 718
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-newark-1000200:
+  display_name: Newark
+  district_name: Christina School District
+  district_nces_id: '1000200'
+  enrollment: 13092
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-odessa:
+  display_name: Odessa
+  district_name: Appoquinimink School District
+  district_nces_id: '1000080'
+  enrollment: 12804
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-seaford:
+  display_name: Seaford
+  district_name: Seaford School District
+  district_nces_id: '1001530'
+  enrollment: 3410
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-selbyville:
+  display_name: Selbyville
+  district_name: Indian River School District
+  district_nces_id: '1000680'
+  enrollment: 10799
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-smyrna:
+  display_name: Smyrna
+  district_name: Smyrna School District
+  district_nces_id: '1001620'
+  enrollment: 6067
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-wilmington-1000004:
+  display_name: Wilmington
+  district_name: Charter School of Wilmington
+  district_nces_id: '1000004'
+  enrollment: 968
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-wilmington-1000010:
+  display_name: Wilmington
+  district_name: Edison (Thomas A.) Charter School
+  district_nces_id: '1000010'
+  enrollment: 632
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-wilmington-1000014:
+  display_name: Wilmington
+  district_name: Kuumba Academy Charter School
+  district_nces_id: '1000014'
+  enrollment: 643
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-wilmington-1000016:
+  display_name: Wilmington
+  district_name: Delaware Military Academy
+  district_nces_id: '1000016'
+  enrollment: 584
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-wilmington-1000026:
+  display_name: Wilmington
+  district_name: Odyssey Charter School
+  district_nces_id: '1000026'
+  enrollment: 2123
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-wilmington-1000054:
+  display_name: Wilmington
+  district_name: First State Montessori Academy
+  district_nces_id: '1000054'
+  enrollment: 629
+  has_charters: true
+  source: ccd_auto
+  state: DE
+de-wilmington-1001240:
+  display_name: Wilmington
+  district_name: Brandywine School District
+  district_nces_id: '1001240'
+  enrollment: 10367
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-wilmington-1001280:
+  display_name: Wilmington
+  district_name: New Castle County Vocational-Technical School District
+  district_nces_id: '1001280'
+  enrollment: 4688
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-wilmington-1001300:
+  display_name: Wilmington
+  district_name: Red Clay Consolidated School District
+  district_nces_id: '1001300'
+  enrollment: 14771
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-woodside:
+  display_name: Woodside
+  district_name: POLYTECH School District
+  district_nces_id: '1000750'
+  enrollment: 1203
+  has_charters: false
+  source: ccd_auto
+  state: DE
+de-wyoming:
+  display_name: Wyoming
+  district_name: Caesar Rodney School District
+  district_nces_id: '1000180'
+  enrollment: 8286
+  has_charters: false
+  source: ccd_auto
+  state: DE

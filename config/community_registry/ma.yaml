@@ -1,0 +1,2480 @@
+ma-73-prospect-street:
+  display_name: 73 Prospect Street
+  district_name: Community Day Charter Public School (District)
+  district_nces_id: '2500027'
+  enrollment: 1195
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-abington:
+  display_name: Abington
+  district_name: Abington
+  district_nces_id: '2501650'
+  enrollment: 2177
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-acton:
+  display_name: Acton
+  district_name: Acton-Boxborough
+  district_nces_id: '2501710'
+  enrollment: 5197
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-acushnet:
+  display_name: Acushnet
+  district_name: Acushnet
+  district_nces_id: '2501740'
+  enrollment: 973
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-amesbury:
+  display_name: Amesbury
+  district_name: Amesbury
+  district_nces_id: '2501860'
+  enrollment: 1809
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-amherst-2501890:
+  display_name: Amherst
+  district_name: Amherst
+  district_nces_id: '2501890'
+  enrollment: 1054
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-amherst-2501920:
+  display_name: Amherst
+  district_name: Amherst-Pelham
+  district_nces_id: '2501920'
+  enrollment: 1242
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-andover-2501950:
+  display_name: Andover
+  district_name: Andover
+  district_nces_id: '2501950'
+  enrollment: 5590
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-andover-2505470:
+  display_name: Andover
+  district_name: Greater Lawrence Regional Vocational Technical
+  district_nces_id: '2505470'
+  enrollment: 1692
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-arlington:
+  display_name: Arlington
+  district_name: Arlington
+  district_nces_id: '2501980'
+  enrollment: 6047
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-ashburnham:
+  display_name: Ashburnham
+  district_name: Ashburnham-Westminster
+  district_nces_id: '2502040'
+  enrollment: 2325
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-ashland:
+  display_name: Ashland
+  district_name: Ashland
+  district_nces_id: '2502100'
+  enrollment: 2925
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-athol:
+  display_name: Athol
+  district_name: Athol-Royalston
+  district_nces_id: '2502160'
+  enrollment: 1583
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-attleboro:
+  display_name: Attleboro
+  district_name: Attleboro
+  district_nces_id: '2502190'
+  enrollment: 5963
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-auburn:
+  display_name: Auburn
+  district_name: Auburn
+  district_nces_id: '2502220'
+  enrollment: 2573
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-avon:
+  display_name: Avon
+  district_name: Avon
+  district_nces_id: '2502250'
+  enrollment: 735
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-ayer:
+  display_name: Ayer
+  district_name: Ayer Shirley School District
+  district_nces_id: '2500542'
+  enrollment: 1670
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-baldwinville:
+  display_name: Baldwinville
+  district_name: Narragansett
+  district_nces_id: '2508280'
+  enrollment: 1485
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-barre:
+  display_name: Barre
+  district_name: Quabbin
+  district_nces_id: '2500001'
+  enrollment: 2199
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-bedford:
+  display_name: Bedford
+  district_name: Bedford
+  district_nces_id: '2502400'
+  enrollment: 2575
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-belchertown:
+  display_name: Belchertown
+  district_name: Belchertown
+  district_nces_id: '2502430'
+  enrollment: 2136
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-bellingham:
+  display_name: Bellingham
+  district_name: Bellingham
+  district_nces_id: '2502460'
+  enrollment: 2027
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-belmont:
+  display_name: Belmont
+  district_name: Belmont
+  district_nces_id: '2502490'
+  enrollment: 4507
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-berkley:
+  display_name: Berkley
+  district_name: Berkley
+  district_nces_id: '2502520'
+  enrollment: 854
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-beverly:
+  display_name: Beverly
+  district_name: Beverly
+  district_nces_id: '2502640'
+  enrollment: 4648
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-billerica-2502670:
+  display_name: Billerica
+  district_name: Billerica
+  district_nces_id: '2502670'
+  enrollment: 4882
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-billerica-2510615:
+  display_name: Billerica
+  district_name: Shawsheen Valley Regional Vocational Technical
+  district_nces_id: '2510615'
+  enrollment: 1292
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-blackstone:
+  display_name: Blackstone
+  district_name: Blackstone-Millville
+  district_nces_id: '2502715'
+  enrollment: 1468
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-bolton:
+  display_name: Bolton
+  district_name: Nashoba
+  district_nces_id: '2508310'
+  enrollment: 3065
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-boston-2500066:
+  display_name: Boston
+  district_name: MATCH Charter Public School (District)
+  district_nces_id: '2500066'
+  enrollment: 1186
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-boston-2500549:
+  display_name: Boston
+  district_name: UP Academy Charter School of Dorchester (District)
+  district_nces_id: '2500549'
+  enrollment: 615
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-bourne-2502820:
+  display_name: Bourne
+  district_name: Bourne
+  district_nces_id: '2502820'
+  enrollment: 1568
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-bourne-2511800:
+  display_name: Bourne
+  district_name: Upper Cape Cod Regional Vocational Technical
+  district_nces_id: '2511800'
+  enrollment: 769
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-boxford-2502880:
+  display_name: Boxford
+  district_name: Boxford
+  district_nces_id: '2502880'
+  enrollment: 738
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-boxford-2507410:
+  display_name: Boxford
+  district_name: Masconomet
+  district_nces_id: '2507410'
+  enrollment: 1610
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-boxford-2507830:
+  display_name: Boxford
+  district_name: Middleton
+  district_nces_id: '2507830'
+  enrollment: 725
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-boxford-2511670:
+  display_name: Boxford
+  district_name: Topsfield
+  district_nces_id: '2511670'
+  enrollment: 630
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-boylston:
+  display_name: Boylston
+  district_name: Berlin-Boylston
+  district_nces_id: '2502580'
+  enrollment: 1084
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-braintree:
+  display_name: Braintree
+  district_name: Braintree
+  district_nces_id: '2502940'
+  enrollment: 5380
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-bridgewater:
+  display_name: Bridgewater
+  district_name: Bridgewater-Raynham
+  district_nces_id: '2503030'
+  enrollment: 5521
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-brockton-2500559:
+  display_name: Brockton
+  district_name: New Heights Charter School of Brockton (District)
+  district_nces_id: '2500559'
+  enrollment: 741
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-brockton-2503090:
+  display_name: Brockton
+  district_name: Brockton
+  district_nces_id: '2503090'
+  enrollment: 14999
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-brookline:
+  display_name: Brookline
+  district_name: Brookline
+  district_nces_id: '2503150'
+  enrollment: 7116
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-burlington:
+  display_name: Burlington
+  district_name: Burlington
+  district_nces_id: '2503240'
+  enrollment: 3486
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-byfield:
+  display_name: Byfield
+  district_name: Triton
+  district_nces_id: '2511740'
+  enrollment: 2261
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-cambridge-2500046:
+  display_name: Cambridge
+  district_name: Prospect Hill Academy Charter (District)
+  district_nces_id: '2500046'
+  enrollment: 999
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-cambridge-2503270:
+  display_name: Cambridge
+  district_name: Cambridge
+  district_nces_id: '2503270'
+  enrollment: 6746
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-canton-2502740:
+  display_name: Canton
+  district_name: Blue Hills Regional Vocational Technical
+  district_nces_id: '2502740'
+  enrollment: 920
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-canton-2503300:
+  display_name: Canton
+  district_name: Canton
+  district_nces_id: '2503300'
+  enrollment: 3273
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-carlisle:
+  display_name: Carlisle
+  district_name: Carlisle
+  district_nces_id: '2503330'
+  enrollment: 606
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-carver:
+  display_name: Carver
+  district_name: Carver
+  district_nces_id: '2503360'
+  enrollment: 1538
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-charlton:
+  display_name: Charlton
+  district_name: Southern Worcester County Regional Vocational District
+  district_nces_id: '2511050'
+  enrollment: 1185
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-chatham:
+  display_name: Chatham
+  district_name: Monomoy Regional School District
+  district_nces_id: '2500544'
+  enrollment: 1781
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-chelmsford:
+  display_name: Chelmsford
+  district_name: Chelmsford
+  district_nces_id: '2503510'
+  enrollment: 5114
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-chelsea:
+  display_name: Chelsea
+  district_name: Chelsea
+  district_nces_id: '2503540'
+  enrollment: 6312
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-cheshire:
+  display_name: Cheshire
+  district_name: Hoosac Valley Regional
+  district_nces_id: '2501780'
+  enrollment: 989
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-chicopee-2500522:
+  display_name: Chicopee
+  district_name: Hampden Charter School of Science East (District)
+  district_nces_id: '2500522'
+  enrollment: 549
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-chicopee-2503660:
+  display_name: Chicopee
+  district_name: Chicopee
+  district_nces_id: '2503660'
+  enrollment: 6735
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-clinton:
+  display_name: Clinton
+  district_name: Clinton
+  district_nces_id: '2503750'
+  enrollment: 1972
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-cohasset:
+  display_name: Cohasset
+  district_name: Cohasset
+  district_nces_id: '2503780'
+  enrollment: 1420
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-concord-2503840:
+  display_name: Concord
+  district_name: Concord
+  district_nces_id: '2503840'
+  enrollment: 1962
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-concord-2503870:
+  display_name: Concord
+  district_name: Concord-Carlisle
+  district_nces_id: '2503870'
+  enrollment: 1335
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-dalton:
+  display_name: Dalton
+  district_name: Central Berkshire
+  district_nces_id: '2503390'
+  enrollment: 1546
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-danvers:
+  display_name: Danvers
+  district_name: Danvers
+  district_nces_id: '2503990'
+  enrollment: 3294
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-dartmouth:
+  display_name: Dartmouth
+  district_name: Dartmouth
+  district_nces_id: '2504020'
+  enrollment: 3416
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-dedham:
+  display_name: Dedham
+  district_name: Dedham
+  district_nces_id: '2504050'
+  enrollment: 2556
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-dighton:
+  display_name: Dighton
+  district_name: Bristol County Agricultural
+  district_nces_id: '2503070'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-dorchester-2500029:
+  display_name: Dorchester
+  district_name: Neighborhood House Charter (District)
+  district_nces_id: '2500029'
+  enrollment: 766
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-dorchester-2500053:
+  display_name: Dorchester
+  district_name: Boston Collegiate Charter (District)
+  district_nces_id: '2500053'
+  enrollment: 698
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-douglas:
+  display_name: Douglas
+  district_name: Douglas
+  district_nces_id: '2504230'
+  enrollment: 1198
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-dover-2504260:
+  display_name: Dover
+  district_name: Dover
+  district_nces_id: '2504260'
+  enrollment: 504
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-dover-2504290:
+  display_name: Dover
+  district_name: Dover-Sherborn
+  district_nces_id: '2504290'
+  enrollment: 1180
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-dracut:
+  display_name: Dracut
+  district_name: Dracut
+  district_nces_id: '2504320'
+  enrollment: 3626
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-dudley:
+  display_name: Dudley
+  district_name: Dudley-Charlton Reg
+  district_nces_id: '2504360'
+  enrollment: 3457
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-duxbury:
+  display_name: Duxbury
+  district_name: Duxbury
+  district_nces_id: '2504410'
+  enrollment: 2834
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-east-boston:
+  display_name: East Boston
+  district_name: Excel Academy Charter (District)
+  district_nces_id: '2500075'
+  enrollment: 1363
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-east-bridgewater:
+  display_name: East Bridgewater
+  district_name: East Bridgewater
+  district_nces_id: '2504440'
+  enrollment: 2077
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-east-falmouth:
+  display_name: East Falmouth
+  district_name: Falmouth
+  district_nces_id: '2504860'
+  enrollment: 3001
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-east-longmeadow:
+  display_name: East Longmeadow
+  district_name: East Longmeadow
+  district_nces_id: '2504500'
+  enrollment: 2573
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-east-walpole:
+  display_name: East Walpole
+  district_name: TEC Connections Academy Commonwealth Virtual School District
+  district_nces_id: '2500556'
+  enrollment: 2940
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-easthampton:
+  display_name: Easthampton
+  district_name: Easthampton
+  district_nces_id: '2504590'
+  enrollment: 1426
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-everett-2500518:
+  display_name: Everett
+  district_name: Pioneer Charter School of Science (District)
+  district_nces_id: '2500518'
+  enrollment: 783
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-everett-2504770:
+  display_name: Everett
+  district_name: Everett
+  district_nces_id: '2504770'
+  enrollment: 7377
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-fairhaven:
+  display_name: Fairhaven
+  district_name: Fairhaven
+  district_nces_id: '2504800'
+  enrollment: 1844
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-fall-river-2500041:
+  display_name: Fall River
+  district_name: Atlantis Charter (District)
+  district_nces_id: '2500041'
+  enrollment: 1283
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-fall-river-2500552:
+  display_name: Fall River
+  district_name: Argosy Collegiate Charter School (District)
+  district_nces_id: '2500552'
+  enrollment: 553
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-fall-river-2504830:
+  display_name: Fall River
+  district_name: Fall River
+  district_nces_id: '2504830'
+  enrollment: 10521
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-fall-river-2505485:
+  display_name: Fall River
+  district_name: Greater Fall River Regional Vocational Technical
+  district_nces_id: '2505485'
+  enrollment: 1412
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-feeding-hills:
+  display_name: Feeding Hills
+  district_name: Agawam
+  district_nces_id: '2501800'
+  enrollment: 3492
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-fiskdale-2511310:
+  display_name: Fiskdale
+  district_name: Sturbridge
+  district_nces_id: '2511310'
+  enrollment: 883
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-fiskdale-2511490:
+  display_name: Fiskdale
+  district_name: Tantasqua
+  district_nces_id: '2511490'
+  enrollment: 1770
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-fitchburg-2504890:
+  display_name: Fitchburg
+  district_name: Fitchburg
+  district_nces_id: '2504890'
+  enrollment: 5302
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-fitchburg-2508050:
+  display_name: Fitchburg
+  district_name: Montachusett Regional Vocational Technical
+  district_nces_id: '2508050'
+  enrollment: 1409
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-foxborough-2500052:
+  display_name: Foxborough
+  district_name: Foxborough Regional Charter (District)
+  district_nces_id: '2500052'
+  enrollment: 1569
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-foxborough-2504950:
+  display_name: Foxborough
+  district_name: Foxborough
+  district_nces_id: '2504950'
+  enrollment: 2479
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-framingham-2504980:
+  display_name: Framingham
+  district_name: Framingham
+  district_nces_id: '2504980'
+  enrollment: 9469
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-framingham-2511060:
+  display_name: Framingham
+  district_name: South Middlesex Regional Vocational Technical
+  district_nces_id: '2511060'
+  enrollment: 842
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-franklin-2500030:
+  display_name: Franklin
+  district_name: Benjamin Franklin Classical Charter Public (District)
+  district_nces_id: '2500030'
+  enrollment: 862
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-franklin-2505010:
+  display_name: Franklin
+  district_name: Franklin
+  district_nces_id: '2505010'
+  enrollment: 4781
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-franklin-2511735:
+  display_name: Franklin
+  district_name: Tri-County Regional Vocational Technical
+  district_nces_id: '2511735'
+  enrollment: 957
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-gardner:
+  display_name: Gardner
+  district_name: Gardner
+  district_nces_id: '2505130'
+  enrollment: 2404
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-georgetown:
+  display_name: Georgetown
+  district_name: Georgetown
+  district_nces_id: '2505220'
+  enrollment: 1286
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-gloucester:
+  display_name: Gloucester
+  district_name: Gloucester
+  district_nces_id: '2505280'
+  enrollment: 2849
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-grafton:
+  display_name: Grafton
+  district_name: Grafton
+  district_nces_id: '2505370'
+  enrollment: 3106
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-granby:
+  display_name: Granby
+  district_name: Granby
+  district_nces_id: '2505400'
+  enrollment: 723
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-greenfield-2500551:
+  display_name: Greenfield
+  district_name: Greater Commonwealth Virtual District
+  district_nces_id: '2500551'
+  enrollment: 1155
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-greenfield-2505490:
+  display_name: Greenfield
+  district_name: Greenfield
+  district_nces_id: '2505490'
+  enrollment: 1476
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-groton:
+  display_name: Groton
+  district_name: Groton-Dunstable
+  district_nces_id: '2505500'
+  enrollment: 2371
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hadley:
+  display_name: Hadley
+  district_name: Pioneer Valley Chinese Immersion Charter (District)
+  district_nces_id: '2500517'
+  enrollment: 549
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-hanover-2505790:
+  display_name: Hanover
+  district_name: Hanover
+  district_nces_id: '2505790'
+  enrollment: 2612
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hanover-2510930:
+  display_name: Hanover
+  district_name: South Shore Regional Vocational Technical
+  district_nces_id: '2510930'
+  enrollment: 653
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-harvard:
+  display_name: Harvard
+  district_name: Harvard
+  district_nces_id: '2505880'
+  enrollment: 1044
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-harwich:
+  display_name: Harwich
+  district_name: Cape Cod Regional Vocational Technical
+  district_nces_id: '2503310'
+  enrollment: 666
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hathorne:
+  display_name: Hathorne
+  district_name: Essex North Shore Agricultural and Technical School District
+  district_nces_id: '2500554'
+  enrollment: 1694
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-haverhill-2505970:
+  display_name: Haverhill
+  district_name: Haverhill
+  district_nces_id: '2505970'
+  enrollment: 7865
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-haverhill-2512950:
+  display_name: Haverhill
+  district_name: Whittier Regional Vocational Technical
+  district_nces_id: '2512950'
+  enrollment: 1277
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hingham:
+  display_name: Hingham
+  district_name: Hingham
+  district_nces_id: '2506090'
+  enrollment: 3837
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-holbrook:
+  display_name: Holbrook
+  district_name: Holbrook
+  district_nces_id: '2506150'
+  enrollment: 1332
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-holliston:
+  display_name: Holliston
+  district_name: Holliston
+  district_nces_id: '2506240'
+  enrollment: 2810
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-holyoke-2500087:
+  display_name: Holyoke
+  district_name: Holyoke Community Charter (District)
+  district_nces_id: '2500087'
+  enrollment: 685
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-holyoke-2506270:
+  display_name: Holyoke
+  district_name: Holyoke
+  district_nces_id: '2506270'
+  enrollment: 5046
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hopedale:
+  display_name: Hopedale
+  district_name: Hopedale
+  district_nces_id: '2506300'
+  enrollment: 1105
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hopkinton:
+  display_name: Hopkinton
+  district_name: Hopkinton
+  district_nces_id: '2506330'
+  enrollment: 4196
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hudson:
+  display_name: Hudson
+  district_name: Hudson
+  district_nces_id: '2506390'
+  enrollment: 2357
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hull:
+  display_name: Hull
+  district_name: Hull
+  district_nces_id: '2506420'
+  enrollment: 787
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-huntington:
+  display_name: Huntington
+  district_name: Gateway
+  district_nces_id: '2505160'
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hyannis-2500058:
+  display_name: Hyannis
+  district_name: Sturgis Charter Public (District)
+  district_nces_id: '2500058'
+  enrollment: 830
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-hyannis-2502310:
+  display_name: Hyannis
+  district_name: Barnstable
+  district_nces_id: '2502310'
+  enrollment: 4879
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-hyde-park-2500039:
+  display_name: Hyde Park
+  district_name: Boston Renaissance Charter Public (District)
+  district_nces_id: '2500039'
+  enrollment: 922
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-hyde-park-2500080:
+  display_name: Hyde Park
+  district_name: Boston Preparatory Charter Public (District)
+  district_nces_id: '2500080'
+  enrollment: 695
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-ipswich:
+  display_name: Ipswich
+  district_name: Ipswich
+  district_nces_id: '2506480'
+  enrollment: 1624
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-jefferson:
+  display_name: Jefferson
+  district_name: Wachusett
+  district_nces_id: '2511880'
+  enrollment: 6836
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-kingston-2505610:
+  display_name: Kingston
+  district_name: Halifax
+  district_nces_id: '2505610'
+  enrollment: 576
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-kingston-2506540:
+  display_name: Kingston
+  district_name: Kingston
+  district_nces_id: '2506540'
+  enrollment: 1235
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-kingston-2510830:
+  display_name: Kingston
+  district_name: Silver Lake
+  district_nces_id: '2510830'
+  enrollment: 1574
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lakeville:
+  display_name: Lakeville
+  district_name: Freetown-Lakeville
+  district_nces_id: '2505070'
+  enrollment: 2809
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lawrence-2500032:
+  display_name: Lawrence
+  district_name: Lawrence Family Development Charter (District)
+  district_nces_id: '2500032'
+  enrollment: 854
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-lawrence-2506660:
+  display_name: Lawrence
+  district_name: Lawrence
+  district_nces_id: '2506660'
+  enrollment: 12885
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lee:
+  display_name: Lee
+  district_name: Lee
+  district_nces_id: '2506690'
+  enrollment: 671
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-leicester:
+  display_name: Leicester
+  district_name: Leicester
+  district_nces_id: '2506720'
+  enrollment: 1374
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lenox:
+  display_name: Lenox
+  district_name: Lenox
+  district_nces_id: '2506750'
+  enrollment: 772
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-leominster:
+  display_name: Leominster
+  district_name: Leominster
+  district_nces_id: '2506780'
+  enrollment: 6077
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lexington-2506840:
+  display_name: Lexington
+  district_name: Lexington
+  district_nces_id: '2506840'
+  enrollment: 6938
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lexington-2507985:
+  display_name: Lexington
+  district_name: Minuteman Regional Vocational Technical
+  district_nces_id: '2507985'
+  enrollment: 691
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lincoln:
+  display_name: Lincoln
+  district_name: Lincoln
+  district_nces_id: '2506900'
+  enrollment: 1032
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-littleton:
+  display_name: Littleton
+  district_name: Littleton
+  district_nces_id: '2506960'
+  enrollment: 1711
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-longmeadow:
+  display_name: Longmeadow
+  district_name: Longmeadow
+  district_nces_id: '2506990'
+  enrollment: 2811
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lowell-2500065:
+  display_name: Lowell
+  district_name: Lowell Community Charter Public (District)
+  district_nces_id: '2500065'
+  enrollment: 813
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-lowell-2500545:
+  display_name: Lowell
+  district_name: Collegiate Charter School of Lowell (District)
+  district_nces_id: '2500545'
+  enrollment: 1203
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-lowell-2507020:
+  display_name: Lowell
+  district_name: Lowell
+  district_nces_id: '2507020'
+  enrollment: 14228
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-ludlow:
+  display_name: Ludlow
+  district_name: Ludlow
+  district_nces_id: '2507050'
+  enrollment: 2295
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lunenburg:
+  display_name: Lunenburg
+  district_name: Lunenburg
+  district_nces_id: '2507080'
+  enrollment: 1567
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lynn-2500082:
+  display_name: Lynn
+  district_name: KIPP Academy Lynn Charter (District)
+  district_nces_id: '2500082'
+  enrollment: 1612
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-lynn-2507110:
+  display_name: Lynn
+  district_name: Lynn
+  district_nces_id: '2507110'
+  enrollment: 15556
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-lynnfield:
+  display_name: Lynnfield
+  district_name: Lynnfield
+  district_nces_id: '2507140'
+  enrollment: 2220
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-malden-2500055:
+  display_name: Malden
+  district_name: Mystic Valley Regional Charter (District)
+  district_nces_id: '2500055'
+  enrollment: 1608
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-malden-2507170:
+  display_name: Malden
+  district_name: Malden
+  district_nces_id: '2507170'
+  enrollment: 6370
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-manchester:
+  display_name: Manchester
+  district_name: Manchester Essex Regional
+  district_nces_id: '2500067'
+  enrollment: 1243
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-mansfield:
+  display_name: Mansfield
+  district_name: Mansfield
+  district_nces_id: '2507230'
+  enrollment: 3464
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-marblehead:
+  display_name: Marblehead
+  district_name: Marblehead
+  district_nces_id: '2507260'
+  enrollment: 2672
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-marlborough-2500085:
+  display_name: Marlborough
+  district_name: Advanced Math and Science Academy Charter (District)
+  district_nces_id: '2500085'
+  enrollment: 966
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-marlborough-2502110:
+  display_name: Marlborough
+  district_name: Assabet Valley Regional Vocational Technical
+  district_nces_id: '2502110'
+  enrollment: 1128
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-marlborough-2507320:
+  display_name: Marlborough
+  district_name: Marlborough
+  district_nces_id: '2507320'
+  enrollment: 4812
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-marshfield:
+  display_name: Marshfield
+  district_name: Marshfield
+  district_nces_id: '2507350'
+  enrollment: 3799
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-mashpee:
+  display_name: Mashpee
+  district_name: Mashpee
+  district_nces_id: '2507440'
+  enrollment: 1458
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-mattapan:
+  display_name: Mattapan
+  district_name: KIPP Academy Boston Charter School (District)
+  district_nces_id: '2500537'
+  enrollment: 577
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-mattapoisett:
+  display_name: Mattapoisett
+  district_name: Old Rochester
+  district_nces_id: '2509150'
+  enrollment: 1051
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-maynard:
+  display_name: Maynard
+  district_name: Maynard
+  district_nces_id: '2507500'
+  enrollment: 1210
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-medfield:
+  display_name: Medfield
+  district_name: Medfield
+  district_nces_id: '2507530'
+  enrollment: 2531
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-medford:
+  display_name: Medford
+  district_name: Medford
+  district_nces_id: '2507560'
+  enrollment: 4201
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-medway:
+  display_name: Medway
+  district_name: Medway
+  district_nces_id: '2507590'
+  enrollment: 2142
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-melrose:
+  display_name: Melrose
+  district_name: Melrose
+  district_nces_id: '2507620'
+  enrollment: 3895
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-mendon:
+  display_name: Mendon
+  district_name: Mendon-Upton
+  district_nces_id: '2507680'
+  enrollment: 2120
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-methuen:
+  display_name: Methuen
+  district_name: Methuen
+  district_nces_id: '2507740'
+  enrollment: 6584
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-middleborough:
+  display_name: Middleborough
+  district_name: Middleborough
+  district_nces_id: '2507770'
+  enrollment: 3065
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-milford:
+  display_name: Milford
+  district_name: Milford
+  district_nces_id: '2507860'
+  enrollment: 4537
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-millbury:
+  display_name: Millbury
+  district_name: Millbury
+  district_nces_id: '2507890'
+  enrollment: 1638
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-millis:
+  display_name: Millis
+  district_name: Millis
+  district_nces_id: '2507920'
+  enrollment: 1221
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-milton:
+  display_name: Milton
+  district_name: Milton
+  district_nces_id: '2507980'
+  enrollment: 4370
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-monson:
+  display_name: Monson
+  district_name: Monson
+  district_nces_id: '2508040'
+  enrollment: 835
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-nantucket:
+  display_name: Nantucket
+  district_name: Nantucket
+  district_nces_id: '2508250'
+  enrollment: 1725
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-natick:
+  display_name: Natick
+  district_name: Natick
+  district_nces_id: '2508340'
+  enrollment: 5410
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-needham:
+  display_name: Needham
+  district_name: Needham
+  district_nces_id: '2508370'
+  enrollment: 5594
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-new-bedford-2500525:
+  display_name: New Bedford
+  district_name: Alma del Mar Charter School (District)
+  district_nces_id: '2500525'
+  enrollment: 1038
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-new-bedford-2508430:
+  display_name: New Bedford
+  district_name: New Bedford
+  district_nces_id: '2508430'
+  enrollment: 12640
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-new-bedford-2508440:
+  display_name: New Bedford
+  district_name: Greater New Bedford Regional Vocational Technical
+  district_nces_id: '2508440'
+  enrollment: 2095
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-newburyport:
+  display_name: Newburyport
+  district_name: Newburyport
+  district_nces_id: '2508580'
+  enrollment: 2191
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-newtonville:
+  display_name: Newtonville
+  district_name: Newton
+  district_nces_id: '2508610'
+  enrollment: 11990
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-norfolk-2506510:
+  display_name: Norfolk
+  district_name: King Philip
+  district_nces_id: '2506510'
+  enrollment: 1841
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-norfolk-2508640:
+  display_name: Norfolk
+  district_name: Norfolk
+  district_nces_id: '2508640'
+  enrollment: 1019
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-north-adams-2508670:
+  display_name: North Adams
+  district_name: North Adams
+  district_nces_id: '2508670'
+  enrollment: 1216
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-north-adams-2508950:
+  display_name: North Adams
+  district_name: Northern Berkshire Regional Vocational Technical
+  district_nces_id: '2508950'
+  enrollment: 537
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-north-andover:
+  display_name: North Andover
+  district_name: North Andover
+  district_nces_id: '2508700'
+  enrollment: 4491
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-north-attleborough:
+  display_name: North Attleborough
+  district_name: North Attleborough
+  district_nces_id: '2508730'
+  enrollment: 3949
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-north-dighton:
+  display_name: North Dighton
+  district_name: Dighton-Rehoboth
+  district_nces_id: '2504200'
+  enrollment: 2492
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-north-easton:
+  display_name: North Easton
+  district_name: Easton
+  district_nces_id: '2504620'
+  enrollment: 3441
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-north-reading:
+  display_name: North Reading
+  district_name: North Reading
+  district_nces_id: '2508820'
+  enrollment: 2383
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-northampton-2508850:
+  display_name: Northampton
+  district_name: Northampton
+  district_nces_id: '2508850'
+  enrollment: 2594
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-northampton-2508860:
+  display_name: Northampton
+  district_name: Northampton-Smith Vocational Agricultural
+  district_nces_id: '2508860'
+  enrollment: 566
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-northfield:
+  display_name: Northfield
+  district_name: Pioneer Valley
+  district_nces_id: '2509600'
+  enrollment: 663
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-norton:
+  display_name: Norton
+  district_name: Norton
+  district_nces_id: '2509000'
+  enrollment: 2396
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-norwell-2500040:
+  display_name: Norwell
+  district_name: South Shore Charter Public (District)
+  district_nces_id: '2500040'
+  enrollment: 1054
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-norwell-2509030:
+  display_name: Norwell
+  district_name: Norwell
+  district_nces_id: '2509030'
+  enrollment: 2177
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-norwood:
+  display_name: Norwood
+  district_name: Norwood
+  district_nces_id: '2509060'
+  enrollment: 3551
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-orange-2509180:
+  display_name: Orange
+  district_name: Orange
+  district_nces_id: '2509180'
+  enrollment: 531
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-orange-2509900:
+  display_name: Orange
+  district_name: Ralph C Mahar
+  district_nces_id: '2509900'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-orleans:
+  display_name: Orleans
+  district_name: Nauset
+  district_nces_id: '2504560'
+  enrollment: 1328
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-oxford:
+  display_name: Oxford
+  district_name: Oxford
+  district_nces_id: '2509270'
+  enrollment: 1458
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-palmer-2509300:
+  display_name: Palmer
+  district_name: Palmer
+  district_nces_id: '2509300'
+  enrollment: 1154
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-palmer-2509310:
+  display_name: Palmer
+  district_name: Pathfinder Regional Vocational Technical
+  district_nces_id: '2509310'
+  enrollment: 640
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-peabody:
+  display_name: Peabody
+  district_name: Peabody
+  district_nces_id: '2509360'
+  enrollment: 5968
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-pembroke:
+  display_name: Pembroke
+  district_name: Pembroke
+  district_nces_id: '2509420'
+  enrollment: 2522
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-pittsfield:
+  display_name: Pittsfield
+  district_name: Pittsfield
+  district_nces_id: '2509630'
+  enrollment: 4969
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-plainville:
+  display_name: Plainville
+  district_name: Plainville
+  district_nces_id: '2509690'
+  enrollment: 655
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-plymouth-2500057:
+  display_name: Plymouth
+  district_name: Rising Tide Charter Public (District)
+  district_nces_id: '2500057'
+  enrollment: 634
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-plymouth-2509720:
+  display_name: Plymouth
+  district_name: Plymouth
+  district_nces_id: '2509720'
+  enrollment: 7205
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-quincy:
+  display_name: Quincy
+  district_name: Quincy
+  district_nces_id: '2509870'
+  enrollment: 9802
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-randolph:
+  display_name: Randolph
+  district_name: Randolph
+  district_nces_id: '2509930'
+  enrollment: 2610
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-reading:
+  display_name: Reading
+  district_name: Reading
+  district_nces_id: '2509990'
+  enrollment: 3899
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-revere:
+  display_name: Revere
+  district_name: Revere
+  district_nces_id: '2510050'
+  enrollment: 7444
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-rochester:
+  display_name: Rochester
+  district_name: Old Colony Regional Vocational Technical
+  district_nces_id: '2509140'
+  enrollment: 561
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-rockland:
+  display_name: Rockland
+  district_name: Rockland
+  district_nces_id: '2510170'
+  enrollment: 2187
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-rockport:
+  display_name: Rockport
+  district_name: Rockport
+  district_nces_id: '2510200'
+  enrollment: 748
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-roslindale:
+  display_name: Roslindale
+  district_name: Brooke Charter School (District)
+  district_nces_id: '2500071'
+  enrollment: 2223
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-roxbury-2500063:
+  display_name: Roxbury
+  district_name: Roxbury Preparatory Charter (District)
+  district_nces_id: '2500063'
+  enrollment: 1295
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-roxbury-2502790:
+  display_name: Roxbury
+  district_name: Boston
+  district_nces_id: '2502790'
+  enrollment: 46367
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-salem:
+  display_name: Salem
+  district_name: Salem
+  district_nces_id: '2510380'
+  enrollment: 3752
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-sandwish:
+  display_name: Sandwish
+  district_name: Sandwich
+  district_nces_id: '2510470'
+  enrollment: 2168
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-saugus:
+  display_name: Saugus
+  district_name: Saugus
+  district_nces_id: '2510500'
+  enrollment: 2502
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-scituate:
+  display_name: Scituate
+  district_name: Scituate
+  district_nces_id: '2510560'
+  enrollment: 2789
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-seekonk:
+  display_name: Seekonk
+  district_name: Seekonk
+  district_nces_id: '2510590'
+  enrollment: 2094
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-sharon:
+  display_name: Sharon
+  district_name: Sharon
+  district_nces_id: '2510620'
+  enrollment: 3591
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-sheffield:
+  display_name: Sheffield
+  district_name: Southern Berkshire
+  district_nces_id: '2511040'
+  enrollment: 618
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-shelburne-falls:
+  display_name: Shelburne Falls
+  district_name: Mohawk Trail
+  district_nces_id: '2507990'
+  enrollment: 797
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-shrewsbury:
+  display_name: Shrewsbury
+  district_name: Shrewsbury
+  district_nces_id: '2510770'
+  enrollment: 5943
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-somerset-2500541:
+  display_name: Somerset
+  district_name: Somerset Berkley Regional School District
+  district_nces_id: '2500541'
+  enrollment: 1018
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-somerset-2510860:
+  display_name: Somerset
+  district_name: Somerset
+  district_nces_id: '2510860'
+  enrollment: 1626
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-somerville:
+  display_name: Somerville
+  district_name: Somerville
+  district_nces_id: '2510890'
+  enrollment: 4884
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-south-deerfield:
+  display_name: South Deerfield
+  district_name: Frontier
+  district_nces_id: '2505100'
+  enrollment: 618
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-south-easton:
+  display_name: South Easton
+  district_name: Southeastern Regional Vocational Technical
+  district_nces_id: '2511020'
+  enrollment: 1558
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-south-hadley:
+  display_name: South Hadley
+  district_name: South Hadley
+  district_nces_id: '2510920'
+  enrollment: 1699
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-south-yarmouth:
+  display_name: South Yarmouth
+  district_name: Dennis-Yarmouth
+  district_nces_id: '2504140'
+  enrollment: 2889
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-southborough-2508880:
+  display_name: Southborough
+  district_name: Northborough
+  district_nces_id: '2508880'
+  enrollment: 1596
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-southborough-2508910:
+  display_name: Southborough
+  district_name: Northboro-Southboro
+  district_nces_id: '2508910'
+  enrollment: 1222
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-southborough-2510980:
+  display_name: Southborough
+  district_name: Southborough
+  district_nces_id: '2510980'
+  enrollment: 1279
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-southbridge:
+  display_name: Southbridge
+  district_name: Southbridge
+  district_nces_id: '2511010'
+  enrollment: 1844
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-southwick:
+  display_name: Southwick
+  district_name: Southwick-Tolland-Granville Regional School District
+  district_nces_id: '2500013'
+  enrollment: 1330
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-spencer:
+  display_name: Spencer
+  district_name: Spencer-E Brookfield
+  district_nces_id: '2500002'
+  enrollment: 1402
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-springfield-2500028:
+  display_name: Springfield
+  district_name: Springfield International Charter (District)
+  district_nces_id: '2500028'
+  enrollment: 1520
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-springfield-2500536:
+  display_name: Springfield
+  district_name: Veritas Preparatory Charter School (District)
+  district_nces_id: '2500536'
+  enrollment: 501
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-springfield-2511130:
+  display_name: Springfield
+  district_name: Springfield
+  district_nces_id: '2511130'
+  enrollment: 23873
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-stockbridge:
+  display_name: Stockbridge
+  district_name: Berkshire Hills
+  district_nces_id: '2502530'
+  enrollment: 1189
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-stoneham:
+  display_name: Stoneham
+  district_name: Stoneham
+  district_nces_id: '2511220'
+  enrollment: 2309
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-stoughton:
+  display_name: Stoughton
+  district_name: Stoughton
+  district_nces_id: '2511250'
+  enrollment: 3620
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-sudbury-2506930:
+  display_name: Sudbury
+  district_name: Lincoln-Sudbury
+  district_nces_id: '2506930'
+  enrollment: 1533
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-sudbury-2511340:
+  display_name: Sudbury
+  district_name: Sudbury
+  district_nces_id: '2511340'
+  enrollment: 2550
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-sutton:
+  display_name: Sutton
+  district_name: Sutton
+  district_nces_id: '2511400'
+  enrollment: 1312
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-swampscott:
+  display_name: Swampscott
+  district_name: Swampscott
+  district_nces_id: '2511430'
+  enrollment: 2069
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-swansea:
+  display_name: Swansea
+  district_name: Swansea
+  district_nces_id: '2511460'
+  enrollment: 2003
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-taunton-2503080:
+  display_name: Taunton
+  district_name: Bristol-Plymouth Regional Vocational Technical
+  district_nces_id: '2503080'
+  enrollment: 1310
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-taunton-2511520:
+  display_name: Taunton
+  district_name: Taunton
+  district_nces_id: '2511520'
+  enrollment: 8005
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-tewksbury:
+  display_name: Tewksbury
+  district_name: Tewksbury
+  district_nces_id: '2511580'
+  enrollment: 3278
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-townsend:
+  display_name: Townsend
+  district_name: North Middlesex
+  district_nces_id: '2508790'
+  enrollment: 3074
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-turners-falls-2505020:
+  display_name: Turners Falls
+  district_name: Franklin County Regional Vocational Technical
+  district_nces_id: '2505020'
+  enrollment: 602
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-turners-falls-2505270:
+  display_name: Turners Falls
+  district_name: Gill-Montague
+  district_nces_id: '2505270'
+  enrollment: 874
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-tyngsborough-2500025:
+  display_name: Tyngsborough
+  district_name: Innovation Academy Charter (District)
+  district_nces_id: '2500025'
+  enrollment: 793
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-tyngsborough-2505480:
+  display_name: Tyngsborough
+  district_name: Greater Lowell Regional Vocational Technical
+  district_nces_id: '2505480'
+  enrollment: 2302
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-tyngsborough-2511760:
+  display_name: Tyngsborough
+  district_name: Tyngsborough
+  district_nces_id: '2511760'
+  enrollment: 1590
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-upton:
+  display_name: Upton
+  district_name: Blackstone Valley Regional Vocational Technical
+  district_nces_id: '2502710'
+  enrollment: 1230
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-uxbridge:
+  display_name: Uxbridge
+  district_name: Uxbridge
+  district_nces_id: '2511850'
+  enrollment: 1661
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-vineyard-haven:
+  display_name: Vineyard Haven
+  district_name: Martha's Vineyard
+  district_nces_id: '2507380'
+  enrollment: 769
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-wakefield-2508960:
+  display_name: Wakefield
+  district_name: Northeast Metropolitan Regional Vocational Technical
+  district_nces_id: '2508960'
+  enrollment: 1292
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-wakefield-2511910:
+  display_name: Wakefield
+  district_name: Wakefield
+  district_nces_id: '2511910'
+  enrollment: 3335
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-walpole-2508650:
+  display_name: Walpole
+  district_name: Norfolk County Agricultural
+  district_nces_id: '2508650'
+  enrollment: 580
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-walpole-2511970:
+  display_name: Walpole
+  district_name: Walpole
+  district_nces_id: '2511970'
+  enrollment: 3683
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-waltham:
+  display_name: Waltham
+  district_name: Waltham
+  district_nces_id: '2512000'
+  enrollment: 5703
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-ware:
+  display_name: Ware
+  district_name: Ware
+  district_nces_id: '2512030'
+  enrollment: 1136
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-wareham:
+  display_name: Wareham
+  district_name: Wareham
+  district_nces_id: '2512060'
+  enrollment: 2057
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-warren:
+  display_name: Warren
+  district_name: Quaboag Regional
+  district_nces_id: '2512100'
+  enrollment: 1192
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-watertown:
+  display_name: Watertown
+  district_name: Watertown
+  district_nces_id: '2512180'
+  enrollment: 2699
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-wayland:
+  display_name: Wayland
+  district_name: Wayland
+  district_nces_id: '2512210'
+  enrollment: 2783
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-webster:
+  display_name: Webster
+  district_name: Webster
+  district_nces_id: '2512240'
+  enrollment: 1728
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-wellesley:
+  display_name: Wellesley
+  district_name: Wellesley
+  district_nces_id: '2512270'
+  enrollment: 4219
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-wenham:
+  display_name: Wenham
+  district_name: Hamilton-Wenham
+  district_nces_id: '2505670'
+  enrollment: 1694
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-west-boylston:
+  display_name: West Boylston
+  district_name: West Boylston
+  district_nces_id: '2512390'
+  enrollment: 877
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-west-bridgewater:
+  display_name: West Bridgewater
+  district_name: West Bridgewater
+  district_nces_id: '2512420'
+  enrollment: 1413
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-west-newbury:
+  display_name: West Newbury
+  district_name: Pentucket
+  district_nces_id: '2509450'
+  enrollment: 2261
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-west-springfield:
+  display_name: West Springfield
+  district_name: West Springfield
+  district_nces_id: '2512510'
+  enrollment: 3894
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-westborough:
+  display_name: Westborough
+  district_name: Westborough
+  district_nces_id: '2512600'
+  enrollment: 3861
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-westfield:
+  display_name: Westfield
+  district_name: Westfield
+  district_nces_id: '2512630'
+  enrollment: 4894
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-westford-2508320:
+  display_name: Westford
+  district_name: Nashoba Valley Regional Vocational Technical
+  district_nces_id: '2508320'
+  enrollment: 750
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-westford-2512660:
+  display_name: Westford
+  district_name: Westford
+  district_nces_id: '2512660'
+  enrollment: 4762
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-westhampton:
+  display_name: Westhampton
+  district_name: Hampshire
+  district_nces_id: '2505740'
+  enrollment: 679
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-weston:
+  display_name: Weston
+  district_name: Weston
+  district_nces_id: '2512750'
+  enrollment: 2022
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-westport:
+  display_name: Westport
+  district_name: Westport
+  district_nces_id: '2512780'
+  enrollment: 1459
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-westwood:
+  display_name: Westwood
+  district_name: Westwood
+  district_nces_id: '2512810'
+  enrollment: 2914
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-weymouth:
+  display_name: Weymouth
+  district_name: Weymouth
+  district_nces_id: '2512840'
+  enrollment: 5676
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-whitinsville:
+  display_name: Whitinsville
+  district_name: Northbridge
+  district_nces_id: '2508940'
+  enrollment: 1970
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-whitman:
+  display_name: Whitman
+  district_name: Whitman-Hanson
+  district_nces_id: '2512930'
+  enrollment: 3575
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-wilbraham:
+  display_name: Wilbraham
+  district_name: Hampden-Wilbraham
+  district_nces_id: '2505730'
+  enrollment: 2887
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-williamstown:
+  display_name: Williamstown
+  district_name: Mount Greylock
+  district_nces_id: '2508160'
+  enrollment: 1206
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-wilmington:
+  display_name: Wilmington
+  district_name: Wilmington
+  district_nces_id: '2513050'
+  enrollment: 2840
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-winchendon:
+  display_name: Winchendon
+  district_name: Winchendon
+  district_nces_id: '2513080'
+  enrollment: 1262
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-winchester:
+  display_name: Winchester
+  district_name: Winchester
+  district_nces_id: '2513110'
+  enrollment: 4392
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-winthrop:
+  display_name: Winthrop
+  district_name: Winthrop
+  district_nces_id: '2513170'
+  enrollment: 1953
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-woburn:
+  display_name: Woburn
+  district_name: Woburn
+  district_nces_id: '2513200'
+  enrollment: 4353
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-worcester-2500045:
+  display_name: Worcester
+  district_name: Learning First Charter Public School  (District)
+  district_nces_id: '2500045'
+  enrollment: 667
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-worcester-2500051:
+  display_name: Worcester
+  district_name: Abby Kelley Foster Charter Public (District)
+  district_nces_id: '2500051'
+  enrollment: 1422
+  has_charters: true
+  source: ccd_auto
+  state: MA
+ma-worcester-2513230:
+  display_name: Worcester
+  district_name: Worcester
+  district_nces_id: '2513230'
+  enrollment: 24707
+  has_charters: false
+  source: ccd_auto
+  state: MA
+ma-wrentham:
+  display_name: Wrentham
+  district_name: Wrentham
+  district_nces_id: '2513290'
+  enrollment: 953
+  has_charters: false
+  source: ccd_auto
+  state: MA

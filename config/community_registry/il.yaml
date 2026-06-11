@@ -1,0 +1,4680 @@
+il-abingdon:
+  display_name: Abingdon
+  district_name: Abingdon-Avon CUSD 276
+  district_nces_id: '1701413'
+  enrollment: 903
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-addison-1703150:
+  display_name: Addison
+  district_name: Addison SD 4
+  district_nces_id: '1703150'
+  enrollment: 3461
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-addison-1713940:
+  display_name: Addison
+  district_name: DuPage HSD 88
+  district_nces_id: '1713940'
+  enrollment: 3919
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-albion:
+  display_name: Albion
+  district_name: Edwards County CUSD 1
+  district_nces_id: '1713500'
+  enrollment: 835
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-algonquin-1708550:
+  display_name: Algonquin
+  district_name: CUSD 300
+  district_nces_id: '1708550'
+  enrollment: 20443
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-algonquin-1719830:
+  display_name: Algonquin
+  district_name: Huntley Comm Sch Dist 158
+  district_nces_id: '1719830'
+  enrollment: 8595
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-alsip-1703480:
+  display_name: Alsip
+  district_name: Alsip-Hazlgrn-Oaklwn SD 126
+  district_nces_id: '1703480'
+  enrollment: 1550
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-alsip-1704560:
+  display_name: Alsip
+  district_name: Atwood Heights SD 125
+  district_nces_id: '1704560'
+  enrollment: 562
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-altamont:
+  display_name: Altamont
+  district_name: Altamont CUSD 10
+  district_nces_id: '1703510'
+  enrollment: 666
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-alton:
+  display_name: Alton
+  district_name: Alton CUSD 11
+  district_nces_id: '1703600'
+  enrollment: 5752
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-amboy:
+  display_name: Amboy
+  district_name: Amboy CUSD 272
+  district_nces_id: '1703690'
+  enrollment: 715
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-anna:
+  display_name: Anna
+  district_name: Anna CCSD 37
+  district_nces_id: '1703750'
+  enrollment: 574
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-antioch:
+  display_name: Antioch
+  district_name: Antioch CCSD 34
+  district_nces_id: '1703840'
+  enrollment: 2672
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-arcola:
+  display_name: Arcola
+  district_name: Arcola CUSD 306
+  district_nces_id: '1703960'
+  enrollment: 697
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-argenta:
+  display_name: Argenta
+  district_name: Argenta-Oreana CUSD 1
+  district_nces_id: '1703990'
+  enrollment: 930
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-arlington-heights-1704140:
+  display_name: Arlington Heights
+  district_name: Arlington Heights SD 25
+  district_nces_id: '1704140'
+  enrollment: 5316
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-arlington-heights-1704170:
+  display_name: Arlington Heights
+  district_name: Township HSD 214
+  district_nces_id: '1704170'
+  enrollment: 12052
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-arthur:
+  display_name: Arthur
+  district_name: Arthur CUSD 305
+  district_nces_id: '1704260'
+  enrollment: 1008
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-ashkum:
+  display_name: Ashkum
+  district_name: Central CUSD 4
+  district_nces_id: '1710410'
+  enrollment: 990
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-assumption:
+  display_name: Assumption
+  district_name: Central A & M CUD 21
+  district_nces_id: '1709100'
+  enrollment: 737
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-athens:
+  display_name: Athens
+  district_name: Athens CUSD 213
+  district_nces_id: '1704470'
+  enrollment: 1017
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-auburn:
+  display_name: Auburn
+  district_name: Auburn CUSD 10
+  district_nces_id: '1704620'
+  enrollment: 1114
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-aurora-1700101:
+  display_name: Aurora
+  district_name: Il Mathematics & Science Academy
+  district_nces_id: '1700101'
+  enrollment: 628
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-aurora-1704680:
+  display_name: Aurora
+  district_name: Aurora East USD 131
+  district_nces_id: '1704680'
+  enrollment: 12619
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-aurora-1704710:
+  display_name: Aurora
+  district_name: Aurora West USD 129
+  district_nces_id: '1704710'
+  enrollment: 11211
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-aurora-1741690:
+  display_name: Aurora
+  district_name: Indian Prairie CUSD 204
+  district_nces_id: '1741690'
+  enrollment: 25687
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-barrington:
+  display_name: Barrington
+  district_name: Barrington CUSD 220
+  district_nces_id: '1705050'
+  enrollment: 8173
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-barry:
+  display_name: Barry
+  district_name: Western CUSD 12
+  district_nces_id: '1701387'
+  enrollment: 529
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-batavia:
+  display_name: Batavia
+  district_name: Batavia USD 101
+  district_nces_id: '1705220'
+  enrollment: 5260
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-beach-park:
+  display_name: Beach Park
+  district_name: Beach Park CCSD 3
+  district_nces_id: '1700010'
+  enrollment: 2022
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-beardstown:
+  display_name: Beardstown
+  district_name: Beardstown CUSD 15
+  district_nces_id: '1705310'
+  enrollment: 1506
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-beecher:
+  display_name: Beecher
+  district_name: Beecher CUSD 200U
+  district_nces_id: '1705430'
+  enrollment: 1044
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-belleville-1705580:
+  display_name: Belleville
+  district_name: Belle Valley SD 119
+  district_nces_id: '1705580'
+  enrollment: 985
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-belleville-1705610:
+  display_name: Belleville
+  district_name: Belleville SD 118
+  district_nces_id: '1705610'
+  enrollment: 3390
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-belleville-1705640:
+  display_name: Belleville
+  district_name: Belleville Twp HSD 201
+  district_nces_id: '1705640'
+  enrollment: 4802
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-belleville-1714220:
+  display_name: Belleville
+  district_name: Harmony Emge SD 175
+  district_nces_id: '1714220'
+  enrollment: 769
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-belleville-1742300:
+  display_name: Belleville
+  district_name: Whiteside SD 115
+  district_nces_id: '1742300'
+  enrollment: 1166
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bellwood:
+  display_name: Bellwood
+  district_name: Bellwood SD 88
+  district_nces_id: '1705760'
+  enrollment: 2150
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-belvidere:
+  display_name: Belvidere
+  district_name: Belvidere CUSD 100
+  district_nces_id: '1705790'
+  enrollment: 7558
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bensenville-1705910:
+  display_name: Bensenville
+  district_name: Bensenville SD 2
+  district_nces_id: '1705910'
+  enrollment: 2036
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bensenville-1715030:
+  display_name: Bensenville
+  district_name: Fenton CHSD 100
+  district_nces_id: '1715030'
+  enrollment: 1448
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-benton-1705950:
+  display_name: Benton
+  district_name: Benton CCSD 47
+  district_nces_id: '1705950'
+  enrollment: 1075
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-benton-1705970:
+  display_name: Benton
+  district_name: Benton Cons HSD 103
+  district_nces_id: '1705970'
+  enrollment: 577
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-berkeley:
+  display_name: Berkeley
+  district_name: Berkeley SD 87
+  district_nces_id: '1706000'
+  enrollment: 2284
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-berwyn-1706060:
+  display_name: Berwyn
+  district_name: Berwyn North SD 98
+  district_nces_id: '1706060'
+  enrollment: 2519
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-berwyn-1706090:
+  display_name: Berwyn
+  district_name: Berwyn South SD 100
+  district_nces_id: '1706090'
+  enrollment: 3029
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bethalto:
+  display_name: Bethalto
+  district_name: Bethalto CUSD 8
+  district_nces_id: '1706120'
+  enrollment: 2321
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-biggsville:
+  display_name: Biggsville
+  district_name: West Central CUSD 235
+  district_nces_id: '1700319'
+  enrollment: 744
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bismarck:
+  display_name: Bismarck
+  district_name: Bismarck Henning CUSD
+  district_nces_id: '1706390'
+  enrollment: 820
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bloomingdale-1706450:
+  display_name: Bloomingdale
+  district_name: Bloomingdale SD 13
+  district_nces_id: '1706450'
+  enrollment: 1344
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bloomingdale-1710470:
+  display_name: Bloomingdale
+  district_name: CCSD 93
+  district_nces_id: '1710470'
+  enrollment: 3252
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bloomington:
+  display_name: Bloomington
+  district_name: Bloomington SD 87
+  district_nces_id: '1706480'
+  enrollment: 4963
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-blue-island:
+  display_name: Blue Island
+  district_name: Cook County SD 130
+  district_nces_id: '1706510'
+  enrollment: 2993
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bourbonnais:
+  display_name: Bourbonnais
+  district_name: Bourbonnais SD 53
+  district_nces_id: '1706750'
+  enrollment: 2296
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bradley-1706930:
+  display_name: Bradley
+  district_name: Bradley SD 61
+  district_nces_id: '1706930'
+  enrollment: 1299
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bradley-1706960:
+  display_name: Bradley
+  district_name: Bradley Bourbonnais CHSD 307
+  district_nces_id: '1706960'
+  enrollment: 1921
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-braidwood:
+  display_name: Braidwood
+  district_name: Reed Custer CUSD 255U
+  district_nces_id: '1733380'
+  enrollment: 1377
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-breese-1704770:
+  display_name: Breese
+  district_name: Central CHSD 71
+  district_nces_id: '1704770'
+  enrollment: 620
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-breese-1707010:
+  display_name: Breese
+  district_name: Breese ESD 12
+  district_nces_id: '1707010'
+  enrollment: 605
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bridgeport:
+  display_name: Bridgeport
+  district_name: Red Hill CUSD 10
+  district_nces_id: '1722130'
+  enrollment: 928
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-brighton:
+  display_name: Brighton
+  district_name: Southwestern CUSD 9
+  district_nces_id: '1731500'
+  enrollment: 1210
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-brimfield:
+  display_name: Brimfield
+  district_name: Brimfield CUSD 309
+  district_nces_id: '1707200'
+  enrollment: 630
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-brookfield:
+  display_name: Brookfield
+  district_name: Brookfield Lagrange Park SD 95
+  district_nces_id: '1707320'
+  enrollment: 1335
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-buffalo:
+  display_name: Buffalo
+  district_name: Tri City CUSD 1
+  district_nces_id: '1739450'
+  enrollment: 577
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-buffalo-grove-1703900:
+  display_name: Buffalo Grove
+  district_name: Aptakisic-Tripp CCSD 102
+  district_nces_id: '1703900'
+  enrollment: 2518
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-buffalo-grove-1721030:
+  display_name: Buffalo Grove
+  district_name: Kildeer Countryside CCSD 96
+  district_nces_id: '1721030'
+  enrollment: 3474
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bunker-hill:
+  display_name: Bunker Hill
+  district_name: Bunker Hill CUSD 8
+  district_nces_id: '1707770'
+  enrollment: 576
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-burbank-1733270:
+  display_name: Burbank
+  district_name: Reavis Twp HSD 220
+  district_nces_id: '1733270'
+  enrollment: 1986
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-burbank-1736810:
+  display_name: Burbank
+  district_name: Burbank SD 111
+  district_nces_id: '1736810'
+  enrollment: 3227
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-burlington:
+  display_name: Burlington
+  district_name: Central CUSD 301
+  district_nces_id: '1707830'
+  enrollment: 4860
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-burr-ridge:
+  display_name: Burr Ridge
+  district_name: Pleasantdale SD 107
+  district_nces_id: '1732040'
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-bushnell:
+  display_name: Bushnell
+  district_name: Bushnell Prairie City CUSD 170
+  district_nces_id: '1707950'
+  enrollment: 653
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-byron:
+  display_name: Byron
+  district_name: Byron CUSD 226
+  district_nces_id: '1708010'
+  enrollment: 1466
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-cahokia:
+  display_name: Cahokia
+  district_name: Cahokia CUSD 187
+  district_nces_id: '1708040'
+  enrollment: 3087
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-calumet-city-1708100:
+  display_name: Calumet City
+  district_name: Lincoln ESD 156
+  district_nces_id: '1708100'
+  enrollment: 772
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-calumet-city-1712420:
+  display_name: Calumet City
+  district_name: Dolton SD 149
+  district_nces_id: '1712420'
+  enrollment: 2292
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-calumet-city-1719680:
+  display_name: Calumet City
+  district_name: Hoover-Schrum Memorial SD 157
+  district_nces_id: '1719680'
+  enrollment: 833
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-calumet-city-1741520:
+  display_name: Calumet City
+  district_name: Calumet City SD 155
+  district_nces_id: '1741520'
+  enrollment: 955
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-calumet-park:
+  display_name: Calumet Park
+  district_name: Calumet Public SD 132
+  district_nces_id: '1708130'
+  enrollment: 898
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-camp-point:
+  display_name: Camp Point
+  district_name: Central CUSD 3
+  district_nces_id: '1708220'
+  enrollment: 784
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-campbell-hill:
+  display_name: Campbell Hill
+  district_name: Trico CUSD 176
+  district_nces_id: '1708250'
+  enrollment: 864
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-canton:
+  display_name: Canton
+  district_name: Canton Union SD 66
+  district_nces_id: '1708280'
+  enrollment: 2150
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-carbondale-1708340:
+  display_name: Carbondale
+  district_name: Carbondale ESD 95
+  district_nces_id: '1708340'
+  enrollment: 1546
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-carbondale-1708370:
+  display_name: Carbondale
+  district_name: Carbondale CHSD 165
+  district_nces_id: '1708370'
+  enrollment: 997
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-carbondale-1739930:
+  display_name: Carbondale
+  district_name: Unity Point CCSD 140
+  district_nces_id: '1739930'
+  enrollment: 637
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-carlinville:
+  display_name: Carlinville
+  district_name: Carlinville CUSD 1
+  district_nces_id: '1708430'
+  enrollment: 1325
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-carlyle:
+  display_name: Carlyle
+  district_name: Carlyle CUSD 1
+  district_nces_id: '1708460'
+  enrollment: 962
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-carmi:
+  display_name: Carmi
+  district_name: Carmi-White County CUSD 5
+  district_nces_id: '1708500'
+  enrollment: 1329
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-carterville:
+  display_name: Carterville
+  district_name: Carterville CUSD 5
+  district_nces_id: '1708640'
+  enrollment: 2218
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-cary:
+  display_name: Cary
+  district_name: Cary CCSD 26
+  district_nces_id: '1708730'
+  enrollment: 2302
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-casey:
+  display_name: Casey
+  district_name: Casey-Westfield CUSD 4C
+  district_nces_id: '1700002'
+  enrollment: 899
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-catlin:
+  display_name: Catlin
+  district_name: Salt Fork CUSD 512
+  district_nces_id: '1701418'
+  enrollment: 863
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-centralia-1709270:
+  display_name: Centralia
+  district_name: Centralia SD 135
+  district_nces_id: '1709270'
+  enrollment: 1089
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-centralia-1709300:
+  display_name: Centralia
+  district_name: Centralia HSD 200
+  district_nces_id: '1709300'
+  enrollment: 863
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-champaign:
+  display_name: Champaign
+  district_name: Champaign CUSD 4
+  district_nces_id: '1709420'
+  enrollment: 10282
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-channahon-1709540:
+  display_name: Channahon
+  district_name: Channahon SD 17
+  district_nces_id: '1709540'
+  enrollment: 1182
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-channahon-1726340:
+  display_name: Channahon
+  district_name: Minooka CHSD 111
+  district_nces_id: '1726340'
+  enrollment: 2930
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-charleston:
+  display_name: Charleston
+  district_name: Charleston CUSD 1
+  district_nces_id: '1709600'
+  enrollment: 2622
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-chatham:
+  display_name: Chatham
+  district_name: Ball Chatham CUSD 5
+  district_nces_id: '1704920'
+  enrollment: 4655
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-chester:
+  display_name: Chester
+  district_name: Chester CUSD 139
+  district_nces_id: '1709810'
+  enrollment: 939
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-chicago-1701410:
+  display_name: Chicago
+  district_name: Horizon Science Acad-McKinley Pk
+  district_nces_id: '1701410'
+  enrollment: 866
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-chicago-1701412:
+  display_name: Chicago
+  district_name: Horizon Science Acad-Belmont
+  district_nces_id: '1701412'
+  enrollment: 555
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-chicago-1701424:
+  display_name: Chicago
+  district_name: Betty Shabazz  Internl Chrtr Sch
+  district_nces_id: '1701424'
+  enrollment: 574
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-chicago-1701438:
+  display_name: Chicago
+  district_name: Intrinsic 2 Charter High School
+  district_nces_id: '1701438'
+  enrollment: 628
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-chicago-1709930:
+  display_name: Chicago
+  district_name: City of Chicago SD 299
+  district_nces_id: '1709930'
+  enrollment: 321666
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-chicago-heights-1706420:
+  display_name: Chicago Heights
+  district_name: Bloom Twp HSD 206
+  district_nces_id: '1706420'
+  enrollment: 2964
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-chicago-heights-1709960:
+  display_name: Chicago Heights
+  district_name: Chicago Heights SD 170
+  district_nces_id: '1709960'
+  enrollment: 2715
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-chicago-heights-1715420:
+  display_name: Chicago Heights
+  district_name: Flossmoor SD 161
+  district_nces_id: '1715420'
+  enrollment: 2341
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-chicago-ridge:
+  display_name: Chicago Ridge
+  district_name: Chicago Ridge SD 127-5
+  district_nces_id: '1709990'
+  enrollment: 1432
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-chillicothe:
+  display_name: Chillicothe
+  district_name: Il Valley Central USD 321
+  district_nces_id: '1719970'
+  enrollment: 2036
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-christopher:
+  display_name: Christopher
+  district_name: Christopher USD 99
+  district_nces_id: '1700217'
+  enrollment: 700
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-cicero-1710200:
+  display_name: Cicero
+  district_name: Cicero SD 99
+  district_nces_id: '1710200'
+  enrollment: 8815
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-cicero-1726880:
+  display_name: Cicero
+  district_name: J S Morton HSD 201
+  district_nces_id: '1726880'
+  enrollment: 8134
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-clarendon-hills:
+  display_name: Clarendon Hills
+  district_name: Hinsdale CCSD 181
+  district_nces_id: '1719290'
+  enrollment: 3609
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-clinton:
+  display_name: Clinton
+  district_name: Clinton CUSD 15
+  district_nces_id: '1710440'
+  enrollment: 1684
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-coal-city:
+  display_name: Coal City
+  district_name: Coal City CUSD 1
+  district_nces_id: '1710530'
+  enrollment: 2112
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-colchester:
+  display_name: Colchester
+  district_name: West Prairie CUSD 103
+  district_nces_id: '1700314'
+  enrollment: 612
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-colfax:
+  display_name: Colfax
+  district_name: Ridgeview CUSD 19
+  district_nces_id: '1700109'
+  enrollment: 532
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-collinsville:
+  display_name: Collinsville
+  district_name: Collinsville CUSD 10
+  district_nces_id: '1710650'
+  enrollment: 6140
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-columbia:
+  display_name: Columbia
+  district_name: Columbia CUSD 4
+  district_nces_id: '1710740'
+  enrollment: 1990
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-country-club-hills:
+  display_name: Country Club Hills
+  district_name: Country Club Hills SD 160
+  district_nces_id: '1711010'
+  enrollment: 1150
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-crest-hill:
+  display_name: Crest Hill
+  district_name: Richland GSD 88A
+  district_nces_id: '1733450'
+  enrollment: 800
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-crete:
+  display_name: Crete
+  district_name: Crete Monee CUSD 201U
+  district_nces_id: '1711250'
+  enrollment: 4415
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-crystal-lake-1711350:
+  display_name: Crystal Lake
+  district_name: Crystal Lake CCSD 47
+  district_nces_id: '1711350'
+  enrollment: 7109
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-crystal-lake-1711370:
+  display_name: Crystal Lake
+  district_name: CHSD 155
+  district_nces_id: '1711370'
+  enrollment: 5405
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-crystal-lake-1732520:
+  display_name: Crystal Lake
+  district_name: Prairie Grove CSD 46
+  district_nces_id: '1732520'
+  enrollment: 813
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-dakota:
+  display_name: Dakota
+  district_name: Dakota CUSD 201
+  district_nces_id: '1711610'
+  enrollment: 756
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-danville:
+  display_name: Danville
+  district_name: Danville CCSD 118
+  district_nces_id: '1711790'
+  enrollment: 4754
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-darien-1708790:
+  display_name: Darien
+  district_name: Cass SD 63
+  district_nces_id: '1708790'
+  enrollment: 775
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-darien-1721450:
+  display_name: Darien
+  district_name: Darien SD 61
+  district_nces_id: '1721450'
+  enrollment: 1257
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-decatur:
+  display_name: Decatur
+  district_name: Decatur SD 61
+  district_nces_id: '1711850'
+  enrollment: 7974
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-deerfield:
+  display_name: Deerfield
+  district_name: Deerfield SD 109
+  district_nces_id: '1711980'
+  enrollment: 2729
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-dekalb:
+  display_name: Dekalb
+  district_name: DeKalb CUSD 428
+  district_nces_id: '1712000'
+  enrollment: 6840
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-des-plaines-1712120:
+  display_name: Des Plaines
+  district_name: CCSD 62
+  district_nces_id: '1712120'
+  enrollment: 4261
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-des-plaines-1713140:
+  display_name: Des Plaines
+  district_name: East Maine SD 63
+  district_nces_id: '1713140'
+  enrollment: 3543
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-dieterich:
+  display_name: Dieterich
+  district_name: Dieterich CUSD 30
+  district_nces_id: '1712240'
+  enrollment: 609
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-dixon:
+  display_name: Dixon
+  district_name: Dixon USD 170
+  district_nces_id: '1712330'
+  enrollment: 2486
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-downers-grove-1708970:
+  display_name: Downers Grove
+  district_name: Center Cass SD 66
+  district_nces_id: '1708970'
+  enrollment: 1105
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-downers-grove-1712540:
+  display_name: Downers Grove
+  district_name: Downers Grove GSD 58
+  district_nces_id: '1712540'
+  enrollment: 4918
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-downers-grove-1712570:
+  display_name: Downers Grove
+  district_name: CHSD 99
+  district_nces_id: '1712570'
+  enrollment: 4775
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-downs:
+  display_name: Downs
+  district_name: Tri Valley CUSD 3
+  district_nces_id: '1713920'
+  enrollment: 1095
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-du-quoin:
+  display_name: Du Quoin
+  district_name: Du Quoin CUSD 300
+  district_nces_id: '1712760'
+  enrollment: 1370
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-dunlap:
+  display_name: Dunlap
+  district_name: Dunlap CUSD 323
+  district_nces_id: '1712700'
+  enrollment: 4736
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-dupo:
+  display_name: Dupo
+  district_name: Comm Unit School District No 196
+  district_nces_id: '1712720'
+  enrollment: 922
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-durand:
+  display_name: Durand
+  district_name: Durand CUSD 322
+  district_nces_id: '1712810'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-dwight:
+  display_name: Dwight
+  district_name: Dwight Common SD 232
+  district_nces_id: '1712840'
+  enrollment: 545
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-east-alton:
+  display_name: East Alton
+  district_name: East Alton SD 13
+  district_nces_id: '1712960'
+  enrollment: 716
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-east-dubuque:
+  display_name: East Dubuque
+  district_name: East Dubuque USD 119
+  district_nces_id: '1713050'
+  enrollment: 637
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-east-moline-1713170:
+  display_name: East Moline
+  district_name: East Moline SD 37
+  district_nces_id: '1713170'
+  enrollment: 2600
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-east-moline-1736360:
+  display_name: East Moline
+  district_name: Silvis SD 34
+  district_nces_id: '1736360'
+  enrollment: 620
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-east-moline-1739870:
+  display_name: East Moline
+  district_name: United Twp HSD 30
+  district_nces_id: '1739870'
+  enrollment: 1789
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-east-peoria-1713230:
+  display_name: East Peoria
+  district_name: East Peoria CHSD 309
+  district_nces_id: '1713230'
+  enrollment: 947
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-east-peoria-1713240:
+  display_name: East Peoria
+  district_name: East Peoria SD 86
+  district_nces_id: '1713240'
+  enrollment: 1449
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-east-saint-louis:
+  display_name: East Saint Louis
+  district_name: East St Louis SD 189
+  district_nces_id: '1713320'
+  enrollment: 4679
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-edwardsville:
+  display_name: Edwardsville
+  district_name: Edwardsville CUSD 7
+  district_nces_id: '1713530'
+  enrollment: 7274
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-effingham:
+  display_name: Effingham
+  district_name: Effingham CUSD 40
+  district_nces_id: '1713560'
+  enrollment: 2314
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-el-paso:
+  display_name: El Paso
+  district_name: El Paso-Gridley CUSD 11
+  district_nces_id: '1700326'
+  enrollment: 1201
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-eldorado:
+  display_name: Eldorado
+  district_name: Eldorado CUSD 4
+  district_nces_id: '1713660'
+  enrollment: 1077
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-elgin:
+  display_name: Elgin
+  district_name: SD U-46
+  district_nces_id: '1713710'
+  enrollment: 35082
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-elizabethtown:
+  display_name: Elizabethtown
+  district_name: Hardin County CUSD 1
+  district_nces_id: '1718200'
+  enrollment: 532
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-elk-grove-vlg:
+  display_name: Elk Grove Vlg
+  district_name: Comm Cons SD 59
+  district_nces_id: '1713770'
+  enrollment: 5707
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-elmhurst:
+  display_name: Elmhurst
+  district_name: Elmhurst SD 205
+  district_nces_id: '1713970'
+  enrollment: 8299
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-elmwood:
+  display_name: Elmwood
+  district_name: Elmwood CUSD 322
+  district_nces_id: '1714050'
+  enrollment: 658
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-elmwood-park:
+  display_name: Elmwood Park
+  district_name: Elmwood Park CUSD 401
+  district_nces_id: '1714100'
+  enrollment: 2851
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-erie:
+  display_name: Erie
+  district_name: Erie CUSD 1
+  district_nces_id: '1714350'
+  enrollment: 606
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-eureka:
+  display_name: Eureka
+  district_name: Eureka CUD 140
+  district_nces_id: '1714430'
+  enrollment: 1528
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-evanston-1714460:
+  display_name: Evanston
+  district_name: Evanston CCSD 65
+  district_nces_id: '1714460'
+  enrollment: 6383
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-evanston-1714490:
+  display_name: Evanston
+  district_name: Evanston Twp HSD 202
+  district_nces_id: '1714490'
+  enrollment: 3691
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-evergreen-park-1714550:
+  display_name: Evergreen Park
+  district_name: Evergreen Park ESD 124
+  district_nces_id: '1714550'
+  enrollment: 1767
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-evergreen-park-1714580:
+  display_name: Evergreen Park
+  district_name: Evergreen Park CHSD 231
+  district_nces_id: '1714580'
+  enrollment: 931
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-fairbury:
+  display_name: Fairbury
+  district_name: Prairie Central CUSD 8
+  district_nces_id: '1700005'
+  enrollment: 1725
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-fairfield:
+  display_name: Fairfield
+  district_name: Fairfield PSD 112
+  district_nces_id: '1714710'
+  enrollment: 614
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-fairview-heights-1717310:
+  display_name: Fairview Heights
+  district_name: Grant CCSD 110
+  district_nces_id: '1717310'
+  enrollment: 562
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-fairview-heights-1732190:
+  display_name: Fairview Heights
+  district_name: Pontiac-W Holliday SD 105
+  district_nces_id: '1732190'
+  enrollment: 644
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-farmer-city:
+  display_name: Farmer City
+  district_name: Blue Ridge CUSD 18
+  district_nces_id: '1700003'
+  enrollment: 670
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-farmington:
+  display_name: Farmington
+  district_name: Farmington Central CUSD 265
+  district_nces_id: '1700044'
+  enrollment: 1259
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-fisher:
+  display_name: Fisher
+  district_name: Fisher CUSD 1
+  district_nces_id: '1715180'
+  enrollment: 613
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-flora:
+  display_name: Flora
+  district_name: Flora CUSD 35
+  district_nces_id: '1715400'
+  enrollment: 1345
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-flossmoor:
+  display_name: Flossmoor
+  district_name: Homewood Flossmoor CHSD 233
+  district_nces_id: '1719560'
+  enrollment: 2798
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-forest-park-1715450:
+  display_name: Forest Park
+  district_name: Forest Park SD 91
+  district_nces_id: '1715450'
+  enrollment: 690
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-forest-park-1732910:
+  display_name: Forest Park
+  district_name: Proviso Twp HSD 209
+  district_nces_id: '1732910'
+  enrollment: 4425
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-forreston:
+  display_name: Forreston
+  district_name: Forrestville Valley CUSD 221
+  district_nces_id: '1715490'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-forsyth:
+  display_name: Forsyth
+  district_name: Maroa Forsyth CUSD 2
+  district_nces_id: '1724750'
+  enrollment: 1194
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-fox-lake:
+  display_name: Fox Lake
+  district_name: Grant CHSD 124
+  district_nces_id: '1717340'
+  enrollment: 1837
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-frankfort-1715700:
+  display_name: Frankfort
+  district_name: Frankfort CCSD 157C
+  district_nces_id: '1715700'
+  enrollment: 2661
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-frankfort-1738220:
+  display_name: Frankfort
+  district_name: Summit Hill SD 161
+  district_nces_id: '1738220'
+  enrollment: 2499
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-franklin-park-1715780:
+  display_name: Franklin Park
+  district_name: Franklin Park SD 84
+  district_nces_id: '1715780'
+  enrollment: 1294
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-franklin-park-1722740:
+  display_name: Franklin Park
+  district_name: Leyden CHSD 212
+  district_nces_id: '1722740'
+  enrollment: 3610
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-franklin-park-1724330:
+  display_name: Franklin Park
+  district_name: Mannheim SD 83
+  district_nces_id: '1724330'
+  enrollment: 2352
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-freeburg-1715820:
+  display_name: Freeburg
+  district_name: Freeburg CCSD 70
+  district_nces_id: '1715820'
+  enrollment: 796
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-freeburg-1715840:
+  display_name: Freeburg
+  district_name: Freeburg CHSD 77
+  district_nces_id: '1715840'
+  enrollment: 683
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-freeport:
+  display_name: Freeport
+  district_name: Freeport SD 145
+  district_nces_id: '1715900'
+  enrollment: 3454
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-fulton:
+  display_name: Fulton
+  district_name: River Bend CUSD 2
+  district_nces_id: '1733950'
+  enrollment: 942
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-galena:
+  display_name: Galena
+  district_name: Galena USD 120
+  district_nces_id: '1716050'
+  enrollment: 822
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-galesburg:
+  display_name: Galesburg
+  district_name: Galesburg CUSD 205
+  district_nces_id: '1716080'
+  enrollment: 3928
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-geneseo:
+  display_name: Geneseo
+  district_name: Geneseo CUSD 228
+  district_nces_id: '1716350'
+  enrollment: 2463
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-geneva:
+  display_name: Geneva
+  district_name: Geneva CUSD 304
+  district_nces_id: '1716380'
+  enrollment: 5119
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-genoa:
+  display_name: Genoa
+  district_name: Genoa Kingston CUSD 424
+  district_nces_id: '1716410'
+  enrollment: 1544
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-georgetown:
+  display_name: Georgetown
+  district_name: Georgetown-Ridge Farm CUD 4
+  district_nces_id: '1700092'
+  enrollment: 870
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-germantown-hills:
+  display_name: Germantown Hills
+  district_name: Germantown Hills SD 69
+  district_nces_id: '1716560'
+  enrollment: 839
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-gibson-city:
+  display_name: Gibson City
+  district_name: Gibson City-Melvin-Sibley CUSD 5
+  district_nces_id: '1700041'
+  enrollment: 968
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-gillespie:
+  display_name: Gillespie
+  district_name: Gillespie CUSD 7
+  district_nces_id: '1716680'
+  enrollment: 1140
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-gilman:
+  display_name: Gilman
+  district_name: Iroquois West CUSD 10
+  district_nces_id: '1720180'
+  enrollment: 886
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-girard:
+  display_name: Girard
+  district_name: North Mac CUSD 34
+  district_nces_id: '1701403'
+  enrollment: 1186
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glasford:
+  display_name: Glasford
+  district_name: Illini Bluffs CUSD 327
+  district_nces_id: '1719960'
+  enrollment: 897
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glen-ellyn-1716800:
+  display_name: Glen Ellyn
+  district_name: Glen Ellyn SD 41
+  district_nces_id: '1716800'
+  enrollment: 3522
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glen-ellyn-1716830:
+  display_name: Glen Ellyn
+  district_name: Glenbard Twp HSD 87
+  district_nces_id: '1716830'
+  enrollment: 7836
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glen-ellyn-1740500:
+  display_name: Glen Ellyn
+  district_name: CCSD 89
+  district_nces_id: '1740500'
+  enrollment: 2224
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glencoe:
+  display_name: Glencoe
+  district_name: Glencoe SD 35
+  district_nces_id: '1716860'
+  enrollment: 1220
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glendale-heights-1724780:
+  display_name: Glendale Heights
+  district_name: Marquardt SD 15
+  district_nces_id: '1724780'
+  enrollment: 2346
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glendale-heights-1732970:
+  display_name: Glendale Heights
+  district_name: Queen Bee SD 16
+  district_nces_id: '1732970'
+  enrollment: 1685
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glenview-1716920:
+  display_name: Glenview
+  district_name: Glenview CCSD 34
+  district_nces_id: '1716920'
+  enrollment: 4317
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glenview-1729010:
+  display_name: Glenview
+  district_name: Glenbrook HSD 225
+  district_nces_id: '1729010'
+  enrollment: 5092
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-glenwood:
+  display_name: Glenwood
+  district_name: Brookwood SD 167
+  district_nces_id: '1716950'
+  enrollment: 1081
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-goreville:
+  display_name: Goreville
+  district_name: Goreville CUD 1
+  district_nces_id: '1700014'
+  enrollment: 624
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-granite-city:
+  display_name: Granite City
+  district_name: Granite City CUSD 9
+  district_nces_id: '1717280'
+  enrollment: 5817
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-granville:
+  display_name: Granville
+  district_name: Putnam County CUSD 535
+  district_nces_id: '1732960'
+  enrollment: 807
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-grayslake-1717520:
+  display_name: Grayslake
+  district_name: Grayslake CCSD 46
+  district_nces_id: '1717520'
+  enrollment: 3664
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-grayslake-1717550:
+  display_name: Grayslake
+  district_name: Grayslake CHSD 127
+  district_nces_id: '1717550'
+  enrollment: 2676
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-greenville:
+  display_name: Greenville
+  district_name: Bond County CUSD 2
+  district_nces_id: '1717730'
+  enrollment: 1597
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-gurnee-1717800:
+  display_name: Gurnee
+  district_name: Gurnee SD 56
+  district_nces_id: '1717800'
+  enrollment: 1890
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-gurnee-1740800:
+  display_name: Gurnee
+  district_name: Warren Twp HSD 121
+  district_nces_id: '1740800'
+  enrollment: 3758
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-gurnee-1743110:
+  display_name: Gurnee
+  district_name: Woodland CCSD 50
+  district_nces_id: '1743110'
+  enrollment: 4695
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-hamilton:
+  display_name: Hamilton
+  district_name: Hamilton CCSD 328
+  district_nces_id: '1718060'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-hanover-park:
+  display_name: Hanover Park
+  district_name: Keeneyville SD 20
+  district_nces_id: '1720880'
+  enrollment: 1287
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-hardin:
+  display_name: Hardin
+  district_name: Calhoun CUSD 40
+  district_nces_id: '1718180'
+  enrollment: 522
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-harrisburg:
+  display_name: Harrisburg
+  district_name: Harrisburg CUSD 3
+  district_nces_id: '1718270'
+  enrollment: 1771
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-harvard:
+  display_name: Harvard
+  district_name: Harvard CUSD 50
+  district_nces_id: '1718420'
+  enrollment: 2510
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-harvey-1718450:
+  display_name: Harvey
+  district_name: Harvey SD 152
+  district_nces_id: '1718450'
+  enrollment: 1534
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-harvey-1718480:
+  display_name: Harvey
+  district_name: W Harvey-Dixmoor PSD 147
+  district_nces_id: '1718480'
+  enrollment: 745
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-harwood-heights:
+  display_name: Harwood Heights
+  district_name: Union Ridge SD 86
+  district_nces_id: '1739780'
+  enrollment: 649
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-havana:
+  display_name: Havana
+  district_name: Havana CUSD 126
+  district_nces_id: '1718510'
+  enrollment: 870
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-hazel-crest:
+  display_name: Hazel Crest
+  district_name: Hazel Crest SD 152-5
+  district_nces_id: '1718600'
+  enrollment: 895
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-henry:
+  display_name: Henry
+  district_name: Henry-Senachwine CUSD 5
+  district_nces_id: '1700115'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-herrin:
+  display_name: Herrin
+  district_name: Herrin CUSD 4
+  district_nces_id: '1718810'
+  enrollment: 2355
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-herscher:
+  display_name: Herscher
+  district_name: Herscher CUSD 2
+  district_nces_id: '1718840'
+  enrollment: 1695
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-heyworth:
+  display_name: Heyworth
+  district_name: Heyworth CUSD 4
+  district_nces_id: '1718870'
+  enrollment: 898
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-highland:
+  display_name: Highland
+  district_name: Highland CUSD 5
+  district_nces_id: '1718990'
+  enrollment: 2796
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-highland-park-1700119:
+  display_name: Highland Park
+  district_name: North Shore SD 112
+  district_nces_id: '1700119'
+  enrollment: 3785
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-highland-park-1719080:
+  display_name: Highland Park
+  district_name: Twp HSD 113
+  district_nces_id: '1719080'
+  enrollment: 3222
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-hillsboro:
+  display_name: Hillsboro
+  district_name: Hillsboro CUSD 3
+  district_nces_id: '1719200'
+  enrollment: 1626
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-hinckley:
+  display_name: Hinckley
+  district_name: Hinckley Big Rock CUSD 429
+  district_nces_id: '1719260'
+  enrollment: 696
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-hinsdale:
+  display_name: Hinsdale
+  district_name: Hinsdale Twp HSD 86
+  district_nces_id: '1719320'
+  enrollment: 3843
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-homer-glen:
+  display_name: Homer Glen
+  district_name: Homer CCSD 33C
+  district_nces_id: '1719500'
+  enrollment: 3711
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-homewood:
+  display_name: Homewood
+  district_name: Homewood SD 153
+  district_nces_id: '1719530'
+  enrollment: 1920
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-hoopeston:
+  display_name: Hoopeston
+  district_name: Hoopeston Area CUSD 11
+  district_nces_id: '1719660'
+  enrollment: 1134
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-ingleside-1706270:
+  display_name: Ingleside
+  district_name: Big Hollow SD 38
+  district_nces_id: '1706270'
+  enrollment: 1744
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-ingleside-1716290:
+  display_name: Ingleside
+  district_name: Gavin SD 37
+  district_nces_id: '1716290'
+  enrollment: 778
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-itasca:
+  display_name: Itasca
+  district_name: Itasca SD 10
+  district_nces_id: '1720220'
+  enrollment: 1000
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-jacksonville:
+  display_name: Jacksonville
+  district_name: Jacksonville SD 117
+  district_nces_id: '1720280'
+  enrollment: 3253
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-jerseyville:
+  display_name: Jerseyville
+  district_name: Jersey CUSD 100
+  district_nces_id: '1720430'
+  enrollment: 2432
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-johnsburg:
+  display_name: Johnsburg
+  district_name: Johnsburg CUSD 12
+  district_nces_id: '1720490'
+  enrollment: 1703
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-johnston-city:
+  display_name: Johnston City
+  district_name: Johnston City CUSD 1
+  district_nces_id: '1720550'
+  enrollment: 1094
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-joliet-1720580:
+  display_name: Joliet
+  district_name: Joliet PSD 86
+  district_nces_id: '1720580'
+  enrollment: 9553
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-joliet-1720610:
+  display_name: Joliet
+  district_name: Joliet Twp HSD 204
+  district_nces_id: '1720610'
+  enrollment: 6918
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-joy:
+  display_name: Joy
+  district_name: Mercer County School District 404
+  district_nces_id: '1701395'
+  enrollment: 1294
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-junction:
+  display_name: Junction
+  district_name: Gallatin CUSD 7
+  district_nces_id: '1700045'
+  enrollment: 704
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-justice:
+  display_name: Justice
+  district_name: Indian Springs SD 109
+  district_nces_id: '1707170'
+  enrollment: 2488
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-kankakee:
+  display_name: Kankakee
+  district_name: Kankakee SD 111
+  district_nces_id: '1720760'
+  enrollment: 4784
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-kewanee-1721000:
+  display_name: Kewanee
+  district_name: Kewanee CUSD 229
+  district_nces_id: '1721000'
+  enrollment: 1969
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-kewanee-1742060:
+  display_name: Kewanee
+  district_name: Wethersfield CUSD 230
+  district_nces_id: '1742060'
+  enrollment: 536
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-kinmundy:
+  display_name: Kinmundy
+  district_name: South Central CUD 401
+  district_nces_id: '1700114'
+  enrollment: 629
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-knoxville:
+  display_name: Knoxville
+  district_name: Knoxville CUSD 202
+  district_nces_id: '1721390'
+  enrollment: 961
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-la-grange-1721630:
+  display_name: La Grange
+  district_name: La Grange SD 105 South
+  district_nces_id: '1721630'
+  enrollment: 1213
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-la-grange-1723880:
+  display_name: La Grange
+  district_name: Lyons Twp HSD 204
+  district_nces_id: '1723880'
+  enrollment: 3842
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-la-grange-highlands:
+  display_name: La Grange Highlands
+  district_name: LaGrange Highlands SD 106
+  district_nces_id: '1719110'
+  enrollment: 981
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-la-grange-park:
+  display_name: La Grange Park
+  district_name: La Grange SD 102
+  district_nces_id: '1721600'
+  enrollment: 2976
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-la-salle-1722080:
+  display_name: La Salle
+  district_name: La Salle ESD 122
+  district_nces_id: '1722080'
+  enrollment: 892
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-la-salle-1722110:
+  display_name: La Salle
+  district_name: La Salle-Peru Twp HSD 120
+  district_nces_id: '1722110'
+  enrollment: 1198
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lake-bluff:
+  display_name: Lake Bluff
+  district_name: Lake Bluff ESD 65
+  district_nces_id: '1721720'
+  enrollment: 858
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lake-forest-1721750:
+  display_name: Lake Forest
+  district_name: Lake Forest SD 67
+  district_nces_id: '1721750'
+  enrollment: 1666
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lake-forest-1721780:
+  display_name: Lake Forest
+  district_name: Lake Forest CHSD 115
+  district_nces_id: '1721780'
+  enrollment: 1438
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lake-villa-1703870:
+  display_name: Lake Villa
+  district_name: CHSD 117
+  district_nces_id: '1703870'
+  enrollment: 2626
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lake-villa-1721870:
+  display_name: Lake Villa
+  district_name: Lake Villa CCSD 41
+  district_nces_id: '1721870'
+  enrollment: 2442
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lake-zurich:
+  display_name: Lake Zurich
+  district_name: Lake Zurich CUSD 95
+  district_nces_id: '1721900'
+  enrollment: 5626
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lansing-1722020:
+  display_name: Lansing
+  district_name: Lansing SD 158
+  district_nces_id: '1722020'
+  enrollment: 2517
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lansing-1738370:
+  display_name: Lansing
+  district_name: Sunnybrook SD 171
+  district_nces_id: '1738370'
+  enrollment: 990
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lansing-1738940:
+  display_name: Lansing
+  district_name: Thornton Fractional Twp HSD 215
+  district_nces_id: '1738940'
+  enrollment: 3310
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lawrenceville:
+  display_name: Lawrenceville
+  district_name: Lawrence County CUD 20
+  district_nces_id: '1722150'
+  enrollment: 1054
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-le-roy:
+  display_name: Le Roy
+  district_name: LeRoy CUSD 2
+  district_nces_id: '1722620'
+  enrollment: 778
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lebanon:
+  display_name: Lebanon
+  district_name: Lebanon CUSD 9
+  district_nces_id: '1722300'
+  enrollment: 523
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lemont-1707290:
+  display_name: Lemont
+  district_name: Lemont-Bromberek CSD 113A
+  district_nces_id: '1707290'
+  enrollment: 2538
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lemont-1722500:
+  display_name: Lemont
+  district_name: Lemont Twp HSD 210
+  district_nces_id: '1722500'
+  enrollment: 1324
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lena:
+  display_name: Lena
+  district_name: Lena Winslow CUSD 202
+  district_nces_id: '1722530'
+  enrollment: 810
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lewistown:
+  display_name: Lewistown
+  district_name: Lewistown CUSD 97
+  district_nces_id: '1700153'
+  enrollment: 626
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-liberty:
+  display_name: Liberty
+  district_name: Liberty CUSD 2
+  district_nces_id: '1722770'
+  enrollment: 634
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-libertyville-1722800:
+  display_name: Libertyville
+  district_name: Libertyville SD 70
+  district_nces_id: '1722800'
+  enrollment: 2145
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-libertyville-1729130:
+  display_name: Libertyville
+  district_name: Oak Grove SD 68 Green Oaks
+  district_nces_id: '1729130'
+  enrollment: 931
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lincoln-1722980:
+  display_name: Lincoln
+  district_name: Lincoln ESD 27
+  district_nces_id: '1722980'
+  enrollment: 1061
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lincoln-1723050:
+  display_name: Lincoln
+  district_name: Lincoln CHSD 404
+  district_nces_id: '1723050'
+  enrollment: 786
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lincolnshire-1723090:
+  display_name: Lincolnshire
+  district_name: Lincolnshire-Prairieview SD 103
+  district_nces_id: '1723090'
+  enrollment: 1908
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lincolnshire-1732580:
+  display_name: Lincolnshire
+  district_name: Adlai E Stevenson HSD 125
+  district_nces_id: '1732580'
+  enrollment: 4489
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lincolnwood:
+  display_name: Lincolnwood
+  district_name: Lincolnwood SD 74
+  district_nces_id: '1723100'
+  enrollment: 1221
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lisle:
+  display_name: Lisle
+  district_name: Lisle CUSD 202
+  district_nces_id: '1723200'
+  enrollment: 1490
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-litchfield:
+  display_name: Litchfield
+  district_name: Litchfield CUSD 12
+  district_nces_id: '1723250'
+  enrollment: 1316
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lockport-1709210:
+  display_name: Lockport
+  district_name: Lockport SD 91
+  district_nces_id: '1709210'
+  enrollment: 533
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lockport-1723350:
+  display_name: Lockport
+  district_name: Lockport Twp HSD 205
+  district_nces_id: '1723350'
+  enrollment: 3872
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lockport-1723730:
+  display_name: Lockport
+  district_name: Will County SD 92
+  district_nces_id: '1723730'
+  enrollment: 1370
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lombard:
+  display_name: Lombard
+  district_name: Lombard SD 44
+  district_nces_id: '1723460'
+  enrollment: 2962
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-louisville:
+  display_name: Louisville
+  district_name: North Clay CUSD 25
+  district_nces_id: '1728810'
+  enrollment: 570
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-lyons:
+  display_name: Lyons
+  district_name: Lyons SD 103
+  district_nces_id: '1723850'
+  enrollment: 2148
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-machesney-park:
+  display_name: Machesney Park
+  district_name: Harlem UD 122
+  district_nces_id: '1718240'
+  enrollment: 6178
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mackinaw:
+  display_name: Mackinaw
+  district_name: Deer Creek-Mackinaw CUSD 701
+  district_nces_id: '1711880'
+  enrollment: 953
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-macomb:
+  display_name: Macomb
+  district_name: Macomb CUSD 185
+  district_nces_id: '1723920'
+  enrollment: 2036
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-macon:
+  display_name: Macon
+  district_name: Meridian CUSD 15
+  district_nces_id: '1700123'
+  enrollment: 967
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-madison:
+  display_name: Madison
+  district_name: Madison CUSD 12
+  district_nces_id: '1723970'
+  enrollment: 657
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mahomet:
+  display_name: Mahomet
+  district_name: Mahomet-Seymour CUSD 3
+  district_nces_id: '1724060'
+  enrollment: 3423
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-manhattan:
+  display_name: Manhattan
+  district_name: Manhattan SD 114
+  district_nces_id: '1724270'
+  enrollment: 1881
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-manito:
+  display_name: Manito
+  district_name: Midwest Central CUSD 191
+  district_nces_id: '1743962'
+  enrollment: 865
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-manlius:
+  display_name: Manlius
+  district_name: Bureau Valley CUSD 340
+  district_nces_id: '1700125'
+  enrollment: 946
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-manteno:
+  display_name: Manteno
+  district_name: Manteno CUSD 5
+  district_nces_id: '1724390'
+  enrollment: 1886
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-maple-park:
+  display_name: Maple Park
+  district_name: Kaneland CUSD 302
+  district_nces_id: '1724480'
+  enrollment: 4040
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-marengo-1700077:
+  display_name: Marengo
+  district_name: Marengo-Union E Cons D 165
+  district_nces_id: '1700077'
+  enrollment: 1055
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-marengo-1724570:
+  display_name: Marengo
+  district_name: Marengo CHSD 154
+  district_nces_id: '1724570'
+  enrollment: 685
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-marion:
+  display_name: Marion
+  district_name: Marion CUSD 2
+  district_nces_id: '1724600'
+  enrollment: 3749
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-marissa:
+  display_name: Marissa
+  district_name: Marissa CUSD 40
+  district_nces_id: '1724650'
+  enrollment: 535
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-markham:
+  display_name: Markham
+  district_name: Prairie-Hills ESD 144
+  district_nces_id: '1724720'
+  enrollment: 2511
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-marseilles:
+  display_name: Marseilles
+  district_name: Marseilles ESD 150
+  district_nces_id: '1705466'
+  enrollment: 521
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-marshall:
+  display_name: Marshall
+  district_name: Marshall CUSD 2C
+  district_nces_id: '1724870'
+  enrollment: 1224
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mascoutah:
+  display_name: Mascoutah
+  district_name: Mascoutah CUD 19
+  district_nces_id: '1724940'
+  enrollment: 4152
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mason-city:
+  display_name: Mason City
+  district_name: Illini Central CUSD 189
+  district_nces_id: '1700113'
+  enrollment: 649
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-matteson-1733420:
+  display_name: Matteson
+  district_name: Rich Twp HSD 227
+  district_nces_id: '1733420'
+  enrollment: 2487
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-matteson-1736300:
+  display_name: Matteson
+  district_name: ESD 159
+  district_nces_id: '1736300'
+  enrollment: 1679
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mattoon:
+  display_name: Mattoon
+  district_name: Mattoon CUSD 2
+  district_nces_id: '1725050'
+  enrollment: 3137
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mc-leansboro:
+  display_name: Mc Leansboro
+  district_name: Hamilton Co CUSD 10
+  district_nces_id: '1710790'
+  enrollment: 1169
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mchenry-1725290:
+  display_name: Mchenry
+  district_name: McHenry CCSD 15
+  district_nces_id: '1725290'
+  enrollment: 4079
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mchenry-1725320:
+  display_name: Mchenry
+  district_name: McHenry CHSD 156
+  district_nces_id: '1725320'
+  enrollment: 2222
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-melrose-park:
+  display_name: Melrose Park
+  district_name: Maywood-Melrose Park-Broadview 89
+  district_nces_id: '1725110'
+  enrollment: 4208
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mendon:
+  display_name: Mendon
+  district_name: CUSD 4
+  district_nces_id: '1725590'
+  enrollment: 664
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mendota:
+  display_name: Mendota
+  district_name: Mendota CCSD 289
+  district_nces_id: '1725620'
+  enrollment: 1040
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-metamora-1725740:
+  display_name: Metamora
+  district_name: Metamora CCSD 1
+  district_nces_id: '1725740'
+  enrollment: 827
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-metamora-1725770:
+  display_name: Metamora
+  district_name: County of Woodford School
+  district_nces_id: '1725770'
+  enrollment: 915
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-metropolis:
+  display_name: Metropolis
+  district_name: Massac UD 1
+  district_nces_id: '1725000'
+  enrollment: 1879
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-midlothian-1707050:
+  display_name: Midlothian
+  district_name: Bremen CHSD 228
+  district_nces_id: '1707050'
+  enrollment: 5270
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-midlothian-1725920:
+  display_name: Midlothian
+  district_name: Midlothian SD 143
+  district_nces_id: '1725920'
+  enrollment: 1644
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-milford:
+  display_name: Milford
+  district_name: Milford Area PSD 124
+  district_nces_id: '1701416'
+  enrollment: 519
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-millstadt:
+  display_name: Millstadt
+  district_name: Millstadt CCSD 160
+  district_nces_id: '1726190'
+  enrollment: 711
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-minonk:
+  display_name: Minonk
+  district_name: Fieldcrest CUSD 6
+  district_nces_id: '1715100'
+  enrollment: 841
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-minooka:
+  display_name: Minooka
+  district_name: Minooka CCSD 201
+  district_nces_id: '1726310'
+  enrollment: 4499
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mokena:
+  display_name: Mokena
+  district_name: Mokena SD 159
+  district_nces_id: '1726370'
+  enrollment: 1542
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-moline:
+  display_name: Moline
+  district_name: Moline-Coal Valley CUSD 40
+  district_nces_id: '1726400'
+  enrollment: 7185
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-momence:
+  display_name: Momence
+  district_name: Momence CUSD 1
+  district_nces_id: '1726430'
+  enrollment: 1016
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-monmouth-1700320:
+  display_name: Monmouth
+  district_name: Monmouth-Roseville CUSD 238
+  district_nces_id: '1700320'
+  enrollment: 1624
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-monmouth-1700321:
+  display_name: Monmouth
+  district_name: United CUSD 304
+  district_nces_id: '1700321'
+  enrollment: 945
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-monticello:
+  display_name: Monticello
+  district_name: Monticello CUSD 25
+  district_nces_id: '1726550'
+  enrollment: 1665
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-morris-1726610:
+  display_name: Morris
+  district_name: Morris SD 54
+  district_nces_id: '1726610'
+  enrollment: 1078
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-morris-1726640:
+  display_name: Morris
+  district_name: Morris CHSD 101
+  district_nces_id: '1726640'
+  enrollment: 946
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-morris-1735400:
+  display_name: Morris
+  district_name: Saratoga CCSD 60C
+  district_nces_id: '1735400'
+  enrollment: 772
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-morrison:
+  display_name: Morrison
+  district_name: Morrison CUSD 6
+  district_nces_id: '1726710'
+  enrollment: 980
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-morton:
+  display_name: Morton
+  district_name: Morton CUSD 709
+  district_nces_id: '1726800'
+  enrollment: 3234
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-morton-grove-1726820:
+  display_name: Morton Grove
+  district_name: Golf ESD 67
+  district_nces_id: '1726820'
+  enrollment: 673
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-morton-grove-1726850:
+  display_name: Morton Grove
+  district_name: Morton Grove SD 70
+  district_nces_id: '1726850'
+  enrollment: 893
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mount-carmel:
+  display_name: Mount Carmel
+  district_name: Wabash CUSD 348
+  district_nces_id: '1740470'
+  enrollment: 1421
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mount-carroll:
+  display_name: Mount Carroll
+  district_name: West Carroll CUSD 314
+  district_nces_id: '1700310'
+  enrollment: 895
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mount-pulaski:
+  display_name: Mount Pulaski
+  district_name: Mt Pulaski CUSD 23
+  district_nces_id: '1727290'
+  enrollment: 554
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mount-vernon-1727340:
+  display_name: Mount Vernon
+  district_name: Mount Vernon SD 80
+  district_nces_id: '1727340'
+  enrollment: 1509
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mount-vernon-1727360:
+  display_name: Mount Vernon
+  district_name: Mt Vernon Twp HSD 201
+  district_nces_id: '1727360'
+  enrollment: 1210
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mt-prospect-1727210:
+  display_name: Mt Prospect
+  district_name: Mount Prospect SD 57
+  district_nces_id: '1727210'
+  enrollment: 2191
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mt-prospect-1733870:
+  display_name: Mt Prospect
+  district_name: River Trails SD 26
+  district_nces_id: '1733870'
+  enrollment: 1514
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mt-sterling:
+  display_name: Mt Sterling
+  district_name: Brown County CUSD 1
+  district_nces_id: '1727300'
+  enrollment: 680
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mt-zion:
+  display_name: Mt Zion
+  district_name: Mt Zion CUSD 3
+  district_nces_id: '1727390'
+  enrollment: 2411
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mundelein-1712210:
+  display_name: Mundelein
+  district_name: Diamond Lake SD 76
+  district_nces_id: '1712210'
+  enrollment: 869
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mundelein-1715930:
+  display_name: Mundelein
+  district_name: Fremont SD 79
+  district_nces_id: '1715930'
+  enrollment: 2081
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mundelein-1727540:
+  display_name: Mundelein
+  district_name: Mundelein ESD 75
+  district_nces_id: '1727540'
+  enrollment: 1575
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-mundelein-1727570:
+  display_name: Mundelein
+  district_name: Mundelein Cons HSD 120
+  district_nces_id: '1727570'
+  enrollment: 2212
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-murphysboro:
+  display_name: Murphysboro
+  district_name: Murphysboro CUSD 186
+  district_nces_id: '1727610'
+  enrollment: 1929
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-naperville:
+  display_name: Naperville
+  district_name: Naperville CUSD 203
+  district_nces_id: '1727710'
+  enrollment: 16073
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-nashville:
+  display_name: Nashville
+  district_name: Nashville CCSD 49
+  district_nces_id: '1727720'
+  enrollment: 584
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-neoga:
+  display_name: Neoga
+  district_name: Neoga CUSD 3
+  district_nces_id: '1727840'
+  enrollment: 501
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-new-berlin:
+  display_name: New Berlin
+  district_name: New Berlin CUSD 16
+  district_nces_id: '1727990'
+  enrollment: 861
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-new-lenox-1723070:
+  display_name: New Lenox
+  district_name: Lincoln Way CHSD 210
+  district_nces_id: '1723070'
+  enrollment: 6705
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-new-lenox-1728140:
+  display_name: New Lenox
+  district_name: New Lenox SD 122
+  district_nces_id: '1728140'
+  enrollment: 5050
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-newton:
+  display_name: Newton
+  district_name: Jasper County CUD 1
+  district_nces_id: '1720380'
+  enrollment: 1196
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-niantic:
+  display_name: Niantic
+  district_name: Sangamon Valley CUSD 9
+  district_nces_id: '1700324'
+  enrollment: 644
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-niles-1728500:
+  display_name: Niles
+  district_name: Niles ESD 71
+  district_nces_id: '1728500'
+  enrollment: 655
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-niles-1730840:
+  display_name: Niles
+  district_name: Park Ridge CCSD 64
+  district_nces_id: '1730840'
+  enrollment: 4671
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-nokomis:
+  display_name: Nokomis
+  district_name: Nokomis CUSD 22
+  district_nces_id: '1728560'
+  enrollment: 596
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-normal-1700099:
+  display_name: Normal
+  district_name: ISU  Laboratory Schools
+  district_nces_id: '1700099'
+  enrollment: 1045
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-normal-1728620:
+  display_name: Normal
+  district_name: McLean County USD 5
+  district_nces_id: '1728620'
+  enrollment: 12409
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-norridge-1728650:
+  display_name: Norridge
+  district_name: Norridge SD 80
+  district_nces_id: '1728650'
+  enrollment: 1113
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-norridge-1733720:
+  display_name: Norridge
+  district_name: Ridgewood CHSD 234
+  district_nces_id: '1733720'
+  enrollment: 873
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-norris-city:
+  display_name: Norris City
+  district_name: Norris City-Omaha-Enfield CUSD 3
+  district_nces_id: '1700004'
+  enrollment: 699
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-north-chicago:
+  display_name: North Chicago
+  district_name: North Chicago SD 187
+  district_nces_id: '1700110'
+  enrollment: 3489
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-north-riverside:
+  display_name: North Riverside
+  district_name: Komarek SD 94
+  district_nces_id: '1721420'
+  enrollment: 513
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-northbrook-1717850:
+  display_name: Northbrook
+  district_name: Northbrook ESD 27
+  district_nces_id: '1717850'
+  enrollment: 1333
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-northbrook-1724420:
+  display_name: Northbrook
+  district_name: Northbrook/Glenview SD 30
+  district_nces_id: '1724420'
+  enrollment: 1254
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-northbrook-1728980:
+  display_name: Northbrook
+  district_name: Northbrook SD 28
+  district_nces_id: '1728980'
+  enrollment: 1842
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-northbrook-1741700:
+  display_name: Northbrook
+  district_name: West Northfield SD 31
+  district_nces_id: '1741700'
+  enrollment: 945
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-northfield:
+  display_name: Northfield
+  district_name: New Trier Twp HSD 203
+  district_nces_id: '1728200'
+  enrollment: 3779
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-o-fallon-1709170:
+  display_name: O Fallon
+  district_name: Central SD 104
+  district_nces_id: '1709170'
+  enrollment: 600
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-o-fallon-1729760:
+  display_name: O Fallon
+  district_name: O Fallon CCSD 90
+  district_nces_id: '1729760'
+  enrollment: 3944
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-o-fallon-1729790:
+  display_name: O Fallon
+  district_name: O Fallon Twp HSD 203
+  district_nces_id: '1729790'
+  enrollment: 2521
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oak-forest-1703930:
+  display_name: Oak Forest
+  district_name: Arbor Park SD 145
+  district_nces_id: '1703930'
+  enrollment: 1092
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oak-forest-1715480:
+  display_name: Oak Forest
+  district_name: Forest Ridge SD 142
+  district_nces_id: '1715480'
+  enrollment: 1539
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oak-lawn-1706540:
+  display_name: Oak Lawn
+  district_name: CHSD 218
+  district_nces_id: '1706540'
+  enrollment: 5490
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oak-lawn-1729190:
+  display_name: Oak Lawn
+  district_name: Oak Lawn-Hometown SD 123
+  district_nces_id: '1729190'
+  enrollment: 3388
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oak-lawn-1729220:
+  display_name: Oak Lawn
+  district_name: Oak Lawn CHSD 229
+  district_nces_id: '1729220'
+  enrollment: 1834
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oak-lawn-1733690:
+  display_name: Oak Lawn
+  district_name: Ridgeland SD 122
+  district_nces_id: '1733690'
+  enrollment: 2337
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oak-park-1729250:
+  display_name: Oak Park
+  district_name: Oak Park ESD 97
+  district_nces_id: '1729250'
+  enrollment: 5546
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oak-park-1729280:
+  display_name: Oak Park
+  district_name: Oak Park - River Forest SD 200
+  district_nces_id: '1729280'
+  enrollment: 3304
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oakwood:
+  display_name: Oakwood
+  district_name: Oakwood CUSD 76
+  district_nces_id: '1710800'
+  enrollment: 867
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oblong:
+  display_name: Oblong
+  district_name: Oblong CUSD 4
+  district_nces_id: '1729420'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-okawville:
+  display_name: Okawville
+  district_name: West Washington Co CUD 10
+  district_nces_id: '1741750'
+  enrollment: 529
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-old-mill-creek:
+  display_name: Old Mill Creek
+  district_name: Millburn CCSD 24
+  district_nces_id: '1726100'
+  enrollment: 1103
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-olney:
+  display_name: Olney
+  district_name: Richland County CUSD 1
+  district_nces_id: '1713290'
+  enrollment: 2280
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oneida:
+  display_name: Oneida
+  district_name: R O W V A CUSD 208
+  district_nces_id: '1729940'
+  enrollment: 616
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oregon:
+  display_name: Oregon
+  district_name: Oregon CUSD 220
+  district_nces_id: '1730160'
+  enrollment: 1439
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-orion:
+  display_name: Orion
+  district_name: Orion CUSD 223
+  district_nces_id: '1730200'
+  enrollment: 999
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-orland-park-1708400:
+  display_name: Orland Park
+  district_name: Cons HSD 230
+  district_nces_id: '1708400'
+  enrollment: 7691
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-orland-park-1730220:
+  display_name: Orland Park
+  district_name: Orland SD 135
+  district_nces_id: '1730220'
+  enrollment: 5213
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-oswego:
+  display_name: Oswego
+  district_name: CUSD 308
+  district_nces_id: '1730270'
+  enrollment: 16940
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-ottawa-1730300:
+  display_name: Ottawa
+  district_name: Ottawa ESD 141
+  district_nces_id: '1730300'
+  enrollment: 1745
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-ottawa-1730330:
+  display_name: Ottawa
+  district_name: Ottawa Twp HSD 140
+  district_nces_id: '1730330'
+  enrollment: 1261
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-palatine-1730420:
+  display_name: Palatine
+  district_name: Palatine CCSD 15
+  district_nces_id: '1730420'
+  enrollment: 11103
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-palatine-1730450:
+  display_name: Palatine
+  district_name: Township HSD 211
+  district_nces_id: '1730450'
+  enrollment: 12270
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-palos-heights:
+  display_name: Palos Heights
+  district_name: Palos Heights SD 128
+  district_nces_id: '1730570'
+  enrollment: 774
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-palos-hills:
+  display_name: Palos Hills
+  district_name: North Palos SD 117
+  district_nces_id: '1728890'
+  enrollment: 3397
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-palos-park:
+  display_name: Palos Park
+  district_name: Palos CCSD 118
+  district_nces_id: '1730600'
+  enrollment: 2104
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-pana:
+  display_name: Pana
+  district_name: Pana CUSD 8
+  district_nces_id: '1730630'
+  enrollment: 1172
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-paris-1730750:
+  display_name: Paris
+  district_name: Paris-Union SD 95
+  district_nces_id: '1730750'
+  enrollment: 1229
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-paris-1730780:
+  display_name: Paris
+  district_name: Paris CUSD 4
+  district_nces_id: '1730780'
+  enrollment: 627
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-park-forest:
+  display_name: Park Forest
+  district_name: Park Forest SD 163
+  district_nces_id: '1730810'
+  enrollment: 1537
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-park-ridge:
+  display_name: Park Ridge
+  district_name: Maine Township HSD 207
+  district_nces_id: '1724090'
+  enrollment: 6183
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-pawnee:
+  display_name: Pawnee
+  district_name: Pawnee CUSD 11
+  district_nces_id: '1730930'
+  enrollment: 560
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-paxton:
+  display_name: Paxton
+  district_name: Paxton-Buckley-Loda CUD 10
+  district_nces_id: '1707650'
+  enrollment: 1296
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-pecatonica:
+  display_name: Pecatonica
+  district_name: Pecatonica CUSD 321
+  district_nces_id: '1731050'
+  enrollment: 897
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-pekin-1731080:
+  display_name: Pekin
+  district_name: Pekin PSD 108
+  district_nces_id: '1731080'
+  enrollment: 3165
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-pekin-1731110:
+  display_name: Pekin
+  district_name: Pekin CSD 303
+  district_nces_id: '1731110'
+  enrollment: 1796
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-peoria-1722950:
+  display_name: Peoria
+  district_name: Limestone CHSD 310
+  district_nces_id: '1722950'
+  enrollment: 924
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-peoria-1731230:
+  display_name: Peoria
+  district_name: Peoria SD 150
+  district_nces_id: '1731230'
+  enrollment: 12674
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-peoria-heights:
+  display_name: Peoria Heights
+  district_name: Peoria Heights CUSD 325
+  district_nces_id: '1731270'
+  enrollment: 754
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-peotone:
+  display_name: Peotone
+  district_name: Peotone CUSD 207U
+  district_nces_id: '1731290'
+  enrollment: 1293
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-peru:
+  display_name: Peru
+  district_name: Peru ESD 124
+  district_nces_id: '1731380'
+  enrollment: 943
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-petersburg:
+  display_name: Petersburg
+  district_name: Porta CUSD 202
+  district_nces_id: '1731410'
+  enrollment: 1054
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-pittsfield:
+  display_name: Pittsfield
+  district_name: Pikeland CUSD 10
+  district_nces_id: '1731710'
+  enrollment: 1164
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-plainfield-1731740:
+  display_name: Plainfield
+  district_name: Plainfield SD 202
+  district_nces_id: '1731740'
+  enrollment: 24856
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-plainfield-1739510:
+  display_name: Plainfield
+  district_name: Troy CCSD 30C
+  district_nces_id: '1739510'
+  enrollment: 4012
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-plano:
+  display_name: Plano
+  district_name: Plano CUSD 88
+  district_nces_id: '1731770'
+  enrollment: 2443
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-pleasant-plains:
+  display_name: Pleasant Plains
+  district_name: Pleasant Plains CUSD 8
+  district_nces_id: '1731920'
+  enrollment: 1250
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-polo:
+  display_name: Polo
+  district_name: Polo CUSD 222
+  district_nces_id: '1732100'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-pontiac-1732160:
+  display_name: Pontiac
+  district_name: Pontiac CCSD 429
+  district_nces_id: '1732160'
+  enrollment: 1108
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-pontiac-1732220:
+  display_name: Pontiac
+  district_name: Pontiac Twp HSD 90
+  district_nces_id: '1732220'
+  enrollment: 693
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-poplar-grove:
+  display_name: Poplar Grove
+  district_name: North Boone CUSD 200
+  district_nces_id: '1728700'
+  enrollment: 1531
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-port-byron:
+  display_name: Port Byron
+  district_name: Riverdale CUSD 100
+  district_nces_id: '1733930'
+  enrollment: 1092
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-posen:
+  display_name: Posen
+  district_name: Posen-Robbins ESD 143-5
+  district_nces_id: '1732370'
+  enrollment: 1242
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-princeton:
+  display_name: Princeton
+  district_name: Princeton ESD 115
+  district_nces_id: '1732670'
+  enrollment: 1068
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-princeville:
+  display_name: Princeville
+  district_name: Princeville CUSD 326
+  district_nces_id: '1732770'
+  enrollment: 650
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-prophetstown:
+  display_name: Prophetstown
+  district_name: Prophetstown-Lyndon-Tampico CUSD3
+  district_nces_id: '1732830'
+  enrollment: 791
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-prospect-heights:
+  display_name: Prospect Heights
+  district_name: Prospect Heights SD 23
+  district_nces_id: '1732850'
+  enrollment: 1462
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-quincy:
+  display_name: Quincy
+  district_name: Quincy SD 172
+  district_nces_id: '1733000'
+  enrollment: 6345
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rantoul-1733210:
+  display_name: Rantoul
+  district_name: Rantoul City SD 137
+  district_nces_id: '1733210'
+  enrollment: 1676
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rantoul-1733240:
+  display_name: Rantoul
+  district_name: Rantoul Township HSD 193
+  district_nces_id: '1733240'
+  enrollment: 848
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-red-bud:
+  display_name: Red Bud
+  district_name: Red Bud CUSD 132
+  district_nces_id: '1733300'
+  enrollment: 1028
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-richmond-1700222:
+  display_name: Richmond
+  district_name: Nippersink SD 2
+  district_nces_id: '1700222'
+  enrollment: 1102
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-richmond-1733510:
+  display_name: Richmond
+  district_name: Richmond-Burton CHSD 157
+  district_nces_id: '1733510'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-richton-park-1701400:
+  display_name: Richton Park
+  district_name: Southland College Prep Chtr HS
+  district_nces_id: '1701400'
+  enrollment: 577
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-richton-park-1725020:
+  display_name: Richton Park
+  district_name: Matteson ESD 162
+  district_nces_id: '1725020'
+  enrollment: 2401
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-river-forest:
+  display_name: River Forest
+  district_name: River Forest SD 90
+  district_nces_id: '1733810'
+  enrollment: 1378
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-river-grove-1733390:
+  display_name: River Grove
+  district_name: Rhodes SD 84-5
+  district_nces_id: '1733390'
+  enrollment: 521
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-river-grove-1733840:
+  display_name: River Grove
+  district_name: River Grove SD 85-5
+  district_nces_id: '1733840'
+  enrollment: 716
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-riverdale:
+  display_name: Riverdale
+  district_name: Dolton SD 148
+  district_nces_id: '1712450'
+  enrollment: 1984
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-riverside-1733990:
+  display_name: Riverside
+  district_name: Riverside SD 96
+  district_nces_id: '1733990'
+  enrollment: 1723
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-riverside-1734020:
+  display_name: Riverside
+  district_name: Riverside-Brookfield Twp SD 208
+  district_nces_id: '1734020'
+  enrollment: 1672
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-riverton:
+  display_name: Riverton
+  district_name: Riverton CUSD 14
+  district_nces_id: '1734100'
+  enrollment: 1249
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-robinson:
+  display_name: Robinson
+  district_name: Robinson CUSD 2
+  district_nces_id: '1734230'
+  enrollment: 1523
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rochelle-1734260:
+  display_name: Rochelle
+  district_name: Rochelle CCSD 231
+  district_nces_id: '1734260'
+  enrollment: 1577
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rochelle-1734290:
+  display_name: Rochelle
+  district_name: Rochelle Twp HSD 212
+  district_nces_id: '1734290'
+  enrollment: 863
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rochester:
+  display_name: Rochester
+  district_name: Rochester CUSD 3A
+  district_nces_id: '1734320'
+  enrollment: 2074
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rock-falls-1734350:
+  display_name: Rock Falls
+  district_name: Rock Falls ESD 13
+  district_nces_id: '1734350'
+  enrollment: 865
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rock-falls-1734380:
+  display_name: Rock Falls
+  district_name: Rock Falls Twp HSD 301
+  district_nces_id: '1734380'
+  enrollment: 566
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rock-island:
+  display_name: Rock Island
+  district_name: Rock Island SD 41
+  district_nces_id: '1734410'
+  enrollment: 6204
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rockford:
+  display_name: Rockford
+  district_name: Rockford SD 205
+  district_nces_id: '1734510'
+  enrollment: 27442
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-rockton-1719620:
+  display_name: Rockton
+  district_name: Hononegah CHD 207
+  district_nces_id: '1719620'
+  enrollment: 1891
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rockton-1734540:
+  display_name: Rockton
+  district_name: Rockton SD 140
+  district_nces_id: '1734540'
+  enrollment: 1602
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-romeoville:
+  display_name: Romeoville
+  district_name: Valley View CUSD 365U
+  district_nces_id: '1740070'
+  enrollment: 15187
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-roscoe:
+  display_name: Roscoe
+  district_name: Kinnikinnick CCSD 131
+  district_nces_id: '1721180'
+  enrollment: 1724
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-roselle-1721840:
+  display_name: Roselle
+  district_name: Lake Park CHSD 108
+  district_nces_id: '1721840'
+  enrollment: 2560
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-roselle-1725500:
+  display_name: Roselle
+  district_name: Medinah SD 11
+  district_nces_id: '1725500'
+  enrollment: 686
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-roselle-1734710:
+  display_name: Roselle
+  district_name: Roselle SD 12
+  district_nces_id: '1734710'
+  enrollment: 700
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-round-lake:
+  display_name: Round Lake
+  district_name: Round Lake CUSD 116
+  district_nces_id: '1734990'
+  enrollment: 6330
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-roxana:
+  display_name: Roxana
+  district_name: Roxana CUSD 1
+  district_nces_id: '1735010'
+  enrollment: 1690
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-rushville:
+  display_name: Rushville
+  district_name: Schuyler-Industry CUSD 5
+  district_nces_id: '1700332'
+  enrollment: 937
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-saint-charles:
+  display_name: Saint Charles
+  district_name: St Charles CUSD 303
+  district_nces_id: '1737170'
+  enrollment: 11801
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-saint-joseph:
+  display_name: Saint Joseph
+  district_name: St Joseph CCSD 169
+  district_nces_id: '1737380'
+  enrollment: 791
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-salem-1735160:
+  display_name: Salem
+  district_name: Salem SD 111
+  district_nces_id: '1735160'
+  enrollment: 928
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-salem-1735190:
+  display_name: Salem
+  district_name: Salem CHSD 600
+  district_nces_id: '1735190'
+  enrollment: 732
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-sandwich:
+  display_name: Sandwich
+  district_name: Sandwich CUSD 430
+  district_nces_id: '1735370'
+  enrollment: 1895
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-sauk-village:
+  display_name: Sauk Village
+  district_name: CCSD 168
+  district_nces_id: '1735460'
+  enrollment: 1209
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-schaumburg:
+  display_name: Schaumburg
+  district_name: Schaumburg CCSD 54
+  district_nces_id: '1734740'
+  enrollment: 14966
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-schiller-park:
+  display_name: Schiller Park
+  district_name: Schiller Park SD 81
+  district_nces_id: '1735640'
+  enrollment: 1337
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-serena:
+  display_name: Serena
+  district_name: Serena CUSD 2
+  district_nces_id: '1715880'
+  enrollment: 646
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-sesser:
+  display_name: Sesser
+  district_name: Sesser-Valier CUSD 196
+  district_nces_id: '1735940'
+  enrollment: 609
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-shabbona:
+  display_name: Shabbona
+  district_name: Indian Creek CUSD 425
+  district_nces_id: '1735970'
+  enrollment: 711
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-shannon:
+  display_name: Shannon
+  district_name: Eastland CUSD 308
+  district_nces_id: '1700007'
+  enrollment: 714
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-shelbyville:
+  display_name: Shelbyville
+  district_name: Shelbyville CUSD 4
+  district_nces_id: '1736090'
+  enrollment: 1251
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-sherrard:
+  display_name: Sherrard
+  district_name: Sherrard CUSD 200
+  district_nces_id: '1736180'
+  enrollment: 1371
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-shiloh:
+  display_name: Shiloh
+  district_name: Shiloh Village SD 85
+  district_nces_id: '1736210'
+  enrollment: 577
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-skokie-1710380:
+  display_name: Skokie
+  district_name: Skokie SD 73-5
+  district_nces_id: '1710380'
+  enrollment: 1063
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-skokie-1713260:
+  display_name: Skokie
+  district_name: East Prairie SD 73
+  district_nces_id: '1713260'
+  enrollment: 540
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-skokie-1714820:
+  display_name: Skokie
+  district_name: Fairview SD 72
+  district_nces_id: '1714820'
+  enrollment: 702
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-skokie-1728530:
+  display_name: Skokie
+  district_name: Niles Twp HSD 219
+  district_nces_id: '1728530'
+  enrollment: 4642
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-skokie-1736450:
+  display_name: Skokie
+  district_name: Skokie SD 68
+  district_nces_id: '1736450'
+  enrollment: 1665
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-skokie-1736480:
+  display_name: Skokie
+  district_name: Skokie SD 69
+  district_nces_id: '1736480'
+  enrollment: 1797
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-smithton:
+  display_name: Smithton
+  district_name: Smithton CCSD 130
+  district_nces_id: '1736510'
+  enrollment: 556
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-somonauk:
+  display_name: Somonauk
+  district_name: Somonauk CUSD 432
+  district_nces_id: '1736570'
+  enrollment: 750
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-south-beloit-1732550:
+  display_name: South Beloit
+  district_name: Prairie Hill CCSD 133
+  district_nces_id: '1732550'
+  enrollment: 773
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-south-beloit-1736600:
+  display_name: South Beloit
+  district_name: County of Winnebago SD 320
+  district_nces_id: '1736600'
+  enrollment: 903
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-south-holland-1736720:
+  display_name: South Holland
+  district_name: South Holland SD 150
+  district_nces_id: '1736720'
+  enrollment: 803
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-south-holland-1736750:
+  display_name: South Holland
+  district_name: South Holland SD 151
+  district_nces_id: '1736750'
+  enrollment: 1491
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-south-holland-1738970:
+  display_name: South Holland
+  district_name: Thornton Twp HSD 205
+  district_nces_id: '1738970'
+  enrollment: 4681
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-sparland:
+  display_name: Sparland
+  district_name: Midland CUSD 7
+  district_nces_id: '1700126'
+  enrollment: 665
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-sparta:
+  display_name: Sparta
+  district_name: Sparta CUSD 140
+  district_nces_id: '1736900'
+  enrollment: 1175
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-spring-grove:
+  display_name: Spring Grove
+  district_name: Fox Lake GSD 114
+  district_nces_id: '1715630'
+  enrollment: 649
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-spring-valley:
+  display_name: Spring Valley
+  district_name: Spring Valley CCSD 99
+  district_nces_id: '1737050'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-springfield:
+  display_name: Springfield
+  district_name: Springfield SD 186
+  district_nces_id: '1737080'
+  enrollment: 13066
+  has_charters: true
+  source: ccd_auto
+  state: IL
+il-stanford:
+  display_name: Stanford
+  district_name: Olympia CUSD 16
+  district_nces_id: '1729890'
+  enrollment: 1759
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-staunton:
+  display_name: Staunton
+  district_name: Staunton CUSD 6
+  district_nces_id: '1737590'
+  enrollment: 1217
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-steger:
+  display_name: Steger
+  district_name: Steger SD 194
+  district_nces_id: '1737680'
+  enrollment: 1415
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-sterling:
+  display_name: Sterling
+  district_name: Sterling CUSD 5
+  district_nces_id: '1742310'
+  enrollment: 3264
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-stillman-valley:
+  display_name: Stillman Valley
+  district_name: Meridian CUSD 223
+  district_nces_id: '1725690'
+  enrollment: 1493
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-stockton:
+  display_name: Stockton
+  district_name: Stockton CUSD 206
+  district_nces_id: '1737980'
+  enrollment: 548
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-streator-1700112:
+  display_name: Streator
+  district_name: Streator ESD 44
+  district_nces_id: '1700112'
+  enrollment: 1541
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-streator-1738100:
+  display_name: Streator
+  district_name: Streator Twp HSD 40
+  district_nces_id: '1738100'
+  enrollment: 809
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-sullivan:
+  display_name: Sullivan
+  district_name: Sullivan CUSD 300
+  district_nces_id: '1738130'
+  enrollment: 1179
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-summit-1704020:
+  display_name: Summit
+  district_name: Argo CHSD 217
+  district_nces_id: '1704020'
+  enrollment: 1924
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-summit-1704050:
+  display_name: Summit
+  district_name: Summit SD 104
+  district_nces_id: '1704050'
+  enrollment: 1459
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-swansea:
+  display_name: Swansea
+  district_name: Wolf Branch SD 113
+  district_nces_id: '1742960'
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-sycamore:
+  display_name: Sycamore
+  district_name: Sycamore CUSD 427
+  district_nces_id: '1738460'
+  enrollment: 3598
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-taylor-ridge:
+  display_name: Taylor Ridge
+  district_name: Rockridge CUSD 300
+  district_nces_id: '1734440'
+  enrollment: 1054
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-taylorville:
+  display_name: Taylorville
+  district_name: Taylorville CUSD 3
+  district_nces_id: '1738700'
+  enrollment: 2262
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-teutopolis:
+  display_name: Teutopolis
+  district_name: Teutopolis CUSD 50
+  district_nces_id: '1738760'
+  enrollment: 1081
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-tinley-park-1721270:
+  display_name: Tinley Park
+  district_name: Kirby SD 140
+  district_nces_id: '1721270'
+  enrollment: 3508
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-tinley-park-1739030:
+  display_name: Tinley Park
+  district_name: CCSD 146
+  district_nces_id: '1739030'
+  enrollment: 2300
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-toledo:
+  display_name: Toledo
+  district_name: Cumberland CUSD 77
+  district_nces_id: '1739090'
+  enrollment: 1011
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-tolono:
+  display_name: Tolono
+  district_name: Tolono CUSD 7
+  district_nces_id: '1739120'
+  enrollment: 1529
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-tremont:
+  display_name: Tremont
+  district_name: Tremont CUSD 702
+  district_nces_id: '1739390'
+  enrollment: 927
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-trenton:
+  display_name: Trenton
+  district_name: Wesclin CUSD 3
+  district_nces_id: '1739420'
+  enrollment: 1346
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-troy:
+  display_name: Troy
+  district_name: Triad CUSD 2
+  district_nces_id: '1737350'
+  enrollment: 3991
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-tuscola:
+  display_name: Tuscola
+  district_name: Tuscola CUSD 301
+  district_nces_id: '1739600'
+  enrollment: 948
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-urbana:
+  display_name: Urbana
+  district_name: Urbana SD 116
+  district_nces_id: '1739960'
+  enrollment: 4423
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-vandalia:
+  display_name: Vandalia
+  district_name: Vandalia CUSD 203
+  district_nces_id: '1740140'
+  enrollment: 1461
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-vernon-hills-1718570:
+  display_name: Vernon Hills
+  district_name: Hawthorn CCSD 73
+  district_nces_id: '1718570'
+  enrollment: 3557
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-vernon-hills-1722830:
+  display_name: Vernon Hills
+  district_name: CHSD 128
+  district_nces_id: '1722830'
+  enrollment: 3316
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-villa-grove:
+  display_name: Villa Grove
+  district_name: Villa Grove CUSD 302
+  district_nces_id: '1740320'
+  enrollment: 654
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-villa-park:
+  display_name: Villa Park
+  district_name: SD 45 DuPage County
+  district_nces_id: '1740350'
+  enrollment: 3173
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-warrensburg:
+  display_name: Warrensburg
+  district_name: Warrensburg-Latham CUSD 11
+  district_nces_id: '1740830'
+  enrollment: 992
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-washington-1709150:
+  display_name: Washington
+  district_name: Central SD 51
+  district_nces_id: '1709150'
+  enrollment: 1281
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-washington-1740980:
+  display_name: Washington
+  district_name: Washington CHSD 308
+  district_nces_id: '1740980'
+  enrollment: 1484
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-washington-1741010:
+  display_name: Washington
+  district_name: District 50 Schools
+  district_nces_id: '1741010'
+  enrollment: 605
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-washington-1741040:
+  display_name: Washington
+  district_name: Washington SD 52
+  district_nces_id: '1741040'
+  enrollment: 843
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-waterloo:
+  display_name: Waterloo
+  district_name: Waterloo CUSD 5
+  district_nces_id: '1741070'
+  enrollment: 2768
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-watseka:
+  display_name: Watseka
+  district_name: Iroquois County CUSD 9
+  district_nces_id: '1720170'
+  enrollment: 883
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wauconda:
+  display_name: Wauconda
+  district_name: Wauconda CUSD 118
+  district_nces_id: '1741190'
+  enrollment: 4387
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-waukegan:
+  display_name: Waukegan
+  district_name: Waukegan CUSD 60
+  district_nces_id: '1741250'
+  enrollment: 13679
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-west-chicago-1705880:
+  display_name: West Chicago
+  district_name: Benjamin SD 25
+  district_nces_id: '1705880'
+  enrollment: 632
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-west-chicago-1740440:
+  display_name: West Chicago
+  district_name: CHSD 94
+  district_nces_id: '1740440'
+  enrollment: 2076
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-west-chicago-1741550:
+  display_name: West Chicago
+  district_name: West Chicago ESD 33
+  district_nces_id: '1741550'
+  enrollment: 3357
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-west-frankfort:
+  display_name: West Frankfort
+  district_name: Frankfort CUSD 168
+  district_nces_id: '1741580'
+  enrollment: 1540
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-westchester:
+  display_name: Westchester
+  district_name: Westchester SD 92-5
+  district_nces_id: '1741790'
+  enrollment: 1036
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-western-springs:
+  display_name: Western Springs
+  district_name: Western Springs SD 101
+  district_nces_id: '1741820'
+  enrollment: 1466
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-westmont-1724000:
+  display_name: Westmont
+  district_name: Maercker SD 60
+  district_nces_id: '1724000'
+  enrollment: 1383
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-westmont-1741980:
+  display_name: Westmont
+  district_name: CUSD 201
+  district_nces_id: '1741980'
+  enrollment: 1327
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-westville:
+  display_name: Westville
+  district_name: Westville CUSD 2
+  district_nces_id: '1710820'
+  enrollment: 1198
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wheaton:
+  display_name: Wheaton
+  district_name: CUSD 200
+  district_nces_id: '1742180'
+  enrollment: 11638
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wheeling:
+  display_name: Wheeling
+  district_name: Wheeling CCSD 21
+  district_nces_id: '1742210'
+  enrollment: 6001
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-white-hall:
+  display_name: White Hall
+  district_name: North Greene CUSD 3
+  district_nces_id: '1742240'
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-williamsville:
+  display_name: Williamsville
+  district_name: Williamsville CUSD 15
+  district_nces_id: '1742480'
+  enrollment: 1494
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-willowbrook:
+  display_name: Willowbrook
+  district_name: Gower SD 62
+  district_nces_id: '1717160'
+  enrollment: 923
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wilmette-1704800:
+  display_name: Wilmette
+  district_name: Avoca SD 37
+  district_nces_id: '1704800'
+  enrollment: 661
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wilmette-1742600:
+  display_name: Wilmette
+  district_name: Wilmette SD 39
+  district_nces_id: '1742600'
+  enrollment: 3333
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wilmington:
+  display_name: Wilmington
+  district_name: Wilmington CUSD 209U
+  district_nces_id: '1742630'
+  enrollment: 1298
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-winchester:
+  display_name: Winchester
+  district_name: Winchester CUSD 1
+  district_nces_id: '1742660'
+  enrollment: 576
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-winnebago:
+  display_name: Winnebago
+  district_name: Winnebago CUSD 323
+  district_nces_id: '1742790'
+  enrollment: 1287
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-winnetka:
+  display_name: Winnetka
+  district_name: Winnetka SD 36
+  district_nces_id: '1742840'
+  enrollment: 1731
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-winthrop-harbor:
+  display_name: Winthrop Harbor
+  district_name: Winthrop Harbor SD 1
+  district_nces_id: '1742900'
+  enrollment: 588
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wood-dale:
+  display_name: Wood Dale
+  district_name: Wood Dale SD 7
+  district_nces_id: '1743020'
+  enrollment: 896
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wood-river-1712990:
+  display_name: Wood River
+  district_name: East Alton-Wood River CHSD 14
+  district_nces_id: '1712990'
+  enrollment: 537
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wood-river-1743050:
+  display_name: Wood River
+  district_name: Wood River-Hartford ESD 15
+  district_nces_id: '1743050'
+  enrollment: 592
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-woodridge:
+  display_name: Woodridge
+  district_name: Woodridge SD 68
+  district_nces_id: '1717040'
+  enrollment: 2708
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-woodstock:
+  display_name: Woodstock
+  district_name: Woodstock CUSD 200
+  district_nces_id: '1743330'
+  enrollment: 6159
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-worth:
+  display_name: Worth
+  district_name: Worth SD 127
+  district_nces_id: '1743380'
+  enrollment: 1011
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-wyoming:
+  display_name: Wyoming
+  district_name: Stark County CUSD 100
+  district_nces_id: '1737490'
+  enrollment: 692
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-yorkville:
+  display_name: Yorkville
+  district_name: Yorkville CUSD 115
+  district_nces_id: '1743960'
+  enrollment: 6937
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-zion-1743860:
+  display_name: Zion
+  district_name: Zion ESD 6
+  district_nces_id: '1743860'
+  enrollment: 2122
+  has_charters: false
+  source: ccd_auto
+  state: IL
+il-zion-1743890:
+  display_name: Zion
+  district_name: Zion-Benton Twp HSD 126
+  district_nces_id: '1743890'
+  enrollment: 2496
+  has_charters: false
+  source: ccd_auto
+  state: IL

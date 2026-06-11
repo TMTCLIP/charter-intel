@@ -1,0 +1,1136 @@
+al-abbeville:
+  display_name: Abbeville
+  district_name: Henry County
+  district_nces_id: '0101740'
+  enrollment: 2530
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-alabaster:
+  display_name: Alabaster
+  district_name: Alabaster City
+  district_nces_id: 0100190
+  enrollment: 6425
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-albertville:
+  display_name: Albertville
+  district_name: Albertville City
+  district_nces_id: '0100005'
+  enrollment: 5900
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-alexander-city:
+  display_name: Alexander City
+  district_name: Alexander City
+  district_nces_id: '0100030'
+  enrollment: 2899
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-andalusia-0100060:
+  display_name: Andalusia
+  district_name: Andalusia City
+  district_nces_id: '0100060'
+  enrollment: 1871
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-andalusia-0100930:
+  display_name: Andalusia
+  district_name: Covington County
+  district_nces_id: 0100930
+  enrollment: 3040
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-anniston-0100090:
+  display_name: Anniston
+  district_name: Anniston City
+  district_nces_id: 0100090
+  enrollment: 1892
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-anniston-0100540:
+  display_name: Anniston
+  district_name: Calhoun County
+  district_nces_id: '0100540'
+  enrollment: 8050
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-arab:
+  display_name: Arab
+  district_name: Arab City
+  district_nces_id: '0100100'
+  enrollment: 2653
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-ashland:
+  display_name: Ashland
+  district_name: Clay County
+  district_nces_id: '0100750'
+  enrollment: 1784
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-ashville:
+  display_name: Ashville
+  district_name: St Clair County
+  district_nces_id: '0103062'
+  enrollment: 9747
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-athens-0100120:
+  display_name: Athens
+  district_name: Athens City
+  district_nces_id: '0100120'
+  enrollment: 4840
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-athens-0102100:
+  display_name: Athens
+  district_name: Limestone County
+  district_nces_id: '0102100'
+  enrollment: 15887
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-attalla:
+  display_name: Attalla
+  district_name: Attalla City
+  district_nces_id: 0100180
+  enrollment: 1538
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-auburn:
+  display_name: Auburn
+  district_name: Auburn City
+  district_nces_id: '0100210'
+  enrollment: 9492
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-bay-minette:
+  display_name: Bay Minette
+  district_name: Baldwin County
+  district_nces_id: '0100270'
+  enrollment: 31517
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-bessemer:
+  display_name: Bessemer
+  district_name: Bessemer City
+  district_nces_id: '0100330'
+  enrollment: 3246
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-birmingham-0100204:
+  display_name: Birmingham
+  district_name: i3 Academy
+  district_nces_id: '0100204'
+  enrollment: 625
+  has_charters: true
+  source: ccd_auto
+  state: AL
+al-birmingham-0100390:
+  display_name: Birmingham
+  district_name: Birmingham City
+  district_nces_id: 0100390
+  enrollment: 21130
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-birmingham-0101920:
+  display_name: Birmingham
+  district_name: Jefferson County
+  district_nces_id: 0101920
+  enrollment: 35951
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-boaz:
+  display_name: Boaz
+  district_name: Boaz City
+  district_nces_id: '0100012'
+  enrollment: 2471
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-brewton-0100450:
+  display_name: Brewton
+  district_name: Brewton City
+  district_nces_id: '0100450'
+  enrollment: 1224
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-brewton-0101350:
+  display_name: Brewton
+  district_name: Escambia County
+  district_nces_id: '0101350'
+  enrollment: 4208
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-butler:
+  display_name: Butler
+  district_name: Choctaw County
+  district_nces_id: 0100690
+  enrollment: 1097
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-camden:
+  display_name: Camden
+  district_name: Wilcox County
+  district_nces_id: '0103510'
+  enrollment: 1240
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-carrollton:
+  display_name: Carrollton
+  district_name: Pickens County
+  district_nces_id: '0102730'
+  enrollment: 2373
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-centre:
+  display_name: Centre
+  district_name: Cherokee County
+  district_nces_id: '0100630'
+  enrollment: 3886
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-centreville:
+  display_name: Centreville
+  district_name: Bibb County
+  district_nces_id: '0100360'
+  enrollment: 3098
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-chatom:
+  display_name: Chatom
+  district_name: Washington County
+  district_nces_id: 0103480
+  enrollment: 2530
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-chickasaw:
+  display_name: Chickasaw
+  district_name: Chickasaw City
+  district_nces_id: 0100188
+  enrollment: 2654
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-clanton:
+  display_name: Clanton
+  district_name: Chilton County
+  district_nces_id: '0100660'
+  enrollment: 7858
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-clayton:
+  display_name: Clayton
+  district_name: Barbour County
+  district_nces_id: '0100300'
+  enrollment: 715
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-columbiana:
+  display_name: Columbiana
+  district_name: Shelby County
+  district_nces_id: '0103030'
+  enrollment: 21179
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-cullman-0100990:
+  display_name: Cullman
+  district_name: Cullman City
+  district_nces_id: 0100990
+  enrollment: 3226
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-cullman-0101020:
+  display_name: Cullman
+  district_name: Cullman County
+  district_nces_id: '0101020'
+  enrollment: 9846
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-dadeville:
+  display_name: Dadeville
+  district_name: Tallapoosa County
+  district_nces_id: '0103210'
+  enrollment: 2791
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-daleville:
+  display_name: Daleville
+  district_name: Daleville City
+  district_nces_id: 0101080
+  enrollment: 1154
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-decatur-0101170:
+  display_name: Decatur
+  district_name: Decatur City
+  district_nces_id: '0101170'
+  enrollment: 8745
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-decatur-0102480:
+  display_name: Decatur
+  district_name: Morgan County
+  district_nces_id: 0102480
+  enrollment: 7691
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-demopolis:
+  display_name: Demopolis
+  district_name: Demopolis City
+  district_nces_id: '0101200'
+  enrollment: 2064
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-dothan-0101230:
+  display_name: Dothan
+  district_name: Dothan City
+  district_nces_id: '0101230'
+  enrollment: 8254
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-dothan-0101770:
+  display_name: Dothan
+  district_name: Houston County
+  district_nces_id: '0101770'
+  enrollment: 6883
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-double-springs:
+  display_name: Double Springs
+  district_name: Winston County
+  district_nces_id: 0103580
+  enrollment: 2302
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-elba-0100810:
+  display_name: Elba
+  district_name: Coffee County
+  district_nces_id: 0100810
+  enrollment: 2846
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-elba-0101260:
+  display_name: Elba
+  district_name: Elba City
+  district_nces_id: '0101260'
+  enrollment: 685
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-enterprise:
+  display_name: Enterprise
+  district_name: Enterprise City
+  district_nces_id: '0101320'
+  enrollment: 6651
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-eufaula:
+  display_name: Eufaula
+  district_name: Eufaula City
+  district_nces_id: '0101410'
+  enrollment: 6289
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-eutaw:
+  display_name: Eutaw
+  district_name: Greene County
+  district_nces_id: 0101680
+  enrollment: 913
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-evergreen:
+  display_name: Evergreen
+  district_name: Conecuh County
+  district_nces_id: 0100870
+  enrollment: 1487
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-fairfield:
+  display_name: Fairfield
+  district_name: Fairfield City
+  district_nces_id: '0101440'
+  enrollment: 1476
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-fayette:
+  display_name: Fayette
+  district_name: Fayette County
+  district_nces_id: '0101470'
+  enrollment: 2163
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-florence-0101530:
+  display_name: Florence
+  district_name: Florence City
+  district_nces_id: '0101530'
+  enrollment: 4645
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-florence-0102010:
+  display_name: Florence
+  district_name: Lauderdale County
+  district_nces_id: '0102010'
+  enrollment: 8080
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-fort-payne:
+  display_name: Fort Payne
+  district_name: Fort Payne City
+  district_nces_id: '0101560'
+  enrollment: 3515
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-gadsden-0101380:
+  display_name: Gadsden
+  district_name: Etowah County
+  district_nces_id: 0101380
+  enrollment: 8702
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-gadsden-0101620:
+  display_name: Gadsden
+  district_name: Gadsden City
+  district_nces_id: '0101620'
+  enrollment: 4939
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-geneva-0101640:
+  display_name: Geneva
+  district_name: Geneva City
+  district_nces_id: '0101640'
+  enrollment: 1252
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-geneva-0101660:
+  display_name: Geneva
+  district_name: Geneva County
+  district_nces_id: '0101660'
+  enrollment: 2784
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-greensboro:
+  display_name: Greensboro
+  district_name: Hale County
+  district_nces_id: '0101710'
+  enrollment: 2318
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-greenville:
+  display_name: Greenville
+  district_name: Butler County
+  district_nces_id: '0100510'
+  enrollment: 2900
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-grove-hill:
+  display_name: Grove Hill
+  district_name: Clarke County
+  district_nces_id: '0100720'
+  enrollment: 2171
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-gulf-shores:
+  display_name: Gulf Shores
+  district_name: Gulf Shores City
+  district_nces_id: '0100202'
+  enrollment: 2450
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-guntersville-0100006:
+  display_name: Guntersville
+  district_name: Marshall County
+  district_nces_id: '0100006'
+  enrollment: 5951
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-guntersville-0101690:
+  display_name: Guntersville
+  district_name: Guntersville City
+  district_nces_id: 0101690
+  enrollment: 1851
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-haleyville:
+  display_name: Haleyville
+  district_name: Haleyville City
+  district_nces_id: '0101720'
+  enrollment: 1644
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-hamilton:
+  display_name: Hamilton
+  district_name: Marion County
+  district_nces_id: '0102310'
+  enrollment: 3329
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-hartselle:
+  display_name: Hartselle
+  district_name: Hartselle City
+  district_nces_id: '0101730'
+  enrollment: 3638
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-hayneville:
+  display_name: Hayneville
+  district_name: Lowndes County
+  district_nces_id: '0102160'
+  enrollment: 1176
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-heflin:
+  display_name: Heflin
+  district_name: Cleburne County
+  district_nces_id: 0100780
+  enrollment: 2507
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-homewood:
+  display_name: Homewood
+  district_name: Homewood City
+  district_nces_id: '0101760'
+  enrollment: 4371
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-hoover:
+  display_name: Hoover
+  district_name: Hoover City
+  district_nces_id: '0100007'
+  enrollment: 13557
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-huntsville-0101800:
+  display_name: Huntsville
+  district_name: Huntsville City
+  district_nces_id: 0101800
+  enrollment: 23776
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-huntsville-0102220:
+  display_name: Huntsville
+  district_name: Madison County
+  district_nces_id: '0102220'
+  enrollment: 20551
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-jacksonville:
+  display_name: Jacksonville
+  district_name: Jacksonville City
+  district_nces_id: 0101860
+  enrollment: 1752
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-jasper-0101890:
+  display_name: Jasper
+  district_name: Jasper City
+  district_nces_id: 0101890
+  enrollment: 2770
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-jasper-0103450:
+  display_name: Jasper
+  district_name: Walker County
+  district_nces_id: '0103450'
+  enrollment: 7188
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-lafayette:
+  display_name: Lafayette
+  district_name: Chambers County
+  district_nces_id: '0100600'
+  enrollment: 3158
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-lanett:
+  display_name: Lanett
+  district_name: Lanett City
+  district_nces_id: 0101980
+  enrollment: 963
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-leeds:
+  display_name: Leeds
+  district_name: Leeds City
+  district_nces_id: '0100011'
+  enrollment: 2223
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-linden:
+  display_name: Linden
+  district_name: Marengo County
+  district_nces_id: '0102250'
+  enrollment: 953
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-livingston-0100199:
+  display_name: Livingston
+  district_name: University Charter School
+  district_nces_id: 0100199
+  enrollment: 660
+  has_charters: true
+  source: ccd_auto
+  state: AL
+al-livingston-0103090:
+  display_name: Livingston
+  district_name: Sumter County
+  district_nces_id: 0103090
+  enrollment: 1006
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-luverne:
+  display_name: Luverne
+  district_name: Crenshaw County
+  district_nces_id: 0100960
+  enrollment: 2240
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-madison:
+  display_name: Madison
+  district_name: Madison City
+  district_nces_id: 0100008
+  enrollment: 12473
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-marion:
+  display_name: Marion
+  district_name: Perry County
+  district_nces_id: '0102670'
+  enrollment: 935
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-midfield:
+  display_name: Midfield
+  district_name: Midfield City
+  district_nces_id: '0102350'
+  enrollment: 1045
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-mobile-0100197:
+  display_name: Mobile
+  district_name: MAEF Public Charter Schools
+  district_nces_id: 0100197
+  enrollment: 648
+  has_charters: true
+  source: ccd_auto
+  state: AL
+al-mobile-0102370:
+  display_name: Mobile
+  district_name: Mobile County
+  district_nces_id: '0102370'
+  enrollment: 51979
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-monroeville:
+  display_name: Monroeville
+  district_name: Monroe County
+  district_nces_id: '0102400'
+  enrollment: 3077
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-montgomery-0100195:
+  display_name: Montgomery
+  district_name: Pike Road City
+  district_nces_id: 0100195
+  enrollment: 2695
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-montgomery-0100203:
+  display_name: Montgomery
+  district_name: LEAD Academy
+  district_nces_id: '0100203'
+  enrollment: 711
+  has_charters: true
+  source: ccd_auto
+  state: AL
+al-montgomery-0102430:
+  display_name: Montgomery
+  district_name: Montgomery County
+  district_nces_id: '0102430'
+  enrollment: 26821
+  has_charters: true
+  source: ccd_auto
+  state: AL
+al-moulton:
+  display_name: Moulton
+  district_name: Lawrence County
+  district_nces_id: '0102040'
+  enrollment: 4698
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-mountain-brook:
+  display_name: Mountain Brook
+  district_name: Mountain Brook City
+  district_nces_id: 0102490
+  enrollment: 4409
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-muscle-shoals:
+  display_name: Muscle Shoals
+  district_name: Muscle Shoals City
+  district_nces_id: '0102520'
+  enrollment: 2896
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-oneonta-0100420:
+  display_name: Oneonta
+  district_name: Blount County
+  district_nces_id: '0100420'
+  enrollment: 7798
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-oneonta-0102550:
+  display_name: Oneonta
+  district_name: Oneonta City
+  district_nces_id: '0102550'
+  enrollment: 1403
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-opelika-0102070:
+  display_name: Opelika
+  district_name: Lee County
+  district_nces_id: '0102070'
+  enrollment: 9312
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-opelika-0102580:
+  display_name: Opelika
+  district_name: Opelika City
+  district_nces_id: 0102580
+  enrollment: 5048
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-opp:
+  display_name: Opp
+  district_name: Opp City
+  district_nces_id: '0102610'
+  enrollment: 1329
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-orange-beach:
+  display_name: Orange Beach
+  district_name: Orange Beach City
+  district_nces_id: 0103581
+  enrollment: 1259
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-oxford:
+  display_name: Oxford
+  district_name: Oxford City
+  district_nces_id: '0102635'
+  enrollment: 4203
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-ozark-0101050:
+  display_name: Ozark
+  district_name: Dale County
+  district_nces_id: '0101050'
+  enrollment: 3270
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-ozark-0102640:
+  display_name: Ozark
+  district_name: Ozark City
+  district_nces_id: '0102640'
+  enrollment: 2054
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-pelham:
+  display_name: Pelham
+  district_name: Pelham City
+  district_nces_id: 0100194
+  enrollment: 3425
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-pell-city:
+  display_name: Pell City
+  district_name: Pell City
+  district_nces_id: '0102650'
+  enrollment: 4157
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-phenix-city-0102700:
+  display_name: Phenix City
+  district_name: Phenix City
+  district_nces_id: '0102700'
+  enrollment: 7218
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-phenix-city-0102880:
+  display_name: Phenix City
+  district_name: Russell County
+  district_nces_id: 0102880
+  enrollment: 3695
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-piedmont:
+  display_name: Piedmont
+  district_name: Piedmont City
+  district_nces_id: '0102760'
+  enrollment: 1131
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-prattville:
+  display_name: Prattville
+  district_name: Autauga County
+  district_nces_id: '0100240'
+  enrollment: 9202
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-rainsville:
+  display_name: Rainsville
+  district_name: DeKalb County
+  district_nces_id: '0101140'
+  enrollment: 8717
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-roanoke:
+  display_name: Roanoke
+  district_name: Roanoke City
+  district_nces_id: 0102850
+  enrollment: 1447
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-rockford:
+  display_name: Rockford
+  district_name: Coosa County
+  district_nces_id: 0100900
+  enrollment: 805
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-russellville-0101590:
+  display_name: Russellville
+  district_name: Franklin County
+  district_nces_id: 0101590
+  enrollment: 3637
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-russellville-0102910:
+  display_name: Russellville
+  district_name: Russellville City
+  district_nces_id: 0102910
+  enrollment: 2614
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-saraland:
+  display_name: Saraland
+  district_name: Saraland City
+  district_nces_id: 0100185
+  enrollment: 3354
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-satsuma:
+  display_name: Satsuma
+  district_name: Satsuma City
+  district_nces_id: 0100189
+  enrollment: 1502
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-scottsboro-0101830:
+  display_name: Scottsboro
+  district_name: Jackson County
+  district_nces_id: 0101830
+  enrollment: 5200
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-scottsboro-0102940:
+  display_name: Scottsboro
+  district_name: Scottsboro City
+  district_nces_id: 0102940
+  enrollment: 2416
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-selma-0101110:
+  display_name: Selma
+  district_name: Dallas County
+  district_nces_id: '0101110'
+  enrollment: 2488
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-selma-0102970:
+  display_name: Selma
+  district_name: Selma City
+  district_nces_id: 0102970
+  enrollment: 2587
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-sheffield:
+  display_name: Sheffield
+  district_name: Sheffield City
+  district_nces_id: '0103000'
+  enrollment: 1043
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-sylacauga:
+  display_name: Sylacauga
+  district_name: Sylacauga City
+  district_nces_id: '0103120'
+  enrollment: 2125
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-talladega-0103150:
+  display_name: Talladega
+  district_name: Talladega City
+  district_nces_id: '0103150'
+  enrollment: 1560
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-talladega-0103180:
+  display_name: Talladega
+  district_name: Talladega County
+  district_nces_id: 0103180
+  enrollment: 7204
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-tallassee:
+  display_name: Tallassee
+  district_name: Tallassee City
+  district_nces_id: '0103240'
+  enrollment: 1536
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-tarrant:
+  display_name: Tarrant
+  district_name: Tarrant City
+  district_nces_id: '0103270'
+  enrollment: 1271
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-thomasville:
+  display_name: Thomasville
+  district_name: Thomasville City
+  district_nces_id: '0103300'
+  enrollment: 1056
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-troy-0102790:
+  display_name: Troy
+  district_name: Pike County
+  district_nces_id: 0102790
+  enrollment: 2155
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-troy-0103330:
+  display_name: Troy
+  district_name: Troy City
+  district_nces_id: '0103330'
+  enrollment: 1763
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-trussville:
+  display_name: Trussville
+  district_name: Trussville City
+  district_nces_id: '0100013'
+  enrollment: 5065
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-tuscaloosa-0103360:
+  display_name: Tuscaloosa
+  district_name: Tuscaloosa City
+  district_nces_id: '0103360'
+  enrollment: 11186
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-tuscaloosa-0103390:
+  display_name: Tuscaloosa
+  district_name: Tuscaloosa County
+  district_nces_id: 0103390
+  enrollment: 19377
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-tuscumbia-0100840:
+  display_name: Tuscumbia
+  district_name: Colbert County
+  district_nces_id: 0100840
+  enrollment: 2621
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-tuscumbia-0103420:
+  display_name: Tuscumbia
+  district_name: Tuscumbia City
+  district_nces_id: '0103420'
+  enrollment: 1513
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-tuskegee:
+  display_name: Tuskegee
+  district_name: Macon County
+  district_nces_id: 0102190
+  enrollment: 1790
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-union-springs:
+  display_name: Union Springs
+  district_name: Bullock County
+  district_nces_id: 0100480
+  enrollment: 1397
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-vernon:
+  display_name: Vernon
+  district_name: Lamar County
+  district_nces_id: 0101950
+  enrollment: 2201
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-vestavia-hills:
+  display_name: Vestavia Hills
+  district_name: Vestavia Hills City
+  district_nces_id: '0103430'
+  enrollment: 7069
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-wedowee:
+  display_name: Wedowee
+  district_name: Randolph County
+  district_nces_id: 0102820
+  enrollment: 2090
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-wetumpka:
+  display_name: Wetumpka
+  district_name: Elmore County
+  district_nces_id: 0101290
+  enrollment: 11971
+  has_charters: false
+  source: ccd_auto
+  state: AL
+al-winfield:
+  display_name: Winfield
+  district_name: Winfield City
+  district_nces_id: '0103540'
+  enrollment: 1255
+  has_charters: false
+  source: ccd_auto
+  state: AL

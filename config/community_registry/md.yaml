@@ -1,0 +1,192 @@
+md-annapolis:
+  display_name: Annapolis
+  district_name: Anne Arundel County Public Schools
+  district_nces_id: '2400060'
+  enrollment: 84452
+  has_charters: true
+  source: ccd_auto
+  state: MD
+md-baltimore:
+  display_name: Baltimore
+  district_name: Baltimore City Public Schools
+  district_nces_id: '2400090'
+  enrollment: 75995
+  has_charters: true
+  source: ccd_auto
+  state: MD
+md-bel-air:
+  display_name: Bel Air
+  district_name: Harford County Public Schools
+  district_nces_id: '2400390'
+  enrollment: 38037
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-cambridge:
+  display_name: Cambridge
+  district_name: Dorchester County Public Schools
+  district_nces_id: '2400300'
+  enrollment: 4523
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-centreville:
+  display_name: Centreville
+  district_name: Queen Anne's County Public Schools
+  district_nces_id: '2400540'
+  enrollment: 7387
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-cumberland:
+  display_name: Cumberland
+  district_name: Allegany County Public Schools
+  district_nces_id: '2400030'
+  enrollment: 8181
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-denton:
+  display_name: Denton
+  district_name: Caroline County Public Schools
+  district_nces_id: '2400180'
+  enrollment: 5667
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-easton:
+  display_name: Easton
+  district_name: Talbot County Public Schools
+  district_nces_id: '2400630'
+  enrollment: 4523
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-elkton:
+  display_name: Elkton
+  district_name: Cecil County Public Schools
+  district_nces_id: '2400240'
+  enrollment: 15047
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-ellicott-city:
+  display_name: Ellicott City
+  district_name: Howard County Public Schools
+  district_nces_id: '2400420'
+  enrollment: 57676
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-frederick:
+  display_name: Frederick
+  district_name: Frederick County Public Schools
+  district_nces_id: '2400330'
+  enrollment: 46899
+  has_charters: true
+  source: ccd_auto
+  state: MD
+md-hagerstown:
+  display_name: Hagerstown
+  district_name: Washington County Public Schools
+  district_nces_id: '2400660'
+  enrollment: 22297
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-la-plata:
+  display_name: La Plata
+  district_name: Charles County Public Schools
+  district_nces_id: '2400270'
+  enrollment: 27598
+  has_charters: true
+  source: ccd_auto
+  state: MD
+md-leonardtown:
+  display_name: Leonardtown
+  district_name: St. Mary's County Public Schools
+  district_nces_id: '2400600'
+  enrollment: 17493
+  has_charters: true
+  source: ccd_auto
+  state: MD
+md-newark:
+  display_name: Newark
+  district_name: Worcester County Public Schools
+  district_nces_id: '2400720'
+  enrollment: 6841
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-oakland:
+  display_name: Oakland
+  district_name: Garrett County Public Schools
+  district_nces_id: '2400360'
+  enrollment: 3500
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-prince-frederick:
+  display_name: Prince Frederick
+  district_name: Calvert County Public Schools
+  district_nces_id: '2400150'
+  enrollment: 15461
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-rock-hall:
+  display_name: Rock Hall
+  district_name: Kent County Public Schools
+  district_nces_id: '2400450'
+  enrollment: 1751
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-rockville:
+  display_name: Rockville
+  district_name: Montgomery County Public Schools
+  district_nces_id: '2400480'
+  enrollment: 160554
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-salisbury:
+  display_name: Salisbury
+  district_name: Wicomico County Public Schools
+  district_nces_id: '2400690'
+  enrollment: 14900
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-towson:
+  display_name: Towson
+  district_name: Baltimore County Public Schools
+  district_nces_id: '2400120'
+  enrollment: 111082
+  has_charters: true
+  source: ccd_auto
+  state: MD
+md-upper-marlboro:
+  display_name: Upper Marlboro
+  district_name: Prince George's County Public Schools
+  district_nces_id: '2400510'
+  enrollment: 131133
+  has_charters: true
+  source: ccd_auto
+  state: MD
+md-westminster:
+  display_name: Westminster
+  district_name: Carroll County Public Schools
+  district_nces_id: '2400210'
+  enrollment: 25787
+  has_charters: false
+  source: ccd_auto
+  state: MD
+md-westover:
+  display_name: Westover
+  district_name: Somerset County Public Schools
+  district_nces_id: '2400570'
+  enrollment: 2773
+  has_charters: false
+  source: ccd_auto
+  state: MD

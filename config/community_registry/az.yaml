@@ -1,0 +1,2232 @@
+az-apache-junction:
+  display_name: Apache Junction
+  district_name: Apache Junction Unified District (4443)
+  district_nces_id: 0400790
+  enrollment: 3021
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-avondale-0400450:
+  display_name: Avondale
+  district_name: Agua Fria Union High School District (4289)
+  district_nces_id: '0400450'
+  enrollment: 9632
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-avondale-0400960:
+  display_name: Avondale
+  district_name: Avondale Elementary District (4272)
+  district_nces_id: 0400960
+  enrollment: 5898
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-avondale-0404440:
+  display_name: Avondale
+  district_name: Littleton Elementary District (4278)
+  district_nces_id: '0404440'
+  enrollment: 5877
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-bagdad:
+  display_name: Bagdad
+  district_name: Bagdad Unified District (4468)
+  district_nces_id: '0401000'
+  enrollment: 512
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-benson:
+  display_name: Benson
+  district_name: Benson Unified School District (79226)
+  district_nces_id: '0400212'
+  enrollment: 1376
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-bisbee:
+  display_name: Bisbee
+  district_name: Bisbee Unified District (4169)
+  district_nces_id: 0401180
+  enrollment: 685
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-buckeye-0400800:
+  display_name: Buckeye
+  district_name: The Odyssey Preparatory Academy Inc. (90287)
+  district_nces_id: 0400800
+  enrollment: 3437
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-buckeye-0401380:
+  display_name: Buckeye
+  district_name: Buckeye Elementary District (4269)
+  district_nces_id: 0401380
+  enrollment: 5725
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-buckeye-0401410:
+  display_name: Buckeye
+  district_name: Buckeye Union High School District (4284)
+  district_nces_id: '0401410'
+  enrollment: 5406
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-buckeye-0404320:
+  display_name: Buckeye
+  district_name: Liberty Elementary District (4266)
+  district_nces_id: '0404320'
+  enrollment: 4450
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-bullhead-city-0400082:
+  display_name: Bullhead City
+  district_name: Colorado River Union High School District (4381)
+  district_nces_id: 0400082
+  enrollment: 1906
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-bullhead-city-0400280:
+  display_name: Bullhead City
+  district_name: Mohave Accelerated Learning Center (79498)
+  district_nces_id: 0400280
+  enrollment: 507
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-bullhead-city-0400413:
+  display_name: Bullhead City
+  district_name: Mohave Accelerated Elementary School Inc. (85516)
+  district_nces_id: '0400413'
+  enrollment: 541
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-bullhead-city-0401500:
+  display_name: Bullhead City
+  district_name: Bullhead City School District (4378)
+  district_nces_id: '0401500'
+  enrollment: 2394
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-camp-verde:
+  display_name: Camp Verde
+  district_name: Camp Verde Unified District (4470)
+  district_nces_id: '0401600'
+  enrollment: 1582
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-casa-grande-0400892:
+  display_name: Casa Grande
+  district_name: Legacy Traditional School - Casa Grande (92199)
+  district_nces_id: 0400892
+  enrollment: 1543
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-casa-grande-0400953:
+  display_name: Casa Grande
+  district_name: The Grande Innovation Academy (92978)
+  district_nces_id: 0400953
+  enrollment: 829
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-casa-grande-0401710:
+  display_name: Casa Grande
+  district_name: Casa Grande Elementary District (4446)
+  district_nces_id: '0401710'
+  enrollment: 6579
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-casa-grande-0401740:
+  display_name: Casa Grande
+  district_name: Casa Grande Union High School District (4453)
+  district_nces_id: '0401740'
+  enrollment: 4002
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-chandler-0400329:
+  display_name: Chandler
+  district_name: American Virtual Academy (79461)
+  district_nces_id: 0400329
+  enrollment: 6392
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-chandler-0400778:
+  display_name: Chandler
+  district_name: Daisy Education Corporation dba Paragon Science Ac (89917)
+  district_nces_id: 0400778
+  enrollment: 548
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-chandler-0400855:
+  display_name: Chandler
+  district_name: Legacy Traditional School - Chandler (91133)
+  district_nces_id: 0400855
+  enrollment: 1102
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-chandler-0400899:
+  display_name: Chandler
+  district_name: Legacy Traditional School - Gilbert (92047)
+  district_nces_id: 0400899
+  enrollment: 1083
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-chandler-0400954:
+  display_name: Chandler
+  district_name: Legacy Traditional School - North Chandler (850101)
+  district_nces_id: 0400954
+  enrollment: 935
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-chandler-0400962:
+  display_name: Chandler
+  district_name: Legacy Traditional School - East Mesa (834265)
+  district_nces_id: 0400962
+  enrollment: 1049
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-chandler-0401006:
+  display_name: Chandler
+  district_name: Legacy Traditional School - Mesa (1001397)
+  district_nces_id: '0401006'
+  enrollment: 502
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-chandler-0401870:
+  display_name: Chandler
+  district_name: 'Chandler Unified District #80 (4242)'
+  district_nces_id: 0401870
+  enrollment: 43716
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-chinle:
+  display_name: Chinle
+  district_name: Chinle Unified District (4158)
+  district_nces_id: 0401940
+  enrollment: 3164
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-chino-valley:
+  display_name: Chino Valley
+  district_name: Chino Valley Unified District (4474)
+  district_nces_id: '0400003'
+  enrollment: 2438
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-cibecue:
+  display_name: Cibecue
+  district_name: Dishchii'bikoh Community School
+  district_nces_id: '5900145'
+  enrollment: 592
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-colorado-city-0400021:
+  display_name: Colorado City
+  district_name: Colorado City Unified District (4370)
+  district_nces_id: '0400021'
+  enrollment: 623
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-colorado-city-0400281:
+  display_name: Colorado City
+  district_name: Masada Charter School Inc. (79499)
+  district_nces_id: 0400281
+  enrollment: 508
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-coolidge-0400766:
+  display_name: Coolidge
+  district_name: Imagine Coolidge Elementary Inc. (89786)
+  district_nces_id: '0400766'
+  enrollment: 681
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-coolidge-0400769:
+  display_name: Coolidge
+  district_name: Imagine Prep Coolidge Inc. (90034)
+  district_nces_id: 0400769
+  enrollment: 526
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-coolidge-0402320:
+  display_name: Coolidge
+  district_name: Coolidge Unified District (4442)
+  district_nces_id: '0402320'
+  enrollment: 2585
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-cottonwood-0402370:
+  display_name: Cottonwood
+  district_name: Cottonwood-Oak Creek Elementary District (4487)
+  district_nces_id: '0402370'
+  enrollment: 1823
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-cottonwood-0405070:
+  display_name: Cottonwood
+  district_name: Mingus Union High School District (4488)
+  district_nces_id: '0405070'
+  enrollment: 1235
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-douglas:
+  display_name: Douglas
+  district_name: Douglas Unified District (4174)
+  district_nces_id: '0402530'
+  enrollment: 3852
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-eloy-0402790:
+  display_name: Eloy
+  district_name: Eloy Elementary District (4448)
+  district_nces_id: 0402790
+  enrollment: 787
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-eloy-0408550:
+  display_name: Eloy
+  district_name: Toltec School District (4450)
+  district_nces_id: 0408550
+  enrollment: 1133
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-flagstaff-0400097:
+  display_name: Flagstaff
+  district_name: Northland Preparatory Academy (4204)
+  district_nces_id: 0400097
+  enrollment: 641
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-flagstaff-0402860:
+  display_name: Flagstaff
+  district_name: Flagstaff Unified District (4192)
+  district_nces_id: 0402860
+  enrollment: 9043
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-florence:
+  display_name: Florence
+  district_name: Florence Unified School District (4437)
+  district_nces_id: 0402920
+  enrollment: 9090
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-fort-defiance:
+  display_name: Fort Defiance
+  district_name: Window Rock Unified District (4154)
+  district_nces_id: 0409430
+  enrollment: 1736
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-fort-huachuca:
+  display_name: Fort Huachuca
+  district_name: Fort Huachuca Accommodation District (4167)
+  district_nces_id: '0403150'
+  enrollment: 765
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-fort-thomas:
+  display_name: Fort Thomas
+  district_name: Fort Thomas Unified District (4221)
+  district_nces_id: '0403200'
+  enrollment: 620
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-fountain-hills:
+  display_name: Fountain Hills
+  district_name: Fountain Hills Unified District (4247)
+  district_nces_id: '0403040'
+  enrollment: 1190
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-ganado:
+  display_name: Ganado
+  district_name: Ganado Unified School District (4157)
+  district_nces_id: 0403290
+  enrollment: 1158
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-gilbert-0400395:
+  display_name: Gilbert
+  district_name: LEAD Charter Schools (79967)
+  district_nces_id: 0400395
+  enrollment: 1035
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-gilbert-0400427:
+  display_name: Gilbert
+  district_name: Arizona Connections Academy Charter School Inc. (87407)
+  district_nces_id: '0400427'
+  enrollment: 2576
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-gilbert-0400775:
+  display_name: Gilbert
+  district_name: San Tan Montessori School Inc. (89798)
+  district_nces_id: '0400775'
+  enrollment: 867
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-gilbert-0400803:
+  display_name: Gilbert
+  district_name: CAFA Inc. dba Learning Foundation and Performing  (90327)
+  district_nces_id: 0400803
+  enrollment: 738
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-gilbert-0400824:
+  display_name: Gilbert
+  district_name: Leading Edge Academy Maricopa (90637)
+  district_nces_id: 0400824
+  enrollment: 804
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-gilbert-0403400:
+  display_name: Gilbert
+  district_name: Gilbert Unified District (4239)
+  district_nces_id: '0403400'
+  enrollment: 33281
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-gilbert-0403780:
+  display_name: Gilbert
+  district_name: Higley Unified School District (4248)
+  district_nces_id: 0403780
+  enrollment: 13040
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-glendale-0400103:
+  display_name: Glendale
+  district_name: Ombudsman Educational Services Ltd.a subsidiary  (4323)
+  district_nces_id: '0400103'
+  enrollment: 1413
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-glendale-0400310:
+  display_name: Glendale
+  district_name: Calibre Academy (79055)
+  district_nces_id: '0400310'
+  enrollment: 546
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-glendale-0400311:
+  display_name: Glendale
+  district_name: E-Institute Charter Schools Inc. (79059)
+  district_nces_id: '0400311'
+  enrollment: 818
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-glendale-0400390:
+  display_name: Glendale
+  district_name: Camelback Education Inc (79905)
+  district_nces_id: 0400390
+  enrollment: 617
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-glendale-0400610:
+  display_name: Glendale
+  district_name: Desert Heights Charter Schools (81099)
+  district_nces_id: '0400610'
+  enrollment: 907
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-glendale-0400636:
+  display_name: Glendale
+  district_name: Blueprint Education (81041)
+  district_nces_id: '0400636'
+  enrollment: 607
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-glendale-0400948:
+  display_name: Glendale
+  district_name: Legacy Traditional School - Glendale (850100)
+  district_nces_id: 0400948
+  enrollment: 1273
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-glendale-0403420:
+  display_name: Glendale
+  district_name: Glendale Elementary District (4271)
+  district_nces_id: '0403420'
+  enrollment: 9450
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-glendale-0403450:
+  display_name: Glendale
+  district_name: Glendale Union High School District (4285)
+  district_nces_id: '0403450'
+  enrollment: 16535
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-glendale-0406250:
+  display_name: Glendale
+  district_name: Peoria Unified School District (4237)
+  district_nces_id: '0406250'
+  enrollment: 36527
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-glendale-0409060:
+  display_name: Glendale
+  district_name: Washington Elementary School District (4260)
+  district_nces_id: 0409060
+  enrollment: 19328
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-globe:
+  display_name: Globe
+  district_name: Globe Unified District (4208)
+  district_nces_id: '0403500'
+  enrollment: 1706
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-goodyear:
+  display_name: Goodyear
+  district_name: Legacy Traditional School - Goodyear (1000283)
+  district_nces_id: 0400991
+  enrollment: 586
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-green-valley:
+  display_name: Green Valley
+  district_name: Continental Elementary District (4416)
+  district_nces_id: '0402250'
+  enrollment: 639
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-heber:
+  display_name: Heber
+  district_name: Heber-Overgaard Unified District (4392)
+  district_nces_id: '0400026'
+  enrollment: 507
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-hereford:
+  display_name: Hereford
+  district_name: Palominas Elementary School District 49 (4180)
+  district_nces_id: 0405880
+  enrollment: 914
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-holbrook:
+  display_name: Holbrook
+  district_name: Holbrook Unified District (4389)
+  district_nces_id: 0403820
+  enrollment: 1843
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-kayenta:
+  display_name: Kayenta
+  district_name: 'Kayenta Unified School District #27 (4396)'
+  district_nces_id: '0404060'
+  enrollment: 1643
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-kingman-0400074:
+  display_name: Kingman
+  district_name: Kingman Academy Of Learning (4383)
+  district_nces_id: '0400074'
+  enrollment: 1349
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-kingman-0400295:
+  display_name: Kingman
+  district_name: Kingman Unified School District (79598)
+  district_nces_id: 0400295
+  enrollment: 7178
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-lake-havasu-city:
+  display_name: Lake Havasu City
+  district_name: Lake Havasu Unified District (4368)
+  district_nces_id: 0404280
+  enrollment: 5478
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-lakeside:
+  display_name: Lakeside
+  district_name: Blue Ridge Unified School District No. 32 (4397)
+  district_nces_id: 0406580
+  enrollment: 1754
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-laveen-0400871:
+  display_name: Laveen
+  district_name: Legacy Traditional School ? Laveen Village (91763)
+  district_nces_id: 0400871
+  enrollment: 1084
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-laveen-0400926:
+  display_name: Laveen
+  district_name: Heritage Academy Laveen Inc. (92520)
+  district_nces_id: 0400926
+  enrollment: 650
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-laveen-0404290:
+  display_name: Laveen
+  district_name: Laveen Elementary District (4276)
+  district_nces_id: 0404290
+  enrollment: 7766
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-litchfield-park:
+  display_name: Litchfield Park
+  district_name: Litchfield Elementary District (4281)
+  district_nces_id: 0404380
+  enrollment: 10828
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-marana:
+  display_name: Marana
+  district_name: Marana Unified District (4404)
+  district_nces_id: '0404630'
+  enrollment: 12823
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-maricopa-0400745:
+  display_name: Maricopa
+  district_name: Legacy Traditional School - Maricopa (88360)
+  district_nces_id: '0400745'
+  enrollment: 1268
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-maricopa-0400847:
+  display_name: Maricopa
+  district_name: Legacy Traditional School - Avondale (91135)
+  district_nces_id: 0400847
+  enrollment: 1305
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-maricopa-0404720:
+  display_name: Maricopa
+  district_name: Maricopa Unified School District (4441)
+  district_nces_id: '0404720'
+  enrollment: 8731
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-mayer:
+  display_name: Mayer
+  district_name: Mayer Unified School District (4473)
+  district_nces_id: 0404820
+  enrollment: 573
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-mesa-0400053:
+  display_name: Mesa
+  district_name: Heritage Academy Inc. (4336)
+  district_nces_id: '0400053'
+  enrollment: 1665
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0400112:
+  display_name: Mesa
+  district_name: American Leadership Academy Inc. (4348)
+  district_nces_id: '0400112'
+  enrollment: 13070
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0400157:
+  display_name: Mesa
+  district_name: Edkey Inc. - Sequoia Choice Schools (4329)
+  district_nces_id: '0400157'
+  enrollment: 3623
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0400218:
+  display_name: Mesa
+  district_name: American Basic Schools LLC (79215)
+  district_nces_id: 0400218
+  enrollment: 699
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0400244:
+  display_name: Mesa
+  district_name: Edkey Inc. - Sequoia Charter School (6446)
+  district_nces_id: '0400244'
+  enrollment: 734
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0400340:
+  display_name: Mesa
+  district_name: Noah Webster Schools - Mesa (10760)
+  district_nces_id: '0400340'
+  enrollment: 575
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0400406:
+  display_name: Mesa
+  district_name: Happy Valley School Inc. (79081)
+  district_nces_id: '0400406'
+  enrollment: 546
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0400638:
+  display_name: Mesa
+  district_name: Edkey Inc. - Pathfinder Academy (81045)
+  district_nces_id: 0400638
+  enrollment: 1035
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0400827:
+  display_name: Mesa
+  district_name: Arizona Education Solutions (90758)
+  district_nces_id: 0400827
+  enrollment: 1204
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0400904:
+  display_name: Mesa
+  district_name: Edkey Inc. - Sequoia Pathway Academy (92226)
+  district_nces_id: 0400904
+  enrollment: 843
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-mesa-0404970:
+  display_name: Mesa
+  district_name: Mesa Unified District (4235)
+  district_nces_id: 0404970
+  enrollment: 58343
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-miami:
+  display_name: Miami
+  district_name: Miami Unified District (4211)
+  district_nces_id: '0405030'
+  enrollment: 933
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-mohave-valley:
+  display_name: Mohave Valley
+  district_name: Mohave Valley Elementary District (4379)
+  district_nces_id: 0405190
+  enrollment: 1201
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-morenci:
+  display_name: Morenci
+  district_name: Morenci Unified District (4230)
+  district_nces_id: '0405320'
+  enrollment: 1524
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-nogales:
+  display_name: Nogales
+  district_name: Nogales Unified District (4457)
+  district_nces_id: '0405530'
+  enrollment: 5687
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-page:
+  display_name: Page
+  district_name: 'Page Unified School District #8  (4196)'
+  district_nces_id: 0405820
+  enrollment: 2462
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-parker:
+  display_name: Parker
+  district_name: Parker Unified School District (4510)
+  district_nces_id: 0405980
+  enrollment: 1722
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-payson:
+  display_name: Payson
+  district_name: Payson Unified District (4209)
+  district_nces_id: '0406070'
+  enrollment: 2318
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-peoria-0400758:
+  display_name: Peoria
+  district_name: Candeo Schools Inc. (89758)
+  district_nces_id: 0400758
+  enrollment: 594
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-peoria-0400816:
+  display_name: Peoria
+  district_name: Educational Options Foundation (90201)
+  district_nces_id: 0400816
+  enrollment: 624
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-peoria-0400951:
+  display_name: Peoria
+  district_name: Legacy Traditional School - Peoria (850099)
+  district_nces_id: 0400951
+  enrollment: 657
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-peoria-0400963:
+  display_name: Peoria
+  district_name: BASIS Charter Schools Inc. (273398)
+  district_nces_id: 0400963
+  enrollment: 673
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400031:
+  display_name: Phoenix
+  district_name: Ridgeline Academy Inc. (4301)
+  district_nces_id: '0400031'
+  enrollment: 1022
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400034:
+  display_name: Phoenix
+  district_name: Reid Traditional Schools' Valley Academy Inc. (4306)
+  district_nces_id: '0400034'
+  enrollment: 685
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400056:
+  display_name: Phoenix
+  district_name: Arizona School For The Arts (4345)
+  district_nces_id: '0400056'
+  enrollment: 814
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400100:
+  display_name: Phoenix
+  district_name: Ball Charter Schools (Hearn) (4294)
+  district_nces_id: '0400100'
+  enrollment: 663
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400131:
+  display_name: Phoenix
+  district_name: The Charter Foundation Inc. (6355)
+  district_nces_id: '0400131'
+  enrollment: 627
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400149:
+  display_name: Phoenix
+  district_name: Kaizen Education Foundation dba El Dorado High Sch (4342)
+  district_nces_id: 0400149
+  enrollment: 726
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400190:
+  display_name: Phoenix
+  district_name: Liberty Traditional Charter School (10968)
+  district_nces_id: 0400190
+  enrollment: 577
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400191:
+  display_name: Phoenix
+  district_name: Fit Kids Inc. dba Champion Schools (78783)
+  district_nces_id: 0400191
+  enrollment: 1274
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400219:
+  display_name: Phoenix
+  district_name: Career Success Schools (79047)
+  district_nces_id: 0400219
+  enrollment: 1071
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400225:
+  display_name: Phoenix
+  district_name: Horizon Community Learning Center Inc. (79264)
+  district_nces_id: '0400225'
+  enrollment: 698
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400290:
+  display_name: Phoenix
+  district_name: Pan-American Elementary Charter (79578)
+  district_nces_id: 0400290
+  enrollment: 1123
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400303:
+  display_name: Phoenix
+  district_name: North Star Charter School Inc. (79701)
+  district_nces_id: '0400303'
+  enrollment: 1136
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400327:
+  display_name: Phoenix
+  district_name: Pointe Schools (79455)
+  district_nces_id: '0400327'
+  enrollment: 645
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400353:
+  display_name: Phoenix
+  district_name: American Charter Schools Foundation d.b.a. Peoria  (79875)
+  district_nces_id: '0400353'
+  enrollment: 549
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400402:
+  display_name: Phoenix
+  district_name: Cholla Academy (5186)
+  district_nces_id: '0400402'
+  enrollment: 536
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400424:
+  display_name: Phoenix
+  district_name: Rosefield Charter Elementary School Inc. (87399)
+  district_nces_id: '0400424'
+  enrollment: 508
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400425:
+  display_name: Phoenix
+  district_name: East Mesa Charter Elementary School Inc. (87401)
+  district_nces_id: '0400425'
+  enrollment: 628
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400432:
+  display_name: Phoenix
+  district_name: Portable Practical Educational Preparation Inc. ( (87405)
+  district_nces_id: '0400432'
+  enrollment: 6225
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400438:
+  display_name: Phoenix
+  district_name: Imagine Charter Elementary at Desert West Inc. (88367)
+  district_nces_id: 0400438
+  enrollment: 694
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400440:
+  display_name: Phoenix
+  district_name: Chandler Preparatory Academy (88299)
+  district_nces_id: '0400440'
+  enrollment: 713
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400600:
+  display_name: Phoenix
+  district_name: Alhambra Elementary District (4280)
+  district_nces_id: '0400600'
+  enrollment: 10157
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400618:
+  display_name: Phoenix
+  district_name: American Charter Schools Foundation d.b.a. South P (80989)
+  district_nces_id: 0400618
+  enrollment: 555
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400649:
+  display_name: Phoenix
+  district_name: Heritage Elementary School (81076)
+  district_nces_id: 0400649
+  enrollment: 892
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400655:
+  display_name: Phoenix
+  district_name: Veritas Preparatory Academy (80992)
+  district_nces_id: '0400655'
+  enrollment: 801
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400757:
+  display_name: Phoenix
+  district_name: Arete Preparatory Academy (89486)
+  district_nces_id: '0400757'
+  enrollment: 560
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400760:
+  display_name: Phoenix
+  district_name: Glendale Preparatory Academy (89829)
+  district_nces_id: '0400760'
+  enrollment: 610
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400764:
+  display_name: Phoenix
+  district_name: ASU Preparatory Academy (89949)
+  district_nces_id: '0400764'
+  enrollment: 514
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400793:
+  display_name: Phoenix
+  district_name: Morrison Education Group Inc. (90192)
+  district_nces_id: 0400793
+  enrollment: 575
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400805:
+  display_name: Phoenix
+  district_name: Choice Academies Inc. (90138)
+  district_nces_id: 0400805
+  enrollment: 658
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400819:
+  display_name: Phoenix
+  district_name: Anthem Preparatory Academy (90532)
+  district_nces_id: 0400819
+  enrollment: 1029
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400823:
+  display_name: Phoenix
+  district_name: Kaizen Education Foundation dba Mission Heights Pr (90548)
+  district_nces_id: 0400823
+  enrollment: 631
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400832:
+  display_name: Phoenix
+  district_name: Archway Classical Academy Trivium West (90915)
+  district_nces_id: 0400832
+  enrollment: 886
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400833:
+  display_name: Phoenix
+  district_name: Archway Classical Academy Veritas (90916)
+  district_nces_id: 0400833
+  enrollment: 716
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400834:
+  display_name: Phoenix
+  district_name: Archway Classical Academy Chandler (90917)
+  district_nces_id: 0400834
+  enrollment: 533
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400841:
+  display_name: Phoenix
+  district_name: Archway Classical Academy Scottsdale (90857)
+  district_nces_id: 0400841
+  enrollment: 1059
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400843:
+  display_name: Phoenix
+  district_name: BASIS Charter Schools Inc. (91280)
+  district_nces_id: 0400843
+  enrollment: 744
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400851:
+  display_name: Phoenix
+  district_name: Trivium Preparatory Academy (90859)
+  district_nces_id: 0400851
+  enrollment: 894
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400861:
+  display_name: Phoenix
+  district_name: North Phoenix Preparatory Academy (90879)
+  district_nces_id: 0400861
+  enrollment: 522
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400863:
+  display_name: Phoenix
+  district_name: The Paideia Academies Inc (91250)
+  district_nces_id: 0400863
+  enrollment: 821
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400866:
+  display_name: Phoenix
+  district_name: Archway Classical Academy Glendale (91878)
+  district_nces_id: 0400866
+  enrollment: 559
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400873:
+  display_name: Phoenix
+  district_name: Archway Classical Academy North Phoenix (91758)
+  district_nces_id: 0400873
+  enrollment: 818
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400875:
+  display_name: Phoenix
+  district_name: Maryvale Preparatory Academy (90861)
+  district_nces_id: 0400875
+  enrollment: 1043
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400877:
+  display_name: Phoenix
+  district_name: Empower College Prep (91277)
+  district_nces_id: 0400877
+  enrollment: 1047
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400887:
+  display_name: Phoenix
+  district_name: Vista College Preparatory Inc. (91948)
+  district_nces_id: 0400887
+  enrollment: 1342
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400888:
+  display_name: Phoenix
+  district_name: Archway Classical Academy Arete (92312)
+  district_nces_id: 0400888
+  enrollment: 538
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400900:
+  display_name: Phoenix
+  district_name: Cicero Preparatory Academy (92316)
+  district_nces_id: 0400900
+  enrollment: 502
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400913:
+  display_name: Phoenix
+  district_name: Arizona Autism Charter Schools Inc. (91958)
+  district_nces_id: 0400913
+  enrollment: 721
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400919:
+  display_name: Phoenix
+  district_name: Lincoln Preparatory Academy (92657)
+  district_nces_id: 0400919
+  enrollment: 536
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400921:
+  display_name: Phoenix
+  district_name: Horizon Community Learning Center Inc. (92620)
+  district_nces_id: 0400921
+  enrollment: 820
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400924:
+  display_name: Phoenix
+  district_name: Western School of Science and Technology Inc. (91937)
+  district_nces_id: 0400924
+  enrollment: 522
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400925:
+  display_name: Phoenix
+  district_name: Archway Classical Academy Lincoln (92656)
+  district_nces_id: 0400925
+  enrollment: 734
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400930:
+  display_name: Phoenix
+  district_name: Roosevelt Preparatory Academy (92704)
+  district_nces_id: 0400930
+  enrollment: 640
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400940:
+  display_name: Phoenix
+  district_name: Academy of Mathematics and Science Inc. (92768)
+  district_nces_id: 0400940
+  enrollment: 1058
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400959:
+  display_name: Phoenix
+  district_name: Legacy Traditional School - Phoenix (873957)
+  district_nces_id: 0400959
+  enrollment: 1312
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400964:
+  display_name: Phoenix
+  district_name: Synergy Public School Inc. (92981)
+  district_nces_id: 0400964
+  enrollment: 595
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400967:
+  display_name: Phoenix
+  district_name: BASIS Charter Schools Inc. (934316)
+  district_nces_id: 0400967
+  enrollment: 770
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0400997:
+  display_name: Phoenix
+  district_name: Legacy Traditional School - North Phoenix (1000568)
+  district_nces_id: 0400997
+  enrollment: 535
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-phoenix-0401050:
+  display_name: Phoenix
+  district_name: Balsz Elementary District (4268)
+  district_nces_id: '0401050'
+  enrollment: 2176
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0401680:
+  display_name: Phoenix
+  district_name: Cartwright Elementary District (4282)
+  district_nces_id: 0401680
+  enrollment: 14338
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0402430:
+  display_name: Phoenix
+  district_name: Creighton Elementary District (4263)
+  district_nces_id: '0402430'
+  enrollment: 5075
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0403060:
+  display_name: Phoenix
+  district_name: Fowler Elementary District (4273)
+  district_nces_id: '0403060'
+  enrollment: 3815
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0403960:
+  display_name: Phoenix
+  district_name: Isaac Elementary District (4259)
+  district_nces_id: 0403960
+  enrollment: 5077
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0404500:
+  display_name: Phoenix
+  district_name: Madison Elementary District (4270)
+  district_nces_id: '0404500'
+  enrollment: 5844
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0405400:
+  display_name: Phoenix
+  district_name: Murphy Elementary District (4265)
+  district_nces_id: '0405400'
+  enrollment: 1229
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0405670:
+  display_name: Phoenix
+  district_name: Osborn Elementary District (4262)
+  district_nces_id: '0405670'
+  enrollment: 2538
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0405930:
+  display_name: Phoenix
+  district_name: Paradise Valley Unified District (4241)
+  district_nces_id: 0405930
+  enrollment: 27919
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0406210:
+  display_name: Phoenix
+  district_name: Pendergast Elementary District (4283)
+  district_nces_id: '0406210'
+  enrollment: 8266
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0406300:
+  display_name: Phoenix
+  district_name: Phoenix Elementary District (4256)
+  district_nces_id: '0406300'
+  enrollment: 5249
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0406330:
+  display_name: Phoenix
+  district_name: Phoenix Union High School District (4286)
+  district_nces_id: '0406330'
+  enrollment: 27900
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0407020:
+  display_name: Phoenix
+  district_name: Riverside Elementary District (4257)
+  district_nces_id: '0407020'
+  enrollment: 822
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0407080:
+  display_name: Phoenix
+  district_name: Roosevelt Elementary District (4279)
+  district_nces_id: 0407080
+  enrollment: 7214
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0407750:
+  display_name: Phoenix
+  district_name: Deer Valley Unified District (4246)
+  district_nces_id: '0407750'
+  enrollment: 33199
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-phoenix-0409390:
+  display_name: Phoenix
+  district_name: Wilson Elementary District (4261)
+  district_nces_id: 0409390
+  enrollment: 1077
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-pima:
+  display_name: Pima
+  district_name: Pima Unified District (4220)
+  district_nces_id: '0406440'
+  enrollment: 1096
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-pinon:
+  display_name: Pinon
+  district_name: Pinon Unified District (4390)
+  district_nces_id: '0400023'
+  enrollment: 1053
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-prescott-0400903:
+  display_name: Prescott
+  district_name: BASIS Charter Schools Inc. (92320)
+  district_nces_id: 0400903
+  enrollment: 611
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-prescott-0406730:
+  display_name: Prescott
+  district_name: Prescott Unified District (4466)
+  district_nces_id: '0406730'
+  enrollment: 3948
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-prescott-valley-0400320:
+  display_name: Prescott Valley
+  district_name: Acorn Montessori Charter School (79437)
+  district_nces_id: '0400320'
+  enrollment: 518
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-prescott-valley-0403870:
+  display_name: Prescott Valley
+  district_name: Humboldt Unified District (4469)
+  district_nces_id: 0403870
+  enrollment: 5606
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-queen-creek-0400065:
+  display_name: Queen Creek
+  district_name: Benjamin Franklin Charter School - Queen Creek (4355)
+  district_nces_id: '0400065'
+  enrollment: 3145
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-queen-creek-0400746:
+  display_name: Queen Creek
+  district_name: Eduprize Schools LLC (89412)
+  district_nces_id: '0400746'
+  enrollment: 3119
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-queen-creek-0400911:
+  display_name: Queen Creek
+  district_name: Heritage Academy Gateway Inc. (92519)
+  district_nces_id: 0400911
+  enrollment: 1370
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-queen-creek-0406810:
+  display_name: Queen Creek
+  district_name: Queen Creek Unified District (4245)
+  district_nces_id: 0406810
+  enrollment: 13818
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-rio-rico:
+  display_name: Rio Rico
+  district_name: Santa Cruz Valley Unified District (4458)
+  district_nces_id: '0407520'
+  enrollment: 3673
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-safford:
+  display_name: Safford
+  district_name: Safford Unified District (4218)
+  district_nces_id: '0407240'
+  enrollment: 2943
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-sahuarita:
+  display_name: Sahuarita
+  district_name: Sahuarita Unified District (4411)
+  district_nces_id: '0407300'
+  enrollment: 6483
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-san-carlos:
+  display_name: San Carlos
+  district_name: San Carlos Unified District (4210)
+  district_nces_id: 0406960
+  enrollment: 1404
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-san-luis:
+  display_name: San Luis
+  district_name: Gadsden Elementary District (4505)
+  district_nces_id: '0403240'
+  enrollment: 5133
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-san-manuel:
+  display_name: San Manuel
+  district_name: Mammoth-San Manuel Unified District (4439)
+  district_nces_id: '0404570'
+  enrollment: 534
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-san-tan-valley-0400927:
+  display_name: San Tan Valley
+  district_name: Legacy Traditional School - Queen Creek (92610)
+  district_nces_id: 0400927
+  enrollment: 1119
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-san-tan-valley-0409736:
+  display_name: San Tan Valley
+  district_name: Legacy Traditional School-San Tan (1001927)
+  district_nces_id: 0409736
+  enrollment: 585
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-san-tan-vly:
+  display_name: San Tan Vly
+  district_name: J O Combs Unified School District (4445)
+  district_nces_id: 0403990
+  enrollment: 4401
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-sanders:
+  display_name: Sanders
+  district_name: Sanders Unified District (4156)
+  district_nces_id: '0406740'
+  enrollment: 616
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400001:
+  display_name: Scottsdale
+  district_name: Cave Creek Unified District (4244)
+  district_nces_id: '0400001'
+  enrollment: 4499
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400134:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (6361)
+  district_nces_id: '0400134'
+  enrollment: 806
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400608:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (81078)
+  district_nces_id: 0400608
+  enrollment: 994
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400747:
+  display_name: Scottsdale
+  district_name: Scottsdale Preparatory Academy (89756)
+  district_nces_id: '0400747'
+  enrollment: 875
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400818:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (90508)
+  district_nces_id: 0400818
+  enrollment: 565
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400829:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (90841)
+  district_nces_id: 0400829
+  enrollment: 974
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400830:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (90842)
+  district_nces_id: 0400830
+  enrollment: 1146
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400831:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (90862)
+  district_nces_id: 0400831
+  enrollment: 737
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400897:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (91339)
+  district_nces_id: 0400897
+  enrollment: 692
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400898:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (91949)
+  district_nces_id: 0400898
+  enrollment: 840
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400905:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (92318)
+  district_nces_id: 0400905
+  enrollment: 666
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400937:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (92863)
+  district_nces_id: 0400937
+  enrollment: 534
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400943:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (92736)
+  district_nces_id: 0400943
+  enrollment: 690
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0400958:
+  display_name: Scottsdale
+  district_name: BASIS Charter Schools Inc. (92997)
+  district_nces_id: 0400958
+  enrollment: 643
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-scottsdale-0407570:
+  display_name: Scottsdale
+  district_name: Scottsdale Unified District (4240)
+  district_nces_id: '0407570'
+  enrollment: 21177
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-sedona:
+  display_name: Sedona
+  district_name: 'Sedona-Oak Creek JUSD #9 (4467)'
+  district_nces_id: 0409733
+  enrollment: 748
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-sells:
+  display_name: Sells
+  district_name: 'Baboquivari Unified School District #40 (4412)'
+  district_nces_id: 0403950
+  enrollment: 1080
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-show-low:
+  display_name: Show Low
+  district_name: Show Low Unified District  (4393)
+  district_nces_id: '0407700'
+  enrollment: 2569
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-sierra-vista-0400016:
+  display_name: Sierra Vista
+  district_name: Center for Academic Success Inc. (4191)
+  district_nces_id: '0400016'
+  enrollment: 1141
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-sierra-vista-0401460:
+  display_name: Sierra Vista
+  district_name: Sierra Vista Unified District (4175)
+  district_nces_id: '0401460'
+  enrollment: 4761
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-snowflake:
+  display_name: Snowflake
+  district_name: Snowflake Unified District (4391)
+  district_nces_id: 0407820
+  enrollment: 2948
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-somerton:
+  display_name: Somerton
+  district_name: Somerton Elementary District (4500)
+  district_nces_id: 0407890
+  enrollment: 2877
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-springerville:
+  display_name: Springerville
+  district_name: Round Valley Unified District (4155)
+  district_nces_id: '0407130'
+  enrollment: 1376
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-st-johns:
+  display_name: St Johns
+  district_name: St Johns Unified District (4153)
+  district_nces_id: 0408080
+  enrollment: 965
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-surprise-0400241:
+  display_name: Surprise
+  district_name: Paragon Management Inc. (5180)
+  district_nces_id: '0400241'
+  enrollment: 2794
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-surprise-0400326:
+  display_name: Surprise
+  district_name: Success School (79453)
+  district_nces_id: '0400326'
+  enrollment: 982
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-surprise-0400933:
+  display_name: Surprise
+  district_name: Legacy Traditional School - Surprise (92879)
+  district_nces_id: 0400933
+  enrollment: 2263
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-surprise-0400966:
+  display_name: Surprise
+  district_name: Highland Prep (92982)
+  district_nces_id: 0400966
+  enrollment: 514
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-surprise-0400996:
+  display_name: Surprise
+  district_name: Legacy Traditional School - West Surprise (1000560)
+  district_nces_id: 0400996
+  enrollment: 1165
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-surprise-0402690:
+  display_name: Surprise
+  district_name: Dysart Unified District (4243)
+  district_nces_id: 0402690
+  enrollment: 23173
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tempe-0400273:
+  display_name: Tempe
+  district_name: GAR LLC dba Student Choice High School (78997)
+  district_nces_id: '0400273'
+  enrollment: 2040
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tempe-0400965:
+  display_name: Tempe
+  district_name: ASU Preparatory Academy Digital (522074)
+  district_nces_id: 0400965
+  enrollment: 3455
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tempe-0404230:
+  display_name: Tempe
+  district_name: Kyrene Elementary District (4267)
+  district_nces_id: '0404230'
+  enrollment: 14401
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tempe-0408310:
+  display_name: Tempe
+  district_name: Tempe School District (4258)
+  district_nces_id: 0408310
+  enrollment: 10759
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tempe-0408340:
+  display_name: Tempe
+  district_name: Tempe Union High School District (4287)
+  district_nces_id: 0408340
+  enrollment: 12664
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-thatcher:
+  display_name: Thatcher
+  district_name: Thatcher Unified District (4219)
+  district_nces_id: 0408410
+  enrollment: 1849
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tolleson-0400239:
+  display_name: Tolleson
+  district_name: P.L.C. Charter Schools (6235)
+  district_nces_id: 0400239
+  enrollment: 875
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tolleson-0408490:
+  display_name: Tolleson
+  district_name: Tolleson Elementary District (4264)
+  district_nces_id: 0408490
+  enrollment: 2859
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tolleson-0408520:
+  display_name: Tolleson
+  district_name: Tolleson Union High School District (4288)
+  district_nces_id: 0408520
+  enrollment: 13741
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tolleson-0408820:
+  display_name: Tolleson
+  district_name: Union Elementary District (4277)
+  district_nces_id: 0408820
+  enrollment: 1685
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tombstone:
+  display_name: Tombstone
+  district_name: Tombstone Unified District (4168)
+  district_nces_id: 0408600
+  enrollment: 872
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tonopah:
+  display_name: Tonopah
+  district_name: Saddle Mountain Unified School District (4254)
+  district_nces_id: '0407170'
+  enrollment: 3146
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tuba-city-0408680:
+  display_name: Tuba City
+  district_name: 'Tuba City Unified School District #15 (4197)'
+  district_nces_id: 0408680
+  enrollment: 1472
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tuba-city-5900037:
+  display_name: Tuba City
+  district_name: Tuba City Boarding School
+  district_nces_id: '5900037'
+  enrollment: 1098
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tucson-0400079:
+  display_name: Tucson
+  district_name: Tucson Youth Development/ACE Charter High School (4422)
+  district_nces_id: 0400079
+  enrollment: 550
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400083:
+  display_name: Tucson
+  district_name: Portable Practical Educational Preparation Inc. ( (4431)
+  district_nces_id: 0400083
+  enrollment: 726
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400202:
+  display_name: Tucson
+  district_name: Academy of Tucson Inc. (78897)
+  district_nces_id: '0400202'
+  enrollment: 501
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400223:
+  display_name: Tucson
+  district_name: Daisy Education Corporation dba Sonoran Science Ac (79049)
+  district_nces_id: '0400223'
+  enrollment: 791
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400255:
+  display_name: Tucson
+  district_name: Tucson Country Day School Inc. (79073)
+  district_nces_id: '0400255'
+  enrollment: 509
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400361:
+  display_name: Tucson
+  district_name: Arizona Community Development Corporation (79947)
+  district_nces_id: '0400361'
+  enrollment: 2038
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400368:
+  display_name: Tucson
+  district_name: Academy of Mathematics and Science Inc. (79961)
+  district_nces_id: 0400368
+  enrollment: 792
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400680:
+  display_name: Tucson
+  district_name: Amphitheater Unified District (4406)
+  district_nces_id: 0400680
+  enrollment: 12042
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tucson-0400781:
+  display_name: Tucson
+  district_name: Math and Science Success Academy Inc. (89852)
+  district_nces_id: 0400781
+  enrollment: 727
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400797:
+  display_name: Tucson
+  district_name: Academy Del Sol Inc. (90199)
+  district_nces_id: 0400797
+  enrollment: 720
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400842:
+  display_name: Tucson
+  district_name: Legacy Traditional School - Northwest Tucson (91137)
+  district_nces_id: 0400842
+  enrollment: 1321
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400878:
+  display_name: Tucson
+  district_name: BASIS Charter Schools Inc. (91309)
+  district_nces_id: 0400878
+  enrollment: 801
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400891:
+  display_name: Tucson
+  district_name: Academy of Mathematics and Science South Inc. (90878)
+  district_nces_id: 0400891
+  enrollment: 5818
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0400944:
+  display_name: Tucson
+  district_name: Leman Academy of Excellence Inc. (92730)
+  district_nces_id: 0400944
+  enrollment: 5003
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-tucson-0401760:
+  display_name: Tucson
+  district_name: Catalina Foothills Unified District (4410)
+  district_nces_id: '0401760'
+  enrollment: 5252
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tucson-0403010:
+  display_name: Tucson
+  district_name: Flowing Wells Unified District (4405)
+  district_nces_id: '0403010'
+  enrollment: 5408
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tucson-0404770:
+  display_name: Tucson
+  district_name: Altar Valley Elementary District (4418)
+  district_nces_id: '0404770'
+  enrollment: 585
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tucson-0405360:
+  display_name: Tucson
+  district_name: Pima County Accommodation School District (4401)
+  district_nces_id: '0405360'
+  enrollment: 907
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tucson-0408170:
+  display_name: Tucson
+  district_name: Sunnyside Unified District (4407)
+  district_nces_id: 0408170
+  enrollment: 14541
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tucson-0408280:
+  display_name: Tucson
+  district_name: Tanque Verde Unified District (4408)
+  district_nces_id: 0408280
+  enrollment: 2245
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-tucson-0408800:
+  display_name: Tucson
+  district_name: Tucson Unified District (4403)
+  district_nces_id: 0408800
+  enrollment: 41511
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-vail:
+  display_name: Vail
+  district_name: Vail Unified District (4413)
+  district_nces_id: 0408850
+  enrollment: 14533
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-whiteriver:
+  display_name: Whiteriver
+  district_name: Whiteriver Unified District (4394)
+  district_nces_id: 0409160
+  enrollment: 2364
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-wickenburg:
+  display_name: Wickenburg
+  district_name: Wickenburg Unified District (4236)
+  district_nces_id: 0409190
+  enrollment: 1298
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-willcox:
+  display_name: Willcox
+  district_name: Willcox Unified District (4170)
+  district_nces_id: 0409250
+  enrollment: 1076
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-williams:
+  display_name: Williams
+  district_name: Williams Unified District (4193)
+  district_nces_id: 0409310
+  enrollment: 668
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-winslow:
+  display_name: Winslow
+  district_name: Winslow Unified District (4387)
+  district_nces_id: 0409460
+  enrollment: 1879
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-wittmann:
+  display_name: Wittmann
+  district_name: Nadaburg Unified School District (4252)
+  district_nces_id: '0405460'
+  enrollment: 1224
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-yuma-0400268:
+  display_name: Yuma
+  district_name: Juniper Tree Academy (79064)
+  district_nces_id: 0400268
+  enrollment: 986
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-yuma-0400282:
+  display_name: Yuma
+  district_name: Harvest Power Community Development Group Inc. (79501)
+  district_nces_id: 0400282
+  enrollment: 1679
+  has_charters: true
+  source: ccd_auto
+  state: AZ
+az-yuma-0402400:
+  display_name: Yuma
+  district_name: Crane Elementary District (4501)
+  district_nces_id: '0402400'
+  enrollment: 6077
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-yuma-0409600:
+  display_name: Yuma
+  district_name: Yuma Elementary District (4499)
+  district_nces_id: 0409600
+  enrollment: 9117
+  has_charters: false
+  source: ccd_auto
+  state: AZ
+az-yuma-0409630:
+  display_name: Yuma
+  district_name: Yuma Union High School District (4507)
+  district_nces_id: 0409630
+  enrollment: 11380
+  has_charters: false
+  source: ccd_auto
+  state: AZ

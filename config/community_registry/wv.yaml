@@ -1,0 +1,448 @@
+wv-beckley:
+  display_name: Beckley
+  district_name: RALEIGH COUNTY SCHOOLS
+  district_nces_id: '5401230'
+  enrollment: 10867
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-berkeley-springs:
+  display_name: Berkeley Springs
+  district_name: MORGAN COUNTY SCHOOLS
+  district_nces_id: '5400990'
+  enrollment: 2183
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-buckeye:
+  display_name: Buckeye
+  district_name: POCAHONTAS COUNTY SCHOOLS
+  district_nces_id: '5401140'
+  enrollment: 893
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-buckhannon:
+  display_name: Buckhannon
+  district_name: UPSHUR COUNTY SCHOOLS
+  district_nces_id: '5401470'
+  enrollment: 3776
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-charles-town:
+  display_name: Charles Town
+  district_name: JEFFERSON COUNTY SCHOOLS
+  district_nces_id: '5400570'
+  enrollment: 8389
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-charleston-5400511:
+  display_name: Charleston
+  district_name: WV SCHOOLS OF DIVERSION AND TRANSITION
+  district_nces_id: '5400511'
+  enrollment: 519
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-charleston-5400600:
+  display_name: Charleston
+  district_name: KANAWHA COUNTY SCHOOLS
+  district_nces_id: '5400600'
+  enrollment: 23864
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-clarksburg:
+  display_name: Clarksburg
+  district_name: HARRISON COUNTY SCHOOLS
+  district_nces_id: '5400510'
+  enrollment: 9920
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-clay:
+  display_name: Clay
+  district_name: CLAY COUNTY SCHOOLS
+  district_nces_id: '5400240'
+  enrollment: 1632
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-elizabeth:
+  display_name: Elizabeth
+  district_name: WIRT COUNTY SCHOOLS
+  district_nces_id: '5401590'
+  enrollment: 927
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-elkins:
+  display_name: Elkins
+  district_name: RANDOLPH COUNTY SCHOOLS
+  district_nces_id: '5401260'
+  enrollment: 3638
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-fairmont:
+  display_name: Fairmont
+  district_name: MARION COUNTY SCHOOLS
+  district_nces_id: '5400720'
+  enrollment: 7406
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-fayetteville:
+  display_name: Fayetteville
+  district_name: FAYETTE COUNTY SCHOOLS
+  district_nces_id: '5400300'
+  enrollment: 5613
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-franklin:
+  display_name: Franklin
+  district_name: PENDLETON COUNTY SCHOOLS
+  district_nces_id: '5401080'
+  enrollment: 867
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-glenville:
+  display_name: Glenville
+  district_name: GILMER COUNTY SCHOOLS
+  district_nces_id: '5400330'
+  enrollment: 792
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-grafton:
+  display_name: Grafton
+  district_name: TAYLOR COUNTY SCHOOLS
+  district_nces_id: '5401380'
+  enrollment: 2213
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-hamlin:
+  display_name: Hamlin
+  district_name: LINCOLN COUNTY SCHOOLS
+  district_nces_id: '5400660'
+  enrollment: 2942
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-harrisville:
+  display_name: Harrisville
+  district_name: RITCHIE COUNTY SCHOOLS
+  district_nces_id: '5401290'
+  enrollment: 1243
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-hinton:
+  display_name: Hinton
+  district_name: SUMMERS COUNTY SCHOOLS
+  district_nces_id: '5401350'
+  enrollment: 1318
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-huntington:
+  display_name: Huntington
+  district_name: CABELL COUNTY SCHOOLS
+  district_nces_id: '5400180'
+  enrollment: 11473
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-keyser:
+  display_name: Keyser
+  district_name: MINERAL COUNTY SCHOOLS
+  district_nces_id: '5400870'
+  enrollment: 4023
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-kingwood:
+  display_name: Kingwood
+  district_name: PRESTON COUNTY SCHOOLS
+  district_nces_id: '5401170'
+  enrollment: 4090
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-lewisburg:
+  display_name: Lewisburg
+  district_name: GREENBRIER COUNTY SCHOOLS
+  district_nces_id: '5400390'
+  enrollment: 4702
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-madison:
+  display_name: Madison
+  district_name: BOONE COUNTY  SCHOOLS
+  district_nces_id: '5400090'
+  enrollment: 3188
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-martinsburg:
+  display_name: Martinsburg
+  district_name: BERKELEY COUNTY SCHOOLS
+  district_nces_id: '5400060'
+  enrollment: 19856
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-middlebourne:
+  display_name: Middlebourne
+  district_name: TYLER COUNTY SCHOOLS
+  district_nces_id: '5401440'
+  enrollment: 1257
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-moorefield:
+  display_name: Moorefield
+  district_name: HARDY COUNTY SCHOOLS
+  district_nces_id: '5400480'
+  enrollment: 2194
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-morgantown:
+  display_name: Morgantown
+  district_name: MONONGALIA COUNTY SCHOOLS
+  district_nces_id: '5400930'
+  enrollment: 11297
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-moundsville:
+  display_name: Moundsville
+  district_name: MARSHALL COUNTY SCHOOLS
+  district_nces_id: '5400750'
+  enrollment: 4239
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-mt-zion:
+  display_name: Mt. Zion
+  district_name: CALHOUN COUNTY SCHOOLS
+  district_nces_id: '5400210'
+  enrollment: 864
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-new-cumberland:
+  display_name: New Cumberland
+  district_name: HANCOCK COUNTY SCHOOLS
+  district_nces_id: '5400450'
+  enrollment: 3497
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-new-martinsville:
+  display_name: New Martinsville
+  district_name: WETZEL COUNTY SCHOOLS
+  district_nces_id: '5401560'
+  enrollment: 2258
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-parkersburg:
+  display_name: Parkersburg
+  district_name: WOOD COUNTY SCHOOLS
+  district_nces_id: '5401620'
+  enrollment: 11663
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-parsons:
+  display_name: Parsons
+  district_name: TUCKER COUNTY SCHOOLS
+  district_nces_id: '5401410'
+  enrollment: 961
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-petersburg:
+  display_name: Petersburg
+  district_name: GRANT COUNTY SCHOOLS
+  district_nces_id: '5400360'
+  enrollment: 1615
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-philippi:
+  display_name: Philippi
+  district_name: BARBOUR COUNTY BOARD OF EDUCATION
+  district_nces_id: '5400030'
+  enrollment: 2157
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-pineville:
+  display_name: Pineville
+  district_name: WYOMING COUNTY SCHOOLS
+  district_nces_id: '5401650'
+  enrollment: 3609
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-point-pleasant:
+  display_name: Point Pleasant
+  district_name: MASON COUNTY SCHOOLS
+  district_nces_id: '5400780'
+  enrollment: 3788
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-princeton:
+  display_name: Princeton
+  district_name: MERCER COUNTY SCHOOLS
+  district_nces_id: '5400840'
+  enrollment: 8686
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-ripley:
+  display_name: Ripley
+  district_name: JACKSON COUNTY SCHOOLS
+  district_nces_id: '5400540'
+  enrollment: 4135
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-romney:
+  display_name: Romney
+  district_name: HAMPSHIRE COUNTY SCHOOLS
+  district_nces_id: '5400420'
+  enrollment: 2801
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-spencer:
+  display_name: Spencer
+  district_name: ROANE COUNTY SCHOOLS
+  district_nces_id: '5401320'
+  enrollment: 1795
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-st-marys:
+  display_name: St. Marys
+  district_name: PLEASANTS COUNTY SCHOOLS
+  district_nces_id: '5401110'
+  enrollment: 1086
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-summersville:
+  display_name: Summersville
+  district_name: NICHOLAS COUNTY SCHOOLS
+  district_nces_id: '5401020'
+  enrollment: 3484
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-sutton:
+  display_name: Sutton
+  district_name: BRAXTON COUNTY SCHOOLS
+  district_nces_id: '5400120'
+  enrollment: 1726
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-union:
+  display_name: Union
+  district_name: MONROE COUNTY SCHOOLS
+  district_nces_id: '5400960'
+  enrollment: 1651
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-wayne:
+  display_name: Wayne
+  district_name: WAYNE COUNTY SCHOOLS
+  district_nces_id: '5401500'
+  enrollment: 6240
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-webster-springs:
+  display_name: Webster Springs
+  district_name: WEBSTER COUNTY SCHOOLS
+  district_nces_id: '5401530'
+  enrollment: 1192
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-welch:
+  display_name: Welch
+  district_name: MCDOWELL COUNTY SCHOOLS
+  district_nces_id: '5400810'
+  enrollment: 2537
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-wellsburg:
+  display_name: Wellsburg
+  district_name: BROOKE COUNTY SCHOOLS
+  district_nces_id: '5400150'
+  enrollment: 2479
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-west-logan:
+  display_name: West Logan
+  district_name: LOGAN COUNTY SCHOOLS
+  district_nces_id: '5400690'
+  enrollment: 5190
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-west-union:
+  display_name: West Union
+  district_name: DODDRIDGE COUNTY SCHOOLS
+  district_nces_id: '5400270'
+  enrollment: 1119
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-weston:
+  display_name: Weston
+  district_name: LEWIS COUNTY SCHOOLS
+  district_nces_id: '5400630'
+  enrollment: 2403
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-wheeling:
+  display_name: Wheeling
+  district_name: OHIO COUNTY SCHOOLS
+  district_nces_id: '5401050'
+  enrollment: 4953
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-williamson:
+  display_name: Williamson
+  district_name: MINGO COUNTY SCHOOLS
+  district_nces_id: '5400900'
+  enrollment: 3719
+  has_charters: false
+  source: ccd_auto
+  state: WV
+wv-winfield:
+  display_name: Winfield
+  district_name: PUTNAM COUNTY SCHOOLS
+  district_nces_id: '5401200'
+  enrollment: 8993
+  has_charters: false
+  source: ccd_auto
+  state: WV

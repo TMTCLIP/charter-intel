@@ -1,0 +1,1016 @@
+or-albany:
+  display_name: Albany
+  district_name: Greater Albany Public SD 8J
+  district_nces_id: '4101120'
+  enrollment: 9060
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-alsea:
+  display_name: Alsea
+  district_name: Alsea SD 7J
+  district_nces_id: '4101200'
+  enrollment: 509
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-amity:
+  display_name: Amity
+  district_name: Amity SD 4J
+  district_nces_id: '4101230'
+  enrollment: 765
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-ashland:
+  display_name: Ashland
+  district_name: Ashland SD 5
+  district_nces_id: '4101560'
+  enrollment: 2568
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-astoria:
+  display_name: Astoria
+  district_name: Astoria SD 1
+  district_nces_id: '4101620'
+  enrollment: 1799
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-athena:
+  display_name: Athena
+  district_name: Athena-Weston SD 29RJ
+  district_nces_id: '4101660'
+  enrollment: 557
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-aurora:
+  display_name: Aurora
+  district_name: North Marion SD 15
+  district_nces_id: '4108880'
+  enrollment: 1679
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-baker-city:
+  display_name: Baker City
+  district_name: Baker SD 5J
+  district_nces_id: '4101710'
+  enrollment: 4453
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-bandon:
+  display_name: Bandon
+  district_name: Bandon SD 54
+  district_nces_id: '4101800'
+  enrollment: 670
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-banks:
+  display_name: Banks
+  district_name: Banks SD 13
+  district_nces_id: '4101830'
+  enrollment: 1062
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-beaverton:
+  display_name: Beaverton
+  district_name: Beaverton SD 48J
+  district_nces_id: '4101920'
+  enrollment: 38706
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-bend:
+  display_name: Bend
+  district_name: Bend-LaPine Administrative SD 1
+  district_nces_id: '4101980'
+  enrollment: 17360
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-brookings:
+  display_name: Brookings
+  district_name: Brookings-Harbor SD 17C
+  district_nces_id: '4102310'
+  enrollment: 1398
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-burns:
+  display_name: Burns
+  district_name: Harney County SD 3
+  district_nces_id: '4102490'
+  enrollment: 742
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-canby:
+  display_name: Canby
+  district_name: Canby SD 86
+  district_nces_id: '4102640'
+  enrollment: 4245
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-central-point:
+  display_name: Central Point
+  district_name: Central Point SD 6
+  district_nces_id: '4102940'
+  enrollment: 4861
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-clatskanie:
+  display_name: Clatskanie
+  district_name: Clatskanie SD 6J
+  district_nces_id: '4103260'
+  enrollment: 689
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-cloverdale:
+  display_name: Cloverdale
+  district_name: Nestucca Valley SD 101J
+  district_nces_id: '4108700'
+  enrollment: 512
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-colton:
+  display_name: Colton
+  district_name: Colton SD 53
+  district_nces_id: '4103270'
+  enrollment: 620
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-coos-bay:
+  display_name: Coos Bay
+  district_name: Coos Bay SD 9
+  district_nces_id: '4103660'
+  enrollment: 3082
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-coquille:
+  display_name: Coquille
+  district_name: Coquille SD 8
+  district_nces_id: '4103390'
+  enrollment: 1228
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-corbett:
+  display_name: Corbett
+  district_name: Corbett SD 39
+  district_nces_id: '4103420'
+  enrollment: 1056
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-corvallis:
+  display_name: Corvallis
+  district_name: Corvallis SD 509J
+  district_nces_id: '4103480'
+  enrollment: 6363
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-cottage-grove:
+  display_name: Cottage Grove
+  district_name: South Lane SD 45J3
+  district_nces_id: '4111580'
+  enrollment: 2773
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-crane-4103600:
+  display_name: Crane
+  district_name: Harney County SD 4
+  district_nces_id: '4103600'
+  enrollment: 914
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-crane-4103630:
+  display_name: Crane
+  district_name: Harney County Union High SD 1J
+  district_nces_id: '4103630'
+  enrollment: 981
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-creswell:
+  display_name: Creswell
+  district_name: Creswell SD 40
+  district_nces_id: '4103690'
+  enrollment: 1135
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-culver:
+  display_name: Culver
+  district_name: Culver SD 4
+  district_nces_id: '4103840'
+  enrollment: 670
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-dallas:
+  display_name: Dallas
+  district_name: Dallas SD 2
+  district_nces_id: '4103860'
+  enrollment: 3030
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-dayton:
+  display_name: Dayton
+  district_name: Dayton SD 8
+  district_nces_id: '4103990'
+  enrollment: 873
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-eagle-point:
+  display_name: Eagle Point
+  district_name: Eagle Point SD 9
+  district_nces_id: '4104500'
+  enrollment: 4242
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-elmira:
+  display_name: Elmira
+  district_name: Fern Ridge SD 28J
+  district_nces_id: '4104950'
+  enrollment: 1429
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-estacada:
+  display_name: Estacada
+  district_name: Estacada SD 108
+  district_nces_id: '4104700'
+  enrollment: 3094
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-eugene-4102040:
+  display_name: Eugene
+  district_name: Bethel SD 52
+  district_nces_id: '4102040'
+  enrollment: 5101
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-eugene-4104740:
+  display_name: Eugene
+  district_name: Eugene SD 4J
+  district_nces_id: '4104740'
+  enrollment: 16583
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-fairview:
+  display_name: Fairview
+  district_name: Reynolds SD 7
+  district_nces_id: '4110520'
+  enrollment: 9868
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-florence:
+  display_name: Florence
+  district_name: Siuslaw SD 97J
+  district_nces_id: '4105100'
+  enrollment: 1247
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-forest-grove:
+  display_name: Forest Grove
+  district_name: Forest Grove SD 15
+  district_nces_id: '4105160'
+  enrollment: 5778
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-fossil:
+  display_name: Fossil
+  district_name: Fossil SD 21J
+  district_nces_id: '4105250'
+  enrollment: 1778
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-gervais:
+  display_name: Gervais
+  district_name: Gervais SD 1
+  district_nces_id: '4100015'
+  enrollment: 1223
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-gladstone:
+  display_name: Gladstone
+  district_name: Gladstone SD 115
+  district_nces_id: '4105610'
+  enrollment: 1677
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-glide:
+  display_name: Glide
+  district_name: Glide SD 12
+  district_nces_id: '4105670'
+  enrollment: 691
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-grants-pass-4105910:
+  display_name: Grants Pass
+  district_name: Grants Pass SD 7
+  district_nces_id: '4105910'
+  enrollment: 5725
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-grants-pass-4106900:
+  display_name: Grants Pass
+  district_name: Three Rivers/Josephine County SD
+  district_nces_id: '4106900'
+  enrollment: 4532
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-gresham:
+  display_name: Gresham
+  district_name: Gresham-Barlow SD 10J
+  district_nces_id: '4106000'
+  enrollment: 11429
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-halsey:
+  display_name: Halsey
+  district_name: Central Linn SD 552
+  district_nces_id: '4102910'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-harrisburg:
+  display_name: Harrisburg
+  district_name: Harrisburg SD 7J
+  district_nces_id: '4100019'
+  enrollment: 776
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-hermiston:
+  display_name: Hermiston
+  district_name: Hermiston SD 8
+  district_nces_id: '4106300'
+  enrollment: 5466
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-hillsboro:
+  display_name: Hillsboro
+  district_name: Hillsboro SD 1J
+  district_nces_id: '4100023'
+  enrollment: 18920
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-hood-river:
+  display_name: Hood River
+  district_name: Hood River County SD
+  district_nces_id: '4106510'
+  enrollment: 3829
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-independence:
+  display_name: Independence
+  district_name: Central SD 13J
+  district_nces_id: '4102840'
+  enrollment: 3201
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-irrigon:
+  display_name: Irrigon
+  district_name: Morrow SD 1
+  district_nces_id: '4108520'
+  enrollment: 2318
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-jefferson:
+  display_name: Jefferson
+  district_name: Jefferson SD 14J
+  district_nces_id: '4106710'
+  enrollment: 760
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-junction-city:
+  display_name: Junction City
+  district_name: Junction City SD 69
+  district_nces_id: '4106930'
+  enrollment: 1681
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-klamath-falls-4107020:
+  display_name: Klamath Falls
+  district_name: Klamath County SD
+  district_nces_id: '4107020'
+  enrollment: 7081
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-klamath-falls-4107080:
+  display_name: Klamath Falls
+  district_name: Klamath Falls City Schools
+  district_nces_id: '4107080'
+  enrollment: 2721
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-la-grande:
+  display_name: La Grande
+  district_name: La Grande SD 1
+  district_nces_id: '4107200'
+  enrollment: 2145
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-lake-oswego:
+  display_name: Lake Oswego
+  district_name: Lake Oswego SD 7J
+  district_nces_id: '4107230'
+  enrollment: 6867
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-lakeview:
+  display_name: Lakeview
+  district_name: Lake County SD 7
+  district_nces_id: '4107280'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-lebanon:
+  display_name: Lebanon
+  district_name: Lebanon Community SD 9
+  district_nces_id: '4107380'
+  enrollment: 4056
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-lowell:
+  display_name: Lowell
+  district_name: Lowell SD 71
+  district_nces_id: '4107590'
+  enrollment: 1066
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-madras:
+  display_name: Madras
+  district_name: Jefferson County SD 509J
+  district_nces_id: '4106740'
+  enrollment: 2826
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-marcola:
+  display_name: Marcola
+  district_name: Marcola SD 79J
+  district_nces_id: '4107740'
+  enrollment: 839
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-mcminnville:
+  display_name: Mcminnville
+  district_name: McMinnville SD 40
+  district_nces_id: '4108010'
+  enrollment: 6510
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-medford:
+  display_name: Medford
+  district_name: Medford SD 549C
+  district_nces_id: '4108040'
+  enrollment: 13866
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-mill-city:
+  display_name: Mill City
+  district_name: Santiam Canyon SD 129J
+  district_nces_id: '4108100'
+  enrollment: 2617
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-milton-freewater:
+  display_name: Milton-Freewater
+  district_name: Milton-Freewater Unified SD 7
+  district_nces_id: '4108160'
+  enrollment: 1629
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-milwaukie:
+  display_name: Milwaukie
+  district_name: North Clackamas SD 12
+  district_nces_id: '4108830'
+  enrollment: 16778
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-mitchell:
+  display_name: Mitchell
+  district_name: Mitchell SD 55
+  district_nces_id: '4108280'
+  enrollment: 1027
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-molalla:
+  display_name: Molalla
+  district_name: Molalla River SD 35
+  district_nces_id: '4108310'
+  enrollment: 2572
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-mt-angel:
+  display_name: Mt Angel
+  district_name: Mt Angel SD 91
+  district_nces_id: '4108550'
+  enrollment: 670
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-myrtle-creek:
+  display_name: Myrtle Creek
+  district_name: South Umpqua SD 19
+  district_nces_id: '4111610'
+  enrollment: 1473
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-myrtle-point:
+  display_name: Myrtle Point
+  district_name: Myrtle Point SD 41
+  district_nces_id: '4100640'
+  enrollment: 528
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-newberg:
+  display_name: Newberg
+  district_name: Newberg SD 29J
+  district_nces_id: '4108720'
+  enrollment: 4206
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-newport:
+  display_name: Newport
+  district_name: Lincoln County SD
+  district_nces_id: '4107500'
+  enrollment: 5122
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-north-bend:
+  display_name: North Bend
+  district_name: North Bend SD 13
+  district_nces_id: '4108820'
+  enrollment: 3452
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-nyssa:
+  display_name: Nyssa
+  district_name: Nyssa SD 26
+  district_nces_id: '4109000'
+  enrollment: 1321
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-oakland:
+  display_name: Oakland
+  district_name: Oakland SD 1
+  district_nces_id: '4109120'
+  enrollment: 628
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-oakridge:
+  display_name: Oakridge
+  district_name: Oakridge SD 76
+  district_nces_id: '4109150'
+  enrollment: 513
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-ontario:
+  display_name: Ontario
+  district_name: Ontario SD 8C
+  district_nces_id: '4109270'
+  enrollment: 2281
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-oregon-city:
+  display_name: Oregon City
+  district_name: Oregon City SD 62
+  district_nces_id: '4109330'
+  enrollment: 7296
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-pendleton:
+  display_name: Pendleton
+  district_name: Pendleton SD 16
+  district_nces_id: '4109510'
+  enrollment: 3013
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-philomath:
+  display_name: Philomath
+  district_name: Philomath SD 17J
+  district_nces_id: '4109600'
+  enrollment: 1603
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-phoenix:
+  display_name: Phoenix
+  district_name: Phoenix-Talent SD 4
+  district_nces_id: '4109630'
+  enrollment: 2269
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-pleasant-hill:
+  display_name: Pleasant Hill
+  district_name: Pleasant Hill SD 1
+  district_nces_id: '4109870'
+  enrollment: 1002
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-portland-4102800:
+  display_name: Portland
+  district_name: Centennial SD 28J
+  district_nces_id: '4102800'
+  enrollment: 5515
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-portland-4103940:
+  display_name: Portland
+  district_name: David Douglas SD 40
+  district_nces_id: '4103940'
+  enrollment: 8708
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-portland-4109480:
+  display_name: Portland
+  district_name: Parkrose SD 3
+  district_nces_id: '4109480'
+  enrollment: 2849
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-portland-4110040:
+  display_name: Portland
+  district_name: Portland SD 1J
+  district_nces_id: '4110040'
+  enrollment: 44740
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-portland-4110560:
+  display_name: Portland
+  district_name: Riverdale SD 51J
+  district_nces_id: '4110560'
+  enrollment: 596
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-prairie-city:
+  display_name: Prairie City
+  district_name: Prairie City SD 4
+  district_nces_id: '4110110'
+  enrollment: 1089
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-prineville:
+  display_name: Prineville
+  district_name: Crook County SD
+  district_nces_id: '4103720'
+  enrollment: 3272
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-rainier:
+  display_name: Rainier
+  district_name: Rainier SD 13
+  district_nces_id: '4103265'
+  enrollment: 845
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-redmond:
+  display_name: Redmond
+  district_name: Redmond SD 2J
+  district_nces_id: '4110350'
+  enrollment: 7081
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-reedsport:
+  display_name: Reedsport
+  district_name: Reedsport SD 105
+  district_nces_id: '4110410'
+  enrollment: 606
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-rockaway-beach:
+  display_name: Rockaway Beach
+  district_name: Neah-Kah-Nie SD 56
+  district_nces_id: '4108650'
+  enrollment: 742
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-rogue-river:
+  display_name: Rogue River
+  district_name: Rogue River SD 35
+  district_nces_id: '4110680'
+  enrollment: 1079
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-roseburg:
+  display_name: Roseburg
+  district_name: Douglas County SD 4
+  district_nces_id: '4110710'
+  enrollment: 5753
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-salem-4100009:
+  display_name: Salem
+  district_name: Oregon Department of Education
+  district_nces_id: '4100009'
+  enrollment: 972
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-salem-4110820:
+  display_name: Salem
+  district_name: Salem-Keizer SD 24J
+  district_nces_id: '4110820'
+  enrollment: 39400
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-sandy:
+  display_name: Sandy
+  district_name: Oregon Trail SD 46
+  district_nces_id: '4110890'
+  enrollment: 4358
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-scappoose:
+  display_name: Scappoose
+  district_name: Scappoose SD 1J
+  district_nces_id: '4110980'
+  enrollment: 2223
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-scio:
+  display_name: Scio
+  district_name: Scio SD 95
+  district_nces_id: '4111040'
+  enrollment: 1688
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-seaside:
+  display_name: Seaside
+  district_name: Seaside SD 10
+  district_nces_id: '4111100'
+  enrollment: 1488
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-sheridan:
+  display_name: Sheridan
+  district_name: Sheridan SD 48J
+  district_nces_id: '4111220'
+  enrollment: 947
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-sherwood:
+  display_name: Sherwood
+  district_name: Sherwood SD 88J
+  district_nces_id: '4111290'
+  enrollment: 4915
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-silverton:
+  display_name: Silverton
+  district_name: Silver Falls SD 4J
+  district_nces_id: '4111450'
+  enrollment: 3661
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-sisters:
+  display_name: Sisters
+  district_name: Sisters SD 6
+  district_nces_id: '4111490'
+  enrollment: 1144
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-springfield:
+  display_name: Springfield
+  district_name: Springfield SD 19
+  district_nces_id: '4111670'
+  enrollment: 9664
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-st-helens:
+  display_name: St Helens
+  district_name: St Helens SD 502
+  district_nces_id: '4111720'
+  enrollment: 2829
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-stanfield:
+  display_name: Stanfield
+  district_name: Stanfield SD 61
+  district_nces_id: '4111790'
+  enrollment: 525
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-stayton:
+  display_name: Stayton
+  district_name: North Santiam SD 29J
+  district_nces_id: '4100020'
+  enrollment: 2089
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-sutherlin:
+  display_name: Sutherlin
+  district_name: Sutherlin SD 130
+  district_nces_id: '4111940'
+  enrollment: 1362
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-sweet-home:
+  display_name: Sweet Home
+  district_name: Sweet Home SD 55
+  district_nces_id: '4111970'
+  enrollment: 2337
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-the-dalles:
+  display_name: The Dalles
+  district_name: North Wasco County SD 21
+  district_nces_id: '4100048'
+  enrollment: 2841
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-tigard:
+  display_name: Tigard
+  district_name: Tigard-Tualatin SD 23J
+  district_nces_id: '4112240'
+  enrollment: 11656
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-tillamook:
+  display_name: Tillamook
+  district_name: Tillamook SD 9
+  district_nces_id: '4112320'
+  enrollment: 2090
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-tualatin:
+  display_name: Tualatin
+  district_name: West Linn-Wilsonville SD 3J
+  district_nces_id: '4113170'
+  enrollment: 9094
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-turner:
+  display_name: Turner
+  district_name: Cascade SD 5
+  district_nces_id: '4102780'
+  enrollment: 2687
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-umatilla:
+  display_name: Umatilla
+  district_name: Umatilla SD 6R
+  district_nces_id: '4112600'
+  enrollment: 1423
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-vale:
+  display_name: Vale
+  district_name: Vale SD 84
+  district_nces_id: '4100014'
+  enrollment: 946
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-vernonia:
+  display_name: Vernonia
+  district_name: Vernonia SD 47J
+  district_nces_id: '4112930'
+  enrollment: 581
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-warrenton:
+  display_name: Warrenton
+  district_name: Warrenton-Hammond SD 30
+  district_nces_id: '4113080'
+  enrollment: 983
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-willamina:
+  display_name: Willamina
+  district_name: Willamina SD 30J
+  district_nces_id: '4113350'
+  enrollment: 887
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-winston:
+  display_name: Winston
+  district_name: Winston-Dillard SD 116
+  district_nces_id: '4113490'
+  enrollment: 1381
+  has_charters: false
+  source: ccd_auto
+  state: OR
+or-woodburn:
+  display_name: Woodburn
+  district_name: Woodburn SD 103
+  district_nces_id: '4113530'
+  enrollment: 5264
+  has_charters: true
+  source: ccd_auto
+  state: OR
+or-yamhill:
+  display_name: Yamhill
+  district_name: Yamhill Carlton SD 1
+  district_nces_id: '4100016'
+  enrollment: 1108
+  has_charters: false
+  source: ccd_auto
+  state: OR

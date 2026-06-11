@@ -1,0 +1,2352 @@
+mn-ada:
+  display_name: Ada
+  district_name: Ada-Borup-West Public Schools
+  district_nces_id: '2700480'
+  enrollment: 685
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-adrian:
+  display_name: Adrian
+  district_name: ADRIAN PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2702730'
+  enrollment: 573
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-aitkin:
+  display_name: Aitkin
+  district_name: AITKIN PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2702760'
+  enrollment: 1028
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-albany:
+  display_name: Albany
+  district_name: ALBANY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2702930'
+  enrollment: 1788
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-albert-lea:
+  display_name: Albert Lea
+  district_name: ALBERT LEA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2702970'
+  enrollment: 3460
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-albertville:
+  display_name: Albertville
+  district_name: St. Michael-Albertville Schools
+  district_nces_id: '2733790'
+  enrollment: 6670
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-alexandria:
+  display_name: Alexandria
+  district_name: ALEXANDRIA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2703060'
+  enrollment: 4046
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-annandale:
+  display_name: Annandale
+  district_name: ANNANDALE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2703150'
+  enrollment: 2049
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-anoka:
+  display_name: Anoka
+  district_name: Anoka-Hennepin School District
+  district_nces_id: '2703180'
+  enrollment: 38590
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-arlington:
+  display_name: Arlington
+  district_name: SIBLEY EAST SCHOOL DISTRICT
+  district_nces_id: '2700102'
+  enrollment: 1078
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-aurora:
+  display_name: Aurora
+  district_name: MESABI EAST SCHOOL DISTRICT
+  district_nces_id: '2791450'
+  enrollment: 889
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-austin:
+  display_name: Austin
+  district_name: AUSTIN PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2703450'
+  enrollment: 5120
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-bagley:
+  display_name: Bagley
+  district_name: BAGLEY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2703570'
+  enrollment: 946
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-barnesville:
+  display_name: Barnesville
+  district_name: BARNESVILLE PUBLIC SCHOOL DIST.
+  district_nces_id: '2703660'
+  enrollment: 912
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-barnum:
+  display_name: Barnum
+  district_name: BARNUM PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2703690'
+  enrollment: 696
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-barrett:
+  display_name: Barrett
+  district_name: WEST CENTRAL AREA
+  district_nces_id: '2700104'
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-becker:
+  display_name: Becker
+  district_name: BECKER PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2703870'
+  enrollment: 2863
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-belgrade:
+  display_name: Belgrade
+  district_name: BELGRADE-BROOTEN-ELROSA SCHOOL DIST
+  district_nces_id: '2700105'
+  enrollment: 645
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-belle-plaine:
+  display_name: Belle Plaine
+  district_name: BELLE PLAINE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2704050'
+  enrollment: 1549
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-bemidji:
+  display_name: Bemidji
+  district_name: BEMIDJI PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2704440'
+  enrollment: 4836
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-benson:
+  display_name: Benson
+  district_name: BENSON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2704470'
+  enrollment: 808
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-bertha:
+  display_name: Bertha
+  district_name: BERTHA-HEWITT PUBLIC SCHOOL DIST.
+  district_nces_id: '2705430'
+  enrollment: 517
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-big-lake:
+  display_name: Big Lake
+  district_name: BIG LAKE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2705460'
+  enrollment: 3204
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-blackduck:
+  display_name: Blackduck
+  district_name: BLACKDUCK PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2705730'
+  enrollment: 712
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-blooming-prairie:
+  display_name: Blooming Prairie
+  district_name: BLOOMING PRAIRIE PUBLIC SCHOOL DIST
+  district_nces_id: '2705760'
+  enrollment: 853
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-bloomington-2700193:
+  display_name: Bloomington
+  district_name: BLUESKY CHARTER SCHOOL
+  district_nces_id: '2700193'
+  enrollment: 619
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-bloomington-2700284:
+  display_name: Bloomington
+  district_name: Seven Hills Preparatory Academy
+  district_nces_id: '2700284'
+  enrollment: 1149
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-bloomington-2705790:
+  display_name: Bloomington
+  district_name: BLOOMINGTON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2705790'
+  enrollment: 10361
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-blue-earth:
+  display_name: Blue Earth
+  district_name: Blue Earth Area School District
+  district_nces_id: '2700130'
+  enrollment: 1066
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-braham:
+  display_name: Braham
+  district_name: BRAHAM PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2706060'
+  enrollment: 790
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-brainerd:
+  display_name: Brainerd
+  district_name: BRAINERD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2706090'
+  enrollment: 6232
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-brandon:
+  display_name: Brandon
+  district_name: BRANDON-EVANSVILLE PUBLIC SCHOOLS
+  district_nces_id: '2700382'
+  enrollment: 535
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-breckenridge:
+  display_name: Breckenridge
+  district_name: BRECKENRIDGE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2706150'
+  enrollment: 617
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-brooklyn-center-2700253:
+  display_name: Brooklyn Center
+  district_name: New Millennium Academy
+  district_nces_id: '2700253'
+  enrollment: 818
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-brooklyn-center-2706240:
+  display_name: Brooklyn Center
+  district_name: BROOKLYN CENTER SCHOOL DISTRICT
+  district_nces_id: '2706240'
+  enrollment: 2124
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-brooklyn-park-2700096:
+  display_name: Brooklyn Park
+  district_name: Athlos Leadership Academy
+  district_nces_id: '2700096'
+  enrollment: 828
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-brooklyn-park-2700184:
+  display_name: Brooklyn Park
+  district_name: EXCELL ACADEMY CHARTER
+  district_nces_id: '2700184'
+  enrollment: 510
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-brooklyn-park-2700240:
+  display_name: Brooklyn Park
+  district_name: PRAIRIE SEEDS ACADEMY
+  district_nces_id: '2700240'
+  enrollment: 789
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-brooklyn-park-2700295:
+  display_name: Brooklyn Park
+  district_name: NOBLE ACADEMY
+  district_nces_id: '2700295'
+  enrollment: 579
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-browerville:
+  display_name: Browerville
+  district_name: BROWERVILLE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2706300'
+  enrollment: 558
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-buffalo:
+  display_name: Buffalo
+  district_name: Buffalo-Hanover-Montrose Schools
+  district_nces_id: '2707200'
+  enrollment: 5313
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-burnsville:
+  display_name: Burnsville
+  district_name: Burnsville-Eagan-Savage Schools
+  district_nces_id: '2707290'
+  enrollment: 7822
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-byron:
+  display_name: Byron
+  district_name: BYRON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2707350'
+  enrollment: 2286
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-caledonia:
+  display_name: Caledonia
+  district_name: CALEDONIA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2707380'
+  enrollment: 730
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cambridge:
+  display_name: Cambridge
+  district_name: CAMBRIDGE-ISANTI PUBLIC SCHOOL DIST
+  district_nces_id: '2707410'
+  enrollment: 5062
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-canby:
+  display_name: Canby
+  district_name: CANBY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2707470'
+  enrollment: 607
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cannon-falls:
+  display_name: Cannon Falls
+  district_name: CANNON FALLS PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2707500'
+  enrollment: 1055
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cass-lake:
+  display_name: Cass Lake
+  district_name: CASS LAKE-BENA PUBLIC SCHOOLS
+  district_nces_id: '2708070'
+  enrollment: 1138
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-chaska:
+  display_name: Chaska
+  district_name: EASTERN CARVER COUNTY PUBLIC SCHOOL
+  district_nces_id: '2708190'
+  enrollment: 9320
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-chatfield:
+  display_name: Chatfield
+  district_name: CHATFIELD PUBLIC SCHOOLS
+  district_nces_id: '2708220'
+  enrollment: 927
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-chisago-city:
+  display_name: Chisago City
+  district_name: CHISAGO LAKES SCHOOL DISTRICT
+  district_nces_id: '2700017'
+  enrollment: 3378
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-chisholm:
+  display_name: Chisholm
+  district_name: CHISHOLM PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2708910'
+  enrollment: 684
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-circle-pines:
+  display_name: Circle Pines
+  district_name: CENTENNIAL PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2708100'
+  enrollment: 6764
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-clara-city:
+  display_name: Clara City
+  district_name: MACCRAY School District
+  district_nces_id: '2700091'
+  enrollment: 736
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cleveland:
+  display_name: Cleveland
+  district_name: CLEVELAND PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2709330'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cloquet:
+  display_name: Cloquet
+  district_name: CLOQUET PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2709420'
+  enrollment: 2641
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cokato:
+  display_name: Cokato
+  district_name: Dassel-Cokato Public Schools
+  district_nces_id: '2710060'
+  enrollment: 2100
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cold-spring:
+  display_name: Cold Spring
+  district_name: ROCORI PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2709440'
+  enrollment: 2387
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-coleraine:
+  display_name: Coleraine
+  district_name: GREENWAY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2709480'
+  enrollment: 1058
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cologne:
+  display_name: Cologne
+  district_name: COLOGNE ACADEMY
+  district_nces_id: '2700319'
+  enrollment: 689
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-columbia-heights-2700380:
+  display_name: Columbia Heights
+  district_name: Prodeo Academy
+  district_nces_id: '2700380'
+  enrollment: 961
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-columbia-heights-2709510:
+  display_name: Columbia Heights
+  district_name: COLUMBIA HEIGHTS PUBLIC SCHOOL DIST
+  district_nces_id: '2709510'
+  enrollment: 3281
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cottage-grove:
+  display_name: Cottage Grove
+  district_name: South Washington County Schools
+  district_nces_id: '2733810'
+  enrollment: 19159
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-cottonwood:
+  display_name: Cottonwood
+  district_name: LAKEVIEW SCHOOL DISTRICT
+  district_nces_id: '2700088'
+  enrollment: 713
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-crookston:
+  display_name: Crookston
+  district_name: CROOKSTON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2709720'
+  enrollment: 1135
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-crosby:
+  display_name: Crosby
+  district_name: CROSBY-IRONTON PUBLIC SCHOOL DIST.
+  district_nces_id: '2709750'
+  enrollment: 1011
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-crystal:
+  display_name: Crystal
+  district_name: BEACON ACADEMY
+  district_nces_id: '2700366'
+  enrollment: 547
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-dawson:
+  display_name: Dawson
+  district_name: DAWSON-BOYD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2710090'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-deer-river:
+  display_name: Deer River
+  district_name: DEER RIVER PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2710140'
+  enrollment: 885
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-delano:
+  display_name: Delano
+  district_name: DELANO PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2710170'
+  enrollment: 2448
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-detroit-lakes:
+  display_name: Detroit Lakes
+  district_name: DETROIT LAKES PUBLIC SCHOOL DIST.
+  district_nces_id: '2710230'
+  enrollment: 2775
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-dilworth:
+  display_name: Dilworth
+  district_name: DILWORTH-GLYNDON-FELTON
+  district_nces_id: '2710260'
+  enrollment: 1561
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-dodge-center:
+  display_name: Dodge Center
+  district_name: TRITON SCHOOL DISTRICT
+  district_nces_id: '2740665'
+  enrollment: 952
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-duluth-2700133:
+  display_name: Duluth
+  district_name: DULUTH PUBLIC SCHOOLS ACADEMY
+  district_nces_id: '2700133'
+  enrollment: 908
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-duluth-2711040:
+  display_name: Duluth
+  district_name: DULUTH PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2711040'
+  enrollment: 8554
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-east-grand-forks:
+  display_name: East Grand Forks
+  district_name: East Grand Forks Public Schools
+  district_nces_id: '2711130'
+  enrollment: 1889
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-eden-prairie:
+  display_name: Eden Prairie
+  district_name: EDEN PRAIRIE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2714220'
+  enrollment: 8939
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-eden-valley:
+  display_name: Eden Valley
+  district_name: EDEN VALLEY-WATKINS SCHOOL DISTRICT
+  district_nces_id: '2711190'
+  enrollment: 918
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-edina:
+  display_name: Edina
+  district_name: EDINA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2711250'
+  enrollment: 8610
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-elk-river-2700276:
+  display_name: Elk River
+  district_name: SPECTRUM HIGH SCHOOL
+  district_nces_id: '2700276'
+  enrollment: 883
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-elk-river-2711370:
+  display_name: Elk River
+  district_name: Elk River Public School District
+  district_nces_id: '2711370'
+  enrollment: 14152
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-ely:
+  display_name: Ely
+  district_name: ELY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2711520'
+  enrollment: 542
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-esko:
+  display_name: Esko
+  district_name: ESKO PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2738880'
+  enrollment: 1278
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-eyota:
+  display_name: Eyota
+  district_name: DOVER-EYOTA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2711010'
+  enrollment: 1098
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-fairmont:
+  display_name: Fairmont
+  district_name: FAIRMONT AREA SCHOOL DISTRICT
+  district_nces_id: '2700124'
+  enrollment: 1815
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-faribault:
+  display_name: Faribault
+  district_name: FARIBAULT PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2711760'
+  enrollment: 3312
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-farmington:
+  display_name: Farmington
+  district_name: FARMINGTON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2711820'
+  enrollment: 6800
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-fergus-falls:
+  display_name: Fergus Falls
+  district_name: FERGUS FALLS PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2711880'
+  enrollment: 2938
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-fertile:
+  display_name: Fertile
+  district_name: FERTILE-BELTRAMI SCHOOL DISTRICT
+  district_nces_id: '2711910'
+  enrollment: 504
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-finlayson:
+  display_name: Finlayson
+  district_name: EAST CENTRAL SCHOOL DISTRICT
+  district_nces_id: '2711085'
+  enrollment: 777
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-foley:
+  display_name: Foley
+  district_name: FOLEY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2712240'
+  enrollment: 1925
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-forest-lake-2700177:
+  display_name: Forest Lake
+  district_name: NORTH LAKES ACADEMY
+  district_nces_id: '2700177'
+  enrollment: 599
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-forest-lake-2700358:
+  display_name: Forest Lake
+  district_name: Lakes International Language Academ
+  district_nces_id: '2700358'
+  enrollment: 1301
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-forest-lake-2712270:
+  display_name: Forest Lake
+  district_name: FOREST LAKE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2712270'
+  enrollment: 5855
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-fosston:
+  display_name: Fosston
+  district_name: FOSSTON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2712300'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-frazee:
+  display_name: Frazee
+  district_name: FRAZEE-VERGAS PUBLIC SCHOOL DIST.
+  district_nces_id: '2712360'
+  enrollment: 848
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-fridley:
+  display_name: Fridley
+  district_name: FRIDLEY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2712420'
+  enrollment: 2788
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-gibbon:
+  display_name: Gibbon
+  district_name: GFW Public Schools
+  district_nces_id: '2712580'
+  enrollment: 600
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-glencoe:
+  display_name: Glencoe
+  district_name: GLENCOE-SILVER LAKE SCHOOL DISTRICT
+  district_nces_id: '2700128'
+  enrollment: 1446
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-glenwood:
+  display_name: Glenwood
+  district_name: MINNEWASKA SCHOOL DISTRICT
+  district_nces_id: '2700019'
+  enrollment: 1347
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-goodhue:
+  display_name: Goodhue
+  district_name: GOODHUE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2712900'
+  enrollment: 706
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-grand-rapids:
+  display_name: Grand Rapids
+  district_name: GRAND RAPIDS PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2713170'
+  enrollment: 4023
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-granite-falls:
+  display_name: Granite Falls
+  district_name: YELLOW MEDICINE EAST
+  district_nces_id: '2700099'
+  enrollment: 616
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-grove-city:
+  display_name: Grove City
+  district_name: A.C.G.C. Public School District
+  district_nces_id: '2700106'
+  enrollment: 851
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-ham-lake:
+  display_name: Ham Lake
+  district_name: DAVINCI ACADEMY
+  district_nces_id: '2700320'
+  enrollment: 970
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-hastings:
+  display_name: Hastings
+  district_name: HASTINGS PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2713530'
+  enrollment: 4116
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-hawley:
+  display_name: Hawley
+  district_name: HAWLEY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2713560'
+  enrollment: 1048
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-hayfield:
+  display_name: Hayfield
+  district_name: HAYFIELD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2713590'
+  enrollment: 645
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-hermantown:
+  display_name: Hermantown
+  district_name: Hermantown Community Schools
+  district_nces_id: '2713920'
+  enrollment: 2138
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-hibbing:
+  display_name: Hibbing
+  district_name: HIBBING PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2713980'
+  enrollment: 2123
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-hinckley:
+  display_name: Hinckley
+  district_name: HINCKLEY-FINLAYSON SCHOOL DISTRICT
+  district_nces_id: '2714070'
+  enrollment: 1010
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-holdingford:
+  display_name: Holdingford
+  district_name: HOLDINGFORD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2714190'
+  enrollment: 1082
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-hopkins:
+  display_name: Hopkins
+  district_name: HOPKINS PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2714260'
+  enrollment: 6833
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-houston:
+  display_name: Houston
+  district_name: HOUSTON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2714280'
+  enrollment: 2115
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-howard-lake:
+  display_name: Howard Lake
+  district_name: HOWARD LAKE-WAVERLY-WINSTED
+  district_nces_id: '2700123'
+  enrollment: 1305
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-hutchinson:
+  display_name: Hutchinson
+  district_name: HUTCHINSON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2714970'
+  enrollment: 2765
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-international-falls:
+  display_name: International Falls
+  district_name: INTERNATIONAL FALLS SCHOOL DISTRICT
+  district_nces_id: '2715000'
+  enrollment: 894
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-inver-grove-heights:
+  display_name: Inver Grove Heights
+  district_name: INVER GROVE HEIGHTS SCHOOLS
+  district_nces_id: '2715030'
+  enrollment: 3441
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-jackson:
+  display_name: Jackson
+  district_name: JACKSON COUNTY CENTRAL SCHOOL DIST.
+  district_nces_id: '2700231'
+  enrollment: 1107
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-janesville:
+  display_name: Janesville
+  district_name: JANESVILLE-WALDORF-PEMBERTON
+  district_nces_id: '2791451'
+  enrollment: 697
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-jordan:
+  display_name: Jordan
+  district_name: JORDAN PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2715750'
+  enrollment: 1845
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-kasson:
+  display_name: Kasson
+  district_name: KASSON-MANTORVILLE SCHOOL DISTRICT
+  district_nces_id: '2716980'
+  enrollment: 2163
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-kerkhoven:
+  display_name: Kerkhoven
+  district_name: KERKHOVEN-MURDOCK-SUNBURG
+  district_nces_id: '2717120'
+  enrollment: 824
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-kimball:
+  display_name: Kimball
+  district_name: KIMBALL PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2717220'
+  enrollment: 784
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-la-crescent:
+  display_name: La Crescent
+  district_name: LA CRESCENT-HOKAH SCHOOL DISTRICT
+  district_nces_id: '2717250'
+  enrollment: 1028
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-lake-city:
+  display_name: Lake City
+  district_name: LAKE CITY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2717520'
+  enrollment: 1203
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-lake-crystal:
+  display_name: Lake Crystal
+  district_name: LAKE CRYSTAL-WELLCOME MEMORIAL
+  district_nces_id: '2791445'
+  enrollment: 969
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-lake-park:
+  display_name: Lake Park
+  district_name: LAKE PARK AUDUBON SCHOOL DISTRICT
+  district_nces_id: '2700162'
+  enrollment: 722
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-lakeville:
+  display_name: Lakeville
+  district_name: Lakeville Area Schools
+  district_nces_id: '2717780'
+  enrollment: 11819
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-le-sueur:
+  display_name: Le Sueur
+  district_name: LE SUEUR-HENDERSON SCHOOL DISTRICT
+  district_nces_id: '2718070'
+  enrollment: 911
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-lewiston:
+  display_name: Lewiston
+  district_name: Lewiston-Altura Public School Dist
+  district_nces_id: '2718090'
+  enrollment: 622
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-litchfield:
+  display_name: Litchfield
+  district_name: LITCHFIELD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2718210'
+  enrollment: 1543
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-little-falls:
+  display_name: Little Falls
+  district_name: Little Falls Community Schools
+  district_nces_id: '2718240'
+  enrollment: 2466
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-long-lake:
+  display_name: Long Lake
+  district_name: ORONO PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2725080'
+  enrollment: 2887
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-long-prairie:
+  display_name: Long Prairie
+  district_name: Long Prairie-Grey Eagle School Dist
+  district_nces_id: '2700109'
+  enrollment: 978
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-luverne:
+  display_name: Luverne
+  district_name: LUVERNE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2718330'
+  enrollment: 1161
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-madelia:
+  display_name: Madelia
+  district_name: MADELIA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2718570'
+  enrollment: 620
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-madison:
+  display_name: Madison
+  district_name: Lac qui Parle Valley Schools
+  district_nces_id: '2700125'
+  enrollment: 805
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-mahnomen:
+  display_name: Mahnomen
+  district_name: MAHNOMEN PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2718660'
+  enrollment: 665
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-mahtomedi:
+  display_name: Mahtomedi
+  district_name: MAHTOMEDI PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2718750'
+  enrollment: 3176
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-mankato:
+  display_name: Mankato
+  district_name: MANKATO PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2718780'
+  enrollment: 8398
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-maple-grove-2700333:
+  display_name: Maple Grove
+  district_name: PARNASSUS PREPARATORY CHARTER SCH
+  district_nces_id: '2700333'
+  enrollment: 1384
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-maple-grove-2725200:
+  display_name: Maple Grove
+  district_name: OSSEO PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2725200'
+  enrollment: 20737
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-maple-lake:
+  display_name: Maple Lake
+  district_name: MAPLE LAKE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2718810'
+  enrollment: 761
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-mapleton:
+  display_name: Mapleton
+  district_name: MAPLE RIVER SCHOOL DISTRICT
+  district_nces_id: '2700006'
+  enrollment: 938
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-maplewood:
+  display_name: Maplewood
+  district_name: North St. Paul-Maplewood Oakdale
+  district_nces_id: '2723850'
+  enrollment: 10368
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-marshall:
+  display_name: Marshall
+  district_name: MARSHALL PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2718940'
+  enrollment: 2723
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-medford:
+  display_name: Medford
+  district_name: MEDFORD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2719320'
+  enrollment: 912
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-melrose:
+  display_name: Melrose
+  district_name: MELROSE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2720550'
+  enrollment: 1277
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-menahga:
+  display_name: Menahga
+  district_name: MENAHGA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2720580'
+  enrollment: 964
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-mendota-heights:
+  display_name: Mendota Heights
+  district_name: West St. Paul-Mendota Heights-Eagan
+  district_nces_id: '2742270'
+  enrollment: 5116
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-milaca:
+  display_name: Milaca
+  district_name: MILACA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2720670'
+  enrollment: 1684
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-minneapolis-2700117:
+  display_name: Minneapolis
+  district_name: Minnesota Transitions Charter Sch
+  district_nces_id: '2700117'
+  enrollment: 4879
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-minneapolis-2700189:
+  display_name: Minneapolis
+  district_name: Twin Cities International Schools
+  district_nces_id: '2700189'
+  enrollment: 924
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-minneapolis-2700245:
+  display_name: Minneapolis
+  district_name: METRO SCHOOLS CHARTER
+  district_nces_id: '2700245'
+  enrollment: 926
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-minneapolis-2700281:
+  display_name: Minneapolis
+  district_name: YINGHUA ACADEMY
+  district_nces_id: '2700281'
+  enrollment: 822
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-minneapolis-2700288:
+  display_name: Minneapolis
+  district_name: HIAWATHA ACADEMIES
+  district_nces_id: '2700288'
+  enrollment: 1547
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-minneapolis-2700309:
+  display_name: Minneapolis
+  district_name: BEST ACADEMY
+  district_nces_id: '2700309'
+  enrollment: 617
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-minneapolis-2721240:
+  display_name: Minneapolis
+  district_name: Minneapolis Public School District
+  district_nces_id: '2721240'
+  enrollment: 29205
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-minneota:
+  display_name: Minneota
+  district_name: MINNEOTA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2721270'
+  enrollment: 518
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-minnetonka-2700364:
+  display_name: Minnetonka
+  district_name: EAGLE RIDGE ACADEMY CHARTER SCHOOL
+  district_nces_id: '2700364'
+  enrollment: 1489
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-minnetonka-2711670:
+  display_name: Minnetonka
+  district_name: MINNETONKA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2711670'
+  enrollment: 11248
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-minnetrista:
+  display_name: Minnetrista
+  district_name: WESTONKA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2722920'
+  enrollment: 2438
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-montevideo:
+  display_name: Montevideo
+  district_name: MONTEVIDEO PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2721320'
+  enrollment: 1383
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-montgomery:
+  display_name: Montgomery
+  district_name: TRI-CITY UNITED SCHOOL DISTRICT
+  district_nces_id: '2700379'
+  enrollment: 1960
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-monticello:
+  display_name: Monticello
+  district_name: MONTICELLO PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2721390'
+  enrollment: 4142
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-moorhead:
+  display_name: Moorhead
+  district_name: Moorhead Area Public Schools
+  district_nces_id: '2721420'
+  enrollment: 7412
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-moose-lake:
+  display_name: Moose Lake
+  district_name: MOOSE LAKE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2721450'
+  enrollment: 600
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-mora:
+  display_name: Mora
+  district_name: MORA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2721480'
+  enrollment: 1642
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-morris:
+  display_name: Morris
+  district_name: MORRIS AREA PUBLIC SCHOOLS
+  district_nces_id: '2700383'
+  enrollment: 1081
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-mountain-iron:
+  display_name: Mountain Iron
+  district_name: MOUNTAIN IRON-BUHL SCHOOL DISTRICT
+  district_nces_id: '2700001'
+  enrollment: 618
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-mountain-lake:
+  display_name: Mountain Lake
+  district_name: MOUNTAIN LAKE PUBLIC SCHOOLS
+  district_nces_id: '2723010'
+  enrollment: 501
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-nashwauk:
+  display_name: Nashwauk
+  district_name: NASHWAUK-KEEWATIN SCHOOL DISTRICT
+  district_nces_id: '2723310'
+  enrollment: 581
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-nevis:
+  display_name: Nevis
+  district_name: NEVIS PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2723370'
+  enrollment: 597
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-new-hope:
+  display_name: New Hope
+  district_name: ROBBINSDALE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2731780'
+  enrollment: 11010
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-new-london:
+  display_name: New London
+  district_name: NEW LONDON-SPICER SCHOOL DISTRICT
+  district_nces_id: '2723400'
+  enrollment: 1548
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-new-prague:
+  display_name: New Prague
+  district_name: NEW PRAGUE AREA SCHOOLS
+  district_nces_id: '2723430'
+  enrollment: 4146
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-new-richland:
+  display_name: New Richland
+  district_name: NRHEG SCHOOL DISTRICT
+  district_nces_id: '2700089'
+  enrollment: 818
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-new-ulm:
+  display_name: New Ulm
+  district_name: NEW ULM PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2723490'
+  enrollment: 2162
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-new-york-mills:
+  display_name: New York Mills
+  district_name: NEW YORK MILLS PUBLIC SCHOOL DIST.
+  district_nces_id: '2723520'
+  enrollment: 783
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-north-branch:
+  display_name: North Branch
+  district_name: North Branch Area Public Schools
+  district_nces_id: '2723820'
+  enrollment: 2641
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-northfield:
+  display_name: Northfield
+  district_name: NORTHFIELD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2723880'
+  enrollment: 3857
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-norwood-young-america:
+  display_name: Norwood Young America
+  district_name: CENTRAL PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2723910'
+  enrollment: 919
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-ogilvie:
+  display_name: Ogilvie
+  district_name: OGILVIE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2723970'
+  enrollment: 522
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-olivia:
+  display_name: Olivia
+  district_name: BIRD ISLAND-OLIVIA-LAKE LILLIAN
+  district_nces_id: '2705660'
+  enrollment: 623
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-onamia:
+  display_name: Onamia
+  district_name: ONAMIA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2725050'
+  enrollment: 564
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-osakis:
+  display_name: Osakis
+  district_name: OSAKIS PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2725140'
+  enrollment: 842
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-otsego:
+  display_name: Otsego
+  district_name: KALEIDOSCOPE CHARTER SCHOOL
+  district_nces_id: '2700360'
+  enrollment: 528
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-owatonna:
+  display_name: Owatonna
+  district_name: OWATONNA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2728050'
+  enrollment: 4926
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-park-rapids:
+  display_name: Park Rapids
+  district_name: PARK RAPIDS PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2728080'
+  enrollment: 1765
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-parkers-prairie:
+  display_name: Parkers Prairie
+  district_name: PARKERS PRAIRIE PUBLIC SCHOOL DIST.
+  district_nces_id: '2728110'
+  enrollment: 541
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-paynesville:
+  display_name: Paynesville
+  district_name: PAYNESVILLE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2728140'
+  enrollment: 894
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-pelican-rapids:
+  display_name: Pelican Rapids
+  district_name: Pelican Rapids Public Schools
+  district_nces_id: '2728170'
+  enrollment: 865
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-pequot-lakes:
+  display_name: Pequot Lakes
+  district_name: PEQUOT LAKES PUBLIC SCHOOLS
+  district_nces_id: '2728200'
+  enrollment: 1797
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-perham:
+  display_name: Perham
+  district_name: PERHAM-DENT PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2728230'
+  enrollment: 1632
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-pierz:
+  display_name: Pierz
+  district_name: PIERZ PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2728320'
+  enrollment: 1252
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-pillager:
+  display_name: Pillager
+  district_name: PILLAGER PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2728350'
+  enrollment: 1245
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-pine-city:
+  display_name: Pine City
+  district_name: PINE CITY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2728380'
+  enrollment: 1586
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-pine-island:
+  display_name: Pine Island
+  district_name: Pine Island Public School District
+  district_nces_id: '2728950'
+  enrollment: 1541
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-pine-river:
+  display_name: Pine River
+  district_name: PINE RIVER-BACKUS SCHOOL DISTRICT
+  district_nces_id: '2728970'
+  enrollment: 903
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-pipestone:
+  display_name: Pipestone
+  district_name: PIPESTONE AREA SCHOOL DISTRICT
+  district_nces_id: '2700108'
+  enrollment: 1105
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-plainview:
+  display_name: Plainview
+  district_name: PLAINVIEW-ELGIN-MILLVILLE
+  district_nces_id: '2700287'
+  enrollment: 1502
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-plymouth-2700025:
+  display_name: Plymouth
+  district_name: Intermediate School District 287
+  district_nces_id: '2700025'
+  enrollment: 853
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-plymouth-2742160:
+  display_name: Plymouth
+  district_name: WAYZATA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2742160'
+  enrollment: 12318
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-preston:
+  display_name: Preston
+  district_name: FILLMORE CENTRAL
+  district_nces_id: '2700100'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-princeton:
+  display_name: Princeton
+  district_name: PRINCETON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2730030'
+  enrollment: 3342
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-prior-lake:
+  display_name: Prior Lake
+  district_name: PRIOR LAKE-SAVAGE AREA SCHOOLS
+  district_nces_id: '2730060'
+  enrollment: 8788
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-proctor:
+  display_name: Proctor
+  district_name: PROCTOR PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2730090'
+  enrollment: 1898
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-ramsey:
+  display_name: Ramsey
+  district_name: PACT CHARTER SCHOOL
+  district_nces_id: '2700093'
+  enrollment: 686
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-randolph:
+  display_name: Randolph
+  district_name: RANDOLPH PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2730150'
+  enrollment: 842
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-red-lake:
+  display_name: Red Lake
+  district_name: RED LAKE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2730510'
+  enrollment: 1437
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-red-wing:
+  display_name: Red Wing
+  district_name: Red Wing Public School District
+  district_nces_id: '2730480'
+  enrollment: 2335
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-redwood-falls:
+  display_name: Redwood Falls
+  district_name: REDWOOD AREA SCHOOL DISTRICT
+  district_nces_id: '2700182'
+  enrollment: 1113
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-renville:
+  display_name: Renville
+  district_name: Renville County West Schools
+  district_nces_id: '2700163'
+  enrollment: 580
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-richfield-2700237:
+  display_name: Richfield
+  district_name: PARTNERSHIP ACADEMY INC.
+  district_nces_id: '2700237'
+  enrollment: 523
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-richfield-2731750:
+  display_name: Richfield
+  district_name: RICHFIELD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2731750'
+  enrollment: 4139
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-rochester:
+  display_name: Rochester
+  district_name: ROCHESTER PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2731800'
+  enrollment: 17492
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-rockford:
+  display_name: Rockford
+  district_name: ROCKFORD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2732070'
+  enrollment: 1566
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-roseau:
+  display_name: Roseau
+  district_name: ROSEAU PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2732250'
+  enrollment: 1152
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-rosemount-2700026:
+  display_name: Rosemount
+  district_name: INTERMEDIATE SCHOOL DISTRICT 917
+  district_nces_id: '2700026'
+  enrollment: 668
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-rosemount-2732390:
+  display_name: Rosemount
+  district_name: ROSEMOUNT-APPLE VALLEY-EAGAN
+  district_nces_id: '2732390'
+  enrollment: 29221
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-roseville:
+  display_name: Roseville
+  district_name: ROSEVILLE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2732430'
+  enrollment: 7356
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-royalton:
+  display_name: Royalton
+  district_name: ROYALTON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2732520'
+  enrollment: 954
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-rush-city:
+  display_name: Rush City
+  district_name: RUSH CITY PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2732550'
+  enrollment: 912
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-rushford:
+  display_name: Rushford
+  district_name: RUSHFORD-PETERSON PUBLIC SCHOOLS
+  district_nces_id: '2728290'
+  enrollment: 639
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-saint-anthony:
+  display_name: Saint Anthony
+  district_name: ST. ANTHONY-NEW BRIGHTON SCHOOLS
+  district_nces_id: '2733420'
+  enrollment: 1830
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-saint-charles:
+  display_name: Saint Charles
+  district_name: ST. CHARLES PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2733450'
+  enrollment: 994
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-saint-clair:
+  display_name: Saint Clair
+  district_name: ST. CLAIR PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2733480'
+  enrollment: 787
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-saint-cloud:
+  display_name: Saint Cloud
+  district_name: STRIDE Academy
+  district_nces_id: '2700252'
+  enrollment: 544
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-francis:
+  display_name: Saint Francis
+  district_name: St. Francis Area Schools
+  district_nces_id: '2733540'
+  enrollment: 4312
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-saint-james:
+  display_name: Saint James
+  district_name: ST. JAMES PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2733600'
+  enrollment: 1107
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-saint-louis-park:
+  display_name: Saint Louis Park
+  district_name: ST. LOUIS PARK PUBLIC SCHOOL DIST.
+  district_nces_id: '2733780'
+  enrollment: 4509
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700115:
+  display_name: Saint Paul
+  district_name: COMMUNITY OF PEACE ACADEMY
+  district_nces_id: '2700115'
+  enrollment: 869
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700140:
+  display_name: Saint Paul
+  district_name: HIGHER GROUND ACADEMY
+  district_nces_id: '2700140'
+  enrollment: 1052
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700142:
+  display_name: Saint Paul
+  district_name: ST. PAUL CITY SCHOOL
+  district_nces_id: '2700142'
+  enrollment: 538
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700185:
+  display_name: Saint Paul
+  district_name: ACADEMIA CESAR CHAVEZ CHARTER SCH.
+  district_nces_id: '2700185'
+  enrollment: 547
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700230:
+  display_name: Saint Paul
+  district_name: HOPE COMMUNITY ACADEMY
+  district_nces_id: '2700230'
+  enrollment: 767
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700246:
+  display_name: Saint Paul
+  district_name: Twin Cities Academy
+  district_nces_id: '2700246'
+  enrollment: 512
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700262:
+  display_name: Saint Paul
+  district_name: Twin Cities German Immersion Chtr
+  district_nces_id: '2700262'
+  enrollment: 615
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700304:
+  display_name: Saint Paul
+  district_name: COMMUNITY SCHOOL OF EXCELLENCE
+  district_nces_id: '2700304'
+  enrollment: 1494
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700337:
+  display_name: Saint Paul
+  district_name: Nova Classical Academy
+  district_nces_id: '2700337'
+  enrollment: 1030
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700342:
+  display_name: Saint Paul
+  district_name: HMONG COLLEGE PREP ACADEMY
+  district_nces_id: '2700342'
+  enrollment: 2406
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700344:
+  display_name: Saint Paul
+  district_name: GREAT RIVER SCHOOL
+  district_nces_id: '2700344'
+  enrollment: 794
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700367:
+  display_name: Saint Paul
+  district_name: STEP Academy
+  district_nces_id: '2700367'
+  enrollment: 703
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2700410:
+  display_name: Saint Paul
+  district_name: New Century School
+  district_nces_id: '2700410'
+  enrollment: 514
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-saint-paul-2733840:
+  display_name: Saint Paul
+  district_name: Saint Paul Public Schools
+  district_nces_id: '2733840'
+  enrollment: 32316
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-saint-peter:
+  display_name: Saint Peter
+  district_name: ST. PETER PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2733870'
+  enrollment: 2090
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-sartell:
+  display_name: Sartell
+  district_name: SARTELL-ST. STEPHEN SCHOOL DISTRICT
+  district_nces_id: '2732820'
+  enrollment: 4098
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-sauk-centre:
+  display_name: Sauk Centre
+  district_name: SAUK CENTRE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2732850'
+  enrollment: 1139
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-sauk-rapids:
+  display_name: Sauk Rapids
+  district_name: SAUK RAPIDS-RICE PUBLIC SCHOOLS
+  district_nces_id: '2732880'
+  enrollment: 4423
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-savage:
+  display_name: Savage
+  district_name: ASPEN ACADEMY
+  district_nces_id: '2700311'
+  enrollment: 647
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-shakopee:
+  display_name: Shakopee
+  district_name: SHAKOPEE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2733000'
+  enrollment: 7867
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-sherburn:
+  display_name: Sherburn
+  district_name: MARTIN COUNTY WEST SCHOOL DISTRICT
+  district_nces_id: '2718960'
+  enrollment: 650
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-shoreview:
+  display_name: Shoreview
+  district_name: MOUNDS VIEW PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2722950'
+  enrollment: 11792
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-slayton:
+  display_name: Slayton
+  district_name: Murray County Central Schools
+  district_nces_id: '2700090'
+  enrollment: 721
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-sleepy-eye:
+  display_name: Sleepy Eye
+  district_name: SLEEPY EYE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2733210'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-south-saint-paul:
+  display_name: South Saint Paul
+  district_name: South St. Paul Public School Dist
+  district_nces_id: '2733270'
+  enrollment: 3048
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-spring-lake-park:
+  display_name: Spring Lake Park
+  district_name: SPRING LAKE PARK PUBLIC SCHOOLS
+  district_nces_id: '2733330'
+  enrollment: 6143
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-spring-valley:
+  display_name: Spring Valley
+  district_name: KINGSLAND PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2700007'
+  enrollment: 533
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-springfield:
+  display_name: Springfield
+  district_name: SPRINGFIELD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2733390'
+  enrollment: 591
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-staples:
+  display_name: Staples
+  district_name: STAPLES-MOTLEY SCHOOL DISTRICT
+  district_nces_id: '2733900'
+  enrollment: 931
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-stewartville:
+  display_name: Stewartville
+  district_name: STEWARTVILLE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2738160'
+  enrollment: 2055
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-stillwater-2700362:
+  display_name: Stillwater
+  district_name: ST. CROIX PREPARATORY ACADEMY
+  district_nces_id: '2700362'
+  enrollment: 1213
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-stillwater-2738190:
+  display_name: Stillwater
+  district_name: Stillwater Area Public Schools
+  district_nces_id: '2738190'
+  enrollment: 8285
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-thief-river-falls:
+  display_name: Thief River Falls
+  district_name: THIEF RIVER FALLS SCHOOL DISTRICT
+  district_nces_id: '2738850'
+  enrollment: 1806
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-tracy:
+  display_name: Tracy
+  district_name: TRACY AREA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2700326'
+  enrollment: 657
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-two-harbors:
+  display_name: Two Harbors
+  district_name: LAKE SUPERIOR PUBLIC SCHOOL DIST.
+  district_nces_id: '2740740'
+  enrollment: 1325
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-tyler:
+  display_name: Tyler
+  district_name: RTR PUBLIC SCHOOLS
+  district_nces_id: '2700294'
+  enrollment: 620
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-underwood:
+  display_name: Underwood
+  district_name: UNDERWOOD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2740830'
+  enrollment: 568
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-verndale:
+  display_name: Verndale
+  district_name: VERNDALE PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2740920'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-virginia-2700008:
+  display_name: Virginia
+  district_name: ST. LOUIS COUNTY SCHOOL DISTRICT
+  district_nces_id: '2700008'
+  enrollment: 1954
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-virginia-2700466:
+  display_name: Virginia
+  district_name: Rock Ridge Public Schools
+  district_nces_id: '2700466'
+  enrollment: 2406
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-wabasha:
+  display_name: Wabasha
+  district_name: Wabasha-Kellogg School District
+  district_nces_id: '2741060'
+  enrollment: 899
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-waconia:
+  display_name: Waconia
+  district_name: WACONIA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2741460'
+  enrollment: 4045
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-wadena:
+  display_name: Wadena
+  district_name: WADENA-DEER CREEK SCHOOL DISTRICT
+  district_nces_id: '2700022'
+  enrollment: 1088
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-waite-park:
+  display_name: Waite Park
+  district_name: ST. CLOUD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2733510'
+  enrollment: 9286
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-walker:
+  display_name: Walker
+  district_name: WALKER-HACKENSACK-AKELEY SCHL. DIST
+  district_nces_id: '2702910'
+  enrollment: 736
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-wanamingo:
+  display_name: Wanamingo
+  district_name: KENYON-WANAMINGO SCHOOL DISTRICT
+  district_nces_id: '2717100'
+  enrollment: 654
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-warren:
+  display_name: Warren
+  district_name: WARREN-ALVARADO-OSLO SCHOOL DIST.
+  district_nces_id: '2700024'
+  enrollment: 585
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-warroad:
+  display_name: Warroad
+  district_name: WARROAD PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2741850'
+  enrollment: 1068
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-waseca:
+  display_name: Waseca
+  district_name: WASECA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2741880'
+  enrollment: 1784
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-watertown:
+  display_name: Watertown
+  district_name: Watertown-Mayer Public School Dist
+  district_nces_id: '2741910'
+  enrollment: 1506
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-waterville:
+  display_name: Waterville
+  district_name: WATERVILLE-ELYSIAN-MORRISTOWN
+  district_nces_id: '2700013'
+  enrollment: 767
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-waubun:
+  display_name: Waubun
+  district_name: Waubun-Ogema-White Earth Schools
+  district_nces_id: '2742120'
+  enrollment: 728
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-wells:
+  display_name: Wells
+  district_name: United South Central Schools
+  district_nces_id: '2700005'
+  enrollment: 778
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-white-bear-lake-2702264:
+  display_name: White Bear Lake
+  district_name: NORTHEAST METRO 916
+  district_nces_id: '2702264'
+  enrollment: 845
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-white-bear-lake-2742360:
+  display_name: White Bear Lake
+  district_name: WHITE BEAR LAKE SCHOOL DISTRICT
+  district_nces_id: '2742360'
+  enrollment: 8543
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-willmar:
+  display_name: Willmar
+  district_name: WILLMAR PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2742720'
+  enrollment: 4279
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-windom:
+  display_name: Windom
+  district_name: WINDOM PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2742780'
+  enrollment: 1166
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-winona:
+  display_name: Winona
+  district_name: WINONA AREA PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2744070'
+  enrollment: 2455
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-woodbury-2700167:
+  display_name: Woodbury
+  district_name: MATH AND SCIENCE ACADEMY
+  district_nces_id: '2700167'
+  enrollment: 609
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-woodbury-2700401:
+  display_name: Woodbury
+  district_name: Woodbury Leadership Academy
+  district_nces_id: '2700401'
+  enrollment: 666
+  has_charters: true
+  source: ccd_auto
+  state: MN
+mn-worthington:
+  display_name: Worthington
+  district_name: WORTHINGTON PUBLIC SCHOOL DISTRICT
+  district_nces_id: '2744160'
+  enrollment: 3343
+  has_charters: false
+  source: ccd_auto
+  state: MN
+mn-zumbrota:
+  display_name: Zumbrota
+  district_name: ZUMBROTA-MAZEPPA SCHOOL DISTRICT
+  district_nces_id: '2745735'
+  enrollment: 1249
+  has_charters: false
+  source: ccd_auto
+  state: MN

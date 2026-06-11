@@ -1,0 +1,288 @@
+wy-afton:
+  display_name: Afton
+  district_name: 'Lincoln County School District #2'
+  district_nces_id: '5604060'
+  enrollment: 3043
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-buffalo:
+  display_name: Buffalo
+  district_name: 'Johnson County School District #1'
+  district_nces_id: '5603770'
+  enrollment: 1194
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-casper:
+  display_name: Casper
+  district_name: 'Natrona County School District #1'
+  district_nces_id: '5604510'
+  enrollment: 13193
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-cheyenne:
+  display_name: Cheyenne
+  district_name: 'Laramie County School District #1'
+  district_nces_id: '5601980'
+  enrollment: 13821
+  has_charters: true
+  source: ccd_auto
+  state: WY
+wy-cody:
+  display_name: Cody
+  district_name: 'Park County School District # 6'
+  district_nces_id: '5602070'
+  enrollment: 2049
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-cowley:
+  display_name: Cowley
+  district_name: 'Big Horn County School District #1'
+  district_nces_id: '5601420'
+  enrollment: 1238
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-diamondville:
+  display_name: Diamondville
+  district_name: 'Lincoln County School District #1'
+  district_nces_id: '5604030'
+  enrollment: 598
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-douglas:
+  display_name: Douglas
+  district_name: 'Converse County School District #1'
+  district_nces_id: '5602140'
+  enrollment: 1700
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-ethete:
+  display_name: Ethete
+  district_name: 'Fremont County School District #14'
+  district_nces_id: '5604450'
+  enrollment: 596
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-evanston:
+  display_name: Evanston
+  district_name: 'Uinta County School District #1'
+  district_nces_id: '5602760'
+  enrollment: 2656
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-gillette:
+  display_name: Gillette
+  district_name: 'Campbell County School District #1'
+  district_nces_id: '5601470'
+  enrollment: 8636
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-glenrock:
+  display_name: Glenrock
+  district_name: 'Converse County School District #2'
+  district_nces_id: '5602150'
+  enrollment: 680
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-green-river:
+  display_name: Green River
+  district_name: 'Sweetwater County School District #2'
+  district_nces_id: '5605762'
+  enrollment: 2406
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-jackson:
+  display_name: Jackson
+  district_name: 'Teton County School District #1'
+  district_nces_id: '5605830'
+  enrollment: 2797
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-lander:
+  display_name: Lander
+  district_name: 'Fremont County School District # 1'
+  district_nces_id: '5602870'
+  enrollment: 1727
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-laramie:
+  display_name: Laramie
+  district_name: 'Albany County School District #1'
+  district_nces_id: '5600730'
+  enrollment: 3902
+  has_charters: true
+  source: ccd_auto
+  state: WY
+wy-lovell:
+  display_name: Lovell
+  district_name: 'Big Horn County School District #2'
+  district_nces_id: '5601460'
+  enrollment: 728
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-lusk:
+  display_name: Lusk
+  district_name: 'Niobrara County School District #1'
+  district_nces_id: '5604230'
+  enrollment: 842
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-lyman:
+  display_name: Lyman
+  district_name: 'Uinta County School District #6'
+  district_nces_id: '5604260'
+  enrollment: 725
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-mountain-view:
+  display_name: Mountain View
+  district_name: 'Uinta County School District #4'
+  district_nces_id: '5604500'
+  enrollment: 748
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-newcastle:
+  display_name: Newcastle
+  district_name: 'Weston County School District #1'
+  district_nces_id: '5604830'
+  enrollment: 778
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-pine-bluffs:
+  display_name: Pine Bluffs
+  district_name: 'Laramie County School District #2'
+  district_nces_id: '5604120'
+  enrollment: 1094
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-pinedale:
+  display_name: Pinedale
+  district_name: 'Sublette County School District #1'
+  district_nces_id: '5604860'
+  enrollment: 1092
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-powell:
+  display_name: Powell
+  district_name: 'Park County School District # 1'
+  district_nces_id: '5605160'
+  enrollment: 1876
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-ranchester:
+  display_name: Ranchester
+  district_name: 'Sheridan County School District #1'
+  district_nces_id: '5605690'
+  enrollment: 1163
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-rawlins:
+  display_name: Rawlins
+  district_name: 'Carbon County School District #1'
+  district_nces_id: '5601030'
+  enrollment: 1643
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-riverton:
+  display_name: Riverton
+  district_name: 'Fremont County School District #25'
+  district_nces_id: '5605220'
+  enrollment: 2477
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-rock-springs:
+  display_name: Rock Springs
+  district_name: 'Sweetwater County School District #1'
+  district_nces_id: '5605302'
+  enrollment: 5051
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-saratoga:
+  display_name: Saratoga
+  district_name: 'Carbon County School District #2'
+  district_nces_id: '5601700'
+  enrollment: 607
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-sheridan:
+  display_name: Sheridan
+  district_name: 'Sheridan County School District #2'
+  district_nces_id: '5605695'
+  enrollment: 3599
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-sundance:
+  display_name: Sundance
+  district_name: 'Crook County School District #1'
+  district_nces_id: '5602370'
+  enrollment: 1238
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-thermopolis:
+  display_name: Thermopolis
+  district_name: 'Hot Springs County School District #1'
+  district_nces_id: '5603310'
+  enrollment: 642
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-torrington:
+  display_name: Torrington
+  district_name: 'Goshen County School District #1'
+  district_nces_id: '5602990'
+  enrollment: 1657
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-upton:
+  display_name: Upton
+  district_name: 'Weston County School District #7'
+  district_nces_id: '5606090'
+  enrollment: 725
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-wheatland:
+  display_name: Wheatland
+  district_name: 'Platte County School District #1'
+  district_nces_id: '5605090'
+  enrollment: 913
+  has_charters: false
+  source: ccd_auto
+  state: WY
+wy-worland:
+  display_name: Worland
+  district_name: 'Washakie County School District #1'
+  district_nces_id: '5606240'
+  enrollment: 1138
+  has_charters: false
+  source: ccd_auto
+  state: WY

@@ -1,0 +1,1024 @@
+va-abingdon:
+  display_name: Abingdon
+  district_name: Washington County Public Schools
+  district_nces_id: '5103900'
+  enrollment: 6737
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-accomac:
+  display_name: Accomac
+  district_name: Accomack County Public Schools
+  district_nces_id: '5100060'
+  enrollment: 4726
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-alexandria:
+  display_name: Alexandria
+  district_name: Alexandria City Public Schools
+  district_nces_id: '5100120'
+  enrollment: 16040
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-amelia:
+  display_name: Amelia
+  district_name: Amelia County Public Schools
+  district_nces_id: '5100180'
+  enrollment: 1663
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-amherst:
+  display_name: Amherst
+  district_name: Amherst County Public Schools
+  district_nces_id: '5100210'
+  enrollment: 3987
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-appomattox:
+  display_name: Appomattox
+  district_name: Appomattox County Public Schools
+  district_nces_id: '5100240'
+  enrollment: 2361
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-arlington:
+  display_name: Arlington
+  district_name: Arlington County Public Schools
+  district_nces_id: '5100270'
+  enrollment: 27562
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-ashburn:
+  display_name: Ashburn
+  district_name: Loudoun County Public Schools
+  district_nces_id: '5102250'
+  enrollment: 81678
+  has_charters: true
+  source: ccd_auto
+  state: VA
+va-ashland:
+  display_name: Ashland
+  district_name: Hanover County Public Schools
+  district_nces_id: '5101830'
+  enrollment: 17066
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-bastian:
+  display_name: Bastian
+  district_name: Bland County Public Schools
+  district_nces_id: '5100390'
+  enrollment: 796
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-bedford:
+  display_name: Bedford
+  district_name: Bedford County Public Schools
+  district_nces_id: '5100360'
+  enrollment: 9084
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-berryville:
+  display_name: Berryville
+  district_name: Clarke County Public Schools
+  district_nces_id: '5100870'
+  enrollment: 1892
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-bowling-green:
+  display_name: Bowling Green
+  district_name: Caroline County Public Schools
+  district_nces_id: '5100660'
+  enrollment: 4337
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-boydton:
+  display_name: Boydton
+  district_name: Mecklenburg County Public Schools
+  district_nces_id: '5102460'
+  enrollment: 3972
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-bristol:
+  display_name: Bristol
+  district_name: Bristol City Public Schools
+  district_nces_id: '5100450'
+  enrollment: 2194
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-buckingham:
+  display_name: Buckingham
+  district_name: Buckingham County Public Schools
+  district_nces_id: '5100540'
+  enrollment: 1992
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-buena-vista:
+  display_name: Buena Vista
+  district_name: Buena Vista City Public Schools
+  district_nces_id: '5100560'
+  enrollment: 889
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-charles-city:
+  display_name: Charles City
+  district_name: Charles City County Public Schools
+  district_nces_id: '5100720'
+  enrollment: 562
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-charlotte-court-house:
+  display_name: Charlotte Court House
+  district_name: Charlotte County Public Schools
+  district_nces_id: '5100750'
+  enrollment: 1668
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-charlottesville-5100090:
+  display_name: Charlottesville
+  district_name: Albemarle County Public Schools
+  district_nces_id: '5100090'
+  enrollment: 13937
+  has_charters: true
+  source: ccd_auto
+  state: VA
+va-charlottesville-5100780:
+  display_name: Charlottesville
+  district_name: Charlottesville City Public Schools
+  district_nces_id: '5100780'
+  enrollment: 4485
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-chatham:
+  display_name: Chatham
+  district_name: Pittsylvania County Public Schools
+  district_nces_id: '5102940'
+  enrollment: 7918
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-chesapeake:
+  display_name: Chesapeake
+  district_name: Chesapeake City Public Schools
+  district_nces_id: '5100810'
+  enrollment: 40769
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-chesterfield:
+  display_name: Chesterfield
+  district_name: Chesterfield County Public Schools
+  district_nces_id: '5100840'
+  enrollment: 63916
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-christiansburg:
+  display_name: Christiansburg
+  district_name: Montgomery County Public Schools
+  district_nces_id: '5102520'
+  enrollment: 9693
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-clintwood:
+  display_name: Clintwood
+  district_name: Dickenson County Public Schools
+  district_nces_id: '5101140'
+  enrollment: 1946
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-collinsville:
+  display_name: Collinsville
+  district_name: Henry County Public Schools
+  district_nces_id: '5101920'
+  enrollment: 7010
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-colonial-beach:
+  display_name: Colonial Beach
+  district_name: Colonial Beach Public Schools
+  district_nces_id: '5100930'
+  enrollment: 574
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-colonial-heights:
+  display_name: Colonial Heights
+  district_name: Colonial Heights City Public Schools
+  district_nces_id: '5100960'
+  enrollment: 2843
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-courtland:
+  display_name: Courtland
+  district_name: Southampton County Public Schools
+  district_nces_id: '5103600'
+  enrollment: 2579
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-culpeper:
+  display_name: Culpeper
+  district_name: Culpeper County Public Schools
+  district_nces_id: '5101050'
+  enrollment: 8352
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-cumberland:
+  display_name: Cumberland
+  district_name: Cumberland County Public Schools
+  district_nces_id: '5101080'
+  enrollment: 1283
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-danville:
+  display_name: Danville
+  district_name: Danville City Public Schools
+  district_nces_id: '5101110'
+  enrollment: 5684
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-dinwiddie:
+  display_name: Dinwiddie
+  district_name: Dinwiddie County Public Schools
+  district_nces_id: '5101170'
+  enrollment: 4256
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-emporia:
+  display_name: Emporia
+  district_name: Greensville County Public Schools
+  district_nces_id: '5101740'
+  enrollment: 2034
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-falls-church-5101260:
+  display_name: Falls Church
+  district_name: Fairfax County Public Schools
+  district_nces_id: '5101260'
+  enrollment: 179858
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-falls-church-5101290:
+  display_name: Falls Church
+  district_name: Falls Church City Public Schools
+  district_nces_id: '5101290'
+  enrollment: 2496
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-farmville:
+  display_name: Farmville
+  district_name: Prince Edward County Public Schools
+  district_nces_id: '5103060'
+  enrollment: 1887
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-fincastle:
+  display_name: Fincastle
+  district_name: Botetourt County Public Schools
+  district_nces_id: '5100420'
+  enrollment: 4492
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-floyd:
+  display_name: Floyd
+  district_name: Floyd County Public Schools
+  district_nces_id: '5101350'
+  enrollment: 1746
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-franklin:
+  display_name: Franklin
+  district_name: Franklin City Public Schools
+  district_nces_id: '5101410'
+  enrollment: 1023
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-fredericksburg-5101510:
+  display_name: Fredericksburg
+  district_name: Fredericksburg City Public Schools
+  district_nces_id: '5101510'
+  enrollment: 3762
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-fredericksburg-5103640:
+  display_name: Fredericksburg
+  district_name: Spotsylvania County Public Schools
+  district_nces_id: '5103640'
+  enrollment: 24201
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-front-royal:
+  display_name: Front Royal
+  district_name: Warren County Public Schools
+  district_nces_id: '5103870'
+  enrollment: 5165
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-galax:
+  display_name: Galax
+  district_name: Galax City Public Schools
+  district_nces_id: '5101560'
+  enrollment: 1393
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-gate-city:
+  display_name: Gate City
+  district_name: Scott County Public Schools
+  district_nces_id: '5103480'
+  enrollment: 4024
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-gloucester:
+  display_name: Gloucester
+  district_name: Gloucester County Public Schools
+  district_nces_id: '5101620'
+  enrollment: 5054
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-goochland:
+  display_name: Goochland
+  district_name: Goochland County Public Schools
+  district_nces_id: '5101650'
+  enrollment: 2642
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-grundy:
+  display_name: Grundy
+  district_name: Buchanan County Public Schools
+  district_nces_id: '5100510'
+  enrollment: 2462
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-halifax:
+  display_name: Halifax
+  district_name: Halifax County Public Schools
+  district_nces_id: '5101770'
+  enrollment: 4620
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-hampton:
+  display_name: Hampton
+  district_name: Hampton City Public Schools
+  district_nces_id: '5101800'
+  enrollment: 19796
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-harrisonburg-5101860:
+  display_name: Harrisonburg
+  district_name: Harrisonburg City Public Schools
+  district_nces_id: '5101860'
+  enrollment: 6682
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-harrisonburg-5103390:
+  display_name: Harrisonburg
+  district_name: Rockingham County Public Schools
+  district_nces_id: '5103390'
+  enrollment: 11497
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-heathsville:
+  display_name: Heathsville
+  district_name: Northumberland County Public Schools
+  district_nces_id: '5102730'
+  enrollment: 1200
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-henrico:
+  display_name: Henrico
+  district_name: Henrico County Public Schools
+  district_nces_id: '5101890'
+  enrollment: 50389
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-hillsville:
+  display_name: Hillsville
+  district_name: Carroll County Public Schools
+  district_nces_id: '5100690'
+  enrollment: 3505
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-hopewell:
+  display_name: Hopewell
+  district_name: Hopewell City Public Schools
+  district_nces_id: '5101980'
+  enrollment: 3984
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-independence:
+  display_name: Independence
+  district_name: Grayson County Public Schools
+  district_nces_id: '5101690'
+  enrollment: 1561
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-jonesville:
+  display_name: Jonesville
+  district_name: Lee County Public Schools
+  district_nces_id: '5102190'
+  enrollment: 2949
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-kenbridge:
+  display_name: Kenbridge
+  district_name: Lunenburg County Public Schools
+  district_nces_id: '5102310'
+  enrollment: 1575
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-king-and-queen-ch:
+  display_name: King And Queen Ch
+  district_name: King and Queen County Public Schools
+  district_nces_id: '5102070'
+  enrollment: 858
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-king-george:
+  display_name: King George
+  district_name: King George County Public Schools
+  district_nces_id: '5102100'
+  enrollment: 4521
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-king-william:
+  display_name: King William
+  district_name: King William County Public Schools
+  district_nces_id: '5102120'
+  enrollment: 2084
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-lawrenceville:
+  display_name: Lawrenceville
+  district_name: Brunswick County Public Schools
+  district_nces_id: '5100480'
+  enrollment: 1405
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-lebanon:
+  display_name: Lebanon
+  district_name: Russell County Public Schools
+  district_nces_id: '5103420'
+  enrollment: 3375
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-lexington:
+  display_name: Lexington
+  district_name: Rockbridge County Public Schools
+  district_nces_id: '5103370'
+  enrollment: 2549
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-lovingston:
+  display_name: Lovingston
+  district_name: Nelson County Public Schools
+  district_nces_id: '5102580'
+  enrollment: 1480
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-low-moor:
+  display_name: Low Moor
+  district_name: Alleghany Highlands Public Schools
+  district_nces_id: '5100152'
+  enrollment: 2878
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-luray:
+  display_name: Luray
+  district_name: Page County Public Schools
+  district_nces_id: '5102850'
+  enrollment: 3030
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-lynchburg:
+  display_name: Lynchburg
+  district_name: Lynchburg City Public Schools
+  district_nces_id: '5102340'
+  enrollment: 7856
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-machipongo:
+  display_name: Machipongo
+  district_name: Northampton County Public Schools
+  district_nces_id: '5102710'
+  enrollment: 1359
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-madison:
+  display_name: Madison
+  district_name: Madison County Public Schools
+  district_nces_id: '5102370'
+  enrollment: 1680
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-manassas-5102360:
+  display_name: Manassas
+  district_name: Manassas City Public Schools
+  district_nces_id: '5102360'
+  enrollment: 7413
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-manassas-5103130:
+  display_name: Manassas
+  district_name: Prince William County Public Schools
+  district_nces_id: '5103130'
+  enrollment: 91101
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-manassas-park:
+  display_name: Manassas Park
+  district_name: Manassas Park City Public Schools
+  district_nces_id: '5102390'
+  enrollment: 3434
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-marion:
+  display_name: Marion
+  district_name: Smyth County Public Schools
+  district_nces_id: '5103520'
+  enrollment: 3981
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-martinsville:
+  display_name: Martinsville
+  district_name: Martinsville City Public Schools
+  district_nces_id: '5102400'
+  enrollment: 1810
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-mathews:
+  display_name: Mathews
+  district_name: Mathews County Public Schools
+  district_nces_id: '5102430'
+  enrollment: 911
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-mineral:
+  display_name: Mineral
+  district_name: Louisa County Public Schools
+  district_nces_id: '5102280'
+  enrollment: 5173
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-montross:
+  display_name: Montross
+  district_name: Westmoreland County Public Schools
+  district_nces_id: '5103980'
+  enrollment: 1561
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-new-kent:
+  display_name: New Kent
+  district_name: New Kent County Public Schools
+  district_nces_id: '5102610'
+  enrollment: 3435
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-newport-news:
+  display_name: Newport News
+  district_name: Newport News City Public Schools
+  district_nces_id: '5102640'
+  enrollment: 26531
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-norfolk:
+  display_name: Norfolk
+  district_name: Norfolk City Public Schools
+  district_nces_id: '5102670'
+  enrollment: 27306
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-norton:
+  display_name: Norton
+  district_name: Norton City Public Schools
+  district_nces_id: '5102760'
+  enrollment: 813
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-nottoway:
+  display_name: Nottoway
+  district_name: Nottoway County Public Schools
+  district_nces_id: '5102790'
+  enrollment: 1810
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-orange:
+  display_name: Orange
+  district_name: Orange County Public Schools
+  district_nces_id: '5102820'
+  enrollment: 5035
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-palmyra:
+  display_name: Palmyra
+  district_name: Fluvanna County Public Schools
+  district_nces_id: '5101380'
+  enrollment: 3438
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-pearisburg:
+  display_name: Pearisburg
+  district_name: Giles County Public Schools
+  district_nces_id: '5101590'
+  enrollment: 3457
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-petersburg:
+  display_name: Petersburg
+  district_name: Petersburg City Public Schools
+  district_nces_id: '5102910'
+  enrollment: 4272
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-poquoson:
+  display_name: Poquoson
+  district_name: Poquoson City Public Schools
+  district_nces_id: '5102980'
+  enrollment: 2055
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-portsmouth:
+  display_name: Portsmouth
+  district_name: Portsmouth City Public Schools
+  district_nces_id: '5103000'
+  enrollment: 13371
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-powhatan:
+  display_name: Powhatan
+  district_name: Powhatan County Public Schools
+  district_nces_id: '5103030'
+  enrollment: 4241
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-prince-george:
+  display_name: Prince George
+  district_name: Prince George County Public Schools
+  district_nces_id: '5103090'
+  enrollment: 6106
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-pulaski:
+  display_name: Pulaski
+  district_name: Pulaski County Public Schools
+  district_nces_id: '5103150'
+  enrollment: 3988
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-radford:
+  display_name: Radford
+  district_name: Radford City Public Schools
+  district_nces_id: '5103180'
+  enrollment: 3690
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-richmond:
+  display_name: Richmond
+  district_name: Richmond City Public Schools
+  district_nces_id: '5103240'
+  enrollment: 21130
+  has_charters: true
+  source: ccd_auto
+  state: VA
+va-roanoke-5103300:
+  display_name: Roanoke
+  district_name: Roanoke City Public Schools
+  district_nces_id: '5103300'
+  enrollment: 13597
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-roanoke-5103330:
+  display_name: Roanoke
+  district_name: Roanoke County Public Schools
+  district_nces_id: '5103330'
+  enrollment: 13811
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-rocky-mount:
+  display_name: Rocky Mount
+  district_name: Franklin County Public Schools
+  district_nces_id: '5101440'
+  enrollment: 6252
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-rustburg:
+  display_name: Rustburg
+  district_name: Campbell County Public Schools
+  district_nces_id: '5100600'
+  enrollment: 7873
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-salem:
+  display_name: Salem
+  district_name: Salem City Public Schools
+  district_nces_id: '5103460'
+  enrollment: 3750
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-saluda:
+  display_name: Saluda
+  district_name: Middlesex County Public Schools
+  district_nces_id: '5102490'
+  enrollment: 1244
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-smithfield:
+  display_name: Smithfield
+  district_name: Isle of Wight County Public Schools
+  district_nces_id: '5102010'
+  enrollment: 5627
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-stafford:
+  display_name: Stafford
+  district_name: Stafford County Public Schools
+  district_nces_id: '5103660'
+  enrollment: 31105
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-stanardsville:
+  display_name: Stanardsville
+  district_name: Greene County Public Schools
+  district_nces_id: '5101710'
+  enrollment: 2838
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-staunton:
+  display_name: Staunton
+  district_name: Staunton City Public Schools
+  district_nces_id: '5103690'
+  enrollment: 2692
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-stony-creek:
+  display_name: Stony Creek
+  district_name: Sussex County Public Schools
+  district_nces_id: '5103780'
+  enrollment: 998
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-stuart:
+  display_name: Stuart
+  district_name: Patrick County Public Schools
+  district_nces_id: '5102880'
+  enrollment: 2481
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-suffolk:
+  display_name: Suffolk
+  district_name: Suffolk City Public Schools
+  district_nces_id: '5103710'
+  enrollment: 14490
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-surry:
+  display_name: Surry
+  district_name: Surry County Public Schools
+  district_nces_id: '5103750'
+  enrollment: 681
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-tappahannock:
+  display_name: Tappahannock
+  district_name: Essex County Public Schools
+  district_nces_id: '5101200'
+  enrollment: 1181
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-tazewell:
+  display_name: Tazewell
+  district_name: Tazewell County Public Schools
+  district_nces_id: '5103810'
+  enrollment: 5416
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-verona:
+  display_name: Verona
+  district_name: Augusta County Public Schools
+  district_nces_id: '5100300'
+  enrollment: 10076
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-virginia-beach:
+  display_name: Virginia Beach
+  district_name: Virginia Beach City Public Schools
+  district_nces_id: '5103840'
+  enrollment: 65456
+  has_charters: true
+  source: ccd_auto
+  state: VA
+va-warm-springs:
+  display_name: Warm Springs
+  district_name: Bath County Public Schools
+  district_nces_id: '5100330'
+  enrollment: 504
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-warrenton:
+  display_name: Warrenton
+  district_name: Fauquier County Public Schools
+  district_nces_id: '5101320'
+  enrollment: 10837
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-warsaw:
+  display_name: Warsaw
+  district_name: Richmond County Public Schools
+  district_nces_id: '5103270'
+  enrollment: 1346
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-washington:
+  display_name: Washington
+  district_name: Rappahannock County Public Schools
+  district_nces_id: '5103210'
+  enrollment: 735
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-waynesboro:
+  display_name: Waynesboro
+  district_name: Waynesboro City Public Schools
+  district_nces_id: '5103930'
+  enrollment: 3041
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-weems:
+  display_name: Weems
+  district_name: Lancaster County Public Schools
+  district_nces_id: '5102160'
+  enrollment: 1039
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-west-point:
+  display_name: West Point
+  district_name: West Point Public Schools
+  district_nces_id: '5103950'
+  enrollment: 810
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-williamsburg:
+  display_name: Williamsburg
+  district_name: Williamsburg-James City County Public Schools
+  district_nces_id: '5104020'
+  enrollment: 11375
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-winchester-5101470:
+  display_name: Winchester
+  district_name: Frederick County Public Schools
+  district_nces_id: '5101470'
+  enrollment: 13960
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-winchester-5104050:
+  display_name: Winchester
+  district_name: Winchester City Public Schools
+  district_nces_id: '5104050'
+  enrollment: 4268
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-wise:
+  display_name: Wise
+  district_name: Wise County Public Schools
+  district_nces_id: '5104080'
+  enrollment: 5913
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-woodstock:
+  display_name: Woodstock
+  district_name: Shenandoah County Public Schools
+  district_nces_id: '5103510'
+  enrollment: 5630
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-wytheville:
+  display_name: Wytheville
+  district_name: Wythe County Public Schools
+  district_nces_id: '5104110'
+  enrollment: 3878
+  has_charters: false
+  source: ccd_auto
+  state: VA
+va-yorktown:
+  display_name: Yorktown
+  district_name: York County Public Schools
+  district_nces_id: '5104150'
+  enrollment: 12640
+  has_charters: true
+  source: ccd_auto
+  state: VA

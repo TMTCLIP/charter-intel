@@ -1,0 +1,7864 @@
+ca-acton-0600001:
+  display_name: Acton
+  district_name: Acton-Agua Dulce Unified
+  district_nces_id: '0600001'
+  enrollment: 1002
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-acton-0602482:
+  display_name: Acton
+  district_name: iLEAD Hybrid District
+  district_nces_id: 0602482
+  enrollment: 3575
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-adelanto-0601710:
+  display_name: Adelanto
+  district_name: Adelanto Elementary
+  district_nces_id: '0601710'
+  enrollment: 7742
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-adelanto-0602044:
+  display_name: Adelanto
+  district_name: Desert Trails Preparatory Academy District
+  district_nces_id: '0602044'
+  enrollment: 527
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-alameda-0601642:
+  display_name: Alameda
+  district_name: The Academy of Alameda District
+  district_nces_id: '0601642'
+  enrollment: 607
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-alameda-0601770:
+  display_name: Alameda
+  district_name: Alameda Unified
+  district_nces_id: '0601770'
+  enrollment: 8830
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-alameda-0601887:
+  display_name: Alameda
+  district_name: Nea Community Learning Center District
+  district_nces_id: 0601887
+  enrollment: 524
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-alhambra:
+  display_name: Alhambra
+  district_name: Alhambra Unified
+  district_nces_id: '0600153'
+  enrollment: 14922
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-aliso-viejo:
+  display_name: Aliso Viejo
+  district_name: Journey District
+  district_nces_id: 0602080
+  enrollment: 582
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-alpaugh:
+  display_name: Alpaugh
+  district_name: California Connections Academy@Central District
+  district_nces_id: '0602411'
+  enrollment: 696
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-alpine:
+  display_name: Alpine
+  district_name: Alpine Union Elementary
+  district_nces_id: '0602100'
+  enrollment: 1523
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-alta-loma:
+  display_name: Alta Loma
+  district_name: Alta Loma Elementary
+  district_nces_id: '0602160'
+  enrollment: 5498
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-alturas:
+  display_name: Alturas
+  district_name: Modoc Joint Unified
+  district_nces_id: 0625190
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-anaheim-0601519:
+  display_name: Anaheim
+  district_name: EPIC CHRTR(Excellence Perf Innovation Citzenship) DIST
+  district_nces_id: 0601519
+  enrollment: 1005
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-anaheim-0602610:
+  display_name: Anaheim
+  district_name: Anaheim Elementary
+  district_nces_id: '0602610'
+  enrollment: 14618
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-anaheim-0602630:
+  display_name: Anaheim
+  district_name: Anaheim Union High
+  district_nces_id: '0602630'
+  enrollment: 27748
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-anaheim-0623430:
+  display_name: Anaheim
+  district_name: Magnolia Elementary
+  district_nces_id: '0623430'
+  enrollment: 5001
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-anaheim-0636030:
+  display_name: Anaheim
+  district_name: Savanna Elementary
+  district_nces_id: '0636030'
+  enrollment: 1806
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-anderson-0602700:
+  display_name: Anderson
+  district_name: Anderson Union High
+  district_nces_id: '0602700'
+  enrollment: 1622
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-anderson-0607680:
+  display_name: Anderson
+  district_name: Cascade Union Elementary
+  district_nces_id: 0607680
+  enrollment: 1079
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-angels-camp-0605940:
+  display_name: Angels Camp
+  district_name: Bret Harte Union High
+  district_nces_id: 0605940
+  enrollment: 636
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-angels-camp-0623970:
+  display_name: Angels Camp
+  district_name: Mark Twain Union Elementary
+  district_nces_id: 0623970
+  enrollment: 765
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-antelope:
+  display_name: Antelope
+  district_name: Center Joint Unified
+  district_nces_id: 0607900
+  enrollment: 4199
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-antioch-0602286:
+  display_name: Antioch
+  district_name: Rocketship Delta Prep District
+  district_nces_id: 0602286
+  enrollment: 573
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-antioch-0602850:
+  display_name: Antioch
+  district_name: Antioch Unified
+  district_nces_id: 0602850
+  enrollment: 15192
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-apple-valley-0600017:
+  display_name: Apple Valley
+  district_name: Apple Valley Unified
+  district_nces_id: '0600017'
+  enrollment: 13603
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-apple-valley-0601911:
+  display_name: Apple Valley
+  district_name: Academy for Academic Excellence District
+  district_nces_id: 0601911
+  enrollment: 1484
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-arbuckle:
+  display_name: Arbuckle
+  district_name: Pierce Joint Unified
+  district_nces_id: '0630360'
+  enrollment: 1490
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-arcadia:
+  display_name: Arcadia
+  district_name: Arcadia Unified
+  district_nces_id: 0602970
+  enrollment: 8818
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-arcata:
+  display_name: Arcata
+  district_name: Pacific Union Elementary
+  district_nces_id: 0629430
+  enrollment: 571
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-armona:
+  display_name: Armona
+  district_name: Armona Union Elementary
+  district_nces_id: 0603180
+  enrollment: 1138
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-arroyo-grande:
+  display_name: Arroyo Grande
+  district_name: Lucia Mar Unified
+  district_nces_id: 0623080
+  enrollment: 9591
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-arvin-0602454:
+  display_name: Arvin
+  district_name: Grimmway Academy District
+  district_nces_id: '0602454'
+  enrollment: 824
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-arvin-0603270:
+  display_name: Arvin
+  district_name: Arvin Union
+  district_nces_id: '0603270'
+  enrollment: 2946
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-atascadero:
+  display_name: Atascadero
+  district_name: Atascadero Unified
+  district_nces_id: '0603300'
+  enrollment: 4296
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-atherton:
+  display_name: Atherton
+  district_name: Menlo Park City Elementary
+  district_nces_id: '0624570'
+  enrollment: 2705
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-atwater-0603420:
+  display_name: Atwater
+  district_name: Atwater Elementary
+  district_nces_id: '0603420'
+  enrollment: 4930
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-atwater-0624660:
+  display_name: Atwater
+  district_name: Merced Union High
+  district_nces_id: '0624660'
+  enrollment: 11226
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-auburn-0601680:
+  display_name: Auburn
+  district_name: Ackerman Charter
+  district_nces_id: 0601680
+  enrollment: 596
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-auburn-0603480:
+  display_name: Auburn
+  district_name: Auburn Union Elementary
+  district_nces_id: 0603480
+  enrollment: 1548
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-auburn-0630750:
+  display_name: Auburn
+  district_name: Placer Union High
+  district_nces_id: '0630750'
+  enrollment: 4012
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-avenal:
+  display_name: Avenal
+  district_name: Reef-Sunset Unified
+  district_nces_id: '0632270'
+  enrollment: 2722
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-avery:
+  display_name: Avery
+  district_name: Vallecito Union
+  district_nces_id: 0640680
+  enrollment: 590
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-azusa:
+  display_name: Azusa
+  district_name: Azusa Unified
+  district_nces_id: '0603600'
+  enrollment: 6754
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0603630:
+  display_name: Bakersfield
+  district_name: Bakersfield City
+  district_nces_id: '0603630'
+  enrollment: 28835
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0604260:
+  display_name: Bakersfield
+  district_name: Beardsley Elementary
+  district_nces_id: '0604260'
+  enrollment: 1941
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0606390:
+  display_name: Bakersfield
+  district_name: Panama-Buena Vista Union
+  district_nces_id: 0606390
+  enrollment: 19107
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0611940:
+  display_name: Bakersfield
+  district_name: Edison Elementary
+  district_nces_id: 0611940
+  enrollment: 1092
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0613290:
+  display_name: Bakersfield
+  district_name: Fairfax Elementary
+  district_nces_id: 0613290
+  enrollment: 2678
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0614700:
+  display_name: Bakersfield
+  district_name: Fruitvale Elementary
+  district_nces_id: '0614700'
+  enrollment: 3031
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0616050:
+  display_name: Bakersfield
+  district_name: Greenfield Union
+  district_nces_id: '0616050'
+  enrollment: 9177
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0619540:
+  display_name: Bakersfield
+  district_name: Kern High
+  district_nces_id: 0619540
+  enrollment: 43020
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0620730:
+  display_name: Bakersfield
+  district_name: Lakeside Union
+  district_nces_id: '0620730'
+  enrollment: 1570
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0627450:
+  display_name: Bakersfield
+  district_name: Norris Elementary
+  district_nces_id: '0627450'
+  enrollment: 3878
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0632710:
+  display_name: Bakersfield
+  district_name: Rio Bravo-Greeley Union Elementary
+  district_nces_id: '0632710'
+  enrollment: 1012
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0633480:
+  display_name: Bakersfield
+  district_name: Rosedale Union Elementary
+  district_nces_id: 0633480
+  enrollment: 6041
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0637890:
+  display_name: Bakersfield
+  district_name: Standard Elementary
+  district_nces_id: 0637890
+  enrollment: 3046
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0641130:
+  display_name: Bakersfield
+  district_name: Vineland Elementary
+  district_nces_id: '0641130'
+  enrollment: 676
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bakersfield-0691012:
+  display_name: Bakersfield
+  district_name: Kern County Office of Education
+  district_nces_id: 0691012
+  enrollment: 2054
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-baldwin-park:
+  display_name: Baldwin Park
+  district_name: Baldwin Park Unified
+  district_nces_id: 0603690
+  enrollment: 10291
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-banning:
+  display_name: Banning
+  district_name: Banning Unified
+  district_nces_id: 0603840
+  enrollment: 4376
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-barstow-0601577:
+  display_name: Barstow
+  district_name: Mojave River Academy - Silver Mountain District
+  district_nces_id: '0601577'
+  enrollment: 538
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-barstow-0604020:
+  display_name: Barstow
+  district_name: Barstow Unified
+  district_nces_id: '0604020'
+  enrollment: 6396
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-beaumont-0602513:
+  display_name: Beaumont
+  district_name: Mission Vista Academy District
+  district_nces_id: '0602513'
+  enrollment: 4794
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-beaumont-0604290:
+  display_name: Beaumont
+  district_name: Beaumont Unified
+  district_nces_id: 0604290
+  enrollment: 11820
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bellflower:
+  display_name: Bellflower
+  district_name: Bellflower Unified
+  district_nces_id: '0604440'
+  enrollment: 9989
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-belmont:
+  display_name: Belmont
+  district_name: Belmont-Redwood Shores Elementary
+  district_nces_id: '0604530'
+  enrollment: 3945
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-ben-lomond:
+  display_name: Ben Lomond
+  district_name: San Lorenzo Valley Unified
+  district_nces_id: '0634740'
+  enrollment: 2384
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-benicia:
+  display_name: Benicia
+  district_name: Benicia Unified
+  district_nces_id: '0604620'
+  enrollment: 4372
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-berkeley-0601860:
+  display_name: Berkeley
+  district_name: Albany City Unified
+  district_nces_id: 0601860
+  enrollment: 3529
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-berkeley-0604740:
+  display_name: Berkeley
+  district_name: Berkeley Unified
+  district_nces_id: '0604740'
+  enrollment: 9073
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-beverly-hills:
+  display_name: Beverly Hills
+  district_name: Beverly Hills Unified
+  district_nces_id: 0604830
+  enrollment: 3140
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-big-bear-lake:
+  display_name: Big Bear Lake
+  district_name: Bear Valley Unified
+  district_nces_id: '0604230'
+  enrollment: 2145
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-biggs:
+  display_name: Biggs
+  district_name: Biggs Unified
+  district_nces_id: '0605040'
+  enrollment: 532
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bishop:
+  display_name: Bishop
+  district_name: Bishop Unified
+  district_nces_id: 0601409
+  enrollment: 1930
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-blythe-0601897:
+  display_name: Blythe
+  district_name: Scale Leadership Academy - East District
+  district_nces_id: 0601897
+  enrollment: 956
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-blythe-0629640:
+  display_name: Blythe
+  district_name: Palo Verde Unified
+  district_nces_id: 0629640
+  enrollment: 2813
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-bonsall:
+  display_name: Bonsall
+  district_name: Bonsall Unified
+  district_nces_id: '0601426'
+  enrollment: 2163
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-boulder-creek:
+  display_name: Boulder Creek
+  district_name: Ocean Grove Charter District
+  district_nces_id: '0601472'
+  enrollment: 3023
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-brawley-0605790:
+  display_name: Brawley
+  district_name: Brawley Elementary
+  district_nces_id: 0605790
+  enrollment: 3868
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-brawley-0605820:
+  display_name: Brawley
+  district_name: Brawley Union High
+  district_nces_id: 0605820
+  enrollment: 2055
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-brea:
+  display_name: Brea
+  district_name: Brea-Olinda Unified
+  district_nces_id: 0605880
+  enrollment: 5811
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-brentwood-0605910:
+  display_name: Brentwood
+  district_name: Brentwood Union Elementary
+  district_nces_id: 0605910
+  enrollment: 9435
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-brentwood-0621600:
+  display_name: Brentwood
+  district_name: Liberty Union High
+  district_nces_id: '0621600'
+  enrollment: 8233
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-buellton:
+  display_name: Buellton
+  district_name: Buellton Union Elementary
+  district_nces_id: '0606330'
+  enrollment: 519
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-buena-park-0606360:
+  display_name: Buena Park
+  district_name: Buena Park Elementary
+  district_nces_id: '0606360'
+  enrollment: 3966
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-buena-park-0608070:
+  display_name: Buena Park
+  district_name: Centralia Elementary
+  district_nces_id: 0608070
+  enrollment: 4129
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-burbank:
+  display_name: Burbank
+  district_name: Burbank Unified
+  district_nces_id: '0606450'
+  enrollment: 14432
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-burlingame:
+  display_name: Burlingame
+  district_name: Burlingame Elementary
+  district_nces_id: 0606480
+  enrollment: 3284
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-burney:
+  display_name: Burney
+  district_name: Fall River Joint Unified
+  district_nces_id: '0613470'
+  enrollment: 1187
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-byron:
+  display_name: Byron
+  district_name: Byron Union Elementary
+  district_nces_id: '0606750'
+  enrollment: 1230
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-calabasas:
+  display_name: Calabasas
+  district_name: Las Virgenes Unified
+  district_nces_id: '0621000'
+  enrollment: 9732
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-calexico:
+  display_name: Calexico
+  district_name: Calexico Unified
+  district_nces_id: 0606900
+  enrollment: 8353
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-calipatria:
+  display_name: Calipatria
+  district_name: Calipatria Unified
+  district_nces_id: 0606990
+  enrollment: 1172
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-calistoga:
+  display_name: Calistoga
+  district_name: Calistoga Joint Unified
+  district_nces_id: '0607020'
+  enrollment: 807
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-camarillo-0602011:
+  display_name: Camarillo
+  district_name: UNIV Preparation Charter SCH @ CSU Channel Islands District
+  district_nces_id: '0602011'
+  enrollment: 693
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-camarillo-0602022:
+  display_name: Camarillo
+  district_name: Camarillo Academy of Progressive Education District
+  district_nces_id: '0602022'
+  enrollment: 583
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-camarillo-0630990:
+  display_name: Camarillo
+  district_name: Pleasant Valley
+  district_nces_id: 0630990
+  enrollment: 5808
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-camarillo-0691047:
+  display_name: Camarillo
+  district_name: Ventura County Office of Education
+  district_nces_id: 0691047
+  enrollment: 601
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-campbell:
+  display_name: Campbell
+  district_name: Campbell Union
+  district_nces_id: '0607200'
+  enrollment: 6253
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-canyon-country:
+  display_name: Canyon Country
+  district_name: Sulphur Springs Union
+  district_nces_id: 0638220
+  enrollment: 5210
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-capitola:
+  display_name: Capitola
+  district_name: Soquel Union Elementary
+  district_nces_id: 0637290
+  enrollment: 1654
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-cardiff-by-the-sea:
+  display_name: Cardiff-By-The-Sea
+  district_name: Cardiff Elementary
+  district_nces_id: '0607470'
+  enrollment: 642
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-carlsbad:
+  display_name: Carlsbad
+  district_name: Carlsbad Unified
+  district_nces_id: '0607500'
+  enrollment: 10981
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-carmel:
+  display_name: Carmel
+  district_name: Carmel Unified
+  district_nces_id: '0607530'
+  enrollment: 2274
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-carmichael-0601653:
+  display_name: Carmichael
+  district_name: California Montessori Project-San Juan Campuses District
+  district_nces_id: '0601653'
+  enrollment: 1426
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-carmichael-0601794:
+  display_name: Carmichael
+  district_name: Options for Youth-San Juan District
+  district_nces_id: 0601794
+  enrollment: 796
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-carmichael-0602353:
+  display_name: Carmichael
+  district_name: Visions In Education District
+  district_nces_id: '0602353'
+  enrollment: 6591
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-carmichael-0634620:
+  display_name: Carmichael
+  district_name: San Juan Unified
+  district_nces_id: '0634620'
+  enrollment: 38119
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-carpinteria:
+  display_name: Carpinteria
+  district_name: Carpinteria Unified
+  district_nces_id: '0607560'
+  enrollment: 2010
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-caruthers:
+  display_name: Caruthers
+  district_name: Caruthers Unified
+  district_nces_id: '0600067'
+  enrollment: 1568
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-castaic:
+  display_name: Castaic
+  district_name: Santa Clarita Valley International District
+  district_nces_id: '0602137'
+  enrollment: 766
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-castro-valley:
+  display_name: Castro Valley
+  district_name: Castro Valley Unified
+  district_nces_id: 0607800
+  enrollment: 9207
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-ceres:
+  display_name: Ceres
+  district_name: Ceres Unified
+  district_nces_id: 0608130
+  enrollment: 13894
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-cerritos:
+  display_name: Cerritos
+  district_name: ABC Unified
+  district_nces_id: '0601620'
+  enrollment: 18354
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-chico-0601665:
+  display_name: Chico
+  district_name: Chico Country Day District
+  district_nces_id: '0601665'
+  enrollment: 566
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chico-0601843:
+  display_name: Chico
+  district_name: CORE Butte Charter District
+  district_nces_id: 0601843
+  enrollment: 848
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chico-0608370:
+  display_name: Chico
+  district_name: Chico Unified
+  district_nces_id: 0608370
+  enrollment: 12088
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-chino-0602175:
+  display_name: Chino
+  district_name: Allegiance STEAM Academy - Thrive District
+  district_nces_id: '0602175'
+  enrollment: 956
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chino-0608460:
+  display_name: Chino
+  district_name: Chino Valley Unified
+  district_nces_id: 0608460
+  enrollment: 25645
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-chowchilla-0608520:
+  display_name: Chowchilla
+  district_name: Chowchilla Elementary
+  district_nces_id: 0608520
+  enrollment: 2155
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-chowchilla-0608550:
+  display_name: Chowchilla
+  district_name: Chowchilla Union High
+  district_nces_id: 0608550
+  enrollment: 1145
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0601578:
+  display_name: Chula Vista
+  district_name: Mueller Charter (Robert L.) District
+  district_nces_id: 0601578
+  enrollment: 1606
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0601645:
+  display_name: Chula Vista
+  district_name: Arroyo Vista Charter District
+  district_nces_id: '0601645'
+  enrollment: 939
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0602035:
+  display_name: Chula Vista
+  district_name: Pacific Springs Charter District
+  district_nces_id: '0602035'
+  enrollment: 514
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0602061:
+  display_name: Chula Vista
+  district_name: High Tech High Chula Vista District
+  district_nces_id: '0602061'
+  enrollment: 639
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0602071:
+  display_name: Chula Vista
+  district_name: Chula Vista Learning Community Charter District
+  district_nces_id: '0602071'
+  enrollment: 1427
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0602075:
+  display_name: Chula Vista
+  district_name: Hawking S.T.E.A.M. Charter District
+  district_nces_id: '0602075'
+  enrollment: 1297
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0602173:
+  display_name: Chula Vista
+  district_name: Feaster (Mae L.) Charter District
+  district_nces_id: '0602173'
+  enrollment: 1121
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0602290:
+  display_name: Chula Vista
+  district_name: Discovery Charter District
+  district_nces_id: 0602290
+  enrollment: 982
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0608610:
+  display_name: Chula Vista
+  district_name: Chula Vista Elementary
+  district_nces_id: 0608610
+  enrollment: 22226
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-chula-vista-0638640:
+  display_name: Chula Vista
+  district_name: Sweetwater Union High
+  district_nces_id: 0638640
+  enrollment: 36109
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-city-of-industry-0602502:
+  display_name: City Of Industry
+  district_name: Options For Youth - Duarte Inc District
+  district_nces_id: '0602502'
+  enrollment: 2354
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-city-of-industry-0616325:
+  display_name: City Of Industry
+  district_name: Hacienda la Puente Unified
+  district_nces_id: '0616325'
+  enrollment: 16206
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-claremont:
+  display_name: Claremont
+  district_name: Claremont Unified
+  district_nces_id: 0608760
+  enrollment: 6386
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-cloverdale:
+  display_name: Cloverdale
+  district_name: Cloverdale Unified
+  district_nces_id: 0608970
+  enrollment: 1318
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-clovis:
+  display_name: Clovis
+  district_name: Clovis Unified
+  district_nces_id: 0609030
+  enrollment: 42802
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-coachella:
+  display_name: Coachella
+  district_name: Imagine Schools Riverside County District
+  district_nces_id: '0602372'
+  enrollment: 1312
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-coalinga:
+  display_name: Coalinga
+  district_name: Coalinga-Huron Unified
+  district_nces_id: 0609120
+  enrollment: 4488
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-colton-0601935:
+  display_name: Colton
+  district_name: Mojave River Academy - National Trails District
+  district_nces_id: 0601935
+  enrollment: 655
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-colton-0609390:
+  display_name: Colton
+  district_name: Colton Joint Unified
+  district_nces_id: 0609390
+  enrollment: 19297
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-colusa:
+  display_name: Colusa
+  district_name: Colusa Unified
+  district_nces_id: 0609570
+  enrollment: 1533
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-compton-0601683:
+  display_name: Compton
+  district_name: Lifeline Education Charter District
+  district_nces_id: 0601683
+  enrollment: 704
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-compton-0609620:
+  display_name: Compton
+  district_name: Compton Unified
+  district_nces_id: 0609620
+  enrollment: 17437
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-concord-0602162:
+  display_name: Concord
+  district_name: Rocketship Futuro Academy District
+  district_nces_id: '0602162'
+  enrollment: 672
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-concord-0602342:
+  display_name: Concord
+  district_name: Clayton Valley Charter High District
+  district_nces_id: '0602342'
+  enrollment: 2381
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-concord-0626370:
+  display_name: Concord
+  district_name: Mt. Diablo Unified
+  district_nces_id: '0626370'
+  enrollment: 29201
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-corcoran:
+  display_name: Corcoran
+  district_name: Corcoran Joint Unified
+  district_nces_id: 0609690
+  enrollment: 3267
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-corning-0609780:
+  display_name: Corning
+  district_name: Corning Union Elementary
+  district_nces_id: 0609780
+  enrollment: 1990
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-corning-0609810:
+  display_name: Corning
+  district_name: Corning Union High
+  district_nces_id: 0609810
+  enrollment: 1138
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-corona:
+  display_name: Corona
+  district_name: Alvord Unified
+  district_nces_id: '0602430'
+  enrollment: 17106
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-coronado:
+  display_name: Coronado
+  district_name: Coronado Unified
+  district_nces_id: 0609870
+  enrollment: 2799
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-costa-mesa-0627240:
+  display_name: Costa Mesa
+  district_name: Newport-Mesa Unified
+  district_nces_id: '0627240'
+  enrollment: 17816
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-costa-mesa-0691024:
+  display_name: Costa Mesa
+  district_name: Orange County Department of Education
+  district_nces_id: 0691024
+  enrollment: 2323
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-cottonwood-0609990:
+  display_name: Cottonwood
+  district_name: Cottonwood Union Elementary
+  district_nces_id: 0609990
+  enrollment: 892
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-cottonwood-0613170:
+  display_name: Cottonwood
+  district_name: Evergreen Union
+  district_nces_id: '0613170'
+  enrollment: 1176
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-covina-0608190:
+  display_name: Covina
+  district_name: Charter Oak Unified
+  district_nces_id: 0608190
+  enrollment: 4283
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-covina-0610050:
+  display_name: Covina
+  district_name: Covina-Valley Unified
+  district_nces_id: '0610050'
+  enrollment: 11130
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-crescent-city:
+  display_name: Crescent City
+  district_name: Del Norte County Unified
+  district_nces_id: '0610770'
+  enrollment: 3501
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-crestline:
+  display_name: Crestline
+  district_name: Rim of the World Unified
+  district_nces_id: '0632610'
+  enrollment: 2890
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-culver-city:
+  display_name: Culver City
+  district_name: Culver City Unified
+  district_nces_id: '0610260'
+  enrollment: 6826
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-cypress:
+  display_name: Cypress
+  district_name: Cypress Elementary
+  district_nces_id: '0610440'
+  enrollment: 3389
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-daly-city-0618870:
+  display_name: Daly City
+  district_name: Jefferson Elementary
+  district_nces_id: 0618870
+  enrollment: 4956
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-daly-city-0618930:
+  display_name: Daly City
+  district_name: Jefferson Union High
+  district_nces_id: 0618930
+  enrollment: 3884
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-danville:
+  display_name: Danville
+  district_name: San Ramon Valley Unified
+  district_nces_id: '0635130'
+  enrollment: 29680
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-davis:
+  display_name: Davis
+  district_name: Davis Joint Unified
+  district_nces_id: '0610620'
+  enrollment: 8398
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-delano-0602315:
+  display_name: Delano
+  district_name: Wonderful College Prep Academy District
+  district_nces_id: '0602315'
+  enrollment: 1900
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-delano-0610860:
+  display_name: Delano
+  district_name: Delano Joint Union High
+  district_nces_id: 0610860
+  enrollment: 4142
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-delano-0610890:
+  display_name: Delano
+  district_name: Delano Union Elementary
+  district_nces_id: 0610890
+  enrollment: 6219
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-delhi:
+  display_name: Delhi
+  district_name: Delhi Unified
+  district_nces_id: 0600039
+  enrollment: 2392
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-denair:
+  display_name: Denair
+  district_name: Denair Unified
+  district_nces_id: '0611040'
+  enrollment: 1300
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-dinuba:
+  display_name: Dinuba
+  district_name: Dinuba Unified
+  district_nces_id: '0600065'
+  enrollment: 6471
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-dixon:
+  display_name: Dixon
+  district_name: Dixon Unified
+  district_nces_id: 0611280
+  enrollment: 3021
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-dos-palos:
+  display_name: Dos Palos
+  district_name: Dos Palos Oro Loma Joint Unified
+  district_nces_id: '0600033'
+  enrollment: 2283
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-downey-0611460:
+  display_name: Downey
+  district_name: Downey Unified
+  district_nces_id: '0611460'
+  enrollment: 22359
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-downey-0691078:
+  display_name: Downey
+  district_name: Los Angeles County Office of Education
+  district_nces_id: 0691078
+  enrollment: 1533
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-duarte-0601914:
+  display_name: Duarte
+  district_name: California School of the Arts - San Gabriel Valley District
+  district_nces_id: 0601914
+  enrollment: 945
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-duarte-0611520:
+  display_name: Duarte
+  district_name: Duarte Unified
+  district_nces_id: '0611520'
+  enrollment: 3038
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-dublin:
+  display_name: Dublin
+  district_name: Dublin Unified
+  district_nces_id: 0600019
+  enrollment: 12557
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-durham:
+  display_name: Durham
+  district_name: Durham Unified
+  district_nces_id: '0611730'
+  enrollment: 996
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-earlimart:
+  display_name: Earlimart
+  district_name: Earlimart Elementary
+  district_nces_id: '0611760'
+  enrollment: 1442
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-east-nicolaus:
+  display_name: East Nicolaus
+  district_name: South Sutter Charter District
+  district_nces_id: '0601740'
+  enrollment: 2295
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-east-palo-alto-0601604:
+  display_name: East Palo Alto
+  district_name: Aspire East Palo Alto Charter District
+  district_nces_id: '0601604'
+  enrollment: 532
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-east-palo-alto-0602481:
+  display_name: East Palo Alto
+  district_name: KIPP Valiant Community Prep District
+  district_nces_id: 0602481
+  enrollment: 619
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-east-palo-alto-0631860:
+  display_name: East Palo Alto
+  district_name: Ravenswood City Elementary
+  district_nces_id: 0631860
+  enrollment: 1489
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-el-cajon-0601830:
+  display_name: El Cajon
+  district_name: EJE Elementary Academy Charter District
+  district_nces_id: 0601830
+  enrollment: 564
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-cajon-0602098:
+  display_name: El Cajon
+  district_name: Literacy First Charter District
+  district_nces_id: 0602098
+  enrollment: 1972
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-cajon-0602274:
+  display_name: El Cajon
+  district_name: Cabrillo Point Academy District
+  district_nces_id: '0602274'
+  enrollment: 4283
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-cajon-0602562:
+  display_name: El Cajon
+  district_name: Bostonia Global District
+  district_nces_id: '0602562'
+  enrollment: 1144
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-cajon-0606810:
+  display_name: El Cajon
+  district_name: Cajon Valley Union
+  district_nces_id: 0606810
+  enrollment: 15337
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-el-cajon-0616230:
+  display_name: El Cajon
+  district_name: Grossmont Union High
+  district_nces_id: '0616230'
+  enrollment: 16738
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-el-centro-0608010:
+  display_name: El Centro
+  district_name: Central Union High
+  district_nces_id: 0608010
+  enrollment: 4093
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-el-centro-0612030:
+  display_name: El Centro
+  district_name: El Centro Elementary
+  district_nces_id: '0612030'
+  enrollment: 5256
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-centro-0624180:
+  display_name: El Centro
+  district_name: McCabe Union Elementary
+  district_nces_id: 0624180
+  enrollment: 1209
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-el-centro-0691010:
+  display_name: El Centro
+  district_name: Imperial County Office of Education
+  district_nces_id: 0691010
+  enrollment: 860
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-cerrito:
+  display_name: El Cerrito
+  district_name: Summit Public School K2 District
+  district_nces_id: 0601912
+  enrollment: 506
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-dorado-hills-0601969:
+  display_name: El Dorado Hills
+  district_name: John Adams Academy - El Dorado Hills District
+  district_nces_id: 0601969
+  enrollment: 1217
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-dorado-hills-0601975:
+  display_name: El Dorado Hills
+  district_name: Clarksville Charter District
+  district_nces_id: 0601975
+  enrollment: 1937
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-dorado-hills-0602524:
+  display_name: El Dorado Hills
+  district_name: Cottonwood District
+  district_nces_id: '0602524'
+  enrollment: 2798
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-dorado-hills-0606270:
+  display_name: El Dorado Hills
+  district_name: Buckeye Union Elementary
+  district_nces_id: '0606270'
+  enrollment: 4274
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-monte-0612090:
+  display_name: El Monte
+  district_name: El Monte City
+  district_nces_id: 0612090
+  enrollment: 7045
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-el-monte-0612120:
+  display_name: El Monte
+  district_name: El Monte Union High
+  district_nces_id: '0612120'
+  enrollment: 7882
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-el-monte-0626190:
+  display_name: El Monte
+  district_name: Mountain View Elementary
+  district_nces_id: 0626190
+  enrollment: 4944
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-el-segundo-0601428:
+  display_name: El Segundo
+  district_name: Wiseburn Unified
+  district_nces_id: 0601428
+  enrollment: 2491
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-el-segundo-0601505:
+  display_name: El Segundo
+  district_name: Da Vinci Communications District
+  district_nces_id: '0601505'
+  enrollment: 538
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-segundo-0602416:
+  display_name: El Segundo
+  district_name: Da Vinci Science District
+  district_nces_id: '0602416'
+  enrollment: 560
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-el-segundo-0612210:
+  display_name: El Segundo
+  district_name: El Segundo Unified
+  district_nces_id: '0612210'
+  enrollment: 3508
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-elk-grove-0601776:
+  display_name: Elk Grove
+  district_name: California Montessori Project - Elk Grove Campus District
+  district_nces_id: '0601776'
+  enrollment: 536
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-elk-grove-0612330:
+  display_name: Elk Grove
+  district_name: Elk Grove Unified
+  district_nces_id: '0612330'
+  enrollment: 62061
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-emeryville:
+  display_name: Emeryville
+  district_name: Emery Unified
+  district_nces_id: '0612630'
+  enrollment: 627
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-encinitas-0612750:
+  display_name: Encinitas
+  district_name: Encinitas Union Elementary
+  district_nces_id: '0612750'
+  enrollment: 4648
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-encinitas-0634380:
+  display_name: Encinitas
+  district_name: San Dieguito Union High
+  district_nces_id: 0634380
+  enrollment: 12615
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-escalon:
+  display_name: Escalon
+  district_name: Escalon Unified
+  district_nces_id: 0612840
+  enrollment: 2669
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-escondido-0601464:
+  display_name: Escondido
+  district_name: Community Montessori District
+  district_nces_id: '0601464'
+  enrollment: 762
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-escondido-0601560:
+  display_name: Escondido
+  district_name: Classical Academy District
+  district_nces_id: '0601560'
+  enrollment: 1531
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-escondido-0601660:
+  display_name: Escondido
+  district_name: Heritage K-8 Charter District
+  district_nces_id: '0601660'
+  enrollment: 1328
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-escondido-0601763:
+  display_name: Escondido
+  district_name: Classical Academy High District
+  district_nces_id: '0601763'
+  enrollment: 1283
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-escondido-0602443:
+  display_name: Escondido
+  district_name: Escondido Charter High District
+  district_nces_id: '0602443'
+  enrollment: 927
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-escondido-0612880:
+  display_name: Escondido
+  district_name: Escondido Union
+  district_nces_id: 0612880
+  enrollment: 14322
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-escondido-0612910:
+  display_name: Escondido
+  district_name: Escondido Union High
+  district_nces_id: 0612910
+  enrollment: 6881
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-esparto:
+  display_name: Esparto
+  district_name: Esparto Unified
+  district_nces_id: 0612930
+  enrollment: 954
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-etiwanda:
+  display_name: Etiwanda
+  district_name: Etiwanda Elementary
+  district_nces_id: 0612960
+  enrollment: 13400
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-eureka-0600052:
+  display_name: Eureka
+  district_name: Eureka City Schools
+  district_nces_id: '0600052'
+  enrollment: 3580
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-eureka-0610380:
+  display_name: Eureka
+  district_name: Cutten Elementary
+  district_nces_id: 0610380
+  enrollment: 562
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-exeter:
+  display_name: Exeter
+  district_name: Exeter Unified
+  district_nces_id: '0601423'
+  enrollment: 2663
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fairfield-0613360:
+  display_name: Fairfield
+  district_name: Fairfield-Suisun Unified
+  district_nces_id: '0613360'
+  enrollment: 20559
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fairfield-0639630:
+  display_name: Fairfield
+  district_name: Travis Unified
+  district_nces_id: 0639630
+  enrollment: 5340
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fallbrook-0613500:
+  display_name: Fallbrook
+  district_name: Fallbrook Union Elementary
+  district_nces_id: '0613500'
+  enrollment: 4979
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fallbrook-0613530:
+  display_name: Fallbrook
+  district_name: Fallbrook Union High
+  district_nces_id: '0613530'
+  enrollment: 2096
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-farmersville:
+  display_name: Farmersville
+  district_name: Farmersville Unified
+  district_nces_id: '0600035'
+  enrollment: 2451
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fillmore:
+  display_name: Fillmore
+  district_name: Fillmore Unified
+  district_nces_id: 0613800
+  enrollment: 3811
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-firebaugh:
+  display_name: Firebaugh
+  district_name: Firebaugh-Las Deltas Unified
+  district_nces_id: 0613840
+  enrollment: 2192
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fontana-0601500:
+  display_name: Fontana
+  district_name: Options for Youth-Acton District
+  district_nces_id: '0601500'
+  enrollment: 1770
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-fontana-0613920:
+  display_name: Fontana
+  district_name: Fontana Unified
+  district_nces_id: 0613920
+  enrollment: 33910
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fort-bragg:
+  display_name: Fort Bragg
+  district_name: Fort Bragg Unified
+  district_nces_id: '0614070'
+  enrollment: 1682
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fort-jones:
+  display_name: Fort Jones
+  district_name: Scott Valley Unified
+  district_nces_id: 0600159
+  enrollment: 622
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fortuna-0601420:
+  display_name: Fortuna
+  district_name: Fortuna Elementary
+  district_nces_id: '0601420'
+  enrollment: 1104
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fortuna-0614190:
+  display_name: Fortuna
+  district_name: Fortuna Union High
+  district_nces_id: 0614190
+  enrollment: 1066
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-foster-city:
+  display_name: Foster City
+  district_name: San Mateo-Foster City
+  district_nces_id: 0634920
+  enrollment: 10067
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fountain-valley:
+  display_name: Fountain Valley
+  district_name: Fountain Valley Elementary
+  district_nces_id: '0614220'
+  enrollment: 5976
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fowler:
+  display_name: Fowler
+  district_name: Fowler Unified
+  district_nces_id: '0614250'
+  enrollment: 2571
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fremont:
+  display_name: Fremont
+  district_name: Fremont Unified
+  district_nces_id: '0614400'
+  enrollment: 33107
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-fresno-0601415:
+  display_name: Fresno
+  district_name: Washington Unified
+  district_nces_id: '0601415'
+  enrollment: 2551
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fresno-0601677:
+  display_name: Fresno
+  district_name: Crescent View West Public Charter District
+  district_nces_id: '0601677'
+  enrollment: 1567
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-fresno-0602395:
+  display_name: Fresno
+  district_name: Crescent View South II District
+  district_nces_id: 0602395
+  enrollment: 1203
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-fresno-0602460:
+  display_name: Fresno
+  district_name: Yosemite Valley Charter District
+  district_nces_id: '0602460'
+  enrollment: 2551
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-fresno-0607970:
+  display_name: Fresno
+  district_name: Central Unified
+  district_nces_id: 0607970
+  enrollment: 15742
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fresno-0614550:
+  display_name: Fresno
+  district_name: Fresno Unified
+  district_nces_id: '0614550'
+  enrollment: 69668
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-fresno-0642060:
+  display_name: Fresno
+  district_name: West Park Elementary
+  district_nces_id: '0642060'
+  enrollment: 511
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-fresno-0691007:
+  display_name: Fresno
+  district_name: Fresno County Office of Education
+  district_nces_id: 0691007
+  enrollment: 748
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fullerton-0614730:
+  display_name: Fullerton
+  district_name: Fullerton Elementary
+  district_nces_id: '0614730'
+  enrollment: 11626
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-fullerton-0614760:
+  display_name: Fullerton
+  district_name: Fullerton Joint Union High
+  district_nces_id: '0614760'
+  enrollment: 13173
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-galt-0614790:
+  display_name: Galt
+  district_name: Galt Joint Union Elementary
+  district_nces_id: 0614790
+  enrollment: 3352
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-galt-0614820:
+  display_name: Galt
+  district_name: Galt Joint Union High
+  district_nces_id: 0614820
+  enrollment: 2066
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-garden-grove:
+  display_name: Garden Grove
+  district_name: Garden Grove Unified
+  district_nces_id: 0614880
+  enrollment: 38164
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-georgetown:
+  display_name: Georgetown
+  district_name: Black Oak Mine Unified
+  district_nces_id: '0605240'
+  enrollment: 1253
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-gilroy-0601831:
+  display_name: Gilroy
+  district_name: Gilroy Prep (a Navigator School) District
+  district_nces_id: 0601831
+  enrollment: 544
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-gilroy-0615180:
+  display_name: Gilroy
+  district_name: Gilroy Unified
+  district_nces_id: 0615180
+  enrollment: 10428
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-glendale:
+  display_name: Glendale
+  district_name: Glendale Unified
+  district_nces_id: '0615240'
+  enrollment: 24456
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-glendora:
+  display_name: Glendora
+  district_name: Glendora Unified
+  district_nces_id: '0615270'
+  enrollment: 6525
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-goleta:
+  display_name: Goleta
+  district_name: Goleta Union Elementary
+  district_nces_id: '0615510'
+  enrollment: 3416
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-gonzales:
+  display_name: Gonzales
+  district_name: Gonzales Unified
+  district_nces_id: '0600046'
+  enrollment: 2110
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-granada-hills:
+  display_name: Granada Hills
+  district_name: Granada Hills Charter District
+  district_nces_id: '0602206'
+  enrollment: 5869
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-granite-bay:
+  display_name: Granite Bay
+  district_name: Eureka Union
+  district_nces_id: 0613080
+  enrollment: 3152
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-grass-valley-0615780:
+  display_name: Grass Valley
+  district_name: Grass Valley Elementary
+  district_nces_id: 0615780
+  enrollment: 1602
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-grass-valley-0626880:
+  display_name: Grass Valley
+  district_name: Nevada Joint Union High
+  district_nces_id: 0626880
+  enrollment: 2489
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-grass-valley-0630930:
+  display_name: Grass Valley
+  district_name: Pleasant Ridge Union Elementary
+  district_nces_id: 0630930
+  enrollment: 1403
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-grass-valley-0640380:
+  display_name: Grass Valley
+  district_name: Union Hill Elementary
+  district_nces_id: 0640380
+  enrollment: 682
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-grass-valley-0691023:
+  display_name: Grass Valley
+  district_name: Nevada County Office of Education
+  district_nces_id: 0691023
+  enrollment: 1129
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-greenfield:
+  display_name: Greenfield
+  district_name: Greenfield Union Elementary
+  district_nces_id: 0616080
+  enrollment: 3339
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-gridley:
+  display_name: Gridley
+  district_name: Gridley Unified
+  district_nces_id: '0600051'
+  enrollment: 2035
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-guadalupe:
+  display_name: Guadalupe
+  district_name: Guadalupe Union Elementary
+  district_nces_id: '0616260'
+  enrollment: 1279
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-gustine:
+  display_name: Gustine
+  district_name: Gustine Unified
+  district_nces_id: '0616323'
+  enrollment: 1746
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-half-moon-bay:
+  display_name: Half Moon Bay
+  district_name: Cabrillo Unified
+  district_nces_id: 0606780
+  enrollment: 2748
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hamilton-city:
+  display_name: Hamilton City
+  district_name: Hamilton Unified
+  district_nces_id: 0601339
+  enrollment: 711
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hanford-0601728:
+  display_name: Hanford
+  district_name: Kings Valley Academy II District
+  district_nces_id: 0601728
+  enrollment: 1044
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hanford-0616470:
+  display_name: Hanford
+  district_name: Hanford Elementary
+  district_nces_id: '0616470'
+  enrollment: 5525
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hanford-0616500:
+  display_name: Hanford
+  district_name: Hanford Joint Union High
+  district_nces_id: '0616500'
+  enrollment: 4237
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hanford-0619770:
+  display_name: Hanford
+  district_name: Kings River-Hardwick Union Elementary
+  district_nces_id: 0619770
+  enrollment: 823
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hanford-0630510:
+  display_name: Hanford
+  district_name: Pioneer Union Elementary
+  district_nces_id: '0630510'
+  enrollment: 1573
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hawthorne-0601973:
+  display_name: Hawthorne
+  district_name: Da Vinci Design District
+  district_nces_id: 0601973
+  enrollment: 538
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hawthorne-0602293:
+  display_name: Hawthorne
+  district_name: Da Vinci Connect District
+  district_nces_id: 0602293
+  enrollment: 814
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hawthorne-0616680:
+  display_name: Hawthorne
+  district_name: Hawthorne
+  district_nces_id: 0616680
+  enrollment: 7093
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hayward-0601647:
+  display_name: Hayward
+  district_name: Impact Academy of Arts & Technology District
+  district_nces_id: '0601647'
+  enrollment: 775
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hayward-0601815:
+  display_name: Hayward
+  district_name: Leadership Public Schools - Hayward District
+  district_nces_id: 0601815
+  enrollment: 582
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hayward-0601977:
+  display_name: Hayward
+  district_name: Knowledge Enlightens You (KEY) Academy District
+  district_nces_id: 0601977
+  enrollment: 614
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hayward-0602238:
+  display_name: Hayward
+  district_name: Silver Oak High Public Montessori Charter District
+  district_nces_id: 0602238
+  enrollment: 553
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hayward-0616740:
+  display_name: Hayward
+  district_name: Hayward Unified
+  district_nces_id: '0616740'
+  enrollment: 17993
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-healdsburg:
+  display_name: Healdsburg
+  district_name: Healdsburg Unified
+  district_nces_id: '0600044'
+  enrollment: 1240
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-heber:
+  display_name: Heber
+  district_name: Heber Elementary
+  district_nces_id: 0616830
+  enrollment: 1186
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-helendale-0601701:
+  display_name: Helendale
+  district_name: Empire Springs Charter District
+  district_nces_id: '0601701'
+  enrollment: 1497
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-helendale-0616860:
+  display_name: Helendale
+  district_name: Helendale Elementary
+  district_nces_id: 0616860
+  enrollment: 1103
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hemet:
+  display_name: Hemet
+  district_name: Hemet Unified
+  district_nces_id: 0616920
+  enrollment: 22372
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hermosa-beach:
+  display_name: Hermosa Beach
+  district_name: Hermosa Beach City Elementary
+  district_nces_id: '0617040'
+  enrollment: 1277
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hesperia-0600014:
+  display_name: Hesperia
+  district_name: Hesperia Unified
+  district_nces_id: '0600014'
+  enrollment: 22962
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hesperia-0601523:
+  display_name: Hesperia
+  district_name: Encore Jr./Sr. High Sch for the Perf & Visual Arts District
+  district_nces_id: '0601523'
+  enrollment: 630
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hesperia-0601625:
+  display_name: Hesperia
+  district_name: Alta Vista Innovation High District
+  district_nces_id: '0601625'
+  enrollment: 2023
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hesperia-0601686:
+  display_name: Hesperia
+  district_name: LaVerne Elementary Preparatory Academy District
+  district_nces_id: 0601686
+  enrollment: 531
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hickman:
+  display_name: Hickman
+  district_name: Hickman Community Charter
+  district_nces_id: '0617160'
+  enrollment: 985
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-highland:
+  display_name: Highland
+  district_name: Entrepreneur High District
+  district_nces_id: '0602326'
+  enrollment: 579
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hillsborough:
+  display_name: Hillsborough
+  district_name: Hillsborough City Elementary
+  district_nces_id: 0617190
+  enrollment: 1294
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hilmar:
+  display_name: Hilmar
+  district_name: Hilmar Unified
+  district_nces_id: '0617220'
+  enrollment: 2313
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hollister-0602320:
+  display_name: Hollister
+  district_name: Hollister Prep District
+  district_nces_id: '0602320'
+  enrollment: 539
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-hollister-0617340:
+  display_name: Hollister
+  district_name: Hollister
+  district_nces_id: '0617340'
+  enrollment: 5670
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hollister-0627480:
+  display_name: Hollister
+  district_name: North County Joint Union Elementary
+  district_nces_id: 0627480
+  enrollment: 743
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hollister-0634140:
+  display_name: Hollister
+  district_name: San Benito High
+  district_nces_id: '0634140'
+  enrollment: 3556
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-holtville:
+  display_name: Holtville
+  district_name: Holtville Unified
+  district_nces_id: '0617430'
+  enrollment: 1573
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-homeland:
+  display_name: Homeland
+  district_name: Romoland Elementary
+  district_nces_id: 0633390
+  enrollment: 4545
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hoopa:
+  display_name: Hoopa
+  district_name: Klamath-Trinity Joint Unified
+  district_nces_id: 0619950
+  enrollment: 962
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-hughson:
+  display_name: Hughson
+  district_name: Hughson Unified
+  district_nces_id: '0600060'
+  enrollment: 2157
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-huntington-beach-0618030:
+  display_name: Huntington Beach
+  district_name: Huntington Beach City Elementary
+  district_nces_id: 0618030
+  enrollment: 4703
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-huntington-beach-0618060:
+  display_name: Huntington Beach
+  district_name: Huntington Beach Union High
+  district_nces_id: 0618060
+  enrollment: 14522
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-huntington-beach-0628140:
+  display_name: Huntington Beach
+  district_name: Ocean View
+  district_nces_id: 0628140
+  enrollment: 6809
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-huntington-park-0601544:
+  display_name: Huntington Park
+  district_name: KIPP Comienza Community Prep District
+  district_nces_id: '0601544'
+  enrollment: 1077
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-huntington-park-0601666:
+  display_name: Huntington Park
+  district_name: Alliance Collins Family College-Ready High District
+  district_nces_id: '0601666'
+  enrollment: 611
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-huntington-park-0601667:
+  display_name: Huntington Park
+  district_name: Aspire Pacific Academy District
+  district_nces_id: '0601667'
+  enrollment: 517
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-huntington-park-0601707:
+  display_name: Huntington Park
+  district_name: Alliance Margaret M.Bloomfield Technology ACAD High District
+  district_nces_id: '0601707'
+  enrollment: 579
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-huntington-park-0601857:
+  display_name: Huntington Park
+  district_name: Aspire Ollin University Preparatory Academy District
+  district_nces_id: 0601857
+  enrollment: 557
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-imperial:
+  display_name: Imperial
+  district_name: Imperial Unified
+  district_nces_id: 0618210
+  enrollment: 4540
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-imperial-beach:
+  display_name: Imperial Beach
+  district_name: South Bay Union
+  district_nces_id: 0637380
+  enrollment: 5859
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-inglewood-0602052:
+  display_name: Inglewood
+  district_name: Animo Leadership High District
+  district_nces_id: '0602052'
+  enrollment: 655
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-inglewood-0602471:
+  display_name: Inglewood
+  district_name: Animo Inglewood Charter High District
+  district_nces_id: '0602471'
+  enrollment: 621
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-inglewood-0618390:
+  display_name: Inglewood
+  district_name: Inglewood Unified
+  district_nces_id: 0618390
+  enrollment: 7354
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-irvine-0602487:
+  display_name: Irvine
+  district_name: Excel Academy Charter District
+  district_nces_id: 0602487
+  enrollment: 545
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-irvine-0602500:
+  display_name: Irvine
+  district_name: Excel Academy Charter District
+  district_nces_id: '0602500'
+  enrollment: 1048
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-irvine-0684500:
+  display_name: Irvine
+  district_name: Irvine Unified
+  district_nces_id: 0684500
+  enrollment: 36542
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-jackson:
+  display_name: Jackson
+  district_name: Amador County Unified
+  district_nces_id: '0602450'
+  enrollment: 4107
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-jamul:
+  display_name: Jamul
+  district_name: Jamul-Dulzura Union Elementary
+  district_nces_id: 0618730
+  enrollment: 567
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-jurupa-valley:
+  display_name: Jurupa Valley
+  district_name: Jurupa Unified
+  district_nces_id: 0619260
+  enrollment: 18370
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-kelseyville:
+  display_name: Kelseyville
+  district_name: Kelseyville Unified
+  district_nces_id: 0619320
+  enrollment: 1833
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-kentfield:
+  display_name: Kentfield
+  district_name: Kentfield Elementary
+  district_nces_id: 0619380
+  enrollment: 1056
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-kerman:
+  display_name: Kerman
+  district_name: Kerman Unified
+  district_nces_id: 0619490
+  enrollment: 5358
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-keyes:
+  display_name: Keyes
+  district_name: Keyes Union
+  district_nces_id: 0619620
+  enrollment: 1020
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-king-city-0619650:
+  display_name: King City
+  district_name: South Monterey County Joint Union High
+  district_nces_id: 0619650
+  enrollment: 2762
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-king-city-0619680:
+  display_name: King City
+  district_name: King City Union
+  district_nces_id: 0619680
+  enrollment: 2578
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-kingsburg-0619800:
+  display_name: Kingsburg
+  district_name: Kingsburg Elementary Charter
+  district_nces_id: 0619800
+  enrollment: 2135
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-kingsburg-0619830:
+  display_name: Kingsburg
+  district_name: Kingsburg Joint Union High
+  district_nces_id: 0619830
+  enrollment: 1232
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-knightsen:
+  display_name: Knightsen
+  district_name: Knightsen Elementary
+  district_nces_id: '0620040'
+  enrollment: 577
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-la-canada:
+  display_name: La Canada
+  district_name: La Canada Unified
+  district_nces_id: '0620130'
+  enrollment: 3877
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-la-habra:
+  display_name: La Habra
+  district_name: La Habra City Elementary
+  district_nces_id: 0620190
+  enrollment: 4352
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-la-jolla:
+  display_name: La Jolla
+  district_name: Preuss School UCSD District
+  district_nces_id: 0602148
+  enrollment: 839
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-la-mesa-0602211:
+  display_name: La Mesa
+  district_name: Helix High District
+  district_nces_id: '0602211'
+  enrollment: 2502
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-la-mesa-0620250:
+  display_name: La Mesa
+  district_name: La Mesa-Spring Valley
+  district_nces_id: '0620250'
+  enrollment: 10745
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-la-puente:
+  display_name: La Puente
+  district_name: Bassett Unified
+  district_nces_id: '0604110'
+  enrollment: 2946
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-la-quinta:
+  display_name: La Quinta
+  district_name: Desert Sands Unified
+  district_nces_id: '0611110'
+  enrollment: 26379
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lafayette-0601650:
+  display_name: Lafayette
+  district_name: Acalanes Union High
+  district_nces_id: '0601650'
+  enrollment: 5420
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lafayette-0620310:
+  display_name: Lafayette
+  district_name: Lafayette Elementary
+  district_nces_id: '0620310'
+  enrollment: 3180
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-laguna-beach:
+  display_name: Laguna Beach
+  district_name: Laguna Beach Unified
+  district_nces_id: '0620370'
+  enrollment: 2456
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-laguna-niguel:
+  display_name: Laguna Niguel
+  district_name: Community Roots Academy District
+  district_nces_id: '0602331'
+  enrollment: 783
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lake-balboa:
+  display_name: Lake Balboa
+  district_name: Birmingham Community Charter High District
+  district_nces_id: 0601596
+  enrollment: 3058
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lake-elsinore:
+  display_name: Lake Elsinore
+  district_name: Lake Elsinore Unified
+  district_nces_id: '0600027'
+  enrollment: 20815
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lake-forest:
+  display_name: Lake Forest
+  district_name: Oxford Preparatory Academy - Saddleback Valley District
+  district_nces_id: '0601672'
+  enrollment: 680
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lake-isabella:
+  display_name: Lake Isabella
+  district_name: Kernville Union Elementary
+  district_nces_id: 0619590
+  enrollment: 814
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lake-view-terrace-0602126:
+  display_name: Lake View Terrace
+  district_name: Fenton Avenue Charter District
+  district_nces_id: '0602126'
+  enrollment: 634
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lake-view-terrace-0602182:
+  display_name: Lake View Terrace
+  district_name: PUC Comm CHRTR Mid & PUC Comm CHRTR Early College High DIST
+  district_nces_id: 0602182
+  enrollment: 784
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lakeport:
+  display_name: Lakeport
+  district_name: Lakeport Unified
+  district_nces_id: '0620670'
+  enrollment: 1349
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lakeside:
+  display_name: Lakeside
+  district_name: Lakeside Union Elementary
+  district_nces_id: 0620790
+  enrollment: 4538
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lamont:
+  display_name: Lamont
+  district_name: Lamont Elementary
+  district_nces_id: 0620850
+  enrollment: 2696
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lancaster-0601784:
+  display_name: Lancaster
+  district_name: Desert Sands Charter District
+  district_nces_id: 0601784
+  enrollment: 742
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lancaster-0602060:
+  display_name: Lancaster
+  district_name: iLEAD Lancaster Charter District
+  district_nces_id: '0602060'
+  enrollment: 741
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lancaster-0602437:
+  display_name: Lancaster
+  district_name: Assurance Learning Academy District
+  district_nces_id: '0602437'
+  enrollment: 2915
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lancaster-0602820:
+  display_name: Lancaster
+  district_name: Antelope Valley Union High
+  district_nces_id: 0602820
+  enrollment: 22035
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lancaster-0611910:
+  display_name: Lancaster
+  district_name: Eastside Union Elementary
+  district_nces_id: 0611910
+  enrollment: 3126
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lancaster-0620880:
+  display_name: Lancaster
+  district_name: Lancaster Elementary
+  district_nces_id: 0620880
+  enrollment: 14001
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-larkspur-0620910:
+  display_name: Larkspur
+  district_name: Larkspur-Corte Madera
+  district_nces_id: 0620910
+  enrollment: 1262
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-larkspur-0638790:
+  display_name: Larkspur
+  district_name: Tamalpais Union High
+  district_nces_id: 0638790
+  enrollment: 4837
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lathrop-0601756:
+  display_name: Lathrop
+  district_name: River Islands Technology Academy II District
+  district_nces_id: '0601756'
+  enrollment: 993
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lathrop-0602001:
+  display_name: Lathrop
+  district_name: NextGeneration STEAM Academy District
+  district_nces_id: '0602001'
+  enrollment: 763
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-laton:
+  display_name: Laton
+  district_name: Laton Joint Unified
+  district_nces_id: '0621150'
+  enrollment: 628
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lawndale-0602076:
+  display_name: Lawndale
+  district_name: Environmental Charter High District
+  district_nces_id: '0602076'
+  enrollment: 502
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lawndale-0607920:
+  display_name: Lawndale
+  district_name: Centinela Valley Union High
+  district_nces_id: 0607920
+  enrollment: 5898
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lawndale-0621210:
+  display_name: Lawndale
+  district_name: Lawndale Elementary
+  district_nces_id: '0621210'
+  enrollment: 4563
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-le-grand:
+  display_name: Le Grand
+  district_name: Le Grand Union High
+  district_nces_id: '0621270'
+  enrollment: 502
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lebec:
+  display_name: Lebec
+  district_name: El Tejon Unified
+  district_nces_id: '0600026'
+  enrollment: 687
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lemon-grove:
+  display_name: Lemon Grove
+  district_name: Lemon Grove
+  district_nces_id: '0621330'
+  enrollment: 3171
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lemoore-0607980:
+  display_name: Lemoore
+  district_name: Central Union Elementary
+  district_nces_id: 0607980
+  enrollment: 1675
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lemoore-0621360:
+  display_name: Lemoore
+  district_name: Lemoore Union Elementary
+  district_nces_id: '0621360'
+  enrollment: 3229
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lemoore-0621400:
+  display_name: Lemoore
+  district_name: Lemoore Union High
+  district_nces_id: '0621400'
+  enrollment: 1946
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lennox-0601617:
+  display_name: Lennox
+  district_name: Lennox Mathematics Science and Technology Academy District
+  district_nces_id: '0601617'
+  enrollment: 583
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lennox-0621420:
+  display_name: Lennox
+  district_name: Lennox
+  district_nces_id: '0621420'
+  enrollment: 4128
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lincoln-0601730:
+  display_name: Lincoln
+  district_name: Horizon Charter District
+  district_nces_id: '0601730'
+  enrollment: 1508
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lincoln-0601986:
+  display_name: Lincoln
+  district_name: John Adams Academy - Lincoln District
+  district_nces_id: 0601986
+  enrollment: 1376
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lincoln-0642140:
+  display_name: Lincoln
+  district_name: Western Placer Unified
+  district_nces_id: '0642140'
+  enrollment: 7593
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-linden:
+  display_name: Linden
+  district_name: Linden Unified
+  district_nces_id: 0621810
+  enrollment: 2277
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lindsay:
+  display_name: Lindsay
+  district_name: Lindsay Unified
+  district_nces_id: 0621870
+  enrollment: 3976
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-live-oak-0601512:
+  display_name: Live Oak
+  district_name: Sutter Peak Charter Academy District
+  district_nces_id: '0601512'
+  enrollment: 613
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-live-oak-0622050:
+  display_name: Live Oak
+  district_name: Live Oak Unified
+  district_nces_id: '0622050'
+  enrollment: 1972
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-livermore:
+  display_name: Livermore
+  district_name: Livermore Valley Joint Unified
+  district_nces_id: '0622110'
+  enrollment: 12956
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-livingston:
+  display_name: Livingston
+  district_name: Livingston Union
+  district_nces_id: '0622170'
+  enrollment: 2504
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lodi-0601765:
+  display_name: Lodi
+  district_name: Rio Valley Charter District
+  district_nces_id: '0601765'
+  enrollment: 787
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lodi-0601779:
+  display_name: Lodi
+  district_name: Vista Oaks Charter District
+  district_nces_id: 0601779
+  enrollment: 936
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lodi-0622230:
+  display_name: Lodi
+  district_name: Lodi Unified
+  district_nces_id: '0622230'
+  enrollment: 27323
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lompoc:
+  display_name: Lompoc
+  district_name: Lompoc Unified
+  district_nces_id: '0622410'
+  enrollment: 9061
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-long-beach:
+  display_name: Long Beach
+  district_name: Long Beach Unified
+  district_nces_id: '0622500'
+  enrollment: 65554
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-loomis:
+  display_name: Loomis
+  district_name: Loomis Union Elementary
+  district_nces_id: '0622560'
+  enrollment: 2889
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-alamitos:
+  display_name: Los Alamitos
+  district_name: Los Alamitos Unified
+  district_nces_id: 0622590
+  enrollment: 8934
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-los-altos-0602415:
+  display_name: Los Altos
+  district_name: Bullis Charter District
+  district_nces_id: '0602415'
+  enrollment: 1058
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-altos-0622650:
+  display_name: Los Altos
+  district_name: Los Altos Elementary
+  district_nces_id: '0622650'
+  enrollment: 3355
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601471:
+  display_name: Los Angeles
+  district_name: Accelerated Charter Elementary District
+  district_nces_id: '0601471'
+  enrollment: 500
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601507:
+  display_name: Los Angeles
+  district_name: ISANA Himalia Academy District
+  district_nces_id: '0601507'
+  enrollment: 630
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601532:
+  display_name: Los Angeles
+  district_name: Bright Star Secondary Charter Academy District
+  district_nces_id: '0601532'
+  enrollment: 521
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601548:
+  display_name: Los Angeles
+  district_name: New Designs Charter District
+  district_nces_id: 0601548
+  enrollment: 744
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601594:
+  display_name: Los Angeles
+  district_name: Santa Monica Boulevard Community Charter District
+  district_nces_id: 0601594
+  enrollment: 779
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601599:
+  display_name: Los Angeles
+  district_name: ISANA Nascent Academy District
+  district_nces_id: 0601599
+  enrollment: 524
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601624:
+  display_name: Los Angeles
+  district_name: Animo Legacy Charter Middle District
+  district_nces_id: '0601624'
+  enrollment: 917
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601657:
+  display_name: Los Angeles
+  district_name: Animo Jackie Robinson High District
+  district_nces_id: '0601657'
+  enrollment: 604
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601696:
+  display_name: Los Angeles
+  district_name: KIPP Compton Community District
+  district_nces_id: 0601696
+  enrollment: 551
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601732:
+  display_name: Los Angeles
+  district_name: Accelerated District
+  district_nces_id: '0601732'
+  enrollment: 773
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601741:
+  display_name: Los Angeles
+  district_name: 'Camino Nuevo Charter Academy #2 District'
+  district_nces_id: '0601741'
+  enrollment: 669
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601764:
+  display_name: Los Angeles
+  district_name: KIPP Raices Academy District
+  district_nces_id: '0601764'
+  enrollment: 561
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601798:
+  display_name: Los Angeles
+  district_name: Math and Science College Preparatory District
+  district_nces_id: 0601798
+  enrollment: 539
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601837:
+  display_name: Los Angeles
+  district_name: 'Camino Nuevo Charter Academy #4 District'
+  district_nces_id: 0601837
+  enrollment: 544
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601844:
+  display_name: Los Angeles
+  district_name: New West Charter District
+  district_nces_id: 0601844
+  enrollment: 997
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601867:
+  display_name: Los Angeles
+  district_name: Synergy Quantum Academy District
+  district_nces_id: 0601867
+  enrollment: 543
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601883:
+  display_name: Los Angeles
+  district_name: Endeavor College Preparatory Charter District
+  district_nces_id: 0601883
+  enrollment: 528
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601899:
+  display_name: Los Angeles
+  district_name: Animo Ralph Bunche Charter High District
+  district_nces_id: 0601899
+  enrollment: 622
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601934:
+  display_name: Los Angeles
+  district_name: Alliance Judy Ivie Burton Technology Academy High District
+  district_nces_id: 0601934
+  enrollment: 608
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0601960:
+  display_name: Los Angeles
+  district_name: Animo James B. Taylor Charter Middle District
+  district_nces_id: 0601960
+  enrollment: 518
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602020:
+  display_name: Los Angeles
+  district_name: KIPP Los Angeles College Preparatory District
+  district_nces_id: '0602020'
+  enrollment: 513
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602041:
+  display_name: Los Angeles
+  district_name: KIPP Vida Preparatory Academy District
+  district_nces_id: '0602041'
+  enrollment: 568
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602077:
+  display_name: Los Angeles
+  district_name: 'Camino Nuevo Elementary School #3 District'
+  district_nces_id: '0602077'
+  enrollment: 735
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602092:
+  display_name: Los Angeles
+  district_name: Alain Leroy Locke College Preparatory Academy District
+  district_nces_id: 0602092
+  enrollment: 1256
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602119:
+  display_name: Los Angeles
+  district_name: Alliance Cindy and Bill Simon Technology ACAD High District
+  district_nces_id: 0602119
+  enrollment: 507
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602140:
+  display_name: Los Angeles
+  district_name: KIPP Empower Academy District
+  district_nces_id: '0602140'
+  enrollment: 564
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602142:
+  display_name: Los Angeles
+  district_name: KIPP Iluminar Academy District
+  district_nces_id: '0602142'
+  enrollment: 560
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602176:
+  display_name: Los Angeles
+  district_name: Alliance Gertz-Ressler Richard Merkin 6-12 Complex District
+  district_nces_id: '0602176'
+  enrollment: 998
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602186:
+  display_name: Los Angeles
+  district_name: Citizens of the World Charter School Mar Vista District
+  district_nces_id: 0602186
+  enrollment: 536
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602213:
+  display_name: Los Angeles
+  district_name: WISH Community District
+  district_nces_id: '0602213'
+  enrollment: 850
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602219:
+  display_name: Los Angeles
+  district_name: Animo Watts College Preparatory Academy District
+  district_nces_id: 0602219
+  enrollment: 572
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602226:
+  display_name: Los Angeles
+  district_name: Ocean Charter District
+  district_nces_id: '0602226'
+  enrollment: 552
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602230:
+  display_name: Los Angeles
+  district_name: YouthBuild Charter School of California District
+  district_nces_id: '0602230'
+  enrollment: 667
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602235:
+  display_name: Los Angeles
+  district_name: Oscar De La Hoya Animo Charter High District
+  district_nces_id: '0602235'
+  enrollment: 606
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602237:
+  display_name: Los Angeles
+  district_name: Camino Nuevo Charter Academy District
+  district_nces_id: '0602237'
+  enrollment: 602
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602257:
+  display_name: Los Angeles
+  district_name: Animo Pat Brown District
+  district_nces_id: '0602257'
+  enrollment: 605
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602266:
+  display_name: Los Angeles
+  district_name: Alliance Ouchi-O'Donovan 6-12 Complex District
+  district_nces_id: '0602266'
+  enrollment: 976
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602270:
+  display_name: Los Angeles
+  district_name: Citizens of the World Charter School Silver Lake District
+  district_nces_id: '0602270'
+  enrollment: 715
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602279:
+  display_name: Los Angeles
+  district_name: Alliance Renee and Meyer Luskin Academy High District
+  district_nces_id: 0602279
+  enrollment: 502
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602345:
+  display_name: Los Angeles
+  district_name: Ednovate - USC Hybrid High College Prep District
+  district_nces_id: '0602345'
+  enrollment: 520
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602362:
+  display_name: Los Angeles
+  district_name: Alliance Patti & Peter Neuwirth Leadership Academy District
+  district_nces_id: '0602362'
+  enrollment: 614
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602435:
+  display_name: Los Angeles
+  district_name: Animo South Los Angeles Charter District
+  district_nces_id: '0602435'
+  enrollment: 617
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0602446:
+  display_name: Los Angeles
+  district_name: Alliance Marc & Eva Stern Math and Science District
+  district_nces_id: '0602446'
+  enrollment: 570
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-angeles-0622710:
+  display_name: Los Angeles
+  district_name: Los Angeles Unified
+  district_nces_id: '0622710'
+  enrollment: 427795
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-los-banos:
+  display_name: Los Banos
+  district_name: Los Banos Unified
+  district_nces_id: '0622740'
+  enrollment: 11020
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-los-gatos-0622800:
+  display_name: Los Gatos
+  district_name: Los Gatos-Saratoga Union High
+  district_nces_id: 0622800
+  enrollment: 3269
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-los-gatos-0622830:
+  display_name: Los Gatos
+  district_name: Los Gatos Union Elementary
+  district_nces_id: 0622830
+  enrollment: 2626
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-los-molinos:
+  display_name: Los Molinos
+  district_name: Los Molinos Unified
+  district_nces_id: 0622860
+  enrollment: 528
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lost-hills:
+  display_name: Lost Hills
+  district_name: Wonderful College Prep Academy - Lost Hills District
+  district_nces_id: 0601853
+  enrollment: 504
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lower-lake:
+  display_name: Lower Lake
+  district_name: Konocti Unified
+  district_nces_id: '0620070'
+  enrollment: 3816
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lucerne-valley-0600015:
+  display_name: Lucerne Valley
+  district_name: Lucerne Valley Unified
+  district_nces_id: '0600015'
+  enrollment: 1029
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-lucerne-valley-0601956:
+  display_name: Lucerne Valley
+  district_name: Elite ACAD Academy - Adult Work Force Investment District
+  district_nces_id: 0601956
+  enrollment: 569
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lucerne-valley-0602516:
+  display_name: Lucerne Valley
+  district_name: Granite Mountain Charter District
+  district_nces_id: '0602516'
+  enrollment: 3433
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-lynwood:
+  display_name: Lynwood
+  district_name: Lynwood Unified
+  district_nces_id: '0623160'
+  enrollment: 11967
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-madera-0600068:
+  display_name: Madera
+  district_name: Golden Valley Unified
+  district_nces_id: 0600068
+  enrollment: 2566
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-madera-0602153:
+  display_name: Madera
+  district_name: Ezequiel Tafoya Alvarado Academy District
+  district_nces_id: '0602153'
+  enrollment: 650
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-madera-0623340:
+  display_name: Madera
+  district_name: Madera Unified
+  district_nces_id: '0623340'
+  enrollment: 20151
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-madera-0691017:
+  display_name: Madera
+  district_name: Madera County Superintendent of Schools
+  district_nces_id: 0691017
+  enrollment: 663
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-mammoth-lakes:
+  display_name: Mammoth Lakes
+  district_name: Mammoth Unified
+  district_nces_id: '0623530'
+  enrollment: 1118
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-manhattan-beach:
+  display_name: Manhattan Beach
+  district_name: Manhattan Beach Unified
+  district_nces_id: '0600025'
+  enrollment: 5895
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-manteca:
+  display_name: Manteca
+  district_name: Manteca Unified
+  district_nces_id: '0623610'
+  enrollment: 24667
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-maricopa-0601590:
+  display_name: Maricopa
+  district_name: Heartland Charter District
+  district_nces_id: 0601590
+  enrollment: 4700
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-maricopa-0602062:
+  display_name: Maricopa
+  district_name: Blue Ridge Academy District
+  district_nces_id: '0602062'
+  enrollment: 6751
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-mariposa:
+  display_name: Mariposa
+  district_name: Mariposa County Unified
+  district_nces_id: 0623940
+  enrollment: 1688
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-martinez:
+  display_name: Martinez
+  district_name: Martinez Unified
+  district_nces_id: '0624030'
+  enrollment: 3772
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-marysville:
+  display_name: Marysville
+  district_name: Marysville Joint Unified
+  district_nces_id: 0624090
+  enrollment: 10174
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-mather:
+  display_name: Mather
+  district_name: Sacramento County Office of Education
+  district_nces_id: 0691027
+  enrollment: 938
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mcclellan-0601332:
+  display_name: Mcclellan
+  district_name: Twin Rivers Unified
+  district_nces_id: '0601332'
+  enrollment: 24106
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-mcclellan-0602081:
+  display_name: Mcclellan
+  district_name: Community Outreach Academy District
+  district_nces_id: 0602081
+  enrollment: 1714
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-mcclellan-0602433:
+  display_name: Mcclellan
+  district_name: Community Collaborative Charter District
+  district_nces_id: '0602433'
+  enrollment: 606
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-mcfarland:
+  display_name: Mcfarland
+  district_name: McFarland Unified
+  district_nces_id: '0624230'
+  enrollment: 3408
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mckinleyville-0603030:
+  display_name: Mckinleyville
+  district_name: Northern Humboldt Union High
+  district_nces_id: '0603030'
+  enrollment: 1785
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-mckinleyville-0624300:
+  display_name: Mckinleyville
+  district_name: McKinleyville Union Elementary
+  district_nces_id: '0624300'
+  enrollment: 929
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-meadow-vista:
+  display_name: Meadow Vista
+  district_name: Placer Hills Union Elementary
+  district_nces_id: '0630720'
+  enrollment: 766
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mendota:
+  display_name: Mendota
+  district_name: Mendota Unified
+  district_nces_id: '0600022'
+  enrollment: 3920
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-menifee-0602101:
+  display_name: Menifee
+  district_name: Santa Rosa Academy District
+  district_nces_id: '0602101'
+  enrollment: 1569
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-menifee-0624540:
+  display_name: Menifee
+  district_name: Menifee Union
+  district_nces_id: '0624540'
+  enrollment: 11816
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-menlo-park:
+  display_name: Menlo Park
+  district_name: Las Lomitas Elementary
+  district_nces_id: 0622380
+  enrollment: 1151
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-merced-0624360:
+  display_name: Merced
+  district_name: McSwain Union Elementary
+  district_nces_id: '0624360'
+  enrollment: 883
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-merced-0624600:
+  display_name: Merced
+  district_name: Merced City Elementary
+  district_nces_id: '0624600'
+  enrollment: 10973
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-merced-0641880:
+  display_name: Merced
+  district_name: Weaver Union
+  district_nces_id: 0641880
+  enrollment: 3130
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-merced-0691020:
+  display_name: Merced
+  district_name: Merced County Office of Education
+  district_nces_id: 0691020
+  enrollment: 1706
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-meridian:
+  display_name: Meridian
+  district_name: Inspire Charter School - North District
+  district_nces_id: '0602400'
+  enrollment: 2365
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-middletown:
+  display_name: Middletown
+  district_name: Middletown Unified
+  district_nces_id: '0624750'
+  enrollment: 1449
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mill-valley:
+  display_name: Mill Valley
+  district_name: Mill Valley Elementary
+  district_nces_id: 0624870
+  enrollment: 2369
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-millbrae:
+  display_name: Millbrae
+  district_name: Millbrae Elementary
+  district_nces_id: 0624900
+  enrollment: 2075
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-milpitas:
+  display_name: Milpitas
+  district_name: Milpitas Unified
+  district_nces_id: '0624500'
+  enrollment: 9967
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-miranda:
+  display_name: Miranda
+  district_name: Southern Humboldt Joint Unified
+  district_nces_id: 0637590
+  enrollment: 708
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mission-viejo-0601962:
+  display_name: Mission Viejo
+  district_name: Oxford Preparatory Academy - South Orange County District
+  district_nces_id: 0601962
+  enrollment: 846
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-mission-viejo-0633860:
+  display_name: Mission Viejo
+  district_name: Saddleback Valley Unified
+  district_nces_id: 0633860
+  enrollment: 23711
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-modesto-0601826:
+  display_name: Modesto
+  district_name: Aspire Vanguard College Preparatory Academy District
+  district_nces_id: 0601826
+  enrollment: 596
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-modesto-0602244:
+  display_name: Modesto
+  district_name: Great Valley Academy - Salida District
+  district_nces_id: '0602244'
+  enrollment: 823
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-modesto-0602363:
+  display_name: Modesto
+  district_name: Great Valley Academy District
+  district_nces_id: '0602363'
+  enrollment: 847
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-modesto-0602406:
+  display_name: Modesto
+  district_name: Connecting Waters Charter School - Central Valley District
+  district_nces_id: '0602406'
+  enrollment: 624
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-modesto-0602421:
+  display_name: Modesto
+  district_name: Stanislaus Alternative Charter District
+  district_nces_id: '0602421'
+  enrollment: 552
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-modesto-0612690:
+  display_name: Modesto
+  district_name: Empire Union Elementary
+  district_nces_id: 0612690
+  enrollment: 2875
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-modesto-0616650:
+  display_name: Modesto
+  district_name: Hart-Ransom Union Elementary
+  district_nces_id: '0616650'
+  enrollment: 1176
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-modesto-0625130:
+  display_name: Modesto
+  district_name: Modesto City Elementary
+  district_nces_id: '0625130'
+  enrollment: 14049
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-modesto-0625150:
+  display_name: Modesto
+  district_name: Modesto City High
+  district_nces_id: '0625150'
+  enrollment: 15579
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-modesto-0637950:
+  display_name: Modesto
+  district_name: Stanislaus Union Elementary
+  district_nces_id: 0637950
+  enrollment: 3392
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-modesto-0638670:
+  display_name: Modesto
+  district_name: Sylvan Union Elementary
+  district_nces_id: 0638670
+  enrollment: 7972
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-modesto-0691041:
+  display_name: Modesto
+  district_name: Stanislaus County Office of Education
+  district_nces_id: 0691041
+  enrollment: 741
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mojave:
+  display_name: Mojave
+  district_name: Mojave Unified
+  district_nces_id: '0625230'
+  enrollment: 3009
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-monrovia:
+  display_name: Monrovia
+  district_name: Monrovia Unified
+  district_nces_id: '0625320'
+  enrollment: 5047
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-montebello:
+  display_name: Montebello
+  district_name: Montebello Unified
+  district_nces_id: '0625470'
+  enrollment: 20446
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-monterey-0602120:
+  display_name: Monterey
+  district_name: Bay View Academy District
+  district_nces_id: '0602120'
+  enrollment: 501
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-monterey-0625530:
+  display_name: Monterey
+  district_name: Monterey Peninsula Unified
+  district_nces_id: '0625530'
+  enrollment: 9257
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-moorpark:
+  display_name: Moorpark
+  district_name: Moorpark Unified
+  district_nces_id: 0625690
+  enrollment: 5820
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-moraga:
+  display_name: Moraga
+  district_name: Moraga Elementary
+  district_nces_id: '0625740'
+  enrollment: 1735
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-moreno-valley-0601828:
+  display_name: Moreno Valley
+  district_name: Journey District
+  district_nces_id: 0601828
+  enrollment: 550
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-moreno-valley-0625800:
+  display_name: Moreno Valley
+  district_name: Moreno Valley Unified
+  district_nces_id: 0625800
+  enrollment: 31653
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-morgan-hill-0601913:
+  display_name: Morgan Hill
+  district_name: Charter School of Morgan Hill District
+  district_nces_id: 0601913
+  enrollment: 654
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-morgan-hill-0625830:
+  display_name: Morgan Hill
+  district_name: Morgan Hill Unified
+  district_nces_id: 0625830
+  enrollment: 8013
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-moss-landing:
+  display_name: Moss Landing
+  district_name: North Monterey County Unified
+  district_nces_id: 0627590
+  enrollment: 4483
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mount-shasta:
+  display_name: Mount Shasta
+  district_name: Siskiyou Union High
+  district_nces_id: 0636940
+  enrollment: 531
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mountain-house:
+  display_name: Mountain House
+  district_name: Lammersville Joint Unified
+  district_nces_id: '0601410'
+  enrollment: 7520
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mountain-view-0626280:
+  display_name: Mountain View
+  district_name: Mountain View Whisman
+  district_nces_id: 0626280
+  enrollment: 4522
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-mountain-view-0626310:
+  display_name: Mountain View
+  district_name: Mountain View-Los Altos Union High
+  district_nces_id: '0626310'
+  enrollment: 4448
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-murrieta:
+  display_name: Murrieta
+  district_name: Murrieta Valley Unified
+  district_nces_id: 0600029
+  enrollment: 22365
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-napa:
+  display_name: Napa
+  district_name: Napa Valley Unified
+  district_nces_id: '0626640'
+  enrollment: 16174
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-national-city-0602108:
+  display_name: National City
+  district_name: San Diego Workforce Innovation High District
+  district_nces_id: 0602108
+  enrollment: 2332
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-national-city-0626670:
+  display_name: National City
+  district_name: National Elementary
+  district_nces_id: '0626670'
+  enrollment: 4344
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-needles:
+  display_name: Needles
+  district_name: Needles Unified
+  district_nces_id: '0626760'
+  enrollment: 955
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-nevada-city-0602109:
+  display_name: Nevada City
+  district_name: John Muir Charter District
+  district_nces_id: 0602109
+  enrollment: 558
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-nevada-city-0626820:
+  display_name: Nevada City
+  district_name: Nevada City Elementary
+  district_nces_id: 0626820
+  enrollment: 684
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-newark:
+  display_name: Newark
+  district_name: Newark Unified
+  district_nces_id: '0627060'
+  enrollment: 4955
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-newman:
+  display_name: Newman
+  district_name: Newman-Crows Landing Unified
+  district_nces_id: '0627200'
+  enrollment: 3189
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-norco:
+  display_name: Norco
+  district_name: Corona-Norco Unified
+  district_nces_id: 0609850
+  enrollment: 50790
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-north-edwards:
+  display_name: North Edwards
+  district_name: Muroc Joint Unified
+  district_nces_id: 0626490
+  enrollment: 1738
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-north-hills:
+  display_name: North Hills
+  district_name: Valor Academy Middle District
+  district_nces_id: 0601679
+  enrollment: 510
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-norwalk:
+  display_name: Norwalk
+  district_name: Norwalk-La Mirada Unified
+  district_nces_id: 0627690
+  enrollment: 15406
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-novato:
+  display_name: Novato
+  district_name: Novato Unified
+  district_nces_id: '0627720'
+  enrollment: 7208
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-nuevo:
+  display_name: Nuevo
+  district_name: Nuview Union
+  district_nces_id: 0627780
+  enrollment: 2161
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oak-park:
+  display_name: Oak Park
+  district_name: Oak Park Unified
+  district_nces_id: 0627850
+  enrollment: 4236
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oakdale:
+  display_name: Oakdale
+  district_name: Oakdale Joint Unified
+  district_nces_id: '0600062'
+  enrollment: 5227
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakhurst-0600160:
+  display_name: Oakhurst
+  district_name: Yosemite Unified
+  district_nces_id: '0600160'
+  enrollment: 1385
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oakhurst-0604080:
+  display_name: Oakhurst
+  district_name: Bass Lake Joint Union Elementary
+  district_nces_id: 0604080
+  enrollment: 846
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oakland-0601755:
+  display_name: Oakland
+  district_name: 'Lodestar: A Lighthouse Community Charter Public District'
+  district_nces_id: '0601755'
+  enrollment: 712
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakland-0601880:
+  display_name: Oakland
+  district_name: American Indian Public Charter II District
+  district_nces_id: 0601880
+  enrollment: 625
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakland-0601937:
+  display_name: Oakland
+  district_name: Lighthouse Community Charter District
+  district_nces_id: 0601937
+  enrollment: 544
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakland-0602013:
+  display_name: Oakland
+  district_name: Yu Ming Charter District
+  district_nces_id: '0602013'
+  enrollment: 766
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakland-0602046:
+  display_name: Oakland
+  district_name: Aspire Berkley Maynard Academy District
+  district_nces_id: '0602046'
+  enrollment: 523
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakland-0602165:
+  display_name: Oakland
+  district_name: Achieve Academy District
+  district_nces_id: '0602165'
+  enrollment: 557
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakland-0602192:
+  display_name: Oakland
+  district_name: East Bay Innovation Academy District
+  district_nces_id: 0602192
+  enrollment: 533
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakland-0602276:
+  display_name: Oakland
+  district_name: KIPP Bridge Academy District
+  district_nces_id: '0602276'
+  enrollment: 509
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakland-0602458:
+  display_name: Oakland
+  district_name: Oakland School for the Arts District
+  district_nces_id: 0602458
+  enrollment: 779
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oakland-0628050:
+  display_name: Oakland
+  district_name: Oakland Unified
+  district_nces_id: 0628050
+  enrollment: 34149
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oakley:
+  display_name: Oakley
+  district_name: Oakley Union Elementary
+  district_nces_id: 0628080
+  enrollment: 5059
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oceanside-0601473:
+  display_name: Oceanside
+  district_name: Classical Academy Vista District
+  district_nces_id: '0601473'
+  enrollment: 573
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oceanside-0601537:
+  display_name: Oceanside
+  district_name: Pacific View Charter District
+  district_nces_id: '0601537'
+  enrollment: 633
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oceanside-0601600:
+  display_name: Oceanside
+  district_name: Scholarship Prep - Oceanside District
+  district_nces_id: '0601600'
+  enrollment: 543
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oceanside-0601781:
+  display_name: Oceanside
+  district_name: SIATech District
+  district_nces_id: 0601781
+  enrollment: 743
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oceanside-0602258:
+  display_name: Oceanside
+  district_name: Coastal Academy Charter District
+  district_nces_id: 0602258
+  enrollment: 1789
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oceanside-0628250:
+  display_name: Oceanside
+  district_name: Oceanside Unified
+  district_nces_id: 0628250
+  enrollment: 15855
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-ojai:
+  display_name: Ojai
+  district_name: Ojai Unified
+  district_nces_id: 0628270
+  enrollment: 2209
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oneals:
+  display_name: O'Neals
+  district_name: Chawanakee Unified
+  district_nces_id: '0600116'
+  enrollment: 1433
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-ontario-0608160:
+  display_name: Ontario
+  district_name: Chaffey Joint Union High
+  district_nces_id: 0608160
+  enrollment: 23145
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-ontario-0626220:
+  display_name: Ontario
+  district_name: Mountain View Elementary
+  district_nces_id: '0626220'
+  enrollment: 3035
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-ontario-0628470:
+  display_name: Ontario
+  district_name: Ontario-Montclair
+  district_nces_id: 0628470
+  enrollment: 18471
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-orange-0601894:
+  display_name: Orange
+  district_name: Santiago Middle District
+  district_nces_id: 0601894
+  enrollment: 1079
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-orange-0602535:
+  display_name: Orange
+  district_name: Orange County Classical Academy District
+  district_nces_id: '0602535'
+  enrollment: 529
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-orange-0628650:
+  display_name: Orange
+  district_name: Orange Unified
+  district_nces_id: 0628650
+  enrollment: 24764
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-orcutt:
+  display_name: Orcutt
+  district_name: Orcutt Union Elementary
+  district_nces_id: 0628710
+  enrollment: 4717
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-orinda:
+  display_name: Orinda
+  district_name: Orinda Union Elementary
+  district_nces_id: 0628860
+  enrollment: 2516
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-orland-0600045:
+  display_name: Orland
+  district_name: Orland Joint Unified
+  district_nces_id: '0600045'
+  enrollment: 2262
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-orland-0602520:
+  display_name: Orland
+  district_name: Lake View Charter District
+  district_nces_id: '0602520'
+  enrollment: 723
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oro-grande:
+  display_name: Oro Grande
+  district_name: Riverside Preparatory District
+  district_nces_id: '0602566'
+  enrollment: 2508
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-orosi:
+  display_name: Orosi
+  district_name: Cutler-Orosi Joint Unified
+  district_nces_id: '0610350'
+  enrollment: 3892
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oroville-0629100:
+  display_name: Oroville
+  district_name: Oroville City Elementary
+  district_nces_id: 0629100
+  enrollment: 2124
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oroville-0629130:
+  display_name: Oroville
+  district_name: Oroville Union High
+  district_nces_id: 0629130
+  enrollment: 2346
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oroville-0639180:
+  display_name: Oroville
+  district_name: Thermalito Union Elementary
+  district_nces_id: 0639180
+  enrollment: 1522
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oxnard-0602465:
+  display_name: Oxnard
+  district_name: Vista Real Charter High District
+  district_nces_id: '0602465'
+  enrollment: 1311
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-oxnard-0628170:
+  display_name: Oxnard
+  district_name: Ocean View
+  district_nces_id: 0628170
+  enrollment: 2191
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oxnard-0629220:
+  display_name: Oxnard
+  district_name: Oxnard
+  district_nces_id: 0629220
+  enrollment: 14171
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oxnard-0629270:
+  display_name: Oxnard
+  district_name: Oxnard Union High
+  district_nces_id: 0629270
+  enrollment: 16938
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-oxnard-0632760:
+  display_name: Oxnard
+  district_name: Rio Elementary
+  district_nces_id: '0632760'
+  enrollment: 5189
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pacific-grove:
+  display_name: Pacific Grove
+  district_name: Pacific Grove Unified
+  district_nces_id: 0629370
+  enrollment: 1772
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pacific-palisades:
+  display_name: Pacific Palisades
+  district_name: Palisades Charter High District
+  district_nces_id: 0601488
+  enrollment: 2959
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-pacifica:
+  display_name: Pacifica
+  district_name: Pacifica
+  district_nces_id: '0620460'
+  enrollment: 2759
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pacoima-0601959:
+  display_name: Pacoima
+  district_name: Pacoima Charter Elementary District
+  district_nces_id: 0601959
+  enrollment: 888
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-pacoima-0602242:
+  display_name: Pacoima
+  district_name: Fenton Primary Center District
+  district_nces_id: '0602242'
+  enrollment: 532
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-pacoima-0602264:
+  display_name: Pacoima
+  district_name: Montague Charter Academy District
+  district_nces_id: '0602264'
+  enrollment: 836
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-palermo:
+  display_name: Palermo
+  district_name: Palermo Union Elementary
+  district_nces_id: 0629540
+  enrollment: 1186
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-palm-springs:
+  display_name: Palm Springs
+  district_name: Palm Springs Unified
+  district_nces_id: 0629550
+  enrollment: 21032
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-palmdale-0601854:
+  display_name: Palmdale
+  district_name: Antelope Valley Learning Academy District
+  district_nces_id: 0601854
+  enrollment: 1013
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-palmdale-0601945:
+  display_name: Palmdale
+  district_name: Palmdale Aerospace Academy District
+  district_nces_id: 0601945
+  enrollment: 2278
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-palmdale-0629580:
+  display_name: Palmdale
+  district_name: Palmdale Elementary
+  district_nces_id: 0629580
+  enrollment: 17788
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-palmdale-0642810:
+  display_name: Palmdale
+  district_name: Wilsona Elementary
+  district_nces_id: 0642810
+  enrollment: 1230
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-palo-alto:
+  display_name: Palo Alto
+  district_name: Palo Alto Unified
+  district_nces_id: 0629610
+  enrollment: 10318
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-palos-verdes-estates:
+  display_name: Palos Verdes Estates
+  district_name: Palos Verdes Peninsula Unified
+  district_nces_id: 0629700
+  enrollment: 10457
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-paradise:
+  display_name: Paradise
+  district_name: Paradise Unified
+  district_nces_id: 0629820
+  enrollment: 1579
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-paramount:
+  display_name: Paramount
+  district_name: Paramount Unified
+  district_nces_id: 0629850
+  enrollment: 12730
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-parlier:
+  display_name: Parlier
+  district_name: Parlier Unified
+  district_nces_id: 0629910
+  enrollment: 3322
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pasadena:
+  display_name: Pasadena
+  district_name: Pasadena Unified
+  district_nces_id: 0629940
+  enrollment: 14152
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-paso-robles:
+  display_name: Paso Robles
+  district_name: Paso Robles Joint Unified
+  district_nces_id: 0600048
+  enrollment: 6341
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-patterson:
+  display_name: Patterson
+  district_name: Patterson Joint Unified
+  district_nces_id: '0630030'
+  enrollment: 6177
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pearblossom:
+  display_name: Pearblossom
+  district_name: Keppel Union Elementary
+  district_nces_id: 0619440
+  enrollment: 2549
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-penn-valley:
+  display_name: Penn Valley
+  district_name: Penn Valley Union Elementary
+  district_nces_id: '0601427'
+  enrollment: 609
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-perris-0630180:
+  display_name: Perris
+  district_name: Perris Elementary
+  district_nces_id: 0630180
+  enrollment: 5540
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-perris-0630210:
+  display_name: Perris
+  district_name: Perris Union High
+  district_nces_id: '0630210'
+  enrollment: 11731
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-perris-0691135:
+  display_name: Perris
+  district_name: Val Verde Unified
+  district_nces_id: 0691135
+  enrollment: 19379
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-petaluma-0602512:
+  display_name: Petaluma
+  district_name: Heartwood Charter District
+  district_nces_id: '0602512'
+  enrollment: 528
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-petaluma-0628320:
+  display_name: Petaluma
+  district_name: Old Adobe Union
+  district_nces_id: 0628320
+  enrollment: 1836
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-petaluma-0630230:
+  display_name: Petaluma
+  district_name: Petaluma City Elementary
+  district_nces_id: '0630230'
+  enrollment: 2158
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-petaluma-0630250:
+  display_name: Petaluma
+  district_name: Petaluma Joint Union High
+  district_nces_id: '0630250'
+  enrollment: 4926
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-petaluma-0641790:
+  display_name: Petaluma
+  district_name: Waugh Elementary
+  district_nces_id: 0641790
+  enrollment: 775
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-phelan:
+  display_name: Phelan
+  district_name: Snowline Joint Unified
+  district_nces_id: 0636970
+  enrollment: 7961
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pico-rivera:
+  display_name: Pico Rivera
+  district_name: El Rancho Unified
+  district_nces_id: 0612180
+  enrollment: 7255
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-piedmont:
+  display_name: Piedmont
+  district_name: Piedmont City Unified
+  district_nces_id: '0630330'
+  enrollment: 2336
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pine-valley:
+  display_name: Pine Valley
+  district_name: Mountain Empire Unified
+  district_nces_id: '0626100'
+  enrollment: 1824
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pittsburg:
+  display_name: Pittsburg
+  district_name: Pittsburg Unified
+  district_nces_id: '0630600'
+  enrollment: 10665
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pixley:
+  display_name: Pixley
+  district_name: Pixley Union Elementary
+  district_nces_id: '0630630'
+  enrollment: 877
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-placentia:
+  display_name: Placentia
+  district_name: Placentia-Yorba Linda Unified
+  district_nces_id: '0630660'
+  enrollment: 23138
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-placerville-0601743:
+  display_name: Placerville
+  district_name: Sky Mountain Charter District
+  district_nces_id: '0601743'
+  enrollment: 2138
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-placerville-0612070:
+  display_name: Placerville
+  district_name: El Dorado Union High
+  district_nces_id: '0612070'
+  enrollment: 6716
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-placerville-0615450:
+  display_name: Placerville
+  district_name: Gold Trail Union Elementary
+  district_nces_id: '0615450'
+  enrollment: 520
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-placerville-0625980:
+  display_name: Placerville
+  district_name: Mother Lode Union Elementary
+  district_nces_id: 0625980
+  enrollment: 843
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-placerville-0630780:
+  display_name: Placerville
+  district_name: Placerville Union Elementary
+  district_nces_id: 0630780
+  enrollment: 1167
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-placerville-0691006:
+  display_name: Placerville
+  district_name: El Dorado County Office of Education
+  district_nces_id: 0691006
+  enrollment: 782
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-planada:
+  display_name: Planada
+  district_name: Planada Elementary
+  district_nces_id: 0630840
+  enrollment: 871
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pleasanton:
+  display_name: Pleasanton
+  district_name: Pleasanton Unified
+  district_nces_id: '0600020'
+  enrollment: 13876
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-plumas-lake:
+  display_name: Plumas Lake
+  district_name: Plumas Lake Elementary
+  district_nces_id: 0631180
+  enrollment: 1499
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pollock-pines:
+  display_name: Pollock Pines
+  district_name: Pollock Pines Elementary
+  district_nces_id: 0631290
+  enrollment: 590
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-pomona-0602180:
+  display_name: Pomona
+  district_name: School of Arts and Enterprise District
+  district_nces_id: 0602180
+  enrollment: 667
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-pomona-0631320:
+  display_name: Pomona
+  district_name: Pomona Unified
+  district_nces_id: '0631320'
+  enrollment: 21391
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-port-hueneme:
+  display_name: Port Hueneme
+  district_name: Hueneme Elementary
+  district_nces_id: 0617850
+  enrollment: 7140
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-porterville-0600064:
+  display_name: Porterville
+  district_name: Porterville Unified
+  district_nces_id: '0600064'
+  enrollment: 14208
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-porterville-0602508:
+  display_name: Porterville
+  district_name: Monarch River Academy District
+  district_nces_id: 0602508
+  enrollment: 1125
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-porterville-0606570:
+  display_name: Porterville
+  district_name: Burton Elementary
+  district_nces_id: '0606570'
+  enrollment: 4784
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-portola-valley:
+  display_name: Portola Valley
+  district_name: Portola Valley Elementary
+  district_nces_id: '0631470'
+  enrollment: 515
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-poway:
+  display_name: Poway
+  district_name: Pacific Coast Academy District
+  district_nces_id: 0601961
+  enrollment: 4891
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-prather:
+  display_name: Prather
+  district_name: Sierra Unified
+  district_nces_id: 0636805
+  enrollment: 1319
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-quartz-hill:
+  display_name: Quartz Hill
+  district_name: Westside Union Elementary
+  district_nces_id: '0642120'
+  enrollment: 8911
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-quincy:
+  display_name: Quincy
+  district_name: Plumas Unified
+  district_nces_id: '0631170'
+  enrollment: 1755
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-ramona:
+  display_name: Ramona
+  district_name: Ramona City Unified
+  district_nces_id: '0631710'
+  enrollment: 5082
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rancho-cordova:
+  display_name: Rancho Cordova
+  district_name: Folsom-Cordova Unified
+  district_nces_id: 0613890
+  enrollment: 20550
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-rancho-cucamonga-0607950:
+  display_name: Rancho Cucamonga
+  district_name: Central Elementary
+  district_nces_id: 0607950
+  enrollment: 4267
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rancho-cucamonga-0616300:
+  display_name: Rancho Cucamonga
+  district_name: Cucamonga Elementary
+  district_nces_id: '0616300'
+  enrollment: 2299
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rancho-santa-fe:
+  display_name: Rancho Santa Fe
+  district_name: Rancho Santa Fe Elementary
+  district_nces_id: '0631740'
+  enrollment: 574
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-red-bluff-0602760:
+  display_name: Red Bluff
+  district_name: Antelope Elementary
+  district_nces_id: '0602760'
+  enrollment: 812
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-red-bluff-0631980:
+  display_name: Red Bluff
+  district_name: Red Bluff Union Elementary
+  district_nces_id: 0631980
+  enrollment: 1842
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-red-bluff-0632010:
+  display_name: Red Bluff
+  district_name: Red Bluff Joint Union High
+  district_nces_id: '0632010'
+  enrollment: 1747
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redding-0601759:
+  display_name: Redding
+  district_name: University Preparatory District
+  district_nces_id: 0601759
+  enrollment: 1013
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-redding-0602385:
+  display_name: Redding
+  district_name: Redding School of the Arts District
+  district_nces_id: 0602385
+  enrollment: 602
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-redding-0602506:
+  display_name: Redding
+  district_name: Shasta View Academy District
+  district_nces_id: '0602506'
+  enrollment: 509
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-redding-0609450:
+  display_name: Redding
+  district_name: Columbia Elementary
+  district_nces_id: 0609450
+  enrollment: 754
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redding-0612810:
+  display_name: Redding
+  district_name: Enterprise Elementary
+  district_nces_id: 0612810
+  enrollment: 3592
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-redding-0614950:
+  display_name: Redding
+  district_name: Gateway Unified
+  district_nces_id: 0614950
+  enrollment: 2176
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redding-0615690:
+  display_name: Redding
+  district_name: Grant Elementary
+  district_nces_id: 0615690
+  enrollment: 645
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redding-0629280:
+  display_name: Redding
+  district_name: Pacheco Union Elementary
+  district_nces_id: 0629280
+  enrollment: 680
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redding-0632040:
+  display_name: Redding
+  district_name: Redding Elementary
+  district_nces_id: '0632040'
+  enrollment: 2917
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-redding-0636600:
+  display_name: Redding
+  district_name: Shasta Union High
+  district_nces_id: '0636600'
+  enrollment: 4265
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redlands-0601629:
+  display_name: Redlands
+  district_name: Community Collaborative Virtual - Sage Oak Charter District
+  district_nces_id: 0601629
+  enrollment: 3048
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-redlands-0602117:
+  display_name: Redlands
+  district_name: Gorman Learning Center District
+  district_nces_id: '0602117'
+  enrollment: 1188
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-redlands-0632070:
+  display_name: Redlands
+  district_name: Redlands Unified
+  district_nces_id: '0632070'
+  enrollment: 19773
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redondo-beach:
+  display_name: Redondo Beach
+  district_name: Redondo Beach Unified
+  district_nces_id: '0600032'
+  enrollment: 9541
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redwood-city-0602030:
+  display_name: Redwood City
+  district_name: KIPP Excelencia Community Preparatory District
+  district_nces_id: '0602030'
+  enrollment: 733
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-redwood-city-0602324:
+  display_name: Redwood City
+  district_name: Design Tech High District
+  district_nces_id: '0602324'
+  enrollment: 545
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-redwood-city-0632130:
+  display_name: Redwood City
+  district_name: Redwood City Elementary
+  district_nces_id: '0632130'
+  enrollment: 6346
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redwood-city-0636390:
+  display_name: Redwood City
+  district_name: Sequoia Union High
+  district_nces_id: 0636390
+  enrollment: 8599
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-redwood-city-5500081:
+  display_name: Redwood City
+  district_name: Rocketship Education Wisconsin Inc.
+  district_nces_id: '5500081'
+  enrollment: 713
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-reedley:
+  display_name: Reedley
+  district_name: Kings Canyon Joint Unified
+  district_nces_id: 0619700
+  enrollment: 9684
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-rescue:
+  display_name: Rescue
+  district_name: Rescue Union Elementary
+  district_nces_id: '0632310'
+  enrollment: 3520
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-reseda:
+  display_name: Reseda
+  district_name: Magnolia Science Academy District
+  district_nces_id: '0601706'
+  enrollment: 694
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-rialto-0601715:
+  display_name: Rialto
+  district_name: Vista Norte Public Charter District
+  district_nces_id: '0601715'
+  enrollment: 631
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-rialto-0632370:
+  display_name: Rialto
+  district_name: Rialto Unified
+  district_nces_id: '0632370'
+  enrollment: 24132
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-richgrove:
+  display_name: Richgrove
+  district_name: Richgrove Elementary
+  district_nces_id: '0632430'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-richmond-0601502:
+  display_name: Richmond
+  district_name: Making Waves Academy District
+  district_nces_id: '0601502'
+  enrollment: 1124
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-richmond-0601547:
+  display_name: Richmond
+  district_name: Aspire Richmond Technology Academy District
+  district_nces_id: '0601547'
+  enrollment: 542
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-richmond-0601670:
+  display_name: Richmond
+  district_name: Richmond Charter Elementary-Benito Juarez District
+  district_nces_id: '0601670'
+  enrollment: 502
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-richmond-0601722:
+  display_name: Richmond
+  district_name: Richmond College Preparatory District
+  district_nces_id: '0601722'
+  enrollment: 562
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-richmond-0601726:
+  display_name: Richmond
+  district_name: 'Caliber: Beta Academy District'
+  district_nces_id: '0601726'
+  enrollment: 913
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-richmond-0601892:
+  display_name: Richmond
+  district_name: 'Leadership Public Schools: Richmond District'
+  district_nces_id: 0601892
+  enrollment: 556
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-richmond-0602026:
+  display_name: Richmond
+  district_name: 'Summit Public School: Tamalpais District'
+  district_nces_id: '0602026'
+  enrollment: 613
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-richmond-0602403:
+  display_name: Richmond
+  district_name: Aspire Richmond Ca. College Preparatory Academy District
+  district_nces_id: '0602403'
+  enrollment: 591
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-richmond-0632550:
+  display_name: Richmond
+  district_name: West Contra Costa Unified
+  district_nces_id: '0632550'
+  enrollment: 25737
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-ridgecrest:
+  display_name: Ridgecrest
+  district_name: Sierra Sands Unified
+  district_nces_id: 0636800
+  enrollment: 5088
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rio-linda:
+  display_name: Rio Linda
+  district_name: Heritage Peak Charter District
+  district_nces_id: '0602371'
+  enrollment: 1106
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-rio-vista:
+  display_name: Rio Vista
+  district_name: River Delta Joint Unified
+  district_nces_id: '0633110'
+  enrollment: 1787
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-ripon-0602388:
+  display_name: Ripon
+  district_name: California Connections Academy @ Ripon District
+  district_nces_id: 0602388
+  enrollment: 1766
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-ripon-0632880:
+  display_name: Ripon
+  district_name: Ripon Unified
+  district_nces_id: 0632880
+  enrollment: 3302
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-riverbank:
+  display_name: Riverbank
+  district_name: Riverbank Unified
+  district_nces_id: '0600061'
+  enrollment: 2972
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-riverdale:
+  display_name: Riverdale
+  district_name: Riverdale Joint Unified
+  district_nces_id: '0600040'
+  enrollment: 1469
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-riverside-0601738:
+  display_name: Riverside
+  district_name: REACH Leadership STEAM Academy District
+  district_nces_id: 0601738
+  enrollment: 624
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-riverside-0633150:
+  display_name: Riverside
+  district_name: Riverside Unified
+  district_nces_id: '0633150'
+  enrollment: 39425
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-riverside-0691026:
+  display_name: Riverside
+  district_name: Riverside County Office of Education
+  district_nces_id: 0691026
+  enrollment: 1357
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-rocklin-0600013:
+  display_name: Rocklin
+  district_name: Rocklin Unified
+  district_nces_id: '0600013'
+  enrollment: 11407
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rocklin-0602268:
+  display_name: Rocklin
+  district_name: Rocklin Academy Gateway District
+  district_nces_id: 0602268
+  enrollment: 1176
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-rocklin-0602473:
+  display_name: Rocklin
+  district_name: Western Sierra Collegiate Academy District
+  district_nces_id: '0602473'
+  enrollment: 773
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-rodeo:
+  display_name: Rodeo
+  district_name: John Swett Unified
+  district_nces_id: 0618990
+  enrollment: 1234
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rohnert-park:
+  display_name: Rohnert Park
+  district_name: Cotati-Rohnert Park Unified
+  district_nces_id: 0609940
+  enrollment: 6010
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rosamond:
+  display_name: Rosamond
+  district_name: Southern Kern Unified
+  district_nces_id: '0637620'
+  enrollment: 3663
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rosemead-0614940:
+  display_name: Rosemead
+  district_name: Garvey Elementary
+  district_nces_id: 0614940
+  enrollment: 4279
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rosemead-0633570:
+  display_name: Rosemead
+  district_name: Rosemead Elementary
+  district_nces_id: '0633570'
+  enrollment: 2334
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-roseville-0602261:
+  display_name: Roseville
+  district_name: John Adams Academy - Roseville District
+  district_nces_id: '0602261'
+  enrollment: 1590
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-roseville-0611490:
+  display_name: Roseville
+  district_name: Dry Creek Joint Elementary
+  district_nces_id: 0611490
+  enrollment: 6474
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-roseville-0633600:
+  display_name: Roseville
+  district_name: Roseville City Elementary
+  district_nces_id: '0633600'
+  enrollment: 11583
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-roseville-0633630:
+  display_name: Roseville
+  district_name: Roseville Joint Union High
+  district_nces_id: '0633630'
+  enrollment: 10570
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-rowland-heights:
+  display_name: Rowland Heights
+  district_name: Rowland Unified
+  district_nces_id: '0633750'
+  enrollment: 11904
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sacramento-0600036:
+  display_name: Sacramento
+  district_name: Natomas Unified
+  district_nces_id: '0600036'
+  enrollment: 14552
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0601703:
+  display_name: Sacramento
+  district_name: Aspire Alexander Twilight Secondary Academy District
+  district_nces_id: '0601703'
+  enrollment: 505
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0601786:
+  display_name: Sacramento
+  district_name: The Language Academy of Sacramento District
+  district_nces_id: 0601786
+  enrollment: 616
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0601824:
+  display_name: Sacramento
+  district_name: Higher Learning Academy District
+  district_nces_id: 0601824
+  enrollment: 533
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0602003:
+  display_name: Sacramento
+  district_name: Natomas Charter District
+  district_nces_id: '0602003'
+  enrollment: 1869
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0602034:
+  display_name: Sacramento
+  district_name: Gateway International District
+  district_nces_id: '0602034'
+  enrollment: 577
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0602094:
+  display_name: Sacramento
+  district_name: St. HOPE Public School 7 District
+  district_nces_id: 0602094
+  enrollment: 557
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0602348:
+  display_name: Sacramento
+  district_name: SAVA- Sacramento ACAD and Vocational Academy- SCUSD District
+  district_nces_id: 0602348
+  enrollment: 709
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0602432:
+  display_name: Sacramento
+  district_name: Fortune District
+  district_nces_id: '0602432'
+  enrollment: 1866
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0602442:
+  display_name: Sacramento
+  district_name: Highlands Community Charter District
+  district_nces_id: '0602442'
+  enrollment: 6749
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0602509:
+  display_name: Sacramento
+  district_name: California Innovative Career Academy District
+  district_nces_id: 0602509
+  enrollment: 2202
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sacramento-0633240:
+  display_name: Sacramento
+  district_name: Robla Elementary
+  district_nces_id: '0633240'
+  enrollment: 1904
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sacramento-0633840:
+  display_name: Sacramento
+  district_name: Sacramento City Unified
+  district_nces_id: 0633840
+  enrollment: 38821
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-salida:
+  display_name: Salida
+  district_name: Salida Union Elementary
+  district_nces_id: 0633900
+  enrollment: 2171
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-salinas-0601950:
+  display_name: Salinas
+  district_name: Alisal Union
+  district_nces_id: 0601950
+  enrollment: 7509
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-salinas-0633930:
+  display_name: Salinas
+  district_name: Salinas City Elementary
+  district_nces_id: 0633930
+  enrollment: 8273
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-salinas-0633980:
+  display_name: Salinas
+  district_name: Salinas Union High
+  district_nces_id: 0633980
+  enrollment: 16337
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-salinas-0635790:
+  display_name: Salinas
+  district_name: Santa Rita Union Elementary
+  district_nces_id: 0635790
+  enrollment: 3231
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-salinas-0641610:
+  display_name: Salinas
+  district_name: Washington Union Elementary
+  district_nces_id: '0641610'
+  enrollment: 734
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-salinas-0691021:
+  display_name: Salinas
+  district_name: Monterey County Office of Education
+  district_nces_id: 0691021
+  enrollment: 633
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-andreas:
+  display_name: San Andreas
+  district_name: Calaveras Unified
+  district_nces_id: 0606870
+  enrollment: 2900
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-anselmo:
+  display_name: San Anselmo
+  district_name: Ross Valley Elementary
+  district_nces_id: '0600006'
+  enrollment: 1724
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-bernardino-0601558:
+  display_name: San Bernardino
+  district_name: Norton Science and Language Academy District
+  district_nces_id: 0601558
+  enrollment: 1106
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-bernardino-0601870:
+  display_name: San Bernardino
+  district_name: Options for Youth-San Bernardino District
+  district_nces_id: 0601870
+  enrollment: 910
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-bernardino-0634170:
+  display_name: San Bernardino
+  district_name: San Bernardino City Unified
+  district_nces_id: '0634170'
+  enrollment: 45971
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-bernardino-0691029:
+  display_name: San Bernardino
+  district_name: San Bernardino County Office of Education
+  district_nces_id: 0691029
+  enrollment: 2028
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-bruno:
+  display_name: San Bruno
+  district_name: San Bruno Park Elementary
+  district_nces_id: '0634230'
+  enrollment: 2019
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-carlos:
+  display_name: San Carlos
+  district_name: San Carlos Elementary
+  district_nces_id: 0634290
+  enrollment: 2700
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-diego-0601545:
+  display_name: San Diego
+  district_name: Keiller Leadership Academy District
+  district_nces_id: '0601545'
+  enrollment: 603
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-diego-0601753:
+  display_name: San Diego
+  district_name: High Tech High District
+  district_nces_id: '0601753'
+  enrollment: 521
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-diego-0601788:
+  display_name: San Diego
+  district_name: Gompers Preparatory Academy District
+  district_nces_id: 0601788
+  enrollment: 1279
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-diego-0601876:
+  display_name: San Diego
+  district_name: Charter School of San Diego District
+  district_nces_id: 0601876
+  enrollment: 1415
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-diego-0601896:
+  display_name: San Diego
+  district_name: Albert Einstein Academy Charter Middle District
+  district_nces_id: 0601896
+  enrollment: 1440
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-diego-0602136:
+  display_name: San Diego
+  district_name: The O'Farrell Charter District
+  district_nces_id: '0602136'
+  enrollment: 1818
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-diego-0602374:
+  display_name: San Diego
+  district_name: Health Sciences High District
+  district_nces_id: '0602374'
+  enrollment: 525
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-diego-0610740:
+  display_name: San Diego
+  district_name: Del Mar Union Elementary
+  district_nces_id: '0610740'
+  enrollment: 3748
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-diego-0631530:
+  display_name: San Diego
+  district_name: Poway Unified
+  district_nces_id: '0631530'
+  enrollment: 34900
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-diego-0634320:
+  display_name: San Diego
+  district_name: San Diego Unified
+  district_nces_id: '0634320'
+  enrollment: 93893
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-diego-0691030:
+  display_name: San Diego
+  district_name: San Diego County Office of Education
+  district_nces_id: 0691030
+  enrollment: 1036
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-dimas:
+  display_name: San Dimas
+  district_name: Bonita Unified
+  district_nces_id: '0605610'
+  enrollment: 9943
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-fernando:
+  display_name: San Fernando
+  district_name: Vaughn Next Century Learning Center District
+  district_nces_id: 0601898
+  enrollment: 2877
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-francisco-0602054:
+  display_name: San Francisco
+  district_name: Thomas Edison Charter Academy District
+  district_nces_id: '0602054'
+  enrollment: 590
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-francisco-0602118:
+  display_name: San Francisco
+  district_name: Five Keys Independence HS (SF Sheriff's) District
+  district_nces_id: 0602118
+  enrollment: 3019
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-francisco-0634410:
+  display_name: San Francisco
+  district_name: San Francisco Unified
+  district_nces_id: '0634410'
+  enrollment: 48785
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-gabriel:
+  display_name: San Gabriel
+  district_name: San Gabriel Unified
+  district_nces_id: '0634425'
+  enrollment: 4595
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jacinto-0602390:
+  display_name: San Jacinto
+  district_name: San Jacinto Valley Academy District
+  district_nces_id: 0602390
+  enrollment: 1571
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jacinto-0634440:
+  display_name: San Jacinto
+  district_name: San Jacinto Unified
+  district_nces_id: '0634440'
+  enrollment: 10276
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-joaquin:
+  display_name: San Joaquin
+  district_name: Golden Plains Unified
+  district_nces_id: 0691134
+  enrollment: 1389
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0601591:
+  display_name: San Jose
+  district_name: Discovery Charter District
+  district_nces_id: 0601591
+  enrollment: 535
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0601637:
+  display_name: San Jose
+  district_name: Rocketship Alma Academy District
+  district_nces_id: '0601637'
+  enrollment: 515
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0601656:
+  display_name: San Jose
+  district_name: Downtown College Prep - Alum Rock District
+  district_nces_id: '0601656'
+  enrollment: 529
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0601671:
+  display_name: San Jose
+  district_name: 'Alpha: Cornerstone Academy Preparatory District'
+  district_nces_id: '0601671'
+  enrollment: 520
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0601729:
+  display_name: San Jose
+  district_name: Rocketship Rising Stars District
+  district_nces_id: 0601729
+  enrollment: 593
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0601848:
+  display_name: San Jose
+  district_name: Rocketship Academy Brilliant Minds District
+  district_nces_id: 0601848
+  enrollment: 504
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0602047:
+  display_name: San Jose
+  district_name: KIPP San Jose Collegiate District
+  district_nces_id: '0602047'
+  enrollment: 516
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0602087:
+  display_name: San Jose
+  district_name: Rocketship Spark Academy District
+  district_nces_id: 0602087
+  enrollment: 558
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0602233:
+  display_name: San Jose
+  district_name: University Preparatory Academy Charter District
+  district_nces_id: '0602233'
+  enrollment: 713
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0602310:
+  display_name: San Jose
+  district_name: Alum Rock Union Elementary
+  district_nces_id: '0602310'
+  enrollment: 7529
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0602379:
+  display_name: San Jose
+  district_name: Rocketship Fuerza Community Prep District
+  district_nces_id: 0602379
+  enrollment: 560
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0602392:
+  display_name: San Jose
+  district_name: Escuela Popular/CTR for TRN and Careers FAM Lrng District
+  district_nces_id: 0602392
+  enrollment: 528
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0602444:
+  display_name: San Jose
+  district_name: Rocketship Mosaic Elementary District
+  district_nces_id: '0602444'
+  enrollment: 565
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0604800:
+  display_name: San Jose
+  district_name: Berryessa Union Elementary
+  district_nces_id: 0604800
+  enrollment: 5940
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0607140:
+  display_name: San Jose
+  district_name: Cambrian
+  district_nces_id: '0607140'
+  enrollment: 2919
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0607230:
+  display_name: San Jose
+  district_name: Campbell Union High
+  district_nces_id: '0607230'
+  enrollment: 8639
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0611820:
+  display_name: San Jose
+  district_name: East Side Union High
+  district_nces_id: 0611820
+  enrollment: 21148
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0613140:
+  display_name: San Jose
+  district_name: Evergreen Elementary
+  district_nces_id: '0613140'
+  enrollment: 8880
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0614370:
+  display_name: San Jose
+  district_name: Franklin-McKinley Elementary
+  district_nces_id: '0614370'
+  enrollment: 5952
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0625770:
+  display_name: San Jose
+  district_name: Moreland
+  district_nces_id: '0625770'
+  enrollment: 3940
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0626400:
+  display_name: San Jose
+  district_name: Mount Pleasant Elementary
+  district_nces_id: '0626400'
+  enrollment: 1648
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-jose-0627810:
+  display_name: San Jose
+  district_name: Oak Grove Elementary
+  district_nces_id: 0627810
+  enrollment: 8663
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0628680:
+  display_name: San Jose
+  district_name: Orchard Elementary
+  district_nces_id: 0628680
+  enrollment: 763
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0634590:
+  display_name: San Jose
+  district_name: San Jose Unified
+  district_nces_id: 0634590
+  enrollment: 25451
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0640320:
+  display_name: San Jose
+  district_name: Union Elementary
+  district_nces_id: '0640320'
+  enrollment: 5355
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-jose-0691035:
+  display_name: San Jose
+  district_name: Santa Clara County Office of Education
+  district_nces_id: 0691035
+  enrollment: 1394
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-juan-buatista:
+  display_name: San Juan Buatista
+  district_name: Aromas - San Juan Unified
+  district_nces_id: 0691136
+  enrollment: 993
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-juan-capistrano-0601851:
+  display_name: San Juan Capistrano
+  district_name: California Connections Academy Southern California District
+  district_nces_id: 0601851
+  enrollment: 5141
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-juan-capistrano-0607440:
+  display_name: San Juan Capistrano
+  district_name: Capistrano Unified
+  district_nces_id: '0607440'
+  enrollment: 41855
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-leandro:
+  display_name: San Leandro
+  district_name: San Leandro Unified
+  district_nces_id: 0634680
+  enrollment: 8624
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-lorenzo-0602152:
+  display_name: San Lorenzo
+  district_name: KIPP King Collegiate High District
+  district_nces_id: '0602152'
+  enrollment: 658
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-lorenzo-0634710:
+  display_name: San Lorenzo
+  district_name: San Lorenzo Unified
+  district_nces_id: '0634710'
+  enrollment: 8477
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-luis-obispo:
+  display_name: San Luis Obispo
+  district_name: San Luis Coastal Unified
+  district_nces_id: 0634800
+  enrollment: 7555
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-marcos:
+  display_name: San Marcos
+  district_name: San Marcos Unified
+  district_nces_id: 0634880
+  enrollment: 19532
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-marino:
+  display_name: San Marino
+  district_name: San Marino Unified
+  district_nces_id: 0634860
+  enrollment: 2751
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-mateo:
+  display_name: San Mateo
+  district_name: San Mateo Union High
+  district_nces_id: 0634980
+  enrollment: 8942
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-miguel:
+  display_name: San Miguel
+  district_name: San Miguel Joint Union
+  district_nces_id: '0635010'
+  enrollment: 655
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-pedro:
+  display_name: San Pedro
+  district_name: Port of Los Angeles High District
+  district_nces_id: 0601850
+  enrollment: 928
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-san-rafael-0611220:
+  display_name: San Rafael
+  district_name: Miller Creek Elementary
+  district_nces_id: '0611220'
+  enrollment: 1825
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-rafael-0635090:
+  display_name: San Rafael
+  district_name: San Rafael City Elementary
+  district_nces_id: 0635090
+  enrollment: 4290
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-rafael-0635110:
+  display_name: San Rafael
+  district_name: San Rafael City High
+  district_nces_id: '0635110'
+  enrollment: 2668
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-san-ysidro:
+  display_name: San Ysidro
+  district_name: San Ysidro Elementary
+  district_nces_id: '0635220'
+  enrollment: 4260
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sanger:
+  display_name: Sanger
+  district_name: Sanger Unified
+  district_nces_id: '0635250'
+  enrollment: 13188
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-ana-0601461:
+  display_name: Santa Ana
+  district_name: Magnolia Science Academy Santa Ana District
+  district_nces_id: '0601461'
+  enrollment: 502
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-ana-0601754:
+  display_name: Santa Ana
+  district_name: Scholarship Prep District
+  district_nces_id: '0601754'
+  enrollment: 643
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-ana-0601758:
+  display_name: Santa Ana
+  district_name: El Sol Santa Ana Science and Arts Academy District
+  district_nces_id: 0601758
+  enrollment: 956
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-ana-0602051:
+  display_name: Santa Ana
+  district_name: Samueli Academy District
+  district_nces_id: '0602051'
+  enrollment: 803
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-ana-0602245:
+  display_name: Santa Ana
+  district_name: Orange County Educational Arts Academy District
+  district_nces_id: '0602245'
+  enrollment: 610
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-ana-0602284:
+  display_name: Santa Ana
+  district_name: OCSA District
+  district_nces_id: 0602284
+  enrollment: 2252
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-ana-0635310:
+  display_name: Santa Ana
+  district_name: Santa Ana Unified
+  district_nces_id: '0635310'
+  enrollment: 39935
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-barbara-0601414:
+  display_name: Santa Barbara
+  district_name: Santa Barbara Unified
+  district_nces_id: '0601414'
+  enrollment: 12583
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-barbara-0601513:
+  display_name: Santa Barbara
+  district_name: Peabody Charter District
+  district_nces_id: '0601513'
+  enrollment: 767
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-barbara-0617490:
+  display_name: Santa Barbara
+  district_name: Hope Elementary
+  district_nces_id: 0617490
+  enrollment: 839
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-clara:
+  display_name: Santa Clara
+  district_name: Santa Clara Unified
+  district_nces_id: '0635430'
+  enrollment: 13919
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-clarita-0601823:
+  display_name: Santa Clarita
+  district_name: Gorman Learning Center San Bernardino/Santa Clarita District
+  district_nces_id: 0601823
+  enrollment: 1260
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-clarita-0635970:
+  display_name: Santa Clarita
+  district_name: Saugus Union
+  district_nces_id: 0635970
+  enrollment: 9097
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-clarita-0642510:
+  display_name: Santa Clarita
+  district_name: William S. Hart Union High
+  district_nces_id: '0642510'
+  enrollment: 21011
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-cruz-0602542:
+  display_name: Santa Cruz
+  district_name: Pacific Collegiate Charter District
+  district_nces_id: '0602542'
+  enrollment: 533
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-cruz-0621990:
+  display_name: Santa Cruz
+  district_name: Live Oak Elementary
+  district_nces_id: 0621990
+  enrollment: 1691
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-cruz-0635590:
+  display_name: Santa Cruz
+  district_name: Santa Cruz City Elementary
+  district_nces_id: 0635590
+  enrollment: 1724
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-cruz-0635600:
+  display_name: Santa Cruz
+  district_name: Santa Cruz City High
+  district_nces_id: '0635600'
+  enrollment: 4394
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-cruz-0691036:
+  display_name: Santa Cruz
+  district_name: Santa Cruz County Office of Education
+  district_nces_id: 0691036
+  enrollment: 1070
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-fe-springs:
+  display_name: Santa Fe Springs
+  district_name: Little Lake City Elementary
+  district_nces_id: 0621930
+  enrollment: 3779
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-maria-0605580:
+  display_name: Santa Maria
+  district_name: Santa Maria-Bonita
+  district_nces_id: 0605580
+  enrollment: 16703
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-maria-0635670:
+  display_name: Santa Maria
+  district_name: Santa Maria Joint Union High
+  district_nces_id: '0635670'
+  enrollment: 9251
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-monica:
+  display_name: Santa Monica
+  district_name: Santa Monica-Malibu Unified
+  district_nces_id: '0635700'
+  enrollment: 8820
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-paula:
+  display_name: Santa Paula
+  district_name: Santa Paula Unified
+  district_nces_id: '0601421'
+  enrollment: 4853
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0602334:
+  display_name: Santa Rosa
+  district_name: Roseland Charter District
+  district_nces_id: '0602334'
+  enrollment: 1293
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0604380:
+  display_name: Santa Rosa
+  district_name: Bellevue Union
+  district_nces_id: 0604380
+  enrollment: 1586
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0604650:
+  display_name: Santa Rosa
+  district_name: Bennett Valley Union Elementary
+  district_nces_id: '0604650'
+  enrollment: 951
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0624000:
+  display_name: Santa Rosa
+  district_name: Mark West Union Elementary
+  district_nces_id: '0624000'
+  enrollment: 1305
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0627840:
+  display_name: Santa Rosa
+  district_name: Oak Grove Union Elementary
+  district_nces_id: 0627840
+  enrollment: 823
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0632640:
+  display_name: Santa Rosa
+  district_name: Rincon Valley Union Elementary
+  district_nces_id: '0632640'
+  enrollment: 3072
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0633510:
+  display_name: Santa Rosa
+  district_name: Roseland
+  district_nces_id: '0633510'
+  enrollment: 1473
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0635810:
+  display_name: Santa Rosa
+  district_name: Santa Rosa Elementary
+  district_nces_id: 0635810
+  enrollment: 4753
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0635830:
+  display_name: Santa Rosa
+  district_name: Santa Rosa High
+  district_nces_id: 0635830
+  enrollment: 10179
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-rosa-0643200:
+  display_name: Santa Rosa
+  district_name: Wright Elementary
+  district_nces_id: '0643200'
+  enrollment: 1279
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-santa-ynez:
+  display_name: Santa Ynez
+  district_name: Santa Ynez Valley Union High
+  district_nces_id: 0635850
+  enrollment: 853
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-santee:
+  display_name: Santee
+  district_name: Santee
+  district_nces_id: 0635880
+  enrollment: 6151
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-saratoga:
+  display_name: Saratoga
+  district_name: Saratoga Union Elementary
+  district_nces_id: 0635910
+  enrollment: 1625
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-scotts-valley:
+  display_name: Scotts Valley
+  district_name: Scotts Valley Unified
+  district_nces_id: '0600043'
+  enrollment: 2168
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sebastopol-0602670:
+  display_name: Sebastopol
+  district_name: West Sonoma County Union High
+  district_nces_id: '0602670'
+  enrollment: 1588
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sebastopol-0615840:
+  display_name: Sebastopol
+  district_name: Gravenstein Union Elementary
+  district_nces_id: 0615840
+  enrollment: 768
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sebastopol-0640230:
+  display_name: Sebastopol
+  district_name: Twin Hills Union Elementary
+  district_nces_id: '0640230'
+  enrollment: 959
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-selma:
+  display_name: Selma
+  district_name: Selma Unified
+  district_nces_id: '0636270'
+  enrollment: 5939
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-shafter-0602091:
+  display_name: Shafter
+  district_name: Grimmway Academy Shafter District
+  district_nces_id: 0602091
+  enrollment: 801
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-shafter-0621450:
+  display_name: Shafter
+  district_name: Richland Union Elementary
+  district_nces_id: '0621450'
+  enrollment: 2575
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-shingle-springs:
+  display_name: Shingle Springs
+  district_name: CA Montessori Project-Shingle Springs Campus District
+  district_nces_id: 0601976
+  enrollment: 515
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0601616:
+  display_name: Simi Valley
+  district_name: California Virtual Academy at Fresno District
+  district_nces_id: '0601616'
+  enrollment: 1184
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0601716:
+  display_name: Simi Valley
+  district_name: California Virtual Academy @ Los Angeles District
+  district_nces_id: '0601716'
+  enrollment: 5407
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0601802:
+  display_name: Simi Valley
+  district_name: California Virtual Academy San Mateo District
+  district_nces_id: 0601802
+  enrollment: 1009
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0601805:
+  display_name: Simi Valley
+  district_name: California Virtual Academy @ San Diego District
+  district_nces_id: 0601805
+  enrollment: 3294
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0601810:
+  display_name: Simi Valley
+  district_name: California Virtual Academy at Sutter District
+  district_nces_id: 0601810
+  enrollment: 1394
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0601884:
+  display_name: Simi Valley
+  district_name: California Virtual Academy at Kings District
+  district_nces_id: 0601884
+  enrollment: 547
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0601964:
+  display_name: Simi Valley
+  district_name: iQ Academy California-Los Angeles District
+  district_nces_id: 0601964
+  enrollment: 1289
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0601990:
+  display_name: Simi Valley
+  district_name: California Virtual Academy @ San Joaquin District
+  district_nces_id: 0601990
+  enrollment: 2561
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0602316:
+  display_name: Simi Valley
+  district_name: California Virtual Academy @ Sonoma District
+  district_nces_id: '0602316'
+  enrollment: 814
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0602451:
+  display_name: Simi Valley
+  district_name: California Virtual Academy at Maricopa District
+  district_nces_id: '0602451'
+  enrollment: 1130
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-simi-valley-0636840:
+  display_name: Simi Valley
+  district_name: Simi Valley Unified
+  district_nces_id: 0636840
+  enrollment: 15899
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-solana-beach:
+  display_name: Solana Beach
+  district_name: Solana Beach Elementary
+  district_nces_id: 0636990
+  enrollment: 2725
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-soledad:
+  display_name: Soledad
+  district_name: Soledad Unified
+  district_nces_id: '0637050'
+  enrollment: 4748
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-solvang:
+  display_name: Solvang
+  district_name: Solvang Elementary
+  district_nces_id: '0637110'
+  enrollment: 593
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-somis:
+  display_name: Somis
+  district_name: Mesa Union Elementary
+  district_nces_id: '0624720'
+  enrollment: 564
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sonoma:
+  display_name: Sonoma
+  district_name: Sonoma Valley Unified
+  district_nces_id: '0637200'
+  enrollment: 3195
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sonora-0637230:
+  display_name: Sonora
+  district_name: Sonora Elementary
+  district_nces_id: '0637230'
+  enrollment: 724
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sonora-0637260:
+  display_name: Sonora
+  district_name: Sonora Union High
+  district_nces_id: '0637260'
+  enrollment: 1087
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-south-el-monte:
+  display_name: South El Monte
+  district_name: Valle Lindo Elementary
+  district_nces_id: '0640650'
+  enrollment: 892
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-south-gate:
+  display_name: South Gate
+  district_name: KIPP Corazon Academy District
+  district_nces_id: 0601920
+  enrollment: 1056
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-south-lake-tahoe:
+  display_name: South Lake Tahoe
+  district_name: Lake Tahoe Unified
+  district_nces_id: '0620640'
+  enrollment: 3648
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-south-pasadena:
+  display_name: South Pasadena
+  district_name: South Pasadena Unified
+  district_nces_id: '0637500'
+  enrollment: 4651
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-south-san-francisco:
+  display_name: South San Francisco
+  district_name: South San Francisco Unified
+  district_nces_id: '0637530'
+  enrollment: 7868
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-spreckels:
+  display_name: Spreckels
+  district_name: Spreckels Union Elementary
+  district_nces_id: '0637710'
+  enrollment: 918
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-spring-valley:
+  display_name: Spring Valley
+  district_name: Steele Canyon High District
+  district_nces_id: 0601838
+  enrollment: 2168
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-st-helena:
+  display_name: St. Helena
+  district_name: Saint Helena Unified
+  district_nces_id: 0637830
+  enrollment: 1121
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-stockton-0601628:
+  display_name: Stockton
+  district_name: Humphreys College Academy of Business Law and ED District
+  district_nces_id: 0601628
+  enrollment: 1189
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-stockton-0601801:
+  display_name: Stockton
+  district_name: Aspire Langston Hughes Academy District
+  district_nces_id: 0601801
+  enrollment: 770
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-stockton-0601846:
+  display_name: Stockton
+  district_name: TEAM Charter District
+  district_nces_id: 0601846
+  enrollment: 561
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-stockton-0601963:
+  display_name: Stockton
+  district_name: Venture Academy District
+  district_nces_id: 0601963
+  enrollment: 1644
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-stockton-0602069:
+  display_name: Stockton
+  district_name: Aspire Benjamin Holt Middle District
+  district_nces_id: 0602069
+  enrollment: 567
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-stockton-0602340:
+  display_name: Stockton
+  district_name: one.Charter District
+  district_nces_id: '0602340'
+  enrollment: 846
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-stockton-0602376:
+  display_name: Stockton
+  district_name: Aspire Benjamin Holt College Preparatory Academy District
+  district_nces_id: '0602376'
+  enrollment: 685
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-stockton-0621690:
+  display_name: Stockton
+  district_name: Lincoln Unified
+  district_nces_id: 0621690
+  enrollment: 8826
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-stockton-0638010:
+  display_name: Stockton
+  district_name: Stockton Unified
+  district_nces_id: 0638010
+  enrollment: 35424
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-stockton-0691031:
+  display_name: Stockton
+  district_name: San Joaquin County Office of Education
+  district_nces_id: 0691031
+  enrollment: 1778
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-strathmore:
+  display_name: Strathmore
+  district_name: Strathmore Union Elementary
+  district_nces_id: 0638130
+  enrollment: 703
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sun-valley-0601564:
+  display_name: Sun Valley
+  district_name: North Valley Military INST College ACAD District
+  district_nces_id: '0601564'
+  enrollment: 784
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sun-valley-0601835:
+  display_name: Sun Valley
+  district_name: Alliance Marine - Innovation and Techn 6-12 Complex District
+  district_nces_id: 0601835
+  enrollment: 1013
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sunnyvale-0602169:
+  display_name: Sunnyvale
+  district_name: 'Summit Public School: Denali District'
+  district_nces_id: 0602169
+  enrollment: 643
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-sunnyvale-0610290:
+  display_name: Sunnyvale
+  district_name: Cupertino Union
+  district_nces_id: 0610290
+  enrollment: 13467
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sunnyvale-0614430:
+  display_name: Sunnyvale
+  district_name: Fremont Union High
+  district_nces_id: '0614430'
+  enrollment: 10019
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sunnyvale-0638460:
+  display_name: Sunnyvale
+  district_name: Sunnyvale
+  district_nces_id: 0638460
+  enrollment: 5465
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-susanville-0621060:
+  display_name: Susanville
+  district_name: Lassen Union High
+  district_nces_id: '0621060'
+  enrollment: 864
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-susanville-0638550:
+  display_name: Susanville
+  district_name: Susanville Elementary
+  district_nces_id: 0638550
+  enrollment: 1044
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sutter:
+  display_name: Sutter
+  district_name: Sutter Union High
+  district_nces_id: 0638610
+  enrollment: 802
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-sylmar:
+  display_name: Sylmar
+  district_name: PUC Triumph CHRTR Academy & PUC Triumph CHRTR High District
+  district_nces_id: 0601484
+  enrollment: 796
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-taft-0638700:
+  display_name: Taft
+  district_name: Taft City
+  district_nces_id: 0638700
+  enrollment: 2402
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-taft-0638730:
+  display_name: Taft
+  district_name: Taft Union High
+  district_nces_id: 0638730
+  enrollment: 1186
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tehachapi:
+  display_name: Tehachapi
+  district_name: Tehachapi Unified
+  district_nces_id: 0638880
+  enrollment: 4170
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-temecula-0600028:
+  display_name: Temecula
+  district_name: Temecula Valley Unified
+  district_nces_id: 0600028
+  enrollment: 26538
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-temecula-0601592:
+  display_name: Temecula
+  district_name: JCS - Pine Hills District
+  district_nces_id: 0601592
+  enrollment: 755
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-temecula-0602089:
+  display_name: Temecula
+  district_name: River Springs Charter District
+  district_nces_id: 0602089
+  enrollment: 6886
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-temecula-0602207:
+  display_name: Temecula
+  district_name: Elite Academic Academy - Lucerne District
+  district_nces_id: '0602207'
+  enrollment: 693
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-temecula-0602288:
+  display_name: Temecula
+  district_name: Elite Academic Academy - Mountain Empire District
+  district_nces_id: 0602288
+  enrollment: 817
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-temple-city:
+  display_name: Temple City
+  district_name: Temple City Unified
+  district_nces_id: 0638980
+  enrollment: 5227
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-templeton:
+  display_name: Templeton
+  district_name: Templeton Unified
+  district_nces_id: 0639000
+  enrollment: 2258
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-terra-bella:
+  display_name: Terra Bella
+  district_name: Terra Bella Union Elementary
+  district_nces_id: 0639060
+  enrollment: 741
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-thermal:
+  display_name: Thermal
+  district_name: Coachella Valley Unified
+  district_nces_id: 0609070
+  enrollment: 16455
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-thousand-oaks-0601517:
+  display_name: Thousand Oaks
+  district_name: Compass Charter Schools of San Diego District
+  district_nces_id: '0601517'
+  enrollment: 819
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-thousand-oaks-0601790:
+  display_name: Thousand Oaks
+  district_name: Compass Charter Schools of Los Angeles District
+  district_nces_id: 0601790
+  enrollment: 888
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-thousand-oaks-0602521:
+  display_name: Thousand Oaks
+  district_name: Compass Charter School of Yolo District
+  district_nces_id: '0602521'
+  enrollment: 671
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-thousand-oaks-0609640:
+  display_name: Thousand Oaks
+  district_name: Conejo Valley Unified
+  district_nces_id: 0609640
+  enrollment: 16347
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tiburon:
+  display_name: Tiburon
+  district_name: Reed Union Elementary
+  district_nces_id: '0632160'
+  enrollment: 1024
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tipton:
+  display_name: Tipton
+  district_name: Tipton Elementary
+  district_nces_id: 0639300
+  enrollment: 519
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-torrance:
+  display_name: Torrance
+  district_name: Torrance Unified
+  district_nces_id: 0639420
+  enrollment: 21776
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tracy-0600047:
+  display_name: Tracy
+  district_name: Tracy Joint Unified
+  district_nces_id: '0600047'
+  enrollment: 13925
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-tracy-0602478:
+  display_name: Tracy
+  district_name: Valley View Charter Prep District
+  district_nces_id: 0602478
+  enrollment: 613
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-tracy-0618840:
+  display_name: Tracy
+  district_name: Jefferson Elementary
+  district_nces_id: 0618840
+  enrollment: 2623
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tracy-0627030:
+  display_name: Tracy
+  district_name: New Jerusalem Elementary
+  district_nces_id: '0627030'
+  enrollment: 1651
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-truckee:
+  display_name: Truckee
+  district_name: Tahoe-Truckee Unified
+  district_nces_id: 0638770
+  enrollment: 3965
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tulare-0621570:
+  display_name: Tulare
+  district_name: Liberty Elementary
+  district_nces_id: '0621570'
+  enrollment: 781
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tulare-0627900:
+  display_name: Tulare
+  district_name: Oak Valley Union Elementary
+  district_nces_id: 0627900
+  enrollment: 571
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tulare-0638340:
+  display_name: Tulare
+  district_name: Sundale Union Elementary
+  district_nces_id: 0638340
+  enrollment: 824
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tulare-0639870:
+  display_name: Tulare
+  district_name: Tulare City
+  district_nces_id: 0639870
+  enrollment: 9172
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tulare-0639930:
+  display_name: Tulare
+  district_name: Tulare Joint Union High
+  district_nces_id: 0639930
+  enrollment: 5745
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-tuolumne:
+  display_name: Tuolumne
+  district_name: Summerville Union High
+  district_nces_id: 0638280
+  enrollment: 668
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-turlock-0600158:
+  display_name: Turlock
+  district_name: Turlock Unified
+  district_nces_id: 0600158
+  enrollment: 13377
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-turlock-0608250:
+  display_name: Turlock
+  district_name: Chatom Union
+  district_nces_id: 0608250
+  enrollment: 565
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-tustin:
+  display_name: Tustin
+  district_name: Tustin Unified
+  district_nces_id: '0640150'
+  enrollment: 21830
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-twentynine-palms:
+  display_name: Twentynine Palms
+  district_name: Morongo Unified
+  district_nces_id: 0625860
+  enrollment: 7407
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-ukiah:
+  display_name: Ukiah
+  district_name: Ukiah Unified
+  district_nces_id: '0640300'
+  enrollment: 5840
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-union-city:
+  display_name: Union City
+  district_name: New Haven Unified
+  district_nces_id: 0626910
+  enrollment: 10235
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-upland:
+  display_name: Upland
+  district_name: Upland Unified
+  district_nces_id: '0600016'
+  enrollment: 10079
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-upper-lake:
+  display_name: Upper Lake
+  district_name: Upper Lake Unified
+  district_nces_id: '0601442'
+  enrollment: 891
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-vacaville-0601832:
+  display_name: Vacaville
+  district_name: Kairos Public School Vacaville Academy District
+  district_nces_id: 0601832
+  enrollment: 645
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-vacaville-0640590:
+  display_name: Vacaville
+  district_name: Vacaville Unified
+  district_nces_id: 0640590
+  enrollment: 12608
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-valencia-0607740:
+  display_name: Valencia
+  district_name: Castaic Union
+  district_nces_id: '0607740'
+  enrollment: 1896
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-valencia-0627180:
+  display_name: Valencia
+  district_name: Newhall
+  district_nces_id: 0627180
+  enrollment: 5927
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-vallejo-0601582:
+  display_name: Vallejo
+  district_name: 'Caliber: ChangeMakers Academy District'
+  district_nces_id: 0601582
+  enrollment: 919
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-vallejo-0602485:
+  display_name: Vallejo
+  district_name: Elite Public District
+  district_nces_id: 0602485
+  enrollment: 671
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-vallejo-0640740:
+  display_name: Vallejo
+  district_name: Vallejo City Unified
+  district_nces_id: '0640740'
+  enrollment: 10330
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-valley-center:
+  display_name: Valley Center
+  district_name: Valley Center-Pauma Unified
+  district_nces_id: 0600069
+  enrollment: 3801
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-van-nuys-0601955:
+  display_name: Van Nuys
+  district_name: Lashon Academy District
+  district_nces_id: 0601955
+  enrollment: 526
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-van-nuys-0602319:
+  display_name: Van Nuys
+  district_name: Magnolia Science Academy 2 District
+  district_nces_id: 0602319
+  enrollment: 511
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-ventura:
+  display_name: Ventura
+  district_name: Ventura Unified
+  district_nces_id: 0640980
+  enrollment: 14980
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-victorville-0602209:
+  display_name: Victorville
+  district_name: Mojave River Academy - Oro Grande District
+  district_nces_id: 0602209
+  enrollment: 734
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-victorville-0602313:
+  display_name: Victorville
+  district_name: Excelsior Charter District
+  district_nces_id: '0602313'
+  enrollment: 2180
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-victorville-0602359:
+  display_name: Victorville
+  district_name: Options for Youth-Victorville Charter District
+  district_nces_id: 0602359
+  enrollment: 748
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-victorville-0636972:
+  display_name: Victorville
+  district_name: Victor Valley Union High
+  district_nces_id: 0636972
+  enrollment: 11357
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-victorville-0641040:
+  display_name: Victorville
+  district_name: Victor Elementary
+  district_nces_id: '0641040'
+  enrollment: 12420
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-visalia-0601485:
+  display_name: Visalia
+  district_name: Crescent Valley Public Charter II District
+  district_nces_id: 0601485
+  enrollment: 663
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-visalia-0601508:
+  display_name: Visalia
+  district_name: Valley Life Charter District
+  district_nces_id: 0601508
+  enrollment: 662
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-visalia-0641160:
+  display_name: Visalia
+  district_name: Visalia Unified
+  district_nces_id: '0641160'
+  enrollment: 28893
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-visalia-0691045:
+  display_name: Visalia
+  district_name: Tulare County Office of Education
+  district_nces_id: 0691045
+  enrollment: 1636
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-vista-0601705:
+  display_name: Vista
+  district_name: Guajome Park Academy Charter District
+  district_nces_id: '0601705'
+  enrollment: 1346
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-vista-0641190:
+  display_name: Vista
+  district_name: Vista Unified
+  district_nces_id: 0641190
+  enrollment: 18818
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-walnut:
+  display_name: Walnut
+  district_name: Walnut Valley Unified
+  district_nces_id: 0641280
+  enrollment: 13494
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-walnut-creek:
+  display_name: Walnut Creek
+  district_name: Walnut Creek Elementary
+  district_nces_id: '0641250'
+  enrollment: 3435
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-wasco-0641400:
+  display_name: Wasco
+  district_name: Wasco Union Elementary
+  district_nces_id: '0641400'
+  enrollment: 3414
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-wasco-0641430:
+  display_name: Wasco
+  district_name: Wasco Union High
+  district_nces_id: '0641430'
+  enrollment: 1854
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-waterford-0600063:
+  display_name: Waterford
+  district_name: Waterford Unified
+  district_nces_id: '0600063'
+  enrollment: 1810
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-waterford-0602170:
+  display_name: Waterford
+  district_name: Connecting Waters Charter District
+  district_nces_id: '0602170'
+  enrollment: 762
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-watsonville-0602428:
+  display_name: Watsonville
+  district_name: Ceiba College Preparatory Academy District
+  district_nces_id: 0602428
+  enrollment: 511
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-watsonville-0629490:
+  display_name: Watsonville
+  district_name: Pajaro Valley Unified
+  district_nces_id: 0629490
+  enrollment: 17452
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-weaverville:
+  display_name: Weaverville
+  district_name: Trinity Alps Unified
+  district_nces_id: '0601331'
+  enrollment: 672
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-west-covina-0601695:
+  display_name: West Covina
+  district_name: San Jose Charter Academy District
+  district_nces_id: 0601695
+  enrollment: 1258
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-west-covina-0642000:
+  display_name: West Covina
+  district_name: West Covina Unified
+  district_nces_id: '0642000'
+  enrollment: 7965
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-west-hollywood:
+  display_name: West Hollywood
+  district_name: Larchmont Charter District
+  district_nces_id: 0601904
+  enrollment: 1620
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-west-sacramento:
+  display_name: West Sacramento
+  district_name: Washington Unified
+  district_nces_id: 0641580
+  enrollment: 7427
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-westminster:
+  display_name: Westminster
+  district_name: Westminster
+  district_nces_id: '0642150'
+  enrollment: 8149
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-wheatland-0642330:
+  display_name: Wheatland
+  district_name: Wheatland
+  district_nces_id: '0642330'
+  enrollment: 1361
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-wheatland-0642350:
+  display_name: Wheatland
+  district_name: Wheatland Union High
+  district_nces_id: '0642350'
+  enrollment: 1096
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-whittier-0611850:
+  display_name: Whittier
+  district_name: East Whittier City Elementary
+  district_nces_id: 0611850
+  enrollment: 7717
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-whittier-0622890:
+  display_name: Whittier
+  district_name: Los Nietos
+  district_nces_id: 0622890
+  enrollment: 1253
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-whittier-0623010:
+  display_name: Whittier
+  district_name: Lowell Joint
+  district_nces_id: '0623010'
+  enrollment: 3014
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-whittier-0637560:
+  display_name: Whittier
+  district_name: South Whittier Elementary
+  district_nces_id: '0637560'
+  enrollment: 2317
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-whittier-0642450:
+  display_name: Whittier
+  district_name: Whittier City Elementary
+  district_nces_id: '0642450'
+  enrollment: 5495
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-whittier-0642480:
+  display_name: Whittier
+  district_name: Whittier Union High
+  district_nces_id: 0642480
+  enrollment: 10614
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-wildomar:
+  display_name: Wildomar
+  district_name: Sycamore Academy of Science and Cultural Arts District
+  district_nces_id: 0602009
+  enrollment: 507
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-williams:
+  display_name: Williams
+  district_name: Williams Unified
+  district_nces_id: '0642540'
+  enrollment: 1350
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-willits:
+  display_name: Willits
+  district_name: Willits Unified
+  district_nces_id: '0642560'
+  enrollment: 1534
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-willows:
+  display_name: Willows
+  district_name: Willows Unified
+  district_nces_id: '0642710'
+  enrollment: 1391
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-winchester-0602068:
+  display_name: Winchester
+  district_name: Temecula Valley Charter District
+  district_nces_id: 0602068
+  enrollment: 530
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-winchester-0602084:
+  display_name: Winchester
+  district_name: Temecula Preparatory District
+  district_nces_id: 0602084
+  enrollment: 1079
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-windsor:
+  display_name: Windsor
+  district_name: Windsor Unified
+  district_nces_id: '0600034'
+  enrollment: 4634
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-winterhaven:
+  display_name: Winterhaven
+  district_name: San Pasqual Valley Unified
+  district_nces_id: '0635070'
+  enrollment: 591
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-winters:
+  display_name: Winters
+  district_name: Winters Joint Unified
+  district_nces_id: 0642930
+  enrollment: 1569
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-winton:
+  display_name: Winton
+  district_name: Winton
+  district_nces_id: 0642960
+  enrollment: 1904
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-woodlake:
+  display_name: Woodlake
+  district_name: Woodlake Unified
+  district_nces_id: 0601418
+  enrollment: 2099
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-woodland:
+  display_name: Woodland
+  district_name: Woodland Joint Unified
+  district_nces_id: 0643080
+  enrollment: 9531
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-woodland-hills-0601490:
+  display_name: Woodland Hills
+  district_name: CHIME Institute's Schwarzenegger Community District
+  district_nces_id: 0601490
+  enrollment: 741
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-woodland-hills-0601902:
+  display_name: Woodland Hills
+  district_name: El Camino Real Charter High District
+  district_nces_id: 0601902
+  enrollment: 3577
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-woodland-hills-0602025:
+  display_name: Woodland Hills
+  district_name: Ivy Academia District
+  district_nces_id: '0602025'
+  enrollment: 522
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-yermo:
+  display_name: Yermo
+  district_name: Silver Valley Unified
+  district_nces_id: 0636820
+  enrollment: 1949
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-yreka-0643380:
+  display_name: Yreka
+  district_name: Yreka Union Elementary
+  district_nces_id: 0643380
+  enrollment: 889
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-yreka-0643410:
+  display_name: Yreka
+  district_name: Yreka Union High
+  district_nces_id: '0643410'
+  enrollment: 733
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-yuba-city:
+  display_name: Yuba City
+  district_name: Yuba City Unified
+  district_nces_id: '0643470'
+  enrollment: 11685
+  has_charters: false
+  source: ccd_auto
+  state: CA
+ca-yucaipa-0602309:
+  display_name: Yucaipa
+  district_name: Inland Leaders Charter District
+  district_nces_id: 0602309
+  enrollment: 984
+  has_charters: true
+  source: ccd_auto
+  state: CA
+ca-yucaipa-0643560:
+  display_name: Yucaipa
+  district_name: Yucaipa-Calimesa Joint Unified
+  district_nces_id: '0643560'
+  enrollment: 8551
+  has_charters: true
+  source: ccd_auto
+  state: CA

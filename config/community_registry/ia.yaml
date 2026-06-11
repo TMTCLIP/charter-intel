@@ -1,0 +1,1896 @@
+ia-ackley:
+  display_name: Ackley
+  district_name: AGWSR Comm School District
+  district_nces_id: '1903060'
+  enrollment: 650
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-adel:
+  display_name: Adel
+  district_name: Adel DeSoto Minburn Comm School District
+  district_nces_id: '1903150'
+  enrollment: 2254
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-akron:
+  display_name: Akron
+  district_name: Akron Westfield Comm School District
+  district_nces_id: '1903220'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-albia:
+  display_name: Albia
+  district_name: Albia Comm School District
+  district_nces_id: '1903270'
+  enrollment: 1120
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-alburnett:
+  display_name: Alburnett
+  district_name: Alburnett Comm School District
+  district_nces_id: '1903300'
+  enrollment: 810
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-algona:
+  display_name: Algona
+  district_name: Algona Comm School District
+  district_nces_id: '1903360'
+  enrollment: 1592
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-alleman:
+  display_name: Alleman
+  district_name: North Polk Comm School District
+  district_nces_id: '1920910'
+  enrollment: 2243
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-allison:
+  display_name: Allison
+  district_name: North Butler Comm School District
+  district_nces_id: '1903450'
+  enrollment: 567
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-alta:
+  display_name: Alta
+  district_name: Alta-Aurelia Comm School District
+  district_nces_id: '1903480'
+  enrollment: 837
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-altoona:
+  display_name: Altoona
+  district_name: Southeast Polk Comm School District
+  district_nces_id: '1926820'
+  enrollment: 7397
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-ames:
+  display_name: Ames
+  district_name: Ames Comm School District
+  district_nces_id: '1903540'
+  enrollment: 4678
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-anamosa:
+  display_name: Anamosa
+  district_name: Anamosa Comm School District
+  district_nces_id: '1903570'
+  enrollment: 1193
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-anita:
+  display_name: Anita
+  district_name: CAM Comm School District
+  district_nces_id: '1905940'
+  enrollment: 1441
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-ankeny:
+  display_name: Ankeny
+  district_name: Ankeny Comm School District
+  district_nces_id: '1903690'
+  enrollment: 12750
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-arlington:
+  display_name: Arlington
+  district_name: Starmont Comm School District
+  district_nces_id: '1927270'
+  enrollment: 584
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-atlantic:
+  display_name: Atlantic
+  district_name: Atlantic Comm School District
+  district_nces_id: '1903930'
+  enrollment: 1603
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-audubon:
+  display_name: Audubon
+  district_name: Audubon Comm School District
+  district_nces_id: '1903960'
+  enrollment: 547
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-avoca:
+  display_name: Avoca
+  district_name: AHSTW Comm School District
+  district_nces_id: '1904080'
+  enrollment: 776
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-bedford:
+  display_name: Bedford
+  district_name: Bedford Comm School District
+  district_nces_id: '1904560'
+  enrollment: 535
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-bellevue:
+  display_name: Bellevue
+  district_name: Bellevue Comm School District
+  district_nces_id: '1904650'
+  enrollment: 805
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-belmond:
+  display_name: Belmond
+  district_name: Belmond-Klemme Comm School District
+  district_nces_id: '1904680'
+  enrollment: 697
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-bettendorf-1904860:
+  display_name: Bettendorf
+  district_name: Bettendorf Comm School District
+  district_nces_id: '1904860'
+  enrollment: 4633
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-bettendorf-1923110:
+  display_name: Bettendorf
+  district_name: Pleasant Valley Comm School District
+  district_nces_id: '1923110'
+  enrollment: 5803
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-bloomfield:
+  display_name: Bloomfield
+  district_name: Davis County Comm School District
+  district_nces_id: '1908610'
+  enrollment: 1263
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-bondurant:
+  display_name: Bondurant
+  district_name: Bondurant-Farrar Comm School District
+  district_nces_id: '1905070'
+  enrollment: 2731
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-boone:
+  display_name: Boone
+  district_name: Boone Comm School District
+  district_nces_id: '1905130'
+  enrollment: 2019
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-britt:
+  display_name: Britt
+  district_name: West Hancock Comm School District
+  district_nces_id: '1905430'
+  enrollment: 599
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-brooklyn:
+  display_name: Brooklyn
+  district_name: Brooklyn-Guernsey-Malcom Comm School District
+  district_nces_id: '1905490'
+  enrollment: 561
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-burlington:
+  display_name: Burlington
+  district_name: Burlington Comm School District
+  district_nces_id: '1905790'
+  enrollment: 3334
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-burnside:
+  display_name: Burnside
+  district_name: Southeast Webster Grand Comm School District
+  district_nces_id: '1999019'
+  enrollment: 523
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-calmar:
+  display_name: Calmar
+  district_name: South Winneshiek Comm School District
+  district_nces_id: '1926790'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-camanche:
+  display_name: Camanche
+  district_name: Camanche Comm School District
+  district_nces_id: '1906060'
+  enrollment: 995
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-carlisle:
+  display_name: Carlisle
+  district_name: Carlisle Comm School District
+  district_nces_id: '1906270'
+  enrollment: 2369
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-carroll:
+  display_name: Carroll
+  district_name: Carroll Comm School District
+  district_nces_id: '1906330'
+  enrollment: 1803
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-carson:
+  display_name: Carson
+  district_name: Riverside Comm School District
+  district_nces_id: '1900027'
+  enrollment: 693
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-cedar-falls:
+  display_name: Cedar Falls
+  district_name: Cedar Falls Comm School District
+  district_nces_id: '1906510'
+  enrollment: 5892
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-cedar-rapids-1906540:
+  display_name: Cedar Rapids
+  district_name: Cedar Rapids Comm School District
+  district_nces_id: '1906540'
+  enrollment: 15564
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-cedar-rapids-1907860:
+  display_name: Cedar Rapids
+  district_name: College Comm School District
+  district_nces_id: '1907860'
+  enrollment: 5740
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-centerville:
+  display_name: Centerville
+  district_name: Centerville Comm School District
+  district_nces_id: '1906750'
+  enrollment: 1357
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-chariton:
+  display_name: Chariton
+  district_name: Chariton Comm School District
+  district_nces_id: '1907050'
+  enrollment: 1282
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-charles-city:
+  display_name: Charles City
+  district_name: Charles City Comm School District
+  district_nces_id: '1907080'
+  enrollment: 1541
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-cherokee:
+  display_name: Cherokee
+  district_name: Cherokee Comm School District
+  district_nces_id: '1907170'
+  enrollment: 1200
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-clarinda:
+  display_name: Clarinda
+  district_name: Clarinda Comm School District
+  district_nces_id: '1907350'
+  enrollment: 1062
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-clarion:
+  display_name: Clarion
+  district_name: Clarion-Goldfield-Dows Comm School District
+  district_nces_id: '1907380'
+  enrollment: 1071
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-clear-lake:
+  display_name: Clear Lake
+  district_name: Clear Lake Comm School District
+  district_nces_id: '1907620'
+  enrollment: 1495
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-clinton:
+  display_name: Clinton
+  district_name: Clinton Comm School District
+  district_nces_id: '1907710'
+  enrollment: 3444
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-colfax:
+  display_name: Colfax
+  district_name: Colfax-Mingo Comm School District
+  district_nces_id: '1900009'
+  enrollment: 724
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-columbus-junction:
+  display_name: Columbus Junction
+  district_name: Columbus Comm School District
+  district_nces_id: '1907980'
+  enrollment: 664
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-conrad:
+  display_name: Conrad
+  district_name: BCLUW Comm School District
+  district_nces_id: '1904440'
+  enrollment: 506
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-corydon:
+  display_name: Corydon
+  district_name: Wayne Comm School District
+  district_nces_id: '1930560'
+  enrollment: 625
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-council-bluffs-1908220:
+  display_name: Council Bluffs
+  district_name: Council Bluffs Comm School District
+  district_nces_id: '1908220'
+  enrollment: 8784
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-council-bluffs-1916680:
+  display_name: Council Bluffs
+  district_name: Lewis Central Comm School District
+  district_nces_id: '1916680'
+  enrollment: 3022
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-cresco:
+  display_name: Cresco
+  district_name: Howard-Winneshiek Comm School District
+  district_nces_id: '1914280'
+  enrollment: 1060
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-creston:
+  display_name: Creston
+  district_name: Creston Comm School District
+  district_nces_id: '1908310'
+  enrollment: 1442
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-dakota-city:
+  display_name: Dakota City
+  district_name: Humboldt Comm School District
+  district_nces_id: '1914370'
+  enrollment: 1516
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-danville:
+  display_name: Danville
+  district_name: Danville  Comm School District
+  district_nces_id: '1908550'
+  enrollment: 662
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-davenport:
+  display_name: Davenport
+  district_name: Davenport Comm School District
+  district_nces_id: '1908580'
+  enrollment: 14135
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-de-witt:
+  display_name: De Witt
+  district_name: Central DeWitt School District
+  district_nces_id: '1906810'
+  enrollment: 1613
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-decorah:
+  display_name: Decorah
+  district_name: Decorah Community School District
+  district_nces_id: '1908730'
+  enrollment: 1663
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-delhi:
+  display_name: Delhi
+  district_name: Maquoketa Valley Comm School District
+  district_nces_id: '1918540'
+  enrollment: 705
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-denison:
+  display_name: Denison
+  district_name: Denison Comm School District
+  district_nces_id: '1908910'
+  enrollment: 2264
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-denver:
+  display_name: Denver
+  district_name: Denver Comm School District
+  district_nces_id: '1908940'
+  enrollment: 995
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-des-moines-1908970:
+  display_name: Des Moines
+  district_name: Des Moines Independent Comm School District
+  district_nces_id: '1908970'
+  enrollment: 30739
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-des-moines-1925320:
+  display_name: Des Moines
+  district_name: Saydel Comm School District
+  district_nces_id: '1925320'
+  enrollment: 1337
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-dike:
+  display_name: Dike
+  district_name: Dike-New Hartford Comm School District
+  district_nces_id: '1909120'
+  enrollment: 945
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-donnellson:
+  display_name: Donnellson
+  district_name: Central Lee Comm School District
+  district_nces_id: '1906930'
+  enrollment: 1250
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-dubuque:
+  display_name: Dubuque
+  district_name: Dubuque Comm School District
+  district_nces_id: '1909480'
+  enrollment: 10518
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-durant:
+  display_name: Durant
+  district_name: Durant Comm School District
+  district_nces_id: '1909600'
+  enrollment: 683
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-eagle-grove:
+  display_name: Eagle Grove
+  district_name: Eagle Grove Comm School District
+  district_nces_id: '1909990'
+  enrollment: 1000
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-earlham:
+  display_name: Earlham
+  district_name: Earlham Comm School District
+  district_nces_id: '1910050'
+  enrollment: 635
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-eddyville:
+  display_name: Eddyville
+  district_name: Eddyville-Blakesburg- Fremont CSD
+  district_nces_id: '1904950'
+  enrollment: 964
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-edgewood:
+  display_name: Edgewood
+  district_name: Edgewood-Colesburg Comm School District
+  district_nces_id: '1910500'
+  enrollment: 516
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-eldon:
+  display_name: Eldon
+  district_name: Cardinal Comm School District
+  district_nces_id: '1906240'
+  enrollment: 1074
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-eldora:
+  display_name: Eldora
+  district_name: Eldora-New Providence Comm School District
+  district_nces_id: '1910690'
+  enrollment: 540
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-eldridge:
+  display_name: Eldridge
+  district_name: North Scott Comm School District
+  district_nces_id: '1920940'
+  enrollment: 3463
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-emmetsburg:
+  display_name: Emmetsburg
+  district_name: Emmetsburg Comm School District
+  district_nces_id: '1910950'
+  enrollment: 790
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-estherville:
+  display_name: Estherville
+  district_name: Estherville Lincoln Central Com Sch Dist
+  district_nces_id: '1911070'
+  enrollment: 1219
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-fairbank:
+  display_name: Fairbank
+  district_name: Wapsie Valley Comm School District
+  district_nces_id: '1929760'
+  enrollment: 709
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-fairfield:
+  display_name: Fairfield
+  district_name: Fairfield Comm School District
+  district_nces_id: '1911340'
+  enrollment: 1525
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-farley:
+  display_name: Farley
+  district_name: Western Dubuque Comm School District
+  district_nces_id: '1931350'
+  enrollment: 3742
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-forest-city:
+  display_name: Forest City
+  district_name: Forest City Comm School District
+  district_nces_id: '1911790'
+  enrollment: 1141
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-fort-dodge:
+  display_name: Fort Dodge
+  district_name: Fort Dodge Comm School District
+  district_nces_id: '1911820'
+  enrollment: 3676
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-fort-madison:
+  display_name: Fort Madison
+  district_name: Fort Madison Comm School District
+  district_nces_id: '1911850'
+  enrollment: 1832
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-garner:
+  display_name: Garner
+  district_name: Garner-Hayfield-Ventura Comm School District
+  district_nces_id: '1912330'
+  enrollment: 980
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-gilbert:
+  display_name: Gilbert
+  district_name: Gilbert Comm School District
+  district_nces_id: '1912510'
+  enrollment: 1697
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-gilman:
+  display_name: Gilman
+  district_name: East Marshall Comm School District
+  district_nces_id: '1900040'
+  enrollment: 713
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-glenwood:
+  display_name: Glenwood
+  district_name: Glenwood Comm School District
+  district_nces_id: '1912690'
+  enrollment: 2071
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-goose-lake:
+  display_name: Goose Lake
+  district_name: Northeast Comm School District
+  district_nces_id: '1921090'
+  enrollment: 868
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-gowrie:
+  display_name: Gowrie
+  district_name: Prairie Valley Comm School District
+  district_nces_id: '1900028'
+  enrollment: 561
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-granger:
+  display_name: Granger
+  district_name: Woodward-Granger Comm School District
+  district_nces_id: '1932010'
+  enrollment: 1217
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-greenfield:
+  display_name: Greenfield
+  district_name: Nodaway Valley Comm School District
+  district_nces_id: '1913110'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-grimes:
+  display_name: Grimes
+  district_name: Dallas Center-Grimes Comm School District
+  district_nces_id: '1908520'
+  enrollment: 3767
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-grinnell:
+  display_name: Grinnell
+  district_name: Grinnell-Newburg Comm School District
+  district_nces_id: '1913200'
+  enrollment: 1573
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-grundy-center:
+  display_name: Grundy Center
+  district_name: Grundy Center Comm School District
+  district_nces_id: '1913290'
+  enrollment: 773
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-guttenberg:
+  display_name: Guttenberg
+  district_name: Clayton Ridge Comm School District
+  district_nces_id: '1913350'
+  enrollment: 1485
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-hampton:
+  display_name: Hampton
+  district_name: Hampton-Dumont Comm School District
+  district_nces_id: '1913470'
+  enrollment: 1298
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-harlan:
+  display_name: Harlan
+  district_name: Harlan Comm School District
+  district_nces_id: '1913500'
+  enrollment: 1514
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-hartley:
+  display_name: Hartley
+  district_name: Hartley-Melvin-Sanborn Comm School District
+  district_nces_id: '1913660'
+  enrollment: 663
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-hawarden:
+  display_name: Hawarden
+  district_name: West Sioux Comm School District
+  district_nces_id: '1931290'
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-hinton:
+  display_name: Hinton
+  district_name: Hinton Comm School District
+  district_nces_id: '1914160'
+  enrollment: 842
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-hudson:
+  display_name: Hudson
+  district_name: Hudson Comm School District
+  district_nces_id: '1914340'
+  enrollment: 866
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-hull:
+  display_name: Hull
+  district_name: Boyden-Hull Comm School District
+  district_nces_id: '1905190'
+  enrollment: 630
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-huxley:
+  display_name: Huxley
+  district_name: Ballard Comm School District
+  district_nces_id: '1904200'
+  enrollment: 1969
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-ida-grove:
+  display_name: Ida Grove
+  district_name: Odebolt Arthur Battle Creek Ida Grove Comm School District
+  district_nces_id: '1921600'
+  enrollment: 960
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-independence:
+  display_name: Independence
+  district_name: Independence Comm School District
+  district_nces_id: '1914580'
+  enrollment: 1496
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-indianola:
+  display_name: Indianola
+  district_name: Indianola Comm School District
+  district_nces_id: '1914640'
+  enrollment: 3665
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-inwood:
+  display_name: Inwood
+  district_name: West Lyon Comm School District
+  district_nces_id: '1931020'
+  enrollment: 996
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-iowa-city:
+  display_name: Iowa City
+  district_name: Iowa City Comm School District
+  district_nces_id: '1914700'
+  enrollment: 14805
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-iowa-falls:
+  display_name: Iowa Falls
+  district_name: Iowa Falls Comm School District
+  district_nces_id: '1914730'
+  enrollment: 1278
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-janesville:
+  display_name: Janesville
+  district_name: Janesville Consolidated School District
+  district_nces_id: '1915180'
+  enrollment: 504
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-jefferson:
+  display_name: Jefferson
+  district_name: Greene County Comm School District
+  district_nces_id: '1915210'
+  enrollment: 1259
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-jesup:
+  display_name: Jesup
+  district_name: Jesup Comm School District
+  district_nces_id: '1915330'
+  enrollment: 1069
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-jewell:
+  display_name: Jewell
+  district_name: South Hamilton Comm School District
+  district_nces_id: '1926640'
+  enrollment: 690
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-johnston:
+  display_name: Johnston
+  district_name: Johnston Comm School District
+  district_nces_id: '1915450'
+  enrollment: 7487
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-keokuk:
+  display_name: Keokuk
+  district_name: Keokuk Comm School District
+  district_nces_id: '1915630'
+  enrollment: 1790
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-keosauqua:
+  display_name: Keosauqua
+  district_name: Van Buren County Comm School District
+  district_nces_id: '1928980'
+  enrollment: 867
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-knoxville:
+  display_name: Knoxville
+  district_name: Knoxville Comm School District
+  district_nces_id: '1915840'
+  enrollment: 1674
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-la-porte-city:
+  display_name: La Porte City
+  district_name: Union Comm School District
+  district_nces_id: '1900022'
+  enrollment: 1008
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-lake-mills:
+  display_name: Lake Mills
+  district_name: Lake Mills Comm School District
+  district_nces_id: '1916110'
+  enrollment: 671
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-lake-view:
+  display_name: Lake View
+  district_name: East Sac County Comm School District
+  district_nces_id: '1929580'
+  enrollment: 818
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-lawton:
+  display_name: Lawton
+  district_name: Lawton-Bronson Comm School District
+  district_nces_id: '1916440'
+  enrollment: 718
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-le-mars:
+  display_name: Le Mars
+  district_name: Le Mars Comm School District
+  district_nces_id: '1916530'
+  enrollment: 2309
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-lenox:
+  display_name: Lenox
+  district_name: Lenox Comm School District
+  district_nces_id: '1916620'
+  enrollment: 520
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-leon:
+  display_name: Leon
+  district_name: Central Decatur Comm School District
+  district_nces_id: '1906900'
+  enrollment: 697
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-letts:
+  display_name: Letts
+  district_name: Louisa-Muscatine Comm School District
+  district_nces_id: '1917820'
+  enrollment: 815
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-lisbon:
+  display_name: Lisbon
+  district_name: Lisbon Comm School District
+  district_nces_id: '1917250'
+  enrollment: 719
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-logan:
+  display_name: Logan
+  district_name: Logan-Magnolia Comm School District
+  district_nces_id: '1917460'
+  enrollment: 725
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-madrid:
+  display_name: Madrid
+  district_name: Madrid Comm School District
+  district_nces_id: '1918180'
+  enrollment: 684
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-manchester:
+  display_name: Manchester
+  district_name: West Delaware County Comm School District
+  district_nces_id: '1930900'
+  enrollment: 1380
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-manly:
+  display_name: Manly
+  district_name: Central Springs Comm School District
+  district_nces_id: '1920760'
+  enrollment: 813
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-manning:
+  display_name: Manning
+  district_name: IKM-Manning Comm School District
+  district_nces_id: '1914880'
+  enrollment: 710
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-manson:
+  display_name: Manson
+  district_name: Manson Northwest Webster Comm School District
+  district_nces_id: '1918330'
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-mapleton:
+  display_name: Mapleton
+  district_name: Maple Valley-Anthon Oto Comm School District
+  district_nces_id: '1918480'
+  enrollment: 653
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-maquoketa:
+  display_name: Maquoketa
+  district_name: Maquoketa Comm School District
+  district_nces_id: '1918510'
+  enrollment: 1314
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-marengo:
+  display_name: Marengo
+  district_name: Iowa Valley Comm School District
+  district_nces_id: '1914850'
+  enrollment: 547
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-marion-1917220:
+  display_name: Marion
+  district_name: Linn-Mar Comm School District
+  district_nces_id: '1917220'
+  enrollment: 7690
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-marion-1918690:
+  display_name: Marion
+  district_name: Marion Independent School District
+  district_nces_id: '1918690'
+  enrollment: 2229
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-marshalltown:
+  display_name: Marshalltown
+  district_name: Marshalltown Comm School District
+  district_nces_id: '1918720'
+  enrollment: 5190
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-martensdale:
+  display_name: Martensdale
+  district_name: Martensdale-St Marys Comm School District
+  district_nces_id: '1918750'
+  enrollment: 580
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-mason-city:
+  display_name: Mason City
+  district_name: Mason City Comm School District
+  district_nces_id: '1918780'
+  enrollment: 3598
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-mediapolis:
+  display_name: Mediapolis
+  district_name: Mediapolis Comm School District
+  district_nces_id: '1918930'
+  enrollment: 968
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-milford:
+  display_name: Milford
+  district_name: Okoboji Comm School District
+  district_nces_id: '1900021'
+  enrollment: 1244
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-missouri-valley:
+  display_name: Missouri Valley
+  district_name: Missouri Valley Comm School District
+  district_nces_id: '1919440'
+  enrollment: 756
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-monona:
+  display_name: Monona
+  district_name: MFL MarMac Comm School District
+  district_nces_id: '1918120'
+  enrollment: 894
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-monticello:
+  display_name: Monticello
+  district_name: Monticello Comm School District
+  district_nces_id: '1919650'
+  enrollment: 1035
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-mount-ayr:
+  display_name: Mount Ayr
+  district_name: Mount Ayr Comm School District
+  district_nces_id: '1919860'
+  enrollment: 633
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-mount-pleasant:
+  display_name: Mount Pleasant
+  district_name: Mount Pleasant Comm School District
+  district_nces_id: '1919890'
+  enrollment: 1852
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-mount-vernon:
+  display_name: Mount Vernon
+  district_name: Mount Vernon Comm School District
+  district_nces_id: '1920040'
+  enrollment: 1402
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-moville:
+  display_name: Moville
+  district_name: Woodbury Central Comm School District
+  district_nces_id: '1931950'
+  enrollment: 566
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-muscatine:
+  display_name: Muscatine
+  district_name: Muscatine Comm School District
+  district_nces_id: '1920130'
+  enrollment: 4688
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-nashua:
+  display_name: Nashua
+  district_name: Nashua-Plainfield Comm School District
+  district_nces_id: '1920190'
+  enrollment: 582
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-neola:
+  display_name: Neola
+  district_name: Tri-Center Comm School District
+  district_nces_id: '1927990'
+  enrollment: 724
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-nevada:
+  display_name: Nevada
+  district_name: Nevada Comm School District
+  district_nces_id: '1920250'
+  enrollment: 1542
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-new-hampton:
+  display_name: New Hampton
+  district_name: New Hampton Comm School District
+  district_nces_id: '1920340'
+  enrollment: 1038
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-new-london:
+  display_name: New London
+  district_name: New London Comm School District
+  district_nces_id: '1920460'
+  enrollment: 592
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-new-sharon:
+  display_name: New Sharon
+  district_name: North Mahaska Comm School District
+  district_nces_id: '1920850'
+  enrollment: 616
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-newell:
+  display_name: Newell
+  district_name: Newell-Fonda Comm School District
+  district_nces_id: '1920580'
+  enrollment: 578
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-newton:
+  display_name: Newton
+  district_name: Newton Comm School District
+  district_nces_id: '1920610'
+  enrollment: 2857
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-northwood:
+  display_name: Northwood
+  district_name: Northwood-Kensett Comm School District
+  district_nces_id: '1921210'
+  enrollment: 594
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-norwalk:
+  display_name: Norwalk
+  district_name: Norwalk Comm School District
+  district_nces_id: '1921240'
+  enrollment: 3574
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-oelwein:
+  display_name: Oelwein
+  district_name: Oelwein Comm School District
+  district_nces_id: '1921630'
+  enrollment: 1345
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-ogden:
+  display_name: Ogden
+  district_name: Ogden Comm School District
+  district_nces_id: '1921660'
+  enrollment: 758
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-onawa:
+  display_name: Onawa
+  district_name: West Monona Comm School District
+  district_nces_id: '1931110'
+  enrollment: 634
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-orange-city:
+  display_name: Orange City
+  district_name: MOC-Floyd Valley Comm School District
+  district_nces_id: '1918840'
+  enrollment: 1559
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-osage:
+  display_name: Osage
+  district_name: Osage Comm School District
+  district_nces_id: '1921840'
+  enrollment: 1000
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-osceola:
+  display_name: Osceola
+  district_name: Clarke Comm School District
+  district_nces_id: '1907410'
+  enrollment: 1358
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-oskaloosa:
+  display_name: Oskaloosa
+  district_name: Oskaloosa Comm School District
+  district_nces_id: '1921870'
+  enrollment: 2115
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-ottumwa:
+  display_name: Ottumwa
+  district_name: Ottumwa Comm School District
+  district_nces_id: '1922110'
+  enrollment: 4990
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-oxford:
+  display_name: Oxford
+  district_name: Clear Creek Amana Comm School District
+  district_nces_id: '1907590'
+  enrollment: 3061
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-packwood:
+  display_name: Packwood
+  district_name: Pekin Comm School District
+  district_nces_id: '1922440'
+  enrollment: 642
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-panora:
+  display_name: Panora
+  district_name: Panorama Comm School District
+  district_nces_id: '1900025'
+  enrollment: 691
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-parkersburg:
+  display_name: Parkersburg
+  district_name: Aplington-Parkersburg Comm School District
+  district_nces_id: '1903750'
+  enrollment: 876
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-paullina:
+  display_name: Paullina
+  district_name: South O'Brien  Comm School District
+  district_nces_id: '1900026'
+  enrollment: 576
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-pella:
+  display_name: Pella
+  district_name: Pella Comm School District
+  district_nces_id: '1922470'
+  enrollment: 2491
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-perry:
+  display_name: Perry
+  district_name: Perry Comm School District
+  district_nces_id: '1922530'
+  enrollment: 1812
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-pleasantville:
+  display_name: Pleasantville
+  district_name: Pleasantville Comm School District
+  district_nces_id: '1923160'
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-pocahontas:
+  display_name: Pocahontas
+  district_name: Pocahontas Area Comm School District
+  district_nces_id: '1923190'
+  enrollment: 739
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-postville:
+  display_name: Postville
+  district_name: Postville Comm School District
+  district_nces_id: '1923340'
+  enrollment: 694
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-prairie-city:
+  display_name: Prairie City
+  district_name: PCM Comm School District
+  district_nces_id: '1999017'
+  enrollment: 1130
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-red-oak:
+  display_name: Red Oak
+  district_name: Red Oak Comm School District
+  district_nces_id: '1924000'
+  enrollment: 1044
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-riverside:
+  display_name: Riverside
+  district_name: Highland  Comm School District
+  district_nces_id: '1914010'
+  enrollment: 565
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-rock-rapids:
+  display_name: Rock Rapids
+  district_name: Central Lyon Comm School District
+  district_nces_id: '1906960'
+  enrollment: 796
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-rock-valley:
+  display_name: Rock Valley
+  district_name: Rock Valley Comm School District
+  district_nces_id: '1924660'
+  enrollment: 976
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-rockwell:
+  display_name: Rockwell
+  district_name: West Fork Comm School District
+  district_nces_id: '1925920'
+  enrollment: 776
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-rockwell-city:
+  display_name: Rockwell City
+  district_name: South Central Calhoun Comm School District
+  district_nces_id: '1900024'
+  enrollment: 916
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sergeant-bluff:
+  display_name: Sergeant Bluff
+  district_name: Sergeant Bluff-Luton Comm School District
+  district_nces_id: '1925590'
+  enrollment: 1729
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sheldon:
+  display_name: Sheldon
+  district_name: Sheldon Comm School District
+  district_nces_id: '1925980'
+  enrollment: 1196
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-shenandoah:
+  display_name: Shenandoah
+  district_name: Shenandoah Comm School District
+  district_nces_id: '1926070'
+  enrollment: 1078
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sibley:
+  display_name: Sibley
+  district_name: Sibley-Ocheyedan Comm School District
+  district_nces_id: '1900015'
+  enrollment: 729
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sidney:
+  display_name: Sidney
+  district_name: Sidney Comm School District
+  district_nces_id: '1926250'
+  enrollment: 512
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sigourney:
+  display_name: Sigourney
+  district_name: Sigourney Comm School District
+  district_nces_id: '1926280'
+  enrollment: 593
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sioux-center:
+  display_name: Sioux Center
+  district_name: Sioux Center Comm School District
+  district_nces_id: '1926370'
+  enrollment: 1725
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sioux-city:
+  display_name: Sioux City
+  district_name: Sioux City Comm School District
+  district_nces_id: '1926400'
+  enrollment: 14989
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sioux-rapids:
+  display_name: Sioux Rapids
+  district_name: Sioux Central Comm School District
+  district_nces_id: '1900023'
+  enrollment: 656
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sloan:
+  display_name: Sloan
+  district_name: Westwood Comm School District
+  district_nces_id: '1931470'
+  enrollment: 625
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-solon:
+  display_name: Solon
+  district_name: Solon Comm School District
+  district_nces_id: '1926580'
+  enrollment: 1523
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-spencer:
+  display_name: Spencer
+  district_name: Spencer Comm School District
+  district_nces_id: '1926910'
+  enrollment: 2341
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-spirit-lake:
+  display_name: Spirit Lake
+  district_name: Spirit Lake Comm School District
+  district_nces_id: '1927000'
+  enrollment: 1304
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-st-ansgar:
+  display_name: St. Ansgar
+  district_name: St Ansgar Comm School District
+  district_nces_id: '1925200'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-stanwood:
+  display_name: Stanwood
+  district_name: North Cedar Comm School District
+  district_nces_id: '1917100'
+  enrollment: 631
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-state-center:
+  display_name: State Center
+  district_name: West Marshall Comm School District
+  district_nces_id: '1931080'
+  enrollment: 970
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-storm-lake:
+  display_name: Storm Lake
+  district_name: Storm Lake Comm School District
+  district_nces_id: '1927390'
+  enrollment: 2882
+  has_charters: true
+  source: ccd_auto
+  state: IA
+ia-story-city:
+  display_name: Story City
+  district_name: Roland-Story Comm School District
+  district_nces_id: '1924870'
+  enrollment: 1125
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-stuart:
+  display_name: Stuart
+  district_name: West Central Valley Comm School District
+  district_nces_id: '1927500'
+  enrollment: 852
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sully:
+  display_name: Sully
+  district_name: Lynnville-Sully Comm School District
+  district_nces_id: '1918030'
+  enrollment: 546
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-sumner:
+  display_name: Sumner
+  district_name: Sumner-Fredericksburg Comm School District
+  district_nces_id: '1927600'
+  enrollment: 809
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-tama:
+  display_name: Tama
+  district_name: South Tama County
+  district_nces_id: '1926730'
+  enrollment: 1488
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-tipton:
+  display_name: Tipton
+  district_name: Tipton Comm School District
+  district_nces_id: '1927870'
+  enrollment: 941
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-treynor:
+  display_name: Treynor
+  district_name: Treynor Comm School District
+  district_nces_id: '1927960'
+  enrollment: 795
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-troy-mills:
+  display_name: Troy Mills
+  district_name: North Linn Comm School District
+  district_nces_id: '1920820'
+  enrollment: 535
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-truro:
+  display_name: Truro
+  district_name: Interstate 35 Comm School District
+  district_nces_id: '1914670'
+  enrollment: 842
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-underwood:
+  display_name: Underwood
+  district_name: Underwood Comm School District
+  district_nces_id: '1928230'
+  enrollment: 833
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-urbana:
+  display_name: Urbana
+  district_name: Center Point-Urbana Comm School District
+  district_nces_id: '1906660'
+  enrollment: 1466
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-urbandale:
+  display_name: Urbandale
+  district_name: Urbandale Comm School District
+  district_nces_id: '1928680'
+  enrollment: 4308
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-van-horne:
+  display_name: Van Horne
+  district_name: Benton Comm School District
+  district_nces_id: '1904830'
+  enrollment: 1702
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-van-meter:
+  display_name: Van Meter
+  district_name: Van Meter Comm School District
+  district_nces_id: '1929010'
+  enrollment: 1090
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-vinton:
+  display_name: Vinton
+  district_name: Vinton-Shellsburg Comm School District
+  district_nces_id: '1929310'
+  enrollment: 1555
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-wapello:
+  display_name: Wapello
+  district_name: Wapello Comm School District
+  district_nces_id: '1929730'
+  enrollment: 541
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-washington:
+  display_name: Washington
+  district_name: Washington Comm School District
+  district_nces_id: '1930240'
+  enrollment: 1673
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-waterloo:
+  display_name: Waterloo
+  district_name: Waterloo Comm School District
+  district_nces_id: '1930480'
+  enrollment: 10645
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-waukee:
+  display_name: Waukee
+  district_name: Waukee Comm School District
+  district_nces_id: '1930510'
+  enrollment: 13082
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-waukon:
+  display_name: Waukon
+  district_name: Allamakee Comm School District
+  district_nces_id: '1903390'
+  enrollment: 1164
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-waverly:
+  display_name: Waverly
+  district_name: Waverly-Shell Rock Comm School District
+  district_nces_id: '1930540'
+  enrollment: 2394
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-wayland:
+  display_name: Wayland
+  district_name: Waco Comm School District
+  district_nces_id: '1929490'
+  enrollment: 505
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-webster-city:
+  display_name: Webster City
+  district_name: Webster City Comm School District
+  district_nces_id: '1930630'
+  enrollment: 1827
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-wellman:
+  display_name: Wellman
+  district_name: Mid-Prairie Comm School District
+  district_nces_id: '1919140'
+  enrollment: 1446
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-west-branch:
+  display_name: West Branch
+  district_name: West Branch Comm School District
+  district_nces_id: '1930750'
+  enrollment: 871
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-west-burlington:
+  display_name: West Burlington
+  district_name: West Burlington Ind School District
+  district_nces_id: '1930780'
+  enrollment: 916
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-west-des-moines:
+  display_name: West Des Moines
+  district_name: West Des Moines Comm School District
+  district_nces_id: '1930930'
+  enrollment: 9225
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-west-liberty:
+  display_name: West Liberty
+  district_name: West Liberty Comm School District
+  district_nces_id: '1930990'
+  enrollment: 1284
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-west-union:
+  display_name: West Union
+  district_name: North Fayette Valley Comm School District
+  district_nces_id: '1900006'
+  enrollment: 1107
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-williamsburg:
+  display_name: Williamsburg
+  district_name: Williamsburg Comm School District
+  district_nces_id: '1931680'
+  enrollment: 1269
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-wilton:
+  display_name: Wilton
+  district_name: Wilton Comm School District
+  district_nces_id: '1931800'
+  enrollment: 983
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-winterset:
+  display_name: Winterset
+  district_name: Winterset Comm School District
+  district_nces_id: '1931860'
+  enrollment: 1683
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-winthrop:
+  display_name: Winthrop
+  district_name: East Buchanan Comm School District
+  district_nces_id: '1910110'
+  enrollment: 583
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-woodbine:
+  display_name: Woodbine
+  district_name: Woodbine Comm School District
+  district_nces_id: '1931920'
+  enrollment: 534
+  has_charters: false
+  source: ccd_auto
+  state: IA
+ia-wyoming:
+  display_name: Wyoming
+  district_name: Midland Comm School District
+  district_nces_id: '1919200'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: IA

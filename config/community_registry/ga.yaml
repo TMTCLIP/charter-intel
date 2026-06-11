@@ -1,0 +1,1528 @@
+ga-abbeville:
+  display_name: Abbeville
+  district_name: Wilcox County
+  district_nces_id: '1305730'
+  enrollment: 1188
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-adel:
+  display_name: Adel
+  district_name: Cook County
+  district_nces_id: '1301470'
+  enrollment: 3096
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-alamo:
+  display_name: Alamo
+  district_name: Wheeler County
+  district_nces_id: '1305640'
+  enrollment: 873
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-albany:
+  display_name: Albany
+  district_name: Dougherty County
+  district_nces_id: '1301830'
+  enrollment: 13043
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-alma:
+  display_name: Alma
+  district_name: Bacon County
+  district_nces_id: '1300150'
+  enrollment: 2128
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-americus-1300258:
+  display_name: Americus
+  district_name: State Charter Schools II- Furlow Charter School
+  district_nces_id: '1300258'
+  enrollment: 573
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-americus-1304620:
+  display_name: Americus
+  district_name: Sumter County
+  district_nces_id: '1304620'
+  enrollment: 3630
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-ashburn:
+  display_name: Ashburn
+  district_name: Turner County
+  district_nces_id: '1305190'
+  enrollment: 1189
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-athens-1300235:
+  display_name: Athens
+  district_name: State Charter Schools- Foothills Charter High School (Centr
+  district_nces_id: '1300235'
+  enrollment: 2519
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-athens-1301170:
+  display_name: Athens
+  district_name: Clarke County
+  district_nces_id: '1301170'
+  enrollment: 12340
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-atlanta-1300120:
+  display_name: Atlanta
+  district_name: Atlanta Public Schools
+  district_nces_id: '1300120'
+  enrollment: 50325
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-atlanta-1300221:
+  display_name: Atlanta
+  district_name: State Charter Schools II- Atlanta Heights Charter School
+  district_nces_id: '1300221'
+  enrollment: 681
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-atlanta-1300232:
+  display_name: Atlanta
+  district_name: State Charter Schools- Georgia Cyber Academy
+  district_nces_id: '1300232'
+  enrollment: 8876
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-atlanta-1302280:
+  display_name: Atlanta
+  district_name: Fulton County
+  district_nces_id: '1302280'
+  enrollment: 89935
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-augusta:
+  display_name: Augusta
+  district_name: Richmond County
+  district_nces_id: '1304380'
+  enrollment: 29589
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-baconton:
+  display_name: Baconton
+  district_name: State Charter Schools II- Baconton Community Charter School
+  district_nces_id: '1300256'
+  enrollment: 890
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-bainbridge:
+  display_name: Bainbridge
+  district_name: Decatur County
+  district_nces_id: '1301710'
+  enrollment: 4310
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-barnesville:
+  display_name: Barnesville
+  district_name: Lamar County
+  district_nces_id: '1303210'
+  enrollment: 2820
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-baxley:
+  display_name: Baxley
+  district_name: Appling County
+  district_nces_id: '1300060'
+  enrollment: 3463
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-blackshear:
+  display_name: Blackshear
+  district_name: Pierce County
+  district_nces_id: '1304140'
+  enrollment: 3637
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-blairsville:
+  display_name: Blairsville
+  district_name: Union County
+  district_nces_id: '1305250'
+  enrollment: 3024
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-blakely:
+  display_name: Blakely
+  district_name: Early County
+  district_nces_id: '1301920'
+  enrollment: 1668
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-blue-ridge:
+  display_name: Blue Ridge
+  district_name: Fannin County
+  district_nces_id: '1302100'
+  enrollment: 2799
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-bremen:
+  display_name: Bremen
+  district_name: Bremen City
+  district_nces_id: '1300510'
+  enrollment: 2355
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-brunswick-1300246:
+  display_name: Brunswick
+  district_name: State Charter Schools- Coastal Plains Charter High School -
+  district_nces_id: '1300246'
+  enrollment: 1942
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-brunswick-1302400:
+  display_name: Brunswick
+  district_name: Glynn County
+  district_nces_id: '1302400'
+  enrollment: 12844
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-buena-vista:
+  display_name: Buena Vista
+  district_name: Marion County
+  district_nces_id: '1303540'
+  enrollment: 1279
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-buford:
+  display_name: Buford
+  district_name: Buford City
+  district_nces_id: '1300600'
+  enrollment: 5847
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-butler:
+  display_name: Butler
+  district_name: Taylor County
+  district_nces_id: '1304800'
+  enrollment: 1229
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cairo:
+  display_name: Cairo
+  district_name: Grady County
+  district_nces_id: '1302460'
+  enrollment: 4405
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-calhoun-1300720:
+  display_name: Calhoun
+  district_name: Calhoun City
+  district_nces_id: '1300720'
+  enrollment: 4135
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-calhoun-1302430:
+  display_name: Calhoun
+  district_name: Gordon County
+  district_nces_id: '1302430'
+  enrollment: 6421
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-camilla:
+  display_name: Camilla
+  district_name: Mitchell County
+  district_nces_id: '1303690'
+  enrollment: 1304
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-canton-1300230:
+  display_name: Canton
+  district_name: State Charter Schools- Cherokee Charter Academy
+  district_nces_id: '1300230'
+  enrollment: 622
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-canton-1301110:
+  display_name: Canton
+  district_name: Cherokee County
+  district_nces_id: '1301110'
+  enrollment: 41891
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-carnesville:
+  display_name: Carnesville
+  district_name: Franklin County
+  district_nces_id: '1302250'
+  enrollment: 3619
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-carrollton-1300840:
+  display_name: Carrollton
+  district_name: Carroll County
+  district_nces_id: '1300840'
+  enrollment: 15981
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-carrollton-1300870:
+  display_name: Carrollton
+  district_name: Carrollton City
+  district_nces_id: '1300870'
+  enrollment: 5612
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cartersville-1300330:
+  display_name: Cartersville
+  district_name: Bartow County
+  district_nces_id: '1300330'
+  enrollment: 13806
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cartersville-1300900:
+  display_name: Cartersville
+  district_name: Cartersville City
+  district_nces_id: '1300900'
+  enrollment: 4497
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cedartown:
+  display_name: Cedartown
+  district_name: Polk County
+  district_nces_id: '1304200'
+  enrollment: 7878
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-chatsworth:
+  display_name: Chatsworth
+  district_name: Murray County
+  district_nces_id: '1303840'
+  enrollment: 6903
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-chickamauga:
+  display_name: Chickamauga
+  district_name: Chickamauga City
+  district_nces_id: '1301140'
+  enrollment: 1277
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-clarkesville:
+  display_name: Clarkesville
+  district_name: Habersham County
+  district_nces_id: '1302580'
+  enrollment: 7204
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-claxton:
+  display_name: Claxton
+  district_name: Evans County
+  district_nces_id: '1302070'
+  enrollment: 1818
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-clayton:
+  display_name: Clayton
+  district_name: Rabun County
+  district_nces_id: '1304320'
+  enrollment: 2270
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cleveland-1300214:
+  display_name: Cleveland
+  district_name: State Charter Schools- Mountain Education Charter High Scho
+  district_nces_id: '1300214'
+  enrollment: 2581
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-cleveland-1305670:
+  display_name: Cleveland
+  district_name: White County
+  district_nces_id: '1305670'
+  enrollment: 3827
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cochran:
+  display_name: Cochran
+  district_name: Bleckley County
+  district_nces_id: '1300440'
+  enrollment: 2605
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-colquitt:
+  display_name: Colquitt
+  district_name: Miller County
+  district_nces_id: '1303660'
+  enrollment: 735
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-columbus:
+  display_name: Columbus
+  district_name: Muscogee County
+  district_nces_id: '1303870'
+  enrollment: 29818
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-commerce:
+  display_name: Commerce
+  district_name: Commerce City
+  district_nces_id: '1301440'
+  enrollment: 1785
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-conyers:
+  display_name: Conyers
+  district_name: Rockdale County
+  district_nces_id: '1304410'
+  enrollment: 15734
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cordele:
+  display_name: Cordele
+  district_name: Crisp County
+  district_nces_id: '1301560'
+  enrollment: 3575
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-covington:
+  display_name: Covington
+  district_name: Newton County
+  district_nces_id: '1303930'
+  enrollment: 18661
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cumming:
+  display_name: Cumming
+  district_name: Forsyth County
+  district_nces_id: '1302220'
+  enrollment: 54077
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cusseta:
+  display_name: Cusseta
+  district_name: Chattahoochee County
+  district_nces_id: '1301050'
+  enrollment: 970
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-cuthbert:
+  display_name: Cuthbert
+  district_name: Randolph County
+  district_nces_id: '1304350'
+  enrollment: 642
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-dahlonega:
+  display_name: Dahlonega
+  district_name: Lumpkin County
+  district_nces_id: '1303420'
+  enrollment: 3749
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-dallas:
+  display_name: Dallas
+  district_name: Paulding County
+  district_nces_id: '1304020'
+  enrollment: 31518
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-dalton-1301620:
+  display_name: Dalton
+  district_name: Dalton Public Schools
+  district_nces_id: '1301620'
+  enrollment: 7675
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-dalton-1305700:
+  display_name: Dalton
+  district_name: Whitfield County
+  district_nces_id: '1305700'
+  enrollment: 12317
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-danielsville:
+  display_name: Danielsville
+  district_name: Madison County
+  district_nces_id: '1303480'
+  enrollment: 5077
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-darien:
+  display_name: Darien
+  district_name: McIntosh County
+  district_nces_id: '1303600'
+  enrollment: 1333
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-dawson:
+  display_name: Dawson
+  district_name: Terrell County
+  district_nces_id: '1304860'
+  enrollment: 1035
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-dawsonville:
+  display_name: Dawsonville
+  district_name: Dawson County
+  district_nces_id: '1301650'
+  enrollment: 3906
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-decatur:
+  display_name: Decatur
+  district_name: City Schools of Decatur
+  district_nces_id: '1301680'
+  enrollment: 5655
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-donalsonville:
+  display_name: Donalsonville
+  district_name: Seminole County
+  district_nces_id: '1304530'
+  enrollment: 1340
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-douglas:
+  display_name: Douglas
+  district_name: Coffee County
+  district_nces_id: '1301350'
+  enrollment: 7538
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-douglasville:
+  display_name: Douglasville
+  district_name: Douglas County
+  district_nces_id: '1301860'
+  enrollment: 25802
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-dublin-1301870:
+  display_name: Dublin
+  district_name: Dublin City
+  district_nces_id: '1301870'
+  enrollment: 2288
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-dublin-1301890:
+  display_name: Dublin
+  district_name: Laurens County
+  district_nces_id: '1301890'
+  enrollment: 6424
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-duluth:
+  display_name: Duluth
+  district_name: State Charter Schools- Georgia Connections Academy
+  district_nces_id: '1300227'
+  enrollment: 6373
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-eastman:
+  display_name: Eastman
+  district_name: Dodge County
+  district_nces_id: '1301770'
+  enrollment: 2785
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-eatonton:
+  display_name: Eatonton
+  district_name: Putnam County
+  district_nces_id: '1304260'
+  enrollment: 2978
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-edison:
+  display_name: Edison
+  district_name: State Charter Schools II- Pataula Charter Academy
+  district_nces_id: '1300218'
+  enrollment: 575
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-elberton:
+  display_name: Elberton
+  district_name: Elbert County
+  district_nces_id: '1302010'
+  enrollment: 3066
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-ellaville:
+  display_name: Ellaville
+  district_name: Schley County
+  district_nces_id: '1304470'
+  enrollment: 1231
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-ellijay:
+  display_name: Ellijay
+  district_name: Gilmer County
+  district_nces_id: '1302340'
+  enrollment: 4113
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-evans-1300245:
+  display_name: Evans
+  district_name: State Charter Schools II- SAIL Charter Academy - School for
+  district_nces_id: '1300245'
+  enrollment: 568
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-evans-1301410:
+  display_name: Evans
+  district_name: Columbia County
+  district_nces_id: '1301410'
+  enrollment: 29025
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-fayetteville:
+  display_name: Fayetteville
+  district_name: Fayette County
+  district_nces_id: '1302130'
+  enrollment: 20070
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-fitzgerald:
+  display_name: Fitzgerald
+  district_name: Ben Hill County
+  district_nces_id: '1300360'
+  enrollment: 3003
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-folkston:
+  display_name: Folkston
+  district_name: Charlton County
+  district_nces_id: '1300990'
+  enrollment: 1686
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-forsyth:
+  display_name: Forsyth
+  district_name: Monroe County
+  district_nces_id: '1303720'
+  enrollment: 4511
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-fort-valley:
+  display_name: Fort Valley
+  district_name: Peach County
+  district_nces_id: '1304050'
+  enrollment: 3866
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-franklin:
+  display_name: Franklin
+  district_name: Heard County
+  district_nces_id: '1302790'
+  enrollment: 2195
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-gainesville-1302310:
+  display_name: Gainesville
+  district_name: Gainesville City
+  district_nces_id: '1302310'
+  enrollment: 7974
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-gainesville-1302610:
+  display_name: Gainesville
+  district_name: Hall County
+  district_nces_id: '1302610'
+  enrollment: 27328
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-gibson:
+  display_name: Gibson
+  district_name: Glascock County
+  district_nces_id: '1302370'
+  enrollment: 573
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-gray:
+  display_name: Gray
+  district_name: Jones County
+  district_nces_id: '1303150'
+  enrollment: 5157
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-greensboro:
+  display_name: Greensboro
+  district_name: Greene County
+  district_nces_id: '1302490'
+  enrollment: 2589
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-greenville:
+  display_name: Greenville
+  district_name: Meriwether County
+  district_nces_id: '1303630'
+  enrollment: 2323
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-griffin:
+  display_name: Griffin
+  district_name: Griffin-Spalding County
+  district_nces_id: '1302520'
+  enrollment: 9563
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-hamilton:
+  display_name: Hamilton
+  district_name: Harris County
+  district_nces_id: '1302700'
+  enrollment: 5645
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-hartwell:
+  display_name: Hartwell
+  district_name: Hart County
+  district_nces_id: '1302730'
+  enrollment: 3656
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-hawkinsville:
+  display_name: Hawkinsville
+  district_name: Pulaski County
+  district_nces_id: '1304220'
+  enrollment: 1330
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-hazlehurst:
+  display_name: Hazlehurst
+  district_name: Jeff Davis County
+  district_nces_id: '1303000'
+  enrollment: 3075
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-hephzibah:
+  display_name: Hephzibah
+  district_name: State Charter Schools- Georgia School for Innovation and th
+  district_nces_id: '1300238'
+  enrollment: 969
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-hiawassee:
+  display_name: Hiawassee
+  district_name: Towns County
+  district_nces_id: '1305070'
+  enrollment: 1002
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-hinesville:
+  display_name: Hinesville
+  district_name: Liberty County
+  district_nces_id: '1303300'
+  enrollment: 10610
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-homer:
+  display_name: Homer
+  district_name: Banks County
+  district_nces_id: '1300240'
+  enrollment: 2843
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-homerville:
+  display_name: Homerville
+  district_name: Clinch County
+  district_nces_id: '1301260'
+  enrollment: 1251
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-irwinton:
+  display_name: Irwinton
+  district_name: Wilkinson County
+  district_nces_id: '1305790'
+  enrollment: 1119
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-jackson:
+  display_name: Jackson
+  district_name: Butts County
+  district_nces_id: '1300690'
+  enrollment: 3564
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-jasper:
+  display_name: Jasper
+  district_name: Pickens County
+  district_nces_id: '1304110'
+  enrollment: 4124
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-jefferson-1302940:
+  display_name: Jefferson
+  district_name: Jackson County
+  district_nces_id: '1302940'
+  enrollment: 9918
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-jefferson-1303030:
+  display_name: Jefferson
+  district_name: Jefferson City
+  district_nces_id: '1303030'
+  enrollment: 4166
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-jeffersonville:
+  display_name: Jeffersonville
+  district_name: Twiggs County
+  district_nces_id: '1305220'
+  enrollment: 717
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-jesup:
+  display_name: Jesup
+  district_name: Wayne County
+  district_nces_id: '1305550'
+  enrollment: 5172
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-jonesboro:
+  display_name: Jonesboro
+  district_name: Clayton County
+  district_nces_id: '1301230'
+  enrollment: 52186
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-kennesaw:
+  display_name: Kennesaw
+  district_name: State Charter Schools II- Northwest Classical Academy
+  district_nces_id: '1300264'
+  enrollment: 640
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-kingsland:
+  display_name: Kingsland
+  district_name: Camden County
+  district_nces_id: '1300780'
+  enrollment: 9523
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-lafayette:
+  display_name: Lafayette
+  district_name: Walker County
+  district_nces_id: '1305370'
+  enrollment: 8401
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-lagrange:
+  display_name: Lagrange
+  district_name: Troup County
+  district_nces_id: '1300001'
+  enrollment: 12280
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-lakeland:
+  display_name: Lakeland
+  district_name: Lanier County
+  district_nces_id: '1303240'
+  enrollment: 1722
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-lawrenceville:
+  display_name: Lawrenceville
+  district_name: Gwinnett County
+  district_nces_id: '1302550'
+  enrollment: 181814
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-leesburg:
+  display_name: Leesburg
+  district_name: Lee County
+  district_nces_id: '1303270'
+  enrollment: 6333
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-lexington:
+  display_name: Lexington
+  district_name: Oglethorpe County
+  district_nces_id: '1303990'
+  enrollment: 2211
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-lincolnton:
+  display_name: Lincolnton
+  district_name: Lincoln County
+  district_nces_id: '1303330'
+  enrollment: 1231
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-louisville:
+  display_name: Louisville
+  district_name: Jefferson County
+  district_nces_id: '1303060'
+  enrollment: 2059
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-ludowici:
+  display_name: Ludowici
+  district_name: Long County
+  district_nces_id: '1303360'
+  enrollment: 4343
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-lyons:
+  display_name: Lyons
+  district_name: Toombs County
+  district_nces_id: '1305040'
+  enrollment: 3019
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-macon-1300252:
+  display_name: Macon
+  district_name: State Charter Schools II- Academy For Classical Education
+  district_nces_id: '1300252'
+  enrollment: 1807
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-macon-1300420:
+  display_name: Macon
+  district_name: Bibb County
+  district_nces_id: '1300420'
+  enrollment: 21392
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-madison:
+  display_name: Madison
+  district_name: Morgan County
+  district_nces_id: '1303780'
+  enrollment: 3514
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-marietta-1301290:
+  display_name: Marietta
+  district_name: Cobb County
+  district_nces_id: '1301290'
+  enrollment: 106703
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-marietta-1303510:
+  display_name: Marietta
+  district_name: Marietta City
+  district_nces_id: '1303510'
+  enrollment: 8711
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-mcdonough:
+  display_name: Mcdonough
+  district_name: Henry County
+  district_nces_id: '1302820'
+  enrollment: 43417
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-mcrae:
+  display_name: Mcrae
+  district_name: Telfair County
+  district_nces_id: '1304830'
+  enrollment: 1586
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-metter:
+  display_name: Metter
+  district_name: Candler County
+  district_nces_id: '1300810'
+  enrollment: 2201
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-milledgeville:
+  display_name: Milledgeville
+  district_name: Baldwin County
+  district_nces_id: '1300210'
+  enrollment: 4693
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-millen:
+  display_name: Millen
+  district_name: Jenkins County
+  district_nces_id: '1303090'
+  enrollment: 1146
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-monroe:
+  display_name: Monroe
+  district_name: Walton County
+  district_nces_id: '1305390'
+  enrollment: 14557
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-monticello:
+  display_name: Monticello
+  district_name: Jasper County
+  district_nces_id: '1302970'
+  enrollment: 2573
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-moultrie:
+  display_name: Moultrie
+  district_name: Colquitt County
+  district_nces_id: '1301380'
+  enrollment: 8830
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-mt-vernon:
+  display_name: Mt. Vernon
+  district_name: Montgomery County
+  district_nces_id: '1303750'
+  enrollment: 951
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-nahunta:
+  display_name: Nahunta
+  district_name: Brantley County
+  district_nces_id: '1300480'
+  enrollment: 3403
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-nashville:
+  display_name: Nashville
+  district_name: Berrien County
+  district_nces_id: '1300390'
+  enrollment: 3074
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-newnan:
+  display_name: Newnan
+  district_name: Coweta County
+  district_nces_id: '1301500'
+  enrollment: 23200
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-norcross:
+  display_name: Norcross
+  district_name: State Charter Schools II- Brookhaven Innovation Academy
+  district_nces_id: '1300242'
+  enrollment: 501
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-ocilla:
+  display_name: Ocilla
+  district_name: Irwin County
+  district_nces_id: '1302910'
+  enrollment: 1622
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-oglethorpe:
+  display_name: Oglethorpe
+  district_name: Macon County
+  district_nces_id: '1303450'
+  enrollment: 1114
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-pearson:
+  display_name: Pearson
+  district_name: Atkinson County
+  district_nces_id: '1300090'
+  enrollment: 1630
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-pelham:
+  display_name: Pelham
+  district_name: Pelham City
+  district_nces_id: '1304080'
+  enrollment: 1387
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-pembroke:
+  display_name: Pembroke
+  district_name: Bryan County
+  district_nces_id: '1300570'
+  enrollment: 10221
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-perry:
+  display_name: Perry
+  district_name: Houston County
+  district_nces_id: '1302880'
+  enrollment: 30631
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-quitman:
+  display_name: Quitman
+  district_name: Brooks County
+  district_nces_id: '1300540'
+  enrollment: 2141
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-reidsville:
+  display_name: Reidsville
+  district_name: Tattnall County
+  district_nces_id: '1304770'
+  enrollment: 3591
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-ringgold:
+  display_name: Ringgold
+  district_name: Catoosa County
+  district_nces_id: '1300930'
+  enrollment: 10426
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-riverdale:
+  display_name: Riverdale
+  district_name: State Charter Schools- Dubois Integrity Academy
+  district_nces_id: '1300237'
+  enrollment: 1320
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-roberta:
+  display_name: Roberta
+  district_name: Crawford County
+  district_nces_id: '1301530'
+  enrollment: 1562
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-rome-1302190:
+  display_name: Rome
+  district_name: Floyd County
+  district_nces_id: '1302190'
+  enrollment: 8925
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-rome-1304440:
+  display_name: Rome
+  district_name: Rome City
+  district_nces_id: '1304440'
+  enrollment: 6573
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-roswell:
+  display_name: Roswell
+  district_name: State Charter Schools- International Charter School of Atla
+  district_nces_id: '1300234'
+  enrollment: 842
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-sandersville:
+  display_name: Sandersville
+  district_name: Washington County
+  district_nces_id: '1305490'
+  enrollment: 2827
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-savannah:
+  display_name: Savannah
+  district_name: Savannah-Chatham County
+  district_nces_id: '1301020'
+  enrollment: 36326
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-senoia:
+  display_name: Senoia
+  district_name: State Charter Schools II- Coweta Charter Academy
+  district_nces_id: '1300222'
+  enrollment: 789
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-social-circle:
+  display_name: Social Circle
+  district_name: Social Circle City
+  district_nces_id: '1304540'
+  enrollment: 1941
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-soperton:
+  display_name: Soperton
+  district_name: Treutlen County
+  district_nces_id: '1305100'
+  enrollment: 1020
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-sparta:
+  display_name: Sparta
+  district_name: Hancock County
+  district_nces_id: '1302640'
+  enrollment: 703
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-springfield:
+  display_name: Springfield
+  district_name: Effingham County
+  district_nces_id: '1301980'
+  enrollment: 14047
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-statenville:
+  display_name: Statenville
+  district_name: Echols County
+  district_nces_id: '1301950'
+  enrollment: 891
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-statesboro:
+  display_name: Statesboro
+  district_name: Bulloch County
+  district_nces_id: '1300630'
+  enrollment: 11050
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-stone-mountain:
+  display_name: Stone Mountain
+  district_name: DeKalb County
+  district_nces_id: '1301740'
+  enrollment: 92368
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-summerville:
+  display_name: Summerville
+  district_name: Chattooga County
+  district_nces_id: '1301080'
+  enrollment: 2575
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-swainsboro:
+  display_name: Swainsboro
+  district_name: Emanuel County
+  district_nces_id: '1302040'
+  enrollment: 4059
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-sylvania:
+  display_name: Sylvania
+  district_name: Screven County
+  district_nces_id: '1304500'
+  enrollment: 2048
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-sylvester:
+  display_name: Sylvester
+  district_name: Worth County
+  district_nces_id: '1305850'
+  enrollment: 3118
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-tallapoosa:
+  display_name: Tallapoosa
+  district_name: Haralson County
+  district_nces_id: '1302670'
+  enrollment: 3429
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-thomaston:
+  display_name: Thomaston
+  district_name: Thomaston-Upson County
+  district_nces_id: '1305280'
+  enrollment: 4060
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-thomasville-1304890:
+  display_name: Thomasville
+  district_name: Thomas County
+  district_nces_id: '1304890'
+  enrollment: 5727
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-thomasville-1304950:
+  display_name: Thomasville
+  district_name: Thomasville City
+  district_nces_id: '1304950'
+  enrollment: 2800
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-thomson:
+  display_name: Thomson
+  district_name: McDuffie County
+  district_nces_id: '1303570'
+  enrollment: 3272
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-tifton:
+  display_name: Tifton
+  district_name: Tift County
+  district_nces_id: '1304980'
+  enrollment: 7661
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-toccoa:
+  display_name: Toccoa
+  district_name: Stephens County
+  district_nces_id: '1304560'
+  enrollment: 3840
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-trenton:
+  display_name: Trenton
+  district_name: Dade County
+  district_nces_id: '1301590'
+  enrollment: 2063
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-trion:
+  display_name: Trion
+  district_name: Trion City
+  district_nces_id: '1305130'
+  enrollment: 1327
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-valdosta-1300236:
+  display_name: Valdosta
+  district_name: State Charter Schools- Scintilla Charter Academy
+  district_nces_id: '1300236'
+  enrollment: 721
+  has_charters: true
+  source: ccd_auto
+  state: GA
+ga-valdosta-1303390:
+  display_name: Valdosta
+  district_name: Lowndes County
+  district_nces_id: '1303390'
+  enrollment: 10728
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-valdosta-1305310:
+  display_name: Valdosta
+  district_name: Valdosta City
+  district_nces_id: '1305310'
+  enrollment: 8291
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-vidalia:
+  display_name: Vidalia
+  district_name: Vidalia City
+  district_nces_id: '1305340'
+  enrollment: 2366
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-vienna:
+  display_name: Vienna
+  district_name: Dooly County
+  district_nces_id: '1301800'
+  enrollment: 1110
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-warrenton:
+  display_name: Warrenton
+  district_name: Warren County
+  district_nces_id: '1305460'
+  enrollment: 662
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-washington:
+  display_name: Washington
+  district_name: Wilkes County
+  district_nces_id: '1305760'
+  enrollment: 1265
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-watkinsville:
+  display_name: Watkinsville
+  district_name: Oconee County
+  district_nces_id: '1303960'
+  enrollment: 8531
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-waycross:
+  display_name: Waycross
+  district_name: Ware County
+  district_nces_id: '1305430'
+  enrollment: 5973
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-waynesboro:
+  display_name: Waynesboro
+  district_name: Burke County
+  district_nces_id: '1300660'
+  enrollment: 3990
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-winder:
+  display_name: Winder
+  district_name: Barrow County
+  district_nces_id: '1300290'
+  enrollment: 14882
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-wrightsville:
+  display_name: Wrightsville
+  district_name: Johnson County
+  district_nces_id: '1303120'
+  enrollment: 1009
+  has_charters: false
+  source: ccd_auto
+  state: GA
+ga-zebulon:
+  display_name: Zebulon
+  district_name: Pike County
+  district_nces_id: '1304170'
+  enrollment: 3584
+  has_charters: false
+  source: ccd_auto
+  state: GA

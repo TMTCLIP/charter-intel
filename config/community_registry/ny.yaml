@@ -1,0 +1,5792 @@
+ny-accord:
+  display_name: Accord
+  district_name: RONDOUT VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3624960'
+  enrollment: 1673
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-adams:
+  display_name: Adams
+  district_name: BELLEVILLE-HENDERSON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3604370'
+  enrollment: 510
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-adams-center:
+  display_name: Adams Center
+  district_name: SOUTH JEFFERSON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602340'
+  enrollment: 1835
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-addison:
+  display_name: Addison
+  district_name: ADDISON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602370'
+  enrollment: 1085
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-akron:
+  display_name: Akron
+  district_name: AKRON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602430'
+  enrollment: 1296
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-albany-3600128:
+  display_name: Albany
+  district_name: KIPP TECH VALLEY CHARTER SCHOOL
+  district_nces_id: '3600128'
+  enrollment: 913
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-albany-3600162:
+  display_name: Albany
+  district_name: KIPP ALBANY COMMUNITY CHARTER SCHOOL
+  district_nces_id: '3600162'
+  enrollment: 682
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-albany-3602460:
+  display_name: Albany
+  district_name: ALBANY CITY SCHOOL DISTRICT
+  district_nces_id: '3602460'
+  enrollment: 8146
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-albany-3627210:
+  display_name: Albany
+  district_name: SOUTH COLONIE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627210'
+  enrollment: 4914
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-albion:
+  display_name: Albion
+  district_name: ALBION CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602520'
+  enrollment: 1782
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-alden:
+  display_name: Alden
+  district_name: ALDEN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602550'
+  enrollment: 1507
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-alexander:
+  display_name: Alexander
+  district_name: ALEXANDER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602580'
+  enrollment: 751
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-allegany:
+  display_name: Allegany
+  district_name: ALLEGANY-LIMESTONE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600015'
+  enrollment: 1087
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-almond:
+  display_name: Almond
+  district_name: ALFRED-ALMOND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602700'
+  enrollment: 563
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-amenia:
+  display_name: Amenia
+  district_name: NORTHEAST CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630390'
+  enrollment: 661
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-amherst-3602920:
+  display_name: Amherst
+  district_name: AMHERST CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602920'
+  enrollment: 2964
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-amherst-3628500:
+  display_name: Amherst
+  district_name: SWEET HOME CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628500'
+  enrollment: 3563
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-amityville:
+  display_name: Amityville
+  district_name: AMITYVILLE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3602940'
+  enrollment: 2951
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-amsterdam:
+  display_name: Amsterdam
+  district_name: AMSTERDAM CITY SCHOOL DISTRICT
+  district_nces_id: '3602970'
+  enrollment: 3766
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-angola:
+  display_name: Angola
+  district_name: EVANS-BRANT CENTRAL SCHOOL DISTRICT (LAKE SHORE)
+  district_nces_id: '3616560'
+  enrollment: 2118
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ardsley:
+  display_name: Ardsley
+  district_name: ARDSLEY UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3603180'
+  enrollment: 2298
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-argyle:
+  display_name: Argyle
+  district_name: ARGYLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3603210'
+  enrollment: 504
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-armonk:
+  display_name: Armonk
+  district_name: BYRAM HILLS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606060'
+  enrollment: 2313
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-astoria:
+  display_name: Astoria
+  district_name: OUR WORLD NEIGHBORHOOD CHARTER SCHOOL
+  district_nces_id: '3600057'
+  enrollment: 705
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-attica:
+  display_name: Attica
+  district_name: ATTICA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3603420'
+  enrollment: 1155
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-auburn:
+  display_name: Auburn
+  district_name: AUBURN CITY SCHOOL DISTRICT
+  district_nces_id: '3603480'
+  enrollment: 3897
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-aurora:
+  display_name: Aurora
+  district_name: SOUTHERN CAYUGA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627570'
+  enrollment: 680
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-averill-park:
+  display_name: Averill Park
+  district_name: AVERILL PARK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600016'
+  enrollment: 2615
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-avon:
+  display_name: Avon
+  district_name: AVON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3603660'
+  enrollment: 950
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-babylon:
+  display_name: Babylon
+  district_name: BABYLON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3603720'
+  enrollment: 1558
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bainbridge:
+  display_name: Bainbridge
+  district_name: BAINBRIDGE-GUILFORD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3603810'
+  enrollment: 792
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-baldwin:
+  display_name: Baldwin
+  district_name: BALDWIN UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3603840'
+  enrollment: 4476
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-baldwinsville:
+  display_name: Baldwinsville
+  district_name: BALDWINSVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3603870'
+  enrollment: 5513
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ballston-spa:
+  display_name: Ballston Spa
+  district_name: BALLSTON SPA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3603930'
+  enrollment: 3920
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-barker:
+  display_name: Barker
+  district_name: BARKER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3603960'
+  enrollment: 672
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-batavia:
+  display_name: Batavia
+  district_name: BATAVIA CITY SCHOOL DISTRICT
+  district_nces_id: '3603990'
+  enrollment: 2187
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bath:
+  display_name: Bath
+  district_name: BATH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3604050'
+  enrollment: 1443
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bay-shore:
+  display_name: Bay Shore
+  district_name: BAY SHORE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3604080'
+  enrollment: 5854
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bayport:
+  display_name: Bayport
+  district_name: BAYPORT-BLUE POINT UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3604110'
+  enrollment: 1924
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bayside:
+  display_name: Bayside
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #26'
+  district_nces_id: '3600099'
+  enrollment: 29116
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-beacon:
+  display_name: Beacon
+  district_name: BEACON CITY SCHOOL DISTRICT
+  district_nces_id: '3604140'
+  enrollment: 2602
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-beaver-falls:
+  display_name: Beaver Falls
+  district_name: BEAVER RIVER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3604200'
+  enrollment: 882
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bedford:
+  display_name: Bedford
+  district_name: BEDFORD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619950'
+  enrollment: 3627
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bellmore-3604410:
+  display_name: Bellmore
+  district_name: BELLMORE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3604410'
+  enrollment: 1080
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bellmore-3620940:
+  display_name: Bellmore
+  district_name: NORTH BELLMORE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3620940'
+  enrollment: 2046
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-belmont:
+  display_name: Belmont
+  district_name: GENESEE VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600017'
+  enrollment: 547
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bemus-point:
+  display_name: Bemus Point
+  district_name: BEMUS POINT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3604530'
+  enrollment: 609
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bergen:
+  display_name: Bergen
+  district_name: BYRON-BERGEN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606090'
+  enrollment: 871
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-berne:
+  display_name: Berne
+  district_name: BERNE-KNOX-WESTERLO CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3604650'
+  enrollment: 716
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bethpage:
+  display_name: Bethpage
+  district_name: BETHPAGE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3604740'
+  enrollment: 2990
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-binghamton-3604870:
+  display_name: Binghamton
+  district_name: BINGHAMTON CITY SCHOOL DISTRICT
+  district_nces_id: '3604870'
+  enrollment: 4850
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-binghamton-3607260:
+  display_name: Binghamton
+  district_name: CHENANGO FORKS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607260'
+  enrollment: 1382
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-binghamton-3607290:
+  display_name: Binghamton
+  district_name: CHENANGO VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607290'
+  enrollment: 1726
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-blauvelt:
+  display_name: Blauvelt
+  district_name: SOUTH ORANGETOWN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627450'
+  enrollment: 2886
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bloomfield:
+  display_name: Bloomfield
+  district_name: EAST BLOOMFIELD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3604920'
+  enrollment: 808
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bohemia:
+  display_name: Bohemia
+  district_name: CONNETQUOT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3608160'
+  enrollment: 5393
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-boiceville:
+  display_name: Boiceville
+  district_name: ONTEORA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621840'
+  enrollment: 1153
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bolivar:
+  display_name: Bolivar
+  district_name: BOLIVAR-RICHBURG CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600012'
+  enrollment: 738
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-boonville:
+  display_name: Boonville
+  district_name: ADIRONDACK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3605040'
+  enrollment: 1195
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brasher-falls:
+  display_name: Brasher Falls
+  district_name: BRASHER FALLS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627960'
+  enrollment: 995
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brentwood:
+  display_name: Brentwood
+  district_name: BRENTWOOD UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3605280'
+  enrollment: 18323
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brewster:
+  display_name: Brewster
+  district_name: BREWSTER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3605310'
+  enrollment: 2966
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-briarcliff-manor:
+  display_name: Briarcliff Manor
+  district_name: BRIARCLIFF MANOR UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3605340'
+  enrollment: 1350
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-broadalbin:
+  display_name: Broadalbin
+  district_name: BROADALBIN-PERTH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600005'
+  enrollment: 1724
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brockport:
+  display_name: Brockport
+  district_name: BROCKPORT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3605580'
+  enrollment: 3177
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brocton:
+  display_name: Brocton
+  district_name: BROCTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3605610'
+  enrollment: 531
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bronx-3600042:
+  display_name: Bronx
+  district_name: BRONX PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3600042'
+  enrollment: 879
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600048:
+  display_name: Bronx
+  district_name: HARRIET TUBMAN CHARTER SCHOOL
+  district_nces_id: '3600048'
+  enrollment: 565
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600054:
+  display_name: Bronx
+  district_name: KIPP ACADEMY CHARTER SCHOOL
+  district_nces_id: '3600054'
+  enrollment: 1132
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600063:
+  display_name: Bronx
+  district_name: BRONX CHARTER SCHOOL FOR THE ARTS
+  district_nces_id: '3600063'
+  enrollment: 596
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600084:
+  display_name: Bronx
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT # 7'
+  district_nces_id: '3600084'
+  enrollment: 15676
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bronx-3600085:
+  display_name: Bronx
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT # 8'
+  district_nces_id: '3600085'
+  enrollment: 24271
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bronx-3600086:
+  display_name: Bronx
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT # 9'
+  district_nces_id: '3600086'
+  enrollment: 27480
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bronx-3600087:
+  display_name: Bronx
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #10'
+  district_nces_id: '3600087'
+  enrollment: 44885
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bronx-3600088:
+  display_name: Bronx
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #11'
+  district_nces_id: '3600088'
+  enrollment: 32910
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bronx-3600089:
+  display_name: Bronx
+  district_name: BRONX CHARTER SCHOOL FOR BETTER LEARNING
+  district_nces_id: '3600089'
+  enrollment: 546
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600090:
+  display_name: Bronx
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #12'
+  district_nces_id: '3600090'
+  enrollment: 17766
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-bronx-3600110:
+  display_name: Bronx
+  district_name: BRONX CHARTER SCHOOL FOR CHILDREN
+  district_nces_id: '3600110'
+  enrollment: 524
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600111:
+  display_name: Bronx
+  district_name: PHAROS ACADEMY CHARTER SCHOOL
+  district_nces_id: '3600111'
+  enrollment: 726
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600112:
+  display_name: Bronx
+  district_name: GRAND CONCOURSE ACADEMY CHARTER SCHOOL
+  district_nces_id: '3600112'
+  enrollment: 699
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600113:
+  display_name: Bronx
+  district_name: BRONX CHARTER SCHOOL FOR EXCELLENCE
+  district_nces_id: '3600113'
+  enrollment: 792
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600165:
+  display_name: Bronx
+  district_name: LEADERS IN OUR NEIGHBORHOOD CHARTER SCHOOL
+  district_nces_id: '3600165'
+  enrollment: 980
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600956:
+  display_name: Bronx
+  district_name: BRONX ACADEMY OF PROMISE CHARTER SCHOOL
+  district_nces_id: '3600956'
+  enrollment: 549
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3600986:
+  display_name: Bronx
+  district_name: GIRLS PREPARATORY CHARTER SCHOOL OF THE BRONX
+  district_nces_id: '3600986'
+  enrollment: 691
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601005:
+  display_name: Bronx
+  district_name: EQUALITY CHARTER SCHOOL
+  district_nces_id: '3601005'
+  enrollment: 615
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601012:
+  display_name: Bronx
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-BRONX 2
+  district_nces_id: '3601012'
+  enrollment: 934
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601025:
+  display_name: Bronx
+  district_name: NUASIN NEXT GENERATION CHARTER SCHOOL
+  district_nces_id: '3601025'
+  enrollment: 674
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601027:
+  display_name: Bronx
+  district_name: DR RICHARD IZQUIERDO HEALTH AND SCIENCE CHARTER SCHOOL
+  district_nces_id: '3601027'
+  enrollment: 708
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601066:
+  display_name: Bronx
+  district_name: CHILDREN'S AID COLLEGE PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3601066'
+  enrollment: 570
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601070:
+  display_name: Bronx
+  district_name: FAMILY LIFE ACADEMY CHARTER SCHOOL II
+  district_nces_id: '3601070'
+  enrollment: 800
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601096:
+  display_name: Bronx
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-BRONX 3
+  district_nces_id: '3601096'
+  enrollment: 1316
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601108:
+  display_name: Bronx
+  district_name: BRILLA COLLEGE PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3601108'
+  enrollment: 754
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601115:
+  display_name: Bronx
+  district_name: BOYS PREPARATORY CHARTER SCHOOL OF NEW YORK
+  district_nces_id: '3601115'
+  enrollment: 713
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601119:
+  display_name: Bronx
+  district_name: AMERICAN DREAM CHARTER SCHOOL
+  district_nces_id: '3601119'
+  enrollment: 602
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601120:
+  display_name: Bronx
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL - BRONX 4
+  district_nces_id: '3601120'
+  enrollment: 618
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601132:
+  display_name: Bronx
+  district_name: SOUTH BRONX CLASSICAL CHARTER SCHOOL III
+  district_nces_id: '3601132'
+  enrollment: 500
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601138:
+  display_name: Bronx
+  district_name: ATMOSPHERE ACADEMY PUBLIC CHARTER SCHOOL
+  district_nces_id: '3601138'
+  enrollment: 1103
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601149:
+  display_name: Bronx
+  district_name: AMBER CHARTER SCHOOL KINGSBRIDGE
+  district_nces_id: '3601149'
+  enrollment: 631
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601158:
+  display_name: Bronx
+  district_name: LEGACY COLLEGE PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3601158'
+  enrollment: 722
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601176:
+  display_name: Bronx
+  district_name: KIPP FREEDOM CHARTER SCHOOL
+  district_nces_id: '3601176'
+  enrollment: 717
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601177:
+  display_name: Bronx
+  district_name: ZETA CHARTER SCHOOL -SOUTH BRONX
+  district_nces_id: '3601177'
+  enrollment: 619
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronx-3601203:
+  display_name: Bronx
+  district_name: KIPP BRONX CHARTER SCHOOL III
+  district_nces_id: '3601203'
+  enrollment: 806
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-bronxville:
+  display_name: Bronxville
+  district_name: BRONXVILLE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3605640'
+  enrollment: 1555
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600091:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #13'
+  district_nces_id: '3600091'
+  enrollment: 19425
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600092:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #15'
+  district_nces_id: '3600092'
+  enrollment: 27577
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600094:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #16'
+  district_nces_id: '3600094'
+  enrollment: 5876
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600095:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #17'
+  district_nces_id: '3600095'
+  enrollment: 18153
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600096:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #18'
+  district_nces_id: '3600096'
+  enrollment: 11188
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600097:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #32'
+  district_nces_id: '3600097'
+  enrollment: 9764
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600115:
+  display_name: Brooklyn
+  district_name: WILLIAMSBURG CHARTER HIGH SCHOOL
+  district_nces_id: '3600115'
+  enrollment: 968
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600116:
+  display_name: Brooklyn
+  district_name: BROOKLYN EXCELSIOR CHARTER SCHOOL
+  district_nces_id: '3600116'
+  enrollment: 610
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600119:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #14'
+  district_nces_id: '3600119'
+  enrollment: 15359
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600120:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #19'
+  district_nces_id: '3600120'
+  enrollment: 19799
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600121:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #23'
+  district_nces_id: '3600121'
+  enrollment: 8183
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600147:
+  display_name: Brooklyn
+  district_name: ACHIEVEMENT FIRST CROWN HEIGHTS CHARTER SCHOOL
+  district_nces_id: '3600147'
+  enrollment: 1339
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600148:
+  display_name: Brooklyn
+  district_name: KIPP ALWAYS MENTALLY PREPARED CHARTER SCHOOL
+  district_nces_id: '3600148'
+  enrollment: 871
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600149:
+  display_name: Brooklyn
+  district_name: ACHIEVEMENT FIRST EAST NEW YORK CHARTER SCHOOL
+  district_nces_id: '3600149'
+  enrollment: 1144
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600151:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #20'
+  district_nces_id: '3600151'
+  enrollment: 46722
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600152:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #21'
+  district_nces_id: '3600152'
+  enrollment: 34421
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600153:
+  display_name: Brooklyn
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #22'
+  district_nces_id: '3600153'
+  enrollment: 31769
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600157:
+  display_name: Brooklyn
+  district_name: EXPLORE CHARTER SCHOOL
+  district_nces_id: '3600157'
+  enrollment: 519
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600166:
+  display_name: Brooklyn
+  district_name: ACHIEVEMENT FIRST-BUSHWICK CHARTER SCHOOL
+  district_nces_id: '3600166'
+  enrollment: 938
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600170:
+  display_name: Brooklyn
+  district_name: ACHIEVEMENT FIRST ENDEAVOR CHARTER SCHOOL
+  district_nces_id: '3600170'
+  enrollment: 738
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600172:
+  display_name: Brooklyn
+  district_name: LEADERSHIP PREPARATORY BEDFORD STUYVESANT CHARTER SCHOOL
+  district_nces_id: '3600172'
+  enrollment: 1186
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600944:
+  display_name: Brooklyn
+  district_name: KINGS COLLEGIATE CHARTER SCHOOL
+  district_nces_id: '3600944'
+  enrollment: 1215
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600966:
+  display_name: Brooklyn
+  district_name: BROOKLYN ASCEND CHARTER SCHOOL
+  district_nces_id: '3600966'
+  enrollment: 1376
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600969:
+  display_name: Brooklyn
+  district_name: ACHIEVEMENT FIRST BROWNSVILLE CHARTER SCHOOL
+  district_nces_id: '3600969'
+  enrollment: 1057
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600989:
+  display_name: Brooklyn
+  district_name: BROOKLYN SCHOLARS CHARTER SCHOOL
+  district_nces_id: '3600989'
+  enrollment: 717
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3600993:
+  display_name: Brooklyn
+  district_name: LEADERSHIP PREPARATORY OCEAN HILL CHARTER SCHOOL
+  district_nces_id: '3600993'
+  enrollment: 1202
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601000:
+  display_name: Brooklyn
+  district_name: EXCELLENCE GIRLS CHARTER SCHOOL
+  district_nces_id: '3601000'
+  enrollment: 1050
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601002:
+  display_name: Brooklyn
+  district_name: BROWNSVILLE ASCEND CHARTER SCHOOL
+  district_nces_id: '3601002'
+  enrollment: 871
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601003:
+  display_name: Brooklyn
+  district_name: HEBREW LANGUAGE ACADEMY CHARTER SCHOOL
+  district_nces_id: '3601003'
+  enrollment: 610
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601004:
+  display_name: Brooklyn
+  district_name: CONEY ISLAND PREPARATORY PUBLIC CHARTER SCHOOL
+  district_nces_id: '3601004'
+  enrollment: 1253
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601015:
+  display_name: Brooklyn
+  district_name: BROOKLYN DREAMS CHARTER SCHOOL
+  district_nces_id: '3601015'
+  enrollment: 616
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601016:
+  display_name: Brooklyn
+  district_name: LEADERSHIP PREPARATORY BROWNSVILLE CHARTER SCHOOL
+  district_nces_id: '3601016'
+  enrollment: 651
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601017:
+  display_name: Brooklyn
+  district_name: BUSHWICK ASCEND CHARTER SCHOOL
+  district_nces_id: '3601017'
+  enrollment: 799
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601028:
+  display_name: Brooklyn
+  district_name: ACHIEVEMENT FIRST APOLLO CHARTER SCHOOL
+  district_nces_id: '3601028'
+  enrollment: 912
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601029:
+  display_name: Brooklyn
+  district_name: BEDFORD STUYVESANT NEW BEGINNINGS CHARTER SCHOOL
+  district_nces_id: '3601029'
+  enrollment: 730
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601052:
+  display_name: Brooklyn
+  district_name: EXPLORE EXCEL CHARTER SCHOOL
+  district_nces_id: '3601052'
+  enrollment: 536
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601064:
+  display_name: Brooklyn
+  district_name: BEGINNING WITH CHILDREN CHARTER SCHOOL II
+  district_nces_id: '3601064'
+  enrollment: 597
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601093:
+  display_name: Brooklyn
+  district_name: MATH ENGINEERING AND SCIENCE ACADEMY CHARTER HIGH SCHOOL
+  district_nces_id: '3601093'
+  enrollment: 515
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601094:
+  display_name: Brooklyn
+  district_name: UNITY PREPARATORY CHARTER SCHOOL OF BROOKLYN
+  district_nces_id: '3601094'
+  enrollment: 558
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601095:
+  display_name: Brooklyn
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-CROWN HEIGHTS
+  district_nces_id: '3601095'
+  enrollment: 787
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601102:
+  display_name: Brooklyn
+  district_name: CANARSIE ASCEND CHARTER SCHOOL
+  district_nces_id: '3601102'
+  enrollment: 989
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601106:
+  display_name: Brooklyn
+  district_name: LEADERSHIP PREPARATORY CANARSIE CHARTER SCHOOL
+  district_nces_id: '3601106'
+  enrollment: 808
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601109:
+  display_name: Brooklyn
+  district_name: ACHIEVEMENT FIRST ASPIRE CHARTER SCHOOL
+  district_nces_id: '3601109'
+  enrollment: 775
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601112:
+  display_name: Brooklyn
+  district_name: ACHIEVEMENT FIRST LINDEN CHARTER SCHOOL
+  district_nces_id: '3601112'
+  enrollment: 756
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601114:
+  display_name: Brooklyn
+  district_name: CENTRAL BROOKLYN ASCEND CHARTER SCHOOL
+  district_nces_id: '3601114'
+  enrollment: 778
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601122:
+  display_name: Brooklyn
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL - BENSONHURST
+  district_nces_id: '3601122'
+  enrollment: 649
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601123:
+  display_name: Brooklyn
+  district_name: SUCCESS ACADEMY CS - BERGEN BEACH
+  district_nces_id: '3601123'
+  enrollment: 1052
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601124:
+  display_name: Brooklyn
+  district_name: ACHIEVEMENT FIRST NORTH BROOKLYN PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3601124'
+  enrollment: 851
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601148:
+  display_name: Brooklyn
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-FLATBUSH
+  district_nces_id: '3601148'
+  enrollment: 560
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601150:
+  display_name: Brooklyn
+  district_name: BROOKLYN PROSPECT CHARTER SCHOOL-CSD 13
+  district_nces_id: '3601150'
+  enrollment: 704
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brooklyn-3601206:
+  display_name: Brooklyn
+  district_name: BROOKLYN PROSPECT CHARTER SCHOOL - CSD 15.2
+  district_nces_id: '3601206'
+  enrollment: 1084
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-brushton:
+  display_name: Brushton
+  district_name: BRUSHTON-MOIRA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3605820'
+  enrollment: 788
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-buffalo-3600025:
+  display_name: Buffalo
+  district_name: CHARTER SCHOOL FOR APPLIED TECHNOLOGIES
+  district_nces_id: '3600025'
+  enrollment: 2309
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-buffalo-3600036:
+  display_name: Buffalo
+  district_name: SOUTH BUFFALO CHARTER SCHOOL
+  district_nces_id: '3600036'
+  enrollment: 882
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-buffalo-3600038:
+  display_name: Buffalo
+  district_name: TAPESTRY CHARTER SCHOOL
+  district_nces_id: '3600038'
+  enrollment: 1108
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-buffalo-3600071:
+  display_name: Buffalo
+  district_name: BUFFALO UNITED CHARTER SCHOOL
+  district_nces_id: '3600071'
+  enrollment: 659
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-buffalo-3600105:
+  display_name: Buffalo
+  district_name: BUFFALO ACADEMY OF SCIENCE CHARTER SCHOOL
+  district_nces_id: '3600105'
+  enrollment: 881
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-buffalo-3601055:
+  display_name: Buffalo
+  district_name: WEST BUFFALO CHARTER SCHOOL
+  district_nces_id: '3601055'
+  enrollment: 503
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-buffalo-3601173:
+  display_name: Buffalo
+  district_name: REACH ACADEMY CHARTER SCHOOL
+  district_nces_id: '3601173'
+  enrollment: 529
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-buffalo-3605850:
+  display_name: Buffalo
+  district_name: BUFFALO CITY SCHOOL DISTRICT
+  district_nces_id: '3605850'
+  enrollment: 30124
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-buffalo-3616230:
+  display_name: Buffalo
+  district_name: KENMORE-TONAWANDA UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3616230'
+  enrollment: 6509
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-burnt-hills:
+  display_name: Burnt Hills
+  district_name: BURNT HILLS-BALLSTON LAKE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3605940'
+  enrollment: 3116
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cairo:
+  display_name: Cairo
+  district_name: CAIRO-DURHAM CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606160'
+  enrollment: 1054
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-caledonia:
+  display_name: Caledonia
+  district_name: CALEDONIA-MUMFORD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606180'
+  enrollment: 811
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-calverton:
+  display_name: Calverton
+  district_name: RIVERHEAD CHARTER SCHOOL
+  district_nces_id: '3600060'
+  enrollment: 823
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-cambridge:
+  display_name: Cambridge
+  district_name: CAMBRIDGE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606210'
+  enrollment: 820
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-camden:
+  display_name: Camden
+  district_name: CAMDEN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606240'
+  enrollment: 2008
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-camillus:
+  display_name: Camillus
+  district_name: WEST GENESEE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630630'
+  enrollment: 4463
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-campbell:
+  display_name: Campbell
+  district_name: CAMPBELL-SAVONA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600020'
+  enrollment: 802
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-canajoharie:
+  display_name: Canajoharie
+  district_name: CANAJOHARIE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606300'
+  enrollment: 879
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-canandaigua:
+  display_name: Canandaigua
+  district_name: CANANDAIGUA CITY SCHOOL DISTRICT
+  district_nces_id: '3606330'
+  enrollment: 3288
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-canastota:
+  display_name: Canastota
+  district_name: CANASTOTA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606390'
+  enrollment: 1253
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-candor:
+  display_name: Candor
+  district_name: CANDOR CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606420'
+  enrollment: 722
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-canisteo:
+  display_name: Canisteo
+  district_name: CANISTEO-GREENWOOD CSD
+  district_nces_id: '3600124'
+  enrollment: 961
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-canton:
+  display_name: Canton
+  district_name: CANTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606470'
+  enrollment: 1140
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-carle-place:
+  display_name: Carle Place
+  district_name: CARLE PLACE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3606540'
+  enrollment: 1264
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-carthage:
+  display_name: Carthage
+  district_name: CARTHAGE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606630'
+  enrollment: 2909
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-castleton:
+  display_name: Castleton
+  district_name: SCHODACK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626070'
+  enrollment: 909
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cato:
+  display_name: Cato
+  district_name: CATO-MERIDIAN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606690'
+  enrollment: 884
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-catskill:
+  display_name: Catskill
+  district_name: CATSKILL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606720'
+  enrollment: 1318
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cattaraugus:
+  display_name: Cattaraugus
+  district_name: CATTARAUGUS-LITTLE VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600024'
+  enrollment: 875
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cazenovia:
+  display_name: Cazenovia
+  district_name: CAZENOVIA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606780'
+  enrollment: 1314
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cedarhurst:
+  display_name: Cedarhurst
+  district_name: LAWRENCE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3616830'
+  enrollment: 2306
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-center-moriches:
+  display_name: Center Moriches
+  district_name: CENTER MORICHES UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3606840'
+  enrollment: 1488
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-centereach:
+  display_name: Centereach
+  district_name: MIDDLE COUNTRY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619200'
+  enrollment: 9507
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-central-islip:
+  display_name: Central Islip
+  district_name: CENTRAL ISLIP UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3606870'
+  enrollment: 7902
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-central-square:
+  display_name: Central Square
+  district_name: CENTRAL SQUARE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606900'
+  enrollment: 3636
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-central-valley:
+  display_name: Central Valley
+  district_name: MONROE-WOODBURY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619650'
+  enrollment: 6660
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-champlain:
+  display_name: Champlain
+  district_name: NORTHEASTERN CLINTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621250'
+  enrollment: 1249
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-chappaqua:
+  display_name: Chappaqua
+  district_name: CHAPPAQUA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606990'
+  enrollment: 3574
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-chateaugay:
+  display_name: Chateaugay
+  district_name: CHATEAUGAY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607080'
+  enrollment: 548
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-chatham:
+  display_name: Chatham
+  district_name: CHATHAM CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607110'
+  enrollment: 882
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cheektowaga-3607230:
+  display_name: Cheektowaga
+  district_name: CHEEKTOWAGA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607230'
+  enrollment: 2272
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cheektowaga-3607680:
+  display_name: Cheektowaga
+  district_name: CLEVELAND HILL UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3607680'
+  enrollment: 1389
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cheektowaga-3618600:
+  display_name: Cheektowaga
+  district_name: CHEEKTOWAGA-MARYVALE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3618600'
+  enrollment: 2252
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cherry-plain:
+  display_name: Cherry Plain
+  district_name: BERLIN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3604620'
+  enrollment: 645
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-chester:
+  display_name: Chester
+  district_name: CHESTER UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3607380'
+  enrollment: 1011
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-chittenango:
+  display_name: Chittenango
+  district_name: CHITTENANGO CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607470'
+  enrollment: 1926
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-churchville:
+  display_name: Churchville
+  district_name: CHURCHVILLE-CHILI CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607530'
+  enrollment: 3860
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cincinnatus:
+  display_name: Cincinnatus
+  district_name: CINCINNATUS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607560'
+  enrollment: 558
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-clarence:
+  display_name: Clarence
+  district_name: CLARENCE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607590'
+  enrollment: 4130
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-clayton:
+  display_name: Clayton
+  district_name: THOUSAND ISLANDS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607650'
+  enrollment: 891
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-clifton-park:
+  display_name: Clifton Park
+  district_name: SHENENDEHOWA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626670'
+  enrollment: 9433
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-clifton-springs:
+  display_name: Clifton Springs
+  district_name: PHELPS-CLIFTON SPRINGS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622890'
+  enrollment: 1519
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-clinton:
+  display_name: Clinton
+  district_name: CLINTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607770'
+  enrollment: 1264
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-clintonville:
+  display_name: Clintonville
+  district_name: AUSABLE VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616170'
+  enrollment: 1200
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-clyde:
+  display_name: Clyde
+  district_name: CLYDE-SAVANNAH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607860'
+  enrollment: 801
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cobleskill:
+  display_name: Cobleskill
+  district_name: COBLESKILL-RICHMONDVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600010'
+  enrollment: 1486
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cohoes:
+  display_name: Cohoes
+  district_name: COHOES CITY SCHOOL DISTRICT
+  district_nces_id: '3607980'
+  enrollment: 1873
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cold-spring:
+  display_name: Cold Spring
+  district_name: HALDANE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613230'
+  enrollment: 811
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cold-spring-harbor:
+  display_name: Cold Spring Harbor
+  district_name: COLD SPRING HARBOR CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3608010'
+  enrollment: 1570
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-conklin:
+  display_name: Conklin
+  district_name: SUSQUEHANNA VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628380'
+  enrollment: 1484
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cooperstown:
+  display_name: Cooperstown
+  district_name: COOPERSTOWN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3608250'
+  enrollment: 795
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-copiague:
+  display_name: Copiague
+  district_name: COPIAGUE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3608310'
+  enrollment: 4876
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-corfu:
+  display_name: Corfu
+  district_name: PEMBROKE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3608340'
+  enrollment: 865
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-corinth:
+  display_name: Corinth
+  district_name: CORINTH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3608370'
+  enrollment: 1097
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cornwall-on-hudson:
+  display_name: Cornwall On Hudson
+  district_name: CORNWALL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3608430'
+  enrollment: 3006
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-corona:
+  display_name: Corona
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #24'
+  district_nces_id: '3600098'
+  enrollment: 51074
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cortland:
+  display_name: Cortland
+  district_name: CORTLAND CITY SCHOOL DISTRICT
+  district_nces_id: '3608460'
+  enrollment: 1957
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-coxsackie:
+  display_name: Coxsackie
+  district_name: COXSACKIE-ATHENS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3608490'
+  enrollment: 1189
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-craryville:
+  display_name: Craryville
+  district_name: TACONIC HILLS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628620'
+  enrollment: 1091
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cross-river:
+  display_name: Cross River
+  district_name: KATONAH-LEWISBORO UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3616080'
+  enrollment: 2835
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-croton-on-hudson:
+  display_name: Croton On Hudson
+  district_name: CROTON-HARMON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3608580'
+  enrollment: 1540
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cuba:
+  display_name: Cuba
+  district_name: CUBA-RUSHFORD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3632010'
+  enrollment: 772
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-cutchogue:
+  display_name: Cutchogue
+  district_name: MATTITUCK-CUTCHOGUE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3600021'
+  enrollment: 1004
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dannemora:
+  display_name: Dannemora
+  district_name: SARANAC CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600009'
+  enrollment: 1513
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dansville:
+  display_name: Dansville
+  district_name: DANSVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3608790'
+  enrollment: 1371
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-deer-park:
+  display_name: Deer Park
+  district_name: DEER PARK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3608880'
+  enrollment: 4050
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-delanson:
+  display_name: Delanson
+  district_name: DUANESBURG CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3609360'
+  enrollment: 660
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-delhi:
+  display_name: Delhi
+  district_name: DELAWARE ACADEMY CENTRAL SCHOOL DISTRICT AT DELHI
+  district_nces_id: '3608910'
+  enrollment: 753
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-delmar:
+  display_name: Delmar
+  district_name: BETHLEHEM CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3604710'
+  enrollment: 4107
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-depew:
+  display_name: Depew
+  district_name: DEPEW UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609030'
+  enrollment: 1905
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dewitt:
+  display_name: Dewitt
+  district_name: JAMESVILLE-DEWITT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3609090'
+  enrollment: 2536
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dexter:
+  display_name: Dexter
+  district_name: GENERAL BROWN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611910'
+  enrollment: 1402
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dix-hills:
+  display_name: Dix Hills
+  district_name: HALF HOLLOW HILLS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613290'
+  enrollment: 7317
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dobbs-ferry:
+  display_name: Dobbs Ferry
+  district_name: DOBBS FERRY UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609120'
+  enrollment: 1522
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dolgeville:
+  display_name: Dolgeville
+  district_name: DOLGEVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600001'
+  enrollment: 821
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dover-plains:
+  display_name: Dover Plains
+  district_name: DOVER UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609210'
+  enrollment: 1342
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dryden:
+  display_name: Dryden
+  district_name: DRYDEN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3609330'
+  enrollment: 1345
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dundee:
+  display_name: Dundee
+  district_name: DUNDEE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3609390'
+  enrollment: 645
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-dunkirk:
+  display_name: Dunkirk
+  district_name: DUNKIRK CITY SCHOOL DISTRICT
+  district_nces_id: '3609420'
+  enrollment: 2015
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-amherst:
+  display_name: East Amherst
+  district_name: WILLIAMSVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631470'
+  enrollment: 9717
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-aurora:
+  display_name: East Aurora
+  district_name: EAST AURORA UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609540'
+  enrollment: 1742
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-greenbush:
+  display_name: East Greenbush
+  district_name: EAST GREENBUSH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3609630'
+  enrollment: 4119
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-hampton-3609660:
+  display_name: East Hampton
+  district_name: EAST HAMPTON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609660'
+  enrollment: 1844
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-hampton-3627900:
+  display_name: East Hampton
+  district_name: SPRINGS UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3627900'
+  enrollment: 688
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-moriches:
+  display_name: East Moriches
+  district_name: EAST MORICHES UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609870'
+  enrollment: 649
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-northport:
+  display_name: East Northport
+  district_name: COMMACK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3608130'
+  enrollment: 5590
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-patchogue:
+  display_name: East Patchogue
+  district_name: SOUTH COUNTRY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600008'
+  enrollment: 3953
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-rochester:
+  display_name: East Rochester
+  district_name: EAST ROCHESTER UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609930'
+  enrollment: 1008
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-rockaway:
+  display_name: East Rockaway
+  district_name: EAST ROCKAWAY UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609960'
+  enrollment: 1153
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-east-syracuse:
+  display_name: East Syracuse
+  district_name: EAST SYRACUSE MINOA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3609990'
+  enrollment: 3498
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-eastchester-3610080:
+  display_name: Eastchester
+  district_name: EASTCHESTER UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3610080'
+  enrollment: 3013
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-eastchester-3629040:
+  display_name: Eastchester
+  district_name: TUCKAHOE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3629040'
+  enrollment: 1093
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-eden:
+  display_name: Eden
+  district_name: EDEN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3610170'
+  enrollment: 1323
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ellenburg-depot:
+  display_name: Ellenburg Depot
+  district_name: NORTHERN ADIRONDACK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621260'
+  enrollment: 831
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ellenville:
+  display_name: Ellenville
+  district_name: ELLENVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3610500'
+  enrollment: 1474
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ellicottville:
+  display_name: Ellicottville
+  district_name: ELLICOTTVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3610530'
+  enrollment: 573
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-elma:
+  display_name: Elma
+  district_name: IROQUOIS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3615360'
+  enrollment: 2082
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-elmhurst:
+  display_name: Elmhurst
+  district_name: CENTRAL QUEENS ACADEMY CHARTER SCHOOL
+  district_nces_id: '3601056'
+  enrollment: 709
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-elmira:
+  display_name: Elmira
+  district_name: ELMIRA CITY SCHOOL DISTRICT
+  district_nces_id: '3610560'
+  enrollment: 5512
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-elmira-heights:
+  display_name: Elmira Heights
+  district_name: ELMIRA HEIGHTS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3610590'
+  enrollment: 1084
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-elmont:
+  display_name: Elmont
+  district_name: ELMONT UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3610620'
+  enrollment: 3394
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-elmsford:
+  display_name: Elmsford
+  district_name: ELMSFORD UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3610650'
+  enrollment: 1059
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-endicott:
+  display_name: Endicott
+  district_name: UNION-ENDICOTT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3610710'
+  enrollment: 3703
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-endwell:
+  display_name: Endwell
+  district_name: MAINE-ENDWELL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618150'
+  enrollment: 2576
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-fabius:
+  display_name: Fabius
+  district_name: FABIUS-POMPEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3610860'
+  enrollment: 644
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-fairport:
+  display_name: Fairport
+  district_name: FAIRPORT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3610890'
+  enrollment: 5425
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-falconer:
+  display_name: Falconer
+  district_name: FALCONER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3610920'
+  enrollment: 1147
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-fallsburg:
+  display_name: Fallsburg
+  district_name: FALLSBURG CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3610950'
+  enrollment: 1557
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-far-rockaway-3601018:
+  display_name: Far Rockaway
+  district_name: CHALLENGE PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3601018'
+  enrollment: 1134
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-far-rockaway-3601151:
+  display_name: Far Rockaway
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-FAR ROCKAWAY
+  district_nces_id: '3601151'
+  enrollment: 641
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-farmingdale:
+  display_name: Farmingdale
+  district_name: FARMINGDALE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3610980'
+  enrollment: 5251
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-fillmore:
+  display_name: Fillmore
+  district_name: FILLMORE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611070'
+  enrollment: 677
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-floral-park-3611160:
+  display_name: Floral Park
+  district_name: FLORAL PARK-BELLEROSE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3611160'
+  enrollment: 1597
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-floral-park-3626520:
+  display_name: Floral Park
+  district_name: SEWANHAKA CENTRAL HIGH SCHOOL DISTRICT
+  district_nces_id: '3626520'
+  enrollment: 7862
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-florida:
+  display_name: Florida
+  district_name: FLORIDA UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3625320'
+  enrollment: 726
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-flushing:
+  display_name: Flushing
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #25'
+  district_nces_id: '3600122'
+  enrollment: 34704
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-fonda:
+  display_name: Fonda
+  district_name: FONDA-FULTONVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611190'
+  enrollment: 1314
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-fort-covington:
+  display_name: Fort Covington
+  district_name: SALMON RIVER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3625500'
+  enrollment: 1385
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-fort-plain:
+  display_name: Fort Plain
+  district_name: FORT PLAIN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611370'
+  enrollment: 758
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-frankfort-3601084:
+  display_name: Frankfort
+  district_name: UTICA ACADEMY OF SCIENCE CHARTER SCHOOL
+  district_nces_id: '3601084'
+  enrollment: 880
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-frankfort-3611400:
+  display_name: Frankfort
+  district_name: FRANKFORT-SCHUYLER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611400'
+  enrollment: 846
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-franklin-square:
+  display_name: Franklin Square
+  district_name: FRANKLIN SQUARE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3611460'
+  enrollment: 1930
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-franklinville:
+  display_name: Franklinville
+  district_name: FRANKLINVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611490'
+  enrollment: 625
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-fredonia:
+  display_name: Fredonia
+  district_name: FREDONIA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611520'
+  enrollment: 1492
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-freeport:
+  display_name: Freeport
+  district_name: FREEPORT UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3611550'
+  enrollment: 6469
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-frewsburg:
+  display_name: Frewsburg
+  district_name: FREWSBURG CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611610'
+  enrollment: 774
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-fulton:
+  display_name: Fulton
+  district_name: FULTON CITY SCHOOL DISTRICT
+  district_nces_id: '3611700'
+  enrollment: 3171
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-gainesville:
+  display_name: Gainesville
+  district_name: LETCHWORTH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3617130'
+  enrollment: 916
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-galway:
+  display_name: Galway
+  district_name: GALWAY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611730'
+  enrollment: 830
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-garden-city:
+  display_name: Garden City
+  district_name: GARDEN CITY UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3611760'
+  enrollment: 3945
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-garnerville:
+  display_name: Garnerville
+  district_name: HAVERSTRAW-STONY POINT CSD (NORTH ROCKLAND)
+  district_nces_id: '3614010'
+  enrollment: 7888
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-geneseo:
+  display_name: Geneseo
+  district_name: GENESEO CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611940'
+  enrollment: 857
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-geneva:
+  display_name: Geneva
+  district_name: GENEVA CITY SCHOOL DISTRICT
+  district_nces_id: '3611970'
+  enrollment: 2129
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-glen-cove:
+  display_name: Glen Cove
+  district_name: GLEN COVE CITY SCHOOL DISTRICT
+  district_nces_id: '3612180'
+  enrollment: 3214
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-glens-falls:
+  display_name: Glens Falls
+  district_name: GLENS FALLS CITY SCHOOL DISTRICT
+  district_nces_id: '3612240'
+  enrollment: 1993
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-gloversville:
+  display_name: Gloversville
+  district_name: GLOVERSVILLE CITY SCHOOL DISTRICT
+  district_nces_id: '3612270'
+  enrollment: 2628
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-goshen:
+  display_name: Goshen
+  district_name: GOSHEN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612330'
+  enrollment: 2876
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-gouverneur:
+  display_name: Gouverneur
+  district_name: GOUVERNEUR CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612360'
+  enrollment: 1470
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-gowanda:
+  display_name: Gowanda
+  district_name: GOWANDA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612390'
+  enrollment: 1119
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-grahamsville:
+  display_name: Grahamsville
+  district_name: TRI-VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628890'
+  enrollment: 924
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-grand-island:
+  display_name: Grand Island
+  district_name: GRAND ISLAND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607020'
+  enrollment: 2865
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-granville:
+  display_name: Granville
+  district_name: GRANVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612450'
+  enrollment: 1040
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-great-neck:
+  display_name: Great Neck
+  district_name: GREAT NECK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3612510'
+  enrollment: 6836
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-greene:
+  display_name: Greene
+  district_name: GREENE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612750'
+  enrollment: 941
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-greenlawn-3610680:
+  display_name: Greenlawn
+  district_name: ELWOOD UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3610680'
+  enrollment: 1998
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-greenlawn-3613620:
+  display_name: Greenlawn
+  district_name: HARBORFIELDS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613620'
+  enrollment: 2794
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-greenport:
+  display_name: Greenport
+  district_name: GREENPORT UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3612840'
+  enrollment: 704
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-greenville:
+  display_name: Greenville
+  district_name: GREENVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612870'
+  enrollment: 1089
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-greenwich:
+  display_name: Greenwich
+  district_name: GREENWICH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612900'
+  enrollment: 925
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-groton:
+  display_name: Groton
+  district_name: GROTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613020'
+  enrollment: 800
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-guilderland-center:
+  display_name: Guilderland Center
+  district_name: GUILDERLAND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613080'
+  enrollment: 4914
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hamburg-3611670:
+  display_name: Hamburg
+  district_name: FRONTIER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611670'
+  enrollment: 4659
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hamburg-3613350:
+  display_name: Hamburg
+  district_name: HAMBURG CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613350'
+  enrollment: 3406
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hamilton:
+  display_name: Hamilton
+  district_name: HAMILTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613380'
+  enrollment: 563
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hampton-bays:
+  display_name: Hampton Bays
+  district_name: HAMPTON BAYS UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3613530'
+  enrollment: 2065
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hannibal:
+  display_name: Hannibal
+  district_name: HANNIBAL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613590'
+  enrollment: 1228
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-harpursville:
+  display_name: Harpursville
+  district_name: HARPURSVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613710'
+  enrollment: 636
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-harrison:
+  display_name: Harrison
+  district_name: HARRISON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613740'
+  enrollment: 3650
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hartsdale:
+  display_name: Hartsdale
+  district_name: GREENBURGH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612720'
+  enrollment: 1670
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hastings-on-hudson:
+  display_name: Hastings On Hudson
+  district_name: HASTINGS-ON-HUDSON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3613950'
+  enrollment: 1622
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hauppauge:
+  display_name: Hauppauge
+  district_name: HAUPPAUGE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3613980'
+  enrollment: 3224
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hempstead-3600988:
+  display_name: Hempstead
+  district_name: EVERGREEN CHARTER SCHOOL
+  district_nces_id: '3600988'
+  enrollment: 966
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-hempstead-3600997:
+  display_name: Hempstead
+  district_name: ACADEMY CHARTER SCHOOL
+  district_nces_id: '3600997'
+  enrollment: 1880
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-hempstead-3614130:
+  display_name: Hempstead
+  district_name: HEMPSTEAD UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3614130'
+  enrollment: 6114
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-henrietta:
+  display_name: Henrietta
+  district_name: RUSH-HENRIETTA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3625170'
+  enrollment: 5620
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-herkimer:
+  display_name: Herkimer
+  district_name: HERKIMER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614220'
+  enrollment: 1171
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hermon:
+  display_name: Hermon
+  district_name: EDWARDS-KNOX CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600003'
+  enrollment: 515
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-heuvelton:
+  display_name: Heuvelton
+  district_name: HEUVELTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614310'
+  enrollment: 570
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hicksville:
+  display_name: Hicksville
+  district_name: HICKSVILLE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3614340'
+  enrollment: 5548
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-highland:
+  display_name: Highland
+  district_name: HIGHLAND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614400'
+  enrollment: 1565
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-highland-falls:
+  display_name: Highland Falls
+  district_name: HIGHLAND FALLS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614430'
+  enrollment: 1025
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hillburn:
+  display_name: Hillburn
+  district_name: SUFFERN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628320'
+  enrollment: 4020
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hilton:
+  display_name: Hilton
+  district_name: HILTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614460'
+  enrollment: 4214
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-holland:
+  display_name: Holland
+  district_name: HOLLAND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614550'
+  enrollment: 801
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-holland-patent:
+  display_name: Holland Patent
+  district_name: HOLLAND PATENT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614580'
+  enrollment: 1298
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-holley:
+  display_name: Holley
+  district_name: HOLLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614610'
+  enrollment: 987
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-homer:
+  display_name: Homer
+  district_name: HOMER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614640'
+  enrollment: 1902
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-honeoye:
+  display_name: Honeoye
+  district_name: HONEOYE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614670'
+  enrollment: 575
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-honeoye-falls:
+  display_name: Honeoye Falls
+  district_name: HONEOYE FALLS-LIMA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614700'
+  enrollment: 2034
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hoosick-falls:
+  display_name: Hoosick Falls
+  district_name: HOOSICK FALLS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614760'
+  enrollment: 1057
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hopewell-junction:
+  display_name: Hopewell Junction
+  district_name: WAPPINGERS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629880'
+  enrollment: 10479
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hornell:
+  display_name: Hornell
+  district_name: HORNELL CITY SCHOOL DISTRICT
+  district_nces_id: '3614820'
+  enrollment: 1453
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-horseheads:
+  display_name: Horseheads
+  district_name: HORSEHEADS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614850'
+  enrollment: 3890
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hudson:
+  display_name: Hudson
+  district_name: HUDSON CITY SCHOOL DISTRICT
+  district_nces_id: '3614940'
+  enrollment: 1605
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hudson-falls:
+  display_name: Hudson Falls
+  district_name: HUDSON FALLS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614970'
+  enrollment: 2211
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-huntington-station-3615090:
+  display_name: Huntington Station
+  district_name: HUNTINGTON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3615090'
+  enrollment: 4136
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-huntington-station-3627300:
+  display_name: Huntington Station
+  district_name: SOUTH HUNTINGTON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3627300'
+  enrollment: 5849
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-hyde-park:
+  display_name: Hyde Park
+  district_name: HYDE PARK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3615180'
+  enrollment: 3541
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ilion:
+  display_name: Ilion
+  district_name: CENTRAL VALLEY CSD AT ILION-MOHAWK
+  district_nces_id: '3601087'
+  enrollment: 2164
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-irvington:
+  display_name: Irvington
+  district_name: IRVINGTON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3615450'
+  enrollment: 1772
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-island-park:
+  display_name: Island Park
+  district_name: ISLAND PARK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3615480'
+  enrollment: 707
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-islip:
+  display_name: Islip
+  district_name: ISLIP UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3615540'
+  enrollment: 2691
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-islip-terrace:
+  display_name: Islip Terrace
+  district_name: EAST ISLIP UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609720'
+  enrollment: 3446
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ithaca:
+  display_name: Ithaca
+  district_name: ITHACA CITY SCHOOL DISTRICT
+  district_nces_id: '3615570'
+  enrollment: 5090
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-jackson-heights:
+  display_name: Jackson Heights
+  district_name: RENAISSANCE CHARTER SCHOOL
+  district_nces_id: '3600059'
+  enrollment: 655
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-jamaica-3600100:
+  display_name: Jamaica
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #28'
+  district_nces_id: '3600100'
+  enrollment: 37139
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-jamaica-3601152:
+  display_name: Jamaica
+  district_name: GROWING UP GREEN CHARTER SCHOOL II
+  district_nces_id: '3601152'
+  enrollment: 682
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-jamestown-3615630:
+  display_name: Jamestown
+  district_name: JAMESTOWN CITY SCHOOL DISTRICT
+  district_nces_id: '3615630'
+  enrollment: 4533
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-jamestown-3627660:
+  display_name: Jamestown
+  district_name: SOUTHWESTERN CENTRAL SCHOOL DISTRICT AT JAMESTOWN
+  district_nces_id: '3627660'
+  enrollment: 1340
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-jeffersonville:
+  display_name: Jeffersonville
+  district_name: SULLIVAN WEST CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600023'
+  enrollment: 1078
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-jericho:
+  display_name: Jericho
+  district_name: JERICHO UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3615810'
+  enrollment: 3236
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-johnson-city:
+  display_name: Johnson City
+  district_name: JOHNSON CITY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3615900'
+  enrollment: 2303
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-johnstown:
+  display_name: Johnstown
+  district_name: JOHNSTOWN CITY SCHOOL DISTRICT
+  district_nces_id: '3615980'
+  enrollment: 1568
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-jordan:
+  display_name: Jordan
+  district_name: JORDAN-ELBRIDGE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3615990'
+  enrollment: 1231
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-kendall:
+  display_name: Kendall
+  district_name: KENDALL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616200'
+  enrollment: 692
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-kings-park:
+  display_name: Kings Park
+  district_name: KINGS PARK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616260'
+  enrollment: 2698
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-kingston:
+  display_name: Kingston
+  district_name: KINGSTON CITY SCHOOL DISTRICT
+  district_nces_id: '3616290'
+  enrollment: 6312
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-la-fargeville:
+  display_name: La Fargeville
+  district_name: LA FARGEVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616380'
+  enrollment: 503
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lackawanna-3600067:
+  display_name: Lackawanna
+  district_name: GLOBAL CONCEPTS CHARTER SCHOOL
+  district_nces_id: '3600067'
+  enrollment: 926
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-lackawanna-3616440:
+  display_name: Lackawanna
+  district_name: LACKAWANNA CITY SCHOOL DISTRICT
+  district_nces_id: '3616440'
+  enrollment: 1966
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lafayette:
+  display_name: Lafayette
+  district_name: LAFAYETTE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616410'
+  enrollment: 803
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lagrangeville:
+  display_name: Lagrangeville
+  district_name: ARLINGTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3603270'
+  enrollment: 7849
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lake-george:
+  display_name: Lake George
+  district_name: LAKE GEORGE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616470'
+  enrollment: 640
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lake-luzerne:
+  display_name: Lake Luzerne
+  district_name: HADLEY-LUZERNE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3613110'
+  enrollment: 659
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lake-placid:
+  display_name: Lake Placid
+  district_name: LAKE PLACID CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616500'
+  enrollment: 570
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lake-ronkonkoma:
+  display_name: Lake Ronkonkoma
+  district_name: SACHEM CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3625350'
+  enrollment: 11844
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lancaster:
+  display_name: Lancaster
+  district_name: LANCASTER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616680'
+  enrollment: 5459
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lansing:
+  display_name: Lansing
+  district_name: LANSING CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616710'
+  enrollment: 1178
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-latham:
+  display_name: Latham
+  district_name: NORTH COLONIE CSD
+  district_nces_id: '3621000'
+  enrollment: 6032
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-le-roy:
+  display_name: Le Roy
+  district_name: LE ROY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616950'
+  enrollment: 1180
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-levittown-3615510:
+  display_name: Levittown
+  district_name: ISLAND TREES UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3615510'
+  enrollment: 2223
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-levittown-3617160:
+  display_name: Levittown
+  district_name: LEVITTOWN UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3617160'
+  enrollment: 7177
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-liberty:
+  display_name: Liberty
+  district_name: LIBERTY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3617220'
+  enrollment: 1866
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lindenhurst:
+  display_name: Lindenhurst
+  district_name: LINDENHURST UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3617380'
+  enrollment: 5640
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lisbon:
+  display_name: Lisbon
+  district_name: LISBON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3617430'
+  enrollment: 579
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-little-falls:
+  display_name: Little Falls
+  district_name: LITTLE FALLS CITY SCHOOL DISTRICT
+  district_nces_id: '3617460'
+  enrollment: 1078
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-liverpool:
+  display_name: Liverpool
+  district_name: LIVERPOOL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3617520'
+  enrollment: 6814
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-livonia:
+  display_name: Livonia
+  district_name: LIVONIA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3617640'
+  enrollment: 1427
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lockport-3617670:
+  display_name: Lockport
+  district_name: LOCKPORT CITY SCHOOL DISTRICT
+  district_nces_id: '3617670'
+  enrollment: 4377
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lockport-3628050:
+  display_name: Lockport
+  district_name: STARPOINT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628050'
+  enrollment: 2961
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-locust-valley:
+  display_name: Locust Valley
+  district_name: LOCUST VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3617700'
+  enrollment: 1920
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-long-beach:
+  display_name: Long Beach
+  district_name: LONG BEACH CITY SCHOOL DISTRICT
+  district_nces_id: '3617730'
+  enrollment: 3590
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-long-island-city-3600102:
+  display_name: Long Island City
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #30'
+  district_nces_id: '3600102'
+  enrollment: 36007
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-long-island-city-3600957:
+  display_name: Long Island City
+  district_name: VOICE CHARTER SCHOOL OF NEW YORK
+  district_nces_id: '3600957'
+  enrollment: 751
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-long-island-city-3600987:
+  display_name: Long Island City
+  district_name: GROWING UP GREEN CHARTER SCHOOL
+  district_nces_id: '3600987'
+  enrollment: 723
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-lowville:
+  display_name: Lowville
+  district_name: LOWVILLE ACADEMY & CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3617820'
+  enrollment: 1304
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lynbrook:
+  display_name: Lynbrook
+  district_name: LYNBROOK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3617910'
+  enrollment: 2764
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lyndonville:
+  display_name: Lyndonville
+  district_name: LYNDONVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3617970'
+  enrollment: 603
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-lyons:
+  display_name: Lyons
+  district_name: LYONS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618030'
+  enrollment: 921
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-madrid:
+  display_name: Madrid
+  district_name: MADRID-WADDINGTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618090'
+  enrollment: 671
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mahopac:
+  display_name: Mahopac
+  district_name: MAHOPAC CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618120'
+  enrollment: 3840
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-malone:
+  display_name: Malone
+  district_name: MALONE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618180'
+  enrollment: 2239
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-malverne:
+  display_name: Malverne
+  district_name: MALVERNE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3618210'
+  enrollment: 1848
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mamaroneck-3618240:
+  display_name: Mamaroneck
+  district_name: MAMARONECK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3618240'
+  enrollment: 5475
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mamaroneck-3625290:
+  display_name: Mamaroneck
+  district_name: RYE NECK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3625290'
+  enrollment: 1543
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-manhasset:
+  display_name: Manhasset
+  district_name: MANHASSET UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3618270'
+  enrollment: 3021
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-manlius:
+  display_name: Manlius
+  district_name: FAYETTEVILLE-MANLIUS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618330'
+  enrollment: 4162
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-manorville:
+  display_name: Manorville
+  district_name: EASTPORT-SOUTH MANOR CSD
+  district_nces_id: '3600125'
+  enrollment: 2791
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-marathon:
+  display_name: Marathon
+  district_name: MARATHON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618450'
+  enrollment: 753
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-marcellus:
+  display_name: Marcellus
+  district_name: MARCELLUS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618480'
+  enrollment: 1429
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-marion:
+  display_name: Marion
+  district_name: MARION CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618540'
+  enrollment: 681
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-massapequa:
+  display_name: Massapequa
+  district_name: MASSAPEQUA UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3618630'
+  enrollment: 6536
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-massena:
+  display_name: Massena
+  district_name: MASSENA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618660'
+  enrollment: 2457
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mastic-beach:
+  display_name: Mastic Beach
+  district_name: WILLIAM FLOYD UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3618690'
+  enrollment: 9166
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mayfield:
+  display_name: Mayfield
+  district_name: MAYFIELD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618750'
+  enrollment: 867
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mayville:
+  display_name: Mayville
+  district_name: CHAUTAUQUA LAKE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600018'
+  enrollment: 742
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mcgraw:
+  display_name: Mcgraw
+  district_name: MCGRAW CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618840'
+  enrollment: 532
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mechanicville:
+  display_name: Mechanicville
+  district_name: MECHANICVILLE CITY SCHOOL DISTRICT
+  district_nces_id: '3618900'
+  enrollment: 1367
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-medina:
+  display_name: Medina
+  district_name: MEDINA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618960'
+  enrollment: 1433
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-merrick-3619110:
+  display_name: Merrick
+  district_name: MERRICK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3619110'
+  enrollment: 1664
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-merrick-3621120:
+  display_name: Merrick
+  district_name: NORTH MERRICK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3621120'
+  enrollment: 1214
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mexico:
+  display_name: Mexico
+  district_name: MEXICO CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619170'
+  enrollment: 2078
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-middle-island:
+  display_name: Middle Island
+  district_name: LONGWOOD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619230'
+  enrollment: 8876
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-middleburgh:
+  display_name: Middleburgh
+  district_name: MIDDLEBURGH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619260'
+  enrollment: 665
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-middleport:
+  display_name: Middleport
+  district_name: ROYALTON-HARTLAND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3625140'
+  enrollment: 1216
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-middletown:
+  display_name: Middletown
+  district_name: MIDDLETOWN CITY SCHOOL DISTRICT
+  district_nces_id: '3619320'
+  enrollment: 7529
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-millbrook:
+  display_name: Millbrook
+  district_name: MILLBROOK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619380'
+  enrollment: 875
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-miller-place:
+  display_name: Miller Place
+  district_name: MILLER PLACE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3619410'
+  enrollment: 2343
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-milton:
+  display_name: Milton
+  district_name: MARLBORO CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3618570'
+  enrollment: 1866
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mineola:
+  display_name: Mineola
+  district_name: MINEOLA UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3619500'
+  enrollment: 2868
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-montgomery:
+  display_name: Montgomery
+  district_name: VALLEY CENTRAL SCHOOL DISTRICT (MONTGOMERY)
+  district_nces_id: '3619680'
+  enrollment: 4210
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-monticello:
+  display_name: Monticello
+  district_name: MONTICELLO CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619740'
+  enrollment: 2887
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-montrose:
+  display_name: Montrose
+  district_name: HENDRICK HUDSON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614190'
+  enrollment: 2214
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-moravia:
+  display_name: Moravia
+  district_name: MORAVIA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619800'
+  enrollment: 921
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-morrisville:
+  display_name: Morrisville
+  district_name: MORRISVILLE-EATON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619920'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mount-morris:
+  display_name: Mount Morris
+  district_name: MOUNT MORRIS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620010'
+  enrollment: 575
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mount-sinai:
+  display_name: Mount Sinai
+  district_name: MOUNT SINAI UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3620040'
+  enrollment: 2076
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-mount-vernon:
+  display_name: Mount Vernon
+  district_name: MOUNT VERNON SCHOOL DISTRICT
+  district_nces_id: '3620100'
+  enrollment: 7009
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-n-massapequa:
+  display_name: N Massapequa
+  district_name: PLAINEDGE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3623190'
+  enrollment: 2880
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-nanuet:
+  display_name: Nanuet
+  district_name: NANUET UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3620190'
+  enrollment: 2217
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-naples:
+  display_name: Naples
+  district_name: NAPLES CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620220'
+  enrollment: 610
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-nedrow:
+  display_name: Nedrow
+  district_name: ONONDAGA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621810'
+  enrollment: 807
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-berlin:
+  display_name: New Berlin
+  district_name: UNADILLA VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600019'
+  enrollment: 801
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-city:
+  display_name: New City
+  district_name: CLARKSTOWN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620340'
+  enrollment: 7845
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-hartford:
+  display_name: New Hartford
+  district_name: NEW HARTFORD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620370'
+  enrollment: 2644
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-hyde-park-3614280:
+  display_name: New Hyde Park
+  district_name: HERRICKS UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3614280'
+  enrollment: 4258
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-hyde-park-3620400:
+  display_name: New Hyde Park
+  district_name: NEW HYDE PARK-GARDEN CITY PARK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3620400'
+  enrollment: 1653
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-paltz:
+  display_name: New Paltz
+  district_name: NEW PALTZ CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620460'
+  enrollment: 1824
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-rochelle:
+  display_name: New Rochelle
+  district_name: NEW ROCHELLE CITY SCHOOL DISTRICT
+  district_nces_id: '3620490'
+  enrollment: 9972
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-york-3600068:
+  display_name: New York
+  district_name: HARLEM PREP CHARTER SCHOOL
+  district_nces_id: '3600068'
+  enrollment: 759
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600076:
+  display_name: New York
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT # 1'
+  district_nces_id: '3600076'
+  enrollment: 9653
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-york-3600077:
+  display_name: New York
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT # 2'
+  district_nces_id: '3600077'
+  enrollment: 54995
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-york-3600078:
+  display_name: New York
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT # 3'
+  district_nces_id: '3600078'
+  enrollment: 19180
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-york-3600079:
+  display_name: New York
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT # 4'
+  district_nces_id: '3600079'
+  enrollment: 11379
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-york-3600080:
+  display_name: New York
+  district_name: HARLEM VILLAGE ACADEMY WEST CHARTER SCHOOL
+  district_nces_id: '3600080'
+  enrollment: 639
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600081:
+  display_name: New York
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT # 5'
+  district_nces_id: '3600081'
+  enrollment: 9372
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-york-3600082:
+  display_name: New York
+  district_name: KIPP STAR COLLEGE PREP CHARTER SCHOOL
+  district_nces_id: '3600082'
+  enrollment: 740
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600083:
+  display_name: New York
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT # 6'
+  district_nces_id: '3600083'
+  enrollment: 17867
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-new-york-3600108:
+  display_name: New York
+  district_name: HARLEM CHILDREN'S ZONE PROMISE ACADEMY CHARTER SCHOOL
+  district_nces_id: '3600108'
+  enrollment: 1138
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600140:
+  display_name: New York
+  district_name: HARLEM CHILDREN'S ZONE PROMISE ACADEMY II CHARTER SCHOOL
+  district_nces_id: '3600140'
+  enrollment: 1019
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600143:
+  display_name: New York
+  district_name: KIPP INFINITY CHARTER SCHOOL
+  district_nces_id: '3600143'
+  enrollment: 1807
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600158:
+  display_name: New York
+  district_name: DEMOCRACY PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3600158'
+  enrollment: 603
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600167:
+  display_name: New York
+  district_name: NEW HEIGHTS ACADEMY CHARTER SCHOOL
+  district_nces_id: '3600167'
+  enrollment: 731
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600169:
+  display_name: New York
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-HARLEM 1
+  district_nces_id: '3600169'
+  enrollment: 1574
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600952:
+  display_name: New York
+  district_name: EQUITY PROJECT CHARTER SCHOOL (THE)
+  district_nces_id: '3600952'
+  enrollment: 1066
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600962:
+  display_name: New York
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-HARLEM 3
+  district_nces_id: '3600962'
+  enrollment: 693
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3600964:
+  display_name: New York
+  district_name: DREAM CHARTER SCHOOL
+  district_nces_id: '3600964'
+  enrollment: 929
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601009:
+  display_name: New York
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-HARLEM 5
+  district_nces_id: '3601009'
+  enrollment: 869
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601010:
+  display_name: New York
+  district_name: DEMOCRACY PREP HARLEM CHARTER SCHOOL
+  district_nces_id: '3601010'
+  enrollment: 1017
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601024:
+  display_name: New York
+  district_name: INWOOD ACADEMY FOR LEADERSHIP CHARTER SCHOOL
+  district_nces_id: '3601024'
+  enrollment: 954
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601039:
+  display_name: New York
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-UPPER WEST
+  district_nces_id: '3601039'
+  enrollment: 943
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601042:
+  display_name: New York
+  district_name: EAST HARLEM SCHOLARS ACADEMY CHARTER SCHOOL
+  district_nces_id: '3601042'
+  enrollment: 846
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601075:
+  display_name: New York
+  district_name: KIPP NYC WASHINGTON HEIGHTS ACADEMY CHARTER SCHOOL
+  district_nces_id: '3601075'
+  enrollment: 789
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601076:
+  display_name: New York
+  district_name: GLOBAL COMMUNITY CHARTER SCHOOL
+  district_nces_id: '3601076'
+  enrollment: 511
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601077:
+  display_name: New York
+  district_name: NEIGHBORHOOD CHARTER SCHOOL OF HARLEM
+  district_nces_id: '3601077'
+  enrollment: 624
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601078:
+  display_name: New York
+  district_name: DEMOCRACY PREP ENDURANCE CHARTER SCHOOL
+  district_nces_id: '3601078'
+  enrollment: 653
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601083:
+  display_name: New York
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL-UNION SQUARE
+  district_nces_id: '3601083'
+  enrollment: 993
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601110:
+  display_name: New York
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL - WASHINGTON HEIGHTS
+  district_nces_id: '3601110'
+  enrollment: 541
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601139:
+  display_name: New York
+  district_name: SCHOOL IN THE SQUARE PUBLIC CHARTER SCHOOL
+  district_nces_id: '3601139'
+  enrollment: 552
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-3601171:
+  display_name: New York
+  district_name: ZETA CHARTER SCHOOL - INWOOD
+  district_nces_id: '3601171'
+  enrollment: 520
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-new-york-mills:
+  display_name: New York Mills
+  district_name: NEW YORK MILLS UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3620610'
+  enrollment: 593
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-newark:
+  display_name: Newark
+  district_name: NEWARK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620640'
+  enrollment: 2011
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-newark-valley:
+  display_name: Newark Valley
+  district_name: NEWARK VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620670'
+  enrollment: 1046
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-newburgh:
+  display_name: Newburgh
+  district_name: NEWBURGH CITY SCHOOL DISTRICT
+  district_nces_id: '3620700'
+  enrollment: 11193
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-newfane:
+  display_name: Newfane
+  district_name: NEWFANE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620760'
+  enrollment: 1317
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-newfield:
+  display_name: Newfield
+  district_name: NEWFIELD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620790'
+  enrollment: 723
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-newport:
+  display_name: Newport
+  district_name: WEST CANADA VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630600'
+  enrollment: 638
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-niagara-falls:
+  display_name: Niagara Falls
+  district_name: NIAGARA FALLS CITY SCHOOL DISTRICT
+  district_nces_id: '3620820'
+  enrollment: 7028
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-north-babylon:
+  display_name: North Babylon
+  district_name: NORTH BABYLON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3620910'
+  enrollment: 4683
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-north-collins:
+  display_name: North Collins
+  district_name: NORTH COLLINS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620970'
+  enrollment: 584
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-north-merrick:
+  display_name: North Merrick
+  district_name: BELLMORE-MERRICK CENTRAL HIGH SCHOOL DISTRICT
+  district_nces_id: '3619020'
+  enrollment: 5243
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-north-salem:
+  display_name: North Salem
+  district_name: NORTH SALEM CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621180'
+  enrollment: 985
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-north-syracuse:
+  display_name: North Syracuse
+  district_name: NORTH SYRACUSE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621210'
+  enrollment: 8141
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-north-tonawanda:
+  display_name: North Tonawanda
+  district_name: NORTH TONAWANDA CITY SCHOOL DISTRICT
+  district_nces_id: '3621240'
+  enrollment: 3175
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-northport:
+  display_name: Northport
+  district_name: NORTHPORT-EAST NORTHPORT UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3621270'
+  enrollment: 4572
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-norwich:
+  display_name: Norwich
+  district_name: NORWICH CITY SCHOOL DISTRICT
+  district_nces_id: '3621330'
+  enrollment: 1715
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-norwood:
+  display_name: Norwood
+  district_name: NORWOOD-NORFOLK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621360'
+  enrollment: 990
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-nunda:
+  display_name: Nunda
+  district_name: DALTON-NUNDA CENTRAL SCHOOL DISTRICT (KESHEQUA)
+  district_nces_id: '3621450'
+  enrollment: 566
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-nyack:
+  display_name: Nyack
+  district_name: NYACK UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3621480'
+  enrollment: 2819
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-oakfield:
+  display_name: Oakfield
+  district_name: OAKFIELD-ALABAMA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621510'
+  enrollment: 747
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-oceanside:
+  display_name: Oceanside
+  district_name: OCEANSIDE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3621570'
+  enrollment: 5514
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-odessa:
+  display_name: Odessa
+  district_name: ODESSA-MONTOUR CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621630'
+  enrollment: 775
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ogdensburg:
+  display_name: Ogdensburg
+  district_name: OGDENSBURG CITY SCHOOL DISTRICT
+  district_nces_id: '3621660'
+  enrollment: 1467
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-old-westbury-3610050:
+  display_name: Old Westbury
+  district_name: EAST WILLISTON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3610050'
+  enrollment: 1609
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-old-westbury-3630960:
+  display_name: Old Westbury
+  district_name: WESTBURY UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3630960'
+  enrollment: 4768
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-olean:
+  display_name: Olean
+  district_name: OLEAN CITY SCHOOL DISTRICT
+  district_nces_id: '3621720'
+  enrollment: 1916
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-oneida:
+  display_name: Oneida
+  district_name: ONEIDA CITY SCHOOL DISTRICT
+  district_nces_id: '3600013'
+  enrollment: 1830
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-oneonta:
+  display_name: Oneonta
+  district_name: ONEONTA CITY SCHOOL DISTRICT
+  district_nces_id: '3621780'
+  enrollment: 1665
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ontario-center:
+  display_name: Ontario Center
+  district_name: WAYNE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630330'
+  enrollment: 2058
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-oriskany:
+  display_name: Oriskany
+  district_name: ORISKANY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621960'
+  enrollment: 571
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ossining:
+  display_name: Ossining
+  district_name: OSSINING UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3622020'
+  enrollment: 4927
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-oswego:
+  display_name: Oswego
+  district_name: OSWEGO CITY SCHOOL DISTRICT
+  district_nces_id: '3622050'
+  enrollment: 3535
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-otego:
+  display_name: Otego
+  district_name: OTEGO-UNADILLA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629240'
+  enrollment: 804
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ovid:
+  display_name: Ovid
+  district_name: SOUTH SENECA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622140'
+  enrollment: 677
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-owego:
+  display_name: Owego
+  district_name: OWEGO-APALACHIN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622170'
+  enrollment: 1961
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-oxford:
+  display_name: Oxford
+  district_name: OXFORD ACADEMY AND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622260'
+  enrollment: 742
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-oyster-bay:
+  display_name: Oyster Bay
+  district_name: OYSTER BAY-EAST NORWICH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622290'
+  enrollment: 1400
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ozone-park:
+  display_name: Ozone Park
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #27'
+  district_nces_id: '3600123'
+  enrollment: 41385
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-painted-post:
+  display_name: Painted Post
+  district_name: CORNING CITY SCHOOL DISTRICT
+  district_nces_id: '3608400'
+  enrollment: 4340
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-palmyra:
+  display_name: Palmyra
+  district_name: PALMYRA-MACEDON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622380'
+  enrollment: 1796
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-parish:
+  display_name: Parish
+  district_name: ALTMAR-PARISH-WILLIAMSTOWN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602820'
+  enrollment: 1113
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-patchogue:
+  display_name: Patchogue
+  district_name: PATCHOGUE-MEDFORD UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3622470'
+  enrollment: 7452
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-patterson:
+  display_name: Patterson
+  district_name: CARMEL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606570'
+  enrollment: 3782
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-pavilion:
+  display_name: Pavilion
+  district_name: PAVILION CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622500'
+  enrollment: 659
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-pawling:
+  display_name: Pawling
+  district_name: PAWLING CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622530'
+  enrollment: 1100
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-pearl-river:
+  display_name: Pearl River
+  district_name: PEARL RIVER UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3622560'
+  enrollment: 2317
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-peekskill:
+  display_name: Peekskill
+  district_name: PEEKSKILL CITY SCHOOL DISTRICT
+  district_nces_id: '3622650'
+  enrollment: 3677
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-pelham:
+  display_name: Pelham
+  district_name: PELHAM UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3622680'
+  enrollment: 2758
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-penn-yan:
+  display_name: Penn Yan
+  district_name: PENN YAN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622740'
+  enrollment: 1271
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-perry:
+  display_name: Perry
+  district_name: PERRY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622770'
+  enrollment: 786
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-peru:
+  display_name: Peru
+  district_name: PERU CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622830'
+  enrollment: 1877
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-philadelphia:
+  display_name: Philadelphia
+  district_name: INDIAN RIVER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3615300'
+  enrollment: 3499
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-phoenix:
+  display_name: Phoenix
+  district_name: PHOENIX CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622920'
+  enrollment: 1681
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-pine-bush:
+  display_name: Pine Bush
+  district_name: PINE BUSH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3623010'
+  enrollment: 4873
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-pine-plains:
+  display_name: Pine Plains
+  district_name: PINE PLAINS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3623040'
+  enrollment: 846
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-pittsford:
+  display_name: Pittsford
+  district_name: PITTSFORD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3623160'
+  enrollment: 5548
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-plainview:
+  display_name: Plainview
+  district_name: PLAINVIEW-OLD BETHPAGE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3623220'
+  enrollment: 5245
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-plattsburgh:
+  display_name: Plattsburgh
+  district_name: PLATTSBURGH CITY SCHOOL DISTRICT
+  district_nces_id: '3623280'
+  enrollment: 1735
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-pleasantville:
+  display_name: Pleasantville
+  district_name: PLEASANTVILLE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3623310'
+  enrollment: 1629
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-poland:
+  display_name: Poland
+  district_name: POLAND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3623370'
+  enrollment: 530
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-port-byron:
+  display_name: Port Byron
+  district_name: PORT BYRON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3623430'
+  enrollment: 801
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-port-chester:
+  display_name: Port Chester
+  district_name: PORT CHESTER-RYE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3623460'
+  enrollment: 4604
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-port-henry:
+  display_name: Port Henry
+  district_name: MORIAH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619830'
+  enrollment: 714
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-port-jefferson:
+  display_name: Port Jefferson
+  district_name: PORT JEFFERSON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3623490'
+  enrollment: 918
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-port-jefferson-station:
+  display_name: Port Jefferson Station
+  district_name: BROOKHAVEN-COMSEWOGUE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3615780'
+  enrollment: 3571
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-port-jervis:
+  display_name: Port Jervis
+  district_name: PORT JERVIS CITY SCHOOL DISTRICT
+  district_nces_id: '3623520'
+  enrollment: 2444
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-port-washington:
+  display_name: Port Washington
+  district_name: PORT WASHINGTON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3623580'
+  enrollment: 5294
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-portville:
+  display_name: Portville
+  district_name: PORTVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3623640'
+  enrollment: 974
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-potsdam:
+  display_name: Potsdam
+  district_name: POTSDAM CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3623670'
+  enrollment: 1327
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-poughkeepsie-3606500:
+  display_name: Poughkeepsie
+  district_name: SPACKENKILL UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3606500'
+  enrollment: 1563
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-poughkeepsie-3623760:
+  display_name: Poughkeepsie
+  district_name: POUGHKEEPSIE CITY SCHOOL DISTRICT
+  district_nces_id: '3623760'
+  enrollment: 3972
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-pulaski:
+  display_name: Pulaski
+  district_name: PULASKI CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3623880'
+  enrollment: 967
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-putnam-valley:
+  display_name: Putnam Valley
+  district_name: PUTNAM VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3624000'
+  enrollment: 1555
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-queens-village:
+  display_name: Queens Village
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #29'
+  district_nces_id: '3600101'
+  enrollment: 23629
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-queensbury:
+  display_name: Queensbury
+  district_name: QUEENSBURY UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3624030'
+  enrollment: 3028
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-randolph:
+  display_name: Randolph
+  district_name: RANDOLPH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3624090'
+  enrollment: 867
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ravena:
+  display_name: Ravena
+  district_name: RAVENA-COEYMANS-SELKIRK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3624150'
+  enrollment: 1828
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-red-creek:
+  display_name: Red Creek
+  district_name: RED CREEK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3624210'
+  enrollment: 818
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-red-hook:
+  display_name: Red Hook
+  district_name: RED HOOK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3624240'
+  enrollment: 1605
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rensselaer:
+  display_name: Rensselaer
+  district_name: RENSSELAER CITY SCHOOL DISTRICT
+  district_nces_id: '3624450'
+  enrollment: 1062
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-retsof:
+  display_name: Retsof
+  district_name: YORK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631950'
+  enrollment: 667
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rhinebeck:
+  display_name: Rhinebeck
+  district_name: RHINEBECK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3624480'
+  enrollment: 950
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-riverhead:
+  display_name: Riverhead
+  district_name: RIVERHEAD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3624690'
+  enrollment: 5688
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rochester-3600026:
+  display_name: Rochester
+  district_name: EUGENIO MARIA DE HOSTOS CHARTER SCHOOL
+  district_nces_id: '3600026'
+  enrollment: 979
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-rochester-3600173:
+  display_name: Rochester
+  district_name: TRUE NORTH ROCHESTER PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3600173'
+  enrollment: 1301
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-rochester-3600950:
+  display_name: Rochester
+  district_name: ROCHESTER ACADEMY CHARTER SCHOOL
+  district_nces_id: '3600950'
+  enrollment: 823
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-rochester-3601040:
+  display_name: Rochester
+  district_name: TRUE NORTH ROCHESTER  PREP-WEST CAMP
+  district_nces_id: '3601040'
+  enrollment: 754
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-rochester-3601153:
+  display_name: Rochester
+  district_name: ROCHESTER PREP CHARTER SCHOOL 3
+  district_nces_id: '3601153'
+  enrollment: 619
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-rochester-3605460:
+  display_name: Rochester
+  district_name: BRIGHTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3605460'
+  enrollment: 3461
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rochester-3609690:
+  display_name: Rochester
+  district_name: EAST IRONDEQUOIT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3609690'
+  enrollment: 2782
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rochester-3611880:
+  display_name: Rochester
+  district_name: GATES CHILI CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611880'
+  enrollment: 3730
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rochester-3612630:
+  display_name: Rochester
+  district_name: GREECE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612630'
+  enrollment: 10242
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rochester-3615390:
+  display_name: Rochester
+  district_name: WEST IRONDEQUOIT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3615390'
+  enrollment: 3641
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rochester-3622710:
+  display_name: Rochester
+  district_name: PENFIELD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3622710'
+  enrollment: 4679
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rochester-3624750:
+  display_name: Rochester
+  district_name: ROCHESTER CITY SCHOOL DISTRICT
+  district_nces_id: '3624750'
+  enrollment: 22820
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rockville-centre:
+  display_name: Rockville Centre
+  district_name: ROCKVILLE CENTRE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3624780'
+  enrollment: 3384
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rocky-point:
+  display_name: Rocky Point
+  district_name: ROCKY POINT UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3624840'
+  enrollment: 2721
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rome:
+  display_name: Rome
+  district_name: ROME CITY SCHOOL DISTRICT
+  district_nces_id: '3624900'
+  enrollment: 5377
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-roosevelt-3600030:
+  display_name: Roosevelt
+  district_name: ROOSEVELT CHILDREN'S ACADEMY CHARTER SCHOOL
+  district_nces_id: '3600030'
+  enrollment: 730
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-roosevelt-3624990:
+  display_name: Roosevelt
+  district_name: ROOSEVELT UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3624990'
+  enrollment: 3196
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rosedale:
+  display_name: Rosedale
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL - ROSEDALE
+  district_nces_id: '3601116'
+  enrollment: 1007
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-roslyn:
+  display_name: Roslyn
+  district_name: ROSLYN UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3625050'
+  enrollment: 3301
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rushville:
+  display_name: Rushville
+  district_name: GORHAM-MIDDLESEX CENTRAL SCHOOL DISTRICT (MARCUS WHITMAN)
+  district_nces_id: '3612300'
+  enrollment: 1145
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rye:
+  display_name: Rye
+  district_name: RYE CITY SCHOOL DISTRICT
+  district_nces_id: '3625260'
+  enrollment: 2868
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-rye-brook:
+  display_name: Rye Brook
+  district_name: BLIND BROOK-RYE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3624630'
+  enrollment: 1304
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sag-harbor:
+  display_name: Sag Harbor
+  district_name: SAG HARBOR UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3625380'
+  enrollment: 958
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-saint-albans:
+  display_name: Saint Albans
+  district_name: RIVERTON STREET CHARTER SCHOOL
+  district_nces_id: '3601035'
+  enrollment: 1065
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-salamanca:
+  display_name: Salamanca
+  district_name: SALAMANCA CITY SCHOOL DISTRICT
+  district_nces_id: '3625440'
+  enrollment: 1369
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-salem:
+  display_name: Salem
+  district_name: SALEM CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3625470'
+  enrollment: 565
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sanborn:
+  display_name: Sanborn
+  district_name: NIAGARA-WHEATFIELD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620850'
+  enrollment: 3259
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sandy-creek:
+  display_name: Sandy Creek
+  district_name: SANDY CREEK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3625650'
+  enrollment: 809
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-saranac-lake:
+  display_name: Saranac Lake
+  district_name: SARANAC LAKE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3625740'
+  enrollment: 1073
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-saratoga-springs:
+  display_name: Saratoga Springs
+  district_name: SARATOGA SPRINGS CITY SD
+  district_nces_id: '3625770'
+  enrollment: 6005
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-saugerties:
+  display_name: Saugerties
+  district_name: SAUGERTIES CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3625800'
+  enrollment: 2295
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sauquoit:
+  display_name: Sauquoit
+  district_name: SAUQUOIT VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600002'
+  enrollment: 990
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sayville:
+  display_name: Sayville
+  district_name: SAYVILLE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3625920'
+  enrollment: 2694
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-scarsdale-3610200:
+  display_name: Scarsdale
+  district_name: EDGEMONT UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3610200'
+  enrollment: 1936
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-scarsdale-3625950:
+  display_name: Scarsdale
+  district_name: SCARSDALE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3625950'
+  enrollment: 4704
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-schaghticoke:
+  display_name: Schaghticoke
+  district_name: HOOSIC VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3614730'
+  enrollment: 869
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-schenectady-3600004:
+  display_name: Schenectady
+  district_name: ROTTERDAM-MOHONASEN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600004'
+  enrollment: 2777
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-schenectady-3620880:
+  display_name: Schenectady
+  district_name: NISKAYUNA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620880'
+  enrollment: 4357
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-schenectady-3625980:
+  display_name: Schenectady
+  district_name: SCHALMONT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3625980'
+  enrollment: 1827
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-schenectady-3626010:
+  display_name: Schenectady
+  district_name: SCHENECTADY CITY SCHOOL DISTRICT
+  district_nces_id: '3626010'
+  enrollment: 9053
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-schoharie:
+  display_name: Schoharie
+  district_name: SCHOHARIE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626100'
+  enrollment: 827
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-schuylerville:
+  display_name: Schuylerville
+  district_name: SCHUYLERVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626160'
+  enrollment: 1377
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-scotia:
+  display_name: Scotia
+  district_name: SCOTIA-GLENVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626310'
+  enrollment: 2261
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-scottsville:
+  display_name: Scottsville
+  district_name: WHEATLAND-CHILI CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631170'
+  enrollment: 698
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sea-cliff:
+  display_name: Sea Cliff
+  district_name: NORTH SHORE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626370'
+  enrollment: 2572
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-seaford:
+  display_name: Seaford
+  district_name: SEAFORD UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3626400'
+  enrollment: 2200
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-seneca-falls:
+  display_name: Seneca Falls
+  district_name: SENECA FALLS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626430'
+  enrollment: 1258
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sherburne:
+  display_name: Sherburne
+  district_name: SHERBURNE-EARLVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626700'
+  enrollment: 1297
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-shoreham:
+  display_name: Shoreham
+  district_name: SHOREHAM-WADING RIVER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626840'
+  enrollment: 2000
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-shortsville:
+  display_name: Shortsville
+  district_name: MANCHESTER-SHORTSVILLE CENTRAL SCHOOL DISTRICT (RED JACKET)
+  district_nces_id: '3624270'
+  enrollment: 729
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-shrub-oak:
+  display_name: Shrub Oak
+  district_name: LAKELAND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616620'
+  enrollment: 5418
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sidney:
+  display_name: Sidney
+  district_name: SIDNEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626850'
+  enrollment: 1070
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-silver-creek:
+  display_name: Silver Creek
+  district_name: SILVER CREEK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626880'
+  enrollment: 1014
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sinclairville:
+  display_name: Sinclairville
+  district_name: CASSADAGA VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3606660'
+  enrollment: 824
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-skaneateles:
+  display_name: Skaneateles
+  district_name: SKANEATELES CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3626940'
+  enrollment: 1274
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-slate-hill:
+  display_name: Slate Hill
+  district_name: MINISINK VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3619560'
+  enrollment: 3603
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sleepy-hollow:
+  display_name: Sleepy Hollow
+  district_name: UNION FREE SCHOOL DISTRICT OF THE TARRYTOWNS
+  district_nces_id: '3628650'
+  enrollment: 2606
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sloan:
+  display_name: Sloan
+  district_name: CHEEKTOWAGA-SLOAN UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3627000'
+  enrollment: 1326
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-smithtown:
+  display_name: Smithtown
+  district_name: SMITHTOWN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627060'
+  enrollment: 7924
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-sodus:
+  display_name: Sodus
+  district_name: SODUS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627120'
+  enrollment: 1058
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-solvay:
+  display_name: Solvay
+  district_name: SOLVAY UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3627150'
+  enrollment: 1374
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-somers:
+  display_name: Somers
+  district_name: SOMERS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627180'
+  enrollment: 2635
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-south-dayton:
+  display_name: South Dayton
+  district_name: PINE VALLEY CENTRAL SCHOOL DISTRICT (SOUTH DAYTON)
+  district_nces_id: '3623070'
+  enrollment: 527
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-south-glens-falls:
+  display_name: South Glens Falls
+  district_name: SOUTH GLENS FALLS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627240'
+  enrollment: 2845
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-southampton:
+  display_name: Southampton
+  district_name: SOUTHAMPTON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3627540'
+  enrollment: 1340
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-southold:
+  display_name: Southold
+  district_name: SOUTHOLD UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3627620'
+  enrollment: 697
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-spencer:
+  display_name: Spencer
+  district_name: SPENCER-VAN ETTEN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627750'
+  enrollment: 817
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-spencerport:
+  display_name: Spencerport
+  district_name: SPENCERPORT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627780'
+  enrollment: 3621
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-spring-valley:
+  display_name: Spring Valley
+  district_name: EAST RAMAPO CENTRAL SCHOOL DISTRICT (SPRING VALLEY)
+  district_nces_id: '3627810'
+  enrollment: 10091
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-springfield-gardens-3600055:
+  display_name: Springfield Gardens
+  district_name: MERRICK ACADEMY-QUEENS PUBLIC CHARTER SCHOOL
+  district_nces_id: '3600055'
+  enrollment: 582
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-springfield-gardens-3601118:
+  display_name: Springfield Gardens
+  district_name: SUCCESS ACADEMY CHARTER SCHOOL - SPRINGFIELD GARDENS
+  district_nces_id: '3601118'
+  enrollment: 895
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-springville:
+  display_name: Springville
+  district_name: SPRINGVILLE-GRIFFITH INSTITUTE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3612990'
+  enrollment: 1624
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-st-johnsville:
+  display_name: St Johnsville
+  district_name: OPPENHEIM-EPHRATAH-ST. JOHNSVILLE CSD
+  district_nces_id: '3601107'
+  enrollment: 776
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-staten-island-3600103:
+  display_name: Staten Island
+  district_name: 'NEW YORK CITY GEOGRAPHIC DISTRICT #31'
+  district_nces_id: '3600103'
+  enrollment: 60306
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-staten-island-3600996:
+  display_name: Staten Island
+  district_name: JOHN W LAVELLE PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3600996'
+  enrollment: 858
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-staten-island-3601019:
+  display_name: Staten Island
+  district_name: NEW WORLD PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3601019'
+  enrollment: 740
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-stillwater:
+  display_name: Stillwater
+  district_name: STILLWATER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628110'
+  enrollment: 1033
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-stony-brook:
+  display_name: Stony Brook
+  district_name: THREE VILLAGE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628200'
+  enrollment: 5717
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-syosset:
+  display_name: Syosset
+  district_name: SYOSSET CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628560'
+  enrollment: 6938
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-syracuse-3600070:
+  display_name: Syracuse
+  district_name: SOUTHSIDE ACADEMY CHARTER SCHOOL
+  district_nces_id: '3600070'
+  enrollment: 691
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-syracuse-3600104:
+  display_name: Syracuse
+  district_name: SYRACUSE ACADEMY OF SCIENCE CHARTER SCHOOL
+  district_nces_id: '3600104'
+  enrollment: 1003
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-syracuse-3601181:
+  display_name: Syracuse
+  district_name: CITIZENSHIP AND SCIENCE ACADEMY OF SYRACUSE CHARTER SCHOOL
+  district_nces_id: '3601181'
+  enrollment: 583
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-syracuse-3607320:
+  display_name: Syracuse
+  district_name: WESTHILL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3607320'
+  enrollment: 1743
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-syracuse-3628590:
+  display_name: Syracuse
+  district_name: SYRACUSE CITY SCHOOL DISTRICT
+  district_nces_id: '3628590'
+  enrollment: 18398
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-thornwood:
+  display_name: Thornwood
+  district_name: MOUNT PLEASANT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3620160'
+  enrollment: 1938
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-ticonderoga:
+  display_name: Ticonderoga
+  district_name: TICONDEROGA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628680'
+  enrollment: 727
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-tioga-center:
+  display_name: Tioga Center
+  district_name: TIOGA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628710'
+  enrollment: 907
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-tonawanda:
+  display_name: Tonawanda
+  district_name: TONAWANDA CITY SCHOOL DISTRICT
+  district_nces_id: '3628740'
+  enrollment: 1703
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-troy-3600992:
+  display_name: Troy
+  district_name: KIPP TROY PREPARATORY CHARTER SCHOOL
+  district_nces_id: '3600992'
+  enrollment: 741
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-troy-3605520:
+  display_name: Troy
+  district_name: BRUNSWICK CENTRAL SCHOOL DISTRICT (BRITTONKILL)
+  district_nces_id: '3605520'
+  enrollment: 1119
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-troy-3616740:
+  display_name: Troy
+  district_name: LANSINGBURGH CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616740'
+  enrollment: 2130
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-troy-3628950:
+  display_name: Troy
+  district_name: TROY CITY SCHOOL DISTRICT
+  district_nces_id: '3628950'
+  enrollment: 3675
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-trumansburg:
+  display_name: Trumansburg
+  district_name: TRUMANSBURG CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3628980'
+  enrollment: 1002
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-tully:
+  display_name: Tully
+  district_name: TULLY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629130'
+  enrollment: 770
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-tupper-lake:
+  display_name: Tupper Lake
+  district_name: TUPPER LAKE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629160'
+  enrollment: 762
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-turin:
+  display_name: Turin
+  district_name: SOUTH LEWIS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3627360'
+  enrollment: 1046
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-union-springs:
+  display_name: Union Springs
+  district_name: UNION SPRINGS CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629250'
+  enrollment: 768
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-uniondale-3601169:
+  display_name: Uniondale
+  district_name: ACADEMY CHARTER SCHOOL-UNIONDALE
+  district_nces_id: '3601169'
+  enrollment: 1272
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-uniondale-3629280:
+  display_name: Uniondale
+  district_name: UNIONDALE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3629280'
+  enrollment: 6211
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-utica:
+  display_name: Utica
+  district_name: UTICA CITY SCHOOL DISTRICT
+  district_nces_id: '3629370'
+  enrollment: 9386
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-valatie:
+  display_name: Valatie
+  district_name: KINDERHOOK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3615210'
+  enrollment: 1718
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-valhalla:
+  display_name: Valhalla
+  district_name: VALHALLA UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3629400'
+  enrollment: 1381
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-valley-stream-3629430:
+  display_name: Valley Stream
+  district_name: VALLEY STREAM 13 UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3629430'
+  enrollment: 2026
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-valley-stream-3629460:
+  display_name: Valley Stream
+  district_name: VALLEY STREAM 24 UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3629460'
+  enrollment: 1055
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-valley-stream-3629490:
+  display_name: Valley Stream
+  district_name: VALLEY STREAM 30 UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3629490'
+  enrollment: 1456
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-valley-stream-3629520:
+  display_name: Valley Stream
+  district_name: VALLEY STREAM CENTRAL HIGH SCHOOL DISTRICT
+  district_nces_id: '3629520'
+  enrollment: 4714
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-verona:
+  display_name: Verona
+  district_name: SHERRILL CITY SCHOOL DISTRICT
+  district_nces_id: '3626760'
+  enrollment: 1841
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-vestal:
+  display_name: Vestal
+  district_name: VESTAL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629610'
+  enrollment: 3443
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-victor:
+  display_name: Victor
+  district_name: VICTOR CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629640'
+  enrollment: 4332
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-voorheesville:
+  display_name: Voorheesville
+  district_name: VOORHEESVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629670'
+  enrollment: 1244
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-wallkill:
+  display_name: Wallkill
+  district_name: WALLKILL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629790'
+  enrollment: 2782
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-walton:
+  display_name: Walton
+  district_name: WALTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629820'
+  enrollment: 859
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-walworth:
+  display_name: Walworth
+  district_name: GANANDA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3611740'
+  enrollment: 912
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-wantagh:
+  display_name: Wantagh
+  district_name: WANTAGH UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3629850'
+  enrollment: 2905
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-warrensburg:
+  display_name: Warrensburg
+  district_name: WARRENSBURG CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629910'
+  enrollment: 674
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-warsaw:
+  display_name: Warsaw
+  district_name: WARSAW CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629940'
+  enrollment: 838
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-warwick:
+  display_name: Warwick
+  district_name: WARWICK VALLEY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3629970'
+  enrollment: 3836
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-washingtonville:
+  display_name: Washingtonville
+  district_name: WASHINGTONVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630030'
+  enrollment: 3973
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-waterford:
+  display_name: Waterford
+  district_name: WATERFORD-HALFMOON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3630060'
+  enrollment: 760
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-waterloo:
+  display_name: Waterloo
+  district_name: WATERLOO CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600014'
+  enrollment: 1512
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-watertown:
+  display_name: Watertown
+  district_name: WATERTOWN CITY SCHOOL DISTRICT
+  district_nces_id: '3630120'
+  enrollment: 3936
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-waterville:
+  display_name: Waterville
+  district_name: WATERVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630160'
+  enrollment: 742
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-watervliet:
+  display_name: Watervliet
+  district_name: WATERVLIET CITY SCHOOL DISTRICT
+  district_nces_id: '3630210'
+  enrollment: 1403
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-watkins-glen:
+  display_name: Watkins Glen
+  district_name: WATKINS GLEN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630240'
+  enrollment: 916
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-waverly:
+  display_name: Waverly
+  district_name: WAVERLY CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630270'
+  enrollment: 1559
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-wayland:
+  display_name: Wayland
+  district_name: WAYLAND-COHOCTON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3600011'
+  enrollment: 1333
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-webster:
+  display_name: Webster
+  district_name: WEBSTER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630360'
+  enrollment: 8071
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-weedsport:
+  display_name: Weedsport
+  district_name: WEEDSPORT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630420'
+  enrollment: 719
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-wellsville:
+  display_name: Wellsville
+  district_name: WELLSVILLE CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630480'
+  enrollment: 1173
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-west-babylon:
+  display_name: West Babylon
+  district_name: WEST BABYLON UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3630540'
+  enrollment: 3693
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-west-chazy:
+  display_name: West Chazy
+  district_name: BEEKMANTOWN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3604290'
+  enrollment: 2033
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-west-hempstead:
+  display_name: West Hempstead
+  district_name: WEST HEMPSTEAD UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3630660'
+  enrollment: 1586
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-west-islip:
+  display_name: West Islip
+  district_name: WEST ISLIP UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3630690'
+  enrollment: 3913
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-west-seneca-3621900:
+  display_name: West Seneca
+  district_name: ORCHARD PARK CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3621900'
+  enrollment: 4859
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-west-seneca-3630780:
+  display_name: West Seneca
+  district_name: WEST SENECA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630780'
+  enrollment: 6148
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-west-winfield:
+  display_name: West Winfield
+  district_name: MOUNT MARKHAM CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630930'
+  enrollment: 1099
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-westbury:
+  display_name: Westbury
+  district_name: EAST MEADOW UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3609840'
+  enrollment: 7802
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-westfield:
+  display_name: Westfield
+  district_name: WESTFIELD CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3630990'
+  enrollment: 654
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-westhampton-beach:
+  display_name: Westhampton Beach
+  district_name: WESTHAMPTON BEACH UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3631020'
+  enrollment: 1767
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-westmoreland:
+  display_name: Westmoreland
+  district_name: WESTMORELAND CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631050'
+  enrollment: 858
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-white-plains:
+  display_name: White Plains
+  district_name: WHITE PLAINS CITY SCHOOL DISTRICT
+  district_nces_id: '3631260'
+  enrollment: 6723
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-whitehall:
+  display_name: Whitehall
+  district_name: WHITEHALL CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631290'
+  enrollment: 694
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-whitesboro:
+  display_name: Whitesboro
+  district_name: WHITESBORO CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631320'
+  enrollment: 3094
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-whitney-point:
+  display_name: Whitney Point
+  district_name: WHITNEY POINT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631380'
+  enrollment: 1432
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-williamson:
+  display_name: Williamson
+  district_name: WILLIAMSON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631440'
+  enrollment: 997
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-wilson:
+  display_name: Wilson
+  district_name: WILSON CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631560'
+  enrollment: 1008
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-windsor:
+  display_name: Windsor
+  district_name: WINDSOR CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3602730'
+  enrollment: 1680
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-wolcott:
+  display_name: Wolcott
+  district_name: NORTH ROSE-WOLCOTT CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3616980'
+  enrollment: 1162
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-woodmere:
+  display_name: Woodmere
+  district_name: HEWLETT-WOODMERE UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3631710'
+  enrollment: 2884
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-woodside:
+  display_name: Woodside
+  district_name: ACADEMY OF THE CITY CHARTER SCHOOL
+  district_nces_id: '3601053'
+  enrollment: 716
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-wyandanch:
+  display_name: Wyandanch
+  district_name: WYANDANCH UNION FREE SCHOOL DISTRICT
+  district_nces_id: '3631800'
+  enrollment: 2743
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-yonkers-3600155:
+  display_name: Yonkers
+  district_name: CHARTER SCHOOL OF EDUCATIONAL EXCELLENCE
+  district_nces_id: '3600155'
+  enrollment: 1119
+  has_charters: true
+  source: ccd_auto
+  state: NY
+ny-yonkers-3631920:
+  display_name: Yonkers
+  district_name: YONKERS CITY SCHOOL DISTRICT
+  district_nces_id: '3631920'
+  enrollment: 24529
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-yorkshire:
+  display_name: Yorkshire
+  district_name: YORKSHIRE-PIONEER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3608970'
+  enrollment: 2235
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-yorktown-heights:
+  display_name: Yorktown Heights
+  district_name: YORKTOWN CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3631980'
+  enrollment: 3472
+  has_charters: false
+  source: ccd_auto
+  state: NY
+ny-youngstown:
+  display_name: Youngstown
+  district_name: LEWISTON-PORTER CENTRAL SCHOOL DISTRICT
+  district_nces_id: '3617190'
+  enrollment: 1872
+  has_charters: false
+  source: ccd_auto
+  state: NY

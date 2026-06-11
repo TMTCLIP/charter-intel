@@ -1,0 +1,608 @@
+sc-abbeville:
+  display_name: Abbeville
+  district_name: Abbeville 60
+  district_nces_id: '4500690'
+  enrollment: 2864
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-aiken:
+  display_name: Aiken
+  district_name: Aiken 01
+  district_nces_id: '4500720'
+  enrollment: 23181
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-anderson:
+  display_name: Anderson
+  district_name: Anderson 05
+  district_nces_id: '4500900'
+  enrollment: 12560
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-barnwell:
+  display_name: Barnwell
+  district_name: Barnwell 45
+  district_nces_id: '4501080'
+  enrollment: 1974
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-batesburg-leesville:
+  display_name: Batesburg-Leesville
+  district_name: Lexington 03
+  district_nces_id: '4502760'
+  enrollment: 1977
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-beaufort:
+  display_name: Beaufort
+  district_name: Beaufort 01
+  district_nces_id: '4501110'
+  enrollment: 21439
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-bennettsville:
+  display_name: Bennettsville
+  district_name: Marlboro 01
+  district_nces_id: '4502970'
+  enrollment: 3549
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-bishopville:
+  display_name: Bishopville
+  district_name: Lee 01
+  district_nces_id: '4502670'
+  enrollment: 1476
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-camden:
+  display_name: Camden
+  district_name: Kershaw 01
+  district_nces_id: '4502550'
+  enrollment: 11138
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-campobello:
+  display_name: Campobello
+  district_name: Spartanburg 01
+  district_nces_id: '4503480'
+  enrollment: 5458
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-charleston:
+  display_name: Charleston
+  district_name: Charleston 01
+  district_nces_id: '4501440'
+  enrollment: 49929
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-chesnee:
+  display_name: Chesnee
+  district_name: Spartanburg 02
+  district_nces_id: '4503510'
+  enrollment: 11740
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-chester:
+  display_name: Chester
+  district_name: Chester 01
+  district_nces_id: '4501530'
+  enrollment: 4767
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-chesterfield:
+  display_name: Chesterfield
+  district_name: Chesterfield 01
+  district_nces_id: '4501560'
+  enrollment: 7019
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-clinton:
+  display_name: Clinton
+  district_name: Laurens 56
+  district_nces_id: '4502640'
+  enrollment: 2715
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-clover:
+  display_name: Clover
+  district_name: York 02
+  district_nces_id: '4503840'
+  enrollment: 9087
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-columbia-4503360:
+  display_name: Columbia
+  district_name: Richland 01
+  district_nces_id: '4503360'
+  enrollment: 22037
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-columbia-4503390:
+  display_name: Columbia
+  district_name: Richland 02
+  district_nces_id: '4503390'
+  enrollment: 28510
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-columbia-4503901:
+  display_name: Columbia
+  district_name: SC Public Charter School District
+  district_nces_id: '4503901'
+  enrollment: 17601
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-columbia-4503909:
+  display_name: Columbia
+  district_name: Charter Institute at Erskine
+  district_nces_id: '4503909'
+  enrollment: 22535
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-columbia-4503919:
+  display_name: Columbia
+  district_name: Limestone Charters Association
+  district_nces_id: '4503919'
+  enrollment: 1888
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-conway:
+  display_name: Conway
+  district_name: Horry 01
+  district_nces_id: '4502490'
+  enrollment: 47357
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-darlington:
+  display_name: Darlington
+  district_name: Darlington 01
+  district_nces_id: '4501860'
+  enrollment: 9042
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-denmark:
+  display_name: Denmark
+  district_name: Bamberg 03
+  district_nces_id: '4503916'
+  enrollment: 1773
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-dillon:
+  display_name: Dillon
+  district_name: Dillon 04
+  district_nces_id: '4501920'
+  enrollment: 3880
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-duncan:
+  display_name: Duncan
+  district_name: Spartanburg 05
+  district_nces_id: '4503600'
+  enrollment: 10386
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-easley:
+  display_name: Easley
+  district_name: Pickens 01
+  district_nces_id: '4503330'
+  enrollment: 16310
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-fairfax:
+  display_name: Fairfax
+  district_name: Allendale 01
+  district_nces_id: '4500750'
+  enrollment: 974
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-florence:
+  display_name: Florence
+  district_name: Florence 01
+  district_nces_id: '4502130'
+  enrollment: 16024
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-fort-mill:
+  display_name: Fort Mill
+  district_name: York 04
+  district_nces_id: '4503900'
+  enrollment: 18191
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-gaffney:
+  display_name: Gaffney
+  district_name: Cherokee 01
+  district_nces_id: '4501500'
+  enrollment: 7925
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-georgetown:
+  display_name: Georgetown
+  district_name: Georgetown 01
+  district_nces_id: '4502280'
+  enrollment: 8429
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-glendale:
+  display_name: Glendale
+  district_name: Spartanburg 03
+  district_nces_id: '4503540'
+  enrollment: 2784
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-greenville:
+  display_name: Greenville
+  district_name: Greenville 01
+  district_nces_id: '4502310'
+  enrollment: 77978
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-greenwood:
+  display_name: Greenwood
+  district_name: Greenwood 50
+  district_nces_id: '4502340'
+  enrollment: 8610
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-honea-path:
+  display_name: Honea Path
+  district_name: Anderson 02
+  district_nces_id: '4500810'
+  enrollment: 3494
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-irmo:
+  display_name: Irmo
+  district_name: Lexington 05
+  district_nces_id: '4502820'
+  enrollment: 17463
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-iva:
+  display_name: Iva
+  district_name: Anderson 03
+  district_nces_id: '4500840'
+  enrollment: 2737
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-johnsonville:
+  display_name: Johnsonville
+  district_name: Florence 05
+  district_nces_id: '4502250'
+  enrollment: 1225
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-johnston:
+  display_name: Johnston
+  district_name: Edgefield 01
+  district_nces_id: '4502070'
+  enrollment: 3100
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-kingstree:
+  display_name: Kingstree
+  district_name: Williamsburg 01
+  district_nces_id: '4503780'
+  enrollment: 2946
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-lake-city:
+  display_name: Lake City
+  district_name: Florence 03
+  district_nces_id: '4502190'
+  enrollment: 2993
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-lancaster:
+  display_name: Lancaster
+  district_name: Lancaster 01
+  district_nces_id: '4502580'
+  enrollment: 15114
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-latta:
+  display_name: Latta
+  district_name: Dillon 03
+  district_nces_id: '4501950'
+  enrollment: 1506
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-laurens:
+  display_name: Laurens
+  district_name: Laurens 55
+  district_nces_id: '4502610'
+  enrollment: 5344
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-lexington:
+  display_name: Lexington
+  district_name: Lexington 01
+  district_nces_id: '4502700'
+  enrollment: 28031
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-manning:
+  display_name: Manning
+  district_name: Clarendon 06
+  district_nces_id: '4503915'
+  enrollment: 4329
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-marion:
+  display_name: Marion
+  district_name: Marion 10
+  district_nces_id: '4503908'
+  enrollment: 3875
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-mccormick:
+  display_name: Mccormick
+  district_name: McCormick 01
+  district_nces_id: '4503000'
+  enrollment: 582
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-moncks-corner:
+  display_name: Moncks Corner
+  district_name: Berkeley 01
+  district_nces_id: '4501170'
+  enrollment: 37932
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-newberry:
+  display_name: Newberry
+  district_name: Newberry 01
+  district_nces_id: '4503030'
+  enrollment: 5806
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-ninety-six:
+  display_name: Ninety Six
+  district_name: Greenwood 52
+  district_nces_id: '4502400'
+  enrollment: 1484
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-orangeburg:
+  display_name: Orangeburg
+  district_name: Orangeburg
+  district_nces_id: '4503910'
+  enrollment: 10979
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-pamplico:
+  display_name: Pamplico
+  district_name: Florence 02
+  district_nces_id: '4502160'
+  enrollment: 1068
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-pendleton:
+  display_name: Pendleton
+  district_name: Anderson 04
+  district_nces_id: '4500870'
+  enrollment: 3005
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-ridgeland:
+  display_name: Ridgeland
+  district_name: Jasper 01
+  district_nces_id: '4502520'
+  enrollment: 2635
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-rock-hill:
+  display_name: Rock Hill
+  district_name: York 03
+  district_nces_id: '4503870'
+  enrollment: 16493
+  has_charters: true
+  source: ccd_auto
+  state: SC
+sc-roebuck:
+  display_name: Roebuck
+  district_name: Spartanburg 06
+  district_nces_id: '4503630'
+  enrollment: 11687
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-saluda:
+  display_name: Saluda
+  district_name: Saluda 01
+  district_nces_id: '4503460'
+  enrollment: 2480
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-spartanburg:
+  display_name: Spartanburg
+  district_name: Spartanburg 07
+  district_nces_id: '4503660'
+  enrollment: 7371
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-st-george:
+  display_name: St. George
+  district_name: Dorchester 04
+  district_nces_id: '4500002'
+  enrollment: 2027
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-st-matthews:
+  display_name: St. Matthews
+  district_name: Calhoun 01
+  district_nces_id: '4501250'
+  enrollment: 1546
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-summerville:
+  display_name: Summerville
+  district_name: Dorchester 02
+  district_nces_id: '4502010'
+  enrollment: 26135
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-sumter:
+  display_name: Sumter
+  district_name: Sumter 01
+  district_nces_id: '4503902'
+  enrollment: 14800
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-swansea:
+  display_name: Swansea
+  district_name: Lexington 04
+  district_nces_id: '4502790'
+  enrollment: 3544
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-union:
+  display_name: Union
+  district_name: Union 01
+  district_nces_id: '4503750'
+  enrollment: 3788
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-varnville:
+  display_name: Varnville
+  district_name: Hampton
+  district_nces_id: '4503912'
+  enrollment: 2399
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-walhalla:
+  display_name: Walhalla
+  district_name: Oconee 01
+  district_nces_id: '4503060'
+  enrollment: 10217
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-walterboro:
+  display_name: Walterboro
+  district_name: Colleton 01
+  district_nces_id: '4501830'
+  enrollment: 4946
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-ware-shoals:
+  display_name: Ware Shoals
+  district_name: Greenwood 51
+  district_nces_id: '4502370'
+  enrollment: 893
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-west-columbia:
+  display_name: West Columbia
+  district_name: Lexington 02
+  district_nces_id: '4502730'
+  enrollment: 8626
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-williamston:
+  display_name: Williamston
+  district_name: Anderson 01
+  district_nces_id: '4500780'
+  enrollment: 10839
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-williston:
+  display_name: Williston
+  district_name: Barnwell 48
+  district_nces_id: '4503914'
+  enrollment: 1194
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-winnsboro:
+  display_name: Winnsboro
+  district_name: Fairfield 01
+  district_nces_id: '4502100'
+  enrollment: 2278
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-woodruff:
+  display_name: Woodruff
+  district_name: Spartanburg 04
+  district_nces_id: '4503570'
+  enrollment: 2901
+  has_charters: false
+  source: ccd_auto
+  state: SC
+sc-york:
+  display_name: York
+  district_name: York 01
+  district_nces_id: '4503810'
+  enrollment: 5038
+  has_charters: false
+  source: ccd_auto
+  state: SC

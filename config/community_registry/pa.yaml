@@ -1,0 +1,4784 @@
+pa-abington:
+  display_name: Abington
+  district_name: Abington SD
+  district_nces_id: '4202040'
+  enrollment: 8543
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-albion:
+  display_name: Albion
+  district_name: Northwestern SD
+  district_nces_id: '4217880'
+  enrollment: 1212
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-alexandria:
+  display_name: Alexandria
+  district_name: Juniata Valley SD
+  district_nces_id: '4212630'
+  enrollment: 708
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-aliquippa-4202130:
+  display_name: Aliquippa
+  district_name: Aliquippa SD
+  district_nces_id: '4202130'
+  enrollment: 949
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-aliquippa-4212030:
+  display_name: Aliquippa
+  district_name: Hopewell Area SD
+  district_nces_id: '4212030'
+  enrollment: 2062
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-allentown-4200068:
+  display_name: Allentown
+  district_name: Roberto Clemente CS
+  district_nces_id: '4200068'
+  enrollment: 628
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-allentown-4200819:
+  display_name: Allentown
+  district_name: Lincoln Leadership Academy CS
+  district_nces_id: '4200819'
+  enrollment: 899
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-allentown-4200879:
+  display_name: Allentown
+  district_name: Executive Education Academy CS
+  district_nces_id: '4200879'
+  enrollment: 1368
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-allentown-4202280:
+  display_name: Allentown
+  district_name: Allentown City SD
+  district_nces_id: '4202280'
+  enrollment: 15988
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-allentown-4218510:
+  display_name: Allentown
+  district_name: Parkland SD
+  district_nces_id: '4218510'
+  enrollment: 9833
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-allentown-4220730:
+  display_name: Allentown
+  district_name: Salisbury Township SD
+  district_nces_id: '4220730'
+  enrollment: 1490
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-allison-park:
+  display_name: Allison Park
+  district_name: Hampton Township SD
+  district_nces_id: '4211400'
+  enrollment: 2645
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-altoona:
+  display_name: Altoona
+  district_name: Altoona Area SD
+  district_nces_id: '4202340'
+  enrollment: 7226
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ambler:
+  display_name: Ambler
+  district_name: Wissahickon SD
+  district_nces_id: '4202400'
+  enrollment: 5092
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ambridge:
+  display_name: Ambridge
+  district_name: Ambridge Area SD
+  district_nces_id: '4202440'
+  enrollment: 2254
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-annville:
+  display_name: Annville
+  district_name: Annville-Cleona SD
+  district_nces_id: '4202490'
+  enrollment: 1447
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-archbald:
+  display_name: Archbald
+  district_name: Valley View SD
+  district_nces_id: '4224650'
+  enrollment: 2390
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ardmore:
+  display_name: Ardmore
+  district_name: Lower Merion SD
+  district_nces_id: '4214160'
+  enrollment: 8523
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-armagh:
+  display_name: Armagh
+  district_name: United SD
+  district_nces_id: '4224240'
+  enrollment: 895
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ashland:
+  display_name: Ashland
+  district_name: North Schuylkill SD
+  district_nces_id: '4210110'
+  enrollment: 2098
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-aston-4205910:
+  display_name: Aston
+  district_name: Chichester SD
+  district_nces_id: '4205910'
+  enrollment: 3047
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-aston-4218580:
+  display_name: Aston
+  district_name: Penn-Delco SD
+  district_nces_id: '4218580'
+  enrollment: 3258
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-atglen:
+  display_name: Atglen
+  district_name: Octorara Area SD
+  district_nces_id: '4218030'
+  enrollment: 2075
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-athens:
+  display_name: Athens
+  district_name: Athens Area SD
+  district_nces_id: '4202670'
+  enrollment: 2069
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-baden:
+  display_name: Baden
+  district_name: Baden Academy CS
+  district_nces_id: '4200861'
+  enrollment: 586
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-bangor:
+  display_name: Bangor
+  district_name: Bangor Area SD
+  district_nces_id: '4203000'
+  enrollment: 2776
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bear-creek-township:
+  display_name: Bear Creek Township
+  district_name: Bear Creek Community CS
+  district_nces_id: '4200126'
+  enrollment: 511
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-beaver:
+  display_name: Beaver
+  district_name: Beaver Area SD
+  district_nces_id: '4203120'
+  enrollment: 1973
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-beaver-falls-4203630:
+  display_name: Beaver Falls
+  district_name: Big Beaver Falls Area SD
+  district_nces_id: '4203630'
+  enrollment: 1666
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-beaver-falls-4203688:
+  display_name: Beaver Falls
+  district_name: Blackhawk SD
+  district_nces_id: '4203688'
+  enrollment: 2327
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bedford:
+  display_name: Bedford
+  district_name: Bedford Area SD
+  district_nces_id: '4203180'
+  enrollment: 1706
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-belle-vernon:
+  display_name: Belle Vernon
+  district_name: Belle Vernon Area SD
+  district_nces_id: '4203210'
+  enrollment: 2369
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bellefonte:
+  display_name: Bellefonte
+  district_name: Bellefonte Area SD
+  district_nces_id: '4203240'
+  enrollment: 2599
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bellwood:
+  display_name: Bellwood
+  district_name: Bellwood-Antis SD
+  district_nces_id: '4203300'
+  enrollment: 1166
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bensalem-4200030:
+  display_name: Bensalem
+  district_name: School Lane CS
+  district_nces_id: '4200030'
+  enrollment: 1324
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-bensalem-4203330:
+  display_name: Bensalem
+  district_name: Bensalem Township SD
+  district_nces_id: '4203330'
+  enrollment: 6348
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bentleyville:
+  display_name: Bentleyville
+  district_name: Bentworth SD
+  district_nces_id: '4203360'
+  enrollment: 1051
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-benton:
+  display_name: Benton
+  district_name: Benton Area SD
+  district_nces_id: '4203390'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-berlin:
+  display_name: Berlin
+  district_name: Berlin Brothersvalley SD
+  district_nces_id: '4203420'
+  enrollment: 723
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-berwick:
+  display_name: Berwick
+  district_name: Berwick Area SD
+  district_nces_id: '4203480'
+  enrollment: 2665
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bethel:
+  display_name: Bethel
+  district_name: Tulpehocken Area SD
+  district_nces_id: '4223820'
+  enrollment: 1305
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bethel-park:
+  display_name: Bethel Park
+  district_name: Bethel Park SD
+  district_nces_id: '4203510'
+  enrollment: 3937
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bethlehem-4200098:
+  display_name: Bethlehem
+  district_name: Lehigh Valley Academy Regional CS
+  district_nces_id: '4200098'
+  enrollment: 1801
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-bethlehem-4200099:
+  display_name: Bethlehem
+  district_name: Lehigh Valley Charter High School for the Arts
+  district_nces_id: '4200099'
+  enrollment: 563
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-bethlehem-4203570:
+  display_name: Bethlehem
+  district_name: Bethlehem Area SD
+  district_nces_id: '4203570'
+  enrollment: 12973
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-biglerville:
+  display_name: Biglerville
+  district_name: Upper Adams SD
+  district_nces_id: '4224300'
+  enrollment: 1595
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-birdsboro:
+  display_name: Birdsboro
+  district_name: Daniel Boone Area SD
+  district_nces_id: '4207290'
+  enrollment: 3062
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-blairsville:
+  display_name: Blairsville
+  district_name: River Valley SD
+  district_nces_id: '4203750'
+  enrollment: 1430
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bloomsburg-4203840:
+  display_name: Bloomsburg
+  district_name: Bloomsburg Area SD
+  district_nces_id: '4203840'
+  enrollment: 1534
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bloomsburg-4205370:
+  display_name: Bloomsburg
+  district_name: Central Columbia SD
+  district_nces_id: '4205370'
+  enrollment: 1912
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bloomsburg-4206365:
+  display_name: Bloomsburg
+  district_name: Columbia-Montour AVTS
+  district_nces_id: '4206365'
+  enrollment: 609
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-blossburg:
+  display_name: Blossburg
+  district_name: Southern Tioga SD
+  district_nces_id: '4222370'
+  enrollment: 1702
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-boiling-springs:
+  display_name: Boiling Springs
+  district_name: South Middleton SD
+  district_nces_id: '4222050'
+  enrollment: 2178
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-boswell:
+  display_name: Boswell
+  district_name: North Star SD
+  district_nces_id: '4210115'
+  enrollment: 1001
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-boyertown:
+  display_name: Boyertown
+  district_name: Boyertown Area SD
+  district_nces_id: '4203960'
+  enrollment: 6652
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bradford:
+  display_name: Bradford
+  district_name: Bradford Area SD
+  district_nces_id: '4204020'
+  enrollment: 2423
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-bristol:
+  display_name: Bristol
+  district_name: Bristol Borough SD
+  district_nces_id: '4204200'
+  enrollment: 1170
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-brockway:
+  display_name: Brockway
+  district_name: Brockway Area SD
+  district_nces_id: '4204260'
+  enrollment: 890
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-brodheadsville:
+  display_name: Brodheadsville
+  district_name: Pleasant Valley SD
+  district_nces_id: '4219290'
+  enrollment: 4139
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-brookville:
+  display_name: Brookville
+  district_name: Brookville Area SD
+  district_nces_id: '4204320'
+  enrollment: 1364
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-brownsville:
+  display_name: Brownsville
+  district_name: Brownsville Area SD
+  district_nces_id: '4204080'
+  enrollment: 1486
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-burgettstown:
+  display_name: Burgettstown
+  district_name: Burgettstown Area SD
+  district_nces_id: '4204500'
+  enrollment: 989
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-butler:
+  display_name: Butler
+  district_name: Butler Area SD
+  district_nces_id: '4204590'
+  enrollment: 6058
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-camp-hill:
+  display_name: Camp Hill
+  district_name: Camp Hill SD
+  district_nces_id: '4204860'
+  enrollment: 1203
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-canonsburg:
+  display_name: Canonsburg
+  district_name: Canon-McMillan SD
+  district_nces_id: '4204890'
+  enrollment: 5347
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-canton:
+  display_name: Canton
+  district_name: Canton Area SD
+  district_nces_id: '4204920'
+  enrollment: 850
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-carbondale:
+  display_name: Carbondale
+  district_name: Carbondale Area SD
+  district_nces_id: '4204980'
+  enrollment: 1553
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-carlisle:
+  display_name: Carlisle
+  district_name: Carlisle Area SD
+  district_nces_id: '4205010'
+  enrollment: 5060
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-carmichaels:
+  display_name: Carmichaels
+  district_name: Carmichaels Area SD
+  district_nces_id: '4205070'
+  enrollment: 960
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-carnegie:
+  display_name: Carnegie
+  district_name: Carlynton SD
+  district_nces_id: '4205040'
+  enrollment: 1249
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-catasauqua-4200894:
+  display_name: Catasauqua
+  district_name: Innovative Arts Academy CS
+  district_nces_id: '4200894'
+  enrollment: 531
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-catasauqua-4205160:
+  display_name: Catasauqua
+  district_name: Catasauqua Area SD
+  district_nces_id: '4205160'
+  enrollment: 1455
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-catawissa:
+  display_name: Catawissa
+  district_name: Southern Columbia Area SD
+  district_nces_id: '4222260'
+  enrollment: 1235
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-center-valley:
+  display_name: Center Valley
+  district_name: Southern Lehigh SD
+  district_nces_id: '4222350'
+  enrollment: 3078
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-chambersburg:
+  display_name: Chambersburg
+  district_name: Chambersburg Area SD
+  district_nces_id: '4205550'
+  enrollment: 9303
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-charleroi:
+  display_name: Charleroi
+  district_name: Charleroi SD
+  district_nces_id: '4205640'
+  enrollment: 1393
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-chester-4200035:
+  display_name: Chester
+  district_name: Chester Community CS
+  district_nces_id: '4200035'
+  enrollment: 4281
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-chester-4200857:
+  display_name: Chester
+  district_name: Chester Charter Scholars Academy CS
+  district_nces_id: '4200857'
+  enrollment: 700
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-chester-4205860:
+  display_name: Chester
+  district_name: Chester-Upland SD
+  district_nces_id: '4205860'
+  enrollment: 3100
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-cheswick-4202190:
+  display_name: Cheswick
+  district_name: Allegheny Valley SD
+  district_nces_id: '4202190'
+  enrollment: 889
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-cheswick-4207540:
+  display_name: Cheswick
+  district_name: Deer Lakes SD
+  district_nces_id: '4207540'
+  enrollment: 1754
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-clairton:
+  display_name: Clairton
+  district_name: Clairton City SD
+  district_nces_id: '4206030'
+  enrollment: 815
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-clarion:
+  display_name: Clarion
+  district_name: Clarion Area SD
+  district_nces_id: '4206060'
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-clarks-summit:
+  display_name: Clarks Summit
+  district_name: Abington Heights SD
+  district_nces_id: '4202010'
+  enrollment: 3474
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-claysburg:
+  display_name: Claysburg
+  district_name: Claysburg-Kimmel SD
+  district_nces_id: '4206120'
+  enrollment: 762
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-claysville:
+  display_name: Claysville
+  district_name: McGuffey SD
+  district_nces_id: '4214880'
+  enrollment: 1539
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-clearfield:
+  display_name: Clearfield
+  district_name: Clearfield Area SD
+  district_nces_id: '4206150'
+  enrollment: 2076
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-clymer:
+  display_name: Clymer
+  district_name: Penns Manor Area SD
+  district_nces_id: '4218780'
+  enrollment: 736
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-coal-center:
+  display_name: Coal Center
+  district_name: California Area SD
+  district_nces_id: '4204710'
+  enrollment: 922
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-coal-township:
+  display_name: Coal Township
+  district_name: Shamokin Area SD
+  district_nces_id: '4221240'
+  enrollment: 2213
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-collegeville:
+  display_name: Collegeville
+  district_name: Perkiomen Valley SD
+  district_nces_id: '4218930'
+  enrollment: 5031
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-columbia:
+  display_name: Columbia
+  district_name: Columbia Borough SD
+  district_nces_id: '4206360'
+  enrollment: 1249
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-commodore:
+  display_name: Commodore
+  district_name: Purchase Line SD
+  district_nces_id: '4219830'
+  enrollment: 789
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-connellsville:
+  display_name: Connellsville
+  district_name: Connellsville Area SD
+  district_nces_id: '4206660'
+  enrollment: 3732
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-coraopolis:
+  display_name: Coraopolis
+  district_name: Cornell SD
+  district_nces_id: '4206810'
+  enrollment: 526
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-corry:
+  display_name: Corry
+  district_name: Corry Area SD
+  district_nces_id: '4206860'
+  enrollment: 1869
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-coudersport:
+  display_name: Coudersport
+  district_name: Coudersport Area SD
+  district_nces_id: '4206930'
+  enrollment: 559
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-cresson:
+  display_name: Cresson
+  district_name: Penn Cambria SD
+  district_nces_id: '4213770'
+  enrollment: 1531
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-curwensville:
+  display_name: Curwensville
+  district_name: Curwensville Area SD
+  district_nces_id: '4207140'
+  enrollment: 989
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-dallas-4207200:
+  display_name: Dallas
+  district_name: Dallas SD
+  district_nces_id: '4207200'
+  enrollment: 2449
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-dallas-4213020:
+  display_name: Dallas
+  district_name: Lake-Lehman SD
+  district_nces_id: '4213020'
+  enrollment: 1573
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-dallastown:
+  display_name: Dallastown
+  district_name: Dallastown Area SD
+  district_nces_id: '4207230'
+  enrollment: 6369
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-danville:
+  display_name: Danville
+  district_name: Danville Area SD
+  district_nces_id: '4207320'
+  enrollment: 2162
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-davidsville:
+  display_name: Davidsville
+  district_name: Conemaugh Township Area SD
+  district_nces_id: '4206420'
+  enrollment: 884
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-denver:
+  display_name: Denver
+  district_name: Cocalico SD
+  district_nces_id: '4206270'
+  enrollment: 2937
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-derry:
+  display_name: Derry
+  district_name: Derry Area SD
+  district_nces_id: '4207560'
+  enrollment: 1797
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-dillsburg:
+  display_name: Dillsburg
+  district_name: Northern York County SD
+  district_nces_id: '4217760'
+  enrollment: 3343
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-dover:
+  display_name: Dover
+  district_name: Dover Area SD
+  district_nces_id: '4207680'
+  enrollment: 3287
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-downingtown-4207710:
+  display_name: Downingtown
+  district_name: Downingtown Area SD
+  district_nces_id: '4207710'
+  enrollment: 13204
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-downingtown-4289340:
+  display_name: Downingtown
+  district_name: Chester County IU 24
+  district_nces_id: '4289340'
+  enrollment: 809
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-doylestown-4205310:
+  display_name: Doylestown
+  district_name: Central Bucks SD
+  district_nces_id: '4205310'
+  enrollment: 17540
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-doylestown-4289320:
+  display_name: Doylestown
+  district_name: Bucks County IU 22
+  district_nces_id: '4289320'
+  enrollment: 630
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-drexel-hill:
+  display_name: Drexel Hill
+  district_name: Upper Darby SD
+  district_nces_id: '4224320'
+  enrollment: 12495
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-dubois:
+  display_name: Dubois
+  district_name: DuBois Area SD
+  district_nces_id: '4207830'
+  enrollment: 3289
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-duke-center:
+  display_name: Duke Center
+  district_name: Otto-Eldred SD
+  district_nces_id: '4218240'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-duncannon:
+  display_name: Duncannon
+  district_name: Susquenita SD
+  district_nces_id: '4223040'
+  enrollment: 1772
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-dunmore:
+  display_name: Dunmore
+  district_name: Dunmore SD
+  district_nces_id: '4207980'
+  enrollment: 1460
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-eagleville:
+  display_name: Eagleville
+  district_name: Methacton SD
+  district_nces_id: '4214250'
+  enrollment: 4584
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-east-stroudsburg:
+  display_name: East Stroudsburg
+  district_name: East Stroudsburg Area SD
+  district_nces_id: '4208670'
+  enrollment: 6383
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-easton-4208850:
+  display_name: Easton
+  district_name: Easton Area SD
+  district_nces_id: '4208850'
+  enrollment: 7990
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-easton-4226550:
+  display_name: Easton
+  district_name: Wilson Area SD
+  district_nces_id: '4226550'
+  enrollment: 2160
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-easton-4289300:
+  display_name: Easton
+  district_name: Colonial IU 20
+  district_nces_id: '4289300'
+  enrollment: 1514
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ebensburg:
+  display_name: Ebensburg
+  district_name: Central Cambria SD
+  district_nces_id: '4205340'
+  enrollment: 1601
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-edinboro:
+  display_name: Edinboro
+  district_name: General McLane SD
+  district_nces_id: '4210650'
+  enrollment: 2106
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-elizabeth:
+  display_name: Elizabeth
+  district_name: Elizabeth Forward SD
+  district_nces_id: '4209090'
+  enrollment: 2330
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-elizabethtown:
+  display_name: Elizabethtown
+  district_name: Elizabethtown Area SD
+  district_nces_id: '4209120'
+  enrollment: 3640
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-elkins-park:
+  display_name: Elkins Park
+  district_name: Cheltenham SD
+  district_nces_id: '4205760'
+  enrollment: 4240
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-elkland:
+  display_name: Elkland
+  district_name: Northern Tioga SD
+  district_nces_id: '4217730'
+  enrollment: 1995
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-elliottsburg:
+  display_name: Elliottsburg
+  district_name: West Perry SD
+  district_nces_id: '4225740'
+  enrollment: 2177
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ellwood-city-4209240:
+  display_name: Ellwood City
+  district_name: Ellwood City Area SD
+  district_nces_id: '4209240'
+  enrollment: 1531
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ellwood-city-4217430:
+  display_name: Ellwood City
+  district_name: Riverside Beaver County SD
+  district_nces_id: '4217430'
+  enrollment: 1411
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-elverson:
+  display_name: Elverson
+  district_name: Twin Valley SD
+  district_nces_id: '4224000'
+  enrollment: 3030
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-emmaus:
+  display_name: Emmaus
+  district_name: East Penn SD
+  district_nces_id: '4208550'
+  enrollment: 7973
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-enola:
+  display_name: Enola
+  district_name: East Pennsboro Area SD
+  district_nces_id: '4208580'
+  enrollment: 2492
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ephrata:
+  display_name: Ephrata
+  district_name: Ephrata Area SD
+  district_nces_id: '4209270'
+  enrollment: 3953
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-erie-4200020:
+  display_name: Erie
+  district_name: Robert Benjamin Wiley Community CS
+  district_nces_id: '4200020'
+  enrollment: 558
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-erie-4200115:
+  display_name: Erie
+  district_name: Perseus House CS of Excellence
+  district_nces_id: '4200115'
+  enrollment: 610
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-erie-4200124:
+  display_name: Erie
+  district_name: Montessori Regional CS
+  district_nces_id: '4200124'
+  enrollment: 583
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-erie-4209300:
+  display_name: Erie
+  district_name: Erie City SD
+  district_nces_id: '4209300'
+  enrollment: 10100
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-erie-4212210:
+  display_name: Erie
+  district_name: Iroquois SD
+  district_nces_id: '4212210'
+  enrollment: 1077
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-erie-4215330:
+  display_name: Erie
+  district_name: Millcreek Township SD
+  district_nces_id: '4215330'
+  enrollment: 6411
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-erie-4225080:
+  display_name: Erie
+  district_name: Wattsburg Area SD
+  district_nces_id: '4225080'
+  enrollment: 1256
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-everett:
+  display_name: Everett
+  district_name: Everett Area SD
+  district_nces_id: '4209360'
+  enrollment: 1165
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-exeter:
+  display_name: Exeter
+  district_name: Wyoming Area SD
+  district_nces_id: '4226730'
+  enrollment: 2033
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-exton-4200050:
+  display_name: Exton
+  district_name: Collegium CS
+  district_nces_id: '4200050'
+  enrollment: 2647
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-exton-4200128:
+  display_name: Exton
+  district_name: Achievement House CS
+  district_nces_id: '4200128'
+  enrollment: 958
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-exton-4200898:
+  display_name: Exton
+  district_name: Insight PA Cyber CS
+  district_nces_id: '4200898'
+  enrollment: 3638
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-exton-4225290:
+  display_name: Exton
+  district_name: West Chester Area SD
+  district_nces_id: '4225290'
+  enrollment: 12145
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-factoryville:
+  display_name: Factoryville
+  district_name: Lackawanna Trail SD
+  district_nces_id: '4212990'
+  enrollment: 956
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-fairfield:
+  display_name: Fairfield
+  district_name: Fairfield Area SD
+  district_nces_id: '4209540'
+  enrollment: 960
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-fairless-hills:
+  display_name: Fairless Hills
+  district_name: Bucks County Technical High School
+  district_nces_id: '4280090'
+  enrollment: 1439
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-fairview:
+  display_name: Fairview
+  district_name: Fairview SD
+  district_nces_id: '4209570'
+  enrollment: 1876
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-fallsington:
+  display_name: Fallsington
+  district_name: Pennsbury SD
+  district_nces_id: '4218840'
+  enrollment: 9608
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-farrell:
+  display_name: Farrell
+  district_name: Farrell Area SD
+  district_nces_id: '4209690'
+  enrollment: 643
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-fawn-grove:
+  display_name: Fawn Grove
+  district_name: South Eastern SD
+  district_nces_id: '4222170'
+  enrollment: 2459
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-fishertown:
+  display_name: Fishertown
+  district_name: Chestnut Ridge SD
+  district_nces_id: '4205880'
+  enrollment: 1236
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-fleetwood:
+  display_name: Fleetwood
+  district_name: Fleetwood Area SD
+  district_nces_id: '4209780'
+  enrollment: 2258
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-flinton:
+  display_name: Flinton
+  district_name: Glendale SD
+  district_nces_id: '4210830'
+  enrollment: 667
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-folcroft:
+  display_name: Folcroft
+  district_name: Southeast Delco SD
+  district_nces_id: '4222400'
+  enrollment: 4125
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-folsom:
+  display_name: Folsom
+  district_name: Ridley SD
+  district_nces_id: '4220370'
+  enrollment: 5519
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ford-city:
+  display_name: Ford City
+  district_name: Lenape Tech
+  district_nces_id: '4202600'
+  enrollment: 581
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-forest-city:
+  display_name: Forest City
+  district_name: Forest City Regional SD
+  district_nces_id: '4209930'
+  enrollment: 761
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-foxburg:
+  display_name: Foxburg
+  district_name: Allegheny-Clarion Valley SD
+  district_nces_id: '4202310'
+  enrollment: 593
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-franklin-4210200:
+  display_name: Franklin
+  district_name: Franklin Area SD
+  district_nces_id: '4210200'
+  enrollment: 1806
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-franklin-4224630:
+  display_name: Franklin
+  district_name: Valley Grove SD
+  district_nces_id: '4224630'
+  enrollment: 812
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-fredericksburg:
+  display_name: Fredericksburg
+  district_name: Northern Lebanon SD
+  district_nces_id: '4217640'
+  enrollment: 2130
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-fredericktown:
+  display_name: Fredericktown
+  district_name: Bethlehem-Center SD
+  district_nces_id: '4203600'
+  enrollment: 987
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-freedom:
+  display_name: Freedom
+  district_name: Freedom Area SD
+  district_nces_id: '4210380'
+  enrollment: 1217
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-gettysburg:
+  display_name: Gettysburg
+  district_name: Gettysburg Area SD
+  district_nces_id: '4210710'
+  enrollment: 2783
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-gibsonia:
+  display_name: Gibsonia
+  district_name: Pine-Richland SD
+  district_nces_id: '4202850'
+  enrollment: 4537
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-girard:
+  display_name: Girard
+  district_name: Girard SD
+  district_nces_id: '4210740'
+  enrollment: 1545
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-glen-mills:
+  display_name: Glen Mills
+  district_name: Garnet Valley SD
+  district_nces_id: '4210590'
+  enrollment: 4522
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-glen-rock:
+  display_name: Glen Rock
+  district_name: Southern York County SD
+  district_nces_id: '4222380'
+  enrollment: 2855
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-glenshaw:
+  display_name: Glenshaw
+  district_name: Shaler Area SD
+  district_nces_id: '4221200'
+  enrollment: 3843
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-greencastle:
+  display_name: Greencastle
+  district_name: Greencastle-Antrim SD
+  district_nces_id: '4211010'
+  enrollment: 2991
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-greensboro:
+  display_name: Greensboro
+  district_name: Southeastern Greene SD
+  district_nces_id: '4222200'
+  enrollment: 579
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-greensburg-4210920:
+  display_name: Greensburg
+  district_name: Greensburg Salem SD
+  district_nces_id: '4210920'
+  enrollment: 2572
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-greensburg-4211760:
+  display_name: Greensburg
+  district_name: Hempfield Area SD
+  district_nces_id: '4211760'
+  enrollment: 5195
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-greenville-4211160:
+  display_name: Greenville
+  district_name: Greenville Area SD
+  district_nces_id: '4211160'
+  enrollment: 1278
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-greenville-4220220:
+  display_name: Greenville
+  district_name: Reynolds SD
+  district_nces_id: '4220220'
+  enrollment: 952
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-grove-city:
+  display_name: Grove City
+  district_name: Grove City Area SD
+  district_nces_id: '4211220'
+  enrollment: 1906
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-halifax:
+  display_name: Halifax
+  district_name: Halifax Area SD
+  district_nces_id: '4211310'
+  enrollment: 886
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hamburg:
+  display_name: Hamburg
+  district_name: Hamburg Area SD
+  district_nces_id: '4211340'
+  enrollment: 2119
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hanover-4211450:
+  display_name: Hanover
+  district_name: Hanover Public SD
+  district_nces_id: '4211450'
+  enrollment: 1952
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hanover-4222470:
+  display_name: Hanover
+  district_name: South Western SD
+  district_nces_id: '4222470'
+  enrollment: 4404
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hanover-township:
+  display_name: Hanover Township
+  district_name: Hanover Area SD
+  district_nces_id: '4211420'
+  enrollment: 2104
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-harborcreek:
+  display_name: Harborcreek
+  district_name: Harbor Creek SD
+  district_nces_id: '4211490'
+  enrollment: 2074
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-harmony:
+  display_name: Harmony
+  district_name: Seneca Valley SD
+  district_nces_id: '4222440'
+  enrollment: 7410
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-harrisburg-4200119:
+  display_name: Harrisburg
+  district_name: Commonwealth Charter Academy CS
+  district_nces_id: '4200119'
+  enrollment: 20355
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-harrisburg-4200887:
+  display_name: Harrisburg
+  district_name: Reach Cyber CS
+  district_nces_id: '4200887'
+  enrollment: 6918
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-harrisburg-4205400:
+  display_name: Harrisburg
+  district_name: Central Dauphin SD
+  district_nces_id: '4205400'
+  enrollment: 12479
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-harrisburg-4207385:
+  display_name: Harrisburg
+  district_name: Dauphin County Technical School
+  district_nces_id: '4207385'
+  enrollment: 1125
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-harrisburg-4211580:
+  display_name: Harrisburg
+  district_name: Harrisburg City SD
+  district_nces_id: '4211580'
+  enrollment: 6404
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-harrisburg-4223010:
+  display_name: Harrisburg
+  district_name: Susquehanna Township SD
+  district_nces_id: '4223010'
+  enrollment: 3062
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-harrison-city:
+  display_name: Harrison City
+  district_name: Penn-Trafford SD
+  district_nces_id: '4218660'
+  enrollment: 3879
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-havertown:
+  display_name: Havertown
+  district_name: Haverford Township SD
+  district_nces_id: '4211670'
+  enrollment: 6634
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hawley:
+  display_name: Hawley
+  district_name: Wallenpaupack Area SD
+  district_nces_id: '4224750'
+  enrollment: 2796
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hazle-twp:
+  display_name: Hazle Twp
+  district_name: Hazleton Area SD
+  district_nces_id: '4211700'
+  enrollment: 12243
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hellertown:
+  display_name: Hellertown
+  district_name: Saucon Valley SD
+  district_nces_id: '4211730'
+  enrollment: 1959
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-herminie:
+  display_name: Herminie
+  district_name: Yough SD
+  district_nces_id: '4221150'
+  enrollment: 1796
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hermitage:
+  display_name: Hermitage
+  district_name: Hermitage SD
+  district_nces_id: '4211820'
+  enrollment: 2031
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-herndon:
+  display_name: Herndon
+  district_name: Line Mountain SD
+  district_nces_id: '4214460'
+  enrollment: 1007
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hershey:
+  display_name: Hershey
+  district_name: Derry Township SD
+  district_nces_id: '4207590'
+  enrollment: 3165
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hollidaysburg:
+  display_name: Hollidaysburg
+  district_name: Hollidaysburg Area SD
+  district_nces_id: '4211940'
+  enrollment: 3134
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-homer-city:
+  display_name: Homer City
+  district_name: Homer-Center SD
+  district_nces_id: '4213290'
+  enrollment: 767
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-homestead-4200111:
+  display_name: Homestead
+  district_name: Propel CS-Homestead
+  district_nces_id: '4200111'
+  enrollment: 516
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-homestead-4289130:
+  display_name: Homestead
+  district_name: Allegheny IU 3
+  district_nces_id: '4289130'
+  enrollment: 518
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-honesdale:
+  display_name: Honesdale
+  district_name: Wayne Highlands SD
+  district_nces_id: '4224970'
+  enrollment: 2360
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hookstown:
+  display_name: Hookstown
+  district_name: South Side Area SD
+  district_nces_id: '4222230'
+  enrollment: 937
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-horsham:
+  display_name: Horsham
+  district_name: Hatboro-Horsham SD
+  district_nces_id: '4211610'
+  enrollment: 4260
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-houston:
+  display_name: Houston
+  district_name: Chartiers-Houston SD
+  district_nces_id: '4205730'
+  enrollment: 1181
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-houtzdale:
+  display_name: Houtzdale
+  district_name: Moshannon Valley SD
+  district_nces_id: '4215960'
+  enrollment: 807
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hughesville:
+  display_name: Hughesville
+  district_name: East Lycoming SD
+  district_nces_id: '4208490'
+  enrollment: 1613
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-hummelstown:
+  display_name: Hummelstown
+  district_name: Lower Dauphin SD
+  district_nces_id: '4214100'
+  enrollment: 3470
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-huntingdon:
+  display_name: Huntingdon
+  district_name: Huntingdon Area SD
+  district_nces_id: '4212090'
+  enrollment: 1684
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-huntingdon-valley:
+  display_name: Huntingdon Valley
+  district_name: Lower Moreland Township SD
+  district_nces_id: '4214190'
+  enrollment: 2619
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-imperial:
+  display_name: Imperial
+  district_name: West Allegheny SD
+  district_nces_id: '4225200'
+  enrollment: 3335
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-indiana:
+  display_name: Indiana
+  district_name: Indiana Area SD
+  district_nces_id: '4212150'
+  enrollment: 2843
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-jeannette:
+  display_name: Jeannette
+  district_name: Jeannette City SD
+  district_nces_id: '4212330'
+  enrollment: 913
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-jefferson:
+  display_name: Jefferson
+  district_name: Jefferson-Morgan SD
+  district_nces_id: '4212390'
+  enrollment: 782
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-jefferson-hills:
+  display_name: Jefferson Hills
+  district_name: West Jefferson Hills SD
+  district_nces_id: '4225590'
+  enrollment: 3304
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-jenkintown:
+  display_name: Jenkintown
+  district_name: Jenkintown SD
+  district_nces_id: '4212420'
+  enrollment: 710
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-jersey-shore:
+  display_name: Jersey Shore
+  district_name: Jersey Shore Area SD
+  district_nces_id: '4212480'
+  enrollment: 2148
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-jim-thorpe:
+  display_name: Jim Thorpe
+  district_name: Jim Thorpe Area SD
+  district_nces_id: '4212540'
+  enrollment: 1791
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-johnsonburg:
+  display_name: Johnsonburg
+  district_name: Johnsonburg Area SD
+  district_nces_id: '4212570'
+  enrollment: 544
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-johnstown-4206430:
+  display_name: Johnstown
+  district_name: Conemaugh Valley SD
+  district_nces_id: '4206430'
+  enrollment: 711
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-johnstown-4209750:
+  display_name: Johnstown
+  district_name: Ferndale Area SD
+  district_nces_id: '4209750'
+  enrollment: 600
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-johnstown-4210950:
+  display_name: Johnstown
+  district_name: Greater Johnstown SD
+  district_nces_id: '4210950'
+  enrollment: 2970
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-johnstown-4220250:
+  display_name: Johnstown
+  district_name: Richland SD
+  district_nces_id: '4220250'
+  enrollment: 1532
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-johnstown-4226130:
+  display_name: Johnstown
+  district_name: Westmont Hilltop SD
+  district_nces_id: '4226130'
+  enrollment: 1472
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kane:
+  display_name: Kane
+  district_name: Kane Area SD
+  district_nces_id: '4212660'
+  enrollment: 984
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-karns-city:
+  display_name: Karns City
+  district_name: Karns City Area SD
+  district_nces_id: '4209600'
+  enrollment: 1311
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kennett-square-4212690:
+  display_name: Kennett Square
+  district_name: Kennett Consolidated SD
+  district_nces_id: '4212690'
+  enrollment: 3896
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kennett-square-4224210:
+  display_name: Kennett Square
+  district_name: Unionville-Chadds Ford SD
+  district_nces_id: '4224210'
+  enrollment: 3816
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-king-of-prussia-4200088:
+  display_name: King Of Prussia
+  district_name: Pennsylvania Virtual CS
+  district_nces_id: '4200088'
+  enrollment: 2959
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-king-of-prussia-4200140:
+  display_name: King Of Prussia
+  district_name: Agora Cyber CS
+  district_nces_id: '4200140'
+  enrollment: 4966
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-king-of-prussia-4224480:
+  display_name: King Of Prussia
+  district_name: Upper Merion Area SD
+  district_nces_id: '4224480'
+  enrollment: 4414
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kingsley:
+  display_name: Kingsley
+  district_name: Mountain View SD
+  district_nces_id: '4216050'
+  enrollment: 942
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kingston-4225950:
+  display_name: Kingston
+  district_name: Wyoming Valley West SD
+  district_nces_id: '4225950'
+  enrollment: 4972
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kingston-4289280:
+  display_name: Kingston
+  district_name: Luzerne IU 18
+  district_nces_id: '4289280'
+  enrollment: 504
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kintnersville:
+  display_name: Kintnersville
+  district_name: Palisades SD
+  district_nces_id: '4218330'
+  enrollment: 1353
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kinzers:
+  display_name: Kinzers
+  district_name: Pequea Valley SD
+  district_nces_id: '4218900'
+  enrollment: 1360
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kittanning:
+  display_name: Kittanning
+  district_name: Armstrong SD
+  district_nces_id: '4202590'
+  enrollment: 4553
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-knox:
+  display_name: Knox
+  district_name: Keystone SD
+  district_nces_id: '4212720'
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-kutztown:
+  display_name: Kutztown
+  district_name: Kutztown Area SD
+  district_nces_id: '4212930'
+  enrollment: 1355
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lake-ariel:
+  display_name: Lake Ariel
+  district_name: Western Wayne SD
+  district_nces_id: '4226070'
+  enrollment: 1778
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lancaster-4206480:
+  display_name: Lancaster
+  district_name: Conestoga Valley SD
+  district_nces_id: '4206480'
+  enrollment: 3973
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lancaster-4213110:
+  display_name: Lancaster
+  district_name: Lampeter-Strasburg SD
+  district_nces_id: '4213110'
+  enrollment: 2832
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lancaster-4213140:
+  display_name: Lancaster
+  district_name: Lancaster SD
+  district_nces_id: '4213140'
+  enrollment: 10075
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lancaster-4214580:
+  display_name: Lancaster
+  district_name: Manheim Township SD
+  district_nces_id: '4214580'
+  enrollment: 5944
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lancaster-4218630:
+  display_name: Lancaster
+  district_name: Penn Manor SD
+  district_nces_id: '4218630'
+  enrollment: 5550
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lancaster-4289230:
+  display_name: Lancaster
+  district_name: Lancaster-Lebanon IU 13
+  district_nces_id: '4289230'
+  enrollment: 830
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-landisville:
+  display_name: Landisville
+  district_name: Hempfield SD
+  district_nces_id: '4211790'
+  enrollment: 7066
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-langhorne:
+  display_name: Langhorne
+  district_name: Neshaminy SD
+  district_nces_id: '4216410'
+  enrollment: 9468
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lansdale:
+  display_name: Lansdale
+  district_name: North Penn SD
+  district_nces_id: '4217280'
+  enrollment: 12912
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lansdowne:
+  display_name: Lansdowne
+  district_name: William Penn SD
+  district_nces_id: '4226390'
+  enrollment: 4623
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lansford:
+  display_name: Lansford
+  district_name: Panther Valley SD
+  district_nces_id: '4218450'
+  enrollment: 1810
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-laporte:
+  display_name: Laporte
+  district_name: Sullivan County SD
+  district_nces_id: '4222920'
+  enrollment: 616
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-latrobe:
+  display_name: Latrobe
+  district_name: Greater Latrobe SD
+  district_nces_id: '4210980'
+  enrollment: 3469
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lebanon-4206840:
+  display_name: Lebanon
+  district_name: Cornwall-Lebanon SD
+  district_nces_id: '4206840'
+  enrollment: 5012
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lebanon-4213440:
+  display_name: Lebanon
+  district_name: Lebanon SD
+  district_nces_id: '4213440'
+  enrollment: 4953
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-leechburg:
+  display_name: Leechburg
+  district_name: Leechburg Area SD
+  district_nces_id: '4213470'
+  enrollment: 646
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-leesport:
+  display_name: Leesport
+  district_name: Schuylkill Valley SD
+  district_nces_id: '4220970'
+  enrollment: 2094
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-leetsdale:
+  display_name: Leetsdale
+  district_name: Quaker Valley SD
+  district_nces_id: '4219860'
+  enrollment: 1810
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lehighton:
+  display_name: Lehighton
+  district_name: Lehighton Area SD
+  district_nces_id: '4213500'
+  enrollment: 2171
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-levittown:
+  display_name: Levittown
+  district_name: Bristol Township SD
+  district_nces_id: '4204230'
+  enrollment: 6086
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lewisberry:
+  display_name: Lewisberry
+  district_name: West Shore SD
+  district_nces_id: '4225830'
+  enrollment: 7513
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lewisburg:
+  display_name: Lewisburg
+  district_name: Lewisburg Area SD
+  district_nces_id: '4213590'
+  enrollment: 1863
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lewistown:
+  display_name: Lewistown
+  district_name: Mifflin County SD
+  district_nces_id: '4215290'
+  enrollment: 4636
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ligonier:
+  display_name: Ligonier
+  district_name: Ligonier Valley SD
+  district_nces_id: '4213710'
+  enrollment: 1382
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-linesville:
+  display_name: Linesville
+  district_name: Conneaut SD
+  district_nces_id: '4206590'
+  enrollment: 1755
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lititz:
+  display_name: Lititz
+  district_name: Warwick SD
+  district_nces_id: '4224960'
+  enrollment: 3755
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-littlestown:
+  display_name: Littlestown
+  district_name: Littlestown Area SD
+  district_nces_id: '4213980'
+  enrollment: 1757
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lower-burrell:
+  display_name: Lower Burrell
+  district_name: Burrell SD
+  district_nces_id: '4204530'
+  enrollment: 1750
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-loysburg:
+  display_name: Loysburg
+  district_name: Northern Bedford County SD
+  district_nces_id: '4217580'
+  enrollment: 887
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-lykens:
+  display_name: Lykens
+  district_name: Upper Dauphin Area SD
+  district_nces_id: '4224360'
+  enrollment: 1063
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mahanoy-city:
+  display_name: Mahanoy City
+  district_name: Mahanoy Area SD
+  district_nces_id: '4214430'
+  enrollment: 1063
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-malvern:
+  display_name: Malvern
+  district_name: Great Valley SD
+  district_nces_id: '4210870'
+  enrollment: 4705
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-manchester:
+  display_name: Manchester
+  district_name: Northeastern York SD
+  district_nces_id: '4217520'
+  enrollment: 3874
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-manheim:
+  display_name: Manheim
+  district_name: Manheim Central SD
+  district_nces_id: '4214550'
+  enrollment: 2777
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-maple-glen:
+  display_name: Maple Glen
+  district_name: Upper Dublin SD
+  district_nces_id: '4224390'
+  enrollment: 4114
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-marion-center:
+  display_name: Marion Center
+  district_name: Marion Center Area SD
+  district_nces_id: '4214730'
+  enrollment: 1198
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mars:
+  display_name: Mars
+  district_name: Mars Area SD
+  district_nces_id: '4214790'
+  enrollment: 3533
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mc-donald:
+  display_name: Mc Donald
+  district_name: Fort Cherry SD
+  district_nces_id: '4209960'
+  enrollment: 921
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mc-kees-rocks:
+  display_name: Mc Kees Rocks
+  district_name: Montour SD
+  district_nces_id: '4215720'
+  enrollment: 3075
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mc-keesport:
+  display_name: Mc Keesport
+  district_name: South Allegheny SD
+  district_nces_id: '4221910'
+  enrollment: 1392
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mcconnellsburg:
+  display_name: Mcconnellsburg
+  district_name: Central Fulton SD
+  district_nces_id: '4214850'
+  enrollment: 931
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mcdonald:
+  display_name: Mcdonald
+  district_name: South Fayette Township SD
+  district_nces_id: '4220580'
+  enrollment: 3464
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mckees-rocks:
+  display_name: Mckees Rocks
+  district_name: Sto-Rox SD
+  district_nces_id: '4222830'
+  enrollment: 1076
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mckeesport:
+  display_name: Mckeesport
+  district_name: McKeesport Area SD
+  district_nces_id: '4214940'
+  enrollment: 3069
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mcmurray:
+  display_name: Mcmurray
+  district_name: Peters Township SD
+  district_nces_id: '4218960'
+  enrollment: 3931
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-meadville:
+  display_name: Meadville
+  district_name: Crawford Central SD
+  district_nces_id: '4207080'
+  enrollment: 3124
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mechanicsburg-4207110:
+  display_name: Mechanicsburg
+  district_name: Cumberland Valley SD
+  district_nces_id: '4207110'
+  enrollment: 10028
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mechanicsburg-4215030:
+  display_name: Mechanicsburg
+  district_name: Mechanicsburg Area SD
+  district_nces_id: '4215030'
+  enrollment: 4555
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-media:
+  display_name: Media
+  district_name: Rose Tree Media SD
+  district_nces_id: '4220550'
+  enrollment: 4143
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mercer:
+  display_name: Mercer
+  district_name: Mercer Area SD
+  district_nces_id: '4215120'
+  enrollment: 1063
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mercersburg:
+  display_name: Mercersburg
+  district_name: Tuscarora SD
+  district_nces_id: '4222740'
+  enrollment: 2263
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-meyersdale:
+  display_name: Meyersdale
+  district_name: Meyersdale Area SD
+  district_nces_id: '4215150'
+  enrollment: 781
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-middleburg:
+  display_name: Middleburg
+  district_name: Midd-West SD
+  district_nces_id: '4215210'
+  enrollment: 1984
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-middletown:
+  display_name: Middletown
+  district_name: Middletown Area SD
+  district_nces_id: '4215240'
+  enrollment: 2361
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-midland-4200071:
+  display_name: Midland
+  district_name: Pennsylvania Cyber CS
+  district_nces_id: '4200071'
+  enrollment: 9853
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-midland-4200143:
+  display_name: Midland
+  district_name: Lincoln Park Performing Arts CS
+  district_nces_id: '4200143'
+  enrollment: 699
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-midland-4226040:
+  display_name: Midland
+  district_name: Western Beaver County SD
+  district_nces_id: '4226040'
+  enrollment: 725
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mifflinburg:
+  display_name: Mifflinburg
+  district_name: Mifflinburg Area SD
+  district_nces_id: '4226010'
+  enrollment: 1676
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mifflintown:
+  display_name: Mifflintown
+  district_name: Juniata County SD
+  district_nces_id: '4212600'
+  enrollment: 2323
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-milford:
+  display_name: Milford
+  district_name: Delaware Valley SD
+  district_nces_id: '4207530'
+  enrollment: 4318
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mill-hall:
+  display_name: Mill Hall
+  district_name: Keystone Central SD
+  district_nces_id: '4212725'
+  enrollment: 3497
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-millersburg:
+  display_name: Millersburg
+  district_name: Millersburg Area SD
+  district_nces_id: '4215360'
+  enrollment: 703
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-millerstown:
+  display_name: Millerstown
+  district_name: Greenwood SD
+  district_nces_id: '4211190'
+  enrollment: 754
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-millville:
+  display_name: Millville
+  district_name: Millville Area SD
+  district_nces_id: '4215450'
+  enrollment: 542
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-milton:
+  display_name: Milton
+  district_name: Milton Area SD
+  district_nces_id: '4215480'
+  enrollment: 1920
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-minersville:
+  display_name: Minersville
+  district_name: Minersville Area SD
+  district_nces_id: '4215510'
+  enrollment: 1084
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-monaca:
+  display_name: Monaca
+  district_name: Central Valley SD
+  district_nces_id: '4200824'
+  enrollment: 2203
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-monessen:
+  display_name: Monessen
+  district_name: Monessen City SD
+  district_nces_id: '4215600'
+  enrollment: 656
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-monroeville:
+  display_name: Monroeville
+  district_name: Gateway SD
+  district_nces_id: '4210620'
+  enrollment: 3381
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-montgomery:
+  display_name: Montgomery
+  district_name: Montgomery Area SD
+  district_nces_id: '4215660'
+  enrollment: 940
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-montoursville:
+  display_name: Montoursville
+  district_name: Montoursville Area SD
+  district_nces_id: '4215750'
+  enrollment: 1709
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-montrose:
+  display_name: Montrose
+  district_name: Montrose Area SD
+  district_nces_id: '4215810'
+  enrollment: 1211
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-moon-township:
+  display_name: Moon Township
+  district_name: Moon Area SD
+  district_nces_id: '4215830'
+  enrollment: 4035
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-morrisdale:
+  display_name: Morrisdale
+  district_name: West Branch Area SD
+  district_nces_id: '4225230'
+  enrollment: 913
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-morrisville:
+  display_name: Morrisville
+  district_name: Morrisville Borough SD
+  district_nces_id: '4215900'
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-moscow:
+  display_name: Moscow
+  district_name: North Pocono SD
+  district_nces_id: '4217310'
+  enrollment: 2874
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mount-carmel:
+  display_name: Mount Carmel
+  district_name: Mount Carmel Area SD
+  district_nces_id: '4215990'
+  enrollment: 1548
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mount-joy:
+  display_name: Mount Joy
+  district_name: Donegal SD
+  district_nces_id: '4207650'
+  enrollment: 2799
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mount-pleasant:
+  display_name: Mount Pleasant
+  district_name: Mount Pleasant Area SD
+  district_nces_id: '4216170'
+  enrollment: 1884
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mount-union:
+  display_name: Mount Union
+  district_name: Mount Union Area SD
+  district_nces_id: '4216020'
+  enrollment: 1175
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-mountain-top:
+  display_name: Mountain Top
+  district_name: Crestwood SD
+  district_nces_id: '4205460'
+  enrollment: 2840
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-muncy:
+  display_name: Muncy
+  district_name: Muncy SD
+  district_nces_id: '4216230'
+  enrollment: 942
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-munhall:
+  display_name: Munhall
+  district_name: Steel Valley SD
+  district_nces_id: '4222790'
+  enrollment: 1388
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-murrysville:
+  display_name: Murrysville
+  district_name: Franklin Regional SD
+  district_nces_id: '4210230'
+  enrollment: 3372
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-myerstown:
+  display_name: Myerstown
+  district_name: Eastern Lebanon County SD
+  district_nces_id: '4208460'
+  enrollment: 2398
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-n-braddock:
+  display_name: N. Braddock
+  district_name: Woodland Hills SD
+  district_nces_id: '4216500'
+  enrollment: 3123
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-nanticoke:
+  display_name: Nanticoke
+  district_name: Greater Nanticoke Area SD
+  district_nces_id: '4216290'
+  enrollment: 2301
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-nanty-glo:
+  display_name: Nanty Glo
+  district_name: Blacklick Valley SD
+  district_nces_id: '4203690'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-natrona-heights:
+  display_name: Natrona Heights
+  district_name: Highlands SD
+  district_nces_id: '4211880'
+  enrollment: 2218
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-nazareth:
+  display_name: Nazareth
+  district_name: Nazareth Area SD
+  district_nces_id: '4216380'
+  enrollment: 4852
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-bethlehem:
+  display_name: New Bethlehem
+  district_name: Redbank Valley SD
+  district_nces_id: '4220130'
+  enrollment: 971
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-brighton:
+  display_name: New Brighton
+  district_name: New Brighton Area SD
+  district_nces_id: '4216530'
+  enrollment: 1304
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-castle-4213380:
+  display_name: New Castle
+  district_name: Laurel SD
+  district_nces_id: '4213380'
+  enrollment: 985
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-castle-4215540:
+  display_name: New Castle
+  district_name: Mohawk Area SD
+  district_nces_id: '4215540'
+  enrollment: 1462
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-castle-4216440:
+  display_name: New Castle
+  district_name: Neshannock Township SD
+  district_nces_id: '4216440'
+  enrollment: 1202
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-castle-4216620:
+  display_name: New Castle
+  district_name: New Castle Area SD
+  district_nces_id: '4216620'
+  enrollment: 3003
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-castle-4221510:
+  display_name: New Castle
+  district_name: Shenango Area SD
+  district_nces_id: '4221510'
+  enrollment: 998
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-castle-4224060:
+  display_name: New Castle
+  district_name: Union Area SD
+  district_nces_id: '4224060'
+  enrollment: 713
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-eagle:
+  display_name: New Eagle
+  district_name: Ringgold SD
+  district_nces_id: '4220400'
+  enrollment: 2638
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-holland:
+  display_name: New Holland
+  district_name: Eastern Lancaster County SD
+  district_nces_id: '4208820'
+  enrollment: 2791
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-hope:
+  display_name: New Hope
+  district_name: New Hope-Solebury SD
+  district_nces_id: '4216860'
+  enrollment: 1285
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-kensington:
+  display_name: New Kensington
+  district_name: New Kensington-Arnold SD
+  district_nces_id: '4216740'
+  enrollment: 1923
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-milford:
+  display_name: New Milford
+  district_name: Blue Ridge SD
+  district_nces_id: '4203900'
+  enrollment: 1007
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-oxford-4206550:
+  display_name: New Oxford
+  district_name: Conewago Valley SD
+  district_nces_id: '4206550'
+  enrollment: 3757
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-oxford-4289220:
+  display_name: New Oxford
+  district_name: Lincoln IU 12
+  district_nces_id: '4289220'
+  enrollment: 1166
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-tripoli:
+  display_name: New Tripoli
+  district_name: Northwestern Lehigh SD
+  district_nces_id: '4217850'
+  enrollment: 1974
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-new-wilmington:
+  display_name: New Wilmington
+  district_name: Wilmington Area SD
+  district_nces_id: '4226520'
+  enrollment: 983
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-newport:
+  display_name: Newport
+  district_name: Newport SD
+  district_nces_id: '4216890'
+  enrollment: 988
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-newtown:
+  display_name: Newtown
+  district_name: Council Rock SD
+  district_nces_id: '4206960'
+  enrollment: 10477
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-newtown-square:
+  display_name: Newtown Square
+  district_name: Marple Newtown SD
+  district_nces_id: '4214760'
+  enrollment: 3847
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-newville:
+  display_name: Newville
+  district_name: Big Spring SD
+  district_nces_id: '4203660'
+  enrollment: 2420
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-norristown:
+  display_name: Norristown
+  district_name: Norristown Area SD
+  district_nces_id: '4216980'
+  enrollment: 7805
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-north-east:
+  display_name: North East
+  district_name: North East SD
+  district_nces_id: '4217160'
+  enrollment: 1514
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-north-huntingdon:
+  display_name: North Huntingdon
+  district_name: Norwin SD
+  district_nces_id: '4217940'
+  enrollment: 5044
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-north-versailles:
+  display_name: North Versailles
+  district_name: East Allegheny SD
+  district_nces_id: '4208060'
+  enrollment: 1389
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-northampton:
+  display_name: Northampton
+  district_name: Northampton Area SD
+  district_nces_id: '4217370'
+  enrollment: 5227
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-northern-cambria:
+  display_name: Northern Cambria
+  district_name: Northern Cambria SD
+  district_nces_id: '4217610'
+  enrollment: 803
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-oakmont:
+  display_name: Oakmont
+  district_name: Riverview SD
+  district_nces_id: '4220430'
+  enrollment: 949
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-oil-city:
+  display_name: Oil City
+  district_name: Oil City Area SD
+  district_nces_id: '4218090'
+  enrollment: 1835
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-old-forge:
+  display_name: Old Forge
+  district_name: Old Forge SD
+  district_nces_id: '4218120'
+  enrollment: 949
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-oley:
+  display_name: Oley
+  district_name: Oley Valley SD
+  district_nces_id: '4218150'
+  enrollment: 1497
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-oreland:
+  display_name: Oreland
+  district_name: Springfield Township SD
+  district_nces_id: '4222620'
+  enrollment: 2554
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-orwigsburg:
+  display_name: Orwigsburg
+  district_name: Blue Mountain SD
+  district_nces_id: '4203870'
+  enrollment: 2455
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-oxford:
+  display_name: Oxford
+  district_name: Oxford Area SD
+  district_nces_id: '4218300'
+  enrollment: 3250
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-palmerton:
+  display_name: Palmerton
+  district_name: Palmerton Area SD
+  district_nces_id: '4218360'
+  enrollment: 1651
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-palmyra:
+  display_name: Palmyra
+  district_name: Palmyra Area SD
+  district_nces_id: '4218390'
+  enrollment: 3531
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-patton:
+  display_name: Patton
+  district_name: Cambria Heights SD
+  district_nces_id: '4204740'
+  enrollment: 1281
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pen-argyl:
+  display_name: Pen Argyl
+  district_name: Pen Argyl Area SD
+  district_nces_id: '4218570'
+  enrollment: 1440
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pennsburg:
+  display_name: Pennsburg
+  district_name: Upper Perkiomen SD
+  district_nces_id: '4224540'
+  enrollment: 3198
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-perkasie:
+  display_name: Perkasie
+  district_name: Pennridge SD
+  district_nces_id: '4218750'
+  enrollment: 6521
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-perryopolis:
+  display_name: Perryopolis
+  district_name: Frazier SD
+  district_nces_id: '4210350'
+  enrollment: 1005
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200013:
+  display_name: Philadelphia
+  district_name: Community Academy of Philadelphia CS
+  district_nces_id: '4200013'
+  enrollment: 1231
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200014:
+  display_name: Philadelphia
+  district_name: Harambee Institute of Science and Technology CS
+  district_nces_id: '4200014'
+  enrollment: 593
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200036:
+  display_name: Philadelphia
+  district_name: Preparatory CS of Mathematics Science Tech and Careers
+  district_nces_id: '4200036'
+  enrollment: 568
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200038:
+  display_name: Philadelphia
+  district_name: Imhotep Institute CHS
+  district_nces_id: '4200038'
+  enrollment: 597
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200039:
+  display_name: Philadelphia
+  district_name: Alliance for Progress CS
+  district_nces_id: '4200039'
+  enrollment: 558
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200041:
+  display_name: Philadelphia
+  district_name: West Oak Lane CS
+  district_nces_id: '4200041'
+  enrollment: 956
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200043:
+  display_name: Philadelphia
+  district_name: Eugenio Maria De Hostos CS
+  district_nces_id: '4200043'
+  enrollment: 507
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200051:
+  display_name: Philadelphia
+  district_name: MAST Community CS
+  district_nces_id: '4200051'
+  enrollment: 1477
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200052:
+  display_name: Philadelphia
+  district_name: Christopher Columbus CS
+  district_nces_id: '4200052'
+  enrollment: 862
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200055:
+  display_name: Philadelphia
+  district_name: Universal Institute CS
+  district_nces_id: '4200055'
+  enrollment: 626
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200056:
+  display_name: Philadelphia
+  district_name: Math Civics and Sciences CS
+  district_nces_id: '4200056'
+  enrollment: 912
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200060:
+  display_name: Philadelphia
+  district_name: Freire CS
+  district_nces_id: '4200060'
+  enrollment: 934
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200061:
+  display_name: Philadelphia
+  district_name: Philadelphia Academy CS
+  district_nces_id: '4200061'
+  enrollment: 1165
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200062:
+  display_name: Philadelphia
+  district_name: Mastery CS-Hardy Williams
+  district_nces_id: '4200062'
+  enrollment: 1215
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200073:
+  display_name: Philadelphia
+  district_name: Global Leadership Academy CS
+  district_nces_id: '4200073'
+  enrollment: 636
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200074:
+  display_name: Philadelphia
+  district_name: Philadelphia Performing Arts CS
+  district_nces_id: '4200074'
+  enrollment: 2735
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200075:
+  display_name: Philadelphia
+  district_name: New Foundations CS
+  district_nces_id: '4200075'
+  enrollment: 1496
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200076:
+  display_name: Philadelphia
+  district_name: Esperanza Academy CS
+  district_nces_id: '4200076'
+  enrollment: 1630
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200077:
+  display_name: Philadelphia
+  district_name: Franklin Towne CHS
+  district_nces_id: '4200077'
+  enrollment: 1282
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200079:
+  display_name: Philadelphia
+  district_name: Mariana Bracetti Academy CS
+  district_nces_id: '4200079'
+  enrollment: 1557
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200084:
+  display_name: Philadelphia
+  district_name: Mastery CHS-Lenfest Campus
+  district_nces_id: '4200084'
+  enrollment: 610
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200085:
+  display_name: Philadelphia
+  district_name: People for People CS
+  district_nces_id: '4200085'
+  enrollment: 531
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200087:
+  display_name: Philadelphia
+  district_name: Independence CS
+  district_nces_id: '4200087'
+  enrollment: 782
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200092:
+  display_name: Philadelphia
+  district_name: Russell Byers CS
+  district_nces_id: '4200092'
+  enrollment: 701
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200093:
+  display_name: Philadelphia
+  district_name: First Philadelphia Preparatory CS
+  district_nces_id: '4200093'
+  enrollment: 1844
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200104:
+  display_name: Philadelphia
+  district_name: Green Woods CS
+  district_nces_id: '4200104'
+  enrollment: 688
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200105:
+  display_name: Philadelphia
+  district_name: West Phila. Achievement CES
+  district_nces_id: '4200105'
+  enrollment: 637
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200106:
+  display_name: Philadelphia
+  district_name: Wissahickon CS
+  district_nces_id: '4200106'
+  enrollment: 951
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200107:
+  display_name: Philadelphia
+  district_name: Philadelphia Electrical & Tech CHS
+  district_nces_id: '4200107'
+  enrollment: 612
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200108:
+  display_name: Philadelphia
+  district_name: Belmont CS
+  district_nces_id: '4200108'
+  enrollment: 926
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200121:
+  display_name: Philadelphia
+  district_name: Discovery CS
+  district_nces_id: '4200121'
+  enrollment: 622
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200122:
+  display_name: Philadelphia
+  district_name: KIPP Philadelphia CS
+  district_nces_id: '4200122'
+  enrollment: 838
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200123:
+  display_name: Philadelphia
+  district_name: Maritime Academy CS
+  district_nces_id: '4200123'
+  enrollment: 825
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200129:
+  display_name: Philadelphia
+  district_name: Ad Prima CS
+  district_nces_id: '4200129'
+  enrollment: 582
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200139:
+  display_name: Philadelphia
+  district_name: Northwood Academy CS
+  district_nces_id: '4200139'
+  enrollment: 760
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200144:
+  display_name: Philadelphia
+  district_name: Mastery CS-Thomas Campus
+  district_nces_id: '4200144'
+  enrollment: 1258
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200145:
+  display_name: Philadelphia
+  district_name: Mastery CS-Shoemaker Campus
+  district_nces_id: '4200145'
+  enrollment: 782
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200758:
+  display_name: Philadelphia
+  district_name: Southwest Leadership Academy CS
+  district_nces_id: '4200758'
+  enrollment: 619
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200760:
+  display_name: Philadelphia
+  district_name: Boys Latin of Philadelphia CS
+  district_nces_id: '4200760'
+  enrollment: 774
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200761:
+  display_name: Philadelphia
+  district_name: Mastery CS-Pickett Campus
+  district_nces_id: '4200761'
+  enrollment: 938
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200762:
+  display_name: Philadelphia
+  district_name: Keystone Academy CS
+  district_nces_id: '4200762'
+  enrollment: 671
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200810:
+  display_name: Philadelphia
+  district_name: Pan American Academy CS
+  district_nces_id: '4200810'
+  enrollment: 740
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200813:
+  display_name: Philadelphia
+  district_name: Antonia Pantoja Community CS
+  district_nces_id: '4200813'
+  enrollment: 699
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200816:
+  display_name: Philadelphia
+  district_name: Sankofa Freedom Academy CS
+  district_nces_id: '4200816'
+  enrollment: 664
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200817:
+  display_name: Philadelphia
+  district_name: Franklin Towne Charter Elementary School
+  district_nces_id: '4200817'
+  enrollment: 958
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200821:
+  display_name: Philadelphia
+  district_name: Tacony Academy CS
+  district_nces_id: '4200821'
+  enrollment: 1084
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200828:
+  display_name: Philadelphia
+  district_name: Mastery CS-Harrity Campus
+  district_nces_id: '4200828'
+  enrollment: 813
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200829:
+  display_name: Philadelphia
+  district_name: Mastery CS-Smedley Campus
+  district_nces_id: '4200829'
+  enrollment: 753
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200830:
+  display_name: Philadelphia
+  district_name: Frederick Douglass Mastery CS
+  district_nces_id: '4200830'
+  enrollment: 581
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200831:
+  display_name: Philadelphia
+  district_name: Mastery CS-Mann Campus
+  district_nces_id: '4200831'
+  enrollment: 532
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200834:
+  display_name: Philadelphia
+  district_name: Bluford CS
+  district_nces_id: '4200834'
+  enrollment: 525
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200835:
+  display_name: Philadelphia
+  district_name: ASPIRA Bilingual Cyber CS
+  district_nces_id: '4200835'
+  enrollment: 876
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200850:
+  display_name: Philadelphia
+  district_name: Lindley Academy CS at Birney
+  district_nces_id: '4200850'
+  enrollment: 710
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200851:
+  display_name: Philadelphia
+  district_name: Mastery CS-Gratz Campus
+  district_nces_id: '4200851'
+  enrollment: 1160
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200856:
+  display_name: Philadelphia
+  district_name: Universal Audenried CS
+  district_nces_id: '4200856'
+  enrollment: 546
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200858:
+  display_name: Philadelphia
+  district_name: Esperanza Cyber CS
+  district_nces_id: '4200858'
+  enrollment: 990
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200862:
+  display_name: Philadelphia
+  district_name: Mastery CS-Cleveland Elementary
+  district_nces_id: '4200862'
+  enrollment: 704
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200863:
+  display_name: Philadelphia
+  district_name: The Philadelphia CS for Arts and Sciences at HR Edmunds
+  district_nces_id: '4200863'
+  enrollment: 986
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200866:
+  display_name: Philadelphia
+  district_name: Universal Creighton CS
+  district_nces_id: '4200866'
+  enrollment: 713
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200870:
+  display_name: Philadelphia
+  district_name: Memphis Street Academy CS @ JP Jones
+  district_nces_id: '4200870'
+  enrollment: 538
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200874:
+  display_name: Philadelphia
+  district_name: Mastery CS-Francis D. Pastorius Elementary
+  district_nces_id: '4200874'
+  enrollment: 658
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200888:
+  display_name: Philadelphia
+  district_name: KIPP West Philadelphia CS
+  district_nces_id: '4200888'
+  enrollment: 805
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200889:
+  display_name: Philadelphia
+  district_name: Mastery CS John Wister Elementary
+  district_nces_id: '4200889'
+  enrollment: 513
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200891:
+  display_name: Philadelphia
+  district_name: MaST Community CS II
+  district_nces_id: '4200891'
+  enrollment: 1780
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200892:
+  display_name: Philadelphia
+  district_name: Global Leadership Academy CS Southwest at Huey
+  district_nces_id: '4200892'
+  enrollment: 532
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200893:
+  display_name: Philadelphia
+  district_name: Independence CS West
+  district_nces_id: '4200893'
+  enrollment: 840
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200900:
+  display_name: Philadelphia
+  district_name: Mastery Prep Elementary CS
+  district_nces_id: '4200900'
+  enrollment: 549
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200901:
+  display_name: Philadelphia
+  district_name: KIPP North Philadelphia CS
+  district_nces_id: '4200901'
+  enrollment: 588
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4200903:
+  display_name: Philadelphia
+  district_name: MaST Community CS III
+  district_nces_id: '4200903'
+  enrollment: 1222
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-philadelphia-4218990:
+  display_name: Philadelphia
+  district_name: Philadelphia City SD
+  district_nces_id: '4218990'
+  enrollment: 118335
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-philipsburg:
+  display_name: Philipsburg
+  district_name: Philipsburg-Osceola Area SD
+  district_nces_id: '4219020'
+  enrollment: 1618
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-phoenixville-4200067:
+  display_name: Phoenixville
+  district_name: Renaissance Academy CS
+  district_nces_id: '4200067'
+  enrollment: 1101
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-phoenixville-4219050:
+  display_name: Phoenixville
+  district_name: Phoenixville Area SD
+  district_nces_id: '4219050'
+  enrollment: 4037
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pine-grove:
+  display_name: Pine Grove
+  district_name: Pine Grove Area SD
+  district_nces_id: '4219140'
+  enrollment: 1535
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4200094:
+  display_name: Pittsburgh
+  district_name: City CHS
+  district_nces_id: '4200094'
+  enrollment: 556
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4200752:
+  display_name: Pittsburgh
+  district_name: Propel CS-Montour
+  district_nces_id: '4200752'
+  enrollment: 800
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4200812:
+  display_name: Pittsburgh
+  district_name: Environmental CS at Frick Park
+  district_nces_id: '4200812'
+  enrollment: 1023
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4200833:
+  display_name: Pittsburgh
+  district_name: Propel CS-Braddock Hills
+  district_nces_id: '4200833'
+  enrollment: 797
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4202820:
+  display_name: Pittsburgh
+  district_name: Avonworth SD
+  district_nces_id: '4202820'
+  enrollment: 1947
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4202970:
+  display_name: Pittsburgh
+  district_name: Baldwin-Whitehall SD
+  district_nces_id: '4202970'
+  enrollment: 4542
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4204140:
+  display_name: Pittsburgh
+  district_name: Brentwood Borough SD
+  district_nces_id: '4204140'
+  enrollment: 1153
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4205700:
+  display_name: Pittsburgh
+  district_name: Chartiers Valley SD
+  district_nces_id: '4205700'
+  enrollment: 3427
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4210070:
+  display_name: Pittsburgh
+  district_name: Fox Chapel Area SD
+  district_nces_id: '4210070'
+  enrollment: 4160
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4212750:
+  display_name: Pittsburgh
+  district_name: Keystone Oaks SD
+  district_nces_id: '4212750'
+  enrollment: 1871
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4216110:
+  display_name: Pittsburgh
+  district_name: Mt Lebanon SD
+  district_nces_id: '4216110'
+  enrollment: 5492
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4217010:
+  display_name: Pittsburgh
+  district_name: North Allegheny SD
+  district_nces_id: '4217010'
+  enrollment: 8461
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4217220:
+  display_name: Pittsburgh
+  district_name: North Hills SD
+  district_nces_id: '4217220'
+  enrollment: 4569
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4217770:
+  display_name: Pittsburgh
+  district_name: Northgate SD
+  district_nces_id: '4217770'
+  enrollment: 1051
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4218590:
+  display_name: Pittsburgh
+  district_name: Penn Hills SD
+  district_nces_id: '4218590'
+  enrollment: 3026
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4219170:
+  display_name: Pittsburgh
+  district_name: Pittsburgh SD
+  district_nces_id: '4219170'
+  enrollment: 20034
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittsburgh-4224570:
+  display_name: Pittsburgh
+  district_name: Upper St. Clair SD
+  district_nces_id: '4224570'
+  enrollment: 3935
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pittston:
+  display_name: Pittston
+  district_name: Pittston Area SD
+  district_nces_id: '4219200'
+  enrollment: 3101
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-plum:
+  display_name: Plum
+  district_name: Plum Borough SD
+  district_nces_id: '4219350'
+  enrollment: 3582
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-plymouth-meeting:
+  display_name: Plymouth Meeting
+  district_name: Colonial SD
+  district_nces_id: '4219470'
+  enrollment: 5414
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-port-allegany:
+  display_name: Port Allegany
+  district_name: Port Allegany SD
+  district_nces_id: '4219530'
+  enrollment: 886
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-portage:
+  display_name: Portage
+  district_name: Portage Area SD
+  district_nces_id: '4219560'
+  enrollment: 807
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pottstown-4218270:
+  display_name: Pottstown
+  district_name: Owen J Roberts SD
+  district_nces_id: '4218270'
+  enrollment: 5427
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pottstown-4219650:
+  display_name: Pottstown
+  district_name: Pottsgrove SD
+  district_nces_id: '4219650'
+  enrollment: 3011
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pottstown-4219680:
+  display_name: Pottstown
+  district_name: Pottstown SD
+  district_nces_id: '4219680'
+  enrollment: 3244
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-pottsville:
+  display_name: Pottsville
+  district_name: Pottsville Area SD
+  district_nces_id: '4219710'
+  enrollment: 2408
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-prospect-park:
+  display_name: Prospect Park
+  district_name: Interboro SD
+  district_nces_id: '4212170'
+  enrollment: 3304
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-punxsutawney:
+  display_name: Punxsutawney
+  district_name: Punxsutawney Area SD
+  district_nces_id: '4219800'
+  enrollment: 1924
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-quakertown:
+  display_name: Quakertown
+  district_name: Quakertown Community SD
+  district_nces_id: '4219890'
+  enrollment: 4688
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-quarryville:
+  display_name: Quarryville
+  district_name: Solanco SD
+  district_nces_id: '4221810'
+  enrollment: 3106
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-reading-4202480:
+  display_name: Reading
+  district_name: Antietam SD
+  district_nces_id: '4202480'
+  enrollment: 1162
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-reading-4209480:
+  display_name: Reading
+  district_name: Exeter Township SD
+  district_nces_id: '4209480'
+  enrollment: 3923
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-reading-4216200:
+  display_name: Reading
+  district_name: Muhlenberg SD
+  district_nces_id: '4216200'
+  enrollment: 4266
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-reading-4220040:
+  display_name: Reading
+  district_name: Reading SD
+  district_nces_id: '4220040'
+  enrollment: 17363
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-red-lion:
+  display_name: Red Lion
+  district_name: Red Lion Area SD
+  district_nces_id: '4220100'
+  enrollment: 4849
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-reynoldsville:
+  display_name: Reynoldsville
+  district_name: Jefferson County-DuBois AVTS
+  district_nces_id: '4212335'
+  enrollment: 535
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ridgway:
+  display_name: Ridgway
+  district_name: Ridgway Area SD
+  district_nces_id: '4220310'
+  enrollment: 776
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-rimersburg:
+  display_name: Rimersburg
+  district_name: Union SD
+  district_nces_id: '4224120'
+  enrollment: 564
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-roaring-spring:
+  display_name: Roaring Spring
+  district_name: Spring Cove SD
+  district_nces_id: '4222530'
+  enrollment: 1658
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-robesonia:
+  display_name: Robesonia
+  district_name: Conrad Weiser Area SD
+  district_nces_id: '4206780'
+  enrollment: 2521
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-rochester:
+  display_name: Rochester
+  district_name: Rochester Area SD
+  district_nces_id: '4220460'
+  enrollment: 725
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-rockwood:
+  display_name: Rockwood
+  district_name: Rockwood Area SD
+  district_nces_id: '4220520'
+  enrollment: 634
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-rome:
+  display_name: Rome
+  district_name: Northeast Bradford SD
+  district_nces_id: '4217460'
+  enrollment: 671
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-royersford:
+  display_name: Royersford
+  district_name: Spring-Ford Area SD
+  district_nces_id: '4222560'
+  enrollment: 7953
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-russell:
+  display_name: Russell
+  district_name: Warren County SD
+  district_nces_id: '4224820'
+  enrollment: 3911
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-saegertown:
+  display_name: Saegertown
+  district_name: Penncrest SD
+  district_nces_id: '4218740'
+  enrollment: 2548
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-saint-clair:
+  display_name: Saint Clair
+  district_name: Saint Clair Area SD
+  district_nces_id: '4222710'
+  enrollment: 532
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-saint-marys:
+  display_name: Saint Marys
+  district_name: Saint Marys Area SD
+  district_nces_id: '4220640'
+  enrollment: 1866
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-sarver:
+  display_name: Sarver
+  district_name: Freeport Area SD
+  district_nces_id: '4210440'
+  enrollment: 1808
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-saxonburg:
+  display_name: Saxonburg
+  district_name: Knoch SD
+  district_nces_id: '4221930'
+  enrollment: 2027
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-saxton:
+  display_name: Saxton
+  district_name: Tussey Mountain SD
+  district_nces_id: '4223970'
+  enrollment: 946
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-sayre:
+  display_name: Sayre
+  district_name: Sayre Area SD
+  district_nces_id: '4220850'
+  enrollment: 903
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-schuylkill-haven:
+  display_name: Schuylkill Haven
+  district_name: Schuylkill Haven Area SD
+  district_nces_id: '4220910'
+  enrollment: 1148
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-scott-township:
+  display_name: Scott Township
+  district_name: Lakeland SD
+  district_nces_id: '4213050'
+  enrollment: 1377
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-scottdale:
+  display_name: Scottdale
+  district_name: Southmoreland SD
+  district_nces_id: '4222410'
+  enrollment: 1840
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-scranton:
+  display_name: Scranton
+  district_name: Scranton SD
+  district_nces_id: '4221090'
+  enrollment: 9262
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-selinsgrove:
+  display_name: Selinsgrove
+  district_name: Selinsgrove Area SD
+  district_nces_id: '4221120'
+  enrollment: 2384
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-seneca:
+  display_name: Seneca
+  district_name: Cranberry Area SD
+  district_nces_id: '4207050'
+  enrollment: 1165
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-sewickley:
+  display_name: Sewickley
+  district_name: Pennsylvania Distance Learning CS
+  district_nces_id: '4200125'
+  enrollment: 1229
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-sharon:
+  display_name: Sharon
+  district_name: Sharon City SD
+  district_nces_id: '4221330'
+  enrollment: 1877
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-sharpsville:
+  display_name: Sharpsville
+  district_name: Sharpsville Area SD
+  district_nces_id: '4221420'
+  enrollment: 1017
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-shenandoah:
+  display_name: Shenandoah
+  district_name: Shenandoah Valley SD
+  district_nces_id: '4221490'
+  enrollment: 1209
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-shickshinny:
+  display_name: Shickshinny
+  district_name: Northwest Area SD
+  district_nces_id: '4217790'
+  enrollment: 906
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-shillington:
+  display_name: Shillington
+  district_name: Governor Mifflin SD
+  district_nces_id: '4210860'
+  enrollment: 4118
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-shippensburg:
+  display_name: Shippensburg
+  district_name: Shippensburg Area SD
+  district_nces_id: '4221570'
+  enrollment: 3529
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-sidman:
+  display_name: Sidman
+  district_name: Forest Hills SD
+  district_nces_id: '4209940'
+  enrollment: 1732
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-slatington:
+  display_name: Slatington
+  district_name: Northern Lehigh SD
+  district_nces_id: '4217670'
+  enrollment: 1573
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-slippery-rock:
+  display_name: Slippery Rock
+  district_name: Slippery Rock Area SD
+  district_nces_id: '4221660'
+  enrollment: 1898
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-smethport:
+  display_name: Smethport
+  district_name: Smethport Area SD
+  district_nces_id: '4221690'
+  enrollment: 758
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-somerset:
+  display_name: Somerset
+  district_name: Somerset Area SD
+  district_nces_id: '4221840'
+  enrollment: 2038
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-souderton:
+  display_name: Souderton
+  district_name: Souderton Area SD
+  district_nces_id: '4221870'
+  enrollment: 6169
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-south-park:
+  display_name: South Park
+  district_name: South Park SD
+  district_nces_id: '4222060'
+  enrollment: 1785
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-south-williamsport:
+  display_name: South Williamsport
+  district_name: South Williamsport Area SD
+  district_nces_id: '4222140'
+  enrollment: 1120
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-spring-church:
+  display_name: Spring Church
+  district_name: Apollo-Ridge SD
+  district_nces_id: '4202550'
+  enrollment: 1097
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-spring-grove:
+  display_name: Spring Grove
+  district_name: Spring Grove Area SD
+  district_nces_id: '4222590'
+  enrollment: 3934
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-spring-mills:
+  display_name: Spring Mills
+  district_name: Penns Valley Area SD
+  district_nces_id: '4218810'
+  enrollment: 1352
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-springfield:
+  display_name: Springfield
+  district_name: Springfield SD
+  district_nces_id: '4222600'
+  enrollment: 4390
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-springville:
+  display_name: Springville
+  district_name: Elk Lake SD
+  district_nces_id: '4209150'
+  enrollment: 1111
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-state-college:
+  display_name: State College
+  district_name: State College Area SD
+  district_nces_id: '4222770'
+  enrollment: 6781
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-steelton:
+  display_name: Steelton
+  district_name: Steelton-Highspire SD
+  district_nces_id: '4222800'
+  enrollment: 1377
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-stoneboro:
+  display_name: Stoneboro
+  district_name: Lakeview SD
+  district_nces_id: '4213080'
+  enrollment: 847
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-strattanville:
+  display_name: Strattanville
+  district_name: Clarion-Limestone Area SD
+  district_nces_id: '4206090'
+  enrollment: 783
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-stroudsburg:
+  display_name: Stroudsburg
+  district_name: Stroudsburg Area SD
+  district_nces_id: '4222860'
+  enrollment: 4531
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-sunbury:
+  display_name: Sunbury
+  district_name: Shikellamy SD
+  district_nces_id: '4221540'
+  enrollment: 2810
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-susquehanna:
+  display_name: Susquehanna
+  district_name: Susquehanna Community SD
+  district_nces_id: '4222980'
+  enrollment: 783
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-swiftwater:
+  display_name: Swiftwater
+  district_name: Pocono Mountain SD
+  district_nces_id: '4219500'
+  enrollment: 8033
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-tamaqua:
+  display_name: Tamaqua
+  district_name: Tamaqua Area SD
+  district_nces_id: '4223220'
+  enrollment: 2099
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-taylor:
+  display_name: Taylor
+  district_name: Riverside SD
+  district_nces_id: '4223250'
+  enrollment: 1549
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-thorndale:
+  display_name: Thorndale
+  district_name: Coatesville Area SD
+  district_nces_id: '4206240'
+  enrollment: 5400
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-three-springs:
+  display_name: Three Springs
+  district_name: Southern Huntingdon County SD
+  district_nces_id: '4222320'
+  enrollment: 1060
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-throop:
+  display_name: Throop
+  district_name: Mid Valley SD
+  district_nces_id: '4215170'
+  enrollment: 1878
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-tionesta:
+  display_name: Tionesta
+  district_name: North Clarion County SD
+  district_nces_id: '4217130'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-titusville:
+  display_name: Titusville
+  district_name: Titusville Area SD
+  district_nces_id: '4223490'
+  enrollment: 1895
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-topton:
+  display_name: Topton
+  district_name: Brandywine Heights Area SD
+  district_nces_id: '4204050'
+  enrollment: 1283
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-towanda:
+  display_name: Towanda
+  district_name: Towanda Area SD
+  district_nces_id: '4223550'
+  enrollment: 1513
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-tower-city:
+  display_name: Tower City
+  district_name: Williams Valley SD
+  district_nces_id: '4226400'
+  enrollment: 963
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-troy:
+  display_name: Troy
+  district_name: Troy Area SD
+  district_nces_id: '4223790'
+  enrollment: 1403
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-tunkhannock:
+  display_name: Tunkhannock
+  district_name: Tunkhannock Area SD
+  district_nces_id: '4223850'
+  enrollment: 2119
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-turbotville:
+  display_name: Turbotville
+  district_name: Warrior Run SD
+  district_nces_id: '4224870'
+  enrollment: 1461
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-tyrone:
+  display_name: Tyrone
+  district_name: Tyrone Area SD
+  district_nces_id: '4224030'
+  enrollment: 1759
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-ulysses:
+  display_name: Ulysses
+  district_name: Northern Potter SD
+  district_nces_id: '4217700'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-union-city:
+  display_name: Union City
+  district_name: Union City Area SD
+  district_nces_id: '4224090'
+  enrollment: 971
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-uniontown-4202100:
+  display_name: Uniontown
+  district_name: Albert Gallatin Area SD
+  district_nces_id: '4202100'
+  enrollment: 3046
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-uniontown-4213320:
+  display_name: Uniontown
+  district_name: Laurel Highlands SD
+  district_nces_id: '4213320'
+  enrollment: 2736
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-uniontown-4224150:
+  display_name: Uniontown
+  district_name: Uniontown Area SD
+  district_nces_id: '4224150'
+  enrollment: 2516
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-valley-view:
+  display_name: Valley View
+  district_name: Tri-Valley SD
+  district_nces_id: '4223700'
+  enrollment: 880
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-vandergrift:
+  display_name: Vandergrift
+  district_name: Kiski Area SD
+  district_nces_id: '4212840'
+  enrollment: 3383
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wallingford:
+  display_name: Wallingford
+  district_name: Wallingford-Swarthmore SD
+  district_nces_id: '4224790'
+  enrollment: 3678
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-warfordsburg:
+  display_name: Warfordsburg
+  district_name: Southern Fulton SD
+  district_nces_id: '4222290'
+  enrollment: 697
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-warminster:
+  display_name: Warminster
+  district_name: Centennial SD
+  district_nces_id: '4205190'
+  enrollment: 5317
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-washington-4223760:
+  display_name: Washington
+  district_name: Trinity Area SD
+  district_nces_id: '4223760'
+  enrollment: 3279
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-washington-4224990:
+  display_name: Washington
+  district_name: Washington SD
+  district_nces_id: '4224990'
+  enrollment: 1472
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-waterford:
+  display_name: Waterford
+  district_name: Fort LeBoeuf SD
+  district_nces_id: '4209990'
+  enrollment: 1988
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wayne-4219920:
+  display_name: Wayne
+  district_name: Radnor Township SD
+  district_nces_id: '4219920'
+  enrollment: 3564
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wayne-4223640:
+  display_name: Wayne
+  district_name: Tredyffrin-Easttown SD
+  district_nces_id: '4223640'
+  enrollment: 6893
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-waynesboro:
+  display_name: Waynesboro
+  district_name: Waynesboro Area SD
+  district_nces_id: '4225110'
+  enrollment: 4303
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-waynesburg-4205430:
+  display_name: Waynesburg
+  district_name: Central Greene SD
+  district_nces_id: '4205430'
+  enrollment: 1494
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-waynesburg-4225440:
+  display_name: Waynesburg
+  district_name: West Greene SD
+  district_nces_id: '4225440'
+  enrollment: 672
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-weatherly:
+  display_name: Weatherly
+  district_name: Weatherly Area SD
+  district_nces_id: '4225140'
+  enrollment: 610
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wellsboro:
+  display_name: Wellsboro
+  district_name: Wellsboro Area SD
+  district_nces_id: '4225170'
+  enrollment: 1420
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-west-chester-4200091:
+  display_name: West Chester
+  district_name: 21st Century Cyber CS
+  district_nces_id: '4200091'
+  enrollment: 1239
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-west-chester-4200127:
+  display_name: West Chester
+  district_name: Pennsylvania Leadership CS
+  district_nces_id: '4200127'
+  enrollment: 3283
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-west-grove-4200101:
+  display_name: West Grove
+  district_name: Avon Grove CS
+  district_nces_id: '4200101'
+  enrollment: 1886
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-west-grove-4202790:
+  display_name: West Grove
+  district_name: Avon Grove SD
+  district_nces_id: '4202790'
+  enrollment: 5043
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-west-lawn:
+  display_name: West Lawn
+  district_name: Wilson SD
+  district_nces_id: '4226580'
+  enrollment: 6389
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-west-middlesex:
+  display_name: West Middlesex
+  district_name: West Middlesex Area SD
+  district_nces_id: '4225650'
+  enrollment: 707
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-west-mifflin:
+  display_name: West Mifflin
+  district_name: West Mifflin Area SD
+  district_nces_id: '4225680'
+  enrollment: 2366
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-west-sunbury:
+  display_name: West Sunbury
+  district_name: Moniteau SD
+  district_nces_id: '4217100'
+  enrollment: 1147
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-whitehall:
+  display_name: Whitehall
+  district_name: Whitehall-Coplay SD
+  district_nces_id: '4226250'
+  enrollment: 4116
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wilkes-barre:
+  display_name: Wilkes Barre
+  district_name: Wilkes-Barre Area SD
+  district_nces_id: '4226300'
+  enrollment: 7820
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wilkinsburg:
+  display_name: Wilkinsburg
+  district_name: Wilkinsburg Borough SD
+  district_nces_id: '4226370'
+  enrollment: 535
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-williamsport-4214310:
+  display_name: Williamsport
+  district_name: Loyalsock Township SD
+  district_nces_id: '4214310'
+  enrollment: 1549
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-williamsport-4226460:
+  display_name: Williamsport
+  district_name: Williamsport Area SD
+  district_nces_id: '4226460'
+  enrollment: 4732
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-willow-grove:
+  display_name: Willow Grove
+  district_name: Upper Moreland Township SD
+  district_nces_id: '4224510'
+  enrollment: 3369
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-windber:
+  display_name: Windber
+  district_name: Windber Area SD
+  district_nces_id: '4226610'
+  enrollment: 1216
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wingate:
+  display_name: Wingate
+  district_name: Bald Eagle Area SD
+  district_nces_id: '4202910'
+  enrollment: 1528
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wrightsville:
+  display_name: Wrightsville
+  district_name: Eastern York SD
+  district_nces_id: '4208790'
+  enrollment: 2251
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wyalusing:
+  display_name: Wyalusing
+  district_name: Wyalusing Area SD
+  district_nces_id: '4226700'
+  enrollment: 1234
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-wyomissing:
+  display_name: Wyomissing
+  district_name: Wyomissing Area SD
+  district_nces_id: '4226760'
+  enrollment: 1849
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-york-4200065:
+  display_name: York
+  district_name: Lincoln CS
+  district_nces_id: '4200065'
+  enrollment: 654
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-york-4200846:
+  display_name: York
+  district_name: York Academy Regional CS
+  district_nces_id: '4200846'
+  enrollment: 963
+  has_charters: true
+  source: ccd_auto
+  state: PA
+pa-york-4205490:
+  display_name: York
+  district_name: Central York SD
+  district_nces_id: '4205490'
+  enrollment: 5602
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-york-4225980:
+  display_name: York
+  district_name: West York Area SD
+  district_nces_id: '4225980'
+  enrollment: 2757
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-york-4226810:
+  display_name: York
+  district_name: York Co School of Technology
+  district_nces_id: '4226810'
+  enrollment: 1620
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-york-4226820:
+  display_name: York
+  district_name: York City SD
+  district_nces_id: '4226820'
+  enrollment: 6072
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-york-4226850:
+  display_name: York
+  district_name: York Suburban SD
+  district_nces_id: '4226850'
+  enrollment: 3007
+  has_charters: false
+  source: ccd_auto
+  state: PA
+pa-york-springs:
+  display_name: York Springs
+  district_name: Bermudian Springs SD
+  district_nces_id: '4203450'
+  enrollment: 1756
+  has_charters: false
+  source: ccd_auto
+  state: PA

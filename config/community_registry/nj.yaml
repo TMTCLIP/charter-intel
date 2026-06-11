@@ -1,0 +1,3640 @@
+nj-aberdeen:
+  display_name: Aberdeen
+  district_name: Matawan-Aberdeen Regional School District
+  district_nces_id: '3409750'
+  enrollment: 3950
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-absecon:
+  display_name: Absecon
+  district_name: Absecon Public Schools District
+  district_nces_id: '3400660'
+  enrollment: 952
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-allendale-3400750:
+  display_name: Allendale
+  district_name: Allendale Public School District
+  district_nces_id: '3400750'
+  enrollment: 914
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-allendale-3411730:
+  display_name: Allendale
+  district_name: Northern Highlands Regional High School District
+  district_nces_id: '3411730'
+  enrollment: 1324
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-allentown:
+  display_name: Allentown
+  district_name: Upper Freehold Regional School District
+  district_nces_id: '3416560'
+  enrollment: 2098
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-annandale:
+  display_name: Annandale
+  district_name: North Hunterdon-Voorhees Regional High School District
+  district_nces_id: '3411610'
+  enrollment: 1935
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-asbury-park:
+  display_name: Asbury Park
+  district_name: Asbury Park School District
+  district_nces_id: '3400930'
+  enrollment: 1541
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-atco:
+  display_name: Atco
+  district_name: Winslow Township School District
+  district_nces_id: '3418060'
+  enrollment: 4912
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-atlantic-city:
+  display_name: Atlantic City
+  district_name: Atlantic City School District
+  district_nces_id: '3400960'
+  enrollment: 6466
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-audubon:
+  display_name: Audubon
+  district_name: Audubon Public School District
+  district_nces_id: '3401050'
+  enrollment: 1423
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-barnegat:
+  display_name: Barnegat
+  district_name: Barnegat Township School District
+  district_nces_id: '3416470'
+  enrollment: 3665
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-barrington:
+  display_name: Barrington
+  district_name: Barrington School District
+  district_nces_id: '3401170'
+  enrollment: 558
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-basking-ridge:
+  display_name: Basking Ridge
+  district_name: Bernards Township School District
+  district_nces_id: '3401650'
+  enrollment: 4745
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bayonne:
+  display_name: Bayonne
+  district_name: Bayonne School District
+  district_nces_id: '3401260'
+  enrollment: 10383
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bayville-3401560:
+  display_name: Bayville
+  district_name: Berkeley Township School District
+  district_nces_id: '3401560'
+  enrollment: 2437
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bayville-3402910:
+  display_name: Bayville
+  district_name: Central Regional School District
+  district_nces_id: '3402910'
+  enrollment: 2344
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-belleville:
+  display_name: Belleville
+  district_name: Belleville Public School District
+  district_nces_id: '3401350'
+  enrollment: 4970
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bellmawr:
+  display_name: Bellmawr
+  district_name: Bellmawr Public School District
+  district_nces_id: '3401380'
+  enrollment: 1168
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-belvidere:
+  display_name: Belvidere
+  district_name: Belvidere School District
+  district_nces_id: '3401440'
+  enrollment: 604
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bergenfield:
+  display_name: Bergenfield
+  district_name: Bergenfield Borough School District
+  district_nces_id: '3401500'
+  enrollment: 3653
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-berkeley-heights:
+  display_name: Berkeley Heights
+  district_name: Berkeley Heights School District
+  district_nces_id: '3401530'
+  enrollment: 2479
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-berlin:
+  display_name: Berlin
+  district_name: Berlin Borough School District
+  district_nces_id: '3401590'
+  enrollment: 781
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bernardsville:
+  display_name: Bernardsville
+  district_name: Somerset Hills Regional School District
+  district_nces_id: '3400009'
+  enrollment: 1761
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-blackwood-3401770:
+  display_name: Blackwood
+  district_name: Black Horse Pike Regional School District
+  district_nces_id: '3401770'
+  enrollment: 3600
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-blackwood-3406030:
+  display_name: Blackwood
+  district_name: Gloucester Township Public Schools
+  district_nces_id: '3406030'
+  enrollment: 6663
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-blairstown:
+  display_name: Blairstown
+  district_name: North Warren Regional School District
+  district_nces_id: '3409550'
+  enrollment: 626
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bloomfield:
+  display_name: Bloomfield
+  district_name: Bloomfield Township School District
+  district_nces_id: '3401830'
+  enrollment: 6328
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bloomingdale:
+  display_name: Bloomingdale
+  district_name: Bloomingdale School District
+  district_nces_id: '3401860'
+  enrollment: 615
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bogota:
+  display_name: Bogota
+  district_name: Bogota Public School District
+  district_nces_id: '3401920'
+  enrollment: 1381
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-boonton:
+  display_name: Boonton
+  district_name: Boonton Town Public School District
+  district_nces_id: '3401950'
+  enrollment: 1522
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bordentown:
+  display_name: Bordentown
+  district_name: Bordentown Regional School District
+  district_nces_id: '3402030'
+  enrollment: 2247
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bound-brook:
+  display_name: Bound Brook
+  district_name: Bound Brook School District
+  district_nces_id: '3402100'
+  enrollment: 2067
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-branchburg:
+  display_name: Branchburg
+  district_name: Branchburg Township School District
+  district_nces_id: '3402160'
+  enrollment: 1290
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-branchville:
+  display_name: Branchville
+  district_name: Frankford Township Consolidated School District
+  district_nces_id: '3405340'
+  enrollment: 505
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-brick:
+  display_name: Brick
+  district_name: Brick Township Public School District
+  district_nces_id: '3402220'
+  enrollment: 8340
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bridgeton-3402250:
+  display_name: Bridgeton
+  district_name: Bridgeton City School District
+  district_nces_id: '3402250'
+  enrollment: 6221
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bridgeton-3403620:
+  display_name: Bridgeton
+  district_name: Cumberland Regional School District
+  district_nces_id: '3403620'
+  enrollment: 1156
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bridgeton-3405040:
+  display_name: Bridgeton
+  district_name: Fairfield Township School District
+  district_nces_id: '3405040'
+  enrollment: 510
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-bridgeton-3407500:
+  display_name: Bridgeton
+  district_name: Hopewell Township School District
+  district_nces_id: '3407500'
+  enrollment: 515
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-brookside:
+  display_name: Brookside
+  district_name: Mendham Township School District
+  district_nces_id: '3409930'
+  enrollment: 760
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-burlington-3402430:
+  display_name: Burlington
+  district_name: Burlington City Public School District
+  district_nces_id: '3402430'
+  enrollment: 1862
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-burlington-3402460:
+  display_name: Burlington
+  district_name: Burlington Township School District
+  district_nces_id: '3402460'
+  enrollment: 3650
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-butler:
+  display_name: Butler
+  district_name: Butler Public School District
+  district_nces_id: '3402520'
+  enrollment: 1184
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-califon-3408460:
+  display_name: Califon
+  district_name: Lebanon Township School District
+  district_nces_id: '3408460'
+  enrollment: 579
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-califon-3416170:
+  display_name: Califon
+  district_name: Tewksbury Township School District
+  district_nces_id: '3416170'
+  enrollment: 506
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-camden-3400078:
+  display_name: Camden
+  district_name: LEAP Academy University Charter School
+  district_nces_id: '3400078'
+  enrollment: 1563
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-camden-3400080:
+  display_name: Camden
+  district_name: Freedom Prep Charter School
+  district_nces_id: '3400080'
+  enrollment: 744
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-camden-3400772:
+  display_name: Camden
+  district_name: Mastery Schools of Camden Inc.
+  district_nces_id: '3400772'
+  enrollment: 2880
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-camden-3400776:
+  display_name: Camden
+  district_name: Camden Prep Inc.
+  district_nces_id: '3400776'
+  enrollment: 1162
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-camden-3400777:
+  display_name: Camden
+  district_name: 'KIPP: Cooper Norcross A New Jersey Nonprofit Corporation'
+  district_nces_id: '3400777'
+  enrollment: 2026
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-camden-3400785:
+  display_name: Camden
+  district_name: Camden's Promise Charter School
+  district_nces_id: '3400785'
+  enrollment: 2374
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-camden-3402640:
+  display_name: Camden
+  district_name: Camden City School District
+  district_nces_id: '3402640'
+  enrollment: 7099
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cape-may-3409090:
+  display_name: Cape May
+  district_name: Lower Cape May Regional School District
+  district_nces_id: '3409090'
+  enrollment: 1225
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cape-may-3409150:
+  display_name: Cape May
+  district_name: Lower Township Elementary School District
+  district_nces_id: '3409150'
+  enrollment: 1466
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cape-may-court-house-3402730:
+  display_name: Cape May Court House
+  district_name: Cape May County Technical High School District
+  district_nces_id: '3402730'
+  enrollment: 555
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cape-may-court-house-3410020:
+  display_name: Cape May Court House
+  district_name: Middle Township Public School District
+  district_nces_id: '3410020'
+  enrollment: 2663
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-carlstadt:
+  display_name: Carlstadt
+  district_name: Carlstadt Public School District
+  district_nces_id: '3402790'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-carteret:
+  display_name: Carteret
+  district_name: Carteret Public School District
+  district_nces_id: '3402820'
+  enrollment: 3935
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cedar-grove:
+  display_name: Cedar Grove
+  district_name: Cedar Grove Township School District
+  district_nces_id: '3402850'
+  enrollment: 1586
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-chatham:
+  display_name: Chatham
+  district_name: School District of the Chathams
+  district_nces_id: '3400004'
+  enrollment: 3637
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cherry-hill:
+  display_name: Cherry Hill
+  district_name: Cherry Hill School District
+  district_nces_id: '3403000'
+  enrollment: 10818
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-chester-3403060:
+  display_name: Chester
+  district_name: Chester Township School District
+  district_nces_id: '3403060'
+  enrollment: 1008
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-chester-3417550:
+  display_name: Chester
+  district_name: West Morris Regional High School District
+  district_nces_id: '3417550'
+  enrollment: 2116
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-chesterfield:
+  display_name: Chesterfield
+  district_name: Chesterfield Township School District
+  district_nces_id: '3403090'
+  enrollment: 714
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cinnaminson:
+  display_name: Cinnaminson
+  district_name: Cinnaminson Township School District
+  district_nces_id: '3403120'
+  enrollment: 2850
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-clark:
+  display_name: Clark
+  district_name: Clark Township Public School District
+  district_nces_id: '3403150'
+  enrollment: 2267
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-clayton:
+  display_name: Clayton
+  district_name: Clayton Public School District
+  district_nces_id: '3403180'
+  enrollment: 1489
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-clementon:
+  display_name: Clementon
+  district_name: Clementon Elementary School District
+  district_nces_id: '3403240'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-clermont:
+  display_name: Clermont
+  district_name: Dennis Township School District
+  district_nces_id: '3403840'
+  enrollment: 670
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cliffside-park:
+  display_name: Cliffside Park
+  district_name: Cliffside Park School District
+  district_nces_id: '3403270'
+  enrollment: 3141
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-clifton:
+  display_name: Clifton
+  district_name: Clifton Public School District
+  district_nces_id: '3403300'
+  enrollment: 10826
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-closter:
+  display_name: Closter
+  district_name: Closter Public School District
+  district_nces_id: '3403390'
+  enrollment: 1217
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-collingswood:
+  display_name: Collingswood
+  district_name: Collingswood Public School District
+  district_nces_id: '3403420'
+  enrollment: 2286
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-colts-neck:
+  display_name: Colts Neck
+  district_name: Colts Neck Township School District
+  district_nces_id: '3403450'
+  enrollment: 1005
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-columbus-3409510:
+  display_name: Columbus
+  district_name: Mansfield Township School District
+  district_nces_id: '3409510'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-columbus-3411700:
+  display_name: Columbus
+  district_name: Northern Burlington County Regional School District
+  district_nces_id: '3411700'
+  enrollment: 2162
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cranford:
+  display_name: Cranford
+  district_name: Cranford Public School District
+  district_nces_id: '3403570'
+  enrollment: 3745
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-cresskill:
+  display_name: Cresskill
+  district_name: Cresskill Public School District
+  district_nces_id: '3403600'
+  enrollment: 1681
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-delran:
+  display_name: Delran
+  district_name: Delran Township School District
+  district_nces_id: '3403780'
+  enrollment: 2904
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-demarest-3403810:
+  display_name: Demarest
+  district_name: Demarest School District
+  district_nces_id: '3403810'
+  enrollment: 773
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-demarest-3411760:
+  display_name: Demarest
+  district_name: Northern Valley Regional High School District
+  district_nces_id: '3411760'
+  enrollment: 2053
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-denville-3403870:
+  display_name: Denville
+  district_name: Denville Township K-8 School District
+  district_nces_id: '3403870'
+  enrollment: 1688
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-denville-3410720:
+  display_name: Denville
+  district_name: Morris County Vocational School District
+  district_nces_id: '3410720'
+  enrollment: 1261
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-denville-3410740:
+  display_name: Denville
+  district_name: Morris Hills Regional School District
+  district_nces_id: '3410740'
+  enrollment: 2673
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-deptford:
+  display_name: Deptford
+  district_name: Deptford Township Public School District
+  district_nces_id: '3403900'
+  enrollment: 4114
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-dover:
+  display_name: Dover
+  district_name: Dover Public School District
+  district_nces_id: '3403930'
+  enrollment: 3603
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-dumont:
+  display_name: Dumont
+  district_name: Dumont Public School District
+  district_nces_id: '3403990'
+  enrollment: 2622
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-dunellen:
+  display_name: Dunellen
+  district_name: Dunellen Public School District
+  district_nces_id: '3404020'
+  enrollment: 1305
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-east-brunswick-3400735:
+  display_name: East Brunswick
+  district_name: Hatikvah International Academy Charter School
+  district_nces_id: '3400735'
+  enrollment: 598
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-east-brunswick-3404110:
+  display_name: East Brunswick
+  district_name: East Brunswick Township School District
+  district_nces_id: '3404110'
+  enrollment: 8159
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-east-brunswick-3410080:
+  display_name: East Brunswick
+  district_name: Middlesex County Vocational and Technical School District
+  district_nces_id: '3410080'
+  enrollment: 2103
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-east-hanover-3404170:
+  display_name: East Hanover
+  district_name: East Hanover Township School District
+  district_nces_id: '3404170'
+  enrollment: 972
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-east-hanover-3406660:
+  display_name: East Hanover
+  district_name: Hanover Park Regional High School District
+  district_nces_id: '3406660'
+  enrollment: 1354
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-east-orange:
+  display_name: East Orange
+  district_name: East Orange School District
+  district_nces_id: '3404230'
+  enrollment: 9272
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-east-rutherford-3402800:
+  display_name: East Rutherford
+  district_name: Carlstadt-East Rutherford Regional High School District
+  district_nces_id: '3402800'
+  enrollment: 807
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-east-rutherford-3404290:
+  display_name: East Rutherford
+  district_name: East Rutherford School District
+  district_nces_id: '3404290'
+  enrollment: 750
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-eastampton:
+  display_name: Eastampton
+  district_name: Eastampton Township School District
+  district_nces_id: '3404350'
+  enrollment: 584
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-eatontown:
+  display_name: Eatontown
+  district_name: Eatontown Public School District
+  district_nces_id: '3404410'
+  enrollment: 980
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-edgewater:
+  display_name: Edgewater
+  district_name: Edgewater School District
+  district_nces_id: '3404440'
+  enrollment: 673
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-edgewater-park:
+  display_name: Edgewater Park
+  district_name: Edgewater Park Township School District
+  district_nces_id: '3404470'
+  enrollment: 973
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-edison:
+  display_name: Edison
+  district_name: Edison Township School District
+  district_nces_id: '3404500'
+  enrollment: 16807
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-egg-harbor-city:
+  display_name: Egg Harbor City
+  district_name: Egg Harbor City School District
+  district_nces_id: '3404530'
+  enrollment: 561
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-egg-harbor-township:
+  display_name: Egg Harbor Township
+  district_name: Egg Harbor Township School District
+  district_nces_id: '3404560'
+  enrollment: 7556
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-elizabeth:
+  display_name: Elizabeth
+  district_name: Elizabeth Public Schools
+  district_nces_id: '3404590'
+  enrollment: 28266
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-elmwood-park:
+  display_name: Elmwood Park
+  district_name: Elmwood Park School District
+  district_nces_id: '3404660'
+  enrollment: 2587
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-elwood:
+  display_name: Elwood
+  district_name: Mullica Township School District
+  district_nces_id: '3411070'
+  enrollment: 635
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-emerson:
+  display_name: Emerson
+  district_name: Emerson Public School District
+  district_nces_id: '3404710'
+  enrollment: 1082
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-englewood:
+  display_name: Englewood
+  district_name: Englewood Public School District
+  district_nces_id: '3404740'
+  enrollment: 2960
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-englishtown-3405610:
+  display_name: Englishtown
+  district_name: Freehold Regional High School District
+  district_nces_id: '3405610'
+  enrollment: 10453
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-englishtown-3409390:
+  display_name: Englishtown
+  district_name: Manalapan-Englishtown Regional School District
+  district_nces_id: '3409390'
+  enrollment: 4715
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-ewing-3400770:
+  display_name: Ewing
+  district_name: Trenton Stem-to-Civics Charter School
+  district_nces_id: '3400770'
+  enrollment: 585
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-ewing-3404920:
+  display_name: Ewing
+  district_name: Ewing Township School District
+  district_nces_id: '3404920'
+  enrollment: 3545
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-fair-haven:
+  display_name: Fair Haven
+  district_name: Fair Haven School District
+  district_nces_id: '3404950'
+  enrollment: 964
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-fair-lawn:
+  display_name: Fair Lawn
+  district_name: Fair Lawn Public School District
+  district_nces_id: '3404980'
+  enrollment: 5529
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-fairfield:
+  display_name: Fairfield
+  district_name: Fairfield Public School District
+  district_nces_id: '3405010'
+  enrollment: 694
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-fairview:
+  display_name: Fairview
+  district_name: Fairview Public School District
+  district_nces_id: '3405070'
+  enrollment: 1565
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-flanders:
+  display_name: Flanders
+  district_name: Mount Olive Township School District
+  district_nces_id: '3410980'
+  enrollment: 4752
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-flemington-3405190:
+  display_name: Flemington
+  district_name: Flemington-Raritan Regional School District
+  district_nces_id: '3405190'
+  enrollment: 3149
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-flemington-3407590:
+  display_name: Flemington
+  district_name: Hunterdon Central Regional High School District
+  district_nces_id: '3407590'
+  enrollment: 2507
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-florence:
+  display_name: Florence
+  district_name: Florence Township School District
+  district_nces_id: '3405220'
+  enrollment: 1534
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-florham-park:
+  display_name: Florham Park
+  district_name: Florham Park School District
+  district_nces_id: '3405250'
+  enrollment: 957
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-fort-lee:
+  display_name: Fort Lee
+  district_name: Fort Lee School District
+  district_nces_id: '3405310'
+  enrollment: 4032
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-franklin-lakes:
+  display_name: Franklin Lakes
+  district_name: Franklin Lakes School District
+  district_nces_id: '3405370'
+  enrollment: 1199
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-franklinville-3405430:
+  display_name: Franklinville
+  district_name: Township of Franklin School District
+  district_nces_id: '3405430'
+  enrollment: 1338
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-franklinville-3415450:
+  display_name: Franklinville
+  district_name: Delsea Regional High School District
+  district_nces_id: '3415450'
+  enrollment: 1631
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-freehold-3405580:
+  display_name: Freehold
+  district_name: Freehold Borough School District
+  district_nces_id: '3405580'
+  enrollment: 1641
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-freehold-3405640:
+  display_name: Freehold
+  district_name: Freehold Township School District
+  district_nces_id: '3405640'
+  enrollment: 3447
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-freehold-3417500:
+  display_name: Freehold
+  district_name: Monmouth County Vocational School District
+  district_nces_id: '3417500'
+  enrollment: 1545
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-frenchtown:
+  display_name: Frenchtown
+  district_name: Delaware Valley Regional High School District
+  district_nces_id: '3403750'
+  enrollment: 728
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-galloway:
+  display_name: Galloway
+  district_name: Galloway Township Public School District
+  district_nces_id: '3405730'
+  enrollment: 3161
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-garfield-3400715:
+  display_name: Garfield
+  district_name: Bergen Arts and Science Charter School
+  district_nces_id: '3400715'
+  enrollment: 1252
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-garfield-3405760:
+  display_name: Garfield
+  district_name: Garfield Public School District
+  district_nces_id: '3405760'
+  enrollment: 4787
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-gillette:
+  display_name: Gillette
+  district_name: Long Hill Township School District
+  district_nces_id: '3412660'
+  enrollment: 846
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-glassboro:
+  display_name: Glassboro
+  district_name: Glassboro School District
+  district_nces_id: '3405880'
+  enrollment: 1895
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-glen-ridge:
+  display_name: Glen Ridge
+  district_name: Glen Ridge Public School District
+  district_nces_id: '3405940'
+  enrollment: 1833
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-glen-rock:
+  display_name: Glen Rock
+  district_name: Glen Rock Public School District
+  district_nces_id: '3405970'
+  enrollment: 2620
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-gloucester-city:
+  display_name: Gloucester City
+  district_name: Gloucester City Public School District
+  district_nces_id: '3406000'
+  enrollment: 2356
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-great-meadows:
+  display_name: Great Meadows
+  district_name: Great Meadows Regional School District
+  district_nces_id: '3400008'
+  enrollment: 646
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-green-brook:
+  display_name: Green Brook
+  district_name: Green Brook Township Public School District
+  district_nces_id: '3406120'
+  enrollment: 732
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-guttenberg:
+  display_name: Guttenberg
+  district_name: Guttenberg School District
+  district_nces_id: '3406240'
+  enrollment: 959
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hackensack:
+  display_name: Hackensack
+  district_name: Hackensack School District
+  district_nces_id: '3406270'
+  enrollment: 5272
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hackettstown:
+  display_name: Hackettstown
+  district_name: Hackettstown Public School District
+  district_nces_id: '3406300'
+  enrollment: 2078
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-haddon-heights:
+  display_name: Haddon Heights
+  district_name: HADDON HEIGHTS School District
+  district_nces_id: '3406330'
+  enrollment: 1491
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-haddonfield:
+  display_name: Haddonfield
+  district_name: Haddonfield School District
+  district_nces_id: '3406390'
+  enrollment: 2766
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hainesport:
+  display_name: Hainesport
+  district_name: Hainesport Township School District
+  district_nces_id: '3406420'
+  enrollment: 528
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-haledon-3406450:
+  display_name: Haledon
+  district_name: Haledon Public School District
+  district_nces_id: '3406450'
+  enrollment: 1035
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-haledon-3412600:
+  display_name: Haledon
+  district_name: Passaic County Manchester Regional High School District
+  district_nces_id: '3412600'
+  enrollment: 826
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hamburg:
+  display_name: Hamburg
+  district_name: Hardyston Township School District
+  district_nces_id: '3406780'
+  enrollment: 598
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hamilton:
+  display_name: Hamilton
+  district_name: Hamilton Township Public School District
+  district_nces_id: '3406540'
+  enrollment: 12096
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hammonton:
+  display_name: Hammonton
+  district_name: Hammonton School District
+  district_nces_id: '3406570'
+  enrollment: 3414
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hardyston-township:
+  display_name: Hardyston Township
+  district_name: Wallkill Valley Regional High School
+  district_nces_id: '3416870'
+  enrollment: 635
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-harrington-park:
+  display_name: Harrington Park
+  district_name: Harrington Park School District
+  district_nces_id: '3406840'
+  enrollment: 645
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-harrison:
+  display_name: Harrison
+  district_name: Harrison Public Schools
+  district_nces_id: '3406870'
+  enrollment: 2440
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hasbrouck-heights:
+  display_name: Hasbrouck Heights
+  district_name: Hasbrouck Heights School District
+  district_nces_id: '3406930'
+  enrollment: 1744
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-haskell:
+  display_name: Haskell
+  district_name: Wanaque School District
+  district_nces_id: '3416950'
+  enrollment: 893
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hawthorne:
+  display_name: Hawthorne
+  district_name: Hawthorne Public School District
+  district_nces_id: '3406990'
+  enrollment: 2229
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hazlet:
+  display_name: Hazlet
+  district_name: Hazlet Township Public School District
+  district_nces_id: '3413680'
+  enrollment: 2703
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hibernia:
+  display_name: Hibernia
+  district_name: Rockaway Township School District
+  district_nces_id: '3414130'
+  enrollment: 2386
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-highland-park:
+  display_name: Highland Park
+  district_name: Highland Park Boro School District
+  district_nces_id: '3407170'
+  enrollment: 1598
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hightstown:
+  display_name: Hightstown
+  district_name: East Windsor Regional School District
+  district_nces_id: '3404320'
+  enrollment: 5138
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hillsborough:
+  display_name: Hillsborough
+  district_name: Hillsborough Township Public School District
+  district_nces_id: '3407230'
+  enrollment: 7265
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hillsdale:
+  display_name: Hillsdale
+  district_name: Hillsdale School District
+  district_nces_id: '3407260'
+  enrollment: 1124
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hillside:
+  display_name: Hillside
+  district_name: Hillside Public School District
+  district_nces_id: '3407290'
+  enrollment: 3065
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-ho-ho-kus:
+  display_name: Ho-Ho-Kus
+  district_name: Ho-Ho-Kus School District
+  district_nces_id: '3407320'
+  enrollment: 553
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hoboken:
+  display_name: Hoboken
+  district_name: Hoboken Public School District
+  district_nces_id: '3407350'
+  enrollment: 3170
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-holmdel:
+  display_name: Holmdel
+  district_name: Holmdel Township School District
+  district_nces_id: '3407410'
+  enrollment: 2918
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-hopatcong:
+  display_name: Hopatcong
+  district_name: Hopatcong Borough School District
+  district_nces_id: '3407440'
+  enrollment: 1418
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-howell-twp:
+  display_name: Howell Twp
+  district_name: Howell Township Public School District
+  district_nces_id: '3407560'
+  enrollment: 5492
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-irvington:
+  display_name: Irvington
+  district_name: Irvington Public School District
+  district_nces_id: '3407680'
+  enrollment: 7675
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-jackson:
+  display_name: Jackson
+  district_name: Jackson Township School District
+  district_nces_id: '3407740'
+  enrollment: 7605
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-jamesburg:
+  display_name: Jamesburg
+  district_name: Jamesburg Public School District
+  district_nces_id: '3407770'
+  enrollment: 674
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-jersey-city-3400033:
+  display_name: Jersey City
+  district_name: Jersey City Community Charter School
+  district_nces_id: '3400033'
+  enrollment: 586
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-jersey-city-3400034:
+  display_name: Jersey City
+  district_name: Jersey City Golden Door Charter School
+  district_nces_id: '3400034'
+  enrollment: 668
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-jersey-city-3400035:
+  display_name: Jersey City
+  district_name: The Learning Community Charter School
+  district_nces_id: '3400035'
+  enrollment: 637
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-jersey-city-3400759:
+  display_name: Jersey City
+  district_name: BelovED Community Charter
+  district_nces_id: '3400759'
+  enrollment: 1551
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-jersey-city-3400781:
+  display_name: Jersey City
+  district_name: Empowerment Academy Charter School
+  district_nces_id: '3400781'
+  enrollment: 1002
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-jersey-city-3407830:
+  display_name: Jersey City
+  district_name: Jersey City Public Schools
+  district_nces_id: '3407830'
+  enrollment: 26647
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-keansburg:
+  display_name: Keansburg
+  district_name: Keansburg School District
+  district_nces_id: '3407860'
+  enrollment: 1604
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-kearny-3400787:
+  display_name: Kearny
+  district_name: Hudson Arts and Science Charter School
+  district_nces_id: '3400787'
+  enrollment: 846
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-kearny-3407890:
+  display_name: Kearny
+  district_name: Kearny
+  district_nces_id: '3407890'
+  enrollment: 5438
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-kenilworth:
+  display_name: Kenilworth
+  district_name: Kenilworth School District
+  district_nces_id: '3407920'
+  enrollment: 1473
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-keyport:
+  display_name: Keyport
+  district_name: Keyport School District
+  district_nces_id: '3407950'
+  enrollment: 947
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-kinnelon:
+  display_name: Kinnelon
+  district_name: Kinnelon School District
+  district_nces_id: '3408040'
+  enrollment: 1652
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lake-hopatcong:
+  display_name: Lake Hopatcong
+  district_name: Jefferson Township Public School District
+  district_nces_id: '3407800'
+  enrollment: 2509
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lakewood:
+  display_name: Lakewood
+  district_name: Lakewood Township School District
+  district_nces_id: '3408220'
+  enrollment: 5023
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lambertville:
+  display_name: Lambertville
+  district_name: South Hunterdon Regional School District
+  district_nces_id: '3400769'
+  enrollment: 827
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lanoka-harbor:
+  display_name: Lanoka Harbor
+  district_name: Lacey Township School District
+  district_nces_id: '3408100'
+  enrollment: 3832
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lawrenceville:
+  display_name: Lawrenceville
+  district_name: Lawrence Township Public School District
+  district_nces_id: '3408400'
+  enrollment: 3711
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lebanon:
+  display_name: Lebanon
+  district_name: Clinton Township School District
+  district_nces_id: '3403360'
+  enrollment: 1170
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-leonardo:
+  display_name: Leonardo
+  district_name: Middletown Township Public School District
+  district_nces_id: '3410110'
+  enrollment: 8993
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-leonia:
+  display_name: Leonia
+  district_name: Leonia Public School District
+  district_nces_id: '3408520'
+  enrollment: 2131
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lincoln-park:
+  display_name: Lincoln Park
+  district_name: Lincoln Park School District
+  district_nces_id: '3408580'
+  enrollment: 885
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-linden:
+  display_name: Linden
+  district_name: Linden Public School District
+  district_nces_id: '3408610'
+  enrollment: 6125
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lindenwold:
+  display_name: Lindenwold
+  district_name: Lindenwold Public School District
+  district_nces_id: '3408640'
+  enrollment: 3100
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-linwood-3408670:
+  display_name: Linwood
+  district_name: Linwood City School District
+  district_nces_id: '3408670'
+  enrollment: 806
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-linwood-3409360:
+  display_name: Linwood
+  district_name: Mainland Regional High School
+  district_nces_id: '3409360'
+  enrollment: 1197
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-little-egg-harbor-3408700:
+  display_name: Little Egg Harbor
+  district_name: Little Egg Harbor Township School District
+  district_nces_id: '3408700'
+  enrollment: 1666
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-little-egg-harbor-3413000:
+  display_name: Little Egg Harbor
+  district_name: Pinelands Regional School District
+  district_nces_id: '3413000'
+  enrollment: 1611
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-little-falls-3408730:
+  display_name: Little Falls
+  district_name: Little Falls Township Public School District
+  district_nces_id: '3408730'
+  enrollment: 922
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-little-falls-3412570:
+  display_name: Little Falls
+  district_name: Passaic Valley Regional High School District
+  district_nces_id: '3412570'
+  enrollment: 1040
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-little-ferry:
+  display_name: Little Ferry
+  district_name: Little Ferry Public School District
+  district_nces_id: '3408760'
+  enrollment: 806
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-little-silver-3408790:
+  display_name: Little Silver
+  district_name: Little Silver Boro School District
+  district_nces_id: '3408790'
+  enrollment: 733
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-little-silver-3413750:
+  display_name: Little Silver
+  district_name: Red Bank Regional School District
+  district_nces_id: '3413750'
+  enrollment: 1392
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-livingston:
+  display_name: Livingston
+  district_name: Livingston Board of Education School District
+  district_nces_id: '3408820'
+  enrollment: 6371
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lodi:
+  display_name: Lodi
+  district_name: Lodi School District
+  district_nces_id: '3408850'
+  enrollment: 3203
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-logan-township:
+  display_name: Logan Township
+  district_name: Logan Township School District
+  district_nces_id: '3408880'
+  enrollment: 842
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-long-branch:
+  display_name: Long Branch
+  district_name: LONG BRANCH PUBLIC SCHOOL District
+  district_nces_id: '3408940'
+  enrollment: 5494
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-long-valley:
+  display_name: Long Valley
+  district_name: Washington Township School District
+  district_nces_id: '3417130'
+  enrollment: 1982
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lumberton:
+  display_name: Lumberton
+  district_name: Lumberton Township Board of Education
+  district_nces_id: '3409180'
+  enrollment: 1235
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-lyndhurst:
+  display_name: Lyndhurst
+  district_name: Lyndhurst Public School District
+  district_nces_id: '3409210'
+  enrollment: 2637
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-madison:
+  display_name: Madison
+  district_name: Madison Public School District
+  district_nces_id: '3409240'
+  enrollment: 2520
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mahwah:
+  display_name: Mahwah
+  district_name: Mahwah Township Public School District
+  district_nces_id: '3409330'
+  enrollment: 2729
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-manahawkin-3415480:
+  display_name: Manahawkin
+  district_name: Southern Regional School District
+  district_nces_id: '3415480'
+  enrollment: 2762
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-manahawkin-3415690:
+  display_name: Manahawkin
+  district_name: Stafford Township School District
+  district_nces_id: '3415690'
+  enrollment: 2480
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-manasquan:
+  display_name: Manasquan
+  district_name: Manasquan School District
+  district_nces_id: '3409420'
+  enrollment: 1470
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-manville:
+  display_name: Manville
+  district_name: Manville School District
+  district_nces_id: '3409630'
+  enrollment: 1694
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-maple-shade:
+  display_name: Maple Shade
+  district_name: Maple Shade School District
+  district_nces_id: '3409660'
+  enrollment: 2439
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-maplewood:
+  display_name: Maplewood
+  district_name: South Orange-Maplewood School District
+  district_nces_id: '3415330'
+  enrollment: 6811
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-marlboro:
+  display_name: Marlboro
+  district_name: Marlboro Township School District
+  district_nces_id: '3409720'
+  enrollment: 4537
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-marlton:
+  display_name: Marlton
+  district_name: Evesham Township School District
+  district_nces_id: '3404890'
+  enrollment: 4416
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-martinsville:
+  display_name: Martinsville
+  district_name: Bridgewater-Raritan Regional School District
+  district_nces_id: '3402280'
+  enrollment: 8049
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-matawan:
+  display_name: Matawan
+  district_name: Old Bridge Township School District
+  district_nces_id: '3409270'
+  enrollment: 8096
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mays-landing-3400990:
+  display_name: Mays Landing
+  district_name: Atlantic County Vocational School District
+  district_nces_id: '3400990'
+  enrollment: 1756
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mays-landing-3406060:
+  display_name: Mays Landing
+  district_name: Greater Egg Harbor Regional High School District
+  district_nces_id: '3406060'
+  enrollment: 3041
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mays-landing-3406510:
+  display_name: Mays Landing
+  district_name: Hamilton Township School District
+  district_nces_id: '3406510'
+  enrollment: 2913
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-maywood:
+  display_name: Maywood
+  district_name: Maywood School District
+  district_nces_id: '3409810'
+  enrollment: 956
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-medford:
+  display_name: Medford
+  district_name: Medford Township School District
+  district_nces_id: '3409870'
+  enrollment: 2690
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-metuchen:
+  display_name: Metuchen
+  district_name: Metuchen Public School District
+  district_nces_id: '3409990'
+  enrollment: 2302
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mickleton:
+  display_name: Mickleton
+  district_name: East Greenwich Township School District
+  district_nces_id: '3404140'
+  enrollment: 1287
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-middlesex:
+  display_name: Middlesex
+  district_name: Middlesex Borough School District
+  district_nces_id: '3410050'
+  enrollment: 2044
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-midland-park:
+  display_name: Midland Park
+  district_name: Midland Park School District
+  district_nces_id: '3410140'
+  enrollment: 883
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-milford:
+  display_name: Milford
+  district_name: Holland Township School District
+  district_nces_id: '3407380'
+  enrollment: 505
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-millburn:
+  display_name: Millburn
+  district_name: Millburn Township School District
+  district_nces_id: '3410200'
+  enrollment: 4793
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-millstone-township:
+  display_name: Millstone Township
+  district_name: Millstone Township School District
+  district_nces_id: '3410230'
+  enrollment: 1173
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-milltown:
+  display_name: Milltown
+  district_name: Milltown School District
+  district_nces_id: '3410290'
+  enrollment: 833
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-millville:
+  display_name: Millville
+  district_name: Millville School District
+  district_nces_id: '3410320'
+  enrollment: 5090
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-monroe-township:
+  display_name: Monroe Township
+  district_name: Monroe Township School District
+  district_nces_id: '3410500'
+  enrollment: 6948
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-montclair:
+  display_name: Montclair
+  district_name: Montclair Public School District
+  district_nces_id: '3410560'
+  enrollment: 6216
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-montvale-3410620:
+  display_name: Montvale
+  district_name: Montvale Board of Education School District
+  district_nces_id: '3410620'
+  enrollment: 960
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-montvale-3412510:
+  display_name: Montvale
+  district_name: Pascack Valley Regional High School District
+  district_nces_id: '3412510'
+  enrollment: 1782
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-montville:
+  display_name: Montville
+  district_name: Montville Township School District
+  district_nces_id: '3410650'
+  enrollment: 3469
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-moorestown:
+  display_name: Moorestown
+  district_name: Moorestown Township Public School District
+  district_nces_id: '3410710'
+  enrollment: 3884
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-morris-plains:
+  display_name: Morris Plains
+  district_name: Morris Plains School District
+  district_nces_id: '3410770'
+  enrollment: 578
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-morristown:
+  display_name: Morristown
+  district_name: Morris School District
+  district_nces_id: '3410810'
+  enrollment: 5682
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mount-holly:
+  display_name: Mount Holly
+  district_name: Rancocas Valley Regional High School District
+  district_nces_id: '3413620'
+  enrollment: 2054
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mount-laurel:
+  display_name: Mount Laurel
+  district_name: Mount Laurel Township School District
+  district_nces_id: '3410950'
+  enrollment: 4187
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mountainside:
+  display_name: Mountainside
+  district_name: Mountainside School District
+  district_nces_id: '3411040'
+  enrollment: 747
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mt-holly:
+  display_name: Mt. Holly
+  district_name: Mount Holly Township Public School District
+  district_nces_id: '3410920'
+  enrollment: 1152
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mt-lakes:
+  display_name: Mt Lakes
+  district_name: Mountain Lakes Public School District
+  district_nces_id: '3411010'
+  enrollment: 1308
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mullica-hill-3403210:
+  display_name: Mullica Hill
+  district_name: Clearview Regional High School District
+  district_nces_id: '3403210'
+  enrollment: 2200
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-mullica-hill-3406900:
+  display_name: Mullica Hill
+  district_name: Harrison Township School District
+  district_nces_id: '3406900'
+  enrollment: 1341
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-neptune:
+  display_name: Neptune
+  district_name: College Achieve Greater Asbury Park Charter School
+  district_nces_id: '3400791'
+  enrollment: 554
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-neptune-twp:
+  display_name: Neptune Twp
+  district_name: Neptune Township School District
+  district_nces_id: '3411160'
+  enrollment: 3514
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-new-brunswick:
+  display_name: New Brunswick
+  district_name: New Brunswick School District
+  district_nces_id: '3411220'
+  enrollment: 9690
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-new-egypt:
+  display_name: New Egypt
+  district_name: Plumsted Township School District
+  district_nces_id: '3413230'
+  enrollment: 1121
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-new-milford:
+  display_name: New Milford
+  district_name: New Milford Public School District
+  district_nces_id: '3411280'
+  enrollment: 2035
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-new-providence:
+  display_name: New Providence
+  district_name: New Providence School District
+  district_nces_id: '3411310'
+  enrollment: 2382
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-newark-3400022:
+  display_name: Newark
+  district_name: Marion P. Thomas Charter School
+  district_nces_id: '3400022'
+  enrollment: 1437
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-newark-3400024:
+  display_name: Newark
+  district_name: North Star Academy Charter School
+  district_nces_id: '3400024'
+  enrollment: 6350
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-newark-3400025:
+  display_name: Newark
+  district_name: Robert Treat Academy Charter School
+  district_nces_id: '3400025'
+  enrollment: 690
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-newark-3400026:
+  display_name: Newark
+  district_name: Maria L. Varisco-Rogers Charter School
+  district_nces_id: '3400026'
+  enrollment: 569
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-newark-3400070:
+  display_name: Newark
+  district_name: TEAM Academy Charter School
+  district_nces_id: '3400070'
+  enrollment: 6096
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-newark-3400751:
+  display_name: Newark
+  district_name: Great Oaks Legacy Charter School
+  district_nces_id: '3400751'
+  enrollment: 2012
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-newark-3400764:
+  display_name: Newark
+  district_name: Phillip's Academy Charter School
+  district_nces_id: '3400764'
+  enrollment: 639
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-newark-3404800:
+  display_name: Newark
+  district_name: Essex County Schools of Technology
+  district_nces_id: '3404800'
+  enrollment: 2021
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-newark-3411340:
+  display_name: Newark
+  district_name: Newark Public School District
+  district_nces_id: '3411340'
+  enrollment: 41672
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-newton-3408060:
+  display_name: Newton
+  district_name: Kittatinny Regional School District
+  district_nces_id: '3408060'
+  enrollment: 783
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-newton-3411400:
+  display_name: Newton
+  district_name: Newton Public School District
+  district_nces_id: '3411400'
+  enrollment: 1627
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-north-arlington:
+  display_name: North Arlington
+  district_name: North Arlington School District
+  district_nces_id: '3411430'
+  enrollment: 2005
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-north-bergen:
+  display_name: North Bergen
+  district_name: North Bergen School District
+  district_nces_id: '3411460'
+  enrollment: 7262
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-north-brunswick-3411490:
+  display_name: North Brunswick
+  district_name: North Brunswick Township School District
+  district_nces_id: '3411490'
+  enrollment: 5822
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-north-brunswick-3415210:
+  display_name: North Brunswick
+  district_name: South Brunswick School District
+  district_nces_id: '3415210'
+  enrollment: 7950
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-north-caldwell-3411520:
+  display_name: North Caldwell
+  district_name: North Caldwell School District
+  district_nces_id: '3411520'
+  enrollment: 710
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-north-caldwell-3417460:
+  display_name: North Caldwell
+  district_name: West Essex Regional School District
+  district_nces_id: '3417460'
+  enrollment: 1663
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-north-haledon:
+  display_name: North Haledon
+  district_name: North Haledon School District
+  district_nces_id: '3411550'
+  enrollment: 582
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-north-plainfield:
+  display_name: North Plainfield
+  district_name: North Plainfield School District
+  district_nces_id: '3411640'
+  enrollment: 3677
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-northfield:
+  display_name: Northfield
+  district_name: Northfield City School District
+  district_nces_id: '3411790'
+  enrollment: 931
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-northvale:
+  display_name: Northvale
+  district_name: Northvale Public School District
+  district_nces_id: '3411820'
+  enrollment: 554
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-norwood:
+  display_name: Norwood
+  district_name: Norwood Public School District
+  district_nces_id: '3411850'
+  enrollment: 631
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-nutley:
+  display_name: Nutley
+  district_name: Nutley Public School District
+  district_nces_id: '3411880'
+  enrollment: 4072
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-oakhurst:
+  display_name: Oakhurst
+  district_name: Township of Ocean School District
+  district_nces_id: '3412060'
+  enrollment: 3258
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-oakland-3411910:
+  display_name: Oakland
+  district_name: Oakland Public School District
+  district_nces_id: '3411910'
+  enrollment: 1326
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-oakland-3413560:
+  display_name: Oakland
+  district_name: Ramapo Indian Hills Regional High School District
+  district_nces_id: '3413560'
+  enrollment: 2008
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-ocean-city:
+  display_name: Ocean City
+  district_name: Ocean City School District
+  district_nces_id: '3411970'
+  enrollment: 1877
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-oceanport:
+  display_name: Oceanport
+  district_name: Oceanport School District
+  district_nces_id: '3412120'
+  enrollment: 563
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-old-tappan:
+  display_name: Old Tappan
+  district_name: Old Tappan Public School District
+  district_nces_id: '3412180'
+  enrollment: 743
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-oradell:
+  display_name: Oradell
+  district_name: Oradell Public School District
+  district_nces_id: '3412240'
+  enrollment: 817
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-orange:
+  display_name: Orange
+  district_name: ORANGE BOARD OF EDUCATION School District
+  district_nces_id: '3412270'
+  enrollment: 5744
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-palisades-park:
+  display_name: Palisades Park
+  district_name: Palisades Park School District
+  district_nces_id: '3412360'
+  enrollment: 1786
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-palmyra:
+  display_name: Palmyra
+  district_name: Palmyra Public School District
+  district_nces_id: '3412390'
+  enrollment: 1032
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-paramus-3401470:
+  display_name: Paramus
+  district_name: Bergen County Vocational Technical School District
+  district_nces_id: '3401470'
+  enrollment: 2528
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-paramus-3412420:
+  display_name: Paramus
+  district_name: Paramus Public School District
+  district_nces_id: '3412420'
+  enrollment: 3639
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-park-ridge:
+  display_name: Park Ridge
+  district_name: Park Ridge School District
+  district_nces_id: '3412450'
+  enrollment: 1208
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-parlin:
+  display_name: Parlin
+  district_name: Sayreville School District
+  district_nces_id: '3414640'
+  enrollment: 6407
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-parsippany:
+  display_name: Parsippany
+  district_name: Parsippany-Troy Hills Township School District
+  district_nces_id: '3412480'
+  enrollment: 7067
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-passaic-3400745:
+  display_name: Passaic
+  district_name: Passaic Arts and Science Charter School
+  district_nces_id: '3400745'
+  enrollment: 1944
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-passaic-3412540:
+  display_name: Passaic
+  district_name: Passaic City School District
+  district_nces_id: '3412540'
+  enrollment: 12834
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-paterson-3400087:
+  display_name: Paterson
+  district_name: Paterson Charter School for Science and Technology
+  district_nces_id: '3400087'
+  enrollment: 1608
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-paterson-3400718:
+  display_name: Paterson
+  district_name: Community Charter School of Paterson
+  district_nces_id: '3400718'
+  enrollment: 874
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-paterson-3400765:
+  display_name: Paterson
+  district_name: Paterson Arts and Science Charter School
+  district_nces_id: '3400765'
+  enrollment: 1160
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-paterson-3400784:
+  display_name: Paterson
+  district_name: Philip's Academy Charter School of Paterson
+  district_nces_id: '3400784'
+  enrollment: 515
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-paterson-3400793:
+  display_name: Paterson
+  district_name: College Achieve Paterson Charter School
+  district_nces_id: '3400793'
+  enrollment: 1305
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-paterson-3412690:
+  display_name: Paterson
+  district_name: Paterson Public School District
+  district_nces_id: '3412690'
+  enrollment: 24795
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-paulsboro:
+  display_name: Paulsboro
+  district_name: Paulsboro School District
+  district_nces_id: '3412720'
+  enrollment: 1270
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pemberton:
+  display_name: Pemberton
+  district_name: Pemberton Township School District
+  district_nces_id: '3412810'
+  enrollment: 4430
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pennington:
+  display_name: Pennington
+  district_name: Hopewell Valley Regional School District
+  district_nces_id: '3407530'
+  enrollment: 3474
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-penns-grove:
+  display_name: Penns Grove
+  district_name: Penns Grove-Carneys Point Regional School District
+  district_nces_id: '3412840'
+  enrollment: 2214
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pennsauken:
+  display_name: Pennsauken
+  district_name: Pennsauken Township Board of Education School District
+  district_nces_id: '3412870'
+  enrollment: 4828
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pennsville:
+  display_name: Pennsville
+  district_name: Pennsville School District
+  district_nces_id: '3409120'
+  enrollment: 1822
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-perth-amboy:
+  display_name: Perth Amboy
+  district_name: Perth Amboy Public School District
+  district_nces_id: '3412930'
+  enrollment: 10484
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-petersburg:
+  display_name: Petersburg
+  district_name: Upper Township School District
+  district_nces_id: '3416650'
+  enrollment: 1408
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-phillipsburg-3409000:
+  display_name: Phillipsburg
+  district_name: Lopatcong Township School District
+  district_nces_id: '3409000'
+  enrollment: 738
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-phillipsburg-3412960:
+  display_name: Phillipsburg
+  district_name: Phillipsburg School District
+  district_nces_id: '3412960'
+  enrollment: 3989
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pine-hill:
+  display_name: Pine Hill
+  district_name: Pine Hill School District
+  district_nces_id: '3412990'
+  enrollment: 1940
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-piscataway:
+  display_name: Piscataway
+  district_name: Piscataway Township School District
+  district_nces_id: '3413050'
+  enrollment: 7354
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pitman:
+  display_name: Pitman
+  district_name: Pitman Boro School District
+  district_nces_id: '3413080'
+  enrollment: 1147
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pittsgrove:
+  display_name: Pittsgrove
+  district_name: Pittsgrove Township School District
+  district_nces_id: '3413110'
+  enrollment: 1695
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-plainfield-3400779:
+  display_name: Plainfield
+  district_name: College Achieve Central Charter School
+  district_nces_id: '3400779'
+  enrollment: 1403
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-plainfield-3400786:
+  display_name: Plainfield
+  district_name: Cresthaven Academy Charter School
+  district_nces_id: '3400786'
+  enrollment: 532
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-plainfield-3413140:
+  display_name: Plainfield
+  district_name: Plainfield Public School District
+  district_nces_id: '3413140'
+  enrollment: 10097
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pleasantville:
+  display_name: Pleasantville
+  district_name: Pleasantville Public School District
+  district_nces_id: '3413200'
+  enrollment: 3840
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-point-pleasant:
+  display_name: Point Pleasant
+  district_name: Point Pleasant Borough School District
+  district_nces_id: '3413290'
+  enrollment: 2726
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-point-pleasant-beach:
+  display_name: Point Pleasant Beach
+  district_name: Point Pleasant Beach School District
+  district_nces_id: '3413320'
+  enrollment: 685
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pompton-lakes:
+  display_name: Pompton Lakes
+  district_name: Pompton Lakes School District
+  district_nces_id: '3413350'
+  enrollment: 1766
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-pompton-plains:
+  display_name: Pompton Plains
+  district_name: Pequannock Township School District
+  district_nces_id: '3412900'
+  enrollment: 2109
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-port-murray:
+  display_name: Port Murray
+  district_name: Mansfield Township Elementary School District
+  district_nces_id: '3409540'
+  enrollment: 544
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-princeton:
+  display_name: Princeton
+  district_name: Princeton Public School District
+  district_nces_id: '3413410'
+  enrollment: 3817
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-prospect-park:
+  display_name: Prospect Park
+  district_name: Prospect Park Public School District
+  district_nces_id: '3413470'
+  enrollment: 777
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-rahway:
+  display_name: Rahway
+  district_name: Rahway Public School District
+  district_nces_id: '3413530'
+  enrollment: 4155
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-ramsey:
+  display_name: Ramsey
+  district_name: Ramsey School District
+  district_nces_id: '3413590'
+  enrollment: 2514
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-randolph:
+  display_name: Randolph
+  district_name: Randolph Township School District
+  district_nces_id: '3413650'
+  enrollment: 4220
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-red-bank:
+  display_name: Red Bank
+  district_name: Red Bank Borough Public School District
+  district_nces_id: '3413740'
+  enrollment: 1273
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-richland:
+  display_name: Richland
+  district_name: Buena Regional School District
+  district_nces_id: '3402400'
+  enrollment: 1602
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-ridgefield:
+  display_name: Ridgefield
+  district_name: Ridgefield School District
+  district_nces_id: '3413770'
+  enrollment: 1428
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-ridgefield-park:
+  display_name: Ridgefield Park
+  district_name: Ridgefield Park Public School District
+  district_nces_id: '3413800'
+  enrollment: 2102
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-ridgewood:
+  display_name: Ridgewood
+  district_name: Ridgewood Public School District
+  district_nces_id: '3413830'
+  enrollment: 5557
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-ringwood:
+  display_name: Ringwood
+  district_name: Ringwood School District
+  district_nces_id: '3413860'
+  enrollment: 1033
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-river-edge-3412260:
+  display_name: River Edge
+  district_name: River Dell Regional School District
+  district_nces_id: '3412260'
+  enrollment: 1613
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-river-edge-3413890:
+  display_name: River Edge
+  district_name: River Edge School District
+  district_nces_id: '3413890'
+  enrollment: 1189
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-river-vale:
+  display_name: River Vale
+  district_name: River Vale Public School District
+  district_nces_id: '3413950'
+  enrollment: 1025
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-riverside:
+  display_name: Riverside
+  district_name: Riverside Township School District
+  district_nces_id: '3414010'
+  enrollment: 1564
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-robbinsville:
+  display_name: Robbinsville
+  district_name: Robbinsville Public School District
+  district_nces_id: '3417100'
+  enrollment: 3073
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-rochelle-park:
+  display_name: Rochelle Park
+  district_name: Rochelle Park School District
+  district_nces_id: '3414070'
+  enrollment: 502
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-rockaway:
+  display_name: Rockaway
+  district_name: Rockaway Borough School District
+  district_nces_id: '3414100'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-roselle:
+  display_name: Roselle
+  district_name: Roselle Public School District
+  district_nces_id: '3414280'
+  enrollment: 2922
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-roselle-park:
+  display_name: Roselle Park
+  district_name: Roselle Park Public School District
+  district_nces_id: '3414310'
+  enrollment: 2042
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-rumson-3414370:
+  display_name: Rumson
+  district_name: Rumson Borough School District
+  district_nces_id: '3414370'
+  enrollment: 911
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-rumson-3414400:
+  display_name: Rumson
+  district_name: Rumson-Fair Haven Regional High School District
+  district_nces_id: '3414400'
+  enrollment: 883
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-runnemede:
+  display_name: Runnemede
+  district_name: Runnemede Public School District
+  district_nces_id: '3414430'
+  enrollment: 833
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-rutherford:
+  display_name: Rutherford
+  district_name: Rutherford School District
+  district_nces_id: '3414460'
+  enrollment: 2568
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-saddle-brook:
+  display_name: Saddle Brook
+  district_name: Saddle Brook School District
+  district_nces_id: '3414490'
+  enrollment: 1826
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-salem:
+  display_name: Salem
+  district_name: Salem City School District
+  district_nces_id: '3414550'
+  enrollment: 1348
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-scotch-plains-3414670:
+  display_name: Scotch Plains
+  district_name: Scotch Plains-Fanwood School District
+  district_nces_id: '3414670'
+  enrollment: 5646
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-scotch-plains-3418040:
+  display_name: Scotch Plains
+  district_name: Union County Vocational-Technical School District
+  district_nces_id: '3418040'
+  enrollment: 1668
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-seabrook:
+  display_name: Seabrook
+  district_name: Upper Deerfield Township School District
+  district_nces_id: '3416530'
+  enrollment: 962
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-secaucus-3407570:
+  display_name: Secaucus
+  district_name: Hudson County Schools of Technology School District
+  district_nces_id: '3407570'
+  enrollment: 2359
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-secaucus-3414850:
+  display_name: Secaucus
+  district_name: Secaucus School District
+  district_nces_id: '3414850'
+  enrollment: 2223
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-sewell-3406040:
+  display_name: Sewell
+  district_name: Gloucester County Vocational-Technical School District
+  district_nces_id: '3406040'
+  enrollment: 1561
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-sewell-3409600:
+  display_name: Sewell
+  district_name: Mantua Township School District
+  district_nces_id: '3409600'
+  enrollment: 1256
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-sewell-3417070:
+  display_name: Sewell
+  district_name: Washington Township School District
+  district_nces_id: '3417070'
+  enrollment: 7199
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-shamong-3408490:
+  display_name: Shamong
+  district_name: Lenape Regional High School District
+  district_nces_id: '3408490'
+  enrollment: 6659
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-shamong-3414880:
+  display_name: Shamong
+  district_name: Shamong Township School District
+  district_nces_id: '3414880'
+  enrollment: 693
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-sicklerville:
+  display_name: Sicklerville
+  district_name: Camden County Technical School District
+  district_nces_id: '3402670'
+  enrollment: 2128
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-skillman:
+  display_name: Skillman
+  district_name: Montgomery Township School District
+  district_nces_id: '3410590'
+  enrollment: 4611
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-somerdale:
+  display_name: Somerdale
+  district_name: Sterling Regional School District
+  district_nces_id: '3402880'
+  enrollment: 911
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-somers-point:
+  display_name: Somers Point
+  district_name: Somers Point School District
+  district_nces_id: '3415030'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-somerset-3400090:
+  display_name: Somerset
+  district_name: Central Jersey College Prep Charter School
+  district_nces_id: '3400090'
+  enrollment: 1288
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-somerset-3400746:
+  display_name: Somerset
+  district_name: Thomas Edison EnergySmart Charter School
+  district_nces_id: '3400746'
+  enrollment: 604
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-somerset-3405490:
+  display_name: Somerset
+  district_name: Franklin Township Public School District
+  district_nces_id: '3405490'
+  enrollment: 7309
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-somerville:
+  display_name: Somerville
+  district_name: Somerville Public School District
+  district_nces_id: '3415090'
+  enrollment: 2194
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-south-amboy:
+  display_name: South Amboy
+  district_name: South Amboy School District
+  district_nces_id: '3415120'
+  enrollment: 1183
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-south-plainfield:
+  display_name: South Plainfield
+  district_name: South Plainfield School District
+  district_nces_id: '3415360'
+  enrollment: 3551
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-south-river:
+  display_name: South River
+  district_name: South River Public School District
+  district_nces_id: '3415390'
+  enrollment: 2462
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-southampton:
+  display_name: Southampton
+  district_name: Southampton Township School District
+  district_nces_id: '3415420'
+  enrollment: 703
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-sparta-3415510:
+  display_name: Sparta
+  district_name: Sparta Township Public School District
+  district_nces_id: '3415510'
+  enrollment: 3299
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-sparta-3415930:
+  display_name: Sparta
+  district_name: Sussex County Technical School District
+  district_nces_id: '3415930'
+  enrollment: 677
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-spotswood:
+  display_name: Spotswood
+  district_name: Spotswood Public School District
+  district_nces_id: '3415540'
+  enrollment: 1660
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-springfield:
+  display_name: Springfield
+  district_name: Springfield Public School District
+  district_nces_id: '3415630'
+  enrollment: 2236
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-stanhope-3402550:
+  display_name: Stanhope
+  district_name: Byram Township School District
+  district_nces_id: '3402550'
+  enrollment: 837
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-stanhope-3408500:
+  display_name: Stanhope
+  district_name: Lenape Valley Regional High School District
+  district_nces_id: '3408500'
+  enrollment: 674
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-stewartsville:
+  display_name: Stewartsville
+  district_name: Greenwich Township School District
+  district_nces_id: '3406210'
+  enrollment: 661
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-stratford:
+  display_name: Stratford
+  district_name: Stratford School District
+  district_nces_id: '3415870'
+  enrollment: 901
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-succasunna:
+  display_name: Succasunna
+  district_name: Roxbury Township School District
+  district_nces_id: '3414340'
+  enrollment: 3452
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-summit:
+  display_name: Summit
+  district_name: Summit Public School District
+  district_nces_id: '3415900'
+  enrollment: 3950
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-sussex-3407140:
+  display_name: Sussex
+  district_name: High Point Regional High School District
+  district_nces_id: '3407140'
+  enrollment: 838
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-sussex-3415960:
+  display_name: Sussex
+  district_name: Sussex-Wantage Regional School District
+  district_nces_id: '3415960'
+  enrollment: 1044
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-tabernacle:
+  display_name: Tabernacle
+  district_name: Tabernacle Township School District
+  district_nces_id: '3416020'
+  enrollment: 690
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-teaneck:
+  display_name: Teaneck
+  district_name: Teaneck School District
+  district_nces_id: '3416080'
+  enrollment: 3843
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-tenafly:
+  display_name: Tenafly
+  district_name: Tenafly Public School District
+  district_nces_id: '3416110'
+  enrollment: 3545
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-tinton-falls-3410440:
+  display_name: Tinton Falls
+  district_name: Monmouth Regional High School
+  district_nces_id: '3410440'
+  enrollment: 970
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-tinton-falls-3416200:
+  display_name: Tinton Falls
+  district_name: Tinton Falls School District
+  district_nces_id: '3416200'
+  enrollment: 1385
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-toms-river-3411980:
+  display_name: Toms River
+  district_name: Ocean County Vocational Technical School District
+  district_nces_id: '3411980'
+  enrollment: 648
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-toms-river-3416230:
+  display_name: Toms River
+  district_name: Toms River Regional School District
+  district_nces_id: '3416230'
+  enrollment: 14594
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-totowa:
+  display_name: Totowa
+  district_name: Totowa Public School District
+  district_nces_id: '3416260'
+  enrollment: 908
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-township-of-washington:
+  display_name: Township Of Washington
+  district_name: Westwood Regional School District
+  district_nces_id: '3417820'
+  enrollment: 2813
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-trenton-3400717:
+  display_name: Trenton
+  district_name: Foundation Academy Charter School
+  district_nces_id: '3400717'
+  enrollment: 1044
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-trenton-3416290:
+  display_name: Trenton
+  district_name: Trenton Public School District
+  district_nces_id: '3416290'
+  enrollment: 14852
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-union:
+  display_name: Union
+  district_name: Township of Union School District
+  district_nces_id: '3416500'
+  enrollment: 7775
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-union-beach:
+  display_name: Union Beach
+  district_name: Union Beach Public School District
+  district_nces_id: '3416350'
+  enrollment: 649
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-union-city:
+  display_name: Union City
+  district_name: Union City School District
+  district_nces_id: '3416380'
+  enrollment: 12848
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-upper-saddle-river:
+  display_name: Upper Saddle River
+  district_name: Upper Saddle River School District
+  district_nces_id: '3416620'
+  enrollment: 1115
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-ventnor-city:
+  display_name: Ventnor City
+  district_name: Ventnor City School District
+  district_nces_id: '3416680'
+  enrollment: 522
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-vernon:
+  display_name: Vernon
+  district_name: Vernon Township School District
+  district_nces_id: '3416710'
+  enrollment: 2966
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-verona:
+  display_name: Verona
+  district_name: Verona Public School District
+  district_nces_id: '3416740'
+  enrollment: 2176
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-vineland-3403610:
+  display_name: Vineland
+  district_name: Cumberland County Board of Vocational Education
+  district_nces_id: '3403610'
+  enrollment: 1055
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-vineland-3416800:
+  display_name: Vineland
+  district_name: Vineland Public School District
+  district_nces_id: '3416800'
+  enrollment: 10386
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-voorhees-3404380:
+  display_name: Voorhees
+  district_name: Eastern Camden County Regional School District
+  district_nces_id: '3404380'
+  enrollment: 1965
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-voorhees-3416830:
+  display_name: Voorhees
+  district_name: Voorhees Township School District
+  district_nces_id: '3416830'
+  enrollment: 3025
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-waldwick:
+  display_name: Waldwick
+  district_name: Waldwick School District
+  district_nces_id: '3416860'
+  enrollment: 1591
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wall:
+  display_name: Wall
+  district_name: Wall Township Public School District
+  district_nces_id: '3416890'
+  enrollment: 3229
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wallington:
+  display_name: Wallington
+  district_name: Wallington Boro School District
+  district_nces_id: '3416920'
+  enrollment: 1229
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wanaque:
+  display_name: Wanaque
+  district_name: Lakeland Regional High School District
+  district_nces_id: '3408190'
+  enrollment: 878
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-waretown:
+  display_name: Waretown
+  district_name: Ocean Township School District
+  district_nces_id: '3412090'
+  enrollment: 540
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-warren-3416980:
+  display_name: Warren
+  district_name: Warren Township School District
+  district_nces_id: '3416980'
+  enrollment: 1635
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-warren-3417220:
+  display_name: Warren
+  district_name: Watchung Hills Regional High School District
+  district_nces_id: '3417220'
+  enrollment: 1783
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-washington-3416970:
+  display_name: Washington
+  district_name: Warren Hills Regional School District
+  district_nces_id: '3416970'
+  enrollment: 1590
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-washington-3417010:
+  display_name: Washington
+  district_name: Washington Borough School District
+  district_nces_id: '3417010'
+  enrollment: 557
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-watchung:
+  display_name: Watchung
+  district_name: Watchung Borough School District
+  district_nces_id: '3417190'
+  enrollment: 671
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-waterford:
+  display_name: Waterford
+  district_name: Waterford Township School District
+  district_nces_id: '3417250'
+  enrollment: 942
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wayne-3412630:
+  display_name: Wayne
+  district_name: Passaic County Technical-Vocational School District
+  district_nces_id: '3412630'
+  enrollment: 4388
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wayne-3417280:
+  display_name: Wayne
+  district_name: Wayne Township Public School District
+  district_nces_id: '3417280'
+  enrollment: 7746
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-weehawken:
+  display_name: Weehawken
+  district_name: Weehawken Public School District
+  district_nces_id: '3417310'
+  enrollment: 1309
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-west-berlin:
+  display_name: West Berlin
+  district_name: Berlin Township School District
+  district_nces_id: '3401620'
+  enrollment: 615
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-west-caldwell:
+  display_name: West Caldwell
+  district_name: Caldwell-West School District
+  district_nces_id: '3402580'
+  enrollment: 2601
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-west-deptford:
+  display_name: West Deptford
+  district_name: West Deptford Township School District
+  district_nces_id: '3417430'
+  enrollment: 2879
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-west-long-branch-3414940:
+  display_name: West Long Branch
+  district_name: Shore Regional High School District
+  district_nces_id: '3414940'
+  enrollment: 603
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-west-long-branch-3417490:
+  display_name: West Long Branch
+  district_name: West Long Branch School District
+  district_nces_id: '3417490'
+  enrollment: 550
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-west-milford:
+  display_name: West Milford
+  district_name: West Milford Township Public School District
+  district_nces_id: '3417520'
+  enrollment: 3025
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-west-new-york:
+  display_name: West New York
+  district_name: West New York School District
+  district_nces_id: '3417580'
+  enrollment: 8020
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-west-orange:
+  display_name: West Orange
+  district_name: West Orange Public Schools
+  district_nces_id: '3417610'
+  enrollment: 6835
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-west-windsor:
+  display_name: West Windsor
+  district_name: West Windsor-Plainsboro Regional School District
+  district_nces_id: '3417700'
+  enrollment: 9027
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-westampton-3402490:
+  display_name: Westampton
+  district_name: Burlington County Institute of Technology School District
+  district_nces_id: '3402490'
+  enrollment: 2035
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-westampton-3417730:
+  display_name: Westampton
+  district_name: Westampton Township Public School District
+  district_nces_id: '3417730'
+  enrollment: 933
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-westfield:
+  display_name: Westfield
+  district_name: Westfield Public School District
+  district_nces_id: '3417760'
+  enrollment: 5992
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-westmont:
+  display_name: Westmont
+  district_name: Haddon Township School District
+  district_nces_id: '3406360'
+  enrollment: 2107
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wharton:
+  display_name: Wharton
+  district_name: Wharton Borough School District
+  district_nces_id: '3417880'
+  enrollment: 701
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-whippany:
+  display_name: Whippany
+  district_name: Hanover Township School District
+  district_nces_id: '3406690'
+  enrollment: 1244
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-whitehouse-station:
+  display_name: Whitehouse Station
+  district_name: Readington Township School District
+  district_nces_id: '3413710'
+  enrollment: 1430
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-whiting:
+  display_name: Whiting
+  district_name: Manchester Township School District
+  district_nces_id: '3409450'
+  enrollment: 2849
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wildwood:
+  display_name: Wildwood
+  district_name: Wildwood City School District
+  district_nces_id: '3417940'
+  enrollment: 864
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-williamstown:
+  display_name: Williamstown
+  district_name: Monroe Township Public School District
+  district_nces_id: '3410470'
+  enrollment: 5804
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-willingboro:
+  display_name: Willingboro
+  district_name: Willingboro Public School District
+  district_nces_id: '3418000'
+  enrollment: 3757
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wood-ridge:
+  display_name: Wood-Ridge
+  district_name: Wood-Ridge School District
+  district_nces_id: '3418300'
+  enrollment: 1264
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-woodbridge:
+  display_name: Woodbridge
+  district_name: Woodbridge Township School District
+  district_nces_id: '3418120'
+  enrollment: 13836
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-woodbury:
+  display_name: Woodbury
+  district_name: Woodbury City Public School District
+  district_nces_id: '3418150'
+  enrollment: 1707
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-woodbury-heights:
+  display_name: Woodbury Heights
+  district_name: Gateway Regional High School District
+  district_nces_id: '3405820'
+  enrollment: 867
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-woodcliff-lake:
+  display_name: Woodcliff Lake
+  district_name: Woodcliff Lake School District
+  district_nces_id: '3418210'
+  enrollment: 746
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-woodland-park-3400748:
+  display_name: Woodland Park
+  district_name: John P Holland Charter School School District
+  district_nces_id: '3400748'
+  enrollment: 688
+  has_charters: true
+  source: ccd_auto
+  state: NJ
+nj-woodland-park-3417640:
+  display_name: Woodland Park
+  district_name: Woodland Park School District
+  district_nces_id: '3417640'
+  enrollment: 1243
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-woodstown-3414580:
+  display_name: Woodstown
+  district_name: Salem County Vocational Technical School District
+  district_nces_id: '3414580'
+  enrollment: 695
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-woodstown-3418330:
+  display_name: Woodstown
+  district_name: Woodstown-Pilesgrove Regional School District
+  district_nces_id: '3418330'
+  enrollment: 1514
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-woolwich-twp-3407980:
+  display_name: Woolwich Twp.
+  district_name: Kingsway Regional School District
+  district_nces_id: '3407980'
+  enrollment: 2962
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-woolwich-twp-3415990:
+  display_name: Woolwich Twp
+  district_name: Swedesboro-Woolwich School District
+  district_nces_id: '3415990'
+  enrollment: 1591
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wrightstown:
+  display_name: Wrightstown
+  district_name: North Hanover Township School District
+  district_nces_id: '3411580'
+  enrollment: 1430
+  has_charters: false
+  source: ccd_auto
+  state: NJ
+nj-wyckoff:
+  display_name: Wyckoff
+  district_name: Wyckoff Township Public School District
+  district_nces_id: '3418360'
+  enrollment: 2034
+  has_charters: false
+  source: ccd_auto
+  state: NJ

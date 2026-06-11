@@ -1,0 +1,1704 @@
+ar-alma:
+  display_name: Alma
+  district_name: ALMA SCHOOL DISTRICT
+  district_nces_id: '0502250'
+  enrollment: 3143
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-amity:
+  display_name: Amity
+  district_name: CENTERPOINT SCHOOL DISTRICT
+  district_nces_id: 0506690
+  enrollment: 974
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-arkadelphia:
+  display_name: Arkadelphia
+  district_name: ARKADELPHIA SCHOOL DISTRICT
+  district_nces_id: '0502430'
+  enrollment: 1913
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-ashdown:
+  display_name: Ashdown
+  district_name: ASHDOWN SCHOOL DISTRICT
+  district_nces_id: 0502580
+  enrollment: 1308
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-atkins:
+  display_name: Atkins
+  district_name: ATKINS SCHOOL DISTRICT
+  district_nces_id: '0502610'
+  enrollment: 989
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-bald-knob:
+  display_name: Bald Knob
+  district_name: BALD KNOB SCHOOL DISTRICT
+  district_nces_id: '0502700'
+  enrollment: 1106
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-batesville-0500019:
+  display_name: Batesville
+  district_name: BATESVILLE SCHOOL DISTRICT
+  district_nces_id: 0500019
+  enrollment: 3469
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-batesville-0512540:
+  display_name: Batesville
+  district_name: SOUTHSIDE SCHOOL DISTRICT
+  district_nces_id: '0512540'
+  enrollment: 2234
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-bauxite:
+  display_name: Bauxite
+  district_name: BAUXITE SCHOOL DISTRICT
+  district_nces_id: 0502790
+  enrollment: 1659
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-bay:
+  display_name: Bay
+  district_name: BAY SCHOOL DISTRICT
+  district_nces_id: 0502820
+  enrollment: 562
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-bee-branch:
+  display_name: Bee Branch
+  district_name: SOUTH SIDE SCHOOL DISTRICT
+  district_nces_id: '0512570'
+  enrollment: 542
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-beebe:
+  display_name: Beebe
+  district_name: BEEBE SCHOOL DISTRICT
+  district_nces_id: 0502880
+  enrollment: 3394
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-benton-0502960:
+  display_name: Benton
+  district_name: BENTON SCHOOL DISTRICT
+  district_nces_id: 0502960
+  enrollment: 5904
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-benton-0507320:
+  display_name: Benton
+  district_name: HARMONY GROVE SCHOOL DISTRICT
+  district_nces_id: '0507320'
+  enrollment: 1244
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-bentonville-0500409:
+  display_name: Bentonville
+  district_name: FOUNDERS CLASSICAL ACADEMIES OF ARKANSAS
+  district_nces_id: 0500409
+  enrollment: 1551
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-bentonville-0500417:
+  display_name: Bentonville
+  district_name: ARKANSAS CONNECTIONS ACADEMY
+  district_nces_id: '0500417'
+  enrollment: 3231
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-bentonville-0503060:
+  display_name: Bentonville
+  district_name: BENTONVILLE SCHOOL DISTRICT
+  district_nces_id: '0503060'
+  enrollment: 18674
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-berryville:
+  display_name: Berryville
+  district_name: BERRYVILLE SCHOOL DISTRICT
+  district_nces_id: '0503150'
+  enrollment: 1863
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-bigelow:
+  display_name: Bigelow
+  district_name: EAST END SCHOOL DISTRICT
+  district_nces_id: 0505580
+  enrollment: 667
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-bismarck:
+  display_name: Bismarck
+  district_name: BISMARCK SCHOOL DISTRICT
+  district_nces_id: '0503240'
+  enrollment: 1020
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-blytheville:
+  display_name: Blytheville
+  district_name: BLYTHEVILLE SCHOOL DISTRICT
+  district_nces_id: '0503320'
+  enrollment: 1581
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-booneville:
+  display_name: Booneville
+  district_name: BOONEVILLE SCHOOL DISTRICT
+  district_nces_id: '0503450'
+  enrollment: 1344
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-branch:
+  display_name: Branch
+  district_name: COUNTY LINE SCHOOL DISTRICT
+  district_nces_id: '0504740'
+  enrollment: 565
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-brockwell:
+  display_name: Brockwell
+  district_name: IZARD CO. CONS. SCHOOL DIST.
+  district_nces_id: '0500021'
+  enrollment: 648
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-brookland:
+  display_name: Brookland
+  district_name: BROOKLAND SCHOOL DISTRICT
+  district_nces_id: '0503640'
+  enrollment: 3060
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-bryant:
+  display_name: Bryant
+  district_name: BRYANT SCHOOL DISTRICT
+  district_nces_id: 0503690
+  enrollment: 9766
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-cabot:
+  display_name: Cabot
+  district_name: CABOT SCHOOL DISTRICT
+  district_nces_id: '0503750'
+  enrollment: 10696
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-camden-0506060:
+  display_name: Camden
+  district_name: CAMDEN FAIRVIEW SCHOOL DIST.
+  district_nces_id: '0506060'
+  enrollment: 2222
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-camden-0507290:
+  display_name: Camden
+  district_name: HARMONY GROVE SCHOOL DISTRICT
+  district_nces_id: 0507290
+  enrollment: 915
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-carlisle:
+  display_name: Carlisle
+  district_name: CARLISLE SCHOOL DISTRICT
+  district_nces_id: 0503960
+  enrollment: 677
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-cave-city:
+  display_name: Cave City
+  district_name: CAVE CITY SCHOOL DISTRICT
+  district_nces_id: '0504050'
+  enrollment: 1235
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-cedarville:
+  display_name: Cedarville
+  district_name: CEDARVILLE SCHOOL DISTRICT
+  district_nces_id: 0504080
+  enrollment: 721
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-center-ridge:
+  display_name: Center Ridge
+  district_name: NEMO VISTA SCHOOL DISTRICT
+  district_nces_id: '0510410'
+  enrollment: 538
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-charleston:
+  display_name: Charleston
+  district_name: CHARLESTON SCHOOL DISTRICT
+  district_nces_id: '0504200'
+  enrollment: 889
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-cherry-valley:
+  display_name: Cherry Valley
+  district_name: CROSS COUNTY SCHOOL DISTRICT
+  district_nces_id: '0507740'
+  enrollment: 697
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-clarksville:
+  display_name: Clarksville
+  district_name: CLARKSVILLE SCHOOL DISTRICT
+  district_nces_id: 0504380
+  enrollment: 2525
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-clinton:
+  display_name: Clinton
+  district_name: CLINTON SCHOOL DISTRICT
+  district_nces_id: '0504410'
+  enrollment: 1338
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-conway:
+  display_name: Conway
+  district_name: CONWAY SCHOOL DISTRICT
+  district_nces_id: 0504590
+  enrollment: 10251
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-corning:
+  display_name: Corning
+  district_name: CORNING SCHOOL DISTRICT
+  district_nces_id: 0500009
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-cotter:
+  display_name: Cotter
+  district_name: COTTER SCHOOL DISTRICT
+  district_nces_id: 0504680
+  enrollment: 728
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-crossett:
+  display_name: Crossett
+  district_name: CROSSETT SCHOOL DISTRICT
+  district_nces_id: 0504800
+  enrollment: 1654
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-danville:
+  display_name: Danville
+  district_name: DANVILLE SCHOOL DISTRICT
+  district_nces_id: 0504890
+  enrollment: 787
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-dardanelle:
+  display_name: Dardanelle
+  district_name: DARDANELLE SCHOOL DISTRICT
+  district_nces_id: 0504930
+  enrollment: 2064
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-de-queen:
+  display_name: De Queen
+  district_name: DEQUEEN SCHOOL DISTRICT
+  district_nces_id: 0500049
+  enrollment: 2320
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-decatur:
+  display_name: Decatur
+  district_name: DECATUR SCHOOL DISTRICT
+  district_nces_id: 0504980
+  enrollment: 619
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-des-arc:
+  display_name: Des Arc
+  district_name: DES ARC SCHOOL DISTRICT
+  district_nces_id: 0505190
+  enrollment: 636
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-dewitt:
+  display_name: Dewitt
+  district_name: DEWITT SCHOOL DISTRICT
+  district_nces_id: '0500001'
+  enrollment: 1151
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-dierks:
+  display_name: Dierks
+  district_name: DIERKS SCHOOL DISTRICT
+  district_nces_id: '0505340'
+  enrollment: 523
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-donaldson:
+  display_name: Donaldson
+  district_name: OUACHITA SCHOOL DISTRICT
+  district_nces_id: 0510980
+  enrollment: 550
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-dover:
+  display_name: Dover
+  district_name: DOVER SCHOOL DISTRICT
+  district_nces_id: '0505430'
+  enrollment: 1254
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-dumas:
+  display_name: Dumas
+  district_name: DUMAS SCHOOL DISTRICT
+  district_nces_id: '0505500'
+  enrollment: 1001
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-el-dorado-0505680:
+  display_name: El Dorado
+  district_name: EL DORADO SCHOOL DISTRICT
+  district_nces_id: 0505680
+  enrollment: 4051
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-el-dorado-0511220:
+  display_name: El Dorado
+  district_name: PARKERS CHAPEL SCHOOL DIST.
+  district_nces_id: '0511220'
+  enrollment: 846
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-elkins:
+  display_name: Elkins
+  district_name: ELKINS SCHOOL DISTRICT
+  district_nces_id: '0505760'
+  enrollment: 1404
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-emerson:
+  display_name: Emerson
+  district_name: EMERSON-TAYLOR SCHOOL DISTRICT
+  district_nces_id: 0500068
+  enrollment: 1171
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-england:
+  display_name: England
+  district_name: ENGLAND SCHOOL DISTRICT
+  district_nces_id: 0505850
+  enrollment: 648
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-eureka-springs:
+  display_name: Eureka Springs
+  district_name: EUREKA SPRINGS SCHOOL DISTRICT
+  district_nces_id: 0505970
+  enrollment: 661
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-farmington:
+  display_name: Farmington
+  district_name: FARMINGTON SCHOOL DISTRICT
+  district_nces_id: 0506090
+  enrollment: 2685
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-fayetteville-0500078:
+  display_name: Fayetteville
+  district_name: HAAS HALL ACADEMY
+  district_nces_id: 0500078
+  enrollment: 1248
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-fayetteville-0506120:
+  display_name: Fayetteville
+  district_name: FAYETTEVILLE SCHOOL DISTRICT
+  district_nces_id: '0506120'
+  enrollment: 10560
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-flippin:
+  display_name: Flippin
+  district_name: FLIPPIN SCHOOL DISTRICT
+  district_nces_id: '0506150'
+  enrollment: 915
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-fordyce:
+  display_name: Fordyce
+  district_name: FORDYCE SCHOOL DISTRICT
+  district_nces_id: '0506210'
+  enrollment: 732
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-forrest-city:
+  display_name: Forrest City
+  district_name: FORREST CITY SCHOOL DISTRICT
+  district_nces_id: '0506270'
+  enrollment: 2159
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-fort-smith:
+  display_name: Fort Smith
+  district_name: FORT SMITH SCHOOL DISTRICT
+  district_nces_id: '0506330'
+  enrollment: 14291
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-fouke:
+  display_name: Fouke
+  district_name: FOUKE SCHOOL DISTRICT
+  district_nces_id: '0506360'
+  enrollment: 1155
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-gentry:
+  display_name: Gentry
+  district_name: GENTRY SCHOOL DISTRICT
+  district_nces_id: '0506540'
+  enrollment: 1617
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-gosnell:
+  display_name: Gosnell
+  district_name: GOSNELL SCHOOL DISTRICT
+  district_nces_id: 0500029
+  enrollment: 1173
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-gravette:
+  display_name: Gravette
+  district_name: GRAVETTE SCHOOL DISTRICT
+  district_nces_id: 0506840
+  enrollment: 2076
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-green-forest:
+  display_name: Green Forest
+  district_name: GREEN FOREST SCHOOL DISTRICT
+  district_nces_id: 0506870
+  enrollment: 1467
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-greenbrier:
+  display_name: Greenbrier
+  district_name: GREENBRIER SCHOOL DISTRICT
+  district_nces_id: 0506900
+  enrollment: 3862
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-greenland:
+  display_name: Greenland
+  district_name: GREENLAND SCHOOL DISTRICT
+  district_nces_id: 0506930
+  enrollment: 767
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-greenwood:
+  display_name: Greenwood
+  district_name: GREENWOOD SCHOOL DISTRICT
+  district_nces_id: 0506990
+  enrollment: 3956
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-greers-ferry:
+  display_name: Greers Ferry
+  district_name: WEST SIDE SCHOOL DISTRICT
+  district_nces_id: '0514040'
+  enrollment: 506
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-gurdon:
+  display_name: Gurdon
+  district_name: GURDON SCHOOL DISTRICT
+  district_nces_id: '0507110'
+  enrollment: 645
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hackett:
+  display_name: Hackett
+  district_name: HACKETT SCHOOL DISTRICT
+  district_nces_id: '0507170'
+  enrollment: 820
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hamburg:
+  display_name: Hamburg
+  district_name: HAMBURG SCHOOL DISTRICT
+  district_nces_id: '0500042'
+  enrollment: 1691
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hampton:
+  display_name: Hampton
+  district_name: HAMPTON SCHOOL DISTRICT
+  district_nces_id: '0507230'
+  enrollment: 543
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hardy:
+  display_name: Hardy
+  district_name: HIGHLAND SCHOOL DISTRICT
+  district_nces_id: '0507770'
+  enrollment: 1612
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-harrisburg:
+  display_name: Harrisburg
+  district_name: HARRISBURG SCHOOL DISTRICT
+  district_nces_id: '0507350'
+  enrollment: 1074
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-harrison-0503090:
+  display_name: Harrison
+  district_name: BERGMAN SCHOOL DISTRICT
+  district_nces_id: 0503090
+  enrollment: 1124
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-harrison-0507380:
+  display_name: Harrison
+  district_name: HARRISON SCHOOL DISTRICT
+  district_nces_id: 0507380
+  enrollment: 2774
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hartman:
+  display_name: Hartman
+  district_name: WESTSIDE SCHOOL DISTRICT
+  district_nces_id: '0514020'
+  enrollment: 629
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hazen:
+  display_name: Hazen
+  district_name: HAZEN SCHOOL DISTRICT
+  district_nces_id: '0507530'
+  enrollment: 556
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-heber-springs:
+  display_name: Heber Springs
+  district_name: HEBER SPRINGS SCHOOL DISTRICT
+  district_nces_id: '0507560'
+  enrollment: 1620
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hector:
+  display_name: Hector
+  district_name: HECTOR SCHOOL DISTRICT
+  district_nces_id: '0507620'
+  enrollment: 626
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-helena-0500062:
+  display_name: Helena
+  district_name: KIPP DELTA PUBLIC SCHOOLS
+  district_nces_id: '0500062'
+  enrollment: 1224
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-helena-0507680:
+  display_name: Helena
+  district_name: HELENA/ W.HELENA SCHOOL DIST.
+  district_nces_id: 0507680
+  enrollment: 1012
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hope-0507840:
+  display_name: Hope
+  district_name: HOPE SCHOOL DISTRICT
+  district_nces_id: 0507840
+  enrollment: 2263
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hope-0512630:
+  display_name: Hope
+  district_name: SPRING HILL SCHOOL DISTRICT
+  district_nces_id: '0512630'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-horatio:
+  display_name: Horatio
+  district_name: HORATIO SCHOOL DISTRICT
+  district_nces_id: 0507860
+  enrollment: 694
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hot-springs-0504860:
+  display_name: Hot Springs
+  district_name: CUTTER-MORNING STAR SCH. DIST.
+  district_nces_id: 0504860
+  enrollment: 690
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hot-springs-0506420:
+  display_name: Hot Springs
+  district_name: FOUNTAIN LAKE SCHOOL DISTRICT
+  district_nces_id: '0506420'
+  enrollment: 1349
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-hot-springs-0507890:
+  display_name: Hot Springs
+  district_name: HOT SPRINGS SCHOOL DISTRICT
+  district_nces_id: 0507890
+  enrollment: 3690
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-hot-springs-0508670:
+  display_name: Hot Springs
+  district_name: LAKESIDE SCHOOL DISTRICT
+  district_nces_id: 0508670
+  enrollment: 3466
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-hoxie:
+  display_name: Hoxie
+  district_name: HOXIE SCHOOL DISTRICT
+  district_nces_id: 0507990
+  enrollment: 868
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-huntsville:
+  display_name: Huntsville
+  district_name: HUNTSVILLE SCHOOL DISTRICT
+  district_nces_id: 0508130
+  enrollment: 2339
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-imboden:
+  display_name: Imboden
+  district_name: SLOAN-HENDRIX SCHOOL DIST.
+  district_nces_id: 0512480
+  enrollment: 805
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-jacksonville:
+  display_name: Jacksonville
+  district_name: JACKSONVILLE NORTH PULASKI SCHOOL DISTRICT
+  district_nces_id: 0500419
+  enrollment: 4517
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-jasper:
+  display_name: Jasper
+  district_name: JASPER SCHOOL DISTRICT
+  district_nces_id: 0508240
+  enrollment: 888
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-jessieville:
+  display_name: Jessieville
+  district_name: JESSIEVILLE SCHOOL DISTRICT
+  district_nces_id: 0507920
+  enrollment: 846
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-jonesboro-0504020:
+  display_name: Jonesboro
+  district_name: WESTSIDE CONS. SCHOOL DISTRICT
+  district_nces_id: '0504020'
+  enrollment: 1824
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-jonesboro-0508280:
+  display_name: Jonesboro
+  district_name: JONESBORO SCHOOL DISTRICT
+  district_nces_id: 0508280
+  enrollment: 6709
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-jonesboro-0510440:
+  display_name: Jonesboro
+  district_name: NETTLETON SCHOOL DISTRICT
+  district_nces_id: '0510440'
+  enrollment: 3633
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-jonesboro-0513380:
+  display_name: Jonesboro
+  district_name: VALLEY VIEW SCHOOL DISTRICT
+  district_nces_id: 0513380
+  enrollment: 2994
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-judsonia:
+  display_name: Judsonia
+  district_name: WHITE CO. CENTRAL SCHOOL DIST.
+  district_nces_id: '0504170'
+  enrollment: 899
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-junction-city:
+  display_name: Junction City
+  district_name: JUNCTION CITY SCHOOL DISTRICT
+  district_nces_id: 0508340
+  enrollment: 702
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-lake-city:
+  display_name: Lake City
+  district_name: RIVERSIDE SCHOOL DISTRICT
+  district_nces_id: '0500012'
+  enrollment: 774
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-lake-village:
+  display_name: Lake Village
+  district_name: LAKESIDE SCHOOL DISTRICT (CHICOT COUNTY)
+  district_nces_id: 0508640
+  enrollment: 889
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-lamar:
+  display_name: Lamar
+  district_name: LAMAR SCHOOL DISTRICT
+  district_nces_id: 0508700
+  enrollment: 1284
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-lavaca:
+  display_name: Lavaca
+  district_name: LAVACA SCHOOL DISTRICT
+  district_nces_id: 0508730
+  enrollment: 837
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-lepanto:
+  display_name: Lepanto
+  district_name: EAST POINSETT CO. SCHOOL DIST.
+  district_nces_id: 0500048
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-lewisville:
+  display_name: Lewisville
+  district_name: LAFAYETTE COUNTY SCHOOL DISTRICT
+  district_nces_id: '0500065'
+  enrollment: 516
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-lexa:
+  display_name: Lexa
+  district_name: BARTON-LEXA SCHOOL DISTRICT
+  district_nces_id: '0502730'
+  enrollment: 674
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-lincoln:
+  display_name: Lincoln
+  district_name: LINCOLN SCHOOL DISTRICT
+  district_nces_id: 0508940
+  enrollment: 1122
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-little-rock-0500074:
+  display_name: Little Rock
+  district_name: LISA ACADEMY CHARTER
+  district_nces_id: '0500074'
+  enrollment: 3769
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-little-rock-0500394:
+  display_name: Little Rock
+  district_name: ARKANSAS VIRTUAL ACADEMY
+  district_nces_id: 0500394
+  enrollment: 3733
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-little-rock-0500398:
+  display_name: Little Rock
+  district_name: ESTEM HIGH CHARTER
+  district_nces_id: 0500398
+  enrollment: 2890
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-little-rock-0500402:
+  display_name: Little Rock
+  district_name: ARKANSAS LIGHTHOUSE ACADEMIES
+  district_nces_id: '0500402'
+  enrollment: 962
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-little-rock-0500411:
+  display_name: Little Rock
+  district_name: EXALT ACADEMY OF SOUTHWEST LITTLE ROCK
+  district_nces_id: '0500411'
+  enrollment: 638
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-little-rock-0509000:
+  display_name: Little Rock
+  district_name: LITTLE ROCK SCHOOL DISTRICT
+  district_nces_id: 0509000
+  enrollment: 21456
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-little-rock-0511850:
+  display_name: Little Rock
+  district_name: PULASKI CO. SPEC. SCHOOL DIST.
+  district_nces_id: 0511850
+  enrollment: 12244
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-lonoke:
+  display_name: Lonoke
+  district_name: LONOKE SCHOOL DISTRICT
+  district_nces_id: 0509060
+  enrollment: 1603
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-magnolia:
+  display_name: Magnolia
+  district_name: MAGNOLIA SCHOOL DISTRICT
+  district_nces_id: '0500044'
+  enrollment: 2662
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-malvern-0506630:
+  display_name: Malvern
+  district_name: GLEN ROSE SCHOOL DISTRICT
+  district_nces_id: '0506630'
+  enrollment: 985
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-malvern-0509190:
+  display_name: Malvern
+  district_name: MAGNET COVE SCHOOL DIST.
+  district_nces_id: 0509190
+  enrollment: 725
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-malvern-0509240:
+  display_name: Malvern
+  district_name: MALVERN SCHOOL DISTRICT
+  district_nces_id: 0509240
+  enrollment: 1831
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-mammoth-spring:
+  display_name: Mammoth Spring
+  district_name: MAMMOTH SPRING SCHOOL DISTRICT
+  district_nces_id: 0509270
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-manila:
+  display_name: Manila
+  district_name: MANILA SCHOOL DISTRICT
+  district_nces_id: '0500046'
+  enrollment: 1076
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-mansfield:
+  display_name: Mansfield
+  district_name: MANSFIELD SCHOOL DISTRICT
+  district_nces_id: 0509330
+  enrollment: 775
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-marianna:
+  display_name: Marianna
+  district_name: LEE COUNTY SCHOOL DISTRICT
+  district_nces_id: 0509360
+  enrollment: 631
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-marion:
+  display_name: Marion
+  district_name: MARION SCHOOL DISTRICT
+  district_nces_id: 0509390
+  enrollment: 3902
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-marked-tree:
+  display_name: Marked Tree
+  district_name: MARKED TREE SCHOOL DISTRICT
+  district_nces_id: 0509420
+  enrollment: 530
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-marmaduke:
+  display_name: Marmaduke
+  district_name: MARMADUKE SCHOOL DISTRICT
+  district_nces_id: '0500016'
+  enrollment: 717
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-marshall:
+  display_name: Marshall
+  district_name: SEARCY COUNTY SCHOOL DISTRICT
+  district_nces_id: 0509480
+  enrollment: 841
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-maumelle:
+  display_name: Maumelle
+  district_name: ACADEMICS PLUS CHARTER SCHOOL
+  district_nces_id: 0500059
+  enrollment: 1825
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-mayflower:
+  display_name: Mayflower
+  district_name: MAYFLOWER SCHOOL DISTRICT
+  district_nces_id: 0509540
+  enrollment: 1045
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-maynard:
+  display_name: Maynard
+  district_name: MAYNARD SCHOOL DISTRICT
+  district_nces_id: 0509570
+  enrollment: 583
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-mccrory:
+  display_name: Mccrory
+  district_name: MCCRORY SCHOOL DISTRICT
+  district_nces_id: 0509600
+  enrollment: 574
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-mcgehee:
+  display_name: Mcgehee
+  district_name: MCGEHEE SCHOOL DISTRICT
+  district_nces_id: 0509630
+  enrollment: 1098
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-melbourne:
+  display_name: Melbourne
+  district_name: MELBOURNE SCHOOL DISTRICT
+  district_nces_id: 0509720
+  enrollment: 871
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-mena-0500073:
+  display_name: Mena
+  district_name: OUACHITA RIVER SCHOOL DISTRICT
+  district_nces_id: '0500073'
+  enrollment: 799
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-mena-0509750:
+  display_name: Mena
+  district_name: MENA SCHOOL DISTRICT
+  district_nces_id: 0509750
+  enrollment: 1745
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-monette:
+  display_name: Monette
+  district_name: BUFFALO IS. CENTRAL SCH. DIST.
+  district_nces_id: '0503710'
+  enrollment: 731
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-monticello-0505470:
+  display_name: Monticello
+  district_name: DREW CENTRAL SCHOOL DISTRICT
+  district_nces_id: '0505470'
+  enrollment: 1262
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-monticello-0509840:
+  display_name: Monticello
+  district_name: MONTICELLO SCHOOL DISTRICT
+  district_nces_id: 0509840
+  enrollment: 1671
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-morrilton:
+  display_name: Morrilton
+  district_name: SO. CONWAY CO. SCHOOL DISTRICT
+  district_nces_id: '0512520'
+  enrollment: 2459
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-mountain-home:
+  display_name: Mountain Home
+  district_name: MOUNTAIN HOME SCHOOL DISTRICT
+  district_nces_id: '0500043'
+  enrollment: 3914
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-mountain-pine:
+  display_name: Mountain Pine
+  district_name: MOUNTAIN PINE SCHOOL DISTRICT
+  district_nces_id: '0510170'
+  enrollment: 641
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-mountain-view:
+  display_name: Mountain View
+  district_name: MOUNTAIN VIEW SCHOOL DISTRICT
+  district_nces_id: '0510200'
+  enrollment: 1613
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-mountainburg:
+  display_name: Mountainburg
+  district_name: MOUNTAINBURG SCHOOL DISTRICT
+  district_nces_id: '0510260'
+  enrollment: 660
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-mt-vernon:
+  display_name: Mt Vernon
+  district_name: MT. VERNON/ENOLA SCHOOL DIST.
+  district_nces_id: 0510080
+  enrollment: 558
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-murfreesboro:
+  display_name: Murfreesboro
+  district_name: SOUTH PIKE COUNTY SCHOOL DISTRICT
+  district_nces_id: '0510320'
+  enrollment: 655
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-nashville:
+  display_name: Nashville
+  district_name: NASHVILLE SCHOOL DISTRICT
+  district_nces_id: 0510380
+  enrollment: 1931
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-newark:
+  display_name: Newark
+  district_name: CEDAR RIDGE SCHOOL DISTRICT
+  district_nces_id: '0500070'
+  enrollment: 641
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-newport:
+  display_name: Newport
+  district_name: NEWPORT SCHOOL DISTRICT
+  district_nces_id: '0500023'
+  enrollment: 1268
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-norman:
+  display_name: Norman
+  district_name: CADDO HILLS SCHOOL DISTRICT
+  district_nces_id: '0503770'
+  enrollment: 589
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-north-little-rock:
+  display_name: North Little Rock
+  district_name: N. LITTLE ROCK SCHOOL DISTRICT
+  district_nces_id: 0510680
+  enrollment: 8200
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-ola:
+  display_name: Ola
+  district_name: TWO RIVERS SCHOOL DISTRICT
+  district_nces_id: 0500079
+  enrollment: 783
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-osceola:
+  display_name: Osceola
+  district_name: OSCEOLA SCHOOL DISTRICT
+  district_nces_id: 0510950
+  enrollment: 983
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-ozark:
+  display_name: Ozark
+  district_name: OZARK SCHOOL DISTRICT
+  district_nces_id: '0511010'
+  enrollment: 1777
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-palestine:
+  display_name: Palestine
+  district_name: PALESTINE-WHEATLEY SCH. DIST.
+  district_nces_id: '0500051'
+  enrollment: 775
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-pangburn:
+  display_name: Pangburn
+  district_name: PANGBURN SCHOOL DISTRICT
+  district_nces_id: '0511070'
+  enrollment: 753
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-paragould-0500017:
+  display_name: Paragould
+  district_name: PARAGOULD SCHOOL DISTRICT
+  district_nces_id: '0500017'
+  enrollment: 3217
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-paragould-0513080:
+  display_name: Paragould
+  district_name: GREENE CO. TECH SCHOOL DIST.
+  district_nces_id: 0513080
+  enrollment: 3652
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-paris:
+  display_name: Paris
+  district_name: PARIS SCHOOL DISTRICT
+  district_nces_id: '0511130'
+  enrollment: 1083
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-pea-ridge:
+  display_name: Pea Ridge
+  district_name: PEA RIDGE SCHOOL DISTRICT
+  district_nces_id: '0503030'
+  enrollment: 2494
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-pearcy:
+  display_name: Pearcy
+  district_name: LAKE HAMILTON SCHOOL DISTRICT
+  district_nces_id: 0508610
+  enrollment: 4131
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-perryville:
+  display_name: Perryville
+  district_name: PERRYVILLE SCHOOL DISTRICT
+  district_nces_id: '0511340'
+  enrollment: 904
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-piggott:
+  display_name: Piggott
+  district_name: PIGGOTT SCHOOL DISTRICT
+  district_nces_id: '0511370'
+  enrollment: 849
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-pine-bluff-0500026:
+  display_name: Pine Bluff
+  district_name: PINE BLUFF SCHOOL DISTRICT
+  district_nces_id: '0500026'
+  enrollment: 3261
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-pine-bluff-0500423:
+  display_name: Pine Bluff
+  district_name: FRIENDSHIP ASPIRE ACADEMY PINE BLUFF
+  district_nces_id: '0500423'
+  enrollment: 913
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-pine-bluff-0513930:
+  display_name: Pine Bluff
+  district_name: WATSON CHAPEL SCHOOL DISTRICT
+  district_nces_id: 0513930
+  enrollment: 1796
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-pleasant-plains:
+  display_name: Pleasant Plains
+  district_name: MIDLAND SCHOOL DISTRICT
+  district_nces_id: '0500020'
+  enrollment: 511
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-pocahontas:
+  display_name: Pocahontas
+  district_name: POCAHONTAS SCHOOL DISTRICT
+  district_nces_id: '0511610'
+  enrollment: 2004
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-pottsville:
+  display_name: Pottsville
+  district_name: POTTSVILLE SCHOOL DISTRICT
+  district_nces_id: '0511700'
+  enrollment: 1856
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-poyen:
+  display_name: Poyen
+  district_name: POYEN SCHOOL DISTRICT
+  district_nces_id: '0511730'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-prairie-grove:
+  display_name: Prairie Grove
+  district_name: PRAIRIE GROVE SCHOOL DISTRICT
+  district_nces_id: '0511760'
+  enrollment: 2207
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-prescott:
+  display_name: Prescott
+  district_name: PRESCOTT SCHOOL DISTRICT
+  district_nces_id: 0511820
+  enrollment: 938
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-quitman:
+  display_name: Quitman
+  district_name: QUITMAN SCHOOL DISTRICT
+  district_nces_id: 0511880
+  enrollment: 882
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-rector:
+  display_name: Rector
+  district_name: RECTOR SCHOOL DISTRICT
+  district_nces_id: '0504370'
+  enrollment: 616
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-rison-0500067:
+  display_name: Rison
+  district_name: CLEVELAND COUNTY SCHOOL DIST.
+  district_nces_id: '0500067'
+  enrollment: 739
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-rison-0514400:
+  display_name: Rison
+  district_name: WOODLAWN SCHOOL DISTRICT
+  district_nces_id: '0514400'
+  enrollment: 573
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-rogers-0500055:
+  display_name: Rogers
+  district_name: BENTON COUNTY SCHOOL OF ARTS
+  district_nces_id: '0500055'
+  enrollment: 1090
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-rogers-0511970:
+  display_name: Rogers
+  district_name: ROGERS SCHOOL DISTRICT
+  district_nces_id: 0511970
+  enrollment: 15964
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-rose-bud:
+  display_name: Rose Bud
+  district_name: ROSE BUD SCHOOL DISTRICT
+  district_nces_id: '0512000'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-russellville:
+  display_name: Russellville
+  district_name: RUSSELLVILLE SCHOOL DISTRICT
+  district_nces_id: '0512060'
+  enrollment: 5602
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-salem:
+  display_name: Salem
+  district_name: SALEM SCHOOL DISTRICT
+  district_nces_id: 0512090
+  enrollment: 876
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-searcy-0508400:
+  display_name: Searcy
+  district_name: RIVERVIEW SCHOOL DISTRICT
+  district_nces_id: 0508400
+  enrollment: 1144
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-searcy-0512210:
+  display_name: Searcy
+  district_name: SEARCY SCHOOL DISTRICT
+  district_nces_id: '0512210'
+  enrollment: 4003
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-sheridan:
+  display_name: Sheridan
+  district_name: SHERIDAN SCHOOL DISTRICT
+  district_nces_id: '0500015'
+  enrollment: 4325
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-siloam-springs:
+  display_name: Siloam Springs
+  district_name: SILOAM SPRINGS SCHOOL DISTRICT
+  district_nces_id: '0512450'
+  enrollment: 4612
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-smackover:
+  display_name: Smackover
+  district_name: SMACKOVER SCHOOL DISTRICT
+  district_nces_id: '0512510'
+  enrollment: 1161
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-springdale:
+  display_name: Springdale
+  district_name: SPRINGDALE SCHOOL DISTRICT
+  district_nces_id: '0512660'
+  enrollment: 22745
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-st-joe:
+  display_name: St Joe
+  district_name: OZARK MOUNTAIN SCHOOL DISTRICT
+  district_nces_id: '0500076'
+  enrollment: 571
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-star-city:
+  display_name: Star City
+  district_name: STAR CITY SCHOOL DISTRICT
+  district_nces_id: 0500028
+  enrollment: 1432
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-stuttgart:
+  display_name: Stuttgart
+  district_name: STUTTGART SCHOOL DISTRICT
+  district_nces_id: 0512960
+  enrollment: 1593
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-texarkana-0504110:
+  display_name: Texarkana
+  district_name: GENOA CENTRAL SCHOOL DISTRICT
+  district_nces_id: '0504110'
+  enrollment: 1183
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-texarkana-0513110:
+  display_name: Texarkana
+  district_name: TEXARKANA SCHOOL DISTRICT
+  district_nces_id: '0513110'
+  enrollment: 3888
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-trumann:
+  display_name: Trumann
+  district_name: TRUMANN SCHOOL DISTRICT
+  district_nces_id: '0500047'
+  enrollment: 1573
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-tuckerman:
+  display_name: Tuckerman
+  district_name: JACKSON CO. SCHOOL DISTRICT
+  district_nces_id: '0513230'
+  enrollment: 937
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-valley-springs:
+  display_name: Valley Springs
+  district_name: VALLEY SPRINGS SCHOOL DISTRICT
+  district_nces_id: '0513350'
+  enrollment: 852
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-van-buren:
+  display_name: Van Buren
+  district_name: VAN BUREN SCHOOL DISTRICT
+  district_nces_id: '0513410'
+  enrollment: 5911
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-vilonia:
+  display_name: Vilonia
+  district_name: VILONIA SCHOOL DISTRICT
+  district_nces_id: '0513530'
+  enrollment: 3053
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-waldron:
+  display_name: Waldron
+  district_name: WALDRON SCHOOL DISTRICT
+  district_nces_id: 0513680
+  enrollment: 1576
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-walnut-ridge:
+  display_name: Walnut Ridge
+  district_name: LAWRENCE COUNTY SCHOOL DISTRICT
+  district_nces_id: 0500082
+  enrollment: 1042
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-warren:
+  display_name: Warren
+  district_name: WARREN SCHOOL DISTRICT
+  district_nces_id: '0500006'
+  enrollment: 1424
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-west-fork:
+  display_name: West Fork
+  district_name: WEST FORK SCHOOL DISTRICT
+  district_nces_id: '0514010'
+  enrollment: 872
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-west-memphis:
+  display_name: West Memphis
+  district_name: WEST MEMPHIS SCHOOL DISTRICT
+  district_nces_id: 0508040
+  enrollment: 4954
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-white-hall:
+  display_name: White Hall
+  district_name: WHITE HALL SCHOOL DISTRICT
+  district_nces_id: '0514140'
+  enrollment: 3028
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-wickes:
+  display_name: Wickes
+  district_name: COSSATOT RIVER SCHOOL DISTRICT
+  district_nces_id: '0500405'
+  enrollment: 861
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-wilson:
+  display_name: Wilson
+  district_name: 'RIVERCREST SCHOOL DISTRICT #57'
+  district_nces_id: '0500045'
+  enrollment: 1116
+  has_charters: true
+  source: ccd_auto
+  state: AR
+ar-wynne:
+  display_name: Wynne
+  district_name: WYNNE SCHOOL DISTRICT
+  district_nces_id: '0514430'
+  enrollment: 2484
+  has_charters: false
+  source: ccd_auto
+  state: AR
+ar-yellville:
+  display_name: Yellville
+  district_name: YELLVILLE-SUMMIT SCHOOL DIST.
+  district_nces_id: 0514490
+  enrollment: 1000
+  has_charters: false
+  source: ccd_auto
+  state: AR

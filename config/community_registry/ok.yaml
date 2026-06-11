@@ -1,0 +1,1872 @@
+ok-ada-4002430:
+  display_name: Ada
+  district_name: ADA
+  district_nces_id: '4002430'
+  enrollment: 2657
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-ada-4006060:
+  display_name: Ada
+  district_name: BYNG
+  district_nces_id: '4006060'
+  enrollment: 1784
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-ada-4017190:
+  display_name: Ada
+  district_name: LATTA
+  district_nces_id: '4017190'
+  enrollment: 889
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-ada-4030960:
+  display_name: Ada
+  district_name: VANOSS
+  district_nces_id: '4030960'
+  enrollment: 579
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-adair:
+  display_name: Adair
+  district_name: ADAIR
+  district_nces_id: '4002460'
+  enrollment: 1041
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-altus:
+  display_name: Altus
+  district_name: ALTUS
+  district_nces_id: '4002850'
+  enrollment: 3527
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-alva:
+  display_name: Alva
+  district_name: ALVA
+  district_nces_id: '4002880'
+  enrollment: 1039
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-anadarko:
+  display_name: Anadarko
+  district_name: ANADARKO
+  district_nces_id: '4003000'
+  enrollment: 1427
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-antlers:
+  display_name: Antlers
+  district_name: ANTLERS
+  district_nces_id: '4003060'
+  enrollment: 965
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-apache:
+  display_name: Apache
+  district_name: BOONE-APACHE
+  district_nces_id: '4005010'
+  enrollment: 517
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-ardmore-4003180:
+  display_name: Ardmore
+  district_name: ARDMORE
+  district_nces_id: '4003180'
+  enrollment: 2591
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-ardmore-4009910:
+  display_name: Ardmore
+  district_name: DICKSON
+  district_nces_id: '4009910'
+  enrollment: 1370
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-ardmore-4024240:
+  display_name: Ardmore
+  district_name: PLAINVIEW
+  district_nces_id: '4024240'
+  enrollment: 1554
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-atoka:
+  display_name: Atoka
+  district_name: ATOKA
+  district_nces_id: '4003360'
+  enrollment: 868
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-bartlesville-4000786:
+  display_name: Bartlesville
+  district_name: OKLAHOMA CONNECTIONS ACADEMY
+  district_nces_id: '4000786'
+  enrollment: 1234
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-bartlesville-4003630:
+  display_name: Bartlesville
+  district_name: BARTLESVILLE
+  district_nces_id: '4003630'
+  enrollment: 6182
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-beggs:
+  display_name: Beggs
+  district_name: BEGGS
+  district_nces_id: '4003810'
+  enrollment: 1073
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-bethany:
+  display_name: Bethany
+  district_name: BETHANY
+  district_nces_id: '4004110'
+  enrollment: 1747
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-bixby:
+  display_name: Bixby
+  district_name: BIXBY
+  district_nces_id: '4004500'
+  enrollment: 7800
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-blackwell:
+  display_name: Blackwell
+  district_name: BLACKWELL
+  district_nces_id: '4004630'
+  enrollment: 1121
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-blanchard-4004680:
+  display_name: Blanchard
+  district_name: BLANCHARD
+  district_nces_id: '4004680'
+  enrollment: 2240
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-blanchard-4005400:
+  display_name: Blanchard
+  district_name: BRIDGE CREEK
+  district_nces_id: '4005400'
+  enrollment: 1812
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-blanchard-4009870:
+  display_name: Blanchard
+  district_name: DIBBLE
+  district_nces_id: '4009870'
+  enrollment: 717
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-bokchito:
+  display_name: Bokchito
+  district_name: ROCK CREEK
+  district_nces_id: '4033601'
+  enrollment: 500
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-bristow:
+  display_name: Bristow
+  district_name: BRISTOW
+  district_nces_id: '4005460'
+  enrollment: 1661
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-broken-arrow:
+  display_name: Broken Arrow
+  district_name: BROKEN ARROW
+  district_nces_id: '4005490'
+  enrollment: 20115
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-broken-bow:
+  display_name: Broken Bow
+  district_name: BROKEN BOW
+  district_nces_id: '4005520'
+  enrollment: 1583
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-cache:
+  display_name: Cache
+  district_name: CACHE
+  district_nces_id: '4006120'
+  enrollment: 2101
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-caddo:
+  display_name: Caddo
+  district_name: CADDO
+  district_nces_id: '4006150'
+  enrollment: 504
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-calera:
+  display_name: Calera
+  district_name: CALERA
+  district_nces_id: '4006180'
+  enrollment: 847
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-carnegie:
+  display_name: Carnegie
+  district_name: CARNEGIE
+  district_nces_id: '4006630'
+  enrollment: 550
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-cashion:
+  display_name: Cashion
+  district_name: CASHION
+  district_nces_id: '4006810'
+  enrollment: 725
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-catoosa:
+  display_name: Catoosa
+  district_name: CATOOSA
+  district_nces_id: '4006870'
+  enrollment: 1817
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-chandler:
+  display_name: Chandler
+  district_name: CHANDLER
+  district_nces_id: '4007290'
+  enrollment: 1120
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-checotah:
+  display_name: Checotah
+  district_name: CHECOTAH
+  district_nces_id: '4007350'
+  enrollment: 1452
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-chelsea:
+  display_name: Chelsea
+  district_name: CHELSEA
+  district_nces_id: '4007380'
+  enrollment: 784
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-chickasha:
+  display_name: Chickasha
+  district_name: CHICKASHA
+  district_nces_id: '4007560'
+  enrollment: 2306
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-choctaw:
+  display_name: Choctaw
+  district_name: CHOCTAW-NICOMA PARK
+  district_nces_id: '4007620'
+  enrollment: 5816
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-chouteau:
+  display_name: Chouteau
+  district_name: CHOUTEAU-MAZIE
+  district_nces_id: '4007670'
+  enrollment: 820
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-claremore-4007740:
+  display_name: Claremore
+  district_name: CLAREMORE
+  district_nces_id: '4007740'
+  enrollment: 3944
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-claremore-4015930:
+  display_name: Claremore
+  district_name: JUSTUS-TIAWAH
+  district_nces_id: '4015930'
+  enrollment: 534
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-claremore-4027390:
+  display_name: Claremore
+  district_name: SEQUOYAH
+  district_nces_id: '4027390'
+  enrollment: 1299
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-claremore-4031110:
+  display_name: Claremore
+  district_name: VERDIGRIS
+  district_nces_id: '4031110'
+  enrollment: 1395
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-cleveland:
+  display_name: Cleveland
+  district_name: CLEVELAND
+  district_nces_id: '4008040'
+  enrollment: 1614
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-clinton:
+  display_name: Clinton
+  district_name: CLINTON
+  district_nces_id: '4008070'
+  enrollment: 2080
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-coalgate:
+  display_name: Coalgate
+  district_name: COALGATE
+  district_nces_id: '4008130'
+  enrollment: 700
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-colbert:
+  display_name: Colbert
+  district_name: COLBERT
+  district_nces_id: '4008220'
+  enrollment: 809
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-colcord:
+  display_name: Colcord
+  district_name: COLCORD
+  district_nces_id: '4008250'
+  enrollment: 756
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-collinsville:
+  display_name: Collinsville
+  district_name: COLLINSVILLE
+  district_nces_id: '4008370'
+  enrollment: 3111
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-comanche:
+  display_name: Comanche
+  district_name: COMANCHE
+  district_nces_id: '4008460'
+  enrollment: 899
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-commerce:
+  display_name: Commerce
+  district_name: COMMERCE
+  district_nces_id: '4008490'
+  enrollment: 883
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-cordell:
+  display_name: Cordell
+  district_name: CORDELL
+  district_nces_id: '4008640'
+  enrollment: 599
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-coweta:
+  display_name: Coweta
+  district_name: COWETA
+  district_nces_id: '4008850'
+  enrollment: 3569
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-crescent:
+  display_name: Crescent
+  district_name: CRESCENT
+  district_nces_id: '4009000'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-cushing:
+  display_name: Cushing
+  district_name: CUSHING
+  district_nces_id: '4009240'
+  enrollment: 1699
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-dale:
+  display_name: Dale
+  district_name: DALE
+  district_nces_id: '4009390'
+  enrollment: 765
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-davis:
+  display_name: Davis
+  district_name: DAVIS
+  district_nces_id: '4009510'
+  enrollment: 871
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-dewey:
+  display_name: Dewey
+  district_name: DEWEY
+  district_nces_id: '4009810'
+  enrollment: 1232
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-duncan-4010290:
+  display_name: Duncan
+  district_name: DUNCAN
+  district_nces_id: '4010290'
+  enrollment: 3361
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-duncan-4010890:
+  display_name: Duncan
+  district_name: EMPIRE
+  district_nces_id: '4010890'
+  enrollment: 522
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-durant-4010350:
+  display_name: Durant
+  district_name: DURANT
+  district_nces_id: '4010350'
+  enrollment: 3854
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-durant-4027640:
+  display_name: Durant
+  district_name: SILO
+  district_nces_id: '4027640'
+  enrollment: 1157
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-edmond-4009570:
+  display_name: Edmond
+  district_name: DEER CREEK
+  district_nces_id: '4009570'
+  enrollment: 7636
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-edmond-4010590:
+  display_name: Edmond
+  district_name: EDMOND
+  district_nces_id: '4010590'
+  enrollment: 26190
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-edmond-4022350:
+  display_name: Edmond
+  district_name: OAKDALE
+  district_nces_id: '4022350'
+  enrollment: 720
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-el-reno:
+  display_name: El Reno
+  district_name: EL RENO
+  district_nces_id: '4010650'
+  enrollment: 2908
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-elgin:
+  display_name: Elgin
+  district_name: ELGIN
+  district_nces_id: '4010710'
+  enrollment: 2507
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-elk-city-4010740:
+  display_name: Elk City
+  district_name: ELK CITY
+  district_nces_id: '4010740'
+  enrollment: 2108
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-elk-city-4019800:
+  display_name: Elk City
+  district_name: MERRITT
+  district_nces_id: '4019800'
+  enrollment: 821
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-elmore-city:
+  display_name: Elmore City
+  district_name: ELMORE CITY-PERNELL
+  district_nces_id: '4010860'
+  enrollment: 507
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-enid-4010920:
+  display_name: Enid
+  district_name: ENID
+  district_nces_id: '4010920'
+  enrollment: 7743
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-enid-4021780:
+  display_name: Enid
+  district_name: CHISHOLM
+  district_nces_id: '4021780'
+  enrollment: 1118
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-eufaula:
+  display_name: Eufaula
+  district_name: EUFAULA
+  district_nces_id: '4011160'
+  enrollment: 1185
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-fairland:
+  display_name: Fairland
+  district_name: FAIRLAND
+  district_nces_id: '4011250'
+  enrollment: 574
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-fairview:
+  display_name: Fairview
+  district_name: FAIRVIEW
+  district_nces_id: '4011280'
+  enrollment: 755
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-fort-gibson:
+  display_name: Fort Gibson
+  district_name: FORT GIBSON
+  district_nces_id: '4011970'
+  enrollment: 1795
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-frederick:
+  display_name: Frederick
+  district_name: FREDERICK
+  district_nces_id: '4012150'
+  enrollment: 810
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-glenpool:
+  display_name: Glenpool
+  district_name: GLENPOOL
+  district_nces_id: '4012720'
+  enrollment: 2843
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-gore:
+  display_name: Gore
+  district_name: GORE
+  district_nces_id: '4012900'
+  enrollment: 527
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-grove:
+  display_name: Grove
+  district_name: GROVE
+  district_nces_id: '4013530'
+  enrollment: 2528
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-guthrie-4000804:
+  display_name: Guthrie
+  district_name: E-SCHOOL VIRTUAL ACADEMY
+  district_nces_id: '4000804'
+  enrollment: 612
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-guthrie-4013560:
+  display_name: Guthrie
+  district_name: GUTHRIE
+  district_nces_id: '4013560'
+  enrollment: 3465
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-guymon:
+  display_name: Guymon
+  district_name: GUYMON
+  district_nces_id: '4013590'
+  enrollment: 2982
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-harrah:
+  display_name: Harrah
+  district_name: HARRAH
+  district_nces_id: '4013890'
+  enrollment: 2206
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-hartshorne:
+  display_name: Hartshorne
+  district_name: HARTSHORNE
+  district_nces_id: '4013920'
+  enrollment: 708
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-haskell:
+  display_name: Haskell
+  district_name: HASKELL
+  district_nces_id: '4013950'
+  enrollment: 711
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-heavener:
+  display_name: Heavener
+  district_name: HEAVENER
+  district_nces_id: '4014160'
+  enrollment: 887
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-hennessey:
+  display_name: Hennessey
+  district_name: HENNESSEY
+  district_nces_id: '4014340'
+  enrollment: 843
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-henryetta:
+  display_name: Henryetta
+  district_name: HENRYETTA
+  district_nces_id: '4014370'
+  enrollment: 1072
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-hinton:
+  display_name: Hinton
+  district_name: HINTON
+  district_nces_id: '4014610'
+  enrollment: 736
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-hobart:
+  display_name: Hobart
+  district_name: HOBART
+  district_nces_id: '4014700'
+  enrollment: 726
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-holdenville:
+  display_name: Holdenville
+  district_name: HOLDENVILLE
+  district_nces_id: '4014790'
+  enrollment: 979
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-hominy:
+  display_name: Hominy
+  district_name: HOMINY
+  district_nces_id: '4014970'
+  enrollment: 532
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-hooker:
+  display_name: Hooker
+  district_name: HOOKER
+  district_nces_id: '4015090'
+  enrollment: 603
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-howe:
+  display_name: Howe
+  district_name: HOWE
+  district_nces_id: '4015120'
+  enrollment: 690
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-hugo:
+  display_name: Hugo
+  district_name: HUGO
+  district_nces_id: '4015210'
+  enrollment: 1219
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-hulbert:
+  display_name: Hulbert
+  district_name: HULBERT
+  district_nces_id: '4015240'
+  enrollment: 550
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-idabel:
+  display_name: Idabel
+  district_name: IDABEL
+  district_nces_id: '4015370'
+  enrollment: 1227
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-inola:
+  display_name: Inola
+  district_name: INOLA
+  district_nces_id: '4015480'
+  enrollment: 1327
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-jay:
+  display_name: Jay
+  district_name: JAY
+  district_nces_id: '4015690'
+  enrollment: 1595
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-jenks:
+  display_name: Jenks
+  district_name: JENKS
+  district_nces_id: '4015720'
+  enrollment: 12654
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-jones:
+  display_name: Jones
+  district_name: JONES
+  district_nces_id: '4015840'
+  enrollment: 1139
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-kansas:
+  display_name: Kansas
+  district_name: KANSAS
+  district_nces_id: '4015990'
+  enrollment: 791
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-kellyville:
+  display_name: Kellyville
+  district_name: KELLYVILLE
+  district_nces_id: '4016170'
+  enrollment: 835
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-ketchum:
+  display_name: Ketchum
+  district_name: KETCHUM
+  district_nces_id: '4016380'
+  enrollment: 568
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-kiefer:
+  display_name: Kiefer
+  district_name: KIEFER
+  district_nces_id: '4016500'
+  enrollment: 951
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-kingfisher:
+  display_name: Kingfisher
+  district_name: KINGFISHER
+  district_nces_id: '4016560'
+  enrollment: 1334
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-kingston:
+  display_name: Kingston
+  district_name: KINGSTON
+  district_nces_id: '4016590'
+  enrollment: 1268
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-konawa:
+  display_name: Konawa
+  district_name: KONAWA
+  district_nces_id: '4016710'
+  enrollment: 544
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-lawton-4004470:
+  display_name: Lawton
+  district_name: BISHOP
+  district_nces_id: '4004470'
+  enrollment: 570
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-lawton-4017250:
+  display_name: Lawton
+  district_name: LAWTON
+  district_nces_id: '4017250'
+  enrollment: 13979
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-lexington:
+  display_name: Lexington
+  district_name: LEXINGTON
+  district_nces_id: '4017580'
+  enrollment: 996
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-lindsay:
+  display_name: Lindsay
+  district_name: LINDSAY
+  district_nces_id: '4017850'
+  enrollment: 1164
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-locust-grove:
+  display_name: Locust Grove
+  district_name: LOCUST GROVE
+  district_nces_id: '4018000'
+  enrollment: 1208
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-lone-grove:
+  display_name: Lone Grove
+  district_name: LONE GROVE
+  district_nces_id: '4018090'
+  enrollment: 1447
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-luther:
+  display_name: Luther
+  district_name: LUTHER
+  district_nces_id: '4018630'
+  enrollment: 823
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-madill:
+  display_name: Madill
+  district_name: MADILL
+  district_nces_id: '4018700'
+  enrollment: 1760
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-mangum:
+  display_name: Mangum
+  district_name: MANGUM
+  district_nces_id: '4018780'
+  enrollment: 644
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-mannford:
+  display_name: Mannford
+  district_name: MANNFORD
+  district_nces_id: '4018840'
+  enrollment: 1517
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-marietta:
+  display_name: Marietta
+  district_name: MARIETTA
+  district_nces_id: '4018990'
+  enrollment: 1127
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-marlow:
+  display_name: Marlow
+  district_name: MARLOW
+  district_nces_id: '4019080'
+  enrollment: 1453
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-mcalester:
+  display_name: Mcalester
+  district_name: MCALESTER
+  district_nces_id: '4019440'
+  enrollment: 2956
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-mcloud:
+  display_name: Mcloud
+  district_name: MCLOUD
+  district_nces_id: '4019560'
+  enrollment: 1667
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-meeker:
+  display_name: Meeker
+  district_name: MEEKER
+  district_nces_id: '4019680'
+  enrollment: 713
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-miami:
+  display_name: Miami
+  district_name: MIAMI
+  district_nces_id: '4019860'
+  enrollment: 2201
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-midwest-city-4000778:
+  display_name: Midwest City
+  district_name: OKLAHOMA VIRTUAL CHARTER ACAD
+  district_nces_id: '4000778'
+  enrollment: 3259
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-midwest-city-4000785:
+  display_name: Midwest City
+  district_name: INSIGHT SCHOOL OF OKLAHOMA
+  district_nces_id: '4000785'
+  enrollment: 949
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-midwest-city-4019950:
+  display_name: Midwest City
+  district_name: MIDWEST CITY-DEL CITY
+  district_nces_id: '4019950'
+  enrollment: 12584
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-minco:
+  display_name: Minco
+  district_name: MINCO
+  district_nces_id: '4020100'
+  enrollment: 563
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-moore:
+  display_name: Moore
+  district_name: MOORE
+  district_nces_id: '4020250'
+  enrollment: 24632
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-mooreland:
+  display_name: Mooreland
+  district_name: MOORELAND
+  district_nces_id: '4020280'
+  enrollment: 586
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-morris:
+  display_name: Morris
+  district_name: MORRIS
+  district_nces_id: '4020310'
+  enrollment: 945
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-morrison:
+  display_name: Morrison
+  district_name: MORRISON
+  district_nces_id: '4020340'
+  enrollment: 603
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-mounds:
+  display_name: Mounds
+  district_name: MOUNDS
+  district_nces_id: '4020550'
+  enrollment: 596
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-muldrow:
+  display_name: Muldrow
+  district_name: MULDROW
+  district_nces_id: '4020880'
+  enrollment: 1292
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-muskogee-4014520:
+  display_name: Muskogee
+  district_name: HILLDALE
+  district_nces_id: '4014520'
+  enrollment: 2033
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-muskogee-4020970:
+  display_name: Muskogee
+  district_name: MUSKOGEE
+  district_nces_id: '4020970'
+  enrollment: 4819
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-newcastle:
+  display_name: Newcastle
+  district_name: NEWCASTLE
+  district_nces_id: '4021510'
+  enrollment: 2578
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-newkirk:
+  display_name: Newkirk
+  district_name: NEWKIRK
+  district_nces_id: '4021540'
+  enrollment: 743
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-noble:
+  display_name: Noble
+  district_name: NOBLE
+  district_nces_id: '4021630'
+  enrollment: 3035
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-norman-4017880:
+  display_name: Norman
+  district_name: LITTLE AXE
+  district_nces_id: '4017880'
+  enrollment: 1174
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-norman-4021720:
+  display_name: Norman
+  district_name: NORMAN
+  district_nces_id: '4021720'
+  enrollment: 15786
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-nowata:
+  display_name: Nowata
+  district_name: NOWATA
+  district_nces_id: '4021930'
+  enrollment: 751
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-okc:
+  display_name: Okc
+  district_name: EPIC VIRTUAL CHARTER
+  district_nces_id: '4000777'
+  enrollment: 28478
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-okemah:
+  display_name: Okemah
+  district_name: OKEMAH
+  district_nces_id: '4006850'
+  enrollment: 725
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4000753:
+  display_name: Oklahoma City
+  district_name: DOVE SCHOOLS OF TULSA
+  district_nces_id: '4000753'
+  enrollment: 1242
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4000783:
+  display_name: Oklahoma City
+  district_name: ASTEC CHARTERS
+  district_nces_id: '4000783'
+  enrollment: 1166
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4000787:
+  display_name: Oklahoma City
+  district_name: JOHN W REX CHARTER
+  district_nces_id: '4000787'
+  enrollment: 735
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4000796:
+  display_name: Oklahoma City
+  district_name: SANTA FE SOUTH (CHARTER)
+  district_nces_id: '4000796'
+  enrollment: 3790
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4000799:
+  display_name: Oklahoma City
+  district_name: DOVE SCHOOLS OF OKC
+  district_nces_id: '4000799'
+  enrollment: 1854
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4000809:
+  display_name: Oklahoma City
+  district_name: HARDING INDEPENDENCE
+  district_nces_id: '4000809'
+  enrollment: 950
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4009060:
+  display_name: Oklahoma City
+  district_name: CROOKED OAK
+  district_nces_id: '4009060'
+  enrollment: 1185
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4020080:
+  display_name: Oklahoma City
+  district_name: MILLWOOD
+  district_nces_id: '4020080'
+  enrollment: 1108
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4022770:
+  display_name: Oklahoma City
+  district_name: OKLAHOMA CITY
+  district_nces_id: '4022770'
+  enrollment: 33245
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-oklahoma-city-4032370:
+  display_name: Oklahoma City
+  district_name: WESTERN HEIGHTS
+  district_nces_id: '4032370'
+  enrollment: 2858
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-okmulgee:
+  display_name: Okmulgee
+  district_name: OKMULGEE
+  district_nces_id: '4022800'
+  enrollment: 1185
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-oktaha:
+  display_name: Oktaha
+  district_name: OKTAHA
+  district_nces_id: '4022830'
+  enrollment: 704
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-oologah:
+  display_name: Oologah
+  district_name: OOLOGAH-TALALA
+  district_nces_id: '4023040'
+  enrollment: 1740
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-owasso:
+  display_name: Owasso
+  district_name: OWASSO
+  district_nces_id: '4023280'
+  enrollment: 9802
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-panama:
+  display_name: Panama
+  district_name: PANAMA
+  district_nces_id: '4023370'
+  enrollment: 730
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-park-hill:
+  display_name: Park Hill
+  district_name: KEYS
+  district_nces_id: '4000033'
+  enrollment: 750
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-pauls-valley:
+  display_name: Pauls Valley
+  district_name: PAULS VALLEY
+  district_nces_id: '4023550'
+  enrollment: 1396
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-pawhuska:
+  display_name: Pawhuska
+  district_name: PAWHUSKA
+  district_nces_id: '4023580'
+  enrollment: 696
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-pawnee:
+  display_name: Pawnee
+  district_name: PAWNEE
+  district_nces_id: '4023610'
+  enrollment: 633
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-perkins:
+  display_name: Perkins
+  district_name: PERKINS-TRYON
+  district_nces_id: '4023800'
+  enrollment: 1577
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-perry:
+  display_name: Perry
+  district_name: PERRY
+  district_nces_id: '4023850'
+  enrollment: 1015
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-piedmont:
+  display_name: Piedmont
+  district_name: PIEDMONT
+  district_nces_id: '4023970'
+  enrollment: 5056
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-pocola:
+  display_name: Pocola
+  district_name: POCOLA
+  district_nces_id: '4024630'
+  enrollment: 747
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-ponca-city:
+  display_name: Ponca City
+  district_name: PONCA CITY
+  district_nces_id: '4024690'
+  enrollment: 4612
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-porter:
+  display_name: Porter
+  district_name: PORTER CONSOLIDATED
+  district_nces_id: '4030197'
+  enrollment: 552
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-poteau:
+  display_name: Poteau
+  district_name: POTEAU
+  district_nces_id: '4024870'
+  enrollment: 2182
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-prague:
+  display_name: Prague
+  district_name: PRAGUE
+  district_nces_id: '4024930'
+  enrollment: 1070
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-preston:
+  display_name: Preston
+  district_name: PRESTON
+  district_nces_id: '4025050'
+  enrollment: 641
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-pryor:
+  display_name: Pryor
+  district_name: PRYOR
+  district_nces_id: '4025200'
+  enrollment: 2863
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-purcell:
+  display_name: Purcell
+  district_name: PURCELL
+  district_nces_id: '4025230'
+  enrollment: 1453
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-quapaw:
+  display_name: Quapaw
+  district_name: QUAPAW
+  district_nces_id: '4025320'
+  enrollment: 607
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-ramona:
+  display_name: Ramona
+  district_name: CANEY VALLEY
+  district_nces_id: '4025470'
+  enrollment: 761
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-roland:
+  display_name: Roland
+  district_name: ROLAND
+  district_nces_id: '4026310'
+  enrollment: 945
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-salina:
+  display_name: Salina
+  district_name: SALINA
+  district_nces_id: '4026730'
+  enrollment: 766
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-sallisaw:
+  display_name: Sallisaw
+  district_name: SALLISAW
+  district_nces_id: '4026790'
+  enrollment: 1825
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-sand-springs:
+  display_name: Sand Springs
+  district_name: SAND SPRINGS
+  district_nces_id: '4026880'
+  enrollment: 5178
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-sapulpa-4018240:
+  display_name: Sapulpa
+  district_name: LONE STAR
+  district_nces_id: '4018240'
+  enrollment: 881
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-sapulpa-4026910:
+  display_name: Sapulpa
+  district_name: SAPULPA
+  district_nces_id: '4026910'
+  enrollment: 3718
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-sayre:
+  display_name: Sayre
+  district_name: SAYRE
+  district_nces_id: '4027060'
+  enrollment: 694
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-seminole:
+  display_name: Seminole
+  district_name: SEMINOLE
+  district_nces_id: '4027300'
+  enrollment: 1457
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-shawnee-4000802:
+  display_name: Shawnee
+  district_name: NORTH ROCK CREEK
+  district_nces_id: '4000802'
+  enrollment: 1208
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-shawnee-4004230:
+  display_name: Shawnee
+  district_name: BETHEL
+  district_nces_id: '4004230'
+  enrollment: 1207
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-shawnee-4013500:
+  display_name: Shawnee
+  district_name: GROVE
+  district_nces_id: '4013500'
+  enrollment: 551
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-shawnee-4027570:
+  display_name: Shawnee
+  district_name: SHAWNEE
+  district_nces_id: '4027570'
+  enrollment: 3332
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-skiatook:
+  display_name: Skiatook
+  district_name: SKIATOOK
+  district_nces_id: '4027750'
+  enrollment: 2296
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-south-coffeyville:
+  display_name: South Coffeyville
+  district_name: OKLAHOMA UNION
+  district_nces_id: '4000021'
+  enrollment: 611
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-sperry:
+  display_name: Sperry
+  district_name: SPERRY
+  district_nces_id: '4028170'
+  enrollment: 1081
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-spiro:
+  display_name: Spiro
+  district_name: SPIRO
+  district_nces_id: '4028200'
+  enrollment: 1063
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-stigler:
+  display_name: Stigler
+  district_name: STIGLER
+  district_nces_id: '4028650'
+  enrollment: 1187
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-stillwater:
+  display_name: Stillwater
+  district_name: STILLWATER
+  district_nces_id: '4028680'
+  enrollment: 6146
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-stilwell-4019200:
+  display_name: Stilwell
+  district_name: MARYETTA
+  district_nces_id: '4019200'
+  enrollment: 645
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-stilwell-4028710:
+  display_name: Stilwell
+  district_name: STILWELL
+  district_nces_id: '4028710'
+  enrollment: 1394
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-stratford:
+  display_name: Stratford
+  district_name: STRATFORD
+  district_nces_id: '4028980'
+  enrollment: 632
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-stroud:
+  display_name: Stroud
+  district_name: STROUD
+  district_nces_id: '4029070'
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-sulphur:
+  display_name: Sulphur
+  district_name: SULPHUR
+  district_nces_id: '4029160'
+  enrollment: 1490
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-tahlequah-4013230:
+  display_name: Tahlequah
+  district_name: GRAND VIEW
+  district_nces_id: '4013230'
+  enrollment: 503
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-tahlequah-4029380:
+  display_name: Tahlequah
+  district_name: TAHLEQUAH
+  district_nces_id: '4029380'
+  enrollment: 3607
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-talihina:
+  display_name: Talihina
+  district_name: TALIHINA
+  district_nces_id: '4029400'
+  enrollment: 511
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-tecumseh:
+  display_name: Tecumseh
+  district_name: TECUMSEH
+  district_nces_id: '4029610'
+  enrollment: 1968
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-tishomingo:
+  display_name: Tishomingo
+  district_name: TISHOMINGO
+  district_nces_id: '4030060'
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-tonkawa:
+  display_name: Tonkawa
+  district_name: TONKAWA
+  district_nces_id: '4030120'
+  enrollment: 854
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-tulsa-4000769:
+  display_name: Tulsa
+  district_name: LIGHTHOUSE ACADEMY (CHARTER)
+  district_nces_id: '4000769'
+  enrollment: 568
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-tulsa-4000774:
+  display_name: Tulsa
+  district_name: SCHL ARTS/SCI (CHARTER)
+  district_nces_id: '4000774'
+  enrollment: 526
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-tulsa-4000780:
+  display_name: Tulsa
+  district_name: KIPP (CHARTER)
+  district_nces_id: '4000780'
+  enrollment: 564
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-tulsa-4000792:
+  display_name: Tulsa
+  district_name: HONOR ACADEMY(CHARTER)
+  district_nces_id: '4000792'
+  enrollment: 1152
+  has_charters: true
+  source: ccd_auto
+  state: OK
+ok-tulsa-4004020:
+  display_name: Tulsa
+  district_name: BERRYHILL
+  district_nces_id: '4004020'
+  enrollment: 1150
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-tulsa-4030240:
+  display_name: Tulsa
+  district_name: TULSA
+  district_nces_id: '4030240'
+  enrollment: 33871
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-tulsa-4030600:
+  display_name: Tulsa
+  district_name: UNION
+  district_nces_id: '4030600'
+  enrollment: 14890
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-tuttle:
+  display_name: Tuttle
+  district_name: TUTTLE
+  district_nces_id: '4030420'
+  enrollment: 1974
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-valliant:
+  display_name: Valliant
+  district_name: VALLIANT
+  district_nces_id: '4030870'
+  enrollment: 930
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-vian:
+  display_name: Vian
+  district_name: VIAN
+  district_nces_id: '4031140'
+  enrollment: 817
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-vinita:
+  display_name: Vinita
+  district_name: VINITA
+  district_nces_id: '4031290'
+  enrollment: 1321
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-wagoner:
+  display_name: Wagoner
+  district_name: WAGONER
+  district_nces_id: '4031350'
+  enrollment: 2066
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-walters:
+  display_name: Walters
+  district_name: WALTERS
+  district_nces_id: '4031470'
+  enrollment: 610
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-warner:
+  display_name: Warner
+  district_name: WARNER
+  district_nces_id: '4031650'
+  enrollment: 814
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-warr-acres:
+  display_name: Warr Acres
+  district_name: PUTNAM CITY
+  district_nces_id: '4025290'
+  enrollment: 18905
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-washington:
+  display_name: Washington
+  district_name: WASHINGTON
+  district_nces_id: '4031710'
+  enrollment: 1197
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-watonga:
+  display_name: Watonga
+  district_name: WATONGA
+  district_nces_id: '4031770'
+  enrollment: 733
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-weatherford:
+  display_name: Weatherford
+  district_name: WEATHERFORD
+  district_nces_id: '4032070'
+  enrollment: 2388
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-wellston:
+  display_name: Wellston
+  district_name: WELLSTON
+  district_nces_id: '4032280'
+  enrollment: 514
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-westville:
+  display_name: Westville
+  district_name: WESTVILLE
+  district_nces_id: '4032400'
+  enrollment: 971
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-wewoka:
+  display_name: Wewoka
+  district_name: WEWOKA
+  district_nces_id: '4032460'
+  enrollment: 668
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-wilburton:
+  display_name: Wilburton
+  district_name: WILBURTON
+  district_nces_id: '4032790'
+  enrollment: 885
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-wister:
+  display_name: Wister
+  district_name: WISTER
+  district_nces_id: '4032970'
+  enrollment: 502
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-woodward:
+  display_name: Woodward
+  district_name: WOODWARD
+  district_nces_id: '4033180'
+  enrollment: 2508
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-wyandotte:
+  display_name: Wyandotte
+  district_name: WYANDOTTE
+  district_nces_id: '4033240'
+  enrollment: 740
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-wynnewood:
+  display_name: Wynnewood
+  district_name: WYNNEWOOD
+  district_nces_id: '4033300'
+  enrollment: 701
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-yukon-4021000:
+  display_name: Yukon
+  district_name: MUSTANG
+  district_nces_id: '4021000'
+  enrollment: 13494
+  has_charters: false
+  source: ccd_auto
+  state: OK
+ok-yukon-4033480:
+  display_name: Yukon
+  district_name: YUKON
+  district_nces_id: '4033480'
+  enrollment: 9449
+  has_charters: false
+  source: ccd_auto
+  state: OK

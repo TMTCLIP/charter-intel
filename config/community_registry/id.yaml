@@ -1,0 +1,688 @@
+id-aberdeen:
+  display_name: Aberdeen
+  district_name: ABERDEEN DISTRICT
+  district_nces_id: '1600030'
+  enrollment: 673
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-american-falls:
+  display_name: American Falls
+  district_name: AMERICAN FALLS JOINT DISTRICT
+  district_nces_id: '1600060'
+  enrollment: 1572
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-ammon:
+  display_name: Ammon
+  district_name: WHITE PINE CHARTER SCHOOL INC.
+  district_nces_id: '1600142'
+  enrollment: 561
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-arimo:
+  display_name: Arimo
+  district_name: MARSH VALLEY JOINT DISTRICT
+  district_nces_id: '1601950'
+  enrollment: 1258
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-blackfoot-1600270:
+  display_name: Blackfoot
+  district_name: BLACKFOOT DISTRICT
+  district_nces_id: '1600270'
+  enrollment: 3990
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-blackfoot-1602970:
+  display_name: Blackfoot
+  district_name: SNAKE RIVER DISTRICT
+  district_nces_id: '1602970'
+  enrollment: 2888
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-boise-1600011:
+  display_name: Boise
+  district_name: INSPIRE ACADEMICS INC.
+  district_nces_id: '1600011'
+  enrollment: 1310
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-boise-1600144:
+  display_name: Boise
+  district_name: ISUCCEED VIRTUAL HIGH SCHOOL INC.
+  district_nces_id: '1600144'
+  enrollment: 1023
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-boise-1600156:
+  display_name: Boise
+  district_name: THE SAGE INTERNATIONAL SCHOOL OF BOISE A PUBLIC CHARTER SCH
+  district_nces_id: '1600156'
+  enrollment: 1008
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-boise-1600360:
+  display_name: Boise
+  district_name: BOISE INDEPENDENT DISTRICT
+  district_nces_id: '1600360'
+  enrollment: 22809
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-bonners-ferry:
+  display_name: Bonners Ferry
+  district_name: BOUNDARY COUNTY DISTRICT
+  district_nces_id: '1600420'
+  enrollment: 1441
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-buhl:
+  display_name: Buhl
+  district_name: BUHL JOINT DISTRICT
+  district_nces_id: '1600480'
+  enrollment: 1264
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-burley:
+  display_name: Burley
+  district_name: CASSIA COUNTY JOINT DISTRICT
+  district_nces_id: '1600660'
+  enrollment: 5561
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-caldwell-1600141:
+  display_name: Caldwell
+  district_name: VISION CHARTER SCHOOL INC.
+  district_nces_id: '1600141'
+  enrollment: 751
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-caldwell-1600510:
+  display_name: Caldwell
+  district_name: CALDWELL DISTRICT
+  district_nces_id: '1600510'
+  enrollment: 5499
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-caldwell-1600600:
+  display_name: Caldwell
+  district_name: VALLIVUE SCHOOL DISTRICT
+  district_nces_id: '1600600'
+  enrollment: 9892
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-chubbuck:
+  display_name: Chubbuck
+  district_name: THE ACADEMY INC.
+  district_nces_id: '1600014'
+  enrollment: 545
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-coeur-dalene-1600173:
+  display_name: Coeur D'Alene
+  district_name: COEUR D'ALENE CHARTER ACADEMY INC.
+  district_nces_id: '1600173'
+  enrollment: 597
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-coeur-dalene-1600780:
+  display_name: Coeur D'Alene
+  district_name: COEUR D'ALENE DISTRICT
+  district_nces_id: '1600780'
+  enrollment: 10107
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-dayton:
+  display_name: Dayton
+  district_name: WEST SIDE JOINT DISTRICT
+  district_nces_id: '1603420'
+  enrollment: 849
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-driggs:
+  display_name: Driggs
+  district_name: TETON COUNTY DISTRICT
+  district_nces_id: '1603180'
+  enrollment: 1878
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-eagle:
+  display_name: Eagle
+  district_name: NORTH STAR CHARTER SCHOOL INC.
+  district_nces_id: '1600174'
+  enrollment: 958
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-emmett:
+  display_name: Emmett
+  district_name: EMMETT INDEPENDENT DISTRICT
+  district_nces_id: '1601020'
+  enrollment: 2608
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-filer:
+  display_name: Filer
+  district_name: FILER DISTRICT
+  district_nces_id: '1601050'
+  enrollment: 1598
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-firth:
+  display_name: Firth
+  district_name: FIRTH DISTRICT
+  district_nces_id: '1601080'
+  enrollment: 845
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-fruitland-1600188:
+  display_name: Fruitland
+  district_name: TREASURE VALLEY CLASSICAL ACADEMY INC.
+  district_nces_id: '1600188'
+  enrollment: 537
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-fruitland-1601140:
+  display_name: Fruitland
+  district_name: FRUITLAND DISTRICT
+  district_nces_id: '1601140'
+  enrollment: 1634
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-garden-city:
+  display_name: Garden City
+  district_name: ANSER OF IDAHO INC.
+  district_nces_id: '1600195'
+  enrollment: 502
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-gooding:
+  display_name: Gooding
+  district_name: GOODING JOINT DISTRICT
+  district_nces_id: '1601260'
+  enrollment: 1244
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-grace:
+  display_name: Grace
+  district_name: GRACE JOINT DISTRICT
+  district_nces_id: '1601290'
+  enrollment: 534
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-grangeville:
+  display_name: Grangeville
+  district_name: MOUNTAIN VIEW SCHOOL DISTRICT
+  district_nces_id: '1600139'
+  enrollment: 1109
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-hailey:
+  display_name: Hailey
+  district_name: BLAINE COUNTY DISTRICT
+  district_nces_id: '1600300'
+  enrollment: 3312
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-hazelton:
+  display_name: Hazelton
+  district_name: VALLEY DISTRICT
+  district_nces_id: '1603270'
+  enrollment: 531
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-homedale:
+  display_name: Homedale
+  district_name: HOMEDALE JOINT DISTRICT
+  district_nces_id: '1601470'
+  enrollment: 1260
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-idaho-falls-1600175:
+  display_name: Idaho Falls
+  district_name: ALTURAS INTERNATIONAL ACADEMY INC.
+  district_nces_id: '1600175'
+  enrollment: 556
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-idaho-falls-1600930:
+  display_name: Idaho Falls
+  district_name: BONNEVILLE JOINT DISTRICT
+  district_nces_id: '1600930'
+  enrollment: 13778
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-idaho-falls-1601530:
+  display_name: Idaho Falls
+  district_name: IDAHO FALLS DISTRICT
+  district_nces_id: '1601530'
+  enrollment: 10250
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-jerome:
+  display_name: Jerome
+  district_name: JEROME JOINT DISTRICT
+  district_nces_id: '1601590'
+  enrollment: 4164
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-kellogg:
+  display_name: Kellogg
+  district_name: KELLOGG JOINT DISTRICT
+  district_nces_id: '1601650'
+  enrollment: 1201
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-kimberly:
+  display_name: Kimberly
+  district_name: KIMBERLY DISTRICT
+  district_nces_id: '1601710'
+  enrollment: 2153
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-kuna:
+  display_name: Kuna
+  district_name: KUNA JOINT DISTRICT
+  district_nces_id: '1601770'
+  enrollment: 5825
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-lapwai:
+  display_name: Lapwai
+  district_name: LAPWAI DISTRICT
+  district_nces_id: '1601830'
+  enrollment: 519
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-lewiston:
+  display_name: Lewiston
+  district_name: LEWISTON INDEPENDENT DISTRICT
+  district_nces_id: '1601860'
+  enrollment: 4765
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-malad:
+  display_name: Malad
+  district_name: ONEIDA COUNTY DISTRICT
+  district_nces_id: '1602490'
+  enrollment: 7818
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-marsing:
+  display_name: Marsing
+  district_name: MARSING JOINT DISTRICT
+  district_nces_id: '1601980'
+  enrollment: 854
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-mccall:
+  display_name: Mccall
+  district_name: MCCALL-DONNELLY JOINT SCHOOL DISTRICT
+  district_nces_id: '1602030'
+  enrollment: 1364
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-melba:
+  display_name: Melba
+  district_name: MELBA JOINT DISTRICT
+  district_nces_id: '1602070'
+  enrollment: 824
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-meridian-1600004:
+  display_name: Meridian
+  district_name: IDAHO VIRTUAL ACADEMY INC.
+  district_nces_id: '1600004'
+  enrollment: 1713
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-meridian-1600007:
+  display_name: Meridian
+  district_name: COMPASS PUBLIC CHARTER SCHOOL INC.
+  district_nces_id: '1600007'
+  enrollment: 1250
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-meridian-1602100:
+  display_name: Meridian
+  district_name: JOINT SCHOOL DISTRICT NO. 2
+  district_nces_id: '1602100'
+  enrollment: 39496
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-middleton:
+  display_name: Middleton
+  district_name: MIDDLETON DISTRICT
+  district_nces_id: '1602130'
+  enrollment: 4318
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-moscow:
+  display_name: Moscow
+  district_name: MOSCOW DISTRICT
+  district_nces_id: '1602220'
+  enrollment: 2397
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-mountain-home-1600005:
+  display_name: Mountain Home
+  district_name: IDAHO VIRTUAL HIGH SCHOOL INC.
+  district_nces_id: '1600005'
+  enrollment: 523
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-mountain-home-1602250:
+  display_name: Mountain Home
+  district_name: MOUNTAIN HOME DISTRICT
+  district_nces_id: '1602250'
+  enrollment: 3757
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-nampa-1600204:
+  display_name: Nampa
+  district_name: IDAHO ARTS CHARTER SCHOOL INC.
+  district_nces_id: '1600204'
+  enrollment: 1303
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-nampa-1602340:
+  display_name: Nampa
+  district_name: NAMPA SCHOOL DISTRICT
+  district_nces_id: '1602340'
+  enrollment: 13398
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-new-plymouth:
+  display_name: New Plymouth
+  district_name: NEW PLYMOUTH DISTRICT
+  district_nces_id: '1602370'
+  enrollment: 990
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-orofino:
+  display_name: Orofino
+  district_name: OROFINO JOINT DISTRICT
+  district_nces_id: '1602520'
+  enrollment: 1131
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-paris:
+  display_name: Paris
+  district_name: BEAR LAKE COUNTY DISTRICT
+  district_nces_id: '1600240'
+  enrollment: 1424
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-parma:
+  display_name: Parma
+  district_name: PARMA DISTRICT
+  district_nces_id: '1602550'
+  enrollment: 1038
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-payette:
+  display_name: Payette
+  district_name: PAYETTE JOINT DISTRICT
+  district_nces_id: '1602580'
+  enrollment: 1371
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-pocatello:
+  display_name: Pocatello
+  district_name: POCATELLO DISTRICT
+  district_nces_id: '1602640'
+  enrollment: 12259
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-ponderay:
+  display_name: Ponderay
+  district_name: LAKE PEND OREILLE SCHOOL DISTRICT
+  district_nces_id: '1600002'
+  enrollment: 3822
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-post-falls:
+  display_name: Post Falls
+  district_name: POST FALLS DISTRICT
+  district_nces_id: '1602670'
+  enrollment: 6050
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-preston:
+  display_name: Preston
+  district_name: PRESTON JOINT DISTRICT
+  district_nces_id: '1600960'
+  enrollment: 2468
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-priest-river:
+  display_name: Priest River
+  district_name: WEST BONNER COUNTY DISTRICT
+  district_nces_id: '1600001'
+  enrollment: 1146
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-rathdrum-1600160:
+  display_name: Rathdrum
+  district_name: NORTH IDAHO STEM CHARTER ACADEMY INC.
+  district_nces_id: '1600160'
+  enrollment: 574
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-rathdrum-1601800:
+  display_name: Rathdrum
+  district_name: LAKELAND DISTRICT
+  district_nces_id: '1601800'
+  enrollment: 4693
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-rexburg:
+  display_name: Rexburg
+  district_name: MADISON DISTRICT
+  district_nces_id: '1601920'
+  enrollment: 5758
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-rigby:
+  display_name: Rigby
+  district_name: JEFFERSON COUNTY JOINT DISTRICT
+  district_nces_id: '1601570'
+  enrollment: 6770
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-ririe:
+  display_name: Ririe
+  district_name: RIRIE JOINT DISTRICT
+  district_nces_id: '1602790'
+  enrollment: 733
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-rupert:
+  display_name: Rupert
+  district_name: MINIDOKA COUNTY JOINT DISTRICT
+  district_nces_id: '1602190'
+  enrollment: 4405
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-salmon:
+  display_name: Salmon
+  district_name: SALMON DISTRICT
+  district_nces_id: '1602850'
+  enrollment: 683
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-shelley:
+  display_name: Shelley
+  district_name: SHELLEY JOINT DISTRICT
+  district_nces_id: '1602910'
+  enrollment: 2509
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-shoshone:
+  display_name: Shoshone
+  district_name: SHOSHONE JOINT DISTRICT
+  district_nces_id: '1602940'
+  enrollment: 525
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-silverton:
+  display_name: Silverton
+  district_name: WALLACE DISTRICT
+  district_nces_id: '1603300'
+  enrollment: 512
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-soda-springs:
+  display_name: Soda Springs
+  district_name: SODA SPRINGS JOINT DISTRICT
+  district_nces_id: '1603000'
+  enrollment: 922
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-st-anthony:
+  display_name: St Anthony
+  district_name: FREMONT COUNTY JOINT DISTRICT
+  district_nces_id: '1601110'
+  enrollment: 2222
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-st-maries:
+  display_name: St Maries
+  district_name: ST MARIES JOINT DISTRICT
+  district_nces_id: '1603060'
+  enrollment: 953
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-sugar-city:
+  display_name: Sugar City
+  district_name: SUGAR-SALEM JOINT DISTRICT
+  district_nces_id: '1603090'
+  enrollment: 1972
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-terreton:
+  display_name: Terreton
+  district_name: WEST JEFFERSON DISTRICT
+  district_nces_id: '1603400'
+  enrollment: 606
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-twin-falls-1600140:
+  display_name: Twin Falls
+  district_name: XAVIER CHARTER SCHOOL INC.
+  district_nces_id: '1600140'
+  enrollment: 672
+  has_charters: true
+  source: ccd_auto
+  state: ID
+id-twin-falls-1603240:
+  display_name: Twin Falls
+  district_name: TWIN FALLS DISTRICT
+  district_nces_id: '1603240'
+  enrollment: 9352
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-weiser:
+  display_name: Weiser
+  district_name: WEISER DISTRICT
+  district_nces_id: '1603330'
+  enrollment: 1559
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-wendell:
+  display_name: Wendell
+  district_name: WENDELL DISTRICT
+  district_nces_id: '1603360'
+  enrollment: 1121
+  has_charters: false
+  source: ccd_auto
+  state: ID
+id-wilder:
+  display_name: Wilder
+  district_name: WILDER DISTRICT
+  district_nces_id: '1603480'
+  enrollment: 659
+  has_charters: false
+  source: ccd_auto
+  state: ID

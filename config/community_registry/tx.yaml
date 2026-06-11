@@ -1,0 +1,6448 @@
+tx-abernathy:
+  display_name: Abernathy
+  district_name: ABERNATHY ISD
+  district_nces_id: '4807410'
+  enrollment: 835
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-abilene-4807440:
+  display_name: Abilene
+  district_name: ABILENE ISD
+  district_nces_id: '4807440'
+  enrollment: 15253
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-abilene-4846500:
+  display_name: Abilene
+  district_name: WYLIE ISD
+  district_nces_id: '4846500'
+  enrollment: 5419
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-alba:
+  display_name: Alba
+  district_name: ALBA-GOLDEN ISD
+  district_nces_id: '4807650'
+  enrollment: 823
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-aledo:
+  display_name: Aledo
+  district_name: ALEDO ISD
+  district_nces_id: '4807780'
+  enrollment: 7857
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-alice:
+  display_name: Alice
+  district_name: ALICE ISD
+  district_nces_id: '4807800'
+  enrollment: 4506
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-allen-4807890:
+  display_name: Allen
+  district_name: ALLEN ISD
+  district_nces_id: '4807890'
+  enrollment: 21769
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-allen-4828380:
+  display_name: Allen
+  district_name: LOVEJOY ISD
+  district_nces_id: '4828380'
+  enrollment: 4254
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-alpine:
+  display_name: Alpine
+  district_name: ALPINE ISD
+  district_nces_id: '4807950'
+  enrollment: 954
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-altair:
+  display_name: Altair
+  district_name: RICE CISD
+  district_nces_id: '4836970'
+  enrollment: 1286
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-alto:
+  display_name: Alto
+  district_name: ALTO ISD
+  district_nces_id: '4807980'
+  enrollment: 536
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-alvarado:
+  display_name: Alvarado
+  district_name: ALVARADO ISD
+  district_nces_id: '4800011'
+  enrollment: 3750
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-alvin:
+  display_name: Alvin
+  district_name: ALVIN ISD
+  district_nces_id: '4808090'
+  enrollment: 29188
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-alvord:
+  display_name: Alvord
+  district_name: ALVORD ISD
+  district_nces_id: '4808100'
+  enrollment: 821
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-amarillo-4808130:
+  display_name: Amarillo
+  district_name: AMARILLO ISD
+  district_nces_id: '4808130'
+  enrollment: 30342
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-amarillo-4835560:
+  display_name: Amarillo
+  district_name: HIGHLAND PARK ISD
+  district_nces_id: '4835560'
+  enrollment: 789
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-amarillo-4837260:
+  display_name: Amarillo
+  district_name: RIVER ROAD ISD
+  district_nces_id: '4837260'
+  enrollment: 1297
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-anahuac:
+  display_name: Anahuac
+  district_name: ANAHUAC ISD
+  district_nces_id: '4808190'
+  enrollment: 1493
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-anderson:
+  display_name: Anderson
+  district_name: ANDERSON-SHIRO CISD
+  district_nces_id: '4808230'
+  enrollment: 934
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-andrews:
+  display_name: Andrews
+  district_name: ANDREWS ISD
+  district_nces_id: '4808280'
+  enrollment: 4198
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-angleton:
+  display_name: Angleton
+  district_name: ANGLETON ISD
+  district_nces_id: '4808310'
+  enrollment: 6925
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-anna:
+  display_name: Anna
+  district_name: ANNA ISD
+  district_nces_id: '4808340'
+  enrollment: 5018
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-anson:
+  display_name: Anson
+  district_name: ANSON ISD
+  district_nces_id: '4808400'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-anthony:
+  display_name: Anthony
+  district_name: ANTHONY ISD
+  district_nces_id: '4808430'
+  enrollment: 781
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-aransas-pass:
+  display_name: Aransas Pass
+  district_name: ARANSAS PASS ISD
+  district_nces_id: '4808580'
+  enrollment: 1700
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-arlington-4800158:
+  display_name: Arlington
+  district_name: ARLINGTON CLASSICS ACADEMY
+  district_nces_id: '4800158'
+  enrollment: 1512
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-arlington-4801421:
+  display_name: Arlington
+  district_name: NEWMAN INTERNATIONAL ACADEMY OF ARLINGTON
+  district_nces_id: '4801421'
+  enrollment: 2874
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-arlington-4808700:
+  display_name: Arlington
+  district_name: ARLINGTON ISD
+  district_nces_id: '4808700'
+  enrollment: 56167
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-arp:
+  display_name: Arp
+  district_name: ARP ISD
+  district_nces_id: '4808730'
+  enrollment: 985
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-athens:
+  display_name: Athens
+  district_name: ATHENS ISD
+  district_nces_id: '4808870'
+  enrollment: 3099
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-atlanta:
+  display_name: Atlanta
+  district_name: ATLANTA ISD
+  district_nces_id: '4808880'
+  enrollment: 1879
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-aubrey:
+  display_name: Aubrey
+  district_name: AUBREY ISD
+  district_nces_id: '4808910'
+  enrollment: 3538
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-austin-4800044:
+  display_name: Austin
+  district_name: WAYSIDE SCHOOLS
+  district_nces_id: '4800044'
+  enrollment: 1651
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-austin-4800058:
+  display_name: Austin
+  district_name: NYOS CHARTER SCHOOL
+  district_nces_id: '4800058'
+  enrollment: 1624
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-austin-4800071:
+  display_name: Austin
+  district_name: UNIVERSITY OF TEXAS UNIVERSITY CHARTER SCHOOL
+  district_nces_id: '4800071'
+  enrollment: 555
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-austin-4800241:
+  display_name: Austin
+  district_name: HARMONY PUBLIC SCHOOLS - CENTRAL TEXAS
+  district_nces_id: '4800241'
+  enrollment: 4471
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-austin-4801414:
+  display_name: Austin
+  district_name: VALERE PUBLIC SCHOOLS
+  district_nces_id: '4801414'
+  enrollment: 970
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-austin-4801431:
+  display_name: Austin
+  district_name: AUSTIN ACHIEVE PUBLIC SCHOOLS
+  district_nces_id: '4801431'
+  enrollment: 2449
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-austin-4801432:
+  display_name: Austin
+  district_name: TEXAS JUVENILE JUSTICE DEPARTMENT
+  district_nces_id: '4801432'
+  enrollment: 567
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-austin-4801448:
+  display_name: Austin
+  district_name: THE EXCEL CENTER (FOR ADULTS)
+  district_nces_id: '4801448'
+  enrollment: 1060
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-austin-4801461:
+  display_name: Austin
+  district_name: VALOR PUBLIC SCHOOLS
+  district_nces_id: '4801461'
+  enrollment: 2158
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-austin-4801473:
+  display_name: Austin
+  district_name: UNIVERSITY OF TEXAS AT AUSTIN H S
+  district_nces_id: '4801473'
+  enrollment: 823
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-austin-4808940:
+  display_name: Austin
+  district_name: AUSTIN ISD
+  district_nces_id: '4808940'
+  enrollment: 73384
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-austin-4817760:
+  display_name: Austin
+  district_name: EANES ISD
+  district_nces_id: '4817760'
+  enrollment: 7733
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-austin-4826470:
+  display_name: Austin
+  district_name: LAKE TRAVIS ISD
+  district_nces_id: '4826470'
+  enrollment: 11399
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-axtell:
+  display_name: Axtell
+  district_name: AXTELL ISD
+  district_nces_id: '4809150'
+  enrollment: 836
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-azle:
+  display_name: Azle
+  district_name: AZLE ISD
+  district_nces_id: '4809200'
+  enrollment: 7089
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ballinger:
+  display_name: Ballinger
+  district_name: BALLINGER ISD
+  district_nces_id: '4809300'
+  enrollment: 817
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bandera:
+  display_name: Bandera
+  district_name: BANDERA ISD
+  district_nces_id: '4809360'
+  enrollment: 2381
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bangs:
+  display_name: Bangs
+  district_name: BANGS ISD
+  district_nces_id: '4809390'
+  enrollment: 862
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-banquete:
+  display_name: Banquete
+  district_name: BANQUETE ISD
+  district_nces_id: '4809410'
+  enrollment: 843
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bastrop:
+  display_name: Bastrop
+  district_name: BASTROP ISD
+  district_nces_id: '4809570'
+  enrollment: 12506
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bay-city:
+  display_name: Bay City
+  district_name: BAY CITY ISD
+  district_nces_id: '4809630'
+  enrollment: 3579
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-baytown:
+  display_name: Baytown
+  district_name: GOOSE CREEK CISD
+  district_nces_id: '4821150'
+  enrollment: 24431
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-beaumont-4800221:
+  display_name: Beaumont
+  district_name: EHRHART SCHOOL
+  district_nces_id: '4800221'
+  enrollment: 529
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-beaumont-4809670:
+  display_name: Beaumont
+  district_name: BEAUMONT ISD
+  district_nces_id: '4809670'
+  enrollment: 16730
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-beckville:
+  display_name: Beckville
+  district_name: BECKVILLE ISD
+  district_nces_id: '4809690'
+  enrollment: 686
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bedford:
+  display_name: Bedford
+  district_name: HURST-EULESS-BEDFORD ISD
+  district_nces_id: '4824060'
+  enrollment: 22947
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-beeville:
+  display_name: Beeville
+  district_name: BEEVILLE ISD
+  district_nces_id: '4809720'
+  enrollment: 3097
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bellaire:
+  display_name: Bellaire
+  district_name: BAKERRIPLEY COMMUNITY SCHOOLS
+  district_nces_id: '4800240'
+  enrollment: 1790
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-bells:
+  display_name: Bells
+  district_name: BELLS ISD
+  district_nces_id: '4809780'
+  enrollment: 963
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bellville:
+  display_name: Bellville
+  district_name: BELLVILLE ISD
+  district_nces_id: '4809810'
+  enrollment: 2251
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-belton:
+  display_name: Belton
+  district_name: BELTON ISD
+  district_nces_id: '4809860'
+  enrollment: 13644
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-big-lake:
+  display_name: Big Lake
+  district_name: REAGAN COUNTY ISD
+  district_nces_id: '4836570'
+  enrollment: 801
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-big-sandy-4810140:
+  display_name: Big Sandy
+  district_name: BIG SANDY ISD
+  district_nces_id: '4810140'
+  enrollment: 671
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-big-sandy-4822560:
+  display_name: Big Sandy
+  district_name: HARMONY ISD
+  district_nces_id: '4822560'
+  enrollment: 1009
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-big-spring:
+  display_name: Big Spring
+  district_name: BIG SPRING ISD
+  district_nces_id: '4810200'
+  enrollment: 3510
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bishop:
+  display_name: Bishop
+  district_name: BISHOP CISD
+  district_nces_id: '4810260'
+  enrollment: 1410
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-blanco:
+  display_name: Blanco
+  district_name: BLANCO ISD
+  district_nces_id: '4810320'
+  enrollment: 1088
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-blooming-grove:
+  display_name: Blooming Grove
+  district_name: BLOOMING GROVE ISD
+  district_nces_id: '4810470'
+  enrollment: 920
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-blue-ridge:
+  display_name: Blue Ridge
+  district_name: BLUE RIDGE ISD
+  district_nces_id: '4810590'
+  enrollment: 1009
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-boerne:
+  display_name: Boerne
+  district_name: BOERNE ISD
+  district_nces_id: '4810710'
+  enrollment: 10763
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bogata:
+  display_name: Bogata
+  district_name: RIVERCREST ISD
+  district_nces_id: '4842120'
+  enrollment: 700
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-boling:
+  display_name: Boling
+  district_name: BOLING ISD
+  district_nces_id: '4810780'
+  enrollment: 1146
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bonham:
+  display_name: Bonham
+  district_name: BONHAM ISD
+  district_nces_id: '4810800'
+  enrollment: 1899
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-borger:
+  display_name: Borger
+  district_name: BORGER ISD
+  district_nces_id: '4810890'
+  enrollment: 2477
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bowie:
+  display_name: Bowie
+  district_name: BOWIE ISD
+  district_nces_id: '4810990'
+  enrollment: 1644
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-boyd:
+  display_name: Boyd
+  district_name: BOYD ISD
+  district_nces_id: '4811010'
+  enrollment: 1266
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-brackettville:
+  display_name: Brackettville
+  district_name: BRACKETT ISD
+  district_nces_id: '4811070'
+  enrollment: 552
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-brady:
+  display_name: Brady
+  district_name: BRADY ISD
+  district_nces_id: '4811110'
+  enrollment: 956
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-breckenridge:
+  display_name: Breckenridge
+  district_name: BRECKENRIDGE ISD
+  district_nces_id: '4811220'
+  enrollment: 1409
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bremond:
+  display_name: Bremond
+  district_name: BREMOND ISD
+  district_nces_id: '4811250'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-brenham:
+  display_name: Brenham
+  district_name: BRENHAM ISD
+  district_nces_id: '4811280'
+  enrollment: 4939
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bridge-city:
+  display_name: Bridge City
+  district_name: BRIDGE CITY ISD
+  district_nces_id: '4811310'
+  enrollment: 3144
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bridgeport:
+  display_name: Bridgeport
+  district_name: BRIDGEPORT ISD
+  district_nces_id: '4811340'
+  enrollment: 2058
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-brock:
+  display_name: Brock
+  district_name: BROCK ISD
+  district_nces_id: '4811460'
+  enrollment: 2085
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-brownfield:
+  display_name: Brownfield
+  district_name: BROWNFIELD ISD
+  district_nces_id: '4811610'
+  enrollment: 1647
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-brownsboro:
+  display_name: Brownsboro
+  district_name: BROWNSBORO ISD
+  district_nces_id: '4811640'
+  enrollment: 2620
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-brownsville:
+  display_name: Brownsville
+  district_name: BROWNSVILLE ISD
+  district_nces_id: '4811680'
+  enrollment: 37898
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-brownwood:
+  display_name: Brownwood
+  district_name: BROWNWOOD ISD
+  district_nces_id: '4811700'
+  enrollment: 3443
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bryan-4801416:
+  display_name: Bryan
+  district_name: ARROW ACADEMY
+  district_nces_id: '4801416'
+  enrollment: 675
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-bryan-4811790:
+  display_name: Bryan
+  district_name: BRYAN ISD
+  district_nces_id: '4811790'
+  enrollment: 16036
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-buffalo:
+  display_name: Buffalo
+  district_name: BUFFALO ISD
+  district_nces_id: '4811990'
+  enrollment: 1052
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bullard:
+  display_name: Bullard
+  district_name: BULLARD ISD
+  district_nces_id: '4812060'
+  enrollment: 2886
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-buna:
+  display_name: Buna
+  district_name: BUNA ISD
+  district_nces_id: '4812090'
+  enrollment: 1477
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-burkburnett:
+  display_name: Burkburnett
+  district_name: BURKBURNETT ISD
+  district_nces_id: '4812120'
+  enrollment: 3211
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-burleson:
+  display_name: Burleson
+  district_name: BURLESON ISD
+  district_nces_id: '4812180'
+  enrollment: 12865
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-burnet:
+  display_name: Burnet
+  district_name: BURNET CISD
+  district_nces_id: '4812220'
+  enrollment: 3304
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-burton:
+  display_name: Burton
+  district_name: BURTON ISD
+  district_nces_id: '4812240'
+  enrollment: 532
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-bushland:
+  display_name: Bushland
+  district_name: BUSHLAND ISD
+  district_nces_id: '4835570'
+  enrollment: 1511
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-caddo-mills:
+  display_name: Caddo Mills
+  district_name: CADDO MILLS ISD
+  district_nces_id: '4812390'
+  enrollment: 2642
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-caldwell:
+  display_name: Caldwell
+  district_name: CALDWELL ISD
+  district_nces_id: '4812460'
+  enrollment: 1932
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-callisburg:
+  display_name: Callisburg
+  district_name: CALLISBURG ISD
+  district_nces_id: '4812510'
+  enrollment: 1166
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cameron:
+  display_name: Cameron
+  district_name: CAMERON ISD
+  district_nces_id: '4812640'
+  enrollment: 1554
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-canadian:
+  display_name: Canadian
+  district_name: CANADIAN ISD
+  district_nces_id: '4812700'
+  enrollment: 829
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-canton:
+  display_name: Canton
+  district_name: CANTON ISD
+  district_nces_id: '4812750'
+  enrollment: 2303
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-canyon:
+  display_name: Canyon
+  district_name: CANYON ISD
+  district_nces_id: '4812810'
+  enrollment: 11075
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-carrizo-springs:
+  display_name: Carrizo Springs
+  district_name: CARRIZO SPRINGS CISD
+  district_nces_id: '4812990'
+  enrollment: 1903
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-carrollton-4800202:
+  display_name: Carrollton
+  district_name: WINFREE ACADEMY CHARTER SCHOOLS
+  district_nces_id: '4800202'
+  enrollment: 1153
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-carrollton-4801456:
+  display_name: Carrollton
+  district_name: TRIVIUM ACADEMY
+  district_nces_id: '4801456'
+  enrollment: 621
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-carrollton-4813050:
+  display_name: Carrollton
+  district_name: CARROLLTON-FARMERS BRANCH ISD
+  district_nces_id: '4813050'
+  enrollment: 24747
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-carthage:
+  display_name: Carthage
+  district_name: CARTHAGE ISD
+  district_nces_id: '4813110'
+  enrollment: 2621
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-castroville:
+  display_name: Castroville
+  district_name: MEDINA VALLEY ISD
+  district_nces_id: '4830060'
+  enrollment: 7823
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cedar-hill:
+  display_name: Cedar Hill
+  district_name: CEDAR HILL ISD
+  district_nces_id: '4813230'
+  enrollment: 6920
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-celeste:
+  display_name: Celeste
+  district_name: CELESTE ISD
+  district_nces_id: '4813260'
+  enrollment: 519
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-celina:
+  display_name: Celina
+  district_name: CELINA ISD
+  district_nces_id: '4813290'
+  enrollment: 3897
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-center:
+  display_name: Center
+  district_name: CENTER ISD
+  district_nces_id: '4813320'
+  enrollment: 2491
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-center-point:
+  display_name: Center Point
+  district_name: CENTER POINT ISD
+  district_nces_id: '4813350'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-centerville:
+  display_name: Centerville
+  district_name: CENTERVILLE ISD
+  district_nces_id: '4813410'
+  enrollment: 691
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-channelview:
+  display_name: Channelview
+  district_name: CHANNELVIEW ISD
+  district_nces_id: '4813590'
+  enrollment: 9520
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-chico:
+  display_name: Chico
+  district_name: CHICO ISD
+  district_nces_id: '4813800'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-childress:
+  display_name: Childress
+  district_name: CHILDRESS ISD
+  district_nces_id: '4813860'
+  enrollment: 1005
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-chilton:
+  display_name: Chilton
+  district_name: CHILTON ISD
+  district_nces_id: '4813920'
+  enrollment: 553
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-china-spring:
+  display_name: China Spring
+  district_name: CHINA SPRING ISD
+  district_nces_id: '4813960'
+  enrollment: 3010
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-christoval:
+  display_name: Christoval
+  district_name: CHRISTOVAL ISD
+  district_nces_id: '4814010'
+  enrollment: 613
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cisco:
+  display_name: Cisco
+  district_name: CISCO ISD
+  district_nces_id: '4814070'
+  enrollment: 829
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-clarksville:
+  display_name: Clarksville
+  district_name: CLARKSVILLE ISD
+  district_nces_id: '4814190'
+  enrollment: 522
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cleburne:
+  display_name: Cleburne
+  district_name: CLEBURNE ISD
+  district_nces_id: '4814310'
+  enrollment: 7243
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cleveland-4814370:
+  display_name: Cleveland
+  district_name: CLEVELAND ISD
+  district_nces_id: '4814370'
+  enrollment: 11567
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cleveland-4842210:
+  display_name: Cleveland
+  district_name: TARKINGTON ISD
+  district_nces_id: '4842210'
+  enrollment: 1893
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-clifton:
+  display_name: Clifton
+  district_name: CLIFTON ISD
+  district_nces_id: '4814400'
+  enrollment: 1024
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-clute:
+  display_name: Clute
+  district_name: BRAZOSPORT ISD
+  district_nces_id: '4811190'
+  enrollment: 11618
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-clyde:
+  display_name: Clyde
+  district_name: CLYDE CISD
+  district_nces_id: '4814450'
+  enrollment: 1440
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-coahoma:
+  display_name: Coahoma
+  district_name: COAHOMA ISD
+  district_nces_id: '4814490'
+  enrollment: 1095
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-coldspring:
+  display_name: Coldspring
+  district_name: COLDSPRING-OAKHURST CISD
+  district_nces_id: '4814520'
+  enrollment: 1622
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-coleman:
+  display_name: Coleman
+  district_name: COLEMAN ISD
+  district_nces_id: '4814550'
+  enrollment: 794
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-college-station:
+  display_name: College Station
+  district_name: COLLEGE STATION ISD
+  district_nces_id: '4807350'
+  enrollment: 14464
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-collinsville:
+  display_name: Collinsville
+  district_name: COLLINSVILLE ISD
+  district_nces_id: '4814580'
+  enrollment: 537
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-colorado-city:
+  display_name: Colorado City
+  district_name: COLORADO ISD
+  district_nces_id: '4814640'
+  enrollment: 949
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-columbus:
+  display_name: Columbus
+  district_name: COLUMBUS ISD
+  district_nces_id: '4814700'
+  enrollment: 1610
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-comanche:
+  display_name: Comanche
+  district_name: COMANCHE ISD
+  district_nces_id: '4814760'
+  enrollment: 1339
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-comfort:
+  display_name: Comfort
+  district_name: COMFORT ISD
+  district_nces_id: '4814790'
+  enrollment: 1104
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-commerce:
+  display_name: Commerce
+  district_name: COMMERCE ISD
+  district_nces_id: '4814820'
+  enrollment: 1517
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-como:
+  display_name: Como
+  district_name: COMO-PICKTON CISD
+  district_nces_id: '4814880'
+  enrollment: 734
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-conroe:
+  display_name: Conroe
+  district_name: CONROE ISD
+  district_nces_id: '4815000'
+  enrollment: 70783
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cooper:
+  display_name: Cooper
+  district_name: COOPER ISD
+  district_nces_id: '4815150'
+  enrollment: 888
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-coppell:
+  display_name: Coppell
+  district_name: COPPELL ISD
+  district_nces_id: '4815210'
+  enrollment: 13361
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-copperas-cove:
+  display_name: Copperas Cove
+  district_name: COPPERAS COVE ISD
+  district_nces_id: '4815240'
+  enrollment: 8043
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-corpus-christi-4812420:
+  display_name: Corpus Christi
+  district_name: CALALLEN ISD
+  district_nces_id: '4812420'
+  enrollment: 3952
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-corpus-christi-4815270:
+  display_name: Corpus Christi
+  district_name: CORPUS CHRISTI ISD
+  district_nces_id: '4815270'
+  enrollment: 33387
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-corpus-christi-4819380:
+  display_name: Corpus Christi
+  district_name: FLOUR BLUFF ISD
+  district_nces_id: '4819380'
+  enrollment: 5732
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-corpus-christi-4827990:
+  display_name: Corpus Christi
+  district_name: LONDON ISD
+  district_nces_id: '4827990'
+  enrollment: 1578
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-corpus-christi-4843350:
+  display_name: Corpus Christi
+  district_name: TULOSO-MIDWAY ISD
+  district_nces_id: '4843350'
+  enrollment: 3655
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-corpus-christi-4845120:
+  display_name: Corpus Christi
+  district_name: WEST OSO ISD
+  district_nces_id: '4845120'
+  enrollment: 1929
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-corrigan:
+  display_name: Corrigan
+  district_name: CORRIGAN-CAMDEN ISD
+  district_nces_id: '4815300'
+  enrollment: 836
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-corsicana-4815330:
+  display_name: Corsicana
+  district_name: CORSICANA ISD
+  district_nces_id: '4815330'
+  enrollment: 6096
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-corsicana-4830720:
+  display_name: Corsicana
+  district_name: MILDRED ISD
+  district_nces_id: '4830720'
+  enrollment: 848
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cotulla:
+  display_name: Cotulla
+  district_name: COTULLA ISD
+  district_nces_id: '4815400'
+  enrollment: 1170
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-crandall:
+  display_name: Crandall
+  district_name: CRANDALL ISD
+  district_nces_id: '4815510'
+  enrollment: 6003
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-crane:
+  display_name: Crane
+  district_name: CRANE ISD
+  district_nces_id: '4815540'
+  enrollment: 1179
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-crawford:
+  display_name: Crawford
+  district_name: CRAWFORD ISD
+  district_nces_id: '4815600'
+  enrollment: 593
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-crockett:
+  display_name: Crockett
+  district_name: CROCKETT ISD
+  district_nces_id: '4815720'
+  enrollment: 1203
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-crosby:
+  display_name: Crosby
+  district_name: CROSBY ISD
+  district_nces_id: '4815750'
+  enrollment: 6717
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-crystal-city:
+  display_name: Crystal City
+  district_name: CRYSTAL CITY ISD
+  district_nces_id: '4815930'
+  enrollment: 1799
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cuero:
+  display_name: Cuero
+  district_name: CUERO ISD
+  district_nces_id: '4815960'
+  enrollment: 1937
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-cushing:
+  display_name: Cushing
+  district_name: CUSHING ISD
+  district_nces_id: '4816080'
+  enrollment: 547
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-daingerfield:
+  display_name: Daingerfield
+  district_name: DAINGERFIELD-LONE STAR ISD
+  district_nces_id: '4816180'
+  enrollment: 1013
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dalhart:
+  display_name: Dalhart
+  district_name: DALHART ISD
+  district_nces_id: '4816200'
+  enrollment: 1770
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dallardsville:
+  display_name: Dallardsville
+  district_name: BIG SANDY ISD
+  district_nces_id: '4810170'
+  enrollment: 512
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dallas-4800016:
+  display_name: Dallas
+  district_name: TEXANS CAN ACADEMIES
+  district_nces_id: '4800016'
+  enrollment: 3790
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4800030:
+  display_name: Dallas
+  district_name: UPLIFT EDUCATION
+  district_nces_id: '4800030'
+  enrollment: 23082
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4800095:
+  display_name: Dallas
+  district_name: A W BROWN LEADERSHIP ACADEMY
+  district_nces_id: '4800095'
+  enrollment: 975
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4800184:
+  display_name: Dallas
+  district_name: GATEWAY CHARTER ACADEMY
+  district_nces_id: '4800184'
+  enrollment: 614
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4800203:
+  display_name: Dallas
+  district_name: A+ ACADEMY
+  district_nces_id: '4800203'
+  enrollment: 1588
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4800204:
+  display_name: Dallas
+  district_name: INSPIRED VISION ACADEMY
+  district_nces_id: '4800204'
+  enrollment: 1270
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4800270:
+  display_name: Dallas
+  district_name: LA ACADEMIA DE ESTRELLAS
+  district_nces_id: '4800270'
+  enrollment: 1001
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4800288:
+  display_name: Dallas
+  district_name: CITYSCAPE SCHOOLS
+  district_nces_id: '4800288'
+  enrollment: 1245
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4800292:
+  display_name: Dallas
+  district_name: HARMONY PUBLIC SCHOOLS - NORTH TEXAS
+  district_nces_id: '4800292'
+  enrollment: 10249
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4801425:
+  display_name: Dallas
+  district_name: UME PREPARATORY ACADEMY
+  district_nces_id: '4801425'
+  enrollment: 1493
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4801451:
+  display_name: Dallas
+  district_name: PIONEER TECHNOLOGY & ARTS ACADEMY
+  district_nces_id: '4801451'
+  enrollment: 2462
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-dallas-4816230:
+  display_name: Dallas
+  district_name: DALLAS ISD
+  district_nces_id: '4816230'
+  enrollment: 141169
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dallas-4823250:
+  display_name: Dallas
+  district_name: HIGHLAND PARK ISD
+  district_nces_id: '4823250'
+  enrollment: 6551
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-danbury:
+  display_name: Danbury
+  district_name: DANBURY ISD
+  district_nces_id: '4816290'
+  enrollment: 737
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dawson:
+  display_name: Dawson
+  district_name: DAWSON ISD
+  district_nces_id: '4816380'
+  enrollment: 546
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dayton:
+  display_name: Dayton
+  district_name: DAYTON ISD
+  district_nces_id: '4816410'
+  enrollment: 5776
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-de-leon:
+  display_name: De Leon
+  district_name: DE LEON ISD
+  district_nces_id: '4816440'
+  enrollment: 720
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-decatur:
+  display_name: Decatur
+  district_name: DECATUR ISD
+  district_nces_id: '4816500'
+  enrollment: 3838
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-deer-park:
+  display_name: Deer Park
+  district_name: DEER PARK ISD
+  district_nces_id: '4816530'
+  enrollment: 12263
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dekalb:
+  display_name: Dekalb
+  district_name: DEKALB ISD
+  district_nces_id: '4816570'
+  enrollment: 828
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-del-rio:
+  display_name: Del Rio
+  district_name: SAN FELIPE-DEL RIO CISD
+  district_nces_id: '4838900'
+  enrollment: 9947
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-del-valle:
+  display_name: Del Valle
+  district_name: DEL VALLE ISD
+  district_nces_id: '4816620'
+  enrollment: 11118
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-denison:
+  display_name: Denison
+  district_name: DENISON ISD
+  district_nces_id: '4816710'
+  enrollment: 4868
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-denton-4800187:
+  display_name: Denton
+  district_name: NORTH TEXAS COLLEGIATE ACADEMY
+  district_nces_id: '4800187'
+  enrollment: 761
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-denton-4816740:
+  display_name: Denton
+  district_name: DENTON ISD
+  district_nces_id: '4816740'
+  enrollment: 32521
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-denver-city:
+  display_name: Denver City
+  district_name: DENVER CITY ISD
+  district_nces_id: '4816770'
+  enrollment: 1557
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-desoto-4800105:
+  display_name: Desoto
+  district_name: WAXAHACHIE FAITH FAMILY ACADEMY
+  district_nces_id: '4800105'
+  enrollment: 2768
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-desoto-4800237:
+  display_name: Desoto
+  district_name: GOLDEN RULE CHARTER SCHOOL
+  district_nces_id: '4800237'
+  enrollment: 1450
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-desoto-4816860:
+  display_name: Desoto
+  district_name: DESOTO ISD
+  district_nces_id: '4816860'
+  enrollment: 6322
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-devine:
+  display_name: Devine
+  district_name: DEVINE ISD
+  district_nces_id: '4816950'
+  enrollment: 2007
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-diana:
+  display_name: Diana
+  district_name: NEW DIANA ISD
+  district_nces_id: '4832460'
+  enrollment: 1186
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-diboll:
+  display_name: Diboll
+  district_name: DIBOLL ISD
+  district_nces_id: '4817040'
+  enrollment: 1669
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dickinson:
+  display_name: Dickinson
+  district_name: DICKINSON ISD
+  district_nces_id: '4817070'
+  enrollment: 12360
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dilley:
+  display_name: Dilley
+  district_name: DILLEY ISD
+  district_nces_id: '4817100'
+  enrollment: 899
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dimmitt:
+  display_name: Dimmitt
+  district_name: DIMMITT ISD
+  district_nces_id: '4817160'
+  enrollment: 1097
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-donna:
+  display_name: Donna
+  district_name: DONNA ISD
+  district_nces_id: '4817390'
+  enrollment: 13165
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dripping-springs:
+  display_name: Dripping Springs
+  district_name: DRIPPING SPRINGS ISD
+  district_nces_id: '4800008'
+  enrollment: 8375
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dublin:
+  display_name: Dublin
+  district_name: DUBLIN ISD
+  district_nces_id: '4817580'
+  enrollment: 1146
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-dumas:
+  display_name: Dumas
+  district_name: DUMAS ISD
+  district_nces_id: '4817610'
+  enrollment: 4192
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-duncanville-4800041:
+  display_name: Duncanville
+  district_name: ADVANTAGE ACADEMY
+  district_nces_id: '4800041'
+  enrollment: 1012
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-duncanville-4801436:
+  display_name: Duncanville
+  district_name: VILLAGE TECH SCHOOLS
+  district_nces_id: '4801436'
+  enrollment: 1316
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-duncanville-4817640:
+  display_name: Duncanville
+  district_name: DUNCANVILLE ISD
+  district_nces_id: '4817640'
+  enrollment: 11915
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-eagle-pass:
+  display_name: Eagle Pass
+  district_name: EAGLE PASS ISD
+  district_nces_id: '4817730'
+  enrollment: 13935
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-early:
+  display_name: Early
+  district_name: EARLY ISD
+  district_nces_id: '4817790'
+  enrollment: 1155
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-east-bernard:
+  display_name: East Bernard
+  district_name: EAST BERNARD ISD
+  district_nces_id: '4817830'
+  enrollment: 974
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-eastland:
+  display_name: Eastland
+  district_name: EASTLAND ISD
+  district_nces_id: '4817960'
+  enrollment: 1057
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-edcouch:
+  display_name: Edcouch
+  district_name: EDCOUCH-ELSA ISD
+  district_nces_id: '4818060'
+  enrollment: 4366
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-eddy:
+  display_name: Eddy
+  district_name: BRUCEVILLE-EDDY ISD
+  district_nces_id: '4811730'
+  enrollment: 588
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-edgewood:
+  display_name: Edgewood
+  district_name: EDGEWOOD ISD
+  district_nces_id: '4818120'
+  enrollment: 1042
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-edinburg-4800195:
+  display_name: Edinburg
+  district_name: VANGUARD ACADEMY
+  district_nces_id: '4800195'
+  enrollment: 5950
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-edinburg-4818180:
+  display_name: Edinburg
+  district_name: EDINBURG CISD
+  district_nces_id: '4818180'
+  enrollment: 33911
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-edna:
+  display_name: Edna
+  district_name: EDNA ISD
+  district_nces_id: '4818210'
+  enrollment: 1573
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-el-campo:
+  display_name: El Campo
+  district_name: EL CAMPO ISD
+  district_nces_id: '4818280'
+  enrollment: 3349
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-el-maton:
+  display_name: El Maton
+  district_name: TIDEHAVEN ISD
+  district_nces_id: '4842810'
+  enrollment: 1045
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-el-paso-4800037:
+  display_name: El Paso
+  district_name: BURNHAM WOOD CHARTER SCHOOL DISTRICT
+  district_nces_id: '4800037'
+  enrollment: 1359
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-el-paso-4800272:
+  display_name: El Paso
+  district_name: HARMONY PUBLIC SCHOOLS - WEST TEXAS
+  district_nces_id: '4800272'
+  enrollment: 4967
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-el-paso-4801439:
+  display_name: El Paso
+  district_name: EL PASO LEADERSHIP ACADEMY
+  district_nces_id: '4801439'
+  enrollment: 594
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-el-paso-4812780:
+  display_name: El Paso
+  district_name: CANUTILLO ISD
+  district_nces_id: '4812780'
+  enrollment: 6076
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-el-paso-4814430:
+  display_name: El Paso
+  district_name: CLINT ISD
+  district_nces_id: '4814430'
+  enrollment: 10365
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-el-paso-4818300:
+  display_name: El Paso
+  district_name: EL PASO ISD
+  district_nces_id: '4818300'
+  enrollment: 50031
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-el-paso-4840710:
+  display_name: El Paso
+  district_name: SOCORRO ISD
+  district_nces_id: '4840710'
+  enrollment: 47843
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-el-paso-4846680:
+  display_name: El Paso
+  district_name: YSLETA ISD
+  district_nces_id: '4846680'
+  enrollment: 36183
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-elgin:
+  display_name: Elgin
+  district_name: ELGIN ISD
+  district_nces_id: '4818360'
+  enrollment: 5404
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-elkhart:
+  display_name: Elkhart
+  district_name: ELKHART ISD
+  district_nces_id: '4818390'
+  enrollment: 1194
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-emory:
+  display_name: Emory
+  district_name: RAINS ISD
+  district_nces_id: '4836360'
+  enrollment: 1754
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ennis:
+  display_name: Ennis
+  district_name: ENNIS ISD
+  district_nces_id: '4818540'
+  enrollment: 6185
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-era:
+  display_name: Era
+  district_name: ERA ISD
+  district_nces_id: '4818600'
+  enrollment: 542
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-eustace:
+  display_name: Eustace
+  district_name: EUSTACE ISD
+  district_nces_id: '4818720'
+  enrollment: 1727
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fabens:
+  display_name: Fabens
+  district_name: FABENS ISD
+  district_nces_id: '4818900'
+  enrollment: 1931
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fairfield:
+  display_name: Fairfield
+  district_name: FAIRFIELD ISD
+  district_nces_id: '4818940'
+  enrollment: 1662
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-falfurrias:
+  display_name: Falfurrias
+  district_name: BROOKS COUNTY ISD
+  district_nces_id: '4811580'
+  enrollment: 1285
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-farmersville-4810350:
+  display_name: Farmersville
+  district_name: BLAND ISD
+  district_nces_id: '4810350'
+  enrollment: 773
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-farmersville-4819080:
+  display_name: Farmersville
+  district_name: FARMERSVILLE ISD
+  district_nces_id: '4819080'
+  enrollment: 2115
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-farwell:
+  display_name: Farwell
+  district_name: FARWELL ISD
+  district_nces_id: '4819110'
+  enrollment: 606
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ferris:
+  display_name: Ferris
+  district_name: FERRIS ISD
+  district_nces_id: '4819170'
+  enrollment: 2716
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-flatonia:
+  display_name: Flatonia
+  district_name: FLATONIA ISD
+  district_nces_id: '4819280'
+  enrollment: 661
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-florence:
+  display_name: Florence
+  district_name: FLORENCE ISD
+  district_nces_id: '4819320'
+  enrollment: 1167
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-floresville:
+  display_name: Floresville
+  district_name: FLORESVILLE ISD
+  district_nces_id: '4819350'
+  enrollment: 4042
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-flower-mound:
+  display_name: Flower Mound
+  district_name: ARGYLE ISD
+  district_nces_id: '4808670'
+  enrollment: 4966
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-floydada:
+  display_name: Floydada
+  district_name: FLOYDADA COLLEGIATE ISD
+  district_nces_id: '4819440'
+  enrollment: 684
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-forney:
+  display_name: Forney
+  district_name: FORNEY ISD
+  district_nces_id: '4819560'
+  enrollment: 16211
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-forsan:
+  display_name: Forsan
+  district_name: FORSAN ISD
+  district_nces_id: '4819620'
+  enrollment: 753
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fort-stockton:
+  display_name: Fort Stockton
+  district_name: FORT STOCKTON ISD
+  district_nces_id: '4820190'
+  enrollment: 2187
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fort-worth-4800231:
+  display_name: Fort Worth
+  district_name: FORT WORTH ACADEMY OF FINE ARTS
+  district_nces_id: '4800231'
+  enrollment: 642
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-fort-worth-4801407:
+  display_name: Fort Worth
+  district_name: CHAPEL HILL ACADEMY
+  district_nces_id: '4801407'
+  enrollment: 698
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-fort-worth-4801450:
+  display_name: Fort Worth
+  district_name: HIGH POINT ACADEMY
+  district_nces_id: '4801450'
+  enrollment: 1404
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-fort-worth-4813170:
+  display_name: Fort Worth
+  district_name: CASTLEBERRY ISD
+  district_nces_id: '4813170'
+  enrollment: 3710
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fort-worth-4815910:
+  display_name: Fort Worth
+  district_name: CROWLEY ISD
+  district_nces_id: '4815910'
+  enrollment: 16729
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fort-worth-4817700:
+  display_name: Fort Worth
+  district_name: EAGLE MT-SAGINAW ISD
+  district_nces_id: '4817700'
+  enrollment: 23196
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fort-worth-4818810:
+  display_name: Fort Worth
+  district_name: EVERMAN ISD
+  district_nces_id: '4818810'
+  enrollment: 5354
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fort-worth-4819700:
+  display_name: Fort Worth
+  district_name: FORT WORTH ISD
+  district_nces_id: '4819700'
+  enrollment: 72783
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-franklin:
+  display_name: Franklin
+  district_name: FRANKLIN ISD
+  district_nces_id: '4819740'
+  enrollment: 1353
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-frankston:
+  display_name: Frankston
+  district_name: FRANKSTON ISD
+  district_nces_id: '4819770'
+  enrollment: 802
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fredericksburg:
+  display_name: Fredericksburg
+  district_name: FREDERICKSBURG ISD
+  district_nces_id: '4819840'
+  enrollment: 3094
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-freer:
+  display_name: Freer
+  district_name: FREER ISD
+  district_nces_id: '4819820'
+  enrollment: 734
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-friendswood:
+  display_name: Friendswood
+  district_name: FRIENDSWOOD ISD
+  district_nces_id: '4819950'
+  enrollment: 6213
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-friona:
+  display_name: Friona
+  district_name: FRIONA ISD
+  district_nces_id: '4819980'
+  enrollment: 1063
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-frisco-4801420:
+  display_name: Frisco
+  district_name: LEADERSHIP PREP SCHOOL
+  district_nces_id: '4801420'
+  enrollment: 1351
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-frisco-4820010:
+  display_name: Frisco
+  district_name: FRISCO ISD
+  district_nces_id: '4820010'
+  enrollment: 66916
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-fritch:
+  display_name: Fritch
+  district_name: SANFORD-FRITCH ISD
+  district_nces_id: '4839150'
+  enrollment: 688
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-gainesville:
+  display_name: Gainesville
+  district_name: GAINESVILLE ISD
+  district_nces_id: '4820220'
+  enrollment: 3096
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-galveston:
+  display_name: Galveston
+  district_name: GALVESTON ISD
+  district_nces_id: '4820280'
+  enrollment: 6486
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-ganado:
+  display_name: Ganado
+  district_name: GANADO ISD
+  district_nces_id: '4820310'
+  enrollment: 711
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-garland:
+  display_name: Garland
+  district_name: GARLAND ISD
+  district_nces_id: '4820340'
+  enrollment: 52767
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-garrison:
+  display_name: Garrison
+  district_name: GARRISON ISD
+  district_nces_id: '4820400'
+  enrollment: 760
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-gatesville:
+  display_name: Gatesville
+  district_name: GATESVILLE ISD
+  district_nces_id: '4820500'
+  enrollment: 2708
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-george-west:
+  display_name: George West
+  district_name: GEORGE WEST ISD
+  district_nces_id: '4820550'
+  enrollment: 1083
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-georgetown-4800235:
+  display_name: Georgetown
+  district_name: ORENDA CHARTER SCHOOL
+  district_nces_id: '4800235'
+  enrollment: 1878
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-georgetown-4820600:
+  display_name: Georgetown
+  district_name: GEORGETOWN ISD
+  district_nces_id: '4820600'
+  enrollment: 13155
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-giddings:
+  display_name: Giddings
+  district_name: GIDDINGS ISD
+  district_nces_id: '4820640'
+  enrollment: 1930
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-gilmer:
+  display_name: Gilmer
+  district_name: GILMER ISD
+  district_nces_id: '4820700'
+  enrollment: 2825
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-gladewater-4820760:
+  display_name: Gladewater
+  district_name: GLADEWATER ISD
+  district_nces_id: '4820760'
+  enrollment: 1755
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-gladewater-4838460:
+  display_name: Gladewater
+  district_name: SABINE ISD
+  district_nces_id: '4838460'
+  enrollment: 1563
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-gladewater-4843530:
+  display_name: Gladewater
+  district_name: UNION GROVE ISD
+  district_nces_id: '4843530'
+  enrollment: 761
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-glen-rose:
+  display_name: Glen Rose
+  district_name: GLEN ROSE ISD
+  district_nces_id: '4820850'
+  enrollment: 1967
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-godley:
+  display_name: Godley
+  district_name: GODLEY ISD
+  district_nces_id: '4820960'
+  enrollment: 2811
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-goldthwaite:
+  display_name: Goldthwaite
+  district_name: GOLDTHWAITE ISD
+  district_nces_id: '4821000'
+  enrollment: 537
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-goliad:
+  display_name: Goliad
+  district_name: GOLIAD ISD
+  district_nces_id: '4821030'
+  enrollment: 1312
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-gonzales:
+  display_name: Gonzales
+  district_name: GONZALES ISD
+  district_nces_id: '4821060'
+  enrollment: 2605
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-graham:
+  display_name: Graham
+  district_name: GRAHAM ISD
+  district_nces_id: '4821360'
+  enrollment: 2261
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-granbury:
+  display_name: Granbury
+  district_name: GRANBURY ISD
+  district_nces_id: '4821390'
+  enrollment: 7954
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-grand-prairie-4800092:
+  display_name: Grand Prairie
+  district_name: TRINITY BASIN PREPARATORY
+  district_nces_id: '4800092'
+  enrollment: 4761
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-grand-prairie-4821420:
+  display_name: Grand Prairie
+  district_name: GRAND PRAIRIE ISD
+  district_nces_id: '4821420'
+  enrollment: 27019
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-grand-saline:
+  display_name: Grand Saline
+  district_name: GRAND SALINE ISD
+  district_nces_id: '4821450'
+  enrollment: 1214
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-grandview:
+  display_name: Grandview
+  district_name: GRANDVIEW ISD
+  district_nces_id: '4821540'
+  enrollment: 1403
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-granger:
+  display_name: Granger
+  district_name: GRANGER ISD
+  district_nces_id: '4821590'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-grapeland:
+  display_name: Grapeland
+  district_name: GRAPELAND ISD
+  district_nces_id: '4821630'
+  enrollment: 615
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-grapevine:
+  display_name: Grapevine
+  district_name: GRAPEVINE-COLLEYVILLE ISD
+  district_nces_id: '4821660'
+  enrollment: 13772
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-greenville:
+  display_name: Greenville
+  district_name: GREENVILLE ISD
+  district_nces_id: '4821720'
+  enrollment: 5422
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-groesbeck:
+  display_name: Groesbeck
+  district_name: GROESBECK ISD
+  district_nces_id: '4821810'
+  enrollment: 1573
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-groveton:
+  display_name: Groveton
+  district_name: GROVETON ISD
+  district_nces_id: '4821900'
+  enrollment: 768
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-gunter:
+  display_name: Gunter
+  district_name: GUNTER ISD
+  district_nces_id: '4821960'
+  enrollment: 1158
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hale-center:
+  display_name: Hale Center
+  district_name: HALE CENTER ISD
+  district_nces_id: '4822050'
+  enrollment: 585
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hallettsville:
+  display_name: Hallettsville
+  district_name: HALLETTSVILLE ISD
+  district_nces_id: '4822120'
+  enrollment: 1172
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hallsville:
+  display_name: Hallsville
+  district_name: HALLSVILLE ISD
+  district_nces_id: '4822170'
+  enrollment: 19818
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-haltom-city:
+  display_name: Haltom City
+  district_name: BIRDVILLE ISD
+  district_nces_id: '4810230'
+  enrollment: 22637
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hamilton:
+  display_name: Hamilton
+  district_name: HAMILTON ISD
+  district_nces_id: '4822230'
+  enrollment: 817
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hamshire:
+  display_name: Hamshire
+  district_name: HAMSHIRE-FANNETT ISD
+  district_nces_id: '4822320'
+  enrollment: 2065
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-harleton:
+  display_name: Harleton
+  district_name: HARLETON ISD
+  district_nces_id: '4822500'
+  enrollment: 705
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-harlingen:
+  display_name: Harlingen
+  district_name: HARLINGEN CISD
+  district_nces_id: '4822530'
+  enrollment: 17034
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-harper:
+  display_name: Harper
+  district_name: HARPER ISD
+  district_nces_id: '4822590'
+  enrollment: 584
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-haskell:
+  display_name: Haskell
+  district_name: HASKELL CISD
+  district_nces_id: '4822740'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hawkins:
+  display_name: Hawkins
+  district_name: HAWKINS ISD
+  district_nces_id: '4822770'
+  enrollment: 769
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hawley:
+  display_name: Hawley
+  district_name: HAWLEY ISD
+  district_nces_id: '4822800'
+  enrollment: 819
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hearne:
+  display_name: Hearne
+  district_name: HEARNE ISD
+  district_nces_id: '4822830'
+  enrollment: 751
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-hebbronville:
+  display_name: Hebbronville
+  district_name: JIM HOGG COUNTY ISD
+  district_nces_id: '4824750'
+  enrollment: 1072
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hemphill:
+  display_name: Hemphill
+  district_name: HEMPHILL ISD
+  district_nces_id: '4822890'
+  enrollment: 840
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hempstead:
+  display_name: Hempstead
+  district_name: HEMPSTEAD ISD
+  district_nces_id: '4822920'
+  enrollment: 1638
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-henderson-4812870:
+  display_name: Henderson
+  district_name: CARLISLE ISD
+  district_nces_id: '4812870'
+  enrollment: 623
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-henderson-4822970:
+  display_name: Henderson
+  district_name: HENDERSON ISD
+  district_nces_id: '4822970'
+  enrollment: 3400
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-henrietta:
+  display_name: Henrietta
+  district_name: HENRIETTA ISD
+  district_nces_id: '4822980'
+  enrollment: 994
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hereford:
+  display_name: Hereford
+  district_name: HEREFORD ISD
+  district_nces_id: '4823010'
+  enrollment: 3952
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hico:
+  display_name: Hico
+  district_name: HICO ISD
+  district_nces_id: '4823070'
+  enrollment: 623
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hidalgo:
+  display_name: Hidalgo
+  district_name: HIDALGO ISD
+  district_nces_id: '4823100'
+  enrollment: 3010
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hillsboro:
+  display_name: Hillsboro
+  district_name: HILLSBORO ISD
+  district_nces_id: '4823280'
+  enrollment: 2011
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hitchcock:
+  display_name: Hitchcock
+  district_name: HITCHCOCK ISD
+  district_nces_id: '4823310'
+  enrollment: 1841
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-holland:
+  display_name: Holland
+  district_name: HOLLAND ISD
+  district_nces_id: '4823370'
+  enrollment: 634
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-holliday:
+  display_name: Holliday
+  district_name: HOLLIDAY ISD
+  district_nces_id: '4823400'
+  enrollment: 1137
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hondo:
+  display_name: Hondo
+  district_name: HONDO ISD
+  district_nces_id: '4823430'
+  enrollment: 1772
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-honey-grove:
+  display_name: Honey Grove
+  district_name: HONEY GROVE ISD
+  district_nces_id: '4823460'
+  enrollment: 617
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hooks:
+  display_name: Hooks
+  district_name: HOOKS ISD
+  district_nces_id: '4823490'
+  enrollment: 920
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-houston-4800018:
+  display_name: Houston
+  district_name: SER-NINOS CHARTER SCHOOL
+  district_nces_id: '4800018'
+  enrollment: 1113
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800020:
+  display_name: Houston
+  district_name: GEORGE I SANCHEZ CHARTER
+  district_nces_id: '4800020'
+  enrollment: 962
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800022:
+  display_name: Houston
+  district_name: RAUL YZAGUIRRE SCHOOLS FOR SUCCESS
+  district_nces_id: '4800022'
+  enrollment: 1771
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800032:
+  display_name: Houston
+  district_name: ACADEMY OF ACCELERATED LEARNING INC
+  district_nces_id: '4800032'
+  enrollment: 850
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800073:
+  display_name: Houston
+  district_name: THE VARNETT PUBLIC SCHOOL
+  district_nces_id: '4800073'
+  enrollment: 1085
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800113:
+  display_name: Houston
+  district_name: AMIGOS POR VIDA-FRIENDS FOR LIFE PUB CHTR SCH
+  district_nces_id: '4800113'
+  enrollment: 567
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800118:
+  display_name: Houston
+  district_name: HOUSTON GATEWAY ACADEMY INC
+  district_nces_id: '4800118'
+  enrollment: 2128
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800125:
+  display_name: Houston
+  district_name: SOUTHWEST PUBLIC SCHOOLS
+  district_nces_id: '4800125'
+  enrollment: 1578
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800209:
+  display_name: Houston
+  district_name: YES PREP PUBLIC SCHOOLS INC
+  district_nces_id: '4800209'
+  enrollment: 16366
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800263:
+  display_name: Houston
+  district_name: DRAW ACADEMY
+  district_nces_id: '4800263'
+  enrollment: 678
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800264:
+  display_name: Houston
+  district_name: KIPP TEXAS PUBLIC SCHOOLS
+  district_nces_id: '4800264'
+  enrollment: 33068
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800274:
+  display_name: Houston
+  district_name: HARMONY PUBLIC SCHOOLS - HOUSTON NORTH
+  district_nces_id: '4800274'
+  enrollment: 6731
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800275:
+  display_name: Houston
+  district_name: STEP CHARTER SCHOOL
+  district_nces_id: '4800275'
+  enrollment: 569
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4800283:
+  display_name: Houston
+  district_name: THE RHODES SCHOOL FOR PERFORMING ARTS
+  district_nces_id: '4800283'
+  enrollment: 590
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4801446:
+  display_name: Houston
+  district_name: BETA ACADEMY
+  district_nces_id: '4801446'
+  enrollment: 1432
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4801460:
+  display_name: Houston
+  district_name: ETOILE ACADEMY CHARTER SCHOOL
+  district_nces_id: '4801460'
+  enrollment: 512
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4807710:
+  display_name: Houston
+  district_name: ALDINE ISD
+  district_nces_id: '4807710'
+  enrollment: 60074
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-houston-4807830:
+  display_name: Houston
+  district_name: ALIEF ISD
+  district_nces_id: '4807830'
+  enrollment: 40329
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-houston-4816110:
+  display_name: Houston
+  district_name: CYPRESS-FAIRBANKS ISD
+  district_nces_id: '4816110'
+  enrollment: 118010
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-houston-4820250:
+  display_name: Houston
+  district_name: GALENA PARK ISD
+  district_nces_id: '4820250'
+  enrollment: 21392
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-houston-4823640:
+  display_name: Houston
+  district_name: HOUSTON ISD
+  district_nces_id: '4823640'
+  enrollment: 189934
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4839990:
+  display_name: Houston
+  district_name: SHELDON ISD
+  district_nces_id: '4839990'
+  enrollment: 10990
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-houston-4841100:
+  display_name: Houston
+  district_name: SPRING BRANCH ISD
+  district_nces_id: '4841100'
+  enrollment: 33649
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-houston-4841220:
+  display_name: Houston
+  district_name: SPRING ISD
+  district_nces_id: '4841220'
+  enrollment: 34114
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-howe:
+  display_name: Howe
+  district_name: HOWE ISD
+  district_nces_id: '4823670'
+  enrollment: 1283
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-huffman:
+  display_name: Huffman
+  district_name: HUFFMAN ISD
+  district_nces_id: '4823820'
+  enrollment: 3717
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hughes-springs:
+  display_name: Hughes Springs
+  district_name: HUGHES SPRINGS ISD
+  district_nces_id: '4823850'
+  enrollment: 1149
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-humble:
+  display_name: Humble
+  district_name: HUMBLE ISD
+  district_nces_id: '4823910'
+  enrollment: 48758
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-huntington:
+  display_name: Huntington
+  district_name: HUNTINGTON ISD
+  district_nces_id: '4824000'
+  enrollment: 1593
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-huntsville:
+  display_name: Huntsville
+  district_name: HUNTSVILLE ISD
+  district_nces_id: '4824030'
+  enrollment: 11313
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-hutto:
+  display_name: Hutto
+  district_name: HUTTO ISD
+  district_nces_id: '4824100'
+  enrollment: 9620
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-idalou:
+  display_name: Idalou
+  district_name: IDALOU ISD
+  district_nces_id: '4824120'
+  enrollment: 988
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ingleside:
+  display_name: Ingleside
+  district_name: INGLESIDE ISD
+  district_nces_id: '4824180'
+  enrollment: 2023
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ingram:
+  display_name: Ingram
+  district_name: INGRAM ISD
+  district_nces_id: '4824210'
+  enrollment: 1240
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-iola:
+  display_name: Iola
+  district_name: IOLA ISD
+  district_nces_id: '4824240'
+  enrollment: 587
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-iowa-park:
+  display_name: Iowa Park
+  district_name: IOWA PARK CISD
+  district_nces_id: '4824260'
+  enrollment: 1895
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-irving-4800070:
+  display_name: Irving
+  district_name: UNIVERSAL ACADEMY
+  district_nces_id: '4800070'
+  enrollment: 2042
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-irving-4824420:
+  display_name: Irving
+  district_name: IRVING ISD
+  district_nces_id: '4824420'
+  enrollment: 31767
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-italy:
+  display_name: Italy
+  district_name: ITALY ISD
+  district_nces_id: '4824450'
+  enrollment: 634
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-itasca:
+  display_name: Itasca
+  district_name: ITASCA ISD
+  district_nces_id: '4824480'
+  enrollment: 651
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ivanhoe:
+  display_name: Ivanhoe
+  district_name: SAM RAYBURN ISD
+  district_nces_id: '4838640'
+  enrollment: 506
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-jacksboro:
+  display_name: Jacksboro
+  district_name: JACKSBORO ISD
+  district_nces_id: '4824530'
+  enrollment: 1083
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-jacksonville:
+  display_name: Jacksonville
+  district_name: JACKSONVILLE ISD
+  district_nces_id: '4824590'
+  enrollment: 4909
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-jarrell:
+  display_name: Jarrell
+  district_name: JARRELL ISD
+  district_nces_id: '4824600'
+  enrollment: 3360
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-jasper:
+  display_name: Jasper
+  district_name: JASPER ISD
+  district_nces_id: '4824630'
+  enrollment: 2211
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-jefferson:
+  display_name: Jefferson
+  district_name: JEFFERSON ISD
+  district_nces_id: '4824730'
+  enrollment: 1132
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-jewett:
+  display_name: Jewett
+  district_name: LEON ISD
+  district_nces_id: '4827180'
+  enrollment: 766
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-joaquin:
+  display_name: Joaquin
+  district_name: JOAQUIN ISD
+  district_nces_id: '4824810'
+  enrollment: 711
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-johnson-city:
+  display_name: Johnson City
+  district_name: JOHNSON CITY ISD
+  district_nces_id: '4824840'
+  enrollment: 722
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-joshua:
+  display_name: Joshua
+  district_name: JOSHUA ISD
+  district_nces_id: '4824930'
+  enrollment: 5892
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-jourdanton:
+  display_name: Jourdanton
+  district_name: JOURDANTON ISD
+  district_nces_id: '4824960'
+  enrollment: 1590
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-junction:
+  display_name: Junction
+  district_name: JUNCTION ISD
+  district_nces_id: '4825020'
+  enrollment: 619
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-justin:
+  display_name: Justin
+  district_name: NORTHWEST ISD
+  district_nces_id: '4833180'
+  enrollment: 29248
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-karnes-city:
+  display_name: Karnes City
+  district_name: KARNES CITY ISD
+  district_nces_id: '4825140'
+  enrollment: 4835
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-katy-4800019:
+  display_name: Katy
+  district_name: ARISTOI CLASSICAL ACADEMY
+  district_nces_id: '4800019'
+  enrollment: 1316
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-katy-4825170:
+  display_name: Katy
+  district_name: KATY ISD
+  district_nces_id: '4825170'
+  enrollment: 92667
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kaufman:
+  display_name: Kaufman
+  district_name: KAUFMAN ISD
+  district_nces_id: '4825200'
+  enrollment: 4332
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-keene:
+  display_name: Keene
+  district_name: KEENE ISD
+  district_nces_id: '4825230'
+  enrollment: 1053
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-keller:
+  display_name: Keller
+  district_name: KELLER ISD
+  district_nces_id: '4825260'
+  enrollment: 34078
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kemp:
+  display_name: Kemp
+  district_name: KEMP ISD
+  district_nces_id: '4825320'
+  enrollment: 1835
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kenedy:
+  display_name: Kenedy
+  district_name: KENEDY ISD
+  district_nces_id: '4825440'
+  enrollment: 729
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kennedale:
+  display_name: Kennedale
+  district_name: KENNEDALE ISD
+  district_nces_id: '4825500'
+  enrollment: 2855
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kerens:
+  display_name: Kerens
+  district_name: KERENS ISD
+  district_nces_id: '4825530'
+  enrollment: 570
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kermit:
+  display_name: Kermit
+  district_name: KERMIT ISD
+  district_nces_id: '4825560'
+  enrollment: 1374
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kerrville:
+  display_name: Kerrville
+  district_name: KERRVILLE ISD
+  district_nces_id: '4825590'
+  enrollment: 4878
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kilgore:
+  display_name: Kilgore
+  district_name: KILGORE ISD
+  district_nces_id: '4825620'
+  enrollment: 3821
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-killeen:
+  display_name: Killeen
+  district_name: KILLEEN ISD
+  district_nces_id: '4825660'
+  enrollment: 43935
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kingsville-4825680:
+  display_name: Kingsville
+  district_name: KINGSVILLE ISD
+  district_nces_id: '4825680'
+  enrollment: 2694
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kingsville-4836930:
+  display_name: Kingsville
+  district_name: RICARDO ISD
+  district_nces_id: '4836930'
+  enrollment: 655
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kingsville-4839300:
+  display_name: Kingsville
+  district_name: SANTA GERTRUDIS ISD
+  district_nces_id: '4839300'
+  enrollment: 823
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kirbyville:
+  display_name: Kirbyville
+  district_name: KIRBYVILLE CISD
+  district_nces_id: '4825710'
+  enrollment: 1502
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-klein:
+  display_name: Klein
+  district_name: KLEIN ISD
+  district_nces_id: '4825740'
+  enrollment: 53712
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kountze:
+  display_name: Kountze
+  district_name: KOUNTZE ISD
+  district_nces_id: '4825920'
+  enrollment: 1115
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-krum:
+  display_name: Krum
+  district_name: KRUM ISD
+  district_nces_id: '4825980'
+  enrollment: 2298
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-kyle:
+  display_name: Kyle
+  district_name: HAYS CISD
+  district_nces_id: '4800010'
+  enrollment: 22297
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-la-feria:
+  display_name: La Feria
+  district_name: LA FERIA ISD
+  district_nces_id: '4826040'
+  enrollment: 2926
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-la-grange:
+  display_name: La Grange
+  district_name: LA GRANGE ISD
+  district_nces_id: '4826100'
+  enrollment: 1883
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-la-joya:
+  display_name: La Joya
+  district_name: LA JOYA ISD
+  district_nces_id: '4826130'
+  enrollment: 24804
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-la-porte:
+  display_name: La Porte
+  district_name: LA PORTE ISD
+  district_nces_id: '4826190'
+  enrollment: 7100
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-la-vernia:
+  display_name: La Vernia
+  district_name: LA VERNIA ISD
+  district_nces_id: '4826310'
+  enrollment: 3515
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-la-villa:
+  display_name: La Villa
+  district_name: LA VILLA ISD
+  district_nces_id: '4826340'
+  enrollment: 566
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lago-vista:
+  display_name: Lago Vista
+  district_name: LAGO VISTA ISD
+  district_nces_id: '4826400'
+  enrollment: 1798
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lake-dallas:
+  display_name: Lake Dallas
+  district_name: LAKE DALLAS ISD
+  district_nces_id: '4826430'
+  enrollment: 3900
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lake-worth:
+  display_name: Lake Worth
+  district_name: LAKE WORTH ISD
+  district_nces_id: '4826490'
+  enrollment: 3447
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lamesa:
+  display_name: Lamesa
+  district_name: LAMESA ISD
+  district_nces_id: '4826610'
+  enrollment: 1588
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lampasas:
+  display_name: Lampasas
+  district_name: LAMPASAS ISD
+  district_nces_id: '4826640'
+  enrollment: 3567
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lancaster:
+  display_name: Lancaster
+  district_name: LANCASTER ISD
+  district_nces_id: '4826670'
+  enrollment: 7032
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-laredo-4826790:
+  display_name: Laredo
+  district_name: LAREDO ISD
+  district_nces_id: '4826790'
+  enrollment: 20932
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-laredo-4843650:
+  display_name: Laredo
+  district_name: UNITED ISD
+  district_nces_id: '4843650'
+  enrollment: 41381
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-league-city:
+  display_name: League City
+  district_name: CLEAR CREEK ISD
+  district_nces_id: '4814280'
+  enrollment: 40693
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-leander:
+  display_name: Leander
+  district_name: LEANDER ISD
+  district_nces_id: '4827030'
+  enrollment: 42415
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-leonard:
+  display_name: Leonard
+  district_name: LEONARD ISD
+  district_nces_id: '4827210'
+  enrollment: 814
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-levelland:
+  display_name: Levelland
+  district_name: LEVELLAND ISD
+  district_nces_id: '4827240'
+  enrollment: 2691
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lewisville-4800163:
+  display_name: Lewisville
+  district_name: TEXAS COLLEGE PREPARATORY ACADEMIES
+  district_nces_id: '4800163'
+  enrollment: 16478
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-lewisville-4800207:
+  display_name: Lewisville
+  district_name: PREMIER HIGH SCHOOLS
+  district_nces_id: '4800207'
+  enrollment: 7117
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-lewisville-4827300:
+  display_name: Lewisville
+  district_name: LEWISVILLE ISD
+  district_nces_id: '4827300'
+  enrollment: 49060
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lexington:
+  display_name: Lexington
+  district_name: LEXINGTON ISD
+  district_nces_id: '4827330'
+  enrollment: 1084
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-liberty-4822380:
+  display_name: Liberty
+  district_name: HARDIN ISD
+  district_nces_id: '4822380'
+  enrollment: 1317
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-liberty-4827450:
+  display_name: Liberty
+  district_name: LIBERTY ISD
+  district_nces_id: '4827450'
+  enrollment: 2398
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-liberty-hill:
+  display_name: Liberty Hill
+  district_name: LIBERTY HILL ISD
+  district_nces_id: '4827420'
+  enrollment: 7869
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lindale:
+  display_name: Lindale
+  district_name: LINDALE ISD
+  district_nces_id: '4827510'
+  enrollment: 4469
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-linden:
+  display_name: Linden
+  district_name: LINDEN-KILDARE CISD
+  district_nces_id: '4827540'
+  enrollment: 660
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-little-elm:
+  display_name: Little Elm
+  district_name: LITTLE ELM ISD
+  district_nces_id: '4827720'
+  enrollment: 8351
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-little-river:
+  display_name: Little River
+  district_name: ACADEMY ISD
+  district_nces_id: '4807470'
+  enrollment: 1835
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-littlefield:
+  display_name: Littlefield
+  district_name: LITTLEFIELD ISD
+  district_nces_id: '4827750'
+  enrollment: 1203
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-livingston:
+  display_name: Livingston
+  district_name: LIVINGSTON ISD
+  district_nces_id: '4827780'
+  enrollment: 4061
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-llano:
+  display_name: Llano
+  district_name: LLANO ISD
+  district_nces_id: '4827810'
+  enrollment: 1937
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lockhart:
+  display_name: Lockhart
+  district_name: LOCKHART ISD
+  district_nces_id: '4827870'
+  enrollment: 6443
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lone-oak:
+  display_name: Lone Oak
+  district_name: LONE OAK ISD
+  district_nces_id: '4828020'
+  enrollment: 1083
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-longview-4828110:
+  display_name: Longview
+  district_name: LONGVIEW ISD
+  district_nces_id: '4828110'
+  enrollment: 8274
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-longview-4834980:
+  display_name: Longview
+  district_name: PINE TREE ISD
+  district_nces_id: '4834980'
+  enrollment: 4611
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-longview-4841190:
+  display_name: Longview
+  district_name: SPRING HILL ISD
+  district_nces_id: '4841190'
+  enrollment: 2071
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lorena:
+  display_name: Lorena
+  district_name: LORENA ISD
+  district_nces_id: '4828200'
+  enrollment: 1807
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-los-fresnos:
+  display_name: Los Fresnos
+  district_name: LOS FRESNOS CISD
+  district_nces_id: '4828290'
+  enrollment: 10565
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lott:
+  display_name: Lott
+  district_name: ROSEBUD-LOTT ISD
+  district_nces_id: '4837900'
+  enrollment: 755
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-louise:
+  display_name: Louise
+  district_name: LOUISE ISD
+  district_nces_id: '4828350'
+  enrollment: 534
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lovelady:
+  display_name: Lovelady
+  district_name: LOVELADY ISD
+  district_nces_id: '4828410'
+  enrollment: 538
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lubbock-4801480:
+  display_name: Lubbock
+  district_name: TEXAS TECH UNIVERSITY K-12
+  district_nces_id: '4801480'
+  enrollment: 735
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lubbock-4815180:
+  display_name: Lubbock
+  district_name: LUBBOCK-COOPER ISD
+  district_nces_id: '4815180'
+  enrollment: 7750
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lubbock-4828500:
+  display_name: Lubbock
+  district_name: LUBBOCK ISD
+  district_nces_id: '4828500'
+  enrollment: 25247
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-lubbock-4837800:
+  display_name: Lubbock
+  district_name: ROOSEVELT ISD
+  district_nces_id: '4837800'
+  enrollment: 1175
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lufkin-4800074:
+  display_name: Lufkin
+  district_name: PINEYWOODS COMMUNITY ACADEMY
+  district_nces_id: '4800074'
+  enrollment: 997
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-lufkin-4823790:
+  display_name: Lufkin
+  district_name: HUDSON ISD
+  district_nces_id: '4823790'
+  enrollment: 2768
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lufkin-4828550:
+  display_name: Lufkin
+  district_name: LUFKIN ISD
+  district_nces_id: '4828550'
+  enrollment: 7164
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-luling:
+  display_name: Luling
+  district_name: LULING ISD
+  district_nces_id: '4828590'
+  enrollment: 1416
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lumberton:
+  display_name: Lumberton
+  district_name: LUMBERTON ISD
+  district_nces_id: '4813530'
+  enrollment: 4195
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lyford:
+  display_name: Lyford
+  district_name: LYFORD CISD
+  district_nces_id: '4828620'
+  enrollment: 1396
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-lytle:
+  display_name: Lytle
+  district_name: LYTLE ISD
+  district_nces_id: '4828650'
+  enrollment: 1810
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mabank:
+  display_name: Mabank
+  district_name: MABANK ISD
+  district_nces_id: '4828680'
+  enrollment: 3904
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-madisonville:
+  display_name: Madisonville
+  district_name: MADISONVILLE CISD
+  district_nces_id: '4828710'
+  enrollment: 2431
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-magnolia:
+  display_name: Magnolia
+  district_name: MAGNOLIA ISD
+  district_nces_id: '4828740'
+  enrollment: 14046
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-malakoff-4815840:
+  display_name: Malakoff
+  district_name: CROSS ROADS ISD
+  district_nces_id: '4815840'
+  enrollment: 560
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-malakoff-4828780:
+  display_name: Malakoff
+  district_name: MALAKOFF ISD
+  district_nces_id: '4828780'
+  enrollment: 1433
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-manor:
+  display_name: Manor
+  district_name: MANOR ISD
+  district_nces_id: '4828890'
+  enrollment: 9255
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mansfield:
+  display_name: Mansfield
+  district_name: MANSFIELD ISD
+  district_nces_id: '4828920'
+  enrollment: 35722
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-marble-falls:
+  display_name: Marble Falls
+  district_name: MARBLE FALLS ISD
+  district_nces_id: '4829010'
+  enrollment: 4063
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-marion:
+  display_name: Marion
+  district_name: MARION ISD
+  district_nces_id: '4829100'
+  enrollment: 1527
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-marlin:
+  display_name: Marlin
+  district_name: MARLIN ISD
+  district_nces_id: '4829130'
+  enrollment: 926
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-marshall:
+  display_name: Marshall
+  district_name: MARSHALL ISD
+  district_nces_id: '4829160'
+  enrollment: 5057
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mart:
+  display_name: Mart
+  district_name: MART ISD
+  district_nces_id: '4829190'
+  enrollment: 588
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mason:
+  display_name: Mason
+  district_name: MASON ISD
+  district_nces_id: '4829280'
+  enrollment: 709
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mathis:
+  display_name: Mathis
+  district_name: MATHIS ISD
+  district_nces_id: '4829400'
+  enrollment: 1485
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-maypearl:
+  display_name: Maypearl
+  district_name: MAYPEARL ISD
+  district_nces_id: '4829580'
+  enrollment: 1212
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mcallen-4800133:
+  display_name: Mcallen
+  district_name: TRIUMPH PUBLIC HIGH SCHOOLS-RIO GRANDE VALLEY
+  district_nces_id: '4800133'
+  enrollment: 506
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-mcallen-4829670:
+  display_name: Mcallen
+  district_name: MCALLEN ISD
+  district_nces_id: '4829670'
+  enrollment: 20399
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mccamey:
+  display_name: Mccamey
+  district_name: MCCAMEY ISD
+  district_nces_id: '4829700'
+  enrollment: 505
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mcgregor:
+  display_name: Mcgregor
+  district_name: MCGREGOR ISD
+  district_nces_id: '4829820'
+  enrollment: 1503
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mckinney-4801429:
+  display_name: Mckinney
+  district_name: IMAGINE INTERNATIONAL ACADEMY OF NORTH TEXAS
+  district_nces_id: '4801429'
+  enrollment: 1399
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-mckinney-4829850:
+  display_name: Mckinney
+  district_name: MCKINNEY ISD
+  district_nces_id: '4829850'
+  enrollment: 23342
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-melissa:
+  display_name: Melissa
+  district_name: MELISSA ISD
+  district_nces_id: '4830120'
+  enrollment: 5654
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mercedes-4830250:
+  display_name: Mercedes
+  district_name: MERCEDES ISD
+  district_nces_id: '4830250'
+  enrollment: 4457
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mercedes-4837150:
+  display_name: Mercedes
+  district_name: SOUTH TEXAS ISD
+  district_nces_id: '4837150'
+  enrollment: 4382
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-merkel:
+  display_name: Merkel
+  district_name: MERKEL ISD
+  district_nces_id: '4830340'
+  enrollment: 1140
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mesquite:
+  display_name: Mesquite
+  district_name: MESQUITE ISD
+  district_nces_id: '4830390'
+  enrollment: 38356
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mexia:
+  display_name: Mexia
+  district_name: MEXIA ISD
+  district_nces_id: '4830420'
+  enrollment: 1864
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-midland-4821750:
+  display_name: Midland
+  district_name: GREENWOOD ISD
+  district_nces_id: '4821750'
+  enrollment: 3140
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-midland-4830570:
+  display_name: Midland
+  district_name: MIDLAND ISD
+  district_nces_id: '4830570'
+  enrollment: 27842
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-midlothian:
+  display_name: Midlothian
+  district_name: MIDLOTHIAN ISD
+  district_nces_id: '4830600'
+  enrollment: 10990
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-miles:
+  display_name: Miles
+  district_name: MILES ISD
+  district_nces_id: '4830750'
+  enrollment: 512
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-millsap:
+  display_name: Millsap
+  district_name: MILLSAP ISD
+  district_nces_id: '4830870'
+  enrollment: 1099
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mineola:
+  display_name: Mineola
+  district_name: MINEOLA ISD
+  district_nces_id: '4830930'
+  enrollment: 1643
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mineral-wells:
+  display_name: Mineral Wells
+  district_name: MINERAL WELLS ISD
+  district_nces_id: '4830950'
+  enrollment: 3352
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mission-4831040:
+  display_name: Mission
+  district_name: MISSION CISD
+  district_nces_id: '4831040'
+  enrollment: 14502
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mission-4839930:
+  display_name: Mission
+  district_name: SHARYLAND ISD
+  district_nces_id: '4839930'
+  enrollment: 9732
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-monahans:
+  display_name: Monahans
+  district_name: MONAHANS-WICKETT-PYOTE ISD
+  district_nces_id: '4831170'
+  enrollment: 2197
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mont-belvieu:
+  display_name: Mont Belvieu
+  district_name: BARBERS HILL ISD
+  district_nces_id: '4809450'
+  enrollment: 7339
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-monte-alto:
+  display_name: Monte Alto
+  district_name: MONTE ALTO ISD
+  district_nces_id: '4831230'
+  enrollment: 865
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-montgomery:
+  display_name: Montgomery
+  district_name: MONTGOMERY ISD
+  district_nces_id: '4831260'
+  enrollment: 9748
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-moody:
+  display_name: Moody
+  district_name: MOODY ISD
+  district_nces_id: '4831290'
+  enrollment: 722
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-morgans-point-resort:
+  display_name: Morgans Point Resort
+  district_name: PRIORITY CHARTER SCHOOLS
+  district_nces_id: '4800076'
+  enrollment: 751
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-mount-pleasant-4813680:
+  display_name: Mount Pleasant
+  district_name: CHAPEL HILL ISD
+  district_nces_id: '4813680'
+  enrollment: 1061
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mount-pleasant-4822710:
+  display_name: Mount Pleasant
+  district_name: HARTS BLUFF ISD
+  district_nces_id: '4822710'
+  enrollment: 868
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mount-pleasant-4831760:
+  display_name: Mount Pleasant
+  district_name: MOUNT PLEASANT ISD
+  district_nces_id: '4831760'
+  enrollment: 5186
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mount-vernon:
+  display_name: Mount Vernon
+  district_name: MOUNT VERNON ISD
+  district_nces_id: '4831770'
+  enrollment: 1571
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-muenster:
+  display_name: Muenster
+  district_name: MUENSTER ISD
+  district_nces_id: '4831860'
+  enrollment: 563
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-muleshoe:
+  display_name: Muleshoe
+  district_name: MULESHOE ISD
+  district_nces_id: '4831890'
+  enrollment: 1347
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-mumford:
+  display_name: Mumford
+  district_name: MUMFORD ISD
+  district_nces_id: '4831950'
+  enrollment: 600
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-nacogdoches-4813440:
+  display_name: Nacogdoches
+  district_name: CENTRAL HEIGHTS ISD
+  district_nces_id: '4813440'
+  enrollment: 1104
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-nacogdoches-4832090:
+  display_name: Nacogdoches
+  district_name: NACOGDOCHES ISD
+  district_nces_id: '4832090'
+  enrollment: 5943
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-nacogdoches-4846320:
+  display_name: Nacogdoches
+  district_name: WODEN ISD
+  district_nces_id: '4846320'
+  enrollment: 835
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-natalia:
+  display_name: Natalia
+  district_name: NATALIA ISD
+  district_nces_id: '4832130'
+  enrollment: 1170
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-navasota:
+  display_name: Navasota
+  district_name: NAVASOTA ISD
+  district_nces_id: '4832190'
+  enrollment: 2977
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-nederland:
+  display_name: Nederland
+  district_name: NEDERLAND ISD
+  district_nces_id: '4832280'
+  enrollment: 5029
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-needville:
+  display_name: Needville
+  district_name: NEEDVILLE ISD
+  district_nces_id: '4832310'
+  enrollment: 3553
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-nevada:
+  display_name: Nevada
+  district_name: COMMUNITY ISD
+  district_nces_id: '4814850'
+  enrollment: 4143
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-new-boston:
+  display_name: New Boston
+  district_name: NEW BOSTON ISD
+  district_nces_id: '4832340'
+  enrollment: 1154
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-new-braunfels-4814730:
+  display_name: New Braunfels
+  district_name: COMAL ISD
+  district_nces_id: '4814730'
+  enrollment: 28511
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-new-braunfels-4832370:
+  display_name: New Braunfels
+  district_name: NEW BRAUNFELS ISD
+  district_nces_id: '4832370'
+  enrollment: 9745
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-new-caney:
+  display_name: New Caney
+  district_name: NEW CANEY ISD
+  district_nces_id: '4832400'
+  enrollment: 18344
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-new-deal:
+  display_name: New Deal
+  district_name: NEW DEAL ISD
+  district_nces_id: '4832430'
+  enrollment: 757
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-new-home:
+  display_name: New Home
+  district_name: NEW HOME ISD
+  district_nces_id: '4832490'
+  enrollment: 626
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-new-london:
+  display_name: New London
+  district_name: WEST RUSK COUNTY CONSOLIDATED ISD
+  district_nces_id: '4845150'
+  enrollment: 1048
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-new-summerfield:
+  display_name: New Summerfield
+  district_name: NEW SUMMERFIELD ISD
+  district_nces_id: '4832610'
+  enrollment: 515
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-new-waverly:
+  display_name: New Waverly
+  district_name: NEW WAVERLY ISD
+  district_nces_id: '4832640'
+  enrollment: 1065
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-newton:
+  display_name: Newton
+  district_name: NEWTON ISD
+  district_nces_id: '4832730'
+  enrollment: 968
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-nixon:
+  display_name: Nixon
+  district_name: NIXON-SMILEY CISD
+  district_nces_id: '4832740'
+  enrollment: 1045
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-nocona:
+  display_name: Nocona
+  district_name: NOCONA ISD
+  district_nces_id: '4832790'
+  enrollment: 804
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-normangee:
+  display_name: Normangee
+  district_name: NORMANGEE ISD
+  district_nces_id: '4832910'
+  enrollment: 637
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-odem:
+  display_name: Odem
+  district_name: ODEM-EDROY ISD
+  district_nces_id: '4833360'
+  enrollment: 897
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-odessa-4801417:
+  display_name: Odessa
+  district_name: COMPASS ACADEMY CHARTER SCHOOL
+  district_nces_id: '4801417'
+  enrollment: 1399
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-odessa-4818000:
+  display_name: Odessa
+  district_name: ECTOR COUNTY ISD
+  district_nces_id: '4818000'
+  enrollment: 33340
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-olney:
+  display_name: Olney
+  district_name: OLNEY ISD
+  district_nces_id: '4833630'
+  enrollment: 729
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-olton:
+  display_name: Olton
+  district_name: OLTON ISD
+  district_nces_id: '4833660'
+  enrollment: 597
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-omaha:
+  display_name: Omaha
+  district_name: PEWITT CISD
+  district_nces_id: '4834800'
+  enrollment: 833
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-onalaska:
+  display_name: Onalaska
+  district_name: ONALASKA ISD
+  district_nces_id: '4833690'
+  enrollment: 1239
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-orange-4817010:
+  display_name: Orange
+  district_name: DEWEYVILLE ISD
+  district_nces_id: '4817010'
+  enrollment: 548
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-orange-4827690:
+  display_name: Orange
+  district_name: LITTLE CYPRESS-MAURICEVILLE CISD
+  district_nces_id: '4827690'
+  enrollment: 3340
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-orange-4845090:
+  display_name: Orange
+  district_name: WEST ORANGE-COVE CISD
+  district_nces_id: '4845090'
+  enrollment: 2618
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-orange-grove:
+  display_name: Orange Grove
+  district_name: ORANGE GROVE ISD
+  district_nces_id: '4833720'
+  enrollment: 1755
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-orangefield:
+  display_name: Orangefield
+  district_name: ORANGEFIELD ISD
+  district_nces_id: '4833780'
+  enrollment: 1856
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ore-city:
+  display_name: Ore City
+  district_name: ORE CITY ISD
+  district_nces_id: '4833840'
+  enrollment: 825
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ozona:
+  display_name: Ozona
+  district_name: CROCKETT COUNTY CONSOLIDATED CSD
+  district_nces_id: '4815690'
+  enrollment: 706
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-palacios:
+  display_name: Palacios
+  district_name: PALACIOS ISD
+  district_nces_id: '4834020'
+  enrollment: 1300
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-palestine-4834050:
+  display_name: Palestine
+  district_name: PALESTINE ISD
+  district_nces_id: '4834050'
+  enrollment: 3297
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-palestine-4843290:
+  display_name: Palestine
+  district_name: WESTWOOD ISD
+  district_nces_id: '4843290'
+  enrollment: 1414
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-palmer:
+  display_name: Palmer
+  district_name: PALMER ISD
+  district_nces_id: '4834110'
+  enrollment: 1304
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pampa:
+  display_name: Pampa
+  district_name: PAMPA ISD
+  district_nces_id: '4834170'
+  enrollment: 3441
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-panhandle:
+  display_name: Panhandle
+  district_name: PANHANDLE ISD
+  district_nces_id: '4834230'
+  enrollment: 657
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-paradise:
+  display_name: Paradise
+  district_name: PARADISE ISD
+  district_nces_id: '4834260'
+  enrollment: 1298
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-paris-4800012:
+  display_name: Paris
+  district_name: CHISUM ISD
+  district_nces_id: '4800012'
+  enrollment: 1179
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-paris-4833010:
+  display_name: Paris
+  district_name: NORTH LAMAR ISD
+  district_nces_id: '4833010'
+  enrollment: 2450
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-paris-4834290:
+  display_name: Paris
+  district_name: PARIS ISD
+  district_nces_id: '4834290'
+  enrollment: 3856
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pasadena:
+  display_name: Pasadena
+  district_name: PASADENA ISD
+  district_nces_id: '4834320'
+  enrollment: 48726
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pattison:
+  display_name: Pattison
+  district_name: ROYAL ISD
+  district_nces_id: '4838190'
+  enrollment: 2637
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pattonville:
+  display_name: Pattonville
+  district_name: PRAIRILAND ISD
+  district_nces_id: '4835740'
+  enrollment: 1099
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pearland:
+  display_name: Pearland
+  district_name: PEARLAND ISD
+  district_nces_id: '4834440'
+  enrollment: 21237
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pearsall:
+  display_name: Pearsall
+  district_name: PEARSALL ISD
+  district_nces_id: '4834470'
+  enrollment: 2026
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pecos:
+  display_name: Pecos
+  district_name: PECOS-BARSTOW-TOYAH ISD
+  district_nces_id: '4834550'
+  enrollment: 2776
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-perryton:
+  display_name: Perryton
+  district_name: PERRYTON ISD
+  district_nces_id: '4834650'
+  enrollment: 2008
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pflugerville:
+  display_name: Pflugerville
+  district_name: PFLUGERVILLE ISD
+  district_nces_id: '4834830'
+  enrollment: 25445
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pharr-4834860:
+  display_name: Pharr
+  district_name: PHARR-SAN JUAN-ALAMO ISD
+  district_nces_id: '4834860'
+  enrollment: 30003
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pharr-4843800:
+  display_name: Pharr
+  district_name: VALLEY VIEW ISD
+  district_nces_id: '4843800'
+  enrollment: 3739
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pilot-point:
+  display_name: Pilot Point
+  district_name: PILOT POINT ISD
+  district_nces_id: '4834920'
+  enrollment: 1483
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pineland:
+  display_name: Pineland
+  district_name: WEST SABINE ISD
+  district_nces_id: '4845180'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pittsburg:
+  display_name: Pittsburg
+  district_name: PITTSBURG ISD
+  district_nces_id: '4835010'
+  enrollment: 2360
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-placedo:
+  display_name: Placedo
+  district_name: BLOOMINGTON ISD
+  district_nces_id: '4810500'
+  enrollment: 890
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-plainview:
+  display_name: Plainview
+  district_name: PLAINVIEW ISD
+  district_nces_id: '4835070'
+  enrollment: 4662
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-plano:
+  display_name: Plano
+  district_name: PLANO ISD
+  district_nces_id: '4835100'
+  enrollment: 48921
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pleasanton:
+  display_name: Pleasanton
+  district_name: PLEASANTON ISD
+  district_nces_id: '4835190'
+  enrollment: 3384
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pollok:
+  display_name: Pollok
+  district_name: CENTRAL ISD
+  district_nces_id: '4813500'
+  enrollment: 1463
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ponder:
+  display_name: Ponder
+  district_name: PONDER ISD
+  district_nces_id: '4835310'
+  enrollment: 1640
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-poolville:
+  display_name: Poolville
+  district_name: POOLVILLE ISD
+  district_nces_id: '4835340'
+  enrollment: 722
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-port-aransas:
+  display_name: Port Aransas
+  district_name: PORT ARANSAS ISD
+  district_nces_id: '4835370'
+  enrollment: 546
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-port-arthur-4801410:
+  display_name: Port Arthur
+  district_name: BOB HOPE SCHOOL
+  district_nces_id: '4801410'
+  enrollment: 2313
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-port-arthur-4835400:
+  display_name: Port Arthur
+  district_name: PORT ARTHUR ISD
+  district_nces_id: '4835400'
+  enrollment: 8152
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-port-isabel:
+  display_name: Port Isabel
+  district_name: POINT ISABEL ISD
+  district_nces_id: '4835250'
+  enrollment: 1930
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-port-lavaca:
+  display_name: Port Lavaca
+  district_name: CALHOUN COUNTY ISD
+  district_nces_id: '4812480'
+  enrollment: 3530
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-port-neches:
+  display_name: Port Neches
+  district_name: PORT NECHES-GROVES ISD
+  district_nces_id: '4835430'
+  enrollment: 5242
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-portland:
+  display_name: Portland
+  district_name: GREGORY-PORTLAND ISD
+  district_nces_id: '4821780'
+  enrollment: 4937
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-post:
+  display_name: Post
+  district_name: POST ISD
+  district_nces_id: '4835490'
+  enrollment: 741
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-poteet:
+  display_name: Poteet
+  district_name: POTEET ISD
+  district_nces_id: '4835520'
+  enrollment: 1837
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-poth:
+  display_name: Poth
+  district_name: POTH ISD
+  district_nces_id: '4835550'
+  enrollment: 935
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-pottsboro:
+  display_name: Pottsboro
+  district_name: POTTSBORO ISD
+  district_nces_id: '4835580'
+  enrollment: 1489
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-premont:
+  display_name: Premont
+  district_name: PREMONT ISD
+  district_nces_id: '4835760'
+  enrollment: 757
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-presidio:
+  display_name: Presidio
+  district_name: PRESIDIO ISD
+  district_nces_id: '4835800'
+  enrollment: 1020
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-princeton:
+  display_name: Princeton
+  district_name: PRINCETON ISD
+  district_nces_id: '4835850'
+  enrollment: 7837
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-progreso:
+  display_name: Progreso
+  district_name: PROGRESO ISD
+  district_nces_id: '4835910'
+  enrollment: 1444
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-prosper:
+  display_name: Prosper
+  district_name: PROSPER ISD
+  district_nces_id: '4836000'
+  enrollment: 24983
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-queen-city:
+  display_name: Queen City
+  district_name: QUEEN CITY ISD
+  district_nces_id: '4836210'
+  enrollment: 954
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-quinlan-4810740:
+  display_name: Quinlan
+  district_name: BOLES ISD
+  district_nces_id: '4810740'
+  enrollment: 547
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-quinlan-4836240:
+  display_name: Quinlan
+  district_name: QUINLAN ISD
+  district_nces_id: '4836240'
+  enrollment: 2784
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-quitman:
+  display_name: Quitman
+  district_name: QUITMAN ISD
+  district_nces_id: '4836300'
+  enrollment: 1216
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-randolph-a-f-b:
+  display_name: Randolph A F B
+  district_name: RANDOLPH FIELD ISD
+  district_nces_id: '4836450'
+  enrollment: 1462
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-raymondville:
+  display_name: Raymondville
+  district_name: RAYMONDVILLE ISD
+  district_nces_id: '4836540'
+  enrollment: 2018
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-red-oak-4800055:
+  display_name: Red Oak
+  district_name: LIFE SCHOOL
+  district_nces_id: '4800055'
+  enrollment: 5498
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-red-oak-4836660:
+  display_name: Red Oak
+  district_name: RED OAK ISD
+  district_nces_id: '4836660'
+  enrollment: 6499
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-refugio:
+  display_name: Refugio
+  district_name: REFUGIO ISD
+  district_nces_id: '4836780'
+  enrollment: 654
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-rice:
+  display_name: Rice
+  district_name: RICE ISD
+  district_nces_id: '4836960'
+  enrollment: 1036
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-richardson-4800236:
+  display_name: Richardson
+  district_name: EVOLUTION ACADEMY CHARTER SCHOOL
+  district_nces_id: '4800236'
+  enrollment: 678
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-richardson-4801428:
+  display_name: Richardson
+  district_name: LEGACY PREPARATORY
+  district_nces_id: '4801428'
+  enrollment: 1383
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-richardson-4801440:
+  display_name: Richardson
+  district_name: INTERNATIONAL LEADERSHIP OF TEXAS (ILTEXAS)
+  district_nces_id: '4801440'
+  enrollment: 22139
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-richardson-4837020:
+  display_name: Richardson
+  district_name: RICHARDSON ISD
+  district_nces_id: '4837020'
+  enrollment: 37260
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-riesel:
+  display_name: Riesel
+  district_name: RIESEL ISD
+  district_nces_id: '4837110'
+  enrollment: 656
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-rio-grande-city:
+  display_name: Rio Grande City
+  district_name: RIO GRANDE CITY GRULLA ISD
+  district_nces_id: '4837140'
+  enrollment: 9644
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-rio-hondo:
+  display_name: Rio Hondo
+  district_name: RIO HONDO ISD
+  district_nces_id: '4837170'
+  enrollment: 1622
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-rio-vista:
+  display_name: Rio Vista
+  district_name: RIO VISTA ISD
+  district_nces_id: '4837200'
+  enrollment: 945
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-robinson:
+  display_name: Robinson
+  district_name: ROBINSON ISD
+  district_nces_id: '4837410'
+  enrollment: 2401
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-robstown:
+  display_name: Robstown
+  district_name: ROBSTOWN ISD
+  district_nces_id: '4837440'
+  enrollment: 2543
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-rockdale:
+  display_name: Rockdale
+  district_name: ROCKDALE ISD
+  district_nces_id: '4837590'
+  enrollment: 1488
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-rockport:
+  display_name: Rockport
+  district_name: ARANSAS COUNTY ISD
+  district_nces_id: '4808550'
+  enrollment: 3044
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-rockwall:
+  display_name: Rockwall
+  district_name: ROCKWALL ISD
+  district_nces_id: '4837650'
+  enrollment: 18384
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-rogers:
+  display_name: Rogers
+  district_name: ROGERS ISD
+  district_nces_id: '4837710'
+  enrollment: 880
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-roma:
+  display_name: Roma
+  district_name: ROMA ISD
+  district_nces_id: '4837740'
+  enrollment: 5977
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-ropesville:
+  display_name: Ropesville
+  district_name: ROPES ISD
+  district_nces_id: '4837830'
+  enrollment: 546
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-roscoe:
+  display_name: Roscoe
+  district_name: ROSCOE COLLEGIATE ISD
+  district_nces_id: '4837860'
+  enrollment: 6191
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-rosenberg:
+  display_name: Rosenberg
+  district_name: LAMAR CISD
+  district_nces_id: '4826580'
+  enrollment: 42461
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-round-rock-4801422:
+  display_name: Round Rock
+  district_name: MERIDIAN WORLD SCHOOL LLC
+  district_nces_id: '4801422'
+  enrollment: 1690
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-round-rock-4838080:
+  display_name: Round Rock
+  district_name: ROUND ROCK ISD
+  district_nces_id: '4838080'
+  enrollment: 46510
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-royse-city:
+  display_name: Royse City
+  district_name: ROYSE CITY ISD
+  district_nces_id: '4838220'
+  enrollment: 8521
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-rusk:
+  display_name: Rusk
+  district_name: RUSK ISD
+  district_nces_id: '4838360'
+  enrollment: 2055
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sadler:
+  display_name: Sadler
+  district_name: S AND S CISD
+  district_nces_id: '4838400'
+  enrollment: 943
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-salado:
+  display_name: Salado
+  district_name: SALADO ISD
+  district_nces_id: '4838580'
+  enrollment: 2336
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-angelo-4801409:
+  display_name: San Angelo
+  district_name: TEXAS LEADERSHIP PUBLIC SCHOOLS
+  district_nces_id: '4801409'
+  enrollment: 3722
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-angelo-4821600:
+  display_name: San Angelo
+  district_name: GRAPE CREEK ISD
+  district_nces_id: '4821600'
+  enrollment: 1172
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-angelo-4838700:
+  display_name: San Angelo
+  district_name: SAN ANGELO ISD
+  district_nces_id: '4838700'
+  enrollment: 13548
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800014:
+  display_name: San Antonio
+  district_name: GEORGE GERVIN ACADEMY
+  district_nces_id: '4800014'
+  enrollment: 689
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800053:
+  display_name: San Antonio
+  district_name: INSPIRE ACADEMIES
+  district_nces_id: '4800053'
+  enrollment: 735
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800062:
+  display_name: San Antonio
+  district_name: LEGACY TRADITIONAL SCHOOLS - TEXAS
+  district_nces_id: '4800062'
+  enrollment: 931
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800063:
+  display_name: San Antonio
+  district_name: SOUTHWEST PREPARATORY SCHOOL
+  district_nces_id: '4800063'
+  enrollment: 787
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800075:
+  display_name: San Antonio
+  district_name: RICHARD MILBURN ALTER HIGH SCHOOL (KILLEEN)
+  district_nces_id: '4800075'
+  enrollment: 1693
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800080:
+  display_name: San Antonio
+  district_name: HERITAGE ACADEMY
+  district_nces_id: '4800080'
+  enrollment: 542
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800179:
+  display_name: San Antonio
+  district_name: JUBILEE ACADEMIES
+  district_nces_id: '4800179'
+  enrollment: 6192
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800258:
+  display_name: San Antonio
+  district_name: SCHOOL OF SCIENCE AND TECHNOLOGY
+  district_nces_id: '4800258'
+  enrollment: 4315
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800266:
+  display_name: San Antonio
+  district_name: HARMONY PUBLIC SCHOOLS - SOUTH TEXAS
+  district_nces_id: '4800266'
+  enrollment: 4826
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4800268:
+  display_name: San Antonio
+  district_name: SOMERSET ACADEMIES OF TEXAS
+  district_nces_id: '4800268'
+  enrollment: 3097
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4801400:
+  display_name: San Antonio
+  district_name: SCHOOL OF SCIENCE AND TECHNOLOGY DISCOVERY
+  district_nces_id: '4801400'
+  enrollment: 5644
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4801438:
+  display_name: San Antonio
+  district_name: BASIS TEXAS
+  district_nces_id: '4801438'
+  enrollment: 4972
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4801441:
+  display_name: San Antonio
+  district_name: GREAT HEARTS TEXAS
+  district_nces_id: '4801441'
+  enrollment: 9970
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4801457:
+  display_name: San Antonio
+  district_name: COMPASS ROSE PUBLIC SCHOOLS
+  district_nces_id: '4801457'
+  enrollment: 2702
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4801471:
+  display_name: San Antonio
+  district_name: THE GATHERING PLACE
+  district_nces_id: '4801471'
+  enrollment: 628
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4807590:
+  display_name: San Antonio
+  district_name: ALAMO HEIGHTS ISD
+  district_nces_id: '4807590'
+  enrollment: 4762
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4817850:
+  display_name: San Antonio
+  district_name: EAST CENTRAL ISD
+  district_nces_id: '4817850'
+  enrollment: 10617
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4818150:
+  display_name: San Antonio
+  district_name: EDGEWOOD ISD
+  district_nces_id: '4818150'
+  enrollment: 8177
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4820160:
+  display_name: San Antonio
+  district_name: FT SAM HOUSTON ISD
+  district_nces_id: '4820160'
+  enrollment: 1627
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4822470:
+  display_name: San Antonio
+  district_name: HARLANDALE ISD
+  district_nces_id: '4822470'
+  enrollment: 12174
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4824990:
+  display_name: San Antonio
+  district_name: JUDSON ISD
+  district_nces_id: '4824990'
+  enrollment: 25871
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4826370:
+  display_name: San Antonio
+  district_name: LACKLAND ISD
+  district_nces_id: '4826370'
+  enrollment: 968
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4832940:
+  display_name: San Antonio
+  district_name: NORTH EAST ISD
+  district_nces_id: '4832940'
+  enrollment: 59007
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4833120:
+  display_name: San Antonio
+  district_name: NORTHSIDE ISD
+  district_nces_id: '4833120'
+  enrollment: 102719
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4838730:
+  display_name: San Antonio
+  district_name: SAN ANTONIO ISD
+  district_nces_id: '4838730'
+  enrollment: 45255
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4840680:
+  display_name: San Antonio
+  district_name: SOUTH SAN ANTONIO ISD
+  district_nces_id: '4840680'
+  enrollment: 7872
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4840920:
+  display_name: San Antonio
+  district_name: SOUTHSIDE ISD
+  district_nces_id: '4840920'
+  enrollment: 5965
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-antonio-4840950:
+  display_name: San Antonio
+  district_name: SOUTHWEST ISD
+  district_nces_id: '4840950'
+  enrollment: 13747
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-augustine:
+  display_name: San Augustine
+  district_name: SAN AUGUSTINE ISD
+  district_nces_id: '4838760'
+  enrollment: 657
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-benito:
+  display_name: San Benito
+  district_name: SAN BENITO CISD
+  district_nces_id: '4838790'
+  enrollment: 9354
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-diego:
+  display_name: San Diego
+  district_name: SAN DIEGO ISD
+  district_nces_id: '4838820'
+  enrollment: 1495
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-elizario:
+  display_name: San Elizario
+  district_name: SAN ELIZARIO ISD
+  district_nces_id: '4838850'
+  enrollment: 3177
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-marcos:
+  display_name: San Marcos
+  district_name: SAN MARCOS CISD
+  district_nces_id: '4838970'
+  enrollment: 8447
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-san-saba:
+  display_name: San Saba
+  district_name: SAN SABA ISD
+  district_nces_id: '4839030'
+  enrollment: 684
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sanger:
+  display_name: Sanger
+  district_name: SANGER ISD
+  district_nces_id: '4839180'
+  enrollment: 2801
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-santa-fe:
+  display_name: Santa Fe
+  district_name: SANTA FE ISD
+  district_nces_id: '4839270'
+  enrollment: 4343
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-santa-maria:
+  display_name: Santa Maria
+  district_name: SANTA MARIA ISD
+  district_nces_id: '4839330'
+  enrollment: 567
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-santa-rosa:
+  display_name: Santa Rosa
+  district_name: SANTA ROSA ISD
+  district_nces_id: '4839360'
+  enrollment: 915
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-santo:
+  display_name: Santo
+  district_name: SANTO ISD
+  district_nces_id: '4839390'
+  enrollment: 546
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-saratoga:
+  display_name: Saratoga
+  district_name: WEST HARDIN COUNTY CISD
+  district_nces_id: '4845000'
+  enrollment: 552
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-schertz:
+  display_name: Schertz
+  district_name: SCHERTZ-CIBOLO-U CITY ISD
+  district_nces_id: '4839480'
+  enrollment: 15528
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-schulenburg:
+  display_name: Schulenburg
+  district_name: SCHULENBURG ISD
+  district_nces_id: '4839540'
+  enrollment: 687
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-scurry:
+  display_name: Scurry
+  district_name: SCURRY-ROSSER ISD
+  district_nces_id: '4839570'
+  enrollment: 1066
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-seagraves:
+  display_name: Seagraves
+  district_name: SEAGRAVES ISD
+  district_nces_id: '4839600'
+  enrollment: 505
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sealy:
+  display_name: Sealy
+  district_name: SEALY ISD
+  district_nces_id: '4839630'
+  enrollment: 2908
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-seguin-4832160:
+  display_name: Seguin
+  district_name: NAVARRO ISD
+  district_nces_id: '4832160'
+  enrollment: 2180
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-seguin-4839690:
+  display_name: Seguin
+  district_name: SEGUIN ISD
+  district_nces_id: '4839690'
+  enrollment: 7239
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-seminole:
+  display_name: Seminole
+  district_name: SEMINOLE ISD
+  district_nces_id: '4839750'
+  enrollment: 3011
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-seymour:
+  display_name: Seymour
+  district_name: SEYMOUR ISD
+  district_nces_id: '4839780'
+  enrollment: 644
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-shallowater:
+  display_name: Shallowater
+  district_name: SHALLOWATER ISD
+  district_nces_id: '4839870'
+  enrollment: 1762
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-shelbyville:
+  display_name: Shelbyville
+  district_name: SHELBYVILLE ISD
+  district_nces_id: '4839960'
+  enrollment: 831
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-shepherd:
+  display_name: Shepherd
+  district_name: SHEPHERD ISD
+  district_nces_id: '4840020'
+  enrollment: 1958
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sherman:
+  display_name: Sherman
+  district_name: SHERMAN ISD
+  district_nces_id: '4840080'
+  enrollment: 7767
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-shiner:
+  display_name: Shiner
+  district_name: SHINER ISD
+  district_nces_id: '4840110'
+  enrollment: 724
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-silsbee:
+  display_name: Silsbee
+  district_name: SILSBEE ISD
+  district_nces_id: '4840230'
+  enrollment: 2772
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sinton:
+  display_name: Sinton
+  district_name: SINTON ISD
+  district_nces_id: '4840350'
+  enrollment: 2071
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-skidmore:
+  display_name: Skidmore
+  district_name: SKIDMORE-TYNAN ISD
+  district_nces_id: '4840410'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-slaton:
+  display_name: Slaton
+  district_name: SLATON ISD
+  district_nces_id: '4840440'
+  enrollment: 1268
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-smithville:
+  display_name: Smithville
+  district_name: SMITHVILLE ISD
+  district_nces_id: '4840550'
+  enrollment: 1885
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-snyder:
+  display_name: Snyder
+  district_name: SNYDER ISD
+  district_nces_id: '4840650'
+  enrollment: 2560
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-somerset:
+  display_name: Somerset
+  district_name: SOMERSET ISD
+  district_nces_id: '4840740'
+  enrollment: 4147
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-somerville-4840620:
+  display_name: Somerville
+  district_name: SNOOK ISD
+  district_nces_id: '4840620'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-somerville-4840770:
+  display_name: Somerville
+  district_name: SOMERVILLE ISD
+  district_nces_id: '4840770'
+  enrollment: 533
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sonora:
+  display_name: Sonora
+  district_name: SONORA ISD
+  district_nces_id: '4840800'
+  enrollment: 675
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sour-lake:
+  display_name: Sour Lake
+  district_name: HARDIN-JEFFERSON ISD
+  district_nces_id: '4822410'
+  enrollment: 2697
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-southlake:
+  display_name: Southlake
+  district_name: CARROLL ISD
+  district_nces_id: '4813020'
+  enrollment: 8471
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-spearman:
+  display_name: Spearman
+  district_name: SPEARMAN ISD
+  district_nces_id: '4841010'
+  enrollment: 743
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-splendora:
+  display_name: Splendora
+  district_name: SPLENDORA ISD
+  district_nces_id: '4841070'
+  enrollment: 4866
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-spring:
+  display_name: Spring
+  district_name: SAM HOUSTON STATE UNIVERSITY CHARTER SCHOOL
+  district_nces_id: '4801454'
+  enrollment: 501
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-springtown:
+  display_name: Springtown
+  district_name: SPRINGTOWN ISD
+  district_nces_id: '4841280'
+  enrollment: 4120
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-stafford:
+  display_name: Stafford
+  district_name: STAFFORD MSD
+  district_nces_id: '4841350'
+  enrollment: 3641
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-stamford:
+  display_name: Stamford
+  district_name: STAMFORD ISD
+  district_nces_id: '4841400'
+  enrollment: 604
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-stanton:
+  display_name: Stanton
+  district_name: STANTON ISD
+  district_nces_id: '4841430'
+  enrollment: 1081
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-stephenville:
+  display_name: Stephenville
+  district_name: STEPHENVILLE ISD
+  district_nces_id: '4841520'
+  enrollment: 3730
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-stinnett:
+  display_name: Stinnett
+  district_name: PLEMONS-STINNETT-PHILLIPS CISD
+  district_nces_id: '4841580'
+  enrollment: 573
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-stockdale:
+  display_name: Stockdale
+  district_name: STOCKDALE ISD
+  district_nces_id: '4841610'
+  enrollment: 857
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-stratford:
+  display_name: Stratford
+  district_name: STRATFORD ISD
+  district_nces_id: '4841670'
+  enrollment: 575
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sugar-land-4800210:
+  display_name: Sugar Land
+  district_name: HARMONY PUBLIC SCHOOLS - HOUSTON SOUTH
+  district_nces_id: '4800210'
+  enrollment: 3501
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-sugar-land-4801405:
+  display_name: Sugar Land
+  district_name: HARMONY PUBLIC SCHOOLS - HOUSTON WEST
+  district_nces_id: '4801405'
+  enrollment: 5405
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-sugar-land-4819650:
+  display_name: Sugar Land
+  district_name: FORT BEND ISD
+  district_nces_id: '4819650'
+  enrollment: 79660
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sulphur-springs-4832970:
+  display_name: Sulphur Springs
+  district_name: NORTH HOPKINS ISD
+  district_nces_id: '4832970'
+  enrollment: 516
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sulphur-springs-4841820:
+  display_name: Sulphur Springs
+  district_name: SULPHUR SPRINGS ISD
+  district_nces_id: '4841820'
+  enrollment: 4361
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sundown:
+  display_name: Sundown
+  district_name: SUNDOWN ISD
+  district_nces_id: '4841850'
+  enrollment: 592
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sunnyvale:
+  display_name: Sunnyvale
+  district_name: SUNNYVALE ISD
+  district_nces_id: '4841880'
+  enrollment: 2205
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sunray:
+  display_name: Sunray
+  district_name: SUNRAY COLLEGIATE ISD
+  district_nces_id: '4841910'
+  enrollment: 675
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sweeny:
+  display_name: Sweeny
+  district_name: SWEENY ISD
+  district_nces_id: '4841970'
+  enrollment: 1898
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-sweetwater:
+  display_name: Sweetwater
+  district_name: SWEETWATER ISD
+  district_nces_id: '4842030'
+  enrollment: 1942
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-taft:
+  display_name: Taft
+  district_name: TAFT ISD
+  district_nces_id: '4842060'
+  enrollment: 822
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tahoka:
+  display_name: Tahoka
+  district_name: TAHOKA ISD
+  district_nces_id: '4842090'
+  enrollment: 595
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tatum:
+  display_name: Tatum
+  district_name: TATUM ISD
+  district_nces_id: '4842240'
+  enrollment: 1476
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-taylor:
+  display_name: Taylor
+  district_name: TAYLOR ISD
+  district_nces_id: '4842280'
+  enrollment: 3138
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-teague:
+  display_name: Teague
+  district_name: TEAGUE ISD
+  district_nces_id: '4842300'
+  enrollment: 1216
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-temple:
+  display_name: Temple
+  district_name: TEMPLE ISD
+  district_nces_id: '4842330'
+  enrollment: 8615
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tennessee-colony:
+  display_name: Tennessee Colony
+  district_name: CAYUGA ISD
+  district_nces_id: '4813200'
+  enrollment: 594
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-terrell:
+  display_name: Terrell
+  district_name: TERRELL ISD
+  district_nces_id: '4842450'
+  enrollment: 5208
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-texarkana-4827390:
+  display_name: Texarkana
+  district_name: LIBERTY-EYLAU ISD
+  district_nces_id: '4827390'
+  enrollment: 2003
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-texarkana-4835130:
+  display_name: Texarkana
+  district_name: PLEASANT GROVE ISD
+  district_nces_id: '4835130'
+  enrollment: 2310
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-texarkana-4836630:
+  display_name: Texarkana
+  district_name: RED LICK ISD
+  district_nces_id: '4836630'
+  enrollment: 527
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-texarkana-4836750:
+  display_name: Texarkana
+  district_name: REDWATER ISD
+  district_nces_id: '4836750'
+  enrollment: 1059
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-texarkana-4842480:
+  display_name: Texarkana
+  district_name: TEXARKANA ISD
+  district_nces_id: '4842480'
+  enrollment: 7180
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-texas-city-4800108:
+  display_name: Texas City
+  district_name: ODYSSEY ACADEMY INC
+  district_nces_id: '4800108'
+  enrollment: 1573
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-texas-city-4842510:
+  display_name: Texas City
+  district_name: TEXAS CITY ISD
+  district_nces_id: '4842510'
+  enrollment: 7890
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-thorndale:
+  display_name: Thorndale
+  district_name: THORNDALE ISD
+  district_nces_id: '4842630'
+  enrollment: 617
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-thrall:
+  display_name: Thrall
+  district_name: THRALL ISD
+  district_nces_id: '4842660'
+  enrollment: 819
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-three-rivers:
+  display_name: Three Rivers
+  district_name: THREE RIVERS ISD
+  district_nces_id: '4842690'
+  enrollment: 585
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-timpson:
+  display_name: Timpson
+  district_name: TIMPSON ISD
+  district_nces_id: '4842840'
+  enrollment: 705
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tioga:
+  display_name: Tioga
+  district_name: TIOGA ISD
+  district_nces_id: '4842870'
+  enrollment: 719
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tolar:
+  display_name: Tolar
+  district_name: TOLAR ISD
+  district_nces_id: '4842900'
+  enrollment: 878
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tom-bean:
+  display_name: Tom Bean
+  district_name: TOM BEAN ISD
+  district_nces_id: '4842930'
+  enrollment: 666
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tomball:
+  display_name: Tomball
+  district_name: TOMBALL ISD
+  district_nces_id: '4842960'
+  enrollment: 21426
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tornillo:
+  display_name: Tornillo
+  district_name: TORNILLO ISD
+  district_nces_id: '4842990'
+  enrollment: 829
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-trenton:
+  display_name: Trenton
+  district_name: TRENTON ISD
+  district_nces_id: '4843140'
+  enrollment: 699
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-trinity:
+  display_name: Trinity
+  district_name: TRINITY ISD
+  district_nces_id: '4843200'
+  enrollment: 1200
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-troup:
+  display_name: Troup
+  district_name: TROUP ISD
+  district_nces_id: '4843230'
+  enrollment: 1087
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-troy:
+  display_name: Troy
+  district_name: TROY ISD
+  district_nces_id: '4843260'
+  enrollment: 1690
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tulia:
+  display_name: Tulia
+  district_name: TULIA ISD
+  district_nces_id: '4843320'
+  enrollment: 896
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tuscola:
+  display_name: Tuscola
+  district_name: JIM NED CISD
+  district_nces_id: '4824780'
+  enrollment: 1624
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tyler-4800034:
+  display_name: Tyler
+  district_name: CUMBERLAND ACADEMY
+  district_nces_id: '4800034'
+  enrollment: 2037
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-tyler-4801427:
+  display_name: Tyler
+  district_name: UT TYLER UNIVERSITY ACADEMY
+  district_nces_id: '4801427'
+  enrollment: 872
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-tyler-4813650:
+  display_name: Tyler
+  district_name: CHAPEL HILL ISD
+  district_nces_id: '4813650'
+  enrollment: 3308
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-tyler-4843470:
+  display_name: Tyler
+  district_name: TYLER ISD
+  district_nces_id: '4843470'
+  enrollment: 18328
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-uvalde:
+  display_name: Uvalde
+  district_name: UVALDE CISD
+  district_nces_id: '4843720'
+  enrollment: 4071
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-valley-mills:
+  display_name: Valley Mills
+  district_name: VALLEY MILLS ISD
+  district_nces_id: '4843760'
+  enrollment: 665
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-valley-view:
+  display_name: Valley View
+  district_name: VALLEY VIEW ISD
+  district_nces_id: '4843860'
+  enrollment: 920
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-van:
+  display_name: Van
+  district_name: VAN ISD
+  district_nces_id: '4843920'
+  enrollment: 2407
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-van-alstyne:
+  display_name: Van Alstyne
+  district_name: VAN ALSTYNE ISD
+  district_nces_id: '4843890'
+  enrollment: 2285
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-van-vleck:
+  display_name: Van Vleck
+  district_name: VAN VLECK ISD
+  district_nces_id: '4843950'
+  enrollment: 1071
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-vanderbilt:
+  display_name: Vanderbilt
+  district_name: INDUSTRIAL ISD
+  district_nces_id: '4824150'
+  enrollment: 1188
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-venus:
+  display_name: Venus
+  district_name: VENUS ISD
+  district_nces_id: '4844010'
+  enrollment: 2319
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-vernon:
+  display_name: Vernon
+  district_name: VERNON ISD
+  district_nces_id: '4844110'
+  enrollment: 1792
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-victoria:
+  display_name: Victoria
+  district_name: VICTORIA ISD
+  district_nces_id: '4844150'
+  enrollment: 13246
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-vidor:
+  display_name: Vidor
+  district_name: VIDOR ISD
+  district_nces_id: '4844160'
+  enrollment: 4315
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-waco-4800042:
+  display_name: Waco
+  district_name: RAPOPORT ACADEMY PUBLIC SCHOOL
+  district_nces_id: '4800042'
+  enrollment: 859
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-waco-4810910:
+  display_name: Waco
+  district_name: BOSQUEVILLE ISD
+  district_nces_id: '4810910'
+  enrollment: 720
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-waco-4814970:
+  display_name: Waco
+  district_name: CONNALLY ISD
+  district_nces_id: '4814970'
+  enrollment: 2332
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-waco-4826280:
+  display_name: Waco
+  district_name: LA VEGA ISD
+  district_nces_id: '4826280'
+  enrollment: 3017
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-waco-4844280:
+  display_name: Waco
+  district_name: WACO ISD
+  district_nces_id: '4844280'
+  enrollment: 13824
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-wall:
+  display_name: Wall
+  district_name: WALL ISD
+  district_nces_id: '4844410'
+  enrollment: 1312
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-waller:
+  display_name: Waller
+  district_name: WALLER ISD
+  district_nces_id: '4844430'
+  enrollment: 8834
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wallis:
+  display_name: Wallis
+  district_name: BRAZOS ISD
+  district_nces_id: '4844470'
+  enrollment: 851
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-warren:
+  display_name: Warren
+  district_name: WARREN ISD
+  district_nces_id: '4844580'
+  enrollment: 1268
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-waskom-4818480:
+  display_name: Waskom
+  district_name: ELYSIAN FIELDS ISD
+  district_nces_id: '4818480'
+  enrollment: 813
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-waskom-4844670:
+  display_name: Waskom
+  district_name: WASKOM ISD
+  district_nces_id: '4844670'
+  enrollment: 825
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-waxahachie:
+  display_name: Waxahachie
+  district_name: WAXAHACHIE ISD
+  district_nces_id: '4844730'
+  enrollment: 10837
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-weatherford-4834500:
+  display_name: Weatherford
+  district_name: PEASTER ISD
+  district_nces_id: '4834500'
+  enrollment: 1750
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-weatherford-4844800:
+  display_name: Weatherford
+  district_name: WEATHERFORD ISD
+  district_nces_id: '4844800'
+  enrollment: 8255
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-weimar:
+  display_name: Weimar
+  district_name: WEIMAR ISD
+  district_nces_id: '4844820'
+  enrollment: 704
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wellington:
+  display_name: Wellington
+  district_name: WELLINGTON ISD
+  district_nces_id: '4844890'
+  enrollment: 530
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-weslaco-1200084:
+  display_name: Weslaco
+  district_name: IDEA PUBLIC SCHOOLS
+  district_nces_id: '1200084'
+  enrollment: 2334
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-weslaco-4800065:
+  display_name: Weslaco
+  district_name: HORIZON MONTESSORI PUBLIC SCHOOLS
+  district_nces_id: '4800065'
+  enrollment: 1469
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-weslaco-4800211:
+  display_name: Weslaco
+  district_name: IDEA PUBLIC SCHOOLS
+  district_nces_id: '4800211'
+  enrollment: 74217
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-weslaco-4844960:
+  display_name: Weslaco
+  district_name: WESLACO ISD
+  district_nces_id: '4844960'
+  enrollment: 16491
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-west:
+  display_name: West
+  district_name: WEST ISD
+  district_nces_id: '4845040'
+  enrollment: 1265
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-west-columbia:
+  display_name: West Columbia
+  district_name: COLUMBIA-BRAZORIA ISD
+  district_nces_id: '4814670'
+  enrollment: 2927
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-westlake:
+  display_name: Westlake
+  district_name: WESTLAKE ACADEMY CHARTER SCHOOL
+  district_nces_id: '4800254'
+  enrollment: 875
+  has_charters: true
+  source: ccd_auto
+  state: TX
+tx-wharton:
+  display_name: Wharton
+  district_name: WHARTON ISD
+  district_nces_id: '4845380'
+  enrollment: 1844
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-white-oak:
+  display_name: White Oak
+  district_name: WHITE OAK ISD
+  district_nces_id: '4845480'
+  enrollment: 1440
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-white-settlement:
+  display_name: White Settlement
+  district_name: WHITE SETTLEMENT ISD
+  district_nces_id: '4845540'
+  enrollment: 6972
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-whitehouse:
+  display_name: Whitehouse
+  district_name: WHITEHOUSE ISD
+  district_nces_id: '4845600'
+  enrollment: 4916
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-whitesboro:
+  display_name: Whitesboro
+  district_name: WHITESBORO ISD
+  district_nces_id: '4845630'
+  enrollment: 1712
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-whitewright:
+  display_name: Whitewright
+  district_name: WHITEWRIGHT ISD
+  district_nces_id: '4845670'
+  enrollment: 788
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-whitney:
+  display_name: Whitney
+  district_name: WHITNEY ISD
+  district_nces_id: '4845720'
+  enrollment: 1522
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wichita-falls-4814130:
+  display_name: Wichita Falls
+  district_name: CITY VIEW ISD
+  district_nces_id: '4814130'
+  enrollment: 1133
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wichita-falls-4845780:
+  display_name: Wichita Falls
+  district_name: WICHITA FALLS ISD
+  district_nces_id: '4845780'
+  enrollment: 13296
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-willis:
+  display_name: Willis
+  district_name: WILLIS ISD
+  district_nces_id: '4845900'
+  enrollment: 8793
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wills-point:
+  display_name: Wills Point
+  district_name: WILLS POINT ISD
+  district_nces_id: '4845950'
+  enrollment: 2765
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wimberley:
+  display_name: Wimberley
+  district_name: WIMBERLEY ISD
+  district_nces_id: '4800009'
+  enrollment: 2700
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-windthorst:
+  display_name: Windthorst
+  district_name: WINDTHORST ISD
+  district_nces_id: '4846080'
+  enrollment: 527
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-winnie:
+  display_name: Winnie
+  district_name: EAST CHAMBERS ISD
+  district_nces_id: '4817880'
+  enrollment: 1556
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-winnsboro:
+  display_name: Winnsboro
+  district_name: WINNSBORO ISD
+  district_nces_id: '4846200'
+  enrollment: 1539
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-winona:
+  display_name: Winona
+  district_name: WINONA ISD
+  district_nces_id: '4846230'
+  enrollment: 1104
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-winters:
+  display_name: Winters
+  district_name: WINTERS ISD
+  district_nces_id: '4846260'
+  enrollment: 561
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wolfe-city:
+  display_name: Wolfe City
+  district_name: WOLFE CITY ISD
+  district_nces_id: '4846350'
+  enrollment: 720
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wolfforth:
+  display_name: Wolfforth
+  district_name: FRENSHIP ISD
+  district_nces_id: '4819830'
+  enrollment: 11165
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-woodville:
+  display_name: Woodville
+  district_name: WOODVILLE ISD
+  district_nces_id: '4846440'
+  enrollment: 1239
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-woodway:
+  display_name: Woodway
+  district_name: MIDWAY ISD
+  district_nces_id: '4830640'
+  enrollment: 8739
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wortham:
+  display_name: Wortham
+  district_name: WORTHAM ISD
+  district_nces_id: '4846470'
+  enrollment: 552
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-wylie:
+  display_name: Wylie
+  district_name: WYLIE ISD
+  district_nces_id: '4846530'
+  enrollment: 18850
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-yoakum:
+  display_name: Yoakum
+  district_name: YOAKUM ISD
+  district_nces_id: '4846620'
+  enrollment: 1546
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-yorktown:
+  display_name: Yorktown
+  district_name: YORKTOWN ISD
+  district_nces_id: '4846650'
+  enrollment: 536
+  has_charters: false
+  source: ccd_auto
+  state: TX
+tx-zapata:
+  display_name: Zapata
+  district_name: ZAPATA COUNTY ISD
+  district_nces_id: '4846710'
+  enrollment: 3376
+  has_charters: false
+  source: ccd_auto
+  state: TX

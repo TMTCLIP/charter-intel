@@ -1,0 +1,424 @@
+sd-aberdeen:
+  display_name: Aberdeen
+  district_name: Aberdeen School District 06-1
+  district_nces_id: '4602070'
+  enrollment: 4326
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-baltic:
+  display_name: Baltic
+  district_name: Baltic School District 49-1
+  district_nces_id: '4604680'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-batesland:
+  display_name: Batesland
+  district_name: Oglala Lakota County 65-1
+  district_nces_id: '4665460'
+  enrollment: 1797
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-belle-fourche:
+  display_name: Belle Fourche
+  district_name: Belle Fourche School District 09-1
+  district_nces_id: '4605610'
+  enrollment: 1329
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-beresford:
+  display_name: Beresford
+  district_name: Beresford School District 61-2
+  district_nces_id: '4606360'
+  enrollment: 708
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-box-elder:
+  display_name: Box Elder
+  district_name: Douglas School District 51-1
+  district_nces_id: '4619410'
+  enrollment: 2750
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-brandon:
+  display_name: Brandon
+  district_name: Brandon Valley School District 49-2
+  district_nces_id: '4607950'
+  enrollment: 4948
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-brookings:
+  display_name: Brookings
+  district_name: Brookings School District 05-1
+  district_nces_id: '4608520'
+  enrollment: 3431
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-canton:
+  display_name: Canton
+  district_name: Canton School District 41-1
+  district_nces_id: '4610560'
+  enrollment: 874
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-chamberlain:
+  display_name: Chamberlain
+  district_name: Chamberlain School District 07-1
+  district_nces_id: '4612000'
+  enrollment: 851
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-chester:
+  display_name: Chester
+  district_name: Chester Area School District 39-1
+  district_nces_id: '4612300'
+  enrollment: 576
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-clear-lake:
+  display_name: Clear Lake
+  district_name: Deuel School District 19-4
+  district_nces_id: '4600036'
+  enrollment: 544
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-colton:
+  display_name: Colton
+  district_name: Tri-Valley School District 49-6
+  district_nces_id: '4644940'
+  enrollment: 945
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-custer:
+  display_name: Custer
+  district_name: Custer School District 16-1
+  district_nces_id: '4616950'
+  enrollment: 911
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-dell-rapids:
+  display_name: Dell Rapids
+  district_name: Dell Rapids School District 49-3
+  district_nces_id: '4618120'
+  enrollment: 982
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-eagle-butte:
+  display_name: Eagle Butte
+  district_name: Cheyenne-Eagle Butte School
+  district_nces_id: '5900051'
+  enrollment: 830
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-elk-point:
+  display_name: Elk Point
+  district_name: Elk Point-Jefferson School District 61-7
+  district_nces_id: '4621340'
+  enrollment: 688
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-flandreau:
+  display_name: Flandreau
+  district_name: Flandreau School District 50-3
+  district_nces_id: '4624390'
+  enrollment: 694
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-groton:
+  display_name: Groton
+  district_name: Groton Area School District 06-6
+  district_nces_id: '4600045'
+  enrollment: 597
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-harrisburg:
+  display_name: Harrisburg
+  district_name: Harrisburg School District 41-2
+  district_nces_id: '4631350'
+  enrollment: 5912
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-hartford:
+  display_name: Hartford
+  district_name: West Central School District 49-7
+  district_nces_id: '4631710'
+  enrollment: 1412
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-hayti:
+  display_name: Hayti
+  district_name: Hamlin School District 28-3
+  district_nces_id: '4630800'
+  enrollment: 870
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-hot-springs:
+  display_name: Hot Springs
+  district_name: Hot Springs School District 23-2
+  district_nces_id: '4634480'
+  enrollment: 772
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-huron:
+  display_name: Huron
+  district_name: Huron School District 02-2
+  district_nces_id: '4635480'
+  enrollment: 2906
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-kyle:
+  display_name: Kyle
+  district_name: Little Wound School
+  district_nces_id: '5900173'
+  enrollment: 828
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-lead:
+  display_name: Lead
+  district_name: Lead-Deadwood School District 40-1
+  district_nces_id: '4641300'
+  enrollment: 736
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-lennox:
+  display_name: Lennox
+  district_name: Lennox School District 41-4
+  district_nces_id: '4641550'
+  enrollment: 1211
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-madison:
+  display_name: Madison
+  district_name: Madison Central School District 39-2
+  district_nces_id: '4639600'
+  enrollment: 1147
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-milbank:
+  display_name: Milbank
+  district_name: Milbank School District 25-4
+  district_nces_id: '4600002'
+  enrollment: 1033
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-mission:
+  display_name: Mission
+  district_name: Todd County School District 66-1
+  district_nces_id: '4672090'
+  enrollment: 2047
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-mitchell:
+  display_name: Mitchell
+  district_name: Mitchell School District 17-2
+  district_nces_id: '4648390'
+  enrollment: 2722
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-mobridge:
+  display_name: Mobridge
+  district_name: Mobridge-Pollock 62-6
+  district_nces_id: '4680441'
+  enrollment: 571
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-north-sioux-city:
+  display_name: North Sioux City
+  district_name: Dakota Valley School District 61-8
+  district_nces_id: '4636990'
+  enrollment: 1387
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-parkston:
+  display_name: Parkston
+  district_name: Parkston School District 33-3
+  district_nces_id: '4654300'
+  enrollment: 562
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-pierre:
+  display_name: Pierre
+  district_name: Pierre School District 32-2
+  district_nces_id: '4655260'
+  enrollment: 2762
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-pine-ridge:
+  display_name: Pine Ridge
+  district_name: Pine Ridge School
+  district_nces_id: '5900080'
+  enrollment: 740
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-platte:
+  display_name: Platte
+  district_name: Platte - Geddes School District 11-5
+  district_nces_id: '4680438'
+  enrollment: 512
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-rapid-city:
+  display_name: Rapid City
+  district_name: Rapid City Area School District 51-4
+  district_nces_id: '4659820'
+  enrollment: 12747
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-redfield:
+  display_name: Redfield
+  district_name: Redfield School District 56-4
+  district_nces_id: '4660450'
+  enrollment: 555
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-sioux-falls:
+  display_name: Sioux Falls
+  district_name: Sioux Falls School District 49-5
+  district_nces_id: '4666270'
+  enrollment: 25123
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-sisseton:
+  display_name: Sisseton
+  district_name: Sisseton School District 54-2
+  district_nces_id: '4600053'
+  enrollment: 979
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-spearfish:
+  display_name: Spearfish
+  district_name: Spearfish School District 40-2
+  district_nces_id: '4666930'
+  enrollment: 2423
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-st-francis:
+  display_name: St. Francis
+  district_name: St. Francis Indian School
+  district_nces_id: '5900091'
+  enrollment: 616
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-sturgis:
+  display_name: Sturgis
+  district_name: Meade School District 46-1
+  district_nces_id: '4669930'
+  enrollment: 3058
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-tea:
+  display_name: Tea
+  district_name: Tea Area School District 41-5
+  district_nces_id: '4600052'
+  enrollment: 2361
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-tyndall:
+  display_name: Tyndall
+  district_name: Bon Homme School District 04-2
+  district_nces_id: '4607400'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-vermillion:
+  display_name: Vermillion
+  district_name: Vermillion School District 13-1
+  district_nces_id: '4674370'
+  enrollment: 1436
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-volga:
+  display_name: Volga
+  district_name: Sioux Valley School District 05-5
+  district_nces_id: '4666300'
+  enrollment: 739
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-wagner:
+  display_name: Wagner
+  district_name: Wagner Community School District 11-4
+  district_nces_id: '4675420'
+  enrollment: 905
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-watertown:
+  display_name: Watertown
+  district_name: Watertown School District 14-4
+  district_nces_id: '4676620'
+  enrollment: 3803
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-webster:
+  display_name: Webster
+  district_name: Webster Area 18-5
+  district_nces_id: '4676990'
+  enrollment: 551
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-winner:
+  display_name: Winner
+  district_name: Winner School District 59-2
+  district_nces_id: '4679710'
+  enrollment: 814
+  has_charters: false
+  source: ccd_auto
+  state: SD
+sd-yankton:
+  display_name: Yankton
+  district_name: Yankton School District 63-3
+  district_nces_id: '4680430'
+  enrollment: 3036
+  has_charters: false
+  source: ccd_auto
+  state: SD

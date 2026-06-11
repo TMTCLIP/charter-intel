@@ -1,0 +1,2384 @@
+mo-adrian:
+  display_name: Adrian
+  district_name: ADRIAN R-III
+  district_nces_id: '2902850'
+  enrollment: 730
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-alton:
+  display_name: Alton
+  district_name: ALTON R-IV
+  district_nces_id: '2903060'
+  enrollment: 619
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-anderson:
+  display_name: Anderson
+  district_name: MCDONALD CO. R-I
+  district_nces_id: '2920610'
+  enrollment: 3522
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-archie:
+  display_name: Archie
+  district_name: ARCHIE R-V
+  district_nces_id: '2903200'
+  enrollment: 516
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-arnold:
+  display_name: Arnold
+  district_name: FOX C-6
+  district_nces_id: '2912300'
+  enrollment: 10707
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-ash-grove:
+  display_name: Ash Grove
+  district_name: ASH GROVE R-IV
+  district_nces_id: '2903270'
+  enrollment: 732
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-ashland:
+  display_name: Ashland
+  district_name: SOUTHERN BOONE CO. R-I
+  district_nces_id: '2928560'
+  enrollment: 2006
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-aurora:
+  display_name: Aurora
+  district_name: AURORA R-VIII
+  district_nces_id: '2904020'
+  enrollment: 1888
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-ava:
+  display_name: Ava
+  district_name: AVA R-I
+  district_nces_id: '2904050'
+  enrollment: 1385
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-belle:
+  display_name: Belle
+  district_name: MARIES CO. R-II
+  district_nces_id: '2900001'
+  enrollment: 730
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-belton:
+  display_name: Belton
+  district_name: BELTON 124
+  district_nces_id: '2904620'
+  enrollment: 4342
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-benton:
+  display_name: Benton
+  district_name: SCOTT CO. R-IV
+  district_nces_id: '2904890'
+  enrollment: 923
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-bernie:
+  display_name: Bernie
+  district_name: BERNIE R-XIII
+  district_nces_id: '2904950'
+  enrollment: 508
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-bethany:
+  display_name: Bethany
+  district_name: SOUTH HARRISON CO. R-II
+  district_nces_id: '2900002'
+  enrollment: 808
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-bismarck:
+  display_name: Bismarck
+  district_name: BISMARCK R-V
+  district_nces_id: '2905130'
+  enrollment: 504
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-bloomfield:
+  display_name: Bloomfield
+  district_name: BLOOMFIELD R-XIV
+  district_nces_id: '2905250'
+  enrollment: 616
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-blue-eye:
+  display_name: Blue Eye
+  district_name: BLUE EYE R-V
+  district_nces_id: '2905280'
+  enrollment: 546
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-blue-springs:
+  display_name: Blue Springs
+  district_name: BLUE SPRINGS R-IV
+  district_nces_id: '2905310'
+  enrollment: 14595
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-bolivar:
+  display_name: Bolivar
+  district_name: BOLIVAR R-I
+  district_nces_id: '2905370'
+  enrollment: 2777
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-bonne-terre:
+  display_name: Bonne Terre
+  district_name: NORTH ST. FRANCOIS CO. R-I
+  district_nces_id: '2905430'
+  enrollment: 2757
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-boonville:
+  display_name: Boonville
+  district_name: BOONVILLE R-I
+  district_nces_id: '2905580'
+  enrollment: 1584
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-bourbon:
+  display_name: Bourbon
+  district_name: CRAWFORD CO. R-I
+  district_nces_id: '2905640'
+  enrollment: 860
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-bowling-green:
+  display_name: Bowling Green
+  district_name: BOWLING GREEN R-I
+  district_nces_id: '2905660'
+  enrollment: 1331
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-branson:
+  display_name: Branson
+  district_name: BRANSON R-IV
+  district_nces_id: '2905760'
+  enrollment: 4560
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-brentwood:
+  display_name: Brentwood
+  district_name: BRENTWOOD
+  district_nces_id: '2905880'
+  enrollment: 775
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-brookfield:
+  display_name: Brookfield
+  district_name: BROOKFIELD R-III
+  district_nces_id: '2905940'
+  enrollment: 877
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-broseley:
+  display_name: Broseley
+  district_name: TWIN RIVERS R-X
+  district_nces_id: '2930520'
+  enrollment: 827
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-buffalo:
+  display_name: Buffalo
+  district_name: DALLAS CO. R-I
+  district_nces_id: '2906120'
+  enrollment: 1782
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-butler:
+  display_name: Butler
+  district_name: BUTLER R-V
+  district_nces_id: '2906360'
+  enrollment: 997
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-cabool:
+  display_name: Cabool
+  district_name: CABOOL R-IV
+  district_nces_id: '2906430'
+  enrollment: 769
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-cadet:
+  display_name: Cadet
+  district_name: KINGSTON K-14
+  district_nces_id: '2931140'
+  enrollment: 833
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-california:
+  display_name: California
+  district_name: MONITEAU CO. R-I
+  district_nces_id: '2906510'
+  enrollment: 1361
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-camdenton:
+  display_name: Camdenton
+  district_name: CAMDENTON R-III
+  district_nces_id: '2906990'
+  enrollment: 3910
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-cameron:
+  display_name: Cameron
+  district_name: CAMERON R-I
+  district_nces_id: '2907020'
+  enrollment: 1651
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-campbell:
+  display_name: Campbell
+  district_name: CAMPBELL R-II
+  district_nces_id: '2907050'
+  enrollment: 554
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-cape-girardeau:
+  display_name: Cape Girardeau
+  district_name: CAPE GIRARDEAU 63
+  district_nces_id: '2907120'
+  enrollment: 4380
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-carl-junction:
+  display_name: Carl Junction
+  district_name: CARL JUNCTION R-I
+  district_nces_id: '2907350'
+  enrollment: 3443
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-carrollton:
+  display_name: Carrollton
+  district_name: CARROLLTON R-VII
+  district_nces_id: '2907380'
+  enrollment: 855
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-carthage:
+  display_name: Carthage
+  district_name: CARTHAGE R-IX
+  district_nces_id: '2907460'
+  enrollment: 5092
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-caruthersville:
+  display_name: Caruthersville
+  district_name: CARUTHERSVILLE 18
+  district_nces_id: '2907470'
+  enrollment: 942
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-cassville:
+  display_name: Cassville
+  district_name: CASSVILLE R-IV
+  district_nces_id: '2908170'
+  enrollment: 1908
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-center:
+  display_name: Center
+  district_name: RALLS CO. R-II
+  district_nces_id: '2925710'
+  enrollment: 834
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-centerview:
+  display_name: Centerview
+  district_name: JOHNSON CO. R-VII
+  district_nces_id: '2908320'
+  enrollment: 535
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-centralia:
+  display_name: Centralia
+  district_name: CENTRALIA R-VI
+  district_nces_id: '2908400'
+  enrollment: 1330
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-chaffee:
+  display_name: Chaffee
+  district_name: CHAFFEE R-II
+  district_nces_id: '2908460'
+  enrollment: 636
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-charleston:
+  display_name: Charleston
+  district_name: CHARLESTON R-I
+  district_nces_id: '2908670'
+  enrollment: 772
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-chesterfield:
+  display_name: Chesterfield
+  district_name: PARKWAY C-2
+  district_nces_id: '2923580'
+  enrollment: 17134
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-chillicothe:
+  display_name: Chillicothe
+  district_name: CHILLICOTHE R-II
+  district_nces_id: '2908760'
+  enrollment: 1809
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-clayton:
+  display_name: Clayton
+  district_name: CLAYTON
+  district_nces_id: '2909720'
+  enrollment: 2351
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-clever:
+  display_name: Clever
+  district_name: CLEVER R-V
+  district_nces_id: '2909780'
+  enrollment: 1337
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-clinton:
+  display_name: Clinton
+  district_name: CLINTON
+  district_nces_id: '2909860'
+  enrollment: 1835
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-cole-camp:
+  display_name: Cole Camp
+  district_name: COLE CAMP R-I
+  district_nces_id: '2909900'
+  enrollment: 756
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-columbia:
+  display_name: Columbia
+  district_name: COLUMBIA 93
+  district_nces_id: '2901000'
+  enrollment: 18800
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-conway:
+  display_name: Conway
+  district_name: LACLEDE CO. R-I
+  district_nces_id: '2910110'
+  enrollment: 817
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-crane:
+  display_name: Crane
+  district_name: CRANE R-III
+  district_nces_id: '2910290'
+  enrollment: 555
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-creighton:
+  display_name: Creighton
+  district_name: SHERWOOD CASS R-VIII
+  district_nces_id: '2910320'
+  enrollment: 799
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-crocker:
+  display_name: Crocker
+  district_name: CROCKER R-II
+  district_nces_id: '2910350'
+  enrollment: 564
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-crystal-city:
+  display_name: Crystal City
+  district_name: CRYSTAL CITY 47
+  district_nces_id: '2910380'
+  enrollment: 542
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-cuba:
+  display_name: Cuba
+  district_name: CRAWFORD CO. R-II
+  district_nces_id: '2910410'
+  enrollment: 1282
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-dearborn:
+  display_name: Dearborn
+  district_name: NORTH PLATTE CO. R-I
+  district_nces_id: '2922830'
+  enrollment: 590
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-desoto:
+  display_name: Desoto
+  district_name: DESOTO 73
+  district_nces_id: '2910500'
+  enrollment: 2543
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-dexter:
+  display_name: Dexter
+  district_name: DEXTER R-XI
+  district_nces_id: '2910770'
+  enrollment: 2039
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-diamond:
+  display_name: Diamond
+  district_name: DIAMOND R-IV
+  district_nces_id: '2910800'
+  enrollment: 763
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-dixon:
+  display_name: Dixon
+  district_name: DIXON R-I
+  district_nces_id: '2910830'
+  enrollment: 898
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-doniphan:
+  display_name: Doniphan
+  district_name: DONIPHAN R-I
+  district_nces_id: '2910920'
+  enrollment: 1558
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-east-prairie:
+  display_name: East Prairie
+  district_name: EAST PRAIRIE R-II
+  district_nces_id: '2911220'
+  enrollment: 1036
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-el-dorado-springs:
+  display_name: El Dorado Springs
+  district_name: EL DORADO SPRINGS R-II
+  district_nces_id: '2911310'
+  enrollment: 1172
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-eldon:
+  display_name: Eldon
+  district_name: ELDON R-I
+  district_nces_id: '2911340'
+  enrollment: 1998
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-ellsinore:
+  display_name: Ellsinore
+  district_name: EAST CARTER CO. R-II
+  district_nces_id: '2911100'
+  enrollment: 652
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-elsberry:
+  display_name: Elsberry
+  district_name: ELSBERRY R-II
+  district_nces_id: '2911400'
+  enrollment: 814
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-eugene:
+  display_name: Eugene
+  district_name: COLE CO. R-V
+  district_nces_id: '2911550'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-eureka:
+  display_name: Eureka
+  district_name: ROCKWOOD R-VI
+  district_nces_id: '2926850'
+  enrollment: 20563
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-excelsior-springs:
+  display_name: Excelsior Springs
+  district_name: EXCELSIOR SPRINGS 40
+  district_nces_id: '2911650'
+  enrollment: 2687
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-fair-grove:
+  display_name: Fair Grove
+  district_name: FAIR GROVE R-X
+  district_nces_id: '2911700'
+  enrollment: 1261
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-farmington:
+  display_name: Farmington
+  district_name: FARMINGTON R-VII
+  district_nces_id: '2911910'
+  enrollment: 3925
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-faucett:
+  display_name: Faucett
+  district_name: MID-BUCHANAN CO. R-V
+  district_nces_id: '2911940'
+  enrollment: 865
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-fayette:
+  display_name: Fayette
+  district_name: FAYETTE R-III
+  district_nces_id: '2911990'
+  enrollment: 663
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-festus-2912030:
+  display_name: Festus
+  district_name: FESTUS R-VI
+  district_nces_id: '2912030'
+  enrollment: 3315
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-festus-2916230:
+  display_name: Festus
+  district_name: JEFFERSON CO. R-VII
+  district_nces_id: '2916230'
+  enrollment: 1108
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-florissant:
+  display_name: Florissant
+  district_name: HAZELWOOD
+  district_nces_id: '2913830'
+  enrollment: 16109
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-fordland:
+  display_name: Fordland
+  district_name: FORDLAND R-III
+  district_nces_id: '2912180'
+  enrollment: 610
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-forsyth:
+  display_name: Forsyth
+  district_name: FORSYTH R-III
+  district_nces_id: '2912240'
+  enrollment: 1305
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-fredericktown:
+  display_name: Fredericktown
+  district_name: FREDERICKTOWN R-I
+  district_nces_id: '2912540'
+  enrollment: 1902
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-fulton:
+  display_name: Fulton
+  district_name: FULTON 58
+  district_nces_id: '2912550'
+  enrollment: 2246
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-gainesville:
+  display_name: Gainesville
+  district_name: GAINESVILLE R-V
+  district_nces_id: '2912600'
+  enrollment: 654
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-gallatin:
+  display_name: Gallatin
+  district_name: GALLATIN R-V
+  district_nces_id: '2912660'
+  enrollment: 548
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-gower:
+  display_name: Gower
+  district_name: EAST BUCHANAN CO. C-1
+  district_nces_id: '2911250'
+  enrollment: 723
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-grain-valley:
+  display_name: Grain Valley
+  district_name: GRAIN VALLEY R-V
+  district_nces_id: '2913080'
+  enrollment: 4506
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-granby:
+  display_name: Granby
+  district_name: EAST NEWTON CO. R-VI
+  district_nces_id: '2930420'
+  enrollment: 1451
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-grandview:
+  display_name: Grandview
+  district_name: GRANDVIEW C-4
+  district_nces_id: '2913140'
+  enrollment: 3689
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-greenville:
+  display_name: Greenville
+  district_name: GREENVILLE R-II
+  district_nces_id: '2913380'
+  enrollment: 683
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hallsville:
+  display_name: Hallsville
+  district_name: HALLSVILLE R-IV
+  district_nces_id: '2913560'
+  enrollment: 1510
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hamilton:
+  display_name: Hamilton
+  district_name: HAMILTON R-II
+  district_nces_id: '2913590'
+  enrollment: 641
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hannibal:
+  display_name: Hannibal
+  district_name: HANNIBAL 60
+  district_nces_id: '2913650'
+  enrollment: 3406
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-harrisburg:
+  display_name: Harrisburg
+  district_name: HARRISBURG R-VIII
+  district_nces_id: '2913710'
+  enrollment: 613
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-harrisonville:
+  display_name: Harrisonville
+  district_name: HARRISONVILLE R-IX
+  district_nces_id: '2913760'
+  enrollment: 2207
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hartville:
+  display_name: Hartville
+  district_name: HARTVILLE R-II
+  district_nces_id: '2913770'
+  enrollment: 682
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hayti:
+  display_name: Hayti
+  district_name: HAYTI R-II
+  district_nces_id: '2913800'
+  enrollment: 603
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hazelwood:
+  display_name: Hazelwood
+  district_name: FERGUSON-FLORISSANT R-II
+  district_nces_id: '2912010'
+  enrollment: 8759
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-herculaneum:
+  display_name: Herculaneum
+  district_name: DUNKLIN R-V
+  district_nces_id: '2914250'
+  enrollment: 1585
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hermann:
+  display_name: Hermann
+  district_name: GASCONADE CO. R-I
+  district_nces_id: '2914280'
+  enrollment: 865
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-higginsville:
+  display_name: Higginsville
+  district_name: LAFAYETTE CO. C-1
+  district_nces_id: '2914400'
+  enrollment: 980
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-highlandville:
+  display_name: Highlandville
+  district_name: SPOKANE R-VII
+  district_nces_id: '2928800'
+  enrollment: 700
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hillsboro-2913170:
+  display_name: Hillsboro
+  district_name: GRANDVIEW R-II
+  district_nces_id: '2913170'
+  enrollment: 2387
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hillsboro-2914430:
+  display_name: Hillsboro
+  district_name: HILLSBORO R-III
+  district_nces_id: '2914430'
+  enrollment: 3289
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-holden:
+  display_name: Holden
+  district_name: HOLDEN R-III
+  district_nces_id: '2914490'
+  enrollment: 1231
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-hollister:
+  display_name: Hollister
+  district_name: HOLLISTER R-V
+  district_nces_id: '2914550'
+  enrollment: 1348
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-house-springs:
+  display_name: House Springs
+  district_name: NORTHWEST R-I
+  district_nces_id: '2922890'
+  enrollment: 5969
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-houston:
+  display_name: Houston
+  district_name: HOUSTON R-I
+  district_nces_id: '2914840'
+  enrollment: 1053
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-huntsville:
+  display_name: Huntsville
+  district_name: WESTRAN R-I
+  district_nces_id: '2931860'
+  enrollment: 610
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-iberia:
+  display_name: Iberia
+  district_name: IBERIA R-V
+  district_nces_id: '2915420'
+  enrollment: 672
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-imperial:
+  display_name: Imperial
+  district_name: WINDSOR C-1
+  district_nces_id: '2932100'
+  enrollment: 2953
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-independence-2912290:
+  display_name: Independence
+  district_name: FORT OSAGE R-I
+  district_nces_id: '2912290'
+  enrollment: 4846
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-independence-2915480:
+  display_name: Independence
+  district_name: INDEPENDENCE 30
+  district_nces_id: '2915480'
+  enrollment: 14406
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-ironton:
+  display_name: Ironton
+  district_name: ARCADIA VALLEY R-II
+  district_nces_id: '2903150'
+  enrollment: 1006
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-jackson:
+  display_name: Jackson
+  district_name: JACKSON R-II
+  district_nces_id: '2915600'
+  enrollment: 5713
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-jefferson-city-2900022:
+  display_name: Jefferson City
+  district_name: MO SCHLS FOR THE SEV DISABLED
+  district_nces_id: '2900022'
+  enrollment: 704
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-jefferson-city-2909930:
+  display_name: Jefferson City
+  district_name: BLAIR OAKS R-II
+  district_nces_id: '2909930'
+  enrollment: 1194
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-jefferson-city-2916190:
+  display_name: Jefferson City
+  district_name: JEFFERSON CITY
+  district_nces_id: '2916190'
+  enrollment: 8683
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-jennings:
+  display_name: Jennings
+  district_name: JENNINGS
+  district_nces_id: '2916290'
+  enrollment: 2407
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-joplin:
+  display_name: Joplin
+  district_name: JOPLIN SCHOOLS
+  district_nces_id: '2916350'
+  enrollment: 7694
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kahoka:
+  display_name: Kahoka
+  district_name: CLARK CO. R-I
+  district_nces_id: '2916380'
+  enrollment: 1136
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900013:
+  display_name: Kansas City
+  district_name: KC INTERNATIONAL ACADEMY
+  district_nces_id: '2900013'
+  enrollment: 665
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900014:
+  display_name: Kansas City
+  district_name: HOGAN PREPARATORY ACADEMY
+  district_nces_id: '2900014'
+  enrollment: 1029
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900017:
+  display_name: Kansas City
+  district_name: ACADEMIE LAFAYETTE
+  district_nces_id: '2900017'
+  enrollment: 1291
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900024:
+  display_name: Kansas City
+  district_name: BROOKSIDE CHARTER SCH.
+  district_nces_id: '2900024'
+  enrollment: 742
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900027:
+  display_name: Kansas City
+  district_name: UNIVERSITY ACADEMY
+  district_nces_id: '2900027'
+  enrollment: 1107
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900029:
+  display_name: Kansas City
+  district_name: GUADALUPE CENTERS SCHOOLS
+  district_nces_id: '2900029'
+  enrollment: 1569
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900031:
+  display_name: Kansas City
+  district_name: 'KIPP: ENDEAVOR ACADEMY'
+  district_nces_id: '2900031'
+  enrollment: 801
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900590:
+  display_name: Kansas City
+  district_name: FRONTIER SCHOOLS
+  district_nces_id: '2900590'
+  enrollment: 1560
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900597:
+  display_name: Kansas City
+  district_name: EWING MARION KAUFFMAN SCHOOL
+  district_nces_id: '2900597'
+  enrollment: 960
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2900603:
+  display_name: Kansas City
+  district_name: CROSSROADS CHARTER SCHOOLS
+  district_nces_id: '2900603'
+  enrollment: 1033
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2908250:
+  display_name: Kansas City
+  district_name: CENTER 58
+  district_nces_id: '2908250'
+  enrollment: 2558
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2914340:
+  display_name: Kansas City
+  district_name: HICKMAN MILLS C-1
+  district_nces_id: '2914340'
+  enrollment: 5121
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2916400:
+  display_name: Kansas City
+  district_name: KANSAS CITY 33
+  district_nces_id: '2916400'
+  enrollment: 14413
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2922800:
+  display_name: Kansas City
+  district_name: NORTH KANSAS CITY 74
+  district_nces_id: '2922800'
+  enrollment: 20561
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kansas-city-2923550:
+  display_name: Kansas City
+  district_name: PARK HILL
+  district_nces_id: '2923550'
+  enrollment: 11976
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kearney:
+  display_name: Kearney
+  district_name: KEARNEY R-I
+  district_nces_id: '2916450'
+  enrollment: 3561
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kennett:
+  display_name: Kennett
+  district_name: KENNETT 39
+  district_nces_id: '2916500'
+  enrollment: 1864
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kingdom-city:
+  display_name: Kingdom City
+  district_name: NORTH CALLAWAY CO. R-I
+  district_nces_id: '2922740'
+  enrollment: 1013
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kirksville:
+  display_name: Kirksville
+  district_name: KIRKSVILLE R-III
+  district_nces_id: '2916740'
+  enrollment: 2506
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-kirkwood:
+  display_name: Kirkwood
+  district_name: KIRKWOOD R-VII
+  district_nces_id: '2916770'
+  enrollment: 6175
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-knob-noster:
+  display_name: Knob Noster
+  district_name: KNOB NOSTER R-VIII
+  district_nces_id: '2916830'
+  enrollment: 1905
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lake-ozark:
+  display_name: Lake Ozark
+  district_name: SCHOOL OF THE OSAGE
+  district_nces_id: '2927630'
+  enrollment: 2063
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lamar:
+  display_name: Lamar
+  district_name: LAMAR R-I
+  district_nces_id: '2917850'
+  enrollment: 1227
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-laquey:
+  display_name: Laquey
+  district_name: LAQUEY R-V
+  district_nces_id: '2917880'
+  enrollment: 788
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lathrop:
+  display_name: Lathrop
+  district_name: LATHROP R-II
+  district_nces_id: '2917970'
+  enrollment: 929
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lawson:
+  display_name: Lawson
+  district_name: LAWSON R-XIV
+  district_nces_id: '2918220'
+  enrollment: 1090
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-leadwood:
+  display_name: Leadwood
+  district_name: WEST ST. FRANCOIS CO. R-IV
+  district_nces_id: '2918240'
+  enrollment: 959
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lebanon-2917000:
+  display_name: Lebanon
+  district_name: LACLEDE CO. C-5
+  district_nces_id: '2917000'
+  enrollment: 500
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lebanon-2918270:
+  display_name: Lebanon
+  district_name: LEBANON R-III
+  district_nces_id: '2918270'
+  enrollment: 4480
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lees-summit:
+  display_name: Lee'S Summit
+  district_name: LEE'S SUMMIT R-VII
+  district_nces_id: '2918300'
+  enrollment: 17775
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lewistown:
+  display_name: Lewistown
+  district_name: LEWIS CO. C-1
+  district_nces_id: '2918460'
+  enrollment: 914
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lexington:
+  display_name: Lexington
+  district_name: LEXINGTON R-V
+  district_nces_id: '2918480'
+  enrollment: 997
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-liberty:
+  display_name: Liberty
+  district_name: LIBERTY 53
+  district_nces_id: '2918540'
+  enrollment: 12367
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-licking:
+  display_name: Licking
+  district_name: LICKING R-VIII
+  district_nces_id: '2918600'
+  enrollment: 839
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lincoln:
+  display_name: Lincoln
+  district_name: LINCOLN R-II
+  district_nces_id: '2918670'
+  enrollment: 513
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-linn:
+  display_name: Linn
+  district_name: OSAGE CO. R-II
+  district_nces_id: '2919080'
+  enrollment: 636
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-lone-jack:
+  display_name: Lone Jack
+  district_name: LONE JACK C-6
+  district_nces_id: '2919230'
+  enrollment: 750
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-louisiana:
+  display_name: Louisiana
+  district_name: LOUISIANA R-II
+  district_nces_id: '2919260'
+  enrollment: 721
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-macon:
+  display_name: Macon
+  district_name: MACON CO. R-I
+  district_nces_id: '2919410'
+  enrollment: 1210
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-malden:
+  display_name: Malden
+  district_name: MALDEN R-I
+  district_nces_id: '2919890'
+  enrollment: 879
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-mansfield:
+  display_name: Mansfield
+  district_name: MANSFIELD R-IV
+  district_nces_id: '2919980'
+  enrollment: 594
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-maplewood:
+  display_name: Maplewood
+  district_name: MAPLEWOOD-RICHMOND HEIGHTS
+  district_nces_id: '2920010'
+  enrollment: 1510
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-marble-hill:
+  display_name: Marble Hill
+  district_name: WOODLAND R-IV
+  district_nces_id: '2919350'
+  enrollment: 856
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-marceline:
+  display_name: Marceline
+  district_name: MARCELINE R-V
+  district_nces_id: '2920050'
+  enrollment: 658
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-marionville:
+  display_name: Marionville
+  district_name: MARIONVILLE R-IX
+  district_nces_id: '2920310'
+  enrollment: 744
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-marshall:
+  display_name: Marshall
+  district_name: MARSHALL
+  district_nces_id: '2920410'
+  enrollment: 2420
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-marshfield:
+  display_name: Marshfield
+  district_name: MARSHFIELD R-I
+  district_nces_id: '2920430'
+  enrollment: 3113
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-maryville:
+  display_name: Maryville
+  district_name: MARYVILLE R-II
+  district_nces_id: '2920490'
+  enrollment: 1386
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-maysville:
+  display_name: Maysville
+  district_name: MAYSVILLE R-I
+  district_nces_id: '2920550'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-memphis:
+  display_name: Memphis
+  district_name: SCOTLAND CO. R-I
+  district_nces_id: '2920700'
+  enrollment: 547
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-mexico:
+  display_name: Mexico
+  district_name: MEXICO 59
+  district_nces_id: '2920810'
+  enrollment: 2462
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-milan:
+  display_name: Milan
+  district_name: MILAN C-2
+  district_nces_id: '2920940'
+  enrollment: 653
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-miller:
+  display_name: Miller
+  district_name: MILLER R-II
+  district_nces_id: '2921000'
+  enrollment: 588
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-moberly:
+  display_name: Moberly
+  district_name: MOBERLY
+  district_nces_id: '2921100'
+  enrollment: 2170
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-mokane:
+  display_name: Mokane
+  district_name: SOUTH CALLAWAY CO. R-II
+  district_nces_id: '2928430'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-monett:
+  display_name: Monett
+  district_name: MONETT R-I
+  district_nces_id: '2921120'
+  enrollment: 2314
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-monroe-city:
+  display_name: Monroe City
+  district_name: MONROE CITY R-I
+  district_nces_id: '2921210'
+  enrollment: 764
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-montgomery-city:
+  display_name: Montgomery City
+  district_name: MONTGOMERY CO. R-II
+  district_nces_id: '2921330'
+  enrollment: 1147
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-morrisville:
+  display_name: Morrisville
+  district_name: MARION C. EARLY R-V
+  district_nces_id: '2920160'
+  enrollment: 566
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-mountain-grove:
+  display_name: Mountain Grove
+  district_name: MOUNTAIN GROVE R-III
+  district_nces_id: '2921510'
+  enrollment: 1611
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-mountain-view:
+  display_name: Mountain View
+  district_name: MOUNTAIN VIEW-BIRCH TREE R-III
+  district_nces_id: '2921540'
+  enrollment: 1217
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-mt-vernon:
+  display_name: Mt Vernon
+  district_name: MT. VERNON R-V
+  district_nces_id: '2921600'
+  enrollment: 1528
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-neelyville:
+  display_name: Neelyville
+  district_name: NEELYVILLE R-IV
+  district_nces_id: '2921750'
+  enrollment: 637
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-neosho:
+  display_name: Neosho
+  district_name: NEOSHO SCHOOL DISTRICT
+  district_nces_id: '2921810'
+  enrollment: 4897
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-nevada:
+  display_name: Nevada
+  district_name: NEVADA R-V
+  district_nces_id: '2921840'
+  enrollment: 2377
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-new-bloomfield:
+  display_name: New Bloomfield
+  district_name: NEW BLOOMFIELD R-III
+  district_nces_id: '2921875'
+  enrollment: 665
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-new-haven:
+  display_name: New Haven
+  district_name: NEW HAVEN
+  district_nces_id: '2921960'
+  enrollment: 502
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-new-madrid:
+  display_name: New Madrid
+  district_name: NEW MADRID CO. R-I
+  district_nces_id: '2900004'
+  enrollment: 1354
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-nixa:
+  display_name: Nixa
+  district_name: Nixa Public Schools
+  district_nces_id: '2922530'
+  enrollment: 6724
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-oak-grove:
+  display_name: Oak Grove
+  district_name: OAK GROVE R-VI
+  district_nces_id: '2923010'
+  enrollment: 1960
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-odessa:
+  display_name: Odessa
+  district_name: ODESSA R-VII
+  district_nces_id: '2923100'
+  enrollment: 2041
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-ofallon-2908370:
+  display_name: O'Fallon
+  district_name: FT. ZUMWALT R-II
+  district_nces_id: '2908370'
+  enrollment: 17060
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-ofallon-2928950:
+  display_name: O'Fallon
+  district_name: FRANCIS HOWELL R-III
+  district_nces_id: '2928950'
+  enrollment: 17124
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-osceola:
+  display_name: Osceola
+  district_name: OSCEOLA
+  district_nces_id: '2923270'
+  enrollment: 553
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-owensville:
+  display_name: Owensville
+  district_name: GASCONADE CO. R-II
+  district_nces_id: '2923340'
+  enrollment: 1779
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-ozark:
+  display_name: Ozark
+  district_name: OZARK R-VI
+  district_nces_id: '2923430'
+  enrollment: 6052
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-pacific:
+  display_name: Pacific
+  district_name: MERAMEC VALLEY R-III
+  district_nces_id: '2923460'
+  enrollment: 3047
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-palmyra:
+  display_name: Palmyra
+  district_name: PALMYRA R-I
+  district_nces_id: '2923490'
+  enrollment: 1156
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-park-hills:
+  display_name: Park Hills
+  district_name: CENTRAL R-III
+  district_nces_id: '2929170'
+  enrollment: 2040
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-peculiar:
+  display_name: Peculiar
+  district_name: RAYMORE-PECULIAR R-II
+  district_nces_id: '2923730'
+  enrollment: 6377
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-perryville:
+  display_name: Perryville
+  district_name: PERRY CO. 32
+  district_nces_id: '2924530'
+  enrollment: 2144
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-piedmont:
+  display_name: Piedmont
+  district_name: CLEARWATER R-I
+  district_nces_id: '2909750'
+  enrollment: 916
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-pierce-city:
+  display_name: Pierce City
+  district_name: PIERCE CITY R-VI
+  district_nces_id: '2925110'
+  enrollment: 679
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-plato:
+  display_name: Plato
+  district_name: PLATO R-V
+  district_nces_id: '2925210'
+  enrollment: 537
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-platte-city:
+  display_name: Platte City
+  district_name: PLATTE CO. R-III
+  district_nces_id: '2925230'
+  enrollment: 4283
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-plattsburg:
+  display_name: Plattsburg
+  district_name: CLINTON CO. R-III
+  district_nces_id: '2925290'
+  enrollment: 665
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-pleasant-hill:
+  display_name: Pleasant Hill
+  district_name: PLEASANT HILL R-III
+  district_nces_id: '2925330'
+  enrollment: 2197
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-pleasant-hope:
+  display_name: Pleasant Hope
+  district_name: PLEASANT HOPE R-VI
+  district_nces_id: '2925350'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-poplar-bluff:
+  display_name: Poplar Bluff
+  district_name: POPLAR BLUFF R-I
+  district_nces_id: '2925450'
+  enrollment: 5204
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-portageville:
+  display_name: Portageville
+  district_name: PORTAGEVILLE
+  district_nces_id: '2900003'
+  enrollment: 668
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-potosi:
+  display_name: Potosi
+  district_name: POTOSI R-III
+  district_nces_id: '2925500'
+  enrollment: 2036
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-purdy:
+  display_name: Purdy
+  district_name: PURDY R-II
+  district_nces_id: '2925620'
+  enrollment: 631
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-puxico:
+  display_name: Puxico
+  district_name: PUXICO R-VIII
+  district_nces_id: '2925650'
+  enrollment: 747
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-queen-city:
+  display_name: Queen City
+  district_name: SCHUYLER CO. R-I
+  district_nces_id: '2927660'
+  enrollment: 596
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-raytown:
+  display_name: Raytown
+  district_name: RAYTOWN C-2
+  district_nces_id: '2926070'
+  enrollment: 8012
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-reeds-spring:
+  display_name: Reeds Spring
+  district_name: REEDS SPRING R-IV
+  district_nces_id: '2926160'
+  enrollment: 1807
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-republic:
+  display_name: Republic
+  district_name: REPUBLIC R-III
+  district_nces_id: '2926220'
+  enrollment: 5316
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-richmond:
+  display_name: Richmond
+  district_name: RICHMOND R-XVI
+  district_nces_id: '2926480'
+  enrollment: 1559
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-rogersville:
+  display_name: Rogersville
+  district_name: LOGAN-ROGERSVILLE R-VIII
+  district_nces_id: '2919170'
+  enrollment: 2471
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-rolla:
+  display_name: Rolla
+  district_name: ROLLA 31
+  district_nces_id: '2926890'
+  enrollment: 4161
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-russellville:
+  display_name: Russellville
+  district_name: COLE CO. R-I
+  district_nces_id: '2926970'
+  enrollment: 626
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-saint-charles:
+  display_name: Saint Charles
+  district_name: ORCHARD FARM R-V
+  district_nces_id: '2923160'
+  enrollment: 2376
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-saint-louis:
+  display_name: Saint Louis
+  district_name: NORMANDY SCHOOLS COLLABORATIVE
+  district_nces_id: '2922650'
+  enrollment: 2894
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-salem:
+  display_name: Salem
+  district_name: SALEM R-80
+  district_nces_id: '2927090'
+  enrollment: 1464
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-sarcoxie:
+  display_name: Sarcoxie
+  district_name: SARCOXIE R-II
+  district_nces_id: '2927540'
+  enrollment: 686
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-savannah:
+  display_name: Savannah
+  district_name: SAVANNAH R-III
+  district_nces_id: '2927570'
+  enrollment: 2332
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-scott-city:
+  display_name: Scott City
+  district_name: SCOTT CITY R-I
+  district_nces_id: '2915450'
+  enrollment: 755
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-sedalia:
+  display_name: Sedalia
+  district_name: SEDALIA 200
+  district_nces_id: '2927830'
+  enrollment: 5042
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-senath:
+  display_name: Senath
+  district_name: SENATH-HORNERSVILLE C-8
+  district_nces_id: '2927870'
+  enrollment: 676
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-seneca:
+  display_name: Seneca
+  district_name: SENECA R-VII
+  district_nces_id: '2927900'
+  enrollment: 1535
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-seymour:
+  display_name: Seymour
+  district_name: SEYMOUR R-II
+  district_nces_id: '2927930'
+  enrollment: 715
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-shelbina:
+  display_name: Shelbina
+  district_name: SHELBY CO. R-IV
+  district_nces_id: '2928110'
+  enrollment: 693
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-sikeston:
+  display_name: Sikeston
+  district_name: SIKESTON R-6
+  district_nces_id: '2928260'
+  enrollment: 3307
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-smithton:
+  display_name: Smithton
+  district_name: SMITHTON R-VI
+  district_nces_id: '2928380'
+  enrollment: 544
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-smithville:
+  display_name: Smithville
+  district_name: SMITHVILLE R-II
+  district_nces_id: '2928410'
+  enrollment: 2584
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-sparta:
+  display_name: Sparta
+  district_name: SPARTA R-III
+  district_nces_id: '2928740'
+  enrollment: 747
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-springfield:
+  display_name: Springfield
+  district_name: SPRINGFIELD R-XII
+  district_nces_id: '2928860'
+  enrollment: 22937
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-ann:
+  display_name: St Ann
+  district_name: PATTONVILLE R-III
+  district_nces_id: '2923700'
+  enrollment: 6102
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-charles:
+  display_name: St Charles
+  district_name: ST. CHARLES R-VI
+  district_nces_id: '2928920'
+  enrollment: 4836
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-clair:
+  display_name: St Clair
+  district_name: ST. CLAIR R-XIII
+  district_nces_id: '2929100'
+  enrollment: 2230
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-james:
+  display_name: St James
+  district_name: ST. JAMES R-I
+  district_nces_id: '2929250'
+  enrollment: 1666
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-joseph:
+  display_name: St Joseph
+  district_name: ST. JOSEPH
+  district_nces_id: '2927060'
+  enrollment: 10568
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-louis-2900574:
+  display_name: St Louis
+  district_name: LIFT FOR LIFE ACADEMY
+  district_nces_id: '2900574'
+  enrollment: 809
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-st-louis-2900576:
+  display_name: St Louis
+  district_name: PREMIER CHARTER SCHOOL
+  district_nces_id: '2900576'
+  enrollment: 918
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-st-louis-2900579:
+  display_name: St Louis
+  district_name: CONFLUENCE ACADEMIES
+  district_nces_id: '2900579'
+  enrollment: 2453
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-st-louis-2900591:
+  display_name: St. Louis
+  district_name: KIPP ST LOUIS PUBLIC SCHOOLS
+  district_nces_id: '2900591'
+  enrollment: 2533
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-st-louis-2900592:
+  display_name: St. Louis
+  district_name: GATEWAY SCIENCE ACAD/ST LOUIS
+  district_nces_id: '2900592'
+  enrollment: 1480
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-st-louis-2900605:
+  display_name: St. Louis
+  district_name: MOMENTUM ACADEMY
+  district_nces_id: '2900605'
+  enrollment: 709
+  has_charters: true
+  source: ccd_auto
+  state: MO
+mo-st-louis-2902910:
+  display_name: St Louis
+  district_name: AFFTON 101
+  district_nces_id: '2902910'
+  enrollment: 2608
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-louis-2904500:
+  display_name: St Louis
+  district_name: BAYLESS
+  district_nces_id: '2904500'
+  enrollment: 1798
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-louis-2913620:
+  display_name: St Louis
+  district_name: HANCOCK PLACE
+  district_nces_id: '2913620'
+  enrollment: 1286
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-louis-2917820:
+  display_name: St Louis
+  district_name: LADUE
+  district_nces_id: '2917820'
+  enrollment: 4442
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-louis-2918690:
+  display_name: St. Louis
+  district_name: LINDBERGH SCHOOLS
+  district_nces_id: '2918690'
+  enrollment: 7456
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-louis-2920670:
+  display_name: St Louis
+  district_name: MEHLVILLE R-IX
+  district_nces_id: '2920670'
+  enrollment: 10076
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-louis-2926640:
+  display_name: St Louis
+  district_name: RITENOUR
+  district_nces_id: '2926640'
+  enrollment: 5628
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-louis-2926670:
+  display_name: St Louis
+  district_name: RIVERVIEW GARDENS
+  district_nces_id: '2926670'
+  enrollment: 5336
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-st-louis-2929280:
+  display_name: St Louis
+  district_name: ST. LOUIS CITY
+  district_nces_id: '2929280'
+  enrollment: 18321
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-ste-genevieve:
+  display_name: Ste Genevieve
+  district_name: STE. GENEVIEVE CO. R-II
+  district_nces_id: '2929370'
+  enrollment: 1815
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-steele:
+  display_name: Steele
+  district_name: SOUTH PEMISCOT CO. R-V
+  district_nces_id: '2928530'
+  enrollment: 604
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-steelville:
+  display_name: Steelville
+  district_name: STEELVILLE R-III
+  district_nces_id: '2929430'
+  enrollment: 925
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-stockton:
+  display_name: Stockton
+  district_name: STOCKTON R-I
+  district_nces_id: '2929520'
+  enrollment: 972
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-stover:
+  display_name: Stover
+  district_name: MORGAN CO. R-I
+  district_nces_id: '2929610'
+  enrollment: 830
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-strafford:
+  display_name: Strafford
+  district_name: STRAFFORD R-VI
+  district_nces_id: '2929640'
+  enrollment: 1412
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-sturgeon:
+  display_name: Sturgeon
+  district_name: STURGEON R-V
+  district_nces_id: '2929700'
+  enrollment: 1445
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-sullivan:
+  display_name: Sullivan
+  district_name: SULLIVAN
+  district_nces_id: '2929760'
+  enrollment: 2114
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-thayer:
+  display_name: Thayer
+  district_name: THAYER R-II
+  district_nces_id: '2930270'
+  enrollment: 762
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-tipton:
+  display_name: Tipton
+  district_name: TIPTON R-VI
+  district_nces_id: '2930330'
+  enrollment: 602
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-town-country:
+  display_name: Town & Country
+  district_name: SPECL. SCH. DST. ST. LOUIS CO.
+  district_nces_id: '2926760'
+  enrollment: 4148
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-trenton:
+  display_name: Trenton
+  district_name: TRENTON R-IX
+  district_nces_id: '2930360'
+  enrollment: 1105
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-troy:
+  display_name: Troy
+  district_name: TROY R-III
+  district_nces_id: '2930450'
+  enrollment: 6974
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-union:
+  display_name: Union
+  district_name: UNION R-XI
+  district_nces_id: '2930570'
+  enrollment: 3159
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-unionville:
+  display_name: Unionville
+  district_name: PUTNAM CO. R-I
+  district_nces_id: '2925640'
+  enrollment: 654
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-university-city:
+  display_name: University City
+  district_name: UNIVERSITY CITY
+  district_nces_id: '2930660'
+  enrollment: 2535
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-urbana:
+  display_name: Urbana
+  district_name: HICKORY CO. R-I
+  district_nces_id: '2914320'
+  enrollment: 727
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-valley-park:
+  display_name: Valley Park
+  district_name: VALLEY PARK
+  district_nces_id: '2930690'
+  enrollment: 803
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-van-buren:
+  display_name: Van Buren
+  district_name: VAN BUREN R-I
+  district_nces_id: '2930750'
+  enrollment: 516
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-vandalia:
+  display_name: Vandalia
+  district_name: VAN-FAR R-I
+  district_nces_id: '2930780'
+  enrollment: 582
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-versailles:
+  display_name: Versailles
+  district_name: MORGAN CO. R-II
+  district_nces_id: '2930840'
+  enrollment: 1293
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-warrensburg:
+  display_name: Warrensburg
+  district_name: WARRENSBURG R-VI
+  district_nces_id: '2931020'
+  enrollment: 3385
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-warrenton:
+  display_name: Warrenton
+  district_name: WARREN CO. R-III
+  district_nces_id: '2931050'
+  enrollment: 3085
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-warsaw:
+  display_name: Warsaw
+  district_name: WARSAW R-IX
+  district_nces_id: '2931070'
+  enrollment: 1320
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-washburn:
+  display_name: Washburn
+  district_name: SOUTHWEST R-V
+  district_nces_id: '2928710'
+  enrollment: 828
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-washington:
+  display_name: Washington
+  district_name: WASHINGTON
+  district_nces_id: '2931110'
+  enrollment: 3720
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-waynesville:
+  display_name: Waynesville
+  district_name: WAYNESVILLE R-VI
+  district_nces_id: '2931440'
+  enrollment: 6155
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-webb-city:
+  display_name: Webb City
+  district_name: WEBB CITY R-VII
+  district_nces_id: '2931500'
+  enrollment: 4621
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-webster-groves:
+  display_name: Webster Groves
+  district_name: WEBSTER GROVES
+  district_nces_id: '2931530'
+  enrollment: 4407
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-wentzville:
+  display_name: Wentzville
+  district_name: WENTZVILLE R-IV
+  district_nces_id: '2931650'
+  enrollment: 17997
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-west-plains-2911850:
+  display_name: West Plains
+  district_name: FAIRVIEW R-XI
+  district_nces_id: '2911850'
+  enrollment: 519
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-west-plains-2931680:
+  display_name: West Plains
+  district_name: WEST PLAINS R-VII
+  district_nces_id: '2931680'
+  enrollment: 2698
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-weston:
+  display_name: Weston
+  district_name: WEST PLATTE CO. R-II
+  district_nces_id: '2931710'
+  enrollment: 739
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-westphalia:
+  display_name: Westphalia
+  district_name: OSAGE CO. R-III
+  district_nces_id: '2931830'
+  enrollment: 758
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-willard:
+  display_name: Willard
+  district_name: WILLARD R-II
+  district_nces_id: '2932010'
+  enrollment: 4732
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-willow-springs:
+  display_name: Willow Springs
+  district_name: WILLOW SPRINGS R-IV
+  district_nces_id: '2932070'
+  enrollment: 1281
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-windsor:
+  display_name: Windsor
+  district_name: HENRY CO. R-I
+  district_nces_id: '2932110'
+  enrollment: 703
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-winfield:
+  display_name: Winfield
+  district_name: WINFIELD R-IV
+  district_nces_id: '2932190'
+  enrollment: 1587
+  has_charters: false
+  source: ccd_auto
+  state: MO
+mo-wright-city:
+  display_name: Wright City
+  district_name: WRIGHT CITY R-II OF WARREN CO.
+  district_nces_id: '2932310'
+  enrollment: 1769
+  has_charters: false
+  source: ccd_auto
+  state: MO

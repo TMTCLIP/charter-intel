@@ -1,0 +1,680 @@
+nh-amherst-3301470:
+  display_name: Amherst
+  district_name: Amherst School District
+  district_nces_id: '3301470'
+  enrollment: 1348
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-amherst-3306260:
+  display_name: Amherst
+  district_name: Souhegan Cooperative School District
+  district_nces_id: '3306260'
+  enrollment: 704
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-barrington:
+  display_name: Barrington
+  district_name: Barrington School District
+  district_nces_id: '3301650'
+  enrollment: 951
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-bedford:
+  display_name: Bedford
+  district_name: Bedford School District
+  district_nces_id: '3301740'
+  enrollment: 4169
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-belmont:
+  display_name: Belmont
+  district_name: Shaker Regional School District
+  district_nces_id: '3306180'
+  enrollment: 1168
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-berlin:
+  display_name: Berlin
+  district_name: Berlin School District
+  district_nces_id: '3301860'
+  enrollment: 1023
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-bow:
+  display_name: Bow
+  district_name: Bow School District
+  district_nces_id: '3301950'
+  enrollment: 1665
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-bristol:
+  display_name: Bristol
+  district_name: Newfound Area School District
+  district_nces_id: '3305220'
+  enrollment: 1171
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-chester:
+  display_name: Chester
+  district_name: Chester School District
+  district_nces_id: '3302250'
+  enrollment: 505
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-claremont:
+  display_name: Claremont
+  district_name: Claremont School District
+  district_nces_id: '3302340'
+  enrollment: 1675
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-concord:
+  display_name: Concord
+  district_name: Concord School District
+  district_nces_id: '3302460'
+  enrollment: 4037
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-contoocook:
+  display_name: Contoocook
+  district_name: Hopkinton School District
+  district_nces_id: '3303900'
+  enrollment: 940
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-conway:
+  display_name: Conway
+  district_name: Conway School District
+  district_nces_id: '3302490'
+  enrollment: 1541
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-derry-3302610:
+  display_name: Derry
+  district_name: Derry Cooperative School District
+  district_nces_id: '3302610'
+  enrollment: 3135
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-derry-3307360:
+  display_name: Derry
+  district_name: Pinkerton Academy School District
+  district_nces_id: '3307360'
+  enrollment: 3060
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-dover:
+  display_name: Dover
+  district_name: Dover School District
+  district_nces_id: '3302640'
+  enrollment: 3778
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-durham:
+  display_name: Durham
+  district_name: Oyster River Coop School District
+  district_nces_id: '3305520'
+  enrollment: 2146
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-enfield:
+  display_name: Enfield
+  district_name: Mascoma Valley Regional School District
+  district_nces_id: '3304680'
+  enrollment: 1098
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-epping:
+  display_name: Epping
+  district_name: Epping School District
+  district_nces_id: '3302880'
+  enrollment: 887
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-exeter-3300017:
+  display_name: Exeter
+  district_name: Exeter Region Cooperative School District
+  district_nces_id: '3300017'
+  enrollment: 2406
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-exeter-3302970:
+  display_name: Exeter
+  district_name: Exeter School District
+  district_nces_id: '3302970'
+  enrollment: 833
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-exeter-3303271:
+  display_name: Exeter
+  district_name: Virtual Learning Academy Charter School
+  district_nces_id: '3303271'
+  enrollment: 613
+  has_charters: true
+  source: ccd_auto
+  state: NH
+nh-exeter-3306480:
+  display_name: Exeter
+  district_name: Stratham School District
+  district_nces_id: '3306480'
+  enrollment: 521
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-farmington:
+  display_name: Farmington
+  district_name: Farmington School District
+  district_nces_id: '3303000'
+  enrollment: 797
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-franklin:
+  display_name: Franklin
+  district_name: Franklin School District
+  district_nces_id: '3303090'
+  enrollment: 938
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-gilford:
+  display_name: Gilford
+  district_name: Gilford School District
+  district_nces_id: '3303180'
+  enrollment: 1126
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-goffstown-3303240:
+  display_name: Goffstown
+  district_name: Goffstown School District
+  district_nces_id: '3303240'
+  enrollment: 2773
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-goffstown-3305040:
+  display_name: Goffstown
+  district_name: New Boston School District
+  district_nces_id: '3305040'
+  enrollment: 514
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-greenville:
+  display_name: Greenville
+  district_name: Mascenic Regional School District
+  district_nces_id: '3304670'
+  enrollment: 920
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hampstead:
+  display_name: Hampstead
+  district_name: Hampstead School District
+  district_nces_id: '3303480'
+  enrollment: 836
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hampton-3303510:
+  display_name: Hampton
+  district_name: Hampton School District
+  district_nces_id: '3303510'
+  enrollment: 949
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hampton-3306150:
+  display_name: Hampton
+  district_name: Seabrook School District
+  district_nces_id: '3306150'
+  enrollment: 663
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hampton-3307230:
+  display_name: Hampton
+  district_name: Winnacunnet Cooperative School District
+  district_nces_id: '3307230'
+  enrollment: 1072
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hanover:
+  display_name: Hanover
+  district_name: Dresden School District
+  district_nces_id: '3302670'
+  enrollment: 1017
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-henniker-3300003:
+  display_name: Henniker
+  district_name: John Stark Regional School District
+  district_nces_id: '3300003'
+  enrollment: 612
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-henniker-3306930:
+  display_name: Henniker
+  district_name: Weare School District
+  district_nces_id: '3306930'
+  enrollment: 897
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hillsborough:
+  display_name: Hillsborough
+  district_name: Hillsboro-Deering Cooperative School District
+  district_nces_id: '3303750'
+  enrollment: 1046
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hinsdale:
+  display_name: Hinsdale
+  district_name: Hinsdale School District
+  district_nces_id: '3303780'
+  enrollment: 527
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hollis-3302070:
+  display_name: Hollis
+  district_name: Brookline School District
+  district_nces_id: '3302070'
+  enrollment: 582
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hollis-3303840:
+  display_name: Hollis
+  district_name: Hollis School District
+  district_nces_id: '3303840'
+  enrollment: 666
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hollis-3303850:
+  display_name: Hollis
+  district_name: Hollis-Brookline Cooperative School District
+  district_nces_id: '3303850'
+  enrollment: 1141
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hooksett-3301590:
+  display_name: Hooksett
+  district_name: Auburn School District
+  district_nces_id: '3301590'
+  enrollment: 659
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hooksett-3303870:
+  display_name: Hooksett
+  district_name: Hooksett School District
+  district_nces_id: '3303870'
+  enrollment: 1265
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-hudson:
+  display_name: Hudson
+  district_name: Hudson School District
+  district_nces_id: '3303930'
+  enrollment: 3065
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-jaffrey:
+  display_name: Jaffrey
+  district_name: Jaffrey-Rindge Cooperative School District
+  district_nces_id: '3304030'
+  enrollment: 1238
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-keene:
+  display_name: Keene
+  district_name: Keene School District
+  district_nces_id: '3304050'
+  enrollment: 3064
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-kingston:
+  display_name: Kingston
+  district_name: Sanborn Regional School District
+  district_nces_id: '3306080'
+  enrollment: 1400
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-laconia:
+  display_name: Laconia
+  district_name: Laconia School District
+  district_nces_id: '3304140'
+  enrollment: 1834
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-langdon:
+  display_name: Langdon
+  district_name: Fall Mountain Regional School District
+  district_nces_id: '3302990'
+  enrollment: 1425
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-litchfield:
+  display_name: Litchfield
+  district_name: Litchfield School District
+  district_nces_id: '3304350'
+  enrollment: 1207
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-littleton:
+  display_name: Littleton
+  district_name: Littleton School District
+  district_nces_id: '3304380'
+  enrollment: 653
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-londonderry:
+  display_name: Londonderry
+  district_name: Londonderry School District
+  district_nces_id: '3304410'
+  enrollment: 4128
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-lyndeborough:
+  display_name: Lyndeborough
+  district_name: Wilton-Lyndeborough Cooperative School District
+  district_nces_id: '3307115'
+  enrollment: 565
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-manchester:
+  display_name: Manchester
+  district_name: Manchester School District
+  district_nces_id: '3304590'
+  enrollment: 12105
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-meredith:
+  display_name: Meredith
+  district_name: Inter-Lakes Cooperative School District
+  district_nces_id: '3303960'
+  enrollment: 918
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-merrimack:
+  display_name: Merrimack
+  district_name: Merrimack School District
+  district_nces_id: '3304740'
+  enrollment: 3570
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-milford:
+  display_name: Milford
+  district_name: Milford School District
+  district_nces_id: '3304830'
+  enrollment: 2131
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-milton:
+  display_name: Milton
+  district_name: Milton School District
+  district_nces_id: '3300616'
+  enrollment: 513
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-n-haverhill:
+  display_name: N. Haverhill
+  district_name: Haverhill Cooperative School District
+  district_nces_id: '3303660'
+  enrollment: 653
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-nashua-3300040:
+  display_name: Nashua
+  district_name: Academy for Science and Design Charter School
+  district_nces_id: '3300040'
+  enrollment: 543
+  has_charters: true
+  source: ccd_auto
+  state: NH
+nh-nashua-3304980:
+  display_name: Nashua
+  district_name: Nashua School District
+  district_nces_id: '3304980'
+  enrollment: 10004
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-new-london:
+  display_name: New London
+  district_name: Kearsarge Regional School District
+  district_nces_id: '3304040'
+  enrollment: 1734
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-newmarket:
+  display_name: Newmarket
+  district_name: Newmarket School District
+  district_nces_id: '3305280'
+  enrollment: 970
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-newport:
+  display_name: Newport
+  district_name: Newport School District
+  district_nces_id: '3305310'
+  enrollment: 819
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-northwood:
+  display_name: Northwood
+  district_name: Coe-Brown Northwood Academy School District
+  district_nces_id: '3307330'
+  enrollment: 686
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-nottingham:
+  display_name: Nottingham
+  district_name: Nottingham School District
+  district_nces_id: '3305460'
+  enrollment: 507
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-pelham:
+  display_name: Pelham
+  district_name: Pelham School District
+  district_nces_id: '3305550'
+  enrollment: 1688
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-pembroke-3302580:
+  display_name: Pembroke
+  district_name: Deerfield School District
+  district_nces_id: '3302580'
+  enrollment: 533
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-pembroke-3305580:
+  display_name: Pembroke
+  district_name: Pembroke School District
+  district_nces_id: '3305580'
+  enrollment: 1436
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-penacook:
+  display_name: Penacook
+  district_name: Merrimack Valley School District
+  district_nces_id: '3304760'
+  enrollment: 2242
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-peterborough:
+  display_name: Peterborough
+  district_name: Contoocook Valley School District
+  district_nces_id: '3302480'
+  enrollment: 1975
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-pittsfield:
+  display_name: Pittsfield
+  district_name: Pittsfield School District
+  district_nces_id: '3305730'
+  enrollment: 525
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-plaistow:
+  display_name: Plaistow
+  district_name: Timberlane Regional School District
+  district_nces_id: '3306720'
+  enrollment: 3316
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-plymouth:
+  display_name: Plymouth
+  district_name: Pemi-baker Regional School District
+  district_nces_id: '3399965'
+  enrollment: 652
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-portsmouth:
+  display_name: Portsmouth
+  district_name: Portsmouth School District
+  district_nces_id: '3305820'
+  enrollment: 2490
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-raymond:
+  display_name: Raymond
+  district_name: Raymond School District
+  district_nces_id: '3305880'
+  enrollment: 1181
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-rochester:
+  display_name: Rochester
+  district_name: Rochester School District
+  district_nces_id: '3305940'
+  enrollment: 3943
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-salem:
+  display_name: Salem
+  district_name: Salem School District
+  district_nces_id: '3306060'
+  enrollment: 3611
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-somersworth:
+  display_name: Somersworth
+  district_name: Somersworth School District
+  district_nces_id: '3306240'
+  enrollment: 1336
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-swanzey:
+  display_name: Swanzey
+  district_name: Monadnock Regional School District
+  district_nces_id: '3304890'
+  enrollment: 1634
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-tilton:
+  display_name: Tilton
+  district_name: Winnisquam Regional School District
+  district_nces_id: '3307300'
+  enrollment: 1302
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-west-lebanon:
+  display_name: West Lebanon
+  district_name: Lebanon School District
+  district_nces_id: '3304230'
+  enrollment: 1638
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-whitefield:
+  display_name: Whitefield
+  district_name: White Mountains Regional School District
+  district_nces_id: '3307050'
+  enrollment: 979
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-windham:
+  display_name: Windham
+  district_name: Windham School District
+  district_nces_id: '3307170'
+  enrollment: 3013
+  has_charters: false
+  source: ccd_auto
+  state: NH
+nh-wolfeboro-falls:
+  display_name: Wolfeboro Falls
+  district_name: Governor Wentworth Regional School District
+  district_nces_id: '3303330'
+  enrollment: 2137
+  has_charters: false
+  source: ccd_auto
+  state: NH

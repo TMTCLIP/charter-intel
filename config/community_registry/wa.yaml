@@ -1,0 +1,1576 @@
+wa-aberdeen:
+  display_name: Aberdeen
+  district_name: Aberdeen School District
+  district_nces_id: '5300030'
+  enrollment: 3304
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-adna:
+  display_name: Adna
+  district_name: Adna School District
+  district_nces_id: '5300060'
+  enrollment: 648
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-anacortes:
+  display_name: Anacortes
+  district_name: Anacortes School District
+  district_nces_id: '5300150'
+  enrollment: 2606
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-arlington:
+  display_name: Arlington
+  district_name: Arlington School District
+  district_nces_id: '5300240'
+  enrollment: 5506
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-asotin:
+  display_name: Asotin
+  district_name: Asotin-Anatone School District
+  district_nces_id: '5300280'
+  enrollment: 614
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-auburn-5300300:
+  display_name: Auburn
+  district_name: Auburn School District
+  district_nces_id: '5300300'
+  enrollment: 17857
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-auburn-5900047:
+  display_name: Auburn
+  district_name: Muckleshoot Tribal School
+  district_nces_id: '5900047'
+  enrollment: 516
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-bainbridge-island:
+  display_name: Bainbridge Island
+  district_name: Bainbridge Island School District
+  district_nces_id: '5300330'
+  enrollment: 3594
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-battle-ground:
+  display_name: Battle Ground
+  district_name: Battle Ground School District
+  district_nces_id: '5300380'
+  enrollment: 12393
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-belfair:
+  display_name: Belfair
+  district_name: North Mason School District
+  district_nces_id: '5305790'
+  enrollment: 2309
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-bellevue:
+  display_name: Bellevue
+  district_name: Bellevue School District
+  district_nces_id: '5300390'
+  enrollment: 19089
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-bellingham-5300420:
+  display_name: Bellingham
+  district_name: Bellingham School District
+  district_nces_id: '5300420'
+  enrollment: 11614
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-bellingham-5305010:
+  display_name: Bellingham
+  district_name: Meridian School District
+  district_nces_id: '5305010'
+  enrollment: 1816
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-benton-city:
+  display_name: Benton City
+  district_name: Kiona-Benton City School District
+  district_nces_id: '5304020'
+  enrollment: 1372
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-blaine:
+  display_name: Blaine
+  district_name: Blaine School District
+  district_nces_id: '5300570'
+  enrollment: 2081
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-bothell:
+  display_name: Bothell
+  district_name: Northshore School District
+  district_nces_id: '5305910'
+  enrollment: 22944
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-bremerton:
+  display_name: Bremerton
+  district_name: Bremerton School District
+  district_nces_id: '5300660'
+  enrollment: 4383
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-brewster:
+  display_name: Brewster
+  district_name: Brewster School District
+  district_nces_id: '5300690'
+  enrollment: 1012
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-bridgeport:
+  display_name: Bridgeport
+  district_name: Bridgeport School District
+  district_nces_id: '5300720'
+  enrollment: 776
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-brush-prairie:
+  display_name: Brush Prairie
+  district_name: Hockinson School District
+  district_nces_id: '5303570'
+  enrollment: 2000
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-buckley:
+  display_name: Buckley
+  district_name: White River School District
+  district_nces_id: '5309780'
+  enrollment: 4408
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-burbank:
+  display_name: Burbank
+  district_name: Columbia (Walla Walla) School District
+  district_nces_id: '5301590'
+  enrollment: 734
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-burien:
+  display_name: Burien
+  district_name: Highline School District
+  district_nces_id: '5303540'
+  enrollment: 18048
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-burlington:
+  display_name: Burlington
+  district_name: Burlington-Edison School District
+  district_nces_id: '5300780'
+  enrollment: 3351
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-camas:
+  display_name: Camas
+  district_name: Camas School District
+  district_nces_id: '5300810'
+  enrollment: 7324
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-cashmere:
+  display_name: Cashmere
+  district_name: CASHMERE SCHOOL DISTRICT
+  district_nces_id: '5300960'
+  enrollment: 1580
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-castle-rock:
+  display_name: Castle Rock
+  district_name: Castle Rock School District
+  district_nces_id: '5300990'
+  enrollment: 1508
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-centralia:
+  display_name: Centralia
+  district_name: Centralia School District
+  district_nces_id: '5301140'
+  enrollment: 3440
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-chattaroy:
+  display_name: Chattaroy
+  district_name: Riverside School District
+  district_nces_id: '5307440'
+  enrollment: 1605
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-chehalis:
+  display_name: Chehalis
+  district_name: Chehalis School District
+  district_nces_id: '5301170'
+  enrollment: 3012
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-chelan:
+  display_name: Chelan
+  district_name: Lake Chelan School District
+  district_nces_id: '5301200'
+  enrollment: 1335
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-cheney:
+  display_name: Cheney
+  district_name: Cheney School District
+  district_nces_id: '5301230'
+  enrollment: 5540
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-chewelah:
+  display_name: Chewelah
+  district_name: Chewelah School District
+  district_nces_id: '5301260'
+  enrollment: 789
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-chimacum:
+  display_name: Chimacum
+  district_name: Chimacum School District
+  district_nces_id: '5301290'
+  enrollment: 717
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-clarkston:
+  display_name: Clarkston
+  district_name: Clarkston School District
+  district_nces_id: '5301320'
+  enrollment: 2518
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-cle-elum:
+  display_name: Cle Elum
+  district_name: Cle Elum-Roslyn School District
+  district_nces_id: '5301350'
+  enrollment: 972
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-colfax:
+  display_name: Colfax
+  district_name: Colfax School District
+  district_nces_id: '5301440'
+  enrollment: 562
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-college-place:
+  display_name: College Place
+  district_name: College Place School District
+  district_nces_id: '5301470'
+  enrollment: 1554
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-colville:
+  display_name: Colville
+  district_name: Colville School District
+  district_nces_id: '5301630'
+  enrollment: 1685
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-connell:
+  display_name: Connell
+  district_name: North Franklin School District
+  district_nces_id: '5305730'
+  enrollment: 2037
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-coulee-dam:
+  display_name: Coulee Dam
+  district_name: Grand Coulee Dam School District
+  district_nces_id: '5303130'
+  enrollment: 771
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-coupeville:
+  display_name: Coupeville
+  district_name: Coupeville School District
+  district_nces_id: '5301800'
+  enrollment: 1055
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-cowiche:
+  display_name: Cowiche
+  district_name: Highland School District
+  district_nces_id: '5303510'
+  enrollment: 1094
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-davenport:
+  display_name: Davenport
+  district_name: Davenport School District
+  district_nces_id: '5302010'
+  enrollment: 615
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-deer-park:
+  display_name: Deer Park
+  district_name: Deer Park School District
+  district_nces_id: '5302070'
+  enrollment: 2774
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-deming:
+  display_name: Deming
+  district_name: Mount Baker School District
+  district_nces_id: '5305310'
+  enrollment: 1692
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-duvall:
+  display_name: Duvall
+  district_name: Riverview School District
+  district_nces_id: '5304560'
+  enrollment: 3111
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-east-wenatchee:
+  display_name: East Wenatchee
+  district_name: Eastmont School District
+  district_nces_id: '5302310'
+  enrollment: 6032
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-eastsound:
+  display_name: Eastsound
+  district_name: Orcas Island School District
+  district_nces_id: '5306300'
+  enrollment: 701
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-eatonville:
+  display_name: Eatonville
+  district_name: Eatonville School District
+  district_nces_id: '5302370'
+  enrollment: 1944
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-ellensburg:
+  display_name: Ellensburg
+  district_name: Ellensburg School District
+  district_nces_id: '5302460'
+  enrollment: 3238
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-elma-5302490:
+  display_name: Elma
+  district_name: Elma School District
+  district_nces_id: '5302490'
+  enrollment: 1708
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-elma-5304800:
+  display_name: Elma
+  district_name: Mary M Knight School District
+  district_nces_id: '5304800'
+  enrollment: 1045
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-enumclaw:
+  display_name: Enumclaw
+  district_name: Enumclaw School District
+  district_nces_id: '5300001'
+  enrollment: 4436
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-ephrata:
+  display_name: Ephrata
+  district_name: Ephrata School District
+  district_nces_id: '5302610'
+  enrollment: 2807
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-everett-5302670:
+  display_name: Everett
+  district_name: Everett School District
+  district_nces_id: '5302670'
+  enrollment: 20359
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-everett-5305430:
+  display_name: Everett
+  district_name: Mukilteo School District
+  district_nces_id: '5305430'
+  enrollment: 15131
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-everson:
+  display_name: Everson
+  district_name: Nooksack Valley School District
+  district_nces_id: '5305670'
+  enrollment: 1912
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-federal-way:
+  display_name: Federal Way
+  district_name: Federal Way School District
+  district_nces_id: '5302820'
+  enrollment: 21606
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-ferndale:
+  display_name: Ferndale
+  district_name: Ferndale School District
+  district_nces_id: '5302850'
+  enrollment: 4651
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-forks:
+  display_name: Forks
+  district_name: Quillayute Valley School District
+  district_nces_id: '5307020'
+  enrollment: 2473
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-friday-harbor:
+  display_name: Friday Harbor
+  district_name: San Juan Island School District
+  district_nces_id: '5307650'
+  enrollment: 782
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-gig-harbor:
+  display_name: Gig Harbor
+  district_name: Peninsula School District
+  district_nces_id: '5306690'
+  enrollment: 8969
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-goldendale:
+  display_name: Goldendale
+  district_name: Goldendale School District
+  district_nces_id: '5303090'
+  enrollment: 2976
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-grandview:
+  display_name: Grandview
+  district_name: Grandview School District
+  district_nces_id: '5303150'
+  enrollment: 3618
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-granger:
+  display_name: Granger
+  district_name: Granger School District
+  district_nces_id: '5303180'
+  enrollment: 1501
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-granite-falls:
+  display_name: Granite Falls
+  district_name: Granite Falls School District
+  district_nces_id: '5303210'
+  enrollment: 2326
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-hoquiam:
+  display_name: Hoquiam
+  district_name: Hoquiam School District
+  district_nces_id: '5303660'
+  enrollment: 1640
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-issaquah:
+  display_name: Issaquah
+  district_name: Issaquah School District
+  district_nces_id: '5303750'
+  enrollment: 19524
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-kalama:
+  display_name: Kalama
+  district_name: Kalama School District
+  district_nces_id: '5303810'
+  enrollment: 1151
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-kelso:
+  display_name: Kelso
+  district_name: Kelso School District
+  district_nces_id: '5300003'
+  enrollment: 4940
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-kennewick-5302910:
+  display_name: Kennewick
+  district_name: Finley School District
+  district_nces_id: '5302910'
+  enrollment: 871
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-kennewick-5303930:
+  display_name: Kennewick
+  district_name: Kennewick School District
+  district_nces_id: '5303930'
+  enrollment: 19311
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-kent:
+  display_name: Kent
+  district_name: Kent School District
+  district_nces_id: '5303960'
+  enrollment: 25586
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-kettle-falls:
+  display_name: Kettle Falls
+  district_name: Kettle Falls School District
+  district_nces_id: '5303990'
+  enrollment: 1125
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-kirkland:
+  display_name: Kirkland
+  district_name: Lake Washington Institute of Technology
+  district_nces_id: '5300313'
+  enrollment: 577
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-kittitas:
+  display_name: Kittitas
+  district_name: Kittitas School District
+  district_nces_id: '5304050'
+  enrollment: 613
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-la-center:
+  display_name: La Center
+  district_name: La Center School District
+  district_nces_id: '5304170'
+  enrollment: 1769
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-la-conner:
+  display_name: La Conner
+  district_name: La Conner School District
+  district_nces_id: '5304110'
+  enrollment: 536
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-lacey:
+  display_name: Lacey
+  district_name: North Thurston Public Schools
+  district_nces_id: '5305850'
+  enrollment: 15119
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-lake-stevens:
+  display_name: Lake Stevens
+  district_name: Lake Stevens School District
+  district_nces_id: '5304200'
+  enrollment: 9687
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-lake-tapps:
+  display_name: Lake Tapps
+  district_name: Dieringer School District
+  district_nces_id: '5302130'
+  enrollment: 1402
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-lakewood:
+  display_name: Lakewood
+  district_name: Clover Park School District
+  district_nces_id: '5301410'
+  enrollment: 12566
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-langley:
+  display_name: Langley
+  district_name: South Whidbey School District
+  district_nces_id: '5308190'
+  enrollment: 1202
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-leavenworth:
+  display_name: Leavenworth
+  district_name: Cascade School District
+  district_nces_id: '5300950'
+  enrollment: 1252
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-liberty-lake:
+  display_name: Liberty Lake
+  district_name: Central Valley School District
+  district_nces_id: '5301110'
+  enrollment: 14688
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-long-beach:
+  display_name: Long Beach
+  district_name: Ocean Beach School District
+  district_nces_id: '5306060'
+  enrollment: 1033
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-longview:
+  display_name: Longview
+  district_name: Longview School District
+  district_nces_id: '5304470'
+  enrollment: 6311
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-lynden:
+  display_name: Lynden
+  district_name: Lynden School District
+  district_nces_id: '5304620'
+  enrollment: 3542
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-lynnwood:
+  display_name: Lynnwood
+  district_name: Edmonds School District
+  district_nces_id: '5302400'
+  enrollment: 20459
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-mabton:
+  display_name: Mabton
+  district_name: Mabton School District
+  district_nces_id: '5304650'
+  enrollment: 771
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-manson:
+  display_name: Manson
+  district_name: Manson School District
+  district_nces_id: '5304740'
+  enrollment: 615
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-maple-valley:
+  display_name: Maple Valley
+  district_name: Tahoma School District
+  district_nces_id: '5308760'
+  enrollment: 9112
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-marysville-5304260:
+  display_name: Marysville
+  district_name: Lakewood School District
+  district_nces_id: '5304260'
+  enrollment: 2627
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-marysville-5304860:
+  display_name: Marysville
+  district_name: Marysville School District
+  district_nces_id: '5304860'
+  enrollment: 10196
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-mattawa:
+  display_name: Mattawa
+  district_name: Wahluke School District
+  district_nces_id: '5309360'
+  enrollment: 2536
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-mead:
+  display_name: Mead
+  district_name: Mead School District
+  district_nces_id: '5304920'
+  enrollment: 10320
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-medical-lake:
+  display_name: Medical Lake
+  district_name: Medical Lake School District
+  district_nces_id: '5304950'
+  enrollment: 1897
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-mercer-island:
+  display_name: Mercer Island
+  district_name: Mercer Island School District
+  district_nces_id: '5304980'
+  enrollment: 4057
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-milton:
+  display_name: Milton
+  district_name: Fife School District
+  district_nces_id: '5302880'
+  enrollment: 3893
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-monroe:
+  display_name: Monroe
+  district_name: Monroe School District
+  district_nces_id: '5305130'
+  enrollment: 5734
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-montesano:
+  display_name: Montesano
+  district_name: Montesano School District
+  district_nces_id: '5305160'
+  enrollment: 1430
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-moses-lake:
+  display_name: Moses Lake
+  district_name: Moses Lake School District
+  district_nces_id: '5305220'
+  enrollment: 8686
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-mossyrock:
+  display_name: Mossyrock
+  district_name: Mossyrock School District
+  district_nces_id: '5305250'
+  enrollment: 590
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-mount-vernon:
+  display_name: Mount Vernon
+  district_name: Mount Vernon School District
+  district_nces_id: '5305400'
+  enrollment: 6545
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-naches:
+  display_name: Naches
+  district_name: Naches Valley School District
+  district_nces_id: '5305460'
+  enrollment: 1294
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-napavine:
+  display_name: Napavine
+  district_name: Napavine School District
+  district_nces_id: '5305490'
+  enrollment: 814
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-newport:
+  display_name: Newport
+  district_name: Newport School District
+  district_nces_id: '5305610'
+  enrollment: 1091
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-nine-mile-falls:
+  display_name: Nine Mile Falls
+  district_name: Nine Mile Falls School District
+  district_nces_id: '5305640'
+  enrollment: 1435
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-oak-harbor:
+  display_name: Oak Harbor
+  district_name: Oak Harbor School District
+  district_nces_id: '5305940'
+  enrollment: 5730
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-ocean-shores:
+  display_name: Ocean Shores
+  district_name: North Beach School District No. 64
+  district_nces_id: '5305700'
+  enrollment: 689
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-okanogan:
+  display_name: Okanogan
+  district_name: Okanogan School District
+  district_nces_id: '5306150'
+  enrollment: 1065
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-olympia-5303330:
+  display_name: Olympia
+  district_name: Griffin School District
+  district_nces_id: '5303330'
+  enrollment: 577
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-olympia-5306180:
+  display_name: Olympia
+  district_name: Olympia School District
+  district_nces_id: '5306180'
+  enrollment: 9633
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-omak:
+  display_name: Omak
+  district_name: Omak School District
+  district_nces_id: '5306220'
+  enrollment: 5834
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-onalaska:
+  display_name: Onalaska
+  district_name: Onalaska School District
+  district_nces_id: '5306240'
+  enrollment: 868
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-oroville:
+  display_name: Oroville
+  district_name: Oroville School District
+  district_nces_id: '5306420'
+  enrollment: 530
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-orting:
+  display_name: Orting
+  district_name: Orting School District
+  district_nces_id: '5306450'
+  enrollment: 2748
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-othello:
+  display_name: Othello
+  district_name: Othello School District
+  district_nces_id: '5306480'
+  enrollment: 4751
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-pasco:
+  display_name: Pasco
+  district_name: Pasco School District
+  district_nces_id: '5306570'
+  enrollment: 18515
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-port-angeles:
+  display_name: Port Angeles
+  district_name: Port Angeles School District
+  district_nces_id: '5306820'
+  enrollment: 3534
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-port-orchard:
+  display_name: Port Orchard
+  district_name: South Kitsap School District
+  district_nces_id: '5308160'
+  enrollment: 9196
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-port-townsend:
+  display_name: Port Townsend
+  district_name: Port Townsend School District
+  district_nces_id: '5306840'
+  enrollment: 1206
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-poulsbo:
+  display_name: Poulsbo
+  district_name: North Kitsap School District
+  district_nces_id: '5305760'
+  enrollment: 5418
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-prosser:
+  display_name: Prosser
+  district_name: Prosser School District
+  district_nces_id: '5306900'
+  enrollment: 2414
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-pullman:
+  display_name: Pullman
+  district_name: Pullman School District
+  district_nces_id: '5306930'
+  enrollment: 2740
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-puyallup-5306960:
+  display_name: Puyallup
+  district_name: Puyallup School District
+  district_nces_id: '5306960'
+  enrollment: 23104
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-puyallup-5900036:
+  display_name: Puyallup
+  district_name: Chief Leschi School
+  district_nces_id: '5900036'
+  enrollment: 591
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-quilcene:
+  display_name: Quilcene
+  district_name: Quilcene School District
+  district_nces_id: '5306990'
+  enrollment: 726
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-quincy:
+  display_name: Quincy
+  district_name: Quincy School District
+  district_nces_id: '5307080'
+  enrollment: 3083
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-rainier:
+  display_name: Rainier
+  district_name: Rainier School District
+  district_nces_id: '5307110'
+  enrollment: 931
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-reardan:
+  display_name: Reardan
+  district_name: Reardan-Edwall School District
+  district_nces_id: '5307210'
+  enrollment: 671
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-redmond:
+  display_name: Redmond
+  district_name: Lake Washington School District
+  district_nces_id: '5304230'
+  enrollment: 30991
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-renton:
+  display_name: Renton
+  district_name: Renton School District
+  district_nces_id: '5307230'
+  enrollment: 15230
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-ridgefield:
+  display_name: Ridgefield
+  district_name: Ridgefield School District
+  district_nces_id: '5307350'
+  enrollment: 3987
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-rochester:
+  display_name: Rochester
+  district_name: Rochester School District
+  district_nces_id: '5307470'
+  enrollment: 2150
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-rockford:
+  display_name: Rockford
+  district_name: Freeman School District
+  district_nces_id: '5302970'
+  enrollment: 878
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-royal-city:
+  display_name: Royal City
+  district_name: Royal School District
+  district_nces_id: '5307620'
+  enrollment: 1763
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-seattle:
+  display_name: Seattle
+  district_name: Seattle School District No. 1
+  district_nces_id: '5307710'
+  enrollment: 51238
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-sedro-woolley:
+  display_name: Sedro Woolley
+  district_name: Sedro-Woolley School District
+  district_nces_id: '5307740'
+  enrollment: 4593
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-selah:
+  display_name: Selah
+  district_name: Selah School District
+  district_nces_id: '5307770'
+  enrollment: 3832
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-sequim:
+  display_name: Sequim
+  district_name: Sequim School District
+  district_nces_id: '5307830'
+  enrollment: 2602
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-shelton-5306750:
+  display_name: Shelton
+  district_name: Pioneer School District
+  district_nces_id: '5306750'
+  enrollment: 759
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-shelton-5307900:
+  display_name: Shelton
+  district_name: Shelton School District
+  district_nces_id: '5307900'
+  enrollment: 4540
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-shoreline:
+  display_name: Shoreline
+  district_name: Shoreline School District
+  district_nces_id: '5307920'
+  enrollment: 9564
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-silverdale:
+  display_name: Silverdale
+  district_name: Central Kitsap School District
+  district_nces_id: '5301080'
+  enrollment: 11206
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-snohomish:
+  display_name: Snohomish
+  district_name: Snohomish School District
+  district_nces_id: '5308020'
+  enrollment: 9418
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-snoqualmie:
+  display_name: Snoqualmie
+  district_name: Snoqualmie Valley School District
+  district_nces_id: '5308040'
+  enrollment: 7086
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-soap-lake:
+  display_name: Soap Lake
+  district_name: Soap Lake School District
+  district_nces_id: '5308070'
+  enrollment: 515
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-south-bend:
+  display_name: South Bend
+  district_name: South Bend School District
+  district_nces_id: '5308100'
+  enrollment: 576
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-spanaway:
+  display_name: Spanaway
+  district_name: Bethel School District
+  district_nces_id: '5300480'
+  enrollment: 21156
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-spangle:
+  display_name: Spangle
+  district_name: Liberty School District
+  district_nces_id: '5304380'
+  enrollment: 593
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-spokane-5300337:
+  display_name: Spokane
+  district_name: Spokane International Academy
+  district_nces_id: '5300337'
+  enrollment: 736
+  has_charters: true
+  source: ccd_auto
+  state: WA
+wa-spokane-5300339:
+  display_name: Spokane
+  district_name: PRIDE Prep Charter School District
+  district_nces_id: '5300339'
+  enrollment: 504
+  has_charters: true
+  source: ccd_auto
+  state: WA
+wa-spokane-5302280:
+  display_name: Spokane
+  district_name: East Valley School District (Spokane)
+  district_nces_id: '5302280'
+  enrollment: 3670
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-spokane-5308250:
+  display_name: Spokane
+  district_name: Spokane School District
+  district_nces_id: '5308250'
+  enrollment: 28714
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-spokane-5309690:
+  display_name: Spokane
+  district_name: West Valley School District (Spokane)
+  district_nces_id: '5309690'
+  enrollment: 3483
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-springdale:
+  display_name: Springdale
+  district_name: Mary Walker School District
+  district_nces_id: '5304830'
+  enrollment: 531
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-stanwood:
+  display_name: Stanwood
+  district_name: Stanwood-Camano School District
+  district_nces_id: '5308340'
+  enrollment: 4812
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-steilacoom:
+  display_name: Steilacoom
+  district_name: Steilacoom Hist. School District
+  district_nces_id: '5308460'
+  enrollment: 3098
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-stevenson:
+  display_name: Stevenson
+  district_name: Stevenson-Carson School District
+  district_nces_id: '5308520'
+  enrollment: 843
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-sultan:
+  display_name: Sultan
+  district_name: Sultan School District
+  district_nces_id: '5308550'
+  enrollment: 2074
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-sumner:
+  display_name: Sumner
+  district_name: Sumner-Bonney Lake School District
+  district_nces_id: '5308610'
+  enrollment: 10414
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-sunnyside:
+  display_name: Sunnyside
+  district_name: Sunnyside School District
+  district_nces_id: '5308670'
+  enrollment: 6369
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-tacoma-5302940:
+  display_name: Tacoma
+  district_name: Franklin Pierce School District
+  district_nces_id: '5302940'
+  enrollment: 7425
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-tacoma-5308700:
+  display_name: Tacoma
+  district_name: Tacoma School District
+  district_nces_id: '5308700'
+  enrollment: 28311
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-tenino:
+  display_name: Tenino
+  district_name: Tenino School District
+  district_nces_id: '5308820'
+  enrollment: 1287
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-toledo:
+  display_name: Toledo
+  district_name: Toledo School District
+  district_nces_id: '5308910'
+  enrollment: 843
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-tonasket:
+  display_name: Tonasket
+  district_name: Tonasket School District
+  district_nces_id: '5308940'
+  enrollment: 1166
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-toppenish:
+  display_name: Toppenish
+  district_name: Toppenish School District
+  district_nces_id: '5308970'
+  enrollment: 4246
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-toutle:
+  display_name: Toutle
+  district_name: Toutle Lake School District
+  district_nces_id: '5309030'
+  enrollment: 690
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-tukwila-5300345:
+  display_name: Tukwila
+  district_name: Impact | Puget Sound Elementary
+  district_nces_id: '5300345'
+  enrollment: 596
+  has_charters: true
+  source: ccd_auto
+  state: WA
+wa-tukwila-5308130:
+  display_name: Tukwila
+  district_name: Tukwila School District
+  district_nces_id: '5308130'
+  enrollment: 2715
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-tumwater:
+  display_name: Tumwater
+  district_name: Tumwater School District
+  district_nces_id: '5309100'
+  enrollment: 6461
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-union-gap:
+  display_name: Union Gap
+  district_name: Union Gap School District
+  district_nces_id: '5309150'
+  enrollment: 577
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-university-place:
+  display_name: University Place
+  district_name: University Place School District
+  district_nces_id: '5309180'
+  enrollment: 5619
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-valley:
+  display_name: Valley
+  district_name: Valley School District
+  district_nces_id: '5309240'
+  enrollment: 1079
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-vancouver-5302700:
+  display_name: Vancouver
+  district_name: Evergreen School District (Clark)
+  district_nces_id: '5302700'
+  enrollment: 22591
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-vancouver-5309270:
+  display_name: Vancouver
+  district_name: Vancouver School District
+  district_nces_id: '5309270'
+  enrollment: 22003
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-vashon:
+  display_name: Vashon
+  district_name: Vashon Island School District
+  district_nces_id: '5309300'
+  enrollment: 1539
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-walla-walla:
+  display_name: Walla Walla
+  district_name: Walla Walla Public Schools
+  district_nces_id: '5309450'
+  enrollment: 5599
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-wapato:
+  display_name: Wapato
+  district_name: Wapato School District
+  district_nces_id: '5309480'
+  enrollment: 3195
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-warden:
+  display_name: Warden
+  district_name: Warden School District
+  district_nces_id: '5309510'
+  enrollment: 902
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-washougal:
+  display_name: Washougal
+  district_name: Washougal School District
+  district_nces_id: '5309540'
+  enrollment: 2865
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-wenatchee:
+  display_name: Wenatchee
+  district_name: Wenatchee School District
+  district_nces_id: '5309660'
+  enrollment: 7347
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-west-richland:
+  display_name: West Richland
+  district_name: Richland School District
+  district_nces_id: '5307320'
+  enrollment: 13948
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-westport:
+  display_name: Westport
+  district_name: Ocosta School District
+  district_nces_id: '5306090'
+  enrollment: 582
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-white-salmon:
+  display_name: White Salmon
+  district_name: White Salmon Valley School District
+  district_nces_id: '5309810'
+  enrollment: 1114
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-white-swan:
+  display_name: White Swan
+  district_name: Mount Adams School District
+  district_nces_id: '5305280'
+  enrollment: 889
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-winlock:
+  display_name: Winlock
+  district_name: Winlock School District
+  district_nces_id: '5309930'
+  enrollment: 858
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-winthrop:
+  display_name: Winthrop
+  district_name: Methow Valley School District
+  district_nces_id: '5305020'
+  enrollment: 756
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-woodland:
+  display_name: Woodland
+  district_name: Woodland School District
+  district_nces_id: '5310050'
+  enrollment: 2432
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-yakima-5305370:
+  display_name: Yakima
+  district_name: East Valley School District (Yakima)
+  district_nces_id: '5305370'
+  enrollment: 3334
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-yakima-5309720:
+  display_name: Yakima
+  district_name: West Valley School District (Yakima)
+  district_nces_id: '5309720'
+  enrollment: 5490
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-yakima-5310110:
+  display_name: Yakima
+  district_name: Yakima School District
+  district_nces_id: '5310110'
+  enrollment: 15553
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-yelm:
+  display_name: Yelm
+  district_name: Yelm School District
+  district_nces_id: '5310140'
+  enrollment: 5668
+  has_charters: false
+  source: ccd_auto
+  state: WA
+wa-zillah:
+  display_name: Zillah
+  district_name: Zillah School District
+  district_nces_id: '5310170'
+  enrollment: 1299
+  has_charters: false
+  source: ccd_auto
+  state: WA

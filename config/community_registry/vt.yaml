@@ -1,0 +1,384 @@
+vt-barre:
+  display_name: Barre
+  district_name: 'Barre Unified Union School District #97'
+  district_nces_id: '5000445'
+  enrollment: 2221
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-bellows-falls:
+  display_name: Bellows Falls
+  district_name: Rockingham School District
+  district_nces_id: '5006930'
+  enrollment: 532
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-bennington-5000434:
+  display_name: Bennington
+  district_name: 'Southwest Vermont Union Elementary School District #87'
+  district_nces_id: '5000434'
+  enrollment: 1425
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-bennington-5005810:
+  display_name: Bennington
+  district_name: 'Mount Anthony Union High School District #14'
+  district_nces_id: '5005810'
+  enrollment: 1456
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-bradford:
+  display_name: Bradford
+  district_name: 'Oxbow Unified Union School District #91'
+  district_nces_id: '5000437'
+  enrollment: 688
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-brandon:
+  display_name: Brandon
+  district_name: 'Otter Valley Unified Union School District #53'
+  district_nces_id: '5000392'
+  enrollment: 1246
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-brattleboro:
+  display_name: Brattleboro
+  district_name: 'Windham Southeast Unified Union School District #96'
+  district_nces_id: '5000431'
+  enrollment: 2373
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-bristol:
+  display_name: Bristol
+  district_name: 'Mt. Abraham Unified School District #61'
+  district_nces_id: '5000425'
+  enrollment: 1420
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-burlington:
+  display_name: Burlington
+  district_name: Burlington School District
+  district_nces_id: '5002820'
+  enrollment: 3500
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-colchester:
+  display_name: Colchester
+  district_name: Colchester School District
+  district_nces_id: '5003240'
+  enrollment: 2435
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-danville:
+  display_name: Danville
+  district_name: 'Caledonia Cooperative Unified School District #78'
+  district_nces_id: '5000412'
+  enrollment: 547
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-essex-junction:
+  display_name: Essex Junction
+  district_name: 'Essex Westford Educational Community Unified Union SD #51'
+  district_nces_id: '5000395'
+  enrollment: 3767
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-fair-haven:
+  display_name: Fair Haven
+  district_name: 'Slate Valley Unified Union School District #62'
+  district_nces_id: '5000440'
+  enrollment: 1268
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-fairfax:
+  display_name: Fairfax
+  district_name: Fairfax School District
+  district_nces_id: '5003930'
+  enrollment: 1049
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-hyde-park-5000397:
+  display_name: Hyde Park
+  district_name: 'Lamoille North Modified Union School District #058B'
+  district_nces_id: '5000397'
+  enrollment: 748
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-hyde-park-5000401:
+  display_name: Hyde Park
+  district_name: 'Lamoille North Modified Union School District #058A'
+  district_nces_id: '5000401'
+  enrollment: 629
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-jericho:
+  display_name: Jericho
+  district_name: 'Mount Mansfield Unified Union School District #401'
+  district_nces_id: '5000443'
+  enrollment: 2620
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-ludlow:
+  display_name: Ludlow
+  district_name: 'Green Mountain Unified School District #77'
+  district_nces_id: '5000427'
+  enrollment: 689
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-lyndonville:
+  display_name: Lyndonville
+  district_name: 'Kingdom East Unified Union School District #64'
+  district_nces_id: '5000421'
+  enrollment: 1736
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-middlebury:
+  display_name: Middlebury
+  district_name: 'Addison Central Unified Union School District #55'
+  district_nces_id: '5000402'
+  enrollment: 1773
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-milton:
+  display_name: Milton
+  district_name: Milton School District
+  district_nces_id: '5005610'
+  enrollment: 1478
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-montpelier-5000410:
+  display_name: Montpelier
+  district_name: 'Montpelier Roxbury Unified Union School District #71'
+  district_nces_id: '5000410'
+  enrollment: 1234
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-montpelier-5000439:
+  display_name: Montpelier
+  district_name: 'Washington Central Unified Union School District #92'
+  district_nces_id: '5000439'
+  enrollment: 1430
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-morrisville:
+  display_name: Morrisville
+  district_name: 'Lamoille South Unified Union School District #90'
+  district_nces_id: '5000448'
+  enrollment: 1609
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-newport:
+  display_name: Newport
+  district_name: North Country Union High School District
+  district_nces_id: '5009600'
+  enrollment: 688
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-north-clarendon:
+  display_name: North Clarendon
+  district_name: 'Mill River Unified Union School District #52'
+  district_nces_id: '5000393'
+  enrollment: 800
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-orleans:
+  display_name: Orleans
+  district_name: Lake Region Union Elementary Middle School District
+  district_nces_id: '5000436'
+  enrollment: 733
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-randolph:
+  display_name: Randolph
+  district_name: 'Orange Southwest Unified Union School District #59'
+  district_nces_id: '5000400'
+  enrollment: 859
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-richford-5000441:
+  display_name: Richford
+  district_name: 'Northern Mountain Valley Unified Union School District #85'
+  district_nces_id: '5000441'
+  enrollment: 834
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-richford-5000444:
+  display_name: Richford
+  district_name: 'Enosburgh-Richford Unified Union School District #88'
+  district_nces_id: '5000444'
+  enrollment: 1067
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-royalton:
+  display_name: Royalton
+  district_name: 'White River Unified School District #79'
+  district_nces_id: '5000426'
+  enrollment: 629
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-rutland-5000411:
+  display_name: Rutland
+  district_name: 'Quarry Valley Unified Union School District #70'
+  district_nces_id: '5000411'
+  enrollment: 1111
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-rutland-5007050:
+  display_name: Rutland
+  district_name: Rutland City School District
+  district_nces_id: '5007050'
+  enrollment: 1960
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-saint-albans-5000399:
+  display_name: Saint Albans
+  district_name: 'Maple Run Unified Union School District #57'
+  district_nces_id: '5000399'
+  enrollment: 2666
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-saint-albans-5004140:
+  display_name: Saint Albans
+  district_name: Georgia School District
+  district_nces_id: '5004140'
+  enrollment: 632
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-saint-johnsbury:
+  display_name: Saint Johnsbury
+  district_name: Saint Johnsbury School District
+  district_nces_id: '5007650'
+  enrollment: 1085
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-shelburne:
+  display_name: Shelburne
+  district_name: 'Champlain Valley Unified Union School District #56'
+  district_nces_id: '5000396'
+  enrollment: 4235
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-south-burlington:
+  display_name: South Burlington
+  district_name: South Burlington School District
+  district_nces_id: '5007470'
+  enrollment: 2717
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-springfield:
+  display_name: Springfield
+  district_name: Springfield School District
+  district_nces_id: '5007530'
+  enrollment: 1243
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-sunderland:
+  display_name: Sunderland
+  district_name: 'Taconic and Green Regional School District #63'
+  district_nces_id: '5000417'
+  enrollment: 1643
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-swanton:
+  display_name: Swanton
+  district_name: 'Missisquoi Valley School District #89'
+  district_nces_id: '5000433'
+  enrollment: 1842
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-vergennes:
+  display_name: Vergennes
+  district_name: 'Addison Northwest Unified Union School District #54'
+  district_nces_id: '5000398'
+  enrollment: 940
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-waitsfield:
+  display_name: Waitsfield
+  district_name: 'Harwood Unified Union School District #60'
+  district_nces_id: '5000403'
+  enrollment: 1818
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-white-river-junction:
+  display_name: White River Junction
+  district_name: Hartford School District
+  district_nces_id: '5004590'
+  enrollment: 1459
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-williamstown:
+  display_name: Williamstown
+  district_name: 'Paine Mountain Union School District #68'
+  district_nces_id: '5000408'
+  enrollment: 1061
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-windsor:
+  display_name: Windsor
+  district_name: 'Mount Ascutney School District #86'
+  district_nces_id: '5000442'
+  enrollment: 644
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-winooski:
+  display_name: Winooski
+  district_name: Winooski Incorporated School District
+  district_nces_id: '5009360'
+  enrollment: 803
+  has_charters: false
+  source: ccd_auto
+  state: VT
+vt-woodstock:
+  display_name: Woodstock
+  district_name: 'Windsor Central Unified Union School District #76'
+  district_nces_id: '5000450'
+  enrollment: 1027
+  has_charters: false
+  source: ccd_auto
+  state: VT

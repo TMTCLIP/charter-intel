@@ -1,0 +1,5232 @@
+oh-ada:
+  display_name: Ada
+  district_name: Ada Exempted Village
+  district_nces_id: '3904518'
+  enrollment: 856
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-akron-3904348:
+  display_name: Akron
+  district_name: Akron City
+  district_nces_id: '3904348'
+  enrollment: 20543
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-akron-3905000:
+  display_name: Akron
+  district_name: Manchester Local
+  district_nces_id: '3905000'
+  enrollment: 1278
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-akron-3905006:
+  display_name: Akron
+  district_name: Springfield Local
+  district_nces_id: '3905006'
+  enrollment: 1775
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-albany:
+  display_name: Albany
+  district_name: Alexander Local
+  district_nces_id: '3904590'
+  enrollment: 1424
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-alliance-3904349:
+  display_name: Alliance
+  district_name: Alliance City
+  district_nces_id: '3904349'
+  enrollment: 2987
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-alliance-3904988:
+  display_name: Alliance
+  district_name: Marlington Local
+  district_nces_id: '3904988'
+  enrollment: 1921
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-amanda:
+  display_name: Amanda
+  district_name: Amanda-Clearcreek Local
+  district_nces_id: '3904684'
+  enrollment: 1517
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-amherst:
+  display_name: Amherst
+  district_name: Amherst Exempted Village
+  district_nces_id: '3904519'
+  enrollment: 3564
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-andover:
+  display_name: Andover
+  district_name: Pymatuning Valley Local
+  district_nces_id: '3904588'
+  enrollment: 1121
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-anna:
+  display_name: Anna
+  district_name: Anna Local
+  district_nces_id: '3910004'
+  enrollment: 1085
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ansonia:
+  display_name: Ansonia
+  district_name: Ansonia Local
+  district_nces_id: '3904662'
+  enrollment: 802
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-antwerp:
+  display_name: Antwerp
+  district_name: Antwerp Local
+  district_nces_id: '3904899'
+  enrollment: 672
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-apple-creek:
+  display_name: Apple Creek
+  district_name: Southeast Local
+  district_nces_id: '3905058'
+  enrollment: 1243
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-arcadia:
+  display_name: Arcadia
+  district_name: Arcadia Local
+  district_nces_id: '3910002'
+  enrollment: 594
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-arcanum-3904663:
+  display_name: Arcanum
+  district_name: Arcanum-Butler Local
+  district_nces_id: '3904663'
+  enrollment: 1172
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-arcanum-3904664:
+  display_name: Arcanum
+  district_name: Franklin Monroe Local
+  district_nces_id: '3904664'
+  enrollment: 510
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-archbold-3904704:
+  display_name: Archbold
+  district_name: Archbold-Area Local
+  district_nces_id: '3904704'
+  enrollment: 1156
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-archbold-3905096:
+  display_name: Archbold
+  district_name: Four County Career Center
+  district_nces_id: '3905096'
+  enrollment: 857
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-arlington:
+  display_name: Arlington
+  district_name: Arlington Local
+  district_nces_id: '3904742'
+  enrollment: 569
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ashland-3904350:
+  display_name: Ashland
+  district_name: Ashland City
+  district_nces_id: '3904350'
+  enrollment: 3125
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ashland-3904583:
+  display_name: Ashland
+  district_name: Mapleton Local
+  district_nces_id: '3904583'
+  enrollment: 849
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ashland-3904942:
+  display_name: Ashland
+  district_name: Crestview Local
+  district_nces_id: '3904942'
+  enrollment: 938
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ashtabula-3904351:
+  display_name: Ashtabula
+  district_name: Ashtabula Area City
+  district_nces_id: '3904351'
+  enrollment: 3047
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ashtabula-3904585:
+  display_name: Ashtabula
+  district_name: Buckeye Local
+  district_nces_id: '3904585'
+  enrollment: 1704
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ashville:
+  display_name: Ashville
+  district_name: Teays Valley Local
+  district_nces_id: '3904909'
+  enrollment: 4366
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-attica:
+  display_name: Attica
+  district_name: Seneca East Local
+  district_nces_id: '3904968'
+  enrollment: 848
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-atwater:
+  display_name: Atwater
+  district_name: Waterloo Local
+  district_nces_id: '3904924'
+  enrollment: 812
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-aurora:
+  display_name: Aurora
+  district_name: Aurora City
+  district_nces_id: '3904917'
+  enrollment: 3044
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-avon:
+  display_name: Avon
+  district_name: Avon Local
+  district_nces_id: '3904811'
+  enrollment: 4583
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-avon-lake:
+  display_name: Avon Lake
+  district_name: Avon Lake City
+  district_nces_id: '3904812'
+  enrollment: 3552
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bainbridge:
+  display_name: Bainbridge
+  district_name: Paint Valley Local
+  district_nces_id: '3904951'
+  enrollment: 798
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-baltimore:
+  display_name: Baltimore
+  district_name: Liberty Union-Thurston Local
+  district_nces_id: '3904688'
+  enrollment: 1209
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-barberton:
+  display_name: Barberton
+  district_name: Barberton City
+  district_nces_id: '3904353'
+  enrollment: 3645
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-barnesville:
+  display_name: Barnesville
+  district_name: Barnesville Exempted Village
+  district_nces_id: '3904520'
+  enrollment: 1380
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bascom:
+  display_name: Bascom
+  district_name: Hopewell-Loudon Local
+  district_nces_id: '3904970'
+  enrollment: 777
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-batavia-3904630:
+  display_name: Batavia
+  district_name: Batavia Local
+  district_nces_id: '3904630'
+  enrollment: 2430
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-batavia-3904632:
+  display_name: Batavia
+  district_name: Clermont Northeastern Local
+  district_nces_id: '3904632'
+  enrollment: 1375
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bay-village:
+  display_name: Bay Village
+  district_name: Bay Village City
+  district_nces_id: '3904354'
+  enrollment: 2397
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-beachwood:
+  display_name: Beachwood
+  district_name: Beachwood City
+  district_nces_id: '3904355'
+  enrollment: 1580
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-beaver:
+  display_name: Beaver
+  district_name: Eastern Local School District
+  district_nces_id: '3904912'
+  enrollment: 721
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-beavercreek:
+  display_name: Beavercreek
+  district_name: Beavercreek City
+  district_nces_id: '3904724'
+  enrollment: 7994
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bedford:
+  display_name: Bedford
+  district_name: Bedford City
+  district_nces_id: '3910017'
+  enrollment: 2799
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bellaire:
+  display_name: Bellaire
+  district_name: Bellaire Local
+  district_nces_id: '3904357'
+  enrollment: 1132
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bellbrook:
+  display_name: Bellbrook
+  district_name: Bellbrook-Sugarcreek Local
+  district_nces_id: '3904727'
+  enrollment: 2663
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bellefontaine-3904358:
+  display_name: Bellefontaine
+  district_name: Bellefontaine City
+  district_nces_id: '3904358'
+  enrollment: 2205
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bellefontaine-3904807:
+  display_name: Bellefontaine
+  district_name: Benjamin Logan Local
+  district_nces_id: '3904807'
+  enrollment: 1665
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bellevue:
+  display_name: Bellevue
+  district_name: Bellevue City
+  district_nces_id: '3904359'
+  enrollment: 1816
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bellville:
+  display_name: Bellville
+  district_name: Clear Fork Valley Local
+  district_nces_id: '3904941'
+  enrollment: 1564
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-belmont:
+  display_name: Belmont
+  district_name: Union Local
+  district_nces_id: '3904601'
+  enrollment: 1411
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-beloit:
+  display_name: Beloit
+  district_name: West Branch Local
+  district_nces_id: '3904838'
+  enrollment: 1781
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-belpre:
+  display_name: Belpre
+  district_name: Belpre City
+  district_nces_id: '3904361'
+  enrollment: 898
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-berea:
+  display_name: Berea
+  district_name: Berea City
+  district_nces_id: '3904360'
+  enrollment: 5551
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-berlin-center:
+  display_name: Berlin Center
+  district_name: Western Reserve Local
+  district_nces_id: '3904839'
+  enrollment: 570
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bethel:
+  display_name: Bethel
+  district_name: Bethel-Tate Local
+  district_nces_id: '3904631'
+  enrollment: 1392
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-beverly:
+  display_name: Beverly
+  district_name: Fort Frye Local
+  district_nces_id: '3905048'
+  enrollment: 915
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bexley:
+  display_name: Bexley
+  district_name: Bexley City
+  district_nces_id: '3904362'
+  enrollment: 2486
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-blanchester:
+  display_name: Blanchester
+  district_name: Blanchester Local
+  district_nces_id: '3904638'
+  enrollment: 1221
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bloomdale:
+  display_name: Bloomdale
+  district_name: Elmwood Local
+  district_nces_id: '3905068'
+  enrollment: 1202
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-blue-ash:
+  display_name: Blue Ash
+  district_name: Sycamore Community City
+  district_nces_id: '3904486'
+  enrollment: 5684
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bluffton:
+  display_name: Bluffton
+  district_name: Bluffton Exempted Village
+  district_nces_id: '3904521'
+  enrollment: 1204
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-botkins:
+  display_name: Botkins
+  district_name: Botkins Local
+  district_nces_id: '3904976'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bowerston:
+  display_name: Bowerston
+  district_name: Conotton Valley Union Local
+  district_nces_id: '3904754'
+  enrollment: 513
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bowling-green-3904363:
+  display_name: Bowling Green
+  district_name: Bowling Green City School District
+  district_nces_id: '3904363'
+  enrollment: 2586
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bowling-green-3905072:
+  display_name: Bowling Green
+  district_name: Otsego Local
+  district_nces_id: '3905072'
+  enrollment: 1678
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-brecksville:
+  display_name: Brecksville
+  district_name: Brecksville-Broadview Heights City
+  district_nces_id: '3904364'
+  enrollment: 3752
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bridgeport:
+  display_name: Bridgeport
+  district_name: Bridgeport Exempted Village
+  district_nces_id: '3904523'
+  enrollment: 749
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-brookfield:
+  display_name: Brookfield
+  district_name: Brookfield Local
+  district_nces_id: '3905012'
+  enrollment: 992
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-brooklyn:
+  display_name: Brooklyn
+  district_name: Brooklyn City
+  district_nces_id: '3904365'
+  enrollment: 1165
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-brookville:
+  display_name: Brookville
+  district_name: Brookville Local
+  district_nces_id: '3904867'
+  enrollment: 1476
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-brunswick:
+  display_name: Brunswick
+  district_name: Brunswick City
+  district_nces_id: '3904366'
+  enrollment: 6236
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bryan:
+  display_name: Bryan
+  district_name: Bryan City
+  district_nces_id: '3904367'
+  enrollment: 1820
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bucyrus-3904368:
+  display_name: Bucyrus
+  district_name: Bucyrus City
+  district_nces_id: '3904368'
+  enrollment: 1106
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-bucyrus-3904652:
+  display_name: Bucyrus
+  district_name: Wynford Local
+  district_nces_id: '3904652'
+  enrollment: 1150
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-burton:
+  display_name: Burton
+  district_name: Berkshire Local
+  district_nces_id: '3904716'
+  enrollment: 1380
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cadiz:
+  display_name: Cadiz
+  district_name: Harrison Hills City
+  district_nces_id: '3904524'
+  enrollment: 1406
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-caldwell:
+  display_name: Caldwell
+  district_name: Caldwell Exempted Village
+  district_nces_id: '3904525'
+  enrollment: 703
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-caledonia:
+  display_name: Caledonia
+  district_name: River Valley Local
+  district_nces_id: '3904844'
+  enrollment: 1916
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cambridge-3904369:
+  display_name: Cambridge
+  district_name: Cambridge City
+  district_nces_id: '3904369'
+  enrollment: 1883
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cambridge-3904730:
+  display_name: Cambridge
+  district_name: Rolling Hills Local
+  district_nces_id: '3904730'
+  enrollment: 1486
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-camden:
+  display_name: Camden
+  district_name: Preble Shawnee Local
+  district_nces_id: '3904928'
+  enrollment: 1351
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-campbell:
+  display_name: Campbell
+  district_name: Campbell City
+  district_nces_id: '3904370'
+  enrollment: 1101
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-canal-fulton:
+  display_name: Canal Fulton
+  district_name: Northwest Local
+  district_nces_id: '3904990'
+  enrollment: 1739
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-canal-winchester:
+  display_name: Canal Winchester
+  district_name: Canal Winchester Local
+  district_nces_id: '3904694'
+  enrollment: 3801
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-canfield-3904831:
+  display_name: Canfield
+  district_name: Canfield Local
+  district_nces_id: '3904831'
+  enrollment: 2494
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-canfield-3904836:
+  display_name: Canfield
+  district_name: South Range Local
+  district_nces_id: '3904836'
+  enrollment: 1217
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-canfield-3905124:
+  display_name: Canfield
+  district_name: Mahoning Co Career & Tech Ctr
+  district_nces_id: '3905124'
+  enrollment: 692
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-canton-3904371:
+  display_name: Canton
+  district_name: Canton City
+  district_nces_id: '3904371'
+  enrollment: 7934
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-canton-3904983:
+  display_name: Canton
+  district_name: Canton Local
+  district_nces_id: '3904983'
+  enrollment: 2004
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-canton-3904993:
+  display_name: Canton
+  district_name: Plain Local
+  district_nces_id: '3904993'
+  enrollment: 5977
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cardington:
+  display_name: Cardington
+  district_name: Cardington-Lincoln Local
+  district_nces_id: '3904879'
+  enrollment: 996
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-carey:
+  display_name: Carey
+  district_name: Carey Exempted Village Schools
+  district_nces_id: '3904526'
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-carlisle:
+  display_name: Carlisle
+  district_name: Carlisle Local
+  district_nces_id: '3905041'
+  enrollment: 1584
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-carroll:
+  display_name: Carroll
+  district_name: Bloom-Carroll Local
+  district_nces_id: '3904686'
+  enrollment: 2265
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-carrollton:
+  display_name: Carrollton
+  district_name: Carrollton Exempted Village
+  district_nces_id: '3904527'
+  enrollment: 1825
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-casstown:
+  display_name: Casstown
+  district_name: Miami East Local
+  district_nces_id: '3904862'
+  enrollment: 1413
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-castalia-3901450:
+  display_name: Castalia
+  district_name: Townsend North Community School
+  district_nces_id: '3901450'
+  enrollment: 510
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-castalia-3904680:
+  display_name: Castalia
+  district_name: Margaretta Local
+  district_nces_id: '3904680'
+  enrollment: 1079
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cedarville:
+  display_name: Cedarville
+  district_name: Cedar Cliff Local
+  district_nces_id: '3904725'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-celina:
+  display_name: Celina
+  district_name: Celina City
+  district_nces_id: '3910030'
+  enrollment: 2931
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-centerburg:
+  display_name: Centerburg
+  district_name: Centerburg Local
+  district_nces_id: '3904782'
+  enrollment: 1049
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-centerville:
+  display_name: Centerville
+  district_name: Centerville City
+  district_nces_id: '3904373'
+  enrollment: 8266
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chagrin-falls-3904528:
+  display_name: Chagrin Falls
+  district_name: Chagrin Falls Exempted Village
+  district_nces_id: '3904528'
+  enrollment: 1714
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chagrin-falls-3904719:
+  display_name: Chagrin Falls
+  district_name: Kenston Local
+  district_nces_id: '3904719'
+  enrollment: 2565
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chardon:
+  display_name: Chardon
+  district_name: Chardon Local
+  district_nces_id: '3904718'
+  enrollment: 2659
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chauncey:
+  display_name: Chauncey
+  district_name: Athens City
+  district_nces_id: '3904352'
+  enrollment: 2335
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chesapeake-3904529:
+  display_name: Chesapeake
+  district_name: Chesapeake Union Exempted Village
+  district_nces_id: '3904529'
+  enrollment: 1183
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chesapeake-3905118:
+  display_name: Chesapeake
+  district_name: Lawrence County
+  district_nces_id: '3905118'
+  enrollment: 633
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chesterland:
+  display_name: Chesterland
+  district_name: West Geauga Local
+  district_nces_id: '3904722'
+  enrollment: 2078
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chillicothe-3904374:
+  display_name: Chillicothe
+  district_name: Chillicothe City
+  district_nces_id: '3904374'
+  enrollment: 2741
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chillicothe-3904950:
+  display_name: Chillicothe
+  district_name: Huntington Local
+  district_nces_id: '3904950'
+  enrollment: 1033
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chillicothe-3904952:
+  display_name: Chillicothe
+  district_name: Southeastern Local
+  district_nces_id: '3904952'
+  enrollment: 923
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chillicothe-3904953:
+  display_name: Chillicothe
+  district_name: Union-Scioto Local
+  district_nces_id: '3904953'
+  enrollment: 2142
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chillicothe-3904954:
+  display_name: Chillicothe
+  district_name: Zane Trace Local
+  district_nces_id: '3904954'
+  enrollment: 1282
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-chillicothe-3905143:
+  display_name: Chillicothe
+  district_name: Pickaway-Ross County JVSD
+  district_nces_id: '3905143'
+  enrollment: 687
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3900031:
+  display_name: Cincinnati
+  district_name: Cincinnati College Preparatory Academy
+  district_nces_id: '3900031'
+  enrollment: 948
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3900106:
+  display_name: Cincinnati
+  district_name: Dohn Community
+  district_nces_id: '3900106'
+  enrollment: 1568
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3900121:
+  display_name: Cincinnati
+  district_name: Hamilton Cnty Math & Science
+  district_nces_id: '3900121'
+  enrollment: 633
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3900308:
+  display_name: Cincinnati
+  district_name: Orion Academy
+  district_nces_id: '3900308'
+  enrollment: 514
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904375:
+  display_name: Cincinnati
+  district_name: Cincinnati Public Schools
+  district_nces_id: '3904375'
+  enrollment: 35585
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904385:
+  display_name: Cincinnati
+  district_name: Deer Park Community City
+  district_nces_id: '3904385'
+  enrollment: 1109
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904408:
+  display_name: Cincinnati
+  district_name: Winton Woods City
+  district_nces_id: '3904408'
+  enrollment: 3873
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904428:
+  display_name: Cincinnati
+  district_name: Madeira City
+  district_nces_id: '3904428'
+  enrollment: 1777
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904431:
+  display_name: Cincinnati
+  district_name: Mariemont City
+  district_nces_id: '3904431'
+  enrollment: 1553
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904441:
+  display_name: Cincinnati
+  district_name: Mt Healthy City
+  district_nces_id: '3904441'
+  enrollment: 2913
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904451:
+  display_name: Cincinnati
+  district_name: North College Hill City
+  district_nces_id: '3904451'
+  enrollment: 1383
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904467:
+  display_name: Cincinnati
+  district_name: Princeton City
+  district_nces_id: '3904467'
+  enrollment: 5909
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904543:
+  display_name: Cincinnati
+  district_name: Indian Hill Exempted Village
+  district_nces_id: '3904543'
+  enrollment: 2189
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904635:
+  display_name: Cincinnati
+  district_name: West Clermont Local
+  district_nces_id: '3904635'
+  enrollment: 7965
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904733:
+  display_name: Cincinnati
+  district_name: Finneytown Local
+  district_nces_id: '3904733'
+  enrollment: 1189
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904734:
+  display_name: Cincinnati
+  district_name: Forest Hills Local
+  district_nces_id: '3904734'
+  enrollment: 7118
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904736:
+  display_name: Cincinnati
+  district_name: Northwest Local
+  district_nces_id: '3904736'
+  enrollment: 8584
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3904737:
+  display_name: Cincinnati
+  district_name: Oak Hills Local
+  district_nces_id: '3904737'
+  enrollment: 7571
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cincinnati-3905106:
+  display_name: Cincinnati
+  district_name: Great Oaks Career Campuses
+  district_nces_id: '3905106'
+  enrollment: 2632
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-circleville-3904376:
+  display_name: Circleville
+  district_name: Circleville City
+  district_nces_id: '3904376'
+  enrollment: 2171
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-circleville-3904908:
+  display_name: Circleville
+  district_name: Logan Elm Local
+  district_nces_id: '3904908'
+  enrollment: 1693
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-clarksville:
+  display_name: Clarksville
+  district_name: Clinton-Massie Local
+  district_nces_id: '3904639'
+  enrollment: 1746
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cleveland-3900250:
+  display_name: Cleveland
+  district_name: Ohio Connections Academy Inc
+  district_nces_id: '3900250'
+  enrollment: 5380
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cleveland-3900505:
+  display_name: Cleveland
+  district_name: Menlo Park Academy
+  district_nces_id: '3900505'
+  enrollment: 518
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cleveland-3901368:
+  display_name: Cleveland
+  district_name: Village Preparatory School Cliffs
+  district_nces_id: '3901368'
+  enrollment: 660
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cleveland-3901505:
+  display_name: Cleveland
+  district_name: Village Preparatory School Woodland Hills
+  district_nces_id: '3901505'
+  enrollment: 603
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cleveland-3901570:
+  display_name: Cleveland
+  district_name: Citizens Academy Southeast
+  district_nces_id: '3901570'
+  enrollment: 693
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cleveland-3901581:
+  display_name: Cleveland
+  district_name: Village Preparatory School Willard
+  district_nces_id: '3901581'
+  enrollment: 519
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cleveland-3901594:
+  display_name: Cleveland
+  district_name: Citizens Leadership Academy East
+  district_nces_id: '3901594'
+  enrollment: 625
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-cleveland-3904378:
+  display_name: Cleveland
+  district_name: Cleveland Municipal
+  district_nces_id: '3904378'
+  enrollment: 33998
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cleveland-3910016:
+  display_name: Cleveland
+  district_name: Orange City
+  district_nces_id: '3910016'
+  enrollment: 2010
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cleves:
+  display_name: Cleves
+  district_name: Three Rivers Local
+  district_nces_id: '3904739'
+  enrollment: 2102
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-clyde:
+  display_name: Clyde
+  district_name: Clyde-Green Springs Exempted Village
+  district_nces_id: '3910020'
+  enrollment: 2074
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-coal-grove:
+  display_name: Coal Grove
+  district_name: Dawson-Bryant Local
+  district_nces_id: '3904792'
+  enrollment: 1149
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-coldwater:
+  display_name: Coldwater
+  district_name: Coldwater Exempted Village
+  district_nces_id: '3904531'
+  enrollment: 1410
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-collins:
+  display_name: Collins
+  district_name: Western Reserve Local
+  district_nces_id: '3904774'
+  enrollment: 1003
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-columbia-station:
+  display_name: Columbia Station
+  district_name: Columbia Local
+  district_nces_id: '3904814'
+  enrollment: 938
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-columbiana-3904532:
+  display_name: Columbiana
+  district_name: Columbiana Exempted Village
+  district_nces_id: '3904532'
+  enrollment: 1033
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-columbiana-3904643:
+  display_name: Columbiana
+  district_name: Crestview Local
+  district_nces_id: '3904643'
+  enrollment: 1198
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-columbus-3900042:
+  display_name: Columbus
+  district_name: Horizon Science Academy Columbus
+  district_nces_id: '3900042'
+  enrollment: 502
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3900179:
+  display_name: Columbus
+  district_name: Focus Learning Academy of Northern Columbus
+  district_nces_id: '3900179'
+  enrollment: 654
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3900192:
+  display_name: Columbus
+  district_name: Great Western Academy
+  district_nces_id: '3900192'
+  enrollment: 667
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3900304:
+  display_name: Columbus
+  district_name: Columbus Humanities Arts and Technology Academy
+  district_nces_id: '3900304'
+  enrollment: 630
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3900306:
+  display_name: Columbus
+  district_name: Columbus Arts & Technology Academy
+  district_nces_id: '3900306'
+  enrollment: 509
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3900307:
+  display_name: Columbus
+  district_name: Columbus Preparatory Academy
+  district_nces_id: '3900307'
+  enrollment: 841
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3901322:
+  display_name: Columbus
+  district_name: Horizon Science Academy Columbus Middle School
+  district_nces_id: '3901322'
+  enrollment: 506
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3901330:
+  display_name: Columbus
+  district_name: KIPP Columbus
+  district_nces_id: '3901330'
+  enrollment: 1920
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3901417:
+  display_name: Columbus
+  district_name: Patriot Preparatory Academy
+  district_nces_id: '3901417'
+  enrollment: 711
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3901490:
+  display_name: Columbus
+  district_name: Metro Early College High School
+  district_nces_id: '3901490'
+  enrollment: 876
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-columbus-3901599:
+  display_name: Columbus
+  district_name: Great River Connections Academy
+  district_nces_id: '3901599'
+  enrollment: 1627
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-columbus-3904380:
+  display_name: Columbus
+  district_name: Columbus City Schools District
+  district_nces_id: '3904380'
+  enrollment: 45338
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-columbus-3904407:
+  display_name: Columbus
+  district_name: Grandview Heights Schools
+  district_nces_id: '3904407'
+  enrollment: 1144
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-columbus-3904695:
+  display_name: Columbus
+  district_name: Hamilton Local
+  district_nces_id: '3904695'
+  enrollment: 3082
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-columbus-3904701:
+  display_name: Columbus
+  district_name: Hilliard City
+  district_nces_id: '3904701'
+  enrollment: 16082
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-columbus-grove:
+  display_name: Columbus Grove
+  district_name: Columbus Grove Local
+  district_nces_id: '3904931'
+  enrollment: 756
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-conneaut:
+  display_name: Conneaut
+  district_name: Conneaut Area City
+  district_nces_id: '3904381'
+  enrollment: 1573
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-convoy:
+  display_name: Convoy
+  district_name: Crestview Local
+  district_nces_id: '3905035'
+  enrollment: 931
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-copley:
+  display_name: Copley
+  district_name: Copley-Fairlawn City
+  district_nces_id: '3904998'
+  enrollment: 2722
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-corning:
+  display_name: Corning
+  district_name: Southern Local
+  district_nces_id: '3904906'
+  enrollment: 611
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cortland-3905015:
+  display_name: Cortland
+  district_name: Mathews Local
+  district_nces_id: '3905015'
+  enrollment: 613
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cortland-3905018:
+  display_name: Cortland
+  district_name: Lakeview Local
+  district_nces_id: '3905018'
+  enrollment: 1572
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cortland-3905021:
+  display_name: Cortland
+  district_name: Maplewood Local
+  district_nces_id: '3905021'
+  enrollment: 611
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-coshocton:
+  display_name: Coshocton
+  district_name: Coshocton City
+  district_nces_id: '3904382'
+  enrollment: 1551
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-coventry-township:
+  display_name: Coventry Township
+  district_name: Coventry Local
+  district_nces_id: '3904999'
+  enrollment: 1497
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-covington:
+  display_name: Covington
+  district_name: Covington Exempted Village
+  district_nces_id: '3904533'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-crestline:
+  display_name: Crestline
+  district_name: Crestline Exempted Village
+  district_nces_id: '3910008'
+  enrollment: 595
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-creston:
+  display_name: Creston
+  district_name: Norwayne Local
+  district_nces_id: '3905056'
+  enrollment: 1305
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-crooksville:
+  display_name: Crooksville
+  district_name: Crooksville Exempted Village
+  district_nces_id: '3904535'
+  enrollment: 1078
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cuyahoga-falls:
+  display_name: Cuyahoga Falls
+  district_name: Cuyahoga Falls City
+  district_nces_id: '3904383'
+  enrollment: 4022
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-cuyahoga-heights:
+  display_name: Cuyahoga Heights
+  district_name: Cuyahoga Heights Local
+  district_nces_id: '3904655'
+  enrollment: 809
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dalton:
+  display_name: Dalton
+  district_name: Dalton Local
+  district_nces_id: '3905054'
+  enrollment: 920
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-danville:
+  display_name: Danville
+  district_name: Danville Local
+  district_nces_id: '3904783'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dayton-3900129:
+  display_name: Dayton
+  district_name: Pathway School of Discovery
+  district_nces_id: '3900129'
+  enrollment: 784
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-dayton-3900216:
+  display_name: Dayton
+  district_name: North Dayton School Of Science & Discovery
+  district_nces_id: '3900216'
+  enrollment: 563
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-dayton-3900315:
+  display_name: Dayton
+  district_name: Emerson Academy
+  district_nces_id: '3900315'
+  enrollment: 641
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-dayton-3901347:
+  display_name: Dayton
+  district_name: Klepinger Community School
+  district_nces_id: '3901347'
+  enrollment: 537
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-dayton-3901508:
+  display_name: Dayton
+  district_name: DECA PREP
+  district_nces_id: '3901508'
+  enrollment: 928
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-dayton-3904384:
+  display_name: Dayton
+  district_name: Dayton City
+  district_nces_id: '3904384'
+  enrollment: 12075
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dayton-3904458:
+  display_name: Dayton
+  district_name: Oakwood City
+  district_nces_id: '3904458'
+  enrollment: 2049
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dayton-3904870:
+  display_name: Dayton
+  district_name: Mad River Local
+  district_nces_id: '3904870'
+  enrollment: 3758
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dayton-3904873:
+  display_name: Dayton
+  district_name: Northridge Local
+  district_nces_id: '3904873'
+  enrollment: 1565
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-de-graff:
+  display_name: De Graff
+  district_name: Riverside Local
+  district_nces_id: '3904809'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-defiance-3904386:
+  display_name: Defiance
+  district_name: Defiance City
+  district_nces_id: '3904386'
+  enrollment: 2339
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-defiance-3904670:
+  display_name: Defiance
+  district_name: Ayersville Local
+  district_nces_id: '3904670'
+  enrollment: 704
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-defiance-3904672:
+  display_name: Defiance
+  district_name: Northeastern Local
+  district_nces_id: '3904672'
+  enrollment: 1007
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-delaware-3904387:
+  display_name: Delaware
+  district_name: Delaware City
+  district_nces_id: '3904387'
+  enrollment: 5595
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-delaware-3904675:
+  display_name: Delaware
+  district_name: Buckeye Valley Local
+  district_nces_id: '3904675'
+  enrollment: 2186
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-delphos:
+  display_name: Delphos
+  district_name: Delphos City
+  district_nces_id: '3904388'
+  enrollment: 888
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-delta:
+  display_name: Delta
+  district_name: Pike-Delta-York Local
+  district_nces_id: '3904708'
+  enrollment: 1120
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dennison:
+  display_name: Dennison
+  district_name: Claymont City
+  district_nces_id: '3904377'
+  enrollment: 1629
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dillonvale:
+  display_name: Dillonvale
+  district_name: Buckeye Local
+  district_nces_id: '3904778'
+  enrollment: 1406
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dover:
+  display_name: Dover
+  district_name: Dover City
+  district_nces_id: '3904389'
+  enrollment: 2676
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-doylestown:
+  display_name: Doylestown
+  district_name: Chippewa Local
+  district_nces_id: '3905053'
+  enrollment: 1300
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dresden:
+  display_name: Dresden
+  district_name: Tri-Valley Local
+  district_nces_id: '3904887'
+  enrollment: 2913
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-dublin:
+  display_name: Dublin
+  district_name: Dublin City
+  district_nces_id: '3904702'
+  enrollment: 16525
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-duncan-falls:
+  display_name: Duncan Falls
+  district_name: Franklin Local
+  district_nces_id: '3904884'
+  enrollment: 1854
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-east-canton:
+  display_name: East Canton
+  district_name: Osnaburg Local
+  district_nces_id: '3904991'
+  enrollment: 910
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-east-cleveland:
+  display_name: East Cleveland
+  district_name: East Cleveland City School District
+  district_nces_id: '3904390'
+  enrollment: 1408
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-east-liverpool-3900530:
+  display_name: East Liverpool
+  district_name: Buckeye On-Line School for Success
+  district_nces_id: '3900530'
+  enrollment: 584
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-east-liverpool-3904391:
+  display_name: East Liverpool
+  district_name: East Liverpool City
+  district_nces_id: '3904391'
+  enrollment: 1941
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-east-liverpool-3904642:
+  display_name: East Liverpool
+  district_name: Beaver Local
+  district_nces_id: '3904642'
+  enrollment: 1684
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-east-palestine:
+  display_name: East Palestine
+  district_name: East Palestine City
+  district_nces_id: '3904392'
+  enrollment: 988
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-eastlake:
+  display_name: Eastlake
+  district_name: Willoughby-Eastlake City
+  district_nces_id: '3904510'
+  enrollment: 7196
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-eaton:
+  display_name: Eaton
+  district_name: Eaton Community City
+  district_nces_id: '3904393'
+  enrollment: 1862
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-edgerton:
+  display_name: Edgerton
+  district_name: Edgerton Local
+  district_nces_id: '3905061'
+  enrollment: 544
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-edon:
+  display_name: Edon
+  district_name: Edon Northwest Local
+  district_nces_id: '3905062'
+  enrollment: 533
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-elida:
+  display_name: Elida
+  district_name: Elida Local
+  district_nces_id: '3904577'
+  enrollment: 2183
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-elmore:
+  display_name: Elmore
+  district_name: Woodmore Local
+  district_nces_id: '3904957'
+  enrollment: 935
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-elyria:
+  display_name: Elyria
+  district_name: Elyria City Schools
+  district_nces_id: '3904394'
+  enrollment: 5804
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-englewood-3904872:
+  display_name: Englewood
+  district_name: Northmont City
+  district_nces_id: '3904872'
+  enrollment: 4702
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-englewood-3905128:
+  display_name: Englewood
+  district_name: Miami Valley Career Tech
+  district_nces_id: '3905128'
+  enrollment: 1680
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-enon:
+  display_name: Enon
+  district_name: Greenon Local
+  district_nces_id: '3904623'
+  enrollment: 1589
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-euclid-3900299:
+  display_name: Euclid
+  district_name: Pinnacle Academy
+  district_nces_id: '3900299'
+  enrollment: 720
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-euclid-3904395:
+  display_name: Euclid
+  district_name: Euclid City
+  district_nces_id: '3904395'
+  enrollment: 4748
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fairborn:
+  display_name: Fairborn
+  district_name: Fairborn City
+  district_nces_id: '3904396'
+  enrollment: 4238
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fairfield:
+  display_name: Fairfield
+  district_name: Fairfield City
+  district_nces_id: '3904610'
+  enrollment: 9647
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fairport-harbor:
+  display_name: Fairport Harbor
+  district_name: Fairport Harbor Exempted Village
+  district_nces_id: '3904536'
+  enrollment: 618
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fairview-park:
+  display_name: Fairview Park
+  district_name: Fairview Park City
+  district_nces_id: '3904397'
+  enrollment: 1526
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fayetteville:
+  display_name: Fayetteville
+  district_name: Fayetteville-Perry Local
+  district_nces_id: '3904604'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-felicity:
+  display_name: Felicity
+  district_name: Felicity-Franklin Local
+  district_nces_id: '3904633'
+  enrollment: 697
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-findlay-3904744:
+  display_name: Findlay
+  district_name: Liberty-Benton Local
+  district_nces_id: '3904744'
+  enrollment: 1562
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-findlay-3910000:
+  display_name: Findlay
+  district_name: Findlay City
+  district_nces_id: '3910000'
+  enrollment: 5565
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fort-loramie:
+  display_name: Fort Loramie
+  district_name: Fort Loramie Local
+  district_nces_id: '3904978'
+  enrollment: 740
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fort-recovery:
+  display_name: Fort Recovery
+  district_name: Fort Recovery Local
+  district_nces_id: '3904859'
+  enrollment: 1005
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fostoria:
+  display_name: Fostoria
+  district_name: Fostoria City
+  district_nces_id: '3904399'
+  enrollment: 1857
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-frankfort:
+  display_name: Frankfort
+  district_name: Adena Local
+  district_nces_id: '3904949'
+  enrollment: 1186
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-franklin:
+  display_name: Franklin
+  district_name: Franklin City
+  district_nces_id: '3904400'
+  enrollment: 2556
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-franklin-furnace:
+  display_name: Franklin Furnace
+  district_name: Green Local
+  district_nces_id: '3904961'
+  enrollment: 526
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fredericktown:
+  display_name: Fredericktown
+  district_name: Fredericktown Local
+  district_nces_id: '3904785'
+  enrollment: 1139
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-fremont:
+  display_name: Fremont
+  district_name: Fremont City
+  district_nces_id: '3904401'
+  enrollment: 3406
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-gahanna:
+  display_name: Gahanna
+  district_name: Gahanna-Jefferson City
+  district_nces_id: '3904696'
+  enrollment: 7961
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-galion-3904402:
+  display_name: Galion
+  district_name: Galion City
+  district_nces_id: '3904402'
+  enrollment: 1649
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-galion-3904881:
+  display_name: Galion
+  district_name: Northmor Local
+  district_nces_id: '3904881'
+  enrollment: 1038
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-gallipolis:
+  display_name: Gallipolis
+  district_name: Gallipolis City
+  district_nces_id: '3904403'
+  enrollment: 1959
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-garfield-heights:
+  display_name: Garfield Heights
+  district_name: Garfield Heights City Schools
+  district_nces_id: '3904404'
+  enrollment: 3138
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-garrettsville:
+  display_name: Garrettsville
+  district_name: James A Garfield Local
+  district_nces_id: '3904920'
+  enrollment: 1249
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-geneva:
+  display_name: Geneva
+  district_name: Geneva Area City
+  district_nces_id: '3904405'
+  enrollment: 2088
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-genoa:
+  display_name: Genoa
+  district_name: Genoa Area Local
+  district_nces_id: '3904894'
+  enrollment: 1307
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-georgetown:
+  display_name: Georgetown
+  district_name: Georgetown Exempted Village
+  district_nces_id: '3904537'
+  enrollment: 972
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-germantown:
+  display_name: Germantown
+  district_name: Valley View Local
+  district_nces_id: '3904874'
+  enrollment: 1745
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-gibsonburg:
+  display_name: Gibsonburg
+  district_name: Gibsonburg Exempted Village
+  district_nces_id: '3904538'
+  enrollment: 813
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-girard:
+  display_name: Girard
+  district_name: Girard City School District
+  district_nces_id: '3904406'
+  enrollment: 1567
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-glouster:
+  display_name: Glouster
+  district_name: Trimble Local
+  district_nces_id: '3904592'
+  enrollment: 729
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-gnadenhutten:
+  display_name: Gnadenhutten
+  district_name: Indian Valley Local
+  district_nces_id: '3905028'
+  enrollment: 1712
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-goshen:
+  display_name: Goshen
+  district_name: Goshen Local
+  district_nces_id: '3904634'
+  enrollment: 2794
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-grafton:
+  display_name: Grafton
+  district_name: Midview Local
+  district_nces_id: '3904817'
+  enrollment: 2778
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-granville:
+  display_name: Granville
+  district_name: Granville Exempted Village
+  district_nces_id: '3904539'
+  enrollment: 2594
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-greenfield:
+  display_name: Greenfield
+  district_name: Greenfield Exempted Village
+  district_nces_id: '3904540'
+  enrollment: 1913
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-greenville:
+  display_name: Greenville
+  district_name: Greenville City
+  district_nces_id: '3904409'
+  enrollment: 2373
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-greenwich:
+  display_name: Greenwich
+  district_name: South Central Local
+  district_nces_id: '3904773'
+  enrollment: 746
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-grove-city:
+  display_name: Grove City
+  district_name: South-Western City
+  district_nces_id: '3904480'
+  enrollment: 21766
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-groveport-3900640:
+  display_name: Groveport
+  district_name: Groveport Community School
+  district_nces_id: '3900640'
+  enrollment: 636
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-groveport-3904697:
+  display_name: Groveport
+  district_name: Groveport Madison Local
+  district_nces_id: '3904697'
+  enrollment: 6242
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-groveport-3905100:
+  display_name: Groveport
+  district_name: Eastland-Fairfield Career & Technical Schools
+  district_nces_id: '3905100'
+  enrollment: 1160
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hamilton-3904410:
+  display_name: Hamilton
+  district_name: Hamilton City
+  district_nces_id: '3904410'
+  enrollment: 9337
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hamilton-3904613:
+  display_name: Hamilton
+  district_name: New Miami Local
+  district_nces_id: '3904613'
+  enrollment: 626
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hamilton-3904614:
+  display_name: Hamilton
+  district_name: Ross Local
+  district_nces_id: '3904614'
+  enrollment: 2856
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hamilton-3905088:
+  display_name: Hamilton
+  district_name: Butler Technology & Career Development Schools
+  district_nces_id: '3905088'
+  enrollment: 1671
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hamler:
+  display_name: Hamler
+  district_name: Patrick Henry Local
+  district_nces_id: '3904759'
+  enrollment: 851
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hammondsville:
+  display_name: Hammondsville
+  district_name: Edison Local
+  district_nces_id: '3904779'
+  enrollment: 1398
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hanoverton:
+  display_name: Hanoverton
+  district_name: United Local
+  district_nces_id: '3904645'
+  enrollment: 1084
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-harrison:
+  display_name: Harrison
+  district_name: Southwest Local
+  district_nces_id: '3904738'
+  enrollment: 4365
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-harrod:
+  display_name: Harrod
+  district_name: Allen East Local
+  district_nces_id: '3904575'
+  enrollment: 1065
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-haviland:
+  display_name: Haviland
+  district_name: Wayne Trace Local
+  district_nces_id: '3904903'
+  enrollment: 890
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-heath:
+  display_name: Heath
+  district_name: Heath City
+  district_nces_id: '3904411'
+  enrollment: 1658
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hebron:
+  display_name: Hebron
+  district_name: Lakewood Local
+  district_nces_id: '3904799'
+  enrollment: 1661
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hicksville:
+  display_name: Hicksville
+  district_name: Hicksville Exempted Village School District
+  district_nces_id: '3904541'
+  enrollment: 854
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hillsboro:
+  display_name: Hillsboro
+  district_name: Hillsboro City
+  district_nces_id: '3904412'
+  enrollment: 2215
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-holland:
+  display_name: Holland
+  district_name: Springfield Local
+  district_nces_id: '3904822'
+  enrollment: 3329
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-houston:
+  display_name: Houston
+  district_name: Hardin-Houston Local
+  district_nces_id: '3904979'
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-howard:
+  display_name: Howard
+  district_name: East Knox Local
+  district_nces_id: '3910013'
+  enrollment: 921
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hubbard:
+  display_name: Hubbard
+  district_name: Hubbard Exempted Village
+  district_nces_id: '3904542'
+  enrollment: 1770
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-huber-heights:
+  display_name: Huber Heights
+  district_name: Huber Heights City
+  district_nces_id: '3904875'
+  enrollment: 5903
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-hudson:
+  display_name: Hudson
+  district_name: Hudson City
+  district_nces_id: '3905002'
+  enrollment: 4614
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-huron:
+  display_name: Huron
+  district_name: Huron City Schools
+  district_nces_id: '3904413'
+  enrollment: 1211
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-independence-3900203:
+  display_name: Independence
+  district_name: Alternative Education Academy
+  district_nces_id: '3900203'
+  enrollment: 5783
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-independence-3904656:
+  display_name: Independence
+  district_name: Independence Local
+  district_nces_id: '3904656'
+  enrollment: 1101
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ironton-3904414:
+  display_name: Ironton
+  district_name: Ironton City School District
+  district_nces_id: '3904414'
+  enrollment: 1386
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ironton-3904794:
+  display_name: Ironton
+  district_name: Rock Hill Local
+  district_nces_id: '3904794'
+  enrollment: 1340
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-jackson:
+  display_name: Jackson
+  district_name: Jackson City
+  district_nces_id: '3904415'
+  enrollment: 2317
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-jackson-center:
+  display_name: Jackson Center
+  district_name: Jackson Center Local
+  district_nces_id: '3910005'
+  enrollment: 549
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-jamestown:
+  display_name: Jamestown
+  district_name: Greeneview Local
+  district_nces_id: '3904726'
+  enrollment: 1280
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-jefferson-3904587:
+  display_name: Jefferson
+  district_name: Jefferson Area Local
+  district_nces_id: '3904587'
+  enrollment: 1666
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-jefferson-3905081:
+  display_name: Jefferson
+  district_name: Ashtabula County Technical and Career Center
+  district_nces_id: '3905081'
+  enrollment: 580
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-jeromesville:
+  display_name: Jeromesville
+  district_name: Hillsdale Local
+  district_nces_id: '3904582'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-johnstown-3904798:
+  display_name: Johnstown
+  district_name: Johnstown-Monroe Local
+  district_nces_id: '3904798'
+  enrollment: 1650
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-johnstown-3904803:
+  display_name: Johnstown
+  district_name: Northridge Local
+  district_nces_id: '3904803'
+  enrollment: 1171
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-kalida:
+  display_name: Kalida
+  district_name: Kalida Local
+  district_nces_id: '3904934'
+  enrollment: 600
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-kansas:
+  display_name: Kansas
+  district_name: Lakota Local
+  district_nces_id: '3904956'
+  enrollment: 1012
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-kent:
+  display_name: Kent
+  district_name: Kent City
+  district_nces_id: '3904416'
+  enrollment: 3221
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-kenton:
+  display_name: Kenton
+  district_name: Kenton City
+  district_nces_id: '3910025'
+  enrollment: 1836
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-kettering-3901374:
+  display_name: Kettering
+  district_name: Dayton Regional STEM School
+  district_nces_id: '3901374'
+  enrollment: 761
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-kettering-3904418:
+  display_name: Kettering
+  district_name: Kettering City School District
+  district_nces_id: '3904418'
+  enrollment: 7766
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-kings-mills:
+  display_name: Kings Mills
+  district_name: Kings Local
+  district_nces_id: '3905043'
+  enrollment: 4967
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-kinsman:
+  display_name: Kinsman
+  district_name: Joseph Badger Local
+  district_nces_id: '3905017'
+  enrollment: 646
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-kirtland:
+  display_name: Kirtland
+  district_name: Kirtland Local
+  district_nces_id: '3904787'
+  enrollment: 1124
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lagrange:
+  display_name: Lagrange
+  district_name: Keystone Local
+  district_nces_id: '3904816'
+  enrollment: 1454
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lakeside-marblehead:
+  display_name: Lakeside Marblehead
+  district_name: Danbury Local
+  district_nces_id: '3904893'
+  enrollment: 563
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lakewood:
+  display_name: Lakewood
+  district_name: Lakewood City
+  district_nces_id: '3904419'
+  enrollment: 4362
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lancaster-3904420:
+  display_name: Lancaster
+  district_name: Lancaster City
+  district_nces_id: '3904420'
+  enrollment: 6263
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lancaster-3904687:
+  display_name: Lancaster
+  district_name: Fairfield Union Local
+  district_nces_id: '3904687'
+  enrollment: 1927
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-latham:
+  display_name: Latham
+  district_name: Western Local
+  district_nces_id: '3904915'
+  enrollment: 685
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-leavittsburg:
+  display_name: Leavittsburg
+  district_name: LaBrae Local
+  district_nces_id: '3905024'
+  enrollment: 1006
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lebanon-3900488:
+  display_name: Lebanon
+  district_name: Greater Ohio Virtual School
+  district_nces_id: '3900488'
+  enrollment: 628
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-lebanon-3904421:
+  display_name: Lebanon
+  district_name: Lebanon City
+  district_nces_id: '3904421'
+  enrollment: 5337
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lebanon-3905147:
+  display_name: Lebanon
+  district_name: Warren County Vocational School
+  district_nces_id: '3905147'
+  enrollment: 510
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-leesburg:
+  display_name: Leesburg
+  district_name: Fairfield Local
+  district_nces_id: '3904762'
+  enrollment: 907
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-leipsic:
+  display_name: Leipsic
+  district_name: Leipsic Local
+  district_nces_id: '3904935'
+  enrollment: 704
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lewis-center:
+  display_name: Lewis Center
+  district_name: Olentangy Local
+  district_nces_id: '3904676'
+  enrollment: 23281
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lewisburg:
+  display_name: Lewisburg
+  district_name: Tri-County North Local
+  district_nces_id: '3904926'
+  enrollment: 740
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lewistown:
+  display_name: Lewistown
+  district_name: Indian Lake Local
+  district_nces_id: '3904808'
+  enrollment: 1409
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lexington:
+  display_name: Lexington
+  district_name: Lexington Local
+  district_nces_id: '3904943'
+  enrollment: 2338
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-liberty-center:
+  display_name: Liberty Center
+  district_name: Liberty Center Local
+  district_nces_id: '3904758'
+  enrollment: 998
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-liberty-township:
+  display_name: Liberty Township
+  district_name: Lakota Local
+  district_nces_id: '3904611'
+  enrollment: 17721
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lima-3904422:
+  display_name: Lima
+  district_name: Lima City
+  district_nces_id: '3904422'
+  enrollment: 3394
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lima-3904576:
+  display_name: Lima
+  district_name: Bath Local
+  district_nces_id: '3904576'
+  enrollment: 1692
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lima-3904578:
+  display_name: Lima
+  district_name: Perry Local
+  district_nces_id: '3904578'
+  enrollment: 723
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lima-3904579:
+  display_name: Lima
+  district_name: Shawnee Local
+  district_nces_id: '3904579'
+  enrollment: 2289
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lima-3905077:
+  display_name: Lima
+  district_name: Apollo
+  district_nces_id: '3905077'
+  enrollment: 824
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lisbon:
+  display_name: Lisbon
+  district_name: Lisbon Exempted Village
+  district_nces_id: '3904545'
+  enrollment: 747
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lodi:
+  display_name: Lodi
+  district_name: Cloverleaf Local
+  district_nces_id: '3904848'
+  enrollment: 2255
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-logan:
+  display_name: Logan
+  district_name: Logan-Hocking Local
+  district_nces_id: '3904424'
+  enrollment: 3540
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-london-3904425:
+  display_name: London
+  district_name: London City
+  district_nces_id: '3904425'
+  enrollment: 2117
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-london-3904827:
+  display_name: London
+  district_name: Madison-Plains Local
+  district_nces_id: '3904827'
+  enrollment: 1091
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lorain-3900587:
+  display_name: Lorain
+  district_name: Lorain Preparatory Academy
+  district_nces_id: '3900587'
+  enrollment: 516
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-lorain-3901365:
+  display_name: Lorain
+  district_name: Horizon Science Academy Lorain
+  district_nces_id: '3901365'
+  enrollment: 829
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-lorain-3904426:
+  display_name: Lorain
+  district_name: Lorain City
+  district_nces_id: '3904426'
+  enrollment: 5935
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lorain-3904813:
+  display_name: Lorain
+  district_name: Clearview Local
+  district_nces_id: '3904813'
+  enrollment: 1370
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lore-city:
+  display_name: Lore City
+  district_name: East Guernsey Local
+  district_nces_id: '3906968'
+  enrollment: 1073
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-loudonville:
+  display_name: Loudonville
+  district_name: Loudonville-Perrysville Exempted Village
+  district_nces_id: '3904546'
+  enrollment: 864
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-louisville:
+  display_name: Louisville
+  district_name: Louisville City
+  district_nces_id: '3904987'
+  enrollment: 2754
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-loveland:
+  display_name: Loveland
+  district_name: Loveland City
+  district_nces_id: '3904427'
+  enrollment: 4238
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lucasville-3904964:
+  display_name: Lucasville
+  district_name: Valley Local
+  district_nces_id: '3904964'
+  enrollment: 1032
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lucasville-3905149:
+  display_name: Lucasville
+  district_name: Scioto County Joint Vocational School
+  district_nces_id: '3905149'
+  enrollment: 529
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lynchburg:
+  display_name: Lynchburg
+  district_name: Lynchburg-Clay Local
+  district_nces_id: '3904763'
+  enrollment: 1075
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-lyndhurst:
+  display_name: Lyndhurst
+  district_name: South Euclid-Lyndhurst City
+  district_nces_id: '3904479'
+  enrollment: 3259
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-madison:
+  display_name: Madison
+  district_name: Madison Local
+  district_nces_id: '3904788'
+  enrollment: 2813
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-magnolia:
+  display_name: Magnolia
+  district_name: Sandy Valley Local
+  district_nces_id: '3904994'
+  enrollment: 1264
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-maineville:
+  display_name: Maineville
+  district_name: Little Miami Local
+  district_nces_id: '3905044'
+  enrollment: 5409
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-malvern:
+  display_name: Malvern
+  district_name: Brown Local
+  district_nces_id: '3904617'
+  enrollment: 589
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-manchester:
+  display_name: Manchester
+  district_name: Manchester Local
+  district_nces_id: '3900537'
+  enrollment: 700
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mansfield-3900151:
+  display_name: Mansfield
+  district_name: GOAL Digital Academy
+  district_nces_id: '3900151'
+  enrollment: 772
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-mansfield-3904429:
+  display_name: Mansfield
+  district_name: Mansfield City
+  district_nces_id: '3904429'
+  enrollment: 3182
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mansfield-3904945:
+  display_name: Mansfield
+  district_name: Madison Local
+  district_nces_id: '3904945'
+  enrollment: 2730
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mantua:
+  display_name: Mantua
+  district_name: Crestwood Local
+  district_nces_id: '3904918'
+  enrollment: 1366
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-maple-heights:
+  display_name: Maple Heights
+  district_name: Maple Heights City
+  district_nces_id: '3904430'
+  enrollment: 3129
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-marengo:
+  display_name: Marengo
+  district_name: Highland Local
+  district_nces_id: '3904880'
+  enrollment: 1718
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-maria-stein:
+  display_name: Maria Stein
+  district_name: Marion Local
+  district_nces_id: '3910031'
+  enrollment: 936
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-marietta:
+  display_name: Marietta
+  district_name: Marietta City
+  district_nces_id: '3910019'
+  enrollment: 2148
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-marion-3900118:
+  display_name: Marion
+  district_name: TRECA Digital Academy
+  district_nces_id: '3900118'
+  enrollment: 2152
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-marion-3904433:
+  display_name: Marion
+  district_name: Marion City
+  district_nces_id: '3904433'
+  enrollment: 4223
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-marion-3904841:
+  display_name: Marion
+  district_name: Elgin Local
+  district_nces_id: '3904841'
+  enrollment: 1039
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-marion-3904842:
+  display_name: Marion
+  district_name: Pleasant Local
+  district_nces_id: '3904842'
+  enrollment: 1226
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-marion-3906526:
+  display_name: Marion
+  district_name: Tri-Rivers
+  district_nces_id: '3906526'
+  enrollment: 514
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-martins-ferry:
+  display_name: Martins Ferry
+  district_name: Martins Ferry City
+  district_nces_id: '3904434'
+  enrollment: 1317
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-marysville:
+  display_name: Marysville
+  district_name: Marysville Exempted Village
+  district_nces_id: '3904547'
+  enrollment: 5551
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mason:
+  display_name: Mason
+  district_name: Mason City
+  district_nces_id: '3905045'
+  enrollment: 10179
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-massillon-3904435:
+  display_name: Massillon
+  district_name: Massillon City
+  district_nces_id: '3904435'
+  enrollment: 4017
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-massillon-3904985:
+  display_name: Massillon
+  district_name: Jackson Local
+  district_nces_id: '3904985'
+  enrollment: 5973
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-massillon-3904992:
+  display_name: Massillon
+  district_name: Perry Local
+  district_nces_id: '3904992'
+  enrollment: 4352
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-massillon-3904995:
+  display_name: Massillon
+  district_name: Tuslaw Local
+  district_nces_id: '3904995'
+  enrollment: 1249
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-massillon-3906202:
+  display_name: Massillon
+  district_name: Stark County Area
+  district_nces_id: '3906202'
+  enrollment: 713
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-maumee-3900180:
+  display_name: Maumee
+  district_name: Ohio Virtual Academy
+  district_nces_id: '3900180'
+  enrollment: 14334
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-maumee-3901615:
+  display_name: Maumee
+  district_name: Ohio Digital Learning School
+  district_nces_id: '3901615'
+  enrollment: 939
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-maumee-3904436:
+  display_name: Maumee
+  district_name: Maumee City
+  district_nces_id: '3904436'
+  enrollment: 2160
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mayfield-heights:
+  display_name: Mayfield Heights
+  district_name: Mayfield City
+  district_nces_id: '3904437'
+  enrollment: 4263
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mc-arthur:
+  display_name: Mc Arthur
+  district_name: Vinton County Local
+  district_nces_id: '3905039'
+  enrollment: 1764
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mc-connelsville:
+  display_name: Mc Connelsville
+  district_name: Morgan Local
+  district_nces_id: '3904877'
+  enrollment: 1668
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mc-dermott:
+  display_name: Mc Dermott
+  district_name: Northwest Local
+  district_nces_id: '3904963'
+  enrollment: 1259
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mc-donald:
+  display_name: Mc Donald
+  district_name: McDonald Local
+  district_nces_id: '3905022'
+  enrollment: 745
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mccomb:
+  display_name: Mccomb
+  district_name: McComb Local
+  district_nces_id: '3904745'
+  enrollment: 608
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mechanicsburg:
+  display_name: Mechanicsburg
+  district_name: Mechanicsburg Exempted Village
+  district_nces_id: '3904548'
+  enrollment: 864
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-medina-3904438:
+  display_name: Medina
+  district_name: Medina City SD
+  district_nces_id: '3904438'
+  enrollment: 6172
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-medina-3904847:
+  display_name: Medina
+  district_name: Buckeye Local
+  district_nces_id: '3904847'
+  enrollment: 2240
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-medina-3904849:
+  display_name: Medina
+  district_name: Highland Local
+  district_nces_id: '3904849'
+  enrollment: 3370
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-medina-3906210:
+  display_name: Medina
+  district_name: Medina County Joint Vocational School District
+  district_nces_id: '3906210'
+  enrollment: 780
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mentor:
+  display_name: Mentor
+  district_name: Mentor Exempted Village
+  district_nces_id: '3904549'
+  enrollment: 7267
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-metamora:
+  display_name: Metamora
+  district_name: Evergreen Local
+  district_nces_id: '3904705'
+  enrollment: 1134
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-miamisburg:
+  display_name: Miamisburg
+  district_name: Miamisburg City
+  district_nces_id: '3904439'
+  enrollment: 5012
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-middlefield:
+  display_name: Middlefield
+  district_name: Cardinal Local
+  district_nces_id: '3904717'
+  enrollment: 782
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-middletown-3904440:
+  display_name: Middletown
+  district_name: Middletown City
+  district_nces_id: '3904440'
+  enrollment: 6123
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-middletown-3904612:
+  display_name: Middletown
+  district_name: Madison Local
+  district_nces_id: '3904612'
+  enrollment: 1478
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-milan-3904678:
+  display_name: Milan
+  district_name: Edison Local (formerly Berlin-Milan)
+  district_nces_id: '3904678'
+  enrollment: 1399
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-milan-3905102:
+  display_name: Milan
+  district_name: EHOVE Career Center
+  district_nces_id: '3905102'
+  enrollment: 672
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-milford:
+  display_name: Milford
+  district_name: Milford Exempted Village
+  district_nces_id: '3904550'
+  enrollment: 6321
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-milford-center:
+  display_name: Milford Center
+  district_name: Fairbanks Local
+  district_nces_id: '3905032'
+  enrollment: 1075
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-millbury:
+  display_name: Millbury
+  district_name: Lake Local
+  district_nces_id: '3905069'
+  enrollment: 1581
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-miller-city:
+  display_name: Miller City
+  district_name: Miller City-New Cleveland Local
+  district_nces_id: '3904936'
+  enrollment: 542
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-millersburg-3904768:
+  display_name: Millersburg
+  district_name: East Holmes Local
+  district_nces_id: '3904768'
+  enrollment: 1497
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-millersburg-3904769:
+  display_name: Millersburg
+  district_name: West Holmes Local
+  district_nces_id: '3904769'
+  enrollment: 1815
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mineral-ridge:
+  display_name: Mineral Ridge
+  district_name: Weathersfield Local
+  district_nces_id: '3905025'
+  enrollment: 905
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-minerva:
+  display_name: Minerva
+  district_name: Minerva Local
+  district_nces_id: '3904989'
+  enrollment: 1687
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-minford:
+  display_name: Minford
+  district_name: Minford Local
+  district_nces_id: '3904962'
+  enrollment: 1261
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-minster:
+  display_name: Minster
+  district_name: Minster Local
+  district_nces_id: '3904594'
+  enrollment: 847
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mogadore-3904919:
+  display_name: Mogadore
+  district_name: Field Local
+  district_nces_id: '3904919'
+  enrollment: 1886
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mogadore-3905003:
+  display_name: Mogadore
+  district_name: Mogadore Local
+  district_nces_id: '3905003'
+  enrollment: 763
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-monroe:
+  display_name: Monroe
+  district_name: Monroe Local
+  district_nces_id: '3900094'
+  enrollment: 2845
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-monroeville:
+  display_name: Monroeville
+  district_name: Monroeville Local
+  district_nces_id: '3904771'
+  enrollment: 572
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-montpelier:
+  display_name: Montpelier
+  district_name: Montpelier Exempted Village
+  district_nces_id: '3904552'
+  enrollment: 791
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-morral:
+  display_name: Morral
+  district_name: Ridgedale Local
+  district_nces_id: '3904843'
+  enrollment: 627
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mount-gilead:
+  display_name: Mount Gilead
+  district_name: Mount Gilead Exempted Village
+  district_nces_id: '3904553'
+  enrollment: 1024
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mount-orab:
+  display_name: Mount Orab
+  district_name: Western Brown Local
+  district_nces_id: '3904606'
+  enrollment: 2739
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mount-vernon:
+  display_name: Mount Vernon
+  district_name: Mount Vernon City
+  district_nces_id: '3910012'
+  enrollment: 3536
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mowrystown:
+  display_name: Mowrystown
+  district_name: Bright Local
+  district_nces_id: '3904761'
+  enrollment: 727
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-mt-blanchard:
+  display_name: Mt Blanchard
+  district_name: Riverdale Local
+  district_nces_id: '3904751'
+  enrollment: 1024
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-napoleon:
+  display_name: Napoleon
+  district_name: Napoleon Area City
+  district_nces_id: '3904443'
+  enrollment: 1762
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-navarre:
+  display_name: Navarre
+  district_name: Fairless Local
+  district_nces_id: '3904984'
+  enrollment: 1261
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-nelsonville-3904444:
+  display_name: Nelsonville
+  district_name: Nelsonville-York City
+  district_nces_id: '3904444'
+  enrollment: 1054
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-nelsonville-3905160:
+  display_name: Nelsonville
+  district_name: Tri-County Career Center
+  district_nces_id: '3905160'
+  enrollment: 528
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-albany:
+  display_name: New Albany
+  district_name: New Albany-Plain Local
+  district_nces_id: '3904699'
+  enrollment: 5101
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-bremen:
+  display_name: New Bremen
+  district_name: New Bremen Local
+  district_nces_id: '3904595'
+  enrollment: 826
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-carlisle:
+  display_name: New Carlisle
+  district_name: Tecumseh Local
+  district_nces_id: '3904624'
+  enrollment: 2695
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-concord:
+  display_name: New Concord
+  district_name: East Muskingum Local
+  district_nces_id: '3904883'
+  enrollment: 2070
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-lebanon:
+  display_name: New Lebanon
+  district_name: New Lebanon Local School District
+  district_nces_id: '3904871'
+  enrollment: 1090
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-lexington:
+  display_name: New Lexington
+  district_name: New Lexington School District
+  district_nces_id: '3904447'
+  enrollment: 1691
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-london:
+  display_name: New London
+  district_name: New London Local
+  district_nces_id: '3904772'
+  enrollment: 870
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-madison:
+  display_name: New Madison
+  district_name: Tri-Village Local
+  district_nces_id: '3904668'
+  enrollment: 842
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-matamoras:
+  display_name: New Matamoras
+  district_name: Frontier Local
+  district_nces_id: '3905049'
+  enrollment: 513
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-middletown:
+  display_name: New Middletown
+  district_name: Springfield Local
+  district_nces_id: '3904837'
+  enrollment: 920
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-paris:
+  display_name: New Paris
+  district_name: National Trail Local
+  district_nces_id: '3904927'
+  enrollment: 931
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-philadelphia-3900252:
+  display_name: New Philadelphia
+  district_name: Quaker Digital Academy
+  district_nces_id: '3900252'
+  enrollment: 673
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-new-philadelphia-3904448:
+  display_name: New Philadelphia
+  district_name: New Philadelphia City
+  district_nces_id: '3904448'
+  enrollment: 2864
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-philadelphia-3905165:
+  display_name: New Philadelphia
+  district_name: Buckeye
+  district_nces_id: '3905165'
+  enrollment: 827
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-richmond:
+  display_name: New Richmond
+  district_name: New Richmond Exempted Village
+  district_nces_id: '3904555'
+  enrollment: 2025
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-new-washington:
+  display_name: New Washington
+  district_name: Buckeye Central Local
+  district_nces_id: '3904650'
+  enrollment: 641
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-newark-3904445:
+  display_name: Newark
+  district_name: Newark City
+  district_nces_id: '3904445'
+  enrollment: 5907
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-newark-3904801:
+  display_name: Newark
+  district_name: Licking Valley Local
+  district_nces_id: '3904801'
+  enrollment: 2062
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-newark-3905120:
+  display_name: Newark
+  district_name: Career and Technology Educational Centers
+  district_nces_id: '3905120'
+  enrollment: 660
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-newcomerstown:
+  display_name: Newcomerstown
+  district_name: Newcomerstown Exempted Village
+  district_nces_id: '3904554'
+  enrollment: 884
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-newton-falls:
+  display_name: Newton Falls
+  district_name: Newton Falls Exempted Village
+  district_nces_id: '3904556'
+  enrollment: 904
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-niles:
+  display_name: Niles
+  district_name: Niles City
+  district_nces_id: '3904449'
+  enrollment: 1948
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-north-baltimore:
+  display_name: North Baltimore
+  district_name: North Baltimore Local
+  district_nces_id: '3905070'
+  enrollment: 598
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-north-canton:
+  display_name: North Canton
+  district_name: North Canton City
+  district_nces_id: '3904450'
+  enrollment: 4419
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-north-jackson:
+  display_name: North Jackson
+  district_name: Jackson-Milton Local
+  district_nces_id: '3904832'
+  enrollment: 760
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-north-lewisburg:
+  display_name: North Lewisburg
+  district_name: Triad Local
+  district_nces_id: '3904620'
+  enrollment: 823
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-north-olmsted:
+  display_name: North Olmsted
+  district_name: North Olmsted City
+  district_nces_id: '3904452'
+  enrollment: 3613
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-north-ridgeville:
+  display_name: North Ridgeville
+  district_name: North Ridgeville City
+  district_nces_id: '3904453'
+  enrollment: 4511
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-north-robinson:
+  display_name: North Robinson
+  district_name: Colonel Crawford Local
+  district_nces_id: '3904651'
+  enrollment: 972
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-north-royalton:
+  display_name: North Royalton
+  district_name: North Royalton City
+  district_nces_id: '3904454'
+  enrollment: 3762
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-northfield:
+  display_name: Northfield
+  district_name: Nordonia Hills City
+  district_nces_id: '3905004'
+  enrollment: 3454
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-northwood:
+  display_name: Northwood
+  district_name: Northwood Local Schools
+  district_nces_id: '3905071'
+  enrollment: 891
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-norton:
+  display_name: Norton
+  district_name: Norton City
+  district_nces_id: '3904455'
+  enrollment: 2289
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-norwalk:
+  display_name: Norwalk
+  district_name: Norwalk City
+  district_nces_id: '3904456'
+  enrollment: 2541
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-norwood:
+  display_name: Norwood
+  district_name: Norwood City
+  district_nces_id: '3904457'
+  enrollment: 1669
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-oak-harbor:
+  display_name: Oak Harbor
+  district_name: Benton Carroll Salem Local
+  district_nces_id: '3904892'
+  enrollment: 1373
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-oak-hill:
+  display_name: Oak Hill
+  district_name: Oak Hill Union Local
+  district_nces_id: '3904776'
+  enrollment: 1140
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-oberlin-3904459:
+  display_name: Oberlin
+  district_name: Oberlin City Schools
+  district_nces_id: '3904459'
+  enrollment: 804
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-oberlin-3905122:
+  display_name: Oberlin
+  district_name: Lorain County JVS
+  district_nces_id: '3905122'
+  enrollment: 1239
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-olmsted-falls:
+  display_name: Olmsted Falls
+  district_name: Olmsted Falls City
+  district_nces_id: '3904657'
+  enrollment: 3596
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ontario:
+  display_name: Ontario
+  district_name: Ontario Local
+  district_nces_id: '3904947'
+  enrollment: 1932
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-oregon:
+  display_name: Oregon
+  district_name: Oregon City
+  district_nces_id: '3904460'
+  enrollment: 3273
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-orrville:
+  display_name: Orrville
+  district_name: Orrville City
+  district_nces_id: '3904461'
+  enrollment: 1514
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-orwell:
+  display_name: Orwell
+  district_name: Grand Valley Local
+  district_nces_id: '3904586'
+  enrollment: 882
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ottawa:
+  display_name: Ottawa
+  district_name: Ottawa-Glandorf Local
+  district_nces_id: '3904937'
+  enrollment: 1519
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-oxford:
+  display_name: Oxford
+  district_name: Talawanda City
+  district_nces_id: '3904615'
+  enrollment: 3000
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-painesville-3910014:
+  display_name: Painesville
+  district_name: Riverside Local
+  district_nces_id: '3910014'
+  enrollment: 4256
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-painesville-3910015:
+  display_name: Painesville
+  district_name: Painesville City Local
+  district_nces_id: '3910015'
+  enrollment: 2669
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-pandora:
+  display_name: Pandora
+  district_name: Pandora-Gilboa Local
+  district_nces_id: '3904939'
+  enrollment: 521
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-parma-3900068:
+  display_name: Parma
+  district_name: 'Constellation Schools: Parma Community'
+  district_nces_id: '3900068'
+  enrollment: 1179
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-parma-3904463:
+  display_name: Parma
+  district_name: Parma City
+  district_nces_id: '3904463'
+  enrollment: 9257
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-pataskala-3904800:
+  display_name: Pataskala
+  district_name: Licking Heights Local
+  district_nces_id: '3904800'
+  enrollment: 5073
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-pataskala-3904804:
+  display_name: Pataskala
+  district_name: Southwest Licking Local
+  district_nces_id: '3904804'
+  enrollment: 4794
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-patriot:
+  display_name: Patriot
+  district_name: Gallia County Local
+  district_nces_id: '3906568'
+  enrollment: 2188
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-paulding:
+  display_name: Paulding
+  district_name: Paulding Exempted Village
+  district_nces_id: '3904557'
+  enrollment: 1348
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-pemberville:
+  display_name: Pemberville
+  district_name: Eastwood Local
+  district_nces_id: '3905067'
+  enrollment: 1455
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-peninsula:
+  display_name: Peninsula
+  district_name: Woodridge Local
+  district_nces_id: '3904997'
+  enrollment: 1956
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-perry:
+  display_name: Perry
+  district_name: Perry Local
+  district_nces_id: '3904790'
+  enrollment: 1505
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-perrysburg-3904558:
+  display_name: Perrysburg
+  district_name: Perrysburg Exempted Village
+  district_nces_id: '3904558'
+  enrollment: 5535
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-perrysburg-3905135:
+  display_name: Perrysburg
+  district_name: Penta Career Center - District
+  district_nces_id: '3905135'
+  enrollment: 1481
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-pickerington:
+  display_name: Pickerington
+  district_name: Pickerington Local
+  district_nces_id: '3904689'
+  enrollment: 11370
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-piketon:
+  display_name: Piketon
+  district_name: Scioto Valley Local
+  district_nces_id: '3904913'
+  enrollment: 1180
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-pioneer:
+  display_name: Pioneer
+  district_name: North Central Local
+  district_nces_id: '3905064'
+  enrollment: 551
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-piqua-3904464:
+  display_name: Piqua
+  district_name: Piqua City
+  district_nces_id: '3904464'
+  enrollment: 3154
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-piqua-3906212:
+  display_name: Piqua
+  district_name: Upper Valley Career Center
+  district_nces_id: '3906212'
+  enrollment: 910
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-plain-city:
+  display_name: Plain City
+  district_name: Jonathan Alder Local
+  district_nces_id: '3904826'
+  enrollment: 2265
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-pleasant-hill:
+  display_name: Pleasant Hill
+  district_name: Newton Local
+  district_nces_id: '3904863'
+  enrollment: 641
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-plymouth:
+  display_name: Plymouth
+  district_name: Plymouth-Shiloh Local
+  district_nces_id: '3904946'
+  enrollment: 643
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-poland:
+  display_name: Poland
+  district_name: Poland Local
+  district_nces_id: '3904834'
+  enrollment: 1776
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-pomeroy:
+  display_name: Pomeroy
+  district_name: Meigs Local
+  district_nces_id: '3904852'
+  enrollment: 1668
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-port-clinton:
+  display_name: Port Clinton
+  district_name: Port Clinton City
+  district_nces_id: '3904465'
+  enrollment: 1489
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-portsmouth-3910026:
+  display_name: Portsmouth
+  district_name: Clay Local
+  district_nces_id: '3910026'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-portsmouth-3910027:
+  display_name: Portsmouth
+  district_name: Portsmouth City
+  district_nces_id: '3910027'
+  enrollment: 1630
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-proctorville:
+  display_name: Proctorville
+  district_name: Fairland Local
+  district_nces_id: '3904793'
+  enrollment: 1425
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-racine:
+  display_name: Racine
+  district_name: Southern Local
+  district_nces_id: '3904853'
+  enrollment: 682
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ravenna-3904468:
+  display_name: Ravenna
+  district_name: Ravenna City
+  district_nces_id: '3904468'
+  enrollment: 1982
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ravenna-3904922:
+  display_name: Ravenna
+  district_name: Southeast Local
+  district_nces_id: '3904922'
+  enrollment: 1392
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ravenna-3905139:
+  display_name: Ravenna
+  district_name: Maplewood Career Center District
+  district_nces_id: '3905139'
+  enrollment: 665
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-reading:
+  display_name: Reading
+  district_name: Reading Community City
+  district_nces_id: '3904469'
+  enrollment: 1534
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-reedsville:
+  display_name: Reedsville
+  district_name: Eastern Local
+  district_nces_id: '3904851'
+  enrollment: 726
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-reynoldsburg:
+  display_name: Reynoldsburg
+  district_name: Reynoldsburg City
+  district_nces_id: '3904700'
+  enrollment: 7374
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-richfield:
+  display_name: Richfield
+  district_name: Revere Local
+  district_nces_id: '3905005'
+  enrollment: 2882
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-richmond-heights:
+  display_name: Richmond Heights
+  district_name: Richmond Heights Local
+  district_nces_id: '3904659'
+  enrollment: 809
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-richwood:
+  display_name: Richwood
+  district_name: North Union Local School District
+  district_nces_id: '3905033'
+  enrollment: 1411
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-rio-grande:
+  display_name: Rio Grande
+  district_name: Gallia-Jackson-Vinton
+  district_nces_id: '3906206'
+  enrollment: 505
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-ripley:
+  display_name: Ripley
+  district_name: Ripley-Union-Lewis-Huntington Local
+  district_nces_id: '3904607'
+  enrollment: 702
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-rittman:
+  display_name: Rittman
+  district_name: Rittman Exempted Village
+  district_nces_id: '3910028'
+  enrollment: 864
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-rockford:
+  display_name: Rockford
+  district_name: Parkway Local
+  district_nces_id: '3904857'
+  enrollment: 977
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-rocky-river:
+  display_name: Rocky River
+  district_name: Rocky River City
+  district_nces_id: '3904470'
+  enrollment: 2645
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-rootstown-3901512:
+  display_name: Rootstown
+  district_name: Bio-Med Science Academy STEM School
+  district_nces_id: '3901512'
+  enrollment: 1013
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-rootstown-3904921:
+  display_name: Rootstown
+  district_name: Rootstown Local
+  district_nces_id: '3904921'
+  enrollment: 976
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-rossford:
+  display_name: Rossford
+  district_name: Rossford Exempted Village
+  district_nces_id: '3904560'
+  enrollment: 1658
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sabina:
+  display_name: Sabina
+  district_name: East Clinton Local
+  district_nces_id: '3904640'
+  enrollment: 1227
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-saint-bernard:
+  display_name: Saint Bernard
+  district_name: St Bernard-Elmwood Place City
+  district_nces_id: '3904471'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-saint-clairsville:
+  display_name: Saint Clairsville
+  district_name: St Clairsville-Richland City
+  district_nces_id: '3904599'
+  enrollment: 1592
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-saint-henry:
+  display_name: Saint Henry
+  district_name: St Henry Consolidated Local
+  district_nces_id: '3904858'
+  enrollment: 1020
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-saint-marys:
+  display_name: Saint Marys
+  district_name: St Marys City
+  district_nces_id: '3904472'
+  enrollment: 1949
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-saint-paris:
+  display_name: Saint Paris
+  district_name: Graham Local
+  district_nces_id: '3904619'
+  enrollment: 1665
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-salem:
+  display_name: Salem
+  district_name: Salem City
+  district_nces_id: '3910006'
+  enrollment: 1934
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-salineville:
+  display_name: Salineville
+  district_name: Southern Local
+  district_nces_id: '3904644'
+  enrollment: 817
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sandusky-3904474:
+  display_name: Sandusky
+  district_name: Sandusky City
+  district_nces_id: '3904474'
+  enrollment: 3185
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sandusky-3904681:
+  display_name: Sandusky
+  district_name: Perkins Local
+  district_nces_id: '3904681'
+  enrollment: 1897
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sarahsville:
+  display_name: Sarahsville
+  district_name: Noble Local
+  district_nces_id: '3904890'
+  enrollment: 973
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-shadyside:
+  display_name: Shadyside
+  district_name: Shadyside Local
+  district_nces_id: '3904600'
+  enrollment: 717
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-shaker-heights:
+  display_name: Shaker Heights
+  district_name: Shaker Heights City
+  district_nces_id: '3904475'
+  enrollment: 4452
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sheffield-village:
+  display_name: Sheffield Village
+  district_name: Sheffield-Sheffield Lake City
+  district_nces_id: '3904476'
+  enrollment: 1576
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-shelby-3905141:
+  display_name: Shelby
+  district_name: Pioneer Career & Technology
+  district_nces_id: '3905141'
+  enrollment: 1040
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-shelby-3910009:
+  display_name: Shelby
+  district_name: Shelby City
+  district_nces_id: '3910009'
+  enrollment: 1853
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sherwood:
+  display_name: Sherwood
+  district_name: Central Local
+  district_nces_id: '3904671'
+  enrollment: 915
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sidney-3904977:
+  display_name: Sidney
+  district_name: Fairlawn Local
+  district_nces_id: '3904977'
+  enrollment: 586
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sidney-3910003:
+  display_name: Sidney
+  district_name: Sidney City
+  district_nces_id: '3910003'
+  enrollment: 3158
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-smithville-3905055:
+  display_name: Smithville
+  district_name: Green Local
+  district_nces_id: '3905055'
+  enrollment: 1078
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-smithville-3905171:
+  display_name: Smithville
+  district_name: Wayne County JVSD
+  district_nces_id: '3905171'
+  enrollment: 592
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-solon:
+  display_name: Solon
+  district_name: Solon City
+  district_nces_id: '3904660'
+  enrollment: 4673
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-south-amherst:
+  display_name: South Amherst
+  district_name: Firelands Local
+  district_nces_id: '3904815'
+  enrollment: 1684
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-south-charleston:
+  display_name: South Charleston
+  district_name: Southeastern Local
+  district_nces_id: '3904627'
+  enrollment: 692
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-south-point:
+  display_name: South Point
+  district_name: South Point Local
+  district_nces_id: '3904795'
+  enrollment: 1366
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-south-webster:
+  display_name: South Webster
+  district_name: Bloom-Vernon Local
+  district_nces_id: '3904959'
+  enrollment: 809
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-spencerville:
+  display_name: Spencerville
+  district_name: Spencerville Local
+  district_nces_id: '3904580'
+  enrollment: 926
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-springboro:
+  display_name: Springboro
+  district_name: Springboro Community City
+  district_nces_id: '3905042'
+  enrollment: 6089
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-springfield-3901535:
+  display_name: Springfield
+  district_name: Global Impact STEM Academy
+  district_nces_id: '3901535'
+  enrollment: 664
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-springfield-3904481:
+  display_name: Springfield
+  district_name: Springfield City School District
+  district_nces_id: '3904481'
+  enrollment: 7099
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-springfield-3904625:
+  display_name: Springfield
+  district_name: Northeastern Local
+  district_nces_id: '3904625'
+  enrollment: 2973
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-springfield-3904626:
+  display_name: Springfield
+  district_name: Northwestern Local
+  district_nces_id: '3904626'
+  enrollment: 1668
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-springfield-3904628:
+  display_name: Springfield
+  district_name: Clark-Shawnee Local
+  district_nces_id: '3904628'
+  enrollment: 1697
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-springfield-3905153:
+  display_name: Springfield
+  district_name: Springfield-Clark County
+  district_nces_id: '3905153'
+  enrollment: 594
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-steubenville:
+  display_name: Steubenville
+  district_name: Steubenville City
+  district_nces_id: '3904482'
+  enrollment: 2769
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-stewart:
+  display_name: Stewart
+  district_name: Federal Hocking Local
+  district_nces_id: '3904591'
+  enrollment: 868
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-stow:
+  display_name: Stow
+  district_name: Stow-Munroe Falls City School District
+  district_nces_id: '3904483'
+  enrollment: 5175
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-strasburg:
+  display_name: Strasburg
+  district_name: Strasburg-Franklin Local
+  district_nces_id: '3905029'
+  enrollment: 530
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-streetsboro:
+  display_name: Streetsboro
+  district_name: Streetsboro City
+  district_nces_id: '3904923'
+  enrollment: 1963
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-strongsville:
+  display_name: Strongsville
+  district_name: Strongsville City
+  district_nces_id: '3904484'
+  enrollment: 5695
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-struthers:
+  display_name: Struthers
+  district_name: Struthers City
+  district_nces_id: '3904485'
+  enrollment: 1664
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sugar-grove:
+  display_name: Sugar Grove
+  district_name: Berne Union Local
+  district_nces_id: '3904685'
+  enrollment: 849
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sugarcreek:
+  display_name: Sugarcreek
+  district_name: Garaway Local
+  district_nces_id: '3905027'
+  enrollment: 1083
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sullivan:
+  display_name: Sullivan
+  district_name: Black River Local
+  district_nces_id: '3904846'
+  enrollment: 1057
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sunbury:
+  display_name: Sunbury
+  district_name: Big Walnut Local
+  district_nces_id: '3904674'
+  enrollment: 4172
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-swanton:
+  display_name: Swanton
+  district_name: Swanton Local
+  district_nces_id: '3904709'
+  enrollment: 1138
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sycamore:
+  display_name: Sycamore
+  district_name: Mohawk Local
+  district_nces_id: '3905074'
+  enrollment: 860
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-sylvania:
+  display_name: Sylvania
+  district_name: Sylvania Schools
+  district_nces_id: '3904487'
+  enrollment: 7662
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-tallmadge:
+  display_name: Tallmadge
+  district_name: Tallmadge City
+  district_nces_id: '3904488'
+  enrollment: 2464
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-thornville:
+  display_name: Thornville
+  district_name: Northern Local
+  district_nces_id: '3904905'
+  enrollment: 2226
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-tiffin-3904489:
+  display_name: Tiffin
+  district_name: Tiffin City Schools
+  district_nces_id: '3904489'
+  enrollment: 2593
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-tiffin-3910021:
+  display_name: Tiffin
+  district_name: Old Fort Local
+  district_nces_id: '3910021'
+  enrollment: 745
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-tipp-city-3904561:
+  display_name: Tipp City
+  district_name: Tipp City Exempted Village
+  district_nces_id: '3904561'
+  enrollment: 2379
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-tipp-city-3904861:
+  display_name: Tipp City
+  district_name: Bethel Local
+  district_nces_id: '3904861'
+  enrollment: 1868
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-toledo-3900056:
+  display_name: Toledo
+  district_name: Toledo School For The Arts
+  district_nces_id: '3900056'
+  enrollment: 691
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-toledo-3900302:
+  display_name: Toledo
+  district_name: Winterfield Venture Academy
+  district_nces_id: '3900302'
+  enrollment: 500
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-toledo-3900457:
+  display_name: Toledo
+  district_name: Bennett Venture Academy
+  district_nces_id: '3900457'
+  enrollment: 589
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-toledo-3900510:
+  display_name: Toledo
+  district_name: Horizon Science Academy Toledo
+  district_nces_id: '3900510'
+  enrollment: 515
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-toledo-3904490:
+  display_name: Toledo
+  district_name: Toledo City
+  district_nces_id: '3904490'
+  enrollment: 21814
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-toledo-3904821:
+  display_name: Toledo
+  district_name: Ottawa Hills Local
+  district_nces_id: '3904821'
+  enrollment: 1077
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-toledo-3904823:
+  display_name: Toledo
+  district_name: Washington Local
+  district_nces_id: '3904823'
+  enrollment: 6877
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-toronto:
+  display_name: Toronto
+  district_name: Toronto City
+  district_nces_id: '3904491'
+  enrollment: 814
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-trenton:
+  display_name: Trenton
+  district_name: Edgewood City School District
+  district_nces_id: '3904609'
+  enrollment: 3656
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-trotwood:
+  display_name: Trotwood
+  district_name: Trotwood-Madison City
+  district_nces_id: '3904869'
+  enrollment: 2558
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-troy:
+  display_name: Troy
+  district_name: Troy City
+  district_nces_id: '3904492'
+  enrollment: 4072
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-twinsburg:
+  display_name: Twinsburg
+  district_name: Twinsburg City
+  district_nces_id: '3905007'
+  enrollment: 4027
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-union-city:
+  display_name: Union City
+  district_name: Mississinawa Valley Local
+  district_nces_id: '3904667'
+  enrollment: 647
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-uniontown-3904986:
+  display_name: Uniontown
+  district_name: Lake Local
+  district_nces_id: '3904986'
+  enrollment: 3371
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-uniontown-3905001:
+  display_name: Uniontown
+  district_name: Green Local
+  district_nces_id: '3905001'
+  enrollment: 4030
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-university-heights:
+  display_name: University Heights
+  district_name: Cleveland Heights-University Heights City
+  district_nces_id: '3904379'
+  enrollment: 5010
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-upper-arlington:
+  display_name: Upper Arlington
+  district_name: Upper Arlington City
+  district_nces_id: '3904493'
+  enrollment: 6455
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-upper-sandusky:
+  display_name: Upper Sandusky
+  district_name: Upper Sandusky Exempted Village
+  district_nces_id: '3910024'
+  enrollment: 1575
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-urbana:
+  display_name: Urbana
+  district_name: Urbana City
+  district_nces_id: '3904494'
+  enrollment: 1854
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-utica:
+  display_name: Utica
+  district_name: North Fork Local
+  district_nces_id: '3904802'
+  enrollment: 1515
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-van-buren:
+  display_name: Van Buren
+  district_name: Van Buren Local
+  district_nces_id: '3910001'
+  enrollment: 1050
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-van-wert-3910022:
+  display_name: Van Wert
+  district_name: Lincolnview Local
+  district_nces_id: '3910022'
+  enrollment: 822
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-van-wert-3910023:
+  display_name: Van Wert
+  district_name: Van Wert City
+  district_nces_id: '3910023'
+  enrollment: 2024
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-vandalia:
+  display_name: Vandalia
+  district_name: Vandalia-Butler City
+  district_nces_id: '3904495'
+  enrollment: 2874
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-vermilion:
+  display_name: Vermilion
+  district_name: Vermilion Local
+  district_nces_id: '3904682'
+  enrollment: 1723
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-versailles:
+  display_name: Versailles
+  district_name: Versailles Exempted Village
+  district_nces_id: '3904563'
+  enrollment: 1258
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-vincent:
+  display_name: Vincent
+  district_name: Warren Local
+  district_nces_id: '3910018'
+  enrollment: 2009
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wadsworth:
+  display_name: Wadsworth
+  district_name: Wadsworth City
+  district_nces_id: '3910029'
+  enrollment: 4464
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wapakoneta:
+  display_name: Wapakoneta
+  district_name: Wapakoneta City
+  district_nces_id: '3904498'
+  enrollment: 3046
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-warren-3904499:
+  display_name: Warren
+  district_name: Warren City
+  district_nces_id: '3904499'
+  enrollment: 4685
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-warren-3905013:
+  display_name: Warren
+  district_name: Champion Local
+  district_nces_id: '3905013'
+  enrollment: 1257
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-warren-3905016:
+  display_name: Warren
+  district_name: Howland Local
+  district_nces_id: '3905016'
+  enrollment: 2384
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-warren-3905163:
+  display_name: Warren
+  district_name: Trumbull Career & Tech Ctr
+  district_nces_id: '3905163'
+  enrollment: 841
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-warrensville-heights:
+  display_name: Warrensville Heights
+  district_name: Warrensville Heights City
+  district_nces_id: '3904500'
+  enrollment: 1797
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-warsaw:
+  display_name: Warsaw
+  district_name: River View Local
+  district_nces_id: '3904648'
+  enrollment: 1627
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-washington-court-hou:
+  display_name: Washington Court Hou
+  district_name: Washington Court House City
+  district_nces_id: '3910011'
+  enrollment: 2022
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-washington-court-house:
+  display_name: Washington Court House
+  district_name: Miami Trace Local
+  district_nces_id: '3910010'
+  enrollment: 2573
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-waterford:
+  display_name: Waterford
+  district_name: Wolf Creek Local
+  district_nces_id: '3905051'
+  enrollment: 583
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wauseon:
+  display_name: Wauseon
+  district_name: Wauseon Exempted Village
+  district_nces_id: '3904564'
+  enrollment: 1737
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-waverly:
+  display_name: Waverly
+  district_name: Waverly City
+  district_nces_id: '3904914'
+  enrollment: 1694
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-waynesville:
+  display_name: Waynesville
+  district_name: Wayne Local
+  district_nces_id: '3905046'
+  enrollment: 1617
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wellington:
+  display_name: Wellington
+  district_name: Wellington Exempted Village
+  district_nces_id: '3904565'
+  enrollment: 920
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wellston:
+  display_name: Wellston
+  district_name: Wellston City
+  district_nces_id: '3904502'
+  enrollment: 1267
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wellsville:
+  display_name: Wellsville
+  district_name: Wellsville Local
+  district_nces_id: '3904503'
+  enrollment: 707
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-west-alexandria:
+  display_name: West Alexandria
+  district_name: Twin Valley Community Local
+  district_nces_id: '3904900'
+  enrollment: 765
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-west-carrollton:
+  display_name: West Carrollton
+  district_name: West Carrollton City
+  district_nces_id: '3904505'
+  enrollment: 3353
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-west-jefferson:
+  display_name: West Jefferson
+  district_name: Jefferson Local
+  district_nces_id: '3904825'
+  enrollment: 987
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-west-lafayette:
+  display_name: West Lafayette
+  district_name: Ridgewood Local
+  district_nces_id: '3904647'
+  enrollment: 1275
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-west-liberty:
+  display_name: West Liberty
+  district_name: West Liberty-Salem Local
+  district_nces_id: '3904621'
+  enrollment: 1188
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-west-milton:
+  display_name: West Milton
+  district_name: Milton-Union Exempted Village
+  district_nces_id: '3904551'
+  enrollment: 1341
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-west-portsmouth:
+  display_name: West Portsmouth
+  district_name: Washington-Nile Local
+  district_nces_id: '3904965'
+  enrollment: 1269
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-west-salem:
+  display_name: West Salem
+  district_name: Northwestern Local
+  district_nces_id: '3910033'
+  enrollment: 1266
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-west-union:
+  display_name: West Union
+  district_name: Adams County Ohio Valley Local
+  district_nces_id: '3906190'
+  enrollment: 3546
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-westerville-3900081:
+  display_name: Westerville
+  district_name: Cornerstone Academy Community School
+  district_nces_id: '3900081'
+  enrollment: 988
+  has_charters: true
+  source: ccd_auto
+  state: OH
+oh-westerville-3904504:
+  display_name: Westerville
+  district_name: Westerville City
+  district_nces_id: '3904504'
+  enrollment: 14571
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-westlake:
+  display_name: Westlake
+  district_name: Westlake City
+  district_nces_id: '3904506'
+  enrollment: 3275
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wheelersburg:
+  display_name: Wheelersburg
+  district_name: Wheelersburg Local
+  district_nces_id: '3904966'
+  enrollment: 1586
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-whitehall:
+  display_name: Whitehall
+  district_name: Whitehall City
+  district_nces_id: '3904507'
+  enrollment: 3191
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-whitehouse:
+  display_name: Whitehouse
+  district_name: Anthony Wayne Local
+  district_nces_id: '3904820'
+  enrollment: 4226
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wickliffe:
+  display_name: Wickliffe
+  district_name: Wickliffe City
+  district_nces_id: '3904508'
+  enrollment: 1337
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-willard:
+  display_name: Willard
+  district_name: Willard City
+  district_nces_id: '3904509'
+  enrollment: 1247
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-williamsburg:
+  display_name: Williamsburg
+  district_name: Williamsburg Local
+  district_nces_id: '3904636'
+  enrollment: 947
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-williamsport:
+  display_name: Williamsport
+  district_name: Westfall Local
+  district_nces_id: '3904910'
+  enrollment: 1412
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-willow-wood:
+  display_name: Willow Wood
+  district_name: Symmes Valley Local
+  district_nces_id: '3904796'
+  enrollment: 741
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wilmington:
+  display_name: Wilmington
+  district_name: Wilmington City
+  district_nces_id: '3904511'
+  enrollment: 2223
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-winchester:
+  display_name: Winchester
+  district_name: Eastern Local School District
+  district_nces_id: '3904603'
+  enrollment: 1140
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wintersville:
+  display_name: Wintersville
+  district_name: Indian Creek Local
+  district_nces_id: '3904780'
+  enrollment: 1963
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-woodsfield:
+  display_name: Woodsfield
+  district_name: Switzerland of Ohio Local
+  district_nces_id: '3904865'
+  enrollment: 1946
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wooster-3905059:
+  display_name: Wooster
+  district_name: Triway Local
+  district_nces_id: '3905059'
+  enrollment: 1433
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wooster-3910032:
+  display_name: Wooster
+  district_name: Wooster City
+  district_nces_id: '3910032'
+  enrollment: 3296
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-worthington:
+  display_name: Worthington
+  district_name: Worthington City
+  district_nces_id: '3904513'
+  enrollment: 10810
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-wyoming:
+  display_name: Wyoming
+  district_name: Wyoming City
+  district_nces_id: '3904514'
+  enrollment: 1894
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-xenia-3904515:
+  display_name: Xenia
+  district_name: Xenia Community City
+  district_nces_id: '3904515'
+  enrollment: 3829
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-xenia-3905104:
+  display_name: Xenia
+  district_name: Greene County Vocational School District
+  district_nces_id: '3905104'
+  enrollment: 599
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-yellow-springs:
+  display_name: Yellow Springs
+  district_name: Yellow Springs Exempted Village
+  district_nces_id: '3904567'
+  enrollment: 653
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-youngstown-3904516:
+  display_name: Youngstown
+  district_name: Youngstown City
+  district_nces_id: '3904516'
+  enrollment: 4639
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-youngstown-3904829:
+  display_name: Youngstown
+  district_name: Austintown Local Schools
+  district_nces_id: '3904829'
+  enrollment: 4105
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-youngstown-3904830:
+  display_name: Youngstown
+  district_name: Boardman Local
+  district_nces_id: '3904830'
+  enrollment: 3726
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-youngstown-3905019:
+  display_name: Youngstown
+  district_name: Liberty Local
+  district_nces_id: '3905019'
+  enrollment: 1251
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-zanesville-3904517:
+  display_name: Zanesville
+  district_name: Zanesville City
+  district_nces_id: '3904517'
+  enrollment: 3041
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-zanesville-3904885:
+  display_name: Zanesville
+  district_name: Maysville Local
+  district_nces_id: '3904885'
+  enrollment: 1834
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-zanesville-3904888:
+  display_name: Zanesville
+  district_name: West Muskingum Local
+  district_nces_id: '3904888'
+  enrollment: 1542
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-zanesville-3905130:
+  display_name: Zanesville
+  district_name: Mid-East Career and Technology Centers
+  district_nces_id: '3905130'
+  enrollment: 1010
+  has_charters: false
+  source: ccd_auto
+  state: OH
+oh-zoarville:
+  display_name: Zoarville
+  district_name: Tuscarawas Valley Local
+  district_nces_id: '3905030'
+  enrollment: 1267
+  has_charters: false
+  source: ccd_auto
+  state: OH

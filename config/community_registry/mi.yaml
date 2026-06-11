@@ -1,0 +1,4592 @@
+mi-addison:
+  display_name: Addison
+  district_name: Addison Community Schools
+  district_nces_id: '2601920'
+  enrollment: 717
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-adrian-2601950:
+  display_name: Adrian
+  district_name: Adrian Public Schools
+  district_nces_id: '2601950'
+  enrollment: 2771
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-adrian-2622320:
+  display_name: Adrian
+  district_name: Madison School District (Lenawee)
+  district_nces_id: '2622320'
+  enrollment: 1644
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-allegan:
+  display_name: Allegan
+  district_name: Allegan Public Schools
+  district_nces_id: '2602220'
+  enrollment: 2198
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-allen-park:
+  display_name: Allen Park
+  district_name: Allen Park Public Schools
+  district_nces_id: '2602520'
+  enrollment: 3684
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-allendale:
+  display_name: Allendale
+  district_name: Allendale Public Schools
+  district_nces_id: '2602550'
+  enrollment: 2636
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-alma:
+  display_name: Alma
+  district_name: Alma Public Schools
+  district_nces_id: '2602640'
+  enrollment: 1873
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-almont:
+  display_name: Almont
+  district_name: Almont Community Schools
+  district_nces_id: '2602670'
+  enrollment: 1402
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-alpena:
+  display_name: Alpena
+  district_name: Alpena Public Schools
+  district_nces_id: '2602730'
+  enrollment: 3672
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ann-arbor-2600163:
+  display_name: Ann Arbor
+  district_name: Central Academy
+  district_nces_id: '2600163'
+  enrollment: 530
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-ann-arbor-2600164:
+  display_name: Ann Arbor
+  district_name: Washtenaw Technical Middle College
+  district_nces_id: '2600164'
+  enrollment: 776
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-ann-arbor-2602820:
+  display_name: Ann Arbor
+  district_name: Ann Arbor Public Schools
+  district_nces_id: '2602820'
+  enrollment: 17026
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ann-arbor-2680990:
+  display_name: Ann Arbor
+  district_name: Washtenaw ISD
+  district_nces_id: '2680990'
+  enrollment: 906
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-armada:
+  display_name: Armada
+  district_name: Armada Area Schools
+  district_nces_id: '2603240'
+  enrollment: 1746
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-auburn-hills:
+  display_name: Auburn Hills
+  district_name: Avondale School District
+  district_nces_id: '2603690'
+  enrollment: 3821
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bad-axe:
+  display_name: Bad Axe
+  district_name: Bad Axe Public Schools
+  district_nces_id: '2600017'
+  enrollment: 887
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bangor:
+  display_name: Bangor
+  district_name: Bangor Public Schools (Van Buren)
+  district_nces_id: '2603870'
+  enrollment: 998
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bath:
+  display_name: Bath
+  district_name: Bath Community Schools
+  district_nces_id: '2604170'
+  enrollment: 1006
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-battle-creek-2600005:
+  display_name: Battle Creek
+  district_name: Battle Creek Public Schools
+  district_nces_id: '2600005'
+  enrollment: 3753
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-battle-creek-2600192:
+  display_name: Battle Creek
+  district_name: Endeavor Charter Academy
+  district_nces_id: '2600192'
+  enrollment: 679
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-battle-creek-2617730:
+  display_name: Battle Creek
+  district_name: Harper Creek Community Schools
+  district_nces_id: '2617730'
+  enrollment: 2819
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-battle-creek-2620850:
+  display_name: Battle Creek
+  district_name: Lakeview Sch. District (Calhoun)
+  district_nces_id: '2620850'
+  enrollment: 3988
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-battle-creek-2627810:
+  display_name: Battle Creek
+  district_name: Pennfield Schools
+  district_nces_id: '2627810'
+  enrollment: 1986
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bay-city-2601000:
+  display_name: Bay City
+  district_name: Bay City Academy
+  district_nces_id: '2601000'
+  enrollment: 515
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-bay-city-2603900:
+  display_name: Bay City
+  district_name: Bangor Township Schools
+  district_nces_id: '2603900'
+  enrollment: 2646
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bay-city-2604260:
+  display_name: Bay City
+  district_name: Bay City School District
+  district_nces_id: '2604260'
+  enrollment: 6385
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bay-city-2680504:
+  display_name: Bay City
+  district_name: Bay-Arenac ISD
+  district_nces_id: '2680504'
+  enrollment: 722
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-beaverton:
+  display_name: Beaverton
+  district_name: Beaverton Schools
+  district_nces_id: '2604440'
+  enrollment: 929
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-belding:
+  display_name: Belding
+  district_name: Belding Area School District
+  district_nces_id: '2604530'
+  enrollment: 1662
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-belleville-2600289:
+  display_name: Belleville
+  district_name: Keystone Academy
+  district_nces_id: '2600289'
+  enrollment: 629
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-belleville-2634560:
+  display_name: Belleville
+  district_name: Van Buren Public Schools
+  district_nces_id: '2634560'
+  enrollment: 4319
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bellevue:
+  display_name: Bellevue
+  district_name: Bellevue Community Schools
+  district_nces_id: '2604650'
+  enrollment: 590
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-belmont:
+  display_name: Belmont
+  district_name: Chandler Woods Charter Academy
+  district_nces_id: '2600209'
+  enrollment: 773
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-benton-harbor-2600142:
+  display_name: Benton Harbor
+  district_name: Countryside Academy
+  district_nces_id: '2600142'
+  enrollment: 758
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-benton-harbor-2604830:
+  display_name: Benton Harbor
+  district_name: Benton Harbor Area Schools
+  district_nces_id: '2604830'
+  enrollment: 1448
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-benzonia:
+  display_name: Benzonia
+  district_name: Benzie County Central Schools
+  district_nces_id: '2604950'
+  enrollment: 1236
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-berrien-springs-2605430:
+  display_name: Berrien Springs
+  district_name: Berrien Springs Public Schools
+  district_nces_id: '2605430'
+  enrollment: 4352
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-berrien-springs-2680160:
+  display_name: Berrien Springs
+  district_name: Berrien RESA
+  district_nces_id: '2680160'
+  enrollment: 780
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-beverly-hills:
+  display_name: Beverly Hills
+  district_name: Birmingham Public Schools
+  district_nces_id: '2605850'
+  enrollment: 7314
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-big-rapids:
+  display_name: Big Rapids
+  district_name: Big Rapids Public Schools
+  district_nces_id: '2605780'
+  enrollment: 2363
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-birch-run:
+  display_name: Birch Run
+  district_name: Birch Run Area Schools
+  district_nces_id: '2605820'
+  enrollment: 1817
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-blanchard:
+  display_name: Blanchard
+  district_name: Montabella Community Schools
+  district_nces_id: '2612960'
+  enrollment: 754
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-blissfield:
+  display_name: Blissfield
+  district_name: Blissfield Community Schools
+  district_nces_id: '2606000'
+  enrollment: 1134
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bloomfield-hills:
+  display_name: Bloomfield Hills
+  district_name: Bloomfield Hills Schools
+  district_nces_id: '2606090'
+  enrollment: 5143
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bloomingdale:
+  display_name: Bloomingdale
+  district_name: Bloomingdale Public School District
+  district_nces_id: '2606270'
+  enrollment: 1090
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-boyne-city:
+  display_name: Boyne City
+  district_name: Boyne City Public Schools
+  district_nces_id: '2606500'
+  enrollment: 1292
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-breckenridge:
+  display_name: Breckenridge
+  district_name: Breckenridge Community Schools
+  district_nces_id: '2606630'
+  enrollment: 617
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-brethren:
+  display_name: Brethren
+  district_name: Kaleva Norman Dickson School District
+  district_nces_id: '2620010'
+  enrollment: 539
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bridgeport:
+  display_name: Bridgeport
+  district_name: Bridgeport-Spaulding Community School District
+  district_nces_id: '2606780'
+  enrollment: 1452
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bridgman:
+  display_name: Bridgman
+  district_name: Bridgman Public Schools
+  district_nces_id: '2606840'
+  enrollment: 849
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-brighton:
+  display_name: Brighton
+  district_name: Brighton Area Schools
+  district_nces_id: '2606870'
+  enrollment: 5804
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-bronson:
+  display_name: Bronson
+  district_name: Bronson Community School District
+  district_nces_id: '2606960'
+  enrollment: 993
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-brooklyn:
+  display_name: Brooklyn
+  district_name: Columbia School District
+  district_nces_id: '2606990'
+  enrollment: 1485
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-brown-city:
+  display_name: Brown City
+  district_name: Brown City Community Schools
+  district_nces_id: '2607040'
+  enrollment: 717
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-buchanan:
+  display_name: Buchanan
+  district_name: Buchanan Community Schools
+  district_nces_id: '2607140'
+  enrollment: 1566
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-burton-2600251:
+  display_name: Burton
+  district_name: Burton Glen Charter Academy
+  district_nces_id: '2600251'
+  enrollment: 715
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-burton-2603540:
+  display_name: Burton
+  district_name: Atherton Community Schools
+  district_nces_id: '2603540'
+  enrollment: 759
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-burton-2604740:
+  display_name: Burton
+  district_name: Bendle Public Schools
+  district_nces_id: '2604740'
+  enrollment: 1047
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-burton-2604800:
+  display_name: Burton
+  district_name: Bentley Community School District
+  district_nces_id: '2604800'
+  enrollment: 748
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-byron:
+  display_name: Byron
+  district_name: Byron Area Schools
+  district_nces_id: '2607530'
+  enrollment: 677
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-byron-center-2600150:
+  display_name: Byron Center
+  district_name: Cross Creek Charter Academy
+  district_nces_id: '2600150'
+  enrollment: 780
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-byron-center-2607560:
+  display_name: Byron Center
+  district_name: Byron Center Public Schools
+  district_nces_id: '2607560'
+  enrollment: 4443
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-cadillac:
+  display_name: Cadillac
+  district_name: Cadillac Area Public Schools
+  district_nces_id: '2607590'
+  enrollment: 3158
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-caledonia:
+  display_name: Caledonia
+  district_name: Caledonia Community Schools
+  district_nces_id: '2607620'
+  enrollment: 4613
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-calumet:
+  display_name: Calumet
+  district_name: Public Schools of Calumet Laurium & Keweenaw
+  district_nces_id: '2607690'
+  enrollment: 1359
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-canton-2600263:
+  display_name: Canton
+  district_name: Canton Charter Academy
+  district_nces_id: '2600263'
+  enrollment: 703
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-canton-2600963:
+  display_name: Canton
+  district_name: Achieve Charter Academy
+  district_nces_id: '2600963'
+  enrollment: 779
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-canton-2600997:
+  display_name: Canton
+  district_name: South Canton Scholars Charter Academy
+  district_nces_id: '2600997'
+  enrollment: 815
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-canton-2601080:
+  display_name: Canton
+  district_name: Canton Preparatory High School
+  district_nces_id: '2601080'
+  enrollment: 624
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-capac:
+  display_name: Capac
+  district_name: Capac Community Schools
+  district_nces_id: '2607800'
+  enrollment: 744
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-carleton:
+  display_name: Carleton
+  district_name: Airport Community Schools
+  district_nces_id: '2601980'
+  enrollment: 2809
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-caro:
+  display_name: Caro
+  district_name: Caro Community Schools
+  district_nces_id: '2608040'
+  enrollment: 1496
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-carson-city:
+  display_name: Carson City
+  district_name: Carson City-Crystal Area Schools
+  district_nces_id: '2608130'
+  enrollment: 775
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-casco:
+  display_name: Casco
+  district_name: Anchor Bay School District
+  district_nces_id: '2602790'
+  enrollment: 5429
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-cass-city:
+  display_name: Cass City
+  district_name: Cass City Public Schools
+  district_nces_id: '2608400'
+  enrollment: 938
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-cassopolis:
+  display_name: Cassopolis
+  district_name: Cassopolis Public Schools
+  district_nces_id: '2608430'
+  enrollment: 866
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-cedar-springs:
+  display_name: Cedar Springs
+  district_name: Cedar Springs Public Schools
+  district_nces_id: '2608520'
+  enrollment: 3202
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-center-line-2601131:
+  display_name: Center Line
+  district_name: Center Line Preparatory Academy
+  district_nces_id: '2601131'
+  enrollment: 774
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-center-line-2608580:
+  display_name: Center Line
+  district_name: Center Line Public Schools
+  district_nces_id: '2608580'
+  enrollment: 2584
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-centreville:
+  display_name: Centreville
+  district_name: Centreville Public Schools
+  district_nces_id: '2608670'
+  enrollment: 852
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-charlevoix:
+  display_name: Charlevoix
+  district_name: Charlevoix Public Schools
+  district_nces_id: '2608730'
+  enrollment: 806
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-charlotte:
+  display_name: Charlotte
+  district_name: Charlotte Public Schools
+  district_nces_id: '2608770'
+  enrollment: 2378
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-cheboygan:
+  display_name: Cheboygan
+  district_name: Cheboygan Area Schools
+  district_nces_id: '2608910'
+  enrollment: 1505
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-chelsea:
+  display_name: Chelsea
+  district_name: Chelsea School District
+  district_nces_id: '2608940'
+  enrollment: 2300
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-chesaning:
+  display_name: Chesaning
+  district_name: Chesaning Union Schools
+  district_nces_id: '2609150'
+  enrollment: 1419
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clare:
+  display_name: Clare
+  district_name: Clare Public Schools
+  district_nces_id: '2609750'
+  enrollment: 1605
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clarkston:
+  display_name: Clarkston
+  district_name: Clarkston Community School District
+  district_nces_id: '2609900'
+  enrollment: 7626
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clawson:
+  display_name: Clawson
+  district_name: Clawson Public Schools
+  district_nces_id: '2609930'
+  enrollment: 1270
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clay:
+  display_name: Clay
+  district_name: Algonac Community School District
+  district_nces_id: '2602190'
+  enrollment: 1364
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-climax:
+  display_name: Climax
+  district_name: Climax-Scotts Community Schools
+  district_nces_id: '2610020'
+  enrollment: 543
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clinton:
+  display_name: Clinton
+  district_name: Clinton Community Schools
+  district_nces_id: '2610050'
+  enrollment: 1257
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clinton-township-2609570:
+  display_name: Clinton Township
+  district_name: Chippewa Valley Schools
+  district_nces_id: '2609570'
+  enrollment: 14703
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clinton-township-2610080:
+  display_name: Clinton Township
+  district_name: Clintondale Community Schools
+  district_nces_id: '2610080'
+  enrollment: 1823
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clinton-township-2621870:
+  display_name: Clinton Township
+  district_name: L'Anse Creuse Public Schools
+  district_nces_id: '2621870'
+  enrollment: 9414
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clinton-township-2680720:
+  display_name: Clinton Township
+  district_name: Macomb ISD
+  district_nces_id: '2680720'
+  enrollment: 3882
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-clio:
+  display_name: Clio
+  district_name: Clio Area School District
+  district_nces_id: '2610110'
+  enrollment: 2626
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-coldwater-2610140:
+  display_name: Coldwater
+  district_name: Coldwater Community Schools
+  district_nces_id: '2610140'
+  enrollment: 2756
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-coldwater-2680180:
+  display_name: Coldwater
+  district_name: Branch ISD
+  district_nces_id: '2680180'
+  enrollment: 524
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-coleman:
+  display_name: Coleman
+  district_name: Coleman Community Schools
+  district_nces_id: '2610200'
+  enrollment: 609
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-coloma:
+  display_name: Coloma
+  district_name: Coloma Community Schools
+  district_nces_id: '2610380'
+  enrollment: 1161
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-colon:
+  display_name: Colon
+  district_name: Colon Community School District
+  district_nces_id: '2610410'
+  enrollment: 533
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-comstock-park:
+  display_name: Comstock Park
+  district_name: Comstock Park Public Schools
+  district_nces_id: '2610620'
+  enrollment: 1776
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-concord:
+  display_name: Concord
+  district_name: Concord Community Schools
+  district_nces_id: '2610650'
+  enrollment: 629
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-constantine:
+  display_name: Constantine
+  district_name: Constantine Public School District
+  district_nces_id: '2610750'
+  enrollment: 1310
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-coopersville:
+  display_name: Coopersville
+  district_name: Coopersville Area Public School District
+  district_nces_id: '2610830'
+  enrollment: 2554
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-corunna-2610860:
+  display_name: Corunna
+  district_name: Corunna Public Schools
+  district_nces_id: '2610860'
+  enrollment: 1642
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-corunna-2680975:
+  display_name: Corunna
+  district_name: Shiawassee Regional ESD
+  district_nces_id: '2680975'
+  enrollment: 556
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-croswell:
+  display_name: Croswell
+  district_name: Croswell-Lexington Community Schools
+  district_nces_id: '2611140'
+  enrollment: 1868
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-dansville:
+  display_name: Dansville
+  district_name: Dansville Schools
+  district_nces_id: '2611400'
+  enrollment: 748
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-davison:
+  display_name: Davison
+  district_name: Davison Community Schools
+  district_nces_id: '2611430'
+  enrollment: 5582
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-dearborn-2600173:
+  display_name: Dearborn
+  district_name: The Dearborn Academy
+  district_nces_id: '2600173'
+  enrollment: 515
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-dearborn-2600255:
+  display_name: Dearborn
+  district_name: Advanced Technology Academy
+  district_nces_id: '2600255'
+  enrollment: 1215
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-dearborn-2600291:
+  display_name: Dearborn
+  district_name: Riverside Academy
+  district_nces_id: '2600291'
+  enrollment: 777
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-dearborn-2611600:
+  display_name: Dearborn
+  district_name: Dearborn City School District
+  district_nces_id: '2611600'
+  enrollment: 20128
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-dearborn-heights-2600228:
+  display_name: Dearborn Heights
+  district_name: Star International Academy
+  district_nces_id: '2600228'
+  enrollment: 1928
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-dearborn-heights-2611610:
+  display_name: Dearborn Heights
+  district_name: 'Dearborn Heights School District #7'
+  district_nces_id: '2611610'
+  enrollment: 2539
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-dearborn-heights-2611640:
+  display_name: Dearborn Heights
+  district_name: Westwood Community School District
+  district_nces_id: '2611640'
+  enrollment: 1491
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-dearborn-hts:
+  display_name: Dearborn Hts
+  district_name: Crestwood School District
+  district_nces_id: '2600016'
+  enrollment: 3767
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-decatur:
+  display_name: Decatur
+  district_name: Decatur Public Schools
+  district_nces_id: '2611670'
+  enrollment: 785
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-deckerville:
+  display_name: Deckerville
+  district_name: Deckerville Community School District
+  district_nces_id: '2611700'
+  enrollment: 545
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-delton:
+  display_name: Delton
+  district_name: Delton Kellogg Schools
+  district_nces_id: '2611910'
+  enrollment: 1083
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-detroit-2600139:
+  display_name: Detroit
+  district_name: Cesar Chavez Academy
+  district_nces_id: '2600139'
+  enrollment: 2225
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600170:
+  display_name: Detroit
+  district_name: Detroit Community Schools
+  district_nces_id: '2600170'
+  enrollment: 568
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600174:
+  display_name: Detroit
+  district_name: Detroit Academy of Arts and Sciences
+  district_nces_id: '2600174'
+  enrollment: 1013
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600217:
+  display_name: Detroit
+  district_name: Oakland International Academy
+  district_nces_id: '2600217'
+  enrollment: 865
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600227:
+  display_name: Detroit
+  district_name: Voyageur Academy
+  district_nces_id: '2600227'
+  enrollment: 1226
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600232:
+  display_name: Detroit
+  district_name: Detroit Edison Public School Academy
+  district_nces_id: '2600232'
+  enrollment: 1237
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600237:
+  display_name: Detroit
+  district_name: Universal Academy
+  district_nces_id: '2600237'
+  enrollment: 700
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600239:
+  display_name: Detroit
+  district_name: Detroit Service Learning Academy
+  district_nces_id: '2600239'
+  enrollment: 1408
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600242:
+  display_name: Detroit
+  district_name: Old Redford Academy
+  district_nces_id: '2600242'
+  enrollment: 987
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600243:
+  display_name: Detroit
+  district_name: Hope of Detroit Academy
+  district_nces_id: '2600243'
+  enrollment: 1010
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600271:
+  display_name: Detroit
+  district_name: Warrendale Charter Academy
+  district_nces_id: '2600271'
+  enrollment: 709
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600278:
+  display_name: Detroit
+  district_name: Detroit Merit Charter Academy
+  district_nces_id: '2600278'
+  enrollment: 703
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600301:
+  display_name: Detroit
+  district_name: Frontier International Academy
+  district_nces_id: '2600301'
+  enrollment: 921
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600302:
+  display_name: Detroit
+  district_name: Detroit Enterprise Academy
+  district_nces_id: '2600302'
+  enrollment: 746
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600307:
+  display_name: Detroit
+  district_name: Detroit Premier Academy
+  district_nces_id: '2600307'
+  enrollment: 715
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600322:
+  display_name: Detroit
+  district_name: Covenant House Academy Detroit
+  district_nces_id: '2600322'
+  enrollment: 565
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600945:
+  display_name: Detroit
+  district_name: Flagship Charter Academy
+  district_nces_id: '2600945'
+  enrollment: 643
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600952:
+  display_name: Detroit
+  district_name: University Preparatory Science and Math (PSAD)
+  district_nces_id: '2600952'
+  enrollment: 1424
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600956:
+  display_name: Detroit
+  district_name: University Preparatory Academy (PSAD)
+  district_nces_id: '2600956'
+  enrollment: 1808
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600961:
+  display_name: Detroit
+  district_name: University Preparatory Art & Design
+  district_nces_id: '2600961'
+  enrollment: 1237
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600974:
+  display_name: Detroit
+  district_name: Detroit Leadership Academy
+  district_nces_id: '2600974'
+  enrollment: 742
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600979:
+  display_name: Detroit
+  district_name: Legacy Charter Academy
+  district_nces_id: '2600979'
+  enrollment: 739
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2600985:
+  display_name: Detroit
+  district_name: Regent Park Scholars Charter Academy
+  district_nces_id: '2600985'
+  enrollment: 732
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2601048:
+  display_name: Detroit
+  district_name: Detroit Achievement Academy
+  district_nces_id: '2601048'
+  enrollment: 672
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2601101:
+  display_name: Detroit
+  district_name: Cornerstone Jefferson-Douglass Academy
+  district_nces_id: '2601101'
+  enrollment: 530
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-detroit-2601103:
+  display_name: Detroit
+  district_name: Detroit Public Schools Community District
+  district_nces_id: '2601103'
+  enrollment: 48548
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-dewitt:
+  display_name: Dewitt
+  district_name: DeWitt Public Schools
+  district_nces_id: '2611550'
+  enrollment: 3108
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-dexter:
+  display_name: Dexter
+  district_name: Dexter Community School District
+  district_nces_id: '2612030'
+  enrollment: 3386
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-douglas:
+  display_name: Douglas
+  district_name: Saugatuck Public Schools
+  district_nces_id: '2630960'
+  enrollment: 802
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-dowagiac:
+  display_name: Dowagiac
+  district_name: Dowagiac Union School District
+  district_nces_id: '2612150'
+  enrollment: 1900
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-dundee:
+  display_name: Dundee
+  district_name: Dundee Community Schools
+  district_nces_id: '2612300'
+  enrollment: 1795
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-durand:
+  display_name: Durand
+  district_name: Durand Area Schools
+  district_nces_id: '2612330'
+  enrollment: 1242
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-east-china:
+  display_name: East China
+  district_name: East China School District
+  district_nces_id: '2612420'
+  enrollment: 3688
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-east-jordan:
+  display_name: East Jordan
+  district_name: East Jordan Public Schools
+  district_nces_id: '2612560'
+  enrollment: 743
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-east-lansing-2601050:
+  display_name: East Lansing
+  district_name: Great Lakes Learning Academy
+  district_nces_id: '2601050'
+  enrollment: 1136
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-east-lansing-2612600:
+  display_name: East Lansing
+  district_name: East Lansing School District
+  district_nces_id: '2612600'
+  enrollment: 3788
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-east-leroy:
+  display_name: East Leroy
+  district_name: Athens Area Schools
+  district_nces_id: '2603510'
+  enrollment: 503
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-eastpointe:
+  display_name: Eastpointe
+  district_name: Eastpointe Community Schools
+  district_nces_id: '2612450'
+  enrollment: 2261
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-eaton-rapids:
+  display_name: Eaton Rapids
+  district_name: Eaton Rapids Public Schools
+  district_nces_id: '2612690'
+  enrollment: 1981
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-eau-claire:
+  display_name: Eau Claire
+  district_name: Eau Claire Public Schools
+  district_nces_id: '2612810'
+  enrollment: 654
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ecorse:
+  display_name: Ecorse
+  district_name: Ecorse Public Schools
+  district_nces_id: '2612930'
+  enrollment: 1119
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-edwardsburg:
+  display_name: Edwardsburg
+  district_name: Edwardsburg Public Schools
+  district_nces_id: '2612990'
+  enrollment: 2642
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-elk-rapids:
+  display_name: Elk Rapids
+  district_name: Elk Rapids Schools
+  district_nces_id: '2613050'
+  enrollment: 1231
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-elsie-2601114:
+  display_name: Elsie
+  district_name: Michigan International Prep School
+  district_nces_id: '2601114'
+  enrollment: 1206
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-elsie-2627150:
+  display_name: Elsie
+  district_name: Ovid-Elsie Area Schools
+  district_nces_id: '2627150'
+  enrollment: 1344
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-erie:
+  display_name: Erie
+  district_name: Mason Consolidated Schools (Monroe)
+  district_nces_id: '2623100'
+  enrollment: 1028
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-escanaba:
+  display_name: Escanaba
+  district_name: Escanaba Area Public Schools
+  district_nces_id: '2613500'
+  enrollment: 2129
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-essexville:
+  display_name: Essexville
+  district_name: Essexville-Hampton Public Schools
+  district_nces_id: '2613530'
+  enrollment: 1500
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-evart:
+  display_name: Evart
+  district_name: Evart Public Schools
+  district_nces_id: '2613560'
+  enrollment: 896
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-farmington:
+  display_name: Farmington
+  district_name: Farmington Public School District
+  district_nces_id: '2614070'
+  enrollment: 9041
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-farwell:
+  display_name: Farwell
+  district_name: Farwell Area Schools
+  district_nces_id: '2614100'
+  enrollment: 1008
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-fennville:
+  display_name: Fennville
+  district_name: Fennville Public Schools
+  district_nces_id: '2614230'
+  enrollment: 1247
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-fenton-2614250:
+  display_name: Fenton
+  district_name: Fenton Area Public Schools
+  district_nces_id: '2614250'
+  enrollment: 3088
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-fenton-2620670:
+  display_name: Fenton
+  district_name: Lake Fenton Community Schools
+  district_nces_id: '2620670'
+  enrollment: 2005
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ferndale:
+  display_name: Ferndale
+  district_name: Ferndale Public Schools
+  district_nces_id: '2614280'
+  enrollment: 3131
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-fife-lake:
+  display_name: Fife Lake
+  district_name: Forest Area Community Schools
+  district_nces_id: '2614570'
+  enrollment: 515
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-flat-rock:
+  display_name: Flat Rock
+  district_name: Flat Rock Community Schools
+  district_nces_id: '2607080'
+  enrollment: 1772
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-flint-2600195:
+  display_name: Flint
+  district_name: International Academy of Flint
+  district_nces_id: '2600195'
+  enrollment: 890
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-flint-2600197:
+  display_name: Flint
+  district_name: Linden Charter Academy
+  district_nces_id: '2600197'
+  enrollment: 791
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-flint-2600286:
+  display_name: Flint
+  district_name: Richfield Public School Academy
+  district_nces_id: '2600286'
+  enrollment: 565
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-flint-2600317:
+  display_name: Flint
+  district_name: Madison Academy
+  district_nces_id: '2600317'
+  enrollment: 541
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-flint-2601018:
+  display_name: Flint
+  district_name: The New Standard Academy
+  district_nces_id: '2601018'
+  enrollment: 779
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-flint-2601124:
+  display_name: Flint
+  district_name: Flint Cultural Center Academy
+  district_nces_id: '2601124'
+  enrollment: 596
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-flint-2604500:
+  display_name: Flint
+  district_name: Beecher Community School District
+  district_nces_id: '2604500'
+  enrollment: 595
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-flint-2607890:
+  display_name: Flint
+  district_name: Carman-Ainsworth Community Schools
+  district_nces_id: '2607890'
+  enrollment: 3841
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-flint-2614520:
+  display_name: Flint
+  district_name: Flint School District of the City of
+  district_nces_id: '2614520'
+  enrollment: 2840
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-flint-2620070:
+  display_name: Flint
+  district_name: Kearsley Community School District
+  district_nces_id: '2620070'
+  enrollment: 2843
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-flint-2635970:
+  display_name: Flint
+  district_name: Westwood Heights Schools
+  district_nces_id: '2635970'
+  enrollment: 1907
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-flint-2680400:
+  display_name: Flint
+  district_name: Genesee ISD
+  district_nces_id: '2680400'
+  enrollment: 2982
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-flushing:
+  display_name: Flushing
+  district_name: Flushing Community Schools
+  district_nces_id: '2614550'
+  enrollment: 4074
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-fowlerville:
+  display_name: Fowlerville
+  district_name: Fowlerville Community Schools
+  district_nces_id: '2614730'
+  enrollment: 2590
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-frankenmuth:
+  display_name: Frankenmuth
+  district_name: Frankenmuth School District
+  district_nces_id: '2614760'
+  enrollment: 1374
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-fraser:
+  display_name: Fraser
+  district_name: Fraser Public Schools
+  district_nces_id: '2614820'
+  enrollment: 4650
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-freeland:
+  display_name: Freeland
+  district_name: Freeland Community School District
+  district_nces_id: '2615060'
+  enrollment: 2051
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-fremont:
+  display_name: Fremont
+  district_name: Fremont Public School District
+  district_nces_id: '2615150'
+  enrollment: 2092
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-fruitport:
+  display_name: Fruitport
+  district_name: Fruitport Community Schools
+  district_nces_id: '2615390'
+  enrollment: 2678
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-galesburg:
+  display_name: Galesburg
+  district_name: Galesburg-Augusta Community Schools
+  district_nces_id: '2615450'
+  enrollment: 971
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-garden-city:
+  display_name: Garden City
+  district_name: Garden City Public Schools
+  district_nces_id: '2615540'
+  enrollment: 3228
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-gaylord:
+  display_name: Gaylord
+  district_name: Gaylord Community Schools
+  district_nces_id: '2615730'
+  enrollment: 2793
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-genesee:
+  display_name: Genesee
+  district_name: Genesee School District
+  district_nces_id: '2615750'
+  enrollment: 731
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-gladstone:
+  display_name: Gladstone
+  district_name: Gladstone Area Schools
+  district_nces_id: '2615970'
+  enrollment: 1490
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-gladwin:
+  display_name: Gladwin
+  district_name: Gladwin Community Schools
+  district_nces_id: '2615990'
+  enrollment: 1605
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-gobles-2601112:
+  display_name: Gobles
+  district_name: Michigan Online School
+  district_nces_id: '2601112'
+  enrollment: 925
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-gobles-2616050:
+  display_name: Gobles
+  district_name: Gobles Public School District
+  district_nces_id: '2616050'
+  enrollment: 737
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-goodrich:
+  display_name: Goodrich
+  district_name: Goodrich Area Schools
+  district_nces_id: '2616320'
+  enrollment: 1932
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-blanc:
+  display_name: Grand Blanc
+  district_name: Grand Blanc Community Schools
+  district_nces_id: '2616350'
+  enrollment: 7801
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-haven:
+  display_name: Grand Haven
+  district_name: Grand Haven Area Public Schools
+  district_nces_id: '2616380'
+  enrollment: 5411
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-ledge:
+  display_name: Grand Ledge
+  district_name: Grand Ledge Public Schools
+  district_nces_id: '2616410'
+  enrollment: 5096
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2600092:
+  display_name: Grand Rapids
+  district_name: West MI Academy of Environmental Science
+  district_nces_id: '2600092'
+  enrollment: 728
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2600093:
+  display_name: Grand Rapids
+  district_name: Excel Charter Academy
+  district_nces_id: '2600093'
+  enrollment: 784
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2600097:
+  display_name: Grand Rapids
+  district_name: Vista Charter Academy
+  district_nces_id: '2600097'
+  enrollment: 605
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2600148:
+  display_name: Grand Rapids
+  district_name: Knapp Charter Academy
+  district_nces_id: '2600148'
+  enrollment: 576
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2600149:
+  display_name: Grand Rapids
+  district_name: Walker Charter Academy
+  district_nces_id: '2600149'
+  enrollment: 698
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2600977:
+  display_name: Grand Rapids
+  district_name: West Michigan Aviation Academy
+  district_nces_id: '2600977'
+  enrollment: 605
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2601132:
+  display_name: Grand Rapids
+  district_name: PrepNet Virtual Academy
+  district_nces_id: '2601132'
+  enrollment: 1220
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2612480:
+  display_name: Grand Rapids
+  district_name: East Grand Rapids Public Schools
+  district_nces_id: '2612480'
+  enrollment: 2946
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2614610:
+  display_name: Grand Rapids
+  district_name: Forest Hills Public Schools
+  district_nces_id: '2614610'
+  enrollment: 9201
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2616110:
+  display_name: Grand Rapids
+  district_name: Godwin Heights Public Schools
+  district_nces_id: '2616110'
+  enrollment: 2026
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2616440:
+  display_name: Grand Rapids
+  district_name: Grand Rapids Public Schools
+  district_nces_id: '2616440'
+  enrollment: 13787
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2620160:
+  display_name: Grand Rapids
+  district_name: Kelloggsville Public Schools
+  district_nces_id: '2620160'
+  enrollment: 2272
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2620280:
+  display_name: Grand Rapids
+  district_name: Kenowa Hills Public Schools
+  district_nces_id: '2620280'
+  enrollment: 3010
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2620340:
+  display_name: Grand Rapids
+  district_name: Kentwood Public Schools
+  district_nces_id: '2620340'
+  enrollment: 9357
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2625950:
+  display_name: Grand Rapids
+  district_name: Northview Public Schools
+  district_nces_id: '2625950'
+  enrollment: 3061
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grand-rapids-2680620:
+  display_name: Grand Rapids
+  district_name: Kent ISD
+  district_nces_id: '2680620'
+  enrollment: 3324
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grandville:
+  display_name: Grandville
+  district_name: Grandville Public Schools
+  district_nces_id: '2616470'
+  enrollment: 5521
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grant:
+  display_name: Grant
+  district_name: Grant Public School District
+  district_nces_id: '2616500'
+  enrollment: 1638
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grass-lake:
+  display_name: Grass Lake
+  district_name: Grass Lake Community Schools
+  district_nces_id: '2616830'
+  enrollment: 1315
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grayling:
+  display_name: Grayling
+  district_name: Crawford AuSable Schools
+  district_nces_id: '2611030'
+  enrollment: 1647
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-greenville:
+  display_name: Greenville
+  district_name: Greenville Public Schools
+  district_nces_id: '2617160'
+  enrollment: 3601
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grosse-ile:
+  display_name: Grosse Ile
+  district_name: Grosse Ile Township Schools
+  district_nces_id: '2617220'
+  enrollment: 1594
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-grosse-pointe-woods:
+  display_name: Grosse Pointe Woods
+  district_name: Grosse Pointe Public Schools
+  district_nces_id: '2625740'
+  enrollment: 6516
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-gwinn:
+  display_name: Gwinn
+  district_name: Gwinn Area Community Schools
+  district_nces_id: '2614690'
+  enrollment: 997
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hamilton:
+  display_name: Hamilton
+  district_name: Hamilton Community Schools
+  district_nces_id: '2617400'
+  enrollment: 2905
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hamtramck-2600287:
+  display_name: Hamtramck
+  district_name: Hamtramck Academy
+  district_nces_id: '2600287'
+  enrollment: 548
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-hamtramck-2600305:
+  display_name: Hamtramck
+  district_name: Hanley International Academy
+  district_nces_id: '2600305'
+  enrollment: 660
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-hamtramck-2600306:
+  display_name: Hamtramck
+  district_name: Bridge Academy
+  district_nces_id: '2600306'
+  enrollment: 1328
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-hamtramck-2601016:
+  display_name: Hamtramck
+  district_name: Caniff Liberty Academy
+  district_nces_id: '2601016'
+  enrollment: 501
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-hamtramck-2617520:
+  display_name: Hamtramck
+  district_name: Hamtramck School District of the City of
+  district_nces_id: '2617520'
+  enrollment: 3062
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hancock:
+  display_name: Hancock
+  district_name: Hancock Public Schools
+  district_nces_id: '2617550'
+  enrollment: 604
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-harbor-springs:
+  display_name: Harbor Springs
+  district_name: Harbor Springs School District
+  district_nces_id: '2617700'
+  enrollment: 737
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-harper-woods-2600168:
+  display_name: Harper Woods
+  district_name: Chandler Park Academy
+  district_nces_id: '2600168'
+  enrollment: 1976
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-harper-woods-2601115:
+  display_name: Harper Woods
+  district_name: Distinctive College Prep.
+  district_nces_id: '2601115'
+  enrollment: 841
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-harper-woods-2617760:
+  display_name: Harper Woods
+  district_name: Harper Woods The School District of the City of
+  district_nces_id: '2617760'
+  enrollment: 2581
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-harris:
+  display_name: Harris
+  district_name: Bark River-Harris School District
+  district_nces_id: '2604020'
+  enrollment: 731
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-harrison:
+  display_name: Harrison
+  district_name: Harrison Community Schools
+  district_nces_id: '2617820'
+  enrollment: 1260
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-harrisville:
+  display_name: Harrisville
+  district_name: Alcona Community Schools
+  district_nces_id: '2602160'
+  enrollment: 677
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hart:
+  display_name: Hart
+  district_name: Hart Public School District
+  district_nces_id: '2617860'
+  enrollment: 1246
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hartford:
+  display_name: Hartford
+  district_name: Hartford Public Schools
+  district_nces_id: '2617880'
+  enrollment: 1364
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hartland:
+  display_name: Hartland
+  district_name: Hartland Consolidated Schools
+  district_nces_id: '2617910'
+  enrollment: 5162
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-haslett:
+  display_name: Haslett
+  district_name: Haslett Public Schools
+  district_nces_id: '2617940'
+  enrollment: 2563
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hastings:
+  display_name: Hastings
+  district_name: Hastings Area School District
+  district_nces_id: '2617970'
+  enrollment: 2550
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hazel-park-2600972:
+  display_name: Hazel Park
+  district_name: Michigan Virtual Charter Academy
+  district_nces_id: '2600972'
+  enrollment: 2895
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-hazel-park-2618030:
+  display_name: Hazel Park
+  district_name: Hazel Park School District of the City of
+  district_nces_id: '2618030'
+  enrollment: 2947
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hemlock:
+  display_name: Hemlock
+  district_name: Hemlock Public School District
+  district_nces_id: '2618180'
+  enrollment: 1169
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hesperia:
+  display_name: Hesperia
+  district_name: Hesperia Community Schools
+  district_nces_id: '2618270'
+  enrollment: 818
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-highland:
+  display_name: Highland
+  district_name: Huron Valley Schools
+  district_nces_id: '2618990'
+  enrollment: 7970
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hillsdale:
+  display_name: Hillsdale
+  district_name: Hillsdale Community Schools
+  district_nces_id: '2618390'
+  enrollment: 1274
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-holland-2600114:
+  display_name: Holland
+  district_name: Black River Public School
+  district_nces_id: '2600114'
+  enrollment: 941
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-holland-2600159:
+  display_name: Holland
+  district_name: Eagle Crest Charter Academy
+  district_nces_id: '2600159'
+  enrollment: 649
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-holland-2618420:
+  display_name: Holland
+  district_name: Holland City School District
+  district_nces_id: '2618420'
+  enrollment: 2834
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-holland-2635910:
+  display_name: Holland
+  district_name: West Ottawa Public School District
+  district_nces_id: '2635910'
+  enrollment: 6590
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-holland-2680900:
+  display_name: Holland
+  district_name: Ottawa Area ISD
+  district_nces_id: '2680900'
+  enrollment: 1331
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-holly-2600216:
+  display_name: Holly
+  district_name: Holly Academy
+  district_nces_id: '2600216'
+  enrollment: 586
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-holly-2618450:
+  display_name: Holly
+  district_name: Holly Area School District
+  district_nces_id: '2618450'
+  enrollment: 3101
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-holt:
+  display_name: Holt
+  district_name: Holt Public Schools
+  district_nces_id: '2618480'
+  enrollment: 4923
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-holton:
+  display_name: Holton
+  district_name: Holton Public Schools
+  district_nces_id: '2618510'
+  enrollment: 828
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-homer:
+  display_name: Homer
+  district_name: Homer Community School District
+  district_nces_id: '2618540'
+  enrollment: 910
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hopkins:
+  display_name: Hopkins
+  district_name: Hopkins Public Schools
+  district_nces_id: '2618570'
+  enrollment: 1480
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-horton:
+  display_name: Horton
+  district_name: Hanover-Horton School District
+  district_nces_id: '2617640'
+  enrollment: 1023
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-houghton:
+  display_name: Houghton
+  district_name: Houghton-Portage Township School District
+  district_nces_id: '2628890'
+  enrollment: 1445
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-houghton-lake:
+  display_name: Houghton Lake
+  district_name: Houghton Lake Community Schools
+  district_nces_id: '2618600'
+  enrollment: 1162
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-howell-2600100:
+  display_name: Howell
+  district_name: Charyl Stockwell Academy
+  district_nces_id: '2600100'
+  enrollment: 1246
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-howell-2618720:
+  display_name: Howell
+  district_name: Howell Public Schools
+  district_nces_id: '2618720'
+  enrollment: 6871
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-howell-2680700:
+  display_name: Howell
+  district_name: Livingston ESA
+  district_nces_id: '2680700'
+  enrollment: 571
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hudson:
+  display_name: Hudson
+  district_name: Hudson Area Schools
+  district_nces_id: '2618810'
+  enrollment: 1243
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-hudsonville:
+  display_name: Hudsonville
+  district_name: Hudsonville Public School District
+  district_nces_id: '2618840'
+  enrollment: 6806
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ida:
+  display_name: Ida
+  district_name: Ida Public School District
+  district_nces_id: '2619050'
+  enrollment: 1440
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-imlay-city:
+  display_name: Imlay City
+  district_name: Imlay City Community Schools
+  district_nces_id: '2619100'
+  enrollment: 1770
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-indian-river:
+  display_name: Indian River
+  district_name: Inland Lakes Schools
+  district_nces_id: '2619170'
+  enrollment: 621
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ionia:
+  display_name: Ionia
+  district_name: Ionia Public Schools
+  district_nces_id: '2619250'
+  enrollment: 2833
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-iron-mountain:
+  display_name: Iron Mountain
+  district_name: Iron Mountain Public Schools
+  district_nces_id: '2619410'
+  enrollment: 756
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-iron-river:
+  display_name: Iron River
+  district_name: West Iron County Public Schools
+  district_nces_id: '2632910'
+  enrollment: 846
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ironwood:
+  display_name: Ironwood
+  district_name: Ironwood Area Schools of Gogebic County
+  district_nces_id: '2619470'
+  enrollment: 728
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ishpeming-2619530:
+  display_name: Ishpeming
+  district_name: Ishpeming Public School District No. 1
+  district_nces_id: '2619530'
+  enrollment: 674
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ishpeming-2625400:
+  display_name: Ishpeming
+  district_name: NICE Community School District
+  district_nces_id: '2625400'
+  enrollment: 1156
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ithaca:
+  display_name: Ithaca
+  district_name: Ithaca Public Schools
+  district_nces_id: '2619580'
+  enrollment: 1020
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-jackson-2600204:
+  display_name: Jackson
+  district_name: Paragon Charter Academy
+  district_nces_id: '2600204'
+  enrollment: 620
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-jackson-2612540:
+  display_name: Jackson
+  district_name: East Jackson Community Schools
+  district_nces_id: '2612540'
+  enrollment: 778
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-jackson-2619620:
+  display_name: Jackson
+  district_name: Jackson Public Schools
+  district_nces_id: '2619620'
+  enrollment: 4486
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-jackson-2626010:
+  display_name: Jackson
+  district_name: Northwest Community Schools
+  district_nces_id: '2626010'
+  enrollment: 3560
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-jackson-2634650:
+  display_name: Jackson
+  district_name: Vandercook Lake Public Schools
+  district_nces_id: '2634650'
+  enrollment: 700
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-jackson-2680580:
+  display_name: Jackson
+  district_name: Jackson ISD
+  district_nces_id: '2680580'
+  enrollment: 1148
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-jenison:
+  display_name: Jenison
+  district_name: Jenison Public Schools
+  district_nces_id: '2619830'
+  enrollment: 5198
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-johannesburg:
+  display_name: Johannesburg
+  district_name: Johannesburg-Lewiston Area Schools
+  district_nces_id: '2619890'
+  enrollment: 717
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-jonesville:
+  display_name: Jonesville
+  district_name: Jonesville Community Schools
+  district_nces_id: '2619920'
+  enrollment: 1273
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-kalamazoo-2610590:
+  display_name: Kalamazoo
+  district_name: Comstock Public Schools
+  district_nces_id: '2610590'
+  enrollment: 1794
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-kalamazoo-2619950:
+  display_name: Kalamazoo
+  district_name: Kalamazoo Public Schools
+  district_nces_id: '2619950'
+  enrollment: 12298
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-kalamazoo-2627420:
+  display_name: Kalamazoo
+  district_name: Parchment School District
+  district_nces_id: '2627420'
+  enrollment: 1586
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-kalkaska:
+  display_name: Kalkaska
+  district_name: Kalkaska Public Schools
+  district_nces_id: '2620050'
+  enrollment: 1393
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-kent-city:
+  display_name: Kent City
+  district_name: Kent City Community Schools
+  district_nces_id: '2620310'
+  enrollment: 1291
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-kentwood:
+  display_name: Kentwood
+  district_name: Grand River Preparatory High School
+  district_nces_id: '2601095'
+  enrollment: 604
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-kimball:
+  display_name: Kimball
+  district_name: Landmark Academy
+  district_nces_id: '2600220'
+  enrollment: 850
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-kingsford:
+  display_name: Kingsford
+  district_name: Breitung Township School District
+  district_nces_id: '2606720'
+  enrollment: 1972
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-kingsley:
+  display_name: Kingsley
+  district_name: Kingsley Area Schools
+  district_nces_id: '2620380'
+  enrollment: 1493
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-kingston:
+  display_name: Kingston
+  district_name: Kingston Community School District
+  district_nces_id: '2620400'
+  enrollment: 581
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-laingsburg:
+  display_name: Laingsburg
+  district_name: Laingsburg Community Schools
+  district_nces_id: '2620550'
+  enrollment: 1139
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lake-city:
+  display_name: Lake City
+  district_name: Lake City Area School District
+  district_nces_id: '2620610'
+  enrollment: 1171
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lake-orion:
+  display_name: Lake Orion
+  district_name: Lake Orion Community Schools
+  district_nces_id: '2620730'
+  enrollment: 6831
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lakeview:
+  display_name: Lakeview
+  district_name: Lakeview Community Schools (Montcalm)
+  district_nces_id: '2620910'
+  enrollment: 1037
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lanse:
+  display_name: Lanse
+  district_name: L'Anse Area Schools
+  district_nces_id: '2600018'
+  enrollment: 513
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lansing-2600203:
+  display_name: Lansing
+  district_name: Windemere Park Charter Academy
+  district_nces_id: '2600203'
+  enrollment: 630
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-lansing-2601077:
+  display_name: Lansing
+  district_name: Insight School of Michigan
+  district_nces_id: '2601077'
+  enrollment: 652
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-lansing-2621150:
+  display_name: Lansing
+  district_name: Lansing Public School District
+  district_nces_id: '2621150'
+  enrollment: 10023
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lansing-2635520:
+  display_name: Lansing
+  district_name: Waverly Community Schools
+  district_nces_id: '2635520'
+  enrollment: 2884
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lapeer:
+  display_name: Lapeer
+  district_name: Lapeer Community Schools
+  district_nces_id: '2621180'
+  enrollment: 4386
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lawrence:
+  display_name: Lawrence
+  district_name: Van Buren ISD
+  district_nces_id: '2680985'
+  enrollment: 591
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lawton:
+  display_name: Lawton
+  district_name: Lawton Community School District
+  district_nces_id: '2621240'
+  enrollment: 1050
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-leroy:
+  display_name: Leroy
+  district_name: Pine River Area Schools
+  district_nces_id: '2628200'
+  enrollment: 974
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-leslie:
+  display_name: Leslie
+  district_name: Leslie Public Schools
+  district_nces_id: '2621450'
+  enrollment: 1100
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lincoln-park:
+  display_name: Lincoln Park
+  district_name: Lincoln Park School District of the City of
+  district_nces_id: '2621600'
+  enrollment: 4864
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-linden:
+  display_name: Linden
+  district_name: Linden Community Schools
+  district_nces_id: '2621690'
+  enrollment: 2468
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-livonia-2601082:
+  display_name: Livonia
+  district_name: Grand River Academy
+  district_nces_id: '2601082'
+  enrollment: 736
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-livonia-2609840:
+  display_name: Livonia
+  district_name: Clarenceville School District
+  district_nces_id: '2609840'
+  enrollment: 1773
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-livonia-2621840:
+  display_name: Livonia
+  district_name: Livonia Public Schools School District
+  district_nces_id: '2621840'
+  enrollment: 13228
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-lowell:
+  display_name: Lowell
+  district_name: Lowell Area Schools
+  district_nces_id: '2622050'
+  enrollment: 3498
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ludington:
+  display_name: Ludington
+  district_name: Ludington Area School District
+  district_nces_id: '2622200'
+  enrollment: 2072
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-madison-heights-2621120:
+  display_name: Madison Heights
+  district_name: Lamphere Public Schools
+  district_nces_id: '2621120'
+  enrollment: 2341
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-madison-heights-2622290:
+  display_name: Madison Heights
+  district_name: Madison District Public Schools
+  district_nces_id: '2622290'
+  enrollment: 914
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mancelona:
+  display_name: Mancelona
+  district_name: Mancelona Public Schools
+  district_nces_id: '2622350'
+  enrollment: 863
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-manchester:
+  display_name: Manchester
+  district_name: Manchester Community Schools
+  district_nces_id: '2622380'
+  enrollment: 778
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-manistee-2601070:
+  display_name: Manistee
+  district_name: Michigan Great Lakes Virtual Academy
+  district_nces_id: '2601070'
+  enrollment: 3389
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-manistee-2622410:
+  display_name: Manistee
+  district_name: Manistee Area Public Schools
+  district_nces_id: '2622410'
+  enrollment: 1225
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-manistique:
+  display_name: Manistique
+  district_name: Manistique Area Schools
+  district_nces_id: '2622470'
+  enrollment: 721
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-manton:
+  display_name: Manton
+  district_name: Manton Consolidated Schools
+  district_nces_id: '2622500'
+  enrollment: 956
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-maple-city:
+  display_name: Maple City
+  district_name: Glen Lake Community Schools
+  district_nces_id: '2616020'
+  enrollment: 711
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-marcellus:
+  display_name: Marcellus
+  district_name: Marcellus Community Schools
+  district_nces_id: '2622740'
+  enrollment: 628
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-marlette:
+  display_name: Marlette
+  district_name: Marlette Community Schools
+  district_nces_id: '2622860'
+  enrollment: 716
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-marquette:
+  display_name: Marquette
+  district_name: Marquette Area Public Schools
+  district_nces_id: '2600013'
+  enrollment: 3230
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-marshall-2622970:
+  display_name: Marshall
+  district_name: Marshall Public Schools
+  district_nces_id: '2622970'
+  enrollment: 2641
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-marshall-2680200:
+  display_name: Marshall
+  district_name: Calhoun Intermediate School District
+  district_nces_id: '2680200'
+  enrollment: 981
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-martin:
+  display_name: Martin
+  district_name: Martin Public Schools
+  district_nces_id: '2622980'
+  enrollment: 614
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-marysville-2623040:
+  display_name: Marysville
+  district_name: Marysville Public Schools
+  district_nces_id: '2623040'
+  enrollment: 2655
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-marysville-2680940:
+  display_name: Marysville
+  district_name: St. Clair County RESA
+  district_nces_id: '2680940'
+  enrollment: 551
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mason-2623070:
+  display_name: Mason
+  district_name: Mason Public Schools (Ingham)
+  district_nces_id: '2623070'
+  enrollment: 3261
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mason-2680520:
+  display_name: Mason
+  district_name: Ingham ISD
+  district_nces_id: '2680520'
+  enrollment: 1295
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mattawan:
+  display_name: Mattawan
+  district_name: Mattawan Consolidated School
+  district_nces_id: '2623250'
+  enrollment: 3610
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mayville:
+  display_name: Mayville
+  district_name: Mayville Community School District
+  district_nces_id: '2623280'
+  enrollment: 567
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mc-bain:
+  display_name: Mc Bain
+  district_name: McBain Rural Agricultural Schools
+  district_nces_id: '2623310'
+  enrollment: 1037
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-melvindale:
+  display_name: Melvindale
+  district_name: Melvindale-Northern Allen Park Schools
+  district_nces_id: '2623460'
+  enrollment: 2956
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-memphis:
+  display_name: Memphis
+  district_name: Memphis Community Schools
+  district_nces_id: '2623490'
+  enrollment: 738
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-menominee:
+  display_name: Menominee
+  district_name: Menominee Area Public Schools
+  district_nces_id: '2623550'
+  enrollment: 1147
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-merrill:
+  display_name: Merrill
+  district_name: Merrill Community Schools
+  district_nces_id: '2623610'
+  enrollment: 522
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mesick-2601107:
+  display_name: Mesick
+  district_name: Highpoint Virtual Academy of Michigan
+  district_nces_id: '2601107'
+  enrollment: 2308
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-mesick-2623670:
+  display_name: Mesick
+  district_name: Mesick Consolidated Schools
+  district_nces_id: '2623670'
+  enrollment: 563
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-michigan-center:
+  display_name: Michigan Center
+  district_name: Michigan Center School District
+  district_nces_id: '2623790'
+  enrollment: 1316
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-middleton:
+  display_name: Middleton
+  district_name: Fulton Schools
+  district_nces_id: '2615420'
+  enrollment: 558
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-middleville:
+  display_name: Middleville
+  district_name: Thornapple Kellogg School District
+  district_nces_id: '2633810'
+  enrollment: 3163
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-midland-2607320:
+  display_name: Midland
+  district_name: Bullock Creek School District
+  district_nces_id: '2607320'
+  enrollment: 1697
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-midland-2623820:
+  display_name: Midland
+  district_name: Midland Public Schools
+  district_nces_id: '2623820'
+  enrollment: 7436
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-midland-2680800:
+  display_name: Midland
+  district_name: Midland County Educational Service Agency
+  district_nces_id: '2680800'
+  enrollment: 838
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-milan:
+  display_name: Milan
+  district_name: Milan Area Schools
+  district_nces_id: '2623850'
+  enrollment: 1918
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-millington:
+  display_name: Millington
+  district_name: Millington Community Schools
+  district_nces_id: '2623910'
+  enrollment: 1117
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-monroe-2600311:
+  display_name: Monroe
+  district_name: Triumph Academy
+  district_nces_id: '2600311'
+  enrollment: 777
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-monroe-2624150:
+  display_name: Monroe
+  district_name: Monroe Public Schools
+  district_nces_id: '2624150'
+  enrollment: 4614
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-monroe-2680820:
+  display_name: Monroe
+  district_name: Monroe ISD
+  district_nces_id: '2680820'
+  enrollment: 1176
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-montague:
+  display_name: Montague
+  district_name: Montague Area Public Schools
+  district_nces_id: '2624180'
+  enrollment: 1353
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-montrose:
+  display_name: Montrose
+  district_name: Montrose Community Schools
+  district_nces_id: '2624420'
+  enrollment: 1466
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-morenci:
+  display_name: Morenci
+  district_name: Morenci Area Schools
+  district_nces_id: '2624570'
+  enrollment: 535
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-morley:
+  display_name: Morley
+  district_name: Morley Stanwood Community Schools
+  district_nces_id: '2624600'
+  enrollment: 1065
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mount-clemens-2600310:
+  display_name: Mount Clemens
+  district_name: Prevail Academy
+  district_nces_id: '2600310'
+  enrollment: 585
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-mount-clemens-2624690:
+  display_name: Mount Clemens
+  district_name: Mount Clemens Community School District
+  district_nces_id: '2624690'
+  enrollment: 753
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mount-morris:
+  display_name: Mount Morris
+  district_name: Mt. Morris Consolidated Schools
+  district_nces_id: '2624720'
+  enrollment: 1555
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mount-pleasant-2604290:
+  display_name: Mount Pleasant
+  district_name: Beal City Public Schools
+  district_nces_id: '2604290'
+  enrollment: 654
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-mount-pleasant-2624750:
+  display_name: Mount Pleasant
+  district_name: Mt. Pleasant City School District
+  district_nces_id: '2624750'
+  enrollment: 3378
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-munising:
+  display_name: Munising
+  district_name: Munising Public Schools
+  district_nces_id: '2624810'
+  enrollment: 570
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-muskegon-2600214:
+  display_name: Muskegon
+  district_name: Timberland Academy
+  district_nces_id: '2600214'
+  enrollment: 623
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-muskegon-2624840:
+  display_name: Muskegon
+  district_name: Muskegon Public Schools of the City of
+  district_nces_id: '2624840'
+  enrollment: 3353
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-muskegon-2625800:
+  display_name: Muskegon
+  district_name: North Muskegon Public Schools
+  district_nces_id: '2625800'
+  enrollment: 939
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-muskegon-2626220:
+  display_name: Muskegon
+  district_name: Oakridge Public Schools
+  district_nces_id: '2626220'
+  enrollment: 1880
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-muskegon-2626760:
+  display_name: Muskegon
+  district_name: Orchard View Schools
+  district_nces_id: '2626760'
+  enrollment: 2171
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-muskegon-2629540:
+  display_name: Muskegon
+  district_name: Reeths-Puffer Schools
+  district_nces_id: '2629540'
+  enrollment: 3571
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-muskegon-2680850:
+  display_name: Muskegon
+  district_name: Muskegon Area ISD
+  district_nces_id: '2680850'
+  enrollment: 1534
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-muskegon-heights:
+  display_name: Muskegon Heights
+  district_name: Muskegon Heights Public School Academy System
+  district_nces_id: '2601029'
+  enrollment: 625
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-napoleon:
+  display_name: Napoleon
+  district_name: Napoleon Community Schools
+  district_nces_id: '2624960'
+  enrollment: 1320
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-negaunee:
+  display_name: Negaunee
+  district_name: Negaunee Public Schools
+  district_nces_id: '2625020'
+  enrollment: 1552
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-new-boston:
+  display_name: New Boston
+  district_name: Huron School District
+  district_nces_id: '2618930'
+  enrollment: 2541
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-new-buffalo:
+  display_name: New Buffalo
+  district_name: New Buffalo Area Schools
+  district_nces_id: '2625140'
+  enrollment: 536
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-new-haven-2600281:
+  display_name: New Haven
+  district_name: Merritt Academy
+  district_nces_id: '2600281'
+  enrollment: 551
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-new-haven-2625230:
+  display_name: New Haven
+  district_name: New Haven Community Schools
+  district_nces_id: '2625230'
+  enrollment: 1442
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-new-lothrop:
+  display_name: New Lothrop
+  district_name: New Lothrop Area Public Schools
+  district_nces_id: '2625290'
+  enrollment: 877
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-newaygo:
+  display_name: Newaygo
+  district_name: Newaygo Public School District
+  district_nces_id: '2625320'
+  enrollment: 1536
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-newberry:
+  display_name: Newberry
+  district_name: Tahquamenon Area Schools
+  district_nces_id: '2625350'
+  enrollment: 503
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-newport:
+  display_name: Newport
+  district_name: Jefferson Schools (Monroe)
+  district_nces_id: '2619800'
+  enrollment: 1357
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-niles-2606600:
+  display_name: Niles
+  district_name: Brandywine Community Schools
+  district_nces_id: '2606600'
+  enrollment: 1304
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-niles-2625560:
+  display_name: Niles
+  district_name: Niles Community Schools
+  district_nces_id: '2625560'
+  enrollment: 3303
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-north-branch:
+  display_name: North Branch
+  district_name: North Branch Area Schools
+  district_nces_id: '2625680'
+  enrollment: 2382
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-northville:
+  display_name: Northville
+  district_name: Northville Public Schools
+  district_nces_id: '2625980'
+  enrollment: 7115
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-norton-shores:
+  display_name: Norton Shores
+  district_name: Mona Shores Public School District
+  district_nces_id: '2624120'
+  enrollment: 3876
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-norway:
+  display_name: Norway
+  district_name: Norway-Vulcan Area Schools
+  district_nces_id: '2626040'
+  enrollment: 592
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-novi:
+  display_name: Novi
+  district_name: Novi Community School District
+  district_nces_id: '2626130'
+  enrollment: 6655
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-oak-park-2605010:
+  display_name: Oak Park
+  district_name: Berkley School District
+  district_nces_id: '2605010'
+  enrollment: 3913
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-oak-park-2626190:
+  display_name: Oak Park
+  district_name: Oak Park School District of the City of
+  district_nces_id: '2626190'
+  enrollment: 3680
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-okemos-2600969:
+  display_name: Okemos
+  district_name: Michigan Connections Academy
+  district_nces_id: '2600969'
+  enrollment: 1656
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-okemos-2626280:
+  display_name: Okemos
+  district_name: Okemos Public Schools
+  district_nces_id: '2626280'
+  enrollment: 4593
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-olivet:
+  display_name: Olivet
+  district_name: Olivet Community Schools
+  district_nces_id: '2626370'
+  enrollment: 1265
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-onaway:
+  display_name: Onaway
+  district_name: Onaway Area Community School District
+  district_nces_id: '2626400'
+  enrollment: 541
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-onsted:
+  display_name: Onsted
+  district_name: Onsted Community Schools
+  district_nces_id: '2626520'
+  enrollment: 1219
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ortonville:
+  display_name: Ortonville
+  district_name: Brandon School District in the Counties of Oakland and Lapee
+  district_nces_id: '2606570'
+  enrollment: 2128
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-oscoda:
+  display_name: Oscoda
+  district_name: Oscoda Area Schools
+  district_nces_id: '2626970'
+  enrollment: 1149
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-otisville:
+  display_name: Otisville
+  district_name: LakeVille Community School District
+  district_nces_id: '2620940'
+  enrollment: 1071
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-otsego:
+  display_name: Otsego
+  district_name: Otsego Public Schools
+  district_nces_id: '2627060'
+  enrollment: 2363
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ottawa-lake:
+  display_name: Ottawa Lake
+  district_name: Whiteford Agricultural School District of the Counties of Le
+  district_nces_id: '2636270'
+  enrollment: 807
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-owosso:
+  display_name: Owosso
+  district_name: Owosso Public Schools
+  district_nces_id: '2627210'
+  enrollment: 2948
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-oxford:
+  display_name: Oxford
+  district_name: Oxford Community Schools
+  district_nces_id: '2627240'
+  enrollment: 5649
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-parma:
+  display_name: Parma
+  district_name: Western School District
+  district_nces_id: '2635940'
+  enrollment: 2757
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-paw-paw:
+  display_name: Paw Paw
+  district_name: Paw Paw Public School District
+  district_nces_id: '2627660'
+  enrollment: 2191
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-perry:
+  display_name: Perry
+  district_name: Perry Public Schools
+  district_nces_id: '2627900'
+  enrollment: 967
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-petersburg:
+  display_name: Petersburg
+  district_name: Summerfield Schools
+  district_nces_id: '2633120'
+  enrollment: 593
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-petoskey:
+  display_name: Petoskey
+  district_name: Public Schools of Petoskey
+  district_nces_id: '2627930'
+  enrollment: 2526
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-pigeon:
+  display_name: Pigeon
+  district_name: Elkton-Pigeon-Bay Port Laker Schools
+  district_nces_id: '2613090'
+  enrollment: 936
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-pinckney:
+  display_name: Pinckney
+  district_name: Pinckney Community Schools
+  district_nces_id: '2628140'
+  enrollment: 2132
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-pinconning:
+  display_name: Pinconning
+  district_name: Pinconning Area Schools
+  district_nces_id: '2628170'
+  enrollment: 1159
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-plainwell:
+  display_name: Plainwell
+  district_name: Plainwell Community Schools
+  district_nces_id: '2628530'
+  enrollment: 2623
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-plymouth-2601020:
+  display_name: Plymouth
+  district_name: Plymouth Scholars Charter Academy
+  district_nces_id: '2601020'
+  enrollment: 793
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-plymouth-2601123:
+  display_name: Plymouth
+  district_name: Ivywood Classical Academy
+  district_nces_id: '2601123'
+  enrollment: 574
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-plymouth-2628560:
+  display_name: Plymouth
+  district_name: Plymouth-Canton Community Schools
+  district_nces_id: '2628560'
+  enrollment: 16294
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-pontiac-2600156:
+  display_name: Pontiac
+  district_name: Pontiac Academy for Excellence
+  district_nces_id: '2600156'
+  enrollment: 551
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-pontiac-2600254:
+  display_name: Pontiac
+  district_name: Walton Charter Academy
+  district_nces_id: '2600254'
+  enrollment: 809
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-pontiac-2600267:
+  display_name: Pontiac
+  district_name: Arts and Technology Academy of Pontiac
+  district_nces_id: '2600267'
+  enrollment: 818
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-pontiac-2628740:
+  display_name: Pontiac
+  district_name: Pontiac City School District
+  district_nces_id: '2628740'
+  enrollment: 3402
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-port-huron:
+  display_name: Port Huron
+  district_name: Port Huron Area School District
+  district_nces_id: '2628830'
+  enrollment: 7257
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-portage-2628950:
+  display_name: Portage
+  district_name: Portage Public Schools
+  district_nces_id: '2628950'
+  enrollment: 8616
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-portage-2680600:
+  display_name: Portage
+  district_name: Kalamazoo RESA
+  district_nces_id: '2680600'
+  enrollment: 1592
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-portland:
+  display_name: Portland
+  district_name: Portland Public Schools
+  district_nces_id: '2629120'
+  enrollment: 2036
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-potterville:
+  display_name: Potterville
+  district_name: Potterville Public Schools
+  district_nces_id: '2629160'
+  enrollment: 753
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-quincy:
+  display_name: Quincy
+  district_name: Quincy Community Schools
+  district_nces_id: '2629250'
+  enrollment: 1149
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ravenna:
+  display_name: Ravenna
+  district_name: Ravenna Public Schools
+  district_nces_id: '2629370'
+  enrollment: 1030
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-reading:
+  display_name: Reading
+  district_name: Reading Community Schools
+  district_nces_id: '2629400'
+  enrollment: 696
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-redford-2600333:
+  display_name: Redford
+  district_name: David Ellis Academy West
+  district_nces_id: '2600333'
+  enrollment: 663
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-redford-2600958:
+  display_name: Redford
+  district_name: Washington-Parks Academy
+  district_nces_id: '2600958'
+  enrollment: 580
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-redford-2601125:
+  display_name: Redford
+  district_name: Westfield Charter Academy
+  district_nces_id: '2601125'
+  enrollment: 1463
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-redford-2629460:
+  display_name: Redford
+  district_name: Redford Union Schools District No. 1
+  district_nces_id: '2629460'
+  enrollment: 2075
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-redford-2632280:
+  display_name: Redford
+  district_name: South Redford School District
+  district_nces_id: '2632280'
+  enrollment: 2812
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-reed-city:
+  display_name: Reed City
+  district_name: Reed City Area Public Schools
+  district_nces_id: '2629490'
+  enrollment: 1394
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-reese:
+  display_name: Reese
+  district_name: Reese Public Schools
+  district_nces_id: '2629520'
+  enrollment: 752
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-remus:
+  display_name: Remus
+  district_name: Chippewa Hills School District
+  district_nces_id: '2609560'
+  enrollment: 1814
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-richland:
+  display_name: Richland
+  district_name: Gull Lake Community Schools
+  district_nces_id: '2617250'
+  enrollment: 3256
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-richmond:
+  display_name: Richmond
+  district_name: Richmond Community Schools
+  district_nces_id: '2629670'
+  enrollment: 1585
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-river-rouge:
+  display_name: River Rouge
+  district_name: River Rouge School District of the City of
+  district_nces_id: '2629760'
+  enrollment: 2464
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-riverview:
+  display_name: Riverview
+  district_name: Riverview Community School District
+  district_nces_id: '2629910'
+  enrollment: 2831
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-rochester:
+  display_name: Rochester
+  district_name: Rochester Community School District
+  district_nces_id: '2629940'
+  enrollment: 15017
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-rockford:
+  display_name: Rockford
+  district_name: Rockford Public Schools
+  district_nces_id: '2630030'
+  enrollment: 7719
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-romeo:
+  display_name: Romeo
+  district_name: Romeo Community Schools
+  district_nces_id: '2630090'
+  enrollment: 5185
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-romulus-2600225:
+  display_name: Romulus
+  district_name: Summit Academy North
+  district_nces_id: '2600225'
+  enrollment: 1569
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-romulus-2600262:
+  display_name: Romulus
+  district_name: Metro Charter Academy
+  district_nces_id: '2600262'
+  enrollment: 559
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-romulus-2630120:
+  display_name: Romulus
+  district_name: Romulus Community Schools
+  district_nces_id: '2630120'
+  enrollment: 2281
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-roscommon:
+  display_name: Roscommon
+  district_name: Roscommon Area Public Schools
+  district_nces_id: '2615830'
+  enrollment: 822
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-roseville-2600210:
+  display_name: Roseville
+  district_name: Michigan Collegiate
+  district_nces_id: '2600210'
+  enrollment: 875
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-roseville-2600950:
+  display_name: Roseville
+  district_name: Reach Charter Academy
+  district_nces_id: '2600950'
+  enrollment: 577
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-roseville-2630210:
+  display_name: Roseville
+  district_name: Roseville Community Schools
+  district_nces_id: '2630210'
+  enrollment: 4208
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-royal-oak-2601139:
+  display_name: Royal Oak
+  district_name: Lincoln-King Adams-Young Academy
+  district_nces_id: '2601139'
+  enrollment: 1262
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-royal-oak-2630300:
+  display_name: Royal Oak
+  district_name: Royal Oak Schools
+  district_nces_id: '2630300'
+  enrollment: 4865
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-rudyard:
+  display_name: Rudyard
+  district_name: Rudyard Area Schools
+  district_nces_id: '2630360'
+  enrollment: 603
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saginaw-2600219:
+  display_name: Saginaw
+  district_name: North Saginaw Charter Academy
+  district_nces_id: '2600219'
+  enrollment: 561
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-saginaw-2608070:
+  display_name: Saginaw
+  district_name: Carrollton Public Schools
+  district_nces_id: '2608070'
+  enrollment: 1681
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saginaw-2630390:
+  display_name: Saginaw
+  district_name: Saginaw School District of the City of
+  district_nces_id: '2630390'
+  enrollment: 5286
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saginaw-2630450:
+  display_name: Saginaw
+  district_name: Saginaw Township Community Schools
+  district_nces_id: '2630450'
+  enrollment: 4596
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saginaw-2633410:
+  display_name: Saginaw
+  district_name: Swan Valley School District
+  district_nces_id: '2633410'
+  enrollment: 1790
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saginaw-2680930:
+  display_name: Saginaw
+  district_name: Saginaw ISD
+  district_nces_id: '2680930'
+  enrollment: 1684
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saint-charles:
+  display_name: Saint Charles
+  district_name: St. Charles Community Schools
+  district_nces_id: '2632640'
+  enrollment: 797
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saint-clair-shores-2620880:
+  display_name: Saint Clair Shores
+  district_name: Lakeview Public Schools (Macomb)
+  district_nces_id: '2620880'
+  enrollment: 4287
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saint-clair-shores-2632220:
+  display_name: Saint Clair Shores
+  district_name: South Lake Schools
+  district_nces_id: '2632220'
+  enrollment: 1496
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saint-clair-shores-2632670:
+  display_name: Saint Clair Shores
+  district_name: Lake Shore Public Schools (Macomb)
+  district_nces_id: '2632670'
+  enrollment: 3239
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saint-helen:
+  display_name: Saint Helen
+  district_name: Charlton Heston Academy
+  district_nces_id: '2601028'
+  enrollment: 767
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-saint-johns:
+  display_name: Saint Johns
+  district_name: St. Johns Public Schools
+  district_nces_id: '2632820'
+  enrollment: 2606
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saint-joseph:
+  display_name: Saint Joseph
+  district_name: St. Joseph Public Schools
+  district_nces_id: '2632850'
+  enrollment: 2965
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saint-louis:
+  display_name: Saint Louis
+  district_name: St. Louis Public Schools
+  district_nces_id: '2632880'
+  enrollment: 945
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saline:
+  display_name: Saline
+  district_name: Saline Area Schools
+  district_nces_id: '2630660'
+  enrollment: 4870
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-sand-creek:
+  display_name: Sand Creek
+  district_name: Sand Creek Community Schools
+  district_nces_id: '2630780'
+  enrollment: 783
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-sand-lake:
+  display_name: Sand Lake
+  district_name: Tri County Area Schools
+  district_nces_id: '2633930'
+  enrollment: 1719
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-sandusky:
+  display_name: Sandusky
+  district_name: Sandusky Community School District
+  district_nces_id: '2630840'
+  enrollment: 979
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-sanford:
+  display_name: Sanford
+  district_name: Meridian Public Schools
+  district_nces_id: '2623580'
+  enrollment: 1347
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-saranac:
+  display_name: Saranac
+  district_name: Saranac Community Schools
+  district_nces_id: '2630930'
+  enrollment: 852
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-sault-sainte-marie-2600071:
+  display_name: Sault Sainte Marie
+  district_name: Joseph K. Lumsden Bahweting Anishnabe Academy
+  district_nces_id: '2600071'
+  enrollment: 596
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-sault-sainte-marie-2630990:
+  display_name: Sault Sainte Marie
+  district_name: Sault Ste. Marie Area Schools
+  district_nces_id: '2630990'
+  enrollment: 1953
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-schoolcraft:
+  display_name: Schoolcraft
+  district_name: Schoolcraft Community Schools
+  district_nces_id: '2631020'
+  enrollment: 1071
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-scottville:
+  display_name: Scottville
+  district_name: Mason County Central Schools
+  district_nces_id: '2623130'
+  enrollment: 1260
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-sebewaing:
+  display_name: Sebewaing
+  district_name: Unionville-Sebewaing Area S.D.
+  district_nces_id: '2634440'
+  enrollment: 685
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-shelby:
+  display_name: Shelby
+  district_name: Shelby Public Schools
+  district_nces_id: '2631320'
+  enrollment: 1126
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-shepherd:
+  display_name: Shepherd
+  district_name: Shepherd Public Schools
+  district_nces_id: '2631380'
+  enrollment: 1785
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-south-haven:
+  display_name: South Haven
+  district_name: South Haven Public Schools
+  district_nces_id: '2632300'
+  enrollment: 1798
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-south-lyon:
+  display_name: South Lyon
+  district_name: South Lyon Community Schools
+  district_nces_id: '2632250'
+  enrollment: 8470
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-southfield-2600215:
+  display_name: Southfield
+  district_name: Dr. Joseph F. Pollack Academic Center of Excellence
+  district_nces_id: '2600215'
+  enrollment: 561
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-southfield-2600284:
+  display_name: Southfield
+  district_name: Bradford Academy
+  district_nces_id: '2600284'
+  enrollment: 980
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-southfield-2600295:
+  display_name: Southfield
+  district_name: Crescent Academy
+  district_nces_id: '2600295'
+  enrollment: 709
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-southfield-2600296:
+  display_name: Southfield
+  district_name: Laurus Academy
+  district_nces_id: '2600296'
+  enrollment: 749
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-southfield-2632310:
+  display_name: Southfield
+  district_name: Southfield Public School District
+  district_nces_id: '2632310'
+  enrollment: 4933
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-southgate-2600270:
+  display_name: Southgate
+  district_name: Creative Montessori Academy
+  district_nces_id: '2600270'
+  enrollment: 796
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-southgate-2632340:
+  display_name: Southgate
+  district_name: Southgate Community School District
+  district_nces_id: '2632340'
+  enrollment: 3370
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-sparta:
+  display_name: Sparta
+  district_name: Sparta Area Schools
+  district_nces_id: '2632370'
+  enrollment: 2433
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-spring-lake:
+  display_name: Spring Lake
+  district_name: Spring Lake Public Schools
+  district_nces_id: '2632550'
+  enrollment: 2331
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-springport:
+  display_name: Springport
+  district_name: Springport Public Schools
+  district_nces_id: '2632610'
+  enrollment: 1010
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-standish:
+  display_name: Standish
+  district_name: Standish-Sterling Community Schools
+  district_nces_id: '2632940'
+  enrollment: 1505
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-stanton:
+  display_name: Stanton
+  district_name: Central Montcalm Public Schools
+  district_nces_id: '2608640'
+  enrollment: 1374
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-stephenson:
+  display_name: Stephenson
+  district_name: Uplift Michigan Academy
+  district_nces_id: '2601120'
+  enrollment: 709
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-sterling-heights-2600211:
+  display_name: Sterling Heights
+  district_name: Huron Academy
+  district_nces_id: '2600211'
+  enrollment: 644
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-sterling-heights-2634470:
+  display_name: Sterling Heights
+  district_name: Utica Community Schools
+  district_nces_id: '2634470'
+  enrollment: 25744
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-stevensville:
+  display_name: Stevensville
+  district_name: Lakeshore School District (Berrien)
+  district_nces_id: '2620820'
+  enrollment: 2688
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-stockbridge:
+  display_name: Stockbridge
+  district_name: Stockbridge Community Schools
+  district_nces_id: '2633030'
+  enrollment: 1156
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-sturgis:
+  display_name: Sturgis
+  district_name: Sturgis Public Schools
+  district_nces_id: '2633090'
+  enrollment: 2967
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-suttons-bay:
+  display_name: Suttons Bay
+  district_name: Suttons Bay Public Schools
+  district_nces_id: '2633360'
+  enrollment: 578
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-swartz-creek:
+  display_name: Swartz Creek
+  district_name: Swartz Creek Community Schools
+  district_nces_id: '2633420'
+  enrollment: 3510
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-tawas-city:
+  display_name: Tawas City
+  district_name: Tawas Area Schools
+  district_nces_id: '2633510'
+  enrollment: 1136
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-taylor-2600277:
+  display_name: Taylor
+  district_name: Trillium Academy
+  district_nces_id: '2600277'
+  enrollment: 681
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-taylor-2600331:
+  display_name: Taylor
+  district_name: Taylor Exemplar Academy
+  district_nces_id: '2600331'
+  enrollment: 695
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-taylor-2600965:
+  display_name: Taylor
+  district_name: Quest Charter Academy
+  district_nces_id: '2600965'
+  enrollment: 762
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-taylor-2633540:
+  display_name: Taylor
+  district_name: Taylor School District
+  district_nces_id: '2633540'
+  enrollment: 5419
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-tecumseh:
+  display_name: Tecumseh
+  district_name: Tecumseh Public Schools
+  district_nces_id: '2633720'
+  enrollment: 2563
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-temperance:
+  display_name: Temperance
+  district_name: Bedford Public Schools
+  district_nces_id: '2604470'
+  enrollment: 3977
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-three-rivers:
+  display_name: Three Rivers
+  district_name: Three Rivers Community Schools
+  district_nces_id: '2633840'
+  enrollment: 2323
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-traverse-city-2600265:
+  display_name: Traverse City
+  district_name: Grand Traverse Academy
+  district_nces_id: '2600265'
+  enrollment: 787
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-traverse-city-2633870:
+  display_name: Traverse City
+  district_name: Traverse City Area Public Schools
+  district_nces_id: '2633870'
+  enrollment: 8712
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-traverse-city-2680440:
+  display_name: Traverse City
+  district_name: Northwest Education Services
+  district_nces_id: '2680440'
+  enrollment: 903
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-trenton:
+  display_name: Trenton
+  district_name: Trenton Public Schools
+  district_nces_id: '2633900'
+  enrollment: 2501
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-troy-2601118:
+  display_name: Troy
+  district_name: Lighthouse Connections Academy
+  district_nces_id: '2601118'
+  enrollment: 2454
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-troy-2634260:
+  display_name: Troy
+  district_name: Troy School District
+  district_nces_id: '2634260'
+  enrollment: 12461
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ubly:
+  display_name: Ubly
+  district_name: Ubly Community Schools
+  district_nces_id: '2634380'
+  enrollment: 623
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-union-city:
+  display_name: Union City
+  district_name: Union City Community Schools
+  district_nces_id: '2634410'
+  enrollment: 922
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-vassar:
+  display_name: Vassar
+  district_name: Vassar Public Schools
+  district_nces_id: '2634710'
+  enrollment: 896
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-vermontville:
+  display_name: Vermontville
+  district_name: Maple Valley Schools
+  district_nces_id: '2622620'
+  enrollment: 912
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-vestaburg-2601104:
+  display_name: Vestaburg
+  district_name: Success Virtual Learning Centers of Michigan
+  district_nces_id: '2601104'
+  enrollment: 1794
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-vestaburg-2634920:
+  display_name: Vestaburg
+  district_name: Vestaburg Community Schools
+  district_nces_id: '2634920'
+  enrollment: 963
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-vicksburg:
+  display_name: Vicksburg
+  district_name: Vicksburg Community Schools
+  district_nces_id: '2634950'
+  enrollment: 2588
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-walled-lake:
+  display_name: Walled Lake
+  district_name: Walled Lake Consolidated Schools
+  district_nces_id: '2635160'
+  enrollment: 12102
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-warren-2600294:
+  display_name: Warren
+  district_name: Great Oaks Academy
+  district_nces_id: '2600294'
+  enrollment: 744
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-warren-2600308:
+  display_name: Warren
+  district_name: Academy of Warren
+  district_nces_id: '2600308'
+  enrollment: 802
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-warren-2600967:
+  display_name: Warren
+  district_name: Michigan Mathematics and Science Academy
+  district_nces_id: '2600967'
+  enrollment: 741
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-warren-2614460:
+  display_name: Warren
+  district_name: Fitzgerald Public Schools
+  district_nces_id: '2614460'
+  enrollment: 2202
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-warren-2634680:
+  display_name: Warren
+  district_name: Van Dyke Public Schools
+  district_nces_id: '2634680'
+  enrollment: 2004
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-warren-2635190:
+  display_name: Warren
+  district_name: Warren Consolidated Schools
+  district_nces_id: '2635190'
+  enrollment: 12660
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-warren-2635220:
+  display_name: Warren
+  district_name: Warren Woods Public Schools
+  district_nces_id: '2635220'
+  enrollment: 3118
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-waterford-2601068:
+  display_name: Waterford
+  district_name: Oakside Prep Academy
+  district_nces_id: '2601068'
+  enrollment: 1182
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-waterford-2635310:
+  display_name: Waterford
+  district_name: Waterford School District
+  district_nces_id: '2635310'
+  enrollment: 7058
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-waterford-2680880:
+  display_name: Waterford
+  district_name: Oakland Schools
+  district_nces_id: '2680880'
+  enrollment: 2304
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-watervliet:
+  display_name: Watervliet
+  district_name: Watervliet School District
+  district_nces_id: '2635460'
+  enrollment: 1452
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-wayland:
+  display_name: Wayland
+  district_name: Wayland Union Schools
+  district_nces_id: '2635550'
+  enrollment: 2849
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-wayne:
+  display_name: Wayne
+  district_name: Wayne RESA
+  district_nces_id: '2680995'
+  enrollment: 7509
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-west-bloomfield:
+  display_name: West Bloomfield
+  district_name: West Bloomfield School District
+  district_nces_id: '2635820'
+  enrollment: 4865
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-west-branch:
+  display_name: West Branch
+  district_name: West Branch-Rose City Area Schools
+  district_nces_id: '2635850'
+  enrollment: 1871
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-westland-2600015:
+  display_name: Westland
+  district_name: Wayne-Westland Community School District
+  district_nces_id: '2600015'
+  enrollment: 9773
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-westland-2600300:
+  display_name: Westland
+  district_name: Universal Learning Academy
+  district_nces_id: '2600300'
+  enrollment: 730
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-westland-2600986:
+  display_name: Westland
+  district_name: American International Academy
+  district_nces_id: '2600986'
+  enrollment: 566
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-westphalia:
+  display_name: Westphalia
+  district_name: Pewamo-Westphalia Community Schools
+  district_nces_id: '2627960'
+  enrollment: 658
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-white-cloud:
+  display_name: White Cloud
+  district_name: White Cloud Public Schools
+  district_nces_id: '2636060'
+  enrollment: 935
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-white-pigeon:
+  display_name: White Pigeon
+  district_name: White Pigeon Community Schools
+  district_nces_id: '2636120'
+  enrollment: 733
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-whitehall:
+  display_name: Whitehall
+  district_name: Whitehall District Schools
+  district_nces_id: '2636300'
+  enrollment: 1957
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-whitmore-lake:
+  display_name: Whitmore Lake
+  district_name: Whitmore Lake Public School District
+  district_nces_id: '2636330'
+  enrollment: 652
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-whittemore:
+  display_name: Whittemore
+  district_name: Whittemore-Prescott Area Schools
+  district_nces_id: '2636390'
+  enrollment: 689
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-williamston:
+  display_name: Williamston
+  district_name: Williamston Community Schools
+  district_nces_id: '2636420'
+  enrollment: 1846
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-woodhaven-2615870:
+  display_name: Woodhaven
+  district_name: Gibraltar School District
+  district_nces_id: '2615870'
+  enrollment: 3630
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-woodhaven-2636485:
+  display_name: Woodhaven
+  district_name: Woodhaven-Brownstown School District
+  district_nces_id: '2636485'
+  enrollment: 5603
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-woodland:
+  display_name: Woodland
+  district_name: Lakewood Public Schools
+  district_nces_id: '2620980'
+  enrollment: 1653
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-wyandotte:
+  display_name: Wyandotte
+  district_name: Wyandotte School District of the City of
+  district_nces_id: '2636540'
+  enrollment: 4318
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-wyoming-2600098:
+  display_name: Wyoming
+  district_name: Vanguard Charter Academy
+  district_nces_id: '2600098'
+  enrollment: 797
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-wyoming-2616080:
+  display_name: Wyoming
+  district_name: Godfrey-Lee Public Schools
+  district_nces_id: '2616080'
+  enrollment: 1650
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-wyoming-2636570:
+  display_name: Wyoming
+  district_name: Wyoming Public Schools
+  district_nces_id: '2636570'
+  enrollment: 3916
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-yale:
+  display_name: Yale
+  district_name: Yale Public Schools
+  district_nces_id: '2636600'
+  enrollment: 1758
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ypsilanti-2600223:
+  display_name: Ypsilanti
+  district_name: South Arbor Charter Academy
+  district_nces_id: '2600223'
+  enrollment: 801
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-ypsilanti-2600314:
+  display_name: Ypsilanti
+  district_name: Fortis Academy
+  district_nces_id: '2600314'
+  enrollment: 638
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-ypsilanti-2601021:
+  display_name: Ypsilanti
+  district_name: South Pointe Scholars Charter Academy
+  district_nces_id: '2601021'
+  enrollment: 636
+  has_charters: true
+  source: ccd_auto
+  state: MI
+mi-ypsilanti-2621570:
+  display_name: Ypsilanti
+  district_name: Lincoln Consolidated School District
+  district_nces_id: '2621570'
+  enrollment: 3566
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-ypsilanti-2636630:
+  display_name: Ypsilanti
+  district_name: Ypsilanti Community Schools
+  district_nces_id: '2636630'
+  enrollment: 3721
+  has_charters: false
+  source: ccd_auto
+  state: MI
+mi-zeeland:
+  display_name: Zeeland
+  district_name: Zeeland Public Schools
+  district_nces_id: '2636660'
+  enrollment: 6010
+  has_charters: false
+  source: ccd_auto
+  state: MI

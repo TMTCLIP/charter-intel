@@ -1,0 +1,720 @@
+ne-albion:
+  display_name: Albion
+  district_name: BOONE CENTRAL SCHOOLS
+  district_nces_id: '3102820'
+  enrollment: 649
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-alliance:
+  display_name: Alliance
+  district_name: ALLIANCE PUBLIC SCHOOLS
+  district_nces_id: '3102910'
+  enrollment: 1345
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-arlington:
+  display_name: Arlington
+  district_name: ARLINGTON PUBLIC SCHOOLS
+  district_nces_id: '3103130'
+  enrollment: 691
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-ashland:
+  display_name: Ashland
+  district_name: ASHLAND-GREENWOOD PUBLIC SCHS
+  district_nces_id: '3100034'
+  enrollment: 1099
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-auburn:
+  display_name: Auburn
+  district_name: AUBURN PUBLIC SCHOOLS
+  district_nces_id: '3103330'
+  enrollment: 1051
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-aurora:
+  display_name: Aurora
+  district_name: AURORA PUBLIC SCHOOLS
+  district_nces_id: '3103360'
+  enrollment: 1226
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-battle-creek:
+  display_name: Battle Creek
+  district_name: BATTLE CREEK PUBLIC SCHOOLS
+  district_nces_id: '3103540'
+  enrollment: 566
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-beatrice:
+  display_name: Beatrice
+  district_name: BEATRICE PUBLIC SCHOOLS
+  district_nces_id: '3103600'
+  enrollment: 2090
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-bellevue:
+  display_name: Bellevue
+  district_name: BELLEVUE PUBLIC SCHOOLS
+  district_nces_id: '3103810'
+  enrollment: 9498
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-bennington:
+  display_name: Bennington
+  district_name: BENNINGTON PUBLIC SCHOOLS
+  district_nces_id: '3103990'
+  enrollment: 4154
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-blair:
+  display_name: Blair
+  district_name: BLAIR COMMUNITY SCHOOLS
+  district_nces_id: '3104100'
+  enrollment: 2274
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-bridgeport:
+  display_name: Bridgeport
+  district_name: BRIDGEPORT PUBLIC SCHOOLS
+  district_nces_id: '3100105'
+  enrollment: 506
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-broken-bow:
+  display_name: Broken Bow
+  district_name: BROKEN BOW PUBLIC SCHOOLS
+  district_nces_id: '3100011'
+  enrollment: 890
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-central-city:
+  display_name: Central City
+  district_name: CENTRAL CITY PUBLIC SCHOOLS
+  district_nces_id: '3104920'
+  enrollment: 767
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-chadron:
+  display_name: Chadron
+  district_name: CHADRON PUBLIC SCHOOLS
+  district_nces_id: '3104980'
+  enrollment: 941
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-columbus-3100112:
+  display_name: Columbus
+  district_name: LAKEVIEW COMMUNITY SCHOOLS
+  district_nces_id: '3100112'
+  enrollment: 952
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-columbus-3105340:
+  display_name: Columbus
+  district_name: COLUMBUS PUBLIC SCHOOLS
+  district_nces_id: '3105340'
+  enrollment: 4111
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-cozad:
+  display_name: Cozad
+  district_name: COZAD COMMUNITY SCHOOLS
+  district_nces_id: '3105460'
+  enrollment: 949
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-crete:
+  display_name: Crete
+  district_name: CRETE PUBLIC SCHOOLS
+  district_nces_id: '3100095'
+  enrollment: 2230
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-david-city:
+  display_name: David City
+  district_name: DAVID CITY PUBLIC SCHOOLS
+  district_nces_id: '3100002'
+  enrollment: 676
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-elkhorn:
+  display_name: Elkhorn
+  district_name: ELKHORN PUBLIC SCHOOLS
+  district_nces_id: '3170110'
+  enrollment: 11319
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-fairbury:
+  display_name: Fairbury
+  district_name: FAIRBURY PUBLIC SCHOOLS
+  district_nces_id: '3170440'
+  enrollment: 909
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-fairfield:
+  display_name: Fairfield
+  district_name: SOUTH CENTRAL NEBRASKA UNIFIED 5
+  district_nces_id: '3100122'
+  enrollment: 714
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-falls-city:
+  display_name: Falls City
+  district_name: FALLS CITY PUBLIC SCHOOLS
+  district_nces_id: '3170530'
+  enrollment: 880
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-firth:
+  display_name: Firth
+  district_name: NORRIS SCHOOL DIST 160
+  district_nces_id: '3100088'
+  enrollment: 2483
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-fort-calhoun:
+  display_name: Fort Calhoun
+  district_name: FORT CALHOUN COMMUNITY SCHS
+  district_nces_id: '3170650'
+  enrollment: 825
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-fremont:
+  display_name: Fremont
+  district_name: FREMONT PUBLIC SCHOOLS
+  district_nces_id: '3170710'
+  enrollment: 5217
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-geneva:
+  display_name: Geneva
+  district_name: FILLMORE CENTRAL PUBLIC SCHS
+  district_nces_id: '3100118'
+  enrollment: 609
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-gering:
+  display_name: Gering
+  district_name: GERING PUBLIC SCHOOLS
+  district_nces_id: '3100098'
+  enrollment: 2023
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-gibbon:
+  display_name: Gibbon
+  district_name: GIBBON PUBLIC SCHOOLS
+  district_nces_id: '3170980'
+  enrollment: 554
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-gordon:
+  display_name: Gordon
+  district_name: GORDON-RUSHVILLE PUBLIC SCHS
+  district_nces_id: '3100170'
+  enrollment: 550
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-gothenburg:
+  display_name: Gothenburg
+  district_name: GOTHENBURG PUBLIC SCHOOLS
+  district_nces_id: '3171100'
+  enrollment: 847
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-grand-island-3100016:
+  display_name: Grand Island
+  district_name: GRAND ISLAND PUBLIC SCHOOLS
+  district_nces_id: '3100016'
+  enrollment: 9990
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-grand-island-3174580:
+  display_name: Grand Island
+  district_name: NORTHWEST PUBLIC SCHOOLS
+  district_nces_id: '3174580'
+  enrollment: 1465
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-gretna:
+  display_name: Gretna
+  district_name: GRETNA PUBLIC SCHOOLS
+  district_nces_id: '3171220'
+  enrollment: 6529
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-hastings-3102770:
+  display_name: Hastings
+  district_name: ADAMS CENTRAL PUBLIC SCHOOLS
+  district_nces_id: '3102770'
+  enrollment: 1004
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-hastings-3171580:
+  display_name: Hastings
+  district_name: HASTINGS PUBLIC SCHOOLS
+  district_nces_id: '3171580'
+  enrollment: 3644
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-hershey:
+  display_name: Hershey
+  district_name: HERSHEY PUBLIC SCHOOLS
+  district_nces_id: '3171820'
+  enrollment: 557
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-holdrege:
+  display_name: Holdrege
+  district_name: HOLDREGE PUBLIC SCHOOLS
+  district_nces_id: '3171940'
+  enrollment: 1014
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-hooper:
+  display_name: Hooper
+  district_name: LOGAN VIEW PUBLIC SCHOOLS
+  district_nces_id: '3100114'
+  enrollment: 590
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-imperial:
+  display_name: Imperial
+  district_name: CHASE COUNTY SCHOOLS
+  district_nces_id: '3100163'
+  enrollment: 625
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-kearney:
+  display_name: Kearney
+  district_name: KEARNEY PUBLIC SCHOOLS
+  district_nces_id: '3172390'
+  enrollment: 6152
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-lexington:
+  display_name: Lexington
+  district_name: LEXINGTON PUBLIC SCHOOLS
+  district_nces_id: '3172810'
+  enrollment: 3221
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-lincoln:
+  display_name: Lincoln
+  district_name: LINCOLN PUBLIC SCHOOLS
+  district_nces_id: '3172840'
+  enrollment: 41850
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-louisville:
+  display_name: Louisville
+  district_name: LOUISVILLE PUBLIC SCHOOLS
+  district_nces_id: '3173050'
+  enrollment: 702
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-macy:
+  display_name: Macy
+  district_name: UMO N HO N NATION PUBLIC SCHS
+  district_nces_id: '3119560'
+  enrollment: 631
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-madison:
+  display_name: Madison
+  district_name: MADISON PUBLIC SCHOOLS
+  district_nces_id: '3173230'
+  enrollment: 543
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-malcolm:
+  display_name: Malcolm
+  district_name: MALCOLM PUBLIC SCHOOLS
+  district_nces_id: '3173290'
+  enrollment: 644
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-mc-cook:
+  display_name: Mc Cook
+  district_name: MC COOK PUBLIC SCHOOLS
+  district_nces_id: '3173470'
+  enrollment: 1376
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-milford:
+  display_name: Milford
+  district_name: MILFORD PUBLIC SCHOOLS
+  district_nces_id: '3173710'
+  enrollment: 819
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-minden:
+  display_name: Minden
+  district_name: MINDEN PUBLIC SCHOOLS
+  district_nces_id: '3173830'
+  enrollment: 820
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-mitchell:
+  display_name: Mitchell
+  district_name: MITCHELL PUBLIC SCHOOLS
+  district_nces_id: '3173890'
+  enrollment: 620
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-murray:
+  display_name: Murray
+  district_name: CONESTOGA PUBLIC SCHOOLS
+  district_nces_id: '3174200'
+  enrollment: 709
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-nebraska-city:
+  display_name: Nebraska City
+  district_name: NEBRASKA CITY PUBLIC SCHOOLS
+  district_nces_id: '3174160'
+  enrollment: 1428
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-norfolk:
+  display_name: Norfolk
+  district_name: NORFOLK PUBLIC SCHOOLS
+  district_nces_id: '3174430'
+  enrollment: 4518
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-north-bend:
+  display_name: North Bend
+  district_name: NORTH BEND CENTRAL PUBLIC SCHS
+  district_nces_id: '3100115'
+  enrollment: 586
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-north-platte:
+  display_name: North Platte
+  district_name: NORTH PLATTE PUBLIC SCHOOLS
+  district_nces_id: '3100022'
+  enrollment: 3782
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-ogallala:
+  display_name: Ogallala
+  district_name: OGALLALA PUBLIC SCHOOLS
+  district_nces_id: '3174760'
+  enrollment: 845
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-omaha-3173740:
+  display_name: Omaha
+  district_name: MILLARD PUBLIC SCHOOLS
+  district_nces_id: '3173740'
+  enrollment: 23637
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-omaha-3174820:
+  display_name: Omaha
+  district_name: OMAHA PUBLIC SCHOOLS
+  district_nces_id: '3174820'
+  enrollment: 51754
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-omaha-3178660:
+  display_name: Omaha
+  district_name: WESTSIDE COMMUNITY SCHOOLS
+  district_nces_id: '3178660'
+  enrollment: 6271
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-oneill:
+  display_name: O'Neill
+  district_name: O'NEILL PUBLIC SCHOOLS
+  district_nces_id: '3174850'
+  enrollment: 829
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-ord:
+  display_name: Ord
+  district_name: ORD PUBLIC SCHOOLS
+  district_nces_id: '3174940'
+  enrollment: 562
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-palmyra:
+  display_name: Palmyra
+  district_name: PALMYRA DISTRICT O R 1
+  district_nces_id: '3175210'
+  enrollment: 711
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-papillion:
+  display_name: Papillion
+  district_name: PAPILLION LA VISTA COMMUNITY SCHOOLS
+  district_nces_id: '3175270'
+  enrollment: 12031
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-pierce:
+  display_name: Pierce
+  district_name: PIERCE PUBLIC SCHOOLS
+  district_nces_id: '3175510'
+  enrollment: 690
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-plattsmouth:
+  display_name: Plattsmouth
+  district_name: PLATTSMOUTH COMMUNITY SCHOOLS
+  district_nces_id: '3175660'
+  enrollment: 1504
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-ralston:
+  display_name: Ralston
+  district_name: RALSTON PUBLIC SCHOOLS
+  district_nces_id: '3175900'
+  enrollment: 3352
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-raymond:
+  display_name: Raymond
+  district_name: RAYMOND CENTRAL PUBLIC SCHOOLS
+  district_nces_id: '3104950'
+  enrollment: 742
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-schuyler:
+  display_name: Schuyler
+  district_name: SCHUYLER COMMUNITY SCHOOLS
+  district_nces_id: '3176450'
+  enrollment: 1984
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-scottsbluff:
+  display_name: Scottsbluff
+  district_name: SCOTTSBLUFF PUBLIC SCHOOLS
+  district_nces_id: '3176470'
+  enrollment: 3519
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-seward:
+  display_name: Seward
+  district_name: SEWARD PUBLIC SCHOOLS
+  district_nces_id: '3176560'
+  enrollment: 1496
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-sidney:
+  display_name: Sidney
+  district_name: SIDNEY PUBLIC SCHOOLS
+  district_nces_id: '3176710'
+  enrollment: 1276
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-so-sioux-city:
+  display_name: So Sioux City
+  district_name: SO SIOUX CITY COMMUNITY SCHS
+  district_nces_id: '3176860'
+  enrollment: 3783
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-springfield:
+  display_name: Springfield
+  district_name: SPRINGFIELD PLATTEVIEW COMMUNITY SCHOOLS
+  district_nces_id: '3175630'
+  enrollment: 1203
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-st-paul:
+  display_name: St. Paul
+  district_name: ST PAUL PUBLIC SCHOOLS
+  district_nces_id: '3100085'
+  enrollment: 705
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-syracuse:
+  display_name: Syracuse
+  district_name: SYRACUSE-DUNBAR-AVOCA SCHOOLS
+  district_nces_id: '3177550'
+  enrollment: 793
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-tekamah:
+  display_name: Tekamah
+  district_name: TEKAMAH-HERMAN COMMUNITY SCHS
+  district_nces_id: '3100071'
+  enrollment: 527
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-valentine:
+  display_name: Valentine
+  district_name: VALENTINE COMMUNITY SCHOOLS
+  district_nces_id: '3178020'
+  enrollment: 623
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-valley:
+  display_name: Valley
+  district_name: DOUGLAS CO WEST COMMUNITY SCHS
+  district_nces_id: '3100165'
+  enrollment: 1053
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-wahoo:
+  display_name: Wahoo
+  district_name: WAHOO PUBLIC SCHOOLS
+  district_nces_id: '3178210'
+  enrollment: 1085
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-wakefield:
+  display_name: Wakefield
+  district_name: WAKEFIELD PUBLIC SCHOOLS
+  district_nces_id: '3178240'
+  enrollment: 567
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-waverly:
+  display_name: Waverly
+  district_name: WAVERLY SCHOOL DISTRICT 145
+  district_nces_id: '3100021'
+  enrollment: 2165
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-wayne:
+  display_name: Wayne
+  district_name: WAYNE COMMUNITY SCHOOLS
+  district_nces_id: '3178520'
+  enrollment: 997
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-west-point:
+  display_name: West Point
+  district_name: WEST POINT PUBLIC SCHOOLS
+  district_nces_id: '3100006'
+  enrollment: 728
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-wilber:
+  display_name: Wilber
+  district_name: WILBER-CLATONIA PUBLIC SCHOOLS
+  district_nces_id: '3178720'
+  enrollment: 624
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-winnebago:
+  display_name: Winnebago
+  district_name: WINNEBAGO PUBLIC SCHOOLS DISTRICT 17
+  district_nces_id: '3178810'
+  enrollment: 629
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-wood-river:
+  display_name: Wood River
+  district_name: WOOD RIVER RURAL SCHOOLS
+  district_nces_id: '3178940'
+  enrollment: 510
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-york:
+  display_name: York
+  district_name: YORK PUBLIC SCHOOLS
+  district_nces_id: '3179050'
+  enrollment: 1620
+  has_charters: false
+  source: ccd_auto
+  state: NE
+ne-yutan:
+  display_name: Yutan
+  district_name: YUTAN PUBLIC SCHOOLS
+  district_nces_id: '3179080'
+  enrollment: 506
+  has_charters: false
+  source: ccd_auto
+  state: NE

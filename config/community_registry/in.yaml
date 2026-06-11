@@ -1,0 +1,2552 @@
+in-akron:
+  display_name: Akron
+  district_name: Tippecanoe Valley School Corp
+  district_nces_id: '1811370'
+  enrollment: 1779
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-albion:
+  display_name: Albion
+  district_name: Central Noble Com School Corp
+  district_nces_id: '1801710'
+  enrollment: 1150
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-alexandria:
+  display_name: Alexandria
+  district_name: Alexandria Community School Corp
+  district_nces_id: '1800120'
+  enrollment: 1522
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-anderson-1800077:
+  display_name: Anderson
+  district_name: Anderson Preparatory Academy
+  district_nces_id: '1800077'
+  enrollment: 864
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-anderson-1800150:
+  display_name: Anderson
+  district_name: Anderson Community School Corp
+  district_nces_id: '1800150'
+  enrollment: 6196
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-anderson-1812880:
+  display_name: Anderson
+  district_name: Frankton-Lapel Community Schools
+  district_nces_id: '1812880'
+  enrollment: 3090
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-angola:
+  display_name: Angola
+  district_name: MSD Steuben County
+  district_nces_id: '1811100'
+  enrollment: 2607
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-arcadia:
+  display_name: Arcadia
+  district_name: Hamilton Heights School Corp
+  district_nces_id: '1804260'
+  enrollment: 2307
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-argos:
+  display_name: Argos
+  district_name: Argos Community Schools
+  district_nces_id: '1800180'
+  enrollment: 689
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-attica:
+  display_name: Attica
+  district_name: Attica Consolidated School Corp
+  district_nces_id: '1800210'
+  enrollment: 542
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-aurora:
+  display_name: Aurora
+  district_name: South Dearborn Community Sch Corp
+  district_nces_id: '1800240'
+  enrollment: 1966
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-austin:
+  display_name: Austin
+  district_name: Scott County School District 1
+  district_nces_id: '1809990'
+  enrollment: 1319
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-avon:
+  display_name: Avon
+  district_name: Avon Community School Corp
+  district_nces_id: '1800270'
+  enrollment: 10542
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bainbridge:
+  display_name: Bainbridge
+  district_name: North Putnam Community Schools
+  district_nces_id: '1807980'
+  enrollment: 1372
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-batesville:
+  display_name: Batesville
+  district_name: Batesville Community School Corp
+  district_nces_id: '1800390'
+  enrollment: 2227
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bedford:
+  display_name: Bedford
+  district_name: North Lawrence Com Schools
+  district_nces_id: '1807860'
+  enrollment: 3659
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-beech-grove:
+  display_name: Beech Grove
+  district_name: Beech Grove City Schools
+  district_nces_id: '1800450'
+  enrollment: 2843
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-berne:
+  display_name: Berne
+  district_name: South Adams Schools
+  district_nces_id: '1810260'
+  enrollment: 1291
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bicknell:
+  display_name: Bicknell
+  district_name: North Knox School Corp
+  district_nces_id: '1807830'
+  enrollment: 1206
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bloomfield-1800600:
+  display_name: Bloomfield
+  district_name: Bloomfield School District
+  district_nces_id: '1800600'
+  enrollment: 858
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bloomfield-1803090:
+  display_name: Bloomfield
+  district_name: Eastern Greene Schools
+  district_nces_id: '1803090'
+  enrollment: 1116
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bloomington-1800176:
+  display_name: Bloomington
+  district_name: Seven Oaks Classical School
+  district_nces_id: '1800176'
+  enrollment: 512
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-bloomington-1800630:
+  display_name: Bloomington
+  district_name: Monroe County Community Sch Corp
+  district_nces_id: '1800630'
+  enrollment: 10510
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bluffton:
+  display_name: Bluffton
+  district_name: MSD Bluffton-Harrison
+  district_nces_id: '1800720'
+  enrollment: 1803
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-boonville:
+  display_name: Boonville
+  district_name: Warrick County School Corp
+  district_nces_id: '1812390'
+  enrollment: 10122
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bourbon:
+  display_name: Bourbon
+  district_name: Triton School Corporation
+  district_nces_id: '1811490'
+  enrollment: 946
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-brazil:
+  display_name: Brazil
+  district_name: Clay Community Schools
+  district_nces_id: '1800840'
+  enrollment: 4040
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bremen:
+  display_name: Bremen
+  district_name: Bremen Public Schools
+  district_nces_id: '1800900'
+  enrollment: 1472
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-brookville:
+  display_name: Brookville
+  district_name: Franklin County Community Sch Corp
+  district_nces_id: '1803700'
+  enrollment: 2049
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-brownsburg:
+  display_name: Brownsburg
+  district_name: Brownsburg Community School Corp
+  district_nces_id: '1801020'
+  enrollment: 10172
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-brownstown:
+  display_name: Brownstown
+  district_name: Brownstown Cnt Com Sch Corp
+  district_nces_id: '1801050'
+  enrollment: 1433
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-bunker-hill:
+  display_name: Bunker Hill
+  district_name: Maconaquah School Corp
+  district_nces_id: '1806090'
+  enrollment: 1941
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-butler:
+  display_name: Butler
+  district_name: DeKalb Co Eastern Com Sch Dist
+  district_nces_id: '1803060'
+  enrollment: 1235
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-campbellsburg:
+  display_name: Campbellsburg
+  district_name: West Washington School Corp
+  district_nces_id: '1812930'
+  enrollment: 934
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-carmel-1800016:
+  display_name: Carmel
+  district_name: Options Charter Schools
+  district_nces_id: '1800016'
+  enrollment: 933
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-carmel-1801200:
+  display_name: Carmel
+  district_name: Carmel Clay Schools
+  district_nces_id: '1801200'
+  enrollment: 16072
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-cayuga:
+  display_name: Cayuga
+  district_name: North Vermillion Com Sch Corp
+  district_nces_id: '1808070'
+  enrollment: 673
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-cedar-lake:
+  display_name: Cedar Lake
+  district_name: Hanover Community School Corp
+  district_nces_id: '1804350'
+  enrollment: 2734
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-centerville:
+  display_name: Centerville
+  district_name: Centerville-Abington Com Schs
+  district_nces_id: '1801560'
+  enrollment: 1777
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-chalmers:
+  display_name: Chalmers
+  district_name: Frontier School Corporation
+  district_nces_id: '1803810'
+  enrollment: 671
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-charlottesville:
+  display_name: Charlottesville
+  district_name: Eastern Hancock Co Com Sch Corp
+  district_nces_id: '1803120'
+  enrollment: 1179
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-chesterton:
+  display_name: Chesterton
+  district_name: Duneland School Corporation
+  district_nces_id: '1802800'
+  enrollment: 5724
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-churubusco:
+  display_name: Churubusco
+  district_name: Smith-Green Community Schools
+  district_nces_id: '1810230'
+  enrollment: 1132
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-clarksville:
+  display_name: Clarksville
+  district_name: Clarksville Community School Corp
+  district_nces_id: '1801920'
+  enrollment: 4027
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-clayton:
+  display_name: Clayton
+  district_name: Mill Creek Community Sch Corp
+  district_nces_id: '1806660'
+  enrollment: 1539
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-clinton:
+  display_name: Clinton
+  district_name: South Vermillion Com Sch Corp
+  district_nces_id: '1810590'
+  enrollment: 1594
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-cloverdale:
+  display_name: Cloverdale
+  district_name: Cloverdale Community Schools
+  district_nces_id: '1802220'
+  enrollment: 1686
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-columbia-city:
+  display_name: Columbia City
+  district_name: Whitley County Con Schools
+  district_nces_id: '1802280'
+  enrollment: 3617
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-columbus:
+  display_name: Columbus
+  district_name: Bartholomew Con School Corp
+  district_nces_id: '1800360'
+  enrollment: 11634
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-connersville:
+  display_name: Connersville
+  district_name: Fayette County School Corporation
+  district_nces_id: '1803510'
+  enrollment: 3253
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-converse:
+  display_name: Converse
+  district_name: Oak Hill United School Corp
+  district_nces_id: '1808340'
+  enrollment: 1627
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-corydon:
+  display_name: Corydon
+  district_name: South Harrison Com Schools
+  district_nces_id: '1810360'
+  enrollment: 3079
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-covington:
+  display_name: Covington
+  district_name: Covington Community School Corp
+  district_nces_id: '1802430'
+  enrollment: 888
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-crawfordsville-1802460:
+  display_name: Crawfordsville
+  district_name: Crawfordsville Community Schools
+  district_nces_id: '1802460'
+  enrollment: 2531
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-crawfordsville-1807900:
+  display_name: Crawfordsville
+  district_name: North Montgomery Com Sch Corp
+  district_nces_id: '1807900'
+  enrollment: 1835
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-crawfordsville-1810450:
+  display_name: Crawfordsville
+  district_name: South Montgomery Com Sch Corp
+  district_nces_id: '1810450'
+  enrollment: 1647
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-crown-point:
+  display_name: Crown Point
+  district_name: Crown Point Community School Corp
+  district_nces_id: '1802490'
+  enrollment: 9064
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-culver:
+  display_name: Culver
+  district_name: Culver Community Schools Corp
+  district_nces_id: '1802520'
+  enrollment: 840
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-daleville:
+  display_name: Daleville
+  district_name: Daleville Community Schools
+  district_nces_id: '1809840'
+  enrollment: 1018
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-danville:
+  display_name: Danville
+  district_name: Danville Community School Corp
+  district_nces_id: '1802550'
+  enrollment: 2631
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-decatur:
+  display_name: Decatur
+  district_name: North Adams Community Schools
+  district_nces_id: '1807680'
+  enrollment: 1610
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-delphi:
+  display_name: Delphi
+  district_name: Delphi Community School Corp
+  district_nces_id: '1802700'
+  enrollment: 1361
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-denver:
+  display_name: Denver
+  district_name: North Miami Community Schools
+  district_nces_id: '1807890'
+  enrollment: 769
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-dubois:
+  display_name: Dubois
+  district_name: Northeast Dubois Co Sch Corp
+  district_nces_id: '1808120'
+  enrollment: 834
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-dugger:
+  display_name: Dugger
+  district_name: Dugger Union Community School Corp
+  district_nces_id: '1800165'
+  enrollment: 567
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-east-chicago:
+  display_name: East Chicago
+  district_name: School City of East Chicago
+  district_nces_id: '1802880'
+  enrollment: 3348
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-edinburgh:
+  display_name: Edinburgh
+  district_name: Edinburgh Community School Corp
+  district_nces_id: '1803240'
+  enrollment: 837
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-elkhart-1800420:
+  display_name: Elkhart
+  district_name: Baugo Community Schools
+  district_nces_id: '1800420'
+  enrollment: 1775
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-elkhart-1802400:
+  display_name: Elkhart
+  district_name: Concord Community Schools
+  district_nces_id: '1802400'
+  enrollment: 5348
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-elkhart-1803270:
+  display_name: Elkhart
+  district_name: Elkhart Community Schools
+  district_nces_id: '1803270'
+  enrollment: 11318
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-ellettsville:
+  display_name: Ellettsville
+  district_name: Richland-Bean Blossom C S C
+  district_nces_id: '1809480'
+  enrollment: 2738
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-elnora:
+  display_name: Elnora
+  district_name: North Daviess Com Schools
+  district_nces_id: '1807710'
+  enrollment: 1108
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-elwood:
+  display_name: Elwood
+  district_name: Elwood Community School Corp
+  district_nces_id: '1803300'
+  enrollment: 1494
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-evansville:
+  display_name: Evansville
+  district_name: Evansville Vanderburgh School Corp
+  district_nces_id: '1803450'
+  enrollment: 21739
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fairland:
+  display_name: Fairland
+  district_name: Northwestern Con School Corp
+  district_nces_id: '1808310'
+  enrollment: 1409
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fairmount:
+  display_name: Fairmount
+  district_name: Madison-Grant United School Corp
+  district_nces_id: '1806240'
+  enrollment: 1561
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-ferdinand:
+  display_name: Ferdinand
+  district_name: Southeast Dubois Co Sch Corp
+  district_nces_id: '1810640'
+  enrollment: 1254
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fishers:
+  display_name: Fishers
+  district_name: Hamilton Southeastern Schools
+  district_nces_id: '1810650'
+  enrollment: 21612
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-flora:
+  display_name: Flora
+  district_name: Carroll Consolidated School Corp
+  district_nces_id: '1801290'
+  enrollment: 1043
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fort-branch:
+  display_name: Fort Branch
+  district_name: South Gibson School Corporation
+  district_nces_id: '1810350'
+  enrollment: 2110
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fort-wayne-1800030:
+  display_name: Fort Wayne
+  district_name: MSD Southwest Allen County Schls
+  district_nces_id: '1800030'
+  enrollment: 7853
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fort-wayne-1803630:
+  display_name: Fort Wayne
+  district_name: Fort Wayne Community Schools
+  district_nces_id: '1803630'
+  enrollment: 28612
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fort-wayne-1808250:
+  display_name: Fort Wayne
+  district_name: Northwest Allen County Schools
+  district_nces_id: '1808250'
+  enrollment: 8184
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fortville:
+  display_name: Fortville
+  district_name: Mt Vernon Community School Corp
+  district_nces_id: '1807260'
+  enrollment: 4677
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fountian-city:
+  display_name: Fountian City
+  district_name: Northeastern Wayne Schools
+  district_nces_id: '1808190'
+  enrollment: 1357
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fowler:
+  display_name: Fowler
+  district_name: Benton Community School Corp
+  district_nces_id: '1800480'
+  enrollment: 1609
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-francesville:
+  display_name: Francesville
+  district_name: West Central School Corp
+  district_nces_id: '1809360'
+  enrollment: 639
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-frankfort-1802160:
+  display_name: Frankfort
+  district_name: Clinton Prairie School Corporation
+  district_nces_id: '1802160'
+  enrollment: 1193
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-frankfort-1803660:
+  display_name: Frankfort
+  district_name: Community Schools of Frankfort
+  district_nces_id: '1803660'
+  enrollment: 3011
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-franklin:
+  display_name: Franklin
+  district_name: Franklin Community School Corp
+  district_nces_id: '1803690'
+  enrollment: 4938
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-fremont:
+  display_name: Fremont
+  district_name: Fremont Community Schools
+  district_nces_id: '1803780'
+  enrollment: 985
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-french-lick:
+  display_name: French Lick
+  district_name: Springs Valley Com School Corp
+  district_nces_id: '1810980'
+  enrollment: 837
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-garrett:
+  display_name: Garrett
+  district_name: Garrett-Keyser-Butler Com Sch Corp
+  district_nces_id: '1803840'
+  enrollment: 1675
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-gary-1800025:
+  display_name: Gary
+  district_name: Thea Bowman Leadership Academy
+  district_nces_id: '1800025'
+  enrollment: 840
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-gary-1800027:
+  display_name: Gary
+  district_name: Charter School of the Dunes
+  district_nces_id: '1800027'
+  enrollment: 684
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-gary-1800052:
+  display_name: Gary
+  district_name: Gary Lighthouse Charter School
+  district_nces_id: '1800052'
+  enrollment: 1127
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-gary-1800071:
+  display_name: Gary
+  district_name: Aspire Charter Academy
+  district_nces_id: '1800071'
+  enrollment: 666
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-gary-1803870:
+  display_name: Gary
+  district_name: Gary Community School Corp
+  district_nces_id: '1803870'
+  enrollment: 4076
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-gary-1805460:
+  display_name: Gary
+  district_name: Lake Ridge New Tech Schools
+  district_nces_id: '1805460'
+  enrollment: 1619
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-gas-city:
+  display_name: Gas City
+  district_name: Mississinewa Community School Corp
+  district_nces_id: '1806870'
+  enrollment: 2431
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-gaston:
+  display_name: Gaston
+  district_name: Wes-Del Community Schools
+  district_nces_id: '1804500'
+  enrollment: 861
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-goshen-1803480:
+  display_name: Goshen
+  district_name: Fairfield Community Schools
+  district_nces_id: '1803480'
+  enrollment: 2173
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-goshen-1803930:
+  display_name: Goshen
+  district_name: Goshen Community Schools
+  district_nces_id: '1803930'
+  enrollment: 6286
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-greencastle-1803990:
+  display_name: Greencastle
+  district_name: Greencastle Community School Corp
+  district_nces_id: '1803990'
+  enrollment: 1806
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-greencastle-1810500:
+  display_name: Greencastle
+  district_name: South Putnam Community Schools
+  district_nces_id: '1810500'
+  enrollment: 1101
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-greenfield:
+  display_name: Greenfield
+  district_name: Greenfield-Central Com Schools
+  district_nces_id: '1804050'
+  enrollment: 4393
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-greensburg-1802610:
+  display_name: Greensburg
+  district_name: Decatur County Community Schools
+  district_nces_id: '1802610'
+  enrollment: 1822
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-greensburg-1804080:
+  display_name: Greensburg
+  district_name: Greensburg Community Schools
+  district_nces_id: '1804080'
+  enrollment: 2149
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-greentown:
+  display_name: Greentown
+  district_name: Eastern Howard School Corporation
+  district_nces_id: '1803150'
+  enrollment: 1634
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-greenwood-1801440:
+  display_name: Greenwood
+  district_name: Center Grove Community School Corp
+  district_nces_id: '1801440'
+  enrollment: 9537
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-greenwood-1804110:
+  display_name: Greenwood
+  district_name: Greenwood Community Sch Corp
+  district_nces_id: '1804110'
+  enrollment: 3963
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-griffith:
+  display_name: Griffith
+  district_name: Griffith Public Schools
+  district_nces_id: '1804170'
+  enrollment: 1966
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-hagerstown:
+  display_name: Hagerstown
+  district_name: Nettle Creek School Corporation
+  district_nces_id: '1807380'
+  enrollment: 1154
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-hammond-1800082:
+  display_name: Hammond
+  district_name: Hammond Academy of Science & Tech
+  district_nces_id: '1800082'
+  enrollment: 564
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-hammond-1804320:
+  display_name: Hammond
+  district_name: School City of Hammond
+  district_nces_id: '1804320'
+  enrollment: 11505
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-hanover:
+  display_name: Hanover
+  district_name: Southwestern-Jefferson Co Con
+  district_nces_id: '1810800'
+  enrollment: 1277
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-hartford-city:
+  display_name: Hartford City
+  district_name: Blackford County Schools
+  district_nces_id: '1800570'
+  enrollment: 1496
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-hebron:
+  display_name: Hebron
+  district_name: MSD Boone Township
+  district_nces_id: '1800750'
+  enrollment: 1072
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-highland:
+  display_name: Highland
+  district_name: School Town of Highland
+  district_nces_id: '1804560'
+  enrollment: 3007
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-hobart-1804590:
+  display_name: Hobart
+  district_name: School City of Hobart
+  district_nces_id: '1804590'
+  enrollment: 4014
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-hobart-1804620:
+  display_name: Hobart
+  district_name: River Forest Community Sch Corp
+  district_nces_id: '1804620'
+  enrollment: 1646
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-hope:
+  display_name: Hope
+  district_name: Flat Rock-Hawcreek School Corp
+  district_nces_id: '1803570'
+  enrollment: 972
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-huntingburg:
+  display_name: Huntingburg
+  district_name: Southwest Dubois Co Sch Corp
+  district_nces_id: '1810870'
+  enrollment: 1965
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-hymera:
+  display_name: Hymera
+  district_name: Northeast School Corp
+  district_nces_id: '1808160'
+  enrollment: 770
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800014:
+  display_name: Indianapolis
+  district_name: Irvington Community School
+  district_nces_id: '1800014'
+  enrollment: 959
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800018:
+  display_name: Indianapolis
+  district_name: Christel House Academy South
+  district_nces_id: '1800018'
+  enrollment: 785
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800033:
+  display_name: Indianapolis
+  district_name: SE Neighborhood Sch of Excellence
+  district_nces_id: '1800033'
+  enrollment: 573
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800042:
+  display_name: Indianapolis
+  district_name: Andrew J Brown Academy
+  district_nces_id: '1800042'
+  enrollment: 604
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800046:
+  display_name: Indianapolis
+  district_name: 21st Century Charter Sch of Gary
+  district_nces_id: '1800046'
+  enrollment: 1337
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800051:
+  display_name: Indianapolis
+  district_name: Victory College Prep Academy
+  district_nces_id: '1800051'
+  enrollment: 902
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800058:
+  display_name: Indianapolis
+  district_name: Herron Charter
+  district_nces_id: '1800058'
+  enrollment: 995
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800067:
+  display_name: Indianapolis
+  district_name: IN Math & Science Academy
+  district_nces_id: '1800067'
+  enrollment: 539
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800086:
+  display_name: Indianapolis
+  district_name: Paramount Brookside
+  district_nces_id: '1800086'
+  enrollment: 803
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800093:
+  display_name: Indianapolis
+  district_name: Excel Center for Adult Learners
+  district_nces_id: '1800093'
+  enrollment: 1219
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800094:
+  display_name: Indianapolis
+  district_name: IN Math & Science Academy - North
+  district_nces_id: '1800094'
+  enrollment: 631
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800098:
+  display_name: Indianapolis
+  district_name: Indiana Connections Academy
+  district_nces_id: '1800098'
+  enrollment: 5784
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800122:
+  display_name: Indianapolis
+  district_name: Christel House DORS
+  district_nces_id: '1800122'
+  enrollment: 788
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800137:
+  display_name: Indianapolis
+  district_name: Enlace Academy
+  district_nces_id: '1800137'
+  enrollment: 658
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800147:
+  display_name: Indianapolis
+  district_name: KIPP Indy Unite Elementary
+  district_nces_id: '1800147'
+  enrollment: 695
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800170:
+  display_name: Indianapolis
+  district_name: Global Preparatory Academy
+  district_nces_id: '1800170'
+  enrollment: 780
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800179:
+  display_name: Indianapolis
+  district_name: Hoosier College and Career Academy
+  district_nces_id: '1800179'
+  enrollment: 740
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800183:
+  display_name: Indianapolis
+  district_name: Purdue Polytechnic High School Ind
+  district_nces_id: '1800183'
+  enrollment: 567
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800191:
+  display_name: Indianapolis
+  district_name: Indiana Connections Career Academy
+  district_nces_id: '1800191'
+  enrollment: 745
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800194:
+  display_name: Indianapolis
+  district_name: Matchbook Learning
+  district_nces_id: '1800194'
+  enrollment: 641
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800218:
+  display_name: Indianapolis
+  district_name: Phalen Leadership Academy at Francis Scott Key School 103
+  district_nces_id: '1800218'
+  enrollment: 538
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1800220:
+  display_name: Indianapolis
+  district_name: The PATH School
+  district_nces_id: '1800220'
+  enrollment: 556
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-indianapolis-1802640:
+  display_name: Indianapolis
+  district_name: MSD Decatur Township
+  district_nces_id: '1802640'
+  enrollment: 6709
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-indianapolis-1803750:
+  display_name: Indianapolis
+  district_name: Franklin Township Com Sch Corp
+  district_nces_id: '1803750'
+  enrollment: 11212
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-indianapolis-1804770:
+  display_name: Indianapolis
+  district_name: Indianapolis Public Schools
+  district_nces_id: '1804770'
+  enrollment: 22027
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-indianapolis-1805670:
+  display_name: Indianapolis
+  district_name: MSD Lawrence Township
+  district_nces_id: '1805670'
+  enrollment: 16414
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-indianapolis-1808820:
+  display_name: Indianapolis
+  district_name: Perry Township Schools
+  district_nces_id: '1808820'
+  enrollment: 16222
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-indianapolis-1808910:
+  display_name: Indianapolis
+  district_name: MSD Pike Township
+  district_nces_id: '1808910'
+  enrollment: 10683
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-indianapolis-1812360:
+  display_name: Indianapolis
+  district_name: MSD Warren Township
+  district_nces_id: '1812360'
+  enrollment: 11824
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-indianapolis-1812720:
+  display_name: Indianapolis
+  district_name: MSD Washington Township
+  district_nces_id: '1812720'
+  enrollment: 10512
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-indianapolis-1812810:
+  display_name: Indianapolis
+  district_name: MSD Wayne Township
+  district_nces_id: '1812810'
+  enrollment: 16086
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-jasonville:
+  display_name: Jasonville
+  district_name: MSD Shakamak Schools
+  district_nces_id: '1810110'
+  enrollment: 674
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-jasper:
+  display_name: Jasper
+  district_name: Greater Jasper Consolidated Schs
+  district_nces_id: '1803960'
+  enrollment: 3273
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-jeffersonville:
+  display_name: Jeffersonville
+  district_name: Greater Clark County Schools
+  district_nces_id: '1803940'
+  enrollment: 10269
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-kendallville:
+  display_name: Kendallville
+  district_name: East Noble School Corporation
+  district_nces_id: '1802970'
+  enrollment: 3417
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-kentland:
+  display_name: Kentland
+  district_name: South Newton School Corp
+  district_nces_id: '1810470'
+  enrollment: 862
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-knightstown:
+  display_name: Knightstown
+  district_name: C A Beard Memorial School Corp
+  district_nces_id: '1801060'
+  enrollment: 1068
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-knox:
+  display_name: Knox
+  district_name: Knox Community School Corp
+  district_nces_id: '1805340'
+  enrollment: 1746
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-kokomo-1802040:
+  display_name: Kokomo
+  district_name: Northwestern School Corp
+  district_nces_id: '1802040'
+  enrollment: 1853
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-kokomo-1805370:
+  display_name: Kokomo
+  district_name: Kokomo School Corporation
+  district_nces_id: '1805370'
+  enrollment: 5238
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-kokomo-1811250:
+  display_name: Kokomo
+  district_name: Taylor Community School Corp
+  district_nces_id: '1811250'
+  enrollment: 1300
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-kouts:
+  display_name: Kouts
+  district_name: East Porter County School Corp
+  district_nces_id: '1809000'
+  enrollment: 2408
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lafayette-1805400:
+  display_name: Lafayette
+  district_name: Lafayette School Corporation
+  district_nces_id: '1805400'
+  enrollment: 7368
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lafayette-1811340:
+  display_name: Lafayette
+  district_name: Tippecanoe School Corp
+  district_nces_id: '1811340'
+  enrollment: 13616
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lagrange-1805520:
+  display_name: Lagrange
+  district_name: Lakeland School Corporation
+  district_nces_id: '1805520'
+  enrollment: 1605
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lagrange-1809300:
+  display_name: Lagrange
+  district_name: Prairie Heights Community Sch Corp
+  district_nces_id: '1809300'
+  enrollment: 1325
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lake-station:
+  display_name: Lake Station
+  district_name: Lake Station Community Schools
+  district_nces_id: '1802910'
+  enrollment: 1125
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lakeville:
+  display_name: Lakeville
+  district_name: Union-North United School Corp
+  district_nces_id: '1811910'
+  enrollment: 1228
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lanesville:
+  display_name: Lanesville
+  district_name: Lanesville Community School Corp
+  district_nces_id: '1803720'
+  enrollment: 744
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-laporte:
+  display_name: Laporte
+  district_name: LaPorte Community School Corp
+  district_nces_id: '1805580'
+  enrollment: 6227
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-larwill:
+  display_name: Larwill
+  district_name: Whitko Community School Corp
+  district_nces_id: '1813230'
+  enrollment: 1216
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lawrenceburg:
+  display_name: Lawrenceburg
+  district_name: Lawrenceburg Community School Corp
+  district_nces_id: '1805700'
+  enrollment: 2120
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lebanon:
+  display_name: Lebanon
+  district_name: Lebanon Community School Corp
+  district_nces_id: '1805790'
+  enrollment: 3486
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-leopold:
+  display_name: Leopold
+  district_name: Perry Central Com Schools Corp
+  district_nces_id: '1801740'
+  enrollment: 1285
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-liberty:
+  display_name: Liberty
+  district_name: Union Co/Clg Corner Joint Sch Dist
+  district_nces_id: '1811610'
+  enrollment: 1295
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-ligonier:
+  display_name: Ligonier
+  district_name: West Noble School Corporation
+  district_nces_id: '1812900'
+  enrollment: 2177
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lincoln-city:
+  display_name: Lincoln City
+  district_name: North Spencer County Sch Corp
+  district_nces_id: '1808010'
+  enrollment: 2118
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-linton:
+  display_name: Linton
+  district_name: Linton-Stockton School Corporation
+  district_nces_id: '1805910'
+  enrollment: 1400
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lizton:
+  display_name: Lizton
+  district_name: North West Hendricks Schools
+  district_nces_id: '1808100'
+  enrollment: 1966
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-logansport:
+  display_name: Logansport
+  district_name: Logansport Community Sch Corp
+  district_nces_id: '1806030'
+  enrollment: 4393
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-loogootee:
+  display_name: Loogootee
+  district_name: Loogootee Community Sch Corp
+  district_nces_id: '1806060'
+  enrollment: 750
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lowell:
+  display_name: Lowell
+  district_name: Tri-Creek School Corporation
+  district_nces_id: '1811460'
+  enrollment: 3269
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-lynn:
+  display_name: Lynn
+  district_name: Randolph Southern School Corp
+  district_nces_id: '1810740'
+  enrollment: 522
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-madison:
+  display_name: Madison
+  district_name: Madison Consolidated Schools
+  district_nces_id: '1806120'
+  enrollment: 2705
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-marengo:
+  display_name: Marengo
+  district_name: Crawford County Community Sch Corp
+  district_nces_id: '1802440'
+  enrollment: 1344
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-marion-1803030:
+  display_name: Marion
+  district_name: Eastbrook Community Sch Corp
+  district_nces_id: '1803030'
+  enrollment: 1668
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-marion-1806390:
+  display_name: Marion
+  district_name: Marion Community Schools
+  district_nces_id: '1806390'
+  enrollment: 3702
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-martinsville:
+  display_name: Martinsville
+  district_name: MSD Martinsville Schools
+  district_nces_id: '1806510'
+  enrollment: 4053
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-memphis:
+  display_name: Memphis
+  district_name: Borden-Henryville School Corporation
+  district_nces_id: '1800212'
+  enrollment: 1716
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-merrillville:
+  display_name: Merrillville
+  district_name: Merrillville Community School Corp
+  district_nces_id: '1809690'
+  enrollment: 6004
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-michigan-city:
+  display_name: Michigan City
+  district_name: Michigan City Area Schools
+  district_nces_id: '1806570'
+  enrollment: 5193
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-michigantown:
+  display_name: Michigantown
+  district_name: Clinton Central School Corporation
+  district_nces_id: '1802130'
+  enrollment: 867
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-middlebury:
+  display_name: Middlebury
+  district_name: Middlebury Community Schools
+  district_nces_id: '1806600'
+  enrollment: 4231
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-middletown:
+  display_name: Middletown
+  district_name: Shenandoah School Corporation
+  district_nces_id: '1808280'
+  enrollment: 1332
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-milan:
+  display_name: Milan
+  district_name: Milan Community Schools
+  district_nces_id: '1806630'
+  enrollment: 1042
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-mishawaka-1806840:
+  display_name: Mishawaka
+  district_name: School City of Mishawaka
+  district_nces_id: '1806840'
+  enrollment: 5128
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-mishawaka-1808760:
+  display_name: Mishawaka
+  district_name: Penn-Harris-Madison School Corp
+  district_nces_id: '1808760'
+  enrollment: 11360
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-mitchell:
+  display_name: Mitchell
+  district_name: Mitchell Community Schools
+  district_nces_id: '1806900'
+  enrollment: 1499
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-modoc:
+  display_name: Modoc
+  district_name: Union School Corporation
+  district_nces_id: '1811730'
+  enrollment: 7238
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-monon:
+  display_name: Monon
+  district_name: North White School Corp
+  district_nces_id: '1808130'
+  enrollment: 900
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-monroe:
+  display_name: Monroe
+  district_name: Adams Central Community Schools
+  district_nces_id: '1800060'
+  enrollment: 1340
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-monrovia:
+  display_name: Monrovia
+  district_name: Monroe-Gregg School District
+  district_nces_id: '1804140'
+  enrollment: 1558
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-montezuma:
+  display_name: Montezuma
+  district_name: Southwest Parke Com Sch Corp
+  district_nces_id: '1810900'
+  enrollment: 1016
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-montgomery:
+  display_name: Montgomery
+  district_name: Barr-Reeve Community Schools Inc
+  district_nces_id: '1800330'
+  enrollment: 1016
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-monticello:
+  display_name: Monticello
+  district_name: Twin Lakes School Corp
+  district_nces_id: '1811580'
+  enrollment: 2279
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-mooresville:
+  display_name: Mooresville
+  district_name: Mooresville Con School Corp
+  district_nces_id: '1807140'
+  enrollment: 4356
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-morocco:
+  display_name: Morocco
+  district_name: North Newton School Corp
+  district_nces_id: '1807920'
+  enrollment: 1113
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-mount-vernon:
+  display_name: Mount Vernon
+  district_name: MSD Mount Vernon
+  district_nces_id: '1807290'
+  enrollment: 2101
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-muncie-1800038:
+  display_name: Muncie
+  district_name: Burris Laboratory School
+  district_nces_id: '1800038'
+  enrollment: 681
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-muncie-1802660:
+  display_name: Muncie
+  district_name: Delaware Community School Corp
+  district_nces_id: '1802660'
+  enrollment: 2594
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-muncie-1807020:
+  display_name: Muncie
+  district_name: Cowan Community School Corp
+  district_nces_id: '1807020'
+  enrollment: 791
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-muncie-1807320:
+  display_name: Muncie
+  district_name: Muncie Community Schools
+  district_nces_id: '1807320'
+  enrollment: 5080
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-munster:
+  display_name: Munster
+  district_name: School Town of Munster
+  district_nces_id: '1807350'
+  enrollment: 4136
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-n-manchester:
+  display_name: N Manchester
+  district_name: Manchester Community Schools
+  district_nces_id: '1806270'
+  enrollment: 1423
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-nappanee:
+  display_name: Nappanee
+  district_name: Wa-Nee Community Schools
+  district_nces_id: '1812240'
+  enrollment: 2933
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-nashville:
+  display_name: Nashville
+  district_name: Brown County School Corporation
+  district_nces_id: '1800960'
+  enrollment: 1653
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-new-albany-1800011:
+  display_name: New Albany
+  district_name: Community Montessori Inc
+  district_nces_id: '1800011'
+  enrollment: 506
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-new-albany-1807410:
+  display_name: New Albany
+  district_name: New Albany-Floyd Co Con Sch
+  district_nces_id: '1807410'
+  enrollment: 11270
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-new-carlisle:
+  display_name: New Carlisle
+  district_name: New Prairie United School Corp
+  district_nces_id: '1807560'
+  enrollment: 2910
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-new-castle-1800660:
+  display_name: New Castle
+  district_name: Blue River Valley Schools
+  district_nces_id: '1800660'
+  enrollment: 642
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-new-castle-1807440:
+  display_name: New Castle
+  district_name: New Castle Community School Corp
+  district_nces_id: '1807440'
+  enrollment: 2939
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-new-haven:
+  display_name: New Haven
+  district_name: East Allen County Schools
+  district_nces_id: '1802850'
+  enrollment: 10090
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-new-palestine:
+  display_name: New Palestine
+  district_name: Southern Hancock Co Com Sch Corp
+  district_nces_id: '1810710'
+  enrollment: 3863
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-noblesville:
+  display_name: Noblesville
+  district_name: Noblesville Schools
+  district_nces_id: '1807650'
+  enrollment: 10578
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-north-judson:
+  display_name: North Judson
+  district_name: North Judson-San Pierre Sch Corp
+  district_nces_id: '1807800'
+  enrollment: 931
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-north-vernon:
+  display_name: North Vernon
+  district_name: Jennings County School Corporation
+  district_nces_id: '1805190'
+  enrollment: 3889
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-oakland-city:
+  display_name: Oakland City
+  district_name: East Gibson School Corporation
+  district_nces_id: '1802940'
+  enrollment: 721
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-orleans:
+  display_name: Orleans
+  district_name: Orleans Community Schools
+  district_nces_id: '1808490'
+  enrollment: 908
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-osgood:
+  display_name: Osgood
+  district_name: Jac-Cen-Del Community Sch Corp
+  district_nces_id: '1804800'
+  enrollment: 773
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-ossian:
+  display_name: Ossian
+  district_name: Northern Wells Community Schools
+  district_nces_id: '1808220'
+  enrollment: 2464
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-paoli:
+  display_name: Paoli
+  district_name: Paoli Community School Corp
+  district_nces_id: '1808640'
+  enrollment: 1273
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-parker-city:
+  display_name: Parker City
+  district_name: Monroe Central School Corp
+  district_nces_id: '1807080'
+  enrollment: 1083
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-pekin:
+  display_name: Pekin
+  district_name: East Washington School Corp
+  district_nces_id: '1803000'
+  enrollment: 1346
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-pendleton:
+  display_name: Pendleton
+  district_name: South Madison Com Sch Corp
+  district_nces_id: '1810440'
+  enrollment: 4456
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-pershing:
+  display_name: Pershing
+  district_name: Western Wayne Schools
+  district_nces_id: '1813050'
+  enrollment: 751
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-peru:
+  display_name: Peru
+  district_name: Peru Community Schools
+  district_nces_id: '1808850'
+  enrollment: 1856
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-petersburg:
+  display_name: Petersburg
+  district_name: Pike County School Corp
+  district_nces_id: '1808900'
+  enrollment: 1574
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-plainfield:
+  display_name: Plainfield
+  district_name: Plainfield Community School Corp
+  district_nces_id: '1808970'
+  enrollment: 5854
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-plymouth:
+  display_name: Plymouth
+  district_name: Plymouth Community School Corp
+  district_nces_id: '1809060'
+  enrollment: 3275
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-poneto:
+  display_name: Poneto
+  district_name: Southern Wells Com Schools
+  district_nces_id: '1810770'
+  enrollment: 889
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-portage:
+  display_name: Portage
+  district_name: Portage Township Schools
+  district_nces_id: '1809150'
+  enrollment: 6742
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-porter:
+  display_name: Porter
+  district_name: Discovery Charter School
+  district_nces_id: '1800088'
+  enrollment: 569
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-portland:
+  display_name: Portland
+  district_name: Jay School Corporation
+  district_nces_id: '1804980'
+  enrollment: 3000
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-poseyville:
+  display_name: Poseyville
+  district_name: MSD North Posey Co Schools
+  district_nces_id: '1807950'
+  enrollment: 1437
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-princeton:
+  display_name: Princeton
+  district_name: North Gibson School Corporation
+  district_nces_id: '1807770'
+  enrollment: 1900
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-ramsey:
+  display_name: Ramsey
+  district_name: North Harrison Com School Corp
+  district_nces_id: '1800690'
+  enrollment: 2141
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-rensselaer:
+  display_name: Rensselaer
+  district_name: Rensselaer Central School Corp
+  district_nces_id: '1809420'
+  enrollment: 1521
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-richmond:
+  display_name: Richmond
+  district_name: Richmond Community Schools
+  district_nces_id: '1809510'
+  enrollment: 4526
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-rising-sun:
+  display_name: Rising Sun
+  district_name: Rising Sun-Ohio Co Com
+  district_nces_id: '1809600'
+  enrollment: 825
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-rochester-1801410:
+  display_name: Rochester
+  district_name: Caston School Corporation
+  district_nces_id: '1801410'
+  enrollment: 835
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-rochester-1809630:
+  display_name: Rochester
+  district_name: Rochester Community School Corp
+  district_nces_id: '1809630'
+  enrollment: 1613
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-rockport:
+  display_name: Rockport
+  district_name: South Spencer County Sch Corp
+  district_nces_id: '1810560'
+  enrollment: 1092
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-rockville:
+  display_name: Rockville
+  district_name: North Central Parke Comm Schl Corp
+  district_nces_id: '1800118'
+  enrollment: 1194
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-rossville:
+  display_name: Rossville
+  district_name: Rossville Con School District
+  district_nces_id: '1809720'
+  enrollment: 960
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-royal-center:
+  display_name: Royal Center
+  district_name: Pioneer Regional School Corp
+  district_nces_id: '1808940'
+  enrollment: 941
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-rushville:
+  display_name: Rushville
+  district_name: Rush County Schools
+  district_nces_id: '1809750'
+  enrollment: 1958
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-russiaville:
+  display_name: Russiaville
+  district_name: Western School Corporation
+  district_nces_id: '1804470'
+  enrollment: 2543
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-saint-john:
+  display_name: Saint John
+  district_name: Lake Central School Corporation
+  district_nces_id: '1805450'
+  enrollment: 9293
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-salem:
+  display_name: Salem
+  district_name: Salem Community Schools
+  district_nces_id: '1809810'
+  enrollment: 1745
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-scottsburg:
+  display_name: Scottsburg
+  district_name: Scott County School District 2
+  district_nces_id: '1810020'
+  enrollment: 2625
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-sellersburg-1800099:
+  display_name: Sellersburg
+  district_name: Rock Creek Community Academy
+  district_nces_id: '1800099'
+  enrollment: 661
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-sellersburg-1800213:
+  display_name: Sellersburg
+  district_name: Silver Creek School Corporation
+  district_nces_id: '1800213'
+  enrollment: 3144
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-selma:
+  display_name: Selma
+  district_name: Liberty-Perry Community Sch Corp
+  district_nces_id: '1805880'
+  enrollment: 1182
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-seymour:
+  display_name: Seymour
+  district_name: Seymour Community Schools
+  district_nces_id: '1810080'
+  enrollment: 5343
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-sharpsville:
+  display_name: Sharpsville
+  district_name: Tri-Central Community Schools
+  district_nces_id: '1808040'
+  enrollment: 787
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-shelbyville-1803210:
+  display_name: Shelbyville
+  district_name: Shelby Eastern Schools
+  district_nces_id: '1803210'
+  enrollment: 1213
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-shelbyville-1810140:
+  display_name: Shelbyville
+  district_name: Shelbyville Central Schools
+  district_nces_id: '1810140'
+  enrollment: 4036
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-shelbyville-1810830:
+  display_name: Shelbyville
+  district_name: Southwestern Con Sch Shelby Co
+  district_nces_id: '1810830'
+  enrollment: 634
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-sheridan:
+  display_name: Sheridan
+  district_name: Sheridan Community Schools
+  district_nces_id: '1806480'
+  enrollment: 1080
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-shoals:
+  display_name: Shoals
+  district_name: Shoals Community School Corp
+  district_nces_id: '1810170'
+  enrollment: 669
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-south-bend-1800161:
+  display_name: South Bend
+  district_name: Success Academy Primary School
+  district_nces_id: '1800161'
+  enrollment: 604
+  has_charters: true
+  source: ccd_auto
+  state: IN
+in-south-bend-1810290:
+  display_name: South Bend
+  district_name: South Bend Community School Corp
+  district_nces_id: '1810290'
+  enrollment: 15444
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-speedway:
+  display_name: Speedway
+  district_name: School Town of Speedway
+  district_nces_id: '1810920'
+  enrollment: 1864
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-spencer:
+  display_name: Spencer
+  district_name: Spencer-Owen Community Schools
+  district_nces_id: '1810950'
+  enrollment: 2238
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-st-leon:
+  display_name: St Leon
+  district_name: Sunman-Dearborn Com Sch Corp
+  district_nces_id: '1811190'
+  enrollment: 3825
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-straughn:
+  display_name: Straughn
+  district_name: South Henry School Corp
+  district_nces_id: '1810380'
+  enrollment: 753
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-sullivan:
+  display_name: Sullivan
+  district_name: Southwest School Corporation
+  district_nces_id: '1810860'
+  enrollment: 1743
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-switz-city:
+  display_name: Switz City
+  district_name: White River Valley School District
+  district_nces_id: '1800008'
+  enrollment: 745
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-syracuse:
+  display_name: Syracuse
+  district_name: Wawasee Community School Corp
+  district_nces_id: '1805550'
+  enrollment: 2838
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-tell-city:
+  display_name: Tell City
+  district_name: Tell City-Troy Twp School Corp
+  district_nces_id: '1811260'
+  enrollment: 1400
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-terre-haute:
+  display_name: Terre Haute
+  district_name: Vigo County School Corp
+  district_nces_id: '1812090'
+  enrollment: 13787
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-thorntown:
+  display_name: Thorntown
+  district_name: Western Boone Co Com Sch Dist
+  district_nces_id: '1812990'
+  enrollment: 1642
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-tipton:
+  display_name: Tipton
+  district_name: Tipton Community School Corp
+  district_nces_id: '1811400'
+  enrollment: 1442
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-topeka:
+  display_name: Topeka
+  district_name: Westview School Corporation
+  district_nces_id: '1813110'
+  enrollment: 2075
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-trafalgar:
+  display_name: Trafalgar
+  district_name: Nineveh-Hensley-Jackson United
+  district_nces_id: '1807620'
+  enrollment: 2096
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-union-city:
+  display_name: Union City
+  district_name: Randolph Eastern School Corp
+  district_nces_id: '1803180'
+  enrollment: 928
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-union-mills:
+  display_name: Union Mills
+  district_name: South Central Com School Corp
+  district_nces_id: '1802190'
+  enrollment: 950
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-valparaiso-1809180:
+  display_name: Valparaiso
+  district_name: Porter Township School Corp
+  district_nces_id: '1809180'
+  enrollment: 1527
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-valparaiso-1811700:
+  display_name: Valparaiso
+  district_name: Union Township School Corp
+  district_nces_id: '1811700'
+  enrollment: 1409
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-valparaiso-1811970:
+  display_name: Valparaiso
+  district_name: Valparaiso Community Schools
+  district_nces_id: '1811970'
+  enrollment: 6382
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-veedersburg:
+  display_name: Veedersburg
+  district_name: Southeast Fountain School Corp
+  district_nces_id: '1810620'
+  enrollment: 989
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-versailles:
+  display_name: Versailles
+  district_name: South Ripley Com Sch Corp
+  district_nces_id: '1810530'
+  enrollment: 1075
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-vevay:
+  display_name: Vevay
+  district_name: Switzerland County School Corp
+  district_nces_id: '1811220'
+  enrollment: 1483
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-vincennes-1810410:
+  display_name: Vincennes
+  district_name: South Knox School Corp
+  district_nces_id: '1810410'
+  enrollment: 1247
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-vincennes-1812120:
+  display_name: Vincennes
+  district_name: Vincennes Community School Corp
+  district_nces_id: '1812120'
+  enrollment: 2836
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-wabash-1812150:
+  display_name: Wabash
+  district_name: Wabash City Schools
+  district_nces_id: '1812150'
+  enrollment: 1536
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-wabash-1812180:
+  display_name: Wabash
+  district_name: MSD Wabash County Schools
+  district_nces_id: '1812180'
+  enrollment: 2266
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-walkerton:
+  display_name: Walkerton
+  district_name: John Glenn School Corporation
+  district_nces_id: '1809120'
+  enrollment: 2012
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-walton:
+  display_name: Walton
+  district_name: Lewis Cass Schools
+  district_nces_id: '1810680'
+  enrollment: 1342
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-warren:
+  display_name: Warren
+  district_name: Huntington Co Com Sch Corp
+  district_nces_id: '1804710'
+  enrollment: 4916
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-warsaw:
+  display_name: Warsaw
+  district_name: Warsaw Community Schools
+  district_nces_id: '1812420'
+  enrollment: 6734
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-washington:
+  display_name: Washington
+  district_name: Washington Community Schools
+  district_nces_id: '1812450'
+  enrollment: 2461
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-waterloo:
+  display_name: Waterloo
+  district_name: DeKalb Co Ctl United Sch Dist
+  district_nces_id: '1801590'
+  enrollment: 3641
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-west-lafayette:
+  display_name: West Lafayette
+  district_name: West Lafayette Com School Corp
+  district_nces_id: '1812870'
+  enrollment: 2420
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-westfield:
+  display_name: Westfield
+  district_name: Westfield-Washington Schools
+  district_nces_id: '1813080'
+  enrollment: 9180
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-westville:
+  display_name: Westville
+  district_name: MSD of New Durham Township
+  district_nces_id: '1807470'
+  enrollment: 944
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-wheatfield:
+  display_name: Wheatfield
+  district_name: Kankakee Valley School Corp
+  district_nces_id: '1805280'
+  enrollment: 3243
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-whiteland:
+  display_name: Whiteland
+  district_name: Clark-Pleasant Community Sch Corp
+  district_nces_id: '1801890'
+  enrollment: 6371
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-whiting:
+  display_name: Whiting
+  district_name: School City of Whiting
+  district_nces_id: '1813200'
+  enrollment: 1102
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-williamsport:
+  display_name: Williamsport
+  district_name: MSD Warren County
+  district_nces_id: '1806080'
+  enrollment: 1388
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-winamac:
+  display_name: Winamac
+  district_name: Eastern Pulaski Community Sch Corp
+  district_nces_id: '1807110'
+  enrollment: 1139
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-winchester:
+  display_name: Winchester
+  district_name: Randolph Central School Corp
+  district_nces_id: '1801770'
+  enrollment: 1432
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-wolcott:
+  display_name: Wolcott
+  district_name: Tri-County School Corporation
+  district_nces_id: '1811430'
+  enrollment: 765
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-yorktown:
+  display_name: Yorktown
+  district_name: Yorktown Community Schools
+  district_nces_id: '1807230'
+  enrollment: 2719
+  has_charters: false
+  source: ccd_auto
+  state: IN
+in-zionsville:
+  display_name: Zionsville
+  district_name: Zionsville Community Schools
+  district_nces_id: '1802830'
+  enrollment: 7906
+  has_charters: false
+  source: ccd_auto
+  state: IN

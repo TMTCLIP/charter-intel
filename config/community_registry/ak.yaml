@@ -1,0 +1,184 @@
+ak-anchorage-0200180:
+  display_name: Anchorage
+  district_name: Anchorage School District
+  district_nces_id: 0200180
+  enrollment: 43727
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-anchorage-0200800:
+  display_name: Anchorage
+  district_name: Chugach School District
+  district_nces_id: 0200800
+  enrollment: 637
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-bethel:
+  display_name: Bethel
+  district_name: Lower Kuskokwim School District
+  district_nces_id: '0200001'
+  enrollment: 3970
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-craig:
+  display_name: Craig
+  district_name: Craig City School District
+  district_nces_id: 0200090
+  enrollment: 668
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-delta-junction:
+  display_name: Delta Junction
+  district_name: Delta/Greely School District
+  district_nces_id: '0200100'
+  enrollment: 938
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-dillingham:
+  display_name: Dillingham
+  district_name: Southwest Region School District
+  district_nces_id: '0200710'
+  enrollment: 631
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-fairbanks-0200600:
+  display_name: Fairbanks
+  district_name: Fairbanks North Star Borough School District
+  district_nces_id: '0200600'
+  enrollment: 12703
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-fairbanks-0200862:
+  display_name: Fairbanks
+  district_name: Yukon-Koyukuk School District
+  district_nces_id: 0200862
+  enrollment: 3100
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-galena:
+  display_name: Galena
+  district_name: Galena City School District
+  district_nces_id: '0200130'
+  enrollment: 7177
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-healy:
+  display_name: Healy
+  district_name: Denali Borough School District
+  district_nces_id: '0200770'
+  enrollment: 912
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-juneau:
+  display_name: Juneau
+  district_name: Juneau Borough School District
+  district_nces_id: '0200210'
+  enrollment: 4338
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-ketchikan:
+  display_name: Ketchikan
+  district_name: Ketchikan Gateway Borough School District
+  district_nces_id: '0200150'
+  enrollment: 2074
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-kodiak:
+  display_name: Kodiak
+  district_name: Kodiak Island Borough School District
+  district_nces_id: 0200480
+  enrollment: 2228
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-kotzebue:
+  display_name: Kotzebue
+  district_name: Northwest Arctic Borough School District
+  district_nces_id: '0200625'
+  enrollment: 1911
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-mountain-village:
+  display_name: Mountain Village
+  district_name: Lower Yukon School District
+  district_nces_id: '0200003'
+  enrollment: 2035
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-nenana:
+  display_name: Nenana
+  district_name: Nenana City School District
+  district_nces_id: '0200540'
+  enrollment: 1858
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-nome:
+  display_name: Nome
+  district_name: Nome Public Schools
+  district_nces_id: '0200570'
+  enrollment: 719
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-palmer:
+  display_name: Palmer
+  district_name: Matanuska-Susitna Borough School District
+  district_nces_id: '0200510'
+  enrollment: 19705
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-sitka:
+  display_name: Sitka
+  district_name: Sitka School District
+  district_nces_id: '0200240'
+  enrollment: 1120
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-soldotna:
+  display_name: Soldotna
+  district_name: Kenai Peninsula Borough School District
+  district_nces_id: 0200390
+  enrollment: 8528
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-unalakleet:
+  display_name: Unalakleet
+  district_name: Bering Strait School District
+  district_nces_id: '0200020'
+  enrollment: 1830
+  has_charters: false
+  source: ccd_auto
+  state: AK
+ak-utqiagvik:
+  display_name: Utqiagvik
+  district_name: North Slope Borough School District
+  district_nces_id: '0200610'
+  enrollment: 2044
+  has_charters: true
+  source: ccd_auto
+  state: AK
+ak-valdez:
+  display_name: Valdez
+  district_name: Valdez City School District
+  district_nces_id: 0200780
+  enrollment: 653
+  has_charters: false
+  source: ccd_auto
+  state: AK

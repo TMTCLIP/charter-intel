@@ -1,0 +1,1896 @@
+nc-albemarle:
+  display_name: Albemarle
+  district_name: Stanly County Schools
+  district_nces_id: '3704320'
+  enrollment: 8643
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-angier:
+  display_name: Angier
+  district_name: 'Carolina Charter Academy: CFA'
+  district_nces_id: '3700423'
+  enrollment: 755
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-apex-3700402:
+  display_name: Apex
+  district_name: Peak Charter Academy
+  district_nces_id: '3700402'
+  enrollment: 767
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-apex-3700482:
+  display_name: Apex
+  district_name: The Math and Science Academy of Apex
+  district_nces_id: '3700482'
+  enrollment: 613
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-asheboro-3700240:
+  display_name: Asheboro
+  district_name: Asheboro City Schools
+  district_nces_id: '3700240'
+  enrollment: 4383
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-asheboro-3700334:
+  display_name: Asheboro
+  district_name: Uwharrie Charter Academy
+  district_nces_id: '3700334'
+  enrollment: 1910
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-asheboro-3703780:
+  display_name: Asheboro
+  district_name: Randolph County School System
+  district_nces_id: '3703780'
+  enrollment: 15383
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-asheville-3700270:
+  display_name: Asheville
+  district_name: Asheville City Schools
+  district_nces_id: '3700270'
+  enrollment: 4137
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-asheville-3700361:
+  display_name: Asheville
+  district_name: The Franklin School of Innovation
+  district_nces_id: '3700361'
+  enrollment: 694
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-asheville-3700369:
+  display_name: Asheville
+  district_name: Invest Collegiate - Imagine
+  district_nces_id: '3700369'
+  enrollment: 1248
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-asheville-3700450:
+  display_name: Asheville
+  district_name: Buncombe County Schools
+  district_nces_id: '3700450'
+  enrollment: 22091
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-bakersville:
+  display_name: Bakersville
+  district_name: Mitchell County Schools
+  district_nces_id: '3703000'
+  enrollment: 1722
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-bayboro:
+  display_name: Bayboro
+  district_name: Pamlico County Schools
+  district_nces_id: '3703510'
+  enrollment: 1244
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-beaufort:
+  display_name: Beaufort
+  district_name: Carteret County Public Schools
+  district_nces_id: '3700630'
+  enrollment: 8081
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-bolivia-3700378:
+  display_name: Bolivia
+  district_name: Classical Charter Schools of Southport
+  district_nces_id: '3700378'
+  enrollment: 614
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-bolivia-3700420:
+  display_name: Bolivia
+  district_name: Brunswick County Schools
+  district_nces_id: '3700420'
+  enrollment: 12944
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-boone:
+  display_name: Boone
+  district_name: Watauga County Schools
+  district_nces_id: '3704830'
+  enrollment: 4754
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-brevard:
+  display_name: Brevard
+  district_name: Transylvania County Schools
+  district_nces_id: '3704530'
+  enrollment: 3312
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-browns-summit:
+  display_name: Browns Summit
+  district_name: Summit Creek Academy
+  district_nces_id: '3700471'
+  enrollment: 560
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-bryson-city:
+  display_name: Bryson City
+  district_name: Swain County Schools
+  district_nces_id: '3704440'
+  enrollment: 1910
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-burgaw:
+  display_name: Burgaw
+  district_name: Pender County Schools
+  district_nces_id: '3703570'
+  enrollment: 10941
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-burlington-3700030:
+  display_name: Burlington
+  district_name: Alamance-Burlington Schools
+  district_nces_id: '3700030'
+  enrollment: 22489
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-burlington-3700116:
+  display_name: Burlington
+  district_name: Clover Garden
+  district_nces_id: '3700116'
+  enrollment: 685
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-burnsville:
+  display_name: Burnsville
+  district_name: Yancey County Schools
+  district_nces_id: '3705070'
+  enrollment: 2038
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-camden:
+  display_name: Camden
+  district_name: Camden County Schools
+  district_nces_id: '3700600'
+  enrollment: 1920
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-carthage:
+  display_name: Carthage
+  district_name: Moore County Schools
+  district_nces_id: '3703090'
+  enrollment: 13008
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-cary-3700324:
+  display_name: Cary
+  district_name: Triangle Math and Science Academy
+  district_nces_id: '3700324'
+  enrollment: 1276
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-cary-3700358:
+  display_name: Cary
+  district_name: Cardinal Charter
+  district_nces_id: '3700358'
+  enrollment: 700
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-cary-3704720:
+  display_name: Cary
+  district_name: Wake County Schools
+  district_nces_id: '3704720'
+  enrollment: 159778
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-chapel-hill-3700053:
+  display_name: Chapel Hill
+  district_name: Woods Charter School
+  district_nces_id: '3700053'
+  enrollment: 508
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-chapel-hill-3700720:
+  display_name: Chapel Hill
+  district_name: Chapel Hill-Carrboro City Schools
+  district_nces_id: '3700720'
+  enrollment: 11561
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700089:
+  display_name: Charlotte
+  district_name: Sugar Creek Charter
+  district_nces_id: '3700089'
+  enrollment: 1588
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700142:
+  display_name: Charlotte
+  district_name: 'KIPP: Charlotte'
+  district_nces_id: '3700142'
+  enrollment: 944
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700327:
+  display_name: Charlotte
+  district_name: Corvian Community School
+  district_nces_id: '3700327'
+  enrollment: 1294
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700356:
+  display_name: Charlotte
+  district_name: Bradford Preparatory School
+  district_nces_id: '3700356'
+  enrollment: 1511
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700359:
+  display_name: Charlotte
+  district_name: Pioneer Springs Community School
+  district_nces_id: '3700359'
+  enrollment: 527
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700391:
+  display_name: Charlotte
+  district_name: Charlotte Lab School
+  district_nces_id: '3700391'
+  enrollment: 991
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700392:
+  display_name: Charlotte
+  district_name: The Math and Science Academy of Charlott
+  district_nces_id: '3700392'
+  enrollment: 790
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700409:
+  display_name: Charlotte
+  district_name: Unity Classical Charter School
+  district_nces_id: '3700409'
+  enrollment: 606
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700410:
+  display_name: Charlotte
+  district_name: Mallard Creek STEM Academy
+  district_nces_id: '3700410'
+  enrollment: 961
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700411:
+  display_name: Charlotte
+  district_name: Movement Charter School
+  district_nces_id: '3700411'
+  enrollment: 640
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700441:
+  display_name: Charlotte
+  district_name: Jackson Day School
+  district_nces_id: '3700441'
+  enrollment: 817
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700446:
+  display_name: Charlotte
+  district_name: Southwest Charlotte STEM Academy
+  district_nces_id: '3700446'
+  enrollment: 817
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3700454:
+  display_name: Charlotte
+  district_name: Steele Creek Preparatory Academy
+  district_nces_id: '3700454'
+  enrollment: 513
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-charlotte-3702970:
+  display_name: Charlotte
+  district_name: Charlotte-Mecklenburg Schools
+  district_nces_id: '3702970'
+  enrollment: 144197
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-cherokee-5900066:
+  display_name: Cherokee
+  district_name: Cherokee Central Elementary School
+  district_nces_id: '5900066'
+  enrollment: 625
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-cherokee-5900101:
+  display_name: Cherokee
+  district_name: Cherokee Central High School
+  district_nces_id: '5900101'
+  enrollment: 709
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-clayton-3700430:
+  display_name: Clayton
+  district_name: Johnston Charter Academy
+  district_nces_id: '3700430'
+  enrollment: 679
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-clayton-3700477:
+  display_name: Clayton
+  district_name: American Leadership Academy - Johnston
+  district_nces_id: '3700477'
+  enrollment: 1740
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-clinton-3700930:
+  display_name: Clinton
+  district_name: Clinton City Schools
+  district_nces_id: '3700930'
+  enrollment: 3051
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-clinton-3704140:
+  display_name: Clinton
+  district_name: Sampson County Schools
+  district_nces_id: '3704140'
+  enrollment: 7971
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-columbus:
+  display_name: Columbus
+  district_name: Polk County Schools
+  district_nces_id: '3703720'
+  enrollment: 2166
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-concord-3700133:
+  display_name: Concord
+  district_name: Carolina International School
+  district_nces_id: '3700133'
+  enrollment: 731
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-concord-3700347:
+  display_name: Concord
+  district_name: Cabarrus Charter Academy
+  district_nces_id: '3700347'
+  enrollment: 669
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-concord-3700530:
+  display_name: Concord
+  district_name: Cabarrus County Schools
+  district_nces_id: '3700530'
+  enrollment: 34810
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-creedmoor:
+  display_name: Creedmoor
+  district_name: Falls Lake Academy
+  district_nces_id: '3700336'
+  enrollment: 1104
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-currituck:
+  display_name: Currituck
+  district_name: Currituck County Schools
+  district_nces_id: '3701080'
+  enrollment: 4514
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-danbury:
+  display_name: Danbury
+  district_name: Stokes County Schools
+  district_nces_id: '3704380'
+  enrollment: 5606
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-davidson:
+  display_name: Davidson
+  district_name: Community School of Davidson
+  district_nces_id: '3700135'
+  enrollment: 1501
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-denver:
+  display_name: Denver
+  district_name: Lincoln Charter School
+  district_nces_id: '3700062'
+  enrollment: 2263
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-dobson:
+  display_name: Dobson
+  district_name: Surry County Schools
+  district_nces_id: '3704410'
+  enrollment: 7340
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-durham-3700022:
+  display_name: Durham
+  district_name: Maureen Joy Charter
+  district_nces_id: '3700022'
+  enrollment: 616
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-durham-3700023:
+  display_name: Durham
+  district_name: Durham Charter School
+  district_nces_id: '3700023'
+  enrollment: 643
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-durham-3700081:
+  display_name: Durham
+  district_name: Research Triangle Charter
+  district_nces_id: '3700081'
+  enrollment: 693
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-durham-3700130:
+  display_name: Durham
+  district_name: Central Park School For Children
+  district_nces_id: '3700130'
+  enrollment: 594
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-durham-3700139:
+  display_name: Durham
+  district_name: Voyager Academy
+  district_nces_id: '3700139'
+  enrollment: 1361
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-durham-3700326:
+  display_name: Durham
+  district_name: Research Triangle High School
+  district_nces_id: '3700326'
+  enrollment: 582
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-durham-3700384:
+  display_name: Durham
+  district_name: Excelsior Classical Academy
+  district_nces_id: '3700384'
+  enrollment: 987
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-durham-3700386:
+  display_name: Durham
+  district_name: North Carolina Cyber Academy
+  district_nces_id: '3700386'
+  enrollment: 2372
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-durham-3700398:
+  display_name: Durham
+  district_name: NC Virtual Academy
+  district_nces_id: '3700398'
+  enrollment: 3047
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-durham-3701260:
+  display_name: Durham
+  district_name: Durham Public Schools
+  district_nces_id: '3701260'
+  enrollment: 31531
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-eden:
+  display_name: Eden
+  district_name: Rockingham County Schools
+  district_nces_id: '3703990'
+  enrollment: 11189
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-edenton:
+  display_name: Edenton
+  district_name: Edenton-Chowan Schools
+  district_nces_id: '3700840'
+  enrollment: 1917
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-elizabeth-city-3700394:
+  display_name: Elizabeth City
+  district_name: Northeast Academy of Aerospace & AdvTech
+  district_nces_id: '3700394'
+  enrollment: 756
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-elizabeth-city-3703540:
+  display_name: Elizabeth City
+  district_name: Elizabeth City-Pasquotank Public Schools
+  district_nces_id: '3703540'
+  enrollment: 4834
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-elizabethtown-3700390:
+  display_name: Elizabethtown
+  district_name: Bladen County Schools
+  district_nces_id: '3700390'
+  enrollment: 3983
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-elizabethtown-3700413:
+  display_name: Elizabethtown
+  district_name: 'Emereau: Bladen'
+  district_nces_id: '3700413'
+  enrollment: 580
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-elkin:
+  display_name: Elkin
+  district_name: Elkin City Schools
+  district_nces_id: '3701380'
+  enrollment: 1239
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-faith:
+  display_name: Faith
+  district_name: Faith Academy
+  district_nces_id: '3700475'
+  enrollment: 601
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-fayetteville-3700011:
+  display_name: Fayetteville
+  district_name: Cumberland County Schools
+  district_nces_id: '3700011'
+  enrollment: 49661
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-fayetteville-3700103:
+  display_name: Fayetteville
+  district_name: Alpha Academy
+  district_nces_id: '3700103'
+  enrollment: 1126
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-fayetteville-3700370:
+  display_name: Fayetteville
+  district_name: The Capitol Encore Academy
+  district_nces_id: '3700370'
+  enrollment: 725
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-fletcher:
+  display_name: Fletcher
+  district_name: FernLeaf Community Charter School
+  district_nces_id: '3700404'
+  enrollment: 520
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-forest-city:
+  display_name: Forest City
+  district_name: Rutherford County Schools
+  district_nces_id: '3704080'
+  enrollment: 7527
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-franklin:
+  display_name: Franklin
+  district_name: Macon County Schools
+  district_nces_id: '3702760'
+  enrollment: 4450
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-gaston:
+  display_name: Gaston
+  district_name: KIPP Gaston College Preparatory
+  district_nces_id: '3700123'
+  enrollment: 1286
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-gastonia-3700104:
+  display_name: Gastonia
+  district_name: Piedmont Community Charter
+  district_nces_id: '3700104'
+  enrollment: 1906
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-gastonia-3701620:
+  display_name: Gastonia
+  district_name: Gaston County Schools
+  district_nces_id: '3701620'
+  enrollment: 30281
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-gatesville:
+  display_name: Gatesville
+  district_name: Gates County Schools
+  district_nces_id: '3701680'
+  enrollment: 1497
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-goldsboro-3700377:
+  display_name: Goldsboro
+  district_name: Wayne Preparatory
+  district_nces_id: '3700377'
+  enrollment: 1015
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-goldsboro-3704880:
+  display_name: Goldsboro
+  district_name: Wayne County Public Schools
+  district_nces_id: '3704880'
+  enrollment: 17558
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-graham:
+  display_name: Graham
+  district_name: River Mill Academy
+  district_nces_id: '3700050'
+  enrollment: 771
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-greensboro-3700084:
+  display_name: Greensboro
+  district_name: Greensboro Academy
+  district_nces_id: '3700084'
+  enrollment: 766
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-greensboro-3700121:
+  display_name: Greensboro
+  district_name: Guilford Preparatory Academy
+  district_nces_id: '3700121'
+  enrollment: 551
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-greensboro-3700315:
+  display_name: Greensboro
+  district_name: Triad Math and Science Academy
+  district_nces_id: '3700315'
+  enrollment: 1321
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-greensboro-3700328:
+  display_name: Greensboro
+  district_name: Cornerstone Charter Academy
+  district_nces_id: '3700328'
+  enrollment: 1337
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-greensboro-3700408:
+  display_name: Greensboro
+  district_name: Gate City Charter Academy
+  district_nces_id: '3700408'
+  enrollment: 683
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-greensboro-3701920:
+  display_name: Greensboro
+  district_name: Guilford County Schools
+  district_nces_id: '3701920'
+  enrollment: 68894
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-greenville:
+  display_name: Greenville
+  district_name: Pitt County Schools
+  district_nces_id: '3700012'
+  enrollment: 24091
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-halifax-3700375:
+  display_name: Halifax
+  district_name: KIPP Halifax College Preparatory
+  district_nces_id: '3700375'
+  enrollment: 591
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-halifax-3701950:
+  display_name: Halifax
+  district_name: Halifax County Schools
+  district_nces_id: '3701950'
+  enrollment: 2173
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-hamlet:
+  display_name: Hamlet
+  district_name: Richmond County Schools
+  district_nces_id: '3703870'
+  enrollment: 6678
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-haw-river:
+  display_name: Haw River
+  district_name: Alamance Community School
+  district_nces_id: '3700467'
+  enrollment: 532
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-hayesville:
+  display_name: Hayesville
+  district_name: Clay County Schools
+  district_nces_id: '3700870'
+  enrollment: 1314
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-henderson-3700096:
+  display_name: Henderson
+  district_name: Vance Charter School
+  district_nces_id: '3700096'
+  enrollment: 954
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-henderson-3700319:
+  display_name: Henderson
+  district_name: Henderson Collegiate
+  district_nces_id: '3700319'
+  enrollment: 1320
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-henderson-3704650:
+  display_name: Henderson
+  district_name: Vance County Schools
+  district_nces_id: '3704650'
+  enrollment: 5269
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-hendersonville:
+  display_name: Hendersonville
+  district_name: Henderson County Schools
+  district_nces_id: '3702100'
+  enrollment: 12896
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-hertford:
+  display_name: Hertford
+  district_name: Perquimans County Schools
+  district_nces_id: '3703600'
+  enrollment: 1665
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-hickory:
+  display_name: Hickory
+  district_name: Hickory City Schools
+  district_nces_id: '3702190'
+  enrollment: 3877
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-high-point:
+  display_name: High Point
+  district_name: Phoenix Academy Inc
+  district_nces_id: '3700105'
+  enrollment: 1258
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-hillsborough-3700035:
+  display_name: Hillsborough
+  district_name: Eno River Academy
+  district_nces_id: '3700035'
+  enrollment: 782
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-hillsborough-3703480:
+  display_name: Hillsborough
+  district_name: Orange County Schools
+  district_nces_id: '3703480'
+  enrollment: 7208
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-holly-springs-3700114:
+  display_name: Holly Springs
+  district_name: Southern Wake Academy
+  district_nces_id: '3700114'
+  enrollment: 579
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-holly-springs-3700417:
+  display_name: Holly Springs
+  district_name: Pine Springs Preparatory Academy
+  district_nces_id: '3700417'
+  enrollment: 1243
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-huntersville-3700064:
+  display_name: Huntersville
+  district_name: Lake Norman Charter
+  district_nces_id: '3700064'
+  enrollment: 2215
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-huntersville-3700449:
+  display_name: Huntersville
+  district_name: Bonnie Cone Classical Academy
+  district_nces_id: '3700449'
+  enrollment: 879
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-indian-trail:
+  display_name: Indian Trail
+  district_name: Union Preparatory Academy at Indian Trai
+  district_nces_id: '3700401'
+  enrollment: 1060
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-jackson:
+  display_name: Jackson
+  district_name: Northampton County Schools
+  district_nces_id: '3703420'
+  enrollment: 1291
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-jacksonville:
+  display_name: Jacksonville
+  district_name: Onslow County Schools
+  district_nces_id: '3703450'
+  enrollment: 27921
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-jamestown:
+  display_name: Jamestown
+  district_name: The College Preparatory and Leadership A
+  district_nces_id: '3700325'
+  enrollment: 821
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-jefferson:
+  display_name: Jefferson
+  district_name: Ashe County Schools
+  district_nces_id: '3700210'
+  enrollment: 2743
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-kannapolis-3700399:
+  display_name: Kannapolis
+  district_name: Concord Lake STEAM Academy
+  district_nces_id: '3700399'
+  enrollment: 603
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-kannapolis-3702430:
+  display_name: Kannapolis
+  district_name: Kannapolis City Schools
+  district_nces_id: '3702430'
+  enrollment: 5390
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-kenansville:
+  display_name: Kenansville
+  district_name: Duplin County Schools
+  district_nces_id: '3701200'
+  enrollment: 9905
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-kernersville:
+  display_name: Kernersville
+  district_name: NC Leadership Charter Academy
+  district_nces_id: '3700343'
+  enrollment: 1123
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-kinston:
+  display_name: Kinston
+  district_name: Lenoir County Public Schools
+  district_nces_id: '3702610'
+  enrollment: 8334
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-laurinburg:
+  display_name: Laurinburg
+  district_name: Scotland County Schools
+  district_nces_id: '3704200'
+  enrollment: 5624
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-leland:
+  display_name: Leland
+  district_name: Classical Charter Schools of Leland
+  district_nces_id: '3700102'
+  enrollment: 1000
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-lenoir:
+  display_name: Lenoir
+  district_name: Caldwell County Schools
+  district_nces_id: '3700580'
+  enrollment: 10758
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-lexington-3700422:
+  display_name: Lexington
+  district_name: Davidson Charter Academy
+  district_nces_id: '3700422'
+  enrollment: 589
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-lexington-3701140:
+  display_name: Lexington
+  district_name: Davidson County Schools
+  district_nces_id: '3701140'
+  enrollment: 17964
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-lexington-3702640:
+  display_name: Lexington
+  district_name: Lexington City Schools
+  district_nces_id: '3702640'
+  enrollment: 2999
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-lillington:
+  display_name: Lillington
+  district_name: Harnett County Schools
+  district_nces_id: '3702010'
+  enrollment: 20050
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-lincolnton:
+  display_name: Lincolnton
+  district_name: Lincoln County Schools
+  district_nces_id: '3702680'
+  enrollment: 11629
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-louisburg:
+  display_name: Louisburg
+  district_name: Franklin County Schools
+  district_nces_id: '3701530'
+  enrollment: 7897
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-lumberton:
+  display_name: Lumberton
+  district_name: Public Schools of Robeson County
+  district_nces_id: '3703930'
+  enrollment: 21206
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-marion:
+  display_name: Marion
+  district_name: McDowell County Schools
+  district_nces_id: '3702940'
+  enrollment: 5776
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-marshall:
+  display_name: Marshall
+  district_name: Madison County Schools
+  district_nces_id: '3702820'
+  enrollment: 2108
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-matthews-3700137:
+  display_name: Matthews
+  district_name: Socrates Academy
+  district_nces_id: '3700137'
+  enrollment: 864
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-matthews-3700405:
+  display_name: Matthews
+  district_name: Matthews Charter Academy
+  district_nces_id: '3700405'
+  enrollment: 759
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-mint-hill:
+  display_name: Mint Hill
+  district_name: Queen's Grant Community School
+  district_nces_id: '3700127'
+  enrollment: 1331
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-misenheimer:
+  display_name: Misenheimer
+  district_name: Gray Stone Day School
+  district_nces_id: '3700128'
+  enrollment: 751
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-mocksville:
+  display_name: Mocksville
+  district_name: Davie County Schools
+  district_nces_id: '3701170'
+  enrollment: 6114
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-monroe-3700112:
+  display_name: Monroe
+  district_name: Union Academy Charter School
+  district_nces_id: '3700112'
+  enrollment: 2129
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-monroe-3704620:
+  display_name: Monroe
+  district_name: Union County Public Schools
+  district_nces_id: '3704620'
+  enrollment: 41497
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-mooresboro:
+  display_name: Mooresboro
+  district_name: Thomas Jefferson Classical Academy
+  district_nces_id: '3700093'
+  enrollment: 1360
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-mooresville-3700145:
+  display_name: Mooresville
+  district_name: Pine Lake Preparatory
+  district_nces_id: '3700145'
+  enrollment: 1879
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-mooresville-3700331:
+  display_name: Mooresville
+  district_name: Langtree Charter Academy
+  district_nces_id: '3700331'
+  enrollment: 1531
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-mooresville-3703120:
+  display_name: Mooresville
+  district_name: Mooresville Graded School District
+  district_nces_id: '3703120'
+  enrollment: 5971
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-morganton-3700118:
+  display_name: Morganton
+  district_name: The New Dimensions School
+  district_nces_id: '3700118'
+  enrollment: 535
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-morganton-3700480:
+  display_name: Morganton
+  district_name: Burke County Schools
+  district_nces_id: '3700480'
+  enrollment: 11770
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-morrisville:
+  display_name: Morrisville
+  district_name: Sterling Montessori Academy
+  district_nces_id: '3700046'
+  enrollment: 620
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-mount-airy-3700111:
+  display_name: Mount Airy
+  district_name: Millennium Charter Academy
+  district_nces_id: '3700111'
+  enrollment: 687
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-mount-airy-3703210:
+  display_name: Mount Airy
+  district_name: Mount Airy City Schools
+  district_nces_id: '3703210'
+  enrollment: 1726
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-mt-holly:
+  display_name: Mt. Holly
+  district_name: Mountain Island Charter
+  district_nces_id: '3700317'
+  enrollment: 1703
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-murphy:
+  display_name: Murphy
+  district_name: Cherokee County Schools
+  district_nces_id: '3700780'
+  enrollment: 3146
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-nags-head:
+  display_name: Nags Head
+  district_name: Dare County Schools
+  district_nces_id: '3701110'
+  enrollment: 5181
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-nashville:
+  display_name: Nashville
+  district_name: Nash County Public Schools
+  district_nces_id: '3703270'
+  enrollment: 14469
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-new-bern:
+  display_name: New Bern
+  district_name: Craven County Schools
+  district_nces_id: '3703310'
+  enrollment: 12755
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-newland:
+  display_name: Newland
+  district_name: Avery County Schools
+  district_nces_id: '3700300'
+  enrollment: 1904
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-newton-3700690:
+  display_name: Newton
+  district_name: Catawba County Schools
+  district_nces_id: '3700690'
+  enrollment: 15678
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-newton-3703360:
+  display_name: Newton
+  district_name: Newton Conover City Schools
+  district_nces_id: '3703360'
+  enrollment: 2856
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-north-wilkesboro:
+  display_name: North Wilkesboro
+  district_name: Wilkes County Schools
+  district_nces_id: '3704950'
+  enrollment: 8673
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-oxford-3700338:
+  display_name: Oxford
+  district_name: Oxford Preparatory School
+  district_nces_id: '3700338'
+  enrollment: 851
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-oxford-3701800:
+  display_name: Oxford
+  district_name: Granville County Schools
+  district_nces_id: '3701800'
+  enrollment: 6748
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-pittsboro:
+  display_name: Pittsboro
+  district_name: Chatham County Schools
+  district_nces_id: '3700750'
+  enrollment: 9129
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-plymouth:
+  display_name: Plymouth
+  district_name: Washington County Schools
+  district_nces_id: '3704800'
+  enrollment: 1104
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-raeford:
+  display_name: Raeford
+  district_name: Hoke County Schools
+  district_nces_id: '3702250'
+  enrollment: 8920
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-raleigh-3700097:
+  display_name: Raleigh
+  district_name: Raleigh Charter High School
+  district_nces_id: '3700097'
+  enrollment: 564
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-raleigh-3700113:
+  display_name: Raleigh
+  district_name: PreEminent Charter School
+  district_nces_id: '3700113'
+  enrollment: 702
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-roanoke-rapids:
+  display_name: Roanoke Rapids
+  district_name: Roanoke Rapids City Schools
+  district_nces_id: '3703900'
+  enrollment: 2765
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-robbinsville:
+  display_name: Robbinsville
+  district_name: Graham County Schools
+  district_nces_id: '3701770'
+  enrollment: 1141
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-rocky-mount:
+  display_name: Rocky Mount
+  district_name: Rocky Mount Preparatory
+  district_nces_id: '3700034'
+  enrollment: 1022
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-rolesville:
+  display_name: Rolesville
+  district_name: Rolesville Charter Academy
+  district_nces_id: '3700433'
+  enrollment: 632
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-roxboro-3700175:
+  display_name: Roxboro
+  district_name: Roxboro Community School
+  district_nces_id: '3700175'
+  enrollment: 688
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-roxboro-3703630:
+  display_name: Roxboro
+  district_name: Person County Schools
+  district_nces_id: '3703630'
+  enrollment: 4374
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-salisbury:
+  display_name: Salisbury
+  district_name: Rowan-Salisbury Schools
+  district_nces_id: '3704050'
+  enrollment: 18225
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-sanford-3700438:
+  display_name: Sanford
+  district_name: 'Ascend Leadership Academy: Lee County'
+  district_nces_id: '3700438'
+  enrollment: 547
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-sanford-3702560:
+  display_name: Sanford
+  district_name: Lee County Schools
+  district_nces_id: '3702560'
+  enrollment: 9143
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-saxapahaw:
+  display_name: Saxapahaw
+  district_name: The Hawbridge School
+  district_nces_id: '3700132'
+  enrollment: 585
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-shelby-3700353:
+  display_name: Shelby
+  district_name: Pinnacle Classical Academy
+  district_nces_id: '3700353'
+  enrollment: 1132
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-shelby-3700900:
+  display_name: Shelby
+  district_name: Cleveland County Schools
+  district_nces_id: '3700900'
+  enrollment: 14406
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-siler-city:
+  display_name: Siler City
+  district_name: Chatham Charter
+  district_nces_id: '3700020'
+  enrollment: 574
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-smithfield-3700144:
+  display_name: Smithfield
+  district_name: Neuse Charter School
+  district_nces_id: '3700144'
+  enrollment: 904
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-smithfield-3702370:
+  display_name: Smithfield
+  district_name: Johnston County Public Schools
+  district_nces_id: '3702370'
+  enrollment: 37286
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-snow-hill:
+  display_name: Snow Hill
+  district_name: Greene County Schools
+  district_nces_id: '3701830'
+  enrollment: 2668
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-sparta:
+  display_name: Sparta
+  district_name: Alleghany County Schools
+  district_nces_id: '3700120'
+  enrollment: 1421
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-stanley:
+  display_name: Stanley
+  district_name: Community Public Charter
+  district_nces_id: '3700452'
+  enrollment: 607
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-statesville-3700086:
+  display_name: Statesville
+  district_name: American Renaissance School
+  district_nces_id: '3700086'
+  enrollment: 757
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-statesville-3702310:
+  display_name: Statesville
+  district_name: Iredell-Statesville Schools
+  district_nces_id: '3702310'
+  enrollment: 20721
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-summerfield-3700110:
+  display_name: Summerfield
+  district_name: Bethany Community School
+  district_nces_id: '3700110'
+  enrollment: 649
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-summerfield-3700344:
+  display_name: Summerfield
+  district_name: Summerfield Charter Academy
+  district_nces_id: '3700344'
+  enrollment: 777
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-summerfield-3700463:
+  display_name: Summerfield
+  district_name: Revolution Academy
+  district_nces_id: '3700463'
+  enrollment: 724
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-sylva:
+  display_name: Sylva
+  district_name: Jackson County Public Schools
+  district_nces_id: '3702340'
+  enrollment: 3557
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-tarboro-3700323:
+  display_name: Tarboro
+  district_name: North East Carolina Preparatory School
+  district_nces_id: '3700323'
+  enrollment: 909
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-tarboro-3701320:
+  display_name: Tarboro
+  district_name: Edgecombe County Public Schools
+  district_nces_id: '3701320'
+  enrollment: 5419
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-taylorsville:
+  display_name: Taylorsville
+  district_name: Alexander County Schools
+  district_nces_id: '3700090'
+  enrollment: 4525
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-thomasville:
+  display_name: Thomasville
+  district_name: Thomasville City Schools
+  district_nces_id: '3704500'
+  enrollment: 2228
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-trenton:
+  display_name: Trenton
+  district_name: Jones County Schools
+  district_nces_id: '3702400'
+  enrollment: 1067
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-troutman:
+  display_name: Troutman
+  district_name: Iredell Charter Academy
+  district_nces_id: '3700400'
+  enrollment: 627
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-troy:
+  display_name: Troy
+  district_name: Montgomery County Schools
+  district_nces_id: '3703060'
+  enrollment: 3663
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-vass:
+  display_name: Vass
+  district_name: Sandhills Theatre Arts Renaiss
+  district_nces_id: '3700091'
+  enrollment: 809
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-wadesboro:
+  display_name: Wadesboro
+  district_name: Anson County Schools
+  district_nces_id: '3700180'
+  enrollment: 2964
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-wake-forest-3700069:
+  display_name: Wake Forest
+  district_name: Franklin Academy
+  district_nces_id: '3700069'
+  enrollment: 1651
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-wake-forest-3700131:
+  display_name: Wake Forest
+  district_name: Casa Esperanza Montessori
+  district_nces_id: '3700131'
+  enrollment: 615
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-wake-forest-3700314:
+  display_name: Wake Forest
+  district_name: Endeavor Charter
+  district_nces_id: '3700314'
+  enrollment: 767
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-wake-forest-3700362:
+  display_name: Wake Forest
+  district_name: Envision Science Academy
+  district_nces_id: '3700362'
+  enrollment: 741
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-wake-forest-3700364:
+  display_name: Wake Forest
+  district_name: Wake Forest Charter Academy
+  district_nces_id: '3700364'
+  enrollment: 636
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-wake-forest-3700484:
+  display_name: Wake Forest
+  district_name: Wake Preparatory Academy
+  district_nces_id: '3700484'
+  enrollment: 1961
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-warrenton:
+  display_name: Warrenton
+  district_name: Warren County Schools
+  district_nces_id: '3704740'
+  enrollment: 1801
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-washington:
+  display_name: Washington
+  district_name: Beaufort County Schools
+  district_nces_id: '3700330'
+  enrollment: 5975
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-waynesville-3700389:
+  display_name: Waynesville
+  district_name: Shining Rock Classical Academy
+  district_nces_id: '3700389'
+  enrollment: 604
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-waynesville-3702040:
+  display_name: Waynesville
+  district_name: Haywood County Schools
+  district_nces_id: '3702040'
+  enrollment: 6605
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-weddington:
+  display_name: Weddington
+  district_name: Union Day School
+  district_nces_id: '3700403'
+  enrollment: 552
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-weldon:
+  display_name: Weldon
+  district_name: Weldon City Schools
+  district_nces_id: '3704890'
+  enrollment: 659
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-wendell:
+  display_name: Wendell
+  district_name: Cardinal Charter Acad at Wendell Falls
+  district_nces_id: '3700465'
+  enrollment: 786
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-whiteville-3700140:
+  display_name: Whiteville
+  district_name: Classical Charter Schools of Whiteville
+  district_nces_id: '3700140'
+  enrollment: 879
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-whiteville-3700960:
+  display_name: Whiteville
+  district_name: Columbus County Schools
+  district_nces_id: '3700960'
+  enrollment: 5335
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-whiteville-3704920:
+  display_name: Whiteville
+  district_name: Whiteville City Schools
+  district_nces_id: '3704920'
+  enrollment: 2104
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-williamston:
+  display_name: Williamston
+  district_name: Martin County Schools
+  district_nces_id: '3702880'
+  enrollment: 2636
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-wilmington-3700412:
+  display_name: Wilmington
+  district_name: American Leadership Academy-Coastal
+  district_nces_id: '3700412'
+  enrollment: 777
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-wilmington-3703330:
+  display_name: Wilmington
+  district_name: New Hanover County Schools
+  district_nces_id: '3703330'
+  enrollment: 25244
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-wilson-3700049:
+  display_name: Wilson
+  district_name: Sallie B Howard School
+  district_nces_id: '3700049'
+  enrollment: 1204
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-wilson-3700379:
+  display_name: Wilson
+  district_name: Wilson Preparatory Academy
+  district_nces_id: '3700379'
+  enrollment: 807
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-wilson-3705020:
+  display_name: Wilson
+  district_name: Wilson County Schools
+  district_nces_id: '3705020'
+  enrollment: 10276
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-windsor:
+  display_name: Windsor
+  district_name: Bertie County Schools
+  district_nces_id: '3700360'
+  enrollment: 1831
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-winston-salem-3700025:
+  display_name: Winston-Salem
+  district_name: Quality Education Academy
+  district_nces_id: '3700025'
+  enrollment: 673
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-winston-salem-3700083:
+  display_name: Winston-Salem
+  district_name: Forsyth Academy
+  district_nces_id: '3700083'
+  enrollment: 759
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-winston-salem-3700126:
+  display_name: Winston-Salem
+  district_name: Arts Based School
+  district_nces_id: '3700126'
+  enrollment: 579
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-winston-salem-3701500:
+  display_name: Winston Salem
+  district_name: Winston Salem / Forsyth County Schools
+  district_nces_id: '3701500'
+  enrollment: 52717
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-winterville:
+  display_name: Winterville
+  district_name: Winterville Charter Academy
+  district_nces_id: '3700396'
+  enrollment: 592
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-winton:
+  display_name: Winton
+  district_name: Hertford County Schools
+  district_nces_id: '3702160'
+  enrollment: 2486
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-yadkinville:
+  display_name: Yadkinville
+  district_name: Yadkin County Schools
+  district_nces_id: '3705040'
+  enrollment: 5243
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-yanceyville:
+  display_name: Yanceyville
+  district_name: Caswell County Schools
+  district_nces_id: '3700660'
+  enrollment: 2250
+  has_charters: false
+  source: ccd_auto
+  state: NC
+nc-youngsville:
+  display_name: Youngsville
+  district_name: Youngsville Academy
+  district_nces_id: '3700387'
+  enrollment: 526
+  has_charters: true
+  source: ccd_auto
+  state: NC
+nc-zebulon:
+  display_name: Zebulon
+  district_name: East Wake Academy
+  district_nces_id: '3700070'
+  enrollment: 1227
+  has_charters: true
+  source: ccd_auto
+  state: NC

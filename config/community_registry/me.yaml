@@ -1,0 +1,728 @@
+me-auburn:
+  display_name: Auburn
+  district_name: Auburn Public Schools
+  district_nces_id: '2302610'
+  enrollment: 3220
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-augusta:
+  display_name: Augusta
+  district_name: Augusta Public Schools
+  district_nces_id: '2302640'
+  enrollment: 2213
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-bangor:
+  display_name: Bangor
+  district_name: Bangor Public Schools
+  district_nces_id: '2302820'
+  enrollment: 3454
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-bath:
+  display_name: Bath
+  district_name: RSU 01 - LKRSU
+  district_nces_id: '2314772'
+  enrollment: 1763
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-belfast:
+  display_name: Belfast
+  district_name: RSU 71
+  district_nces_id: '2314822'
+  enrollment: 1456
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-bethel:
+  display_name: Bethel
+  district_name: RSU 44/MSAD 44
+  district_nces_id: '2311670'
+  enrollment: 690
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-biddeford:
+  display_name: Biddeford
+  district_name: Biddeford Public Schools
+  district_nces_id: '2303150'
+  enrollment: 2314
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-boothbay-harbor:
+  display_name: Boothbay Harbor
+  district_name: Boothbay-Boothbay Hbr CSD
+  district_nces_id: '2303290'
+  enrollment: 500
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-brewer:
+  display_name: Brewer
+  district_name: Brewer Public Schools
+  district_nces_id: '2303510'
+  enrollment: 1604
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-bridgton:
+  display_name: Bridgton
+  district_name: RSU 61/MSAD 61
+  district_nces_id: '2314210'
+  enrollment: 1670
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-brunswick:
+  display_name: Brunswick
+  district_name: Brunswick Public Schools
+  district_nces_id: '2303780'
+  enrollment: 2363
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-bucksport:
+  display_name: Bucksport
+  district_name: RSU 25
+  district_nces_id: '2314796'
+  enrollment: 1082
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-buxton:
+  display_name: Buxton
+  district_name: RSU 06/MSAD 06
+  district_nces_id: '2311790'
+  enrollment: 3283
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-calais:
+  display_name: Calais
+  district_name: Calais Public Schools
+  district_nces_id: '2303870'
+  enrollment: 580
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-camden-2300053:
+  display_name: Camden
+  district_name: Five Town CSD
+  district_nces_id: '2300053'
+  enrollment: 721
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-camden-2311130:
+  display_name: Camden
+  district_name: RSU 28/MSAD 28
+  district_nces_id: '2311130'
+  enrollment: 738
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-cape-elizabeth:
+  display_name: Cape Elizabeth
+  district_name: Cape Elizabeth Public Schools
+  district_nces_id: '2303930'
+  enrollment: 1509
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-caribou:
+  display_name: Caribou
+  district_name: RSU 39
+  district_nces_id: '2314794'
+  enrollment: 1220
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-carmel:
+  display_name: Carmel
+  district_name: RSU 87/MSAD 23
+  district_nces_id: '2310980'
+  enrollment: 591
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-cumberland:
+  display_name: Cumberland
+  district_name: RSU 51/MSAD 51
+  district_nces_id: '2314240'
+  enrollment: 2153
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-dexter:
+  display_name: Dexter
+  district_name: MSAD 46
+  district_nces_id: '2314530'
+  enrollment: 838
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-dixfield:
+  display_name: Dixfield
+  district_name: RSU 56
+  district_nces_id: '2314833'
+  enrollment: 764
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-dover-foxcroft:
+  display_name: Dover-Foxcroft
+  district_name: RSU 68/MSAD 68
+  district_nces_id: '2314761'
+  enrollment: 992
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-east-corinth:
+  display_name: East Corinth
+  district_name: RSU 64/MSAD 64
+  district_nces_id: '2314440'
+  enrollment: 1067
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-eliot:
+  display_name: Eliot
+  district_name: RSU 35/MSAD 35
+  district_nces_id: '2311370'
+  enrollment: 2134
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-ellsworth:
+  display_name: Ellsworth
+  district_name: Ellsworth Public Schools
+  district_nces_id: '2305500'
+  enrollment: 1328
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-fairfield:
+  display_name: Fairfield
+  district_name: RSU 49/MSAD 49
+  district_nces_id: '2314330'
+  enrollment: 1895
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-falmouth:
+  display_name: Falmouth
+  district_name: Falmouth Public Schools
+  district_nces_id: '2305670'
+  enrollment: 1989
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-farmington:
+  display_name: Farmington
+  district_name: RSU 09
+  district_nces_id: '2314809'
+  enrollment: 2266
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-fort-kent:
+  display_name: Fort Kent
+  district_name: MSAD 27
+  district_nces_id: '2311100'
+  enrollment: 818
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-freeport:
+  display_name: Freeport
+  district_name: RSU 05
+  district_nces_id: '2314789'
+  enrollment: 2069
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-fryeburg:
+  display_name: Fryeburg
+  district_name: RSU 72/MSAD 72
+  district_nces_id: '2314765'
+  enrollment: 1135
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-gardiner:
+  display_name: Gardiner
+  district_name: RSU 11/MSAD 11
+  district_nces_id: '2310590'
+  enrollment: 1949
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-gorham:
+  display_name: Gorham
+  district_name: Gorham Public Schools
+  district_nces_id: '2306060'
+  enrollment: 2737
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-gray:
+  display_name: Gray
+  district_name: RSU 15/MSAD 15
+  district_nces_id: '2310710'
+  enrollment: 1835
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-guilford:
+  display_name: Guilford
+  district_name: RSU 80/MSAD 04
+  district_nces_id: '2311730'
+  enrollment: 502
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-hallowell:
+  display_name: Hallowell
+  district_name: RSU 02
+  district_nces_id: '2314776'
+  enrollment: 1902
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-hampden:
+  display_name: Hampden
+  district_name: RSU 22
+  district_nces_id: '2314815'
+  enrollment: 2278
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-harrington:
+  display_name: Harrington
+  district_name: RSU 37/MSAD 37
+  district_nces_id: '2311430'
+  enrollment: 691
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-hermon:
+  display_name: Hermon
+  district_name: Hermon Public Schools
+  district_nces_id: '2306510'
+  enrollment: 1397
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-hiram:
+  display_name: Hiram
+  district_name: RSU 55/MSAD 55
+  district_nces_id: '2314190'
+  enrollment: 998
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-hodgdon:
+  display_name: Hodgdon
+  district_name: RSU 70/MSAD 70
+  district_nces_id: '2314762'
+  enrollment: 500
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-holden:
+  display_name: Holden
+  district_name: RSU 63/MSAD 63
+  district_nces_id: '2314470'
+  enrollment: 557
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-houlton:
+  display_name: Houlton
+  district_name: RSU 29/MSAD 29
+  district_nces_id: '2311160'
+  enrollment: 1274
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-kennebunk:
+  display_name: Kennebunk
+  district_name: RSU 21
+  district_nces_id: '2314773'
+  enrollment: 2425
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-kittery:
+  display_name: Kittery
+  district_name: Kittery Public Schools
+  district_nces_id: '2307140'
+  enrollment: 959
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-lagrange:
+  display_name: Lagrange
+  district_name: RSU 41/MSAD 41
+  district_nces_id: '2311580'
+  enrollment: 612
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-lewiston:
+  display_name: Lewiston
+  district_name: Lewiston Public Schools
+  district_nces_id: '2307320'
+  enrollment: 5088
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-lincoln:
+  display_name: Lincoln
+  district_name: RSU 67
+  district_nces_id: '2314777'
+  enrollment: 940
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-lisbon:
+  display_name: Lisbon
+  district_name: Lisbon Public Schools
+  district_nces_id: '2307530'
+  enrollment: 1311
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-livermore-falls:
+  display_name: Livermore Falls
+  district_name: RSU 73
+  district_nces_id: '2314805'
+  enrollment: 1437
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-machias:
+  display_name: Machias
+  district_name: Machias Public Schools
+  district_nces_id: '2307710'
+  enrollment: 502
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-madison:
+  display_name: Madison
+  district_name: RSU 59/MSAD 59
+  district_nces_id: '2314560'
+  enrollment: 575
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-newport:
+  display_name: Newport
+  district_name: RSU 19
+  district_nces_id: '2314785'
+  enrollment: 1931
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-north-anson:
+  display_name: North Anson
+  district_name: RSU 74/MSAD 74
+  district_nces_id: '2314767'
+  enrollment: 587
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-north-berwick:
+  display_name: North Berwick
+  district_name: RSU 60/MSAD 60
+  district_nces_id: '2314700'
+  enrollment: 2911
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-oakland:
+  display_name: Oakland
+  district_name: RSU 18
+  district_nces_id: '2314779'
+  enrollment: 2782
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-old-orchard-beach:
+  display_name: Old Orchard Beach
+  district_name: RSU 23
+  district_nces_id: '2314784'
+  enrollment: 666
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-old-town:
+  display_name: Old Town
+  district_name: RSU 34
+  district_nces_id: '2314782'
+  enrollment: 1434
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-orono:
+  display_name: Orono
+  district_name: RSU 26
+  district_nces_id: '2314778'
+  enrollment: 835
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-phillips:
+  display_name: Phillips
+  district_name: RSU 58/MSAD 58
+  district_nces_id: '2314300'
+  enrollment: 587
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-pittsfield:
+  display_name: Pittsfield
+  district_name: RSU 53/MSAD 53
+  district_nces_id: '2314610'
+  enrollment: 845
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-poland:
+  display_name: Poland
+  district_name: RSU 16
+  district_nces_id: '2314775'
+  enrollment: 1721
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-portland:
+  display_name: Portland
+  district_name: Portland Public Schools
+  district_nces_id: '2309930'
+  enrollment: 6476
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-presque-isle:
+  display_name: Presque Isle
+  district_name: RSU 79/MSAD 01
+  district_nces_id: '2310860'
+  enrollment: 1715
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-readfield:
+  display_name: Readfield
+  district_name: RSU 38
+  district_nces_id: '2314788'
+  enrollment: 1207
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-rockland:
+  display_name: Rockland
+  district_name: RSU 13
+  district_nces_id: '2314787'
+  enrollment: 1543
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-rumford:
+  display_name: Rumford
+  district_name: RSU 10
+  district_nces_id: '2314795'
+  enrollment: 1783
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-saco:
+  display_name: Saco
+  district_name: Saco Public Schools
+  district_nces_id: '2310380'
+  enrollment: 2788
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-sanford:
+  display_name: Sanford
+  district_name: Sanford Public Schools
+  district_nces_id: '2310500'
+  enrollment: 3215
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-scarborough:
+  display_name: Scarborough
+  district_name: Scarborough Public Schools
+  district_nces_id: '2310530'
+  enrollment: 2891
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-skowhegan:
+  display_name: Skowhegan
+  district_name: RSU 54/MSAD 54
+  district_nces_id: '2314590'
+  enrollment: 2229
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-somerville:
+  display_name: Somerville
+  district_name: RSU 12
+  district_nces_id: '2314780'
+  enrollment: 1265
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-south-paris:
+  display_name: South Paris
+  district_name: RSU 17/MSAD 17
+  district_nces_id: '2310770'
+  enrollment: 3223
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-south-portland:
+  display_name: South Portland
+  district_name: South Portland Public Schools
+  district_nces_id: '2312330'
+  enrollment: 3081
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-sullivan:
+  display_name: Sullivan
+  district_name: RSU 24
+  district_nces_id: '2314790'
+  enrollment: 834
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-topsham:
+  display_name: Topsham
+  district_name: RSU 75/MSAD 75
+  district_nces_id: '2314768'
+  enrollment: 2380
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-turner:
+  display_name: Turner
+  district_name: RSU 52/MSAD 52
+  district_nces_id: '2314160'
+  enrollment: 1994
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-union:
+  display_name: Union
+  district_name: RSU 40/MSAD 40
+  district_nces_id: '2311550'
+  enrollment: 1800
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-unity:
+  display_name: Unity
+  district_name: RSU 03/MSAD 03
+  district_nces_id: '2311520'
+  enrollment: 1070
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-vassalboro:
+  display_name: Vassalboro
+  district_name: Vassalboro Public Schools
+  district_nces_id: '2313110'
+  enrollment: 509
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-wales:
+  display_name: Wales
+  district_name: RSU 04
+  district_nces_id: '2314783'
+  enrollment: 1300
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-waterboro:
+  display_name: Waterboro
+  district_name: RSU 57/MSAD 57
+  district_nces_id: '2314670'
+  enrollment: 2924
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-waterville:
+  display_name: Waterville
+  district_name: Waterville Public Schools
+  district_nces_id: '2313350'
+  enrollment: 1651
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-wells:
+  display_name: Wells
+  district_name: Wells-Ogunquit CSD
+  district_nces_id: '2313490'
+  enrollment: 1407
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-westbrook:
+  display_name: Westbrook
+  district_name: Westbrook Public Schools
+  district_nces_id: '2313560'
+  enrollment: 2335
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-windham:
+  display_name: Windham
+  district_name: RSU 14
+  district_nces_id: '2314793'
+  enrollment: 3155
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-winslow:
+  display_name: Winslow
+  district_name: Winslow Schools
+  district_nces_id: '2313860'
+  enrollment: 1069
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-winthrop:
+  display_name: Winthrop
+  district_name: Winthrop Public Schools
+  district_nces_id: '2313970'
+  enrollment: 831
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-yarmouth:
+  display_name: Yarmouth
+  district_name: Yarmouth Schools
+  district_nces_id: '2314100'
+  enrollment: 1679
+  has_charters: false
+  source: ccd_auto
+  state: ME
+me-york:
+  display_name: York
+  district_name: York Public Schools
+  district_nces_id: '2314130'
+  enrollment: 1537
+  has_charters: false
+  source: ccd_auto
+  state: ME

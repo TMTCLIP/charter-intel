@@ -1,0 +1,512 @@
+mt-anaconda:
+  display_name: Anaconda
+  district_name: Anaconda Elem
+  district_nces_id: '3002010'
+  enrollment: 740
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-belgrade-3003290:
+  display_name: Belgrade
+  district_name: Belgrade Elem
+  district_nces_id: '3003290'
+  enrollment: 2374
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-belgrade-3003330:
+  display_name: Belgrade
+  district_name: Belgrade H S
+  district_nces_id: '3003330'
+  enrollment: 994
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-bigfork:
+  display_name: Bigfork
+  district_name: Bigfork Elem
+  district_nces_id: '3003820'
+  enrollment: 610
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-billings-3003870:
+  display_name: Billings
+  district_name: Billings Elem
+  district_nces_id: '3003870'
+  enrollment: 10988
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-billings-3003900:
+  display_name: Billings
+  district_name: Billings H S
+  district_nces_id: '3003900'
+  enrollment: 5610
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-billings-3009720:
+  display_name: Billings
+  district_name: Elder Grove Elem
+  district_nces_id: '3009720'
+  enrollment: 689
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-bozeman-3004560:
+  display_name: Bozeman
+  district_name: Bozeman Elem
+  district_nces_id: '3004560'
+  enrollment: 4651
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-bozeman-3004590:
+  display_name: Bozeman
+  district_name: Bozeman H S
+  district_nces_id: '3004590'
+  enrollment: 2631
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-bozeman-3018750:
+  display_name: Bozeman
+  district_name: Monforton Elem
+  district_nces_id: '3018750'
+  enrollment: 669
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-browning-3005140:
+  display_name: Browning
+  district_name: Browning Elem
+  district_nces_id: '3005140'
+  enrollment: 1266
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-browning-3005190:
+  display_name: Browning
+  district_name: Browning H S
+  district_nces_id: '3005190'
+  enrollment: 563
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-butte-3005280:
+  display_name: Butte
+  district_name: Butte Elem
+  district_nces_id: '3005280'
+  enrollment: 2966
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-butte-3005310:
+  display_name: Butte
+  district_name: Butte H S
+  district_nces_id: '3005310'
+  enrollment: 1317
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-columbia-falls-3007110:
+  display_name: Columbia Falls
+  district_name: Columbia Falls Elem
+  district_nces_id: '3007110'
+  enrollment: 1562
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-columbia-falls-3007140:
+  display_name: Columbia Falls
+  district_name: Columbia Falls H S
+  district_nces_id: '3007140'
+  enrollment: 687
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-corvallis:
+  display_name: Corvallis
+  district_name: Corvallis K-12 Schools
+  district_nces_id: '3007410'
+  enrollment: 1342
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-cut-bank:
+  display_name: Cut Bank
+  district_name: Cut Bank Elem
+  district_nces_id: '3000003'
+  enrollment: 551
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-dillon:
+  display_name: Dillon
+  district_name: Dillon Elem
+  district_nces_id: '3008910'
+  enrollment: 780
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-east-helena:
+  display_name: East Helena
+  district_name: East Helena K-12
+  district_nces_id: '3000655'
+  enrollment: 1952
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-florence:
+  display_name: Florence
+  district_name: Florence-Carlton K-12 Schls
+  district_nces_id: '3011100'
+  enrollment: 790
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-frenchtown:
+  display_name: Frenchtown
+  district_name: Frenchtown K-12 Schools
+  district_nces_id: '3011520'
+  enrollment: 1443
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-glasgow:
+  display_name: Glasgow
+  district_name: Glasgow K-12 Schools
+  district_nces_id: '3012420'
+  enrollment: 769
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-glendive:
+  display_name: Glendive
+  district_name: Glendive Elem
+  district_nces_id: '3012510'
+  enrollment: 782
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-great-falls-3013040:
+  display_name: Great Falls
+  district_name: Great Falls Elem
+  district_nces_id: '3013040'
+  enrollment: 7032
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-great-falls-3013050:
+  display_name: Great Falls
+  district_name: Great Falls H S
+  district_nces_id: '3013050'
+  enrollment: 3095
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-hamilton:
+  display_name: Hamilton
+  district_name: Hamilton K-12 Schools
+  district_nces_id: '3013260'
+  enrollment: 1666
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-hardin-3013310:
+  display_name: Hardin
+  district_name: Hardin Elem
+  district_nces_id: '3013310'
+  enrollment: 1284
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-hardin-3013340:
+  display_name: Hardin
+  district_name: Hardin H S
+  district_nces_id: '3013340'
+  enrollment: 512
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-havre-3013560:
+  display_name: Havre
+  district_name: Havre Elem
+  district_nces_id: '3013560'
+  enrollment: 1199
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-havre-3013590:
+  display_name: Havre
+  district_name: Havre H S
+  district_nces_id: '3013590'
+  enrollment: 531
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-helena-3000005:
+  display_name: Helena
+  district_name: Helena Elem
+  district_nces_id: '3000005'
+  enrollment: 5225
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-helena-3013830:
+  display_name: Helena
+  district_name: Helena H S
+  district_nces_id: '3013830'
+  enrollment: 2514
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-kalispell-3010920:
+  display_name: Kalispell
+  district_name: Evergreen Elem
+  district_nces_id: '3010920'
+  enrollment: 651
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-kalispell-3015420:
+  display_name: Kalispell
+  district_name: Flathead H S
+  district_nces_id: '3015420'
+  enrollment: 3101
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-kalispell-3015450:
+  display_name: Kalispell
+  district_name: Kalispell Elem
+  district_nces_id: '3015450'
+  enrollment: 3095
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-kalispell-3027570:
+  display_name: Kalispell
+  district_name: West Valley Elem
+  district_nces_id: '3027570'
+  enrollment: 762
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-laurel-3016200:
+  display_name: Laurel
+  district_name: Laurel Elem
+  district_nces_id: '3016200'
+  enrollment: 1272
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-laurel-3016230:
+  display_name: Laurel
+  district_name: Laurel H S
+  district_nces_id: '3016230'
+  enrollment: 619
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-lewistown:
+  display_name: Lewistown
+  district_name: Lewistown Elem
+  district_nces_id: '3016490'
+  enrollment: 888
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-libby:
+  display_name: Libby
+  district_name: Libby K-12 Schools
+  district_nces_id: '3016530'
+  enrollment: 1164
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-livingston:
+  display_name: Livingston
+  district_name: Livingston Elem
+  district_nces_id: '3016880'
+  enrollment: 837
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-lockwood:
+  display_name: Lockwood
+  district_name: Lockwood K-12
+  district_nces_id: '3000656'
+  enrollment: 1718
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-lolo:
+  display_name: Lolo
+  district_name: Lolo Elem
+  district_nces_id: '3017130'
+  enrollment: 507
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-malta:
+  display_name: Malta
+  district_name: Malta K-12 Schools
+  district_nces_id: '3017580'
+  enrollment: 519
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-miles-city:
+  display_name: Miles City
+  district_name: Miles City Elem
+  district_nces_id: '3018410'
+  enrollment: 953
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-missoula-3013860:
+  display_name: Missoula
+  district_name: Hellgate Elem
+  district_nces_id: '3013860'
+  enrollment: 1498
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-missoula-3018540:
+  display_name: Missoula
+  district_name: Missoula H S
+  district_nces_id: '3018540'
+  enrollment: 3966
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-missoula-3018570:
+  display_name: Missoula
+  district_name: Missoula Elem
+  district_nces_id: '3018570'
+  enrollment: 5280
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-missoula-3025890:
+  display_name: Missoula
+  district_name: Target Range Elem
+  district_nces_id: '3025890'
+  enrollment: 574
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-polson-3021060:
+  display_name: Polson
+  district_name: Polson Elem
+  district_nces_id: '3021060'
+  enrollment: 1173
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-polson-3021090:
+  display_name: Polson
+  district_name: Polson H S
+  district_nces_id: '3021090'
+  enrollment: 524
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-poplar:
+  display_name: Poplar
+  district_name: Poplar Elem
+  district_nces_id: '3021240'
+  enrollment: 596
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-ronan:
+  display_name: Ronan
+  district_name: Ronan Elem
+  district_nces_id: '3022790'
+  enrollment: 1105
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-shepherd:
+  display_name: Shepherd
+  district_name: Shepherd Elem
+  district_nces_id: '3023940'
+  enrollment: 562
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-sidney:
+  display_name: Sidney
+  district_name: Sidney Elem
+  district_nces_id: '3024200'
+  enrollment: 856
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-somers:
+  display_name: Somers
+  district_name: Somers Elem
+  district_nces_id: '3000002'
+  enrollment: 555
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-stevensville:
+  display_name: Stevensville
+  district_name: Stevensville Elem
+  district_nces_id: '3025020'
+  enrollment: 656
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-three-forks:
+  display_name: Three Forks
+  district_name: Three Forks Elem
+  district_nces_id: '3026160'
+  enrollment: 523
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-townsend:
+  display_name: Townsend
+  district_name: Townsend K-12 Schools
+  district_nces_id: '3004980'
+  enrollment: 706
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-whitefish-3027740:
+  display_name: Whitefish
+  district_name: Whitefish Elem
+  district_nces_id: '3027740'
+  enrollment: 1313
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-whitefish-3027790:
+  display_name: Whitefish
+  district_name: Whitefish H S
+  district_nces_id: '3027790'
+  enrollment: 581
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-wolf-point:
+  display_name: Wolf Point
+  district_name: Wolf Point Elem
+  district_nces_id: '3028590'
+  enrollment: 511
+  has_charters: false
+  source: ccd_auto
+  state: MT
+mt-worden:
+  display_name: Worden
+  district_name: Huntley Project K-12 Schools
+  district_nces_id: '3014700'
+  enrollment: 773
+  has_charters: false
+  source: ccd_auto
+  state: MT

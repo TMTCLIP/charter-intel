@@ -1,0 +1,8 @@
+hi-honolulu:
+  display_name: Honolulu
+  district_name: Hawaii Department of Education
+  district_nces_id: '1500030'
+  enrollment: 170209
+  has_charters: true
+  source: ccd_auto
+  state: HI

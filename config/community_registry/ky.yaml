@@ -1,0 +1,1296 @@
+ky-albany:
+  display_name: Albany
+  district_name: Clinton County
+  district_nces_id: '2101260'
+  enrollment: 1574
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-alexandria:
+  display_name: Alexandria
+  district_name: Campbell County
+  district_nces_id: '2100900'
+  enrollment: 5195
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-ashland-2100150:
+  display_name: Ashland
+  district_name: Ashland Independent
+  district_nces_id: '2100150'
+  enrollment: 3261
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-ashland-2100620:
+  display_name: Ashland
+  district_name: Boyd County
+  district_nces_id: '2100620'
+  enrollment: 3102
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-ashland-2101800:
+  display_name: Ashland
+  district_name: Fairview Independent
+  district_nces_id: '2101800'
+  enrollment: 582
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-barbourville-2100240:
+  display_name: Barbourville
+  district_name: Barbourville Independent
+  district_nces_id: '2100240'
+  enrollment: 692
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-barbourville-2103150:
+  display_name: Barbourville
+  district_name: Knox County
+  district_nces_id: '2103150'
+  enrollment: 3943
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-bardstown-2100270:
+  display_name: Bardstown
+  district_name: Bardstown Independent
+  district_nces_id: '2100270'
+  enrollment: 2716
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-bardstown-2104410:
+  display_name: Bardstown
+  district_name: Nelson County
+  district_nces_id: '2104410'
+  enrollment: 4511
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-bardwell:
+  display_name: Bardwell
+  district_name: Carlisle County
+  district_nces_id: '2100960'
+  enrollment: 759
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-barlow:
+  display_name: Barlow
+  district_name: Ballard County
+  district_nces_id: '2100210'
+  enrollment: 1052
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-beattyville:
+  display_name: Beattyville
+  district_name: Lee County
+  district_nces_id: '2103270'
+  enrollment: 907
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-bedford:
+  display_name: Bedford
+  district_name: Trimble County
+  district_nces_id: '2105610'
+  enrollment: 1236
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-bellevue:
+  display_name: Bellevue
+  district_name: Bellevue Independent
+  district_nces_id: '2100420'
+  enrollment: 639
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-benton:
+  display_name: Benton
+  district_name: Marshall County
+  district_nces_id: '2103810'
+  enrollment: 4495
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-berea:
+  display_name: Berea
+  district_name: Berea Independent
+  district_nces_id: '2100480'
+  enrollment: 1086
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-booneville:
+  display_name: Booneville
+  district_name: Owsley County
+  district_nces_id: '2104620'
+  enrollment: 785
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-bowling-green-2100570:
+  display_name: Bowling Green
+  district_name: Bowling Green Independent
+  district_nces_id: '2100570'
+  enrollment: 4424
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-bowling-green-2105730:
+  display_name: Bowling Green
+  district_name: Warren County
+  district_nces_id: '2105730'
+  enrollment: 17799
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-brandenburg:
+  display_name: Brandenburg
+  district_name: Meade County
+  district_nces_id: '2104050'
+  enrollment: 4966
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-brooksville:
+  display_name: Brooksville
+  district_name: Bracken County
+  district_nces_id: '2100660'
+  enrollment: 1145
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-brownsville:
+  display_name: Brownsville
+  district_name: Edmonson County
+  district_nces_id: '2101620'
+  enrollment: 1890
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-buckner:
+  display_name: Buckner
+  district_name: Oldham County
+  district_nces_id: '2104530'
+  enrollment: 12367
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-burkesville:
+  display_name: Burkesville
+  district_name: Cumberland County
+  district_nces_id: '2101410'
+  enrollment: 1004
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-cadiz:
+  display_name: Cadiz
+  district_name: Trigg County
+  district_nces_id: '2105580'
+  enrollment: 1964
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-calhoun:
+  display_name: Calhoun
+  district_name: McLean County
+  district_nces_id: '2104020'
+  enrollment: 1405
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-campbellsville-2100930:
+  display_name: Campbellsville
+  district_name: Campbellsville Independent
+  district_nces_id: '2100930'
+  enrollment: 1286
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-campbellsville-2105520:
+  display_name: Campbellsville
+  district_name: Taylor County
+  district_nces_id: '2105520'
+  enrollment: 2731
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-campton:
+  display_name: Campton
+  district_name: Wolfe County
+  district_nces_id: '2105970'
+  enrollment: 1150
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-carlisle:
+  display_name: Carlisle
+  district_name: Nicholas County
+  district_nces_id: '2104470'
+  enrollment: 1119
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-carrollton:
+  display_name: Carrollton
+  district_name: Carroll County
+  district_nces_id: '2100990'
+  enrollment: 2042
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-cave-city:
+  display_name: Cave City
+  district_name: Caverna Independent
+  district_nces_id: '2101110'
+  enrollment: 647
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-clinton:
+  display_name: Clinton
+  district_name: Hickman County
+  district_nces_id: '2102790'
+  enrollment: 723
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-columbia:
+  display_name: Columbia
+  district_name: Adair County
+  district_nces_id: '2100030'
+  enrollment: 2622
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-corbin:
+  display_name: Corbin
+  district_name: Corbin Independent
+  district_nces_id: '2101320'
+  enrollment: 3027
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-covington:
+  display_name: Covington
+  district_name: Covington Independent
+  district_nces_id: '2101350'
+  enrollment: 3665
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-cynthiana:
+  display_name: Cynthiana
+  district_name: Harrison County
+  district_nces_id: '2102580'
+  enrollment: 2896
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-danville-2100630:
+  display_name: Danville
+  district_name: Boyle County
+  district_nces_id: '2100630'
+  enrollment: 2937
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-danville-2101440:
+  display_name: Danville
+  district_name: Danville Independent
+  district_nces_id: '2101440'
+  enrollment: 1836
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-dawson-springs:
+  display_name: Dawson Springs
+  district_name: Dawson Springs Independent
+  district_nces_id: '2101500'
+  enrollment: 534
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-dayton:
+  display_name: Dayton
+  district_name: Dayton Independent
+  district_nces_id: '2101530'
+  enrollment: 859
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-dixon:
+  display_name: Dixon
+  district_name: Webster County
+  district_nces_id: '2105820'
+  enrollment: 2168
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-east-bernstadt:
+  display_name: East Bernstadt
+  district_name: East Bernstadt Independent
+  district_nces_id: '2101590'
+  enrollment: 523
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-eastern:
+  display_name: Eastern
+  district_name: Floyd County
+  district_nces_id: '2101950'
+  enrollment: 5563
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-eddyville:
+  display_name: Eddyville
+  district_name: Lyon County
+  district_nces_id: '2103690'
+  enrollment: 998
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-edmonton:
+  display_name: Edmonton
+  district_name: Metcalfe County
+  district_nces_id: '2104140'
+  enrollment: 1459
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-elizabethtown-2101650:
+  display_name: Elizabethtown
+  district_name: Elizabethtown Independent
+  district_nces_id: '2101650'
+  enrollment: 2465
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-elizabethtown-2102490:
+  display_name: Elizabethtown
+  district_name: Hardin County
+  district_nces_id: '2102490'
+  enrollment: 14675
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-elkton:
+  display_name: Elkton
+  district_name: Todd County
+  district_nces_id: '2105550'
+  enrollment: 1887
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-eminence:
+  display_name: Eminence
+  district_name: Eminence Independent
+  district_nces_id: '2101710'
+  enrollment: 988
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-erlanger:
+  display_name: Erlanger
+  district_name: Erlanger-Elsmere Independent
+  district_nces_id: '2101740'
+  enrollment: 2392
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-falmouth:
+  display_name: Falmouth
+  district_name: Pendleton County
+  district_nces_id: '2104740'
+  enrollment: 2246
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-flatwoods:
+  display_name: Flatwoods
+  district_name: Russell Independent
+  district_nces_id: '2105130'
+  enrollment: 2132
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-flemingsburg:
+  display_name: Flemingsburg
+  district_name: Fleming County
+  district_nces_id: '2101920'
+  enrollment: 2186
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-florence:
+  display_name: Florence
+  district_name: Boone County
+  district_nces_id: '2100510'
+  enrollment: 20200
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-fort-mitchell:
+  display_name: Fort Mitchell
+  district_name: Beechwood Independent
+  district_nces_id: '2100360'
+  enrollment: 1501
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-fort-thomas:
+  display_name: Fort Thomas
+  district_name: Fort Thomas Independent
+  district_nces_id: '2102040'
+  enrollment: 3127
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-fort-wright:
+  display_name: Fort Wright
+  district_name: Kenton County
+  district_nces_id: '2103090'
+  enrollment: 14066
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-frankfort-2101980:
+  display_name: Frankfort
+  district_name: Frankfort Independent
+  district_nces_id: '2101980'
+  enrollment: 972
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-frankfort-2102010:
+  display_name: Frankfort
+  district_name: Franklin County
+  district_nces_id: '2102010'
+  enrollment: 6126
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-franklin:
+  display_name: Franklin
+  district_name: Simpson County
+  district_nces_id: '2105400'
+  enrollment: 3088
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-frenchburg:
+  display_name: Frenchburg
+  district_name: Menifee County
+  district_nces_id: '2104080'
+  enrollment: 955
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-georgetown:
+  display_name: Georgetown
+  district_name: Scott County
+  district_nces_id: '2105260'
+  enrollment: 9797
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-glasgow-2100300:
+  display_name: Glasgow
+  district_name: Barren County
+  district_nces_id: '2100300'
+  enrollment: 5224
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-glasgow-2102220:
+  display_name: Glasgow
+  district_name: Glasgow Independent
+  district_nces_id: '2102220'
+  enrollment: 2490
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-grayson:
+  display_name: Grayson
+  district_name: Carter County
+  district_nces_id: '2101020'
+  enrollment: 4138
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-greensburg:
+  display_name: Greensburg
+  district_name: Green County
+  district_nces_id: '2102340'
+  enrollment: 1637
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-greenup:
+  display_name: Greenup
+  district_name: Greenup County
+  district_nces_id: '2102400'
+  enrollment: 2634
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hardinsburg:
+  display_name: Hardinsburg
+  district_name: Breckinridge County
+  district_nces_id: '2100720'
+  enrollment: 2748
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-harlan-2102520:
+  display_name: Harlan
+  district_name: Harlan Independent
+  district_nces_id: '2102520'
+  enrollment: 829
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-harlan-2102540:
+  display_name: Harlan
+  district_name: Harlan County
+  district_nces_id: '2102540'
+  enrollment: 3459
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-harrodsburg:
+  display_name: Harrodsburg
+  district_name: Mercer County
+  district_nces_id: '2104110'
+  enrollment: 2723
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hartford:
+  display_name: Hartford
+  district_name: Ohio County
+  district_nces_id: '2104500'
+  enrollment: 3910
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hawesville:
+  display_name: Hawesville
+  district_name: Hancock County
+  district_nces_id: '2102460'
+  enrollment: 1524
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hazard-2102670:
+  display_name: Hazard
+  district_name: Hazard Independent
+  district_nces_id: '2102670'
+  enrollment: 1030
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hazard-2104770:
+  display_name: Hazard
+  district_name: Perry County
+  district_nces_id: '2104770'
+  enrollment: 3593
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-henderson:
+  display_name: Henderson
+  district_name: Henderson County
+  district_nces_id: '2102710'
+  enrollment: 6955
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hickman:
+  display_name: Hickman
+  district_name: Fulton County
+  district_nces_id: '2102100'
+  enrollment: 640
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hindman:
+  display_name: Hindman
+  district_name: Knott County
+  district_nces_id: '2103120'
+  enrollment: 2092
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hodgenville:
+  display_name: Hodgenville
+  district_name: LaRue County
+  district_nces_id: '2103180'
+  enrollment: 2393
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hopkinsville:
+  display_name: Hopkinsville
+  district_name: Christian County
+  district_nces_id: '2101150'
+  enrollment: 8204
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-hyden:
+  display_name: Hyden
+  district_name: Leslie County
+  district_nces_id: '2103330'
+  enrollment: 1658
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-inez:
+  display_name: Inez
+  district_name: Martin County
+  district_nces_id: '2103840'
+  enrollment: 1758
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-irvine:
+  display_name: Irvine
+  district_name: Estill County
+  district_nces_id: '2101760'
+  enrollment: 2202
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-jackson:
+  display_name: Jackson
+  district_name: Breathitt County
+  district_nces_id: '2100690'
+  enrollment: 1701
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-jamestown:
+  display_name: Jamestown
+  district_name: Russell County
+  district_nces_id: '2105160'
+  enrollment: 3005
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-lancaster:
+  display_name: Lancaster
+  district_name: Garrard County
+  district_nces_id: '2102160'
+  enrollment: 2606
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-lawrenceburg:
+  display_name: Lawrenceburg
+  district_name: Anderson County
+  district_nces_id: '2100120'
+  enrollment: 3752
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-lebanon:
+  display_name: Lebanon
+  district_name: Marion County
+  district_nces_id: '2103780'
+  enrollment: 3256
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-leitchfield:
+  display_name: Leitchfield
+  district_name: Grayson County
+  district_nces_id: '2102300'
+  enrollment: 4039
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-lexington:
+  display_name: Lexington
+  district_name: Fayette County
+  district_nces_id: '2101860'
+  enrollment: 41422
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-liberty:
+  display_name: Liberty
+  district_name: Casey County
+  district_nces_id: '2101050'
+  enrollment: 2202
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-london:
+  display_name: London
+  district_name: Laurel County
+  district_nces_id: '2103210'
+  enrollment: 8801
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-louisa:
+  display_name: Louisa
+  district_name: Lawrence County
+  district_nces_id: '2103240'
+  enrollment: 2442
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-louisville:
+  display_name: Louisville
+  district_name: Jefferson County
+  district_nces_id: '2102990'
+  enrollment: 95230
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-ludlow:
+  display_name: Ludlow
+  district_name: Ludlow Independent
+  district_nces_id: '2103630'
+  enrollment: 828
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-madisonville:
+  display_name: Madisonville
+  district_name: Hopkins County
+  district_nces_id: '2102860'
+  enrollment: 6358
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-manchester:
+  display_name: Manchester
+  district_name: Clay County
+  district_nces_id: '2101230'
+  enrollment: 2916
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-marion:
+  display_name: Marion
+  district_name: Crittenden County
+  district_nces_id: '2101380'
+  enrollment: 1363
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-mayfield-2102280:
+  display_name: Mayfield
+  district_name: Graves County
+  district_nces_id: '2102280'
+  enrollment: 3977
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-mayfield-2103900:
+  display_name: Mayfield
+  district_name: Mayfield Independent
+  district_nces_id: '2103900'
+  enrollment: 1947
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-maysville:
+  display_name: Maysville
+  district_name: Mason County
+  district_nces_id: '2103870'
+  enrollment: 2608
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-mckee:
+  display_name: Mckee
+  district_name: Jackson County
+  district_nces_id: '2102940'
+  enrollment: 2053
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-middlesboro:
+  display_name: Middlesboro
+  district_name: Middlesboro Independent
+  district_nces_id: '2104170'
+  enrollment: 1120
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-monticello:
+  display_name: Monticello
+  district_name: Wayne County
+  district_nces_id: '2105790'
+  enrollment: 3207
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-morehead:
+  display_name: Morehead
+  district_name: Rowan County
+  district_nces_id: '2105100'
+  enrollment: 3429
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-morganfield:
+  display_name: Morganfield
+  district_name: Union County
+  district_nces_id: '2105640'
+  enrollment: 2055
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-morgantown:
+  display_name: Morgantown
+  district_name: Butler County
+  district_nces_id: '2100810'
+  enrollment: 2195
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-mount-sterling:
+  display_name: Mount Sterling
+  district_name: Montgomery County
+  district_nces_id: '2104250'
+  enrollment: 4472
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-mount-vernon:
+  display_name: Mount Vernon
+  district_name: Rockcastle County
+  district_nces_id: '2105070'
+  enrollment: 2761
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-munfordville:
+  display_name: Munfordville
+  district_name: Hart County
+  district_nces_id: '2102640'
+  enrollment: 2347
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-murray-2100870:
+  display_name: Murray
+  district_name: Calloway County
+  district_nces_id: '2100870'
+  enrollment: 3134
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-murray-2104380:
+  display_name: Murray
+  district_name: Murray Independent
+  district_nces_id: '2104380'
+  enrollment: 1849
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-new-castle:
+  display_name: New Castle
+  district_name: Henry County
+  district_nces_id: '2102760'
+  enrollment: 2014
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-newport:
+  display_name: Newport
+  district_name: Newport Independent
+  district_nces_id: '2104440'
+  enrollment: 1382
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-nicholasville:
+  display_name: Nicholasville
+  district_name: Jessamine County
+  district_nces_id: '2103030'
+  enrollment: 8392
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-owensboro-2101470:
+  display_name: Owensboro
+  district_name: Daviess County
+  district_nces_id: '2101470'
+  enrollment: 11164
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-owensboro-2104590:
+  display_name: Owensboro
+  district_name: Owensboro Independent
+  district_nces_id: '2104590'
+  enrollment: 5040
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-owenton:
+  display_name: Owenton
+  district_name: Owen County
+  district_nces_id: '2104560'
+  enrollment: 1732
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-owingsville:
+  display_name: Owingsville
+  district_name: Bath County
+  district_nces_id: '2100330'
+  enrollment: 1972
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-paducah-2103960:
+  display_name: Paducah
+  district_name: McCracken County
+  district_nces_id: '2103960'
+  enrollment: 6968
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-paducah-2104650:
+  display_name: Paducah
+  district_name: Paducah Independent
+  district_nces_id: '2104650'
+  enrollment: 3119
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-paintsville-2103060:
+  display_name: Paintsville
+  district_name: Johnson County
+  district_nces_id: '2103060'
+  enrollment: 3344
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-paintsville-2104680:
+  display_name: Paintsville
+  district_name: Paintsville Independent
+  district_nces_id: '2104680'
+  enrollment: 766
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-paris-2100540:
+  display_name: Paris
+  district_name: Bourbon County
+  district_nces_id: '2100540'
+  enrollment: 2674
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-paris-2104710:
+  display_name: Paris
+  district_name: Paris Independent
+  district_nces_id: '2104710'
+  enrollment: 754
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-pikeville-2104800:
+  display_name: Pikeville
+  district_name: Pike County
+  district_nces_id: '2104800'
+  enrollment: 7787
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-pikeville-2104830:
+  display_name: Pikeville
+  district_name: Pikeville Independent
+  district_nces_id: '2104830'
+  enrollment: 1166
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-pineville-2100390:
+  display_name: Pineville
+  district_name: Bell County
+  district_nces_id: '2100390'
+  enrollment: 2454
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-pineville-2104860:
+  display_name: Pineville
+  district_name: Pineville Independent
+  district_nces_id: '2104860'
+  enrollment: 577
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-powderly:
+  display_name: Powderly
+  district_name: Muhlenberg County
+  district_nces_id: '2100081'
+  enrollment: 4486
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-princeton:
+  display_name: Princeton
+  district_name: Caldwell County
+  district_nces_id: '2100840'
+  enrollment: 1891
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-raceland:
+  display_name: Raceland
+  district_name: Raceland-Worthington Independent
+  district_nces_id: '2104980'
+  enrollment: 1132
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-richmond-2100291:
+  display_name: Richmond
+  district_name: Model Laboratory Schools at EKU
+  district_nces_id: '2100291'
+  enrollment: 739
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-richmond-2103720:
+  display_name: Richmond
+  district_name: Madison County
+  district_nces_id: '2103720'
+  enrollment: 11198
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-russellville-2103540:
+  display_name: Russellville
+  district_name: Logan County
+  district_nces_id: '2103540'
+  enrollment: 3430
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-russellville-2105190:
+  display_name: Russellville
+  district_name: Russellville Independent
+  district_nces_id: '2105190'
+  enrollment: 1168
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-salyersville:
+  display_name: Salyersville
+  district_name: Magoffin County
+  district_nces_id: '2103750'
+  enrollment: 2017
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-sandy-hook:
+  display_name: Sandy Hook
+  district_name: Elliott County
+  district_nces_id: '2101680'
+  enrollment: 962
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-scottsville:
+  display_name: Scottsville
+  district_name: Allen County
+  district_nces_id: '2100070'
+  enrollment: 3149
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-shelbyville:
+  display_name: Shelbyville
+  district_name: Shelby County
+  district_nces_id: '2105320'
+  enrollment: 6935
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-shepherdsville:
+  display_name: Shepherdsville
+  district_name: Bullitt County
+  district_nces_id: '2100750'
+  enrollment: 12833
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-smithland:
+  display_name: Smithland
+  district_name: Livingston County
+  district_nces_id: '2103510'
+  enrollment: 1074
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-somerset-2104950:
+  display_name: Somerset
+  district_name: Pulaski County
+  district_nces_id: '2104950'
+  enrollment: 8115
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-somerset-2105430:
+  display_name: Somerset
+  district_name: Somerset Independent
+  district_nces_id: '2105430'
+  enrollment: 1615
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-springfield:
+  display_name: Springfield
+  district_name: Washington County
+  district_nces_id: '2105760'
+  enrollment: 1776
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-stanford:
+  display_name: Stanford
+  district_name: Lincoln County
+  district_nces_id: '2103480'
+  enrollment: 3416
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-stanton:
+  display_name: Stanton
+  district_name: Powell County
+  district_nces_id: '2104890'
+  enrollment: 2130
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-stearns:
+  display_name: Stearns
+  district_name: McCreary County
+  district_nces_id: '2103990'
+  enrollment: 2715
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-taylorsville:
+  display_name: Taylorsville
+  district_name: Spencer County
+  district_nces_id: '2105490'
+  enrollment: 3369
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-tompkinsville:
+  display_name: Tompkinsville
+  district_name: Monroe County
+  district_nces_id: '2104200'
+  enrollment: 1788
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-vanceburg:
+  display_name: Vanceburg
+  district_name: Lewis County
+  district_nces_id: '2103390'
+  enrollment: 2036
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-versailles:
+  display_name: Versailles
+  district_name: Woodford County
+  district_nces_id: '2106000'
+  enrollment: 4010
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-walton:
+  display_name: Walton
+  district_name: Walton-Verona Independent
+  district_nces_id: '2105700'
+  enrollment: 1919
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-warsaw:
+  display_name: Warsaw
+  district_name: Gallatin County
+  district_nces_id: '2102130'
+  enrollment: 1532
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-west-liberty:
+  display_name: West Liberty
+  district_name: Morgan County
+  district_nces_id: '2104290'
+  enrollment: 1877
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-whitesburg:
+  display_name: Whitesburg
+  district_name: Letcher County
+  district_nces_id: '2103360'
+  enrollment: 2596
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-williamsburg-2105880:
+  display_name: Williamsburg
+  district_name: Whitley County
+  district_nces_id: '2105880'
+  enrollment: 4336
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-williamsburg-2105910:
+  display_name: Williamsburg
+  district_name: Williamsburg Independent
+  district_nces_id: '2105910'
+  enrollment: 835
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-williamstown-2102250:
+  display_name: Williamstown
+  district_name: Grant County
+  district_nces_id: '2102250'
+  enrollment: 3457
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-williamstown-2105940:
+  display_name: Williamstown
+  district_name: Williamstown Independent
+  district_nces_id: '2105940'
+  enrollment: 878
+  has_charters: false
+  source: ccd_auto
+  state: KY
+ky-winchester:
+  display_name: Winchester
+  district_name: Clark County
+  district_nces_id: '2101200'
+  enrollment: 5359
+  has_charters: false
+  source: ccd_auto
+  state: KY

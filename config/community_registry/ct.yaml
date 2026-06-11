@@ -1,0 +1,1160 @@
+ct-ansonia:
+  display_name: Ansonia
+  district_name: Ansonia School District
+  district_nces_id: 0900060
+  enrollment: 2332
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-avon:
+  display_name: Avon
+  district_name: Avon School District
+  district_nces_id: 0900120
+  enrollment: 3106
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-berlin:
+  display_name: Berlin
+  district_name: Berlin School District
+  district_nces_id: 0900210
+  enrollment: 2682
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-bethel:
+  display_name: Bethel
+  district_name: Bethel School District
+  district_nces_id: 0900270
+  enrollment: 3223
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-bloomfield:
+  display_name: Bloomfield
+  district_name: Bloomfield School District
+  district_nces_id: 0900330
+  enrollment: 2055
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-bolton:
+  display_name: Bolton
+  district_name: Bolton School District
+  district_nces_id: 0900360
+  enrollment: 734
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-branford:
+  display_name: Branford
+  district_name: Branford School District
+  district_nces_id: 0900420
+  enrollment: 2651
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-bridgeport-0900219:
+  display_name: Bridgeport
+  district_name: Great Oaks Charter School District
+  district_nces_id: 0900219
+  enrollment: 664
+  has_charters: true
+  source: ccd_auto
+  state: CT
+ct-bridgeport-0900221:
+  display_name: Bridgeport
+  district_name: Capital Preparatory Harbor School District
+  district_nces_id: 0900221
+  enrollment: 772
+  has_charters: true
+  source: ccd_auto
+  state: CT
+ct-bridgeport-0900450:
+  display_name: Bridgeport
+  district_name: Bridgeport School District
+  district_nces_id: 0900450
+  enrollment: 19337
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-bristol:
+  display_name: Bristol
+  district_name: Bristol School District
+  district_nces_id: 0900510
+  enrollment: 7784
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-brookfield:
+  display_name: Brookfield
+  district_name: Brookfield School District
+  district_nces_id: 0900540
+  enrollment: 2563
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-brooklyn:
+  display_name: Brooklyn
+  district_name: Brooklyn School District
+  district_nces_id: 0900570
+  enrollment: 903
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-burlington:
+  display_name: Burlington
+  district_name: Regional School District 10
+  district_nces_id: 0903520
+  enrollment: 2147
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-cheshire:
+  display_name: Cheshire
+  district_name: Cheshire School District
+  district_nces_id: 0900750
+  enrollment: 4208
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-clinton:
+  display_name: Clinton
+  district_name: Clinton School District
+  district_nces_id: 0900810
+  enrollment: 1497
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-colchester:
+  display_name: Colchester
+  district_name: Colchester School District
+  district_nces_id: 0900840
+  enrollment: 2235
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-collinsville:
+  display_name: Collinsville
+  district_name: Canton School District
+  district_nces_id: 0900690
+  enrollment: 1528
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-coventry:
+  display_name: Coventry
+  district_name: Coventry School District
+  district_nces_id: 0900960
+  enrollment: 1657
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-cromwell:
+  display_name: Cromwell
+  district_name: Cromwell School District
+  district_nces_id: 0900990
+  enrollment: 1947
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-danbury:
+  display_name: Danbury
+  district_name: Danbury School District
+  district_nces_id: 0901020
+  enrollment: 12109
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-danielson:
+  display_name: Danielson
+  district_name: Killingly School District
+  district_nces_id: 0902070
+  enrollment: 2450
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-darien:
+  display_name: Darien
+  district_name: Darien School District
+  district_nces_id: 0901050
+  enrollment: 4700
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-deep-river:
+  display_name: Deep River
+  district_name: Regional School District 04
+  district_nces_id: 0903630
+  enrollment: 751
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-derby:
+  display_name: Derby
+  district_name: Derby School District
+  district_nces_id: 0901110
+  enrollment: 1317
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-durham:
+  display_name: Durham
+  district_name: Regional School District 13
+  district_nces_id: 0903535
+  enrollment: 1365
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-east-granby:
+  display_name: East Granby
+  district_name: East Granby School District
+  district_nces_id: 0901170
+  enrollment: 864
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-east-hampton:
+  display_name: East Hampton
+  district_name: East Hampton School District
+  district_nces_id: 0901230
+  enrollment: 1770
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-east-hartford-0900226:
+  display_name: East Hartford
+  district_name: Goodwin University Educational Services (GUES)
+  district_nces_id: 0900226
+  enrollment: 1140
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-east-hartford-0901260:
+  display_name: East Hartford
+  district_name: East Hartford School District
+  district_nces_id: 0901260
+  enrollment: 6392
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-east-haven:
+  display_name: East Haven
+  district_name: East Haven School District
+  district_nces_id: 0901290
+  enrollment: 2885
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-east-lyme:
+  display_name: East Lyme
+  district_name: East Lyme School District
+  district_nces_id: 0901320
+  enrollment: 2617
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-east-windsor:
+  display_name: East Windsor
+  district_name: East Windsor School District
+  district_nces_id: 0901350
+  enrollment: 1030
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-easton-0901410:
+  display_name: Easton
+  district_name: Easton School District
+  district_nces_id: 0901410
+  enrollment: 903
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-easton-0903510:
+  display_name: Easton
+  district_name: Redding School District
+  district_nces_id: 0903510
+  enrollment: 832
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-easton-0903780:
+  display_name: Easton
+  district_name: Regional School District 09
+  district_nces_id: 0903780
+  enrollment: 779
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-ellington:
+  display_name: Ellington
+  district_name: Ellington School District
+  district_nces_id: 0901440
+  enrollment: 2586
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-enfield:
+  display_name: Enfield
+  district_name: Enfield School District
+  district_nces_id: 0901470
+  enrollment: 4913
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-fairfield:
+  display_name: Fairfield
+  district_name: Fairfield School District
+  district_nces_id: 0901530
+  enrollment: 9379
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-farmington:
+  display_name: Farmington
+  district_name: Farmington School District
+  district_nces_id: 0901560
+  enrollment: 4147
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-glastonbury:
+  display_name: Glastonbury
+  district_name: Glastonbury School District
+  district_nces_id: 0901620
+  enrollment: 5663
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-granby:
+  display_name: Granby
+  district_name: Granby School District
+  district_nces_id: 0901680
+  enrollment: 1738
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-greenwich:
+  display_name: Greenwich
+  district_name: Greenwich School District
+  district_nces_id: 0901710
+  enrollment: 8560
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-griswold:
+  display_name: Griswold
+  district_name: Griswold School District
+  district_nces_id: 0901740
+  enrollment: 1725
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-guilford:
+  display_name: Guilford
+  district_name: Guilford School District
+  district_nces_id: 0901800
+  enrollment: 3155
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-hamden:
+  display_name: Hamden
+  district_name: Hamden School District
+  district_nces_id: 0901860
+  enrollment: 5468
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-hartford-0900002:
+  display_name: Hartford
+  district_name: Connecticut Technical Education and Career System
+  district_nces_id: 0900002
+  enrollment: 11183
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-hartford-0900007:
+  display_name: Hartford
+  district_name: Jumoke Academy District
+  district_nces_id: 0900007
+  enrollment: 629
+  has_charters: true
+  source: ccd_auto
+  state: CT
+ct-hartford-0900700:
+  display_name: Hartford
+  district_name: Capitol Region Education Council
+  district_nces_id: 0900700
+  enrollment: 8942
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-hartford-0901920:
+  display_name: Hartford
+  district_name: Hartford School District
+  district_nces_id: 0901920
+  enrollment: 16774
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-hebron-0902010:
+  display_name: Hebron
+  district_name: Hebron School District
+  district_nces_id: 0902010
+  enrollment: 696
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-hebron-0903750:
+  display_name: Hebron
+  district_name: Regional School District 08
+  district_nces_id: 0903750
+  enrollment: 1206
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-higganum:
+  display_name: Higganum
+  district_name: Regional School District 17
+  district_nces_id: 0903539
+  enrollment: 1814
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-lebanon:
+  display_name: Lebanon
+  district_name: Lebanon School District
+  district_nces_id: 0902130
+  enrollment: 958
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-ledyard:
+  display_name: Ledyard
+  district_name: Ledyard School District
+  district_nces_id: 0902160
+  enrollment: 2421
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-litchfield-0902220:
+  display_name: Litchfield
+  district_name: Litchfield School District
+  district_nces_id: 0902220
+  enrollment: 813
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-litchfield-0903515:
+  display_name: Litchfield
+  district_name: Regional School District 06
+  district_nces_id: 0903515
+  enrollment: 853
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-madison:
+  display_name: Madison
+  district_name: Madison School District
+  district_nces_id: 0902280
+  enrollment: 2444
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-manchester:
+  display_name: Manchester
+  district_name: Manchester School District
+  district_nces_id: 0902310
+  enrollment: 6192
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-meriden:
+  display_name: Meriden
+  district_name: Meriden School District
+  district_nces_id: 0902400
+  enrollment: 8630
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-middlebury:
+  display_name: Middlebury
+  district_name: Regional School District 15
+  district_nces_id: 0903537
+  enrollment: 3469
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-middletown:
+  display_name: Middletown
+  district_name: Middletown School District
+  district_nces_id: 0902490
+  enrollment: 4414
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-milford:
+  display_name: Milford
+  district_name: Milford School District
+  district_nces_id: 0902520
+  enrollment: 5382
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-monroe:
+  display_name: Monroe
+  district_name: Monroe School District
+  district_nces_id: 0902550
+  enrollment: 3398
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-moodus:
+  display_name: Moodus
+  district_name: East Haddam School District
+  district_nces_id: 0901200
+  enrollment: 990
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-mystic:
+  display_name: Mystic
+  district_name: Groton School District
+  district_nces_id: 0901770
+  enrollment: 4104
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-naugatuck:
+  display_name: Naugatuck
+  district_name: Naugatuck School District
+  district_nces_id: 0902640
+  enrollment: 4337
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-new-britain:
+  display_name: New Britain
+  district_name: New Britain School District
+  district_nces_id: 0902670
+  enrollment: 9717
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-new-canaan:
+  display_name: New Canaan
+  district_name: New Canaan School District
+  district_nces_id: 0902700
+  enrollment: 4168
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-new-fairfield:
+  display_name: New Fairfield
+  district_name: New Fairfield School District
+  district_nces_id: 0902730
+  enrollment: 2143
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-new-haven-0900024:
+  display_name: New Haven
+  district_name: Amistad Academy District
+  district_nces_id: 0900024
+  enrollment: 1116
+  has_charters: true
+  source: ccd_auto
+  state: CT
+ct-new-haven-0900207:
+  display_name: New Haven
+  district_name: Highville Charter School District
+  district_nces_id: 0900207
+  enrollment: 505
+  has_charters: true
+  source: ccd_auto
+  state: CT
+ct-new-haven-0900208:
+  display_name: New Haven
+  district_name: Achievement First Bridgeport Academy District
+  district_nces_id: 0900208
+  enrollment: 1084
+  has_charters: true
+  source: ccd_auto
+  state: CT
+ct-new-haven-0900212:
+  display_name: New Haven
+  district_name: Achievement First Hartford Academy District
+  district_nces_id: 0900212
+  enrollment: 1041
+  has_charters: true
+  source: ccd_auto
+  state: CT
+ct-new-haven-0900214:
+  display_name: New Haven
+  district_name: Elm City College Preparatory School District
+  district_nces_id: 0900214
+  enrollment: 783
+  has_charters: true
+  source: ccd_auto
+  state: CT
+ct-new-haven-0902790:
+  display_name: New Haven
+  district_name: New Haven School District
+  district_nces_id: 0902790
+  enrollment: 19150
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-new-london:
+  display_name: New London
+  district_name: New London School District
+  district_nces_id: 0902820
+  enrollment: 2948
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-new-milford:
+  display_name: New Milford
+  district_name: New Milford School District
+  district_nces_id: 0902850
+  enrollment: 3683
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-newington:
+  display_name: Newington
+  district_name: Newington School District
+  district_nces_id: 0902880
+  enrollment: 3937
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-newtown:
+  display_name: Newtown
+  district_name: Newtown School District
+  district_nces_id: 0902910
+  enrollment: 4003
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-north-grosvenor-dale:
+  display_name: North Grosvenor Dale
+  district_name: Thompson School District
+  district_nces_id: 0904530
+  enrollment: 927
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-north-haven-0900070:
+  display_name: North Haven
+  district_name: Area Cooperative Educational Services
+  district_nces_id: 0900070
+  enrollment: 1740
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-north-haven-0903030:
+  display_name: North Haven
+  district_name: North Haven School District
+  district_nces_id: 0903030
+  enrollment: 3187
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-north-stonington:
+  display_name: North Stonington
+  district_name: North Stonington School District
+  district_nces_id: 0903060
+  enrollment: 759
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-northford:
+  display_name: Northford
+  district_name: North Branford School District
+  district_nces_id: 0902970
+  enrollment: 1538
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-norwalk:
+  display_name: Norwalk
+  district_name: Norwalk School District
+  district_nces_id: 0903090
+  enrollment: 11514
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-norwich-0903120:
+  display_name: Norwich
+  district_name: Norwich School District
+  district_nces_id: 0903120
+  enrollment: 3348
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-norwich-0905371:
+  display_name: Norwich
+  district_name: Norwich Free Academy District
+  district_nces_id: 0905371
+  enrollment: 2106
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-oakdale:
+  display_name: Oakdale
+  district_name: Montville School District
+  district_nces_id: 0902580
+  enrollment: 2017
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-old-lyme-0903450:
+  display_name: Old Lyme
+  district_name: Learn
+  district_nces_id: 0903450
+  enrollment: 1410
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-old-lyme-0903540:
+  display_name: Old Lyme
+  district_name: Regional School District 18
+  district_nces_id: 0903540
+  enrollment: 1288
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-old-saybrook:
+  display_name: Old Saybrook
+  district_name: Old Saybrook School District
+  district_nces_id: 0903180
+  enrollment: 1070
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-orange:
+  display_name: Orange
+  district_name: Orange School District
+  district_nces_id: 0903210
+  enrollment: 1281
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-oxford:
+  display_name: Oxford
+  district_name: Oxford School District
+  district_nces_id: 0903240
+  enrollment: 1717
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-pawcatuck:
+  display_name: Pawcatuck
+  district_name: Stonington School District
+  district_nces_id: 0904380
+  enrollment: 1800
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-plainfield:
+  display_name: Plainfield
+  district_name: Plainfield School District
+  district_nces_id: 0903270
+  enrollment: 1944
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-plainville:
+  display_name: Plainville
+  district_name: Plainville School District
+  district_nces_id: 0903300
+  enrollment: 2291
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-portland:
+  display_name: Portland
+  district_name: Portland School District
+  district_nces_id: 0903390
+  enrollment: 1240
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-prospect:
+  display_name: Prospect
+  district_name: Regional School District 16
+  district_nces_id: 0903538
+  enrollment: 1958
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-putnam:
+  display_name: Putnam
+  district_name: Putnam School District
+  district_nces_id: 0903480
+  enrollment: 1185
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-ridgefield:
+  display_name: Ridgefield
+  district_name: Ridgefield School District
+  district_nces_id: 0903810
+  enrollment: 4568
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-rocky-hill:
+  display_name: Rocky Hill
+  district_name: Rocky Hill School District
+  district_nces_id: 0903840
+  enrollment: 2550
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-seymour:
+  display_name: Seymour
+  district_name: Seymour School District
+  district_nces_id: 0903990
+  enrollment: 2133
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-shelton:
+  display_name: Shelton
+  district_name: Shelton School District
+  district_nces_id: 0904050
+  enrollment: 4512
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-simsbury:
+  display_name: Simsbury
+  district_name: Simsbury School District
+  district_nces_id: 0904110
+  enrollment: 4125
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-somers:
+  display_name: Somers
+  district_name: Somers School District
+  district_nces_id: 0904140
+  enrollment: 1345
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-south-windsor:
+  display_name: South Windsor
+  district_name: South Windsor School District
+  district_nces_id: 0904170
+  enrollment: 4877
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-southington:
+  display_name: Southington
+  district_name: Southington School District
+  district_nces_id: 0904230
+  enrollment: 6284
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-stafford-springs:
+  display_name: Stafford Springs
+  district_name: Stafford School District
+  district_nces_id: 0904290
+  enrollment: 1401
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-stamford-0900220:
+  display_name: Stamford
+  district_name: Stamford Charter School for Excellence District
+  district_nces_id: 0900220
+  enrollment: 561
+  has_charters: true
+  source: ccd_auto
+  state: CT
+ct-stamford-0904320:
+  display_name: Stamford
+  district_name: Stamford School District
+  district_nces_id: 0904320
+  enrollment: 16158
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-storrs-0900005:
+  display_name: Storrs
+  district_name: Regional School District 19
+  district_nces_id: 0900005
+  enrollment: 1126
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-storrs-0902340:
+  display_name: Storrs
+  district_name: Mansfield School District
+  district_nces_id: 0902340
+  enrollment: 1027
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-stratford:
+  display_name: Stratford
+  district_name: Stratford School District
+  district_nces_id: 0904440
+  enrollment: 6762
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-suffield:
+  display_name: Suffield
+  district_name: Suffield School District
+  district_nces_id: 0904470
+  enrollment: 2041
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-terryville:
+  display_name: Terryville
+  district_name: Plymouth School District
+  district_nces_id: 0903330
+  enrollment: 1306
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-thomaston:
+  display_name: Thomaston
+  district_name: Thomaston School District
+  district_nces_id: 0904500
+  enrollment: 820
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-tolland:
+  display_name: Tolland
+  district_name: Tolland School District
+  district_nces_id: 0904560
+  enrollment: 2302
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-torrington:
+  display_name: Torrington
+  district_name: Torrington School District
+  district_nces_id: 0904590
+  enrollment: 3883
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-trumbull-0900910:
+  display_name: Trumbull
+  district_name: Cooperative Educational Services
+  district_nces_id: 0900910
+  enrollment: 822
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-trumbull-0904620:
+  display_name: Trumbull
+  district_name: Trumbull School District
+  district_nces_id: 0904620
+  enrollment: 6920
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-vernon:
+  display_name: Vernon
+  district_name: Vernon School District
+  district_nces_id: 0904680
+  enrollment: 3148
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-wallingford:
+  display_name: Wallingford
+  district_name: Wallingford School District
+  district_nces_id: 0904740
+  enrollment: 5335
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-washington-depot:
+  display_name: Washington Depot
+  district_name: Regional School District 12
+  district_nces_id: 0903530
+  enrollment: 804
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-waterbury:
+  display_name: Waterbury
+  district_name: Waterbury School District
+  district_nces_id: 0904830
+  enrollment: 18701
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-waterford:
+  display_name: Waterford
+  district_name: Waterford School District
+  district_nces_id: 0904860
+  enrollment: 2338
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-watertown:
+  display_name: Watertown
+  district_name: Watertown School District
+  district_nces_id: 0904890
+  enrollment: 2598
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-west-hartford:
+  display_name: West Hartford
+  district_name: West Hartford School District
+  district_nces_id: 0904920
+  enrollment: 9231
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-west-haven:
+  display_name: West Haven
+  district_name: West Haven School District
+  district_nces_id: 0904950
+  enrollment: 5976
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-westbrook:
+  display_name: Westbrook
+  district_name: Westbrook School District
+  district_nces_id: 0904980
+  enrollment: 617
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-weston:
+  display_name: Weston
+  district_name: Weston School District
+  district_nces_id: 0905010
+  enrollment: 2197
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-westport:
+  display_name: Westport
+  district_name: Westport School District
+  district_nces_id: 0905040
+  enrollment: 5387
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-wethersfield:
+  display_name: Wethersfield
+  district_name: Wethersfield School District
+  district_nces_id: 0905070
+  enrollment: 3646
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-willimantic:
+  display_name: Willimantic
+  district_name: Windham School District
+  district_nces_id: 0905190
+  enrollment: 3224
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-wilton:
+  display_name: Wilton
+  district_name: Wilton School District
+  district_nces_id: 0905130
+  enrollment: 3788
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-windsor:
+  display_name: Windsor
+  district_name: Windsor School District
+  district_nces_id: 0905220
+  enrollment: 3337
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-windsor-locks:
+  display_name: Windsor Locks
+  district_name: Windsor Locks School District
+  district_nces_id: 0905250
+  enrollment: 1549
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-winsted-0903720:
+  display_name: Winsted
+  district_name: Regional School District 07
+  district_nces_id: 0903720
+  enrollment: 890
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-winsted-0905160:
+  display_name: Winsted
+  district_name: Winchester School District
+  district_nces_id: 0905160
+  enrollment: 606
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-wolcott:
+  display_name: Wolcott
+  district_name: Wolcott School District
+  district_nces_id: 0905280
+  enrollment: 2139
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-woodbridge-0903660:
+  display_name: Woodbridge
+  district_name: Regional School District 05
+  district_nces_id: 0903660
+  enrollment: 2075
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-woodbridge-0905310:
+  display_name: Woodbridge
+  district_name: Woodbridge School District
+  district_nces_id: 0905310
+  enrollment: 848
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-woodbury:
+  display_name: Woodbury
+  district_name: Regional School District 14
+  district_nces_id: 0903536
+  enrollment: 1617
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-woodstock-0905370:
+  display_name: Woodstock
+  district_name: Woodstock School District
+  district_nces_id: 0905370
+  enrollment: 774
+  has_charters: false
+  source: ccd_auto
+  state: CT
+ct-woodstock-0905373:
+  display_name: Woodstock
+  district_name: The Woodstock Academy District
+  district_nces_id: 0905373
+  enrollment: 1041
+  has_charters: false
+  source: ccd_auto
+  state: CT

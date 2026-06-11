@@ -1,0 +1,760 @@
+co-alamosa:
+  display_name: Alamosa
+  district_name: Alamosa School District No. Re-11J
+  district_nces_id: 0802070
+  enrollment: 2116
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-aspen:
+  display_name: Aspen
+  district_name: Aspen School District No. 1 in the county of Pitkin and Sta
+  district_nces_id: 0802280
+  enrollment: 1572
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-ault:
+  display_name: Ault
+  district_name: Weld County School District No. Re-9
+  district_nces_id: 0802310
+  enrollment: 993
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-aurora:
+  display_name: Aurora
+  district_name: Aurora Joint District No. 28 of the counties of Adams and A
+  district_nces_id: 0802340
+  enrollment: 38135
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-bailey:
+  display_name: Bailey
+  district_name: Platte Canyon School District No. 1 of  the county of Park
+  district_nces_id: 0802370
+  enrollment: 797
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-bayfield:
+  display_name: Bayfield
+  district_name: Bayfield School District No. 10Jt-R
+  district_nces_id: 0802400
+  enrollment: 1279
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-bennett:
+  display_name: Bennett
+  district_name: Bennett School District No. 29J
+  district_nces_id: 0802430
+  enrollment: 1296
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-boulder:
+  display_name: Boulder
+  district_name: Boulder Valley School District No. Re2
+  district_nces_id: 0802490
+  enrollment: 28485
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-brighton:
+  display_name: Brighton
+  district_name: School District 27J
+  district_nces_id: 0802580
+  enrollment: 22713
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-brush:
+  display_name: Brush
+  district_name: School District No. Re-2 Brush
+  district_nces_id: 0802610
+  enrollment: 1366
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-buena-vista:
+  display_name: Buena Vista
+  district_name: Buena Vista School District No. R-31
+  district_nces_id: 0802640
+  enrollment: 1032
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-burlington:
+  display_name: Burlington
+  district_name: Burlington Public School District No. RE-6J
+  district_nces_id: 0802670
+  enrollment: 762
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-byers:
+  display_name: Byers
+  district_name: Byers School District No. 32J
+  district_nces_id: 0802700
+  enrollment: 5671
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-canon-city:
+  display_name: Canon City
+  district_name: Fremont Re-1
+  district_nces_id: 0802790
+  enrollment: 3305
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-carbondale:
+  display_name: Carbondale
+  district_name: Roaring Fork School District No. Re-1
+  district_nces_id: 0804260
+  enrollment: 5771
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-castle-rock:
+  display_name: Castle Rock
+  district_name: Douglas County School District No. Re 1
+  district_nces_id: 0803450
+  enrollment: 62341
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-center:
+  display_name: Center
+  district_name: Center Consolidated School District No. 26 Jt. of the count
+  district_nces_id: 0802850
+  enrollment: 607
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-colorado-springs-0801920:
+  display_name: Colorado Springs
+  district_name: Academy School District No. 20 in the county of El Paso an
+  district_nces_id: 0801920
+  enrollment: 25719
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-colorado-springs-0802940:
+  display_name: Colorado Springs
+  district_name: Cheyenne Mountain School District No. 12 in the county of E
+  district_nces_id: 0802940
+  enrollment: 3737
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-colorado-springs-0803060:
+  display_name: Colorado Springs
+  district_name: Colorado Springs School District No. 11 in the county of E
+  district_nces_id: 0803060
+  enrollment: 22725
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-colorado-springs-0804530:
+  display_name: Colorado Springs
+  district_name: Harrison School District No. 2 in the county of El Paso an
+  district_nces_id: 0804530
+  enrollment: 12267
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-colorado-springs-0806480:
+  display_name: Colorado Springs
+  district_name: School District No. 3 in the county of El Paso and State of
+  district_nces_id: 0806480
+  enrollment: 9612
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-commerce-city:
+  display_name: Commerce City
+  district_name: School District N. 14 in the county of Adams & State of Colo
+  district_nces_id: 0801950
+  enrollment: 5692
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-cortez:
+  display_name: Cortez
+  district_name: Montezuma-Cortez School District No. Re-1
+  district_nces_id: 0803090
+  enrollment: 2449
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-craig:
+  display_name: Craig
+  district_name: 'Moffat County School District RE: No. 1'
+  district_nces_id: 0805730
+  enrollment: 2092
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-delta:
+  display_name: Delta
+  district_name: Delta County Joint District No. 50
+  district_nces_id: 0803330
+  enrollment: 4592
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-denver-0800020:
+  display_name: Denver
+  district_name: State Charter School Institute
+  district_nces_id: 0800020
+  enrollment: 19239
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-denver-0803360:
+  display_name: Denver
+  district_name: School District No. 1 in the county of Denver and State of C
+  district_nces_id: 0803360
+  enrollment: 87883
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-denver-0805550:
+  display_name: Denver
+  district_name: Mapleton School District No. 1 in the county of Adams & St
+  district_nces_id: 0805550
+  enrollment: 7088
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-dolores:
+  display_name: Dolores
+  district_name: Dolores School District No. Re-4A
+  district_nces_id: 0803390
+  enrollment: 683
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-durango:
+  display_name: Durango
+  district_name: Durango School District No. 9-R
+  district_nces_id: 0803480
+  enrollment: 5452
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-eagle:
+  display_name: Eagle
+  district_name: Eagle County School District No. Re 50
+  district_nces_id: 0803540
+  enrollment: 6620
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-eaton:
+  display_name: Eaton
+  district_name: Weld County School District No. Re-2
+  district_nces_id: 0803600
+  enrollment: 1977
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-elizabeth:
+  display_name: Elizabeth
+  district_name: ELIZABETH SCHOOL DISTRICT
+  district_nces_id: 0803720
+  enrollment: 2379
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-ellicott:
+  display_name: Ellicott
+  district_name: Ellicott School District No. 22 in the county of El Paso a
+  district_nces_id: 0803750
+  enrollment: 981
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-englewood-0803780:
+  display_name: Englewood
+  district_name: Englewood School District No. 1 in the county of Arapahoe
+  district_nces_id: 0803780
+  enrollment: 2441
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-englewood-0806540:
+  display_name: Englewood
+  district_name: Sheridan School District No. 2
+  district_nces_id: 0806540
+  enrollment: 1125
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-estes-park:
+  display_name: Estes Park
+  district_name: Estes Park School District R-3
+  district_nces_id: 0803810
+  enrollment: 1014
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-fairplay:
+  display_name: Fairplay
+  district_name: Park County School District No. Re-2
+  district_nces_id: 0803840
+  enrollment: 595
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-florence:
+  display_name: Florence
+  district_name: Fremont Re-2
+  district_nces_id: 0803960
+  enrollment: 1390
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-fort-collins:
+  display_name: Fort Collins
+  district_name: Poudre School District R-1
+  district_nces_id: 0803990
+  enrollment: 29995
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-fort-lupton:
+  display_name: Fort Lupton
+  district_name: Weld re-8 schools
+  district_nces_id: 0804020
+  enrollment: 2522
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-fort-morgan:
+  display_name: Fort Morgan
+  district_name: School District No. Re-3 Fort Morgan
+  district_nces_id: 0804050
+  enrollment: 3423
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-fountain:
+  display_name: Fountain
+  district_name: Fountain School District No. 8 in the county of El Paso an
+  district_nces_id: 0804080
+  enrollment: 8201
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-frisco:
+  display_name: Frisco
+  district_name: Summit School District No. Re 1
+  district_nces_id: 0806810
+  enrollment: 3633
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-gilcrest:
+  display_name: Gilcrest
+  district_name: Weld County Reorganized School District No. Re-1
+  district_nces_id: 0804200
+  enrollment: 1837
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-golden:
+  display_name: Golden
+  district_name: Jefferson County School District No. R-1
+  district_nces_id: 0804800
+  enrollment: 75327
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-granby:
+  display_name: Granby
+  district_name: East Grand School District No. 2
+  district_nces_id: 0804320
+  enrollment: 1283
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-grand-junction:
+  display_name: Grand Junction
+  district_name: Mesa County Valley School District No. 51
+  district_nces_id: 0804350
+  enrollment: 20762
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-greeley:
+  display_name: Greeley
+  district_name: GreeleySchool District No. 6 in the county of Weld and Sta
+  district_nces_id: 0804410
+  enrollment: 22200
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-greenwood-village:
+  display_name: Greenwood Village
+  district_name: Cherry Creek School District No. 5 in the county of Arapah
+  district_nces_id: 0802910
+  enrollment: 52392
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-gunnison:
+  display_name: Gunnison
+  district_name: Gunnison Watershed School District Re1J
+  district_nces_id: 0804470
+  enrollment: 2061
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-holyoke:
+  display_name: Holyoke
+  district_name: Holyoke School District No. Re-1J
+  district_nces_id: 0804710
+  enrollment: 552
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-hudson:
+  display_name: Hudson
+  district_name: Weld County School District RE-3J
+  district_nces_id: 0804920
+  enrollment: 2785
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-idaho-springs:
+  display_name: Idaho Springs
+  district_name: Clear Creek School District No. Re-1
+  district_nces_id: 0803000
+  enrollment: 680
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-ignacio:
+  display_name: Ignacio
+  district_name: Ignacio School District No. 11Jt
+  district_nces_id: 0804770
+  enrollment: 641
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-julesburg:
+  display_name: Julesburg
+  district_name: Julesburg School District No. Re1
+  district_nces_id: 0804860
+  enrollment: 607
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-kersey:
+  display_name: Kersey
+  district_name: Weld County School District No. Re-7
+  district_nces_id: 0804950
+  enrollment: 1094
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-la-jara:
+  display_name: La Jara
+  district_name: North Conejos School District No. Re1J
+  district_nces_id: 0805100
+  enrollment: 988
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-la-junta:
+  display_name: La Junta
+  district_name: East Otero School District No. R1
+  district_nces_id: 0805130
+  enrollment: 1355
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-lamar:
+  display_name: Lamar
+  district_name: Lamar School District No. Re-2
+  district_nces_id: 0805220
+  enrollment: 1522
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-las-animas:
+  display_name: Las Animas
+  district_name: Las Animas School District No. Re-1
+  district_nces_id: 0805250
+  enrollment: 822
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-leadville:
+  display_name: Leadville
+  district_name: Lake County School District No. R-1
+  district_nces_id: 0805190
+  enrollment: 979
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-littleton:
+  display_name: Littleton
+  district_name: Littleton School District No. 6 in the county of Arapahoe
+  district_nces_id: 0805310
+  enrollment: 13450
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-longmont:
+  display_name: Longmont
+  district_name: St. Vrain Valley School District No. Re1J
+  district_nces_id: 0805370
+  enrollment: 31894
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-loveland:
+  display_name: Loveland
+  district_name: Thompson School District R-2J
+  district_nces_id: 0805400
+  enrollment: 15083
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-mancos:
+  display_name: Mancos
+  district_name: Mancos School District Re-6
+  district_nces_id: 0805460
+  enrollment: 509
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-manitou-springs:
+  display_name: Manitou Springs
+  district_name: Manitou Springs School District No. 14 in the county of El
+  district_nces_id: 0805490
+  enrollment: 1317
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-meeker:
+  display_name: Meeker
+  district_name: Meeker School District Re1
+  district_nces_id: 0805610
+  enrollment: 712
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-milliken:
+  display_name: Milliken
+  district_name: Weld County School District No. Re-5J
+  district_nces_id: 0804830
+  enrollment: 3869
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-monte-vista:
+  display_name: Monte Vista
+  district_name: Monte Vista School District No. C-8
+  district_nces_id: 0805760
+  enrollment: 1033
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-montrose:
+  display_name: Montrose
+  district_name: Montrose County School District Re-1J
+  district_nces_id: 0805790
+  enrollment: 6029
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-monument-0800282:
+  display_name: Monument
+  district_name: EDUCATION REENVISIONED BOCES
+  district_nces_id: 0800282
+  enrollment: 3937
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-monument-0805820:
+  display_name: Monument
+  district_name: Lewis-Palmer Consolidated School District No. 38 in the co
+  district_nces_id: 0805820
+  enrollment: 6496
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-pagosa-springs:
+  display_name: Pagosa Springs
+  district_name: Archuleta County School District No. 50 Jt
+  district_nces_id: 0802190
+  enrollment: 1678
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-parachute:
+  display_name: Parachute
+  district_name: Grand Valley School District No. 16 in the county of Garfi
+  district_nces_id: 0804380
+  enrollment: 1198
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-peyton-0803870:
+  display_name: Peyton
+  district_name: El Paso County Colorado School District 49
+  district_nces_id: 0803870
+  enrollment: 24517
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-peyton-0806060:
+  display_name: Peyton
+  district_name: Peyton School District No. 23 in the county of El Paso and
+  district_nces_id: 0806060
+  enrollment: 600
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-pueblo-0806120:
+  display_name: Pueblo
+  district_name: Pueblo School District No. 60 in the county of Pueblo and
+  district_nces_id: 0806120
+  enrollment: 15025
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-pueblo-0806150:
+  display_name: Pueblo
+  district_name: Pueblo County School District 70
+  district_nces_id: 0806150
+  enrollment: 10501
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-rifle:
+  display_name: Rifle
+  district_name: Garfield School District No. Re-2
+  district_nces_id: 0806240
+  enrollment: 4662
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-rocky-ford:
+  display_name: Rocky Ford
+  district_name: Rocky Ford School District No. R2
+  district_nces_id: 0806270
+  enrollment: 632
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-salida:
+  display_name: Salida
+  district_name: Salida School District No. R-32
+  district_nces_id: 0806330
+  enrollment: 1327
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-steamboat-springs:
+  display_name: Steamboat Springs
+  district_name: Steamboat Springs School District No. Re 2
+  district_nces_id: 0806660
+  enrollment: 2664
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-sterling:
+  display_name: Sterling
+  district_name: School District No. Re-1 Valley
+  district_nces_id: 0806690
+  enrollment: 1972
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-strasburg:
+  display_name: Strasburg
+  district_name: Strasburg School District 31J
+  district_nces_id: 0806750
+  enrollment: 1209
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-telluride:
+  display_name: Telluride
+  district_name: Telluride School District No. R-1
+  district_nces_id: 0806870
+  enrollment: 895
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-thornton:
+  display_name: Thornton
+  district_name: Adams 12 Five Star Schools
+  district_nces_id: 0806900
+  enrollment: 35747
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-trinidad:
+  display_name: Trinidad
+  district_name: Trinidad School District 1 in the county of Las Animas and
+  district_nces_id: 0806960
+  enrollment: 796
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-westminster:
+  display_name: Westminster
+  district_name: Westminster Public Schools
+  district_nces_id: 0807230
+  enrollment: 8004
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-wiggins:
+  display_name: Wiggins
+  district_name: School District No. Re-50 Wiggins
+  district_nces_id: 0807290
+  enrollment: 862
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-windsor:
+  display_name: Windsor
+  district_name: Weld County Reorganized School District No. Re-4
+  district_nces_id: 0807350
+  enrollment: 8227
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-woodland-park:
+  display_name: Woodland Park
+  district_name: Woodland Park School District No. Re-2
+  district_nces_id: 0807380
+  enrollment: 2010
+  has_charters: true
+  source: ccd_auto
+  state: CO
+co-wray:
+  display_name: Wray
+  district_name: Wray RD-2 School District
+  district_nces_id: 0800017
+  enrollment: 724
+  has_charters: false
+  source: ccd_auto
+  state: CO
+co-yuma:
+  display_name: Yuma
+  district_name: Yuma 1 School District
+  district_nces_id: 0800016
+  enrollment: 886
+  has_charters: false
+  source: ccd_auto
+  state: CO
