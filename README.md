@@ -1066,3 +1066,31 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Add guard against deprecated community_id slug artifacts accumulating in cache/outputs
 
 **Tests:** Test runner not detected — run `python3 -m pytest -q -p no:cacheprovider` before next session.
+
+---
+
+### Session — 2026-06-11 (20b7736)
+
+**Accomplished:**
+- Created `app/cache_utils.py` with `bust_community_cache(community_id, state, leaid)`: deletes community cache (`data/cache/community/{state}/{community_id}/*.json`), synthesis cache (`data/cache/synthesis/{state}/{community_id}/*.json`), and scoped fetcher cache (paths containing `community_id` or `leaid`); hard guard prevents any touch of `config/charter_law/`
+- Added `POST /api/regen/<state>/<community_id>` to `app/ui/server.py`: validates community against registry YAML, looks up `district_nces_id` for leaid scoping, calls `bust_community_cache`, launches `python3 main.py {community_id} --state {STATE} --preset maturity_adjusted --depth fast` in a background thread, returns `job_id` for polling
+- Added `_run_regen_background()` and `_regen_running: set[str]` lock to `server.py`; background runner reuses existing `_jobs` store and `_append_stage_log` so client polls `/api/scan/status/<job_id>` with no new endpoint needed
+- Added `↺ Regen Data` button to brief toolbar in `index.html`, confirmation modal, and a collapsible regen progress strip (live log + error fallback) that appears below the toolbar during regen
+- Added CSS for regen UI components to `main.css` (`.regen-progress-strip`, `.regen-strip-status`, `.regen-log-body`, `.regen-error-msg`)
+- Added regen JS in `app.js` (`setupRegenButton`, `_startRegen`, `_regenPollOnce`, `_onRegenComplete`, `_regenFailed`): posts to `/api/regen`, polls existing status endpoint, streams log lines into collapsible panel, reloads brief iframe on success without full page navigation
+- Added 16 new tests: 9 in `tests/unit/test_cache_bust.py` (deletion, community scoping, leaid scoping, charter_law guard, summary shape), 7 in `tests/unit/test_regen_route.py` (400/404/409/200 + cache bust call); suite 843 → **859 passing**
+
+**Decisions:**
+- `app/cache_utils.py` (not `pipeline/cache_utils.py`) because `app/ui/server.py` cannot import from `pipeline/` per the app's CLI+filesystem-only contract
+- Polling pattern reused (via existing `/api/scan/status/<job_id>`) instead of SSE — no new infrastructure needed
+- Old brief HTML is never touched by the route; pipeline overwrites its own output file; client reloads iframe only on `status=complete`
+- `_regen_running` set (protected by existing `_jobs_lock`) provides 409 lock; released in `finally` block of `_run_regen_background`
+- Rate limit checks intentionally omitted for regen (manual power-user action behind OAuth; cost is bounded by single fast run)
+
+**Next Steps:**
+- [ ] Regen returns 404 for states without a community_registry YAML (only NM/MS/TN/WI have one); consider fallback to `states.yaml` district_map for completeness
+- [ ] Lennon sign-off on methodology questions A–D in `docs/lennon_oxford_scoring_flags.md`
+- [ ] Run live `--force` MS batch to exercise ACS district-type fallback + widened statutory narrative guard on fresh LLM output
+- [ ] Add guard against deprecated community_id slug artifacts accumulating in cache/outputs
+
+**Tests:** 859 passed (`python3 -m pytest -q`).

@@ -29,6 +29,7 @@ _APP_DIR = Path(__file__).resolve().parent.parent
 if str(_APP_DIR) not in sys.path:
     sys.path.insert(0, str(_APP_DIR))
 
+import cache_utils            # noqa: E402
 import config as app_config  # noqa: E402 — must follow sys.path insert
 import rate_limit             # noqa: E402
 from auth import auth_bp, require_login  # noqa: E402
@@ -53,6 +54,9 @@ _DEPTH_WHITELIST = frozenset({"fast", "standard", "deep"})
 # ── In-memory job store ─────────────────────────────────────────────────────
 _jobs: dict[str, dict] = {}
 _jobs_lock = threading.Lock()
+
+# community_ids with a regen currently in flight (protected by _jobs_lock)
+_regen_running: set[str] = set()
 
 
 def _iso_now() -> str:
@@ -839,6 +843,151 @@ def scan_result(job_id):
         return jsonify({"error": "Brief file missing from disk"}), 404
 
     return content, 200, {"Content-Type": "text/html; charset=utf-8"}
+
+
+# ---------------------------------------------------------------------------
+# Regen background runner
+# ---------------------------------------------------------------------------
+
+def _run_regen_background(job_id: str, community_id: str, state: str) -> None:
+    try:
+        _update_job(job_id, status="running", started_at=_iso_now())
+        cmd = [
+            str(app_config.PYTHON_BIN),
+            str(app_config.MAIN_PY),
+            community_id,
+            "--state", state.upper(),
+            "--preset", "maturity_adjusted",
+            "--depth", "fast",
+        ]
+
+        proc = subprocess.Popen(
+            cmd,
+            cwd=str(app_config.REPO_ROOT),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            env=app_config.subprocess_env(),
+            text=True,
+            bufsize=1,
+        )
+
+        tail: list[str] = []
+        while True:
+            raw = proc.stdout.readline()
+            if not raw:
+                break
+            line = raw.rstrip()
+            if not line:
+                continue
+            _append_stage_log(job_id, line)
+            tail.append(line)
+            if len(tail) > 30:
+                tail.pop(0)
+
+        proc.wait()
+
+        if proc.returncode == 0:
+            brief = _find_brief_path(community_id, "maturity_adjusted", "2")
+            _update_job(
+                job_id,
+                status="complete",
+                finished_at=_iso_now(),
+                brief_path=str(brief) if brief else None,
+            )
+            _write_community_run(job_id, community_id, state, "maturity_adjusted", "2", "fast")
+        else:
+            _update_job(
+                job_id,
+                status="failed",
+                finished_at=_iso_now(),
+                error="\n".join(tail[-20:]),
+            )
+
+    except Exception as exc:
+        _update_job(job_id, status="failed", finished_at=_iso_now(), error=str(exc))
+
+    finally:
+        with _jobs_lock:
+            _regen_running.discard(community_id)
+
+
+# ---------------------------------------------------------------------------
+# Regen route
+# ---------------------------------------------------------------------------
+
+@app.route("/api/regen/<state>/<community_id>", methods=["POST"])
+@require_login
+def regen(state: str, community_id: str):
+    """Bust non-S2 cache for a community and re-run the pipeline.
+
+    Returns a job_id; client polls /api/scan/status/<job_id> for progress.
+    On completion, the brief is refreshed by the client via /api/brief.
+    """
+    state_upper      = state.upper().strip()
+    community_id     = community_id.lower().strip()
+
+    if not _COMMUNITY_ID_RE.match(community_id):
+        return jsonify({"error": f"Invalid community_id: {community_id!r}"}), 400
+
+    # Validate pipeline base dir
+    if not app_config.MAIN_PY.exists():
+        return jsonify({"error": f"Pipeline not found at {app_config.MAIN_PY}"}), 500
+
+    # Validate community against registry
+    registry_path = COMMUNITY_REGISTRY_DIR / f"{state_upper.lower()}.yaml"
+    if not registry_path.exists():
+        return jsonify({"error": f"No registry for state {state_upper!r}"}), 404
+
+    try:
+        with open(registry_path) as f:
+            registry = yaml.safe_load(f) or {}
+    except Exception as exc:
+        return jsonify({"error": f"Failed to read registry: {exc}"}), 500
+
+    if community_id not in registry:
+        return jsonify({"error": f"Community {community_id!r} not found in {state_upper} registry"}), 404
+
+    entry   = registry[community_id]
+    leaid   = str(entry.get("district_nces_id") or "").strip()
+
+    # Per-community regen lock (prevents double-run on rapid re-click)
+    with _jobs_lock:
+        if community_id in _regen_running:
+            return jsonify({"error": f"Regen already in progress for {community_id}"}), 409
+        _regen_running.add(community_id)
+
+    # Bust cache — runs synchronously before launching the pipeline
+    summary = cache_utils.bust_community_cache(community_id, state_upper, leaid)
+    app.logger.info(
+        "[REGEN] cache bust for %s: deleted=%d skipped=%d error=%s",
+        community_id, len(summary["deleted"]), len(summary["skipped"]), summary["error"],
+    )
+
+    # Launch pipeline as background job
+    job_id = secrets.token_hex(8)
+    with _jobs_lock:
+        _jobs[job_id] = {
+            "job_id":       job_id,
+            "community_id": community_id,
+            "job_type":     "regen",
+            "depth":        "fast",
+            "preset":       "maturity_adjusted",
+            "mode":         "2",
+            "status":       "queued",
+            "started_at":   None,
+            "finished_at":  None,
+            "stage_log":    [],
+            "error":        None,
+            "brief_path":   None,
+        }
+
+    threading.Thread(
+        target=_run_regen_background,
+        args=(job_id, community_id, state_upper),
+        daemon=True,
+    ).start()
+
+    return jsonify({"job_id": job_id, "status": "queued", "cache_bust": summary})
 
 
 if __name__ == "__main__":

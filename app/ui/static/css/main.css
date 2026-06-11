@@ -1229,6 +1229,74 @@ button, input, select {
   flex-shrink: 0;
 }
 
+/* ── Regen progress strip (below brief toolbar) ───────────── */
+.regen-progress-strip {
+  padding: 8px 24px 10px;
+  background: rgba(61, 90, 241, 0.07);
+  border-bottom: 1px solid rgba(45, 45, 122, 0.4);
+  flex-shrink: 0;
+}
+.regen-progress-strip.hidden { display: none; }
+
+.regen-strip-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.regen-strip-status {
+  font-size: 12px;
+  color: var(--mist);
+  letter-spacing: 0.04em;
+}
+.regen-strip-status.running { color: #7da4f8; animation: badgePulse 1.6s ease-in-out infinite; }
+.regen-strip-status.complete { color: #4ade80; }
+.regen-strip-status.failed { color: #f87171; }
+
+.regen-strip-toggle {
+  background: none;
+  border: none;
+  color: var(--mist);
+  font-size: 11px;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+.regen-strip-toggle:hover { color: var(--star-white); }
+
+.regen-log-body {
+  margin-top: 8px;
+  font-family: "Fira Mono", "Menlo", "Consolas", monospace;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--mist);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(168, 180, 212, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  max-height: 160px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.regen-log-body[hidden] { display: none; }
+
+.regen-error-msg {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #d4a8a8;
+  background: rgba(200, 100, 100, 0.08);
+  border: 1px solid rgba(200, 100, 100, 0.18);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.regen-error-msg.hidden { display: none; }
+
 /* ── Log viewer modal ──────────────────────────────────────── */
 .log-modal {
   position: fixed;

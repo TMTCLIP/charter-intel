@@ -142,11 +142,28 @@
                 aria-label="Download PDF" style="display:none; text-decoration:none;">
                 Download PDF
               </a>
+              <button class="btn-outline-sm" id="btn-regen"
+                aria-label="Regenerate data — clear cache and re-run pipeline"
+                style="display:none">
+                ↺ Regen Data
+              </button>
               <button class="btn-new-scan" id="btn-brief-new-scan"
                 aria-label="Run a new scan for this city">
                 Run New Scan
               </button>
             </div>
+          </div>
+          <!-- Regen progress strip (hidden until regen is triggered) -->
+          <div id="regen-progress-strip" class="regen-progress-strip hidden" aria-live="polite">
+            <div class="regen-strip-header">
+              <span id="regen-strip-status" class="regen-strip-status">Regenerating…</span>
+              <button class="regen-strip-toggle" id="btn-regen-log-toggle"
+                aria-expanded="false" aria-controls="regen-log-body">
+                Show log ▾
+              </button>
+            </div>
+            <div id="regen-log-body" class="regen-log-body" hidden></div>
+            <p id="regen-error-msg" class="regen-error-msg hidden"></p>
           </div>
           <div class="brief-frame-wrap" id="brief-frame-wrap">
             <div id="brief-loading" class="brief-loading hidden">Loading brief…</div>
@@ -421,6 +438,27 @@
     </div>
 
   </aside>
+
+  <!-- Regen confirmation modal -->
+  <div id="regen-modal" class="log-modal hidden" role="dialog" aria-modal="true" aria-labelledby="regen-modal-title">
+    <div id="regen-modal-backdrop" class="log-modal-backdrop"></div>
+    <div class="log-modal-panel" style="max-width:440px;">
+      <div class="log-modal-header">
+        <span id="regen-modal-title" class="log-modal-title">Regenerate Data</span>
+        <button class="btn-close-panel" id="btn-close-regen-modal" aria-label="Cancel">&#x2715;</button>
+      </div>
+      <div style="padding:20px 20px 24px;font-size:13px;line-height:1.6;color:var(--mist);">
+        <p id="regen-modal-body"></p>
+        <div style="display:flex;gap:10px;margin-top:20px;justify-content:flex-end;">
+          <button class="btn-outline-sm" id="btn-regen-cancel">Cancel</button>
+          <button class="btn-new-scan" id="btn-regen-confirm"
+            style="padding:7px 22px;margin-top:0;width:auto;">
+            Regen
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Log viewer modal -->
   <div id="log-modal" class="log-modal hidden" role="dialog" aria-modal="true" aria-labelledby="log-modal-title">

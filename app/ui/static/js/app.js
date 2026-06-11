@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupScanPanel();
   setupBriefView();
   setupRunsView();
+  setupRegenButton();
 });
 
 // ── Stars (CSS-animated, JS-positioned) ────────────────────
@@ -1050,6 +1051,17 @@ async function loadBrief(runId) {
     }
   }
 
+  // Show Regen button for community runs with a valid state/community in registry
+  const regenBtn = document.getElementById("btn-regen");
+  if (regenBtn) {
+    const isZip = (run.mode || "") === "zip";
+    regenBtn.style.display = (!isZip && run.state_code && run.target) ? "" : "none";
+  }
+
+  // Reset regen strip when switching to a new brief
+  const strip = document.getElementById("regen-progress-strip");
+  if (strip) strip.classList.add("hidden");
+
   if (!run.has_brief) {
     loading.textContent = "No brief available for this scan.";
     return;
@@ -1425,3 +1437,219 @@ function _cbSelect(city) {
 
   _cbClosePanel();
 }
+
+// ═══════════════════════════════════════════════════════════
+// REGEN DATA — cache bust + pipeline re-run from brief view
+// ═══════════════════════════════════════════════════════════
+
+let _regenJobId      = null;  // job_id of in-flight regen
+let _regenPollTimer  = null;
+let _regenLogLines   = 0;     // lines already rendered into regen-log-body
+
+function setupRegenButton() {
+  const btn         = document.getElementById("btn-regen");
+  const modal       = document.getElementById("regen-modal");
+  const backdrop    = document.getElementById("regen-modal-backdrop");
+  const cancelBtn   = document.getElementById("btn-regen-cancel");
+  const closeBtn    = document.getElementById("btn-close-regen-modal");
+  const confirmBtn  = document.getElementById("btn-regen-confirm");
+
+  if (!btn || !modal) return;
+
+  btn.addEventListener("click", _showRegenModal);
+  backdrop.addEventListener("click",  _hideRegenModal);
+  cancelBtn.addEventListener("click", _hideRegenModal);
+  closeBtn.addEventListener("click",  _hideRegenModal);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) _hideRegenModal();
+  });
+
+  confirmBtn.addEventListener("click", async () => {
+    _hideRegenModal();
+    await _startRegen();
+  });
+}
+
+function _showRegenModal() {
+  if (!APP.briefRun) return;
+  const city  = APP.briefRun.city || APP.briefRun.target || "this community";
+  const state = APP.briefRun.state_code || "";
+  document.getElementById("regen-modal-body").textContent =
+    `This will clear all cached data for ${city}, ${state} and re-run the full pipeline. ` +
+    `This may take 60–90 seconds and will use API credits. Continue?`;
+  document.getElementById("regen-modal").classList.remove("hidden");
+}
+
+function _hideRegenModal() {
+  document.getElementById("regen-modal").classList.add("hidden");
+}
+
+async function _startRegen() {
+  if (!APP.briefRun) return;
+
+  const communityId = APP.briefRun.target;
+  const state       = APP.briefRun.state_code || APP.briefRun.state || "";
+
+  if (!communityId || !state) {
+    showToast("Cannot regen — community or state unknown.", "error");
+    return;
+  }
+
+  // Show progress strip
+  _regenLogLines = 0;
+  const strip     = document.getElementById("regen-progress-strip");
+  const statusEl  = document.getElementById("regen-strip-status");
+  const logBody   = document.getElementById("regen-log-body");
+  const errMsg    = document.getElementById("regen-error-msg");
+  const regenBtn  = document.getElementById("btn-regen");
+
+  strip.classList.remove("hidden");
+  statusEl.textContent = "Clearing cache…";
+  statusEl.className   = "regen-strip-status running";
+  logBody.textContent  = "";
+  logBody.setAttribute("hidden", "");
+  document.getElementById("btn-regen-log-toggle").setAttribute("aria-expanded", "false");
+  document.getElementById("btn-regen-log-toggle").textContent = "Show log ▾";
+  errMsg.classList.add("hidden");
+  errMsg.textContent   = "";
+  regenBtn.disabled    = true;
+
+  try {
+    const resp = await fetch(
+      `/api/regen/${encodeURIComponent(state.toLowerCase())}/${encodeURIComponent(communityId)}`,
+      { method: "POST" },
+    );
+    const data = await resp.json();
+
+    if (!resp.ok) {
+      _regenFailed(data.error || `HTTP ${resp.status}`);
+      regenBtn.disabled = false;
+      return;
+    }
+
+    _regenJobId = data.job_id;
+    statusEl.textContent = "Regenerating… this may take a minute";
+    _startRegenPoll(data.job_id);
+
+  } catch (err) {
+    _regenFailed(`Request failed: ${err.message}`);
+    regenBtn.disabled = false;
+  }
+}
+
+function _startRegenPoll(jobId) {
+  _stopRegenPoll();
+  _regenPollTimer = setInterval(() => _regenPollOnce(jobId), 3000);
+}
+
+function _stopRegenPoll() {
+  if (_regenPollTimer) {
+    clearInterval(_regenPollTimer);
+    _regenPollTimer = null;
+  }
+}
+
+async function _regenPollOnce(jobId) {
+  try {
+    const resp = await fetch(`/api/scan/status/${encodeURIComponent(jobId)}`);
+    if (!resp.ok) { _stopRegenPoll(); return; }
+    const job = await resp.json();
+
+    _regenAppendLog(job.stage_log || []);
+
+    if (job.status === "complete") {
+      _stopRegenPoll();
+      _onRegenComplete(job);
+    } else if (job.status === "failed") {
+      _stopRegenPoll();
+      _regenFailed(job.error || "Pipeline failed — check server logs.");
+    }
+  } catch {
+    // network hiccup — keep polling
+  }
+}
+
+function _regenAppendLog(allLines) {
+  const logBody = document.getElementById("regen-log-body");
+  const newLines = allLines.slice(_regenLogLines);
+  _regenLogLines = allLines.length;
+  for (const raw of newLines) {
+    const span = document.createElement("span");
+    span.className = "scan-log-line";
+    if (/Running\s+s\d_[a-z_]+\.\.\./.test(raw)) span.classList.add("scan-log-stage");
+    else if (/—\s+(OK|cache hit)/.test(raw))      span.classList.add("scan-log-ok");
+    else if (/FAILED/.test(raw))                  span.classList.add("scan-log-fail");
+    span.textContent = raw;
+    logBody.appendChild(span);
+  }
+  if (newLines.length && !logBody.hasAttribute("hidden")) {
+    logBody.scrollTop = logBody.scrollHeight;
+  }
+}
+
+async function _onRegenComplete(job) {
+  const statusEl = document.getElementById("regen-strip-status");
+  statusEl.textContent = "✓ Regen complete — refreshing brief…";
+  statusEl.className   = "regen-strip-status complete";
+
+  showToast("Regen complete — reloading brief…", "success");
+
+  // Reload the brief iframe without a full page navigation
+  const run    = APP.briefRun;
+  const frame  = document.getElementById("brief-frame");
+  const loading = document.getElementById("brief-loading");
+
+  if (!run) return;
+
+  try {
+    frame.style.display = "none";
+    loading.classList.remove("hidden");
+    loading.textContent = "Loading brief…";
+
+    const resp = await fetch(`/api/brief?run_id=${encodeURIComponent(run.run_id)}`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const html = await resp.text();
+
+    frame.srcdoc = html;
+    loading.classList.add("hidden");
+    frame.style.display = "block";
+
+    statusEl.textContent = "✓ Regen complete";
+  } catch (err) {
+    loading.textContent = `Brief reload failed: ${err.message}`;
+    statusEl.textContent = "Regen complete (brief reload failed)";
+    statusEl.className   = "regen-strip-status failed";
+  } finally {
+    document.getElementById("btn-regen").disabled = false;
+    _regenJobId = null;
+  }
+}
+
+function _regenFailed(message) {
+  const statusEl = document.getElementById("regen-strip-status");
+  const errMsg   = document.getElementById("regen-error-msg");
+  statusEl.textContent = "✗ Regen failed";
+  statusEl.className   = "regen-strip-status failed";
+  errMsg.textContent   = message;
+  errMsg.classList.remove("hidden");
+  document.getElementById("btn-regen").disabled = false;
+  _regenJobId = null;
+  showToast("Regen failed — see error below.", "error");
+}
+
+// Wire up the log toggle button (event delegation — button exists on page load)
+document.addEventListener("click", (e) => {
+  if (e.target.id !== "btn-regen-log-toggle") return;
+  const logBody  = document.getElementById("regen-log-body");
+  const expanded = e.target.getAttribute("aria-expanded") === "true";
+  if (expanded) {
+    logBody.setAttribute("hidden", "");
+    e.target.setAttribute("aria-expanded", "false");
+    e.target.textContent = "Show log ▾";
+  } else {
+    logBody.removeAttribute("hidden");
+    e.target.setAttribute("aria-expanded", "true");
+    e.target.textContent = "Hide log ▴";
+    logBody.scrollTop = logBody.scrollHeight;
+  }
+});
