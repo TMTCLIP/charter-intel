@@ -1257,3 +1257,27 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Rebuild national parquets with `--force` after downloading 2024 CSVs
 
 **Tests:** 884 passed (`python3 -m pytest -q -p no:cacheprovider`).
+
+---
+
+### Session — 2026-06-11 (3b2b05d)
+
+**Accomplished:**
+- Read `s2_state_context.py`, `s6_synthesis.py`, `config/pipeline.yaml`, `config/sources.yaml`, and all 51 `config/charter_law/` stubs before writing any files
+- Created `data/reference/` directory and `data/reference/charter_laws.json` — 50-record JSON array sorted by state code, all 16 fields populated, 0 null booleans, 0 null tiers, cap integrity verified
+- Researched charter school laws for all 50 US states; corrected stale no-law-states list in task spec (AL/ME/WA have laws; ND enacted 2025, MT enacted 2023, KY struck down Feb 2026; WV was missing from spec)
+- Updated WV record: `active_moratorium` corrected `true → false` (Dec 2025 injunction paused by WV Supreme Court of Appeals Jan 2026, Case 25-851); notes updated to reflect pending appeal
+
+**Decisions:**
+- Hostile tier: KY, NE, SD, VT only (4 states, not 9 as spec estimated — spec list was stale)
+- `local_district_consent_required: true` only when no state-level bypass exists (KS, MD, MT, MS, VA, WY); states with appeal pathways = false
+- ME rated "strong" per NAPCS #2 ranking despite 10-school cap; cap captured in `state_cap_exists`/`state_cap_count`
+- `data/reference/` is gather-and-store only; no S6 consumption logic written (explicitly out of scope)
+
+**Next Steps:**
+- [ ] Verify approximate `law_last_amended_year` values for ~30 states against current statutes
+- [ ] Refresh WV record when WV Supreme Court rules on Case 25-851
+- [ ] Write S6 consumption logic for `charter_laws.json` when scoped
+- [ ] Refresh MT record after HB 562 litigation resolves
+
+**Tests:** Not run this session (gather-and-store only; no code changed).
