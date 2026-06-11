@@ -377,7 +377,7 @@ def call_claude_cached(
     if cache is not None:
         cached = cache.get(cache_key, ttl_days=ttl_days)
         if cached is not None:
-            logger.info(
+            logger.debug(
                 "[%s] LLM cache hit (%s) — no API call",
                 call_kwargs.get("stage", ""), cache_key,
             )

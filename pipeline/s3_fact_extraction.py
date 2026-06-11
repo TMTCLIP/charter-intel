@@ -12,6 +12,7 @@ OUTPUT:
   - data/cache/community/{state}/{community_id}/s3_facts_raw.json
 """
 from __future__ import annotations
+import hashlib
 import json
 import logging
 import os
@@ -25,7 +26,7 @@ import yaml
 logger = logging.getLogger(__name__)
 
 from pipeline import PipelineConfig, StageResult, StageStatus, OutputMode, today_str
-from pipeline.utils.api_client import call_claude, load_prompt
+from pipeline.utils.api_client import call_claude, call_claude_cached, load_prompt
 from pipeline.utils.cache import CacheManager
 from pipeline.utils.schema_validator import validate_against_schema
 from pipeline.utils.ped_fetcher import get_district_data
@@ -167,6 +168,24 @@ _SCHOOL_PROMPT_FIELDS = frozenset({
 # Web result truncation — caps content/snippet fields in any list-of-dicts
 # payload before it's serialized into a prompt string.
 _WEB_RESULT_MAX_CHARS = 600
+
+# LLM-response cache TTL for all S3 Claude calls.  Controls how long a cached
+# API response is considered fresh before a live call is made again.  Override
+# by setting S3_LLM_CACHE_TTL_DAYS in the environment or changing this constant.
+S3_LLM_CACHE_TTL_DAYS: int = int(os.environ.get("S3_LLM_CACHE_TTL_DAYS", 30))
+
+
+def _s3_llm_cache_key(
+    state: str, community_id: str, stage_suffix: str, system: str, user: str
+) -> str:
+    """Return the CacheManager key for one S3 LLM call.
+
+    Key encodes state + community + stage + a SHA-1 prefix of the full prompt
+    so that any change in prompt content (injected data, dates, depth flags)
+    produces a distinct key and bypasses the stale cached response.
+    """
+    content_hash = hashlib.sha1(f"{system}\x00{user}".encode()).hexdigest()[:12]
+    return f"llm/{state.lower()}/{community_id}/s3_{stage_suffix}_{content_hash}.json"
 
 # Audit log for S3 web-search token regression tracking.
 _S3_AUDIT_PATH = "logs/s3_token_audit.csv"
@@ -317,13 +336,18 @@ def _should_run_political_climate_search(
         f"Answer YES or NO with one sentence of reasoning."
     )
 
+    _llm_cache = CacheManager(config)
+    _gate_system = (
+        "You are a concise policy analyst. Answer YES or NO followed by "
+        "one sentence. Do not exceed two sentences."
+    )
     try:
-        haiku_result = call_claude(
+        haiku_result = call_claude_cached(
+            _llm_cache,
+            _s3_llm_cache_key(state, community_id, "political_climate_gate", _gate_system, haiku_prompt),
+            ttl_days=S3_LLM_CACHE_TTL_DAYS,
             model=config.model_haiku,
-            system=(
-                "You are a concise policy analyst. Answer YES or NO followed by "
-                "one sentence. Do not exceed two sentences."
-            ),
+            system=_gate_system,
             user=haiku_prompt,
             max_tokens=100,
             temperature=0,
@@ -635,15 +659,19 @@ def run(
         "VERIFIED_ACS_DATA": verified_acs_data,
     })
 
-    result = call_claude(
+    _main_system = "You are a structured data extraction agent. Respond ONLY with valid JSON."
+    result = call_claude_cached(
+        cache,
+        _s3_llm_cache_key(state, community_id, "main", _main_system, prompt_text),
+        ttl_days=S3_LLM_CACHE_TTL_DAYS,
         model=config.model_sonnet,
-        system="You are a structured data extraction agent. Respond ONLY with valid JSON.",
+        system=_main_system,
         user=prompt_text,
         max_tokens=8192,
         temperature=0.0,
         expect_json=True,
         stage=STAGE_ID,
-        community_id=community_id
+        community_id=community_id,
     )
     _write_s3_audit(community_id, config.depth, "s3_main", result)
 
@@ -748,13 +776,17 @@ def run(
                 "TODAY_DATE": today_str(),
             })
 
-            pc_result = call_claude(
+            _pc_system = (
+                "You are a political intelligence researcher. "
+                "Use web search to find current information. "
+                "Respond ONLY with valid JSON."
+            )
+            pc_result = call_claude_cached(
+                cache,
+                _s3_llm_cache_key(state, community_id, "political_climate", _pc_system, pc_prompt),
+                ttl_days=S3_LLM_CACHE_TTL_DAYS,
                 model=config.model_sonnet,
-                system=(
-                    "You are a political intelligence researcher. "
-                    "Use web search to find current information. "
-                    "Respond ONLY with valid JSON."
-                ),
+                system=_pc_system,
                 user=pc_prompt,
                 max_tokens=2048,
                 temperature=0.3,
@@ -828,13 +860,17 @@ def run(
             "TODAY_DATE": today_str(),
         })
 
-        pt_result = call_claude(
+        _pt_system = (
+            "You are a demographic and enrollment researcher. "
+            "Use web search to find current information. "
+            "Respond ONLY with valid JSON."
+        )
+        pt_result = call_claude_cached(
+            cache,
+            _s3_llm_cache_key(state, community_id, "population_trends", _pt_system, pt_prompt),
+            ttl_days=S3_LLM_CACHE_TTL_DAYS,
             model=config.model_sonnet,
-            system=(
-                "You are a demographic and enrollment researcher. "
-                "Use web search to find current information. "
-                "Respond ONLY with valid JSON."
-            ),
+            system=_pt_system,
             user=pt_prompt,
             max_tokens=2048,
             temperature=0.3,
@@ -906,13 +942,17 @@ def run(
             "TODAY_DATE": today_str(),
         })
 
-        oc_result = call_claude(
+        _oc_system = (
+            "You are an education demographics researcher. "
+            "Use web search to find current information. "
+            "Respond ONLY with valid JSON."
+        )
+        oc_result = call_claude_cached(
+            cache,
+            _s3_llm_cache_key(state, community_id, "operational_complexity", _oc_system, oc_prompt),
+            ttl_days=S3_LLM_CACHE_TTL_DAYS,
             model=config.model_sonnet,
-            system=(
-                "You are an education demographics researcher. "
-                "Use web search to find current information. "
-                "Respond ONLY with valid JSON."
-            ),
+            system=_oc_system,
             user=oc_prompt,
             max_tokens=2048,
             temperature=0.3,
@@ -984,13 +1024,17 @@ def run(
             "TODAY_DATE": today_str(),
         })
 
-        ff_result = call_claude(
+        _ff_system = (
+            "You are a real estate and education facilities researcher. "
+            "Use web search to find current information. "
+            "Respond ONLY with valid JSON."
+        )
+        ff_result = call_claude_cached(
+            cache,
+            _s3_llm_cache_key(state, community_id, "facilities_feasibility", _ff_system, ff_prompt),
+            ttl_days=S3_LLM_CACHE_TTL_DAYS,
             model=config.model_sonnet,
-            system=(
-                "You are a real estate and education facilities researcher. "
-                "Use web search to find current information. "
-                "Respond ONLY with valid JSON."
-            ),
+            system=_ff_system,
             user=ff_prompt,
             max_tokens=2048,
             temperature=0.3,
@@ -1062,13 +1106,17 @@ def run(
             "TODAY_DATE": today_str(),
         })
 
-        fe_result = call_claude(
+        _fe_system = (
+            "You are an education philanthropy and funding researcher. "
+            "Use web search to find current information. "
+            "Respond ONLY with valid JSON."
+        )
+        fe_result = call_claude_cached(
+            cache,
+            _s3_llm_cache_key(state, community_id, "funding_environment", _fe_system, fe_prompt),
+            ttl_days=S3_LLM_CACHE_TTL_DAYS,
             model=config.model_sonnet,
-            system=(
-                "You are an education philanthropy and funding researcher. "
-                "Use web search to find current information. "
-                "Respond ONLY with valid JSON."
-            ),
+            system=_fe_system,
             user=fe_prompt,
             max_tokens=2048,
             temperature=0.3,
@@ -2498,7 +2546,11 @@ def _fetch_charter_intel(
             "Respond ONLY with valid JSON. No markdown fences, no preamble."
         )
 
-        result = call_claude(
+        _ci_cache = CacheManager(config)
+        result = call_claude_cached(
+            _ci_cache,
+            _s3_llm_cache_key(state, community_id, "charter_intel", system, prompt_text),
+            ttl_days=S3_LLM_CACHE_TTL_DAYS,
             model=config.model_sonnet,
             system=system,
             user=prompt_text,

@@ -1140,3 +1140,29 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Add guard against deprecated community_id slug artifacts accumulating in cache/outputs
 
 **Tests:** 859 passed (`python3 -m pytest -q`).
+
+---
+
+### Session — 2026-06-11 (3b8a168)
+
+**Accomplished:**
+- Wired `call_claude_cached` into all 8 `call_claude` call sites in `pipeline/s3_fact_extraction.py`; S3 now deduplicates LLM calls against a per-prompt content-hash key stored under `data/cache/llm/{state}/{community_id}/s3_{stage}_{hash}.json`
+- Added `S3_LLM_CACHE_TTL_DAYS: int = 30` constant (env-overridable via `S3_LLM_CACHE_TTL_DAYS`) as the configurable TTL for all S3 LLM response caches
+- Added `_s3_llm_cache_key(state, community_id, stage_suffix, system, user)` helper that hashes the full prompt content (SHA-1 prefix, 12 hex chars) so any injected-data or date change produces a new cache key
+- Haiku gate (`_should_run_political_climate_search`) and charter-intel helper (`_fetch_charter_intel`) create their own `CacheManager(config)` instances locally, avoiding signature changes
+- Added `import hashlib` and `call_claude_cached` to the `api_client` import in `s3_fact_extraction.py`
+- Changed cache-hit log in `call_claude_cached` (`api_client.py`) from `INFO` to `DEBUG` level
+
+**Decisions:**
+- Cache key hashes full `system + user` prompt text so any change in injected data, `TODAY_DATE`, depth flags, or roster content produces a distinct key — stale reads impossible
+- `S3_LLM_CACHE_TTL_DAYS` defaults to 30 days (matches existing `s3_political_climate` TTL in `CACHE_TTL_DAYS`) and is env-overridable
+- Web-search calls embed `TODAY_DATE`, so their keys rotate daily; same-day reruns still hit the cache
+- No S3 logic, scoring, or output shape changed — purely a call-site transport swap
+
+**Next Steps:**
+- [ ] Add `S3_LLM_CACHE_TTL_DAYS` entry to `CACHE_TTL_DAYS` dict in `cache.py` as the canonical registry entry
+- [ ] Regen returns 404 for states without a community_registry YAML; consider fallback to `states.yaml` district_map
+- [ ] Lennon sign-off on methodology questions A–D in `docs/lennon_oxford_scoring_flags.md`
+- [ ] Run live `--force` MS batch to exercise ACS district-type fallback + widened statutory narrative guard
+
+**Tests:** 867 passed (`python3 -m pytest -q -p no:cacheprovider`).
