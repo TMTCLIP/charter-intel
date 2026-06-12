@@ -12,6 +12,7 @@ OUTPUT:
   - data/cache/community/{state}/{community_id}/s3_facts_raw.json
 """
 from __future__ import annotations
+import concurrent.futures
 import hashlib
 import json
 import logging
@@ -675,51 +676,39 @@ def run(
         "VERIFIED_ACS_DATA": verified_acs_data,
     })
 
+    # ── Pre-fetch CSV data for charter intel (fast filesystem reads) ─────────
+    # Done before the executor so csv_schools/csv_authorizers are available
+    # inside fn_charter_intel without touching shared state.
+    csv_schools: list[dict] = []
+    csv_authorizers: list[dict] = []
+    if config.mode != OutputMode.SCAN:
+        csv_schools     = get_community_charter_schools(known_schools, roster_source_file)
+        csv_authorizers = get_community_authorizers(known_schools, roster_source_file)
+
     _main_system = "You are a structured data extraction agent. Respond ONLY with valid JSON."
-    result = call_claude_cached(
-        cache,
-        _s3_llm_cache_key(state, community_id, "main", _main_system, prompt_text),
-        ttl_days=S3_LLM_CACHE_TTL_DAYS,
-        model=config.model_sonnet,
-        system=_main_system,
-        user=prompt_text,
-        max_tokens=8192,
-        temperature=0.0,
-        expect_json=True,
-        stage=STAGE_ID,
-        community_id=community_id,
-    )
-    _write_s3_audit(community_id, config.depth, "s3_main", result)
-
-    if result.parse_error:
-        return StageResult(
-            stage_id=STAGE_ID, community_id=community_id, state=state,
-            status=StageStatus.ERROR,
-            errors=[f"S3 JSON parse failed: {result.parse_error}"]
-        )
-
-    facts_output = result.parsed_json
-    # A literal `null` / non-object top-level parses cleanly (no parse_error) but
-    # is unusable downstream. Skip this community gracefully rather than crash.
-    if not isinstance(facts_output, dict):
-        return StageResult(
-            stage_id=STAGE_ID, community_id=community_id, state=state,
-            status=StageStatus.ERROR,
-            errors=[f"S3 returned non-object JSON: {type(facts_output).__name__}"]
-        )
-
-    # ── Web search supplemental calls — gated by --depth + Haiku pre-filter ──
-    # fast: none  |  standard: political_climate only  |  deep: all 5 + 8s sleeps
-    # max_uses caps: standard=4, deep=8 (political_climate); standard=6, deep=10 (charter_intel)
-    # Political climate: Haiku gate skips expensive Sonnet search for small communities
-    # with no local charter activity — inherits state baseline (~$0.001 vs $0.143).
-    _web_search_tokens = 0
     _pc_max_uses = {"standard": 4, "deep": 8}.get(config.depth, 4)
-    try:
-        if config.depth not in ("standard", "deep"):
-            raise _DepthSkip
 
-        # ── Haiku pre-filter gate ────────────────────────────────────────────
+    # ── Callable definitions for ThreadPoolExecutor ───────────────────────────
+
+    def fn_main():
+        r = call_claude_cached(
+            cache,
+            _s3_llm_cache_key(state, community_id, "main", _main_system, prompt_text),
+            ttl_days=S3_LLM_CACHE_TTL_DAYS,
+            model=config.model_sonnet,
+            system=_main_system,
+            user=prompt_text,
+            max_tokens=8192,
+            temperature=0.0,
+            expect_json=True,
+            stage=STAGE_ID,
+            community_id=community_id,
+        )
+        _write_s3_audit(community_id, config.depth, "s3_main", r)
+        return r
+
+    def fn_political_climate():
+        """Returns a fact dict to append, or None. Gate + search are sequential."""
         should_run_pc, gate_skip_reason = _should_run_political_climate_search(
             community_id=community_id,
             community_name=community_name,
@@ -731,23 +720,18 @@ def run(
         )
 
         if not should_run_pc:
-            # Gate blocked — inject a state baseline so S5 always has a dimension to
-            # score. Area B (Session 18): this baseline is NOT community-specific
-            # evidence, so it is flagged LOW + carries an explicit data-gap tag.
-            # S29: the LOW-confidence S4 gate was removed — this fact now passes
-            # through to S5 with its PROVISIONAL/LOW label intact.
-            #
-            # Prefer an S2 state-level political climate score if one is available.
-            # TODO: requires verified source — s2_state_context does not currently
-            # emit a numeric state political climate index; this lookup is a scaffold
-            # so a future S2 score is honored automatically without a code change.
             state_pc_index = (
                 state_context.get("political_climate_index")
                 if isinstance(state_context, dict) else None
             )
             baseline_value = state_pc_index if isinstance(state_pc_index, (int, float)) else 5
             baseline_source = "S2 state-level index" if state_pc_index is not None else "neutral state default"
-            facts_output.setdefault("facts", []).append({
+            logger.info(
+                "[%s] Political climate: gate skipped Sonnet search — LOW-confidence "
+                "state baseline injected (data gap, value=%s)",
+                community_id, baseline_value,
+            )
+            return {
                 "datapoint_id": f"dp_{community_id}_political_climate_baseline",
                 "community_id": community_id,
                 "state": state,
@@ -777,105 +761,97 @@ def run(
                     "Political climate inherited a state baseline (no community-level "
                     "evidence). Verify local board posture before strategic use."
                 ),
-            })
-            logger.info(
-                "[%s] Political climate: gate skipped Sonnet search — LOW-confidence "
-                "state baseline injected (data gap, value=%s)",
-                community_id, baseline_value,
+            }
+
+        pc_prompt = load_prompt("prompts/extract/s3_political_climate.md", {
+            "COMMUNITY_NAME": community_name,
+            "STATE_NAME": state_context.get("state_name", state),
+            "TODAY_DATE": today_str(),
+        })
+        _pc_system = (
+            "You are a political intelligence researcher. "
+            "Use web search to find current information. "
+            "Respond ONLY with valid JSON."
+        )
+        pc_result = call_claude_cached(
+            cache,
+            _s3_llm_cache_key(state, community_id, "political_climate", _pc_system, pc_prompt),
+            ttl_days=S3_LLM_CACHE_TTL_DAYS,
+            model=config.model_sonnet,
+            system=_pc_system,
+            user=pc_prompt,
+            max_tokens=2048,
+            temperature=0.3,
+            expect_json=True,
+            use_web_search=True,
+            web_search_max_uses=_pc_max_uses,
+            stage=f"{STAGE_ID}_political_climate",
+            community_id=community_id,
+        )
+        _write_s3_audit(community_id, config.depth, "s3_political_climate", pc_result)
+
+        if pc_result.parse_error:
+            logger.warning(
+                "[%s] Political climate web search JSON parse failed: %s",
+                community_id, pc_result.parse_error,
             )
+            return None
 
-        else:
-            # ── Sonnet political climate web search (gate passed) ──────────────
-            pc_prompt = load_prompt("prompts/extract/s3_political_climate.md", {
-                "COMMUNITY_NAME": community_name,
-                "STATE_NAME": state_context.get("state_name", state),
-                "TODAY_DATE": today_str(),
-            })
+        if not pc_result.parsed_json:
+            return None
 
-            _pc_system = (
-                "You are a political intelligence researcher. "
-                "Use web search to find current information. "
-                "Respond ONLY with valid JSON."
-            )
-            pc_result = call_claude_cached(
-                cache,
-                _s3_llm_cache_key(state, community_id, "political_climate", _pc_system, pc_prompt),
-                ttl_days=S3_LLM_CACHE_TTL_DAYS,
-                model=config.model_sonnet,
-                system=_pc_system,
-                user=pc_prompt,
-                max_tokens=2048,
-                temperature=0.3,
-                expect_json=True,
-                use_web_search=True,
-                web_search_max_uses=_pc_max_uses,
-                stage=f"{STAGE_ID}_political_climate",
-                community_id=community_id,
-            )
-            _web_search_tokens += pc_result.total_tokens
-            _write_s3_audit(community_id, config.depth, "s3_political_climate", pc_result)
+        pc = pc_result.parsed_json
+        sources = pc.get("sources") or []
+        first_source = sources[0] if sources else {}
+        index_val = pc.get("political_climate_index")
+        confidence, _vs, _vs_rationale = _resolve_websearch_status(pc)
 
-            if pc_result.parse_error:
-                logger.warning(
-                    "[%s] Political climate web search JSON parse failed: %s",
-                    community_id, pc_result.parse_error,
-                )
-            elif pc_result.parsed_json:
-                pc = pc_result.parsed_json
-                sources = pc.get("sources") or []
-                first_source = sources[0] if sources else {}
-                index_val = pc.get("political_climate_index")
-                confidence, _vs, _vs_rationale = _resolve_websearch_status(pc)
+        logger.info(
+            "[%s] Political climate web search — index=%s confidence=%s sources=%d",
+            community_id, index_val, confidence, len(sources),
+        )
+        return {
+            "datapoint_id": f"dp_{community_id}_political_climate_websearch",
+            "community_id": community_id,
+            "state": state,
+            "dimension": "political_climate",
+            "fact_key": "political_climate_index",
+            "claim": f"Political climate index (web): {index_val}",
+            "value": index_val,
+            "value_unit": None,
+            "value_year": int(today_str()[:4]),
+            "source_class": "MEDIA",
+            "source_url": first_source.get("url"),
+            "source_title": first_source.get("title"),
+            "source_date": first_source.get("date"),
+            "confidence": confidence,
+            "confidence_rationale": _vs_rationale,
+            "verification_status": _vs,
+            "bias_flag": None,
+            "extracted_by": config.model_sonnet,
+            "extracted_at": today_str(),
+            "stage": STAGE_ID,
+            "in_main_analysis": True,
+            "needs_verification_reason": None,
+        }
 
-                facts_output.setdefault("facts", []).append({
-                    "datapoint_id": f"dp_{community_id}_political_climate_websearch",
-                    "community_id": community_id,
-                    "state": state,
-                    "dimension": "political_climate",
-                    "fact_key": "political_climate_index",
-                    "claim": f"Political climate index (web): {index_val}",
-                    "value": index_val,
-                    "value_unit": None,
-                    "value_year": int(today_str()[:4]),
-                    "source_class": "MEDIA",
-                    "source_url": first_source.get("url"),
-                    "source_title": first_source.get("title"),
-                    "source_date": first_source.get("date"),
-                    "confidence": confidence,
-                    "confidence_rationale": _vs_rationale,
-                    "verification_status": _vs,
-                    "bias_flag": None,
-                    "extracted_by": config.model_sonnet,
-                    "extracted_at": today_str(),
-                    "stage": STAGE_ID,
-                    "in_main_analysis": True,
-                    "needs_verification_reason": None,
-                })
-
-                logger.info(
-                    "[%s] Political climate web search — index=%s confidence=%s sources=%d",
-                    community_id, index_val, confidence, len(sources),
-                )
-
-    except _DepthSkip:
-        pass
-    except Exception as exc:
-        logger.warning(
-            "[%s] Political climate web search failed (non-fatal): %s",
-            community_id, exc,
+    def fn_charter_intel():
+        return _fetch_charter_intel(
+            community_id=community_id,
+            community_name=community_name,
+            state=state,
+            state_name=state_context.get("state_name", state),
+            csv_schools=csv_schools,
+            csv_authorizers=csv_authorizers,
+            config=config,
         )
 
-    # ── Population trends web search (supplemental call) ────────────────────
-    try:
-        if config.depth != "deep":
-            raise _DepthSkip
-        time.sleep(8)
+    def fn_population_trends():
         pt_prompt = load_prompt("prompts/extract/s3_population_trends.md", {
             "COMMUNITY_NAME": community_name,
             "STATE_NAME": state_context.get("state_name", state),
             "TODAY_DATE": today_str(),
         })
-
         _pt_system = (
             "You are a demographic and enrollment researcher. "
             "Use web search to find current information. "
@@ -895,69 +871,54 @@ def run(
             stage=f"{STAGE_ID}_population_trends",
             community_id=community_id,
         )
-        _web_search_tokens += pt_result.total_tokens
-
         if pt_result.parse_error:
             logger.warning(
                 "[%s] Population trends web search JSON parse failed: %s",
                 community_id, pt_result.parse_error,
             )
-        elif pt_result.parsed_json:
-            pt = pt_result.parsed_json
-            sources = pt.get("sources") or []
-            first_source = sources[0] if sources else {}
-            index_val = pt.get("population_trend_index")
-            confidence, _vs, _vs_rationale = _resolve_websearch_status(pt)
-
-            facts_output.setdefault("facts", []).append({
-                "datapoint_id": f"dp_{community_id}_population_trends_websearch",
-                "community_id": community_id,
-                "state": state,
-                "dimension": "population_trends",
-                "fact_key": "population_trend_index",
-                "claim": f"Population trend index (web): {index_val}",
-                "value": index_val,
-                "value_unit": None,
-                "value_year": int(today_str()[:4]),
-                "source_class": "FEDERAL_DATA",
-                "source_url": first_source.get("url"),
-                "source_title": first_source.get("title"),
-                "source_date": first_source.get("date"),
-                "confidence": confidence,
-                "confidence_rationale": _vs_rationale,
-                "verification_status": _vs,
-                "bias_flag": None,
-                "extracted_by": config.model_sonnet,
-                "extracted_at": today_str(),
-                "stage": STAGE_ID,
-                "in_main_analysis": True,
-                "needs_verification_reason": None,
-            })
-
-            logger.info(
-                "[%s] Population trends web search — index=%s confidence=%s sources=%d",
-                community_id, index_val, confidence, len(sources),
-            )
-
-    except _DepthSkip:
-        pass
-    except Exception as exc:
-        logger.warning(
-            "[%s] Population trends web search failed (non-fatal): %s",
-            community_id, exc,
+            return None
+        if not pt_result.parsed_json:
+            return None
+        pt = pt_result.parsed_json
+        sources = pt.get("sources") or []
+        first_source = sources[0] if sources else {}
+        index_val = pt.get("population_trend_index")
+        confidence, _vs, _vs_rationale = _resolve_websearch_status(pt)
+        logger.info(
+            "[%s] Population trends web search — index=%s confidence=%s sources=%d",
+            community_id, index_val, confidence, len(sources),
         )
+        return {
+            "datapoint_id": f"dp_{community_id}_population_trends_websearch",
+            "community_id": community_id,
+            "state": state,
+            "dimension": "population_trends",
+            "fact_key": "population_trend_index",
+            "claim": f"Population trend index (web): {index_val}",
+            "value": index_val,
+            "value_unit": None,
+            "value_year": int(today_str()[:4]),
+            "source_class": "FEDERAL_DATA",
+            "source_url": first_source.get("url"),
+            "source_title": first_source.get("title"),
+            "source_date": first_source.get("date"),
+            "confidence": confidence,
+            "confidence_rationale": _vs_rationale,
+            "verification_status": _vs,
+            "bias_flag": None,
+            "extracted_by": config.model_sonnet,
+            "extracted_at": today_str(),
+            "stage": STAGE_ID,
+            "in_main_analysis": True,
+            "needs_verification_reason": None,
+        }
 
-    # ── Operational complexity web search (supplemental call) ────────────────
-    try:
-        if config.depth != "deep":
-            raise _DepthSkip
-        time.sleep(8)
+    def fn_operational_complexity():
         oc_prompt = load_prompt("prompts/extract/s3_operational_complexity.md", {
             "COMMUNITY_NAME": community_name,
             "STATE_NAME": state_context.get("state_name", state),
             "TODAY_DATE": today_str(),
         })
-
         _oc_system = (
             "You are an education demographics researcher. "
             "Use web search to find current information. "
@@ -977,69 +938,54 @@ def run(
             stage=f"{STAGE_ID}_operational_complexity",
             community_id=community_id,
         )
-        _web_search_tokens += oc_result.total_tokens
-
         if oc_result.parse_error:
             logger.warning(
                 "[%s] Operational complexity web search JSON parse failed: %s",
                 community_id, oc_result.parse_error,
             )
-        elif oc_result.parsed_json:
-            oc = oc_result.parsed_json
-            sources = oc.get("sources") or []
-            first_source = sources[0] if sources else {}
-            index_val = oc.get("operational_complexity_index")
-            confidence, _vs, _vs_rationale = _resolve_websearch_status(oc)
-
-            facts_output.setdefault("facts", []).append({
-                "datapoint_id": f"dp_{community_id}_operational_complexity_websearch",
-                "community_id": community_id,
-                "state": state,
-                "dimension": "operational_complexity",
-                "fact_key": "operational_complexity_index",
-                "claim": f"Operational complexity index (web): {index_val}",
-                "value": index_val,
-                "value_unit": None,
-                "value_year": int(today_str()[:4]),
-                "source_class": "PED_DATA",
-                "source_url": first_source.get("url"),
-                "source_title": first_source.get("title"),
-                "source_date": first_source.get("date"),
-                "confidence": confidence,
-                "confidence_rationale": _vs_rationale,
-                "verification_status": _vs,
-                "bias_flag": None,
-                "extracted_by": config.model_sonnet,
-                "extracted_at": today_str(),
-                "stage": STAGE_ID,
-                "in_main_analysis": True,
-                "needs_verification_reason": None,
-            })
-
-            logger.info(
-                "[%s] Operational complexity web search — index=%s confidence=%s sources=%d",
-                community_id, index_val, confidence, len(sources),
-            )
-
-    except _DepthSkip:
-        pass
-    except Exception as exc:
-        logger.warning(
-            "[%s] Operational complexity web search failed (non-fatal): %s",
-            community_id, exc,
+            return None
+        if not oc_result.parsed_json:
+            return None
+        oc = oc_result.parsed_json
+        sources = oc.get("sources") or []
+        first_source = sources[0] if sources else {}
+        index_val = oc.get("operational_complexity_index")
+        confidence, _vs, _vs_rationale = _resolve_websearch_status(oc)
+        logger.info(
+            "[%s] Operational complexity web search — index=%s confidence=%s sources=%d",
+            community_id, index_val, confidence, len(sources),
         )
+        return {
+            "datapoint_id": f"dp_{community_id}_operational_complexity_websearch",
+            "community_id": community_id,
+            "state": state,
+            "dimension": "operational_complexity",
+            "fact_key": "operational_complexity_index",
+            "claim": f"Operational complexity index (web): {index_val}",
+            "value": index_val,
+            "value_unit": None,
+            "value_year": int(today_str()[:4]),
+            "source_class": "PED_DATA",
+            "source_url": first_source.get("url"),
+            "source_title": first_source.get("title"),
+            "source_date": first_source.get("date"),
+            "confidence": confidence,
+            "confidence_rationale": _vs_rationale,
+            "verification_status": _vs,
+            "bias_flag": None,
+            "extracted_by": config.model_sonnet,
+            "extracted_at": today_str(),
+            "stage": STAGE_ID,
+            "in_main_analysis": True,
+            "needs_verification_reason": None,
+        }
 
-    # ── Facilities feasibility web search (supplemental call) ────────────────
-    try:
-        if config.depth != "deep":
-            raise _DepthSkip
-        time.sleep(8)
+    def fn_facilities_feasibility():
         ff_prompt = load_prompt("prompts/extract/s3_facilities_feasibility.md", {
             "COMMUNITY_NAME": community_name,
             "STATE_NAME": state_context.get("state_name", state),
             "TODAY_DATE": today_str(),
         })
-
         _ff_system = (
             "You are a real estate and education facilities researcher. "
             "Use web search to find current information. "
@@ -1059,69 +1005,54 @@ def run(
             stage=f"{STAGE_ID}_facilities_feasibility",
             community_id=community_id,
         )
-        _web_search_tokens += ff_result.total_tokens
-
         if ff_result.parse_error:
             logger.warning(
                 "[%s] Facilities feasibility web search JSON parse failed: %s",
                 community_id, ff_result.parse_error,
             )
-        elif ff_result.parsed_json:
-            ff = ff_result.parsed_json
-            sources = ff.get("sources") or []
-            first_source = sources[0] if sources else {}
-            index_val = ff.get("facilities_feasibility_index")
-            confidence, _vs, _vs_rationale = _resolve_websearch_status(ff)
-
-            facts_output.setdefault("facts", []).append({
-                "datapoint_id": f"dp_{community_id}_facilities_feasibility_websearch",
-                "community_id": community_id,
-                "state": state,
-                "dimension": "facilities_feasibility",
-                "fact_key": "facilities_feasibility_index",
-                "claim": f"Facilities feasibility index (web): {index_val}",
-                "value": index_val,
-                "value_unit": None,
-                "value_year": int(today_str()[:4]),
-                "source_class": "MEDIA",
-                "source_url": first_source.get("url"),
-                "source_title": first_source.get("title"),
-                "source_date": first_source.get("date"),
-                "confidence": confidence,
-                "confidence_rationale": _vs_rationale,
-                "verification_status": _vs,
-                "bias_flag": None,
-                "extracted_by": config.model_sonnet,
-                "extracted_at": today_str(),
-                "stage": STAGE_ID,
-                "in_main_analysis": True,
-                "needs_verification_reason": None,
-            })
-
-            logger.info(
-                "[%s] Facilities feasibility web search — index=%s confidence=%s sources=%d",
-                community_id, index_val, confidence, len(sources),
-            )
-
-    except _DepthSkip:
-        pass
-    except Exception as exc:
-        logger.warning(
-            "[%s] Facilities feasibility web search failed (non-fatal): %s",
-            community_id, exc,
+            return None
+        if not ff_result.parsed_json:
+            return None
+        ff = ff_result.parsed_json
+        sources = ff.get("sources") or []
+        first_source = sources[0] if sources else {}
+        index_val = ff.get("facilities_feasibility_index")
+        confidence, _vs, _vs_rationale = _resolve_websearch_status(ff)
+        logger.info(
+            "[%s] Facilities feasibility web search — index=%s confidence=%s sources=%d",
+            community_id, index_val, confidence, len(sources),
         )
+        return {
+            "datapoint_id": f"dp_{community_id}_facilities_feasibility_websearch",
+            "community_id": community_id,
+            "state": state,
+            "dimension": "facilities_feasibility",
+            "fact_key": "facilities_feasibility_index",
+            "claim": f"Facilities feasibility index (web): {index_val}",
+            "value": index_val,
+            "value_unit": None,
+            "value_year": int(today_str()[:4]),
+            "source_class": "MEDIA",
+            "source_url": first_source.get("url"),
+            "source_title": first_source.get("title"),
+            "source_date": first_source.get("date"),
+            "confidence": confidence,
+            "confidence_rationale": _vs_rationale,
+            "verification_status": _vs,
+            "bias_flag": None,
+            "extracted_by": config.model_sonnet,
+            "extracted_at": today_str(),
+            "stage": STAGE_ID,
+            "in_main_analysis": True,
+            "needs_verification_reason": None,
+        }
 
-    # ── Funding environment web search (supplemental call) ───────────────────
-    try:
-        if config.depth != "deep":
-            raise _DepthSkip
-        time.sleep(8)
+    def fn_funding_environment():
         fe_prompt = load_prompt("prompts/extract/s3_funding_environment.md", {
             "COMMUNITY_NAME": community_name,
             "STATE_NAME": state_context.get("state_name", state),
             "TODAY_DATE": today_str(),
         })
-
         _fe_system = (
             "You are an education philanthropy and funding researcher. "
             "Use web search to find current information. "
@@ -1141,57 +1072,133 @@ def run(
             stage=f"{STAGE_ID}_funding_environment",
             community_id=community_id,
         )
-        _web_search_tokens += fe_result.total_tokens
-
         if fe_result.parse_error:
             logger.warning(
                 "[%s] Funding environment web search JSON parse failed: %s",
                 community_id, fe_result.parse_error,
             )
-        elif fe_result.parsed_json:
-            fe = fe_result.parsed_json
-            sources = fe.get("sources") or []
-            first_source = sources[0] if sources else {}
-            index_val = fe.get("funding_environment_index")
-            confidence, _vs, _vs_rationale = _resolve_websearch_status(fe)
-
-            facts_output.setdefault("facts", []).append({
-                "datapoint_id": f"dp_{community_id}_funding_environment_websearch",
-                "community_id": community_id,
-                "state": state,
-                "dimension": "funding_environment",
-                "fact_key": "funding_environment_index",
-                "claim": f"Funding environment index (web): {index_val}",
-                "value": index_val,
-                "value_unit": None,
-                "value_year": int(today_str()[:4]),
-                "source_class": "THINK_TANK",
-                "source_url": first_source.get("url"),
-                "source_title": first_source.get("title"),
-                "source_date": first_source.get("date"),
-                "confidence": confidence,
-                "confidence_rationale": _vs_rationale,
-                "verification_status": _vs,
-                "bias_flag": None,
-                "extracted_by": config.model_sonnet,
-                "extracted_at": today_str(),
-                "stage": STAGE_ID,
-                "in_main_analysis": True,
-                "needs_verification_reason": None,
-            })
-
-            logger.info(
-                "[%s] Funding environment web search — index=%s confidence=%s sources=%d",
-                community_id, index_val, confidence, len(sources),
-            )
-
-    except _DepthSkip:
-        pass
-    except Exception as exc:
-        logger.warning(
-            "[%s] Funding environment web search failed (non-fatal): %s",
-            community_id, exc,
+            return None
+        if not fe_result.parsed_json:
+            return None
+        fe = fe_result.parsed_json
+        sources = fe.get("sources") or []
+        first_source = sources[0] if sources else {}
+        index_val = fe.get("funding_environment_index")
+        confidence, _vs, _vs_rationale = _resolve_websearch_status(fe)
+        logger.info(
+            "[%s] Funding environment web search — index=%s confidence=%s sources=%d",
+            community_id, index_val, confidence, len(sources),
         )
+        return {
+            "datapoint_id": f"dp_{community_id}_funding_environment_websearch",
+            "community_id": community_id,
+            "state": state,
+            "dimension": "funding_environment",
+            "fact_key": "funding_environment_index",
+            "claim": f"Funding environment index (web): {index_val}",
+            "value": index_val,
+            "value_unit": None,
+            "value_year": int(today_str()[:4]),
+            "source_class": "THINK_TANK",
+            "source_url": first_source.get("url"),
+            "source_title": first_source.get("title"),
+            "source_date": first_source.get("date"),
+            "confidence": confidence,
+            "confidence_rationale": _vs_rationale,
+            "verification_status": _vs,
+            "bias_flag": None,
+            "extracted_by": config.model_sonnet,
+            "extracted_at": today_str(),
+            "stage": STAGE_ID,
+            "in_main_analysis": True,
+            "needs_verification_reason": None,
+        }
+
+    # ── Submit all independent calls concurrently ─────────────────────────────
+    _run_pc = config.depth in ("standard", "deep")
+    _run_ci = config.mode != OutputMode.SCAN
+    _run_deep = config.depth == "deep"
+    _n_calls = (1
+                + (1 if _run_pc else 0)
+                + (1 if _run_ci else 0)
+                + (4 if _run_deep else 0))
+
+    logger.info(
+        "[%s] S3 parallelized — submitting %d concurrent calls",
+        community_id, _n_calls,
+    )
+
+    executor = concurrent.futures.ThreadPoolExecutor(max_workers=min(_n_calls, 3))
+    try:
+        _f_main = executor.submit(fn_main)
+        _f_pc   = executor.submit(fn_political_climate) if _run_pc   else None
+        _f_ci   = executor.submit(fn_charter_intel)     if _run_ci   else None
+        _f_pt   = executor.submit(fn_population_trends)       if _run_deep else None
+        _f_oc   = executor.submit(fn_operational_complexity)  if _run_deep else None
+        _f_ff   = executor.submit(fn_facilities_feasibility)  if _run_deep else None
+        _f_fe   = executor.submit(fn_funding_environment)     if _run_deep else None
+
+        # fn_main is required — re-raises BudgetExceededError / RuntimeError
+        result = _f_main.result()
+
+        pc_fact = None
+        if _f_pc is not None:
+            try:
+                pc_fact = _f_pc.result()
+            except Exception as _exc:
+                logger.warning(
+                    "[%s] Political climate future failed (non-fatal): %s",
+                    community_id, _exc,
+                )
+
+        charter_intel_result: dict = {}
+        if _f_ci is not None:
+            try:
+                charter_intel_result = _f_ci.result() or {}
+            except Exception as _exc:
+                logger.warning(
+                    "[%s] Charter intel future failed (non-fatal): %s",
+                    community_id, _exc,
+                )
+
+        _deep_facts: list = []
+        for _f_deep in [_f_pt, _f_oc, _f_ff, _f_fe]:
+            if _f_deep is None:
+                continue
+            try:
+                _deep_facts.append(_f_deep.result())
+            except Exception as _exc:
+                logger.warning(
+                    "[%s] Deep web search future failed (non-fatal): %s",
+                    community_id, _exc,
+                )
+    finally:
+        executor.shutdown(wait=True)
+
+    # ── Parse guard — checked after all futures complete ─────────────────────
+    if result.parse_error:
+        return StageResult(
+            stage_id=STAGE_ID, community_id=community_id, state=state,
+            status=StageStatus.ERROR,
+            errors=[f"S3 JSON parse failed: {result.parse_error}"]
+        )
+
+    facts_output = result.parsed_json
+    # A literal `null` / non-object top-level parses cleanly (no parse_error) but
+    # is unusable downstream. Skip this community gracefully rather than crash.
+    if not isinstance(facts_output, dict):
+        return StageResult(
+            stage_id=STAGE_ID, community_id=community_id, state=state,
+            status=StageStatus.ERROR,
+            errors=[f"S3 returned non-object JSON: {type(facts_output).__name__}"]
+        )
+
+    # ── Merge supplemental facts from parallel futures (main thread only) ─────
+    if pc_fact is not None:
+        facts_output.setdefault("facts", []).append(pc_fact)
+    for _df in _deep_facts:
+        if _df is not None:
+            facts_output.setdefault("facts", []).append(_df)
 
     # ── Protect roster-derived facts from S4's UNVERIFIED block ─────────────
     # Must run after all supplemental calls, before the cache write.
@@ -1338,6 +1345,8 @@ def run(
     # ── Charter schools + authorizer intelligence ─────────────────────────────
     # Scan mode skips both fetchers: charter_intel feeds brief narrative only and
     # does not contribute to any scoring dimension.  Cost: ~$0.05/city saved.
+    # csv_schools / csv_authorizers were pre-fetched before the executor block.
+    # charter_intel_result was populated by fn_charter_intel running concurrently.
     if config.mode == OutputMode.SCAN:
         logger.info(
             "[%s] Scan mode — charter_intel and authorizer fetchers intentionally skipped",
@@ -1346,18 +1355,7 @@ def run(
         facts_output["charter_schools"]  = []
         facts_output["local_authorizers"] = []
     else:
-        csv_schools     = get_community_charter_schools(known_schools, roster_source_file)
-        csv_authorizers = get_community_authorizers(known_schools, roster_source_file)
-
-        charter_intel = _fetch_charter_intel(
-            community_id=community_id,
-            community_name=community_name,
-            state=state,
-            state_name=state_context.get("state_name", state),
-            csv_schools=csv_schools,
-            csv_authorizers=csv_authorizers,
-            config=config,
-        )
+        charter_intel = charter_intel_result
         facts_output["charter_schools"]  = charter_intel.get("top_charter_schools", csv_schools)
         facts_output["local_authorizers"] = charter_intel.get("local_authorizers", csv_authorizers)
         # LLM output omits num_schools_in_community; re-merge from roster-derived csv_authorizers.

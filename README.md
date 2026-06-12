@@ -1328,4 +1328,28 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Populate MS `states.yaml` data-source URLs (statute_citation, charter_roster URL, etc. currently marked TODO)
 - [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
 
+---
+
+### Session — 2026-06-12 (0c123d3)
+
+**Accomplished:**
+- Refactored `pipeline/s3_fact_extraction.run()` to execute `fn_main`, `fn_political_climate`, and `fn_charter_intel` concurrently via `concurrent.futures.ThreadPoolExecutor(max_workers=3)` instead of sequentially
+- Converted four deep-only supplemental web searches (`fn_population_trends`, `fn_operational_complexity`, `fn_facilities_feasibility`, `fn_funding_environment`) to thread-callable functions submitted alongside main batch
+- Removed all four `time.sleep(8)` rate-limit guards (sequential-only artifact); pre-fetched `csv_schools`/`csv_authorizers` before executor block so `fn_charter_intel` closure captures clean values
+- Added entry log line: `[{community_id}] S3 parallelized — submitting {n} concurrent calls` on every S3 invocation
+- Wrapped executor in `try/finally executor.shutdown(wait=True)`; `BudgetExceededError` and `RuntimeError` from `fn_main.result()` propagate naturally; supplemental futures catch-and-warn non-fatally
+- Facts merged on main thread after all futures settle; `facts_output` accumulator never touched from worker threads
+- Smoke tests: fast-depth (2 concurrent calls, SUCCESS 43.7s) and standard-depth full pipeline S1–S7 (SUCCESS, S3 cache hit) both clean; 934 pytest passed
+
+**Decisions:**
+- `ThreadPoolExecutor` (not asyncio) chosen to avoid cascade changes to `main.py`, `api_client.py`, and batch executor; `call_claude` and `call_claude_cached` are already sync and safe to call from threads
+- `BudgetExceededError` from `fn_main` is fatal and propagates immediately; supplemental futures (political_climate, charter_intel, deep web searches) are non-fatal — warnings logged, pipeline continues with missing facts rather than aborting
+- `_web_search_tokens` accumulator removed — it was assigned but never read in original code (dead variable)
+- `max_workers=min(n_calls, 3)` caps thread pool so fast-depth (2 calls) doesn't allocate unnecessary threads
+
+**Next Steps:**
+- [ ] Run a --depth deep smoke test once deep-search credits are available to verify 7-concurrent-call path
+- [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
+- [ ] Verify 49 charter law stubs against primary sources; set `verified: true` per state as verification completes
+
 **Tests:** 934 passed.
