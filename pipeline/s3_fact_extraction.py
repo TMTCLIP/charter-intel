@@ -34,6 +34,8 @@ from pipeline.utils.ped_fetcher import get_district_data
 from pipeline.fetchers.ms_proficiency_fetcher import get_ms_district_data
 from pipeline.fetchers.tn_proficiency_fetcher import get_tn_district_data
 from pipeline.fetchers.wi_proficiency_fetcher import get_wi_district_data
+from pipeline.fetchers.in_proficiency_fetcher import get_in_district_data
+from pipeline.fetchers.il_proficiency_fetcher import get_il_district_data
 from pipeline.fetchers.crdc_fetcher import get_crdc_district_data
 from pipeline.fetchers.ed_data_express_fetcher import get_ed_data_express_absenteeism
 from pipeline.utils.urban_enrollment_fetcher import get_urban_enrollment_trend
@@ -594,6 +596,10 @@ def run(
         ped_data = get_tn_district_data(community_id)
     elif state_uc == "WI":
         ped_data = get_wi_district_data(community_id)
+    elif state_uc == "IN":
+        ped_data = get_in_district_data(community_id)
+    elif state_uc == "IL":
+        ped_data = get_il_district_data(community_id)
     else:
         ped_data = get_district_data(community_id, state)
     if ped_data:

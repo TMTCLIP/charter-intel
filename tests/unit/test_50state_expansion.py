@@ -38,6 +38,8 @@ ALL_EXPECTED = {
 }
 LEGACY_STATES = {"NM", "MS", "TN", "WI"}  # pre-existing; verified configs
 EXPANSION_STATES = ALL_EXPECTED - LEGACY_STATES
+# Expansion states that have graduated to real proficiency adapters (no longer "none")
+STATES_WITH_REAL_PROFICIENCY = {"IN", "IL"}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -63,11 +65,20 @@ class TestStatesYamlCompleteness:
 
     def test_expansion_states_have_proficiency_adapter_none(self):
         states = self._load()
+        check_states = EXPANSION_STATES - STATES_WITH_REAL_PROFICIENCY
         bad = [
-            st for st in EXPANSION_STATES
+            st for st in check_states
             if states.get(st, {}).get("proficiency_adapter") != "none"
         ]
         assert not bad, f"Expansion states missing proficiency_adapter: none — {sorted(bad)}"
+
+    def test_graduated_states_have_real_proficiency_adapter(self):
+        states = self._load()
+        for st in STATES_WITH_REAL_PROFICIENCY:
+            adapter = states.get(st, {}).get("proficiency_adapter")
+            assert adapter and adapter != "none", (
+                f"{st} is in STATES_WITH_REAL_PROFICIENCY but proficiency_adapter={adapter!r}"
+            )
 
     def test_expansion_states_have_state_fips(self):
         states = self._load()

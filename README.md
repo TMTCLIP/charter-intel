@@ -1353,3 +1353,31 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Verify 49 charter law stubs against primary sources; set `verified: true` per state as verification completes
 
 **Tests:** 934 passed.
+
+---
+
+### Session — 2026-06-12 (5650711)
+
+**Accomplished:**
+- Built `pipeline/fetchers/in_proficiency_fetcher.py` — Indiana ILEARN SY 2023-24, city-slug name matching; reads `data/raw/in/ilearn_district_proficiency.csv` (gitignored)
+- Built `pipeline/fetchers/il_proficiency_fetcher.py` — Illinois IAR SY 2023-24, city-slug name matching with "public schools"/"school district" tie-break; reads `data/raw/il/iar_district_proficiency.csv` (gitignored)
+- Wired IN and IL into `pipeline/s3_fact_extraction.py` dispatch (`elif state_uc == "IN"` / `elif state_uc == "IL"` after WI branch)
+- Updated `config/states.yaml`: added `proficiency_adapter: tn_proficiency_fetcher` and `proficiency_adapter: wi_proficiency_fetcher` for TN and WI; promoted IL and IN from `none` to real adapters
+- Rebuilt `data/raw/tn/tn_district_proficiency.csv` with correct NCES LEAIDs — prior build used TN DOE system codes (`'47' + system.zfill(5)`), which mismatched NCES; fixed via name-matching against `data/raw/national/nces_lea_directory_2022.csv` (all 143 rows corrected)
+- Smoke-tested Nashville/TN, Milwaukee/WI, Indianapolis/IN, Chicago/IL — all confirmed `has_proficiency_data=True`, `academic_need` scored (not defaulted), correct ELA/Math values emitted
+- Updated `tests/unit/test_50state_expansion.py` — added `STATES_WITH_REAL_PROFICIENCY = {"IN", "IL"}` exemption and inverse guard test `test_graduated_states_have_real_proficiency_adapter`
+- Created `tests/unit/test_in_il_proficiency.py` — 20 tests covering slug extraction, name matching, happy path, graceful degradation, and MS interface parity for both fetchers
+
+**Decisions:**
+- IN and IL fetchers use name-based city-slug matching only (no LEAID lookup) — `nces_district_map` is empty for both states in v1; UPGRADE PATH comment in each fetcher documents LEAID promotion path
+- TN LEAID fix used NCES LEA directory name crosswalk rather than adding name-based fallback to the fetcher — keeps fetcher code identical to MS/WI pattern and puts the fix in the data layer where it belongs
+- WI and TN proficiency CSVs are gitignored (`data/raw/`); raw data files must be present on operator machine; pipeline degrades gracefully (returns None) if CSV is absent
+- IL IAR data note: ⚠️ Pre-2025 benchmark adjustment — figures reflect original proficiency thresholds; state revised scoring tiers in 2025
+
+**Next Steps:**
+- [ ] Populate `nces_district_map` for IN and IL in `states.yaml` to enable LEAID-primary lookup fallback (upgrade path documented in both fetchers)
+- [ ] Download and normalize WI, TN, IN, IL proficiency CSVs onto any fresh operator machine (gitignored; not in repo)
+- [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
+- [ ] Verify 49 charter law stubs against primary sources; set `verified: true` per state as verification completes
+
+**Tests:** 954 passed (+20 new IN/IL tests).

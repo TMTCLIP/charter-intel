@@ -659,6 +659,7 @@ MS:
   status: ACTIVE
 
 TN:
+  proficiency_adapter: tn_proficiency_fetcher
   charter_law_config: config/charter_law/tn.yaml
   charter_law:
     cap_on_charters: null  # NEEDS_VERIFICATION
@@ -1020,6 +1021,7 @@ TN:
   status: ACTIVE
 
 WI:
+  proficiency_adapter: wi_proficiency_fetcher
   charter_law_config: config/charter_law/wi.yaml
   charter_law:
     cap_on_charters: null  # NEEDS_VERIFICATION
@@ -1857,7 +1859,7 @@ IL:
   display_name: Illinois
   state_fips: "17"
   authorizer_type: placeholder  # to be verified per state
-  proficiency_adapter: none     # placeholder until adapter built
+  proficiency_adapter: il_proficiency_fetcher
   charter_law_config: config/charter_law/il.yaml
   enrollment_floor: 500         # default, operator can override
   adjacent_states: []           # to be populated
@@ -1866,7 +1868,7 @@ IN:
   display_name: Indiana
   state_fips: "18"
   authorizer_type: placeholder  # to be verified per state
-  proficiency_adapter: none     # placeholder until adapter built
+  proficiency_adapter: in_proficiency_fetcher
   charter_law_config: config/charter_law/in.yaml
   enrollment_floor: 500         # default, operator can override
   adjacent_states: []           # to be populated
