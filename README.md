@@ -126,6 +126,12 @@ working, and the app can't accidentally break the pipeline.
 - Wired S4 Pass E: deterministic static resolution — PEC renewal facts resolve when config fields non-null; teacher shortage facts resolve when district in shortage list
 - Tests: 290 passing
 
+**Session 35 (2026-06-12) — ThreadPoolExecutor Post-Completion Guards (3 Fixes) (94a5d37)**
+- **FIX A — Charter intel empty-return guard**: Added content guard in `_fetch_charter_intel()` after LLM response parsing. When `top_charter_schools == []` but raw response contains charter signals (name, enrollment, operator mentions, or "charter" > 3x), sets `charter_intel_confidence = "LOW"` and `charter_intel_warning` for manual review. Eliminates false-empty on Memphis run (0 schools despite 53k input tokens and activity signals present).
+- **FIX B — S6 audit JSON parse resilience**: Modified `_run_audit()` to extract `audit_passed` from raw text when JSON parsing fails. If `audit_passed: false` detected, returns special result dict with `audit_status = "PARSE_FAILED_CONTRADICTIONS_DETECTED"` instead of silently discarding audit findings. Main `run()` function surfaces flag in brief_json and adds HIGH-impact needs_verification entry. Memphis audit caught contradictions but parse error suppressed them until now.
+- **FIX C — Political climate Haiku gate scope constraint**: Prepended constraint language to political climate gate prompt (not rewrite). Gate now explicitly forbidden from reasoning about charter counts/enrollment as skip justification, only considers searchability and findable political climate info. Preserves original charter-politics-distinctiveness decision logic.
+- Tests: 954 passed (no regressions).
+
 ---
 
 ## 3. Quick start (local development)

@@ -192,6 +192,28 @@ def run(
         brief_json, audit_warnings = _apply_audit(brief_json, audit_result)
         warnings.extend(audit_warnings)
 
+        # FIX B: Surface parse failure with detected contradictions
+        if audit_result and audit_result.get("audit_status") == "PARSE_FAILED_CONTRADICTIONS_DETECTED":
+            brief_json["audit_status"] = "PARSE_FAILED_CONTRADICTIONS_DETECTED"
+            warnings.append(
+                "Audit JSON parse failed but contradictions detected in raw text. "
+                "Brief contains potential issues — manual review required."
+            )
+            # Add needs_verification entry for the parse failure
+            if not isinstance(brief_json.get("needs_verification"), list):
+                brief_json["needs_verification"] = []
+            brief_json["needs_verification"].append({
+                "claim": "S6 audit integrity check",
+                "reason": (
+                    "S6 audit detected contradictions but failed to parse audit results. "
+                    "Brief may contain unfounded claims that passed through the broken "
+                    "audit gate."
+                ),
+                "source_class_attempted": None,
+                "resolution_path": "Manual review of brief against verified facts required before use.",
+                "impact_if_wrong": "HIGH",
+            })
+
     # --- Patch CEP driver in dimension_table (deterministic; bypasses Haiku) ---
     brief_json = _patch_cep_driver(brief_json, verified_bundle)
 
@@ -370,8 +392,33 @@ def _run_audit(
         community_id=community_id
     )
 
+    # FIX B: JSON parse resilience — extract audit_passed from raw text if parsing fails
     if result.parse_error:
-        return None, result.total_tokens, f"Audit JSON parse failed: {result.parse_error}"
+        raw_text = result.text or ""
+        audit_passed = None
+
+        # Attempt simple string search for audit_passed
+        if '"audit_passed": false' in raw_text.lower() or 'audit_passed: false' in raw_text.lower():
+            audit_passed = False
+        elif '"audit_passed": true' in raw_text.lower() or 'audit_passed: true' in raw_text.lower():
+            audit_passed = True
+
+        if audit_passed is False:
+            logger.warning(
+                "[%s] Audit JSON parse failed but audit_passed=false detected in raw text. "
+                "Brief contains at least one contradiction. Proceeding with unaudited brief — "
+                "manual review required.",
+                community_id,
+            )
+            # Return a minimal result dict with the contradiction flag
+            return {
+                "audit_passed": False,
+                "audit_status": "PARSE_FAILED_CONTRADICTIONS_DETECTED",
+                "failures": [],
+            }, result.total_tokens, None
+        else:
+            # audit_passed is True or None — use current behavior (log warning, proceed)
+            return None, result.total_tokens, f"Audit JSON parse failed: {result.parse_error}"
 
     return result.parsed_json, result.total_tokens, None
 

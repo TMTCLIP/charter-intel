@@ -330,8 +330,19 @@ def _should_run_political_climate_search(
         return (False, reason)
 
     # ── Haiku gate ───────────────────────────────────────────────────────────
+    # FIX C: Scope constraint prepended to prevent factual reasoning about charter landscape
     school_list_str = ", ".join(known_schools) if known_schools else "none"
     haiku_prompt = (
+        f"Your only job is to assess whether a web search for political climate "
+        f"information is likely to return useful results for this community. "
+        f"Do NOT reason about charter school counts, enrollment figures, or market conditions. "
+        f"Do NOT use charter presence or absence as a reason to skip the search. Only consider:\n"
+        f"- Is this a real, searchable US city or community?\n"
+        f"- Is there likely to be public information about local school board posture, "
+        f"political climate, or charter policy for this location?\n\n"
+        f"If yes to both: return YES.\n"
+        f"If the community is too small or obscure to have findable political climate data: "
+        f"return NO.\n\n"
         f"Does {community_name}, {state} likely have meaningfully distinct local "
         f"charter school politics from the state baseline?\n\n"
         f"Context:\n"
@@ -2724,6 +2735,47 @@ def _fetch_charter_intel(
             return {}
 
         data = result.parsed_json or {}
+
+        # FIX A: Content guard for empty charter_schools with signals in raw text
+        charter_schools = data.get("top_charter_schools", [])
+        if not charter_schools:
+            raw_text = result.text or ""
+            raw_lower = raw_text.lower()
+            # Check for charter signals per spec:
+            # - "charter" mentioned more than 3 times
+            # - "charter school" mentioned (school names)
+            # - "charter" + "enrollment" (enrollment numbers)
+            # - "charter" + "operator" (operators)
+            charter_count = raw_lower.count("charter")
+            has_charter_school = "charter school" in raw_lower
+            has_charter_enrollment = "charter" in raw_lower and "enrollment" in raw_lower
+            has_charter_operator = "charter" in raw_lower and "operator" in raw_lower
+
+            charter_signals = [
+                charter_count > 3,
+                has_charter_school,
+                has_charter_enrollment,
+                has_charter_operator,
+            ]
+            if any(charter_signals):
+                # Found signals but returned empty — mark as LOW confidence
+                data["top_charter_schools"] = []
+                data["charter_intel_confidence"] = "LOW"
+                data["charter_intel_warning"] = (
+                    "Extraction returned zero schools but response text suggests charter activity "
+                    "was found. Manual review required before scoring."
+                )
+                logger.warning(
+                    "[%s] Charter intel: zero schools but response suggests activity — "
+                    "confidence set to LOW, manual review required",
+                    community_id,
+                )
+            else:
+                logger.info(
+                    "[%s] Charter intel: zero schools confirmed — no charter signals in response",
+                    community_id,
+                )
+
         logger.info(
             "[%s] Charter intel: %d schools, %d authorizers (web_search=%s)",
             community_id,
