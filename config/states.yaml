@@ -1,4 +1,5 @@
 NM:
+  charter_law_config: config/charter_law/nm.yaml
   charter_law:
     cap_on_charters: false
     facilities_provisions: limited
@@ -278,6 +279,7 @@ _TEMPLATE:
   status: DRAFT
 version: '1.0'
 MS:
+  charter_law_config: config/charter_law/ms.yaml
   charter_law:
     cap_on_charters: null  # NEEDS_VERIFICATION
     facilities_provisions: null  # NEEDS_VERIFICATION
@@ -657,6 +659,7 @@ MS:
   status: ACTIVE
 
 TN:
+  charter_law_config: config/charter_law/tn.yaml
   charter_law:
     cap_on_charters: null  # NEEDS_VERIFICATION
     facilities_provisions: null  # NEEDS_VERIFICATION
@@ -1017,6 +1020,7 @@ TN:
   status: ACTIVE
 
 WI:
+  charter_law_config: config/charter_law/wi.yaml
   charter_law:
     cap_on_charters: null  # NEEDS_VERIFICATION
     facilities_provisions: null  # NEEDS_VERIFICATION

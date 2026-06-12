@@ -1305,3 +1305,27 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
 
 **Tests:** 934 passed.
+
+---
+
+### Session — 2026-06-12 (09030d6)
+
+**Accomplished:**
+- Read and inventoried `ms.yaml`, `nm.yaml`, `pipeline/utils/charter_law.py`, and `s2_state_context.py` to establish which YAML keys are consumed at runtime (`barriers` and `verified` only — all other stub fields are documentation-only)
+- Confirmed all 51 `config/charter_law/` stubs already existed from prior session — stub generation task correctly skipped
+- Audited `states.yaml` vs. `config/charter_law/`: found 4 states (NM, MS, TN, WI) with inline `charter_law:` blocks but missing `charter_law_config:` path entries
+- Added `charter_law_config:` as first key in NM, MS, TN, and WI state blocks in `config/states.yaml`; inline `charter_law:` blocks left intact
+- Final coverage: 51/51 states (50 + DC) have both a `config/charter_law/` file and a `charter_law_config:` path entry in `states.yaml`
+- Smoke test (Indianapolis / IN / maturity_adjusted / fast): all 7 stages passed; stub notice correctly injected into `needs_verification`; no KeyError or crash
+
+**Decisions:**
+- `load_charter_law_barriers()` reads only `barriers` + `verified`; existing stubs use `statutory_barriers: []` (not `barriers: []`) which causes graceful degradation to `[]` — mismatch is benign and left unchanged
+- `data/reference/charter_laws.json` is AI-generated and unverified; must not be used to drive brief conclusions or stub content
+- `charter_law_config:` path entries added without removing inline `charter_law:` blocks — both coexist; the runtime loader (`pipeline/utils/charter_law.py`) reads the file path directly and does not use the inline block
+
+**Next Steps:**
+- [ ] Verify 49 stub configs against primary sources (NACSA state profiles / state statutes) before allowing them to drive brief scoring; set `verified: true` per state as verification completes
+- [ ] Populate MS `states.yaml` data-source URLs (statute_citation, charter_roster URL, etc. currently marked TODO)
+- [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
+
+**Tests:** 934 passed.
