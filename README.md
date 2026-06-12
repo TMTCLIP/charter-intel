@@ -1423,3 +1423,24 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Download and normalize WI, TN, IN, IL proficiency CSVs onto any fresh operator machine (gitignored; not in repo)
 
 **Tests:** 954 passed (`python3 -m pytest -q`).
+
+---
+
+### Session — 2026-06-12 (a52c5b4)
+
+**Accomplished:**
+- Created `_find_s6_cache_path()` helper in `app/ui/server.py` to resolve S6 cache JSON paths with LEAID suffix handling — mirrors the pattern from `_find_brief_path()`
+- When cache directory with bare slug is not found (e.g., `data/cache/synthesis/tn/tn-memphis/`), function globs for `{target}-[0-9]*` and uses the last match to find LEAID-suffixed directory
+- Updated `brief_pdf()` route to use `_find_s6_cache_path()` instead of constructing the path directly — fixes "Brief data not found" error when downloading PDFs
+- All 954 tests passed; no regressions
+
+**Decisions:**
+- Minimal change: only PDF route cache resolution was modified; no pipeline files touched, no other server routes affected
+- Same glob-and-sort pattern as `_find_brief_path()` ensures consistency across brief path and S6 cache lookups
+
+**Next Steps:**
+- [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
+- [ ] Populate `nces_district_map` for IN and IL in `states.yaml` to enable LEAID-primary lookup fallback
+- [ ] Verify 49 charter law stubs against primary sources; set `verified: true` per state as verification completes
+
+**Tests:** 954 passed.

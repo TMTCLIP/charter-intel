@@ -446,6 +446,30 @@ def _find_brief_path(target: str, preset: str, mode: str) -> Path | None:
     return candidates[-1] if candidates else None
 
 
+def _find_s6_cache_path(state: str, target: str, preset: str, mode: str) -> Path | None:
+    """Locate the S6 cache JSON file for a community+preset+mode.
+
+    Handles bare slugs (e.g., "tn-memphis") by finding the LEAID-suffixed directory.
+    """
+    cache_state_dir = BASE_DIR / "data" / "cache" / "synthesis" / state
+
+    # Try direct path first
+    target_dir = cache_state_dir / target
+    cache_file = target_dir / f"s6_brief_{preset}_mode{mode}.json"
+    if cache_file.exists():
+        return cache_file
+
+    # Target may be a bare slug — find directory with LEAID suffix
+    matches = sorted(cache_state_dir.glob(f"{target}-[0-9]*"))
+    if matches:
+        target_dir = matches[-1]
+        cache_file = target_dir / f"s6_brief_{preset}_mode{mode}.json"
+        if cache_file.exists():
+            return cache_file
+
+    return None
+
+
 def _pdf_patch_excluded_weights(brief: dict, state: str, community_id: str) -> None:
     """Mirror of s7_render._patch_excluded_weights for the PDF route.
 
@@ -690,11 +714,8 @@ def brief_pdf():
 
     state = (flags.get("state") or target.split("-")[0]).lower().strip()
 
-    brief_json_path = (
-        BASE_DIR / "data" / "cache" / "synthesis" / state / target
-        / f"s6_brief_{preset}_mode{mode}.json"
-    )
-    if not brief_json_path.exists():
+    brief_json_path = _find_s6_cache_path(state, target, preset, mode)
+    if not brief_json_path:
         return "Brief data not found — run S6 first or use the HTML brief instead", 404
 
     try:
