@@ -37,6 +37,19 @@ from pipeline.utils.data_config import NCES_CCD_YEAR  # noqa: E402
 
 log = logging.getLogger(__name__)
 
+
+def _slug(community_id: str) -> str:
+    """Strip a 7-digit LEAID suffix appended by _registry_prefix_lookup.
+
+    'tn-memphis-4700148' → 'tn-memphis'
+    'tn-memphis'         → 'tn-memphis'  (no-op when suffix absent)
+    """
+    parts = community_id.rsplit('-', 1)
+    if len(parts) == 2 and len(parts[1]) == 7 and parts[1].isdigit():
+        return parts[0]
+    return community_id
+
+
 # ── File paths ────────────────────────────────────────────────────────────────
 
 STATES_YAML    = "config/states.yaml"
@@ -430,7 +443,7 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
       - required numeric fields are missing or carry the -2 sentinel
     """
     nces_map = _load_nces_map(state)
-    leaid = nces_map.get(community_id)
+    leaid = nces_map.get(community_id) or nces_map.get(_slug(community_id))
 
     if leaid is None:
         log.info(

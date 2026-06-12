@@ -49,6 +49,15 @@ import yaml
 
 log = logging.getLogger(__name__)
 
+
+def _slug(community_id: str) -> str:
+    """Strip a 7-digit LEAID suffix appended by _registry_prefix_lookup."""
+    parts = community_id.rsplit('-', 1)
+    if len(parts) == 2 and len(parts[1]) == 7 and parts[1].isdigit():
+        return parts[0]
+    return community_id
+
+
 CSV_PATH     = "data/raw/wi/wi_district_proficiency.csv"
 STATES_YAML  = "config/states.yaml"
 SCHOOL_YEAR  = "2023-2024"
@@ -149,7 +158,7 @@ def get_wi_district_data(community_id: str) -> Optional[dict]:
     fetch_wi_proficiency(). Returns None if no mapping exists.
     """
     nces_map = _load_nces_map()
-    leaid = nces_map.get(community_id)
+    leaid = nces_map.get(community_id) or nces_map.get(_slug(community_id))
     if not leaid:
         log.info("wi_proficiency_fetcher: no NCES mapping for %s", community_id)
         return None

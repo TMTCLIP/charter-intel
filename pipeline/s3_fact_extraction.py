@@ -41,7 +41,7 @@ from pipeline.fetchers.ed_data_express_fetcher import get_ed_data_express_absent
 from pipeline.utils.urban_enrollment_fetcher import get_urban_enrollment_trend
 from pipeline.fetchers.bls_teacher_wages_fetcher import get_teacher_wages
 from pipeline.fetchers.mde_ratings_fetcher import get_mde_district_rating
-from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data, get_charter_enrollment_share
+from pipeline.utils.nces_fetcher import get_district_data as get_nces_district_data, get_charter_enrollment_share, _slug as _nces_slug
 from pipeline.utils.acs_fetcher  import get_district_data as get_acs_district_data, get_total_population as get_acs_total_population
 from pipeline.utils.population_trends_fetcher import get_population_trends
 from pipeline.utils.saipe_fetcher import get_poverty_data as get_saipe_poverty_data
@@ -1240,7 +1240,7 @@ def run(
         nces_map = _states_cfg.get(state.upper(), {}).get("nces_district_map", {})
     except Exception as _exc:
         logger.warning("[%s] Could not load nces_district_map for SAIPE lookup: %s", community_id, _exc)
-    saipe_leaid = nces_map.get(community_id)
+    saipe_leaid = nces_map.get(community_id) or nces_map.get(_nces_slug(community_id))
     saipe_data = get_saipe_poverty_data(saipe_leaid) if saipe_leaid else None
     _inject_saipe_facts(facts_output, saipe_data, community_id, state)
 

@@ -52,6 +52,15 @@ from pipeline.utils.data_config import ACS_YEAR as _ACS_YEAR_CFG, ACS_POP_VINTAG
 
 log = logging.getLogger(__name__)
 
+
+def _slug(community_id: str) -> str:
+    """Strip a 7-digit LEAID suffix appended by _registry_prefix_lookup."""
+    parts = community_id.rsplit('-', 1)
+    if len(parts) == 2 and len(parts[1]) == 7 and parts[1].isdigit():
+        return parts[0]
+    return community_id
+
+
 # ── File cache config ─────────────────────────────────────────────────────────
 # ACS 5-year data is updated annually each December; 180 days gives one refresh
 # per release cycle without hitting the API on every pipeline run.
@@ -298,7 +307,7 @@ def get_district_data(community_id: str, state: str) -> Optional[dict]:
         return None
 
     nces_map = _load_nces_map(state)
-    leaid = nces_map.get(community_id)
+    leaid = nces_map.get(community_id) or nces_map.get(_slug(community_id))
 
     if leaid is None:
         log.info(
@@ -451,7 +460,7 @@ def get_total_population(community_id: str, state: str) -> Optional[dict]:
         return None
 
     nces_map = _load_nces_map(state)
-    leaid = nces_map.get(community_id)
+    leaid = nces_map.get(community_id) or nces_map.get(_slug(community_id))
 
     if leaid is None:
         log.info(

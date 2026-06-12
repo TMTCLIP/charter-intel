@@ -37,6 +37,15 @@ import yaml
 
 log = logging.getLogger(__name__)
 
+
+def _slug(community_id: str) -> str:
+    """Strip a 7-digit LEAID suffix appended by _registry_prefix_lookup."""
+    parts = community_id.rsplit('-', 1)
+    if len(parts) == 2 and len(parts[1]) == 7 and parts[1].isdigit():
+        return parts[0]
+    return community_id
+
+
 # ── File paths ────────────────────────────────────────────────────────────────
 
 STATES_YAML = "config/states.yaml"
@@ -218,7 +227,7 @@ def get_population_trends(community_id: str, state: str) -> Optional[dict]:
       - fewer than 2 years of data are available
     """
     nces_map = _load_nces_map(state)
-    leaid = nces_map.get(community_id)
+    leaid = nces_map.get(community_id) or nces_map.get(_slug(community_id))
 
     if leaid is None:
         log.info(
@@ -382,7 +391,7 @@ def get_school_enrollment_trends(community_id: str, state: str) -> Optional[dict
     Schools with fewer than 2 years of data are excluded with a per-school warning.
     """
     nces_map = _load_nces_map(state)
-    leaid = nces_map.get(community_id)
+    leaid = nces_map.get(community_id) or nces_map.get(_slug(community_id))
 
     if leaid is None:
         log.info(

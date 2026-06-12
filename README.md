@@ -1381,3 +1381,26 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Verify 49 charter law stubs against primary sources; set `verified: true` per state as verification completes
 
 **Tests:** 954 passed (+20 new IN/IL tests).
+
+---
+
+### Session — 2026-06-12 (d1f6c86)
+
+**Accomplished:**
+- Added `_slug(community_id)` helper to `pipeline/utils/nces_fetcher.py` — strips 7-digit LEAID suffix appended by `_registry_prefix_lookup` (e.g. `tn-memphis-4700148` → `tn-memphis`)
+- Duplicated `_slug()` as a module-level helper in `acs_fetcher.py`, `population_trends_fetcher.py`, `tn_proficiency_fetcher.py`, `ms_proficiency_fetcher.py`, and `wi_proficiency_fetcher.py`
+- Imported `_slug` as `_nces_slug` in `pipeline/s3_fact_extraction.py` from nces_fetcher (it already imported from that module)
+- Updated all 9 `nces_map.get(community_id)` call sites across 6 files to `nces_map.get(community_id) or nces_map.get(_slug(community_id))`
+- Confirmed Memphis/TN smoke test: `nces_fetcher` now resolves LEAID 4700148; no "no NCES mapping" warning emitted
+
+**Decisions:**
+- Lookup pattern is direct-first, slug-fallback rather than slug-strip unconditionally — `nces_district_map` keys are mixed format: some entries include the LEAID suffix (e.g. `ms-oxford-2803450`) while others use the short slug (`tn-memphis`); a pure strip would break suffixed-key lookups
+- `_slug` duplicated locally in each file rather than imported from `nces_fetcher` everywhere — keeps each utils/fetchers module independent, avoids new cross-file import chains
+
+**Next Steps:**
+- [ ] Populate `nces_district_map` for IN and IL in `states.yaml` to enable LEAID-primary lookup fallback
+- [ ] Download and normalize WI, TN, IN, IL proficiency CSVs onto any fresh operator machine (gitignored; not in repo)
+- [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
+- [ ] Verify 49 charter law stubs against primary sources; set `verified: true` per state as verification completes
+
+**Tests:** 954 passed.
