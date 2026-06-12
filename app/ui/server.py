@@ -431,11 +431,15 @@ def _find_brief_path(target: str, preset: str, mode: str) -> Path | None:
     """Locate the best HTML brief file for a community+preset+mode."""
     comm_dir = BY_COMMUNITY_DIR / target
     if not comm_dir.exists():
-        return None
-    canonical = comm_dir / f"{target}_{preset}_mode{mode}.html"
+        # Target may be a bare slug — find directory with LEAID suffix
+        matches = sorted(BY_COMMUNITY_DIR.glob(f"{target}-[0-9]*"))
+        if matches:
+            comm_dir = matches[-1]
+        else:
+            return None
+    canonical = comm_dir / f"{comm_dir.name}_{preset}_mode{mode}.html"
     if canonical.exists():
         return canonical
-    # Fall back to any non-print HTML
     htmls = sorted(comm_dir.glob("*.html"))
     non_print = [h for h in htmls if "_print" not in h.name]
     candidates = non_print or htmls

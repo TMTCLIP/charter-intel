@@ -1404,3 +1404,22 @@ scoring uncalibrated. See `docs/` for session history and `DEPLOY.md` for deploy
 - [ ] Verify 49 charter law stubs against primary sources; set `verified: true` per state as verification completes
 
 **Tests:** 954 passed.
+
+### Session — 2026-06-12 (3f7674c)
+
+**Accomplished:**
+- Fixed `_find_brief_path` in `app/ui/server.py` to resolve bare slugs (e.g. `tn-memphis`) to their LEAID-suffixed output directories (e.g. `tn-memphis-4700148/`), which are what the pipeline actually writes
+- When `BY_COMMUNITY_DIR / target` does not exist, the function now globs `{target}-[0-9]*` and uses the last sorted match — stable and deterministic for single-LEAID communities; enrollment-ranked resolution has already fired before this point for multi-LEAID cases
+- Fixed the canonical filename to use `comm_dir.name` instead of `target`, so it matches the actual HTML file name the pipeline emits (e.g. `tn-memphis-4700148_growth_mode2.html`)
+- Confirmed 954 tests still pass — change is a function-body replacement only, nothing else touched
+
+**Decisions:**
+- Minimal-change approach: only `_find_brief_path` was modified; no pipeline files, no other server routes, no helpers added
+- `sorted(...glob())[-1]` is sufficient since community LEAID suffixes are 7-digit integers and sort correctly lexicographically for the single-community case
+
+**Next Steps:**
+- [ ] Operator-profile conversation with The Mind Trust: decide FIX D gate reversal + FIX F penalty calibration
+- [ ] Populate `nces_district_map` for IN and IL in `states.yaml` to enable LEAID-primary lookup fallback
+- [ ] Download and normalize WI, TN, IN, IL proficiency CSVs onto any fresh operator machine (gitignored; not in repo)
+
+**Tests:** 954 passed (`python3 -m pytest -q`).
